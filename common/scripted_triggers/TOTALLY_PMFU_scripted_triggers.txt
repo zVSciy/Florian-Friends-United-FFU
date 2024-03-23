@@ -1,0 +1,234 @@
+is_playable_country = {
+	OR = {
+		tag = FRA
+		tag = ENG
+		tag = USA
+		tag = GER
+		tag = SOV
+		tag = JAP
+		tag = CAN
+		tag = MEX
+		tag = BRA
+		tag = IRE
+		tag = SPR
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = HOL
+		tag = AST
+		tag = NZL
+		tag = RAJ
+		tag = SIA
+		tag = SAF
+		tag = MAN
+		tag = MON
+		tag = VIC
+		tag = YUG
+		tag = FIN
+		tag = ITA
+	}
+}
+
+victory_plan_nations_1 = {
+	OR = {
+		tag = CAN
+		tag = BRA
+		tag = MEX
+	}
+}
+
+victory_plan_nations_2 = {
+	OR = {
+		tag = SAF
+		tag = RAJ
+		tag = AST
+	}
+}
+
+victory_plan_nations_major = {
+	OR = {
+		tag = USA
+		tag = ENG
+	}
+}
+
+british_coastline = {
+	OR = {
+		state = 123
+		state = 127
+		state = 126
+		state = 125
+		state = 129
+		state = 130
+		state = 131
+		state = 121
+		state = 136
+		state = 120
+		state = 133
+		state = 132
+		state = 122
+		state = 338
+		state = 119
+		state = 113
+		state = 134
+		state = 135
+		state = 931
+	}
+}
+
+the_axis = {
+	OR = { 
+		original_tag = GER
+		original_tag = ITA
+		original_tag = SPR
+		original_tag = VIC
+		original_tag = FIN
+		original_tag = ROM
+		original_tag = HUN
+		original_tag = YUG
+		original_tag = BUL
+	}
+}
+
+the_allies = {
+	OR = { 
+		original_tag = ENG
+		original_tag = USA
+		original_tag = FRA
+		original_tag = SAF
+		original_tag = CAN
+		original_tag = AST
+		original_tag = RAJ
+		original_tag = NZL
+		original_tag = MEX
+		original_tag = BRA
+		original_tag = HOL
+	}
+}
+
+europe_dday_coastline = {
+	OR = {
+		state = 169
+		state = 179
+		state = 112
+		state = 180
+		state = 171
+		state = 790
+		state = 792
+		state = 806
+		state = 19
+		state = 23
+		state = 30
+		state = 14
+		state = 15
+		state = 785
+		state = 29
+		state = 6
+		state = 35
+		state = 7
+		state = 36
+		state = 56
+		state = 59
+		state = 58
+		state = 99
+		state = 142
+		state = 143
+		state = 144
+		state = 110
+		state = 37
+		state = 61
+		state = 62
+		state = 63
+		state = 807
+		state = 85
+		state = 5
+		state = 763
+		state = 188
+		state = 184
+		state = 731
+		state = 47
+		state = 186
+		state = 185
+		state = 805
+		state = 44
+		state = 105
+		state = 103
+		state = 163
+		state = 736
+		state = 160
+		state = 161
+		state = 157
+		state = 849
+		state = 156
+		state = 115
+		state = 117
+		state = 2
+		state = 162
+		state = 158
+		state = 735
+		state = 21
+		state = 22
+		state = 31
+		state = 165
+		state = 167
+		state = 168
+		state = 173
+		state = 851
+	}
+}
+
+europe_pacific_modifier_states_non_atlantikwall = {
+	OR = {
+		state = 31
+		state = 22
+		state = 21
+		state = 735
+		state = 158
+		state = 162
+		state = 2
+		state = 117
+		state = 156
+		state = 157
+		state = 161
+		state = 160
+		state = 736
+	}
+}
+
+GER_flak_36_states = {
+	OR = {
+		state = 64
+		state = 64
+		state = 59
+		state = 60
+		state = 54
+		state = 51
+		state = 55
+		state = 42
+	}
+}
+
+china_dwindle_available = {
+	605 = { #chongqing
+		CONTROLLER = {
+			NOT = {
+				OR = {
+					tag = JAP
+					is_subject_of = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+	}
+	613 = { #nanjing
+		CONTROLLER = {
+			NOT = {
+				OR = {
+					tag = JAP
+					is_subject_of = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+	}
+}

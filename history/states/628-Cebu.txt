@@ -1,0 +1,41 @@
+state=
+{
+	id=628
+	name="STATE_628"
+	manpower = 3525715
+	
+	state_category = rural
+	
+	resources = {
+		rubber = 50
+	}
+
+	history=
+	{
+		owner = USA
+		1936.1.1.13 = {
+			owner = WST
+		}
+		1936.1.1.13 = {
+			owner = WST
+		}
+		buildings = {
+			infrastructure = 3
+			12118 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = {
+			12118 1 
+		}
+		add_core_of = WST
+		set_compliance = 100
+	}
+
+	provinces={
+		1261 1368 7385 7423 10186 10302 12112 12118 12153 
+	}
+
+	local_supplies=6.0 
+}

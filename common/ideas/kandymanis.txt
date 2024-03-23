@@ -1,0 +1,114 @@
+ideas = {
+
+	hidden_ideas = {
+		starting_cap = {
+
+			name = "Starting Efficiency Cap"
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.5 
+			}
+		}
+
+		no_agents = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+
+			modifier = {
+                operative_slot = -999
+			}
+		}
+	}
+
+	country = {
+	    volunteer_minimum_major = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				date > 1939.1.1
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+			modifier = {
+                send_volunteer_size = 5
+				special_forces_min = 66
+			}
+		}	
+
+		volunteer_minimum_GER_NA = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				OR = {
+					NOT = {
+						has_global_flag = NO_ASIA
+					}
+					date > 1939.1.1
+				}
+				
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+			modifier = {
+                send_volunteer_size = 3
+				special_forces_min = 44
+			}
+		}
+
+		volunteer_minimum_minor = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				date > 1939.1.1
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+
+			modifier = {
+                send_volunteer_size = 3
+				special_forces_min = 44
+			}
+		}	
+	}
+
+}

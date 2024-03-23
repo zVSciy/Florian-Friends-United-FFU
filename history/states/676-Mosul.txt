@@ -1,0 +1,38 @@
+state={
+	id=676
+	name="STATE_676"
+	manpower = 1182741
+	
+	state_category = town
+	
+	resources={
+		oil=410 # was: 10
+	}
+
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			# arms_factory = 2
+		}
+		victory_points = {
+			10106 15 
+		}
+		victory_points = {
+			3916 3 
+		}
+		victory_points = {
+			6826 1
+		}
+		add_core_of = IRQ
+		#add_core_of = KUR
+		add_extra_state_shared_building_slots = 2
+	}
+	
+	provinces={
+		1600 1938 3916 5014 6826 8123 10106 10793 10804 10811 12372 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,17 @@
+soundeffect = {
+	name = "earrape_sound_effect"
+	sounds = {
+		sound = 
+			earrape_sound_effect
+	}
+	volume = 3
+}
+
+soundeffect = {
+	name = "schizophrenic_meltdown_sound_effect"
+	sounds = {
+		sound = 
+		schizophrenic_meltdown_sound_effect
+	}
+	volume = 1
+}

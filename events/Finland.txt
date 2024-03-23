@@ -1,0 +1,160 @@
+﻿# ###########################
+# # Finland Events
+# ###########################
+
+# add_namespace = finland
+
+# # Soviet Ultimatum - Event for FIN
+# country_event = {
+# 	id = finland.1
+# 	title = finland.1.t
+# 	desc = finland.1.d
+# 	picture = GFX_report_event_soviet_tanks_snow
+	
+# 	is_triggered_only = yes
+	
+# 	option = { # Accept demands
+# 		name = finland.1.a
+# 		ai_chance = { 
+# 			base = 25
+# 			modifier = { # Don't accept if in a faction that can protect them
+# 				factor = 0
+# 				NOT = { is_in_faction_with = FROM }
+# 				NOT = { is_subject_of = FROM }
+# 				OR = {
+# 					any_other_country = {
+# 						is_major = yes
+# 						OR = {
+# 							is_in_faction_with = FIN
+# 							has_guaranteed = FIN
+# 						}
+# 					}
+# 					FIN_is_historical_ai = yes # Finland expected to resist on historical
+# 					has_idea = anti_soviet_pact
+# 				}
+# 			}
+# 		}
+# 		FROM = {
+# 			country_event = { days = 5 id = soviet.12 }
+# 			effect_tooltip = {
+# 				transfer_state = 146
+# 				custom_effect_tooltip = FIN_remove_soviet_claims_in_other_states_tt
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			FROM = {
+# 				add_ai_strategy = { 
+# 					type = antagonize 
+# 					id = ROOT
+# 					value = -100
+# 				}
+# 				add_ai_strategy = { 
+# 					type = conquer 
+# 					id = ROOT
+# 					value = -100
+# 				}
+# 			}
+# 		}
+# 	}
+# 	option = { # Refuse
+# 		name = finland.1.b
+# 		ai_chance = {
+# 			base = 75
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					is_in_faction_with = FROM
+# 					is_subject_of = FROM
+# 				}
+# 			}
+# 		}
+# 		FROM = {
+# 			country_event = { days = 5 id = soviet.13 }
+# 			effect_tooltip = {
+# 				create_wargoal = {
+# 					type = take_state
+# 					target = FIN
+# 					generator = { 146 }
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+
+
+# # WINTER WAR STARTS! -> (NSB Barbarossa free patch)
+# country_event = {
+# 	id = finland.10
+# 	title = finland.10.t
+# 	desc = finland.10.d
+# 	picture = GFX_report_event_finnish_soldiers_snow
+	
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = finland.10.a
+
+# 		add_ideas = winter_war_ns
+
+# 		custom_effect_tooltip = FIN_winter_war_push_back_tt
+# 	}
+# }
+
+###########################
+# Finland Events PRE AAT
+###########################
+
+add_namespace = finland
+
+# Soviet Ultimatum
+country_event = {
+	id = finland.1
+	title = finland.1.t
+	desc = finland.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = finland.1.a
+		ai_chance = { 
+		factor = 25
+		modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				OR = {
+					any_other_country = {
+						is_major = yes
+						OR = {
+							is_in_faction_with = FIN
+							has_guaranteed = FIN
+						}
+					}
+					has_idea = anti_soviet_pact
+				}
+			}
+		}
+		SOV = {
+			country_event = { days = 5 id = soviet.12 }
+			effect_tooltip = {
+				transfer_state = 146
+			}
+		}
+	}
+	option = { # Refuse
+		name = finland.1.b
+		ai_chance = { factor = 75 }
+		SOV = {
+			country_event = { days = 5 id = soviet.13 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state
+					target = FIN
+					generator = { 146 }
+				}
+			}
+		}
+	}
+}
+
+

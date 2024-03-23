@@ -1,0 +1,622 @@
+ideas = {
+	hidden_ideas= {
+		research_35={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		research_36={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {		
+				year_1910 = 0.675
+				year_1914 = 0.6
+				year_1918 = 0.525
+				year_1922 = 0.45
+				year_1926 = 0.375
+				year_1932 = 0.3
+				year_1933 = 0.225
+				year_1934 = 0.15
+				year_1935 = 0.075
+				year_1936 = 0
+				year_1937 = 0
+				year_1938 = 0
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_36_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 0.75
+				year_1914 = 0.675
+				year_1918 = 0.6
+				year_1922 = 0.525
+				year_1926 = 0.45
+				year_1932 = 0.375
+				year_1933 = 0.3
+				year_1934 = 0.225
+				year_1935 = 0.15
+				year_1936 = 0
+				year_1937 = 0
+				year_1938 = 0
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_37={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 0.825
+				year_1914 = 0.75
+				year_1918 = 0.675
+				year_1922 = 0.6
+				year_1926 = 0.525
+				year_1932 = 0.45
+				year_1933 = 0.375
+				year_1934 = 0.3
+				year_1935 = 0.225
+				year_1936 = 0.075
+				year_1937 = 0
+				year_1938 = 0
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_37_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 0.9
+				year_1914 = 0.825
+				year_1918 = 0.75
+				year_1922 = 0.675
+				year_1926 = 0.6
+				year_1932 = 0.525
+				year_1933 = 0.45
+				year_1934 = 0.375
+				year_1935 = 0.3
+				year_1936 = 0.15
+				year_1937 = 0
+				year_1938 = 0
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_38={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 0.975
+				year_1914 = 0.9
+				year_1918 = 0.825
+				year_1922 = 0.75
+				year_1926 = 0.675
+				year_1932 = 0.6
+				year_1933 = 0.525
+				year_1934 = 0.45
+				year_1935 = 0.375
+				year_1936 = 0.225
+				year_1937 = 0.075
+				year_1938 = 0
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_38_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.05
+				year_1914 = 0.975
+				year_1918 = 0.9
+				year_1922 = 0.825
+				year_1926 = 0.75
+				year_1932 = 0.675
+				year_1933 = 0.6
+				year_1934 = 0.525
+				year_1935 = 0.45
+				year_1936 = 0.3
+				year_1937 = 0.15
+				year_1938 = 0
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_39={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.125
+				year_1914 = 1.05
+				year_1918 = 0.975
+				year_1922 = 0.9
+				year_1926 = 0.825
+				year_1932 = 0.75
+				year_1933 = 0.675
+				year_1934 = 0.6
+				year_1935 = 0.525
+				year_1936 = 0.375
+				year_1937 = 0.225
+				year_1938 = 0.075
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_39_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.2
+				year_1914 = 1.125
+				year_1918 = 1.05
+				year_1922 = 0.975
+				year_1926 = 0.9
+				year_1932 = 0.825
+				year_1933 = 0.75
+				year_1934 = 0.675
+				year_1935 = 0.6
+				year_1936 = 0.45
+				year_1937 = 0.3
+				year_1938 = 0.15
+				year_1939 = 0
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_40={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.275
+				year_1914 = 1.2
+				year_1918 = 1.125
+				year_1922 = 1.05
+				year_1926 = 0.975
+				year_1932 = 0.9
+				year_1933 = 0.825
+				year_1934 = 0.75
+				year_1935 = 0.675
+				year_1936 = 0.525
+				year_1937 = 0.375
+				year_1938 = 0.225
+				year_1939 = 0.075
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_40_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.35
+				year_1914 = 1.275
+				year_1918 = 1.2
+				year_1922 = 1.125
+				year_1926 = 1.05
+				year_1932 = 0.975
+				year_1933 = 0.9
+				year_1934 = 0.825
+				year_1935 = 0.75
+				year_1936 = 0.6
+				year_1937 = 0.45
+				year_1938 = 0.3
+				year_1939 = 0.15
+				year_1940 = 0
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_41={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.425
+				year_1914 = 1.35
+				year_1918 = 1.275
+				year_1922 = 1.2
+				year_1926 = 1.125
+				year_1932 = 1.05
+				year_1933 = 0.975
+				year_1934 = 0.9
+				year_1935 = 0.825
+				year_1936 = 0.675
+				year_1937 = 0.525
+				year_1938 = 0.375
+				year_1939 = 0.225
+				year_1940 = 0.075
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_41_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.5
+				year_1914 = 1.425
+				year_1918 = 1.35
+				year_1922 = 1.275
+				year_1926 = 1.2
+				year_1932 = 1.125
+				year_1933 = 1.05
+				year_1934 = 0.975
+				year_1935 = 0.9
+				year_1936 = 0.75
+				year_1937 = 0.6
+				year_1938 = 0.45
+				year_1939 = 0.3
+				year_1940 = 0.15
+				year_1941 = 0
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_42={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.575
+				year_1914 = 1.5
+				year_1918 = 1.425
+				year_1922 = 1.35
+				year_1926 = 1.275
+				year_1932 = 1.2
+				year_1933 = 1.125
+				year_1934 = 1.05
+				year_1935 = 0.975
+				year_1936 = 0.825
+				year_1937 = 0.675
+				year_1938 = 0.525
+				year_1939 = 0.375
+				year_1940 = 0.225
+				year_1941 = 0.075
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_42_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.65
+				year_1914 = 1.575
+				year_1918 = 1.5
+				year_1922 = 1.425
+				year_1926 = 1.35
+				year_1932 = 1.275
+				year_1933 = 1.2
+				year_1934 = 1.125
+				year_1935 = 1.05
+				year_1936 = 0.9
+				year_1937 = 0.75
+				year_1938 = 0.6
+				year_1939 = 0.45
+				year_1940 = 0.3
+				year_1941 = 0.15
+				year_1942 = 0
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_43={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.725
+				year_1914 = 1.65
+				year_1918 = 1.575
+				year_1922 = 1.5
+				year_1926 = 1.425
+				year_1932 = 1.35
+				year_1933 = 1.275
+				year_1934 = 1.2
+				year_1935 = 1.125
+				year_1936 = 0.975
+				year_1937 = 0.825
+				year_1938 = 0.675
+				year_1939 = 0.525
+				year_1940 = 0.375
+				year_1941 = 0.225
+				year_1942 = 0.075
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_43_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.8
+				year_1914 = 1.725
+				year_1918 = 1.65
+				year_1922 = 1.575
+				year_1926 = 1.5
+				year_1932 = 1.425
+				year_1933 = 1.35
+				year_1934 = 1.275
+				year_1935 = 1.2
+				year_1936 = 1.05
+				year_1937 = 0.9
+				year_1938 = 0.75
+				year_1939 = 0.6
+				year_1940 = 0.45
+				year_1941 = 0.3
+				year_1942 = 0.15
+				year_1943 = 0
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_44={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.875
+				year_1914 = 1.8
+				year_1918 = 1.725
+				year_1922 = 1.65
+				year_1926 = 1.575
+				year_1932 = 1.5
+				year_1933 = 1.425
+				year_1934 = 1.35
+				year_1935 = 1.275
+				year_1936 = 1.125
+				year_1937 = 0.975
+				year_1938 = 0.825
+				year_1939 = 0.675
+				year_1940 = 0.525
+				year_1941 = 0.375
+				year_1942 = 0.225
+				year_1943 = 0.075
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_44_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 1.95
+				year_1914 = 1.875
+				year_1918 = 1.8
+				year_1922 = 1.725
+				year_1926 = 1.65
+				year_1932 = 1.575
+				year_1933 = 1.5
+				year_1934 = 1.425
+				year_1935 = 1.35
+				year_1936 = 1.2
+				year_1937 = 1.05
+				year_1938 = 0.9
+				year_1939 = 0.75
+				year_1940 = 0.6
+				year_1941 = 0.45
+				year_1942 = 0.3
+				year_1943 = 0.15
+				year_1944 = 0
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+		research_45={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1910 = 2.025
+				year_1914 = 1.95
+				year_1918 = 1.875
+				year_1922 = 1.8
+				year_1926 = 1.725
+				year_1932 = 1.65
+				year_1933 = 1.575
+				year_1934 = 1.5
+				year_1935 = 1.425
+				year_1936 = 1.275
+				year_1937 = 1.125
+				year_1938 = 0.975
+				year_1939 = 0.825
+				year_1940 = 0.675
+				year_1941 = 0.525
+				year_1942 = 0.375
+				year_1943 = 0.225
+				year_1944 = 0.075
+				year_1945 = 0
+				year_1946 = 0
+			}
+		}
+	}
+}

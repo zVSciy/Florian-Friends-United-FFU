@@ -1,0 +1,2206 @@
+on_actions = {
+	# POLAND GUARANTEE
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = GER
+							is_in_faction_with = GER
+							original_tag = ITA
+							original_tag = JAP
+							is_in_faction_with = JAP
+						}
+					}
+					FROM = { tag = GRE}
+				}
+				ENG = { add_to_faction = GRE }
+				GRE = {
+					declare_war_on_enemy_faction = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			GER = { # sotm barb end
+				country_event = { id = generic.44 days = 2312 } #2312
+			}
+			GER = { # africa tank start
+				country_event = { id = generic.45 days = 1705 } #1705
+			}
+		}
+	}
+
+	## EGYPTIAN LABOUR
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ENG_controls_egypt_labour
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = GER_controls_egypt_labour
+					clr_state_flag = ENG_controls_egypt_labour
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = africa_tank_production_started
+						}
+					}
+					set_global_flag = africa_tank_production_started
+					GER = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ITA = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					SPR = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					HUN = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ROM = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					BUL = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					YUG = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					VIC = {
+						add_ideas = GER_african_resource_tank_production
+					}
+				}
+				else = {
+					ENG = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					CAN = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					SAF = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					RAJ = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					AST = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					NZL = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+
+					GER = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ITA = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					SPR = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					HUN = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ROM = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					BUL = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					YUG = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					VIC = {
+						add_ideas = GER_african_resource_tank_production
+					}
+				}
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+							tag = ITA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = GER_controls_egypt_labour
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = ENG_controls_egypt_labour
+					clr_state_flag = GER_controls_egypt_labour
+				}
+				ENG = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				CAN = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				SAF = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				RAJ = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				AST = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				NZL = {
+					add_ideas = GER_african_resource_tank_production
+				}
+
+				GER = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				ITA = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				SPR = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				HUN = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				ROM = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				BUL = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				YUG = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				VIC = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+			}
+		}
+	}
+	
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SOV_3_5_plan_over
+					}
+					FROM = {
+						original_tag = SOV
+					}
+					OR = {
+						ROOT = { original_tag = GER }
+						ROOT = { original_tag = ITA }
+						ROOT = { original_tag = JAP }
+					}
+				}
+				SOV = {
+					set_country_flag = SOV_3_5_plan_over
+					add_to_variable = { SOV_soviet_economy_political_power_gain = 0.10 tooltip = political_power_gain_tt }
+					add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = -0.15 tooltip = production_speed_arms_factory_factor_tt }
+					add_to_variable = { SOV_soviet_economy_production_speed_bunker_factor = 0.25 tooltip = production_speed_bunker_factor_tt }
+					if = {
+						limit = {
+							has_country_flag = SOV_germans_are_coming_flag
+						}
+						add_to_variable = { SOV_soviet_economy_consumer_goods_factor = 0.15 tooltip = consumer_goods_factor_tt }
+						add_to_variable = { SOV_soviet_economy_production_factory_max_efficiency_factor = -0.05 tooltip = production_factory_max_efficiency_factor_tt }
+						add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = -0.10 tooltip = production_factory_efficiency_gain_factor_tt }
+						add_to_variable = { SOV_soviet_economy_industrial_capacity_factory = -0.15 tooltip = industrial_capacity_factory_tt }
+						add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = -0.25 tooltip = production_speed_arms_factory_factor_tt }
+					}
+				}
+			}
+		}
+	}
+
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						original_tag = POR
+					}
+				}
+				ENG = {
+					activate_decision = ENG_seize_colonies
+				}
+			}
+		}
+	}
+
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						original_tag = SOV
+					}
+				}
+				SOV = {
+					remove_dynamic_modifier = {
+						modifier = SOV_the_economy_dynamic_peace_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_the_economy_dynamic_war_modifier
+					}
+				}
+			}
+		}
+	}
+
+	on_peace = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						original_tag = SOV
+					}
+				}
+				SOV = {
+					add_dynamic_modifier = {
+						modifier = SOV_the_economy_dynamic_peace_modifier
+					}
+					remove_dynamic_modifier = {
+						modifier = SOV_the_economy_dynamic_war_modifier
+					}
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			SWE = {
+				anti_cross_faction_trade_all = yes
+				SPR = {
+					add_opinion_modifier = {
+						target = SOV
+						modifier = anti_cross_faction_trade
+					}
+				}
+			}
+		}
+	}
+	on_weekly_ENG = {
+		effect = {
+			set_variable = { global.ALLIED_PACIFIC_CASUALTIES = 0 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = JAP
+						tag = MAN
+						tag = SIA
+					}
+				}
+				WAR_IN_PACIFIC_ALLIED_CASUALTIES = yes
+			}
+		}
+	}
+
+	on_weekly_JAP = {
+		effect = {
+			set_variable = { global.GEACPS_PACIFIC_CASUALTIES = 0 }
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = JAP
+							tag = MAN
+							tag = SIA
+						}
+					}
+				}
+				WAR_IN_PACIFIC_GEACPS_CASUALTIES = yes
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						original_tag = ENG
+						original_tag = USA
+						original_tag = FRA
+						original_tag = GER
+						original_tag = JAP
+						original_tag = ITA
+						original_tag = SOV
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = air_minors
+							option = DISABLED
+						}
+					}
+					add_ideas = minors_no_air
+					FRA = {
+						add_ideas = minors_no_air_fra
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = air_minors
+							option = ALLOW_FIGHTERS
+						}
+					}
+					add_ideas = minors_fighters_only
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = air_minors
+							option = ALLOW_FIGHTERS_LIGHT_AIRCRAFT
+						}
+					}
+					add_ideas = minors_light_aircraft_only
+				}
+			}
+		}
+	}
+
+	on_weekly_FRA = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = FRANCE_REMOVE_BUFF_CORE
+					}
+					date > 1939.9.1
+					NOT = {
+						VIC = {
+							has_country_flag = VIC_france_capped
+						}
+					}
+					FRA = {
+						has_idea = FRA_defense_of_metropolitan_france
+					}
+				}
+				set_global_flag = FRANCE_REMOVE_BUFF_CORE
+				FRA = {
+					remove_ideas = FRA_defense_of_metropolitan_france
+				}
+			}
+		}
+	}
+
+	on_weekly_FRA = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = FRANCE_CRACKS_SWAP
+					}
+					date > 1940.3.1
+					NOT = {
+						VIC = {
+							has_country_flag = VIC_france_capped
+						}
+					}
+					FRA = {
+						NOT = {
+							has_idea = FRA_defense_of_metropolitan_france
+						}
+					}
+				}
+				set_global_flag = FRANCE_CRACKS_SWAP
+				FRA = {
+					add_ideas = FRA_cracks_in_the_army
+				}
+			}
+		}
+	}
+
+	on_weekly_SPR = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = spain_joined
+					}
+					793 = { is_demilitarized_zone = no }
+					has_global_flag = scw_over
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							state = 41
+						}
+					}
+					set_demilitarized_zone = yes
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = spain_joined
+					793 = { is_demilitarized_zone = yes }
+					has_global_flag = scw_over
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							state = 41
+						}
+					}
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+
+	on_weekly_SPR = {
+		effect = {
+			if = {
+				limit = {
+					SPR = {
+						has_completed_focus = SPA_la_division_azul
+					}
+				}
+				every_owned_state = {
+					limit = {
+						air_base > 0
+					}
+					set_building_level = {
+						type = air_base
+						level = 1
+					}
+				}
+				every_owned_state = {
+					damage_building = {
+						type = air_base
+						damage = 1
+					}
+				}
+				every_owned_state = {
+					set_building_level = {
+						type = naval_base
+						level = 0
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_weekly_ENG = {
+		effect = {
+			set_variable = { ENG.shadow_civs_built_tt = 0 }
+			for_each_scope_loop = {
+				array = ENG.starting_core_states
+		
+				add_to_variable = { ENG.shadow_civs_built_tt = industrial_complex_level }
+			}
+			subtract_from_variable = { ENG.shadow_civs_built_tt = ENG.shadow_civs1 }
+			set_variable = { ENG.shadow_mils_gotten_tt = ENG.shadow_civs_built_tt }
+
+			clamp_variable = {
+				var = ENG.shadow_mils_gotten_tt
+				min = 0
+				max = 20
+			}
+			divide_variable = { ENG.shadow_mils_gotten_tt = 2 }
+			set_variable = { ENG.shadow_mils_gotten_2_tt = ENG.shadow_mils_gotten_tt }
+			round_variable = ENG.shadow_mils_gotten_tt
+			if = {
+				limit = {
+					check_variable = {
+						var = ENG.shadow_mils_gotten_2_tt
+						value = ENG.shadow_mils_gotten_tt
+						compare = less_than
+					}
+				}
+				subtract_from_variable = { ENG.shadow_mils_gotten_tt = 1 }	
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			SOV = {
+				# country_event = startingevent.1004
+			}
+		}
+	}
+
+	# MON ANNEX
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = {
+							rule = mongolia_annex_time_rule
+							option = IN_1941_1_1
+						}
+						has_game_rule = {
+							rule = mongolia_annex_time_rule
+							option = BESSARABIA
+						}
+					}
+				}
+				SOV = {
+					MON = {
+						pow_before_annex = yes
+					}
+				}
+				MON = {
+					set_equipment_fraction = 0
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 287
+							state = 329
+							state = 330
+							state = 617
+							state = 618
+							state = 619
+							state = 759
+							state = 760
+							state = 817
+							state = 818
+							state = 819
+							state = 820
+						}
+					}
+					add_dynamic_modifier = { modifier = no_factories_mon }
+				}
+				SOV = {
+					annex_country = { target = MON transfer_troops = no }
+					# add_state_core = 287
+					# add_state_core = 329
+					# add_state_core = 330
+					# add_state_core = 617
+					# add_state_core = 618
+					# add_state_core = 619
+					# add_state_core = 759
+					# add_state_core = 760
+					# add_state_core = 817
+					# add_state_core = 818
+					# add_state_core = 819
+					# add_state_core = 820
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				550 = { set_demilitarized_zone = yes }
+				842 = { set_demilitarized_zone = yes }
+				841 = { set_demilitarized_zone = yes }
+				843 = { set_demilitarized_zone = yes }
+				908 = { set_demilitarized_zone = yes }
+				840 = { set_demilitarized_zone = yes }
+				839 = { set_demilitarized_zone = yes }
+				838 = { set_demilitarized_zone = yes }
+				837 = { set_demilitarized_zone = yes }
+				271 = { set_demilitarized_zone = yes }
+				836 = { set_demilitarized_zone = yes }
+				835 = { set_demilitarized_zone = yes }
+				844 = { set_demilitarized_zone = yes }
+				559 = { set_demilitarized_zone = yes }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				ENG = {
+					add_ideas = home_of_the_free_NO_ASIA
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = ENABLED
+					}
+				}
+				JAP = {
+					country_event = startingevent.1005
+					add_collaboration = {
+						target = CHI
+						value = 0.4
+					}
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			SPR = {
+				country_event = newPlayer.16
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = dockyard_cg
+						option = ENABLED
+					}
+				}
+				every_country = {
+					add_dynamic_modifier = { modifier = dockyard_cg_mod }
+				}
+			}
+		}
+	}
+
+	# on_startup = { # mongolia too strong
+	# 	effect = {
+	# 		every_state = {
+	# 			limit = {
+	# 				is_core_of = SOV
+	# 			}
+	# 			MON = {
+	# 				add_state_core = PREV
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	on_startup = {
+		effect = {
+			CHI = {
+				every_army_leader={
+					add_trait = {
+						trait = fifty_cas_dmg_reduction
+					}
+				}
+			}
+			CHI = {	
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = DISABLED
+						}
+					}
+					add_ideas = stupid_ai
+					add_ideas = neutrality_idea
+					add_ideas = neutrality_idea2 
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			766 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					OR = {
+						AND = {
+							is_core_of = FRA
+							is_on_continent = europe
+						}
+						AND = {
+							is_core_of = HOL
+							is_on_continent = europe
+						}
+						state = 458
+						state = 665
+						state = 460
+						state = 513
+						state = 459
+						state = 461
+						state = 462
+					}
+				}
+				add_dynamic_modifier = { modifier = anti_dockyard_construction }
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+					FROM = { is_in_faction_with = GER }
+				}
+				every_state = {
+					limit = {
+						has_dynamic_modifier = { modifier = anti_dockyard_construction }
+						NOT = {
+							state = 766
+						}
+					}
+					remove_dynamic_modifier = { modifier = anti_dockyard_construction }
+				}
+			}
+		}
+	}
+	
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					date > 1938.1.2
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
+					NOT = {
+						has_global_flag = NO_ASIA
+					}
+					JAP = {
+						NOT = {
+							has_completed_focus = JAP_intervene_in_china
+						}
+					}
+					NOT = {
+						has_global_flag = china_auto_happend
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = JAP_liaison_conference_happened_manchu
+						}
+					}
+					set_global_flag = JAP_liaison_conference_happened_manchu
+					MAN = {
+						country_event = wtt_manchukou.12
+					}
+				}
+				set_global_flag = china_auto_happend
+				JAP = {
+					add_named_threat = { threat = 22.5 name = "Marco Polo Bridge Incident" }
+					boot_naval_treaty_f = yes
+				}
+				hidden_effect = {
+					JAP = {
+						army_experience = 300
+						air_experience = 125
+					}
+					# USA = {
+					# 	add_war_support = 0.1
+					# }
+					ENG = {
+						add_war_support = 0.1
+					}
+					SOV = {
+						add_war_support = 0.1
+					}
+					AST = {
+						add_war_support = 0.1
+					}
+					SAF = {
+						add_war_support = 0.1
+					}
+					CAN = {
+						add_war_support = 0.1
+					}
+					NZL = {
+						add_war_support = 0.1
+					}
+					RAJ = {
+						add_war_support = 0.1
+					}
+					IRE = {
+						add_war_support = 0.1
+					}
+					FRA = {
+						add_war_support = 0.1
+					}
+					USA = {
+						country_event = { id = panay_incident.2 days = 150 } #40 days before
+					}
+				}
+			}
+		}
+		# effect = {
+		# 	if = {
+		# 		limit = {
+		# 			any_country = {
+		# 				OR = {
+		# 					count_triggers = {
+		# 						amount = 2
+		# 						has_tech = mobile_warfare
+		# 						has_tech = superior_firepower
+		# 						has_tech = trench_warfare
+		# 						has_tech = mass_assault
+		# 					}
+		# 					count_triggers = {
+		# 						amount = 3
+		# 						has_tech = mobile_warfare
+		# 						has_tech = superior_firepower
+		# 						has_tech = trench_warfare
+		# 						has_tech = mass_assault
+		# 					}
+		# 					count_triggers = {
+		# 						amount = 4
+		# 						has_tech = mobile_warfare
+		# 						has_tech = superior_firepower
+		# 						has_tech = trench_warfare
+		# 						has_tech = mass_assault
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 		news_event = generic.42
+		# 	}
+		# }
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
+				}
+				JAP = {
+					add_ideas = JAP_no_china_industry_reducer
+					set_equipment_fraction = 0.4
+				}
+			}
+		}
+	}
+
+	# on_startup = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = {
+	# 					rule = china_war_rule
+	# 					option = ENABLED
+	# 				}
+	# 			}
+	# 			JAP = {
+	# 				add_equipment_to_stockpile = {
+	# 					type = infantry_equipment_0
+	# 					amount = 15000
+	# 					producer = JAP
+	# 				}
+	# 				add_equipment_to_stockpile = {
+	# 					type = squad_equipment_0
+	# 					amount = 1500
+	# 					producer = JAP
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					FROM = { is_in_faction_with = GER }
+					has_global_flag = sov_yes_pact
+					SOV = { exists = yes }
+				}
+				SOV = { transfer_state = 96 }
+				SOV = { transfer_state = 95 }
+				SOV = { transfer_state = 94 }
+				SOV = { transfer_state = 93 }
+				SOV = { transfer_state = 91 }
+				SOV = { transfer_state = 97 }
+				SOV = { transfer_state = 89 }
+				SOV = { transfer_state = 784 }
+				SOV = { country_event = germany.15 }
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+					FROM = { is_in_faction_with = GER }
+				}
+				USA = {
+					activate_decision = USA_arsenal_of_democracy_decision
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country={
+				add_ideas = research_35
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = USA
+							tag = ENG
+							tag = GER
+							tag = ITA
+							tag = SOV
+							tag = JAP
+						}
+					}
+					has_game_rule = {
+						rule = minor_agents
+						option = DISABLED
+					}
+				}
+				add_ideas = no_agents
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = USA
+							tag = ENG
+							tag = GER
+							tag = ITA
+							tag = SOV
+							tag = JAP
+						}
+					}
+				}
+				add_ideas = minor_funds_gain
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				create_intelligence_agency = yes
+			}
+		}	
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				add_dynamic_modifier = { modifier = academy_over_time }
+				add_dynamic_modifier = { modifier = training_time_balancer }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { has_country_flag = fuel_system_enabled }
+				add_to_array = { GLOBAL.fuel_system_manager = THIS.id }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			# Game Rules - No Asia - Brazil N Mexicope
+		# nuke
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = no_asia_bra_mex_status
+					option = MEX_BRA_REMOVED
+				}
+			}
+			# Mexicope
+			WST = {
+				annex_country = { target = MEX transfer_troops = no }
+			}
+			# Brazil
+			WST = {
+				annex_country = { target = BRA transfer_troops = no }
+			}
+		}
+		# ast annex
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = no_asia_bra_mex_status
+					option = MEX_BRA_ANNEXED_AST
+				}
+			}
+			# Mexicope
+			AST = {
+				MEX = {
+					every_unit_leader = {
+						set_nationality = AST
+					}
+				}
+				annex_country = { target = MEX transfer_troops = yes }
+				add_state_core = 484
+				add_state_core = 483
+				add_state_core = 482
+				add_state_core = 481
+				add_state_core = 479
+				add_state_core = 478
+				add_state_core = 485
+				add_state_core = 277
+				add_state_core = 477
+				add_state_core = 480
+				add_state_core = 476
+				add_state_core = 475
+				add_state_core = 474
+			}
+			# Brazil
+			AST = {
+				BRA = {
+					every_unit_leader = {
+						set_nationality = AST
+					}
+				}
+				annex_country = { target = BRA transfer_troops = yes }
+				add_state_core = 495
+				add_state_core = 497
+				add_state_core = 498
+				add_state_core = 505
+				add_state_core = 499
+				add_state_core = 504
+				add_state_core = 501
+				add_state_core = 500
+				add_state_core = 503
+				add_state_core = 502
+				add_state_core = 280
+				add_state_core = 496
+			}
+		}
+		}
+	}
+
+	#Commonwealth Debuff for the AFRICA
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = AFRICA_COMMONWEALTH_controls
+					}
+				}
+				FROM.FROM = {  
+						set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
+						clr_state_flag = AFRICA_COMMONWEALTH_controls
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = sotm_barb_ended
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = FIN
+								tag = GER
+								tag = HUN
+								tag = ITA
+								tag = ROM
+								tag = BUL
+								tag = SPR
+								tag = YUG
+								tag = VIC
+							}
+						}
+						AFRICA_COMMONWEALTH_AXIS_bases_level_down = yes
+					}
+				} else = {
+					add_to_variable = {
+						var = ITA.AFRICA_COMMONWEALTH_BASES_LEVEL
+						value = 1
+					}
+				}
+
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+							tag = VIC
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = FRA
+							tag = USA
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = NOT_AFRICA_COMMONWEALTH_controls
+					}
+				}
+				FROM.FROM = { 
+						set_state_flag = AFRICA_COMMONWEALTH_controls
+						clr_state_flag = NOT_AFRICA_COMMONWEALTH_controls
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = sotm_barb_ended
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = FIN
+								tag = GER
+								tag = HUN
+								tag = ITA
+								tag = ROM
+								tag = BUL
+								tag = SPR
+								tag = YUG
+								tag = VIC
+							}
+						}
+						AFRICA_COMMONWEALTH_AXIS_bases_level_up = yes
+					}
+				} else = {
+					subtract_from_variable = {
+						var = ITA.AFRICA_COMMONWEALTH_BASES_LEVEL
+						value = 1
+						}
+					}
+				}
+			}
+		}
+	
+	### UK VOL WT REMOVAL ###
+	on_weekly_SPR = {
+        effect ={
+			if ={
+				limit = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = ENABLED
+					}
+					has_global_flag = SPA_SCW_started_confirmed
+					NOT = {
+						has_global_flag = uk_spr_vols
+					}
+					NOT = {
+						has_global_flag = SCW_over
+					}
+					SPD = {
+						has_volunteers_amount_from = { tag = ENG count > 0 }
+					}
+				}
+				set_global_flag = uk_spr_vols
+				# add_threat = -1.2
+				ENG = {
+					add_named_threat = { threat = -1.2 name = "Removed World Tension from UK volunteers for balance reasons" }
+				}
+			}
+		}
+	} 
+
+	### MAIN CONTROLL ###
+	on_daily_VEN = {
+		effect = {
+			training_time_fixer = yes
+		}
+	}
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = dockyard_cg
+						option = ENABLED
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					dockyard_cg_calculation = yes
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = dockyard_cg
+						option = ENABLED
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					dockyard_cg_calculation = yes
+				}
+			}
+		}
+	}
+	on_weekly_VEN = {
+		effect={
+			# sealion_core_defense=yes
+			intel_sharing_fixer_effect = yes # hope it works
+			update_academy_weekly=yes
+			update_sov_major_city_status = yes
+			# set_variable={scaled_weekly_manpower=max_manpower_k}
+			# multiply_variable={scaled_weekly_manpower=0.001}
+			if = {
+				limit = {
+					date > 1941.1.1
+					ITA = { surrender_progress > 0.80 }
+					country_exists = ITA
+					NOT = {
+						has_global_flag = GER_ITA_spawn_ins_spawned
+					}
+				}
+				GER = {	
+					division_template = {
+						name = "SS-Panzergrenadier"
+						regiments = {
+							medium_armor = { x = 0 y = 0 }
+							medium_armor = { x = 0 y = 1 }
+							medium_armor = { x = 0 y = 2 }
+							medium_armor = { x = 0 y = 3 }
+					
+							medium_armor = { x = 1 y = 0 }
+							medium_armor = { x = 1 y = 1 }
+							medium_armor = { x = 1 y = 2 }
+					
+							mechanized = { x = 2 y = 0 }
+							mechanized = { x = 2 y = 1 }
+							mechanized = { x = 2 y = 2 }
+					
+							mechanized = { x = 3 y = 0 }
+							mechanized = { x = 3 y = 1 }
+							mechanized = { x = 3 y = 2 }
+							mechanized = { x = 3 y = 3 }
+					
+							medium_tank_destroyer_brigade = { x = 4 y = 0 }
+							medium_tank_destroyer_brigade = { x = 4 y = 1 }
+					
+						}
+						support = {
+							logistics_company = { x = 0 y = 0 }
+							logistics_company_mot = { x = 0 y = 1 }
+							mot_recon = { x = 0 y = 2 }
+							mot_anti_air_brigade = { x = 0 y = 3 }
+					
+							ss_hq_company_medium = { x = 1 y = 0 }
+							engineer = { x = 1 y = 1 }
+							signal_company = { x = 1 y = 2 }
+							maintenance_company = { x = 1 y = 3 }
+						}
+					}	
+					division_template = {
+						name = "Infanterie Division Italien"
+						division_names_group = GER_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+							anti_tank_brigade = { x = 4 y = 0 }
+							anti_tank_brigade = { x = 4 y = 1 }
+							anti_tank_brigade = { x = 4 y = 2 }
+							anti_tank_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							hq_company = { x = 0 y = 0 } 
+							engineer = { x = 0 y = 1 }   
+							recon = { x = 0 y = 2 }
+							logistics_company_mot  = { x = 0 y = 3 }
+							anti_air = { x = 1 y = 0 }
+						}
+					}
+ 					153 = {
+						for_loop_effect = {
+							end = 4
+							create_unit = {
+								division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
+								owner = GER
+							}
+						}
+ 						for_loop_effect = {
+ 							end = 20
+ 							create_unit = {
+ 								#prioritize_location =9135
+ 								division = "name = \"Infanterie Division Italien\" division_template = \"Infanterie Division Italien\" start_experience_factor = 0.2"
+ 								owner = GER
+ 							}
+ 						}
+					}	
+					set_global_flag = GER_ITA_spawn_ins_spawned
+				}
+			}
+			GER = {
+				if = {
+					limit = {
+						original_tag = GER
+						has_completed_focus = GER_plan_z
+						OR = {
+							date > 1939.1.1
+							has_tech = improved_ship_hull_heavy
+						}
+						NOT = { has_country_flag = GER_bismarck_event_fired }
+					}
+					country_event = germany.2004 
+					set_country_flag = GER_bismarck_event_fired
+				}
+			}
+			every_country = {
+				limit = {
+					has_war = yes
+					is_playable_country = yes
+				}
+				PREV = {
+					calculate_click_effect = yes
+				}
+			}
+		}
+	}
+
+	# on_weekly_SOV = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_equipment = {
+	# 					convoy > 799
+	# 				}
+	# 			}
+	# 			set_temp_variable = { convoy_count = 0 }
+	# 			while_loop_effect = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy > convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = 100 }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy < convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = -100 }
+	# 			}
+	# 			while_loop_effect = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy > convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = 10 }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy < convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = -10}
+	# 			}
+	# 			while_loop_effect = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy > convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = 1 }
+	# 			}
+	# 			add_to_temp_variable = { convoy_count = -800 }
+	# 			set_temp_variable = { convoy_count2 = convoy_count }
+	# 			multiply_temp_variable = { convoy_count2 = -1 }
+	# 			add_equipment_to_stockpile = {
+	# 				type = convoy_1
+	# 				amount = convoy_count2
+	# 			}
+	# 			ENG = {
+	# 				add_equipment_to_stockpile = {
+	# 					type = convoy
+	# 					amount = SOV.convoy_count
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	on_weekly_GER = {
+		effect = {
+			if = {
+				limit = {
+					has_equipment = {
+						convoy > 799
+					}
+				}
+				set_temp_variable = { convoy_count = 0 }
+				while_loop_effect = {
+					limit = {
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if = {
+					limit = {
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if = {
+					limit = {
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable = { convoy_count = -1000 }
+				set_temp_variable = { convoy_count2 = convoy_count }
+				multiply_temp_variable = { convoy_count2 = -1 }
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				JAP = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = GER.convoy_count
+					}
+				}
+			}
+		}
+	}
+
+	on_naval_invasion = {
+		effect = {
+			if = {
+				limit = {
+					OR = { 
+						british_coastline = yes
+					}
+					OR = {
+						has_global_flag = NO_ASIA
+						has_game_rule = {
+							rule = sealion_auto_tp
+							option = SEALION_DISABLED
+						}
+					}
+					# if = {
+					# 	limit = {
+					# 		NOT = {
+					# 			has_global_flag = NO_ASIA
+					# 		}
+					# 		NOT = {
+					# 			has_game_rule = {
+					# 				rule = sealion_auto_tp
+					# 				option = SEALION_DISABLED
+					# 			}
+					# 		}
+					# 	}
+					# 	has_game_rule = {
+					# 		rule = sealion_auto_tp
+					# 		option = SEALION_AT_CONDITIONS_MET
+					# 	}
+					# 	118 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}
+					# 	446 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}					
+					# }
+				}
+				teleport_armies = {
+					limit = { 
+						the_axis = yes  
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = ENG
+				} 	
+			}
+		}
+	}
+
+	on_paradrop = {
+		effect = {
+			if = {
+				limit = {
+					OR = { 
+						british_coastline = yes
+					}
+					OR = {
+						has_global_flag = NO_ASIA
+						has_game_rule = {
+							rule = sealion_auto_tp
+							option = SEALION_DISABLED
+						}
+					}
+					# if = {
+					# 	limit = {
+					# 		NOT = {
+					# 			has_global_flag = NO_ASIA
+					# 		}
+					# 		NOT = {
+					# 			has_game_rule = {
+					# 				rule = sealion_auto_tp
+					# 				option = SEALION_DISABLED
+					# 			}
+					# 		}
+					# 	}
+					# 	has_game_rule = {
+					# 		rule = sealion_auto_tp
+					# 		option = SEALION_AT_CONDITIONS_MET
+					# 	}
+					# 	118 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}
+					# 	446 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}					
+					# }
+				}
+				teleport_armies = {
+					limit = { 
+						the_axis = yes  
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = ENG
+				} 	
+			}
+		}
+	}
+
+	# FRENCH CANADA FUNNY ISLAND INVASION PREVENTION
+	on_naval_invasion = {
+		effect = {
+			if = {
+				limit = {
+					state = 730
+				}
+				teleport_armies = {
+					limit = { 
+						NOT = {
+							OR = {
+								original_tag = FRA
+								is_in_faction_with = FRA
+							}
+						}
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = FRA
+				} 	
+			}
+		}
+	}
+
+	on_paradrop = {
+		effect = {
+			if = {
+				limit = {
+					state = 730
+				}
+				teleport_armies = {
+					limit = { 
+						NOT = {
+							OR = {
+								original_tag = FRA
+								is_in_faction_with = FRA
+							}
+						}
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = FRA
+				} 	
+			}
+		}
+	}
+
+	on_daily_VEN = {
+		effect = {
+			for_each_scope_loop = {
+				array = GLOBAL.fuel_system_manager
+				set_variable = { GLOBAL.controllerscope = THIS.id }
+				for_each_scope_loop = {
+					array = THIS.faction_members_array
+					set_variable = { GLOBAL.currentscope = THIS.id }
+					if = {
+						limit = { check_variable = { send_fuel_enabled > 1 } }
+						set_variable = { fuelbedarf = min_fuel }
+						subtract_from_variable = { fuelbedarf = fuel_ratio }
+						set_variable = { fuelbedarfanteil = fuelbedarf }
+						multiply_variable = { fuelbedarf = max_fuel_k }
+						set_variable = { fuelbedarfvorzeichen = fuelbedarf }
+						multiply_variable = { fuelbedarfvorzeichen = -1 }
+						set_variable = { fuelbedarf_k = fuelbedarf }
+						set_variable = { fuelbedarfvorzeichen_k = fuelbedarfvorzeichen }
+						multiply_variable = { fuelbedarfvorzeichen = 1000 }
+						multiply_variable = { fuelbedarf = 1000 } 
+						set_variable = { PREV.fuelbedarf = PREV.min_fuel }
+						subtract_from_variable = { PREV.fuelbedarf = PREV.fuel_ratio }
+						set_variable = { PREV.fuelbedarfanteil = PREV.fuelbedarf }
+						multiply_variable = { PREV.fuelbedarf = PREV.max_fuel_k }
+						set_variable = { PREV.fuelbedarfvorzeichen = PREV.fuelbedarf }
+						multiply_variable = { PREV.fuelbedarfvorzeichen = -1 }
+						multiply_variable = { PREV.fuelbedarfvorzeichen = 1000 }
+						multiply_variable = { PREV.fuelbedarf = 1000 }
+						set_variable = { PREV.free_stockpile = PREV.max_fuel_k }
+						subtract_from_variable = { PREV.free_stockpile = PREV.fuel_k }
+						multiply_variable = { PREV.free_stockpile = 1000 }
+						set_variable = { PREV.free_stockpilenegativ = PREV.free_stockpile }
+						multiply_variable = { PREV.free_stockpilenegativ = -1 }
+						set_variable = { countryfuelplus5 = fuel_ratio }
+						add_to_variable = { countryfuelplus5 = 0.05 }
+						if = {
+							limit = {
+								check_variable = { PREV.fuelbedarf <0 }
+								check_variable = { min_fuel > countryfuelplus5 }
+							}
+							if = {
+								limit = {
+									check_variable = { fuelbedarf >0 }
+									check_variable = { PREV.fuelbedarfvorzeichen >fuelbedarf }
+								}
+								set_temp_variable = { PREV.mastergain = fuelbedarfvorzeichen }
+								set_temp_variable = { subjectgain = fuelbedarf }
+								PREV = {
+									add_fuel = mastergain
+								}
+								add_fuel = subjectgain
+							}
+							else = {
+								set_temp_variable = { PREV.mastergain = fuelbedarfvorzeichen }
+								set_temp_variable = { subjectgain = fuelbedarf }
+								PREV = {
+									add_fuel = mastergain
+								}
+								add_fuel = subjectgain
+								set_temp_variable = { PREV.test2 = PREV.fuelbedarfvorzeichen }
+							}
+						}
+						else_if={
+							limit = {
+								check_variable = { fuelbedarf <0 }
+								check_variable = { PREV.fuel_ratio < 0.95 }
+							}
+							if = {
+								limit = {
+									check_variable = { fuelbedarfvorzeichen < PREV.free_stockpile }
+								}
+								set_temp_variable = { PREV.mastergain = fuelbedarfvorzeichen }
+								set_temp_variable = { subjectgain = fuelbedarf }
+								PREV = {
+									add_fuel = mastergain
+								}
+								add_fuel = subjectgain
+							}
+							else_if = {
+								limit = {
+									check_variable = { PREV.free_stockpile >1000 }
+								}
+								set_temp_variable = { PREV.mastergain = PREV.free_stockpile }
+								set_temp_variable = { subjectgain = PREV.free_stockpilenegativ }
+								PREV = {
+									add_fuel = mastergain
+								}
+								add_fuel = subjectgain
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = { fuel_ratio < 0.95 }
+								check_variable = { PREV.fuel_ratio > 0.95 }
+							}
+							set_variable = {free_stockpile = max_fuel_k }
+							subtract_from_variable = { free_stockpile = fuel_k }
+							multiply_variable = { free_stockpile = 1000 }
+							set_variable = { free_stockpilenegativ = free_stockpile }
+							multiply_variable = { free_stockpilenegativ = -1 }
+							set_variable = { master_spare_fuel = PREV.max_fuel_k }
+							multiply_variable = { master_spare_fuel = 0.03 }
+							multiply_variable = { master_spare_fuel = 1000 }
+							set_variable = { master_spare_fuelnegativ = master_spare_fuel }
+							multiply_variable = { master_spare_fuelnegativ = -1 }
+							if = {
+								limit = {
+									check_variable = { free_stockpile < mastersparefuel }
+								}
+								set_temp_variable = { PREV.mastergain = free_stockpilenegativ }
+								set_temp_variable = { subjectgain = free_stockpile }
+							}
+							else = {
+								set_temp_variable = { PREV.mastergain = master_spare_fuelnegativ }
+								set_temp_variable = { subjectgain = master_spare_fuel }
+							}
+							PREV = {
+								add_fuel = mastergain
+							}
+							add_fuel = subjectgain
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = GLOBAL.fuel_countries
+				set_temp_variable = { currentfuel = fuel_ratio }
+				subtract_from_temp_variable = { currentfuel = 1 }
+				multiply_temp_variable = { currentfuel = 88 }
+				set_variable = { fuel_bar_fuel = currentfuel }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			GER = {
+				every_country = {
+					limit = {
+						NOT = { tag = GER }
+						OR = {
+							is_in_faction_with = GER
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = SPR
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = FIN
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = ITA
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = VIC
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = HUN
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = ROM
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = BUL
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = YUG
+							}
+						}
+						NOT = {
+							is_in_array = {
+								GER.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { GER.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = GER.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop={
+						array = GER.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = GER.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
+			}
+			ENG = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ENG
+						}
+						OR = {
+							is_in_faction_with = ENG
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = USA 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = BRA 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = MEX 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = HOL 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = INS 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = FRA 
+							}
+						}
+						NOT = {
+							is_in_array = {
+								ENG.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { ENG.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = ENG.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop = {
+						array = ENG.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = ENG.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
+			}
+			SOV = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = SOV
+						}
+						OR = {
+							is_in_faction_with = SOV
+							AND = {
+								SOV = {
+									tag = GER
+								}
+								tag = SPR 
+							}
+						}
+						NOT = {
+							is_in_array = {
+								SOV.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { SOV.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = SOV.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop = {
+						array = SOV.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = SOV.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
+			}
+			JAP = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = JAP
+						}
+						OR = {
+							is_in_faction_with = JAP
+							AND = {
+								JAP = {
+									tag = GER
+								}
+								tag = SPR 
+							}
+						}
+						NOT = {
+							is_in_array = {
+								JAP.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { JAP.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = JAP.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop = {
+						array = JAP.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = JAP.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
+			}
+		}
+	}
+}

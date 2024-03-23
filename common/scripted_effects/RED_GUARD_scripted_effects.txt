@@ -1,0 +1,267 @@
+# RG_armored_division_medium = {
+# 	set_country_flag = RG_armored_division_medium
+# 	division_template = {
+# 			name = "Red Guards Tanks"
+# 			priority = 2
+# 			division_names_group = SOV_GTC_01
+# 			is_locked = yes
+# 			force_allow_recruiting = yes
+# 			template_counter = 70
+# 		regiments = {
+# 			medium_armor = { x = 0 y = 0 }
+# 			medium_armor = { x = 0 y = 1 }
+# 			medium_armor = { x = 0 y = 2 }
+# 			medium_armor = { x = 0 y = 3 }
+
+# 			medium_armor = { x = 1 y = 0 }
+# 			medium_armor = { x = 1 y = 1 }
+# 			medium_armor = { x = 1 y = 2 }
+
+# 			mechanized = { x = 2 y = 0 }
+# 			mechanized = { x = 2 y = 1 }
+# 			mechanized = { x = 2 y = 2 }
+
+# 			mechanized = { x = 3 y = 0 }
+# 			mechanized = { x = 3 y = 1 }
+# 			mechanized = { x = 3 y = 2 }
+# 			mechanized = { x = 3 y = 3 }
+
+# 			medium_tank_destroyer_brigade = { x = 4 y = 0 }
+# 			medium_tank_destroyer_brigade = { x = 4 y = 1 }
+
+# 		}
+# 		support = {
+# 			logistics_company = { x = 0 y = 0 }
+# 			logistics_company_mot = { x = 0 y = 1 }
+# 			light_tank_recon  = { x = 0 y = 2 }
+# 			light_sp_anti_air_brigade  = { x = 0 y = 3 }
+
+# 			rg_hq_company_medium = { x = 1 y = 0 }
+# 			engineer = { x = 1 y = 1 }
+# 			signal_company = { x = 1 y = 2 }
+# 			maintenance_company = { x = 1 y = 3 }
+# 		}
+# 		division_cap = 0 
+# 	}
+# }
+
+# RG_armored_division_light = {
+# 	set_country_flag = RG_armored_division_light
+# 	division_template = {
+# 			name = "Red Guards Tanks (Light)"
+# 			priority = 2
+# 			division_names_group = SOV_GTC_01
+# 			is_locked = yes
+# 			force_allow_recruiting = yes
+# 			template_counter = 70
+# 		regiments = {
+# 			light_armor = { x = 0 y = 0 }
+# 			light_armor = { x = 0 y = 1 }
+# 			light_armor = { x = 0 y = 2 }
+# 			light_armor = { x = 0 y = 3 }
+
+# 			light_armor = { x = 1 y = 0 }
+# 			light_armor = { x = 1 y = 1 }
+# 			light_armor = { x = 1 y = 2 }
+
+# 			mechanized = { x = 2 y = 0 }
+# 			mechanized = { x = 2 y = 1 }
+# 			mechanized = { x = 2 y = 2 }
+
+# 			mechanized = { x = 3 y = 0 }
+# 			mechanized = { x = 3 y = 1 }
+# 			mechanized = { x = 3 y = 2 }
+# 			mechanized = { x = 3 y = 3 }
+
+# 			light_tank_destroyer_brigade = { x = 4 y = 0 }
+# 			light_tank_destroyer_brigade = { x = 4 y = 1 }
+
+# 		}
+# 		support = {
+# 			logistics_company = { x = 0 y = 0 }
+# 			logistics_company_mot = { x = 0 y = 1 }
+# 			light_tank_recon  = { x = 0 y = 2 }
+# 			light_sp_anti_air_brigade  = { x = 0 y = 3 }
+
+# 			rg_hq_company_light = { x = 1 y = 0 }
+# 			engineer = { x = 1 y = 1 }
+# 			signal_company = { x = 1 y = 2 }
+# 			maintenance_company = { x = 1 y = 3 }
+# 		}
+# 		division_cap = 0 
+# 	}
+# }
+
+# RG_armored_division_heavy = {
+# 	set_country_flag = RG_armored_division_heavy
+# 	division_template = {
+# 			name = "Red Guards Tanks (Heavy)"
+# 			priority = 2
+# 			division_names_group = SOV_GTC_01
+# 			is_locked = yes
+# 			force_allow_recruiting = yes
+# 			template_counter = 70
+# 		regiments = {
+# 			heavy_armor = { x = 0 y = 0 }
+# 			heavy_armor = { x = 0 y = 1 }
+# 			heavy_armor = { x = 0 y = 2 }
+# 			heavy_armor = { x = 0 y = 3 }
+
+# 			heavy_armor = { x = 1 y = 0 }
+# 			heavy_armor = { x = 1 y = 1 }
+# 			heavy_armor = { x = 1 y = 2 }
+# 			heavy_armor = { x = 1 y = 3 }
+
+# 			mechanized = { x = 2 y = 0 }
+# 			mechanized = { x = 2 y = 1 }
+# 			mechanized = { x = 2 y = 2 }
+
+# 			mechanized = { x = 3 y = 0 }
+# 			mechanized = { x = 3 y = 1 }
+# 			mechanized = { x = 3 y = 2 }
+# 			mechanized = { x = 3 y = 3 }
+
+# 			# heavy_tank_destroyer_brigade = { x = 4 y = 0 }
+# 			# heavy_tank_destroyer_brigade = { x = 4 y = 1 }
+
+# 		}
+# 		support = {
+# 			logistics_company = { x = 0 y = 0 }
+# 			logistics_company_mot = { x = 0 y = 1 }
+# 			light_tank_recon  = { x = 0 y = 2 }
+# 			light_sp_anti_air_brigade  = { x = 0 y = 3 }
+
+# 			rg_hq_company_heavy = { x = 1 y = 0 }
+# 			engineer = { x = 1 y = 1 }
+# 			signal_company = { x = 1 y = 2 }
+# 			maintenance_company = { x = 1 y = 3 }
+# 		}
+# 		division_cap = 0 
+# 	}
+# }
+
+# SOV_increase_RG_cap_medium = { 
+# 	custom_effect_tooltip = SOV_RG_div_cap_2_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }
+
+# SOV_increase_RG_cap_medium_double = { 
+# 	custom_effect_tooltip = SOV_RG_div_cap_4_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase_medium_double }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }
+
+# SOV_increase_RG_cap_light = { 
+# 	custom_effect_tooltip = SOV_RG_div_cap_2_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks (Light)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }
+
+# SOV_increase_RG_cap_light_double = { 
+# 	custom_effect_tooltip = SOV_RG_div_cap_6_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase_light_double }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks (Light)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }
+
+
+# SOV_increase_RG_cap_heavy = { 
+# 	custom_effect_tooltip = SOV_RG_div_cap_2_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks (Heavy)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }
+
+# SOV_increase_RG_cap_heavy_double = { 
+# 	custom_effect_tooltip = SOV_RG_div_cap_2_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase_heavy_double }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks (Heavy)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }
+
+# SOV_swap_RG_medium_light = {
+# 	custom_effect_tooltip = SOV_red_guard_template_light_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase }
+# 		set_country_flag = RG_armored_division_light
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards (Light)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 		delete_unit_template_and_units = {
+# 			division_template = "Red Guards Tanks"
+# 			disband = yes #will refund equipment and manpower
+# 		}
+# 		clr_country_flag = RG_armored_division_medium
+# 	}
+# }
+
+# SOV_swap_RG_medium_heavy = {
+# 	custom_effect_tooltip = SOV_red_guard_template_heavy_tt
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_decrease }
+# 		set_country_flag = RG_armored_division_heavy
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards (Heavy)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 		delete_unit_template_and_units = {
+# 			division_template = "Red Guards Tanks"
+# 			disband = yes #will refund equipment and manpower
+# 		}
+# 		clr_country_flag = RG_armored_division_medium
+# 		# Remove any Medium Tanks
+# 	}	
+# }
+
+# # This exists because for some reason it will say 0/0 unless you use a seperate scripted effect to refresh the count
+# # No I don't know why that is
+# SOV_refresh_RG_cap_light = {
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = 0 }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks (Light)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }
+
+# # This exists because for some reason it will say 0/0 unless you use a seperate scripted effect to refresh the count
+# # No I don't know why that is
+# SOV_refresh_RG_cap_heavy = {
+# 	hidden_effect = {
+# 		add_to_variable = { SOV_RG_division_cap = 0 }
+# 		set_division_template_cap = { 
+# 			division_template = "Red Guards Tanks (Heavy)" 
+# 			division_cap = SOV_RG_division_cap
+# 		}
+# 	}
+# }

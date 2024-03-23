@@ -1,0 +1,655 @@
+characters = {
+	VIC_philippe_petain={ #fascist Leader
+		name = "Philippe Pétain"
+		portraits={
+			civilian={
+				large="GFX_portrait_vic_philippe_petain"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	VIC_fascist_demagogue={ 
+		name = "Jules Bugeaud"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_western_european_2d"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = vic_fascista_demogoga
+			traits = { fascist_demagogue }
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	VIC_communist_revolutionary={ 
+		name = "Jules Bugeaud"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_western_european_2d"
+			}
+		}
+		advisor = {
+			idea_token = vic_commie_revolut
+			slot = political_advisor
+			traits = { communist_revolutionary }
+			available = {
+				always = no				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	VIC_democratic_reformer={ 
+		name = "Jules Bugeaud"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_western_european_2d"
+			}
+		}
+		advisor = {
+			idea_token = dem_reformer
+			slot = political_advisor
+			traits = { democratic_reformer }
+			available = {
+				always = no				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	VIC_paramilitary_leader={ 
+		name = "Paul de Langle de Cary"
+		portraits={
+			civilian={
+				small="GFX_idea_viktor_schutze"
+			}
+		}
+		advisor = {
+			idea_token = vic_paramil_leader
+			slot = political_advisor
+			traits = { paramilitary_leader }
+		}
+	}
+
+	VIC_reorganiser={ 
+		name = "Charles Courbet"
+		portraits={
+			civilian={
+				small="GFX_idea_viktor_schutze"
+			}
+		}
+		advisor = {
+			idea_token = vic_reorganizer
+			slot = political_advisor
+			traits = { reorganiser }
+		}
+	}
+
+	VIC_silent_workhorse={ 
+		name = "Hugo Canrobert"
+		portraits={
+			civilian={
+				small="GFX_idea_heisenberg"
+			}
+		}
+		advisor = {
+			idea_token = vic_silent_workhor
+			slot = political_advisor
+			traits = { silent_workhorse }
+		}
+	}
+
+	VIC_prince_of_terror={ 
+		name = "Matthieu de Saint Arnaud"
+		portraits={
+			civilian={
+				small="GFX_idea_viktor_schutze"
+			}
+		}
+		advisor = {
+			idea_token = vichy_prince_of_terror
+			slot = political_advisor
+			traits = { prince_of_terror }
+		}
+	}
+
+	VIC_popular_figurehead={ 
+		name = "Antoine Forey"
+		portraits={
+			civilian={
+				small="GFX_idea_martial_valin"
+			}
+		}
+		advisor = {
+			idea_token = vic_populare_figureheado
+			slot = political_advisor
+			traits = { popular_figurehead }
+		}
+	}
+
+	VIC_artillery_advisor={ 
+		name = "Nicolas Dubois"
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+		advisor = {
+			idea_token = arty_advisor_vichy
+			slot = high_command
+			traits = { army_artillery_1 }
+		}
+	}
+
+	VIC_fleet_logistics={ 
+		name = "Leopold Dubail"
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+		advisor = {
+			idea_token = fleet_logi_advisor_vic
+			slot = high_command
+			traits = { navy_fleet_logistics_1 }
+		}
+	}
+
+	VIC_air_air_combat_trainer={ 
+		name = "Adolphe Lebouef"
+		portraits = { 
+			army = { small = GFX_idea_dudley_pound }
+		}
+		advisor = {
+			idea_token = air_air_combat_training_advisr_vic
+			slot = high_command
+			traits = { air_air_combat_training_2 }
+			cost = 100
+		}
+	}
+
+	VIC_air_close_air_supporter={ 
+		name = "Lucien Joffre"
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+		advisor = {
+			idea_token = air_close_air_support_advsr_vic
+			slot = air_chief
+			traits = { air_close_air_support_2 }
+			cost = 100
+		}
+	}
+
+	VIC_air_chief_all_weatherer={ 
+		name = "Joseph Harispe"
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+		advisor = {
+			idea_token = vic_all_weather_advisor
+			slot = air_chief
+			traits = { air_chief_all_weather_2 }
+			cost = 100
+		}
+	}
+
+	VIC_military_theorist={ 
+		name = "Etteiene Ney d'Elchingen"
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+		advisor = {
+			idea_token = vic_mil_theo1
+			slot = theorist
+			traits = { military_theorist }
+		}
+	}
+
+	VIC_naval_theorist={ 
+		name = "Julien Billot"
+		portraits = { 
+			army = { small = GFX_idea_heisenberg }
+		}
+		advisor = {
+			idea_token = vic_nav_theo1
+			slot = theorist
+			traits = { naval_theorist }
+		}
+	}
+
+	VIC_air_warfare_theorist={ 
+		name = "Hubert Bazaine"
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+		advisor = {
+			idea_token = vic_air_theo_1
+			slot = theorist
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	# weird funny high command
+	VIC_francois_darlan={
+		name=FRA_francois_darlan
+		portraits={
+			army={
+				large=GFX_portrait_FRA_francois_darlan
+				small="GFX_idea_francois_darlan"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = francois_darlan
+			allowed = {
+				original_tag = VIC
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		navy_leader={
+			traits={ bold naval_lineage superior_tactician }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+
+	VIC_rene_emile_godfroy={
+		name=FRA_rene_emile_godfroy
+		portraits={
+			army={
+				large=GFX_portrait_FRA_rene_emile_godfroy
+				small=GFX_portrait_FRA_rene_emile_godfroy_small
+			}
+			army={
+				small="GFX_idea_rene_emile_godfroy"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = rene_emile_godfroy
+			ledger = navy
+			allowed = {
+				original_tag = VIC
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader={
+			traits={ old_guard_navy gentlemanly battleship_adherent spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+	VIC_fra_charles_huntziger={
+		name=FRA_charles_huntziger
+		portraits={
+			army={
+				small="GFX_idea_charles_huntziger"
+			}
+			army={
+				large=GFX_portrait_FRA_charles_huntziger
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = charles_huntziger
+			ledger = army
+			allowed = {
+				original_tag = VIC
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ old_guard infantry_officer infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	VIC_fra_maxime_weygand={
+		name=FRA_maxime_weygand
+		portraits={
+			army={
+				small="GFX_idea_maxime_weygand"
+			}
+			army={
+				large=GFX_portrait_FRA_maxime_weygand
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = maxime_weygand
+			allowed = {
+				original_tag = VIC
+			}
+			available = {
+				has_completed_focus = FRA_defensive_focus
+			}
+			cost = 100.000
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	VIC_alphonse_georges={
+		name=FRA_alphonse_georges
+		portraits={
+			army={
+				small="GFX_idea_alphonse_georges"
+			}
+			army={
+				large=GFX_portrait_FRA_alphonse_georges
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = alphonse_georges
+			allowed = {
+				original_tag = VIC
+			}
+			traits = {
+				army_chief_maneuver_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard trait_cautious defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	VIC_maurice_gamelin={
+		name=FRA_maurice_gamelin
+		portraits={
+			army={
+				small="GFX_idea_maurice_gamelin"
+			}
+			army={
+				large=GFX_portrait_FRA_maurice_gamelin
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = maurice_gamelin
+			allowed = {
+				original_tag = VIC
+			}
+			available = {
+				has_completed_focus = FRA_aggressive_focus
+			}
+			cost = 100.000
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	
+	}
+
+	VIC_maxime_giroux={ 
+		name="Maxime Giroux"
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = courtney_hodges
+		# 	ledger = army 
+		# 	allowed = {
+		# 		original_tag  = USA
+		# 	}
+		# 	traits  = {
+		# 		army_commando_2 
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do  = {
+		# 		factor  = 1.000
+		# 	}
+		# }
+		# portraits={
+		# 	army={
+		# 		small="GFX_idea_courtney_hodges"
+		# 	}
+		# 	army={
+		# 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+		# 	}
+		# }
+		corps_commander={
+			traits={ armor_officer inflexible_strategist old_guard urban_assault_specialist ambusher }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	VIC_arnaude_archambault={
+		name="Arnaude Archambault"
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = courtney_hodges
+		# 	ledger = army 
+		# 	allowed = {
+		# 		original_tag  = USA
+		# 	}
+		# 	traits  = {
+		# 		army_commando_2 
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do  = {
+		# 		factor  = 1.000
+		# 	}
+		# }
+		# portraits={
+		# 	army={
+		# 		small="GFX_idea_courtney_hodges"
+		# 	}
+		# 	army={
+		# 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+		# 	}
+		# }
+		corps_commander={
+			traits={ armor_officer winter_specialist ranger fortress_buster }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
+	VIC_serge_beauchene={
+		name="Serge Beauchêne"
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = courtney_hodges
+		# 	ledger = army 
+		# 	allowed = {
+		# 		original_tag  = USA
+		# 	}
+		# 	traits  = {
+		# 		army_commando_2 
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do  = {
+		# 		factor  = 1.000
+		# 	}
+		# }
+		# portraits={
+		# 	army={
+		# 		small="GFX_idea_courtney_hodges"
+		# 	}
+		# 	army={
+		# 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+		# 	}
+		# }
+		corps_commander={
+			traits={ armor_officer desert_fox brilliant_strategist trickster }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	VIC_elodie_deforest={
+		name="Élodie Deforest"
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = courtney_hodges
+		# 	ledger = army 
+		# 	allowed = {
+		# 		original_tag  = USA
+		# 	}
+		# 	traits  = {
+		# 		army_commando_2 
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do  = {
+		# 		factor  = 1.000
+		# 	}
+		# }
+		# portraits={
+		# 	army={
+		# 		small="GFX_idea_courtney_hodges"
+		# 	}
+		# 	army={
+		# 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+		# 	}
+		# }
+		corps_commander={
+			traits={ infantry_leader trickster old_guard }
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	VIC_fernand_clement={
+		name="Fernand Clément"
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = courtney_hodges
+		# 	ledger = army 
+		# 	allowed = {
+		# 		original_tag  = USA
+		# 	}
+		# 	traits  = {
+		# 		army_commando_2 
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do  = {
+		# 		factor  = 1.000
+		# 	}
+		# }
+		# portraits={
+		# 	army={
+		# 		small="GFX_idea_courtney_hodges"
+		# 	}
+		# 	army={
+		# 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+		# 	}
+		# }
+		corps_commander={
+			traits={ infantry_leader war_hero inflexible_strategist old_guard cautious organizer }
+			skill=4
+			attack_skill=7
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+}

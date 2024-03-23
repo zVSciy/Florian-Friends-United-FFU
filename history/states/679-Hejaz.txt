@@ -1,0 +1,30 @@
+state={
+	id=679
+	name="STATE_679"
+
+	history={
+		#owner = SAU
+		owner = WST
+		add_core_of = WST
+		# victory_points = {
+		# 	12758 1 
+		# }
+		# victory_points = {
+		# 	12883 1 
+		# }
+		buildings = {
+			infrastructure = 0 #3
+		}
+		#add_core_of = SAU
+
+	}
+
+	provinces={
+		2033 4981 5099 7934 10748 10835 12758 
+	}
+	manpower=1 #511000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	impassable = yes
+	local_supplies=0.000
+}

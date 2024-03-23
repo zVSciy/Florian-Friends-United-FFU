@@ -1,0 +1,553 @@
+sub_units = {
+	engineer = {
+		abbreviation = "ENG"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 300
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		own_equipment_fuel_consumption_mult = 0.0
+		supply_consumption = 0.04
+		
+		defense = -0.1
+		soft_attack = -0.5
+		hard_attack = -0.5
+		
+		entrenchment  = 4
+
+		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.1
+			add = yes
+		}
+
+		essential = {
+			support_equipment
+		}
+		
+		maximum_speed = 2.0
+
+		need = {
+			infantry_equipment = 10
+			support_equipment = 30
+			squad_equipment = 5
+		}
+
+		can_be_parachuted = yes
+
+		forest = {
+			defence = 0.15
+			movement = 0.05
+		}
+
+		hills = {
+			defence = 0.1
+		}
+
+		jungle = {
+			defence = 0.15
+		}
+
+		marsh = {
+			defence = 0.15
+			movement = 0.2
+		}
+
+		fort = {
+			attack = 0.15
+		}
+
+		river = {
+			defence = 0.15
+			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.20
+		}
+		
+		urban = {
+			attack = 0.1
+			defence = 0.15
+		}
+		
+		dense_urban = {
+			attack = 0.2
+			defence = 0.25
+		}
+		
+		town = {
+			attack = 0.05
+			defence = 0.1
+		}
+		
+		same_support_type = engineer
+	}
+
+	pioneer_support = {
+		abbreviation = "PIO"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+			category_marines
+		}
+
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 300
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.02
+		
+		entrenchment = 4
+		
+		battalion_mult = {
+			category = category_marines
+			breakthrough = 0.1
+			#add = yes
+		}
+
+		
+		entrenchment = 2.5
+		defense = 0.1
+		breakthrough = 0.5
+
+		# Support nerfs to combat abilities
+		soft_attack = -0.5
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			infantry_equipment = 10
+			support_equipment = 30
+			squad_equipment = 5
+			sf_equipment = 20
+		}
+
+		can_be_parachuted = yes
+		
+		forest = {
+			defence = 0.15
+			movement = 0.05
+		}
+
+		hills = {
+			defence = 0.1
+		}
+
+		jungle = {
+			defence = 0.15
+		}
+
+		marsh = {
+			attack = 0.10
+			defence = 0.15
+			movement = 0.2
+		}
+
+		fort = {
+			attack = 0.10
+			defence = 0.1
+		}
+
+		river = {
+			attack = 0.15
+			defence = 0.15
+			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.20
+		}
+		
+		urban = {
+			attack = 0.1
+			defence = 0.15
+		}
+		
+		dense_urban = {
+			attack = 0.2
+			defence = 0.25
+		}
+		
+		town = {
+			attack = 0.05
+			defence = 0.1
+		}
+		
+		same_support_type = engineer
+		
+	}
+	
+	# assault_engineer = {
+	# 	sprite = infantry
+	# 	map_icon_category = infantry
+	# 	priority = 0
+	# 	ai_priority = 0
+	# 	active = no
+
+	# 	type = {
+	# 		infantry
+	# 		support
+	# 	}
+		
+	# 	group = support
+		
+	# 	categories = {
+	# 		category_front_line
+	# 		category_support_battalions
+	# 		category_army
+	# 	}
+
+	# 	combat_width = 0
+	
+	# 	#Size Definitions
+	# 	max_strength = 2
+	# 	max_organisation = 20
+	# 	default_morale = 0.3
+	# 	manpower = 400
+	# 	training_time = 120
+
+	# 	#Misc Abilities
+	# 	weight = 0.1
+	# 	own_equipment_fuel_consumption_mult = 0.0
+	# 	supply_consumption = 0.04
+		
+	# 	defense = -0.1
+	# 	soft_attack = -0.5
+	# 	hard_attack = -0.5
+		
+	# 	entrenchment  = 6
+
+	# 	battalion_mult = {
+	# 		category = category_light_infantry
+	# 		entrenchment = 0.10
+	# 		add = yes
+	# 	}
+
+	# 	essential = {
+	# 		support_equipment
+	# 	}
+		
+	# 	maximum_speed = 2.0
+
+	# 	need = {
+	# 		infantry_equipment = 25
+	# 		support_equipment = 40
+	# 		squad_equipment = 10
+	# 	}
+
+	# 	can_be_parachuted = yes
+
+	# 	forest = {
+	# 		defence = 0.15
+	# 		movement = 0.05
+	# 	}
+
+	# 	hills = {
+	# 		defence = 0.1
+	# 	}
+
+	# 	jungle = {
+	# 		defence = 0.15
+	# 	}
+
+	# 	marsh = {
+	# 		defence = 0.15
+	# 		movement = 0.2
+	# 	}
+
+	# 	fort = {
+	# 		attack = 0.15
+	# 	}
+
+	# 	river = {
+	# 		attack = 0.30
+	# 		defence = 0.15
+	# 		movement = 0.35
+	# 	}
+
+	# 	amphibious = {
+	# 		attack = 0.25
+	# 	}
+		
+	# 	urban = {
+	# 		attack = 0.1
+	# 		defence = 0.15
+	# 	}
+		
+	# 	dense_urban = {
+	# 		attack = 0.2
+	# 		defence = 0.25
+	# 	}
+		
+	# 	town = {
+	# 		attack = 0.05
+	# 		defence = 0.1
+	# 	}
+		
+	# 	same_support_type = engineer
+	# }
+
+	mech_engineers = {
+		sprite = mechanized
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			armor
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 300
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.04
+		
+		defense = -0.1
+		soft_attack = -0.5
+		hard_attack = -0.5
+		
+		entrenchment = 4
+
+		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.1
+			add = yes
+		}
+
+		fuel_capacity = -1.00
+		own_equipment_fuel_consumption_mult = 0.00 # no fuel use
+
+		essential = {
+			mechanized_utility_equipment
+		}
+		
+		maximum_speed = 2.0
+
+		need = {
+			mechanized_utility_equipment = 24
+			infantry_equipment = 10
+			support_equipment = 30
+			squad_equipment = 5
+		}
+
+		can_be_parachuted = yes
+
+		forest = {
+			defence = 0.175
+			movement = 0.01
+		}
+		hills = {
+			defence = 0.125
+		}
+		jungle = {
+			defence = 0.175
+		}
+		marsh = {
+			defence = 0.175
+			movement = 0.15
+		}
+		fort = {
+			attack = 0.15
+		}
+		river = {
+			defence = 0.15
+			movement = 0.25
+		}
+		amphibious = {
+			attack = 0.25
+		}
+		urban = {
+			attack = 0.125
+			defence = 0.175
+		}
+		dense_urban = {
+			attack = 0.225
+			defence = 0.275
+		}
+		town = {
+			attack = 0.075
+			defence = 0.125
+		}
+		
+		same_support_type = engineer
+	}
+
+	# mech_assault_engineers = {
+	# 	sprite = mechanized
+	# 	map_icon_category = armored
+	# 	priority = 0
+	# 	ai_priority = 0
+	# 	active = no
+
+	# 	type = {
+	# 		armor
+	# 		support
+	# 	}
+		
+	# 	group = support
+		
+	# 	categories = {
+	# 		category_front_line
+	# 		category_support_battalions
+	# 		category_army
+	# 	}
+
+	# 	combat_width = 0
+	
+	# 	#Size Definitions
+	# 	max_strength = 2
+	# 	max_organisation = 20
+	# 	default_morale = 0.3
+	# 	manpower = 400
+	# 	training_time = 120
+
+	# 	#Misc Abilities
+	# 	weight = 0.1
+	# 	supply_consumption = 0.04
+		
+	# 	defense = -0.1
+	# 	soft_attack = -0.5
+	# 	hard_attack = -0.5
+		
+	# 	entrenchment = 6
+
+	# 	battalion_mult = {
+	# 		category = category_light_infantry
+	# 		entrenchment = 0.1
+	# 		add = yes
+	# 	}
+
+	# 	fuel_capacity = -1.00
+	# 	own_equipment_fuel_consumption_mult = 0.00 # no fuel use
+
+	# 	essential = {
+	# 		mechanized_utility_equipment
+	# 	}
+		
+	# 	maximum_speed = 2.0
+
+	# 	need = {
+	# 		mechanized_utility_equipment = 24
+	# 		infantry_equipment = 25
+	# 		support_equipment = 40
+	# 		squad_equipment = 10
+	# 	}
+
+	# 	can_be_parachuted = yes
+
+	# 	river = {
+	# 		attack = 0.30
+	# 		defence = 0.15
+	# 		movement = 0.35
+	# 	}
+	# 	forest = {
+	# 		defence = 0.175
+	# 		movement = 0.01
+	# 	}
+	# 	hills = {
+	# 		defence = 0.125
+	# 	}
+	# 	jungle = {
+	# 		defence = 0.175
+	# 	}
+	# 	marsh = {
+	# 		defence = 0.175
+	# 		movement = 0.15
+	# 	}
+	# 	fort = {
+	# 		attack = 0.15
+	# 	}
+	# 	river = {
+	# 		attack = 0.30
+	# 		defence = 0.15
+	# 		movement = 0.35
+	# 	}
+	# 	amphibious = {
+	# 		attack = 0.25
+	# 	}
+	# 	urban = {
+	# 		attack = 0.125
+	# 		defence = 0.175
+	# 	}	
+	# 	dense_urban = {
+	# 		attack = 0.225
+	# 		defence = 0.275
+	# 	}
+	# 	town = {
+	# 		attack = 0.075
+	# 		defence = 0.125
+	# 	}
+		
+	# 	same_support_type = engineer
+	# }
+}

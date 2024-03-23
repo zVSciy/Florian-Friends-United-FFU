@@ -1,0 +1,37 @@
+state= {
+	id=183
+	name="STATE_183"
+	manpower = 347959
+	
+	state_category = rural
+	resources={
+		chromium=50 # was: 4
+	}
+
+	history=
+	{
+		set_state_flag = ENG_controls_stiff_upper_lip
+		set_state_flag = ENG_controls
+		owner = ENG
+		#add_core_of = CYP
+		victory_points = {
+			11984 5
+		}
+		victory_points = {
+			7193 3
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			7193 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = WST
+		set_state_flag = AFRICA_COMMONWEALTH_controls
+
+	}
+	provinces= { 7193 11984 }
+
+	local_supplies=0.0 
+}

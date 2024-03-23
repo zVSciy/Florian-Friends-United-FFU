@@ -1,0 +1,36 @@
+Mongolia_Historical = {
+    name = "MON historical plan"
+    enable = {
+        original_tag = MON
+    }
+
+	ai_national_focuses = {
+        MON_industrial_development
+        MON_forced_urbanisation
+        # MON_soviet_investments
+        MON_soviet_model
+        MON_local_arms_production
+        MON_industrialised_nation
+        MON_collectivisation
+        MON_buddhist_compromise
+        MON_religious_taxations
+        MON_remove_religious_figureheads
+        MON_cooperation_with_buddhists
+        MON_government_reforms
+        MON_society_reforms
+        MON_new_constitution
+        MON_invite_soviet_scientists
+        MON_industrial_expansion
+        MON_war_industry
+        MON_unite_steppes
+        MON_soviet_subsidies
+        MON_paving_the_road
+        MON_mobilise_the_workers
+        #AI does whatever, army tree
+	}
+
+    ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+}

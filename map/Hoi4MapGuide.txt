@@ -1,0 +1,228 @@
+Process to update the map from scratch (Note, this isn't fully complete, Packer should finish this later.):
+
+1) Copy over all of the history/state files from Vanilla into your test mod, as well as the map folder
+
+2) Go through and remove the cores from all of the states that don't need them. Namely, if there are small countries with cores that will never be released (such as Belarus for example)
+	a) Americas
+		i) Central/South America can be removed
+		ii) Some states may have cores on Brazil or Venezuela, and Panama has a core on the canal
+		iii) Switch it so Mexico has a core on Honduras instead of Belize
+		iv) Remove Cuba, Santo Domingo, and Haiti
+
+	b) Africa
+		i) Give Afar to Ethiopia
+		ii) Give Liberia to the UK
+		iii) Remove the French, Brittish, and Italian ownership and cores in the Sahara Desert
+		iv) Most African States have who has it as a core changes in order to consolidate tags. 
+			1) Everything Portugese and Belgian goes to Zimbabwe
+			2) Everything french goes to Cote-Norde
+			3) Brittish Somaliland goes to Oman
+			4) West Africa UK goes to Ghana (except Gambia)
+			5) Everything belonging to the UK South of Sudan goes to Zimbabwe
+
+	c) Middle East
+		i) Add Yemen and Oman to the UK (Put in oman as the tag for the non cores)
+		ii) Remove Saudia Arabia
+		iii) Remove Afghanistan
+		iv) Give Hatay from France to Turkey
+		v) Remove extra cores, consolidating under Egypt and Syria
+			1) Remove all Kurdistan, Palestine, Jordan and Isreal Cores
+
+	d) Asia
+		i) Remove Tibet
+		ii) Have Mongolia east Sinkiang and Tanu Tuva, using Sinkiang cores for the resistance
+		iii) India east Nepal and Bhutan
+		iv) Manchukuo should eat Menguko, remove the PRC and MEN cores
+		v) China should eat the rest of china. Remove all cores of the warlord and PRC cores
+		vi) Consolidate Indochina cores on Vietnam
+
+	e) Europe
+		i) All Soviet States should have no other cores than themselves
+		ii) Lots of Ukraine cores to be removed from neighborhing nations
+		iii) Remove fake german states in/around germany
+		iv) Remove Italian cores for non italian stuff
+		v) Remove many cores in the Balkans. Nothing should have cores in Yugo but Yugo
+		vi) Remove Non-French cores in French land
+		vii)Remove cores in the Brittish Isles
+	f) at this point you should be able to launch and run the game without issue, with only some minor warnings in the file. Make sure to save here. At no point should doing any of this cause the game to claim there are map errors. You can cross reference with the previous game version to see if it is correct.
+	
+3) Start adding in the simple state changes
+	A) Go to 169-sevilla and 118-gibralter
+		i) Remove the province from Sevilla and add it to Gibralter (should be province 13228)
+		ii) when you do this, if you launch the game, it might complain about map issues. Enter the Nudge Tool
+			1) Click on 'buildings' and then click on Sevilla
+			2) Click 'Validate in state'
+			1) Click on Gibraltar
+			2) Click 'Validate in state'
+			3) click 'save'
+		iii) go to your Documents\Paradox Interactive\Hearts of Iron IV\map folder, and copy all files in it to your mods map folder and overwrite changes
+		iv) This process will need to be done for each state we change, so keep it in mind. If you want you can manually adjust the unit and building graphic locations from the nudge tool as well
+	B) Go to the 685-Panama Canal and 304-Panama
+		i) Remove the province from Panama and add it to the Canal (should be province 4624)
+		ii) when you do this, if you launch the game, it might complain about map issues. Enter the Nudge Tool
+			1) Click on 'buildings' and then click on Panama
+			2) Click 'Validate in state'
+			1) Click on Panama Canal
+			2) Click 'Validate in state'
+			3) Ensure the new added Province has its port on the Pacific and not the Atlantic
+			4) click 'save'
+		iii) go to your Documents\Paradox Interactive\Hearts of Iron IV\map folder, and copy all files in it to your mods map folder and overwrite changes
+		iv) You will still have an issue where the Panama can only be accessed from the Gulf of Mexico
+			1) You should go to the adjacency.csv and add the line below
+				a) 685;naval_base;1555.00;9.57;1004.00;1.30;8857
+			2) Save, but then open up the nudge tool again, and drag the port to the Pacific, and then the unit tab should be updated to make sure the ships are in the pacific instead of Mexico
+	C) At this point once again you should verify the game doesn't crash when running it for a little while, and Save/commit your changes
+
+
+4) Start adding in custom states and their changes
+	a) TFB uses some custom states. At time of the AAT Expansion we have 13
+		i) Tenasserim (Burma)
+		ii) El Alemain
+		iii) 6 US States
+		iv) 3 for the Inner portion of the East Indies
+		v) 2 for Lower Egypt/Sudan
+	b) Start by copy and pasting those 13 states to an extra folder
+	c) Open each of those state files, and increment both the ID and NAME fields to be the next set of numbers.
+		i) All states MUST be numbered sequentially or the game will crash
+		ii) for AAT, the old Tenasserim was #835, but in AAT Vanilla has 934 states, meaning the first free number was #935, so Tessarim had ID 935 with NAME STATE_935.
+		iii) once renamed, add them into the states folder
+		iv) At this point if you tried running the game it will complain that some provinces are assigned to several states.
+	d) Remove the provinces now in the custom states from the original states
+		i) This next part can be tricky. I would recomend ensuring you have Visual Studio open when you do this, pointing into the map mod you have created
+		ii) Open up the file for the custom state
+			1) The Provinces section contains the list of province ID's of the custom state. In this case, all of those provinces used to be part of another state, so they must be moved.
+			2) For each province in the Custom State, (cntrl + shift + f) to open the search and search for the state that has those provinces from Vanilla. Pro tip, there is a button next to the search bar in order to require an exact match, and you should use that.
+				a) For example, for the Tenasserim state, all of the provinces are in Burma, so remove those ids from the Burma State
+				b) El Alemain comes from several states
+				c) US States come from New England and Maryland (New England will eventually become Maine)
+				d) East Indies come from like 4 states dependning on which one
+				e) Panama Canal comes from Panama
+				f) Egypt Mountains and Sudan have some crossover
+		iii) When launching the game now, you should (hopefully) not see any errors telling you that there are provinces belonging to multiple states. If so, look at the ID and remove them from the correct state
+		iv) Open the nudge tool. For each state you have changed (both the ones added, and the ones that had provinces removed) click on 'buildings' then click on the state, then click 'Validate in state'
+		v) Turn off the game and go to your Documents\Paradox Interactive\Hearts of Iron IV\map folder, and copy all files in it to your mods map folder and overwrite changes
+
+5) Add in the Impassible Territory
+	a) Compare TFB mods adjavency.csv file and the new one
+		i) You can copy and paste everything with the 'impassible' line after Afsluitdijk into the file, which will add all the lines for impassible terrain for Africa, Asia, Finland, and the MiddleEast
+	
+
+6) Update the Sea Zones with adjacency issues (AKA ignoring the pacific)
+	a) First we will update the states (AKA the strategicregions), then we will update the Straits
+	b) Move 1 tile from 173- Eastern North Sea to 207- Danish Belts
+	c) Move 1 Tile from 168-Adriatic sea to 29 Central Mediteranian
+	b) Move 4 tiles from 100- Red Sea to 102- East African Coast
+	c) Remove 4 tiles from 72- Straits of Malacca, that are in the strategicregion 280- North Malacca
+		i) make sure you update the ID of the North Malacca region
+	d) Add the Singapore, Java, and Djibouti strait to the adjacency_rules.txt (you can copy from the old mod)
+	e) Add the OTRANTO_STRAIT, SINGAPORE_CORRIDOR, JAVA_STRAIT, and DJIBOUTI_STRAIT lines from adjacency.csv (copy from the old mod)
+	f) NOTE TO SELF: FIGURE OUT THE DANISH BELTS STUFF
+	
+7) At this point you should save everything, commit it, and ensure it is all something you are happy with. Next will be having to manually edit provinces
+
+8) Edit the Finland Border
+	a) Using this first as it is a small change and so easy to check to see if you are doing something wrong without having to lose a ton of work
+	b) Download GIMP
+	c) You will need this wiki: https://hoi4.paradoxwikis.com/Map_modding
+	d) Open up the new and old mod provnice.bmp files into GIMP, and zoom into the border between Finland and the Soviets, East of Lake Ladoga
+	e) You will see a yellow and green pair of provinces for Finland, and a Dark Purple and very light blue set of provinces for the soviets all together. We want to make it so the Light Blue touches the Green, and Yellow, and the Dark Purple no longer touches the green, like in finborder.jpg
+	f) After changing the colors, export the BMP file.  "do not write colour space information" MUST be checked, and you MUST be using a 24 bit color on the export option
+	g) Load up the game, and see that now the Finish border looks correct
+	h) Open up the nudger tool, and reset the buildings and units *using validate in state) for the 2 provinces that are now different sizes. You can ignore the one that got larger, but must change the one that got smaller
+	i) Turn off the game and go to your Documents\Paradox Interactive\Hearts of Iron IV\map folder, and copy all files in it to your mods map folder and overwrite changes
+	j) double check error log for any erors relating to the finish border
+	k) when done, save and commit
+
+9) Expanded Sevastapol
+	a) Sevastapol was made a bit bigger, so we need to add 2 tiles to it.
+		i) First we can go to the definitions.csv file and add the 2 tiles
+			1) 13273;192;75;61;land;true;urban;1
+			2)13274;148;239;32;land;true;urban;1
+		ii) the first number was the province ID from the launch of AAT, and will need to be updated to be the 2 next sequential numbers after Vanilla. Vanilla for AAT ended at 13272, so they had to start at 13273. The numbers MUST be sequential
+		iii) Then open up the maps in gimp and zoom into Sevastapol on each
+		iv) The old map has an extra red and green province we want to copy over. You can color pixels by hand, or you can copy and paste one part of the image over the other based on a good landmark, such as the western tip to some point into the sea in the south east, and just copy paste.
+		v) Save and export the map
+		vi) Go to the Crimea state (137) and add the two provinces to that state, and then also do so to the strategicregion 130 Ukraine
+		vii) The northern of the two provinces has a railroad running through it that needs to be re-added. 
+			1) Go to railways.txt For me like 344 contains (2 8 3686 705 3722 568 737 3573 588 11405), and you should look for a similar collection of province IDs
+			2) Between 3686 and 705, add the first province
+			3) update the 8 to a 9 (its a tool to show length of railroad)
+		viii) Launch the game and go into the nude tool, fixing units and buildings in crimea
+		viv) Confirm no errors, then save and commit
+		
+
+10) Larger Africa
+	a) at this point we are going to copy the African part of the picture from the old file over top of the new one.
+	b) In the original map from the mod, I took from 3000,850 to 3400,1050 and pasted it ontop of the new mods map. This copies over the entire area of Africa and should ensure an identical map in that part
+	c) We need to add the extra provinces now to the definition.csv file.
+	d) for AAT, adding them in looked like slapping this in. You need to add them to the bottom of the file, once again in sequential order like we did for Sevastapol. You should be able to pull them right out of the old CSV, and just increment the first number
+	e) Save. At this point you should be able to launch the game. When you do so it will complain there are map errors, but when you go into the nudge tool you should see something that looks like this. [INSERT PICTURE HERE] If so you did the above correctly.
+	f) We now need to add all of those provinces to their respective states and strategic regions. They are spread across several states and regions, so it might take a bit
+		i) Recomendation is to simply keep the nudge tool open, hover over each province number, and put that into the correct state. Then add them to the correct strategic region after all the states look right. (relaunch the game nad make sure states are right before touching strategicregion) The below is going from Left to Right
+		ii) Several provinces will have to be removed from the Libyan Desert state (273), and the Western Desert state (552) so they can be put into the playable area, so be aware
+			1) 1 Province from Libyan Desert (4962) and then a custom added province need to be added to Tripolitania
+			2) 1 Province from Libyan Desert (12866) and then 6 custom provinces need to be added to Sirte
+			3) 3 Provinces from the Libyan Desert (10785, 11951, 1060), 1 Province from Sirte (4200), and then 3 custom provinces need to be added to Cyrenaica
+			4) 2 Provinces from Western Desert (12764, 1143), and 2 custom provinces need to be added to Matrouh (452)
+			5) 1 Province from the Western Desert (10127) needs to be added to the custom El Alemain state
+			6) 2 custom provinces need to be added to the Cairo state (907)
+			7) 6 custom provinces need to be added to the Aswan state (456)
+			8) 6 custom provinces need to be added to the Eastern Desert state (457)
+			9) 1 custom province needs to be added to the Jordan State (455)
+		iii) After this is over you will probably see some errors like this MAP_ERROR: State "Matrouh"(#452) has provinces (#7079, #12764) belonging to different strategic areas: "Egypt" (#128), "Sahara Desert" (#127)
+		iv) You should see that all of the provinces look correct at this point and belong to the right state
+		v) Now go through, and all of the provinces you changed need to be double checked against the correct strategicregion.
+		vi) At this point you will have a lot of errors for Graphics things. Go through and set the Units and Buildings in all of the states and provinces that have changed, and for provinces their adjacent ones as well. Only thing on the building to really look for is look at the forts it generates and potentially move them to a better spot that isn't on the edge
+		vii) All errors should be gone at this point relating to that when you launch the game. You should be able to run the game in observer mode to Feb 1st without a crash at this point.
+
+9) Add the WST Country for owning the Middle East to prevent Crashing
+		
+		
+		
+		
+map/buildings.txt error at line 26099: map building(Naval Base) location is not within specified state. Supposed to be '169 - Sevilla' but was '118 - Gibraltar'for province 13228. BUILDING IGNORED!
+
+685;naval_base;1555.00;9.57;1004.00;1.30;8857
+
+
+[14:27:16][1936.01.01.12][state_effect_implementation.cpp:1750]: history/countries/ITA - Italy.txt:37: set_garrison_strength No country occupation data
+[14:27:16][1936.01.01.12][resistance.cpp:388]: set override garrison strength for state with invalid Data = 647
+
+
+
+75 states vs 25 states. 
+
+3 UK and 1 Albania
+
+
+
+
+Noteable changes:
+	 - Siam gained 2 states
+	 - Lots of new states in Africa
+	 - Schleswig Holstein split out, gives germany more states
+	 - UK has some more states
+	 - Ethiopia has a lot of states now. Maybe this will let us fix our Italian East Africa problems?
+	 - SAF has Angola split into more states
+	 
+	 
+	 - Added new provinces 13257 - 13272 (15 provinces)
+	 - Noteable is the new Norwegian Island that might solve supply issues for when Allies invade and can't get fuel due to capital weirdness
+	 
+13235 for Barb (we had 13246, with the extra 11 being for Africa)	 
+13256 was Vanilla when BBA Launched (we had 13280 by the end, as we skipped updating the map and added on 2 Sevastapol,  17 for Pacific Islands, 15 for Egypt/Sudan Overhall for a total of 34 custom provinces)
+13272 was Vanilla for AAT (We launched therefore with 45 extra provinces than Vanilla for a total of 13317)
+
+
+Custom 45 provinces are in the order of:
+Sevastapol
+Africa (North Africa first and then Egypt)
+Pacific Islands
+
+Esbjerg
+
+
+
+Finnish Railways:
+1 5 141 6078 9104 3125 6146 	
+1 4 9056 11033 3119 6138 

@@ -1,0 +1,79 @@
+RAJ_historical = {
+	name = "Indian historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_dlc = "Together for Victory"
+	}
+	abort = {
+		is_subject = no
+	}
+
+	ai_national_focuses = {
+		RAJ_for_the_worst
+		RAJ_defend_the_homeland
+		RAJ_organize_the_army
+		RAJ_bombay_military_expansion
+		RAJ_war_politics
+		RAJ_british_command_aid
+		RAJ_pass_the_defence_bill
+		RAJ_stop_the_rising_sun
+		RAJ_More_British_Investments
+		RAJ_Promises_for_the_future
+		RAJ_anti_corruption_laws
+		RAJ_go_with_the_Empire
+		RAJ_pass_the_dominion_bill
+		RAJ_far_east_development_plan
+		RAJ_indian_institute_of_science
+		RAJ_expand_indan_agriculture
+		RAJ_british_rail_investors
+		RAJ_aid_companies_to_grow
+		RAJ_indian_defence_plan
+		RAJ_ishapore_arsenal
+		RAJ_british_arms_investors
+		RAJ_burma_rail
+		RAJ_west_india_railways
+		RAJ_tata_steel
+		RAJ_indian_labourers
+		RAJ_integrate_princely_railways
+		RAJ_assam_oil
+		RAJ_muslim-hindu_integration_laws
+		RAJ_jewel_in_the_crown
+		RAJ_British_armament_aid
+		RAJ_british_raj_mines
+		RAJ_organize_the_production								
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

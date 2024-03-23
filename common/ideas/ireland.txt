@@ -1,0 +1,365 @@
+ideas = {
+
+	country = {
+		
+		IRE_spanish_volunteers = {
+			
+			picture = MEX_politicised_army_2
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				experience_gain_army = 0.1
+			}
+		}
+
+		IRE_fianna_fail = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_naval_auxiliary_patrol
+			
+			modifier = {
+				consumer_goods_factor = -0.15		
+			}
+		}
+
+		IRE_emergency_power_act = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		IRE_irish_coastal_defence_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_naval_auxiliary_patrol
+			
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.25
+				army_core_defence_factor = 0.1			
+			}
+		}
+
+		IRE_increase_convoy_production_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_coastal_navy
+			
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		IRE_convoy_protection = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_coastal_navy
+			
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+
+			modifier = {
+				navy_submarine_detection_factor = 0.1
+				convoy_escort_efficiency = 0.1
+				naval_speed_factor = 0.1
+			}
+		}
+
+		IRE_combined_invasion_tactics_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = escort_effort_focus
+
+			modifier = {
+				naval_invasion_capacity = 3
+			}
+		}
+
+		IRE_appealing_to_the_masses = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+
+			modifier = {
+				conscription = 0.03
+				war_support_factor = 0.05
+			}
+		}
+
+		IRE_british_advisors = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = stavka
+
+			modifier = {
+				naval_invasion_prep_speed = 0.15
+			}
+		}
+
+		IRE_intense_training = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_special_air_service
+
+			modifier = {
+				special_forces_training_time_factor = 0.2
+				special_forces_cap = 0.1
+				special_forces_min = 44
+				special_forces_attack_factor = 0.1
+			}
+		}
+
+		IRE_ira_army_2 = {
+			
+			picture = MEX_politicised_army_2
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.04
+				training_time_factor = -0.2
+				army_morale_factor = 0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+	
+		IRE_ira_army_1 = {
+			
+			picture = MEX_politicised_army_2
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				training_time_factor = -0.2
+				army_morale_factor = 0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+	
+		IRE_advisors = {
+			
+			picture = CZE_planning_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				planning_speed = 0.2
+				land_doctrine_cost_factor = -0.2
+			}
+		
+		}
+	
+		IRE_our_people = {
+			
+			picture = eng_imperial_conscription
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+	
+		IRE_ira_1 = {
+			
+			picture = prc_low_popular_support2
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 0.4
+			}
+		}
+		
+		IRE_ira_2 = {
+			
+			picture = prc_low_popular_support
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_cost = 0.1
+			}
+		}
+		
+		IRE_anglo_trade_war = {
+			
+			picture = chi_hyper_inflation
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		IRE_repayment = {
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.5
+			}
+		}
+	}
+
+	tank_manufacturer = {
+		
+		designer = yes
+
+		IRE_timoney_technology = {
+			name = IRE_timoney_technology
+
+			picture = generic_tank_manufacturer_2
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			available = {
+				has_completed_focus = IRE_Improvements_for_Armored_Cars
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			# traits = { IRE_timoney_trait }
+			equipment_bonus = {
+				armored_car_chassis = {
+					build_cost_ic = -0.15
+					reliability = 0.10
+					soft_attack = 0.10
+					hard_attack = 0.10
+				}
+			}
+			
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+	}
+
+	# TECHNOLOGY
+}

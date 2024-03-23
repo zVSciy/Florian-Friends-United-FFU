@@ -1,0 +1,1142 @@
+﻿add_namespace = lar_spain 
+
+# Election of 1936 - La Resistance Edition
+country_event = {
+	id = lar_spain.1
+	title = spain.9.t
+	desc = lar_spain.1.desc
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		has_dlc = "La Resistance"
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = SPR_spanish_elections_flag
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				add_core_of = SPA
+			}
+		}
+	}
+
+	# Popular Front
+	option = {
+		name = lar_spain.1.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+}
+
+# Spanish Civil War - La Resistance Edition
+country_event = {
+	id = lar_spain.2
+	title = lar_spain.2.t
+	desc = lar_spain.2.desc
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = spain_war_rule
+							option = DISABLED
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = NO_ASIA
+					}
+					JAP = {
+						add_named_threat = { threat = 1.2 name = "Japanese Volunteers" }
+						add_named_threat = { threat = 2 name = "Japan left the naval treaty" }
+					}
+				}
+				activate_mission = SPA_SCW_republican_spirit_dwindling
+				activate_mission = SPA_SCW_axis_victory
+				every_owned_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					set_state_flag = SPR_core_of_spain_flag
+				}
+				set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
+				FRA = {
+					complete_national_focus = FRA_intervention_in_spain
+				}
+			}
+			set_global_flag = SPA_SCW_started_confirmed
+		}
+		hidden_effect = {
+			# Marks gui as "dirty" so the code updates the layout to properly hide the unused branches
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	option = { # Option for Nationalists - Franco
+		name = lar_spain.2.a
+		if = {
+			limit = {
+				NOT = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = DISABLED
+					}
+				}
+			}
+			hidden_effect = {
+				SPA = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
+					clr_country_flag = SPR_nationalist_spain_flag
+					drop_cosmetic_tag = yes
+					set_country_flag = SPR_republican_spain_flag
+					set_cosmetic_tag = SPR_republican_spain
+					set_politics = {
+						ruling_party = democratic
+					}
+					set_popularities = {
+						democratic = 40
+						communism = 60
+					}
+				}
+				SPD = { # Remove Carlist/Falangist country leaders for new SPD tag
+					create_country_leader = {
+						name = "Manuel Azaña"
+						desc = "POLITICS_MANUEL_AZANA_DESC"
+						picture = GFX_portrait_Manuel_Azana
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							figurehead_president
+						}
+					}
+				}
+				# Give SPD Madrid if the Nationalists don't have complete garrison control over it - becomes capital
+				SPD = {
+					transfer_state = 41
+					transfer_state = 165
+					transfer_state = 167
+					transfer_state = 168
+					transfer_state = 173
+					transfer_state = 175
+					transfer_state = 790
+					transfer_state = 792
+					transfer_state = 793
+					transfer_state = 794
+				}
+				transfer_units_fraction = {
+					target = SPD
+					size = 0.5 # Fallback in case one of the ratios below are not stipulated
+					stockpile_ratio = 0.5
+					army_ratio = 0.5
+					navy_ratio = 0.5
+					air_ratio = 0.5
+					keep_unit_leaders = {	
+					}
+					keep_unit_leaders_trigger = {
+						has_trait = trait_SPA_nationalist_sympathies
+					}
+				}
+				# Trigger war between the sides
+				SPR = {
+					declare_war_on = {
+						target = SPD
+						type = civil_war
+					}
+					add_civil_war_target = SPD
+				}
+				# Unlock division templates for Republicans
+				SPD = {
+					every_state = {
+						limit = {
+							is_core_of = SPR
+						}
+						add_core_of = SPD
+					}
+					inherit_technology = SPA
+					country_lock_all_division_template = no
+				}
+				SPR = { set_capital = { state = 176 } }
+				SPD = { set_capital = { state = 41 } }
+				# We need to teleport the railway guns after capitals have been set. transfer_units_fraction will
+				# teleport them but to the wrong province.
+				teleport_railway_guns_to_deploy_province = ROOT
+				teleport_railway_guns_to_deploy_province = SPD
+				SPD = {
+					# add_ideas = SPR_death_before_surrender
+					add_ideas = SPR_disbanded_army_1
+					add_ideas = SPA_neutrality_idea
+					remove_ideas = SPR_political_violence
+					remove_ideas = SPR_national_strikes_3
+					remove_ideas = SPA_carlism_1
+					set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
+				}
+				SPD = {
+					load_oob = "SPR_Civil_War"
+					set_equipment_fraction = 1.0
+					set_stability = 0.6
+					set_war_support = 0.8
+				}
+				SOV = {
+					diplomatic_relation = {
+						country = SPD
+						relation = military_access
+						active = yes
+					}
+				}
+				MON = {
+					diplomatic_relation = {
+						country = SPD
+						relation = military_access
+						active = yes
+					}
+				}
+	
+				SPR = {
+					load_oob = "SPA_Civil_War"
+					set_equipment_fraction = 1.0
+					set_stability = 0.6
+					set_war_support = 0.5
+					add_ideas = SPA_death_before_surrender
+					remove_ideas = SPR_political_violence
+					remove_ideas = SPR_national_strikes_3
+				}
+				# Add various loyalist traits that now become relevant - indicating loyalties to the different subfactions
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 1108
+							has_id = 1109
+							has_id = 1111
+							has_id = 1112
+							has_id = 1113
+						}
+					}
+					add_unit_leader_trait = trait_SPA_falangist_loyalties
+				}
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 1114
+							has_id = 1115
+							has_id = 1116
+						}
+					}
+					add_unit_leader_trait = trait_SPA_carlist_loyalties
+					#retire = yes
+				}
+				SPD = {
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 1101
+								has_id = 1102
+								has_id = 1103
+							}
+						}
+						add_unit_leader_trait = trait_SPR_republican_loyalties
+					}
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 1104
+								has_id = 1105
+								has_id = 1106
+							}
+						}
+						# add_unit_leader_trait = trait_SPR_stalinist_loyalties
+						retire = yes
+					}
+				}
+				SPD = {
+					every_unit_leader = {
+						limit = {
+							#Clear out SPR_mohamed_meziane for some reason - This doesn't work right
+								has_id = 1109
+						}
+						retire = yes
+					}
+				}
+				ITA = {
+					if = {
+					    limit = {
+							has_global_flag = NO_ASIA
+					   	}
+					    # add_ideas = SPA_spanish_civil_war_commitments_2
+						add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+					}  
+					else = {
+						# add_ideas = SPA_spanish_civil_war_commitments
+						add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = SPA_the_army_of_africa
+					}
+					division_template = {
+						name = "División del Ejército de África"
+						template_counter = 4
+						division_names_group = SPR_INF_06
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+						}
+					}
+					290 = {
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 41
+							state = 165
+							state = 166
+							state = 167
+							state = 168
+							state = 169
+							state = 170
+							state = 171
+							state = 172
+							state = 173
+							state = 174
+							state = 175
+							state = 176
+							state = 788
+							state = 789
+							state = 790
+							state = 791
+							state = 792
+							state = 793
+							state = 794
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { unplanned_offensive }
+						province = {
+							all_provinces = yes
+						}
+					}
+					set_state_flag = SPR_unplanned_offensive_flag
+				}
+				SPD = { add_ideas = SCW_republican_spirit_dwindling }
+				SPD = { add_timed_idea = { idea = SPA_death_before_surrender_rep days = 900 } }
+				SPD = { add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = SPD } }
+				SPD = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1100 producer = SPD } }
+			}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = spain_war_rule
+					option = DISABLED
+				}
+			}
+			add_named_threat = { threat = 6.8 name = "Volunteers to the SCW" }
+			activate_mission = SPA_SCW_ending
+			GER = {
+				army_experience = 200
+				air_experience = 100
+			}
+			ITA = {
+				army_experience = 200
+				air_experience = 100
+			}
+			JAP = {
+				army_experience = 200
+				air_experience = 100
+			}
+			FRA = {
+				army_experience = 200
+				air_experience = 100
+			}
+			ENG = {
+				army_experience = 200
+				air_experience = 100
+			}
+			SOV = {
+				army_experience = 200
+				air_experience = 100
+			}
+			SPR = {
+				army_experience = 500
+			}
+			add_ideas = war_economy
+			add_political_power = -150
+		}
+		hidden_effect = {
+			set_global_flag = spanish_civil_war # Start civil war - used in many triggers
+			# Switch the tag alias for the player's country - the player goes from SPR to SPA
+			set_country_flag = SPR_nationalist_spain_flag
+			set_cosmetic_tag = SPR_nationalist_spain
+			set_politics = {
+				ruling_party = neutrality
+			}
+			set_popularities = {
+				fascism = 70
+				neutrality = 30
+			}
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "José Sanjurjo"
+				desc = "POLITICS_JOSE_SANJURJO_DESC"
+				picture = "GFX_portrait_SPA_jose_sanjurjo"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					the_lion_of_the_rif
+				}
+			}
+			# Unlock division templates for Nationalists
+			country_lock_all_division_template = no
+			every_owned_state = {
+				set_state_flag = SPR_sided_with_nationalists_flag
+			}
+			set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
+			# Remove unnecessary traits from Nationalist commanders (no longer relevant to see for the player, as the SCW has started)
+			every_unit_leader = {
+				limit = {
+					has_trait = trait_SPA_nationalist_sympathies
+				}
+				remove_unit_leader_trait = trait_SPA_nationalist_sympathies
+			}
+			country_event = { id = lar_spain.78 days = 7 random_days = 7 } # Sanjurjo dies
+			SPR = {
+				set_equipment_fraction = 1.0
+				set_stability = 0.6
+				set_war_support = 0.5
+				add_ideas = SPA_death_before_surrender
+				remove_ideas = SPR_political_violence
+				remove_ideas = SPR_national_strikes_3
+			}
+		}
+		custom_effect_tooltip = nationalists_chosen
+		SPR = { add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = SPR } }
+	}
+}
+
+# Tangiers Enclave - Event for UK
+country_event = {
+	id = lar_spain.36
+	title = lar_spain.36.t
+	desc = lar_spain.36.desc
+	picture = GFX_report_event_general_peaceful_annexation
+	
+	is_triggered_only = yes
+	
+	option = { # Protest
+		name = lar_spain.36.a
+		ai_chance = {
+			base = 34
+			modifier = {
+				factor = 3
+				has_war = no
+			}
+			modifier = {
+				factor = 2
+				has_government = democratic
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 5
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 3
+				}
+			}
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_political_power > 100 }
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		add_political_power = -200
+		custom_effect_tooltip = lar_spain.36_tt
+		effect_tooltip = {
+			create_wargoal = {
+			    type = topple_government
+			    target = FROM
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.37 hours = 18 random_hours = 6 }
+			}
+		}
+	}
+
+	option = { # Let it slide
+		name = lar_spain.36.b
+		ai_chance = {
+			base = 66
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 5
+				has_government = fascism
+			}
+			modifier = {
+				factor = 10
+				surrender_progress > 0.1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.38 hours = 18 random_hours = 6 }
+			}
+		}
+	}
+}
+
+# Tangiers Enclave - Event for Spain - UK protested
+country_event = {
+	id = lar_spain.37
+	title = lar_spain.36.t
+	desc = lar_spain.37.desc
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # OK
+		name = lar_spain.37.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		# FROM = {
+		# 	create_wargoal = {
+		# 	    type = topple_government
+		# 	    target = ROOT
+		# 	}
+		# }
+		290 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	option = { # We must back down
+		name = lar_spain.37.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 0.6
+				}
+			}
+		}
+	}
+}
+
+# Tangiers Enclave - Event for Spain - UK let it slide
+country_event = {
+	id = lar_spain.38
+	title = lar_spain.36.t
+	desc = lar_spain.38.desc
+	picture = GFX_report_event_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # OK
+		name = lar_spain.38.a
+		290 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Enemies of Our Enemy - Event for GER/ITA
+country_event = {
+	id = lar_spain.71
+	title = lar_spain.71.t
+	desc = lar_spain.71.desc
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = lar_spain.71.a
+		ai_chance = {
+			base = 75
+		}
+		diplomatic_relation = {
+		    country = FROM
+		    relation = non_aggression_pact
+		    active = yes
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.72 }
+			}
+		}
+	}
+
+	option = { # Decline
+		name = lar_spain.71.b
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0.5
+				has_opinion = { target = FROM value > 99 }
+			}
+			modifier = {
+				factor = 0
+				has_war_with = SOV
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.73 }
+			}
+		}
+	}
+}
+
+# Enemies of Our Enemy - Event for Spain - FROM Accepted
+country_event = {
+	id = lar_spain.72
+	title = lar_spain.72.t
+	desc = lar_spain.72.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = { # Ok
+		name = lar_spain.72.a
+		effect_tooltip = {
+			FROM = {
+				diplomatic_relation = {
+				    country = ROOT
+				    relation = non_aggression_pact
+				    active = yes
+				}
+			}
+		}
+	}
+}
+
+# Enemies of Our Enemy - Event for Spain - FROM Declined
+country_event = {
+	id = lar_spain.73
+	title = lar_spain.73.t
+	desc = lar_spain.73.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Damn
+		name = lar_spain.73.a
+	}
+}
+
+# Enemies of Our Enemy - Event for GER
+country_event = {
+	id = lar_spain.74
+	title = lar_spain.74.t
+	desc = lar_spain.74.desc
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = lar_spain.74.a
+		ai_chance = {
+			base = 75
+		}
+		army_experience = -25
+		effect_tooltip = {
+			FROM = {
+				add_timed_idea = { idea = SPR_deal_with_the_devil days = 730 }
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.75 }
+			}
+		}
+	}
+
+	option = { # Decline
+		name = lar_spain.74.b
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0.5
+				has_opinion = { target = FROM value > 99 }
+			}
+			modifier = {
+				factor = 0
+				has_war_with = SOV
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.76 }
+			}
+		}
+	}
+}
+
+# Enemies of Our Enemy - Event for Spain - FROM Accepted
+country_event = {
+	id = lar_spain.75
+	title = lar_spain.75.t
+	desc = lar_spain.75.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = { # Ok
+		name = lar_spain.75.a
+		add_timed_idea = { idea = SPR_deal_with_the_devil days = 730 }
+	}
+}
+
+# Enemies of Our Enemy - Event for Spain - FROM Declined
+country_event = {
+	id = lar_spain.76
+	title = lar_spain.76.t
+	desc = lar_spain.76.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Damn
+		name = lar_spain.76.a
+	}
+}
+
+# Demand French North Africa - Event for France
+country_event = {
+	id = lar_spain.39
+	title = lar_spain.39.t
+	desc = lar_spain.39.desc
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # Accept just the Coast
+		name = lar_spain.39.a
+		ai_chance = {
+			base = 0
+		}
+		effect_tooltip = {
+			FROM = {
+				transfer_state = 290
+				290 = {
+					set_demilitarized_zone = no
+				}
+				transfer_state = 461
+				transfer_state = 462
+			}
+		}
+		hidden_effect = {
+			set_country_flag = surrendered_french_north_africa
+			FROM = {
+				country_event = { id = lar_spain.400 hours = 18 random_hours = 6 }
+			}
+			news_event = { id = lar_news.14 days = 2 }
+		}
+	}
+	option = { # Accept everything but Tunisia
+		name = lar_spain.39.b
+		ai_chance = {
+			base = 100
+		}
+		effect_tooltip = {
+			FROM = {
+				transfer_state = 290
+				290 = {
+					set_demilitarized_zone = no
+				}
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 459
+				transfer_state = 460
+				transfer_state = 513
+			}
+		}
+		hidden_effect = {
+			set_country_flag = surrendered_french_north_africa
+			FROM = {
+				country_event = { id = lar_spain.40 hours = 18 random_hours = 6 }
+			}
+			news_event = { id = lar_news.14 days = 2 }
+		}
+	}
+	option = { # Decline
+		name = lar_spain.39.d
+		ai_chance = {
+			base = 0
+		}
+		effect_tooltip = {
+			FROM = {
+				add_state_claim = 461
+				add_state_claim = 462
+				add_state_claim = 459
+				add_state_claim = 460
+				add_state_claim = 513
+				add_state_claim = 458
+				add_state_claim = 665
+				# Lets remove this from MP
+				#create_wargoal = {
+				#	type = take_state_focus
+				#	target = ROOT
+				#	generator = { 461 462 459 460 513 514 458 665 }
+				#	expire = 0
+				#}
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.41 hours = 18 random_hours = 6 }
+			}
+		}
+	}
+}
+
+# Demand French North Africa - Event for Spain - France accepted just the coast
+country_event = {
+	id = lar_spain.400
+	title = lar_spain.40.t
+	desc = lar_spain.400.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = { # Ok
+		name = lar_spain.400.a
+		transfer_state = 290
+		290 = {
+			set_demilitarized_zone = no
+		}
+		transfer_state = 461
+		transfer_state = 462
+	}
+}
+
+# Demand French North Africa - Event for Spain - France accepted all but Tunisia
+country_event = {
+	id = lar_spain.40
+	title = lar_spain.40.t
+	desc = lar_spain.40.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = { # Ok
+		name = lar_spain.40.a
+		transfer_state = 290
+		290 = {
+			set_demilitarized_zone = no
+		}
+		transfer_state = 461
+		transfer_state = 462
+		transfer_state = 459
+		transfer_state = 460
+		transfer_state = 513
+	}
+}
+
+# Demand French North Africa - Event for Spain - France declined
+country_event = {
+	id = lar_spain.41
+	title = lar_spain.41.t
+	desc = lar_spain.41.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Damn
+		name = lar_spain.41.a
+		add_state_claim = 461
+		add_state_claim = 462
+		add_state_claim = 459
+		add_state_claim = 460
+		add_state_claim = 513
+		#Tunisia
+		#add_state_claim = 458
+		#add_state_claim = 665
+
+		# Lets remove this from MP
+		#create_wargoal = {
+		#	type = take_state_focus
+		#	target = ROOT
+		#	generator = { 461 462 459 460 513 514 458 665 }
+		#	expire = 0
+		#}
+	}
+}
+
+
+# Spain - Alfonso Dies
+country_event = {
+	id = lar_spain.77
+	title = lar_spain.77.t
+	desc = "falsch"
+	picture = GFX_report_event_europe_funeral
+	
+	trigger = {
+		original_tag = SPR
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						AND = {
+							tag = SPA
+							has_completed_focus = SPA_unify_the_nationalist_front
+						}
+						tag = SPB
+					}
+					is_ai = no
+				}
+			}
+			is_ai = no
+		}
+		has_completed_focus = SPA_a_great_spain
+		always = yes
+		NOT = { has_global_flag = SPB_alfonso_xiii_dead }
+		date > 1940.2.28
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = SPB_alfonso_xiii_dead
+			if = {
+				limit = {
+					has_country_leader = {
+					    name = "Alfonso XIII"
+					    ruling_only = yes
+					}
+				}
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Jaime IV"
+					desc = "POLITICS_JAIME_IV_DESC"
+					picture = "GFX_portrait_fra_infante_jaime"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						
+					}
+				}
+			}
+		}
+	}
+	
+	option = { # RIP
+		name = lar_spain.77.a
+		if = {
+			limit = {
+				has_country_leader = {
+				    name = "Alfonso XIII"
+				    ruling_only = yes
+				}
+			}
+			effect_tooltip = {
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Jaime IV"
+					desc = "POLITICS_JAIME_IV_DESC"
+					picture = "GFX_portrait_fra_infante_jaime"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						
+					}
+				}
+			}
+		}
+	}
+}
+
+# Event for Spain that the president is dismissed
+country_event = {
+	id = lar_spain.90
+	title = lar_spain.90.t
+	desc = lar_spain.90.desc
+	picture = GFX_report_event_generic_parliament
+
+	trigger = {
+		tag = SPR
+		date > 1936.4.20
+		NOT = { has_global_flag = spanish_civil_war }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = yes
+
+	option = { # Ok
+		name = lar_spain.90.a
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Manuel Azaña"
+				desc = "POLITICS_MANUEL_AZANA_DESC"
+				picture = GFX_portrait_Manuel_Azana
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					figurehead_president
+				}
+			}
+		}
+		else = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Manuel Azaña"
+				desc = "POLITICS_MANUEL_AZANA_DESC"
+				picture = GFX_portrait_Manuel_Azana
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+		
+				}
+			}
+		}
+	}
+}
+
+# Spain - Sanjurjo Dies
+country_event = {
+	id = lar_spain.78
+	title = lar_spain.78.t
+	desc = lar_spain.78.desc
+	picture = GFX_report_event_spr_plane_crash
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Military Junta"
+				desc = "POLITICS_MILITARY_JUNTA_DESC"
+				picture = "GFX_portrait_SPA_military_junta"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					divided_interests
+				}
+			}
+		}
+	}
+	
+	option = { # RIP
+		name = lar_spain.78.a
+		effect_tooltip = {
+			custom_effect_tooltip = lar_spain.78_tt
+			hidden_effect = {
+				kill_country_leader = yes
+			}
+			create_country_leader = {
+				name = "Military Junta"
+				desc = "POLITICS_MILITARY_JUNTA_DESC"
+				picture = "GFX_portrait_SPA_military_junta"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					divided_interests
+				}
+			}
+		}
+	}
+}

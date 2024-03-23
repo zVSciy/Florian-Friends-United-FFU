@@ -1,0 +1,29 @@
+state={
+	id=756
+	name="STATE_756"
+	provinces={
+		1778 2028 5076 7727 7971 8102 12596 12820 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history={
+		owner = CHI
+		#add_core_of = XSM
+		add_core_of = CHI
+		#add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			12596 1 
+		}
+		1936.1.1.13 = {
+			owner = WST	
+		}	
+
+	}
+
+	local_supplies=0.0 
+}

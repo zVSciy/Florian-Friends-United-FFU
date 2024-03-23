@@ -1,0 +1,977 @@
+division_template = {
+	name = "Placement Divsion"
+	division_names_group = SOV_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+units = {
+	division= {
+		location = 9340
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9340
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9340
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 10323
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 10323
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 10323
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 7482
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 7482
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 7482
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 310
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 310
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 310
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6459
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6459
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6459
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9275
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9275
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9275
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11259
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11259
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11259
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9386
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9386
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9386
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 323
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 323
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 323
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11241
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11241
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11241
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11241
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11241
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11241
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11220
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11220
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11220
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11220
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11220
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11220
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6354
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6354
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6354
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6354
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11271
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11271
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11271
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11271
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6233
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6233
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6233
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6233
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6344
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6344
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6344
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6344
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9288
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9288
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9288
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 546
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 546
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 546
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 546
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3568
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3568
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3568
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 489
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 489
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 489
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 489
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11557
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11557
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11557
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3543
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3543
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3543
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 525
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 525
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 525
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 525
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 525
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 525
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3494
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3494
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 3494
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11454
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11454
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11454
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11530
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11530
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11530
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 448
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 448
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 448
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9491
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9491
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9491
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9519
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9519
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9519
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9519
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 559
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 559
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 559
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 559
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11504
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11504
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11504
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 511
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 511
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 511
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9463
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9463
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9463
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9433
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9433
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9433
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11437
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11437
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11437
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6423
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6423
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 6423
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11561
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11561
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11561
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11561
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11715
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11715
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11715
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 11715
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9419
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9419
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9419
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 9419
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 737
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 737
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 737
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+	division= {
+		location = 737
+		division_template = "Placement Divsion"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
+	}
+}

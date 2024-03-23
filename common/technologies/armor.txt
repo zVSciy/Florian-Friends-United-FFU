@@ -1,0 +1,381 @@
+technologies = {
+	### MEDIUM ###
+	
+	medium_tank_1 = {
+
+		enable_equipments = {
+			medium_tank_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = medium_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	medium_tank_2 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = medium_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940	
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	medium_tank_3 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = medium_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	medium_tank_4 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	#### LIGHT ####
+	
+	light_tank_1 = {
+
+		enable_equipments = {
+			light_tank_chassis_1
+		}
+	
+		path = {
+			leads_to_tech = light_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	light_tank_2 = { 
+
+		enable_equipments = {
+			light_tank_chassis_2
+		}
+	
+		path = {
+			leads_to_tech = light_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1938
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	light_tank_3 = { 
+
+		enable_equipments = {
+			light_tank_chassis_3
+		}
+	
+		path = {
+			leads_to_tech = light_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	light_tank_4 = { 
+
+		enable_equipments = {
+			light_tank_chassis_4
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	### HEAVY ###
+	
+	heavy_tank_1 = {
+
+		enable_equipments = {
+			heavy_tank_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = heavy_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	heavy_tank_2 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = heavy_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1941
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	heavy_tank_3 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = heavy_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1943
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	heavy_tank_4 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 1945
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Japanese Terrain Buffs
+	adaptable_armor_designs = {
+
+		allow = { always = no } #Only obtained through Focus
+
+		research_cost = 1
+
+		category_light_tanks = {
+			jungle = {
+				attack = 0.05
+				movement = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				movement = 0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	# AST Terrain Buffs
+	jungle_adaptable_armor_designs = {
+
+		allow = { always = no } #Only obtained through Focus
+
+		research_cost = 1
+
+		category_tanks = {
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	#Mon Genghis Khan Buffs
+
+	adaptable_cavalry_designs = {
+
+		allow = { always = no } #Only obtained through Focus
+
+		research_cost = 1
+
+		category_cavalry = {
+			plains = {
+				attack = 0.05
+				movement = 0.05
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	assault_gun_support_company = {
+
+		allow = { always = no } #Only obtained through Focus
+
+		research_cost = 1
+
+		enable_subunits = {
+			light_assault_gun_support
+			medium_assault_gun_support
+			heavy_assault_gun_support
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	assault_gun_line_unit = {
+
+		allow = { always = no } #Only obtained through Focus
+		
+		research_cost = 1
+
+		enable_subunits = {
+			light_assault_gun_brigade
+			medium_assault_gun_brigade
+			heavy_assault_gun_brigade
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+}

@@ -1,0 +1,137 @@
+add_namespace = witp
+
+country_event = {
+	id = witp.1
+	title = witp.1.t
+	desc = witp.1.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = witp.1.a
+		country_event = witp.3
+	}
+
+	option = {
+		name = witp.1.b
+		country_event = witp.4
+	}
+
+	option = {
+		name = witp.1.c
+		country_event = witp.5
+	}
+
+	option = {
+		name = witp.1.d
+		country_event = witp.2
+	}
+}
+
+country_event = {
+	id = witp.2
+	title = witp.2.t
+	desc = witp.2.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = witp.2.a
+		country_event = witp.6
+	}
+
+	option = {
+		name = witp.2.b
+		country_event = witp.7
+	}
+
+	option = {
+		name = witp.2.c
+		country_event = witp.8
+	}
+
+	option = {
+		name = witp.2.d
+		country_event = witp.1
+	}
+}
+
+country_event = {
+	id = witp.3
+	title = witp.3.t
+	desc = witp.3.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = witp.4
+	title = witp.4.t
+	desc = witp.4.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = witp.5
+	title = witp.5.t
+	desc = witp.5.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = witp.6
+	title = witp.6.t
+	desc = witp.6.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = witp.7
+	title = witp.7.t
+	desc = witp.7.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = witp.8
+	title = witp.8.t
+	desc = witp.8.desc
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ok."
+	}
+}

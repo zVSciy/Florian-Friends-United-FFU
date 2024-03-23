@@ -1,0 +1,93 @@
+SCW_dwindle_republican_spirit = {
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_13 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_13
+			add_idea = SCW_republican_spirit_dwindling_14
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_12 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_12
+			add_idea = SCW_republican_spirit_dwindling_13
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_11 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_11
+			add_idea = SCW_republican_spirit_dwindling_12
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_10 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_10
+			add_idea = SCW_republican_spirit_dwindling_11
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_9 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_9
+			add_idea = SCW_republican_spirit_dwindling_10
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_8 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_8
+			add_idea = SCW_republican_spirit_dwindling_9
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_7 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_7
+			add_idea = SCW_republican_spirit_dwindling_8
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_6 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_6
+			add_idea = SCW_republican_spirit_dwindling_7
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_5 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_5
+			add_idea = SCW_republican_spirit_dwindling_6
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_4 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_4
+			add_idea = SCW_republican_spirit_dwindling_5
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_3 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_3
+			add_idea = SCW_republican_spirit_dwindling_4
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling_2 }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling_2
+			add_idea = SCW_republican_spirit_dwindling_3
+		}
+	}
+	if = {
+		limit = { has_idea = SCW_republican_spirit_dwindling }
+		swap_ideas = {
+			remove_idea = SCW_republican_spirit_dwindling
+			add_idea = SCW_republican_spirit_dwindling_2
+		}
+	}	
+}

@@ -1,0 +1,108 @@
+﻿l_english:
+ 
+ marked_states_hosttool:0 "Shows states marked by host tool"
+
+ ST_STATE_MARK_FOR_TRANSFER:0 "§HMark State for Transfer§!\nMark the selected state so it can be transfered \n"
+ ST_STATE_UNMARK_FOR_TRANSFER:0 "§HUnmark State§!\nUnmarks the selected state\n"
+ mark_state_yes:0 ""
+ mark_state_no:0 "\n  §RMarked!§!"
+
+ FIX_PRODUCTION_TT:0 "§HFix Production Problems§! [§RWARNING: READ DESCRIPTION BEFORE USE§!]" 
+ FIX_PRODUCTION_TT_DELAYED:0 "Use this to fix 'We need to rehost, I accidentally deleted my fighter line' and avoid an unnecessary rehost. \n\nWhat it does: §YBase efficiency for all current and new lines is set to 130% for one day. The efficiency will immediately lower to their old maximum cap.§!\n\nOnly use this to fix massive production mistakes (e.g. accidentally deleting a fighter line or changing a tank line to SPAA) in cases where the nation that made the mistake is already at or near full efficiency on most of their remaining assigned mills (make a judgment call here). Be very selective with how you use this!"
+ why_use_lel_lennard_tt:0 "[This.Owner.GetName] ([This.Owner.GetTag])" 
+ 
+ OBSERVER:0 "§HObserve§!\nMoves player to observer mode\n\n"
+ OBSERVER_DELAYED:0 ""
+
+ WHITEPEACE:0 "§HWhitepeace§!\nCountry will be whitepeaced with every enemy\n\n"
+ WHITEPEACE_DELAYED:0 ""
+
+ CHANGE_HOST_NATION_TT:0 "Change host nation"
+  
+ CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
+ CLEAR_ALL_MARKINGS_DELAYED:0 ""
+
+ TRANSFER_STATES:0 "§HTransfer States§!\nTransfer marked states to [This.Owner.GetName]\n\n"
+ TRANSFER_STATES_DELAYED:0 ""
+ 
+ ADD_CORES:0 "§HAdd cores§!\nAdd cores to marked states for [This.Owner.GetName]\n\n"
+ ADD_CORES_DELAYED:0 ""
+
+ ADD_CORES_TO_ALL_CORES_SELECTED_NATION:0 "§HGive [This.Owner.GetName] cores for cores of marked nation.§!\n[This.Owner.GetName] gets cores on the owner's cores of the selected nation.\n\nFor example if you first mark a Australian state, then select a German state and then press this button it will give Germany cores on every Australian core but not non-core states of Australia\n\n"
+ ADD_CORES_TO_ALL_CORES_SELECTED_NATION_DELAYED:0 ""
+ 
+ ANNEX_COUNTRY:0 "§HAnnex§!\n[This.Owner.GetName] annexes the owner of the selected state\n\n"
+ ANNEX_COUNTRY_DELAYED:0 ""
+ 
+ PUPPET_COUNTRY:0 "§HPuppet§!\n[This.Owner.GetName] puppets the owner of the selected state\n\n"
+ PUPPET_COUNTRY_DELAYED:0 ""
+ 
+ ADD_CHEAT:0 "§HCheat§!\nSelection is given to the selected country\n\n"
+ ADD_CHEAT_DELAYED:0 ""
+
+ WTADD:0 "§HAdd 1% world tension§!\nClicking this button will add 1% world tension\n\n"
+ WTADD_DELAYED:0 ""
+
+ WTREMOVE:0 "§HRemove 1% world tension§!\nClicking this button will remove 1% world tension\n\n"
+ WTREMOVE_DELAYED:0 ""
+
+ SNEK_TP:0 "§HSnek teleported...§!\nSnek teleported again...\n\n"
+ SNEK_TP_DELAYED:0 "§"
+
+  CIVADD:0 "§HAdd 5 Civillian Factories§!\nClicking this button will add five offmap civilian factories to [This.Owner.GetName].\n\n"
+ CIVADD_DELAYED:0 ""
+
+ MILADD:0 "§HAdd 5 Military Factories§!\nClicking this button will add five offmap military factories to [This.Owner.GetName].\n\n"
+ MILADD_DELAYED:0 ""
+
+ ADDPP:0 "§HAdd 50 Political Power§!\nClicking this button will add political power to [This.Owner.GetName].\n\n"
+ 
+ ST_TOOLTIP_on:0 "§HActivate 'Host Tool'§!"
+ ST_TOOLTIP_off:0 "§HDeactivate 'Host Tool'§!"
+ transfer_states_on:0 "Host Tool:£trigger_no"
+ transfer_states_off:0 "Host Tool:£trigger_yes"
+
+ CHEAT_SELECT:0   "Select cheat"
+ CHEAT1:0   "Generic - 50%"
+ CHEAT2:0   "Generic - 100%"
+ CHEAT3:0   "Generic - 2y"
+ CHEAT4:0   "Generic - 999%"
+ CHEAT5:0   "Armour - 100%"
+ CHEAT6:0   "Armour - 2y"
+ CHEAT7:0   "Air - 100%"
+ CHEAT8:0   "Industry - 100%"
+ CHEAT9:0  "Remove 1 Off-Mil"
+ CHEAT10:0  "Remove 1 Off-Civ"
+ CHEAT11:0  "Earrape"
+ CHEAT12:0  "25 Army XP"
+ CHEAT13:0  "25 Air XP"
+ CHEAT14:0  "25 Naval XP"
+ CHEAT15:0  "Schizophrenic Meltdown"
+ CHEAT16:0  "Fix Intel Sharing"
+ CHEAT17:0  "25 Command Power"
+ CHEAT18:0  "Remove Forts"
+
+ PAUSE_SELECT:0 "Pause Settings"
+ PAUSE1:0 "Everyone"
+ PAUSE2:0 "Host Only"
+ PAUSE3:0 "Majors Only"
+ pause_blocker_shield_tt:0 "§HPause Blocker Function§!"
+ pause_blocker_shield_delayed_tt:0 "By default anyone can pause the game, but if you want to restrict pausing to just the host (you) or majors then you can select the 'Majors Only' setting (first on the list) or 'Host Only' setting to prevent pausing by most or all other nations."
+
+ fix_production_idea:0 "Production Fixer"
+  
+ mark_status_marked:0   "     Unmark State "
+ mark_status_unmarked:0 "      Mark State  "
+ 
+
+ host_decisions:0 "Host decisions"
+ host_decisions_desc:0 "Host decisions are used for the sake of keeping the game alive. §RDO NOT ABUSE THESE DECISIONS.§!"
+ end_spanish_civil_war:0 "End Spanish Civil War"
+ end_sino_japanese_war:0 "End Sino-Japanese War"
+ JAP_declare_china:0 "Start Sino-Japanese War"
+ toggle_host_tool_decisions:0 "Toggle Host Tool Decisions"
+ host_tool_decision_enabled:0 "Host Tool Decisions Enabled"
+ spirit_of_bozo_spain:0 "Ruby Spain Build Moment."
+ spirit_of_bozo_spain_desc:0 "You're gonna get the UNTrusted Spain Player role after this LMAO."
+ spirit_of_bozo_japan:0 "Chezloc Japan Build Moment."
+ spirit_of_bozo_japan_desc:0 "You're gonna get the UNTrusted Japan Player role after this LMAO."

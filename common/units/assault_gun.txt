@@ -1,0 +1,581 @@
+sub_units = {
+
+	light_assault_gun_brigade = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 1797
+		ai_priority = 100
+		active = no
+		training_time = 200
+		
+		type = {
+			armor
+			artillery
+		}
+		
+		group = armor
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+			category_assault_gun
+		}
+
+		combat_width = 2
+
+		need = {
+			light_assault_gun_chassis = 40
+		}
+		manpower = 500
+		max_organisation = 5
+		default_morale = 0.3
+		max_strength = 2.0
+		weight = 1
+		suppression = 0.01
+		supply_consumption = 0.3
+		supply_consumption_factor = 0.06
+
+		breakthrough = 0.2
+		# soft_attack = -0.1
+		# hard_attack = -0.15
+
+		plains = {
+			attack = 0.05 
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			movement = 0.05
+		}
+		forest = {
+		    attack = -0.1
+			movement = -0.2
+			defence = -0.05
+		}
+		hills = {
+			attack = 0.025
+			defence = -0.15
+			movement = 0.05
+		}
+		mountain = 	{
+		    attack = -0.2
+			movement = -0.25
+			defence = -0.35
+		}
+		jungle = {
+		    attack = -0.15
+			movement = -0.25
+			defence = -0.1
+		}
+		marsh = {
+		    attack = -0.25
+			movement = -0.3
+			defence = -0.1
+		}
+		river = { 
+			attack = -0.15
+			movement = -0.25
+		}
+		amphibious = {
+			attack = -2.0
+		}
+		fort = {
+			attack = 0.6
+		}
+		urban = {
+			attack = 0.2
+		}
+		dense_urban = {
+			attack = 0.4
+		}
+		town = {
+			attack = 0.05
+		}
+		rock = {
+			attack = -2
+			defence = -2
+		}
+	}
+
+	medium_assault_gun_brigade = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 1797
+		ai_priority = 100
+		active = no
+		training_time = 200
+		
+		type = {
+			armor
+			artillery
+		}
+		
+		group = armor
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+			category_assault_gun
+		}
+
+		combat_width = 2
+
+		need = {
+			medium_assault_gun_chassis = 40
+		}
+		manpower = 500
+		max_organisation = 5
+		default_morale = 0.3
+		max_strength = 2.0
+		weight = 1.25
+		suppression = 0.01
+		supply_consumption = 0.35
+		supply_consumption_factor = 0.07
+
+		breakthrough = 0.2
+
+		plains = {
+			attack = 0.05 
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			movement = 0.05
+		}
+		forest = {
+		    attack = -0.15
+			movement = -0.25
+		}
+		hills = {
+			attack = -0.1
+			movement = -0.1
+			defence = -0.05
+		}
+		mountain = 	{
+		    attack = -0.3
+			movement = -0.4
+			defence = -0.2
+		}
+		jungle = {
+		    attack = -0.25
+			movement = -0.35
+			defence = -0.15
+		}
+		marsh = {
+		    attack = -0.35
+			movement = -0.45
+			defence = -0.25
+		}
+		river = { 
+			attack = -0.2
+			movement = -0.3
+		}
+		amphibious = {
+			attack = -2.0
+		}
+		fort = {
+			attack = 0.6
+		}
+		urban = {
+			attack = 0.2
+		}
+		dense_urban = {
+			attack = 0.4
+		}
+		town = {
+			attack = 0.05
+		}
+		rock = {
+			attack = -2
+			defence = -2
+		}
+	}
+
+	heavy_assault_gun_brigade = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 1797
+		ai_priority = 100
+		active = no
+		training_time = 200
+		
+		type = {
+			armor
+			artillery
+		}
+		
+		group = armor
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+			category_assault_gun
+		}
+
+		combat_width = 2
+
+		need = {
+			heavy_assault_gun_chassis = 40
+		}
+		manpower = 500
+		max_organisation = 5
+		default_morale = 0.3
+		max_strength = 2.0
+		weight = 1.5
+		suppression = 0.01
+		supply_consumption = 0.4
+		supply_consumption_factor = 0.08
+		
+		breakthrough = 0.2
+
+		plains = {
+			attack = 0.05 
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			movement = 0.05
+		}
+		forest = {
+		    attack = -0.2
+			movement = -0.3
+			defence = -0.1
+		}
+		hills = {
+		    attack = -0.2
+			movement = -0.2
+			defence = -0.1
+		}
+		mountain = 	{
+		    attack = -0.4
+			movement = -0.5
+			defence = -0.3
+		}
+		jungle = {
+		    attack = -0.4
+			movement = -0.45
+			defence = -0.25
+		}
+		marsh = {
+		    attack = -0.45
+			movement = -0.55
+			defence = -0.3
+		}
+		river = { 
+			attack = -0.4
+			movement = -0.4
+		}
+		amphibious = {
+			attack = -2.0
+		}
+		fort = {
+			attack = 0.6
+		}
+		urban = {
+			attack = 0.2
+		}
+		dense_urban = {
+			attack = 0.4
+		}
+		town = {
+			attack = 0.05
+		}
+		rock = {
+			attack = -2
+			defence = -2
+		}
+	}
+
+	light_assault_gun_support = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 1797
+		ai_priority = 100
+		active = no
+		training_time = 200
+		
+		type = {
+			armor
+			artillery
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+			category_assault_gun
+			category_support_battalions
+		}
+
+		combat_width = 0
+
+		need = {
+			light_assault_gun_chassis = 80
+		}
+		manpower = 500
+		max_organisation = 5
+		default_morale = 0.3
+		max_strength = 2.0
+		weight = 1
+		suppression = 0.01
+		supply_consumption = 0.3
+		supply_consumption_factor = 0.06
+
+		breakthrough = 0.15
+		soft_attack = -0.30
+		hard_attack = -0.30
+
+		plains = {
+			attack = 0.0125
+			movement = 0.0125
+		}
+		desert = {
+			attack = 0.0125
+			movement = 0.0125
+		}
+		forest = {
+		    attack = -0.025
+			movement = -0.05
+			defence = -0.0125
+		}
+		hills = {
+			attack = -0.0125
+			movement = -0.0125
+		}
+		mountain = 	{
+		    attack = -0.05
+			movement = -0.75
+			defence = -0.025
+		}
+		jungle = {
+		    attack = -0.0375
+			movement = -0.0625
+			defence = -0.025
+		}
+		marsh = {
+		    attack = -0.0625
+			movement = -0.075
+			defence = -0.025
+		}
+		river = { 
+			attack = -0.0375
+			movement = -0.0625
+		}
+		amphibious = {
+			attack = -1.0
+		}
+		fort = {
+			attack = 0.15
+		}
+		urban = {
+			attack = 0.05
+		}
+		dense_urban = {
+			attack = 0.1
+		}
+		town = {
+			attack = 0.0125
+		}
+
+		same_support_type = light_assault_gun_support
+
+	}
+
+	medium_assault_gun_support = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 1797
+		ai_priority = 100
+		active = no
+		training_time = 200
+		
+		type = {
+			armor
+			artillery
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+			category_assault_gun
+			category_support_battalions
+		}
+
+		combat_width = 0
+
+		need = {
+			medium_assault_gun_chassis = 80
+		}
+		manpower = 500
+		max_organisation = 5
+		default_morale = 0.3
+		max_strength = 2.0
+		weight = 1.25
+		suppression = 0.01
+		supply_consumption = 0.35
+		supply_consumption_factor = 0.07
+
+		breakthrough = 0.2
+
+		plains = {
+			attack = 0.025 
+			movement = 0.025
+		}
+		desert = {
+			attack = 0.025
+			movement = 0.025
+		}
+		forest = {
+		    attack = -0.075
+			movement = -0.125
+		}
+		hills = {
+			attack = -0.05
+			movement = -0.05
+			defence = -0.025
+		}
+		mountain = 	{
+		    attack = -0.15
+			movement = -0.2
+			defence = -0.1
+		}
+		jungle = {
+		    attack = -0.125
+			movement = -0.175
+			defence = -0.075
+		}
+		marsh = {
+		    attack = -0.175
+			movement = -0.225
+			defence = -0.125
+		}
+		river = { 
+			attack = -0.1
+			movement = -0.15
+		}
+		amphibious = {
+			attack = -1.0
+		}
+		fort = {
+			attack = 0.3
+		}
+		urban = {
+			attack = 0.1
+		}
+		dense_urban = {
+			attack = 0.2
+		}
+		town = {
+			attack = 0.025
+		}
+
+		same_support_type = light_assault_gun_support
+
+	}
+
+	heavy_assault_gun_support = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 1797
+		ai_priority = 100
+		active = no
+		training_time = 200
+		
+		type = {
+			armor
+			artillery
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+			category_assault_gun
+			category_support_battalions
+		}
+
+		combat_width = 0
+
+		need = {
+			heavy_assault_gun_chassis = 80
+		}
+		manpower = 500
+		max_organisation = 5
+		default_morale = 0.3
+		max_strength = 2.0
+		weight = 1.5
+		suppression = 0.01
+		supply_consumption = 0.4
+		supply_consumption_factor = 0.08
+		
+		breakthrough = 0.2
+
+		plains = {
+			attack = 0.025 
+			movement = 0.025
+		}
+		desert = {
+			attack = 0.025
+			movement = 0.025
+		}
+		forest = {
+		    attack = -0.1
+			movement = -0.15
+			defence = -0.05
+		}
+		hills = {
+		    attack = -0.1
+			movement = -0.1
+			defence = -0.05
+		}
+		mountain = 	{
+		    attack = -0.2
+			movement = -0.25
+			defence = -0.15
+		}
+		jungle = {
+		    attack = -0.2
+			movement = -0.225
+			defence = -0.125
+		}
+		marsh = {
+		    attack = -0.225
+			movement = -0.275
+			defence = -0.15
+		}
+		river = { 
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -1.0
+		}
+		fort = {
+			attack = 0.3
+		}
+		urban = {
+			attack = 0.1
+		}
+		dense_urban = {
+			attack = 0.2
+		}
+		town = {
+			attack = 0.025
+		}
+
+		same_support_type = light_assault_gun_support
+	}
+}

@@ -1,0 +1,36 @@
+HOL_historical = {
+	name = "HOL historical plan"
+	desc = "Essentially historical behaviour for HOL"
+
+	enable = {
+		original_tag = HOL
+	}
+
+	ai_national_focuses = {
+		HOL_form_new_government
+		HOL_obtain_foreign_colonial_investments
+		HOL_the_crown_jewel_colony
+		HOL_sumatra_industry
+		HOL_java
+		HOL_borneo_and_the_grote_oost
+		HOL_curtail_colonial_autonomy
+		HOL_the_western_possessions
+		HOL_open_second_paranam_bauxite_mine
+		HOL_expand_curacao_oil_refineries
+		HOL_colonial_shipbuilding
+		HOL_finish_western_development
+		HOL_abandon_the_gold_standard
+		HOL_war_on_pacifism
+		HOL_de_vaarplicht
+		HOL_continue_the_public_works
+		HOL_finish_the_noordoostpolder
+		HOL_the_maastunnel
+		HOL_expand_the_artillerieinrichtingen
+		HOL_the_zuiderzee_works
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+}

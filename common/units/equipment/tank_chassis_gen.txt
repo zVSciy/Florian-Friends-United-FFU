@@ -1,0 +1,379 @@
+equipments = {
+
+  # Light Tanks
+
+    # Basic Light Tank
+	light_tank_chassis_1 = {
+		abbreviation = "lt1"
+		visual_level = 0
+		year = 1936
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 12
+		reliability = 0.8
+		armor_value = 15
+		defense = 5
+		breakthrough = 15
+	}
+
+	# Improved Light Tank
+	light_tank_chassis_2 = {
+		abbreviation = "lt2"
+		visual_level = 1
+		year = 1939
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 6
+		build_cost_ic = 14
+		reliability = 0.8
+		armor_value = 30
+		defense = 5
+		breakthrough = 25
+	}
+	
+	# Advanced Light Tank
+	light_tank_chassis_3 = {
+		abbreviation = "lt3"
+		visual_level = 2
+		year = 1942
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
+					tank_light_turret_type_3
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 6.5
+		build_cost_ic = 16
+		reliability = 0.8
+		armor_value = 30
+		defense = 6
+		breakthrough = 35
+	}
+
+  # Medium Tanks
+
+	# Basic Light Tank
+	medium_tank_chassis_1 = {
+		abbreviation = "md1"
+		visual_level = 0
+		year = 1938
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade
+			# tank_nsb_engine_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.75
+		armor_value = 30
+		defense = 6
+		breakthrough = 30
+	}
+
+	# Improved Light Tank
+	medium_tank_chassis_2 = {
+		abbreviation = "md2"
+		visual_level = 1
+		year = 1941
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade
+			# tank_nsb_engine_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 22
+		reliability = 0.75
+		armor_value = 45
+		defense = 7
+		breakthrough = 45
+	}
+
+	# Advanced Light Tank
+	medium_tank_chassis_3 = {
+		abbreviation = "md3"
+		visual_level = 2
+		year = 1944
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+					tank_modern_turret_type
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade
+			# tank_nsb_engine_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 30
+		reliability = 0.75
+		armor_value = 75
+		defense = 8
+		breakthrough = 50
+	}
+	
+
+  # Other tanks
+
+	# Are these even used?
+
+	light_tank_chassis_0 = {
+		abbreviation = "md1"
+		visual_level = 0
+		year = 1938
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = inherit
+		upgrades = {
+			# tank_nsb_Heavy_engine_2_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.75
+		armor_value = 30
+		defense = 6
+		breakthrough = 35
+	}
+	medium_tank_chassis_0 = {
+		abbreviation = "md1"
+		visual_level = 0
+		year = 1938
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = inherit
+		upgrades = {
+			tank_nsb_armor_upgrade
+			# tank_nsb_engine_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.75
+		armor_value = 30
+		defense = 6
+		breakthrough = 30
+	}
+	heavy_tank_chassis_0 = {
+		abbreviation = "md1"
+		visual_level = 0
+		year = 1938
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = inherit
+		upgrades = {
+			# tank_nsb_Heavy_engine_2_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.75
+		armor_value = 30
+		defense = 6
+		breakthrough = 35
+	}
+	heavy_tank_chassis_1 = {
+		abbreviation = "md1"
+		visual_level = 0
+		year = 1938
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = inherit
+		upgrades = {
+			# tank_nsb_Heavy_engine_2_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.75
+		armor_value = 30
+		defense = 6
+		breakthrough = 35
+	}
+	heavy_tank_chassis_2 = {
+		abbreviation = "md1"
+		visual_level = 0
+		year = 1938
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = inherit
+		upgrades = {
+			# tank_nsb_Heavy_engine_2_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.75
+		armor_value = 30
+		defense = 6
+		breakthrough = 35
+	}
+	heavy_tank_chassis_3 = {
+		abbreviation = "md1"
+		visual_level = 0
+		year = 1938
+		archetype = heavy_tank_chassis
+		upgrades = {
+			# tank_nsb_Heavy_engine_2_upgrade
+		}
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.75
+		armor_value = 30
+		defense = 6
+		breakthrough = 35
+	}
+
+	# Scrapped Choking concept for Artillery Tractor
+	# heavy_tank_chassis_spg = {
+	# 	abbreviation = "spg"
+	# 	visual_level = 0
+	# 	year = 1940
+	# 	archetype = heavy_tank_chassis
+	# 	priority = 2000
+	# 	module_slots = {
+	# 		main_armament_slot = {
+	# 			required = yes
+	# 			allowed_module_categories = {
+	# 				tank_armament_tier_6
+	# 				tank_armament_tier_7
+	# 			}
+	# 		}
+	# 		turret_type_slot = 	{
+	# 			required = yes
+	# 			allowed_module_categories = {
+	# 				tank_heavy_turret_type_spg
+	# 			}
+	# 		}
+	# 		armor_type_slot = inherit
+	# 		engine_type_slot = inherit
+	# 	}
+	# 	maximum_speed = 5.0
+	# 	build_cost_ic = 20
+	# 	reliability = 0.8
+	# 	armor_value = 0
+	# 	hardness = 0.2
+	# 	defense = 4
+	# 	breakthrough = 40
+	# }
+}

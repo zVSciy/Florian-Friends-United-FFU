@@ -1,0 +1,30 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  SAF_queen_of_the_desert:0 "Queen of the Desert"
+  SAF_queen_of_the_desert_desc:0 "We are the best in desert tank warfare."
+  SAF_focus_heavy_artillery:0 "South African Pounders"
+  SAF_heavy_AT_bonus:0 "Infantry Tank Destroyer Development"
+  SAF_heavy_AT_bonus_desc:0 "We need heavy anti tank weapons to counter enemy tanks."
+  SAF_anti_tank_guns:0 "Tank Pounders Program"
+  SAF_anti_tank_guns_desc:0 "Our infantry needs weapons to country tanks."
+  #SAF_old_way:0 "The Old Way" 
+  SAF_develop_new_lands:0 "Develop New Lands"
+  SAF_develop_new_lands_desc:0 "Former British colonies have been left underdeveloped and in poverty, only a greater South Africa can bring an end to this madness!"
+
+  ### IDEAS ###
+  SAF_heavy_artillery2:0 "Heavy Artillery"
+  SAF_cope_organization:0 "Cape Cope"
+
+  ### DECISIONS ###
+  develop_congolese_rubber:0 "Develop Congolese Rubber Plantations"
+  SAF_get_ethiopia:0 "Get Ethiopia"
+
+  ### FLAGS ###
+  SAF_ENG_accepted_transfering_africa:0 "§YUnited Kingdom accepted our request§!"
+ 
+  ### EVENTS ###
+  tfv_south_africa.1.c_tt:0 "Keep rights to the resources."
+  tfv_south_africa.4.t_cc:0 "The Resource Compromise"
+  tfv_south_africa.4.d_c:0 "After long deliberation, the British government has come up with a compromise regarding the defense of the African colonies. Under this new scheme, the colonies will be governed by South Africa but UK keeps access to the resources"
+  tfv_south_africa.4.a_c:0 "A good compromise"

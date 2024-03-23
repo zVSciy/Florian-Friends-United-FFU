@@ -1,0 +1,268 @@
+HMP_startup_on_actions = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = navy_cap
+				option = ENABLED
+			}
+		}
+		every_country = {
+			add_dynamic_modifier = { modifier = fleet_overstack_dynamic_modifier  }
+		}
+	}
+}
+
+HMP_check_fleet_size = {
+
+	clear_array = battle_admirals
+	set_variable = { var = fleet_overstack_naval_damage_factor value = 0 }
+	every_navy_leader = {
+		limit = { check_variable = {  num_ships < 1 } } clear_variable = command_limit_used
+	}
+	every_navy_leader = {
+		clear_variable = destroyer_count 
+
+		add_to_variable = { 
+			var = destroyer_count
+			value = num_ships_with_type@destroyer
+		}
+		clear_variable = submarine_count 
+		add_to_variable = { 
+			var = submarine_count
+			value = num_ships_with_type@submarine
+		}			
+		clear_variable = light_cruiser_count 
+		add_to_variable = {  
+			var = light_cruiser_count
+			value = num_ships_with_type@light_cruiser
+		}		
+		clear_variable = heavy_cruiser_count 
+		add_to_variable = { 
+			var = heavy_cruiser_count
+			value = num_ships_with_type@heavy_cruiser
+		}				
+		clear_variable = battleship_count 
+		add_to_variable = { 
+			var = battleship_count
+			value = num_ships_with_type@battleship
+		}				
+		clear_variable = battlecruiser_count 
+		add_to_variable = { 
+			var = battlecruiser_count
+			value = num_ships_with_type@battle_cruiser
+		}										
+		clear_variable = carrier_count 
+		add_to_variable = { 
+			var = carrier_count
+			value = num_ships_with_type@carrier
+		}			
+		clear_variable = shbb_count 
+		add_to_variable = { 
+			var = shbb_count
+			value = num_ships_with_type@sh_battleship
+		}
+
+		# New stuff I added
+		clear_variable = capital_count 
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@heavy_cruiser
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@battleship
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@battle_cruiser
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@carrier
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@sh_battleship
+		}
+
+		clear_variable = screen_count
+		add_to_variable = { 
+			var = screen_count
+			value = num_ships_with_type@destroyer
+		}
+		add_to_variable = { 
+			var = screen_count
+			value = num_ships_with_type@light_cruiser
+		}
+
+		clear_variable = needed_screen_count 
+		add_to_variable = { 
+			var = needed_screen_count
+			value = capital_count
+		}
+		if= {
+            limit = { has_trait = fleet_protector }
+            multiply_variable = { 
+                var = needed_screen_count
+                value = 2.5
+            }
+        }
+        else = {
+            multiply_variable = { 
+                var = needed_screen_count
+                value = 3
+            }
+        }
+
+		
+		set_temp_variable = {
+			var = command_limit_used_temp
+			value = 0
+		}
+		set_temp_variable = {
+			var = heavy_cruiser_count_temp
+			value = heavy_cruiser_count 
+		}
+		multiply_temp_variable  = { 
+			var =  heavy_cruiser_count_temp value = 2
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = heavy_cruiser_count_temp
+		}
+		set_temp_variable = {
+			var = light_cruiser_count_temp
+			value = light_cruiser_count 
+		}
+		multiply_temp_variable  = { 
+			var =  light_cruiser_count_temp value = 2
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = light_cruiser_count_temp
+		}
+		set_temp_variable = {
+			var = destroyer_count_temp
+			value = destroyer_count
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = destroyer_count_temp
+		}
+		set_temp_variable = {
+			var = battleship_count_temp
+			value = battleship_count 
+		}
+		multiply_temp_variable  = { 
+			var =  battleship_count_temp value = 6
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = battleship_count_temp
+		}
+		
+		set_temp_variable = {
+			var = battlecruiser_count_temp
+			value = battlecruiser_count 
+		}
+		multiply_temp_variable  = { 
+			var =  battlecruiser_count_temp value = 6
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = battlecruiser_count_temp
+		}
+			
+		set_temp_variable = {
+			var =carrier_count_temp
+			value = carrier_count 
+		}
+		multiply_temp_variable  = { 
+			var =  carrier_count_temp value = 6
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = carrier_count_temp
+		}		
+		set_temp_variable ={
+			var = shbb_count_temp
+			value = shbb_count
+		}
+		multiply_temp_variable = {
+			var = shbb_count_temp value = 8
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = shbb_count_temp
+		}
+		set_temp_variable = {
+			var =submarine_count_temp
+			value = submarine_count 
+		}
+		add_to_temp_variable = {
+			var = command_limit_used_temp
+			value = submarine_count_temp
+		}		
+		
+		clear_variable = command_limit_used 
+		add_to_variable = { 
+			var = command_limit_used
+			value = command_limit_used_temp
+		}
+		if = {  
+			limit = { check_variable = {  command_limit_used > 100 } }
+			add_to_temp_variable = { 
+				var = command_limit_penalty_calc
+				value = command_limit_used
+			}
+			subtract_from_temp_variable = {
+				var = command_limit_penalty_calc
+				value = 95
+			}
+			multiply_temp_variable = {
+				var = command_limit_penalty_calc
+				value = -0.01
+			}
+			add_to_variable ={
+				var = PREV.PREV.fleet_overstack_naval_damage_factor
+				value =  command_limit_penalty_calc
+			}
+		
+		}
+	}
+	
+	every_navy_leader = {
+		limit = {	
+			NOT = { is_in_array = { array = ROOT.battle_admirals value = THIS.id } }		
+			custom_trigger_tooltip = {  
+				OR = { 
+					check_variable = { num_ships_with_type@carrier > 0 }
+					check_variable = { num_ships_with_type@sh_battleship > 0 } 
+					check_variable = { num_ships_with_type@light_cruiser > 0 } 
+					check_variable = {  num_ships_with_type@battleship > 0 } 
+					check_variable = { num_ships_with_type@battle_cruiser > 0 } 
+					check_variable = {  num_ships_with_type@heavy_cruiser > 0  }  
+					check_variable = {  num_ships_with_type@destroyer > 1  }  
+					check_variable = {  num_ships_with_type@submarine > 1  }  
+				}
+			}	
+		}
+		add_to_array = { 
+			array = ROOT.battle_admirals
+			value = THIS.id
+		}
+		clear_variable = get_num_ships
+		add_to_variable = {
+			var = get_num_ships 
+			value = num_ships
+		}
+	}
+			
+	if = { 
+		limit = { 
+			check_variable = { fleet_overstack_naval_damage_factor < -1 } 
+		}
+		set_variable = { var = fleet_overstack_naval_damage_factor value = -1 }
+	}
+	
+}

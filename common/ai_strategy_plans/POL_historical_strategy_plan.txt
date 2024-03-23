@@ -1,0 +1,74 @@
+POL_historical_plan = {
+	name = "POL historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		POL_the_four_year_plan
+		POL_central_region_strategy
+		POL_expansion_of_new_towns
+		POL_fill_the_railways_gaps
+		POL_agrarian_reform
+		POL_central_defence_of_poland
+		POL_develop_upper_silesia
+		POL_additional_research_slot1
+		POL_clamp_down_on_danzig
+		POL_ban_the_nazi_party
+		POL_integrate_gdansk_industries
+		POL_invest_in_the_old_polish_region
+		POL_modernize_congressional_factories
+		POL_warsaw_main_railway_station
+		POL_national_defence_fund
+		POL_invest_in_eastern_poland
+		POL_expand_katowice_mines
+		POL_start_central_industrial_region
+		POL_expand_central_industrial_region
+
+		# politics
+		POL_complete_april_constitution
+		POL_polish_militarism
+		POL_consolidate_sanation_government
+		POL_the_castle
+		POL_the_sanation_right
+		POL_eliminate_socialist_parties
+		POL_dissolve_the_sejm
+		POL_support_right_paramilitaries
+		POL_department_for_home_defence
+		POL_second_man_of_the_state
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+	
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,48 @@
+
+state = {
+	id = 144
+	name = "STATE_144" # Nordland
+	manpower = 142100 # 355251
+	
+	state_category = rural
+	impassable = yes # really cringe to fight here
+	
+	resources={
+		steel=140 # was: 12
+		tungsten = 250 # was: 20
+	}
+
+	history = {
+		# victory_points = {
+		# 	192 2
+		# }
+		# victory_points = {
+		# 	9126 1
+		# }
+		
+		owner = NOR
+		add_core_of = NOR
+		#if = {
+		#	limit = {
+		#		has_dlc = "Arms Against Tyranny"
+		#	}
+		#	add_core_of = SMI
+		#}
+		buildings = {
+			infrastructure = 3
+			industrial_complex =1
+			air_base = 1
+			192 = {
+				naval_base = 3
+			}
+			
+		}
+		add_extra_state_shared_building_slots = 1
+	}
+
+	provinces = {
+		38 192 3034 3132 3145 9126 11157 6214
+	}
+
+	local_supplies = 0.0 
+}

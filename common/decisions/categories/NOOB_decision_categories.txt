@@ -1,0 +1,9 @@
+NEW_player_decisions = {
+	priority = 10000
+
+	icon = generic_propaganda
+
+	visible = {
+		NOT = { has_country_flag = new_player_help_disabled }
+	}
+}

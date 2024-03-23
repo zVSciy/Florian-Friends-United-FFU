@@ -1,0 +1,34 @@
+
+state={
+	id=307
+	name="STATE_307" # Miranda
+	
+	state_category = city
+	
+	manpower = 1 #1335010
+	resources={
+		oil=840 # was: 58
+		steel=200
+		tungsten = 1070
+		chromium = 870
+	}
+
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 7
+			8113 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = VEN
+		add_extra_state_shared_building_slots = 6
+
+	}
+
+	provinces={
+		4942 7968 8024 8080 8113 10767 10823 10912 5056 4892 5000
+	}
+
+	local_supplies=0.0 
+}

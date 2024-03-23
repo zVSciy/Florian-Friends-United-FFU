@@ -1,0 +1,670 @@
+defined_text = { 
+	name = GetAdmiralPortrait
+########GERMANY
+	text = {
+		trigger = {  
+			ROOT = { tag = GER }
+			is_character = GER_karl_dönitz
+		}
+		localization_key = GFX_portrait_GER_karl_donitz
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = GER }
+			is_character = GER_erich_raeder 
+		}
+		localization_key = GFX_portrait_GER_erich_raeder
+	}
+	text = {
+		trigger = { 			
+			ROOT = { tag = GER }
+			is_character = GER_günther_lütjens 
+		}
+		localization_key = GFX_portrait_GER_gunther_lutjens
+	}
+	text = {
+		trigger = {
+			ROOT = { tag = GER }
+			is_character = GER_alfred_saalwächter 
+		}
+		localization_key = GFX_portrait_GER_alfred_saalwachter
+	}
+	text = {
+		trigger = {
+			ROOT = { tag = GER }
+			is_character = GER_hermann_boehm 
+		}
+		localization_key = GFX_portrait_GER_hermann_boehm
+	}	
+	text = {
+		trigger = { 
+			ROOT = { tag = GER }
+			is_character = GER_wilhelm_marschall 
+		}
+		localization_key = GFX_portrait_GER_wilhelm_marschall
+	}	
+#######EURO AXIS MINOR
+	text = {
+		trigger = { 
+			ROOT = { tag = YUG }
+			is_character = YUG_marijan_polić 
+		}
+		localization_key = GFX_Portrait_yugoslavia_marijan_polic
+	}	
+	text = {
+		trigger = { 
+			ROOT = { tag = BUL }
+			is_character = BUL_atanas_shalapatov 
+		}
+		localization_key =  GFX_portrait_BUL_atanas_shalapatov
+	}	
+	text = {
+		trigger = { 
+			ROOT = { original_tag = SPA }
+			is_character = SPR_miguel_buiza_fernandez_palacios 
+		}
+		localization_key = GFX_portrait_SPR_miguel_buiza_fernandez_palacios
+	}	
+	text = {
+		trigger = { 
+			ROOT = { original_tag = SPA }
+			is_character = SPA_luis_carrero_blanco 
+		}
+		localization_key = GFX_portrait_SPA_luis_carrero_blanco
+	}	
+	text = {
+		trigger = { 
+			ROOT = { tag = ROM }
+			is_character = ROM_horia_macellariu 
+		}
+		localization_key = GFX_Portrait_romania_horia_macellariu
+	}	
+#######ITALY
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA } 
+			is_character = ITA_inigo_campioni 
+		}
+		localization_key = GFX_portrait_ITA_inigo_campioni
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_alberto_da_zara 
+		}
+		localization_key = GFX_portrait_ITA_alberto_da_zara
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_giuseppe_fioravanzo 
+		}
+		localization_key = GFX_portrait_ITA_giuseppe_fioravanzo
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_carlo_bergamini 
+		}
+		localization_key = GFX_portrait_ITA_carlo_bergamini
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_angelo_iachino 
+		}
+		localization_key = GFX_portrait_ITA_angelo_iachino
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_junio_valerio_borghese 
+		}
+		localization_key = GFX_portrait_ITA_junio_valerio_borghese
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_prince_aimone 
+		}
+		localization_key = GFX_portrait_ITA_prince_aimone
+	}
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_giuseppe_di_bartolo 
+		}
+		localization_key = GFX_portrait_ITA_giuseppe_di_bartolo
+	}	
+	text = {
+		trigger = { 
+			ROOT = { tag = ITA }
+			is_character = ITA_inigo_campioni 
+		}
+		localization_key = GFX_portrait_ITA_inigo_campioni
+	}
+#######JAPAN
+	text = {
+		trigger = { 
+			ROOT = { tag = JAP }
+			is_character = JAP_isoroku_yamamoto 
+		}
+		localization_key = GFX_portrait_JAP_isoroku_yamamoto
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_mineichi_koga 
+		}
+		localization_key = GFX_portrait_JAP_mineichi_koga
+	}
+	# text = {
+	# 	trigger = { is_character = JAP_mikawa }
+	# 	localization_key = GFX_portrait_JAP_GunichiMikawa
+	# }
+	# text = {
+	# 	trigger = { is_character = JAP_kakuta }
+	# 	localization_key = GFX_portrait_JAP_KakujiKakuta
+	# }
+	# text = {
+	# 	trigger = { is_character = JAP_tanaka }
+	# 	localization_key = GFX_portrait_JAP_RaizoTanaka
+	# }
+
+	# text = {
+	# 	trigger = { is_character = JAP_kurita }
+	# 	localization_key = GFX_portrait_JAP_Kurita
+	# }
+	# text = {
+	# 	trigger = { is_character = JAP_yamaguchi }
+	# 	localization_key = GFX_portrait_JAP_Yamaguchi
+	# }
+	# text = {
+	# 	trigger = { is_character = JAP_chuichi_nagumo }
+	# 	localization_key = GFX_portrait_JAP_NAGUMO 
+	# }
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_soemu_toyoda 
+		}
+		localization_key = GFX_portrait_JAP_soemu_toyoda
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_tadashige_daigo 
+		}
+		localization_key = GFX_portrait_JAP_tadashige_daigo
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_nobutake_kondō 
+		}
+		localization_key = GFX_portrait_JAP_nobutake_kondo
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_shigeyoshi_inoue 
+		}
+		localization_key = GFX_portrait_JAP_shigeyoshi_inoue
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_zengo_yoshida 
+		}
+		localization_key = GFX_portrait_JAP_zengo_yoshida
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_takeo_takagi 
+		}
+		localization_key = GFX_portrait_JAP_takeo_takagi
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_jisaburo_ozawa 
+		}
+		localization_key = GFX_portrait_JAP_jisaburo_ozawa
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_hiroaki_abe 
+		}
+		localization_key = GFX_portrait_JAP_hiroaki_abe
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_gengo_hyakutake 
+		}
+		localization_key = GFX_portrait_JAP_gengo_hyakutake
+	}
+	text = {
+		trigger = {  
+			ROOT = { tag = JAP }
+			is_character = JAP_kiyoshi_hasegawa 
+		}
+		localization_key = GFX_portrait_JAP_kiyoshi_hasegawa
+	}
+#######SOVIETS
+	text = {
+		trigger = {  
+			ROOT = { tag = SOV }
+			is_character = SOV_filipp_oktyabrsky 
+		}
+		localization_key = GFX_portrait_SOV_filipp_oktyabrsky
+	}
+	text = {
+		trigger = {   
+			ROOT = { tag = SOV }
+			is_character = SOV_gordey_levchenko 
+		}
+		localization_key = GFX_portrait_SOV_gordey_levchenko
+	}
+	text = {
+		trigger = {   
+			ROOT = { tag = SOV }
+			is_character = SOV_sergey_gorshkov 
+		}
+		localization_key = GFX_portrait_SOV_sergey_gorshkov
+	}
+	text = {
+		trigger = {   
+			ROOT = { tag = SOV }
+			is_character = SOV_arseny_golovko 
+		}
+		localization_key = GFX_portrait_SOV_arseny_golovko
+	}
+	text = {
+		trigger = {   
+			ROOT = { tag = SOV }
+			is_character = SOV_vladimir_kasatonov 
+		}
+		localization_key = GFX_portrait_SOV_vladimir_kasatonov
+	}
+#######UK
+	text = {
+		trigger = {   
+			ROOT = { tag = ENG }
+			is_character = ENG_james_fownes_somerville 
+		}
+		localization_key = GFX_portrait_ENG_james_fownes_somerville
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_charles_forbes 
+		}
+		localization_key = GFX_portrait_ENG_charles_forbes
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_andrew_cunningham 
+		}
+		localization_key = GFX_portrait_ENG_andrew_cunningham
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_bruce_fraser 
+		}
+		localization_key = GFX_portrait_ENG_bruce_fraser
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_john_tovey 
+		}
+		localization_key = GFX_portrait_ENG_john_tovey
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_bernard_rawlings 
+		}
+		localization_key = GFX_portrait_ENG_bernard_rawlings
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_john_cunningham 
+		}
+		localization_key = GFX_portrait_ENG_john_cunningham
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_arthur_power 
+		}
+		localization_key = GFX_portrait_ENG_arthur_power
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_algernon_willis 
+		}
+		localization_key = GFX_portrait_ENG_algernon_willis
+	}
+	text = {
+		trigger = {    
+			ROOT = { tag = ENG }
+			is_character = ENG_henry_harwood 
+		}
+		localization_key = GFX_idea_henry_harwood
+	}
+	# text = {
+	# 	trigger = { is_character = ENG_anstice }
+	# 	localization_key = GFX_Portrait_England_Edmund_Anstice
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_barnard }
+	# 	localization_key = GFX_Portrait_England_Geoffrey_Barnard
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_cayley }
+	# 	localization_key = GFX_portrait_ENG_cayley
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_Roope }
+	# 	localization_key = GFX_Portrait_ENG_Roope
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_Walker }
+	# 	localization_key = GFX_Portrait_ENG_Walker
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_Beattie }
+	# 	localization_key = GFX_Portrait_ENG_Beattie
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_pugsley }
+	# 	localization_key = GFX_Portrait_ENG_pugsley
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_pegram }
+	# 	localization_key = GFX_Portrait_ENG_pegram
+	# }
+	# text = {
+	# 	trigger = { is_character = ENG_oliver }
+	# 	localization_key = GFX_Portrait_ENG_oliver
+	# }
+
+#######USA
+
+	text = {
+		trigger = {    
+			ROOT = { tag = USA }
+			is_character = USA_chester_w._nimitz 
+		}
+		localization_key = GFX_portrait_USA_chester_w_nimitz
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = USA }
+			is_character = USA_arleigh_burke 
+		}
+		localization_key = GFX_portrait_USA_arleigh_burke
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = USA }
+			is_character = USA_harold_rainsford_stark 
+		}
+		localization_key = GFX_portrait_USA_harold_rainsford_stark
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = USA }
+			is_character = USA_william_halsey_jr. 
+		}
+		localization_key =  GFX_portrait_USA_william_halsey_jr
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = USA }
+			is_character = USA_frank_jack_fletcher 
+		}
+		localization_key = GFX_portrait_USA_frank_jack_fletcher
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = USA }
+			is_character = USA_raymond_a._spruance 
+		}
+		localization_key = GFX_portrait_USA_raymond_a_spruance
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = USA }
+			is_character =  USA_ernest_king 
+		}
+		localization_key =  GFX_portrait_USA_ernest_king
+	}
+
+	text = {
+		trigger = {     
+			ROOT = { tag = USA }
+			is_character =  USA_charles_m._cooke_jr 
+		}
+		localization_key = GFX_portrait_USA_charles_m_cooke_jr
+	}
+	# text = {
+	# 	trigger = { is_character =  USA_leahy }
+	# 	localization_key =  GFX_portrait_USA_leahy
+	# }
+	# text = {
+	# 	trigger = { is_character =  USA_pride }
+	# 	localization_key =  GFX_Portrait_USA_alfred_pride
+	# }
+	# text = {
+	# 	trigger = { is_character =  USA_wright }
+	# 	localization_key =  GFX_Portrait_USA_jerauld_wright
+	# }
+	# text = {
+	# 	trigger = { is_character =  USA_lee }
+	# 	localization_key =  GFX_Portrait_USA_willis_lee
+	# }
+	# text = {
+	# 	trigger = { is_character =  USA_rickover }
+	# 	localization_key =  GFX_Portrait_USA_hyman_rickover
+	# }
+	# text = {
+	# 	trigger = { is_character =  USA_smith }
+	# 	localization_key =  GFX_portrait_USA_smith
+	# }
+#######ALLIED MINORS
+
+	text = {
+		trigger = {     
+			ROOT = { tag = FRA }
+			is_character =  FRA_francois_darlan 
+		}
+		localization_key =  GFX_portrait_FRA_francois_darlan
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = CAN }
+			is_character =  CAN_harry_dewolf 
+		}
+		localization_key =  GFX_CAN_harry_dewolf
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = AST }
+			is_character =  AST_harold_farncomb  
+		}
+		localization_key =  GFX_AST_harold_farncomb
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = HOL }
+			is_character =  HOL_karel_doorman  
+		}
+		localization_key =  GFX_portrait_hol_karel_doorman
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = SAF }
+			is_character =  SAF_guy_hallifax  
+		}
+		localization_key =  GFX_SAF_guy_halifax
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = CAN }
+			is_character =  CAN_leonard_w_murray  
+		}
+		localization_key =  GFX_CAN_leonard_warren_murray
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = AST }
+			is_character =  AST_victor_crutchley  
+		}
+		localization_key =  GFX_AST_victor_crutchley_real 
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = HOL }
+			is_character =  HOL_conrad_helfrich  
+		}
+		localization_key =   GFX_portrait_hol_conrad_helfrich_real 
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = NZL }
+			is_character =  NZL_edmund_rupert_drummond  
+		}
+		localization_key =  GFX_NZL_edmund_drummond
+	}
+	text = {
+		trigger = {     
+			ROOT = { tag = NZL }
+			is_character =  NZL_peter_phipps  
+		}
+		localization_key =  GFX_NZL_peter_phipps
+	}
+}
+
+
+defined_text = { 
+	name = GetAdmiralNameTitle 
+	text = {
+		localization_key = GetAdmiralNameTitle_def
+	}
+}
+ 
+
+defined_text = { 
+	name = GetShipCount 
+	text = {
+		localization_key = GetShipCount_def
+	}
+}
+
+defined_text = { 
+	name = GetScreenCount 
+	text = {
+		trigger = { 
+			has_game_rule = {
+				rule = navy_cap
+				option = DISABLED
+			}
+		}
+		localization_key = GetCommandLimit_disabled
+	}
+	text = {
+		trigger = { 
+			check_variable = { THIS.needed_screen_count < THIS.screen_count }
+		}
+		localization_key = GetScreens_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { THIS.needed_screen_count = THIS.screen_count }
+		}
+		localization_key = GetScreens_equal_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { THIS.needed_screen_count > THIS.screen_count }
+		}
+		localization_key = GetScreens_over_def
+	}	
+
+}
+
+defined_text = { 
+	name = GetScreensNeededCount 
+	text = {
+		trigger = { 
+			has_game_rule = {
+				rule = navy_cap
+				option = DISABLED
+			}
+		}
+		localization_key = GetCommandLimit_disabled
+	}
+	# Green
+	text = {
+		trigger = { 
+			check_variable = { THIS.needed_screen_count < THIS.screen_count }
+		}
+		localization_key = GetScreensNeeded_under_def
+	}
+	# Yellow
+	text = {
+		trigger = { 
+			check_variable = { THIS.needed_screen_count = THIS.screen_count }
+		}
+		localization_key = GetScreensNeeded_equal_def
+	}
+	# Red
+	text = {
+		trigger = { 
+			check_variable = { THIS.needed_screen_count > THIS.screen_count }
+		}
+		localization_key = GetScreensNeeded_over_def
+	}	
+
+}
+
+defined_text = { 
+	name = GetCommandLimit 
+	text = {
+		trigger = { 
+			has_game_rule = {
+				rule = navy_cap
+				option = DISABLED
+			}
+		}
+		localization_key = GetCommandLimit_disabled
+	}
+	text = {
+		trigger = { 
+			check_variable = { THIS.command_limit_used < 100 }
+		}
+		localization_key = GetCommandLimit_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { THIS.command_limit_used = 100 }
+		}
+		localization_key = GetCommandLimit_equal_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { THIS.command_limit_used > 100 }
+		}
+		localization_key = GetCommandLimit_over_def
+	}	
+
+}

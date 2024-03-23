@@ -1,0 +1,21 @@
+state=
+{
+	id=946
+	name="STATE_946" # North Khartoum
+	manpower = 200000
+	
+	state_category = wasteland
+	
+	history = {
+		
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = WST
+	}
+	provinces={
+		4138 12836 8105 10745 4963
+	}
+}

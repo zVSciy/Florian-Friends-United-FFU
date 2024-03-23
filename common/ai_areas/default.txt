@@ -1,0 +1,210 @@
+areas = {
+
+	suez = {
+        strategic_regions = {
+            128
+            232
+        }
+    }
+
+    scandinavia = {
+		strategic_regions = {
+            11 # Norway
+            191
+            10 # Sweden
+            192
+            12 # Finland
+            13
+        }
+    }
+
+    italy = {
+        strategic_regions = {
+            23 # italy
+            21
+        }
+    }
+
+    UK = {
+        strategic_regions = {
+            1 
+            2
+            3
+            4
+        }
+    }
+
+    north_africa = {
+        strategic_regions = {
+            182 #western maghreb
+			228 #tunisia
+			126 #tripoli
+			238 #benghazi
+			128 #cairo
+			239 #southern egypt
+        }
+    }
+
+	europe = {
+		continents = {
+			europe
+		}
+	}
+
+    mainland_europe = {
+        strategic_regions = {
+            # 210 #southern iberia
+			# 209 #northwestern iberia
+			# 41 #northeastern iberia
+			20 #southern france
+			208 #western france
+			19 #northern france
+			5 #benelux region
+			7 #western germany
+			6 #north-west germany
+			8 #eastern germany
+			21 #alpine
+			22 #czechoslovakia
+			38 #western poland
+			39 #eastern poland
+			37 #baltics
+			27 #northern balkans
+			26 #eastern balkans
+			24 #western balkans
+			25 #greece
+			23 #italy
+        }
+    }
+
+	spain = {
+        strategic_regions = {
+            210 #southern iberia
+			209 #northwestern iberia
+			41 #northeastern iberia
+        }
+    }
+	
+	normandy_landing_zone = {
+        strategic_regions = {
+            208 #western france
+            19 #northern france
+            5 #benelux
+        }
+    }
+
+	north_america = {
+
+		continents = {
+			north_america
+		}
+	}
+
+	south_america = {
+
+		continents = {
+			south_america
+		}
+	}
+
+	africa = {
+
+		continents = {
+			africa
+		}
+	}
+
+	asia = {
+
+		continents = {
+			asia
+		}
+	}
+
+	middle_east = {
+
+		continents = {
+			middle_east
+		}
+	}
+
+	pacific = {
+
+		strategic_regions = {
+			105 #hawaii ridge
+			330 #hawaii
+			180 #micronesian gap
+			97 #eastern micronesia
+			32 #south-eastern pacific
+			84 #bismarck sea
+			95 #west emperor chain
+			236 #midway
+			234 #wake island
+			94 #mariana region
+			235 #marcus island
+			231 #iwo jima
+			232 #saipan guaam
+			177 #western north pacific
+			172 #pacific line ridge
+			78 #phillipine sea
+			160 #phillipines
+			83 #solomon sea
+			167 #new guinea
+			91 #arafura sea
+			178 #west polynesia
+			179 #french polynesia
+		}
+	}
+
+	oceania = {
+
+		strategic_regions = {
+			156 #southern australia
+			195 #central australia
+			193 #northern australia
+			194 #eastern australia
+			157 #new zealand
+			86 #tasman sea
+			98 #great australian bight
+			81 #coral sea
+			82 #gulf of carpanteria
+		}
+	}
+	
+	home_islands = {
+		strategic_regions = {
+			76 	#east china sea
+			154 #home islands
+			160 #phillipines
+		}
+	}
+	
+	just_philippines = {
+		strategic_regions = {
+			160 #phillipines
+		}
+	}
+	
+	east_indies = {
+		strategic_regions = {
+			167 #new guinea
+			93 #java sea
+			158 #sunda islands
+			159 #borneo
+			187 #sumatra
+		}
+	}
+	
+	burma = {
+		strategic_regions = {
+			189 #burma
+			142 #vietnam/siam
+			141 #eastern india
+		}
+	}
+
+	horn_of_africa = {
+		strategic_regions = {
+			17 #ethiopian highlands
+		}
+	}
+}

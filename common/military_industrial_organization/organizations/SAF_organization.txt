@@ -1,0 +1,116 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+# SAF_iscor_organization = {
+#     name = SAF_iscor_organization
+#     include = generic_medium_tank_organization
+#     icon = GFX_idea_SAF_idea_iscor
+#     allowed = {
+#         original_TAG = SAF
+#         has_dlc = "Together for Victory"
+#     }
+# }
+
+SAF_cope_organization = {
+    name = SAF_cope_organization
+    include = generic_pmfu_heavy_tank_organization
+    icon = GFX_idea_generic_tank_manufacturer_1
+    allowed = {
+        original_TAG = SAF
+        # has_dlc = "Together for Victory"
+    }
+
+    add_trait = { 
+		token = SAF_mio_trait_expanded_production_facilities
+		name = ENG_mio_trait_expanded_production_facilities
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_technology
+		special_trait_background = yes
+
+		position = { x=0 y=0 }
+
+        available = {
+            FROM = {
+                has_completed_focus = SAF_queen_of_the_desert
+            }
+        }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+		
+	}
+
+    add_trait = { 
+		token = SAF_mio_trait_faster_tanks
+		name = generic_mio_trait_speed_improvements
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+
+		position = { x=0 y=2 }
+        relative_position_id = SAF_mio_trait_expanded_production_facilities
+
+        all_parents = { SAF_mio_trait_expanded_production_facilities }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+    add_trait = { 
+		token = SAF_mio_trait_even_faster_tanks
+		name = generic_mio_trait_speed_improvements
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+
+		position = { x=0 y=2 }
+        relative_position_id = SAF_mio_trait_faster_tanks
+
+        all_parents = { SAF_mio_trait_faster_tanks }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################

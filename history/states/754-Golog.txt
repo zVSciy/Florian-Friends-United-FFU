@@ -1,0 +1,32 @@
+state = {
+	id = 754
+	name = "STATE_754"
+	provinces = {
+		1882 4536 4888 7270 10490 10817 11448 12732 12815 5057
+	}
+	manpower = 400000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	history = {
+		owner = CHI
+		#add_core_of = XSM
+		add_core_of = CHI
+		#add_core_of = PRC
+
+		victory_points = {
+			12732 10 #Was 3 when it was Lanzhou, but should be Xining, the capital of Xibei 
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 12
+		}
+
+		1936.1.1.13 = {
+			owner = WST	
+		}
+	}
+
+	local_supplies = 0.0 
+}

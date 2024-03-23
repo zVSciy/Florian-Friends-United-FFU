@@ -1,0 +1,223 @@
+ideas = {
+
+	country = {
+	
+		BRA_usa_license = {
+
+			picture = generic_license_production
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			targeted_modifier = {
+				tag = USA
+				license_purchase_cost = -1
+				license_production_speed = 0.2
+				license_tech_difference_speed = 0.2
+			}
+		}
+	
+		BRA_revolution_of_1930 = {
+
+			picture = generic_purge
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_cost = 0.5
+			}
+		}
+		
+		BRA_coffee_oligarchs = {
+
+			picture = MEX_callistas
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		BRA_coffee_oligarchs_2 = {
+
+			picture = MEX_callistas
+			
+			name = BRA_coffee_oligarchs
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0
+			}
+		}
+		
+		BRA_coffee_oligarchs_3 = {
+
+			picture = MEX_callistas
+			
+			name = BRA_coffee_oligarchs
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+			}
+		}
+		
+		BRA_great_depression_1 = {
+
+			picture = great_depression
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				local_resources_factor = -0.25
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		
+		BRA_great_depression_2 = {
+
+			picture = great_depression
+			
+			name = BRA_great_depression_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		
+		BRA_pracinhas_idea = {
+
+			picture = por_volunteers_in_the_war2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				heat_attrition_factor = -0.25
+				acclimatization_hot_climate_gain_factor = 0.5
+				training_time_army_factor = 0.20
+				minimum_training_level = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+				experience_gain_army_unit_factor = 0.2
+			}
+		}
+		
+		
+		BRA_bandeirantes_idea = {
+
+			picture = por_volunteers_in_the_war3
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				heat_attrition_factor = -0.5
+				acclimatization_hot_climate_gain_factor = 1.0
+				supply_consumption_factor = -0.2
+				no_supply_grace = 24
+			}
+		}
+
+		BRA_industrialization1 = {
+
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		BRA_special_forces_divisions = {
+			picture = usa_airborne_divisions
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.05
+			}
+		}
+
+		BRA_mechanise_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			equipment_bonus = {
+				mechanized_equipment = { 
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_td_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_utility_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+	}
+}

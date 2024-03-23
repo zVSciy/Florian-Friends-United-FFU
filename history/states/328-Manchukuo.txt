@@ -1,0 +1,42 @@
+
+state={
+	id=328
+	name="STATE_328" # Kirin
+	manpower = 7536266
+	
+	state_category = city
+
+	resources={
+		aluminium=180 # was: 10
+	}
+
+	history={
+		set_state_flag = USA_split_china_region_state_manchuria
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		#add_core_of = PRC
+		buildings = {
+			infrastructure = 5
+			arms_factory = 8
+			industrial_complex = 5 #10
+		}
+		victory_points = {
+			4572 1
+		}
+		victory_points = {
+			10433 1 
+		}
+		1936.1.1.13 = {
+            owner = WST 	
+		}	
+		
+
+	}
+
+	provinces={
+		800 861 887 927 945 946 1567 3888 3913 3929 3932 3947 3949 4503 4572 6868 6905 6947 7523 7591 7652 7663 9759 9782 9803 9841 9848 9866 9883 9913 9928 10433 11744 11781 11823 11850 11862 11864 12412 
+	}
+
+	local_supplies=0.0 
+}

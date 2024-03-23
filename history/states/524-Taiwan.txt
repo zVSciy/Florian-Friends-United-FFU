@@ -1,0 +1,39 @@
+state=
+{
+	id=524
+	name="STATE_524"
+	manpower = 4592537
+	
+	state_category = large_town
+	history=
+	{
+		set_state_flag = USA_split_china_region_state_taiwan
+		owner = JAP
+        1936.1.1.13 = {
+            owner = WST 	
+		}	
+		add_core_of = CHI
+		#add_core_of = PRC
+		set_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			air_base = 6
+			12068 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			7186 5 
+		}
+		victory_points = {
+			12068 1 
+		}
+
+	}
+	provinces={
+		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
+		}
+
+	local_supplies=0.0 
+}

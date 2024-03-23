@@ -1,0 +1,36 @@
+state={
+	id=617
+	name="STATE_617"
+
+	resources = {
+		steel = 250
+		# tungsten = 300
+		# chromium = 150
+		# aluminium = 300
+	}
+
+	history={
+		owner = MON
+		add_core_of = WST
+		#add_core_of = CHI
+		#add_core_of = PRC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 6
+
+		}
+		victory_points = {
+			4709 3 
+		}
+
+	}
+
+	provinces={
+		1703 4682 4709 4770 7702 7792 7850 10545 10614 12526 12601 12656 
+	}
+	manpower=1080500
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=6.0 
+}

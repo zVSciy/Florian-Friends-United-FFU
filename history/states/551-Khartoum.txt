@@ -1,0 +1,32 @@
+
+state={
+	id=551
+	name = "STATE_551"
+	manpower = 621003
+
+	history={
+		owner = ENG
+		add_core_of = WST
+		buildings = {
+			infrastructure = 4
+			# industrial_complex = 1
+			air_base = 2
+		}
+		victory_points = {
+			12806 3 
+		}
+		victory_points = {
+			2046 1
+		}
+		
+
+	}
+
+	provinces={
+		2046 7925 7989 12796 12806 12826 12881
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

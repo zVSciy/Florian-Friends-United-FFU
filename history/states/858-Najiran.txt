@@ -1,0 +1,18 @@
+state={
+	id=858
+	name="STATE_858"
+	provinces={
+		5006 8030 10870 12768 
+	}
+	history = {
+		#owner = SAU
+		#add_core_of = SAU
+		owner = WST
+		add_core_of = WST
+	}
+	manpower=1 #69
+	state_category=pastoral
+	impassable = yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

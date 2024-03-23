@@ -1,0 +1,48 @@
+foreign_politics = {
+	SAF_get_ethiopia = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = SAF
+		}
+
+		available = {
+			550 = { is_controlled_by_ROOT_or_ally = yes }
+			842 = { is_controlled_by_ROOT_or_ally = yes }
+			841 = { is_controlled_by_ROOT_or_ally = yes }
+			843 = { is_controlled_by_ROOT_or_ally = yes }
+			908 = { is_controlled_by_ROOT_or_ally = yes }
+			840 = { is_controlled_by_ROOT_or_ally = yes }
+			839 = { is_controlled_by_ROOT_or_ally = yes }
+			838 = { is_controlled_by_ROOT_or_ally = yes }
+			837 = { is_controlled_by_ROOT_or_ally = yes }
+			271 = { is_controlled_by_ROOT_or_ally = yes }
+			836 = { is_controlled_by_ROOT_or_ally = yes }
+			835 = { is_controlled_by_ROOT_or_ally = yes }
+			844 = { is_controlled_by_ROOT_or_ally = yes }
+			559 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			SAF = {
+				transfer_state = 550
+				transfer_state = 842
+				transfer_state = 841
+				transfer_state = 843
+				transfer_state = 908
+				transfer_state = 840
+				transfer_state = 839
+				transfer_state = 838
+				transfer_state = 837
+				transfer_state = 271
+				transfer_state = 836
+				transfer_state = 835
+				transfer_state = 844
+				transfer_state = 559
+			}
+		}
+
+	}
+}

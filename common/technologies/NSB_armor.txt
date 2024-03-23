@@ -1,0 +1,1152 @@
+technologies = {
+
+
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 7
+	@1941 = 8
+	@1942 = 9
+	@1943 = 10
+	@1944 = 11
+	@1945 = 12
+	@1946 = 20
+
+	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+	gwtank_chassis = { #Leichttraktor
+
+		show_equipment_icon = yes
+
+		enable_equipments = {
+			light_tank_chassis_1
+		}
+		enable_equipment_modules = {
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_diesel_engine
+			tank_petrol_electric_engine
+			tank_light_turret_1
+			tank_light_turret_open
+			tank_light_superstructure
+			tank_light_open_superstructure
+			interleaf_suspension
+			boogie_suspension
+			christie_suspension
+			tank_christie_suspension
+			tank_bogie_suspension
+			tank_interleaved_suspension
+			tank_horstmann_suspension
+			tank_torsion_bar_suspension
+			expanded_fuel_tank
+		}
+
+		path = {
+			leads_to_tech = basic_light_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_medium_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_heavy_tank_chassis #basic_heavy_tank_chassis
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		allow_branch = {
+			NOT = {
+				OR = {
+					tag = ITA
+					tag = JAP
+					tag = HUN
+					tag = MAN
+					tag = SIA
+					tag = VIC
+				}
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1936
+		}
+	}
+
+	basic_light_tank_chassis = { #Panzer I
+
+		enable_equipments = {
+			light_tank_chassis_2
+		}
+		enable_equipment_modules = {
+			tank_light_turret_2
+		}
+
+		path = {
+			leads_to_tech = improved_light_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 6 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1939
+		}
+	}
+
+	improved_light_tank_chassis = { #Panzer II
+
+		enable_equipments = {
+			light_tank_chassis_3
+		}
+		enable_equipment_modules = {
+			tank_light_turret_3
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 10 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1941
+		}
+	}
+
+	basic_medium_tank_chassis = {
+
+		enable_equipments = {
+			medium_tank_chassis_1
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_1			
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
+		}
+
+		path = {
+			leads_to_tech = improved_medium_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1938
+		}
+	}
+
+	improved_medium_tank_chassis = {
+
+		enable_equipments = {
+			medium_tank_chassis_2
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_2
+		}
+
+		path = {
+			leads_to_tech = advanced_medium_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 10 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1941
+		}
+	}
+
+	advanced_medium_tank_chassis = { #Panther
+
+		enable_equipments = {
+			medium_tank_chassis_3
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_3
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 14 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1943
+		}
+	}
+
+	# basic_heavy_tank_chassis = {
+
+	# 	# enable_equipments = {
+	# 	# 	heavy_tank_chassis_1
+	# 	# }
+
+	# 	# enable_subunits = {
+	# 	# 	heavy_armor
+	# 	# }
+
+	# 	enable_equipments = {
+	# 		# ger_heavy_tank_chassis_neub
+	# 		generic_heavy_tank_chassis_1
+	# 	}
+	# 	enable_equipment_modules = {
+	# 		tank_multi_turret_1
+	# 		tank_multi_turret_2
+	# 	}
+
+	# 	path = {
+	# 		leads_to_tech = improved_heavy_tank_chassis
+	# 		research_cost_coeff = 1
+	# 	}
+
+	# 	research_cost = 2
+	# 	start_year = 1936
+
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 7 y = 2 }
+	# 	}
+
+	# 	categories = {
+	# 		armor
+	# 		cat_heavy_armor
+	# 		mio_cat_tech_heavy_armor_and_modules
+	#		year_1936
+	# 	}
+	# }
+
+	improved_heavy_tank_chassis = {
+
+		# enable_equipments = {
+		# 	heavy_tank_chassis_2
+		# }
+
+		enable_equipments = {
+			# ger_heavy_tank_chassis_p6
+			generic_heavy_tank_chassis_2
+		}
+		enable_equipment_modules = {
+			tank_heavy_turret_early
+			# tank_heavy_turret_1
+			# tank_heavy_superstructure
+		}
+
+		path = {
+			leads_to_tech = improved_heavy_tank_chassis_upgrade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = @1941 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1940
+		}
+	}
+
+	improved_heavy_tank_chassis_upgrade = {
+
+		# enable_equipments = {
+		# 	heavy_tank_chassis_2_upgrd
+		# }
+
+		on_research_complete = {
+			# custom_effect_tooltip = tiger_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		enable_equipment_modules = {
+			tank_heavy_turret_1
+			tank_heavy_superstructure
+			tank_heavy_open_superstructure
+		}
+
+		path = {
+			leads_to_tech = advanced_heavy_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = @1943 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1941
+		}
+	}
+
+	advanced_heavy_tank_chassis = {
+
+		# enable_equipments = {
+		# 	heavy_tank_chassis_3
+		# }
+
+		enable_equipments = {
+			# ger_heavy_tank_chassis_p6_b
+			generic_heavy_tank_chassis_3
+		}
+		enable_equipment_modules = {
+			tank_heavy_turret_2
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = 14 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1943
+		}
+	}
+
+	armor_tech_1 = {
+		enable_equipment_modules = {
+			tank_welded_armor
+		}
+		
+		path = {
+			leads_to_tech = armor_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = 4 }
+		}
+	
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+			year_1938
+		}
+	}
+
+	armor_tech_2 = {
+
+		enable_equipment_modules = {
+			armor_skirts
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = 12 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+			year_1942
+		}
+	}
+	
+	ita_light_tank_1 = {
+
+		enable_equipments = {
+			ita_light_tank_chassis_cv33
+		}
+		enable_equipment_modules = {
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_petrol_electric_engine
+			tank_diesel_engine
+			tank_light_superstructure_cv33
+			interleaf_suspension
+			boogie_suspension
+			christie_suspension
+			tank_christie_suspension
+			tank_bogie_suspension
+			tank_interleaved_suspension
+			tank_horstmann_suspension
+			tank_torsion_bar_suspension
+			expanded_fuel_tank
+		}
+
+		path = {
+			leads_to_tech = ita_light_tank_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ita_medium_tank_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = -2 }
+		}
+		
+		allow_branch = {
+			tag = ITA
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1936
+		}
+	}
+
+	ita_light_tank_2 = {
+
+		enable_equipments = {
+			ita_light_tank_chassis_l6
+		}
+		enable_equipment_modules = {
+			tank_light_turret_1
+			tank_light_turret_2
+			tank_light_turret_open
+			tank_light_superstructure
+			tank_light_open_superstructure
+		}
+		path = {
+			leads_to_tech = ita_light_tank_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -2 y = 8 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1940
+		}
+	}
+
+	ita_light_tank_3 = {
+		enable_equipment_modules = {
+			tank_light_turret_3
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -2 y = 10 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1941
+		}
+	}
+	
+	ita_medium_tank_1 = {
+
+		enable_equipments = {
+			ita_medium_tank_chassis_m11
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
+		}
+		
+		path = {
+			leads_to_tech = ita_medium_tank_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1936
+		}
+	}
+	
+	ita_medium_tank_2 = {
+
+		enable_equipments = {
+			ita_medium_tank_chassis_m13
+		}
+		
+		
+		path = {
+			leads_to_tech = ita_medium_tank_2_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1938
+		}
+	}
+
+	ita_medium_tank_2_5 = {
+
+		enable_equipments = {
+			ita_medium_tank_chassis_m14
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_2
+		}
+		
+		path = {
+			leads_to_tech = ita_medium_tank_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ita_heavy_tank_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 8 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1940
+		}
+	}
+	
+	ita_medium_tank_3 = {
+
+		enable_equipments = {
+			ita_medium_tank_chassis_m15
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_3
+		}
+		
+		path = {
+			leads_to_tech = ita_medium_tank_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 12 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1942
+		}
+	}
+	
+	ita_medium_tank_4 = {
+
+		enable_equipments = {
+			ita_medium_tank_chassis_p26
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 14 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1943
+		}
+	}
+
+	ita_heavy_tank_1 = {
+		enable_equipments = {
+			ita_heavy_tank_chassis_p43
+		}
+		enable_equipment_modules = {
+			tank_heavy_superstructure
+			tank_heavy_open_superstructure
+			tank_heavy_turret_1
+		}
+
+		path = {
+			leads_to_tech = ita_heavy_tank_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year	= 1942
+		folder	= {
+			name = nsb_armour_folder
+			position = { x = 6 y = 12 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1942
+		}
+	}
+
+	ita_heavy_tank_2 = {
+	
+		enable_equipment_modules = {
+			tank_heavy_turret_2
+		}
+
+		research_cost = 2
+		start_year	= 1944
+		folder	= {
+			name = nsb_armour_folder
+			position = { x = 6 y = 16 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1944
+		}
+	}
+
+	
+	hun_light_tank_1 = {
+
+		enable_equipments = {
+			hun_light_tank_chassis_38m
+		}
+		enable_equipment_modules = {
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_diesel_engine
+			tank_petrol_electric_engine
+			tank_light_turret_1
+			tank_light_turret_2
+			tank_light_turret_open
+			tank_light_superstructure
+			tank_light_open_superstructure
+			interleaf_suspension
+			boogie_suspension
+			christie_suspension
+			tank_christie_suspension
+			tank_bogie_suspension
+			tank_interleaved_suspension
+			tank_horstmann_suspension
+			tank_torsion_bar_suspension
+			expanded_fuel_tank
+		}
+
+		path = {
+			leads_to_tech = hun_light_tank_2
+			research_cost_coeff = 1
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		allow_branch = {
+			tag = HUN
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1938
+		}
+	}
+
+	hun_light_tank_2 = {
+
+		enable_equipment_modules = {
+			tank_light_turret_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = 38m_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 2.5
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -2 y = 10 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1941
+		}
+	}
+	
+	hun_medium_tank_1 = {
+
+		enable_equipments = {
+			hun_medium_tank_chassis_40m
+		}
+		enable_equipment_modules = {
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_petrol_electric_engine
+			tank_diesel_engine
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
+			interleaf_suspension
+			boogie_suspension
+			christie_suspension
+			tank_christie_suspension
+			tank_bogie_suspension
+			tank_interleaved_suspension
+			tank_horstmann_suspension
+			tank_torsion_bar_suspension		
+			expanded_fuel_tank	
+		}
+		
+		path = {
+			leads_to_tech = hun_medium_tank_2
+			research_cost_coeff = 1
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		allow_branch = {
+			tag = HUN
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1940
+		}
+	}
+	
+	hun_medium_tank_2 = {
+
+		enable_equipment_modules = {
+			tank_medium_turret_2
+		}
+		
+		path = {
+			leads_to_tech = hun_medium_tank_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 10 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1941
+		}
+	}
+	
+	
+	hun_medium_tank_4 = {
+
+		enable_equipments = {
+			hun_medium_tank_chassis_44m
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_3
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 12 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1942
+		}
+	}
+	
+	jap_light_tank_1 = {
+
+		enable_equipments = {
+			jap_light_tank_chassis_t95
+			jap_medium_tank_chassis_t89
+		}
+		enable_equipment_modules = {
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_petrol_electric_engine
+			tank_diesel_engine
+			tank_light_turret_1
+			tank_light_turret_open
+			tank_light_superstructure
+			tank_light_open_superstructure
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
+			interleaf_suspension
+			boogie_suspension
+			christie_suspension
+			tank_christie_suspension
+			tank_bogie_suspension
+			tank_interleaved_suspension
+			tank_horstmann_suspension
+			tank_torsion_bar_suspension
+			expanded_fuel_tank
+		}
+
+		path = {
+			leads_to_tech = jap_light_tank_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = jap_medium_tank_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		allow_branch = {
+			OR = {
+				tag = JAP
+				tag = MAN
+				tag = SIA
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1936
+		}
+	}
+
+	jap_light_tank_2 = {
+
+		enable_equipments = {
+			jap_light_tank_chassis_t98
+		}
+		enable_equipment_modules = {
+			tank_light_turret_2
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = jap_light_tank_3
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -2 y = 8 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1940
+		}
+	}
+
+	jap_light_tank_3 = {
+		enable_equipment_modules = {
+			tank_light_turret_3
+		}
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -2 y = 10 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1941
+		}
+	}
+
+	jap_medium_tank_1 = {
+
+		enable_equipments = {
+			jap_medium_tank_chassis_t97
+		}
+		
+		path = {
+			leads_to_tech = jap_medium_tank_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1938
+		}
+	}
+
+	jap_medium_tank_2 = {
+
+		enable_equipments = {
+			jap_medium_tank_chassis_t01
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_2
+		}
+		
+		path = {
+			leads_to_tech = jap_medium_tank_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 8 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1940
+		}
+	}
+
+	jap_medium_tank_3 = {
+
+		enable_equipments = {
+			jap_medium_tank_chassis_t03
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_3
+		}
+		
+		path = {
+			leads_to_tech = jap_medium_tank_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 14 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1943
+		}
+	}
+	
+	jap_medium_tank_4 = {
+
+		enable_equipments = {
+			jap_medium_tank_chassis_t04
+		}
+		enable_equipment_modules = {
+			tank_modern_tank_turret
+		}
+
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 18 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1945
+		}
+	}
+}

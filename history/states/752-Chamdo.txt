@@ -1,0 +1,29 @@
+state={
+	id=752
+	name="STATE_752"
+	provinces={
+		1918 7988 8104 12724 12837 4999
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		set_state_flag = USA_split_china_region_state_western
+		owner = CHI
+		add_core_of = CHI
+		#add_core_of = PRC
+		victory_points = {
+			4999 6
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		1936.1.1.13 = {
+			owner = WST	
+		}
+
+	}
+
+	local_supplies=1.0 
+}

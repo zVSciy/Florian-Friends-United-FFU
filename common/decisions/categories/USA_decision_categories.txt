@@ -1,0 +1,238 @@
+################
+##### USA ######
+################
+
+USA_persian_corridor = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = USA
+	}
+}
+
+USA_split_china = {
+
+	priority = 5000
+
+	allowed = {
+		# has_global_flag = JAP_has_capped
+		original_tag = USA
+	}
+
+	visible = {
+		has_global_flag = JAP_has_capped
+	}
+
+	on_map_area = {
+		name = "Taiwan Region"
+		state = 524
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "Manchuria Region"
+		state = 612
+		state = 610
+		state = 609
+		state = 745
+		state = 716
+		state = 761
+		state = 714
+		state = 715
+		state = 328
+		state = 717
+		state = 527
+		state = 525
+		zoom = 800
+	}
+	on_map_area = {
+		name = "Northern China"
+		state = 755
+		state = 754
+		state = 283
+		state = 622
+		state = 756
+		state = 616
+		state = 746
+		state = 621
+		state = 611
+		zoom = 800
+	}
+	on_map_area = {
+		name = "Western China"
+		state = 604
+		state = 601
+		state = 752
+		state = 751
+		state = 753
+		zoom = 800
+	}
+	on_map_area = {
+		name = "Central China"
+		state = 744
+		state = 605
+		state = 620
+		state = 748
+		state = 750
+		zoom = 800
+	}
+	on_map_area = {
+		name = "Southern China"
+		state = 747
+		state = 325
+		state = 603
+		state = 599
+		state = 594
+		state = 591
+		state = 602
+		state = 592
+		state = 593
+		state = 600
+		state = 595
+		zoom = 800
+	}
+	on_map_area = {
+		name = "Eastern China"
+		state = 608
+		state = 615
+		state = 614
+		state = 607
+		state = 597
+		state = 743
+		state = 606
+		state = 598
+		state = 613
+		state = 749
+		state = 596
+		zoom = 800
+	}
+}
+
+USA_island_fortification = {
+	allowed = {
+		original_tag = USA
+	}
+	priority = 84
+}
+
+USA_war_measures = {
+	
+	allowed = {
+		original_tag = USA
+	}
+}
+
+USA_aid_britain = {
+
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		ENG = {
+			has_war = yes
+			has_government = ROOT
+		}
+	}
+}
+USA_foreign_support = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = CSA
+		}
+	}
+	visible = {
+		OR = {
+			always = no
+			tag = CSA
+		}
+	}
+}
+
+USA_congress = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+
+	scripted_gui = usa_congress_decision_ui	
+
+	priority = 85
+}
+USA_war_plans = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_completed_focus = USA_casablanca_conference
+	}
+}
+USA_intervention_mandate = {
+	icon = usa_intervention_mandate
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_completed_focus = USA_reinforce_monroe_doctrine
+	}
+}
+# USA_honor_the_confederacy = {
+# 	icon = usa_honor_the_confederacy
+# 	allowed = {
+# 		OR = {
+# 			original_tag = USA
+# 			original_tag = CSA
+# 		}
+# 	}
+# 	visible = {
+# 		OR = {
+# 			always = no
+# 			original_tag = CSA #for civil war in communist path. CSA shouldn't get focus tree
+# 			has_government = fascism
+# 		}
+# 	}
+# }
+USA_decolonisation = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		always = no
+	}
+}
+
+USA_special_research = {
+	
+	allowed = {
+		original_tag = USA
+	}
+}
+
+USA_propaganda_campaigns = {
+	priority = 100
+
+	icon = SOV_propaganda
+
+	scripted_gui = usa_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = USA
+	}
+
+	visible = {
+	}
+}
+
+USA_election_campaigns = {
+	priority = 110
+
+	icon = SOV_propaganda
+
+	# scripted_gui = usa_election_campaigns_ui
+
+	allowed = {
+		original_tag = USA
+	}
+
+	# visible_when_empty = yes
+}

@@ -1,0 +1,141 @@
+###########################
+# Vichy Events
+###########################
+
+add_namespace = vichy
+
+country_event = {
+	id = vichy.1
+	title = vichy.1.t
+	desc = vichy.1.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { # man - medium tank
+		name = vichy.1.a
+		# custom_effect_tooltip = available_designer
+		# show_ideas_tooltip = GER_MAN
+		# add_ideas = GER_MAN
+		# set_country_flag = VIC_chose_MAN
+	}
+	option = { # porsche - light tank
+		name = vichy.1.b
+		# custom_effect_tooltip = available_designer
+		# show_ideas_tooltip = porsche
+		# add_ideas = porsche
+		# set_country_flag = VIC_chose_PORSCHE
+	}
+}
+
+country_event = {
+	id = vichy.2
+	title = vichy.2.t
+	desc = vichy.2.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vichy.2.a
+		GER = {
+			set_autonomy = {
+				target = VIC
+				autonomy_state = autonomy_puppet
+			}
+		}
+		VIC = {
+			transfer_state = 806
+			transfer_state = 19
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 20
+			transfer_state = 26
+			transfer_state = 25
+			transfer_state = 23
+			transfer_state = 14
+			transfer_state = 30
+			transfer_state = 33
+			transfer_state = 24
+			transfer_state = 27
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 16
+			transfer_state = 785
+			transfer_state = 29
+			transfer_state = 15
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = vichy.2.b
+	}
+}
+
+country_event = {
+	id = vichy.3
+	title = vichy.3.t
+	desc = vichy.3.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vichy.3.a
+		# GER = {
+		# 	set_autonomy = {
+		# 		target = VIC
+		# 		autonomy_state = autonomy_reichsprotectorate
+		# 	}
+		# }
+		VIC = {
+			transfer_state = 806
+			transfer_state = 19
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 20
+			transfer_state = 26
+			transfer_state = 25
+			transfer_state = 23
+			transfer_state = 14
+			transfer_state = 30
+			transfer_state = 33
+			transfer_state = 24
+			transfer_state = 27
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 16
+			transfer_state = 785
+			transfer_state = 29
+			transfer_state = 15
+			transfer_state = 28
+		}
+	}
+	option = {
+		name = vichy.3.b
+	}
+}
+
+
+news_event = {
+	id = vichy.4
+	title = vichy.4.t
+	desc = vichy.4.d
+	picture = GFX_news_event_003
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vichy.4.a
+	}
+}

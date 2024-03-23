@@ -1,0 +1,51 @@
+state={
+	id=907
+	name="STATE_907"
+	manpower = 6454865
+	state_category=town
+
+	resources={
+		oil=800 # form abu dhabi blame yames the yamesey
+	}
+
+	history={
+		set_state_flag = ENG_controls
+		set_state_flag = ENG_controls_egypt_labour
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4 # 1
+			arms_factory = 2
+			air_base = 5
+		}
+		victory_points = {
+			7011 20 
+		}
+		
+		victory_points = {
+			3996 5 
+		}
+		
+		# victory_points = {
+		# 	1068 3 
+		# }
+		victory_points = {
+			7117 1 
+		}
+		victory_points = {
+			13300 1 
+		}
+		victory_points = {
+			10031 1 
+		}
+		add_core_of = WST
+		set_state_flag = AFRICA_COMMONWEALTH_controls
+
+	}
+	provinces={
+		992 1068 3996 4055 4143 7011 7117 7188 10005 10031 12004 13298 13299 13300 13323 13332
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

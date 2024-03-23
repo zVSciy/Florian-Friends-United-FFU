@@ -1,0 +1,114 @@
+add_namespace = startingevent
+add_namespace = news
+
+# Non Historical AI
+news_event = {
+	id = startingevent.999
+	title = startingevent.999.t
+	desc = startingevent.999.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Player on AI Nation
+news_event = {
+	id = startingevent.1000
+	title = startingevent.1000.t
+	desc = startingevent.1000.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.1000.a
+	}
+}
+
+# Mods
+news_event = {
+	id = startingevent.1001
+	title = startingevent.1001.t
+	desc = startingevent.1001.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.1001.a
+	}
+}
+
+country_event = {
+	id = startingevent.29
+	title = startingevent.29.t
+	desc = startingevent.29.desc
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good to know"	
+	}
+}
+
+# GAME RULES
+country_event = {
+	id = startingevent.1002
+	title = startingevent.1002.t
+	desc = startingevent.1002.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# AA CHANGE
+country_event = {
+	id = startingevent.1003
+	title = startingevent.1003.t
+	desc = startingevent.1003.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# AIR SOVIET
+country_event = {
+	id = startingevent.1004
+	title = startingevent.1004.t
+	desc = startingevent.1004.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# AUTO COMPLIANCE ON CHINA
+country_event = {
+	id = startingevent.1005
+	title = startingevent.1005.t
+	desc = startingevent.1005.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.999.a
+	}
+}

@@ -1,0 +1,4132 @@
+ideas = {
+
+	country = {
+
+		### LW 
+		GER_germaniawerft = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			# modifier={refit_speed=0.05
+			# }
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		GER_operation_sealion = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={
+				invasion_preparation = -0.3
+				amphibious_invasion = 0.10
+				naval_strike = 0.05
+			}
+		}
+		GER_atlantikschlacht = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={naval_speed_factor = 0.1 navy_visibility = -0.1 navy_fuel_consumption_factor= -0.5
+			}
+		}
+		GER_all_options = {
+			allowed = {
+				always = no
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+				naval_doctrine = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={repair_speed_factor = 0.15
+			}
+		}
+		GER_trade_interdiction = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={convoy_raiding_efficiency_factor = 0.2
+			}
+		}
+		GER_monsoon_boats = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			equipment_bonus = {
+				submarine = {
+					naval_range = 0.30 instant = yes
+				}
+			}
+		}
+		### LW END
+		
+		GER_african_resource_tank_production = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		GER_blau = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against  = 0.10
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against  = 0.10
+			}
+		}
+
+		GER_citadel = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.10
+			}
+		}
+
+		GER_steiner_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				no_supply_grace = 128
+			}
+		}
+
+		GER_africa_hp = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				infantry = {
+					max_strength = 16 instant = yes
+				}
+				motorized_equipment = {
+					max_strength = 33 instant = yes
+				}
+				mechanized_equipment = {
+					max_strength = 29 instant = yes
+				}
+			}
+		}
+
+		GER_greater_german_reich_idea = {			
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_greater_german_reich
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		GER_good_weather_army = {
+			allowed = {
+				original_tag = GER
+			
+			}
+
+			removal_cost = 1
+
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				acclimatization_cold_climate_gain_factor = -9.99
+			}
+		
+		}
+
+		GER_fast_bombers = {
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = 1
+
+			picture = generic_air_bonus
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.15
+			}
+		}
+		GER_cas = {
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = 1
+
+			picture = generic_air_bonus
+
+			modifier = {
+				air_cas_present_factor = 0.10 # 10% from 15%
+			}
+		}
+
+		GER_blitzkrieg = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.20
+			}
+			modifier = {
+				army_speed_factor = 0.05
+				planning_speed = 0.25
+				no_supply_grace = 48
+				org_loss_when_moving = -0.2
+			}
+
+		}
+
+		GER_plan_z = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+	
+		GER_simplified_designs_idea = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy
+
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.33
+			}
+		}
+	
+		GER_prioritise_aircraft_idea = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			equipment_bonus = {
+				light_tank_chassis = {
+					build_cost_ic = 0.05 instant = yes
+				}
+				medium_tank_chassis = {
+					build_cost_ic = 0.05 instant = yes
+				}
+				heavy_tank_chassis = {
+					build_cost_ic = 0.05 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+	
+		GER_prioritise_tanks_idea = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_tank
+
+			equipment_bonus = {
+				light_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 0.05 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.05 instant = yes
+				}
+			}
+		}
+	
+		GER_armaments_miracle = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_market_dynamism
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+			}
+		}
+	
+		GER_fritz_x = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = strategic_bombing_focus
+	
+			modifier = {
+				naval_strike_targetting_factor = 0.5
+			}
+	
+		}
+	
+		GER_wunderwaffe2 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				light_air = 0.20
+				rocketry = 0.30
+				jet_technology = 0.30
+				nuclear = 0.15
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				civilian_factory_use = 10
+				research_speed_factor = 0.05
+			}
+	
+		}
+	
+		GER_wunderwaffe = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				rocketry = 0.20
+				jet_technology = 0.15
+				nuclear = 0.15
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				civilian_factory_use = 5
+				research_speed_factor = 0.025
+			}
+	
+		}
+	
+		GER_abwehr_idea2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_secret_police
+
+			modifier = {
+				intelligence_agency_defense = 1
+				operative_slot = 3
+			}
+		}
+	
+		GER_abwehr_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_secret_police
+
+			modifier = {
+				intelligence_agency_defense = 1
+				operative_slot = 2
+			}
+		}
+	
+		GER_SWE_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_flexible_foreign_policy2
+
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.75
+				extra_trade_to_target_factor = 1.0
+			}
+		}
+	
+		GER_ITA_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = ger_ita_trade
+
+			targeted_modifier = {
+				tag = ITA
+				license_production_speed = 0.2
+			}
+		}
+		
+		ITA_GER_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = ger_ita_trade
+
+			targeted_modifier = {
+				tag = GER
+				license_production_speed = 0.2
+			}
+		}
+	
+		GER_JAP_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = ger_jap_trade
+
+			targeted_modifier = {
+				tag = JAP
+				license_production_speed = 0.2
+			}
+		}
+		
+		JAP_GER_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = ger_jap_trade
+
+			targeted_modifier = {
+				tag = GER
+				license_production_speed = 0.2
+			}
+		}
+		
+		GER_auftragstaktik = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = chi_army_corruption3
+
+			modifier = {
+				experience_loss_factor = -0.15
+				experience_gain_army_unit_factor = 0.10
+				army_morale_factor = 0.05
+			}
+		}
+	
+		sour_loser = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		general_staff = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.05
+				planning_speed = 0.25
+			}
+		}
+		
+		GER_general_staff2 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = general_staff_2
+			
+			modifier = {
+				army_org_Factor = 0.10
+				planning_speed = 0.25
+				max_planning = 0.10
+				command_power_gain_mult = 0.2
+				max_command_power = 25
+			}
+		}
+
+		triumphant_will = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		
+		GER_luft_2_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+		
+			modifier = {
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.25
+				army_bonus_air_superiority_factor = 0.1
+				air_cas_present_factor = 0.1
+				air_ace_generation_chance_factor = 0.5
+			}
+
+		}	
+
+		GER_rocketry_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_rocket_site_factor = 0.15
+			}
+	
+		}
+
+		rhineland_challenge_met = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1 
+			}
+		}
+
+		kaiser_challenge_met = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1 
+			}
+		}
+		
+		GER_volksturm_idea = {
+		
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.01
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+			}
+		}
+		
+		GER_mob_reich = {
+		
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				industry_repair_factor = 0.2
+				industry_free_repair_factor = 0.2
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				conscription = 0.01
+			}
+		}
+
+		GER_atlantikwall_idea = {
+		
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.3
+				production_speed_anti_air_building_factor = 0.3
+			}
+		}
+
+		GER_ostwall_idea = {
+		
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				production_speed_bunker_factor = 0.25
+				max_dig_in = 2
+			}
+		}
+		
+		GER_rad = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = GER_arbeitsinsatz
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				training_time_army_factor = -0.1
+			}
+		}
+		
+		GER_rad_mil = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = GER_arbeitsinsatz
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				training_time_army_factor = -0.2
+				max_dig_in = 5
+			}
+		}
+		
+		GER_rad_civ = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = GER_arbeitsinsatz
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+				training_time_army_factor = -0.1
+			}
+		}
+		
+		GER_synth_oil = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = GER_ration_fuel
+
+			modifier = {
+				fuel_gain_factor_from_states = 0.40
+			}
+		}
+		
+		GER_oade = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+		GER_autarky_idea = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+		
+		GER_swiss_gold = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			cancel = {
+				has_war_with = SWI
+			}
+
+			allowed_civil_war = {
+				always = yes
+				NOT = { has_war_with = SWI }
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.12
+			}
+		}
+		
+		GER_mefo_air = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = expand_mefo_air
+
+			equipment_bonus = {		
+				medium_plane_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				} 
+				medium_plane_fighter_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				} 
+			}
+		}
+		
+		GER_expand_mefo = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				# production_factory_start_efficiency_factor = 0.1
+				political_power_gain = -0.25
+			}
+		}
+		
+		GER_expand_mefo_fast = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = expand_mefo_1
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.025
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				political_power_gain = -0.30
+			}
+		}
+
+		GER_expand_mefo_fast_2 = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = expand_mefo_1
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.05
+				line_change_production_efficiency_factor = 0.125
+				production_factory_efficiency_gain_factor = 0.125
+				production_factory_start_efficiency_factor = 0.125
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				political_power_gain = -0.40
+			}
+		}
+
+		GER_expand_mefo_fast_3 = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = expand_mefo_1
+
+			name = GER_expand_mefo_fast_2
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.075
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				political_power_gain = -0.50
+			}
+		}
+	
+		GER_expand_mefo_slow = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = expand_mefo_1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				# production_factory_start_efficiency_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				political_power_gain = -0.3
+			}
+		}
+		
+		GER_expand_mefo_slow_2 = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = expand_mefo_2
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				# production_factory_start_efficiency_factor = 0.05
+				industrial_capacity_dockyard = 0.1
+				political_power_gain = -0.5
+			}
+		}
+
+		GER_grosraumwirtschaft = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+
+		GER_align_hungary = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.2
+				fascism_acceptance = 85
+			}
+		}
+
+		GER_align_hungary_unaligned = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				neutrality_drift = 0.2
+				neutrality_acceptance = 85
+			}
+		}
+
+		GER_align_hungary_democratic = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democratic_drift = 0.2
+				democratic_acceptance = 85
+			}
+		}
+
+		GER_align_romania = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.2
+				fascism_acceptance = 85
+			}
+		}
+
+		GER_align_romania_unaligned = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				neutrality_drift = 0.2
+				neutrality_acceptance = 85
+			}
+		}
+
+		GER_align_romania_democratic = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democratic_drift = 0.2
+				democratic_acceptance = 85
+			}
+		}
+
+		GER_clamp_down_on_fascism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			modifier = {
+				fascism_drift = -0.05
+			}
+		}
+
+		GER_revive_the_kaiserreich = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				neutrality_drift = 0.1
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+
+		GER_revive_the_kaiserreich2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				neutrality_drift = 0.1
+				democratic_drift = -0.02
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+
+		GER_reestablish_free_elections = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+
+		GER_rebuild_the_nation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				consumer_goods_factor = -0.20
+			}
+		}
+
+		GER_national_revitalization = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				industry_repair_factor = 0.20
+			}
+		}
+
+		GER_national_revitalization2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				industry_repair_factor = 0.20
+				training_time_factor = -0.1
+				conscription = 0.005
+			}
+		}
+
+		GER_national_revitalization3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				industry_repair_factor = 0.20
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		GER_national_revitalization4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				industry_repair_factor = 0.20
+				training_time_factor = -0.1
+				conscription = 0.005
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		GER_bulwark_against_bolshevism = {
+
+			available = {
+				NOT = { is_in_faction_with = SOV }
+				NOT = { has_war_together_with = SOV }
+				NOT = { has_government = communism }
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_bulwark_against_bolshevism
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		GER_rebuild_the_high_seas_fleet = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		GER_prepare_for_the_next_blockade = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		GER_rekindle_imperial_sentiment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = HUN_hungarian_monarchy_habsburg
+
+			modifier = {
+				neutrality_drift = 0.2
+			}
+		}
+
+		GER_expatriate_the_communists = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = anti_soviet_pact
+
+			modifier = {
+				communism_drift = -0.1
+			}
+		}
+
+		GER_communist_refugees = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+
+		GER_redirecting_naval_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = -0.20
+			}
+		}
+
+		GER_safeguard_the_baltic = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = anti_soviet_pact
+
+			modifier = {
+				communism_drift = -0.1
+			}
+		}
+
+		GER_wilhelm_iii = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = ger_wilhelm_iii
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		GER_the_great_red_menace = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = ger_the_great_red_menace
+
+			modifier = {
+				communism_drift = -0.02
+				democratic_drift = 0.02
+			}
+		}
+
+		GER_pool_technical_know_how = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				medium_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				heavy_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				dp_artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		GER_preparing_ITA_coup = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+
+		GER_preparing_ITA_coup2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				neutrality_drift = 0.2
+			}
+		}
+
+		GER_soviet_military_exercises = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+
+			modifier = {
+				training_time_army_factor = -0.2
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		GER_soviet_protect_our_sphere = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		GER_barbarossa = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
+			}
+			modifier = {
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.125
+				planning_speed = 0.1
+				no_supply_grace = 72
+				out_of_supply_factor = -0.15
+				production_speed_rail_way_factor = 0.2
+			}
+
+		}
+		
+		GER_summer_off = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.05
+			}
+			modifier = {
+				supply_consumption_factor = -0.1
+				planning_speed = 0.25
+				no_supply_grace = 48
+				terrain_penalty_reduction = 0.1
+			}
+
+		}
+		
+		GER_summer_off_minor = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+			}
+			modifier = {
+				supply_consumption_factor = -0.05
+				no_supply_grace = 24
+				terrain_penalty_reduction = 0.05
+			}
+
+		}
+		
+		GER_dismantle_maginot = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		GER_dismantle_czechoslovakian_forts = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		GER_jaegernotprogramm = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_air_payment
+
+			modifier = {
+				war_support_factor = -0.05
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.25 instant = yes
+				}
+			}
+		}
+
+		GER_modular_construction = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		GER_FIN_industrial_support = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		GER_mefo_bills_1 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				production_speed_naval_base_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				production_speed_bunker_factor = 0.20
+				production_speed_air_base_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+				production_speed_radar_station_factor = 0.20
+				production_speed_fuel_silo_factor = 0.20
+				production_speed_synthetic_refinery_factor = 0.25
+				# production_speed_synthetic_rubber_refinery_factor = 0.2
+				political_power_cost = 0.35
+			}
+		}
+
+		GER_mefo_bills_2 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.35
+			}
+		}
+
+		GER_mefo_bills_3 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.5
+			}
+		}
+
+		GER_mefo_bills_4 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.65
+			}
+		}
+
+		GER_mefo_bills_5 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.8
+			}
+		}
+
+		GER_mefo_bills_6 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.95
+			}
+		}
+
+		GER_mefo_bills_7 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 1.1
+			}
+		}
+
+		GER_mefo_bills_8 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 1.25
+			}
+		}
+
+		GER_mefo_bills_9 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 1.4
+			}
+		}
+
+		GER_mefo_bills_10 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 1.55
+			}
+		}
+
+		GER_mefo_bills_11 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 1.7
+			}
+		}
+
+		GER_mefo_bills_12 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 1.85
+			}
+		}
+
+		GER_mefo_bills_13 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 2
+			}
+		}
+
+		GER_mefo_bills_14 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 2.15
+			}
+		}
+
+		GER_mefo_bills_15 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 2.3
+			}
+		}
+
+		GER_mefo_bills_16 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 2.45
+			}
+		}
+
+		GER_mefo_bills_17 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 2.6
+			}
+		}
+
+		GER_mefo_bills_18 = {
+			name = GER_mefo_bills
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 2.75
+			}
+		}
+
+		GER_mefo_bills_ended = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills_payment
+
+			modifier = {
+				consumer_goods_factor = 0.60
+			}
+		}
+
+		GER_ss_factory_rerouted = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				civilian_factory_use = 5
+			}
+		}
+
+		GER_air_safety_regulations = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				jet_strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+			}
+		}
+		GER_weapons = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+
+			equipment_bonus = {
+				squad_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				heavy_anti_air_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				heavy_anti_tank_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				dp_artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				rocket_artillery_equipment  = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+	}	
+	
+	# TECHNOLOGY
+	tank_manufacturer = { 
+		
+		designer = yes
+
+		porsche = {
+
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+
+			available = {
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			# traits = { porsche_manufacturer }
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					armor_value = 0.1
+					breakthrough = 0.05
+					soft_attack = 0.1
+				}
+				heavy_tank_artillery_chassis = {
+					armor_value = 0.1
+					breakthrough = 0.05
+					soft_attack = 0.1
+				}
+				heavy_tank_destroyer_chassis = {
+					ap_attack = 0.1
+					armor_value = 0.1
+					breakthrough = 0.05
+					soft_attack = 0.05
+				}
+				heavy_assault_gun_chassis = {
+					armor_value = 0.1
+					breakthrough = 0.05
+					soft_attack = 0.05
+				}
+				heavy_tank_amphibious_chassis = {
+					armor_value = 0.1
+					breakthrough = 0.05
+					soft_attack = 0.05
+				}
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+		
+		henschel = {
+
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+
+			available = {
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			# traits = { henschel_manufacturer }
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.1
+				}
+				heavy_tank_artillery_chassis = {
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.05
+				}
+				heavy_tank_destroyer_chassis = {
+					ap_attack = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.1
+				}
+				heavy_assault_gun_chassis = {
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.05
+				}
+				heavy_tank_amphibious_chassis = {
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.05
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+
+		GER_MAN = {
+
+			picture = GER_MAN
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+
+			available = {
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.075
+					hardness = -0.05
+					reliability = -0.1
+				}
+				medium_tank_artillery_chassis = {
+					build_cost_ic = -0.075
+					hardness = -0.05
+					reliability = -0.1
+				}
+				medium_tank_destroyer_chassis = {
+					build_cost_ic = -0.075
+					hardness = -0.05
+					reliability = -0.1
+				}
+				medium_tank_aa_chassis = {
+					build_cost_ic = -0.075
+					hardness = -0.05
+					reliability = -0.1
+				}
+				medium_assault_gun_chassis = {
+					build_cost_ic = -0.075
+					hardness = -0.05
+					reliability = -0.1
+				}
+				medium_tank_amphibious_chassis = {
+					build_cost_ic = -0.075
+					hardness = -0.05
+					reliability = -0.1
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+
+		krupp_tank = {
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+
+			available = {
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			# traits = { man_manufacturer }
+			equipment_bonus = {
+				medium_tank_chassis = {
+					breakthrough = 0.05
+					soft_attack = 0.1
+				}
+				medium_tank_artillery_chassis = {
+					breakthrough = 0.05
+					soft_attack = 0.15
+				}
+				medium_tank_destroyer_chassis = {
+					ap_attack = 0.1
+					breakthrough = 0.05
+					soft_attack = 0.1
+				}
+				medium_tank_aa_chassis = {
+					# anti_air_attack = 0.15
+					breakthrough = 0.05
+					soft_attack = 0.1
+				}
+				medium_assault_gun_chassis = {
+					breakthrough = 0.05
+					soft_attack = 0.1
+				}
+				medium_tank_amphibious_chassis = {
+					breakthrough = 0.05
+					soft_attack = 0.1
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+
+		nibelungenwerke = {
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+
+			available = {
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = 0.05
+					reliability = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+				}
+				medium_tank_artillery_chassis = {
+					build_cost_ic = 0.05
+					reliability = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.15
+				}
+				medium_tank_destroyer_chassis = {
+					build_cost_ic = 0.05
+					ap_attack = 0.05
+					reliability = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.15
+					soft_attack = 0.1
+				}
+				medium_tank_aa_chassis = {
+					build_cost_ic = 0.05
+					# anti_air_attack = 0.15
+					reliability = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+				}
+				medium_assault_gun_chassis = {
+					build_cost_ic = 0.05
+					reliability = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+				}
+				medium_tank_amphibious_chassis = {
+					build_cost_ic = 0.05
+					reliability = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+
+		daimler_Benz_AG = {
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+
+			available = {
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			equipment_bonus = {
+				medium_tank_chassis = {
+					defense = 0.1
+					hard_attack = 0.1
+				}
+				medium_tank_artillery_chassis = {
+					defense = 0.05
+					hard_attack = 0.1
+				}
+				medium_tank_destroyer_chassis = {
+					defense = 0.05
+					hard_attack = 0.15
+					ap_attack = 0.1
+				}
+				medium_tank_aa_chassis = {
+					defense = 0.05
+					hard_attack = 0.1
+					# air_attack = 0.15
+				}
+				medium_assault_gun_chassis = {
+					defense = 0.05
+					hard_attack = 0.1
+				}
+				medium_tank_amphibious_chassis = {
+					defense = 0.05
+					hard_attack = 0.1
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+
+		Alkett = {
+
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+
+			available = {
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			equipment_bonus = {
+				light_tank_chassis = {	
+					soft_attack = 0.1
+					hard_attack = 0.1
+					maximum_speed = 0.1
+				}
+				light_tank_artillery_chassis = {
+					soft_attack = 0.15
+					maximum_speed = 0.1
+				}
+				light_tank_destroyer_chassis = {
+					ap_attack = 0.1
+					hard_attack = 0.15
+					maximum_speed = 0.1
+				}
+				light_tank_aa_chassis = {
+					# air_attack = 0.15
+					maximum_speed = 0.1
+				}
+				light_assault_gun_chassis = {
+					soft_attack = 0.1
+					maximum_speed = 0.1
+				}
+				light_tank_amphibious_chassis = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					maximum_speed = 0.1
+				}
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+
+		GER_ckd = {
+
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = ITA
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = SPR
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+			
+			available = {
+				GER = {
+					has_completed_focus = GER_end_of_czechoslovakia
+				}
+				OR = {
+					original_tag = GER
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
+				}
+				if = {
+					limit = {
+						original_tag = VIC
+					}
+					has_completed_focus = VIC_Learn_from_the_germans
+				}
+			}
+
+			research_bonus = {
+				armor = 0.2
+			}
+
+			equipment_bonus = {
+				light_tank_chassis = {
+					build_cost_ic = -0.075
+					breakthrough = -0.05
+					reliability = -0.05
+				}
+				light_tank_artillery_chassis = {
+					build_cost_ic = -0.075
+					breakthrough = -0.05
+					reliability = -0.05
+				}
+				light_tank_destroyer_chassis = {
+					build_cost_ic = -0.075
+					breakthrough = -0.05
+					reliability = -0.05
+				}
+				light_tank_aa_chassis = {
+					build_cost_ic = -0.075
+					breakthrough = -0.05
+					reliability = -0.05
+				}
+				light_assault_gun_chassis = {
+					build_cost_ic = -0.075
+					breakthrough = -0.05
+					reliability = -0.05
+				}
+				light_tank_amphibious_chassis = {
+					build_cost_ic = -0.075
+					breakthrough = -0.05
+					reliability = -0.05
+				}
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		germaniawerft = {
+
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = ITA
+					original_tag = FIN
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = VIC
+					original_tag = YUG
+					original_tag = JAP
+					original_tag = MAN
+					original_tag = SIA
+				}
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+
+			cost = 150
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = { naval_manufacturer_cost_factor = -1 }
+		}
+		
+		blohm_und_voss = {
+
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = FIN
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = VIC
+					original_tag = YUG
+				}
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+
+			cost = 150
+			
+			modifier = { naval_manufacturer_cost_factor = -1 }
+		}	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		messerschmitt = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { messerschmitt_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+		}
+		
+		junkers = { 
+			allowed = {
+				original_tag = GER
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+		}	
+		
+
+		focke_wulf = { 
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+		}
+		
+		heinkel = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+		}
+		
+		dornier = {
+
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+		}	
+
+
+	}
+	
+	industrial_concern = {
+		
+		ig_faben = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_completed_focus = GER_ig_farben
+			}
+			
+			research_bonus = {
+				synth_resources = 0.20
+			}
+			
+			traits = { ig_faben }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		krupp = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		siemens = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		rheinmetall = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+				heavy_artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		mauser = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		opel = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+
+	hidden_ideas = {
+
+		GER_free_templates = {
+			allowed = {
+				
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				# MIO
+				# military_industrial_organization_design_team_assign_cost = -1
+				# military_industrial_organization_design_team_change_cost = -1
+				# military_industrial_organization_industrial_manufacturer_assign_cost = -1
+				# UNITS
+				unit_amphibious_armor_design_cost_factor = -1
+				unit_amphibious_light_armor_design_cost_factor = -1
+				unit_amphibious_medium_armor_design_cost_factor = -1
+				unit_amphibious_heavy_armor_design_cost_factor = -1
+				unit_amphibious_mechanized_design_cost_factor = -1
+				unit_anti_tank_brigade_design_cost_factor = -1
+				unit_mot_anti_tank_brigade_design_cost_factor = -1
+				unit_heavy_anti_tank_brigade_design_cost_factor = -1
+				unit_pack_antitank_brigade_design_cost_factor = -1
+				unit_anti_air_design_cost_factor = -1
+				unit_mot_anti_air_brigade_design_cost_factor = -1
+				unit_motorised_anti_air_design_cost_factor = -1
+				unit_heavy_anti_air_design_cost_factor = -1
+				unit_artillery_brigade_design_cost_factor = -1
+				unit_mot_artillery_brigade_design_cost_factor = -1
+				unit_mot_dp_artillery_brigade_design_cost_factor = -1
+				unit_pack_artillery_brigade_design_cost_factor = -1
+				unit_dp_artillery_brigade_design_cost_factor = -1
+				unit_heavy_artillery_brigade_design_cost_factor = -1
+				unit_rocket_artillery_brigade_design_cost_factor = -1
+				unit_motorized_rocket_brigade_design_cost_factor = -1
+				unit_siege_artillery_design_cost_factor = -1
+				unit_light_assault_gun_brigade_design_cost_factor = -1
+				unit_medium_assault_gun_brigade_design_cost_factor = -1
+				unit_heavy_assault_gun_brigade_design_cost_factor = -1
+				unit_light_assault_gun_support_design_cost_factor = -1
+				unit_medium_assault_gun_support_design_cost_factor = -1
+				unit_heavy_assault_gun_support_design_cost_factor = -1
+				unit_cavalry_design_cost_factor = -1
+				unit_engineer_design_cost_factor = -1
+				# unit_assault_engineer_design_cost_factor = -1
+				unit_field_hospital_design_cost_factor = -1
+				unit_heavy_armor_design_cost_factor = -1
+				unit_infantry_design_cost_factor = -1 ## INF
+				unit_infantry_mot_design_cost_factor = -1
+				unit_garrison_design_cost_factor = -1
+				unit_militia_design_cost_factor = -1
+				unit_marine_design_cost_factor = -1
+				unit_mountaineers_design_cost_factor = -1
+				unit_paratrooper_design_cost_factor = -1
+				unit_motorized_design_cost_factor = -1
+				unit_mechanized_design_cost_factor = -1
+				unit_bicycle_battalion_design_cost_factor = -1
+				unit_fake_intel_unit_design_cost_factor = -1
+				unit_arditi_design_cost_factor = -1
+				unit_paramarine_design_cost_factor = -1
+				unit_penal_battalion_design_cost_factor = -1
+				unit_irregular_infantry_design_cost_factor = -1
+				unit_light_armor_design_cost_factor = -1
+				unit_logistics_company_design_cost_factor = -1
+				unit_logistics_company_mot_design_cost_factor = -1
+				# unit_logistics_company_horse_design_cost_factor = -1
+				unit_maintenance_company_design_cost_factor = -1
+				unit_medium_armor_design_cost_factor = -1
+				unit_military_police_design_cost_factor = -1
+				unit_recon_design_cost_factor = -1
+				unit_mot_recon_design_cost_factor = -1
+				unit_light_tank_recon_design_cost_factor = -1
+				unit_armored_car_recon_design_cost_factor = -1
+				unit_signal_company_design_cost_factor = -1
+				unit_hq_company_design_cost_factor = -1
+				unit_light_sp_anti_air_brigade_design_cost_factor = -1
+				unit_medium_sp_anti_air_brigade_design_cost_factor = -1
+				unit_light_sp_artillery_brigade_design_cost_factor = -1
+				unit_medium_sp_artillery_brigade_design_cost_factor = -1
+				unit_heavy_sp_artillery_brigade_design_cost_factor = -1
+				# unit_ss_hq_company_design_cost_factor = -1
+				unit_light_tank_destroyer_brigade_design_cost_factor = -1
+				unit_medium_tank_destroyer_brigade_design_cost_factor = -1
+				unit_heavy_tank_destroyer_brigade_design_cost_factor = -1
+				unit_jaeger_design_cost_factor = -1
+				unit_mechanized_aa_equipment_design_cost_factor = -1
+				unit_mech_sp_artillery_brigade_design_cost_factor = -1
+				unit_mechanised_tank_destroyer_brigade_design_cost_factor = -1
+				unit_mech_field_hospital_design_cost_factor = -1
+				unit_mech_engineers_design_cost_factor = -1
+				# unit_mech_assault_engineers_design_cost_factor = -1
+				unit_mech_recon_design_cost_factor = -1
+				unit_rangers_support_design_cost_factor = -1
+				unit_pioneer_support_design_cost_factor = -1
+				unit_winter_logistics_support_design_cost_factor = -1
+				unit_long_range_patrol_support_design_cost_factor = -1
+				unit_marine_commando_design_cost_factor = -1
+				# unit_UNIT_design_cost_factor = -1
+				# unit_UNIT_design_cost_factor = -1
+				# unit_UNIT_design_cost_factor = -1
+
+				## FREE SHIP AND AIR AND TANK DESIGNS
+				# air
+				module_engine_1_1x_design_cost_factor = -1
+				module_engine_1_2x_design_cost_factor = -1
+				module_engine_1_3x_design_cost_factor = -1
+				module_engine_1_4x_design_cost_factor = -1
+				module_engine_1_6x_design_cost_factor = -1
+				module_engine_2_1x_design_cost_factor = -1
+				module_engine_2_2x_design_cost_factor = -1
+				module_engine_2_3x_design_cost_factor = -1
+				module_engine_2_4x_design_cost_factor = -1
+				module_engine_2_6x_design_cost_factor = -1
+				module_engine_3_1x_design_cost_factor = -1
+				module_engine_3_2x_design_cost_factor = -1
+				module_engine_3_3x_design_cost_factor = -1
+				module_engine_3_4x_design_cost_factor = -1
+				module_engine_3_6x_design_cost_factor = -1
+				module_engine_4_1x_design_cost_factor = -1
+				module_engine_4_2x_design_cost_factor = -1
+				module_engine_4_3x_design_cost_factor = -1
+				module_engine_4_4x_design_cost_factor = -1
+				module_engine_4_6x_design_cost_factor = -1
+				module_jet_engine_1x_design_cost_factor = -1
+				module_jet_engine_2x_design_cost_factor = -1
+				module_jet_engine_3x_design_cost_factor = -1
+				module_jet_engine_4x_design_cost_factor = -1
+				module_jet_engine_6x_design_cost_factor = -1
+				module_rocket_engine_1_design_cost_factor = -1
+				module_rocket_engine_2_design_cost_factor = -1
+				module_rocket_engine_3_design_cost_factor = -1
+				module_light_mg_2x_design_cost_factor = -1
+				module_light_mg_4x_design_cost_factor = -1
+				module_heavy_mg_2x_design_cost_factor = -1
+				module_heavy_mg_4x_design_cost_factor = -1
+				module_aircraft_cannon_1_1x_design_cost_factor = -1
+				module_aircraft_cannon_1_2x_design_cost_factor = -1
+				module_aircraft_cannon_2_1x_design_cost_factor = -1
+				module_aircraft_cannon_2_2x_design_cost_factor = -1
+				module_bomb_locks_design_cost_factor = -1
+				module_cluster_bombs_design_cost_factor = -1
+				module_cluster_bombs_2_design_cost_factor = -1
+				module_small_bomb_bay_design_cost_factor = -1
+				module_medium_bomb_bay_design_cost_factor = -1
+				module_early_large_bomb_bay_design_cost_factor = -1
+				module_large_bomb_bay_design_cost_factor = -1
+				module_large_bomb_design_cost_factor = -1
+				module_tank_buster_1_design_cost_factor = -1
+				module_tank_buster_2_design_cost_factor = -1
+				module_rocket_rails_design_cost_factor = -1
+				module_jet_cas_bomb_design_cost_factor = -1
+				module_jet_cas_bomb_extra_design_cost_factor = -1
+				module_torpedo_mounting_small_design_cost_factor = -1
+				module_torpedo_mounting2_small_design_cost_factor = -1
+				module_torpedo_mounting3_small_design_cost_factor = -1
+				module_torpedo_mounting_medium_design_cost_factor = -1
+				module_torpedo_mounting2_medium_design_cost_factor = -1
+				module_torpedo_mounting3_medium_design_cost_factor = -1
+				module_recon_camera_design_cost_factor = -1
+				module_airdropped_mines_design_cost_factor = -1
+				module_guided_anti_ship_missile_design_cost_factor = -1
+				module_fixed_explosive_charge_design_cost_factor = -1
+				module_armor_plate_small_design_cost_factor = -1
+				module_fuel_tanks_small_design_cost_factor = -1
+				module_self_sealing_fuel_tanks_small_design_cost_factor = -1
+				# module_non_strategic_materials_small_design_cost_factor = -1
+				module_plane_easy_maintenance_design_cost_factor = -1
+				module_drop_tanks_design_cost_factor = -1
+				module_dive_brakes_small_design_cost_factor = -1
+				module_floats_design_cost_factor = -1
+				module_armor_plate_medium_design_cost_factor = -1
+				module_self_sealing_fuel_tanks_medium_design_cost_factor = -1
+				module_dive_brakes_medium_design_cost_factor = -1
+				# module_non_strategic_materials_medium_design_cost_factor = -1
+				module_flying_boat_medium_design_cost_factor = -1
+				module_demining_coil_design_cost_factor = -1
+				module_armor_plate_large_design_cost_factor = -1
+				module_self_sealing_fuel_tanks_large_design_cost_factor = -1
+				module_flying_boat_large_design_cost_factor = -1
+				module_fuel_injection_s_design_cost_factor = -1
+				module_fuel_injection2_s_design_cost_factor = -1
+				module_fuel_injection_m_design_cost_factor = -1
+				module_fuel_injection2_m_design_cost_factor = -1
+				module_fuel_injection_l_design_cost_factor = -1
+				module_fuel_injection2_l_design_cost_factor = -1
+				module_bomb_sights_1_design_cost_factor = -1
+				module_bomb_sights_2_design_cost_factor = -1
+				module_radio_navigation_1_design_cost_factor = -1
+				module_radio_navigation_2_design_cost_factor = -1
+				module_air_ground_radar_1_design_cost_factor = -1
+				module_air_ground_radar_2_design_cost_factor = -1
+				module_air_air_radar_1_design_cost_factor = -1
+				module_air_air_radar_2_design_cost_factor = -1
+				module_ammunition_1_design_cost_factor = -1
+				module_ammunition_2_design_cost_factor = -1
+				module_ammunition_3_design_cost_factor = -1
+				module_lmg_defense_turret_design_cost_factor = -1
+				module_lmg_defense_turret_2x_design_cost_factor = -1
+				module_hmg_defense_turret_design_cost_factor = -1
+				module_hmg_defense_turret_2x_design_cost_factor = -1
+				module_cannon_defense_turret_design_cost_factor = -1
+				module_cannon_defense_turret_2x_design_cost_factor = -1
+
+				# navy
+				module_ship_light_battery_1_design_cost_factor = -1
+				module_ship_light_battery_2_design_cost_factor = -1
+				module_ship_light_battery_3_design_cost_factor = -1
+				module_ship_light_battery_4_design_cost_factor = -1
+				module_dp_light_battery_1_design_cost_factor = -1
+				module_dp_light_battery_2_design_cost_factor = -1
+				module_dp_light_battery_3_design_cost_factor = -1
+				module_ship_heavy_battery_1_design_cost_factor = -1
+				module_ship_heavy_battery_2_design_cost_factor = -1
+				module_ship_heavy_battery_3_design_cost_factor = -1
+				module_ship_heavy_battery_4_design_cost_factor = -1
+				module_ship_super_heavy_battery_1_design_cost_factor = -1
+				module_ship_medium_battery_1_design_cost_factor = -1
+				module_ship_medium_battery_2_design_cost_factor = -1
+				module_ship_medium_battery_3_design_cost_factor = -1
+				module_ship_medium_battery_4_design_cost_factor = -1
+				module_ship_light_medium_battery_1_design_cost_factor = -1
+				module_ship_light_medium_battery_2_design_cost_factor = -1
+				module_ship_light_medium_battery_3_design_cost_factor = -1
+				module_ship_light_medium_battery_4_design_cost_factor = -1
+				module_dp_ship_medium_1_design_cost_factor = -1
+				module_ship_secondaries_1_design_cost_factor = -1
+				module_ship_secondaries_2_design_cost_factor = -1
+				module_dp_ship_secondaries_1_design_cost_factor = -1
+				module_dp_ship_secondaries_2_design_cost_factor = -1
+				module_dp_ship_secondaries_3_design_cost_factor = -1
+				# module_dp_ship_secondaries_4_design_cost_factor = -1
+				module_ship_anti_air_1_design_cost_factor = -1
+				module_ship_anti_air_2_design_cost_factor = -1
+				module_ship_anti_air_3_design_cost_factor = -1
+				module_ship_anti_air_4_design_cost_factor = -1
+				module_ship_fire_control_system_0_design_cost_factor = -1
+				module_ship_fire_control_system_1_design_cost_factor = -1
+				module_ship_fire_control_system_2_design_cost_factor = -1
+				module_ship_fire_control_system_3_design_cost_factor = -1
+				module_ship_radar_1_design_cost_factor = -1
+				module_ship_radar_2_design_cost_factor = -1
+				module_ship_radar_3_design_cost_factor = -1
+				module_ship_radar_4_design_cost_factor = -1
+				module_light_ship_engine_1_design_cost_factor = -1
+				module_light_ship_engine_2_design_cost_factor = -1
+				module_light_ship_engine_3_design_cost_factor = -1
+				module_light_ship_engine_4_design_cost_factor = -1
+				module_sub_ship_engine_1_design_cost_factor = -1
+				module_sub_ship_engine_2_design_cost_factor = -1
+				module_sub_ship_engine_3_design_cost_factor = -1
+				module_sub_ship_engine_4_design_cost_factor = -1
+				module_cruiser_ship_engine_1_design_cost_factor = -1
+				module_cruiser_ship_engine_2_design_cost_factor = -1
+				module_cruiser_ship_engine_3_design_cost_factor = -1
+				module_cruiser_ship_engine_4_design_cost_factor = -1
+				module_heavy_ship_engine_1_design_cost_factor = -1
+				module_heavy_ship_engine_2_design_cost_factor = -1
+				module_heavy_ship_engine_3_design_cost_factor = -1
+				module_heavy_ship_engine_4_design_cost_factor = -1
+				module_carrier_ship_engine_1_design_cost_factor = -1
+				module_carrier_ship_engine_2_design_cost_factor = -1
+				module_carrier_ship_engine_3_design_cost_factor = -1
+				module_carrier_ship_engine_4_design_cost_factor = -1
+				module_ship_torpedo_1_design_cost_factor = -1
+				module_ship_torpedo_2_design_cost_factor = -1
+				module_ship_torpedo_3_design_cost_factor = -1
+				module_ship_torpedo_4_design_cost_factor = -1
+				module_ship_torpedo_sub_1_design_cost_factor = -1
+				module_ship_torpedo_sub_2_design_cost_factor = -1
+				module_ship_torpedo_sub_3_design_cost_factor = -1
+				module_ship_torpedo_sub_4_design_cost_factor = -1
+				module_ship_mine_layer_1_design_cost_factor = -1
+				module_ship_mine_layer_sub_design_cost_factor = -1
+				module_ship_mine_sweeper_1_design_cost_factor = -1
+				module_ship_depth_charge_1_design_cost_factor = -1
+				module_ship_depth_charge_2_design_cost_factor = -1
+				module_ship_depth_charge_3_design_cost_factor = -1
+				module_ship_depth_charge_4_design_cost_factor = -1
+				module_ship_sub_snorkel_1_design_cost_factor = -1
+				module_ship_sub_snorkel_2_design_cost_factor = -1
+				module_ship_airplane_launcher_1_design_cost_factor = -1
+				module_ship_airplane_launcher_2_design_cost_factor = -1
+				module_ship_deck_space_design_cost_factor = -1
+				module_ship_extra_fuel_tank_design_cost_factor = -1
+				module_ship_sonar_1_design_cost_factor = -1
+				module_ship_sonar_2_design_cost_factor = -1
+				module_ship_sonar_3_design_cost_factor = -1
+				# module_ship_sonar_4_design_cost_factor = -1
+				module_ship_armor_bb_1_design_cost_factor = -1
+				module_ship_armor_bc_1_design_cost_factor = -1
+				module_ship_armor_bb_2_design_cost_factor = -1
+				module_ship_armor_bc_2_design_cost_factor = -1
+				module_ship_armor_bb_3_design_cost_factor = -1
+				module_ship_armor_bc_3_design_cost_factor = -1
+				module_ship_armor_shbb_design_cost_factor = -1
+				module_ship_armor_cruiser_1_design_cost_factor = -1
+				module_ship_armor_cruiser_2_design_cost_factor = -1
+				module_ship_armor_cruiser_3_design_cost_factor = -1
+				module_ship_armor_cruiser_4_design_cost_factor = -1
+				module_ship_armor_carrier_deck_design_cost_factor = -1
+				module_ship_heavy_battery_sub_1_design_cost_factor = -1
+				module_ship_deck_space_sub_design_cost_factor = -1
+
+				# tank
+				module_tank_gasoline_engine_design_cost_factor = -1
+				module_tank_diesel_engine_design_cost_factor = -1
+				module_tank_petrol_electric_engine_design_cost_factor = -1
+				module_tank_gas_turbine_engine_design_cost_factor = -1
+				module_tank_riveted_armor_design_cost_factor = -1
+				module_tank_cast_armor_design_cost_factor = -1
+				module_tank_welded_armor_design_cost_factor = -1
+				module_tank_torsion_bar_suspension_design_cost_factor = -1
+				module_tank_christie_suspension_design_cost_factor = -1
+				module_tank_bogie_suspension_design_cost_factor = -1
+				module_tank_interleaved_suspension_design_cost_factor = -1
+				module_tank_horstmann_suspension_design_cost_factor = -1
+				# module_tank_hydropneumatic_suspension_design_cost_factor = -1
+				module_tank_half_track_suspension_design_cost_factor = -1
+				module_tank_light_superstructure_zis_design_cost_factor = -1
+				module_tank_light_superstructure_hetzer_design_cost_factor = -1
+				module_tank_light_superstructure_hellcat_design_cost_factor = -1
+				module_tank_light_superstructure_cv33_design_cost_factor = -1
+				module_tank_multi_turret_1_design_cost_factor = -1
+				module_tank_multi_turret_2_design_cost_factor = -1
+				module_tank_multi_turret_3_design_cost_factor = -1
+				module_tank_ac_turret_1_design_cost_factor = -1
+				module_tank_ac_turret_2_design_cost_factor = -1
+				module_tank_ac_turret_3_design_cost_factor = -1
+				module_tank_light_turret_1_design_cost_factor = -1
+				module_tank_light_turret_2_design_cost_factor = -1
+				module_tank_light_turret_3_design_cost_factor = -1
+				module_tank_light_turret_open_design_cost_factor = -1
+				module_tank_light_turret_open_large_design_cost_factor = -1
+				module_tank_light_superstructure_design_cost_factor = -1
+				module_tank_medium_turret_p3_early_1_design_cost_factor = -1
+				module_tank_light_open_superstructure_design_cost_factor = -1
+				module_tank_medium_turret_1_design_cost_factor = -1
+				module_tank_medium_turret_2_design_cost_factor = -1
+				module_tank_medium_turret_3_design_cost_factor = -1
+				module_tank_medium_turret_open_design_cost_factor = -1
+				module_tank_medium_turret_open_p3_early_design_cost_factor = -1
+				module_tank_medium_superstructure_design_cost_factor = -1
+				module_tank_medium_superstructure_p3_early_design_cost_factor = -1
+				module_tank_large_medium_superstructure_design_cost_factor = -1
+				module_tank_medium_open_superstructure_design_cost_factor = -1
+				module_tank_medium_open_superstructure_p3_early_design_cost_factor = -1
+				module_tank_heavy_turret_early_design_cost_factor = -1
+				module_tank_heavy_turret_1_design_cost_factor = -1
+				module_tank_heavy_turret_2_design_cost_factor = -1
+				module_tank_heavy_superstructure_design_cost_factor = -1
+				module_tank_heavy_open_superstructure_design_cost_factor = -1
+				# module_tank_super_heavy_turret_design_cost_factor = -1
+				module_tank_modern_tank_turret_design_cost_factor = -1
+				module_tank_heavy_machine_gun_design_cost_factor = -1
+				module_flamethrower_design_cost_factor = -1
+				module_tank_auto_cannon_design_cost_factor = -1
+				module_tank_small_gun_1_design_cost_factor = -1
+				module_tank_car_heavy_machine_gun_design_cost_factor = -1
+				module_tank_car_auto_cannon_design_cost_factor = -1
+				module_tank_car_quad_machine_gun_design_cost_factor = -1
+				module_tank_car_auto_cannon_2_design_cost_factor = -1
+				module_tank_flame_projectors_design_cost_factor = -1
+				module_tank_car_auto_cannon_3_design_cost_factor = -1
+				module_tank_car_small_squeeze_design_cost_factor = -1
+				module_tank_car_at_cannon_design_cost_factor = -1
+				module_tank_small_gun_2_design_cost_factor = -1
+				module_tank_small_gun_3_design_cost_factor = -1
+				module_tank_small_gun_squeeze_design_cost_factor = -1
+				module_tank_small_gun_squeeze2_design_cost_factor = -1
+				module_tank_anti_air_gun_placeholder_design_cost_factor = -1
+				module_tank_anti_air_gun_1_design_cost_factor = -1
+				module_tank_anti_air_gun_2_design_cost_factor = -1
+				module_tank_anti_air_gun_3_design_cost_factor = -1
+				module_tank_anti_air_gun_4_design_cost_factor = -1
+				module_tank_art_gun_1_design_cost_factor = -1
+				module_tank_art_gun_2_design_cost_factor = -1
+				module_tank_art_gun_3_design_cost_factor = -1
+				module_tank_light_art_gun_1_design_cost_factor = -1
+				module_tank_light_art_gun_2_design_cost_factor = -1
+				module_tank_light_art_gun_3_design_cost_factor = -1
+				module_tank_med_gun_1_design_cost_factor = -1
+				module_tank_med_gun_2_design_cost_factor = -1
+				module_tank_med_gun_3_design_cost_factor = -1
+				module_tank_med_hv_gun_1_design_cost_factor = -1
+				module_tank_med_hv_gun_2_design_cost_factor = -1
+				module_tank_med_hv_gun_3_design_cost_factor = -1
+				# module_tank_med_gun_squeeze_design_cost_factor = -1
+				# module_tank_med_gun_squeeze2_design_cost_factor = -1
+				module_tank_light_cs_gun_1_design_cost_factor = -1
+				module_tank_light_cs_gun_2_design_cost_factor = -1
+				module_tank_light_cs_gun_3_design_cost_factor = -1
+				module_tank_med_cs_gun_1_design_cost_factor = -1
+				module_tank_med_cs_gun_2_design_cost_factor = -1
+				module_tank_med_cs_gun_3_design_cost_factor = -1
+				module_tank_heavy_gun_1_design_cost_factor = -1
+				module_tank_heavy_gun_2_design_cost_factor = -1
+				module_tank_heavy_gun_3_design_cost_factor = -1
+				module_tank_heavy_hv_gun_1_design_cost_factor = -1
+				module_tank_heavy_hv_gun_2_design_cost_factor = -1
+				module_tank_heavy_hv_gun_3_design_cost_factor = -1
+				module_tank_heavy_aa_gun_1_design_cost_factor = -1
+				module_tank_heavy_aa_gun_2_design_cost_factor = -1
+				module_tank_heavy_aa_gun_3_design_cost_factor = -1
+				module_tank_heavy_cs_gun_1_design_cost_factor = -1
+				module_tank_heavy_cs_gun_2_design_cost_factor = -1
+				module_tank_heavy_cs_gun_3_design_cost_factor = -1
+				module_tank_heavy_art_gun_1_design_cost_factor = -1
+				module_tank_heavy_art_gun_2_design_cost_factor = -1
+				module_tank_rocket_launcher_design_cost_factor = -1
+				module_tank_rocket_cs_design_cost_factor = -1
+				module_tank_radio_1_design_cost_factor = -1
+				module_tank_radio_2_design_cost_factor = -1
+				module_tank_radio_3_design_cost_factor = -1
+				module_amphibious_drive_design_cost_factor = -1
+				module_secondary_turret_hmg_design_cost_factor = -1
+				module_secondary_turret_small_cannon_design_cost_factor = -1
+				module_secondary_turret_howitzer_design_cost_factor = -1
+				module_stabilizer_design_cost_factor = -1
+				module_smoke_launchers_design_cost_factor = -1
+				module_extra_ammo_storage_design_cost_factor = -1
+				module_wet_ammo_storage_design_cost_factor = -1
+				module_armor_skirts_design_cost_factor = -1
+				module_easy_maintenance_design_cost_factor = -1
+				module_additional_machine_guns_design_cost_factor = -1
+				module_additional_heavy_machine_guns_design_cost_factor = -1
+				module_hull_flamethrower_design_cost_factor = -1
+				module_dozer_blade_design_cost_factor = -1
+				module_add_on_rockets_design_cost_factor = -1
+				module_sloped_armor_design_cost_factor = -1
+				module_apcr_round_design_cost_factor = -1
+				module_advanced_artillery_round_design_cost_factor = -1
+				module_tank_light_td_1_design_cost_factor = -1
+				module_tank_light_td_2_design_cost_factor = -1
+				module_tank_light_td_3_design_cost_factor = -1
+				module_tank_medium_td_placeholder_design_cost_factor = -1
+				module_tank_medium_td_1_design_cost_factor = -1
+				module_tank_medium_td_2_design_cost_factor = -1
+				module_tank_medium_td_3_design_cost_factor = -1
+				module_expanded_fuel_tank_design_cost_factor = -1
+				module_tank_heavy_turret_3_design_cost_factor = -1
+				module_tank_auto_cannon_2_design_cost_factor = -1
+
+				module_tank_module_troop_carrier_design_cost_factor = -1
+				module_tank_mechanized_fixed_superstructure_turret_design_cost_factor = -1
+				module_secondary_turret_hmg_mech_design_cost_factor = -1
+				module_secondary_turret_small_cannon_mech_design_cost_factor = -1
+				module_tank_heavy_machine_gun_mech_design_cost_factor = -1
+				module_mech_utility_module_design_cost_factor = -1
+				module_tank_anti_air_cannon_mech_design_cost_factor = -1
+				module_tank_anti_air_cannon_2_mech_design_cost_factor = -1
+				module_tank_anti_air_cannon_3_mech_design_cost_factor = -1
+				module_tank_small_cannon_mech_design_cost_factor = -1
+				module_tank_small_cannon_2_mech_design_cost_factor = -1
+				module_tank_small_cannon_3_mech_design_cost_factor = -1
+				module_tank_light_rocket_launcher_mech_design_cost_factor = -1
+				module_tank_close_support_gun_mech_design_cost_factor = -1
+				module_tank_close_support_gun2_mech_design_cost_factor = -1
+				module_tank_close_support_gun3_mech_design_cost_factor = -1
+				module_mech_armored_roof_design_cost_factor = -1
+				module_mech_amtrac_module_design_cost_factor = -1
+				module_mech_sloped_armor_design_cost_factor = -1
+				module_mech_stabilizer_design_cost_factor = -1
+				module_mech_smoke_launchers_design_cost_factor = -1
+				module_mech_extra_ammo_storage_design_cost_factor = -1
+				module_mech_wet_ammo_storage_design_cost_factor = -1
+				module_mech_armor_skirts_design_cost_factor = -1
+				module_mech_auto_loader_design_cost_factor = -1
+				module_mech_easy_maintenance_design_cost_factor = -1
+				module_mech_additional_machine_guns_design_cost_factor = -1
+				module_mech_external_fuel_tank_design_cost_factor = -1
+				module_mech_tungston_core_ammunition_design_cost_factor = -1
+				module_mech_commanders_cupola_design_cost_factor = -1
+				module_tank_bogie_suspension_mech_design_cost_factor = -1
+				module_tank_wheeled_suspension_mech_design_cost_factor = -1
+				module_tank_half_track_suspension_mech_design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+				# module__design_cost_factor = -1
+			}
+		}
+
+		GER_faster_reinforce_rate = {
+			allowed = {
+				
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				land_reinforce_rate = 500
+			}
+		}
+
+		GER_africaaaaaaaaaaaaaa = {
+			allowed = {
+				
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				# offence = -0.085
+				# defence = -0.1
+			}
+		}
+
+		fascism_drift_ARG = {
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.2
+			}
+
+		}
+	}
+
+}

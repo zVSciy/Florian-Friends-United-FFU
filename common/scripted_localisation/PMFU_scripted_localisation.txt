@@ -1,0 +1,2302 @@
+defined_text = { # global
+	name = BRA_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "BRA_modify_economy_brazilian_economy" 
+	}
+}
+
+defined_text = { # global
+	name = BRA_army_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "BRA_modify_army_navy_brazilian_armed_forces" 
+	}
+}
+
+defined_text = { # global
+	name = MEX_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "MEX_modify_economy_mexican_economy" 
+	}
+}
+
+defined_text = { # global
+	name = MEX_army_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "MEX_modify_army_navy_mexican_armed_forces" 
+	}
+}
+
+defined_text = { # global
+	name = CAN_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			CAN = {
+				NOT = {
+					has_completed_focus = CAN_canada_wheat_board
+					has_completed_focus = CAN_bits_and_pieces_program
+					has_completed_focus = CAN_war_fueled_economy
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_the_great_depression" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				NOT = {
+					has_completed_focus = CAN_bits_and_pieces_program
+					has_completed_focus = CAN_war_fueled_economy
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_wheat_board" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				has_completed_focus = CAN_bits_and_pieces_program
+				NOT = {
+					has_completed_focus = CAN_war_fueled_economy
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_bapp" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				has_completed_focus = CAN_bits_and_pieces_program
+				has_completed_focus = CAN_war_fueled_economy
+				NOT = {
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_wfe" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				has_completed_focus = CAN_bits_and_pieces_program
+				has_completed_focus = CAN_war_fueled_economy
+				has_completed_focus = CAN_lend_lease_economy
+			}
+		}
+		localization_key = "CAN_modify_economy_wflle" 
+	}
+}
+
+defined_text = { # global
+	name = CAN_army_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "CAN_modify_army_canadian_armed_forces" 
+	}
+}
+
+defined_text = { # global
+	name = USA_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 1 }
+			}
+		}
+		localization_key = "USA_modify_economy_the_great_depression" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 2 }
+			}
+		}
+		localization_key = "USA_modify_economy_slow_recovery" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 3 }
+			}
+		}
+		localization_key = "USA_modify_economy_slow_economic_growth" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 4 }
+			}
+		}
+		localization_key = "USA_modify_economy_recovering_economy" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 5 }
+				NOT = {
+					has_completed_focus = USA_military_industrial_complex
+				}
+				has_war = no
+			}
+		}
+		localization_key = "USA_modify_economy_american_economy" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 5 }
+				has_completed_focus = USA_military_industrial_complex
+				has_war = no
+			}
+		}
+		localization_key = "USA_modify_economy_mic" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 5 }
+				has_war = yes
+			}
+		}
+		localization_key = "USA_modify_economy_wartime_industry" 
+	}
+}
+
+defined_text = { # global
+	name = USA_army_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "USA_modify_army_us_army" 
+	}
+}
+
+defined_text = { # global
+	name = USA_air_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "USA_modify_air_navy_us_airforce_navy" 
+	}
+}
+
+defined_text = { # global
+	name = GER_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			GER = {
+				NOT = {
+					has_completed_focus = GER_expand_mefo
+					has_completed_focus = GER_rearm_slow
+					has_completed_focus = GER_rearm_slow3
+				}
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_mefo" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_expand_mefo
+				NOT = {
+					has_completed_focus = GER_rearm_slow
+					has_completed_focus = GER_rearm_slow3
+				}
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_extra_mefo" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_expand_mefo
+				has_completed_focus = GER_rearm_slow
+				NOT = {
+					has_completed_focus = GER_rearm_slow3
+				}
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_expanded_mefo_const_focus" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_expand_mefo
+				has_completed_focus = GER_rearm_slow
+				has_completed_focus = GER_rearm_slow3
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_expanded_mefo_extra_invest_const_focus" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_war = yes
+			}
+		}
+		localization_key = "GER_modify_economy_war_economy" 
+	}
+}
+
+defined_text = { # global
+	name = GER_army_dynam_mod_sl
+	text = {
+		trigger = {
+			GER = {
+				NOT = {
+					has_completed_focus = GER_volksturm
+					has_completed_focus = GER_improved_command
+				}
+			}
+		}
+		localization_key = "GER_modify_army_general_staff" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_improved_command
+				NOT = {
+					has_completed_focus = GER_volksturm
+				}
+			}
+		}
+		localization_key = "GER_modify_army_improved_general_staff" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_volksturm
+			}
+		}
+		localization_key = "GER_modify_army_volksturm" 
+	}
+}
+
+defined_text = { # global
+	name = GER_air_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "GER_modify_air_luftwaffe" 
+	}
+}
+
+defined_text = { # global
+	name = GER_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "GER_modify_navy_kriegsmarine" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_increase_trade
+					has_completed_focus = ITA_autarky
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ITA_modify_economy_inflexible" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_increase_trade
+				NOT = {
+					has_completed_focus = ITA_autarky
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ITA_modify_economy_italian_economy" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_autarky
+				NOT = {
+					has_completed_focus = ITA_increase_trade
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ITA_modify_economy_autarky" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_war = yes
+			}
+		}
+		localization_key = "ITA_modify_economy_war_economy" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_german_investments_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_german_investments
+				}
+			}
+		}
+		localization_key = "ITA_german_investments_0_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_german_investments
+			}
+		}
+		localization_key = "ITA_german_investments_25_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_army_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ITA_modify_army_regio_esercito" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_air_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ITA_modify_air_regia_aeronautica" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_technical_assistance_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_technical_assistance
+				}
+			}
+		}
+		localization_key = "ITA_outdated_industry_10_nega_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_technical_assistance
+			}
+		}
+		localization_key = "ITA_outdated_industry_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_naval_air_coordination_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_naval_air_coordination
+				}
+			}
+		}
+		localization_key = "ITA_naval_air_coordination_0_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_naval_air_coordination
+			}
+		}
+		localization_key = "ITA_naval_air_coordination_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_license_the_airframe_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_license_the_airframe
+				}
+			}
+		}
+		localization_key = "ITA_license_the_airframe_0_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_license_the_airframe
+			}
+		}
+		localization_key = "ITA_license_the_airframe_5_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ITA_modify_navy_regia_marina" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_guide_the_zaibatsus
+					has_completed_focus = JAP_challenge_the_zaibatsus
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_zaibatsus" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_guide_the_zaibatsus
+				NOT = {
+					has_completed_focus = JAP_challenge_the_zaibatsus
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_guide_zaibatsus" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_challenge_the_zaibatsus
+				NOT = {
+					has_completed_focus = JAP_guide_the_zaibatsus
+					has_completed_focus = JAP_imperial_economy
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_zaibatsus_challenged" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_challenge_the_zaibatsus
+				has_completed_focus = JAP_imperial_economy
+				NOT = {
+					has_completed_focus = JAP_guide_the_zaibatsus
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_challenge_the_zaibatsus" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_army_dynam_mod_sl
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_combat_militarism
+				}
+			}
+		}
+		localization_key = "JAP_modify_army_militarism" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_combat_militarism
+			}
+		}
+		localization_key = "JAP_modify_army_unyielding_spirit" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_technlogical_supremacy_effect_sl
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_technlogical_supremacy
+				}
+			}
+		}
+		localization_key = "JAP_supremacy_of_technology_0_tt" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_technlogical_supremacy
+			}
+		}
+		localization_key = "JAP_supremacy_of_technology_5_tt" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_air_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "JAP_modify_navy_air_navy_air" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_duplicate_research_effort_sl
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_unified_fighter_development
+			}
+		}
+		localization_key = "JAP_duplicate_research_effort_0_tt" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_unified_fighter_development
+				}
+			}
+		}
+		localization_key = "JAP_duplicate_research_effort_nega_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_great_depression" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = limited_rearmament_focus
+				NOT = {
+					has_completed_focus = shadow_scheme_focus
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_british" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = shadow_scheme_focus
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_shadow_scheme" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_war = yes
+			}
+		}
+		localization_key = "ENG_modify_economy_war" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_army_dynam_mod_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_military_training_act
+				}
+			}
+		}
+		localization_key = "ENG_modify_army_the_war_to_end_all_wars" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_military_training_act
+			}
+		}
+		localization_key = "ENG_modify_army_army" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_air_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ENG_modify_air_airforce" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_british_airforce_aircaft_production_group_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_air_production_group
+					has_completed_focus = ENG_air_ministry_production
+				}
+			}
+		}
+		localization_key = "ENG_air_production_group_0_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_air_production_group
+				NOT = {
+					has_completed_focus = ENG_air_ministry_production
+				}
+			}
+		}
+		localization_key = "ENG_air_production_group_5_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_air_production_group
+				has_completed_focus = ENG_air_ministry_production
+			}
+		}
+		localization_key = "ENG_air_production_group_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ENG_modify_navy_navy" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_british_navy_merchant_navy_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_merchant_fleet
+				}
+			}
+		}
+		localization_key = "ENG_merchant_navy_0_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_merchant_fleet
+			}
+		}
+		localization_key = "ENG_merchant_navy_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_british_navy_secure_the_imperial_shipping_routes_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_secure_shipping
+				}
+			}
+		}
+		localization_key = "ENG_secure_the_imperial_shipping_routes_0_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_secure_shipping
+			}
+		}
+		localization_key = "ENG_secure_the_imperial_shipping_routes_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = SOV_agitprop_dynam_mod_sl
+	text = {
+		trigger = {
+			SOV = {
+				OR = {
+					NOT = {
+						has_completed_focus = SOV_collectivist_propaganda
+						has_completed_focus = SOV_positive_heroism
+					}
+				}
+			}
+		}
+		localization_key = "SOV_modify_agitprop_agitprop" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_collectivist_propaganda
+			}
+		}
+		localization_key = "SOV_modify_agitprop_collectivist" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_positive_heroism
+			}
+		}
+		localization_key = "SOV_modify_agitprop_positive_heroism" 
+	}
+}
+
+defined_text = { # global
+	name = SOV_eco_dynam_mod_sl
+	text = {
+		trigger = {
+			SOV = {
+				OR = {
+					has_war_with = GER
+					has_war_with = ITA
+					has_war_with = JAP
+				}
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_war" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_germans_are_coming
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_germans_are_coming" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					has_completed_focus = SOV_finish_2_plan
+					has_completed_focus = SOV_germans_are_coming
+				}
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_2_plan" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_finish_2_plan
+				NOT = {
+					has_completed_focus = SOV_germans_are_coming
+				}
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_3_plan" 
+	}
+}
+
+defined_text = { # global
+	name = malay_barrier_spirit_sl
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_1
+			}
+			NOT = {
+				has_global_flag = AST_NZL_ANNEXED
+			}
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_1_mod_tt" 
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_1
+			}
+			has_global_flag = AST_NZL_ANNEXED
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_1_mod_nzla_tt" 
+		
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_2
+			}
+			NOT = {
+				has_global_flag = AST_NZL_ANNEXED
+			}
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_2_mod_tt"
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_2
+			}
+			has_global_flag = AST_NZL_ANNEXED
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_2_mod_nzla_tt"
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_3
+			}
+			NOT = {
+				has_global_flag = AST_NZL_ANNEXED
+			}
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_3_mod_tt"
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_3
+			}
+			has_global_flag = AST_NZL_ANNEXED
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_3_mod_nzla_tt"
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_4
+			}
+			NOT = {
+				has_global_flag = AST_NZL_ANNEXED
+			}
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_4_mod_tt"
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_4
+			}
+			has_global_flag = AST_NZL_ANNEXED
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_4_mod_nzla_tt"
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_5
+			}
+			NOT = {
+				has_global_flag = AST_NZL_ANNEXED
+			}
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_5_mod_tt"
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_idea = ASN_ALLIES_the_sun_never_sets_idea_5
+			}
+			has_global_flag = AST_NZL_ANNEXED
+		}
+		localization_key = "ASN_ALLIES_the_sun_never_sets_idea_5_mod_nzla_tt"
+	}
+}
+
+defined_text = { # global
+	name = east_buffer_spirit_sl
+	text = {
+		trigger = {
+			RAJ = {
+				has_idea = RAJ_the_sun_never_sets_idea_1
+			}
+		}
+		localization_key = "RAJ_the_sun_never_sets_idea_1_mod_tt"
+	}
+	text = {
+		trigger = {
+			RAJ = {
+				has_idea = RAJ_the_sun_never_sets_idea_2
+			}
+		}
+		localization_key = "RAJ_the_sun_never_sets_idea_2_mod_tt"
+	}
+	text = {
+		trigger = {
+			RAJ = {
+				has_idea = RAJ_the_sun_never_sets_idea_3
+			}
+		}
+		localization_key = "RAJ_the_sun_never_sets_idea_3_mod_tt"
+	}
+	text = {
+		trigger = {
+			RAJ = {
+				has_idea = RAJ_the_sun_never_sets_idea_4
+			}
+		}
+		localization_key = "RAJ_the_sun_never_sets_idea_4_mod_tt"
+	}
+	text = {
+		trigger = {
+			RAJ = {
+				has_idea = RAJ_the_sun_never_sets_idea_5
+			}
+		}
+		localization_key = "RAJ_the_sun_never_sets_idea_5_mod_tt"
+	}
+}
+
+defined_text = { # global
+	name = sotf_spirit_sl
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_original
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_original_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_1
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_1_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_2
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_2_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_3
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_3_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_4
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_4_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_5
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_5_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_6
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_6_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_7
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_7_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_8
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_8_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_9
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_9_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_10
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_10_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_11
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_11_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_12
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_12_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_13
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_13_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_14
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_14_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_15
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_15_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_16
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_16_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_idea_17
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_idea_17_mod_tt"
+	}
+}
+
+defined_text = { # global
+	name = cnr_spirit_sl
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5_mod_tt"
+	}
+}
+
+defined_text = { # global
+	name = drsl_spirit_sl
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_6
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_6_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_7
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_7_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_8
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_8_mod_tt"
+	}
+}
+
+defined_text = { # global
+	name = sotf_capitals_spirit_sl
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_capitals_1
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_capitals_1_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_capitals_2_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_capitals_3_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_capitals_4_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_capitals_5_mod_tt"
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_idea = PACIFIC_COMMONWEALTH_controls_capitals_6
+			}
+		}
+		localization_key = "PACIFIC_COMMONWEALTH_controls_capitals_6_mod_tt"
+	}
+}
+
+defined_text = { # global
+	name = allied_islhop_spirit_sl
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping15
+			}
+		}
+		localization_key = "USA_island_hopping15_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping14
+			}
+		}
+		localization_key = "USA_island_hopping14_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping13
+			}
+		}
+		localization_key = "USA_island_hopping13_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping12
+			}
+		}
+		localization_key = "USA_island_hopping12_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping12
+			}
+		}
+		localization_key = "USA_island_hopping12_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping11
+			}
+		}
+		localization_key = "USA_island_hopping11_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping10
+			}
+		}
+		localization_key = "USA_island_hopping10_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping9
+			}
+		}
+		localization_key = "USA_island_hopping9_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping8
+			}
+		}
+		localization_key = "USA_island_hopping8_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping7
+			}
+		}
+		localization_key = "USA_island_hopping7_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping6
+			}
+		}
+		localization_key = "USA_island_hopping6_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping5
+			}
+		}
+		localization_key = "USA_island_hopping5_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping4
+			}
+		}
+		localization_key = "USA_island_hopping4_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping3
+			}
+		}
+		localization_key = "USA_island_hopping3_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping2
+			}
+		}
+		localization_key = "USA_island_hopping2_mod_tt"
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_idea = USA_island_hopping1
+			}
+		}
+		localization_key = "USA_island_hopping1_mod_tt"
+	}
+}
+
+defined_text = { # global
+	name = geacps_islhop_spirit_sl
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping15
+			}
+		}
+		localization_key = "JAP_island_hopping15_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping14
+			}
+		}
+		localization_key = "JAP_island_hopping14_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping13
+			}
+		}
+		localization_key = "JAP_island_hopping13_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping12
+			}
+		}
+		localization_key = "JAP_island_hopping12_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping12
+			}
+		}
+		localization_key = "JAP_island_hopping12_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping11
+			}
+		}
+		localization_key = "JAP_island_hopping11_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping10
+			}
+		}
+		localization_key = "JAP_island_hopping10_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping9
+			}
+		}
+		localization_key = "JAP_island_hopping9_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping8
+			}
+		}
+		localization_key = "JAP_island_hopping8_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping7
+			}
+		}
+		localization_key = "JAP_island_hopping7_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping6
+			}
+		}
+		localization_key = "USA_island_hopping6_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping5
+			}
+		}
+		localization_key = "JAP_island_hopping5_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping4
+			}
+		}
+		localization_key = "JAP_island_hopping4_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping3
+			}
+		}
+		localization_key = "JAP_island_hopping3_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping2
+			}
+		}
+		localization_key = "JAP_island_hopping2_mod_tt"
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_idea = JAP_island_hopping1
+			}
+		}
+		localization_key = "JAP_island_hopping1_mod_tt"
+	}
+}
+
+defined_text = { # global
+	name = secure_china_name_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = ENABLED
+			}
+		}
+		localization_key = "Secure China"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = DISABLED
+			}
+		}
+		localization_key = "Second Sino-Japanese War"
+	}
+}
+
+defined_text = { # global
+	name = academy_special_forces_gain_major
+	text = {
+		trigger = {
+			is_major=yes
+		}
+		localization_key = "1"
+	}
+	text = {
+		trigger = {
+			is_major=no
+		}
+		localization_key = "0.5"
+	}
+}
+
+### GAME RULES ###
+defined_text = { # global
+	name = navy_cap_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = navy_cap
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = navy_cap
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = mio_status_sl
+	text = {
+		trigger = {
+			has_aat = yes
+		}
+		localization_key = RULE_OPTION_MIOS
+	}
+	text = {
+		trigger = {
+			has_aat = no
+		}
+		localization_key = RULE_OPTION_DESIGNERS
+	}
+}
+
+defined_text = { # global
+	name = dockyard_cg_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = dockyard_cg
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = dockyard_cg
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = air_minors_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = ALLOW_FIGHTERS
+			}
+		}
+		localization_key = RULE_OPTION_ALLOW_FIGHTERS
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = ALLOW_FIGHTERS_LIGHT_AIRCRAFT
+			}
+		}
+		localization_key = RULE_OPTION_ALLOW_FIGHTERS_LIGHT_AIRCRAFT
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+}
+
+defined_text = { # global
+	name = minor_agents_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = minor_agents
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = minor_agents
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = china_war_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = spain_war_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = spain_war_rule
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = spain_war_rule
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = allow_china_waves_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_china_waves
+				option = THREEWAVES
+			}
+		}
+		localization_key = RULE_OPTION_THREE_WAVES
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_china_waves
+				option = TWOWAVES
+			}
+		}
+		localization_key = RULE_OPTION_TWO_WAVES
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_china_waves
+				option = ONEWAVES
+			}
+		}
+		localization_key = RULE_OPTION_ONE_WAVES
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_china_waves
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = allow_voice_lines_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_voice_lines
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_voice_lines
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = fatherless_spirit_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = fatherless_spirit
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = fatherless_spirit
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = sealion_auto_tp_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sealion_auto_tp
+				option = SEALION_AT_CONDITIONS_MET
+			}
+			NOT = {
+				has_global_flag = NO_ASIA
+			}
+		}
+		localization_key = RULE_OPTION_SEALION_AT_CONDITIONS_MET
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sealion_auto_tp
+				option = SEALION_DISABLED
+			}
+			NOT = {
+				has_global_flag = NO_ASIA
+			}
+		}
+		localization_key = RULE_OPTION_SEALION_DISABLED
+	}
+	text = {
+		trigger = {
+			has_global_flag = NO_ASIA
+		}
+		localization_key = "Disabled due to No Asia"
+	}
+}
+
+defined_text = { # global
+	name = free_templates_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = free_templates
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = free_templates
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = japan_strike_the_west_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = japan_strike_the_west
+				option = JANUARY_1_1941
+			}
+		}
+		localization_key = RULE_JANUARY_1_1941
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = japan_strike_the_west
+				option = SEPTEMBER_1_1940
+			}
+		}
+		localization_key = RULE_SEPTEMBER_1_1940
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = japan_strike_the_west
+				option = JUNE_1_1940
+			}
+		}
+		localization_key = RULE_JUNE_1_1940
+	}
+}
+
+defined_text = { # global
+	name = no_asia_bra_mex_status_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = no_asia_bra_mex_status
+				option = MEX_BRA_EXIST
+			}
+		}
+		localization_key = RULE_MEX_BRA_EXIST
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = no_asia_bra_mex_status
+				option = MEX_BRA_REMOVED
+			}
+		}
+		localization_key = RULE_MEX_BRA_REMOVED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = no_asia_bra_mex_status
+				option = MEX_BRA_ANNEXED_AST
+			}
+		}
+		localization_key = RULE_MEX_BRA_ANNEXED_AST
+	}
+}
+
+defined_text = { # global
+	name = usa_volunteers_in_china_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = usa_volunteers_in_china
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = usa_volunteers_in_china
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = ast_annex_dei_at_hol_cap_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ast_annex_dei_at_hol_cap
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ast_annex_dei_at_hol_cap
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = assault_gun_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = assault_gun
+				option = ASSAULT_GUN_LINE
+			}
+		}
+		localization_key = RULE_OPTION_ASSAULT_GUN_LINE
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = assault_gun
+				option = ASSAULT_GUN_SUPPORT
+			}
+		}
+		localization_key = RULE_OPTION_ASSAULT_GUN_SUPPORT
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = assault_gun
+				option = ASSAULT_GUN_DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_ASSAULT_GUN_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = allow_paratroopers_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_paratroopers
+				option = yes
+			}
+		}
+		localization_key = RULE_OPTION_ALLOWED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_paratroopers
+				option = no
+			}
+		}
+		localization_key = RULE_OPTION_BLOCKED
+	}
+}
+
+defined_text = { # global
+	name = horst_host_country_rule_sl
+	# axis
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = GER
+			}
+		}
+		localization_key = "Germany"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = ITA
+			}
+		}
+		localization_key = "Italy"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = SPR
+			}
+		}
+		localization_key = "Spain"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = ROM
+			}
+		}
+		localization_key = "Romania"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = HUN
+			}
+		}
+		localization_key = "Hungary"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = FIN
+			}
+		}
+		localization_key = "Finland"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = BUL
+			}
+		}
+		localization_key = "Bulgaria"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = YUG
+			}
+		}
+		localization_key = "Croatia"
+	}
+
+	# copro
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = JAP
+			}
+		}
+		localization_key = "Japan"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = MAN
+			}
+		}
+		localization_key = "Manchukuo"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = SIA
+			}
+		}
+		localization_key = "Siam"
+	}
+
+	# allies
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = ENG
+			}
+		}
+		localization_key = "United Kingdom of Great Britain and Northern Ireland"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = USA
+			}
+		}
+		localization_key = "USA"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = FRA
+			}
+		}
+		localization_key = "France"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = RAJ
+			}
+		}
+		localization_key = "British Raj"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = CAN
+			}
+		}
+		localization_key = "Canada"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = AST
+			}
+		}
+		localization_key = "Australia"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = SAF
+			}
+		}
+		localization_key = "South Africa"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = MEX
+			}
+		}
+		localization_key = "Mexico"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = BRA
+			}
+		}
+		localization_key = "Brazil"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = HOL
+			}
+		}
+		localization_key = "Netherlands"
+	}
+
+	# COMINTERN
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = SOV
+			}
+		}
+		localization_key = "Soviet Union"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = horst_host_country
+				option = MON
+			}
+		}
+		localization_key = "Mongolia"
+	}
+}

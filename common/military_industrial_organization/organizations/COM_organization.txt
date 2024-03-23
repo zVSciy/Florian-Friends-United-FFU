@@ -1,0 +1,104 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+# COM_gloucestershire_diesel_factory_organization = {
+#     name = COM_gloucestershire_diesel_factory_organization
+#     include = generic_medium_tank_organization
+#     icon = GFX_idea_COM_gloucestershire_diesel_factory #GFX_idea_vickers_armstrong_eng
+#     allowed = {
+#         OR = {
+#             original_tag = CAN
+#             original_tag = AST
+#             original_tag = NZL
+#             original_tag = RAJ
+#             original_tag = SAF
+#             original_tag = IRE
+#         }
+#     }
+
+#     available = {
+#         FROM = { has_completed_focus = COM_employ_gloucestershire_diesel_factory }
+#     }
+# }
+
+# COM_vauxhall_organization = {
+#     name = COM_vauxhall_organization
+#     include = generic_heavy_tank_organization
+#     icon = GFX_idea_vauxhall
+#     allowed = {
+#         OR = {
+#             original_tag = CAN
+#             original_tag = AST
+#             original_tag = NZL
+#             original_tag = RAJ
+#             original_tag = SAF
+#             original_tag = IRE
+#         }
+#     }
+
+#     available = {
+#         FROM = { has_completed_focus = COM_employ_vauxhall }
+#     }
+# }
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+COM_rsaf_enfield_organization = {
+    name = COM_rsaf_enfield_organization
+    include = generic_infantry_equipment_organization
+    icon = GFX_idea_rsaf_enfield
+    allowed = {
+        OR = {
+            original_tag = CAN
+            original_tag = AST
+            original_tag = NZL
+            original_tag = RAJ
+            original_tag = SAF
+            original_tag = IRE
+        }
+    }
+
+    # available = {
+    #     FROM = { has_completed_focus = COM_contract_enfield }
+    # }
+}

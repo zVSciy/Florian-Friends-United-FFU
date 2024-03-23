@@ -1,0 +1,234 @@
+ai_historical_focus_list_GER = {
+	ai_national_focuses = {
+		GER_volksturm
+		GER_defend_berlin
+		GER_rhineland
+		GER_four_year_plan
+		GER_autobahn
+		GER_civ_1
+		GER_civ_2
+		# grab whicher was picked via descsion
+		GER_grosraumwirtschaft
+		GER_expand_mefo
+		GER_rearm_fast
+		GER_rearm_slow
+		GER_rearm_fast2
+		GER_rearm_slow2
+		GER_rearm_fast3
+		GER_rearm_slow3
+		GER_rearmed_and_ready
+		GER_anschluss
+		GER_org_todt
+		GER_oade
+		GER_steel_werke
+		GER_reichsarbeit
+		GER_extra_research
+		GER_luft
+		GER_fighter_effort
+		# End Rearm
+		GER_demand_memel
+		GER_demand_sudetenland
+		GER_first_vienna_award
+		GER_end_of_czechoslovakia
+		GER_second_vienna_award
+		#GER_air_doc
+		GER_heer
+		GER_bewegungskrieg
+		GER_panzer
+		GER_share_tanks
+		GER_panzer_support
+		GER_mech
+		GER_autarky
+		GER_synthetic_rubber
+		GER_synthetic_rubber2
+		GER_ig_farben
+		GER_cas_air_effort
+		GER_cas_air_effort2
+		GER_mol_rib_pact
+		#Danzig
+		GER_danzig_or_war
+		GER_around_maginot
+		GER_war_with_france
+		GER_avenge_versailles
+		GER_plunder_west
+		GER_abwehr
+		GER_swiss_banks
+		GER_mobilise_reich
+		GER_sweden_trade
+		GER_reintegrate_east
+		GER_weserubung
+		GER_west_research
+		GER_improved_command
+		GER_lessons_of_war
+		GER_atlantikwall
+		GER_west_research
+		GER_soviet_treaty
+		GER_reintegrate_luxemburg_and_alsace_lorraine
+		GER_coal_liquidization
+		GER_fighter_effort2
+		GER_luft_2
+		GER_align_hungary
+		#Barb
+		GER_prepare_barb
+		GER_barb
+		GER_mobilise_reich
+		GER_total_war
+		GER_atlantikwall
+		GER_make_wunderwaffe
+		GER_coal_liquidization2
+		GER_align_romania
+		GER_confiscate_romanian_oil
+		GER_appoint_speer
+		GER_reorganise_war_industry
+		GER_prioritise_tanks
+		GER_simplify_designs
+		GER_underground_factories
+		GER_factory_relocation
+		GER_oil_storage
+	}
+}
+
+ai_focus_defense_GER = {
+	research = {
+		radar_tech = 0.5
+		infantry_tech = 7.5
+		infantry_weapons = 25.0
+		support_tech = 3.25
+		construction_tech = 1.5	 
+		artillery = 1.0
+		motorized_equipment = 1.5	
+		cat_mechanized_equipment = 1.5
+		armor = 1.5	
+		land_doctrine = 1.0
+	}
+}
+
+ai_focus_aggressive_GER = {
+	research = {
+		synth_resources = 0.5
+		infantry_weapons = 25.0
+		infantry_tech = 7.5
+		motorized_equipment = 2.5
+		cat_mechanized_equipment = 2.5
+		armor = 20.0
+	}
+}
+
+ai_focus_war_production_GER = {
+	research = {
+		industry = 10.0
+		motorized_equipment = 2.0
+		construction_tech = 5.0
+		electronics = 14.0 
+		computing_tech = 1.0	
+		infantry_tech = 1.5	
+		motorized_equipment = 1.5	
+		cat_mechanized_equipment = 1.5
+		armor = 1.5	
+		artillery = 5.0
+	}
+}
+
+ai_focus_military_equipment_GER = {
+	research = {
+		infantry_weapons = 25.0
+		infantry_tech = 7.5
+		artillery = 5.0
+		support_tech = 5.25
+		motorized_equipment = 1.5
+		armor = 1.5
+	}
+}
+
+ai_focus_military_advancements_GER = {
+	research = {
+		armor = 100.0
+		cat_light_armor = 25.0 
+		artillery = 25.0
+		cat_anti_tank = 25.0
+		cat_medium_armor = 75.0
+		# cat_stug = 60
+		cat_heavy_armor = 22.5	
+		jet_technology = 2.5
+		land_doctrine = 25.0
+		radar_tech = 1.5
+		encryption_tech = 4
+		decryption_tech = 4
+		synth_resources = 1.5
+		infantry_tech = 10.0
+		infantry_weapons = 10.0
+		artillery = 8.5
+		motorized_equipment = 20.0
+		cat_mechanized_equipment = 20.0
+		nuclear = 2.5
+		night_vision = 2.5
+		# torpedo_equipment = 5.0
+	}
+}
+
+ai_focus_peaceful_GER = {
+	research = {
+		industry = 12.5
+		construction_tech = 4.5
+		electronics = 8.0
+		computing_tech = 8.0
+		infantry_tech = 7.5
+		infantry_weapons = 7.5
+		artillery = 11.0
+		naval_equipment = 0
+		ss_tech = 5
+		air_equipment = 3.0
+		# torpedo_equipment = 0
+		motorized_equipment = 2.5
+		cat_mechanized_equipment = 2.5
+		armor = 5.0
+		support_tech = 5.25
+		land_doctrine = 3.5
+	}
+}
+
+ai_focus_naval_GER = {
+    research = {
+        naval_equipment = 0
+        naval_doctrine = 0
+        marine_tech = 0
+        dd_tech = 0
+        cl_tech = 0
+        ca_tech = 0
+        bb_tech = 0
+        shbb_tech = 0
+        tp_tech = 0
+        cv_tech = 0
+        ss_tech = 0
+		# torpedo_equipment = 0
+		motorized_equipment = 1.5
+		cat_mechanized_equipment = 1.5
+		armor = 1.5
+    }
+}
+
+ai_focus_naval_air_GER = {
+	research = {
+		naval_air = 2.0
+		naval_bomber = 1.5
+		motorized_equipment = 1.5
+		armor = 1.5
+	}
+}
+
+ai_focus_aviation_GER = {
+	research = {
+		air_doctrine = 30.0
+		light_air = 100
+		light_fighter = 100
+		jet_technology = 2.5
+		cas_bomber = 7.0		
+		medium_air = 1.5
+		cat_heavy_fighter = 2.5
+		tactical_bomber = 5.5
+		heavy_air = 1
+		air_equipment = 2.5
+		
+	}
+}
+#EOF#

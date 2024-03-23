@@ -1,0 +1,852 @@
+operations = {
+
+	SPA_SCW_ending = {
+
+		name = "The Spanish Civil War"
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+
+		activation = {
+			# SCW START - custom flag? or just starti t with the event?
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		days_mission_timeout = 240
+
+		timeout_effect = {
+			every_country = {
+				limit = {
+					original_tag = SPR
+				}
+				if = { # Nationalist victory SCW
+					limit = {
+						SPR_scw_in_progress = yes
+					}
+					set_global_flag = nationalist_victory
+					set_global_flag = scw_over
+					country_event = { id = lar_news.1 }
+				}
+			}
+			custom_effect_tooltip = "Ends the Spanish Civil War"
+		}
+	}
+
+	SPA_SCW_republican_spirit_dwindling = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+		activation = {
+			# SCW START - custom flag? or just starti t with the event?
+		}
+
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 45
+		
+		complete_effect = {
+			# nothing ig
+		}
+
+		timeout_effect = {
+			activate_mission = SPA_SCW_republican_spirit_dwindling
+			SPD = {
+				SCW_dwindle_republican_spirit = yes
+			}
+			# lower republican surrender limit
+		}
+	}
+
+	SPA_SCW_axis_victory = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+		activation = {
+			# SCW START - custom flag? or just starti t with the event?
+		}
+
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 210
+		
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = SCW_ended_by_host
+					}
+				}
+				ITA = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_axis_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+				GER = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_axis_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+				JAP = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_axis_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+				SPA = {
+					add_ideas = SPA_SCW_axis_victory
+				}
+				# good effect
+			}
+		}
+
+		timeout_effect = {
+			activate_mission = SPA_SCW_status_quo
+			# next stage
+		}
+	}
+
+	SPA_SCW_status_quo = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 180
+		
+		complete_effect = {
+			# good effect
+		}
+
+		timeout_effect = {
+			activate_mission = SPA_SCW_comintern_victory
+			# next stage
+		}
+	}
+
+	SPA_SCW_comintern_victory = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 9999
+		
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = SCW_ended_by_host
+					}
+				}
+				SOV = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+				FRA = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+					add_war_support = 0.125
+				}
+				ENG = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+			}
+			# good effect
+		}
+	}
+
+	SPA_save_the_alcazar_mission = {
+
+		name = SPA_save_the_alcazar
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = SPA
+		}
+
+		available = {
+			controls_province = 858
+		}
+
+		fire_only_once = yes
+
+		days_mission_timeout = 140
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = SPA
+			has_global_flag = spanish_civil_war
+			has_completed_focus = SPA_save_the_alcazar
+		}
+
+		complete_effect = {
+			add_war_support = 0.2
+			add_stability = 0.2
+			add_political_power = 100
+			if = {
+				limit = {NOT = {has_completed_focus = SPA_caudillo_of_spain}}
+				complete_national_focus = SPA_caudillo_of_spain
+			}
+		}
+
+		timeout_effect = {
+		}
+	}
+
+}
+foreign_politics = {
+	SPA_civil_war = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 171
+
+		fire_only_once = yes
+
+		activation = {
+			NOT = { has_global_flag = spanish_civil_war }
+		}
+
+		visible = {
+			tag = SPR
+			NOT = { has_global_flag = spanish_civil_war }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			country_event = lar_spain.2
+		}
+	}
+
+	
+	hold_the_fascist_national_referendum2 = {
+
+		icon = generic_political_discourse
+
+		available = {
+			fascism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = fascism }
+			tag = SPR
+		}
+
+		remove_trigger = {
+			has_government = fascism
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			country_event = { id = political.18 }
+		}
+
+		ai_will_do = {
+			modifier = {
+				tag = SPR
+				factor = 0
+			}
+		}
+	}
+}
+
+SPR_expand_resource_extraction = {
+
+	expand_basque_steel_works = { #792
+		
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			state = 792
+		}
+
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 792
+			controls_state = 792
+		}
+
+		visible = {
+			owns_state = 792
+			controls_state = 792
+			792 = {
+				NOT = {
+					has_state_flag = basque_steel_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			792 = { set_state_flag = basque_steel_developed }
+			792 = {
+				add_resource = {
+					type = steel
+					amount = 220
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	expand_western_aragon_steel_works = { #166
+		
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			state = 166
+		}
+
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 166
+			controls_state = 166
+		}
+
+		visible = {
+			owns_state = 166
+			controls_state = 166
+			166 = {
+				NOT = {
+					has_state_flag = western_aragon_steel_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			166 = { set_state_flag = western_aragon_steel_developed }
+			166 = {
+				add_resource = {
+					type = steel
+					amount = 180
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	expand_granada_steel_works = { #173
+		
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {		
+				state = 173
+			}
+		}
+
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 173
+			controls_state = 173
+		}
+
+		visible = {
+			owns_state = 173
+			controls_state = 173
+			173 = {
+				NOT = {
+					has_state_flag = granada_steel_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			173 = { set_state_flag = granada_steel_developed }
+			173 = {
+				add_resource = {
+					type = steel
+					amount = 190
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	develop_salamanca_tungsten_deposits = { #788
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 15
+			owns_state = 788
+			controls_state = 788
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 788
+			}
+		}
+
+		visible = {
+			owns_state = 788
+			controls_state = 788
+			788 = {
+				NOT = {
+					has_state_flag = salamanca_tungsten_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 16
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			788 = { set_state_flag = salamanca_tungsten_developed }
+			788 = {
+				add_resource = {
+					type = tungsten
+					amount = 320
+				}
+			}
+		}
+	}
+
+	develop_valladolid_tungsten_deposits = { #791
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 15
+			owns_state = 791
+			controls_state = 791
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 791
+			}
+		}
+
+		visible = {
+			owns_state = 791
+			controls_state = 791
+			791 = {
+				NOT = {
+					has_state_flag = valladolid_tungsten_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 16
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			791 = { set_state_flag = valladolid_tungsten_developed }
+			791 = {
+				add_resource = {
+					type = tungsten
+					amount = 320
+				}
+			}
+		}
+	}
+
+	develop_galicia_tungsten_deposits = { #171
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 12
+			owns_state = 171
+			controls_state = 171
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 171
+			}
+		}
+
+		visible = {
+			owns_state = 171
+			controls_state = 171
+			171 = {
+				NOT = {
+					has_state_flag = galicia_tungsten_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 13
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			171 = { set_state_flag = galicia_tungsten_developed }
+			171 = {
+				add_resource = {
+					type = tungsten
+					amount = 260
+				}
+			}
+		}
+	}
+
+	expand_extremadura_tungsten_mines = { #170
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 12
+			owns_state = 170
+			controls_state = 170
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 170
+			}
+		}
+
+		visible = {
+			owns_state = 170
+			controls_state = 170
+			170 = {
+				NOT = {
+					has_state_flag = extremadura_tungsten_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 13
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			170 = { set_state_flag = extremadura_tungsten_developed }
+			170 = {
+				add_resource = {
+					type = tungsten
+					amount = 260
+				}
+			}
+		}
+	}
+	
+	expand_madrid_bauxite_mines = { #41
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+			}
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 13
+			owns_state = 41
+			controls_state = 41
+		}
+
+		visible = {
+			owns_state = 41
+			controls_state = 41
+			41 = {
+				NOT = {
+					has_state_flag = madrid_aluminium_developed
+				}
+			}
+			has_completed_focus = SPA_support_the_war_industry
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 14
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			41 = { set_state_flag = madrid_aluminium_developed } 
+			41 = {
+				add_resource = {
+					type = aluminium
+					amount = 280
+				}
+			}
+		}
+	}
+
+}

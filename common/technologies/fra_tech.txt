@@ -1,0 +1,384 @@
+technologies = {
+	FRA_slacken_armor_tech = {
+
+		light_assault_gun_brigade = {
+			need = {
+				light_assault_gun_chassis = -6
+			}
+		}
+		medium_assault_gun_brigade = {
+			need = {
+				medium_assault_gun_chassis = -6
+			}
+		}
+		heavy_assault_gun_brigade = {
+			need = {
+				heavy_assault_gun_chassis = -6
+			}
+		}
+		light_armor = {
+			need = {
+				light_tank_chassis = -6
+			}
+		}
+		medium_armor = {
+			need = {
+				medium_tank_chassis = -6
+			}
+		}
+		heavy_armor = {
+			need = {
+				heavy_tank_chassis = -6
+			}
+		}
+		light_tank_destroyer_brigade = {
+			need = {
+				light_tank_destroyer_chassis = -3
+			}
+		}
+		medium_tank_destroyer_brigade = {
+			need = {
+				medium_tank_destroyer_chassis = -3
+			}
+		}
+		heavy_tank_destroyer_brigade = {
+			need = {
+				heavy_tank_destroyer_chassis = -3
+			}
+		}
+		light_sp_artillery_brigade = {
+			need = {
+				light_tank_artillery_chassis = -3
+			}
+		}
+		medium_sp_artillery_brigade = {
+			need = {
+				medium_tank_artillery_chassis = -3
+			}
+		}
+		heavy_sp_artillery_brigade = {
+			need = {
+				heavy_tank_artillery_chassis = -3
+			}
+		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+	}
+
+	FRA_increase_armor_tech = {
+
+		light_assault_gun_brigade = {
+			need = {
+				light_assault_gun_chassis = 6
+			}
+		}
+		medium_assault_gun_brigade = {
+			need = {
+				medium_assault_gun_chassis = 6
+			}
+		}
+		heavy_assault_gun_brigade = {
+			need = {
+				heavy_assault_gun_chassis = 6
+			}
+		}
+		light_armor = {
+			need = {
+				light_tank_chassis = 6
+			}
+		}
+		medium_armor = {
+			need = {
+				medium_tank_chassis = 6
+			}
+		}
+		heavy_armor = {
+			need = {
+				heavy_tank_chassis = 6
+			}
+		}
+		light_tank_destroyer_brigade = {
+			need = {
+				light_tank_destroyer_chassis = 3
+			}
+		}
+		medium_tank_destroyer_brigade = {
+			need = {
+				medium_tank_destroyer_chassis = 3
+			}
+		}
+		heavy_tank_destroyer_brigade = {
+			need = {
+				heavy_tank_destroyer_chassis = 3
+			}
+		}
+		light_sp_artillery_brigade = {
+			need = {
+				light_tank_artillery_chassis = 3
+			}
+		}
+		medium_sp_artillery_brigade = {
+			need = {
+				medium_tank_artillery_chassis = 3
+			}
+		}
+		heavy_sp_artillery_brigade = {
+			need = {
+				heavy_tank_artillery_chassis = 3
+			}
+		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+	}
+
+	FRA_slacken_transport_tech = {
+		motorized = {			
+			need = {
+				motorized_equipment = -12
+			}			
+		}
+		mechanized = {
+			need = {
+				mechanized_equipment = -9
+				motorized_equipment = -3
+			}
+		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+	}
+
+
+	FRA_trees = {
+		category_cavalry = {
+			forest = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_line_artillery = {
+			forest = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_all_armor = {
+			forest = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_all_infantry = {
+			forest = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		
+	}
+
+	FRA_flat = {
+
+		category_cavalry = {
+			desert = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_line_artillery = {
+			desert = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_all_armor = {
+			desert = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_all_infantry = {
+			desert = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		
+	}
+
+	FRA_elevated = {
+
+		category_cavalry = {
+			hills = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			rock = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_line_artillery = {
+			hills = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			rock = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_all_armor = {
+			hills = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			rock = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		category_all_infantry = {
+			hills = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+			rock = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		
+	}
+}

@@ -1,0 +1,149 @@
+ai_historical_focus_list_FRA = {
+	ai_national_focuses = {
+        FRA_begin_rearmament
+        FRA_form_the_popular_front
+        FRA_reform_the_labour_laws
+        #FRA_review_foreign_policy
+        FRA_buy_time
+        FRA_intervention_in_spain
+        FRA_strengthen_government_support
+        FRA_nationalize_key_industry
+        FRA_form_the_state_arsenals
+        #FRA_reorganize_the_aviation_industry
+        FRA_general_work_council
+        FRA_national_champions
+        FRA_stimulate_the_dynamic_market
+        FRA_devalue_the_franc
+        #FRA_invest_in_the_colonies_1
+        FRA_defensive_strategems
+        FRA_defensive_focus
+        FRA_dirigisme
+        FRA_methodical_battle
+        FRA_promote_entrepeneurship
+        FRA_invest_in_the_metropole
+        #FRA_invest_in_west_africa
+        #FRA_invest_in_pacific
+        #FRA_colonial_industry
+        FRA_industrial_expansion
+        FRA_algerie_france
+        FRA_fortification_focus
+        FRA_alpine_forts
+        FRA_go_with_britain
+        FRA_extend_the_maginot_line
+        FRA_army_reform
+        FRA_protect_the_rights_of_man
+        FRA_extra_research_slot
+        FRA_military_factories
+        FRA_the_blum_viollette_proposal
+        FRA_expand_the_citizenship
+        FRA_encourage_immigration
+        FRA_infantry_tanks
+        FRA_special_forces
+        #FRA_global_integration
+        #FRA_firepower_kills
+    }  
+}
+
+ai_focus_defense_FRA = {
+	ai_national_focuses = {
+	FRA_strengthen_government_support
+	FRA_defensive_strategems
+	}
+	research = {
+		radar_tech = 1.0
+		construction_tech = 1.0
+		artillery = 2.0
+	}
+}
+
+ai_focus_aggressive_FRA = {
+	research = {
+		synth_resources = 1.0
+		motorized_equipment = 2.0
+		armor = 10.0
+	}
+}
+
+ai_focus_war_production_FRA = {
+	research = {
+		industry = 20.0
+		construction_tech = 10.0
+		electronics = 20.0
+		computing_tech = 5.0
+	}
+}
+
+ai_focus_military_equipment_FRA = {
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+}
+
+ai_focus_military_advancements_FRA = {
+	research = {
+		cat_light_armor = 55.0 
+		artillery = 50.0
+		cat_anti_air = 50.0
+        cat_medium_armor = 70.0
+		cat_heavy_armor = 70.0
+		jet_technology = 5.0
+		land_doctrine = 75.0
+		rocketry = 7.5
+		radar_tech = 3.0
+		encryption_tech = 9.5
+		decryption_tech = 9.5
+		synth_resources = 3.0
+		motorized_equipment = 4.0
+		nuclear = 5.0
+		night_vision = 50.0
+	}
+}
+
+ai_focus_peaceful_FRA = {
+	research = {
+		industry = 25.0
+		construction_tech = 8.0
+		electronics = 20.0
+		computing_tech = 5.0
+	}
+}
+
+ai_focus_naval_FRA = {
+	research = {
+		naval_equipment = 0
+		naval_doctrine = 0
+		marine_tech = 0
+		dd_tech = 0
+		cl_tech = 0
+		ca_tech = 0
+		bb_tech = 0
+		shbb_tech = 0
+		tp_tech = 0
+		cv_tech = 0
+		ss_tech = 0
+	}
+}
+
+ai_focus_naval_air_FRA = {
+	research = {
+		naval_air = 4.0
+		naval_bomber = 3.0
+	}
+}
+
+ai_focus_aviation_FRA = {
+	research = {
+		air_doctrine = 50.0
+		light_air = 100
+		light_fighter = 100
+		jet_technology = 1.0
+		cas_bomber = 2.0		
+		medium_air = 4.0
+		tactical_bomber = 50.0
+		heavy_air = 1.5
+		air_equipment = 5.0
+	}
+}

@@ -1,0 +1,127 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  HUN_mobile_focus:0 "Foreign Designs" #has vanilla loc, unneeded
+  HUN_home_defense:0 "Local Designs" #has vanilla loc, unneeded
+  HUN_artillery_effort:0 "Local Artillery" #has vanilla loc, unneeded
+  HUN_expand_the_reserve:0 "Expand the Reserve Army"
+  HUN_expand_the_reserve_desc:0 "The vast German mobilization must met with an equal Hungarian response. To secure our place in the New Order, each man must do his part."
+  HUN_approach_sweden:0 "Approach Sweden"
+  HUN_approach_sweden_desc:0 "Hungary and Sweden have made great strides in international relations these past few years. We should enter talks regarding a possible technology exchange."
+  HUN_develop_tanks:0 "Further Development" #has vanilla loc, unneeded
+  HUN_modernisation_effort:0 "Upgrade Programme"
+  HUN_modernisation_effort_desc:0 "Old and deprecated armor sits around in warehouses, unused and unneeded. With resources ever-dwindling, it seems wise to focus on modernizing and upgrading these models."
+  HUN_license_swedish_equipment:0 "License Swedish Equipment" #not a focus
+  HUN_fortify_the_border:0 "Fortify the Borders"
+  HUN_fortify_the_border_desc:0 "Should the war take a turn for the worse, it would be wise to have fortifications in place to slow the Soviet advance."
+  HUN_proclaim_greater_hungary:0 "[Root.GetHunGreaterName]" #I got no clue what this stuff means
+  HUN_PROCLAIM_GREATER_HUNGARY_NAME:0 "Reclaim the Kingdom"
+  HUN_PROCLAIM_GREATER_HUNGARY_FASC_NAME:0 "Proclaim Greater Hungary"
+  HUN_new_pm:0 "A New Prime Minister"
+  HUN_new_pm_desc:0 "With the passing of Gyula Gömbös, Hungary is in need of a strong Prime Minister to lead our great nation in the coming years."
+  HUN_end_the_exile:0 "Invite the Exiles" #not a focus
+  HUN_elect_a_king:0 "The Habsburg Prince" #has vanilla loc, unneeded
+  HUN_end_the_regency:0 "End the Regency"
+  HUN_end_the_regency_desc:0 "The people have spoken. Hungary demands its monarch restored to the throne! The Treaty of Trianon is but a piece of paper, unable to stand the test of time. Let it be torn up by the will of a people united!"
+  HUN_live_and_let_live:0 "Live and Let Live" #not a focus
+  HUN_liberalise_the_economy:0 "Liberalise the Economy"
+  HUN_liberalise_the_economy_desc:0 "Progressive reforms are necessary to ensure the survival of a competitive and modern Hungarian market economy. Let the companies do as they wish!"
+  HUN_suffrage_reforms:0 "Suffrage Reforms"
+  HUN_suffrage_reforms_desc:0 "The right to vote has been withheld from the general masses for far too long. Let us finally correct this error and bring liberty to all!"
+  HUN_status_quo:0 "Status Quo"
+  HUN_status_quo_desc:0 "Horthy's government may not be ideal, but it has brought stability and reparation to a nation ravaged by the Great War. This man can be trusted to continue leading Hungary."
+  HUN_ban_fascists:0 "Ban the Fascists"
+  HUN_ban_fascists_desc:0 "Fascism is a dangerous cancer on an otherwise healthy nation. The concept of racial superiority is senseless in the face of a once multi-ethnic empire. We remember the attitude the Austrians held over their subjects. We could never bring that form of tyranny on our former brethren."
+  HUN_expand_the_regency_powers:0 "Expand the Regency Powers"
+  HUN_expand_the_regency_powers_desc:0 "A leader unable to act is hardly a leader at all. Emergency powers must be given to Horthy to ensure proper administration until the end of the regency."
+  HUN_secret_ballots:0 "Secret Ballots"
+  HUN_secret_ballots_desc:0 "Intimidation, blackmailing, and vote buying have no place in free elections. We must forestall these horrendous tactics by allowing for voters to do so anonymously, without fear of reprisal."
+  HUN_military_investments:0 "Győr Programme"
+  HUN_military_investments_desc:0 "The five-year Győr Programme calls for increased and centralized military spending to rapidly arm this unprepared nation for the war to come."
+  HUN_labour_reform:0 "Labour Reform"
+  HUN_labour_reform_desc:0 "It is the duty of the government to enforce the rights of the workers. We shall deign to do so."
+  HUN_befriend_italy:0 "Befriend Italy"
+  HUN_befriend_italy_desc:0 "A kindred soul wronged by the Entente, Italy understands the feelings of bitterness we drown in each day. In the world that has emerged from the Great War, they represent a key ally to our once-grand kingdom."
+  HUN_italian_trade_deal:0 "Italian Trade Deal"
+  HUN_italian_trade_deal_desc:0 "Italy sits among the Great Powers of the world, and as such, have access to vast resources, much of which we lack. A mutual trade treaty would cement our relations and provide a rather significant boost to our industry."
+  HUN_empower_the_arrow:0 "Empower the Arrow Cross"
+  HUN_empower_the_arrow_desc:0 "The infamous Nyilaskeresztes Párt, established in 1935 by Ferenc Szálasi, is a small but influential fascist party in Hungary. Should the nation wish to reclaim its former glory as ruler of the Balkans, the Kingdom of Hungary must look to unexpected places."
+  HUN_expand_the_gendarmerie:0 "Expand the Gendarmerie"
+  HUN_expand_the_gendarmerie_desc:0 "A section of the military police to deal with law enforcement, the Gendarmerie is a light form of martial law. Through this organisation shall Hungary keep a firm grasp on the people."
+  HUN_infiltrate_the_interior_ministry:0 "Infiltrate the Interior Ministry"
+  HUN_infiltrate_the_interior_ministry_desc:0 "The Arrow Cross may be a powerful force now, but it lacks the proper influence to take hold of the government. Through bribery and espionage we shall fix this."
+  HUN_fascist_coup:0 "National Revolution"
+  HUN_fascist_coup_desc:0 "The regency has gone on long enough. Horthy's weak policies have driven Hungary to the breaking point, and the people cry for revolution! Let us burn down this wretched government and form it anew!"
+  HUN_promote_etatism:0 "Promote Etatism"
+  HUN_promote_etatism_desc:0 "Etatism is the belief that the government should not have control over the citizenry as a unit, but as individuals. Each Hungarian must be individually loyal and subservient to the central government for the survival of the country."
+  HUN_industry_nationalisation:0 "Nationalise the Industry"
+  HUN_industry_nationalisation_desc:0 "Foreign-owned corporations own a worringly large portion of Hungary's factories and heavy machinery. This status quo cannot stand. The government will efficiently take control over the nation's industry to ensure a smooth transition to wartime economics."
+  HUN_political_crackdown:0 "Political Crackdown"
+  HUN_political_crackdown_desc:0 "Horthy's government was far too loose on political dissenters. Though our policies may not be popular, they are for the good of Hungary. The people will accept this in time."
+  HUN_form_paramilitaries:0 "Form Paramilitaries"
+  HUN_form_paramilitaries_desc:0 "It is every man's duty to protect his family, and with the military's loyalties still in question, political paramilities are the only answer to the question of national defense."
+  HUN_crusade_against_bolshevism:0 "Crusade Against Bolshevism"
+  HUN_crusade_against_bolshevism_desc:0 "Never before has Hungary faced such an existential threat as this. The Bolsheviks cry for war, it is our duty to answer with a roar rather than a whisper."
+  HUN_romanian_trade:0 "Romanian Trade Treaty"
+  HUN_romanian_trade_desc:0 "The new King wishes to improve the economy through beneficial trade treaties with our neighbouring countries such as Romania."
+  HUN_bulgarian_trade:0 "Bulgarian Trade Treaty"
+  HUN_bulgarian_trade_desc:0 "The new King wishes to improve the economy through beneficial trade treaties with our neighbouring countries such as Bulgaria."
+  HUN_german_cooperation:0 "German Military Cooperation"
+  HUN_german_cooperation_desc:0 "The time has come for our militaries to cooperate with eachother."
+
+  #### EVENTS ####
+  DOD_hungary.999.t:0 "Death of Gömbös"
+  DOD_hungary.999.desc:0 "Prime Minister Gyula Gömbös passed away last night in his sleep. An ambitious statesman, his death leaves an open position in the government, it remains to be seen who will be appointed to replace him."
+  DOD_hungary.999.a:0 "He will be missed."
+
+  # HUN_doctrine_advancements:0 "Doctrine Advancements" #not a focus
+  # HUN_follow_germans:0 "Follow The Germans" #not a focus
+  # HUN_own_path:0 "Forge Our Own Path" #not a focus
+  # HUN_german_advisors:0 "German Advisors" #not a focus
+  # HUN_fighter_bonus:0 "Fighter Development" #not a focus
+  # HUN_bomber_bonus:0 "Bomber Development" #not a focus
+
+  #### IDEAS ####
+  HUN_expanded_reserve:0 "Reserve Army"
+  HUN_assault_gun_idea:0 "Upgrade Programme"
+  HUN_modernise_the_hussars:0 "Modernise the Hussars"
+  HUN_modernise_the_hussars_desc:0 "The hussar legeacy lives on."
+  HUN_hussar_legacy:0 "Hussar Legacy"
+  HUN_modern_hussars:0 "Modern Hussars"
+
+  HUN_anti_bolshevism:0 "Crusade Against Bolshevism"
+  HUN_paramilitary_organizations:0 "Paramilitary Organisations"
+  HUN_crackdown:0 "Political Crackdown"
+  HUN_etatism_1:0 "Etatism"
+  HUN_etatism_2:0 "Etatism"
+  HUN_ita_trade_deal:0 "Italian Trade Deal"
+  HUN_labour_reform:0 "Labour Reform"
+  HUN_arms_investments:0 "Győr Programme"
+  HUN_liberal_trade_policies:0 "Liberal Trade Policies"
+  HUN_ger_air_advisors:0 "German Luftwaffe Advisors"
+  axis_trade_treaty:0 "Trade Treaty with Germany"
+
+  #### CHARACTERS ####
+  HUN_Dezso_Szentgyorgyi:0 "Dezső Szentgyörgyi"
+  HUN_ferenc_szalasi:0 "Ferenc Szálasi"
+  HUN_laszlo_rajk:0 "Gábor Vajna"
+
+  #### TRAITS ####
+  nation_leader:0 "Nation Leader"
+  guerilla_warfare_expert:0 "Police Chief"
+  feg_manufacturer:0 "National Firearms Conglomorate"
+
+  #### DECISIONS ####
+  HUN_adopt_toldi:0 "Adopt the Toldi"
+  HUN_adopt_nimrod:0 "Adopt the Nimrod"
+  HUN_adopt_turan:0 "Develop the Turan"
+  HUN_reclaim_south_2:0 "Reclaim Banat"
+  HUN_reclaim_south_3:0 "Reclaim West Banat"
+  HUN_reclaim_east:0 "Reclaim North Transylvania"
+  HUN_reclaim_east_2:0 "Reclaim Transylvania"
+  HUN_reclaim_north:0 "Reclaim Southern Slovakia"
+  HUN_reclaim_north_2:0 "Reclaim Carpathian Ruthenia"
+  HUN_reclaim_south:0 "Reclaim Vojvodina"
+
+  #### TOOLTIP ####
+  HUN_gombos_dead:0 "Gömbös has died"

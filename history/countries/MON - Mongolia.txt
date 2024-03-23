@@ -1,0 +1,529 @@
+﻿capital = 330
+
+oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	basic_train = 1
+	hq_1 = 1
+	motorised_infantry = 1
+
+	sov_light_tank_1 = 1
+	sov_bt_tank_1 = 1
+	sov_bt_tank_2 = 1
+	sov_heavy_tank_1 = 1
+}
+
+set_research_slots = 5
+
+add_ideas = {
+	limited_conscription
+	MON_collectivisation_1
+	MON_nomad_1
+	russian_closed_eco
+	MON_allow_soviet_trade
+	peace_training
+	father_check
+	no_grinding
+}
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
+set_variable = { mon_poster_center_icon_frame = 1 }
+
+set_convoys = 200
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 60
+	neutrality = 40
+}
+
+# MP_garrison_division_standard = yes
+
+recruit_character = MON_khorloogiin_choibalsan
+recruit_character = MON_tong_shangzhi
+recruit_character = MON_oboi_kangan
+recruit_character = MON_zhao_shangzhi
+recruit_character = MON_dansrabilegyin_dogsam
+recruit_character = MON_yundunwangcug
+recruit_character = MON_pai_yun_ti
+recruit_character = MON_horloogiyn_choybalsan
+recruit_character = MON_olziytrygyn_badrak
+recruit_character = MON_gomgchigryn_bumtsend
+recruit_character = MON_sukhbaataryn_yanjmaa
+recruit_character = MON_vg_pyrselov
+recruit_character = MON_dashdorj
+recruit_character = MON_lee_shou_hsin
+recruit_character = MON_chimid
+recruit_character = MON_buyannmeh
+recruit_character = MON_haidav
+recruit_character = MON_dagva
+recruit_character = MON_ganbaatar
+recruit_character = MON_ulanhu
+recruit_character = MON_khan
+recruit_character = MON_throat_singer
+recruit_character = MON_pdchigin_abaga
+
+add_operation_token = {
+	tag = ENG
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = ENG
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = ENG
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = ENG
+	token = token_navy_friendly
+}
+# USA
+add_operation_token = {
+	tag = USA
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = USA
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = USA
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = USA
+	token = token_navy_friendly
+}
+# FRA
+add_operation_token = {
+	tag = FRA
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = FRA
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = FRA
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = FRA
+	token = token_navy_friendly
+}
+# POL
+add_operation_token = {
+	tag = POL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = POL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = POL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = POL
+	token = token_navy_friendly
+}
+# CAN
+add_operation_token = {
+	tag = CAN
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = CAN
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = CAN
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = CAN
+	token = token_navy_friendly
+}
+# MEX
+add_operation_token = {
+	tag = MEX
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = MEX
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = MEX
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = MEX
+	token = token_navy_friendly
+}
+# BRA
+add_operation_token = {
+	tag = BRA
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = BRA
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = BRA
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = BRA
+	token = token_navy_friendly
+}
+# IRE
+add_operation_token = {
+	tag = IRE
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = IRE
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = IRE
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = IRE
+	token = token_navy_friendly
+}
+# POR
+add_operation_token = {
+	tag = POR
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = POR
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = POR
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = POR
+	token = token_navy_friendly
+}
+# HOL
+add_operation_token = {
+	tag = HOL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = HOL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = HOL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = HOL
+	token = token_navy_friendly
+}
+# BEL
+add_operation_token = {
+	tag = BEL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = BEL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = BEL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = BEL
+	token = token_navy_friendly
+}
+# LUX
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
+# DEN
+add_operation_token = {
+	tag = DEN
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = DEN
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = DEN
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = DEN
+	token = token_navy_friendly
+}
+# NOR
+add_operation_token = {
+	tag = NOR
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = NOR
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = NOR
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = NOR
+	token = token_navy_friendly
+}
+# CZE
+add_operation_token = {
+	tag = CZE
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = CZE
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = CZE
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = CZE
+	token = token_navy_friendly
+}
+# GRE
+add_operation_token = {
+	tag = GRE
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = GRE
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = GRE
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = GRE
+	token = token_navy_friendly
+}
+# IRQ
+add_operation_token = {
+	tag = IRQ
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = IRQ
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = IRQ
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = IRQ
+	token = token_navy_friendly
+}
+# SAF
+add_operation_token = {
+	tag = SAF
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = SAF
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = SAF
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = SAF
+	token = token_navy_friendly
+}
+# RAJ
+add_operation_token = {
+	tag = RAJ
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = RAJ
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = RAJ
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = RAJ
+	token = token_navy_friendly
+}
+# CHI
+add_operation_token = {
+	tag = CHI
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = CHI
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = CHI
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = CHI
+	token = token_navy_friendly
+}
+# MAL
+add_operation_token = {
+	tag = MAL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = MAL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = MAL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = MAL
+	token = token_navy_friendly
+}
+# INS
+add_operation_token = {
+	tag = INS
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = INS
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = INS
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = INS
+	token = token_navy_friendly
+}
+# PHI
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
+# AST
+add_operation_token = {
+	tag = AST
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = AST
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = AST
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = AST
+	token = token_navy_friendly
+}
+# NZL
+add_operation_token = {
+	tag = NZL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = NZL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = NZL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = NZL
+	token = token_navy_friendly
+}
+
+# COMINTERN
+
+# SOV
+add_operation_token = {
+	tag = SOV
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = SOV
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = SOV
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = SOV
+	token = token_navy_friendly
+}
+
+MON = { MON = { set_occupation_law = liberate_workers_occupation } } # set default law
+
+diplomatic_relation = { country = CHI relation = non_aggression_pact }

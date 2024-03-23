@@ -1,0 +1,21 @@
+scripted_gui = {
+	horst_admiral_current_command_limit_used = {
+		context_type = player_context 
+		parent_window_name  = "navy_reserve_portrait_window" 
+		window_name = "horst_admiral_current_command_limit_used_window"
+		dynamic_lists = { 
+			admirals_leading_battlefleets_list = {
+				array = battle_admirals
+				value = v
+				index = i
+				change_scope = yes
+				entry_container = admirals_with_fleets_list
+			}
+		}
+		properties = {
+			admiral_portrait  = {
+				image = "[GetAdmiralPortrait]"
+			}			
+		}		
+	}
+}

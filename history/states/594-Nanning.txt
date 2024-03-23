@@ -1,0 +1,37 @@
+
+state={
+	id=594
+	name="STATE_594"
+	manpower = 6550000
+	state_category = town
+	resources={
+		tungsten=110 # was: 14
+		steel = 80 # was: 10
+		chromium = 30 # was: 4
+	}
+
+	history={
+		owner = CHI
+		#add_core_of = GXC
+		add_core_of = CHI
+		#add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4 #8
+		}
+		victory_points = { 
+			7137 10 
+		}
+
+		1936.1.1.13 = {
+			owner = WST	
+		}
+	}
+
+	provinces={
+		1018 4023 4121 4177 7044 7137 7192 10004 10050 10105 11926 11983 12023 
+	}
+
+	local_supplies=1.0 
+}

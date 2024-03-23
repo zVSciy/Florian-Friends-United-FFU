@@ -1,0 +1,988 @@
+ideas = {
+	country = {
+
+		### AXIS ###
+		MEDITERRANEAN_AXIS_controls_original = {
+			name = MEDITERRANEAN_AXIS_controls_original
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_1 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_2 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_3 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_4 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+		MEDITERRANEAN_AXIS_controls_idea_5 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_6 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.02
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_7 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.04
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_8 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.06
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_9 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.08
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_AXIS_controls_idea_10 = {
+
+			name = MEDITERRANEAN_AXIS_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		### ALLIES ###
+		MEDITERRANEAN_ALLIES_controls_original = {
+			name = MEDITERRANEAN_ALLIES_controls_original
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_1 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_2 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_3 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_4 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+		MEDITERRANEAN_ALLIES_controls_idea_5 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			# modifier = {
+				
+			# }
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_6 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.02
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_7 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.04
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_8 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.06
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_9 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.08
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+		MEDITERRANEAN_ALLIES_controls_idea_10 = {
+
+			name = MEDITERRANEAN_ALLIES_controls
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+			}
+
+			picture = ita_state_med
+			
+			removal_cost = -1	
+
+		}
+
+
+		### STATE OF MED (BARB) ###
+		
+		AFRICA_COMMONWEALTH_controls_axis_original = {
+			name = AFRICA_COMMONWEALTH_controls_axis_original
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.05
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+		}
+		
+		
+		AFRICA_COMMONWEALTH_controls_axis_idea_1 = {
+
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.075
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -0.075
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_2 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.065
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -0.065
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_3 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.055
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -0.055
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_4 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.045
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -0.045
+				#defense_bonus_against = 0.0
+			}
+	
+	
+	
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_5 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.025
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -0.025
+				#defense_bonus_against = 0.0
+			}
+	
+	
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_6 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.0
+				defense_bonus_against = 0.0
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.0
+				defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_7 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.01
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.01
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_8 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.015
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.015
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_9 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.02
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.02
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_10 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.025
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.025
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_11 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.03
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.03
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_12 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.04
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.04
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_13 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.05
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_14 = {
+	
+			name = AFRICA_COMMONWEALTH_controls_axis
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.06
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.06
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+	
+		}
+	
+		AFRICA_COMMONWEALTH_controls_axis_idea_15 = {
+		
+			name = AFRICA_COMMONWEALTH_controls_axis
+		
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.07
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.07
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+		
+		}
+		
+		AFRICA_COMMONWEALTH_controls_axis_idea_16 = {
+		
+			name = AFRICA_COMMONWEALTH_controls_axis
+		
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.075
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.075
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+		
+		}
+		
+		AFRICA_COMMONWEALTH_controls_axis_idea_17 = {
+		
+			name = AFRICA_COMMONWEALTH_controls_axis
+		
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.08
+				#defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.08
+				#defense_bonus_against = 0.0
+			}
+			picture = Fate_Of_Med
+			
+			removal_cost = -1	
+		
+		}
+	}
+}

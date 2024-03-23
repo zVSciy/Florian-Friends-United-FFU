@@ -1,0 +1,685 @@
+equipments = {
+
+  # Light Tanks
+
+	# T26
+	sov_light_tank_chassis_t26 = {
+		abbreviation = "t26"
+		visual_level = 0
+		year = 1931
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_1_upgrade
+		}
+		maximum_speed = 4.5
+		build_cost_ic = 9
+		reliability = 0.85
+		armor_value = 10
+		defense = 4
+		breakthrough = 20
+	}
+
+	# BT5
+	sov_light_tank_chassis_bt5 = {
+		abbreviation = "bt5"
+		visual_level = 1
+		year = 1932
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 7
+		build_cost_ic = 10
+		reliability = 0.85
+		armor_value = 20
+		defense = 4
+		breakthrough = 20
+	}
+
+	# BT7
+	sov_light_tank_chassis_bt7 = {
+		abbreviation = "bt7"
+		visual_level = 1
+		year = 1935
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 7.5
+		build_cost_ic = 12
+		reliability = 0.85
+		armor_value = 20
+		defense = 4
+		breakthrough = 25
+	}
+
+	# T50
+	sov_light_tank_chassis_t50 = {
+		abbreviation = "t50"
+		visual_level = 2
+		year = 1939
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 6.5
+		build_cost_ic = 12
+		reliability = 0.85
+		armor_value = 40
+		defense = 6
+		breakthrough = 30
+	}
+
+	# T70
+	sov_light_tank_chassis_t70 = {
+		abbreviation = "t70"
+		visual_level = 2
+		year = 1942
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
+					tank_light_turret_type_3
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 6
+		build_cost_ic = 14
+		reliability = 0.85
+		armor_value = 50
+		defense = 6
+		breakthrough = 40
+	}
+
+	# ZIS30
+	# sov_light_tank_chassis_zis30 = {
+	# 	abbreviation = "zis"
+	# 	visual_level = 0
+	# 	year = 1941
+	# 	archetype = light_tank_chassis
+	# 	priority = 2000
+	# 	module_slots = {
+	# 		main_armament_slot = {
+	# 			required = yes
+	# 			allowed_module_categories = {					
+	# 				tank_armament_tier_light_td
+	# 				tank_armament_tier_aa
+	# 			}
+	# 		}
+	# 		turret_type_slot = {
+	# 			required = yes
+	# 			allowed_module_categories = {
+	# 				tank_light_turret_type_zis
+	# 			}
+	# 		}
+	# 		suspension_type_slot = inherit
+	# 		engine_type_slot = {
+	# 			required = yes
+	# 			allowed_module_categories = {
+	# 				tank_engine_type
+	# 			}
+	# 		}
+	# 	}
+	# 	upgrades = {
+	# 		tank_nsb_light_armor_2_upgrade
+	# 	}
+	# 	maximum_speed = 4
+	# 	build_cost_ic = 4
+	# 	reliability = 0.75
+	# 	armor_value = 5
+	# 	defense = 2
+	# 	breakthrough = 5
+	# }
+
+	# ZIS30
+	sov_light_tank_chassis_zis30 = {
+		abbreviation = "zis"
+		visual_level = 0
+		year = 1943
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armament_tier_tiny_1
+					tank_armament_tier_medium_td_1
+					tank_armament_tier_medium_td_2
+					tank_armament_tier_medium_td_3
+					tank_armament_tier_assault
+					tank_armament_tier_aa
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type_zis
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+		maximum_speed = 4
+		build_cost_ic = 4
+		reliability = 0.75
+		armor_value = 5
+		defense = 2
+		breakthrough = 5
+	}
+
+  # Medium Tanks
+
+	# T28
+	sov_medium_tank_chassis_t28 = {
+		abbreviation = "t28"
+		visual_level = 0
+		year = 1928
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = 	{
+			main_armament_slot = inherit
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade
+		}
+		maximum_speed = 4.25
+		build_cost_ic = 20
+		reliability = 0.65
+		hardness = 0.6
+		armor_value = 15
+		defense = 6
+		breakthrough = 35
+	}
+
+	# T34 placeholder
+	sov_medium_tank_chassis_t34_placeholder = {
+		abbreviation = "t34p"
+		visual_level = 1
+		year = 1940
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+					tank_medium_turret_type_large_casemate
+					tank_modern_turret_type
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_armor_2_upgrade
+			# tank_nsb_med_engine_1_upgrade
+		}
+		maximum_speed = 1
+		build_cost_ic = 50000
+		reliability = 0.01
+		armor_value = 1
+		defense = 1
+		breakthrough = 1
+	}
+
+	# T34 
+	sov_medium_tank_chassis_t34 = {
+		abbreviation = "t34"
+		visual_level = 1
+		year = 1940
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+					tank_medium_turret_type_large_casemate
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		upgrades = {
+			# tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_2_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 18
+		reliability = 0.75
+		armor_value = 55
+		defense = 8
+		breakthrough = 40
+	}
+
+	# T34 M1942
+	sov_medium_tank_chassis_t34_m1942 = {
+		abbreviation = "t34M1942"
+		visual_level = 1
+		year = 1942
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+					tank_medium_turret_type_large_casemate
+					tank_modern_turret_type
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			# tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_2_upgrade
+		}
+		maximum_speed = 6
+		build_cost_ic = 20
+		reliability = 0.75
+		armor_value = 65
+		defense = 8
+		breakthrough = 55
+	}
+
+	# T44
+	sov_medium_tank_chassis_t44 = {
+		abbreviation = "t44"
+		visual_level = 2
+		year = 1944
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+					tank_modern_turret_type
+
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_armor_3_upgrade
+			# tank_nsb_med_engine_1_upgrade
+		}
+		maximum_speed = 6
+		build_cost_ic = 32
+		reliability = 0.85
+		armor_value = 95
+		defense = 8
+		breakthrough = 70
+	}
+	
+  # Heavy Tanks
+
+	# T35
+	sov_heavy_tank_chassis_t35 = {
+		abbreviation = "t35"
+		visual_level = 0
+		year = 1935
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = 	{
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armament_tier_tiny_1
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type_multi
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			
+			special_type_slot_2 = {
+				required = yes
+				allowed_module_categories = {
+					tank_secondary_turret
+				}
+			}
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			# tank_nsb_Heavy_engine_1_upgrade
+		}
+		maximum_speed = 4.5
+		build_cost_ic = 30
+		reliability = 0.7
+		armor_value = 25
+		defense = 8
+		breakthrough = 50
+	}
+
+	# T100
+	sov_heavy_tank_chassis_t100 = {
+		abbreviation = "t10"
+		visual_level = 0
+		year = 1939
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = 	{
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armament_tier_tiny_1
+					tank_armament_tier_tiny_2
+					tank_armament_tier_light_1
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			# special_type_slot_2 = {
+			# 	required = yes
+			# 	allowed_module_categories = {
+			# 		tank_secondary_turret
+			# 	}
+			# }
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			# tank_nsb_Heavy_engine_1_upgrade
+		}
+		maximum_speed = 4.5
+		build_cost_ic = 34
+		reliability = 0.7
+		armor_value = 35
+		defense = 10
+		breakthrough = 60
+	}
+
+	# KV1
+	sov_heavy_tank_chassis_kv1 = {
+		year = 1940
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armament_tier_1
+					tank_armament_tier_2
+					tank_armament_tier_3
+					tank_armament_tier_4
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_medium_turret_type
+					tank_heavy_turret_type
+					tank_heavy_turret_type_0
+					tank_heavy_turret_type_1
+					tank_heavy_turret_type_casemate
+					tank_heavy_turret_type_open_casemate
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+				}
+			}
+		}
+		upgrades = {
+			# tank_nsb_Heavy_engine_1_upgrade
+			tank_nsb_heavy_armor_1_upgrade
+		}
+		maximum_speed = 5.0
+		build_cost_ic = 34
+		reliability = 0.75
+		armor_value = 70
+		defense = 10
+		breakthrough = 65
+	}
+
+	# IS
+	sov_heavy_tank_chassis_is = {
+		abbreviation = "is1"
+		visual_level = 2
+		year = 1943
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{
+				required = yes		
+				allowed_module_categories = {
+					tank_heavy_turret_type_1
+					tank_heavy_turret_type_2
+					tank_heavy_turret_type_3
+					tank_heavy_turret_type_casemate
+					tank_heavy_turret_type_open_casemate
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		upgrades = {
+			tank_nsb_heavy_armor_2_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 42
+		reliability = 0.75
+		armor_value = 90
+		defense = 12
+		breakthrough = 80
+	}
+
+	# sov_heavy_tank_chassis_is3 = {
+	# 	abbreviation = "is3"
+	# 	visual_level = 2
+	# 	year = 1945
+	# 	archetype = heavy_tank_chassis
+	# 	priority = 2000
+	# 	module_slots = {
+	# 		main_armament_slot = inherit
+	# 		turret_type_slot = 	{
+	# 			required = yes		
+	# 			allowed_module_categories = {
+	# 				tank_heavy_turret_type_3
+	# 				tank_heavy_turret_type_casemate
+	# 			}
+	# 		}
+	# 		suspension_type_slot = inherit
+	# 		armor_type_slot = inherit
+	# 		engine_type_slot = inherit
+	# 		special_type_slot_1 = inherit
+	# 		special_type_slot_2 = inherit
+	# 		special_type_slot_3 = inherit
+	# 		special_type_slot_4 = inherit
+	# 		special_type_slot_5 = inherit
+	# 	}
+	# upgrades = {
+	# 	tank_nsb_Heavy_engine_1_upgrade
+	# }
+	# 	maximum_speed = 5.5
+	# 	build_cost_ic = 48
+	# 	reliability = 0.75
+	# 	armor_value = 110
+	# 	defense = 12
+	# 	breakthrough = 85
+	# }
+}

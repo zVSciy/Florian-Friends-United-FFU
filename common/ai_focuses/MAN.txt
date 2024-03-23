@@ -1,0 +1,143 @@
+ai_historical_focus_list_MAN = {
+	ai_national_focuses = {
+		MAN_second_five_plan
+		MAN_meeting_of_the_gac
+		MAN_crush_the_bandits
+		MAN_5_year_plan
+		MAN_supply_empire
+		MAN_expand_the_mines
+		MAN_rare_metals_expansion
+		MAN_increase_refining_capacity
+		MAN_petroleum_investments
+		MAN_showa_steel
+		MAN_zaibatsu_alliance
+		MAN_expand_the_industrial_centres
+		MAN_forced_urbanisation
+		MAN_expand_the_civilian_industry
+		MAN_textile_industry_investments
+		MAN_expand_the_mukden_arsenal
+		MAN_establish_the_daqing_arsenal
+		MAN_industrial_heart
+		MAN_forced_collectivisation
+		MAN_increase_soy_production
+		MAN_expand_opium_plantations
+		MAN_petroleum_investments
+		MAN_port_expansion
+		MAN_expand_the_railways
+		MAN_national_works
+		MAN_expand_eastern_railways
+		MAN_national_defence_state_ai
+		MAN_yakuza_alliance
+		MAN_emergency_labour_act
+		MAN_expand_the_workforce
+		MAN_manchurian_passage
+		MAN_invite_settlers
+		MAN_alliance_with_kwantung
+		MAN_vassalise_meng
+		MAN_restore_order
+		MAN_invite_settlers
+		MAN_land_grants
+		MAN_encourage_experts
+		MAN_army_settlements
+		MAN_follow_the_japanese_model
+		MAN_japanese_officers
+		MAN_embrace_bushido
+		MAN_japanese_warfare
+	}
+}
+ai_focus_defense = {
+	research = {
+		radar_tech = 1.0
+		construction_tech = 1.0
+		artillery = 2.0
+	}
+}
+
+ai_focus_aggressive = {
+	research = {
+		synth_resources = 1.0
+		motorizmotorized_equipmented_tech = 2.0
+		armor = 2.0
+	}
+}
+
+ai_focus_war_production = {
+	research = {
+		industry = 10.0
+		construction_tech = 1.0
+		electronics = 2.0
+		computing_tech = 2.0	
+	}
+}
+
+ai_focus_military_equipment = {
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 12.0
+		support_tech = 10.5
+	}
+}
+
+ai_focus_military_advancements = {
+	research = {
+		armor = 10.0
+		jet_technology = 5.0
+		land_doctrine = 100.0
+		rocketry = 7.5
+		radar_tech = 3.0
+		encryption_tech = 7.5
+		decryption_tech = 7.5
+		synth_resources = 3.0
+		motorized_equipment = 4.0
+		nuclear = 5.0
+		night_vision = 5.0
+	}
+}
+
+ai_focus_peaceful = {
+	research = {
+		industry = 15.0
+		construction_tech = 2.0
+		electronics = 10.0
+		computing_tech = 10.0
+		infantry_weapons = 10.0
+	}
+}
+
+ai_focus_naval = {
+	research = {
+		naval_equipment = 5.0
+		naval_doctrine = 100.0
+		marine_tech = 10.0
+		dd_tech = 3.0
+		cl_tech = 3.0
+		ca_tech = 3.0
+		bb_tech = 3.0
+		shbb_tech = 3.0
+		tp_tech = 3.0
+		cv_tech = 3.0
+		ss_tech = 3.0
+	}
+}
+
+ai_focus_naval_air = {
+	research = {
+		naval_air = 4.0
+		naval_bomber = 3.0
+	}
+}
+
+ai_focus_aviation = {
+	research = {
+		air_doctrine = 5.0
+		light_air = 100
+		light_fighter = 100
+		jet_technology = 1.0
+		cas_bomber = 20.0		
+		medium_air = 20.0
+		tactical_bomber = 15.0
+		heavy_air = 1.5
+		air_equipment = 5.0
+	}
+}

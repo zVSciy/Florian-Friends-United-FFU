@@ -1,0 +1,29 @@
+vichy_historical = {
+	name = "Vichy Hist"
+	desc = "vichy doesnt try to get france back"
+
+	enable = {
+		tag = VIC
+	}
+
+	ai_national_focuses = {
+		VIC_Establishing_Vichy
+		VIC_Accept_Axis_Claims
+		VIC_Reduce_the_costs_of_Occupation
+		VIC_Strengthen_the_Industry
+		VIC_Convert_Dockyards_for_Civilians
+		VIC_Adjust_the_Industry
+		VIC_End_the_payments
+		VIC_Hand_over_the_Navy
+		VIC_Improved_Production_Effort
+		VIC_Protection_from_the_Sky
+		VIC_Building_up_the_coastal_defence
+		VIC_Defend_Core_Land
+		# random army focuses after
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+}

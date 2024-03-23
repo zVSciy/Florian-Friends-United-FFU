@@ -1,0 +1,20 @@
+state={
+	id=943
+	name="STATE_943"
+	manpower = 20000
+	impassable = yes
+	
+	history={
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces={
+		2047 2170 5226 7424 
+	}
+	manpower=266505	
+	state_category=city
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

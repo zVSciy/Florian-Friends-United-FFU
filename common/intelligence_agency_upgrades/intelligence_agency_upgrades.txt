@@ -1,0 +1,907 @@
+# List of intelligence agency upgrades, and their effects
+# For documentation, there is a file _documentation.info in the same folder.
+
+branch_intelligence = {
+
+	upgrade_economy_civilian = {
+	
+		picture = GFX_agency_economy_department
+		frame = GFX_upgrade_frame_economy
+		sound = Spy_Agency_Intel_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				civilian_intel_factor = 0.15
+			}
+		}
+
+		level = {
+			modifier = {
+				civilian_intel_factor = 0.15
+			}
+		}
+
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_army_department = {
+	
+		picture = GFX_agency_army_department
+		frame = GFX_upgrade_frame_army
+		sound = Spy_Agency_Intel_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				army_intel_factor = 0.15
+			}
+		}
+
+		level = {
+			modifier = {
+				army_intel_factor = 0.15
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_naval_department = {
+	
+		picture = GFX_agency_naval_department
+		frame = GFX_upgrade_frame_naval
+		sound = Spy_Agency_Intel_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				navy_intel_factor = 0.15
+			}
+		}
+
+		level = {
+			modifier = {
+				navy_intel_factor = 0.15
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_airforce_department = {
+	
+		picture = GFX_agency_airforce_department
+		frame = GFX_upgrade_frame_airforce
+		sound = Spy_Agency_Intel_Upgrades_Confirm
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				airforce_intel_factor = 0.15
+			}
+		}
+
+		level = {
+			modifier = {
+				airforce_intel_factor = 0.15
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+}
+
+branch_defense = {
+	
+	upgrade_passive_defense = {
+	
+		picture = GFX_agency_defense_department
+		frame = GFX_upgrade_frame_defense
+		sound = Spy_Agency_Defense_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 700
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				intelligence_agency_defense = 1.5
+			}
+		}
+		
+		level = {
+			modifier = {
+				intelligence_agency_defense = 1.25
+			}
+		}
+		
+		level = {
+			modifier = {
+				intelligence_agency_defense = 1
+			}
+		}
+		
+		level = {
+			modifier = {
+				intelligence_agency_defense = 1
+			}
+		}
+		
+	}
+
+	# upgrade_anti_partisan = {
+	
+	# 	picture = GFX_agency_anti_partisan
+	# 	sound = Spy_Agency_Defense_Upgrades_Confirm
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+		
+	# 	modifiers_during_progress = {
+	# 		political_power_cost = 0.1
+	# 	}
+		
+	# 	level = {
+	# 		modifier = {
+	# 			root_out_resistance_effectiveness_factor = 0.25
+	# 		}
+	# 	}
+		
+	# 	level = {
+	# 		modifier = {
+	# 			root_out_resistance_effectiveness_factor = 0.25
+	# 		}
+	# 	}
+
+	# 	visible = {
+	# 		OR = {
+	# 			tag = FRA
+	# 			tag = USA
+	# 			tag = ENG
+	# 			tag = GER
+	# 			tag = ITA
+	# 			tag = SOV
+	# 			tag = JAP
+	# 			has_game_rule = {
+	# 				rule = minor_agents
+	# 				option = ENABLED
+	# 			}
+	# 		}
+	# 	}
+	# }
+	
+	upgrade_safe_house = {
+		picture = GFX_agency_intelligence_speed
+		frame = GFX_upgrade_frame_defense
+		sound = Spy_Agency_Defense_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				own_operative_harmed_time_factor= -0.25
+				own_operative_forced_into_hiding_time_factor = -0.25
+			}
+		}
+		level = {
+			modifier = {
+				own_operative_harmed_time_factor= -0.25
+				own_operative_forced_into_hiding_time_factor = -0.25
+			}
+		}	
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_internal_security = {
+	
+		picture = GFX_agency_internal_security
+		sound = Spy_Agency_Defense_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		modifiers_during_progress = {
+			political_power_cost = 0.1	
+		}
+		
+		level = {
+			modifier = {
+				enemy_intel_network_gain_factor_over_occupied_tag = -0.15
+			}
+		}
+		
+		level = {
+			modifier = {
+				enemy_intel_network_gain_factor_over_occupied_tag = -0.15
+			}
+		}
+		
+		# level = {
+		# 	modifier = {
+		# 		enemy_intel_network_gain_factor_over_occupied_tag = -0.1
+		# 	}
+		# }
+		
+		# level = {
+		# 	modifier = {
+		# 		enemy_intel_network_gain_factor_over_occupied_tag = -0.1
+		# 	}
+		# }
+	}
+}
+
+branch_operation = {
+	
+	upgrade_blueprint_stealing = {
+	
+		picture = GFX_agency_steal_blueprints
+		sound = Spy_Agency_Operations_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				operation_steal_tech_outcome = 0.25
+			}
+		}
+
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_portable_radios = {
+	
+		picture = GFX_agency_portable_radios
+		sound = Spy_Agency_Operations_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			has_tech = radio
+		}
+
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		# level = {
+		# 	modifier = {
+		# 		operation_coordinated_strike_outcome = 1
+		# 	}
+		# }
+
+		level = {
+			modifier = {
+				intel_network_gain_factor = 0.25
+				operation_coordinated_strike_outcome = 1
+			}
+		}
+		level = {
+			modifier = {
+				intel_network_gain_factor = 0.25
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_invisible_ink = {
+	
+		picture = GFX_agency_invisible_ink
+		sound = Spy_Agency_Operations_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 800
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				intel_from_operatives_factor = 0.2
+				operation_steal_tech_risk = -0.25
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	# upgrade_plastic_explosives = {
+	
+	# 	picture = GFX_agency_plastic_explosives
+	# 	sound = Spy_Agency_Operations_Upgrades_Confirm
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+		
+	# 	modifiers_during_progress = {
+	# 		political_power_cost = 0.1
+	# 	}
+		
+	# 	level = {
+	# 		modifier = {
+	# 			target_sabotage_factor = 0.25
+	# 			boost_resistance_factor = 0.25
+	# 		}
+	# 	}
+		
+	# 	visible = {
+	# 		OR = {
+	# 			tag = FRA
+	# 			tag = USA
+	# 			tag = ENG
+	# 			tag = GER
+	# 			tag = ITA
+	# 			tag = SOV
+	# 			tag = JAP
+	# 			has_game_rule = {
+	# 				rule = minor_agents
+	# 				option = ENABLED
+	# 			}
+	# 		}
+	# 	}
+	# }
+	
+	upgrade_suicide_pills = {
+	
+		picture = GFX_agency_suicide_pills
+		sound = Spy_Agency_Operations_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 900
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		# level = {
+		# 	modifier = {
+		# 		operative_death_on_capture_chance = 1 #0.1
+		# 		own_operative_detection_chance = -0.05
+		# 	}
+		# }
+
+		level = {
+			modifier = {
+				operative_death_on_capture_chance = 1 #0.15
+				own_operative_detection_chance = -0.15
+			}
+		}
+		level = {
+			modifier = {
+				# operative_death_on_capture_chance = 0.15
+				own_operative_detection_chance = -0.15
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+}
+
+branch_operative = {
+	
+	upgrade_training_centers = {
+	
+		picture = GFX_agency_localized_training_center
+		Sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				operative_slot = 1
+			}
+			
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_commando_training = {
+	
+		picture = GFX_agency_commando_training
+		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm	
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				# commando_trait_chance_factor = 1 # +100%
+				operation_infiltrate_outcome = 0.25
+				commando_trait_chance_factor = 1 # +100%
+			}
+			
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_interrogation_techniques = {
+	
+		picture = GFX_agency_interrogation_techniques
+		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				enemy_operative_capture_chance_factor = 1 # +100%
+				enemy_operative_intel_extraction_rate = 0.25 # +25%
+			}
+		}
+	}
+	
+	upgrade_diplo_training = {
+	
+		picture = GFX_agency_diplomatic_training
+		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		# level = {
+		# 	modifier = {
+		# 		control_trade_mission_factor = 0.25
+		# 		diplomatic_pressure_mission_factor = 0.25
+		# 	}
+		# }
+
+		level = {
+			modifier = {
+				civilian_intel_to_others = -5.0
+				army_intel_to_others = -5.0
+				navy_intel_to_others = -5.0
+				airforce_intel_to_others = -5.0
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = FRA
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+		}
+	}
+	
+	upgrade_psycho_warfare = {
+	
+		picture = GFX_agency_psychological_warfare
+		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		# level = {
+		# 	modifier = {
+		# 		propaganda_mission_factor = 0.25
+		# 		boost_ideology_mission_factor = 0.25
+		# 	}
+		# }
+
+		level = {
+			modifier = {
+				operation_fake_intel_outcome = 0.2
+			}
+		}
+		level = {
+			modifier = {
+				operation_fake_intel_outcome = 0.2
+			}
+		}
+		
+		visible = {
+			always = no
+		}
+	}
+	
+}
+
+branch_crypto = {
+	
+	upgrade_form_department = {
+	
+		picture = GFX_agency_form_department
+		frame = GFX_upgrade_frame_form
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				crypto_department_enabled = 1
+				crypto_strength = 1
+				decryption_power = 25
+			}
+		}
+		
+	}
+	
+	upgrade_decryption_boost = {
+	
+		picture = GFX_agency_decryption_boost_1
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+			has_done_agency_upgrade = upgrade_form_department
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				decryption_power = 25
+			}
+		}
+		
+		level = {
+			modifier = {
+				decryption_power = 10
+			}
+		}		
+	}
+
+	upgrade_decryption_boost_2 = {
+	
+		picture = GFX_agency_decryption_boost_2
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_done_agency_upgrade = upgrade_decryption_boost
+			has_tech = mechanical_computing
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				decryption_power = 25
+			}
+		}
+		
+		level = {
+			modifier = {
+				decryption_power = 15
+			}
+		}
+		
+		level = {
+			modifier = {
+				decryption_power = 10
+			}
+		}
+		
+	}
+	
+	upgrade_crypto_strength = {
+	
+		picture = GFX_agency_cryptology_2
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+			has_done_agency_upgrade = upgrade_form_department
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 1
+				intelligence_agency_defense = 1
+			}
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 1
+				intelligence_agency_defense = 1
+			}
+		}
+	}
+	
+	upgrade_crypto_strength_2 = {
+	
+		picture = GFX_agency_cryptology_1
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_done_agency_upgrade = upgrade_crypto_strength
+			has_tech = mechanical_computing
+		}
+		
+		modifiers_during_progress = {
+			political_power_cost = 0.1
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+	}
+	
+}

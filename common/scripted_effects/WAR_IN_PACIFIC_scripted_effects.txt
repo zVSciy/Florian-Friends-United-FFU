@@ -1,0 +1,157 @@
+WAR_IN_PACIFIC_ALLIED_CASUALTIES = {
+	every_enemy_country = {
+		limit = {
+			NOT = {
+				original_tag = JAP
+				original_tag = MAN
+				original_tag = SIA
+			}
+		}
+
+		set_temp_variable = { casualty_pacific1 = 0 }
+
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific1
+				}
+			}
+			add_to_temp_variable = { casualty_pacific1 = 1000 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty_pacific1
+				}
+			}
+			add_to_temp_variable  = { casualty_pacific1 = -1000 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific1
+				}
+			}
+			add_to_temp_variable = { casualty_pacific1 = 100 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty_pacific1
+				}
+			}
+			add_to_temp_variable  = { casualty_pacific1 = -100 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific1
+				}
+			}
+			add_to_temp_variable = { casualty_pacific1 = 10 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty_pacific1
+				}
+			}
+			add_to_temp_variable  = { casualty_pacific1 = -10 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific1
+				}
+			}
+			add_to_temp_variable = { casualty_pacific1 = 1 }
+		}
+		add_to_variable = { global.ALLIED_PACIFIC_CASUALTIES = casualty_pacific1 }
+	}
+}
+
+WAR_IN_PACIFIC_GEACPS_CASUALTIES = {
+	every_enemy_country = {
+		limit = {
+			OR = {
+				original_tag = JAP
+				original_tag = MAN
+				original_tag = SIA
+			}
+		}
+
+		set_temp_variable = { casualty_pacific2 = 0 }
+
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific2
+				}
+			}
+			add_to_temp_variable = { casualty_pacific2 = 1000 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty_pacific2
+				}
+			}
+			add_to_temp_variable  = { casualty_pacific2 = -1000 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific2
+				}
+			}
+			add_to_temp_variable = { casualty_pacific2 = 100 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty_pacific2
+				}
+			}
+			add_to_temp_variable  = { casualty_pacific2 = -100 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific2
+				}
+			}
+			add_to_temp_variable = { casualty_pacific2 = 10 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty_pacific2
+				}
+			}
+			add_to_temp_variable  = { casualty_pacific2 = -10 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty_pacific2
+				}
+			}
+			add_to_temp_variable = { casualty_pacific2 = 1 }
+		}
+		add_to_variable = { global.GEACPS_PACIFIC_CASUALTIES = casualty_pacific2 }
+	}
+}

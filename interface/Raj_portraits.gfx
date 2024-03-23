@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_raj_hastings_ismay"
+		texturefile = "gfx/leaders/RAJ/portrait_raj_Hastings_Ismay.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_raj_thomas_wynford_rees"
+		texturefile = "gfx/leaders/RAJ/portrait_raj_thomas_wynford_rees.png"
+	}
+		spriteType = {
+		name = "GFX_portrait_raj_walter_lentaigne"
+		texturefile = "gfx/leaders/RAJ/portrait_raj_walter_lentaigne.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_raj_jawaharlal_nehru"
+		texturefile = "gfx/leaders/RAJ/portrait_raj_jawaharlal_nehru.png"
+	}
+}

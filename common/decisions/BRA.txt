@@ -1,0 +1,43 @@
+operations = {
+    BRA_annex_mex = {
+
+        allowed = {
+            original_tag = BRA
+        }
+
+        available = {
+            date > 1939.1.1
+			MEX = { is_ai = yes }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        visible = {
+            always = yes
+        }
+        fire_only_once = yes
+        complete_effect = {
+            BRA = {
+                MEX = {
+                    pow_before_annex = yes
+                }
+            }
+            annex_country = { target = MEX transfer_troops = yes }
+            add_state_core = 484
+            add_state_core = 483
+            add_state_core = 482
+            add_state_core = 481
+            add_state_core = 479
+            add_state_core = 478
+            add_state_core = 485
+            add_state_core = 277
+            add_state_core = 477
+            add_state_core = 480
+            add_state_core = 476
+            add_state_core = 475
+            add_state_core = 474
+        }
+    }
+}

@@ -1,0 +1,18 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				set_variable = { POW_manpower_POW_cost = 10 }
+				set_variable = { POW_industry_POW_cost = 10 }
+				set_variable = { POW_resources_POW_cost = 10 }
+				set_variable = { POW_civilian_construction_POW_cost = 10 }
+				set_variable = { POW_military_construction_POW_cost = 10 }
+				set_variable = { POW_st_ws_POW_cost = 10 }
+			}
+		}
+	}
+}
+

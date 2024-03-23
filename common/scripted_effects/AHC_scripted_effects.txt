@@ -1,0 +1,797 @@
+AHC_CANADA_HIGH_COMMAND = {
+	add_advisor_role = {
+		character = CAN_andrew_mcnaughton
+		activate = no
+		advisor = {
+			slot = army_chief
+			cost = 50
+			idea_token = CAN_andrew_mcnaughton
+			traits = {
+				army_chief_offensive_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			CAN_thomas_victor_anderson = {
+				has_trait = army_armored_2
+			}
+		}
+		add_advisor_role = {
+			character = CAN_thomas_victor_anderson
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = CAN_thomas_victor_anderson
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			CAN_thomas_victor_anderson = {
+				has_trait = army_combinedArms_2
+			}
+		}
+		add_advisor_role = {
+			character = CAN_thomas_victor_anderson
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = CAN_thomas_victor_anderson
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			CAN_ronald_okeden_alexander = {
+				has_trait = army_armored_2
+			}
+		}
+		add_advisor_role = {
+			character = CAN_ronald_okeden_alexander
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = CAN_ronald_okeden_alexander
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			CAN_ronald_okeden_alexander = {
+				has_trait = army_combinedArms_2
+			}
+		}
+		add_advisor_role = {
+			character = CAN_ronald_okeden_alexander
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = CAN_ronald_okeden_alexander
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			CAN_charles_foulkes = {
+				has_trait = army_armored_2
+			}
+		}
+		add_advisor_role = {
+			character = CAN_charles_foulkes
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = CAN_charles_foulkes
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			CAN_charles_foulkes = {
+				has_trait = army_combinedArms_2
+			}
+		}
+		add_advisor_role = {
+			character = CAN_charles_foulkes
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = CAN_charles_foulkes
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	add_advisor_role = {
+		character = CAN_john_murchie
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = CAN_john_murchie
+			traits = {
+				army_armored_3
+			}
+		}
+	}
+}
+
+AHC_AUSTRALIA_HIGH_COMMAND = {
+	add_advisor_role = {
+		character = AST_edmund_herring
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = AST_edmund_herring
+			traits = {
+				army_armored_3
+			}
+		}
+	}
+	add_advisor_role = {
+		character = AST_vernon_sturdee
+		activate = no
+		advisor = {
+			slot = army_chief
+			cost = 50
+			idea_token = AST_vernon_sturdee
+			traits = {
+				army_chief_offensive_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			AST_leslie_morshead = {
+				has_trait = army_chief_offensive_2
+			}
+		}
+		add_advisor_role = {
+			character = AST_leslie_morshead
+			activate = no
+			advisor = {
+				slot = army_chief
+				cost = 50
+				idea_token = AST_leslie_morshead
+				traits = {
+					army_chief_offensive_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AST_john_lavarack = {
+				has_trait = army_chief_defensive_2
+			}
+		}
+		add_advisor_role = {
+			character = AST_john_lavarack
+			activate = no
+			advisor = {
+				slot = army_chief
+				cost = 50
+				idea_token = AST_john_lavarack
+				traits = {
+					army_chief_defensive_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AST_thomas_blamey = {
+				has_trait = army_artillery_2
+			}
+		}
+		add_advisor_role = {
+			character = AST_thomas_blamey
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = AST_thomas_blamey
+				traits = {
+					army_artillery_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AST_henry_wynter = {
+				has_trait = army_armored_1
+			}
+		}
+		add_advisor_role = {
+			character = AST_henry_wynter
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = AST_henry_wynter
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AST_henry_wynter = {
+				has_trait = army_combinedArms_1
+			}
+		}
+		add_advisor_role = {
+			character = AST_henry_wynter
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = AST_henry_wynter
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AST_alan_vasey = {
+				has_trait = army_commando_2
+			}
+		}
+		add_advisor_role = {
+			character = AST_alan_vasey
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = AST_alan_vasey
+				traits = {
+					army_commando_3
+				}
+			}
+		}
+	}
+}
+
+AHC_NEW_ZEALAND_HIGH_COMMAND = {
+	add_advisor_role = {
+		character = NZL_edward_puttick
+		activate = no
+		advisor = {
+			slot = army_chief
+			cost = 50
+			idea_token = NZL_edward_puttick
+			traits = {
+				army_chief_offensive_3
+			}
+		}
+	}
+	add_advisor_role = {
+		character = NZL_j_c_nichols
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = NZL_j_c_nichols
+			traits = {
+				army_cavalry_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			NZL_bernard_freyberg = {
+				has_trait = army_combinedArms_1
+			}
+		}
+		add_advisor_role = {
+			character = NZL_bernard_freyberg
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = NZL_bernard_freyberg
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NZL_bernard_freyberg = {
+				has_trait = army_armored_1
+			}
+		}
+		add_advisor_role = {
+			character = NZL_bernard_freyberg
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = NZL_bernard_freyberg
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NZL_robert_row = {
+				has_trait = army_commando_1
+			}
+		}
+		add_advisor_role = {
+			character = NZL_robert_row
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = NZL_robert_row
+				traits = {
+					army_commando_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NZL_william_stevens = {
+				has_trait = army_armored_2
+			}
+		}
+		add_advisor_role = {
+			character = NZL_william_stevens
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = NZL_william_stevens
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NZL_william_stevens = {
+				has_trait = army_combinedArms_2
+			}
+		}
+		add_advisor_role = {
+			character = NZL_william_stevens
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = NZL_william_stevens
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NZL_dan_the_man = {
+				has_trait = army_infantry_2
+			}
+		}
+		add_advisor_role = {
+			character = NZL_dan_the_man
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = NZL_dan_the_man
+				traits = {
+					army_infantry_3
+				}
+			}
+		}
+	}
+}
+
+AHC_SOUTH_AFRICA_HIGH_COMMAND = {
+	add_advisor_role = {
+		character = SAF_dan_pienaar
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = SAF_dan_pienaar
+			traits = {
+				army_commando_3
+			}
+		}
+	}
+	add_advisor_role = {
+		character = SAF_george_edwin_brink
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = SAF_george_edwin_brink
+			traits = {
+				army_armored_3
+			}
+		}
+	}
+	add_advisor_role = {
+		character = SAF_evered_poole
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = SAF_evered_poole
+			traits = {
+				army_combinedArms_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			SAF_jan_smuts = {
+				has_trait = army_chief_offensive_2
+			}
+		}
+		add_advisor_role = {
+			character = SAF_jan_smuts
+			activate = no
+			advisor = {
+				slot = army_chief
+				cost = 50
+				idea_token = SAF_jan_smuts
+				traits = {
+					army_chief_offensive_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			SAF_jan_smuts = {
+				has_trait = army_artillery_2
+			}
+		}
+		add_advisor_role = {
+			character = SAF_jan_smuts
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = SAF_jan_smuts
+				traits = {
+					army_artillery_3
+				}
+			}
+		}
+	}
+}
+
+AHC_BRITISH_RAJ_HIGH_COMMAND = {
+	add_advisor_role = {
+		character = RAJ_arthur_a_barrett
+		activate = no
+		advisor = {
+			slot = army_chief
+			cost = 50
+			idea_token = RAJ_arthur_a_barrett
+			traits = {
+				army_chief_defensive_3
+			}
+		}
+	}
+	add_advisor_role = {
+		character = RAJ_mohan_singh
+		activate = no
+		advisor = {
+			slot = army_chief
+			cost = 50
+			idea_token = RAJ_mohan_singh
+			traits = {
+				army_chief_offensive_3
+			}
+		}
+	}
+	add_advisor_role = {
+		character = RAJ_mohammad_usman
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = RAJ_mohammad_usman
+			traits = {
+				army_commando_3
+			}
+		}
+	}
+	add_advisor_role = {
+		character = RAJ_ram_singh_thakur
+		activate = no
+		advisor = {
+			slot = high_command
+			cost = 50
+			idea_token = RAJ_ram_singh_thakur
+			traits = {
+				army_infantry_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			RAJ_frank_messervy = {
+				has_trait = army_armored_1
+			}
+		}
+		add_advisor_role = {
+			character = RAJ_frank_messervy
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = RAJ_frank_messervy
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			RAJ_frank_messervy = {
+				has_trait = army_combinedArms_1
+			}
+		}
+		add_advisor_role = {
+			character = RAJ_frank_messervy
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = RAJ_frank_messervy
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			RAJ_douglas_gracey = {
+				has_trait = army_artillery_1
+			}
+		}
+		add_advisor_role = {
+			character = RAJ_douglas_gracey
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = RAJ_douglas_gracey
+				traits = {
+					army_artillery_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			RAJ_noel_beresfordpeirse = {
+				has_trait = army_chief_entrenchment_2
+			}
+		}
+		add_advisor_role = {
+			character = RAJ_noel_beresfordpeirse
+			activate = no
+			advisor = {
+				slot = army_chief
+				cost = 50
+				idea_token = RAJ_noel_beresfordpeirse
+				traits = {
+					army_chief_entrenchment_3
+				}
+			}
+		}
+	}
+}
+
+AHC_UK_HIGH_COMMAND = {
+	add_advisor_role = {
+		character = ENG_edmund_ironside
+		activate = no
+		advisor = {
+			slot = army_chief
+			cost = 50
+			idea_token = ENG_edmund_ironside
+			traits = {
+				army_chief_defensive_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_oliver_leese = {
+				has_trait = army_chief_offensive_2
+			}
+		}
+		add_advisor_role = {
+			character = ENG_oliver_leese
+			activate = no
+			advisor = {
+				slot = army_chief
+				cost = 50
+				idea_token = ENG_oliver_leese
+				traits = {
+					army_chief_offensive_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_oliver_leese = {
+				has_trait = army_armored_2
+			}
+		}
+		add_advisor_role = {
+			character = ENG_oliver_leese
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = ENG_oliver_leese
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_oliver_leese = {
+				has_trait = army_combinedArms_2
+			}
+		}
+		add_advisor_role = {
+			character = ENG_oliver_leese
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = ENG_oliver_leese
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_neil_ritchie = {
+				has_trait = army_armored_2
+			}
+		}
+		add_advisor_role = {
+			character = ENG_neil_ritchie
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = ENG_neil_ritchie
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_neil_ritchie = {
+				has_trait = army_combinedArms_2
+			}
+		}
+		add_advisor_role = {
+			character = ENG_neil_ritchie
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = ENG_neil_ritchie
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_brian_horrocks = {
+				has_trait = army_armored_1
+			}
+		}
+		add_advisor_role = {
+			character = ENG_brian_horrocks
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = ENG_brian_horrocks
+				traits = {
+					army_armored_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_brian_horrocks = {
+				has_trait = army_combinedArms_1
+			}
+		}
+		add_advisor_role = {
+			character = ENG_brian_horrocks
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = ENG_brian_horrocks
+				traits = {
+					army_combinedArms_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			ENG_kenneth_anderson = {
+				has_trait = army_infantry_2
+			}
+		}
+		add_advisor_role = {
+			character = ENG_kenneth_anderson
+			activate = no
+			advisor = {
+				slot = high_command
+				cost = 50
+				idea_token = kenneth_anderson
+				traits = {
+					army_infantry_3
+				}
+			}
+		}
+	}
+}
+
+AHC_IRELAND_HIGH_COMMAND = {
+	army_experience = 100
+}

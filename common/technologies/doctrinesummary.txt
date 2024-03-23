@@ -1,0 +1,773 @@
+technologies = {
+	MW_left_left  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_unexpected_thrust
+		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_tactical_withdrawal
+		planning_speed = 0.15
+		org_loss_when_moving = -0.2
+		army_speed_factor = 0.05
+		land_reinforce_rate = 0.04	
+		dig_in_speed_factor = 0.5
+		category_tanks = {
+			breakthrough = 0.05
+		}
+		category_assault_gun = {
+			breakthrough = 0.05
+		}
+		category_army = {
+			breakthrough = 0.05
+		}
+		category_all_infantry = {
+			max_organisation = 15
+			defense = 0.2	
+		}
+		category_militia = {
+			max_organisation = 10
+			defense = 0.2	
+		}
+		category_all_armor = {
+			maximum_speed = 0.1
+			max_organisation = 7
+			max_strength = 2
+			default_morale = 0.1
+		}
+		category_mobile_infantry = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+			max_organisation = 10
+			max_strength = 2
+		}
+		category_mobile_artillery = {
+			maximum_speed = 0.1
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		category_line_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		category_front_line = {
+			max_organisation = 5
+		}
+		
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	MW_left_right  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_unexpected_thrust
+		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_overwhelming_fire	
+		enable_tactic = tactic_backhand_blow
+		org_loss_when_moving = -0.35
+		air_cas_present_factor = 0.05
+		planning_speed = 0.15
+		land_reinforce_rate = 0.02	
+		army_speed_factor = 0.05
+		category_tanks = {
+			breakthrough = 0.25
+			hard_attack = 0.10
+		}
+		category_assault_gun = {
+			breakthrough = 0.25
+		}
+		category_army = {
+			breakthrough = 0.05
+		}
+		category_all_infantry = {
+			max_organisation = 20
+			max_strength = 2
+		}
+		category_militia = {
+			max_organisation = 15
+			max_strength = 2
+		}
+		category_all_armor = {
+			maximum_speed = 0.1
+			max_organisation = 13
+			max_strength = 2
+			default_morale = 0.3
+		}
+		category_mobile_infantry = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+			max_organisation = 12
+		}
+		category_mobile_artillery = {
+			maximum_speed = 0.1
+		}
+		
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	MW_right_right  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_unexpected_thrust
+		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_breakthrough
+		enable_tactic = tactic_overwhelming_fire
+		planning_speed = 0.15
+		org_loss_when_moving = -0.35
+		army_speed_factor = 0.05
+		land_reinforce_rate = 0.02	
+		max_planning = 0.05
+		air_cas_present_factor = 0.05
+		category_tanks = {
+			breakthrough = 0.25
+			hard_attack = 0.10
+		}
+		category_assault_gun = {
+			breakthrough = 0.25
+		}
+		category_army = {
+			breakthrough = 0.05
+		}
+		category_all_infantry = {
+			max_organisation = 15
+			max_strength = 2
+		}
+		category_militia = {
+			max_organisation = 10
+			max_strength = 2
+		}
+		category_all_armor = {
+			maximum_speed = 0.15
+			max_organisation = 17
+			max_strength = 3
+			breakthrough = 0.1
+			default_morale = 0.4
+		}
+		category_mobile_infantry = {
+			max_organisation = 5
+			max_strength = 2
+		}
+		
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	MW_right_left  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_unexpected_thrust
+		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_overwhelming_fire
+		planning_speed = 0.15
+		org_loss_when_moving = -0.20
+		army_speed_factor = 0.05
+		land_reinforce_rate = 0.04	
+		max_planning = 0.05
+		dig_in_speed_factor = 0.5
+		category_tanks = {
+			breakthrough = 0.05
+		}
+		category_assault_gun = {
+			breakthrough = 0.05
+		}
+		category_army = {
+			breakthrough = 0.05
+		}
+		category_all_infantry = {
+			max_organisation = 10
+			defense = 0.2	
+		}
+		category_militia = {
+			max_organisation = 5
+			defense = 0.2	
+		}
+		category_all_armor = {
+			maximum_speed = 0.15
+			max_organisation = 11
+			max_strength = 3
+			breakthrough = 0.1
+			default_morale = 0.2
+		}
+		category_mobile_infantry = {
+			max_organisation = 5
+			max_strength = 2
+		}
+		category_line_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		category_mobile_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		category_front_line = {
+			max_organisation = 5
+		}
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SPF_left_left  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_barrage
+		
+		enable_tactic = tactic_elastic_defense	
+		enable_tactic = tactic_overwhelming_fire
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_breakthrough
+		enable_tactic = tactic_tactical_withdrawal
+		max_planning = 0.05
+		land_reinforce_rate = 0.02
+		army_bonus_air_superiority_factor = 0.15
+		air_cas_present_factor = 0.15
+		category_army = {
+			soft_attack = 0.1
+			hard_attack = 0.2
+		}
+		category_all_infantry = {
+			max_organisation = 5
+			defense = 0.1
+		}
+		category_militia = {
+			max_organisation = 5
+			defense = 0.1
+		}
+		category_line_artillery = {
+			hard_attack = 0.20
+		}
+		category_mobile_artillery = {
+			hard_attack = 0.20
+		}
+		category_all_armor = {			
+			max_strength = 2
+		}
+		category_assault_gun = {
+			breakthrough = 0.10
+		}
+		category_tanks = {
+			breakthrough = 0.10
+		}
+		category_front_line = {
+			max_organisation = 5
+		}
+		
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SPF_left_right  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_barrage
+		enable_tactic = tactic_elastic_defense	
+		enable_tactic = tactic_overwhelming_fire
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_tactical_withdrawal
+		enable_tactic = tactic_breakthrough
+		land_reinforce_rate = 0.02
+		max_planning = 0.05
+		category_army = {
+			soft_attack = 0.2
+			hard_attack = 0.1
+		}
+		category_all_infantry = {
+			max_organisation = 15
+			defense = 0.1
+			default_morale = 0.05
+			max_strength = 1
+		}
+		category_militia = {
+			max_organisation = 10
+			defense = 0.1
+			default_morale = 0.05
+			max_strength = 1
+		}
+		category_line_artillery = {
+			hard_attack = 0.20
+		}
+		category_mobile_artillery = {
+			hard_attack = 0.20
+		}
+		category_all_armor = {			
+			max_strength = 3
+			default_morale = 0.05
+		}
+		category_assault_gun = {
+			breakthrough = 0.10
+		}
+		category_tanks = {
+			breakthrough = 0.10
+		}
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SPF_right_right  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_barrage
+		enable_tactic = tactic_elastic_defense	
+		enable_tactic = tactic_overwhelming_fire
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_tactical_withdrawal
+		enable_tactic = tactic_breakthrough
+		land_reinforce_rate = 0.02
+		max_planning = 0.05
+		category_army = {
+			soft_attack = 0.2
+			hard_attack = 0.1
+		}
+		category_all_infantry = {
+			max_organisation = 15
+			defense = 0.1	
+			default_morale = 0.05
+			max_strength = 1
+		}
+		category_militia = {
+			max_organisation = 10
+			defense = 0.1	
+			default_morale = 0.05
+			max_strength = 1
+		}
+		category_line_artillery = {
+			soft_attack = 0.2
+		}
+		category_mobile_artillery = {
+			soft_attack = 0.2
+		}
+		category_all_armor = {			
+			max_strength = 3
+			default_morale = 0.05
+		}
+		category_assault_gun = {
+			breakthrough = 0.10
+		}
+		category_tanks = {
+			breakthrough = 0.10
+		}
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SPF_right_left  = {
+		
+		enable_tactic = tactic_delay
+		enable_tactic = tactic_barrage
+		enable_tactic = tactic_elastic_defense	
+		enable_tactic = tactic_overwhelming_fire
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_breakthrough
+		enable_tactic = tactic_tactical_withdrawal
+		max_planning = 0.05
+		land_reinforce_rate = 0.02
+		army_bonus_air_superiority_factor = 0.15
+		air_cas_present_factor = 0.15
+		category_army = {
+			soft_attack = 0.1
+			hard_attack = 0.2
+		}
+		category_all_infantry = {
+			max_organisation = 5
+			defense = 0.1	
+		}
+		category_militia = {
+			max_organisation = 5
+			defense = 0.1	
+		}
+		category_line_artillery = {
+			soft_attack = 0.2
+		}
+		category_mobile_artillery = {
+			soft_attack = 0.2
+		}
+		category_all_armor = {			
+			max_strength = 2
+		}
+		category_assault_gun = {
+			breakthrough = 0.10
+		}
+		category_tanks = {
+			breakthrough = 0.10
+		}
+		category_front_line = {
+			max_organisation = 5
+		}
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	GBP_left = {
+
+		on_research_complete = {
+			custom_effect_tooltip = GBP_NO_EXPED_WARN
+		}
+		enable_tactic = tactic_planned_attack
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_overwhelming_fire	
+		enable_tactic = tactic_breakthrough
+		max_dig_in = 5
+		max_planning = 0.2
+		supply_consumption_factor = -0.05
+		army_attack_factor = 0.05
+		planning_speed = 0.1
+		land_reinforce_rate = 0.02
+		category_all_infantry = {
+			defense = 0.10
+			max_organisation = 20
+			soft_attack = 0.05
+		}
+		category_militia = {
+			defense = 0.10
+			max_organisation = 15
+			soft_attack = 0.05
+		}
+		category_army = {
+			breakthrough = 0.20
+			max_strength = 2
+		}
+		category_mobile_infantry = {
+			max_organisation = 10
+			max_strength = 1
+		}
+		category_tanks = {
+			max_organisation = 10
+			max_strength = 1
+		}
+		category_all_armor = {
+			default_morale = 0.2
+		}
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	GBP_right = {
+
+		on_research_complete = {
+			custom_effect_tooltip = GBP_NO_EXPED_WARN
+		}
+		enable_tactic = tactic_planned_attack
+		enable_tactic = tactic_infantry_charge
+		enable_tactic = tactic_elastic_defense
+		max_dig_in = 5
+		max_planning = 0.2
+		supply_consumption_factor = -0.05
+		planning_speed = 0.2
+		attrition = -0.15
+		land_night_attack = 0.25 # negates half of base penalty
+		category_all_infantry = {
+			defense = 0.10
+			max_organisation = 5
+		}
+		category_militia = {
+			defense = 0.10
+			max_organisation = 5
+		}
+		category_army = {
+			breakthrough = 0.10
+			max_strength = 2
+		}
+		category_light_infantry = {
+			breakthrough = 0.2
+			max_organisation = 15
+			experience_loss_factor = -0.1
+			soft_attack = 0.05
+		}
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	MA_left = {
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		enable_tactic = tactic_relentless_assault
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_overwhelming_fire
+		enable_tactic = tactic_breakthrough
+		enable_tactic = tactic_backhand_blow
+		land_reinforce_rate = 0.06
+		minimum_training_level = -0.10
+		pocket_penalty = -0.1
+		no_supply_grace = 96
+		max_dig_in = 2.5
+		training_time_factor = -0.10
+		supply_consumption_factor = -0.15
+		max_planning = 0.05
+		experience_gain_army_unit_factor = 0.10
+		org_loss_when_moving = -0.2
+		army_fuel_capacity_factor = 0.10
+        category_all_infantry = {
+			max_organisation = 20
+			max_strength = 7
+			breakthrough = 0.20
+		}
+		category_militia= {
+			max_organisation = 15
+			max_strength = 7
+			breakthrough = 0.20
+		}
+		category_all_armor = {
+			max_organisation = 4
+			max_strength = 7
+			default_morale = 0.2
+		}
+		category_tanks = {
+			max_organisation = 6
+			breakthrough = 0.10
+		}
+		category_mobile_infantry = {
+			max_organisation = 5
+			default_morale = 0.1
+		}
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	MA_right = {
+
+		xp_research_type = army
+		xp_unlock_cost = 99999
+		
+		enable_tactic = tactic_human_wave_tactics
+		enable_tactic = tactic_guerrilla_tactics
+		land_reinforce_rate = 0.1
+		minimum_training_level = -0.10
+		pocket_penalty = -0.2
+		no_supply_grace = 36
+		max_dig_in = 2.5
+		training_time_factor = -0.10
+		supply_consumption_factor = -0.05
+		out_of_supply_factor = -0.2
+		dig_in_speed_factor = 0.25
+		resistance_growth_on_our_occupied_states = 0.1
+		army_speed_factor = 0.05
+        category_all_infantry = {
+			max_organisation = 15
+			max_strength = 7.5
+			default_morale = 0.10
+			breakthrough = 0.10
+		}
+		category_militia= {
+			max_organisation = 19
+			max_strength = 7.5
+			default_morale = 0.10
+			breakthrough = 0.10
+		}	
+		
+		doctrine = yes	
+		research_cost = 4.0
+		
+		categories = {
+			land_doctrine_summary
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+

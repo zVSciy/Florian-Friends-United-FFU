@@ -1,0 +1,507 @@
+ideas = {
+	country = {
+		VIC_concentrate_on_tanks = {
+
+			picture = generic_acquire_tanks
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.10
+					reliability = 0.10
+					maximum_speed = 0.10
+					instant = yes
+				}
+			}
+		}
+
+		VIC_ramped_up_prodution = {
+
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		VIC_defensive_generals = {
+
+			picture = stavka
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_leader_start_defense_level= 1
+			}
+		}
+
+		VIC_logistics_generals = {
+
+			picture = stavka
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_leader_start_logistics_level= 1
+			}
+		}
+
+		VIC_offensive_generals = {
+
+			picture = stavka
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_leader_start_attack_level= 1
+			}
+		}
+
+		VIC_better_protection = {
+
+			picture = general_staff_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				defence = 0.10
+				army_speed_factor = 0.10
+				planning_speed = 0.20
+			}
+		}
+		
+		VIC_tanks_prepared_for_barb = {
+
+			picture = SOV_the_road_of_life
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.15
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		VIC_developed_desert_trucks = {
+
+			picture = SOV_the_road_of_life
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.15
+				army_speed_factor = 0.15
+			}
+		}
+
+		VIC_converted_dockyards_for_civilians = {
+
+			picture = generic_local_self_management
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = -0.90
+				production_speed_dockyard_factor = -1.00
+			}
+		}
+
+		VIC_adjusting_the_industry = {
+
+			picture = man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		VIC_improved_production_effort = {
+
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		VIC_defend_core_land = {
+
+			picture = generic_reserve_divisions
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.10
+			}
+		}
+
+		VIC_shifted_production = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.30
+					instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		VIC_rebuilding_france = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+		VIC_civilian_infrastructure_construction = {
+
+			picture = generic_agrarian_reform
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+
+		VIC_protect_the_french_people = {
+
+			picture = generic_fortify_the_borders
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.25
+			}
+		}
+
+		VIC_axis_generals = {
+
+			picture = stavka
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_leader_start_defense_level = 1
+				army_leader_start_attack_level = 1
+			}
+		}
+
+		VIC_installed_patriotism = {
+
+			picture = generic_reserve_divisions
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		VIC_build_up_the_airfields = {
+
+			picture = generic_fortify_the_borders
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_air_base_factor = 0.10
+			}
+		}
+
+		VIC_protection_from_the_air_raids = {
+
+			picture = generic_fortify_the_borders
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_anti_air_building_factor = 0.10
+			}
+		}
+
+		VIC_rebuilding_the_navy = {
+
+			picture = generic_navy_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.10
+			}
+		}
+
+		VIC_rebuilding_the_navy2 = {
+
+			picture = generic_navy_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.20
+			}
+		}
+	}
+
+	tank_manufacturer = {
+		
+		designer = yes
+
+		VIC_renault = {
+			name = VIC_renault
+
+			picture = renault
+			
+			allowed = {
+				original_tag = VIC
+			}
+
+			visible = {
+				tag = VIC
+			}
+			available = {
+				has_completed_focus = VIC_Produce_our_own_Tanks
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			# traits = { VIC_renault_trait }
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					armor_value = 0.10
+					build_cost_ic = -0.05
+					maximum_speed = 0.10
+					breakthrough = 0.10
+				}
+				heavy_tank_artillery_chassis = {
+					armor_value = 0.10
+					build_cost_ic = -0.05
+					maximum_speed = 0.10
+				}
+				heavy_tank_destroyer_chassis = {
+					armor_value = 0.10
+					build_cost_ic = -0.05
+					maximum_speed = 0.10
+				}
+				heavy_assault_gun_chassis = {
+					armor_value = 0.10
+					build_cost_ic = -0.05
+					maximum_speed = 0.10
+				}
+				heavy_tank_amphibious_chassis = {
+					armor_value = 0.10
+					build_cost_ic = -0.05
+					maximum_speed = 0.10
+				}
+			}
+			
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+	}
+}

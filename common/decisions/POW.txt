@@ -1,0 +1,228 @@
+POW = {
+	POW_manpower = {
+		cost = 25
+		allowed = {
+			is_playable_country = yes
+		}
+		available = {
+			check_variable = { pow_unassigned > POW_manpower_POW_cost }
+			custom_trigger_tooltip = { tooltip = POW_manpower_tt }
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { pow_assinged_total = POW_manpower_POW_cost }
+ 			subtract_from_variable = { pow_unassigned = POW_manpower_POW_cost }
+			multiply_variable = { POW_manpower_POW_cost = 2 }
+			custom_effect_tooltip = POW_manpower_assign_tt
+
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 10 }
+				}
+				add_manpower = 2500
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 20 }
+				}
+				add_manpower = 5000
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 40 }
+				}
+				add_manpower = 10000
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 80 }
+				}
+				add_manpower = 20000
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 160 }
+				}
+				add_manpower = 40000
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 320 }
+				}
+				add_manpower = 80000
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 640 }
+				}
+				add_manpower = 160000
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost = 1280 }
+				}
+				add_manpower = 320000
+			}
+			if = {
+				limit = {
+					check_variable = { POW_manpower_POW_cost > 1280 }
+				}
+				add_manpower = 640000
+			}
+		}
+	}
+
+	POW_industry = {
+		cost = 25
+		allowed = {
+			is_playable_country = yes
+		}
+		available = {
+			check_variable = { pow_unassigned > POW_industry_POW_cost }
+			custom_trigger_tooltip = { tooltip = POW_industry_tt }
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { pow_assinged_total = POW_industry_POW_cost }
+ 			subtract_from_variable = { pow_unassigned = POW_industry_POW_cost }
+			multiply_variable = { POW_industry_POW_cost = 2 }
+			custom_effect_tooltip = POW_industry_assign_tt
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = POW_industry_mod
+						}
+					}
+				}
+ 				add_dynamic_modifier = { modifier = POW_industry_mod }
+ 			}
+			add_to_variable = { pow_factory_putput = 0.025 }
+			custom_effect_tooltip = POW_industry_effect_tt
+		}
+	}
+
+	POW_resources = {
+		cost = 25
+		allowed = {
+			is_playable_country = yes
+		}
+		available = {
+			check_variable = { pow_unassigned > POW_resources_POW_cost }
+			custom_trigger_tooltip = { tooltip = POW_resources_tt }
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { pow_assinged_total = POW_resources_POW_cost }
+ 			subtract_from_variable = { pow_unassigned = POW_resources_POW_cost }
+			multiply_variable = { POW_resources_POW_cost = 2 }
+			custom_effect_tooltip = POW_resources_assign_tt
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = POW_industry_mod
+						}
+					}
+				}
+ 				add_dynamic_modifier = { modifier = POW_industry_mod }
+ 			}
+			add_to_variable = { pow_resource_gain = 0.025 }
+			custom_effect_tooltip = POW_resource_effect_tt
+		}
+	}
+
+	POW_civilian_construction = {
+		cost = 25
+		allowed = {
+			is_playable_country = yes
+		}
+		available = {
+			check_variable = { pow_unassigned > POW_civilian_construction_POW_cost }
+			custom_trigger_tooltip = { tooltip = POW_civilian_construction_tt }
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { pow_assinged_total = POW_civilian_construction_POW_cost }
+ 			subtract_from_variable = { pow_unassigned = POW_civilian_construction_POW_cost }
+			multiply_variable = { POW_civilian_construction_POW_cost = 2 }
+			custom_effect_tooltip = POW_civilian_construction_assign_tt
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	POW_military_construction = {
+		cost = 25
+		allowed = {
+			is_playable_country = yes
+		}
+		available = {
+			check_variable = { pow_unassigned > POW_military_construction_POW_cost }
+			custom_trigger_tooltip = { tooltip = POW_military_construction_tt }
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { pow_assinged_total = POW_military_construction_POW_cost }
+ 			subtract_from_variable = { pow_unassigned = POW_military_construction_POW_cost }
+			multiply_variable = { POW_military_construction_POW_cost = 2 }
+			custom_effect_tooltip = POW_military_construction_assign_tt
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	POW_st_ws = {
+		cost = 25
+		allowed = {
+			is_playable_country = yes
+		}
+		available = {
+			check_variable = { pow_unassigned > POW_st_ws_POW_cost }
+			custom_trigger_tooltip= { tooltip = POW_st_ws_tt }
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { pow_assinged_total = POW_st_ws_POW_cost }
+ 			subtract_from_variable = { pow_unassigned = POW_st_ws_POW_cost }
+			multiply_variable = { POW_st_ws_POW_cost = 2 }
+			custom_effect_tooltip = POW_st_ws_assign_tt
+			add_war_support = 0.025
+			add_stability = 0.025
+		}
+	}
+}

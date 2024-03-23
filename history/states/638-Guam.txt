@@ -1,0 +1,35 @@
+state=
+{
+	id=638
+	name="STATE_638"
+	state_category = small_island
+	manpower=75153
+	history=
+	{
+		add_dynamic_modifier = { modifier = USA_islands_local_supply }
+		set_state_flag = USA_controls
+		owner = USA
+		#add_core_of = GUM
+		1936.1.1.13 = {
+			owner = WST
+		}
+		1936.1.1.13 = {
+			owner = WST
+		}
+		buildings = {
+			infrastructure = 5 #was: 5
+			13312 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13311 1
+		 }
+
+	}
+	provinces={
+		12140 13311 13312 13313
+	}
+
+	local_supplies=0.0 
+}

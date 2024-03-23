@@ -1,0 +1,26 @@
+state={
+	id=733
+	name="STATE_733"
+	manpower=29500
+	state_category = small_island
+	
+	history={
+		owner = ENG
+		1936.1.1.13 = {
+			owner = WST	
+		}
+		buildings = {
+			infrastructure = 3
+			12251 = {
+				naval_base = 2
+
+			}
+		}
+		add_core_of = SRL
+	}
+	provinces={
+		10321 12251 
+	}
+
+	local_supplies=0.0 
+}

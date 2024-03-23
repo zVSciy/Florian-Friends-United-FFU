@@ -1,0 +1,945 @@
+technologies = {
+	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+	sov_light_tank_1 = { #t26
+
+		enable_equipments = {
+			sov_light_tank_chassis_t26
+		}
+		enable_equipment_modules = {
+			tank_riveted_armor
+			tank_welded_armor
+			tank_gasoline_engine
+			tank_petrol_electric_engine
+			tank_diesel_engine
+			tank_light_turret_1
+			tank_light_turret_open
+			tank_light_superstructure
+			tank_light_open_superstructure
+			interleaf_suspension
+			boogie_suspension
+			christie_suspension
+			tank_christie_suspension
+			tank_bogie_suspension
+			tank_interleaved_suspension
+			tank_horstmann_suspension
+			tank_torsion_bar_suspension
+			expanded_fuel_tank
+		}
+	
+		path = {
+			leads_to_tech = sov_light_tank_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sov_bt_tank_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sov_t26_upgrade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1926
+		folder = {
+			name = sov_armour_folder
+			position = { x = -5 y = 0 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1926
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sov_t26_upgrade = {
+
+		on_research_complete = {
+			custom_effect_tooltip = t26_upgrade_tt
+		}
+		show_effect_as_desc = yes
+		enable_equipment_modules = {
+			armor_skirts
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = sov_armour_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1939
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sov_light_tank_2 = { 
+
+		enable_equipments = {
+			sov_light_tank_chassis_t50
+		}
+		enable_equipment_modules = {
+			tank_light_turret_2
+		}
+	
+		path = {
+			leads_to_tech = sov_light_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = sov_armour_folder
+			position = { x = -5 y = 4 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1939
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	sov_light_tank_3 = { 
+
+		enable_equipments = {
+			sov_light_tank_chassis_t70
+		}
+		enable_equipment_modules = {
+			tank_light_turret_3
+		}
+		
+		path = {
+			leads_to_tech = sov_zis30_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = sov_armour_folder
+			position = { x = -5 y = 8 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1941
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	### BT ###
+	
+	sov_bt_tank_1 = { 
+
+		enable_equipments = {
+			sov_light_tank_chassis_bt5
+			# sov_medium_tank_chassis_t34_placeholder
+		}
+	
+		path = {
+			leads_to_tech = sov_bt_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1926
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1926
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sov_bt_tank_2 = { 
+
+		enable_equipments = {
+			sov_light_tank_chassis_bt7
+		}
+
+		path = {
+			leads_to_tech = sov_medium_tank_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1935
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1935
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	### MEDIUM ###
+	
+	sov_medium_tank_1 = {
+
+		enable_equipments = {
+			sov_medium_tank_chassis_t34
+		}
+		enable_equipment_modules = {
+			sloped_armor
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
+		}
+	
+		path = {
+			leads_to_tech = sov_medium_tank_2 #T-34 Model 40
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1940
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	#T-34 Model 40
+	sov_medium_tank_2 = { 
+
+		on_research_complete = {
+			custom_effect_tooltip = t34_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+		
+	
+		path = {
+			leads_to_tech = sov_medium_tank_3 #T-34 Model 42
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 8 }
+		}
+
+		enable_equipment_modules = {
+			tank_medium_turret_2
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1941
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	#T-34 Model 42
+	sov_medium_tank_3 = {
+
+		enable_equipments = {
+			sov_medium_tank_chassis_t34_m1942
+		}
+		
+		path = {
+			leads_to_tech = sov_medium_tank_4 #T-34 Model 43
+			research_cost_coeff = 1
+		}
+
+		# on_research_complete = {
+		# 	create_equipment_variant = {
+		# 		name = "T-34 M1942 Chassis A-1"
+		# 		type = sov_medium_tank_chassis_t34_m1942
+		# 		obsolete = no
+		# 		modules = {
+		# 			main_armament_slot = tank_med_hv_gun_2
+		# 			turret_type_slot = tank_medium_turret_2
+		# 			suspension_type_slot = tank_christie_suspension
+		# 			armor_type_slot = tank_welded_armor
+		# 			engine_type_slot = tank_gasoline_engine
+		# 			special_type_slot_1 = tank_radio_2
+		# 			special_type_slot_2 = additional_heavy_machine_guns
+		# 			special_type_slot_3 = extra_ammo_storage
+		# 			special_type_slot_4 = stabilizer
+		# 		}
+		# 	}
+		# 	add_equipment_production = {
+		# 		equipment = {
+		# 			type = sov_medium_tank_chassis_t34_m1942
+		# 			creator = "SOV"
+		# 			version_name = "T-34 M1942 Chassis A-1"
+		# 		}
+		# 		requested_factories = 1
+		# 		progress = 0.1
+		# 		efficiency = 40
+		# 	}
+		# }
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1942
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#T-34 Model 43
+	sov_medium_tank_4 = { 
+
+		on_research_complete = {
+			custom_effect_tooltip = t34_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+		enable_equipment_modules = {
+			tank_large_medium_superstructure
+			tank_medium_turret_3
+		}
+	
+		path = {
+			leads_to_tech = sov_medium_tank_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1943
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	sov_medium_tank_5 = {
+
+		enable_equipments = {
+			sov_medium_tank_chassis_t44
+		}
+
+		enable_equipment_modules = {
+			tank_modern_tank_turret
+		}
+		
+		path = {
+			leads_to_tech = sov_medium_tank_6 #T-44 Model 46
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1944
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	#T-44 Model 46
+	sov_medium_tank_6 = { 
+
+		on_research_complete = {
+			custom_effect_tooltip = t44_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+		enable_equipment_modules = {
+			tank_modern_tank_turret
+		}
+		
+		research_cost = 1.0
+		start_year = 1945
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1945
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	### HEAVY ###
+	
+	sov_heavy_tank_1 = {
+
+		enable_equipments = {
+			sov_medium_tank_chassis_t28
+			# sov_heavy_tank_chassis_t35
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
+			tank_multi_turret_1
+			tank_multi_turret_2
+		}
+	
+		path = {
+			leads_to_tech = sov_heavy_tank_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sov_heavy_tank_alt
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = sov_armour_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1918
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}		
+	
+	sov_heavy_tank_alt = { 
+
+		enable_equipments = {
+			sov_heavy_tank_chassis_t100
+		}
+		enable_equipment_modules = {
+			tank_multi_turret_3
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = sov_armour_folder
+			position = { x = 7 y = 4 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1939
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+		#KV-1 Model 40
+	sov_heavy_tank_2 = { 
+
+		enable_equipments = {
+			sov_heavy_tank_chassis_kv1
+		}
+		enable_equipment_modules = {
+			tank_heavy_turret_early
+		}
+	
+		path = {
+			leads_to_tech = sov_heavy_tank_4 #KV-1 Model 41
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = sov_armour_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1940
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	# #KV-1 Model 40
+	# sov_heavy_tank_3 = { 
+
+	# 	on_research_complete = {
+	# 		custom_effect_tooltip = kv1_upgrade_1_tt
+	# 	}
+	# 	show_effect_as_desc = yes
+
+	# 	enable_equipment_modules = {
+	# 		tank_heavy_turret_early
+	# 	}
+	
+	# 	path = {
+	# 		leads_to_tech = sov_heavy_tank_4 #KV-1 Model 42
+	# 		research_cost_coeff = 1
+	# 	}
+		
+	# 	research_cost = 2
+	# 	start_year = 1940
+	# 	folder = {
+	# 		name = sov_armour_folder
+	# 		position = { x = 4 y = 7 }
+	# 	}
+		
+	# 	categories = {
+	# 		armor
+	# 		cat_heavy_armor
+	#		year_1940
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# }	
+	
+	#KV-1 Model 42
+	sov_heavy_tank_4 = { 
+		
+		on_research_complete = {
+			custom_effect_tooltip = kv1_upgrade_1_tt
+			#custom_effect_tooltip = kv1_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+
+		enable_equipment_modules = {
+			tank_heavy_turret_1
+			tank_heavy_superstructure
+			tank_heavy_open_superstructure
+		}
+		
+		path = {
+			leads_to_tech = sov_heavy_tank_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = sov_armour_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1941
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	# sov_heavy_tank_2 = { 
+
+	# 	enable_equipments = {
+	# 		sov_heavy_tank_chassis_kv1
+	# 	}
+	# 	enable_equipment_modules = {
+	# 		tank_heavy_turret_1
+	# 		tank_heavy_superstructure
+			
+	# 	}
+	
+	# 	path = {
+	# 		leads_to_tech = sov_heavy_tank_5
+	# 		research_cost_coeff = 1
+	# 	}
+		
+	# 	research_cost = 2
+	# 	start_year = 1941
+	# 	folder = {
+	# 		name = sov_armour_folder
+	# 		position = { x = 4 y = 8 }
+	# 	}
+		
+	# 	categories = {
+	# 		armor
+	# 		cat_heavy_armor
+	#		year_1941
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# }
+	
+	sov_heavy_tank_5 = { 
+
+		enable_equipments = {
+			sov_heavy_tank_chassis_is
+		}
+		
+		path = {
+			leads_to_tech = sov_heavy_tank_7
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = sov_heavy_tank_turret
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			tank_heavy_turret_2
+			sloped_armor
+		}
+		
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = sov_armour_folder
+			position = { x = 4 y = 12 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1943
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sov_heavy_tank_turret = { 
+
+		enable_equipment_modules = {
+			tank_heavy_turret_3
+		}
+
+		research_cost = 2.0
+		start_year = 1944
+		folder = {
+			name = sov_armour_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1944
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sov_heavy_tank_7 = { 
+
+		# enable_equipments = {
+		# 	sov_heavy_tank_chassis_is3
+		# }
+
+		# enable_equipment_modules = {
+		# 	tank_heavy_turret_3
+		# }
+		show_effect_as_desc = yes
+		on_research_complete = {
+			custom_effect_tooltip = is3_upgrade_1_tt
+		}
+		
+		research_cost = 2.0
+		start_year = 1945
+		folder = {
+			name = sov_armour_folder
+			position = { x = 4 y = 16 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+			year_1945
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sov_zis30_tech = { 
+
+		enable_equipments = {
+			sov_light_tank_chassis_zis30
+		}
+		enable_equipment_modules = {
+			tank_light_superstructure_zis
+		}
+
+		allow = {
+			# always = no
+			date > 1942.6.1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = zis_after_42_mid_tt
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = sov_armour_folder
+			position = { x = -5 y = 12 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1943
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = sov_zis_30_short_tt
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sov_slacken_armor_tech = {
+
+		light_assault_gun_brigade = {
+			need = {
+				light_assault_gun_chassis = -8
+			}
+		}
+		medium_assault_gun_brigade = {
+			need = {
+				medium_assault_gun_chassis = -8
+			}
+		}
+		heavy_assault_gun_brigade = {
+			need = {
+				heavy_assault_gun_chassis = -8
+			}
+		}
+		light_armor = {
+			need = {
+				light_tank_chassis = -8
+			}
+		}
+		medium_armor = {
+			need = {
+				medium_tank_chassis = -8
+			}
+		}
+		heavy_armor = {
+			need = {
+				heavy_tank_chassis = -8
+			}
+		}
+		light_tank_destroyer_brigade = {
+			need = {
+				light_tank_destroyer_chassis = -4
+			}
+		}
+		medium_tank_destroyer_brigade = {
+			need = {
+				medium_tank_destroyer_chassis = -4
+			}
+		}
+		heavy_tank_destroyer_brigade = {
+			need = {
+				heavy_tank_destroyer_chassis = -4
+			}
+		}
+		light_sp_artillery_brigade = {
+			need = {
+				light_tank_artillery_chassis = -4
+			}
+		}
+		medium_sp_artillery_brigade = {
+			need = {
+				medium_tank_artillery_chassis = -4
+			}
+		}
+		heavy_sp_artillery_brigade = {
+			need = {
+				heavy_tank_artillery_chassis = -4
+			}
+		}
+		amphibious_light_armor = {
+			need = {
+				light_tank_amphibious_chassis = -8
+			}
+		}
+		amphibious_medium_armor = {
+			need = {
+				medium_tank_amphibious_chassis = -8
+			}
+		}
+		amphibious_heavy_armor = {
+			need = {
+				heavy_tank_amphibious_chassis = -8
+			}
+		}
+		light_sp_anti_air_brigade = {
+			need = {
+				light_tank_aa_chassis = -4
+			}
+		}
+		medium_sp_anti_air_brigade = {
+			need = {
+				medium_tank_aa_chassis = -4
+			}
+		}
+		light_tank_recon = {
+			need = {
+				light_tank_chassis = -8
+			}
+		}
+		armored_car_recon = {
+			need = {
+				armored_car_chassis = -8
+			}
+		}
+		# motorized = {			
+		# 	need = {
+		# 		motorized_equipment = -16
+		# 	}			
+		# }
+		# mechanized = {
+		# 	need = {
+		# 		mechanized_equipment = -12
+		# 		motorized_equipment = -4
+		# 	}
+		# }
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+	}
+}

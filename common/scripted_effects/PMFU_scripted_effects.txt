@@ -1,0 +1,1176 @@
+SOV_eco_modifier_tt = {
+	if = {
+		limit = {
+			SOV = {
+				has_war = no
+			}
+		}
+		custom_effect_tooltip = SOV_modify_soviet_economy_peace_ns_intro
+	}
+	if = {
+		limit = {
+			SOV = {
+				has_war = yes
+			}
+		}
+		custom_effect_tooltip = SOV_modify_soviet_economy_war_ns_intro
+	}
+}
+
+SOV_agitprop_modifier_tt = {
+	custom_effect_tooltip = SOV_modify_soviet_agitprop_ns_intro
+}
+
+ENG_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = ENG_modify_british_economy_ns_intro
+}
+
+ENG_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = ENG_modify_british_army_ns_intro
+}
+
+ENG_airforce_dynamic_modifier_tt = {
+	custom_effect_tooltip = ENG_modify_british_airforce_ns_intro
+}
+
+ENG_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = ENG_modify_british_navy_ns_intro
+}
+
+JAP_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = JAP_modify_japanese_economy_ns_intro
+}
+
+JAP_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = JAP_modify_japanese_army_ns_intro
+}
+
+JAP_navy_and_air_dynamic_modifier_tt = {
+	custom_effect_tooltip = JAP_modify_japanese_naval_air_ns_intro
+}
+
+ITA_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_economy_ns_intro
+}
+
+ITA_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_army_ns_intro
+}
+
+ITA_airforce_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_airforce_ns_intro
+}
+
+ITA_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_navy_ns_intro
+}
+
+GER_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_economy_ns_intro
+}
+
+GER_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_army_ns_intro
+}
+
+GER_airforce_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_airforce_ns_intro
+}
+
+GER_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_navy_ns_intro
+}
+
+USA_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = USA_modify_american_economy_ns_intro
+}
+
+USA_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = USA_modify_american_army_ns_intro
+}
+
+USA_airforce_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = USA_modify_american_airforce_navy_ns_intro
+}
+
+CAN_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = CAN_modify_canadian_economy_ns_intro
+}
+
+CAN_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = CAN_modify_canadian_army_ns_intro
+}
+
+MEX_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = MEX_modify_mexican_economy_ns_intro
+}
+
+MEX_army_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = MEX_modify_mexican_army_navy_ns_intro
+}
+
+BRA_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = BRA_modify_brazilian_economy_ns_intro
+}
+
+BRA_army_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = BRA_modify_brazilian_army_navy_ns_intro
+}
+
+declare_war_on_enemy_faction = {
+	if = {
+		limit = { 
+			NOT = { 
+				ROOT = {
+					has_war_with = THIS.faction_leader 
+				} 
+			}
+		}
+		set_variable = { GER.test1 = 15 }
+		ROOT = {
+			declare_war_on = { 
+				target = PREV.faction_leader
+				type = annex_everything
+			}
+		}
+		ROOT_call_all_allies_against_THIS = yes
+		THIS_call_all_allies_against_ROOT = yes
+	}
+}
+
+ROOT_call_allies_both_sides = {
+	ROOT_call_all_allies_against_THIS = yes
+	THIS_call_all_allies_against_ROOT = yes
+}
+
+ROOT_call_all_allies_against_THIS = {
+	for_each_scope_loop = {
+		array = ROOT.faction_members
+		if = {
+			limit = {
+				NOT = {  
+					original_tag = ROOT
+				}  
+			}
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = PREV
+			}
+		}
+	}
+}
+
+THIS_call_all_allies_against_ROOT = {
+	for_each_scope_loop = {
+		array = THIS.faction_members
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						AND = {
+							original_tag = USA
+							has_war = no
+						} 
+						AND = { 
+							original_tag = FRA
+							NOT = {
+								has_global_flag=fall_of_france
+							}
+						} 
+						AND = {
+							original_tag = FIN
+						}
+						AND = {
+							original_tag = ITA
+							has_war = no
+						} 
+						original_tag = PREV
+					} 
+				} 
+			}
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = ROOT
+			}
+		}
+	}
+}
+
+anti_cross_faction_trade_axis = {
+	add_opinion_modifier = {
+		target = GER
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = ITA
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = SPR
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = HUN
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = ROM
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = BUL
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = FIN
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = YUG
+		modifier = anti_cross_faction_trade
+	}
+
+	add_opinion_modifier = {
+		target = JAP
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = MAN
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = SIA
+		modifier = anti_cross_faction_trade
+	}
+}
+
+anti_cross_faction_trade_allies = {
+	add_opinion_modifier = {
+		target = USA
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = ENG
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = FRA
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = CAN
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = SAF
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = RAJ
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = AST
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = NZL
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = BRA
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = MEX
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = HOL
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = MAL
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = IRE
+		modifier = anti_cross_faction_trade
+	}
+
+	add_opinion_modifier = {
+		target = SOV
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = MON
+		modifier = anti_cross_faction_trade
+	}
+}
+
+anti_cross_faction_trade_all = {
+	# allies
+	USA = {
+		anti_cross_faction_trade_axis = yes
+	}
+	ENG = {
+		anti_cross_faction_trade_axis = yes
+	}
+	FRA = {
+		anti_cross_faction_trade_axis = yes
+	}
+	USA = {
+		anti_cross_faction_trade_axis = yes
+	}
+	CAN = {
+		anti_cross_faction_trade_axis = yes
+	}
+	SAF = {
+		anti_cross_faction_trade_axis = yes
+	}
+	RAJ = {
+		anti_cross_faction_trade_axis = yes
+	}
+	AST = {
+		anti_cross_faction_trade_axis = yes
+	}
+	NZL = {
+		anti_cross_faction_trade_axis = yes
+	}
+	BRA = {
+		anti_cross_faction_trade_axis = yes
+	}
+	MEX = {
+		anti_cross_faction_trade_axis = yes
+	}
+	HOL = {
+		anti_cross_faction_trade_axis = yes
+	}
+	MAL = {
+		anti_cross_faction_trade_axis = yes
+	}
+	IRE = {
+		anti_cross_faction_trade_axis = yes
+	}
+
+	SOV = {
+		anti_cross_faction_trade_axis = yes
+	}
+	MON = {
+		anti_cross_faction_trade_axis = yes
+	}
+	# axis
+	GER = {
+		anti_cross_faction_trade_allies = yes
+	}
+	ITA = {
+		anti_cross_faction_trade_allies = yes
+	}
+	SPR = {
+		anti_cross_faction_trade_allies = yes
+	}
+	HUN = {
+		anti_cross_faction_trade_allies = yes
+	}
+	ROM = {
+		anti_cross_faction_trade_allies = yes
+	}
+	BUL = {
+		anti_cross_faction_trade_allies = yes
+	}
+	FIN = {
+		anti_cross_faction_trade_allies = yes
+	}
+	YUG = {
+		anti_cross_faction_trade_allies = yes
+	}
+
+	JAP = {
+		anti_cross_faction_trade_allies = yes
+	}
+	MAN = {
+		anti_cross_faction_trade_allies = yes
+	}
+	SIA = {
+		anti_cross_faction_trade_allies = yes
+	}
+}
+
+boot_naval_treaty_f = {
+	if = {
+		limit = {
+			has_naval_treaty_trigger = yes
+		}
+		remove_naval_treaty_effect = yes
+		every_other_country = {
+			limit = {
+				has_naval_treaty_trigger = yes
+			}
+			country_event = { id = MTG_naval_treaty.7 days = 2 }
+		}
+		if = {
+			limit = {
+				has_global_flag = {
+					flag = MTG_naval_treaty_signatories
+					value < 3
+				}
+			}
+			random_other_country = {
+				limit = {
+					has_naval_treaty_trigger = yes
+				}
+				remove_naval_treaty_effect = yes
+			}
+			clr_global_flag = MTG_naval_treaty_signatories
+			hidden_effect = { news_event = mtg_news.60 }
+		}
+		if = {
+			limit = {
+				has_global_flag = MTG_naval_treaty_signatories
+			}
+			modify_global_flag = {
+				flag = MTG_naval_treaty_signatories
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				not = {
+					any_other_country = {
+						OR = {
+							has_idea = MTG_naval_treaty_cheating_reduced
+							has_idea = MTG_naval_treaty_adherent_reduced
+						}
+					}
+				}
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						has_idea = MTG_naval_treaty_cheating
+						has_idea = MTG_naval_treaty_adherent
+					}
+				}
+				activate_mission = MTG_escalator_clause_invocation_mission
+				custom_effect_tooltip = MTG_escalator_clause_tt
+			}
+		}
+		add_threat = 2
+	}
+}
+
+boot_naval_treat_d = {
+	if = {
+		limit = {
+			has_naval_treaty_trigger = yes
+		}
+		remove_naval_treaty_effect = yes
+		every_other_country = {
+			limit = {
+				has_naval_treaty_trigger = yes
+			}
+			country_event = MTG_naval_treaty.7
+		}
+		if = {
+			limit = {
+				has_global_flag = {
+					flag = MTG_naval_treaty_signatories
+					value < 3
+				}
+			}
+			random_other_country = {
+				limit = {
+					has_naval_treaty_trigger = yes
+				}
+				remove_naval_treaty_effect = yes
+			}
+			clr_global_flag = MTG_naval_treaty_signatories
+			hidden_effect = { news_event = mtg_news.60 }
+		}
+		if = {
+			limit = {
+				has_global_flag = MTG_naval_treaty_signatories
+			}
+			modify_global_flag = {
+				flag = MTG_naval_treaty_signatories
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				not = {
+					any_other_country = {
+						OR = {
+							has_idea = MTG_naval_treaty_cheating_reduced
+							has_idea = MTG_naval_treaty_adherent_reduced
+						}
+					}
+				}
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						has_idea = MTG_naval_treaty_cheating
+						has_idea = MTG_naval_treaty_adherent
+					}
+				}
+				activate_mission = MTG_escalator_clause_invocation_mission
+				custom_effect_tooltip = MTG_escalator_clause_tt
+			}
+		}
+	}
+}
+
+pow_before_annex = {
+	hidden_effect = {
+		set_variable = { getting_annexed = 1 }
+		every_enemy_country = {
+			limit = {
+				is_playable_country = yes 
+				OR = {
+					NOT = {
+						original_tag = FRA
+					}
+					has_global_flag = fall_of_france
+				}
+				OR = {
+					NOT = {
+						original_tag = HOL
+					}
+					has_global_flag = fall_of_france
+				}
+			}
+			calculate_click_effect = yes
+		}
+	}
+}
+
+calculate_click_effect = { #prevent spam hidden idea for one day
+	clear_variable = ROOT.pow_total
+	every_enemy_country = {
+		limit = {
+			is_playable_country = yes
+			OR = {
+				NOT = {
+					original_tag = FRA
+				}
+				has_global_flag = fall_of_france
+			}
+			OR = {
+				NOT = {
+					original_tag = HOL
+				}
+				has_global_flag = fall_of_france
+			}
+		}
+
+		set_temp_variable = { casualty1 = 0 }
+
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty1
+				}
+			}
+			add_to_temp_variable = { casualty1 = 1000 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty1
+				}
+			}
+			add_to_temp_variable  = { casualty1 = -1000 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty1
+				}
+			}
+			add_to_temp_variable = { casualty1 = 100 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty1
+				}
+			}
+			add_to_temp_variable  = { casualty1 = -100 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty1
+				}
+			}
+			add_to_temp_variable = { casualty1 = 10 }
+		}
+		if = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands < casualty1
+				}
+			}
+			add_to_temp_variable  = { casualty1 = -10 }
+		}
+		while_loop_effect = {
+			limit = {
+				casualties_inflicted_by = {
+					opponent = PREV
+					thousands > casualty1
+				}
+			}
+			add_to_temp_variable = { casualty1 = 1 }
+		}
+
+		multiply_temp_variable = { casualty1 = 0.25 }
+		if = {
+			limit = {
+				check_variable = { getting_annexed = 1 }
+			}
+			add_to_variable= { PREV.pow_other_sources = casualty1 }
+		}
+		else = {
+			add_to_variable = { ROOT.pow_total = casualty1 }
+		}
+	}
+
+	add_to_variable = { ROOT.pow_total = pow_other_sources  } 
+	set_variable = { ROOT.pow_unassigned = ROOT.pow_total }
+	subtract_from_variable = { ROOT.pow_unassigned = ROOT.pow_assinged_total }
+}
+
+Vichy_Spawn = {
+	if = {
+		limit = {
+		AND = {
+		461 = {has_state_flag = AFRICA_COMMONWEALTH_controls }
+		461 = {is_controlled_by = VIC }
+			}
+		}
+		461 = {
+		clr_state_flag = AFRICA_COMMONWEALTH_controls
+		set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
+		}
+		every_country = {
+				limit = {
+					OR = {
+						tag = FIN
+						tag = GER
+						tag = HUN
+						tag = ITA
+						tag = ROM
+						tag = BUL
+						tag = SPR
+						tag = YUG
+						tag = VIC
+					}
+				}
+				AFRICA_COMMONWEALTH_AXIS_bases_level_down = yes
+			}
+		add_to_variable = {
+				var = ITA.AFRICA_COMMONWEALTH_BASES_LEVEL
+				value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			AND = {
+				458 = {has_state_flag = AFRICA_COMMONWEALTH_controls }
+				OR = {
+					458 = {is_controlled_by = VIC }
+					458 = {is_controlled_by = ITA }
+				}
+			}
+		}
+		458 = {
+		clr_state_flag = AFRICA_COMMONWEALTH_controls
+		set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
+		}
+		every_country = {
+				limit = {
+					OR = {
+						tag = FIN
+						tag = GER
+						tag = HUN
+						tag = ITA
+						tag = ROM
+						tag = BUL
+						tag = SPR
+						tag = YUG
+						tag = VIC
+					}
+				}
+				AFRICA_COMMONWEALTH_AXIS_bases_level_down = yes
+			}
+		add_to_variable = {
+				var = ITA.AFRICA_COMMONWEALTH_BASES_LEVEL
+				value = 1
+		}
+	}
+}
+
+AFRICA_COMMONWEALTH_AXIS_bases_level_down = {
+	if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_15 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_15
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_14 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_14
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_13 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_13
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_12 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_12
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_11 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_11
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_12
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_10 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_10
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_9 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_9
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_8 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_8
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_7 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_7
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_6 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_6
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_5 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_5
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_4 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_4
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_3 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_3
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_2 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_2
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_1 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_1
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_2
+		}
+	}
+}
+AFRICA_COMMONWEALTH_AXIS_bases_level_up = {
+	if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_2 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_2
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_3 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_3
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_4 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_4
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_5 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_5
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_6 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_6
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_7 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_7
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_8 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_8
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_9 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_9
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_10 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_10
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_11 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_11
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_12 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_12
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_13 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_13
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_12
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_14 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_14
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_15 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_15
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_17 }
+		swap_ideas = {
+			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_17
+			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16
+		}
+	}
+}
+
+update_sov_major_city_status = {
+	SOV = {
+		set_variable = { major_city_status = 0 }
+		if = {
+			limit = {
+				NOT = {
+					count_triggers = {
+						amount = 2
+						controls_state = 219 # moscow
+						controls_state = 195 # leningrad
+						controls_state = 217 # stalingrad
+					}
+				}
+			}
+			add_to_variable = { major_city_status = -0.20 } 
+		} 
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 249 #kazan
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.025
+			}  
+		}
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 239 # saratov
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.025
+			}  
+		}
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 248 # yaroslavl
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.025
+			}  
+		}
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 229 # azerbaijan
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.025
+			}  
+		}
+	}
+}
+
+update_academy_weekly ={
+	# training_time_fixer = yes
+	every_country = {
+		limit = {
+			is_playable_country = yes
+		}
+		if = {
+			limit = {
+				has_idea = academy_scholarships_spirit
+			}
+			add_to_variable = { academy_weekly_training_speed = -0.005 }
+		}
+		# if = {
+		# 	limit = {
+		# 		has_idea = political_loyalty_spirit
+		# 	}
+		# 	add_to_variable = { academy_weekly_pp = 0.005 }
+		# }
+		# if = {
+		# 	limit = { 
+		# 		has_idea = relief_of_command_spirit
+		# 	}
+		# 	add_to_variable = { academy_experience_gain = 0.005 }	
+		# }
+		# if = {
+		# 	limit = {
+		# 		has_idea = grand_battleplan_army_spirit
+		# 	}
+		# 	add_to_variable = { academy_special_forces_capacity = 0.5 }
+		# 	if = {
+		# 		limit = {
+		# 			is_major = yes
+		# 		}
+		# 		add_to_variable = { academy_special_forces_capacity = 0.5 }
+		# 	}
+		# }
+		# set_variable = { academy_weekly_training_speed_total = modifier@training_time_army_factor }
+		set_variable = { academy_weekly_training_speed_total = academy_weekly_training_speed }
+		if = {
+			limit = {
+				check_variable = { academy_weekly_training_speed_total < -0.60 }
+			}
+			set_variable = {
+				academy_weekly_training_speed_result = -0.60
+			}
+			# subtract_from_variable = { 
+			# 	academy_weekly_training_speed_result = academy_weekly_training_speed_total
+			# }
+		}
+		else = {
+			set_variable = { academy_weekly_training_speed_result = academy_weekly_training_speed }
+		}
+	}
+}
+
+training_time_fixer = {
+	every_country = {
+		limit = {
+			is_playable_country = yes
+		}
+		set_variable = { training_time_mod_total = modifier@training_time_factor } #training_time_army_factor
+		add_to_variable = { training_time_mod_total = training_time_balancer }
+		if = { limit = { check_variable = { training_time_mod_total = -0.75 } } set_variable = { training_time_balancer = 0.10 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.76 } } set_variable = { training_time_balancer = 0.11 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.77 } } set_variable = { training_time_balancer = 0.12 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.78 } } set_variable = { training_time_balancer = 0.13 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.79 } } set_variable = { training_time_balancer = 0.14 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.80 } } set_variable = { training_time_balancer = 0.15 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.81 } } set_variable = { training_time_balancer = 0.16 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.82 } } set_variable = { training_time_balancer = 0.17 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.83 } } set_variable = { training_time_balancer = 0.18 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.84 } } set_variable = { training_time_balancer = 0.19 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.85 } } set_variable = { training_time_balancer = 0.20 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.86 } } set_variable = { training_time_balancer = 0.21 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.87 } } set_variable = { training_time_balancer = 0.22 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.88 } } set_variable = { training_time_balancer = 0.23 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.89 } } set_variable = { training_time_balancer = 0.24 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.90 } } set_variable = { training_time_balancer = 0.25 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.91 } } set_variable = { training_time_balancer = 0.26 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.92 } } set_variable = { training_time_balancer = 0.27 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.93 } } set_variable = { training_time_balancer = 0.28 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.94 } } set_variable = { training_time_balancer = 0.29 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.95 } } set_variable = { training_time_balancer = 0.30 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.96 } } set_variable = { training_time_balancer = 0.31 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.97 } } set_variable = { training_time_balancer = 0.32 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.98 } } set_variable = { training_time_balancer = 0.33 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -0.99 } } set_variable = { training_time_balancer = 0.34 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.00 } } set_variable = { training_time_balancer = 0.35 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.01 } } set_variable = { training_time_balancer = 0.36 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.02 } } set_variable = { training_time_balancer = 0.37 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.03 } } set_variable = { training_time_balancer = 0.38 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.04 } } set_variable = { training_time_balancer = 0.39 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.05 } } set_variable = { training_time_balancer = 0.40 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.06 } } set_variable = { training_time_balancer = 0.41 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.07 } } set_variable = { training_time_balancer = 0.42 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.08 } } set_variable = { training_time_balancer = 0.43 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.09 } } set_variable = { training_time_balancer = 0.44 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.10 } } set_variable = { training_time_balancer = 0.45 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.11 } } set_variable = { training_time_balancer = 0.46 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.12 } } set_variable = { training_time_balancer = 0.47 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.13 } } set_variable = { training_time_balancer = 0.48 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.14 } } set_variable = { training_time_balancer = 0.49 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.15 } } set_variable = { training_time_balancer = 0.50 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.16 } } set_variable = { training_time_balancer = 0.51 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.17 } } set_variable = { training_time_balancer = 0.52 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.18 } } set_variable = { training_time_balancer = 0.53 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.19 } } set_variable = { training_time_balancer = 0.54 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.20 } } set_variable = { training_time_balancer = 0.55 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.21 } } set_variable = { training_time_balancer = 0.56 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.22 } } set_variable = { training_time_balancer = 0.57 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.23 } } set_variable = { training_time_balancer = 0.58 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.24 } } set_variable = { training_time_balancer = 0.59 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.25 } } set_variable = { training_time_balancer = 0.60 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.26 } } set_variable = { training_time_balancer = 0.61 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.27 } } set_variable = { training_time_balancer = 0.62 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.28 } } set_variable = { training_time_balancer = 0.63 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.29 } } set_variable = { training_time_balancer = 0.64 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.30 } } set_variable = { training_time_balancer = 0.65 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.31 } } set_variable = { training_time_balancer = 0.66 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.32 } } set_variable = { training_time_balancer = 0.67 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.33 } } set_variable = { training_time_balancer = 0.68 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.34 } } set_variable = { training_time_balancer = 0.69 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.35 } } set_variable = { training_time_balancer = 0.70 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.36 } } set_variable = { training_time_balancer = 0.71 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.37 } } set_variable = { training_time_balancer = 0.72 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.38 } } set_variable = { training_time_balancer = 0.73 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.39 } } set_variable = { training_time_balancer = 0.74 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.40 } } set_variable = { training_time_balancer = 0.75 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.41 } } set_variable = { training_time_balancer = 0.76 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.42 } } set_variable = { training_time_balancer = 0.77 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.43 } } set_variable = { training_time_balancer = 0.78 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.44 } } set_variable = { training_time_balancer = 0.79 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.45 } } set_variable = { training_time_balancer = 0.80 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.46 } } set_variable = { training_time_balancer = 0.81 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.47 } } set_variable = { training_time_balancer = 0.82 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.48 } } set_variable = { training_time_balancer = 0.83 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.49 } } set_variable = { training_time_balancer = 0.84 } }
+		else_if = { limit = { check_variable = { training_time_mod_total = -1.50 } } set_variable = { training_time_balancer = 0.85 } }
+	}
+}
+
+dockyard_cg_calculation = {
+	set_variable = { dockcount1 = 0 }
+	while_loop_effect = {
+		limit = {
+			num_of_naval_factories > dockcount1
+		}
+		add_to_variable = { dockcount1 = 1 }
+	}
+	set_variable = { dockcount2 = dockcount1 }
+	multiply_variable = { dockcount2 = 0.1 }
+	round_variable = dockcount2
+	set_variable = { dockcount3 = 0 }
+	set_variable = { dockyard_cg = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { dockcount3 < dockcount2 }
+		}
+		add_to_variable = { dockcount3 = 1 }
+		add_to_variable = { dockyard_cg = 0.005 }
+	}
+	if = {
+		limit = {
+			has_naval_treaty_trigger = yes
+		}
+		set_variable = { dockyard_cg = 0 }
+	}
+}

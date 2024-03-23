@@ -1,0 +1,2350 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = navy_cap
+						option = ENABLED
+					}
+					GER = {has_war = no }
+					USA = {has_war = no }
+					ENG = {has_war = no }
+					
+				}
+				HMP_check_fleet_size = yes 
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = navy_cap
+						option = ENABLED
+					}
+					OR = {
+						GER = {has_war = yes }
+						USA = {has_war = yes }
+						ENG = {has_war = yes }
+					}
+				}
+				HMP_check_fleet_size = yes 
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					any_other_country = {
+						has_volunteers_amount_from = {
+							tag = ROOT
+							count > 0
+						}
+						ROOT = {
+							not = {
+								has_military_access_to = PREV
+							}
+						}
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_volunteers_amount_from = {
+							tag = ROOT
+							count > 0
+						}
+						ROOT = {
+							not = {
+								has_military_access_to = PREV
+							}
+						}
+					}
+					give_military_access = ROOT
+				}
+			}
+		}
+	}
+   	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = assault_gun
+						option = ASSAULT_GUN_SUPPORT
+					}
+				}
+				every_country = {
+					hidden_effect = {
+						set_technology = { 
+							assault_gun_support_company = 1 
+							popup = no
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = assault_gun
+						option = ASSAULT_GUN_LINE
+					}
+				}
+				every_country = {
+					hidden_effect = {
+						set_technology = { 
+							assault_gun_line_unit = 1 
+							popup = no
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = navy_cap
+						option = ENABLED
+					}
+				}
+				SWE = { HMP_startup_on_actions = yes }
+			}
+		}
+		effect = {
+			# every_country = { 
+			# 	limit = { tag = GER }
+			# 	country_event = { 
+			# 		id = germany.mefoair 
+			# 	}
+			# }
+			# every_country = { 
+			# 	limit = { tag = MON }
+			# 	country_event = { 
+			# 		id = mongolia.start 
+			# 	}
+			# }	
+			# every_country = { 
+			# 	limit = { tag = ITA }
+			# 	country_event = { 
+			# 		id = italy.air 
+			# 	}
+			# }	
+			if = {
+				limit = {
+					is_historical_focus_on = no
+				}
+				every_country = { 
+					country_event = { 
+						id = startingevent.999
+					}
+				}	
+			}
+			if = {
+				limit = {
+					OR = {
+						VEN = { is_ai = no}
+						POR = { is_ai = no}
+						BEL = { is_ai = no}
+						# LUX = { is_ai = no}
+						SWI = { is_ai = no}
+						AUS = { is_ai = no}
+						CZE = { is_ai = no}
+						SWE = { is_ai = no}
+						DEN = { is_ai = no}
+						NOR = { is_ai = no}
+						# YUG = { is_ai = no}
+						GRE = { is_ai = no}
+						LIT = { is_ai = no}
+						LAT = { is_ai = no}
+						EST = { is_ai = no}
+						CHI = { is_ai = no}
+						INS = { is_ai = no}						
+						# PHI = { is_ai = no}
+						MAL = { is_ai = no}
+						TUR = { is_ai = no}						
+						IRQ = { is_ai = no}
+						PER = { is_ai = no}
+					}
+				}
+				every_country = { 
+					country_event = { 
+						id = startingevent.1000
+					}
+				}
+			}
+			# every_country = { 
+			# 	country_event = { 
+			# 		id = startingevent.1001
+			# 	}
+			# }
+			# every_country = {  # navy event
+			# 	country_event = { 
+			# 		id = startingevent.29
+			# 	}
+			# }
+			every_country = { # game rules
+				country_event = { 
+					id = startingevent.1002
+				}
+				# country_event = { 
+				# 	id = startingevent.1003
+				# }
+			}
+		}
+		effect = {
+			TUR = { set_country_flag = TUR_british_support }
+			TUR = { set_country_flag = TUR_soviets_defiant }
+			TUR = { set_country_flag = TUR_strait_compromise_set }
+			341 = { set_demilitarized_zone = no } 
+			797 = { set_demilitarized_zone = no } 
+			340 = { set_demilitarized_zone = no }
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_templates
+						option = ENABLED
+					}
+				}
+				every_country = {
+					add_ideas = GER_free_templates
+				}
+			}
+		}
+
+		effect = { 
+			ENG = {
+				every_owned_state = {
+					limit = { is_core_of = ENG }
+					add_to_array = {
+						array = ENG.starting_core_states
+						value = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = ENG.starting_core_states	
+				add_to_variable= { ENG.shadow_civs1 = industrial_complex_level }
+			}
+		}
+
+		effect = { 
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+				}
+				set_technology = { naval_base_construction = 1 popup = no }
+			}
+		}
+
+		effect = { 
+			every_country = {
+				set_technology = { anti_air_building_construction = 1 popup = no }
+			}
+		}
+
+		effect = { 
+			every_country = {
+				set_technology = { air_base_construction = 1 popup = no }
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = GER
+					FROM = { tag = POL }
+					YUG = { is_ai = no }
+				}
+				YUG = {
+					activate_mission = YUG_impending_german_coup
+				}
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						FROM = { tag = USA }
+						tag = USA
+					}
+				}
+				USA = {
+					379 = {
+						add_resource = {
+							type = aluminium
+							amount = 250
+						}
+					}
+					385 = {
+						add_resource = {
+							type = aluminium
+							amount = 250
+						}
+					}
+					378 = {
+						add_resource = {
+							type = aluminium
+							amount = 250
+						}
+					}
+					383 = {
+						add_resource = {
+							type = aluminium
+							amount = 300
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		# Poland Loses Agency Debuff
+		effect = { 
+			if = {
+				limit = {
+					original_tag = POL
+					OR = {
+						FROM = { original_tag = GER }
+						FROM = { original_tag = ROM }
+						FROM = { original_tag = HUN }
+						FROM = { original_tag = BUL }
+						FROM = { original_tag = YUG }
+						FROM = { original_tag = SOV }
+					}
+				}
+				POL = { remove_ideas = POL_no_agency }
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					original_tag = HOL
+					HOL = { is_ai = yes }
+					FROM = { is_in_faction_with = GER }
+					NOT = {
+						has_global_flag = DEI_transfered
+					}
+					has_game_rule = {
+						rule = ast_annex_dei_at_hol_cap
+						option = ENABLED
+					}
+				}
+				# weird island near venezuela
+				ENG = { transfer_state = 695 }
+				695 = { set_compliance = 20 }
+				# suriname
+				ENG = { transfer_state = 309 }
+				309 = { set_compliance = 20 }
+
+				# DEI - go to australia
+				AST = {
+					transfer_state = 672
+					672 = { set_compliance = 20 }
+					transfer_state = 334
+					334 = { set_compliance = 20 }
+					transfer_state = 335
+					335 = { set_compliance = 20 }
+					transfer_state = 667
+					667 = { set_compliance = 20 }
+					transfer_state = 673
+					673 = { set_compliance = 20 }
+					transfer_state = 668
+					668 = { set_compliance = 20 }
+					transfer_state = 669
+					669 = { set_compliance = 20 }
+					transfer_state = 738
+					738 = { set_compliance = 20 }
+				}
+				AST = { annex_country = { target = INS transfer_troops = yes } }
+
+				GER = {
+					transfer_state = 35
+					transfer_state = 7
+					transfer_state = 36
+				}
+
+				set_global_flag = DEI_transfered
+
+				AST = {
+					set_cosmetic_tag = AST_autonomy_dominion_OCEANIA
+				}
+
+				# ENG ANNEX
+				ENG = {
+					HOL = {
+						pow_before_annex = yes
+					}
+				}
+				ENG = { annex_country = { target = HOL transfer_troops = yes } }
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					FROM = { is_in_faction_with = GER }
+				}
+				POL = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					FROM = { is_in_faction_with = GER }
+				}
+				POL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 37500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 8000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = anti_tank_equipment
+						amount = 125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 15000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = sf_equipment
+						amount = 125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1625
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 1250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 25
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 50
+						producer = GER
+					}
+				}
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = BEL
+					FROM = { is_in_faction_with = GER }
+				}
+				BEL = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = BEL
+					FROM = { is_in_faction_with = GER }
+				}
+				BEL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 12500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 200
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 5000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 255
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 37
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 150
+						producer = GER
+					}
+				}
+				GER = {
+					transfer_state = 6
+					transfer_state = 34
+					transfer_state = 8
+				}
+				ENG = { annex_country = { target = BEL transfer_troops = no } }
+				SAF = {
+					transfer_state = 295
+					transfer_state = 538
+					transfer_state = 718
+					transfer_state = 769
+					transfer_state = 768
+					transfer_state = 890
+					transfer_state = 888
+					transfer_state = 889
+				}
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = NOR
+					FROM = { is_in_faction_with = GER }
+				}
+				NOR = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = NOR
+					FROM = { is_in_faction_with = GER }
+				}
+				GER = {
+					transfer_state = 110
+					transfer_state = 921
+					transfer_state = 922
+					transfer_state = 142
+					transfer_state = 920
+					transfer_state = 143
+					transfer_state = 923
+					transfer_state = 144
+					transfer_state = 924
+					transfer_state = 925
+				}
+				NOR = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 21750
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 5000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 9000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 550
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 600
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 25
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 450
+						producer = GER
+					}
+				}
+				ENG = { annex_country = { target = NOR transfer_troops = no } }
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = DEN
+					FROM = { is_in_faction_with = GER }
+				}
+				GER = {
+					transfer_state = 99
+					transfer_state = 37
+				}
+				DEN = {
+					set_equipment_fraction = 0
+				}
+				ENG = { annex_country = { target = DEN transfer_troops = no } }
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GRE
+					FROM = { is_in_faction_with = GER }
+				}
+				GRE = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GRE
+					FROM = { is_in_faction_with = GER }
+				}
+				GRE = {
+					set_equipment_fraction = 0
+				}
+				ITA = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 12500
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 2500
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 25
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment
+						amount = 25
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 4250
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 125
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 125
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = sf_equipment
+						amount = 375
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 150
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 25
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 250
+						producer = ITA
+					}
+				}
+				ITA = {
+					transfer_state = 185
+					transfer_state = 47
+					transfer_state = 186
+					transfer_state = 187
+				}
+				if = { # check if bulgaria exist
+					limit = {
+						country_exists = BUL
+					}
+					BUL = {
+						transfer_state = 184
+						transfer_state = 731
+					}
+				}
+				else = { # if bulgaria no exist give to italy
+					ITA = {
+						transfer_state = 184
+						transfer_state = 731
+					}
+				}
+				ENG = {
+					transfer_state = 182
+				}
+				ENG = { annex_country = { target = GRE transfer_troops = no } }
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = YUG
+					FROM = { is_in_faction_with = GER }
+				}
+				YUG = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = YUG
+					FROM = { is_in_faction_with = GER }
+				}
+				YUG = {
+					set_equipment_fraction = 0
+				}
+				ITA = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 17500
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 3500
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 75
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 7500
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 775
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 5000
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 250
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 25
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 62
+						producer = ITA
+					}
+				}
+				GER = {
+					transfer_state = 102
+					transfer_state = 853
+				}
+				ITA = {
+					transfer_state = 109
+					transfer_state = 103
+					transfer_state = 104
+					transfer_state = 804
+					transfer_state = 107
+					transfer_state = 105
+					transfer_state = 108
+					transfer_state = 802
+				}
+				HUN = {
+					transfer_state = 45
+					transfer_state = 764
+				}
+				if = { # check if bulgaria exist
+					limit = {
+						country_exists = BUL
+					}
+					BUL = {
+						transfer_state = 803
+						transfer_state = 106
+					}
+				}
+				else = { # if bulgaria no exist give to italy
+					ITA = {
+						transfer_state = 803
+						transfer_state = 106
+					}
+				}
+				ENG = {
+					YUG = {
+						pow_before_annex = yes
+					}
+				}
+				ENG = { annex_country = { target = YUG transfer_troops = no } }
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+				}
+				set_equipment_fraction = 0.5
+			}
+			
+		}
+	}
+
+	on_capitulation_immediate = {
+		# finland
+		effect = {
+			if = {
+				limit = {
+					original_tag = FIN
+					FROM = { is_in_faction_with = SOV }
+					date < 1941.5.1
+				}
+				SOV = {
+					white_peace = FIN
+				}
+				MON = {
+					white_peace = FIN
+				}
+				SOV = {
+					transfer_state = 146
+					transfer_state = 147
+				}
+			}
+		}	
+	}
+	
+	on_capitulation = {
+		## Capitulation of China
+		# Japan and Manchu split China
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+					FROM = { is_in_faction_with = JAP }
+					has_global_flag = JAP_split_china
+				}
+				JAP = {
+					white_peace = CHI
+					remove_ideas = JAP_no_equipment_capture
+				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
+				MAN = {
+					transfer_state = 616 #Ningxia
+					transfer_state = 621 #Suiyuan
+					transfer_state = 756 #Jinquan
+					transfer_state = 746 #Ordos
+				}
+				JAP = {
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					add_named_threat = {
+						threat = 30
+						name = JAP_threat_treaty_of_nanjing
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = JAP
+							is_controlled_by = MAN
+							is_controlled_by = SIA
+						}
+						is_core_of = CHI
+						is_on_continent = asia
+					}
+					set_compliance = 80
+				}
+				JAP = {
+					set_global_flag = JAP_china_has_capped
+				}
+				CHI = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				if = {
+					limit = {
+						NOT = { JAP = { has_idea = peace_training } }
+					}
+					JAP = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SIA = { has_idea = peace_training } }
+					}
+					SIA = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MAN = { has_idea = peace_training } }
+					}
+					MAN = { add_ideas = peace_training }
+				}
+			}
+		}		
+		# Japan Takes all of China
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+					FROM = { is_in_faction_with = JAP }
+					has_global_flag = JAP_take_china
+				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
+				JAP = {
+					remove_ideas = JAP_no_equipment_capture
+					white_peace = CHI
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					add_named_threat = {
+						threat = 30
+						name = JAP_threat_treaty_of_nanjing
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = JAP
+							is_controlled_by = MAN
+							is_controlled_by = SIA
+						}
+						is_core_of = CHI
+						is_on_continent = asia
+					}
+					set_compliance = 80
+				}
+				JAP = {
+					set_global_flag = JAP_china_has_capped
+				}
+				CHI = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				if = {
+					limit = {
+						NOT = { JAP = { has_idea = peace_training } }
+					}
+					JAP = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SIA = { has_idea = peace_training } }
+					}
+					SIA = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MAN = { has_idea = peace_training } }
+					}
+					MAN = { add_ideas = peace_training }
+				}
+			}
+		}
+		# Manchu takes all of China
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+					FROM = { is_in_faction_with = JAP }
+					has_global_flag = JAP_give_china
+				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
+				MAN = {
+					white_peace = CHI
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					transfer_state = 609
+				}
+				JAP = {
+					remove_ideas = JAP_no_equipment_capture
+					add_named_threat = {
+						threat = 30
+						name = JAP_threat_treaty_of_nanjing
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = JAP
+							is_controlled_by = MAN
+							is_controlled_by = SIA
+						}
+						is_core_of = CHI
+						is_on_continent = asia
+					}
+					set_compliance = 80
+				}
+				JAP = {
+					set_global_flag = JAP_china_has_capped
+				}
+				CHI = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				if = {
+					limit = {
+						NOT = { JAP = { has_idea = peace_training } }
+					}
+					JAP = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SIA = { has_idea = peace_training } }
+					}
+					SIA = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MAN = { has_idea = peace_training } }
+					}
+					MAN = { add_ideas = peace_training }
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					original_tag = ETH
+					FROM = { tag = ITA }
+					has_government = neutrality
+					has_global_flag = NO_ASIA
+				}
+				ITA = {
+					activate_mission = demilitarize_ethiopia
+
+				}
+			}
+		}
+		
+		# Italy takes Ethopia
+		effect = { 
+			if = {
+				limit = {
+					original_tag = ETH
+					FROM = { tag = ITA }
+				}
+				ITA = {
+					annex_country = {
+						target = ETH
+						transfer_troops = no
+					}
+					add_named_threat = { threat = -0.3 name = ITA_treaty_of_addis }
+				}
+				ETH = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				if = {
+					limit = {
+						NOT = { ITA= { has_idea = peace_training } }
+					}
+					ITA = { add_ideas = peace_training }
+				}
+			}
+		}
+
+		# Spain takes Portugal
+		effect = { 
+			if = {
+				limit = {
+					original_tag = POR
+					FROM = { original_tag = SPR }
+					# SPR = { NOT = { has_war_with = ENG } }
+				}
+				SPR = {
+					annex_country = {
+						target = POR
+						transfer_troops = no
+					}
+					add_named_threat = { threat = 5.6 name = SPA_treaty_of_lisbon }
+				}
+				if = {
+					limit = {
+						NOT = { SPA = { has_idea = peace_training } }
+					}
+					SPR = { add_ideas = peace_training }
+				}
+			}
+		}
+
+		# Allies cap japan
+		effect = { 
+			if = {
+				limit = {
+					original_tag = JAP
+					FROM = { OR = { is_in_faction_with = USA is_in_faction_with = ENG } }
+				}
+				# white_peace = JAP
+				# white_peace = MAN
+				USA = {
+					every_state = {
+						limit = {
+							is_core_of = CHI
+						}
+						USA = { transfer_state = PREV }
+					}
+					transfer_state = 527
+					transfer_state = 525
+					every_state = {
+						limit = {
+							is_core_of = JAP
+						}
+						USA = { transfer_state = PREV }
+					}
+					transfer_state = 537
+					transfer_state = 646
+					transfer_state = 647
+					transfer_state = 684
+					transfer_state = 633
+					transfer_state = 648
+				}
+				if = {
+					limit = {
+						country_exists = RAJ
+					}
+					RAJ = {
+						transfer_state = 671
+						transfer_state = 670
+						transfer_state = 286
+						transfer_state = 741
+						transfer_state = 289
+						transfer_state = 724
+						transfer_state = 868
+						transfer_state = 869
+					}
+				}
+				else = {
+					USA = {
+						transfer_state = 671
+						transfer_state = 670
+						transfer_state = 286
+						transfer_state = 741
+						transfer_state = 289
+						transfer_state = 724
+						transfer_state = 868
+						transfer_state = 869
+					}
+				}
+				USA = { set_global_flag = JAP_has_capped }
+				USA = {
+					add_named_threat = { threat = 40 name = "Treaty of Tokyo" }
+				}
+				USA = {
+					country_event = usa.71
+				}
+				JAP = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+			}
+		}
+
+		# Axis cap soviets
+		effect = { 
+			if = {
+				limit = {
+					original_tag = SOV
+					FROM = { is_in_faction_with = GER }
+				}
+				if = {
+					limit = {
+						country_exists = FIN
+					}
+					FIN = {
+						annex_country = {
+							target = MON
+							transfer_troops = no
+						}
+						transfer_state = 213
+						transfer_state = 215
+						transfer_state = 216
+						transfer_state = 195
+						transfer_state = 722
+						transfer_state = 147
+						transfer_state = 146
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ROM
+					}
+					ROM = {
+						transfer_state = 766
+						transfer_state = 78
+						transfer_state = 80
+					}
+				}
+				GER = {
+					annex_country = {
+						target = SOV
+						transfer_troops = no
+					}
+					add_named_threat = { threat = 40 name = "Treaty of Moscow" }
+				}
+			}
+		}
+
+		# Iran caps to soviet before iran invasion focus
+		effect = { 
+			if = {
+				limit = {
+					original_tag = PER
+					FROM = { is_in_faction_with = SOV }
+					SOV = { NOT = { has_completed_focus = SOV_preemptive_invasion_of_iran } }
+				}
+				SOV = {
+					annex_country = {
+						target = PER
+						transfer_troops = no
+					}
+					add_named_threat = { threat = 20 name = "Treaty of Tehran" }
+				}
+				set_global_flag = SOV_transfer_iran_2_mongolia_decision
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+			}
+		}	
+
+		# Allies/comintern cap germany
+		effect = { 
+			# status quo
+			if = {
+				limit = {
+					original_tag = GER
+					FROM = { OR = { is_in_faction_with = USA is_in_faction_with = ENG is_in_faction_with = SOV } }
+					16 = { OR = { is_controlled_by = USA is_controlled_by = ENG is_controlled_by = SAF is_controlled_by = RAJ is_controlled_by = FRA is_controlled_by = HOL is_controlled_by = AST is_controlled_by = NZL is_controlled_by = CAN is_controlled_by = IRE is_controlled_by = MEX is_controlled_by = BRA } }
+					10 = { OR = { is_controlled_by = SOV is_controlled_by = MON is_controlled_by = MEX } }
+					NOT = { has_global_flag = CMN_comintern_victory }
+					NOT = { has_global_flag = COM_allies_victory }
+				}
+				ENG = {
+					set_faction_name = "NATO"
+				}
+				set_global_flag = COMCMN_status_quo
+				white_peace = GER
+				white_peace = ITA
+				white_peace = HUN
+				white_peace = ROM
+				white_peace = BUL
+				white_peace = YUG
+				white_peace = VIC
+        		white_peace = FIN
+				white_peace = SPR
+				remove_from_faction = HUN
+				remove_from_faction = ROM
+				remove_from_faction = BUL
+				remove_from_faction = ITA
+				remove_from_faction = YUG
+				remove_from_faction = FIN
+				remove_from_faction = VIC
+				remove_from_faction = FIN
+				USA = {
+					add_named_threat = { threat = 60 name = "Treaty of Berlin" }
+					annex_country = {
+						target = GER
+						transfer_troops = no
+					}
+				}
+				SOV = {
+					set_autonomy = {
+						target = HUN
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = ROM
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = BUL
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = YUG
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = ALB
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = PER
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = POL
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = CZE
+						autonomy_state = autonomy_integrated_puppet
+					}
+					transfer_state = 62
+					transfer_state = 61
+					transfer_state = 64
+					transfer_state = 65
+					transfer_state = 60
+				}
+				FRA = {
+					every_state = {
+						limit = {
+							is_core_of = FRA
+						}
+						FRA = { transfer_state = PREV }
+					}
+					annex_country = {
+						target = VIC
+						transfer_troops = no
+					}
+					transfer_state = 42
+					transfer_state = 50
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 699
+					transfer_state = 783
+					transfer_state = 290
+				}
+				ENG = {
+					transfer_state = 58
+					transfer_state = 59
+					transfer_state = 56
+					transfer_state = 57
+					transfer_state = 51
+					transfer_state = 450
+					transfer_state = 663
+					transfer_state = 451
+					transfer_state = 164
+					transfer_state = 449
+					transfer_state = 662
+					transfer_state = 669
+					transfer_state = 290
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 909
+					set_autonomy = {
+						target = ITA
+						autonomy_state = autonomy_puppet
+					}
+				}
+				POL = {
+					every_state = {
+						limit = {
+							is_core_of = POL
+						}
+						POL = { transfer_state = PREV }
+					}
+					transfer_state = 63
+					transfer_state = 5
+					transfer_state = 68
+					transfer_state = 66
+					transfer_state = 67
+					transfer_state = 85
+					transfer_state = 807
+					transfer_state = 86
+					transfer_state = 762
+					transfer_state = 97
+					transfer_state = 763
+					SOV = {
+						transfer_state = 763
+						transfer_state = 188
+						transfer_state = 96
+						transfer_state = 784
+						transfer_state = 95
+						transfer_state = 94
+						transfer_state = 93
+						transfer_state = 91
+						transfer_state = 89
+					}
+				}
+				YUG = {
+					every_state = {
+						limit = {
+							is_core_of = YUG
+						}
+						YUG = { transfer_state = PREV }
+					}
+				}
+				AUS = {
+					every_state = {
+						limit = {
+							is_core_of = AUS
+						}
+						AUS = { transfer_state = PREV }
+					}
+					ITA = { transfer_state = 39 }
+				}
+				CZE = {
+					every_state = {
+						limit = {
+							is_core_of = CZE
+						}
+						CZE = { transfer_state = PREV }
+					}
+					SOV = {
+						transfer_state = 73
+					}
+				}
+				HOL = {
+					every_state = {
+						limit = {
+							is_core_of = HOL
+						}
+						HOL = { transfer_state = PREV }
+					}
+				}
+				ALB = {
+					every_state = {
+						limit = {
+							is_core_of = ALB
+						}
+						ALB = { transfer_state = PREV }
+					}
+				}
+				BEL = {
+					every_state = {
+						limit = {
+							is_core_of = BEL
+						}
+						BEL = { transfer_state = PREV }
+					}
+				}
+				GRE = {
+					every_state = {
+						limit = {
+							is_core_of = GRE
+						}
+						GRE = { transfer_state = PREV }
+					}
+				}
+				ROM = {
+					every_state = {
+						limit = {
+							is_core_of = ROM
+						}
+						ROM = { transfer_state = PREV }
+					}
+					SOV = {
+						transfer_state = 80
+						transfer_state = 78
+						transfer_state = 766
+					}
+				}
+				PER = {
+					every_state = {
+						limit = {
+							is_core_of = PER
+						}
+						PER = { transfer_state = PREV }
+					}
+				}
+				FIN = {
+					every_state = {
+						limit = {
+							is_core_of = FIN
+						}
+						FIN = { transfer_state = PREV }
+					}
+					SOV = {
+						transfer_state = 722
+						transfer_state = 147
+						transfer_state = 146
+					}
+				}
+				POR = {
+					every_state = {
+						limit = {
+							is_core_of = POR
+						}
+						POR = { transfer_state = PREV }
+					}
+				}
+				ETH = {
+					every_state = {
+						limit = {
+							is_core_of = ETH
+						}
+						ETH = { transfer_state = PREV }
+					}
+					transfer_state = 559
+					transfer_state = 550
+				}
+			}
+
+			# comintern decisive victory
+			else_if = {
+				limit = {
+					original_tag = GER
+					FROM = { OR = { is_in_faction_with = USA is_in_faction_with = ENG is_in_faction_with = SOV } }
+					16 = { NOT = { OR = { is_controlled_by = USA is_controlled_by = ENG is_controlled_by = SAF is_controlled_by = RAJ is_controlled_by = FRA is_controlled_by = HOL is_controlled_by = AST is_controlled_by = NZL is_controlled_by = CAN is_controlled_by = IRE is_controlled_by = MEX is_controlled_by = BRA } } }
+					10 = { OR = { is_controlled_by = SOV is_controlled_by = MON is_controlled_by = MEX } }
+				}
+				ENG = {
+					set_faction_name = "NATO"
+				}
+				set_global_flag = CMN_comintern_victory
+				white_peace = GER
+				white_peace = ITA
+				white_peace = HUN
+				white_peace = ROM
+				white_peace = BUL
+				white_peace = YUG
+				white_peace = VIC
+				white_peace = FIN
+				white_peace = SPR
+				SOV = {
+					add_named_threat = { threat = 60 name = "Treaty of Berlin" }
+					annex_country = {
+						target = GER
+						transfer_troops = no
+					}
+					annex_country = {
+						target = FIN
+						transfer_troops = no
+					}
+					set_autonomy = {
+						target = ITA
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = HUN
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = ROM
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = BUL
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = FRA
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = HOL
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = YUG
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = ALB
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = GRE
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = FIN
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = BEL
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = POL
+						autonomy_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = CZE
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+				FRA = {
+					annex_country = {
+						target = VIC
+						transfer_troops = no
+					}
+					every_state = {
+						limit = {
+							is_core_of = FRA
+						}
+						FRA = { transfer_state = PREV }
+					}
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 699
+					transfer_state = 783
+					transfer_state = 290
+				}
+				ENG = {
+					transfer_state = 450
+					transfer_state = 663
+					transfer_state = 451
+					transfer_state = 164
+					transfer_state = 449
+					transfer_state = 662
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 699
+					transfer_state = 290
+				}
+				POL = {
+					transfer_state = 63
+					transfer_state = 5
+					transfer_state = 68
+					transfer_state = 66
+					transfer_state = 67
+					transfer_state = 85
+					transfer_state = 807
+					transfer_state = 86
+					transfer_state = 762
+					transfer_state = 97
+					transfer_state = 98
+					transfer_state = 87
+					transfer_state = 10
+					transfer_state = 92
+					transfer_state = 90
+					transfer_state = 88
+				}
+				YUG = {
+					every_state = {
+						limit = {
+							is_core_of = YUG
+						}
+						YUG = { transfer_state = PREV }
+					}
+				}
+				AUS = {
+					every_state = {
+						limit = {
+							is_core_of = AUS
+						}
+						AUS = { transfer_state = PREV }
+					}
+					ITA = { transfer_state = 39 }
+				}
+				CZE = {
+					every_state = {
+						limit = {
+							is_core_of = CZE
+						}
+						CZE = { transfer_state = PREV }
+					}
+				}
+				HOL = {
+					every_state = {
+						limit = {
+							is_core_of = HOL
+						}
+						HOL = { transfer_state = PREV }
+					}
+				}
+				BEL = {
+					every_state = {
+						limit = {
+							is_core_of = BEL
+						}
+						BEL = { transfer_state = PREV }
+					}
+				}
+				GRE = {
+					every_state = {
+						limit = {
+							is_core_of = GRE
+						}
+						GRE = { transfer_state = PREV }
+					}
+				}
+				ROM = {
+					every_state = {
+						limit = {
+							is_core_of = ROM
+						}
+						ROM = { transfer_state = PREV }
+					}
+					SOV = {
+						transfer_state = 80
+						transfer_state = 78
+						transfer_state = 766
+						transfer_state = 73
+					}
+					BUL = {
+						transfer_state = 77
+					}
+				}
+				POR = {
+					every_state = {
+						limit = {
+							is_core_of = POR
+						}
+						POR = { transfer_state = PREV }
+					}
+				}
+				ALB = {
+					every_state = {
+						limit = {
+							is_core_of = ALB
+						}
+						ALB = { transfer_state = PREV }
+					}
+				}
+				ETH = {
+					every_state = {
+						limit = {
+							is_core_of = ETH
+						}
+						ETH = { transfer_state = PREV }
+					}
+					transfer_state = 559
+					transfer_state = 550
+				}
+			}
+
+			# allies decisive victory
+			else_if = {
+				limit = {
+					original_tag = GER
+					FROM = { OR = { is_in_faction_with = USA is_in_faction_with = ENG is_in_faction_with = SOV } }
+					16 = { OR = { is_controlled_by = USA is_controlled_by = ENG is_controlled_by = SAF is_controlled_by = RAJ is_controlled_by = FRA is_controlled_by = HOL is_controlled_by = AST is_controlled_by = NZL is_controlled_by = CAN is_controlled_by = IRE is_controlled_by = MEX is_controlled_by = BRA } }
+					10 = { NOT = { OR = { is_controlled_by = SOV is_controlled_by = MON is_controlled_by = MEX } } }
+					NOT = { has_global_flag = CMN_comintern_victory }
+					NOT = { has_global_flag = COMCMN_status_quo }
+				}
+				ENG = {
+					set_faction_name = "NATO"
+				}
+				set_global_flag = COM_allies_victory
+				white_peace = GER
+				white_peace = ITA
+				white_peace = HUN
+				white_peace = ROM
+				white_peace = BUL
+				white_peace = YUG
+				white_peace = VIC
+				white_peace = FIN
+				white_peace = SPR
+				remove_from_faction = HUN
+				remove_from_faction = ROM
+				remove_from_faction = BUL
+				remove_from_faction = ITA
+				remove_from_faction = YUG
+				remove_from_faction = FIN
+				remove_from_faction = VIC
+				USA = {
+					add_named_threat = { threat = 60 name = "Treaty of Berlin" }
+					annex_country = {
+						target = GER
+						transfer_troops = no
+					}
+				}
+				FRA = {
+					every_state = {
+						limit = {
+							is_core_of = FRA
+						}
+						FRA = { transfer_state = PREV }
+					}
+					annex_country = {
+						target = VIC
+						transfer_troops = no
+					}
+					transfer_state = 42
+					transfer_state = 50
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 699
+					transfer_state = 783
+					transfer_state = 290
+				}
+				ENG = {
+					transfer_state = 449
+					transfer_state = 662
+					transfer_state = 58
+					transfer_state = 59
+					transfer_state = 56
+					transfer_state = 57
+					transfer_state = 51
+					transfer_state = 64
+					transfer_state = 61
+					transfer_state = 62
+					transfer_state = 450
+					transfer_state = 663
+					transfer_state = 451
+					transfer_state = 164
+					transfer_state = 699
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 290
+					transfer_state = 909
+					set_autonomy = {
+						target = ITA
+						autonomy_state = autonomy_puppet
+					}
+				}
+				ITA = {
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				BUL = {
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				POL = {
+					transfer_state = 63
+					transfer_state = 5
+					transfer_state = 68
+					transfer_state = 66
+					transfer_state = 67
+					transfer_state = 85
+					transfer_state = 807
+					transfer_state = 86
+					transfer_state = 762
+					transfer_state = 97
+					transfer_state = 763
+					transfer_state = 98
+					transfer_state = 87
+					transfer_state = 10
+					transfer_state = 92
+					transfer_state = 90
+					transfer_state = 88
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				SOV = {
+					transfer_state = 188
+				}
+				YUG = {
+					every_state = {
+						limit = {
+							is_core_of = YUG
+						}
+						YUG = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				AUS = {
+					every_state = {
+						limit = {
+							is_core_of = AUS
+						}
+						AUS = { transfer_state = PREV }
+					}
+					ITA = { transfer_state = 39 }
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				CZE = {
+					every_state = {
+						limit = {
+							is_core_of = CZE
+						}
+						CZE = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				ALB = {
+					every_state = {
+						limit = {
+							is_core_of = ALB
+						}
+						ALB = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				HOL = {
+					every_state = {
+						limit = {
+							is_core_of = HOL
+						}
+						HOL = { transfer_state = PREV }
+					}
+				}
+				SPR = {
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				BEL = {
+					every_state = {
+						limit = {
+							is_core_of = BEL
+						}
+						BEL = { transfer_state = PREV }
+					}
+				}
+				GRE = {
+					every_state = {
+						limit = {
+							is_core_of = GRE
+						}
+						GRE = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				ROM = {
+					every_state = {
+						limit = {
+							is_core_of = ROM
+						}
+						ROM = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				PER = {
+					every_state = {
+						limit = {
+							is_core_of = PER
+						}
+						PER = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				FIN = {
+					every_state = {
+						limit = {
+							is_core_of = FIN
+						}
+						FIN = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				POR = {
+					every_state = {
+						limit = {
+							is_core_of = POR
+						}
+						POR = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+				ETH = {
+					every_state = {
+						limit = {
+							is_core_of = ETH
+						}
+						ETH = { transfer_state = PREV }
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+					transfer_state = 559
+					transfer_state = 550
+				}
+				HUN = {
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					set_political_party = {
+						ideology = democratic
+						popularity = 100
+					}
+				}
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = JAP
+					FROM = { OR = { tag = INS tag = AST tag = ENG tag = MAL tag = USA } }
+					FROM.FROM = { OR = { is_core_of = MAL is_core_of = INS state = 327 state = 623 state = 624 state = 625 state = 626 state = 627 state = 628 } }
+					JAP = { has_completed_focus = JAP_late_war_intel_focus }
+				}
+				FROM.FROM = {
+                    set_compliance = 60
+                }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 677 }
+				}
+				FROM.FROM = {
+                    if = {
+						limit = {
+							CONTROLLER = {
+								OR = {
+									tag = ENG
+									is_subject_of = ENG
+									is_in_faction_with = ENG
+									tag = SOV
+									is_subject_of = SOV
+									is_in_faction_with = SOV
+								}
+							}
+						}
+						GER = {
+							set_country_flag = GER_start_turkey_allied_embargo_allies_mission
+						}
+					}
+
+					if = {
+						limit = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									is_subject_of = GER
+									is_in_faction_with = GER
+									tag = JAP
+									is_subject_of = JAP
+									is_in_faction_with = JAP
+								}
+							}
+						}
+						GER = {
+							set_country_flag = GER_start_turkey_allied_embargo_axis_mission
+						}
+					}
+                }
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 110 }
+				}
+				FROM.FROM = {
+                    if = {
+						limit = {
+							CONTROLLER = {
+								OR = {
+									tag = ENG
+									is_subject_of = ENG
+									is_in_faction_with = ENG
+									tag = SOV
+									is_subject_of = SOV
+									is_in_faction_with = SOV
+								}
+							}
+						}
+						GER = {
+							set_country_flag = GER_start_sweden_allied_embargo_allies_mission
+						}
+					}
+                }
+
+			}
+		}
+	}
+
+	# on_declare_war = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				OR = {
+	# 					tag = SOV
+	# 					tag = MON
+	# 				}
+	# 				FROM = { tag = PER }
+	# 				# SOV = { NOT = { has_completed_focus = SOV_preemptive_invasion_of_iran } }
+	# 			}
+	# 			SOV = {
+	# 				country_event = soviet.7878
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# on_declare_war = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				OR = {
+	# 					tag = JAP tag = MAN tag = SIA
+	# 				}
+	# 				FROM = { is_in_faction_with = ENG tag = USA }
+	# 			}
+	# 			GER = { set_technology = { africa_hp_off = 1 popup = yes } }
+	# 			ITA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ROM = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HUN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BUL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			CAN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SAF = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			AST = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ENG = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			NZL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			IRE = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			MEX = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BRA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SPR = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HOL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 		}
+	# 	}
+	# }
+
+	# on_daily = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				GER = NOT = { { has_idea = GER_africa_hp } }
+	# 			}
+	# 			GER = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ITA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ROM = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HUN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BUL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			CAN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SAF = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			AST = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ENG = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			NZL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			IRE = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			MEX = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BRA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SPR = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HOL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 		}
+	# 	}
+	# }
+}

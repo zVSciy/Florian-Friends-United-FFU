@@ -1,0 +1,320 @@
+
+mio_cat_all_artillery_at_equipment = {
+	equipment_type = {	
+		dp_artillery_equipment
+		pack_artillery_equipment
+		anti_tank_equipment_squeeze
+		heavy_artillery_equipment
+		heavy_anti_tank_equipment
+		heavy_anti_air_equipment
+		motorized_rocket_equipment
+		rocket_artillery_equipment
+	}	
+}
+
+mio_cat_eq_all_mechanized_variants = {
+	equipment_type = {
+		motorized_rocket_equipment
+		mot_anti_air_equipment
+		mechanized_td_equipment
+		mechanized_spg_equipment
+		mechanized_aa_equipment
+		mechanized_amphibious_chassis
+		mechanized_utility_equipment
+	}	
+}
+
+
+########    ###    ##    ## ##    ##     ######   ########   #######  ##     ## ########   ######  
+   ##      ## ##   ###   ## ##   ##     ##    ##  ##     ## ##     ## ##     ## ##     ## ##    ## 
+   ##     ##   ##  ####  ## ##  ##      ##        ##     ## ##     ## ##     ## ##     ## ##       
+   ##    ##     ## ## ## ## #####       ##   #### ########  ##     ## ##     ## ########   ######  
+   ##    ######### ##  #### ##  ##      ##    ##  ##   ##   ##     ## ##     ## ##              ## 
+   ##    ##     ## ##   ### ##   ##     ##    ##  ##    ##  ##     ## ##     ## ##        ##    ## 
+   ##    ##     ## ##    ## ##    ##     ######   ##     ##  #######   #######  ##         ######  
+
+
+mio_cat_eq_all_light_tank = { #Includes (standalone) Amphibious Tank Chassis
+	equipment_type = {
+		light_tank_chassis
+		amphibious_tank_chassis
+	}	
+}
+
+mio_cat_eq_all_medium_tank = { #Includes Modern Tank Chassis
+	equipment_type = {
+		medium_tank_chassis
+		modern_tank_chassis
+	}
+}
+
+mio_cat_eq_all_heavy_tank = { #Includes Super Heavy Tank Chassis
+	equipment_type = {
+		heavy_tank_chassis
+		# super_heavy_tank_chassis
+	}
+}
+
+mio_cat_eq_all_tank_destroyers = { #Includes Super Heavy Tank Chassis
+	equipment_type = {
+		light_tank_destroyer_chassis 
+		medium_tank_destroyer_chassis
+		heavy_tank_destroyer_chassis
+		# super_heavy_tank_destroyer_chassis
+		modern_tank_destroyer_chassis
+	}
+}
+
+mio_cat_eq_all_tank_variants = {
+	equipment_type = {
+		light_tank_artillery_chassis
+		medium_tank_artillery_chassis
+		medium_tank_artillery_chassis
+		light_tank_destroyer_chassis 
+		medium_tank_destroyer_chassis
+		heavy_tank_destroyer_chassis
+		light_tank_aa_chassis
+		medium_tank_aa_chassis
+		light_assault_gun_chassis
+		medium_assault_gun_chassis
+		heavy_assault_gun_chassis
+		light_tank_amphibious_chassis
+		medium_tank_amphibious_chassis
+		heavy_tank_amphibious_chassis
+	}
+}
+
+ ######  ##     ## #### ########      ######   ########   #######  ##     ## ########   ######  
+##    ## ##     ##  ##  ##     ##    ##    ##  ##     ## ##     ## ##     ## ##     ## ##    ## 
+##       ##     ##  ##  ##     ##    ##        ##     ## ##     ## ##     ## ##     ## ##       
+ ######  #########  ##  ########     ##   #### ########  ##     ## ##     ## ########   ######  
+      ## ##     ##  ##  ##           ##    ##  ##   ##   ##     ## ##     ## ##              ## 
+##    ## ##     ##  ##  ##           ##    ##  ##    ##  ##     ## ##     ## ##        ##    ## 
+ ######  ##     ## #### ##            ######   ##     ##  #######   #######  ##         ######  
+
+mio_cat_eq_all_carrier = { #Includes all CV --- Used due to custom loc capabilities
+	equipment_type = {
+		ship_hull_carrier
+		ship_hull_carrier_super
+	}
+}
+
+mio_cat_eq_all_cruiser = { #Includes all Cruiser (CA, CL, Coastal Defense, Torpedo Cruiser, Panzerschiff) --- Used due to custom loc capabilities
+	equipment_type = {
+		ship_hull_cruiser
+	}
+}
+
+mio_cat_eq_all_destroyer = { #Includes all Destroyers --- Used due to custom loc capabilities (loc for ship_hull_light just sucks)
+	equipment_type = {
+		ship_hull_light
+	}
+}
+
+mio_cat_eq_all_battleship = { #Includes all Battleships (BB, BC, SHBB, Pre-Dreadnought)
+	equipment_type = {
+		ship_hull_heavy
+		ship_hull_super_heavy
+	}
+}
+
+########  ##          ###    ##    ## ########     ######   ########   #######  ##     ## ########   ######  
+##     ## ##         ## ##   ###   ## ##          ##    ##  ##     ## ##     ## ##     ## ##     ## ##    ## 
+##     ## ##        ##   ##  ####  ## ##          ##        ##     ## ##     ## ##     ## ##     ## ##       
+########  ##       ##     ## ## ## ## ######      ##   #### ########  ##     ## ##     ## ########   ######  
+##        ##       ######### ##  #### ##          ##    ##  ##   ##   ##     ## ##     ## ##              ## 
+##        ##       ##     ## ##   ### ##          ##    ##  ##    ##  ##     ## ##     ## ##        ##    ## 
+##        ######## ##     ## ##    ## ########     ######   ##     ##  #######   #######  ##         ######  
+
+mio_cat_eq_all_small_plane = { #Includes all Small Aircraft (Fighter, CAS, Nav) and CV versions --- Used due to custom loc capabilities
+	equipment_type = {
+		# small_plane_airframe
+		# cv_small_plane_airframe
+		# nav_bomber_equipment UNUSED
+
+		# fighter_equipment
+		# cv_fighter_equipment
+		# CAS_equipment
+		# cv_CAS_equipment
+		# cv_nav_bomber_equipment
+		# jet_fighter_equipment
+		# jet_cas_equipment
+		# rocket_interceptor_equipment
+		# suicide_craft_equipment
+		# scout_plane_equipment
+
+		small_plane_airframe
+		small_plane_cas_airframe
+		small_plane_naval_bomber_airframe
+	}
+}
+
+mio_cat_eq_all_medium_plane = { #Includes all Medium Aircraft (Tactical Bomber, Heavy Fighter, Scout) --- Used due to custom loc capabilities
+	equipment_type = {
+		#medium_plane_airframe
+
+		# tac_bomber_equipment
+		# jet_tac_bomber_equipment
+		# heavy_fighter_equipment
+		# flying_boat_equipment
+
+		medium_plane_airframe
+		medium_plane_fighter_airframe
+		medium_plane_scout_plane_airframe
+	}
+}
+
+# mio_cat_eq_all_cas_plane = { #Includes all Medium Aircraft (Tactical Bomber, Heavy Fighter, Scout) --- Used due to custom loc capabilities
+# 	equipment_type = {
+# 		small_plane_cas_airframe
+# 	}
+# }
+
+mio_cat_eq_all_large_plane = { #Includes all Heavy Aircraft (Strategic Bomber, Maritime Patrol) --- Used due to custom loc capabilities
+	equipment_type = {
+		#large_plane_airframe
+
+		# strat_bomber_equipment
+		# jet_strat_bomber_equipment
+		transport_plane_equipment
+		amerikabomber_equipment
+
+		large_plane_airframe
+		large_plane_maritime_patrol_plane_airframe
+	}
+}
+
+mio_cat_eq_all_cv_aircraft = { #Includes all CV aircraft (Fighter, CAS, Nav) --- Needed because plane designer is a gift to us all
+	equipment_type = {
+		#cv_small_plane_airframe
+		# cv_fighter_equipment
+		# cv_CAS_equipment
+		# cv_nav_bomber_equipment
+
+		# small_plane_airframe
+		# small_plane_cas_airframe
+		small_plane_naval_bomber_airframe
+	}
+}
+
+mio_cat_eq_only_light_fighter = { #Includes Small Fighter and CV Fighter (no CAS, no Nav...) --- Needed because plane designer is a gift to us all
+	equipment_type = {
+		# small_plane_airframe_0
+		# small_plane_airframe_1
+		# small_plane_airframe_2
+		# small_plane_airframe_3
+		# small_plane_airframe_4
+		# cv_small_plane_airframe_0
+		# cv_small_plane_airframe_1
+		# cv_small_plane_airframe_2
+		# cv_small_plane_airframe_3
+		# cv_small_plane_airframe_4
+
+		# fighter_equipment_0
+		# fighter_equipment_1
+		# fighter_equipment_2
+		# fighter_equipment_3
+		# fighter_equipment_4
+		# cv_fighter_equipment_0
+		# cv_fighter_equipment_1
+		# cv_fighter_equipment_2
+		# cv_fighter_equipment_3
+		# cv_fighter_equipment_4
+		# jet_fighter_equipment
+		# rocket_interceptor_equipment
+
+		small_plane_airframe_0
+		small_plane_airframe_1
+		small_plane_airframe_2
+		small_plane_airframe_3
+		small_plane_airframe_4
+	}
+}
+
+mio_cat_eq_only_light_fighter_no_cv = { #Includes only Small Fighter (No CV, no CAS, no Nav...) --- Needed because plane designer is a gift to us all
+	equipment_type = {
+		# small_plane_airframe_0
+		# small_plane_airframe_1
+		# small_plane_airframe_2
+		# small_plane_airframe_3
+		# small_plane_airframe_4
+
+		# fighter_equipment_0
+		# fighter_equipment_1
+		# fighter_equipment_2
+		# fighter_equipment_3
+		# fighter_equipment_4
+		# jet_fighter_equipment
+		# rocket_interceptor_equipment
+		# scout_plane_equipment
+
+		small_plane_airframe_0
+		small_plane_airframe_1
+		small_plane_airframe_2
+		small_plane_airframe_3
+		small_plane_airframe_4
+	}
+}
+
+mio_cat_eq_only_tactical_bomber = { #Includes only Tactical Bomber (Heavy Fighter, No Scout...) --- Needed because plane designer is a gift to us all
+	equipment_type = {
+		# medium_plane_airframe_0
+		# medium_plane_airframe_1
+		# medium_plane_airframe_2
+		# medium_plane_airframe_3
+		# medium_plane_airframe_4
+
+		# tac_bomber_equipment_0
+		# tac_bomber_equipment_1
+		# tac_bomber_equipment_2
+		# tac_bomber_equipment_3
+		# tac_bomber_equipment_4
+		# jet_tac_bomber_equipment
+
+		medium_plane_airframe_0
+		medium_plane_airframe_1
+		medium_plane_airframe_2
+		medium_plane_airframe_3
+		medium_plane_airframe_4
+	}
+}
+
+mio_cat_eq_only_strategic_bomber = { #Includes only Strategic Bomber (No Maritime Patrol) --- Needed because plane designer is a gift to us all
+	equipment_type = {
+		# large_plane_airframe_0
+		# large_plane_airframe_1
+		# large_plane_airframe_2
+		# large_plane_airframe_3
+		# large_plane_airframe_4
+
+		# strat_bomber_equipment_1
+		# strat_bomber_equipment_2
+		# strat_bomber_equipment_3
+		# strat_bomber_equipment_4
+		# jet_strat_bomber_equipment
+
+		large_plane_airframe_0
+		large_plane_airframe_1
+		large_plane_airframe_2
+		large_plane_airframe_3
+		large_plane_airframe_4
+		amerikabomber_equipment
+	}
+}
+
+mio_cat_all_cas_and_modules = {
+	equipment_type = {
+		# CAS_equipment
+		# cv_CAS_equipment
+
+		small_plane_cas_airframe
+	}
+}
+
+mio_cat_all_naval_bomber_and_modules = {
+	equipment_type = {
+		# cv_nav_bomber_equipment
+
+		small_plane_naval_bomber_airframe
+	}
+}

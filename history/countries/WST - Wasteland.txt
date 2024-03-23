@@ -1,0 +1,28 @@
+﻿capital = 292
+
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+
+set_research_slots = 1
+set_convoys = 1
+set_stability = 1.0
+set_war_support = 1.0
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 100
+	fascism = 0
+	communism = 0
+}
+
+add_ideas = {
+	stupid_ai
+	neutrality_idea
+	neutrality_idea2
+	wasteland_economy
+}

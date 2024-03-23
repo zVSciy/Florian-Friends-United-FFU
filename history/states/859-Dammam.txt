@@ -1,0 +1,28 @@
+state={
+	id=859
+	name="STATE_859"
+	provinces={
+		1955 10791 10850 12702 
+	}
+	# resources={
+	# 	oil=3.000
+	# }
+	history = {
+		#owner = SAU
+		#add_core_of = SAU
+		owner = WST
+		add_core_of = WST
+		buildings = {
+			# infrastructure = 1
+			# 12702 = {
+			# 	naval_base = 6
+
+			# }
+		}
+	}
+	manpower=1 #440000
+	state_category = rural
+	impassable = yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

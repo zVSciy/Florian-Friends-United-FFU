@@ -1,0 +1,641 @@
+﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
+#!gfx:interface\cic_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
+shared_focus = {
+	id = COM_commonwealth_command
+	icon = GFX_focus_eng_unite_the_anglosphere
+	x = 40
+	y = 0
+	offset = {
+		x = -6
+		y = 0
+		trigger = {
+			tag = CAN
+		}
+	}
+	offset = {
+		x = -4
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = CAN
+		}
+	}
+	offset = {
+		x = -2
+		y = 0
+		trigger = {
+			tag = AST
+		}
+	}
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = AST
+		}
+	}
+	offset = {
+		x = -6
+		y = 0
+		trigger = {
+			tag = NZL
+		}
+	}
+	offset = {
+		x = -4
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = NZL
+		}
+	}
+	offset = {
+		x = -5
+		y = 0
+		trigger = {
+			tag = SAF
+		}
+	}
+	offset = {
+		x = -4
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = SAF
+		}
+	}
+	offset = {
+		x = -7
+		y = 0
+		trigger = {
+			tag = RAJ
+		}
+	}
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = RAJ
+		}
+	}
+	offset = {
+		x = 8
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+	offset = {
+		x = -18
+		y = 0
+		trigger = {
+			tag = IRE
+		}
+	}
+
+	cost = 5
+
+	available = {
+		threat > 0.1
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = COM_continue_the_fight
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	prerequisite = { focus = COM_commonwealth_command }
+	x = -3
+	y = 1
+	relative_position_id = COM_commonwealth_command
+
+	cost = 5
+	
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 3 }
+		add_offsite_building = { type = arms_factory level = 6 }
+		add_legitimacy = 25
+	}
+}
+
+shared_focus = {
+	id = COM_royal_donations
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = COM_continue_the_fight }
+	x = -1
+	y = 1
+	relative_position_id = COM_continue_the_fight
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 6 }
+	}
+}
+
+shared_focus = {
+	id = COM_appeal_to_people
+	icon = GFX_goal_generic_propaganda
+	prerequisite = { focus = COM_royal_donations }
+	x = 0
+	y = 1
+	relative_position_id = COM_royal_donations
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 6 }
+	}
+}
+
+shared_focus = {
+	id = COM_expatriate_volunteers
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = COM_continue_the_fight }
+	x = 1
+	y = 1
+	relative_position_id = COM_continue_the_fight
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_manpower = 50000
+	}
+}
+
+shared_focus = {
+	id = COM_resistance_contacts
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COM_expatriate_volunteers }
+	x = 0
+	y = 1
+	relative_position_id = COM_expatriate_volunteers
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_rebels_idea
+	}
+}
+
+shared_focus = {
+	id = COM_reclaim_homeland
+	icon = GFX_focus_prc_infiltration
+	prerequisite = { focus = COM_resistance_contacts }
+	prerequisite = { focus = COM_appeal_to_people }
+	x = -1
+	y = 1
+	relative_position_id = COM_resistance_contacts
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = COM_national_uprising_idea
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_armed_forces_development
+	icon = GFX_focus_generic_manpower
+	prerequisite = { focus = COM_commonwealth_command }
+	x = 3
+	y = 1
+	relative_position_id = COM_commonwealth_command
+
+	cost = 5
+
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		army_experience = 50
+		air_experience = 50
+		navy_experience = 50
+	}
+}
+
+shared_focus = {
+	id = COM_invite_british_experts
+	icon = GFX_focus_chi_british_cooperation
+	prerequisite = { focus = COM_armed_forces_development }
+	x = -2
+	y = 1
+	relative_position_id = COM_armed_forces_development
+
+	cost = 5
+
+	allow_branch = {
+		NOT = {
+			tag = ENG
+		}
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_british_experts_idea
+	}
+}
+
+shared_focus = {
+	id = COM_employ_gloucestershire_diesel_factory
+	icon = GFX_goal_generic_army_tanks
+	prerequisite = { focus = COM_invite_british_experts }
+	x = -1
+	y = 1
+	relative_position_id = COM_invite_british_experts
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			# custom_effect_tooltip = available_mio_tt
+			# show_mio_tooltip = COM_gloucestershire_diesel_factory_organization
+			mio:ENG_COM_gloucestershire_diesel_factory_organization = {
+				add_mio_size = 2
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_gloucestershire_diesel_factory
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_Leyland
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_employ_vauxhall
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = COM_invite_british_experts }
+	x = 1
+	y = 1
+	relative_position_id = COM_invite_british_experts
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			# custom_effect_tooltip = available_mio_tt
+			# show_mio_tooltip = COM_vauxhall_organization
+			mio:ENG_vauxhall_organization = {
+				add_mio_size = 2
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_vauxhall
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_churchillgrad
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_contract_enfield
+	icon = GFX_focus_focus_fra_maquis
+	prerequisite = { focus = COM_invite_british_experts }
+	x = 0
+	y = 2
+	relative_position_id = COM_invite_british_experts
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			# custom_effect_tooltip = available_mio_tt
+			# show_mio_tooltip = COM_rsaf_enfield_organization
+			mio:COM_rsaf_enfield_organization = {
+				add_mio_size = 2
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_rsaf_enfield
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_mission_to_usa
+	icon = GFX_focus_chi_mission_to_the_us
+	prerequisite = { focus = COM_armed_forces_development }
+	x = 2
+	y = 1
+	relative_position_id = COM_armed_forces_development
+
+	cost = 5
+	
+	available = {
+		if = {
+			limit = {
+				has_global_flag = NO_ASIA
+
+			}
+			date > 1941.1.1
+		}
+		else = {
+			is_in_faction_with = USA
+		}	
+	}
+
+	offset = {
+		x = -2
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_usa_experts_idea
+	}
+}
+
+shared_focus = {
+	id = COM_american_trade_deal
+	icon = GFX_focus_mex_privatisation
+	prerequisite = { focus = COM_mission_to_usa }
+	x = -1
+	y = 1
+	relative_position_id = COM_mission_to_usa
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 4 }
+	}
+}
+
+shared_focus = {
+	id = COM_allied_supreme_command
+	icon = GFX_focus_usa_build_the_pentagon
+	prerequisite = { focus = COM_mission_to_usa }
+	x = 1
+	y = 1
+	relative_position_id = COM_mission_to_usa
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_delegated_command_idea
+		USA = {
+			USA_supreme_command_level_up = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_allied_commander_training
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = COM_allied_supreme_command }
+	x = 1
+	y = 1
+	relative_position_id = COM_allied_supreme_command
+
+	cost = 5
+
+	available = {
+		date > 1942.1.1
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		every_army_leader = {
+			add_attack = 1
+			# add_defense = 1 # maybe later
+			# add_planning = 1
+			add_logistics = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_allied_high_command
+	icon = GFX_focus_eng_chiefs_of_staff_committee
+	prerequisite = { focus = COM_allied_supreme_command }
+	x = -1
+	y = 1
+	relative_position_id = COM_allied_supreme_command
+
+	cost = 5
+
+	available = {
+		date > 1942.1.1
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		custom_effect_tooltip = AHC_WARNING_TT
+		add_political_power = 150
+		add_timed_idea = { idea = AHC_high_command_reorganization days = 120 }
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			AHC_CANADA_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = AST
+			}
+			AHC_AUSTRALIA_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = NZL
+			}
+			AHC_NEW_ZEALAND_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = SAF
+			}
+			AHC_SOUTH_AFRICA_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = RAJ
+			}
+			AHC_BRITISH_RAJ_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			AHC_UK_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = IRE
+			}
+			AHC_IRELAND_HIGH_COMMAND = yes
+		}
+	}
+}

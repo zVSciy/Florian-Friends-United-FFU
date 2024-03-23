@@ -1,0 +1,47 @@
+MAN_handle_bandits = { # haha manhandle.... hah... hah... lol... I'm tired... STOP LOOKING AT ME LIKE THAT!
+	allowed = {
+		original_tag = MAN
+	}
+	enable = {
+		has_idea = MAN_banditry
+	}
+	abort = {
+		NOT = {	has_idea = MAN_banditry }
+	}
+
+	ai_strategy = {
+		type = save_equipment
+		id = infantry_equipment
+		value = 501
+	}
+}
+
+MAN_prio_military_factories = {
+	allowed = { original_tag = MAN }
+	abort_when_not_enabled = yes
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50000
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 500
+	}
+}
+
+MAN_steel_refs = {
+	allowed = { original_tag = MAN }
+	abort_when_not_enabled = yes
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = building_target
+		id = steel_refinery
+		value = 1000
+	}
+}

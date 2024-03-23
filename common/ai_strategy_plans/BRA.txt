@@ -1,0 +1,40 @@
+Brazil_Historical = {
+    enable = {
+        original_tag = BRA
+    }
+
+	ai_national_focuses = {
+        BRA_begin_industrial_centralisation
+        BRA_brazilian_modernisation
+        BRA_private_sector_expansion
+        BRA_agrarian_reform
+        BRA_infrastructure_revitalisation
+        BRA_amazonian_infrastructure
+        BRA_invite_us_investors
+        BRA_american_auto_investments
+        BRA_american_defence_investments
+        BRA_american_experts
+        BRA_american_technical
+        BRA_brazilian_arms_investments
+        BRA_national_defence_state
+        BRA_industrial_innovations
+        BRA_amazonian_rubber
+        BRA_rubber_boom
+        BRA_stay_with_vargas
+        BRA_appease_the_coffee_oligarchs
+        BRA_industrialization
+        BRA_declare_third_republic
+        BRA_new_constitution
+        BRA_great_depression_recovery
+        BRA_full_econonmic_recovery
+        BRA_align_with_america
+        BRA_deterrence
+        BRA_join_the_allies
+        #AI does whatever, army tree or navy
+	}
+
+    ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+}

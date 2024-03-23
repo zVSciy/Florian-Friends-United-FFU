@@ -1,0 +1,50 @@
+POW = {
+	visible= {
+		has_war = yes
+		OR = {
+			NOT = {
+				original_tag = FRA
+			}
+			has_global_flag = fall_of_france
+		} 
+		OR = {
+			NOT = {
+				original_tag = HOL
+			}
+			has_global_flag = fall_of_france
+		} 
+	}
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = USA
+			tag = GER
+			tag = SOV
+			tag = JAP
+			tag = CAN
+			tag = MEX
+			tag = BRA
+			tag = IRE
+			tag = SPR
+			tag = BUL
+			tag = ROM
+			tag = HUN
+			tag = HOL
+			tag = AST
+			tag = NZL
+			tag = RAJ
+			tag = SIA
+			tag = SAF
+			tag = MAN
+			tag = MON
+			tag = VIC
+			tag = YUG
+			tag = FIN
+			tag = ITA
+		}
+	}
+	priority = 500
+	scripted_gui = pow_button
+}
+

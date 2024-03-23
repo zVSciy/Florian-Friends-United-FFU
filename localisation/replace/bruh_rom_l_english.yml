@@ -1,0 +1,49 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  ROM_eastern_refugees:0 "Eastern Refugees"
+  ROM_eastern_refugees_desc:0 "The Romanian people from the Eastern annexed territories want to return to their homeland."
+  ROM_northern_refugees:0 "Northern Refugees"
+  ROM_northern_refugees_desc:0 "The Romanian people from the Northern annexed territories want to return to their homeland."
+  ROM_western_refugees:0 "Western Refugees"
+  ROM_western_refugees_desc:0 "The Romanian people from the Western annexed territories want to return to their homeland."
+  ROM_southern_refugees:0 "Southern Refugees"
+  ROM_southern_refugees_desc:0 "The Romanian people from the Southern annexed territories want to return to their homeland."
+  ROM_national_humiliation:0 "National Humiliation"
+  ROM_national_humiliation_desc:0 "We have been humiliated and our territory has been taken away from us."
+  ROM_expand_greater_romania:0 "Expand Greater Romania"
+  ROM_expand_greater_romania_desc:0 "Romania grows even larger!"
+  ROM_resita_75mm:0 "Develop The Resita 75mm AT Gun"
+  ROM_resita_75mm_desc:0 "A comination of the ZiS-3 Soviet AT gun, the German PaK 40, and our very own 75mm Vickers Model 1936 AA gun, the Reșița Model 1943 has combined the firepower and piercing power of all three designs to create one of the greatest AT guns of the war."
+  ROM_industrialise_transnistria:0 "Industrialise Transnistria"
+  ROM_continue_integration_efforts:0 "Continue Integration Efforts"
+  ROM_finalize_incorporation:0 "Finalize Transnistria's Incorporation"
+  ROM_modern_cruisers:0 "Modern Cruisers"
+
+  #### IDEAS ####
+  ROM_resita75:0 "Resita 75mm AT Gun"
+  ROM_king_carol_emptied_accounts:0 "Seized Monarchy Assets"
+  ROM_national_struggle:0 "National Struggle"
+  ROM_german_trade:0 "German-Romanian Trade Treaty"
+  ROM_undeveloped_export_industry:0 "Undeveloped Oil Export Economy"
+
+  #### TRAITS ####
+  ROM_anti_democrat:0 "Anti-Democrat"
+  #### TOOLTIPS ####
+  ROM_vanatori_de_munte_unit_tt:0 "\nGain a 30 width §YMountaineer§! unit with §Y12 Mountaineer§! and §Y6 Pack Artillery§! battalions.\n"
+  ROM_royal_guards_divisions_tt:0 "Gain a 20 width unit with §Y8 Infantry§! and §Y4 Artillery§! battalions.\n"
+
+  #### FLAGS ####
+  bessarabia_ceded:0 "§YPeacefully§! ceeded §YBessarabia§! to the Soviets"
+  fight_for_bessarabia:0 "§RDenying the Soviet Request will prevent you from doing 'Eastern Refugees' even if you lose the war§!"
+
+  #### DECISIONS ####
+  ROM_reclaim_territory:0 "Reintegrate Bessarabia"
+  ROM_surrender_soviets:0 "Surrender to Soviets"
+  ROM_victory_soviets:0 "Declare Victory Against Soviets"
+  ROM_michaels_coup:0 "Romanian Ceasefire"
+
+  #### STATE MODIFIERS ####
+  ROM_unintegrated_territory:0 "Unintegrated Territory"
+  ROM_ongoing_integration:0 "Ongoing Integration"
+  ROM_transnistria_governorate:0 "Transnistria Governorate"

@@ -1,0 +1,26 @@
+
+state={
+	id=947
+	name="STATE_947" # Suez
+	manpower = 31732
+	state_category = wasteland
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+		add_core_of = WST
+
+	}
+
+	provinces={
+		1155 9947 
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

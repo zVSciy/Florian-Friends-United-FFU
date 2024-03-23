@@ -1,0 +1,30 @@
+﻿l_english:
+
+  #### PROPAGANDA ####
+  AXIS_propaganda_campaigns:0 "Ministry of Propaganda"
+  AXIS_suppression_prop:0 "Suppress Resistance"
+  AXIS_industry_prop:0 "Create Industry Subsidies"
+  AXIS_bombing_prop:0 "Disguise our Industry"
+  AXIS_veterans_prop:0 "Celebrate our Veterans"
+  AXIS_research_prop:0 "Invest in Research"
+  AXIS_construction_prop:0 "Hire Construction Specialists"
+  AXIS_running_prop:0 "Running Propaganda Campaign"
+
+  ### DYNAMIC SPIRITS ###
+  MEDITERRANEAN_AXIS_controls:0 "The State of the Mediterranean"
+  MEDITERRANEAN_AXIS_controls_desc:0 "Bases Mechanic: capturing Allied Mediterranean strong holds and holding our own will provide a buff to production efficiency cap. \n§GFrom West to East§!\n§YGibraltar\nMalta\nCairo\nCyprus\nBaghdad\n\n§GLocations that Axis starts with§!\nSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese" 
+
+  MEDITERRANEAN_AXIS_controls_original:0 "The State of the Mediterranean (Inactive)"
+  MEDITERRANEAN_AXIS_controls_original_desc:0 "Bases Mechanic: capturing Allied Mediterranean strong holds will provide a buff to production efficiency cap.\n§RNOTE: Idea won't update till Italy is at war§!\n§GFrom West to East§!\n§YGibraltar\nMalta\nCairo\nCyprus\nBaghdad\n\n§GLocations that Axis starts with§!\nSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese" 
+  
+  MEDITERRANEAN_ALLIES_controls:0 "The State of the Mediterranean"
+  MEDITERRANEAN_ALLIES_controls_desc:0 "Bases Mechanic: capturing Mediterranean strong holds and holding our own will provide a buff to production efficiency cap.\n§GFrom West to East§!\n§YSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese\n\n§GLocations that Allies starts with§!\nGibraltar\nMalta\nCairo\nCyprus\nBaghdad"
+  
+  MEDITERRANEAN_ALLIES_controls_original:0 "The State of the Mediterranean"
+  MEDITERRANEAN_ALLIES_controls_original_desc:0 "Bases Mechanic: capturing Mediterranean strong holds and holding our own will provide a buff to production efficiency cap.\n§RNOTE: Idea won't update till UK is at war§!\n§GFrom West to East§!\n§YSardinia\nTunisia\nTripoli\nBenghasi\nDodecanese\n\n§GLocations that Allies starts with§!\nGibraltar\nMalta\nCairo\nCyprus\nBaghdad"
+
+  AFRICA_COMMONWEALTH_controls_axis_original:0 "The State of the Mediterranean (Barbarossa)"
+  AFRICA_COMMONWEALTH_controls_axis_original_desc:0 "Bases Mechanic: Losing North Africa or gaining points will grant a bonus against the Soviets.\n§GFrom West to East§!\n§YCasablanca\nGilbraltar\nTunis\nSardinia\nMalta\nSicily\nNaples\nTripoli\nBenghazi\nTobruk\nEl-Alamein\nAlexanderia\nCairo\nCyprus\nAswan\nIsrael" 
+
+  AFRICA_COMMONWEALTH_controls_axis:0 "The State of the Mediterranean (Barbarossa)"
+  AFRICA_COMMONWEALTH_controls_axis_desc:0 "Bases Mechanic: Losing North Africa or gaining points will grant a bonus against the Soviets.\n§GFrom West to East§!\n§YCasablanca\nGilbraltar\nTunis\nSardinia\nMalta\nSicily\nNaples\nTripoli\nBenghazi\nTobruk\nEl-Alamein\nAlexanderia\nCairo\nCyprus\nAswan\nIsrael" 

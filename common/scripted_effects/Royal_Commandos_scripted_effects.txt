@@ -1,0 +1,65 @@
+Royal_Commandos_division_standard = {
+	set_country_flag = Royal_Commandos_division_standard
+	division_template = {
+	name = "Royal Commandos" 		# 1st, 2nd Marine Brigades, precursors to 1st, 2nd USMC Divisions
+
+	division_names_group = ENG_MAR_01
+	is_locked = no
+	force_allow_recruiting = yes
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+		
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+		logistics_company  = { x = 0 y = 3 }
+		Royal_Commandos_hq_company = { x = 1 y = 0 }
+	}
+	priority = 2
+	division_cap = 0 
+	}
+}
+Royal_Commandos_increase = { 
+	custom_effect_tooltip = Royal_Commandos_increase_tt
+	hidden_effect = {
+		add_to_variable = { Royal_Commandos_division_cap = Royal_Commandos_increase }
+		set_division_template_cap = { 
+			division_template = "Royal Commandos" 
+			division_cap = Royal_Commandos_division_cap
+		}
+	}
+}
+
+Royal_Commandos_increase_double = { 
+	custom_effect_tooltip = Royal_Commandos_increase_double_tt
+	hidden_effect = {
+		add_to_variable = { Royal_Commandos_division_cap = Royal_Commandos_increase_double }
+		set_division_template_cap = { 
+			division_template = "Royal Commandos" 
+			division_cap = Royal_Commandos_division_cap
+		}
+	}
+}

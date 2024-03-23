@@ -1,0 +1,32 @@
+ai_historical_focus_list_NOR = {
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		production_effort
+		construction_effort_2
+		production_effort_2
+		infrastructure_effort
+		production_effort_3
+		construction_effort_3
+		infrastructure_effort_2
+		naval_effort
+		aviation_effort
+		fighter_focus
+		aviation_effort_2
+	}
+}
+
+ai_focus_NOR = {
+	research = {
+		cat_medium_armor = -25.0 
+		cat_heavy_armor = -55.0
+		land_doctrine = 100.0
+		motorized_equipment = 2.0
+		light_fighter = -10.0
+		cat_heavy_fighter = -30.0
+		tactical_bomber = -15.0
+		cat_strategic_bomber = -30.0
+		naval_bomber = -10.0
+		cas_bomber = -10.0
+	}
+}

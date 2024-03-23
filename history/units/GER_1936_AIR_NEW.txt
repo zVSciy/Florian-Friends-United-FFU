@@ -1,0 +1,207 @@
+air_wings = {
+	64 = {
+		small_plane_airframe_1 = {
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 D"
+		}
+		name = "1st Airwing"
+		start_experience_factor = 1
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="fighter_genius"
+			name="Erich"
+			surname="Hartmann"
+			callsign="Bubi"
+			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+	}
+	64 = {
+		small_plane_airframe_1 = {
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 D"
+		}
+		name = "2nd Airwing"
+		start_experience_factor = 1
+	}
+	64 = {
+		small_plane_airframe_1 = {
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 D"
+		}
+		name = "3rd Airwing"
+		start_experience_factor = 1
+	}
+	64 = {
+		small_plane_airframe_1 = {
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 D"
+		}
+		name = "4th Airwing"
+		start_experience_factor = 1
+	}
+	64 = {
+		small_plane_airframe_1 = {
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 D"
+		}
+		name = "5th Airwing"
+		start_experience_factor = 1
+	}
+	64 = {
+		small_plane_airframe_1 = {
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 D"
+		}
+		name = "6th Airwing"
+		start_experience_factor = 1
+	}
+	64 = {
+		small_plane_airframe_1 = {
+			owner = "GER" 
+			amount = 48
+			version_name = "Bf 109 D"
+		}
+		name = "7th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		medium_plane_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "He 111"
+		}
+		name = "8th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		medium_plane_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "He 111"
+		}
+		name = "9th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		medium_plane_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "He 111"
+		}
+		start_experience_factor = 1
+	}
+	64 = { 	
+		medium_plane_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "He 111"
+		}
+		name = "10th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		medium_plane_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "He 111"
+		}
+		name = "11th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		medium_plane_airframe_1 =  {
+			owner = "GER" 
+			amount = 12
+			version_name = "He 111"
+		}
+		name = "12th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		small_plane_cas_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "Ju 87"
+		}
+		name = "13th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		small_plane_cas_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "Ju 87"
+		}
+		name = "14th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		small_plane_cas_airframe_1 =  {
+			owner = "GER" 
+			amount = 12
+			version_name = "Ju 87"
+		}
+		name = "15th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		small_plane_naval_bomber_airframe_1 =  {
+			owner = "GER" 
+			amount = 100
+			version_name = "Do 22"
+		}
+		name = "16th Airwing"
+		start_experience_factor = 1
+	}
+	64 = { 	
+		transport_plane_equipment_1 = {
+			owner = "GER" 
+			amount = 100
+		}
+		name = "17th Airwing"
+	}
+}
+
+# #########################
+# ## STARTING PRODUCTION ##
+# #########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "GER" 
+			version_name = "Bf 109 D"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_cas_airframe_1
+			creator = "GER" 
+			version_name = "Ju 87"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_1
+			creator = "GER" 
+			version_name = "He 111"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

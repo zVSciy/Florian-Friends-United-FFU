@@ -1,0 +1,134 @@
+﻿l_english:
+
+  ### FOCUSES ###
+ VIC_Rebuilding_the_Military:0 "Rebuild the Military"
+ VIC_Establishing_Vichy:0 "Establish the Government"
+ VIC_Accept_Axis_Claims:0 "Accept Axis Claims"
+ VIC_Beginning_of_Reunification:0 "Begin the Reunification"
+ VIC_Restoring_France:0 "Restoring France"
+ VIC_Reduce_Occupation:0 "Reduce Occupation Forces"
+ VIC_Rebuilding_the_navy:0 "Naval Infrastructure"
+ VIC_Fund_the_Navy:0 "Extra Navy Funds"
+ VIC_Finish_Old_Ships:0 "Unearth Old Blueprints"
+ VIC_Army_innovation:0 "Army Innovations"
+ VIC_Shift_the_Prduction:0 "Swords over Shields"
+ VIC_Join_the_Axis_Research:0 "Axis Research"
+ VIC_Axis_Army_Academies:0 "Army Academies"
+ VIC_Installing_Patriotism:0 "Instill Patriotism"
+ VIC_Protection_from_the_air_raids:0 "Prevent Allied Bombing"
+ VIC_Build_up_the_airfields:0 "German Sponsored Airfields"
+ VIC_Protect_the_French_People:0 "Protecting our People"
+ VIC_Civilian_Infrastructure:0 "Civilian Infrastructure"
+ VIC_Rebuilding_France:0 "Rebuild the Nation"
+ VIC_Cave_to_the_Germans:0 "Cave to the Germans"
+ VIC_Reduce_the_costs_of_Occupation:0 "Reduce Occupation Costs"
+ VIC_Defend_Core_Land:0 "Defense Nationale" 
+ VIC_Building_up_the_coastal_defence:0 "Coastal Defense"
+ VIC_Protection_from_the_Sky:0 "Airfield Effort"
+ VIC_Improved_Production_Effort:0 "Wartime Production"
+ VIC_Strengthen_the_Industry:0 "Industrial Investments"
+ VIC_Restructuring_the_Military:0 "Restructure the Military"
+ VIC_Concentrate_on_tanks:0 "Army Modernization"
+ VIC_Produce_our_own_Tanks:0 "Trust in Renault"
+ VIC_Learn_from_the_germans:0 "German Engineering"
+ VIC_Ramp_up_the_Production:0 "Ramp Up Production"
+ VIC_Protect_the_Mainland:0 "Focus on the Mainland"
+ VIC_Prepare_for_the_Eastern_Front:0 "Prepare for the Bolsheviks"
+ VIC_Upgrade_tanks_for_Barb:0 "Winter Preparations"
+ VIC_Better_Protection:0 "National Defense Plans"
+ VIC_Train_production:0 "Repurpose Civilian Trains"
+ VIC_Support_in_Africa:0 "Support the Afrika Korps"
+ VIC_Develop_Desert_Tracks:0 "Learn from Rommel"
+ VIC_Convoys_for_over_seas:0 "Supply the Army"
+ VIC_Convert_Dockyards_for_Civilians:0 "Abandon the Navy"
+ VIC_Adjust_the_Industry:0 "Industrial Adjustment"
+ VIC_End_the_payments:0 "Settle our Debts"
+ VIC_Hand_over_the_Navy:0 "Hand over the Navy"
+ VIC_bugifx:0 "Bugfix"
+ VIC_Join_The_Axis:0 "Join the Axis"
+
+ ### IDEAS ###
+ VIC_converted_dockyards_for_civilians:0 "Deserted Navy"
+ VIC_concentrate_on_tanks:0 "Modern Army"
+ VIC_renault:0 "Groupe Renault"
+ VIC_adjusting_the_industry:0 "Industrial Adjustments"
+ VIC_rebuilding_the_navy:0 "Rebuilding the Navy"
+ VIC_rebuilding_the_navy2:0 "Rebuilding the Navy"
+ VIC_shifted_production:0 "Shifted Production"
+ VIC_ramped_up_prodution:0 "Ramped Up Production"
+ VIC_defensive_generals:0 "Defensive Strategy"
+ VIC_logistics_generals:0 "Logistical Focus"
+ VIC_offensive_generals:0 "On the Offensive"
+ VIC_rebuilding_france:0 "National Rebuilding Initiative"
+ VIC_better_protection:0 "Defense in Depth"
+ VIC_tanks_prepared_for_barb:0 "Winter Equipment"
+ VIC_developed_desert_trucks:0 "Desert Equipment"
+ VIC_improved_production_effort:0 "Production Effort"
+ VIC_civilian_infrastructure_construction:0 "Infrastructure Subsidies"
+ VIC_axis_generals:0 "Officer Corps"
+ VIC_protect_the_french_people:0 "Coastal Bunkers"
+ VIC_installed_patriotism:0 "French Revanchism"
+ VIC_build_up_the_airfields:0 "Airfield Construction"
+ VIC_protection_from_the_air_raids:0 "AA Construction"
+ VIC_defend_core_land:0 "Defense Nationale"
+ 
+ 
+ ### DECISIONS ###
+ 
+ 
+ 
+ ### EVENTS ###
+ vichy.1.t:0 "A Tank Designer Dilemma"
+ vichy.1.d:0 "The Wehrmacht has extended us an offer we can not refuse, and have given us a rare opportunity to learn from either the great works of Ferdinand Porsche, or from the genius machining of Ludwig Sander"
+ vichy.1.a:0 "MAN (Medium Tank & Assault Gun Designer)"
+ vichy.1.b:0 "Porsche (Light Tank Designer)"
+ vichy.2.t:0 "Vichy's Plea for Assistance"
+ vichy.2.d:0 "The Vichy regime, led by Marshal Philippe Petain, has sent a desperate plea for assistance to Germany. In the request, Vichy asks for the return of mainland France, excluding Alsace-Lorraine, to German control, and proposes to become a puppet state of Germany in return. This proposal has created a dilemma for the German government, as it could have significant political and economic consequences for both countries."
+ vichy.2.a:0 "A toast to a prosperous future for us both!"
+ vichy.2.b:0 "Nein! That fool has gotten overconfident!"
+ vichy.3.t:0 "Petain's Deal"
+ vichy.3.d:0 "In response to Germany's acceptance of their previous request, Petain has made a new request for the return of Alsace-Lorraine to French control, with Vichy staying as a puppet of Germany. This proposal has proven most unpopular in the inner circles of the Nazi party, as Alsace-Lorraine is believed to be rightful German territory."
+ vichy.3.a:0 "Do not disappoint us, we expect great things from the French people."
+ vichy.3.b:0 "We have been more than generous enough, Marshal."
+ vichy.4.t:0 "Vichy France Joins the War"
+ vichy.4.d:0 "At 6:00 in the morning, Marshal Philippe Petain has declared that Vichy France has joined the war on the side of the Axis powers"
+ vichy.4.a:0 "Extremely worrying..."
+ 
+ ### TOOLTIP ###
+ vic_hand_over_navy_tt:0 "§RHANDS OVER THE VICHY FLEET TO THE [GER.GetName]§!"
+ vic_puppeted_by_ger_tt:0 "§RYOU WILL BECOME A PUPPET OF THE [GER.GetName] AND JOIN THE WAR§!"
+
+ general_maxime_giroux_tt:0 "§OMaxime Giroux§! §Ybecomes a skill 3 General with 3 attack, 4 defense, 3 planning, 4 logistics, and Panzer Leader, Inflexible Strategist, Old Guard, Urban Assault Specialist and Ambusher§!"
+
+ general_arnaude_archambault_tt:0 "§OArnaude Archambault§! §Ybecomes a skill 3 General with 3 attack, 3 defense, 3 planning, 5 logistics, and Panzer Leader, Winter Specialist, Ranger and Fortress Buster§!"
+
+ general_serge_beauchene_tt:0 "§OSerge Beauchêne§! §Ybecomes a skill 3 General with 4 attack, 3 defense, 3 planning, 4 logistics, and Panzer Leader, Desert Fox, Brilliant Strategist and Trickster§!"
+
+ general_elodie_deforest_tt:0 "§OÉlodie Deforest§! §Ybecomes a skill 4 General with 6 attack, 4 defense, 6 planning, 4 logistics, and Infantry Leader, Trickster, Skilled Staffer and Old Guard§!"
+
+ general_fernand_clement_tt:0 "§OFernand Clément§! §Ybecomes a skill 4 General with 7 attack, 5 defense, 4 planning, 5 logistics, and Infantry Leader, War Hero Inflexible Strategist, Old Guard, Cautious and Organizer§!"
+
+ VIC_ger_engineering:0 "§Y\nGives us access to German tank designers§!"
+ 
+ ### FLAGS ### 
+ VIC_chose_PORSCHE:0 "Chose Porsche"
+ VIC_chose_MAN:0 "Chose MAN"
+ VIC_france_capped:0 "France capitulated"
+ 
+ ### DESIGNERS ###
+ VIC_renault:0 "Renault"
+ VIC_renault_trait:0 "Heavy Tank Designer"
+
+ ### COUNTRY NAME ###
+ VIC_fascism:0 "Vichy France"
+ VIC_fascism_DEF:0 "Vichy France"
+ VIC_fascism_ADJ:0 "Vichy French"
+ VIC_neutrality:0 "Vichy France"
+ VIC_neutrality_DEF:0 "Vichy France"
+ VIC_neutrality_ADJ:0 "Vichy French"
+ VIC_democratic:0 "Vichy France"
+ VIC_democratic_DEF:0 "Vichy France"
+ VIC_democratic_ADJ:0 "Vichy French"
+ VIC_communism:0 "Vichy France"
+ VIC_communsim_DEF:0 "Vichy France"
+ VIC_communsim_ADJ:0 "Vichy French"

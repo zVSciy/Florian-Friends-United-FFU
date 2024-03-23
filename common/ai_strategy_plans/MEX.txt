@@ -1,0 +1,45 @@
+mexico_historical = {
+	name = "Mexican Secular Republic"
+	desc = "The trend towards moderate secularism and the rule of law will be strengthened in Mexico, with the country aligning itself towards America."
+
+	enable = {
+		original_tag = MEX
+	}
+
+	ai_national_focuses = {
+		MEX_focus_plan_of_agua_prieta
+		MEX_focus_jefe_maximo
+		MEX_focus_support_general_cedillo
+		MEX_focus_control_the_army
+		MEX_focus_enforce_the_calles_law
+		MEX_focus_national_bank
+		MEX_focus_liberalize_the_banking_sector
+		MEX_focus_strike_breaking
+		MEX_focus_privatization
+		MEX_focus_agricultural_credit_bank
+		MEX_focus_rural_infrastructure
+		MEX_focus_improved_resource_gain
+		MEX_focus_cientifico_camarilla
+		MEX_focus_northern_steel_plants
+		MEX_focus_improve_steel_plants
+		MEX_focus_caudillo_private_armies
+		MEX_focus_oil_field_expansion
+		MEX_focus_law_on_industrial_promotion
+		MEX_focus_nafinsa
+		MEX_focus_television_innovators
+		MEX_focus_triumph_over_the_cristeros
+		MEX_focus_state_education
+		MEX_focus_nationalize_the_oil_fields
+		MEX_focus_xefo
+		MEX_focus_engineering_school
+		MEX_focus_liberty_and_justice_for_all
+		MEX_focus_oil_revenue_reinvestment
+		MEX_focus_capital_reserves
+		# random army and navy NF after
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+}

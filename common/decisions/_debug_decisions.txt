@@ -1,0 +1,632 @@
+debug_decisions = {
+
+	toggle_debug_decision = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = show_debug_decisions_flag
+				}
+				clr_global_flag = show_debug_decisions_flag
+			}
+			else = {
+				set_global_flag = show_debug_decisions_flag
+			}
+		}	
+	}
+
+	add_research_slot = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_research_slot = 1
+		}	
+	}
+
+	delete_equipmnt = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_equipment_fraction = 0
+		}	
+	}
+
+	offmap_mil_civ_test = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1000
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1000
+			}
+		}	
+	}
+
+	dday_oob = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_oob = "DDAY_WALL_OOB"
+		}	
+	}
+
+	stalin_oob = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_oob = "STALIN_LINE_OOB"
+		}	
+	}
+
+	finland_and_ports_oob = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_oob = "FINLAND_AND_PORTS_OOB"
+		}	
+	}
+
+	add_efficiency_growth_debug = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_ideas = add_production_efficiency
+		}
+	}
+		
+	remove_efficiency_growth_debug = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = add_production_efficiency
+				}
+				remove_ideas = add_production_efficiency
+			}
+			if = {
+				limit = {
+					has_idea = decrease_production_efficiency
+				}
+				remove_ideas = decrease_production_efficiency
+			}	
+		}
+	}
+		
+	decrease_efficiency_growth_debug = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_ideas = decrease_production_efficiency
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	history_entry_debug = {
+
+		icon = generic_research
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			random_country_division = {
+
+				add_history_entry = {
+					key = custom_localized_key
+					subject = "Custom String (not localized)"
+					allow = yes
+				}
+			}
+			
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	create_operative_debug = {
+
+		icon = generic_research
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			create_operative_leader = {
+				bypass_recruitment = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		power_balance = _test_balance
+	}
+
+
+	create_recruitable_operative_not_to_spy_master_debug = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			create_operative_leader = {
+				bypass_recruitment = no
+				available_to_spy_master = no
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	create_recruitable_operative_debug = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			create_operative_leader = {
+				bypass_recruitment = no
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	FRA_capture_operative_debug = {
+		available = {
+			NOT = { TAG = FRA }
+			num_of_operatives > 0
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			random_operative = {
+				limit = {
+					is_operative_captured = no
+				}
+				capture_operative = {
+					captured_by = FRA
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+	}
+
+	FRA_turn_operative_debug = {
+		available = {
+			NOT = { TAG = FRA }
+			num_of_operatives > 0
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			random_operative = {
+				limit = {
+					is_operative_captured = no
+				}
+				set_nationality = FRA
+				operative_leader_event = {
+					id = lar_operative_event.5
+					set_from_from = GER #tells the event which nationality to add
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+	}
+
+	harm_operative_debug = {
+		available = {
+			#num_of_operatives > 0
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			# if = {
+			# 	limit = {
+			# 		has_game_rule = {
+			# 			rule = SWE_ai_behavior
+			# 			option = SWE_DEMOCRATIC_DEM_ALT
+			# 		}
+			# 	}
+
+			# 	add_political_power = 1000
+			# }
+			add_political_power = 1000
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+	}
+
+	add_random_nationality = {
+		available = {
+			num_of_operatives > 0
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			random_country = {
+				limit = {
+					NOT = { tag = FROM }
+				}
+				FROM = {
+					random_operative = {
+						add_nationality = PREV.PREV
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+	}
+
+	slot_machine = { # we pegi 18 now
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		days_remove = 777
+
+		modifier = {
+			operative_slot = 99
+		}
+	}
+
+	decryption_tech_1 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		days_remove = 100
+		modifier = {
+			decryption = 1
+		}
+	}
+
+	decryption_tech_2 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		days_remove = 100
+		modifier = {
+			decryption = 1
+		}
+	}
+
+	decryption_tech_3 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		days_remove = 100
+		modifier = {
+			decryption = 1
+		}
+	}
+
+	encryption_tech_1 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		days_remove = 100
+		modifier = {
+			encryption = 1
+		}
+	}
+
+	encryption_tech_2 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		days_remove = 100
+		modifier = {
+			encryption = 1
+		}
+	}
+
+	encryption_tech_3 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		days_remove = 100
+		modifier = {
+			encryption = 1
+		}
+	}
+
+	# plane_generator_test = {
+	# 	complete_effect = {
+	# 		set_variable = { fighter_buy_amount = 200 }
+	# 		save_event_target_as = license_target
+	# 		bba_get_fighter_GER_effect = yes
+	# 		GER = {
+	# 			bba_create_fighter_license_effect = yes
+	# 		}
+	# 	}
+		
+	# }
+}

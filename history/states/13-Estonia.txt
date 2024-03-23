@@ -1,0 +1,32 @@
+
+state={
+	id=13
+	name="STATE_13"
+	resources={
+		steel=20 # was: 3
+	}
+
+	history={
+		owner = EST
+		victory_points = {
+			3174 1 #Voru
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 6
+			industrial_complex = 7
+			air_base = 2
+		}
+		add_core_of = EST
+		add_extra_state_shared_building_slots = 13
+	}
+
+	provinces={
+		83 308 3074 3174 6381 11291 
+	}
+
+	local_supplies=6.0 
+	manpower=423070
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

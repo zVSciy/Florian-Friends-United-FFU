@@ -1,0 +1,62 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  SPA_abandon_neutrality:0 "Abandon Neutrality"
+  SPA_abandon_neutrality_desc:0 "Spain can't stay neutral, we need to take action!"
+  SPA_unite_iberia:0 "Unite Iberia"
+  SPA_formalize_axis_entry:0 "Formalize Axis Alliance"
+  SPA_formalize_axis_entry_desc:0 "We need to make an alliance with the Axis powers."
+  SPA_maintain_neutrality:0 "Maintain Neutrality"
+  SPA_maintain_neutrality_desc:0 "We cant afford entry into the devastating world war."
+  SPA_iberian_pact:0 "Iberian Pact"
+  SPA_iberian_pact_desc:0 "We must make an Iberian pact with portugal to ensure the safety of the region."
+  SPA_the_spanish_navy:0 "The Spanish Armada"
+  SPA_the_cruiser_plan:0 "The Cruiser Plan"
+  SPA_the_submarine_plan:0 "The Submarine Plan"
+  SPA_italian_naval_guns:0 "Italian Gunnery"
+  SPA_italian_firecontrol:0 "Italian Firecontrol"
+  SPA_italian_naval_designers:0 "Italian Naval Designers"
+  SPA_the_iberian_wall:0 "The Iberian Wall"
+  SPA_garrison_the_iberian_wall:0 "The National Guard"
+
+  #### DECISIONS ####
+  SPA_civil_war:0 "The Start of the Spanish Civil War"
+  SPA_SCW_republican_spirit_dwindling:0 "Republican Spirit Dwindling"
+  SPA_SCW_axis_victory:0 "Spanish Civil War - Axis Victory"
+  SPA_SCW_status_quo:0 "Spanish Civil War - Status Quo"
+  SPA_SCW_comintern_victory:0 "Spanish Civil War - Comintern Victory"
+
+  #### TOOLTIPS ####
+  SPA_has_not_national_recovery_tt:0 "Does not have National Recovery"
+  SPA_recovering_tt:0 "§GThis focus will remove any Recovering From Civil War debuffs§!"
+  SPA_treaty_of_lisbon:0 "Treaty of Lisbon"
+  SPA_save_the_alcazar_mission_tt:0 "§YWhich gives £war_support_modifiericons_texticon 20%  War Support, £stability_texticon  20% Stability, £political_power_texticon  100 Political Power and completes the focus "Caudillo of Spain"§!"
+  italian_designer_tt:0 "§YGives us access to the Italian naval designers§!"
+  italian_mio_tt:0 "§YGives us access to the Italian naval MIOs!"
+  SPR_iberian_wall_tt:0 "Place level 3 §YCoastal Forts§! on the Spanish coast and place level 4 §YCoastal Forts§! on the ports on the Spanish coast"
+
+  admiral_alfonso_jofre_tenorio_tt:0 "§OAlfonso Jofré Tenorio§! §Ybecomes a skill 4 Admiral with 7 attack, 6 defense, 1 maneuvering, 1 coordination, and Superior Tactician, Bold, Spotter and Battleship Adherent§!"
+
+  #### IDEAS ####
+  SPA_neutrality_idea:0 "Iberian Neutrality"
+  POR_neutrality_idea:0 "Not Our War"
+  SPR_subjugate_por:0 "Subjugate Portugal"
+  SPA_axis_coop:0 "Axis Cooperation"
+  SPA_death_before_surrender_rep:0 "Death Before Surrender"
+  SPA_SCW_axis_victory:0 "Spanish Civil War - Total Axis Victory"
+  SPA_the_plan_cruiser:0 "The Cruiser Plan"
+  SPA_the_plan_submarine:0 "The Submarine Plan"
+  SPA_the_plan_imperial:0 "The Heavy Ship Plan"
+  disable_scorched_earth_spain:0 "Disabled Scorched Earth During SCW"
+
+  #### EVENTS ####
+  lar_spain.39.t:0 "[From.GetNameDefCap] Demands North Africa"
+  lar_spain.39.desc:0 "[From.GetAdjective] diplomats have delivered us an ultimatum, demanding we immediately relinquish control over North Africa to [From.GetNameDef]. No doubt they mean to capitalize on the weakness of our current international position..."
+  lar_spain.39.a:0 "We can part with just the coast."
+  lar_spain.39.b:0 "We cannot afford another war. We must accept."
+  lar_spain.39.d:0 "They will not get it so easily!"
+  lar_spain.40.t:1 "[From.GetNameDefCap] Accepts Demands"
+  lar_spain.40.desc:0 "[From.GetNameDefCap] has accepted our demands and their diplomats assure us they are making arrangements for the transfer of control of North Africa forthwith."
+  lar_spain.40.a:0 "Very efficient."
+  lar_spain.400.desc:0 "[From.GetNameDefCap] has accepted some of our demands for the control of the Atlantic coast portion of North Africa."
+  lar_spain.400.a:0 "We had hoped for more."

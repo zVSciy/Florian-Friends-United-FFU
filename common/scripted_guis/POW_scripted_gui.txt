@@ -1,0 +1,109 @@
+scripted_gui = {
+	pow_button = {
+		context_type = decision_category
+		window_name = "pow_calculator"
+		effects = {
+			calculate_click = {
+				clear_variable = ROOT.pow_total
+				every_enemy_country = {
+					limit = {
+						is_playable_country = yes
+						OR = {
+							NOT = {
+								original_tag = FRA 
+							}
+							has_global_flag = fall_of_france 
+						}
+						OR = {
+							NOT = {
+								original_tag = HOL 
+							}
+							has_global_flag = fall_of_france 
+						}
+					}
+
+					set_temp_variable = { casualty1 = 0 }
+
+					while_loop_effect = {
+						limit = {
+							casualties_inflicted_by = {
+								opponent = ROOT
+								thousands > casualty1
+							}
+						}
+						add_to_temp_variable = { casualty1 = 1000 }
+					}
+					if = {
+						limit = {
+							casualties_inflicted_by = {
+								opponent = ROOT
+								thousands < casualty1
+							}
+						}
+						add_to_temp_variable  = { casualty1 = -1000 }
+					}
+					while_loop_effect = {
+						limit = {
+							casualties_inflicted_by = {
+								opponent = ROOT
+								thousands > casualty1
+							}
+						}
+						add_to_temp_variable = { casualty1 = 100 }
+					}
+					if = {
+						limit = {
+							casualties_inflicted_by = {
+								opponent = ROOT
+								thousands < casualty1
+							}
+						}
+						add_to_temp_variable  = { casualty1 = -100 }
+					}
+					while_loop_effect = {
+						limit = {
+							casualties_inflicted_by = {
+								opponent = ROOT
+								thousands > casualty1
+							}
+						}
+						add_to_temp_variable = { casualty1 = 10 }
+					}
+					if = {
+						limit = {
+							casualties_inflicted_by = {
+								opponent = ROOT
+								thousands < casualty1
+							}
+						}
+						add_to_temp_variable  = { casualty1 = -10 }
+					}
+					while_loop_effect = {
+						limit = {
+							casualties_inflicted_by = {
+								opponent = ROOT
+								thousands > casualty1
+							}
+						}
+						add_to_temp_variable = { casualty1 = 1 }
+					}
+
+					multiply_temp_variable = { casualty1 = 0.25 }
+					if = {
+						limit = {
+							check_variable = { getting_annexed = 1 }
+						}
+						add_to_variable= { PREV.pow_other_sources = casualty1 }
+					}
+					else = {
+						add_to_variable = { ROOT.pow_total = casualty1 }
+					}
+				}
+				
+				add_to_variable = { ROOT.pow_total = pow_other_sources  } 
+				set_variable = { ROOT.pow_unassigned = ROOT.pow_total }
+				subtract_from_variable = { ROOT.pow_unassigned = ROOT.pow_assinged_total }
+			}
+		}
+	}
+}

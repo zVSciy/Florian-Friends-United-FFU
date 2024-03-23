@@ -1,0 +1,34 @@
+state = {
+	id = 616
+	name = "STATE_616"
+
+	history = {
+		set_state_flag = USA_split_china_region_state_northern
+		owner = CHI
+		#add_core_of = XSM
+		add_core_of = CHI
+		#add_core_of = PRC
+
+		buildings = {
+			infrastructure = 2
+		}
+
+		victory_points = {
+			8127 2 #Yinchuan
+		}
+
+		1936.1.1.13 = {
+			owner = WST	
+		}
+
+	}
+
+	provinces = {
+		5031 7511 8055 8127 10724 12750 12776 4783 10770 10899 7803 12880 10629 2087 12609 4525 12331
+	}
+	manpower = 2077600
+	buildings_max_level_factor = 1.000
+	state_category = wasteland
+
+	local_supplies = 0.0 
+}

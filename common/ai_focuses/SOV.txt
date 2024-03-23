@@ -1,0 +1,198 @@
+ai_historical_focus_list_SOV = {
+	ai_national_focuses = {
+		SOV_germans_are_coming
+		SOV_frontline_mob
+		SOV_fareast_reserves
+		SOV_defend_moscow
+		SOV_defend_stalingrad
+		SOV_defend_leningrad
+		SOV_coordinate_industry
+		SOV_focus_forced_labour
+		SOV_study_our_losses
+		SOV_keep_commissars_organization
+		SOV_partisan_organisation
+		SOV_order_270
+		SOV_slacken_armor
+		SOV_slacken_inf
+		SOV_the_road_of_life
+		SOV_lessons_of_war
+		SOV_red_army
+		SOV_tankograd
+		SOV_guards
+		SOV_closed_city
+		SOV_technical_assistance
+		SOV_preemptive_invasion_of_iran
+		SOV_persian_corridor
+		SOV_american_tool_deliveries
+		SOV_war_mobilisation
+		SOV_allied_lend_lease
+		SOV_claims_on_baltic
+		SOV_baltic_security
+		SOV_claim_bessarabia
+		SOV_dismantle_stalin_line
+		SOV_secure_new_conquests
+		SOV_socialist_realism
+		SOV_heavy_industry_expansion
+		SOV_auto_industry
+		SOV_plant_expansion
+		SOV_society_urbanisation
+		SOV_the_path_of_marxism_leninism
+		SOV_the_centre
+		SOV_the_stalin_constitution
+		SOV_the_zinovyevite_terrorist_center
+		SOV_the_anti_soviet_trotskyist_center
+		SOV_the_military_conspiracy
+		SOV_the_bloc_of_rights_and_trotskyites
+		SOV_the_workers_dictatorship
+		SOV_behead_the_snake
+		SOV_socialism_in_one_country
+		SOV_secure_the_administration
+		SOV_the_collectivization_process
+		SOV_organization_centralization_discipline
+		SOV_tolkach
+		SOV_steel
+		SOV_petrochemical
+		SOV_expand_the_agitprop
+		SOV_positive_heroism
+		SOV_stakhanovite
+		SOV_rare_metal
+		SOV_aluminium
+		SOV_finish_2_plan
+		SOV_start_3_plan
+		SOV_anti_fascist_diplomacy
+		SOV_pcdi
+		SOV_arms_factories
+		SOV_arms_factories2
+		SOV_ural_factories
+		SOV_ural_factories2
+		SOV_women
+		SOV_seize_assets
+		SOV_railway_3
+		SOV_socialist_science
+		SOV_progress_cult
+		SOV_extra_tech_slot
+		SOV_popov
+		SOV_railway_4
+		SOV_railway_2
+		SOV_siberia_1
+		SOV_railway_5
+		SOV_capitals_of_socialism
+		SOV_deep_operations
+		SOV_tank1
+		SOV_tank2
+		SOV_medium_tank1
+		SOV_medium_tank2
+		SOV_arty1
+		SOV_arty2
+		SOV_arty3
+		SOV_infantry1
+		SOV_infantry2
+		SOV_rehabilitated_army
+		SOV_stavka
+		SOV_soviet_atomic_bomb_project
+	}
+}
+
+
+ai_focus_defense_SOV = {
+	research = {
+		radar_tech = 1.0
+		construction_tech = 1.0
+		infantry_tech = 15.0
+		artillery = 30.0
+	}
+}
+
+ai_focus_aggressive_SOV = {
+	research = {
+		synth_resources = 1.0
+		motorized_equipment = 2.0
+		armor = 2.0
+	}
+}
+
+ai_focus_war_production_SOV = {
+	research = {
+		industry = 20.0
+		# heavy_industry = 2.0
+		construction_tech = 10.0
+		electronics = 10.0
+		computing_tech = 2.0		
+	}
+}
+
+ai_focus_military_equipment_SOV = {
+	research = {
+		infantry_weapons = 60.0
+		infantry_tech = 15.0
+		artillery = 15.0
+		support_tech = 15.0
+	}
+}
+
+ai_focus_military_advancements_SOV = {
+	research = {
+		#armor = 20.0
+		cat_light_armor = 95.0 
+		artillery = 350.0
+		cat_anti_tank = 350.0
+        cat_medium_armor = 300.0
+		cat_heavy_armor = 70.0
+		jet_technology = 5.0
+		land_doctrine = 100.0
+		rocketry = 7.5
+		radar_tech = 3.0
+		encryption_tech = 9
+		decryption_tech = 9
+		synth_resources = 3.0
+		motorized_equipment = 8.0
+		nuclear = 5.0
+		night_vision = 5.0
+	}
+}
+
+ai_focus_peaceful_SOV = {
+	research = {
+		industry = 35.0
+		electronics = 22.0
+		computing_tech = 8.0
+	}
+}
+
+ai_focus_naval_SOV = {
+    research = {
+        naval_equipment = 0
+        naval_doctrine = 0
+        marine_tech = 0
+        dd_tech = 0
+        cl_tech = 0
+        ca_tech = 0
+        bb_tech = 0
+        shbb_tech = 0
+        tp_tech = 0
+        cv_tech = 0
+        ss_tech = 0
+    }
+}
+
+ai_focus_naval_air_SOV = {
+	research = {
+		naval_air = 4.0
+		naval_bomber = 15.0
+	}
+}
+
+ai_focus_aviation_SOV = {
+	research = {
+		air_doctrine = 50.0
+		light_air = 100
+		light_fighter = 100
+		jet_technology = 1.0
+		cas_bomber = 35.0		
+		medium_air = 1.0
+		tactical_bomber = 10.0
+		heavy_air = 1.0
+		air_equipment = 5.0
+		
+	}
+}

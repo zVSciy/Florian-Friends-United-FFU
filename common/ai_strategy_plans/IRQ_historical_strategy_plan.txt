@@ -1,0 +1,29 @@
+IRQ_historical = {
+	name = "IEQ historical plan"
+	desc = "Essentially historical behaviour for IRQ"
+
+	enable = {
+		original_tag = IRQ
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		production_effort
+		construction_effort_2
+		production_effort_2
+		infrastructure_effort
+		production_effort_3
+		construction_effort_3
+		infrastructure_effort_2
+		naval_effort
+		aviation_effort
+		fighter_focus
+		aviation_effort_2
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+}

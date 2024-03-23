@@ -1,0 +1,64 @@
+YUG_historical_plan = {
+	name = "YUG historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = YUG
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_national_focuses = {
+		YUG_western_focus
+		YUG_evolution
+		YUG_establish_the_banovina_of_croatia
+		YUG_industrialization_program
+		YUG_expand_the_mining_industry
+		YUG_develop_civilian_industry
+		YUG_develop_military_industry
+		YUG_rare_minerals_exploitation
+		YUG_steel_refineries
+		YUG_exploit_the_pannonian_deposits
+		YUG_expand_the_university_of_zagreb
+		YUG_integrated_rail_network
+		YUG_improve_light_industry
+		YUG_improve_serbian_rail_network
+		YUG_serbian_steel
+		YUG_develop_slovenian_industry
+		YUG_local_self_management1
+		YUG_expand_the_university_of_belgrad
+		YUG_central_management
+		YUG_expand_the_sarajevo_arsenals
+		YUG_ban_slovene_nationalist_parties
+		YUG_concessions_for_macedonians
+		YUG_attract_axis_capital
+		YUG_invite_german_military_mission
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+	
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

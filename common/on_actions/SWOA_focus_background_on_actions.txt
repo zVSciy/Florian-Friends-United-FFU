@@ -1,0 +1,106 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ENG = {
+				set_variable = { show_background = 1 }
+			}
+			FRA = {
+				set_variable = { show_background = 2 }
+			}
+			GER = {
+				set_variable = { show_background = 3 }
+			}
+			HUN = {
+				set_variable = { show_background = 14 }
+			}
+			ITA = {
+				set_variable = { show_background = 4 }
+			}
+			YUG = {
+				set_variable = { show_background = 21 }
+			}
+			ROM = {
+				set_variable = { show_background = 19 }
+			}
+			BUL = {
+				set_variable = { show_background = 11 }
+			}
+			SPR = {
+				set_variable = { show_background = 20 }
+			}
+			JAP = {
+				set_variable = { show_background = 5 }
+			}
+			MAN = {
+				set_variable = { show_background = 16 }
+			}
+			SIA = {
+				set_variable = { show_background = 5 }
+			}
+			SOV = {
+				set_variable = { show_background = 6 }
+			}
+			MON = {
+				set_variable = { show_background = 6 }
+			}
+			USA = {
+				set_variable = { show_background = 7 }
+			}
+			MEX = {
+				set_variable = { show_background = 17 }
+			}
+			BRA = {
+				set_variable = { show_background = 10 }
+			}
+			CHI = {
+				set_variable = { show_background = 8 }
+			}
+			CAN = {
+				set_variable = { show_background = 9 }
+			}
+			SAF = {
+				set_variable = { show_background = 9 }
+			}
+			RAJ = {
+				set_variable = { show_background = 9 }
+			}
+			AST = {
+				set_variable = { show_background = 9 }
+			}
+			NZL = {
+				set_variable = { show_background = 9 }
+			}
+			IRE = {
+				set_variable = { show_background = 15 }
+			}
+			IRQ = {
+				set_variable = { show_background = 9 }
+			}
+			HOL = {
+				set_variable = { show_background = 13 }
+			}
+			INS = {
+				set_variable = { show_background = 9 }
+			}
+			MAL = {
+				set_variable = { show_background = 9 }
+			}
+			POL = {
+				set_variable = { show_background = 18 }
+			}
+			FIN = {
+				set_variable = { show_background = 12 }
+			}
+			SWE = {
+				set_variable = { show_background = 22 }
+			}
+			NOR = {
+				set_variable = { show_background = 23 }
+			}
+			DEN = {
+				set_variable = { show_background = 24 }
+			}
+		}
+	}
+}
+

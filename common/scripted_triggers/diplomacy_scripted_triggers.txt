@@ -1,0 +1,1245 @@
+#	Triggers to control if diplomatic actions are enabled:
+#		Format:
+#
+#		<diplomatic action tag>_enabled_trigger = {
+#			<trigger contents>
+#		}
+#
+#		ROOT is the country initiating the diplomatic action.
+#		FROM is the recipient or target of the diplomatic action.
+#
+#		Note:  For cleaner tooltips, it is recommended that you use
+#			if triggers within the enable triggers, and a single
+#			custom_trigger_tooltip trigger within each if trigger.
+#
+#		Example: (Germany is prevented from declaring war on the Soviet Union.)
+#
+#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
+#			if = {
+#				limit = {
+#					tag = GER
+#				}
+#				custom_trigger_tooltip = {
+#					tooltip = PREVENT_GER_WAR_ON_SOV
+#					FROM = {
+#						NOT = {
+#							tag = SOV
+#						}
+#					}
+#				}
+#			}
+#		}
+
+# This specifically overrides the rule check as to whether or not you can guarantee other ideologies
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
+	NOT = {
+		has_game_rule = {
+			rule = allow_guarantees
+			option = LIMITED
+		}
+	}
+}
+
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = ALWAYS_FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = LIMITED
+			}
+		}
+		always = yes # Handled by game logic.
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_GUARANTEES_SAME_IDEOLOGY_TOOLTIP
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_GUARANTEES_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			always = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_REVOKE_GUARANTEES_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			OR = {
+				NOT = { has_dlc = "Man the Guns" }
+				NOT = { original_tag = ENG }
+			}
+			OR = {
+				NOT = { has_dlc = "La Resistance" }
+				NOT = { original_tag = SPR }
+			}
+			OR = {
+				NOT = { has_dlc = "Death or Dishonor" }
+				AND = {
+					NOT = { original_tag = ROM }
+					NOT = { original_tag = YUG }
+				}
+			}
+			NOT = { original_tag = SOV }
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			OR = {
+				original_tag = ENG
+				original_tag = SPR
+				original_tag = FRA
+				original_tag = ITA
+				original_tag = MON
+				original_tag = JAP
+			}
+		}
+		always = no
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			OR = {
+				NOT = { has_dlc = "Man the Guns" }
+				NOT = { original_tag = ENG }
+			}
+			OR = {
+				NOT = { has_dlc = "La Resistance" }
+				NOT = { original_tag = SPR }
+		}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			has_dlc = "Man the Guns"
+			original_tag = ENG
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_BRITAIN_TOOLTIP
+			NOT = { FROM = { tag = MLT } }
+			NOT = { FROM = { tag = CYP } }
+			NOT = { FROM = { tag = PAL } }
+			NOT = { FROM = { tag = ISR } }
+			NOT = { FROM = { tag = JOR } }
+			NOT = { FROM = { tag = EGY } }
+			NOT = { FROM = { tag = KUW } }
+			NOT = { FROM = { tag = QAT } }
+			NOT = { FROM = { tag = UAE } }
+			NOT = { FROM = { tag = BLZ } }
+			NOT = { FROM = { tag = BAH } }
+			NOT = { FROM = { tag = JAM } }
+			NOT = { FROM = { tag = TRI } }
+			NOT = { FROM = { tag = BAS } }
+			NOT = { FROM = { tag = GYA } }
+			NOT = { FROM = { tag = SRL } }
+			NOT = { FROM = { tag = MLD } }
+			NOT = { FROM = { tag = FIJ } }
+			NOT = { FROM = { tag = WST } }
+			NOT = { FROM = { tag = SUD } }
+			NOT = { FROM = { tag = SOM } }
+			NOT = { FROM = { tag = UGA } }
+			NOT = { FROM = { tag = KEN } }
+			NOT = { FROM = { tag = TZN } }
+			NOT = { FROM = { tag = ZAM } }
+			NOT = { FROM = { tag = MLW } }
+			NOT = { FROM = { tag = ZIM } }
+			NOT = { FROM = { tag = BOT } }
+			NOT = { FROM = { tag = NGA } }
+			NOT = { FROM = { tag = GHA } }
+			NOT = { FROM = { tag = SIE } }
+			NOT = { FROM = { tag = GAM } }
+		}
+		NOT = { original_tag = SPR }
+		NOT = { original_tag = FRA }
+		NOT = { original_tag = ITA }
+		NOT = { original_tag = JAP }
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			has_dlc = "La Resistance"
+			original_tag = SPR
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_SPAIN_TOOLTIP
+			has_global_flag = scw_over
+		}
+		NOT = { original_tag = SPR }
+		NOT = { original_tag = FRA }
+		NOT = { original_tag = ITA }
+		NOT = { original_tag = JAP }
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_BLOCKED_TOOLTIP
+			always = no
+		}
+		NOT = { original_tag = SPR }
+		NOT = { original_tag = FRA }
+		NOT = { original_tag = ITA }
+		NOT = { original_tag = JAP }
+	}
+}
+DIPLOMACY_MILACC_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		OR = {
+			NOT = { tag = USA }
+			NOT = { has_idea = USA_neutrality_idea }
+		}
+		if = {
+			limit = {
+				FROM = {
+					original_tag = SOV
+				}
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = BRA
+					original_tag = ENG
+					original_tag = FRA
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = AST
+					original_tag = NZL
+					original_tag = IRE
+					original_tag = HOL
+				}
+			}
+			SOV = {
+				has_war = yes
+			}
+			# date > 1941.5.1
+			JAP = {
+				has_capitulated = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		OR = {
+			NOT = { tag = USA }
+			NOT = { has_idea = USA_neutrality_idea }
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = USA
+						original_tag = MEX
+						original_tag = BRA
+						original_tag = ENG
+						original_tag = FRA
+						original_tag = CAN
+						original_tag = SAF
+						original_tag = RAJ
+						original_tag = AST
+						original_tag = NZL
+						original_tag = IRE
+						original_tag = HOL
+					}
+				}
+				original_tag = SOV
+			}
+			SOV = {
+				has_war = yes
+			}
+			# date > 1941.5.1
+			JAP = {
+				has_capitulated = yes
+			}
+		}
+		# USA = { 				
+		# 	AND = {
+		# 		NOT = { has_idea = USA_neutrality_idea }
+		# 		NOT = { has_idea = USA_neutrality_idea_2 }
+		# 		NOT = { has_idea = USA_neutrality_idea_3 } 
+		# 	}	
+		# }
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		OR = {
+			NOT = { tag = USA }
+			NOT = { has_idea = USA_neutrality_idea }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		OR = {
+			NOT = { tag = USA }
+			NOT = { has_idea = USA_neutrality_idea }
+		}
+		# FROM = {
+		# 	tag = USA
+		# 	USA = { 			
+		# 		AND = {
+		# 			NOT = { has_idea = USA_neutrality_idea }
+		# 			NOT = { has_idea = USA_neutrality_idea_2 }
+		# 			NOT = { has_idea = USA_neutrality_idea_3 } 
+		# 		}	
+		# 	}
+		# }
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = FREE
+			}
+		}
+		#always = yes
+		OR = {
+			NOT = { tag = FRA }
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { tag = USA }
+			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
+		}
+		OR = {
+			NOT = { tag = SOV }
+			always = no
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			FROM = {
+				always = no
+			}
+		}
+		is_ai = no
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = LIMITED
+			}
+		}
+		#always = yes #handled by game logic, see above
+		OR = {
+			NOT = { tag = FRA }
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { tag = USA }
+			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
+		}
+		OR = {
+			NOT = { tag = SOV }
+			always = no
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			FROM = {
+				always = no
+			}
+		}
+		is_ai = no
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_FACTION
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_FACTION_TT
+			is_in_faction_with = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = FREE
+			}
+		}
+		#always = yes
+		OR = {
+			NOT = { tag = FRA }
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { tag = USA }
+			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
+		}
+		OR = {
+			NOT = { tag = SOV }
+			always = no
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			always = no
+		}
+		FROM = {
+			is_ai = no
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = LIMITED
+			}
+		}
+		#always = yes #handled by game logic, see above
+		OR = {
+			NOT = { tag = FRA }
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
+			NOT = { tag = USA }
+			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
+		}
+		OR = {
+			NOT = { tag = SOV }
+			always = no
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			always = no
+		}
+		FROM = {
+			is_ai = no
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_FACTION
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_FACTION_TT
+			is_in_faction_with = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_licensing
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_licensing
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LICENSING_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_licensing
+				option = SAME_FACTION
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_TT
+			is_in_faction_with = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_licensing
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LICENSING_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
+	if = {
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_40_DESC
+			date > 1940.1.1
+		}
+	}	
+}
+DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = AI_ONLY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BOOST_PARTY_AI_ONLY_TT
+			FROM = { is_ai = yes }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = PLAYER_ONLY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BOOST_PARTY_PLAYER_ONLY_TT
+			FROM = { is_ai = no }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BOOST_PARTY_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
+	always = no
+	# if = {
+	# 	limit = {
+	# 		has_game_rule = {
+	# 			rule = allow_coups
+	# 			option = FREE
+	# 		}
+	# 	}
+	# 	always = yes
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_game_rule = {
+	# 			rule = allow_coups
+	# 			option = AI_ONLY
+	# 		}
+	# 	}
+	# 	custom_trigger_tooltip = {
+	# 		tooltip = RULE_COUP_AI_ONLY_TT
+	# 		FROM = { is_ai = yes }
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_game_rule = {
+	# 			rule = allow_coups
+	# 			option = BLOCKED
+	# 		}
+	# 	}
+	# 	custom_trigger_tooltip = {
+	# 		tooltip = RULE_COUP_BLOCKED_TT
+	# 		always = no
+	# 	}
+	# }
+}
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_leave_faction
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEAVE_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+}
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_take_over_faction
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ASSUME_LEADERSHIP_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+}
+DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_kick_faction
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_KICK_FROM_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+}
+DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = LIMITED
+			}
+		}
+		else = {
+			always = yes
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_VOLUNTEERS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_VOLUNTEERS_BLOCKED_TT
+			always = no
+		}
+	}
+}
+DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			AND = {
+				tag = FRA
+				has_idea = FRA_incompetent_command
+			}
+		}
+		always = no
+	}
+	if = {
+		limit = {
+			AND = {
+				FROM = {
+					has_tech = trench_warfare
+				}
+				NOT = {
+					has_tech = trench_warfare
+				}
+			}
+		}
+		hidden_trigger = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = {
+							tag = ITA
+						}
+					}
+				}
+				always = no
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = EXPED_GBP_NOT_ALLOWED_TT
+		}
+	}
+}
+game_weight_can_add_fascist = {
+	GER = {
+		AND = {
+			OR = {
+				check_variable = { fascist_game_weight < democratic_game_weight }
+				check_variable = { fascist_game_weight = democratic_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { fascist_game_weight < unaligned_game_weight }
+				check_variable = { fascist_game_weight = unaligned_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { fascist_game_weight < communist_game_weight }
+				check_variable = { fascist_game_weight = communist_game_weight }
+			}
+		}
+	}
+}
+
+game_weight_can_add_democratic = {
+	GER = {
+		AND = {
+			OR = {
+				check_variable = { democratic_game_weight < fascist_game_weight }
+				check_variable = { democratic_game_weight = fascist_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { democratic_game_weight < unaligned_game_weight }
+				check_variable = { democratic_game_weight = unaligned_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { democratic_game_weight < communist_game_weight }
+				check_variable = { democratic_game_weight = communist_game_weight }
+			}
+		}
+	}
+}
+
+game_weight_can_add_unaligned = {
+	GER = {
+		AND = {
+			OR = {
+				check_variable = { unaligned_game_weight < fascist_game_weight }
+				check_variable = { unaligned_game_weight = fascist_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { unaligned_game_weight < democratic_game_weight }
+				check_variable = { unaligned_game_weight = democratic_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { unaligned_game_weight < communist_game_weight }
+				check_variable = { unaligned_game_weight = communist_game_weight }
+			}
+		}
+	}
+}
+
+game_weight_can_add_communist = {
+	GER = {
+		AND = {
+			OR = {
+				check_variable = { communist_game_weight < fascist_game_weight }
+				check_variable = { communist_game_weight = fascist_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { communist_game_weight < democratic_game_weight }
+				check_variable = { communist_game_weight = democratic_game_weight }
+			}
+		}
+		AND = {
+			OR = {
+				check_variable = { communist_game_weight < unaligned_game_weight }
+				check_variable = { communist_game_weight = unaligned_game_weight }
+			}
+		}
+	}
+}
+
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = { # TODO_TA make more generic trigger
+		limit = {
+			NOT = { has_global_flag = ethiopia_recognized_flag }
+			FROM = {
+				tag = ETH 
+			}
+			
+		}
+		custom_trigger_tooltip = {
+			tooltip = LON_NON_INTERFERENCE_RESOLUTION_JOIN
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			ROOT = {
+				original_tag = ICE
+				has_idea = neutrality_idea
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_JOIN
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			ROOT = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_JOIN
+			always = no
+		}
+	}
+}
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = ethiopia_recognized_flag }
+			ROOT = {
+				tag = ETH
+			}
+			
+		}
+		custom_trigger_tooltip = {
+			tooltip = LON_NON_INTERFERENCE_RESOLUTION_CALL
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = ICE
+				has_idea = neutrality_idea
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_CALL
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_CALL
+			always = no
+		}
+	}
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			original_tag = DEN
+			has_country_flag = DEN_is_protectorate_flag
+			is_subject = yes 
+
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			original_tag = FIN
+		}
+		OR = {
+			SOV = {
+				has_completed_focus = SOV_baltic_security
+			}
+			has_global_flag = SOV_winter_war_win
+			has_global_flag = SOV_winter_war_loss
+		}
+	}
+}
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				original_tag = FIN
+			}
+		}
+		OR = {
+			SOV = {
+				has_completed_focus = SOV_baltic_security
+			}
+			has_global_flag = SOV_winter_war_win
+			has_global_flag = SOV_winter_war_loss
+		}
+	}
+}

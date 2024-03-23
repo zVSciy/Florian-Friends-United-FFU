@@ -1,0 +1,198 @@
+guiTypes = { 
+	containerWindowType = {    
+		name = "horst_admiral_current_command_limit_used_window"
+		size = { width = 450 height = 1100 } 
+		position = { x=55 y =-400 }  	 
+		fade_time = 300
+		fade_type = linear
+		show_sound = menu_open_window
+		click_to_front = yes
+		orientation = center
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+			
+			containerWindowType = {
+			name = "admirals_leading_battlefleets_list_container"
+			position = { x=12 y =-2 }
+			size = { width = 444 height=400 }
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+			verticalScrollbar = "right_vertical_slider"
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_transparent"
+			}
+			
+			gridboxType = {
+				name ="admirals_leading_battlefleets_list"
+				position = { x = 0 y = 0 }
+				size = { width = 442 height = 100%% }
+				slotsize = { width = 442 height = 1 } #if width or height is 1, it will use slot element's dimension
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+	}
+
+	containerWindowType = {
+		name = "admirals_with_fleets_list"
+		position = { x = 0 y = 0}	
+		size = { width = 422 height = 90 }
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		instantTextBoxType = {
+			name = "pp" 
+			position = { x = 55 y = 5 }
+			font = "hoi_18mbs"  
+			text = "[GetAdmiralNameTitle]"
+			format = left
+			maxWidth = 225
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "pp2"
+			position = { x = 55 y = 25 }
+			font = "hoi_18mbs"  
+			text = "[GetShipCount]"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}	
+
+		iconType = {    
+			name = "admiral_portrait"
+			position = { x = 8 y = 10 }    
+			scale = 0.25
+			pdx_tooltip = GetAdmiralPortrait_tt
+		}
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 55 y = 45 }
+			font = "hoi_18mbs"
+			text = "[GetCommandLimit]" 
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "dd"
+			position = { x = 280 y = 5 }
+			font = "hoi_18mbs"
+			text = "DD: [?destroyer_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "ss"
+			position = { x = 350 y = 5 }
+			font = "hoi_18mbs"
+			text = "SS: [?submarine_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}	
+		instantTextBoxType = {
+			name = "cl"
+			position = { x = 280 y = 20 }
+			font = "hoi_18mbs"
+			text = "CL: [?light_cruiser_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "ca"
+			position = { x = 350 y = 20 }
+			font = "hoi_18mbs"
+			text = "CA: [?heavy_cruiser_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}	
+		instantTextBoxType = {
+			name = "bb"
+			position = { x = 280 y = 35 }
+			font = "hoi_18mbs"
+			text = "BB: [?battleship_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "bc"
+			position = { x = 350 y = 35 }
+			font = "hoi_18mbs"
+			text = "BC: [?battlecruiser_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}	
+		instantTextBoxType = {
+			name = "cv"
+			position = { x = 280 y = 50 } 
+			font = "hoi_18mbs"
+			text = "CV: [?carrier_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "shbb"
+			position = { x = 350 y = 50 }
+			font = "hoi_18mbs"
+			text = "SHBB: [?shbb_count]" 
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "Capitals"
+			position = { x = 55 y = 65 }
+			font = "hoi_18mbs"
+			text = "Capitals: [?capital_count]" 
+			format = left
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "Screens Have"
+			position = { x = 160 y = 65 } 
+			font = "hoi_18mbs"
+			text = "Screens: [GetScreenCount]" 
+			format = left
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "Screens Needed"
+			position = { x = 280 y = 65 }
+			font = "hoi_18mbs"
+			text = "[GetScreensNeededCount]" 
+			format = left
+			maxWidth = 150
+			maxHeight = 24
+			fixedsize = yes		
+		}	
+
+	}
+}

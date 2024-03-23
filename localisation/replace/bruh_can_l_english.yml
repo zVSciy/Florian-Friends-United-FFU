@@ -1,0 +1,40 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  CAN_the_ram_tank:0 "The Ram Tank"
+  CAN_the_grizzly:0 "License the Sherman"
+  CAN_nationalise_bank:0 "Nationalise The Bank Of Canada"
+  CAN_nationalise_bank_desc:0 "As part of Canada's recovery from the Great Depression, the nationalisation of corporations such as the Bank of Canada and the Canadian Brodcasting Corporation were pivotal in the national recovery."
+  CAN_lend_lease_economy:0 "The Lend Lease Economy"
+  CAN_lend_lease_economy_desc:0 "The Canadian industry contributed more lend lease production to the United Nations per GDP than any other nation during the war, even including the United States."
+  CAN_race_for_rubber:0 "The Race for Rubber"
+  CAN_race_for_rubber_desc:0 "Almost all of the world's natural rubber production lies in Singapore and the surrounding area. If this was to fall in to enemy hands we would have to seek alternative means of rubber production."
+  CAN_ford_general_motors:0 "Ford and General Motors of Canada"
+  CAN_ford_general_motors_desc:0 "Ford Canada and General Motors Canada are cooperating to produce the CMP Truck on a massive scale."
+  CAN_american_licenses:0 "Acquire American Licenses"
+  CAN_american_licenses_desc:0 "Now that the USA is in the war it has agreed to allow us to purchase various equipment licenses."
+  CAN_the_kangaroo:0 "The Kangaroo"
+  CAN_the_kangaroo_desc:0 "The Kangaroo was the very successful variant from the failed Ram tank project."
+  CAN_the_sexton:0 "The Sexton"
+  CAN_the_sexton_desc:0 "During the war, Canada produced thousands of the Sexton SPG to be lend-leased to allies in the United Nations."
+
+  ### IDEAS ###
+  CAN_bits_and_pieces_program_1:0 "Bits and Pieces Program Improvements"
+  CAN_ford_general_motors:0 "Ford and General Motors of Canada"
+  CAN_kangaroo:0 "The Kangaroo"
+  CAN_sexton:0 "The Sexton"
+  CAN_license_american_equipment:0 "American Production Licenses"
+  home_of_the_free_can:0 "Home of the Free"
+
+  ### DYNAMIC MODIFIERS ###
+  CAN_economy_dynamic_modifier:0 "[CAN_economy_dynam_mod_sl]"
+  CAN_modify_canadian_economy_ns_intro:0 "Modify §Y$CAN_economy_dynamic_modifier$§! by"
+  CAN_modify_economy_the_great_depression:0 "Great Depression"
+  CAN_modify_economy_wheat_board:0 "Canada Wheat Board"
+  CAN_modify_economy_bapp:0 "Bits and Pieces Program"
+  CAN_modify_economy_wfe:0 "War Fueled Economy"
+  CAN_modify_economy_wflle:0 "War Fueled Lend Lease Economy"
+
+  CAN_army_dynamic_modifier:0 "[CAN_army_dynam_mod_sl]"
+  CAN_modify_canadian_army_ns_intro:0 "Modify §Y$CAN_army_dynamic_modifier$§! by"
+  CAN_modify_army_canadian_armed_forces:0 "Canadian Armed Forces"

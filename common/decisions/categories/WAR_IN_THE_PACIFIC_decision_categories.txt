@@ -1,0 +1,92 @@
+WAR_IN_PACIFIC = {
+	priority = 99
+
+	icon = GFX_decision_category_military_operation
+	scripted_gui = WAR_IN_PACIFIC_UI
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		JAP = {
+			OR = {
+				has_war_with = ENG
+				has_capitulated = yes
+			}
+		}
+	}
+
+	on_map_area = {
+		name = PACIFIC_COMMONWEALTH_controls
+		state = 439 #Delhi
+		state = 422 #Ceylon
+		state = 336 #Singapore
+		state = 672 #Sumatra
+		state = 335 #Java
+		state = 334 #Kalimantan
+		state = 673 #Sulawesi
+		state = 327 #Manila
+		state = 523 #Papua
+		state = 634 #Guadalcanal
+		state = 285 #Canberra
+		state = 635 #New Caledonia
+		state = 284 #Wellington
+		state = 289 #Bangkok
+		state = 524 #Taiwan
+		state = 613 #Nanjing
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "Island Hopping"
+		state = 638 #Guam
+		state = 631 #Midway
+		state = 632 #Wake Island
+		state = 629 #Hawaii
+		state = 647 #Palau
+		state = 645 #Iwo Jima
+		state = 646 #Saipan
+		state = 526 #Okinawa
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "Rubber Locations"
+		state = 289 #Siam
+		state = 286 #Southern Indochina
+		state = 336 #Singapore
+		state = 672 #Sumatra
+		state = 335 #Java
+		state = 334 #Kalimantan
+		state = 673 #Sulawesi
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "Pacific Capitals"
+		state = 439 #Delhi
+		state = 327 #Manila
+		state = 335 #Batavia
+		state = 285 #Canberra
+		state = 284 #Wellington
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "The Malay Barrier"
+		state = 523 #Papua
+		state = 335 #Java
+		state = 327 #Manila
+		state = 673 #Sulawesi
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "The Eastern Buffer"
+		state = 336 #Singapore
+		state = 672 #Sumatra
+		state = 288 #Burma
+		state = 640 #Mandalay
+		zoom = 800
+	}
+}

@@ -1,0 +1,59 @@
+JAP_intervene_in_china = {
+	allowed = {
+		original_tag = JAP
+	}
+}
+
+JAP_southern_expansion = {
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		is_puppet = no
+	}
+}
+
+# JAP_pacific_guardian = {
+# 	allowed = {
+# 		original_tag = JAP
+# 	}
+
+# 	visible = {
+# 		is_puppet = no
+# 		always = no
+# 	}
+# }
+
+# JAP_colonial_independence = {
+# 	allowed = {
+# 		original_tag = JAP
+# 	}
+
+# 	visible = {
+# 		is_puppet = no
+# 		always = no
+# 	}
+# }
+JAP_interservice_rivalry = {
+	priority = 90
+	allowed = {
+		original_tag = JAP
+		has_dlc = "Waking the Tiger"
+	}
+}
+
+JAP_propaganda_campaigns = {
+	priority = 100
+
+	icon = SOV_propaganda
+
+	scripted_gui = jap_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+	}
+}

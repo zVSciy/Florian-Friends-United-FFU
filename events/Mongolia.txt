@@ -1,0 +1,121 @@
+﻿###########################
+# Mongolia Events
+###########################
+
+add_namespace = mongolia
+
+# country_event = {
+# 	id = mongolia.start
+# 	title = mongolia.start.t
+# 	desc = mongolia.start.d
+# 	picture = GFX_report_event_german_speech
+	
+# 	is_triggered_only = yes
+	
+	
+# 	fire_only_once = yes
+	
+#  	immediate = {		
+#  	}
+
+# 	option = {
+# 		name = mongolia.start.a
+# 		add_ideas = MON_nomad_1
+# 	}
+# }
+
+
+
+country_event = {
+	id = mongolia.1
+	title = mongolia.1.t
+	desc = mongolia.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = mongolia.1.a
+		# if = {
+		# 	limit = {
+		# 		country_exists = TAN
+		# 	}
+		# 	MON = {
+		# 		annex_country = { target = TAN transfer_troops = yes }
+		# 	}
+		# }
+		# else = {
+			MON = {
+				transfer_state = 329
+			}
+		# }
+	}
+	option = { # Refuse
+		name = mongolia.1.b
+		ai_chance = { factor = 0 }
+		
+	}
+}
+
+# country_event = {
+# 	id = mongolia.2
+# 	title = mongolia.2.t
+# 	desc = mongolia.2.d
+# 	picture = GFX_report_event_soviet_tanks_snow
+	
+# 	is_triggered_only = yes
+	
+# 	option = { # Accept demands
+# 		name = mongolia.2.a
+# 		MON = {
+# 			annex_country = { target = SIK transfer_troops = yes }
+# 		}
+# 	}
+# 	option = { # Refuse
+# 		name = mongolia.2.b
+# 		ai_chance = { factor = 0 }
+		
+# 	}
+# }
+
+country_event = {
+	id = mongolia.3
+	title = mongolia.3.t
+	desc = mongolia.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = mongolia.2.a
+		MON = {
+			remove_state_core = 761
+			transfer_state = 612
+			transfer_state = 611
+			transfer_state = 621
+			transfer_state = 756
+			set_truce = { target = JAP days = 1460 }
+		}
+		SOV = { 
+			set_truce = { target = JAP days = 1460 } 
+			add_opinion_modifier = { target = JAP modifier = ENG_imperial_trade }
+		}
+	}
+	option = { # Refuse
+		name = mongolia.2.b
+		ai_chance = { factor = 0 }
+		
+		MON = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
+		}
+		SOV = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
+		}
+	}
+}
