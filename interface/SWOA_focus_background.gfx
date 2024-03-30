@@ -1,0 +1,78 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ENG_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/ENG.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/FRA.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/GER.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/ITA.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/JAP.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/SOV.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/USA.dds"
+	}
+	spriteType = {
+		name = "GFX_CHI_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/CHI.dds"
+	}
+	spriteType = {
+		name = "GFX_COM_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/COM.dds"
+	}
+	spriteType = {
+		name = "GFX_TUR_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/TUR.dds"
+	}
+	spriteType = {
+		name = "GFX_BAX_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/BAX.dds"
+	}
+	spriteType = {
+		name = "GFX_RAJ_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/RAJ.dds"
+	}
+	spriteType = {
+		name = "GFX_ROM_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/ROM.dds"
+	}
+	spriteType = {
+		name = "GFX_BUL_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/BUL.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/CAN.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/AUS.dds"
+	}
+	spriteType = {
+		name = "GFX_FIN_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/FIN.dds"
+	}
+	spriteType = {
+		name = "GFX_SAF_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/SAF.dds"
+	}
+	spriteType = {
+		name = "GFX_SPR_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/SPR.dds"
+	}
+}
