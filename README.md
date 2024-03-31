@@ -8,7 +8,6 @@ PMFU submod
 - peaceful taining now gives 0.30 xp daily gain
 - added no speacial forces cap
 - updated loading quotes
-- 
 
 ### Air
 
