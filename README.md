@@ -1,4 +1,5 @@
 # Florians Friends United (FFU) changelog
+PMFU submod
 
 ### Generel changes
 
