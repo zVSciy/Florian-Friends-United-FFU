@@ -1,7 +1,14 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
+**Checksum = 949a**
+
 ## Generel changes
+
+- peaceful taining now gives 0.30 xp daily gain
+- added no speacial forces cap
+- updated loading quotes
+- 
 
 ### Air
 
@@ -18,13 +25,16 @@ PMFU submod
 - extra ammonution **minus** reliability -10% --> **-5%**
 - dozer blades defense increased 6 --> **8**
 - apcr rounds piercing increased +10% --> **+15%**
+- cast amour ic increased +5% --> **+10%**
 ---
 ## Country changes
 
 ### USA
-```
 
-```
+- nerfed arsenal of democracy 10 dockyards --> **6 dockyards**
+- nerfed focus on germany **minus** dockyard output from -5% --> **-15%**
+- nerfed focus on japan **minus** factory output from -5% --> **-15%**
+- nerfed two ocean navy act from 10 dockyard --> **8**
 ---
 ### Italy
 
@@ -48,6 +58,8 @@ PMFU submod
 - Fritz Todt construction speed increased 5% --> **10%**
 - synthetic rubber add 3 in each states 2 --> **3**
 - Weserübung now annexes norway and gives 40% compliance on denmark and norway
+- Steiner counter attack duration increased 14 days --> **90 days**
+- added Kill the soviets focus grants idea with 10% attack bonus against Soviet Union and Mongolia for 100 days --> After 01.05.1944
 ---
 ### France
 
@@ -74,6 +86,11 @@ PMFU submod
 - Buff Victorie in the winter war military factorie contruction speed --> **+10%**
 - Buff Foreign support manpower increased 15000 --> **150000**
 ---
+### Spain
+
+- Buffed Unite Iberia focus now add **10%** factory output and **5%** production cap
+  
+---
 ### Japan
 
 - 
@@ -84,9 +101,14 @@ PMFU submod
 
 ---
 ### South Africa
-```
 
-```
+- Added focus Crush the Axis which gives long term buffs -->
+  prduction cap **+7.5%**
+  production efficiency growth **-5%**
+  factory output **+10%**
+  military factory construction speed **+10%**
+  attack bonus against germany **+5%**
+
 ---
 ### Romania
 ```
