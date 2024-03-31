@@ -1820,7 +1820,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_general_work_council }
 		
 		relative_position_id = FRA_general_work_council
-		cost = 6
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1942,74 +1942,23 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			772 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			539 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -3646,219 +3595,219 @@ focus_tree = {
 
 	
 
-	focus = {
-		id = FRA_air_focus
-		icon = GFX_FRA_air_focus
-		x = 30
-		y = 5
-		cost = 2
+	# focus = {
+	# 	id = FRA_air_focus
+	# 	icon = GFX_FRA_air_focus
+	# 	x = 30
+	# 	y = 5
+	# 	cost = 2
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = air_focus_bypass_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-			}
-		}
+	# 	bypass = {
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = air_focus_bypass_tt
+	# 			NOT = {
+	# 				any_owned_state = {
+	# 					free_building_slots = {
+	# 						building = air_base
+	# 						size > 1
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
 
-		complete_tooltip = {
-			air_experience = 25
-			every_state = {
-				limit = { has_state_flag = FRA_air_focus_2air }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+	# 	complete_tooltip = {
+	# 		air_experience = 25
+	# 		every_state = {
+	# 			limit = { has_state_flag = FRA_air_focus_2air }
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
 
-		completion_reward = {
-			air_experience = 25
+	# 	completion_reward = {
+	# 		air_experience = 25
 
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = FRA_air_focus_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = FRA_air_focus_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = FRA_air_focus_2air
-			}
-		}
-	}
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = air_base
+	# 					size > 1
+	# 				}
+	# 			}
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = FRA_air_focus_2air
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = air_base
+	# 					size > 1
+	# 				}
+	# 			}
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = FRA_air_focus_2air
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = air_base
+	# 					size > 1
+	# 				}
+	# 			}
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = FRA_air_focus_2air
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = FRA_fighter_focus
-		icon = GFX_FRA_fighter_focus
-		mutually_exclusive = { focus = FRA_bomber_focus }
-	 	prerequisite = { focus = FRA_air_focus }
-		x = -1
-		y = 1
-		relative_position_id = FRA_air_focus
-		cost = 2
+	# focus = {
+	# 	id = FRA_fighter_focus
+	# 	icon = GFX_FRA_fighter_focus
+	# 	mutually_exclusive = { focus = FRA_bomber_focus }
+	#  	prerequisite = { focus = FRA_air_focus }
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id = FRA_air_focus
+	# 	cost = 2
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_fighter_focus
-				bonus = 0.5
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = FRA_fighter_focus
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			category = light_fighter
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = FRA_heavy_fighter_focus
-		icon = GFX_FRA_heavy_fighter_focus
-	 	prerequisite = { focus = FRA_fighter_focus }
-		x = -1
-		y = 1
-		relative_position_id = FRA_fighter_focus
-		cost = 2
+	# focus = {
+	# 	id = FRA_heavy_fighter_focus
+	# 	icon = GFX_FRA_heavy_fighter_focus
+	#  	prerequisite = { focus = FRA_fighter_focus }
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id = FRA_fighter_focus
+	# 	cost = 2
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_heavy_fighter_focus
-				bonus = 0.5
-				uses = 2
-				category = cat_heavy_fighter
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = FRA_heavy_fighter_focus
+	# 			bonus = 0.5
+	# 			uses = 2
+	# 			category = cat_heavy_fighter
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = FRA_bomber_focus
-		icon = GFX_FRA_bomber_focus
-		mutually_exclusive = { focus = FRA_fighter_focus }
-	 	prerequisite = { focus = FRA_air_focus }
-		x = 1
-		y = 1
-		relative_position_id = FRA_air_focus
-		cost = 2
+	# focus = {
+	# 	id = FRA_bomber_focus
+	# 	icon = GFX_FRA_bomber_focus
+	# 	mutually_exclusive = { focus = FRA_fighter_focus }
+	#  	prerequisite = { focus = FRA_air_focus }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = FRA_air_focus
+	# 	cost = 2
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_bomber_focus
-				bonus = 0.5
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = FRA_bomber_focus
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			category = tactical_bomber
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = FRA_air_doctrine
-		icon = GFX_FRA_air_doctrine
-	 	prerequisite = { 
-	 		focus = FRA_fighter_focus 
-	 		focus = FRA_bomber_focus
-	 	}
-		x = 1
-		y = 1
-		relative_position_id = FRA_fighter_focus
-		cost = 2
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		available_if_capitulated = yes
+	# focus = {
+	# 	id = FRA_air_doctrine
+	# 	icon = GFX_FRA_air_doctrine
+	#  	prerequisite = { 
+	#  		focus = FRA_fighter_focus 
+	#  		focus = FRA_bomber_focus
+	#  	}
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = FRA_fighter_focus
+	# 	cost = 2
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			air_experience = 50
+	# 	completion_reward = {
+	# 		air_experience = 50
 
-			add_doctrine_cost_reduction = {
-				name = FRA_air_doctrine
-				cost_reduction = 0.25
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
+	# 		add_doctrine_cost_reduction = {
+	# 			name = FRA_air_doctrine
+	# 			cost_reduction = 0.25
+	# 			uses = 2
+	# 			category = air_doctrine
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = FRA_heavy_bomber_focus
-		icon = GFX_FRA_heavy_bomber_focus
-	 	prerequisite = { focus = FRA_bomber_focus }
-		x = 1
-		y = 1
-		relative_position_id = FRA_bomber_focus
-		cost = 2
+	# focus = {
+	# 	id = FRA_heavy_bomber_focus
+	# 	icon = GFX_FRA_heavy_bomber_focus
+	#  	prerequisite = { focus = FRA_bomber_focus }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = FRA_bomber_focus
+	# 	cost = 2
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_heavy_bomber_focus
-				bonus = 0.5
-				uses = 2
-				category = cat_strategic_bomber
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = FRA_heavy_bomber_focus
+	# 			bonus = 0.5
+	# 			uses = 2
+	# 			category = cat_strategic_bomber
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = FRA_naval_bomber_focus
-		icon = GFX_FRA_naval_bomber_focus
-	 	prerequisite = { focus = FRA_bomber_focus }
-		x = 3
-		y = 1
-		relative_position_id = FRA_bomber_focus
-		cost = 2
+	# focus = {
+	# 	id = FRA_naval_bomber_focus
+	# 	icon = GFX_FRA_naval_bomber_focus
+	#  	prerequisite = { focus = FRA_bomber_focus }
+	# 	x = 3
+	# 	y = 1
+	# 	relative_position_id = FRA_bomber_focus
+	# 	cost = 2
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_naval_bomber_focus
-				bonus = 0.5
-				uses = 2
-				category = naval_bomber
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = FRA_naval_bomber_focus
+	# 			bonus = 0.5
+	# 			uses = 2
+	# 			category = naval_bomber
+	# 		}
+	# 	}
+	# }
 }

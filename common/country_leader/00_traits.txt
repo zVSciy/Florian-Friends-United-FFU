@@ -1682,7 +1682,7 @@ leader_traits = {
 	todt = {
 		sprite = 10
 		random = yes
-		production_speed_buildings_factor = 0.05
+		production_speed_buildings_factor = 0.10
 		production_speed_infrastructure_factor = 0.10
 		production_speed_rail_way_factor = 0.10
 		

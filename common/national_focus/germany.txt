@@ -305,10 +305,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery #synthetic_rubber_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -321,10 +321,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery #synthetic_rubber_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1402,7 +1402,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = aluminium
-				amount = 280
+				amount = 400
 				state = 43
 			}
 		}
@@ -1433,7 +1433,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 200
+				amount = 300
 				state = 46
 			}
 		}
@@ -2830,7 +2830,7 @@ focus_tree = {
 		available = {
 			
 			is_puppet = no	
-			date > 1939.6.1		
+			date > 1938.6.1		
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -2889,7 +2889,7 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				OR = {
-					date < 1939.1.1
+					date < 1938.1.1
 					any_neighbor_country = {
 						has_war_with = GER
 						NOT = { has_capitulated = yes }
@@ -3115,18 +3115,59 @@ focus_tree = {
 					NOT = { DEN = { is_in_faction_with = GER } }
 					country_exists = DEN					
 				} 
-				DEN = {
-					delete_unit = {
-						disband = yes #will refund equipment and manpower
-					}
-					set_equipment_fraction = 0
+		
+				annex_country = { target = DEN transfer_troops = no}
+				annex_country = { target = NOR transfer_troops = no}
+			
+			GER = {
+				#Denmark
+				912 = {
+					set_compliance = 40
 				}
-				annex_country = { target = DEN transfer_troops = no }
-				ENG = {
-					# transfer_state = 100
-					transfer_state = 101
-					transfer_state = 337
+				99 = {
+					set_compliance = 40
+				}	
+				911 = {
+					set_compliance = 40
 				}
+				37 = {
+					set_compliance = 40
+				}
+				910 = {
+					set_compliance = 40
+				}
+				#Norway
+				925 = {
+					set_compliance = 40
+				}
+				924 = {
+					set_compliance = 40
+				}
+				144 = {
+					set_compliance = 40
+				}
+				923 = {
+					set_compliance = 40
+				}
+				143 = {
+					set_compliance = 40
+				}
+				142 = {
+					set_compliance = 40
+				}
+				920 = {
+					set_compliance = 40
+				}
+				922 = {
+					set_compliance = 40
+				}
+				921 = {
+					set_compliance = 40
+				}
+				110 = {
+					set_compliance = 40
+				}
+			}
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
@@ -3159,120 +3200,13 @@ focus_tree = {
 						producer = GER
 					}
 				}
+				ENG = {
+					# transfer_state = 100
+					transfer_state = 101
+					transfer_state = 337
+				}
 			}
 
-
-			if = {
-				limit = {
-					NOT = { NOR = { is_in_faction_with = GER } }
-					country_exists = NOR					
-				} 
-				declare_war_on = {
-					target = NOR
-					type = annex_everything
-				}
-				custom_effect_tooltip = "A German Task Force spawns on the Norwegian coast"
-				division_template = {
-					name = "Norwegische Task Force"
-					division_names_group = GER_INF_01
-				
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 3 y = 3 }
-						artillery_brigade = { x = 4 y = 0 }
-						artillery_brigade = { x = 4 y = 1 }
-						artillery_brigade = { x = 4 y = 2 }
-						artillery_brigade = { x = 4 y = 3 }
-					}
-					support = {
-						hq_company = { x = 0 y = 0 } 
-						engineer = { x = 0 y = 1 }   
-						recon = { x = 0 y = 2 }
-						logistics_company_mot  = { x = 0 y = 3 }
-						anti_air = { x = 1 y = 0 }
-						signal_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
-					}
-				}
-				NOR = {
-					delete_unit = {
-						disband = yes #will refund equipment and manpower
-					}
-				}
-				110 = {
-					for_loop_effect = {
-						end = 4
-						create_unit = {
-							prioritize_location = 6115
-							allow_spawning_on_enemy_provs = yes
-							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
-							owner = GER
-						}
-					}
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							prioritize_location = 14
-							allow_spawning_on_enemy_provs = yes
-							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
-							owner = GER
-						}
-					}
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							prioritize_location = 3171
-							allow_spawning_on_enemy_provs = yes
-							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
-							owner = GER
-						}
-					}
-				}
-				142 = {
-					for_loop_effect = {
-						end = 3
-						create_unit = {
-							prioritize_location = 9296
-							allow_spawning_on_enemy_provs = yes
-							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
-							owner = GER
-						}
-					}
-					for_loop_effect = {
-						end = 3
-						create_unit = {
-							prioritize_location = 53
-							allow_spawning_on_enemy_provs = yes
-							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
-							owner = GER
-						}
-					}
-				}
-			}
-			
-			add_tech_bonus = {
-				name = tp_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = tp_tech
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.233 }
-			}	
 		}
 	}
 	
@@ -6371,7 +6305,7 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = GER_mob_reich
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { GER_german_economy_industry_repair_factor = 0.2 tooltip = industry_repair_factor_tt }
 			add_to_variable = { GER_german_economy_industry_free_repair_factor = 0.2 tooltip = industry_free_repair_factor_tt }
@@ -8891,6 +8825,15 @@ focus_tree = {
 			# ITA = { give_guarantee = JAP }
 			# give_guarantee = JAP
 			# give_guarantee = ITA
+			
+			add_to_variable = { GER_german_economy_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
+			
+			ITA= {
+				add_to_variable = { ITA_italian_economy_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
+			}
+			JAP = {
+				add_to_variable = { JAP_japanese_economy_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
+			}
 			add_to_tech_sharing_group = GER_trip_research
 			ITA = { add_to_tech_sharing_group = GER_trip_research }
 			JAP = { add_to_tech_sharing_group = GER_trip_research }
