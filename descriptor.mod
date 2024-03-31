@@ -8,7 +8,7 @@ tags={
 	"Technologies"
 }
 name="Florian Friends United (FFU)"
-picture="thumbnail.png"
+picture="thumbnail.jpg"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
