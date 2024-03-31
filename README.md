@@ -21,7 +21,7 @@ PMFU submod
 ---
 ### Tanks
 
-- extra ammonution **minus** reliability -10% --> **-5%**
+- extra ammunition **minus** reliability -10% --> **-5%**
 - dozer blades defense increased 6 --> **8**
 - apcr rounds piercing increased +10% --> **+15%**
 - cast amour ic increased +5% --> **+10%**
