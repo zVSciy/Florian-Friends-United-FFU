@@ -67,15 +67,21 @@ PMFU submod
 - mobilise gulag workers gives 5% max production cap
 - changed the date lock for crush the fascists 01.08.1941 --> **01.08.1942**
 ---
-### Japan
-```
+### Finland
 
-```
+- Buff Victorie in the winter war consumergoods -5% --> **-15%**
+- Buff Victorie in the winter war factory output 10% --> **15%**
+- Buff Victorie in the winter war military factorie contruction speed --> **+10%**
+- Buff Foreign support manpower increased 15000 --> **150000**
+---
+### Japan
+
+- 
 ---
 ### Canada
-```
 
-```
+- Change the RAM Tank focus now available after 01.11.1938
+
 ---
 ### South Africa
 ```
