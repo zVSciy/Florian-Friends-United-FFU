@@ -58,7 +58,7 @@ PMFU submod
 - synthetic rubber add 3 in each states 2 --> **3**
 - Weserübung now annexes norway and gives 40% compliance on denmark and norway
 - Steiner counter attack duration increased 14 days --> **90 days**
-- added Kill the soviets focus grants idea with 10% attack bonus against Soviet Union and Mongolia for 100 days --> After 01.05.1944
+- added Kill the soviets focus which grants idea with 10% attack bonus against Soviet Union and Mongolia for 100 days --> After 01.05.1944
 ---
 ### France
 
