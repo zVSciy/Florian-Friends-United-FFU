@@ -41,6 +41,7 @@
   GER_military_rad:0 "Mobilise the RAD"
   GER_military_rad_desc:0 "The Reichs Labor Service has certainly contributed to the construction of fortifications, but it could be much more. We will bring forth and mobilize the engineers for the front line."
   GER_civilian_rad:0 "Expand the RAD"
+  GER_kill_the_soviets:0 "Kill the Soviets"
   GER_civilian_rad_desc:0 "We should step back and let engineers what they do best. The German economy will flourish under their tutilage."
   GER_air_innovation:0 "Luftwaffe" #this focus doesn't seem to exist
   GER_fighter_effort:0 "The Bf 109"
@@ -300,6 +301,7 @@
   GER_ckd_desc:1"Czech Light Tanks"
   krupp_tank:0 "Krupp"
   krupp_tank_desc:1 "Krupp focuses on heavy industry and armaments production"
+  GER_kill_the_soviets:0 "Kill the Soviets"
 
   ### DYNAMIC MODIIFERS ###
   GER_economy_dynamic_modifier:0 "[GER_economy_dynam_mod_sl]"

@@ -3669,6 +3669,55 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_kill_the_soviets
+		icon = GFX_GER_danzig_or_war
+		prerequisite = { focus = GER_operation_citadel }
+		
+		available = {
+			date > 1944.5.1
+			if = {
+				limit = {
+					has_country_flag = GER_offensive_cooldown
+				}
+				has_country_flag = {
+					flag = GER_offensive_cooldown
+					days > 250
+				}
+				custom_trigger_tooltip = {
+					tooltip = GER_offensive_cooldown_tt
+					has_country_flag = {
+						flag = GER_offensive_cooldown
+						days > 250
+					}
+				}
+			}
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_operation_citadel
+		cancel_if_invalid = yes
+		available_if_capitulated = no
+		continue_if_invalid = no
+		cost = 1
+		
+		completion_reward = {
+			set_country_flag = GER_offensive_cooldown
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
+				}
+				add_timed_idea = { idea = GER_kill_the_soviets days = 100 }
+			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.35
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = GER_roa
 		icon = GFX_roa
 		prerequisite = { focus = GER_barb }
@@ -6877,7 +6926,7 @@ focus_tree = {
 				logistics_skill=7
 			}
 			
-		   add_timed_idea = {idea = GER_steiner_idea days = 14 }
+		   add_timed_idea = {idea = GER_steiner_idea days = 9 }
 
 			hidden_effect ={
 			# 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }

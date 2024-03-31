@@ -734,6 +734,29 @@ focus_tree = {
 			add_ideas = SAF_voortrekker_monument
 		}
 	}
+
+	focus = {
+		id = SAF_long_term_industry
+		icon = GFX_GER_special_operation
+		prerequisite = { focus = SAF_voortrekker_monument }
+		x = 7
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		date > 1942.1.1
+		}
+
+		completion_reward = {
+			add_ideas = SAF_long_term_industry
+		}
+
+	}
 	############################
 	##### INDUSTRY SECTION #####
 	############################

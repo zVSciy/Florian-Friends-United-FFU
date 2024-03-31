@@ -251,6 +251,28 @@ ideas = {
 
 		}
 
+		SAF_long_term_industry ={
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.0755
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+			}
+		}
+
 		SAF_voortrekker_monument = {
 			allowed = {
 				always = no

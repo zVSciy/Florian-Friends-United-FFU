@@ -975,8 +975,8 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			build_cost_ic = 0.05
-			armor_value = 0.3
+			build_cost_ic = 0.1
+			armor_value = 0.30
 		}
 		build_cost_resources = {
 			chromium = 5

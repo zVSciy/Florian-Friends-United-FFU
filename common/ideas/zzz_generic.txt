@@ -205,10 +205,26 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = stavka
+			picture = HUN_secret_rearmament
 			
 			modifier = {
 				experience_gain_factor = -1
+				special_forces_cap = 100
+			}
+		}
+
+		special_forces_cap = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_special_forces_bonus
+			
+			modifier = {
+				special_forces_cap = 100
 			}
 		}
 
@@ -232,6 +248,7 @@ ideas = {
 				air_training_xp_gain_factor = 5
 				experience_gain_navy_unit_factor = 10
 				attrition = -1
+				experience_gain_army = 0.3
 			}
 		}
 
