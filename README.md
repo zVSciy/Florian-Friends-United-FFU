@@ -9,7 +9,7 @@ PMFU submod
 - added no speacial forces cap
 - updated loading quotes
 - marine doctrin now grants +100% invasion planning speed
-- dispersed industry now give +5% efficiency growth for each upgrade
+- dispersed industry now gives +5% efficiency growth for each upgrade
 
 ### Air
 
