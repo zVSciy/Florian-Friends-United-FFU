@@ -42,7 +42,7 @@ PMFU submod
 - mobilize naval workers add 10% dockyard output
 - focus on naval industry, green water navy and
 - the legions gains +10% division attack and defense
-- added focus which grants 750000 manpower and -15% factory output (365)
+- added focus which grants 750000 manpower and -15% factory output (365 days)
 ---
 ### UK
 
