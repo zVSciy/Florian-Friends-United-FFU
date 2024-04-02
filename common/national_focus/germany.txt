@@ -3570,6 +3570,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_secure_soviet_oil
+		icon = GFX_focus_GER_autarky
+		prerequisite = { focus = GER_barb }
+
+		available = {
+			has_full_control_of_state = 234
+			has_full_control_of_state = 202
+			has_full_control_of_state = 226
+		}
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 700
+				state = 59
+			}
+		}
+
+		x = -3
+		y = 1
+		relative_position_id = GER_barb
+
+
+	}
+
+	focus = {
 		id = GER_fall_blau
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_barb }
@@ -6384,6 +6410,9 @@ focus_tree = {
 			add_political_power = 200
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = GER_plow_prop
+
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_conscription = 0.01 tooltip = conscription_tt }
 		}
 	}
 	
