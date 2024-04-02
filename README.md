@@ -8,6 +8,8 @@ PMFU submod
 - peaceful taining now gives 0.30 xp daily gain
 - added no speacial forces cap
 - updated loading quotes
+- marine doctrin now grants +100% invasion planning speed
+- dispersed industry now gives +5% efficiency growth for each upgrade
 
 ### Air
 
@@ -40,6 +42,7 @@ PMFU submod
 - mobilize naval workers add 10% dockyard output
 - focus on naval industry, green water navy and
 - the legions gains +10% division attack and defense
+- added focus which grants 750000 manpower and -15% factory output (365)
 ---
 ### UK
 
@@ -59,6 +62,8 @@ PMFU submod
 - Weserübung now annexes norway and gives 40% compliance on denmark and norway
 - Steiner counter attack duration increased 14 days --> **90 days**
 - added Kill the soviets focus which grants idea with 10% attack bonus against Soviet Union and Mongolia for 100 days --> After 01.05.1944
+- added Secure Soviet Oil focus which adds 700 oil in hannover
+- proclaim total war now adds another +1% to General Staff idea
 ---
 ### France
 
