@@ -8,6 +8,8 @@ PMFU submod
 - peaceful taining now gives 0.30 xp daily gain
 - added no speacial forces cap
 - updated loading quotes
+- marine doctrin now grants +100% invasion planning speed
+- dispersed industry now give +5% efficiency growth for each upgrade
 
 ### Air
 
@@ -40,6 +42,7 @@ PMFU submod
 - mobilize naval workers add 10% dockyard output
 - focus on naval industry, green water navy and
 - the legions gains +10% division attack and defense
+- added focus which grants 750000 manpower and -15% factory output (365)
 ---
 ### UK
 
