@@ -59,6 +59,8 @@ PMFU submod
 - Weserübung now annexes norway and gives 40% compliance on denmark and norway
 - Steiner counter attack duration increased 14 days --> **90 days**
 - added Kill the soviets focus which grants idea with 10% attack bonus against Soviet Union and Mongolia for 100 days --> After 01.05.1944
+- added Secure Soviet Oil focus which adds 700 oil in hannover
+- proclaim total war now adds another +1% to General Staff idea
 ---
 ### France
 
