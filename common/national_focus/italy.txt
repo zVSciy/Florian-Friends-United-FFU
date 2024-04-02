@@ -4021,7 +4021,70 @@ focus_tree = {
 			add_to_variable = { ITA_italian_army_army_defence_factor = 0.1 tooltip = army_defence_factor_tt }
 		}
 	}
-	
+
+	focus = {
+		id = ITA_mobilise_the_africans
+		icon = GFX_focus_ITA_volunteers
+		prerequisite = {
+			focus = ITA_the_legions
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_the_legions
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_manpower = 750000
+			
+			
+			add_timed_idea = {idea = ITA_mobilise_the_africans days = 365}
+	}
+	}
+	focus = {
+		id = ITA_mobilise_the_africans1
+		icon = GFX_focus_ITA_volunteers
+		prerequisite = {
+			focus = ITA_armir
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_armir
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_manpower = 750000
+			
+			
+			add_timed_idea = {idea = ITA_mobilise_the_africans days = 365}
+	}
+}
+	focus = {
+		id = ITA_mobilise_the_africans2
+		icon = GFX_focus_ITA_volunteers
+		prerequisite = {
+			focus = ITA_folgore_division
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_folgore_division
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_manpower = 750000
+			
+			
+			add_timed_idea = {idea = ITA_mobilise_the_africans days = 365}
+	}
+}
 	focus = {
 		id = ITA_drain_the_swamp
 		icon = GFX_ITA_innovative_theories
