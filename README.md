@@ -10,6 +10,7 @@ PMFU submod
 - updated loading quotes
 - marine doctrin now grants +100% invasion planning speed
 - dispersed industry now gives +5% efficiency growth for each upgrade
+- planning bonus daily loose decreased from 5% to **3%**
 
 ### Air
 
