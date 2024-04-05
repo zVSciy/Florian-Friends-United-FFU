@@ -37,9 +37,15 @@ set_technology = {
 
 # MP_garrison_division_standard = yes
 
+add_timed_idea = {
+	idea = no_tradeback
+	days = 1339
+}
+
 add_ideas = volunteer_minimum_minor
 add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_6
 add_ideas = father_check
+add_ideas = special_forces_cap
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -70,6 +76,7 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 		ROM_undeveloped_export_industry
+		special_forces_cap
 	}
 	# give_guarantee = CZE
 	# give_guarantee = GRE

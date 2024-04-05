@@ -229,6 +229,8 @@ GER_remove_mefo_bills = {
 # Like the level up effect except it runs in reverse
 # For use when annexing the gold reserves of Austria, Czechoslovakia and Yugoslavia
 
+
+
 GER_mefo_bills_level_down = {
 	if = {
 		limit = { has_idea = GER_mefo_bills_2 }

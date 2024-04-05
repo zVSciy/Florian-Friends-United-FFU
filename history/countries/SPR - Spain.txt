@@ -137,11 +137,18 @@ if = {
 	    
 	    set_state_flag = SPR_original_core
 	}
+
+	add_timed_idea = {
+		idea = no_tradeback
+		days = 1339
+	}
+
 	add_ideas = {
 		SPA_carlism_1	
 		SPR_political_violence	
 		SPR_national_strikes_3	
 		SPA_neutrality_idea
+		special_forces_cap
 	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz

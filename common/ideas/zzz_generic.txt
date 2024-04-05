@@ -197,6 +197,20 @@ ideas = {
 	# Special ones that can be applied on other countries through focus system.
 	country = {
 
+		no_tradeback = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			picture = civilian_economy
+			modifier = {
+				production_lack_of_resource_penalty_factor = -1
+				min_export = -1
+			}
+		}
+
 		no_grinding = {
 
 			allowed = {
@@ -209,7 +223,6 @@ ideas = {
 			
 			modifier = {
 				experience_gain_factor = -1
-				special_forces_cap = 100
 			}
 		}
 
@@ -221,7 +234,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_special_forces_bonus
+			picture = generic_infantry_bonus
 			
 			modifier = {
 				special_forces_cap = 100

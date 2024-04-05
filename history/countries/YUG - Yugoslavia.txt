@@ -29,6 +29,11 @@ if = {
 		YUG_idea_serbian_general_staff
 	}
 }
+add_timed_idea = {
+	idea = no_tradeback
+	days = 1339
+}
+
 add_ideas = {
 	anti_german_military
 	# PACIFIC_COMMONWEALTH_controls_axis_original
@@ -36,6 +41,7 @@ add_ideas = {
 	no_grinding
 	no_brothers_war
 	father_check
+	special_forces_cap
 }
 set_variable = { axis_poster_center_icon_frame = 1 }
 set_technology = {

@@ -29,6 +29,11 @@ set_variable = {
 army_experience = 200
 air_experience = 100
 
+add_timed_idea = {
+	idea = no_tradeback
+	days = 1339
+}
+
 add_ideas = {
 	vittorio_emanuele
 	vittoria_mutilata
@@ -48,6 +53,7 @@ add_ideas = {
 	ITA_incompetent_officers_offset
 	volunteer_minimum_major
 	volunteer_minimum_GER_NA
+	special_forces_cap
 }
 
 ### DYNAMIC MODIFIERS ###

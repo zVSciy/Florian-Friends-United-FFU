@@ -886,6 +886,7 @@ add_ideas = {
 	peace_training
 	no_grinding
 	SOV_no_wargoal_before_august_41
+	special_forces_cap
 }
 add_dynamic_modifier = {
 	modifier = SOV_the_economy_dynamic_peace_modifier

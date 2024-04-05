@@ -1016,6 +1016,11 @@ set_variable = {
 	value = 0.800
 }
 
+add_timed_idea = {
+	idea = no_tradeback
+	days = 1339
+}
+
 add_ideas = {
 	limited_conscription
 	sisu
@@ -1024,6 +1029,7 @@ add_ideas = {
 	no_grinding
 	FIN_counter_intel
 	father_check
+	special_forces_cap
 }
 add_manpower = 80000
 

@@ -29,6 +29,11 @@ set_variable = {
 
 # add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 
+add_timed_idea = {
+	idea = no_tradeback
+	days = 1339
+}
+
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
@@ -42,6 +47,7 @@ if = {
 		father_check
 		no_grinding
 		AFRICA_COMMONWEALTH_controls_axis_idea_6
+		special_forces_cap
 	}
 }
 set_variable = { axis_poster_center_icon_frame = 1 }

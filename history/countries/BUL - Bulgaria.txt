@@ -40,6 +40,12 @@ set_politics = {
 }
 set_variable = { axis_poster_center_icon_frame = 1 }
 #IDEAS SETUP
+
+add_timed_idea = {
+	idea = no_tradeback
+	days = 1339
+}
+
 add_ideas = { #DLC
 	BUL_second_national_catastrophe
 	BUL_army_restrictions
@@ -49,6 +55,7 @@ add_ideas = { #DLC
 	peace_training
 	no_grinding
 	AFRICA_COMMONWEALTH_controls_axis_idea_6
+	special_forces_cap
 }
 
 #SET FLAGS AND VARIABLES
