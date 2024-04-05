@@ -108,7 +108,7 @@ PMFU submod
 ### South Africa
 
 - Added focus Crush the Axis which gives long term buffs -->
-  prduction cap **+7.5%**
+  production cap **+7.5%**
   production efficiency growth **-5%**
   factory output **+10%**
   military factory construction speed **+10%**
