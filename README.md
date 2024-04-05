@@ -11,6 +11,7 @@ PMFU submod
 - marine doctrin now grants +100% invasion planning speed
 - dispersed industry now gives +5% efficiency growth for each upgrade
 - planning bonus daily loose decreased from 5% to **3%**
+- added no tradeback idea to axis until 01.09.1939
 
 ### Air
 
