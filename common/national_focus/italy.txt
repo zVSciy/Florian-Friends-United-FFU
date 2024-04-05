@@ -4047,11 +4047,11 @@ focus_tree = {
 		id = ITA_mobilise_the_africans1
 		icon = GFX_focus_ITA_volunteers
 		prerequisite = {
-			focus = ITA_armir
+			focus = ITA_learn_from_wehrmacht
 		}
 		x = 0
 		y = 1
-		relative_position_id = ITA_armir
+		relative_position_id = ITA_learn_from_wehrmacht
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -4068,11 +4068,11 @@ focus_tree = {
 		id = ITA_mobilise_the_africans2
 		icon = GFX_focus_ITA_volunteers
 		prerequisite = {
-			focus = ITA_folgore_division
+			focus = ITA_arditi_camouflage_tactics
 		}
 		x = 0
 		y = 1
-		relative_position_id = ITA_folgore_division
+		relative_position_id = ITA_arditi_camouflage_tactics
 		cost = 10
 		ai_will_do = {
 			factor = 1
