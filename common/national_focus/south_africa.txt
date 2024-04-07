@@ -749,7 +749,7 @@ focus_tree = {
 		}
 
 		available = {
-		date > 1942.1.1
+		date > 1941.1.1
 		}
 
 		completion_reward = {
