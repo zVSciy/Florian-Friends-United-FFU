@@ -84,7 +84,7 @@ PMFU submod
 - found the pcid 14 days to 35 increased military factory construction speed 5% --> **10%**
 - mobilise gulag workers gives 5% max production cap
 - changed the date lock for crush the fascists 01.08.1941 --> **01.08.1942**
-- imporved Coordinate industry focus
+- improved Coordinate industry focus
 efficiency growth from +0.1% --> **+0.2%**,
 offmap factories from 15 mils and civs to **20**
 - winter offensive idea duration increased 100 days --> **150 days**
