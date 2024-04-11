@@ -88,8 +88,8 @@ PMFU submod
 efficiency growth from +0.1% --> **+0.2%**,
 offmap factories from 15 mils and civs to **20**
 - winter offensive idea duration increased 100 days --> **150 days**
-- auto industry buffed, 8 civilian factories --> **10 civilian factories**
-- plant expansion buffed, 12 civilian factories --> **18 civilian factories**
+- tractor factories buffed, 8 civilian factories --> **10 civilian factories**
+- expand the tractor plants buffed, 12 civilian factories --> **15 civilian factories**
 - ural factories bufffed, 8 military factories --> **12 military factories**
 ---
 ### Finland
