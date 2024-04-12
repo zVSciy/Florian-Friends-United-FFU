@@ -6410,7 +6410,7 @@ focus_tree = {
 			add_political_power = 200
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = GER_plow_prop
-
+			
 			GER_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_army_conscription = 0.01 tooltip = conscription_tt }
 		}
