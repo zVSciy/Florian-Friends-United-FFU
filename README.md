@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = 949a**
+**Checksum = e806**
 
 ## Generel changes
 
@@ -85,11 +85,10 @@ PMFU submod
 - mobilise gulag workers gives 5% max production cap
 - changed the date lock for crush the fascists 01.08.1941 --> **01.08.1942**
 - improved Coordinate industry focus
-efficiency growth from +0.1% --> **+0.2%**,
+efficiency growth from +0.1% --> **+0.15%**,
 offmap factories from 15 mils and civs to **20**
-- winter offensive idea duration increased 100 days --> **150 days**
-- auto industry buffed, 8 civilian factories --> **10 civilian factories**
-- plant expansion buffed, 12 civilian factories --> **18 civilian factories**
+- winter offensive idea duration increased 100 days --> **120 days**
+- expand the tractor plants buffed, 12 civilian factories --> **15 civilian factories**
 - ural factories bufffed, 8 military factories --> **12 military factories**
 ---
 ### Finland
