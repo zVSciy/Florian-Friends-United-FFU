@@ -48,6 +48,7 @@
   SPA_the_plan_submarine:0 "The Submarine Plan"
   SPA_the_plan_imperial:0 "The Heavy Ship Plan"
   disable_scorched_earth_spain:0 "Disabled Scorched Earth During SCW"
+  SPR_axis_economy_boost:0 "Axis Economy Boost"
 
   #### EVENTS ####
   lar_spain.39.t:0 "[From.GetNameDefCap] Demands North Africa"

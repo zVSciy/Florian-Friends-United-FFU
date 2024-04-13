@@ -2674,8 +2674,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_to_variable = { SPR_spanish_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
-			add_to_variable = { SPR_spanish_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_ideas = SPR_axis_economy_boost
 			add_collaboration = {
 				target = POR
 				value = 0.8

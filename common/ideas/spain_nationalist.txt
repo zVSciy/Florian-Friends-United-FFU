@@ -45,6 +45,27 @@ ideas = {
 		
 		}
 
+		SPR_axis_economy_boost = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = { 
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		
+		}
+
 		SPR_subjugate_por = {
 
 			picture = SPR_nationalist_remnants
