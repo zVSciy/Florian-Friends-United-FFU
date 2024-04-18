@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = e806**
+**Checksum = 8a2d**
 
 ## Generel changes
 
@@ -12,6 +12,7 @@ PMFU submod
 - dispersed industry now gives +5% efficiency growth for each upgrade
 - planning bonus daily loose decreased from 5% to **3%**
 - added no tradeback idea to axis until 01.09.1939
+- removed turkey and splited the chromium between bulgaria and sweden
 
 ### Air
 
@@ -124,13 +125,13 @@ offmap factories from 15 mils and civs to **20**
 ---
 ### Romania
 
-- 
+- The ZB-53 focus grant 2x 100% Infantry research bonus
 ---
 ### Bulgaria
 
-- 
+- added focuses which grants 2300 chromium in total
 ---
-### Hunagry
+### Sweden
 
-- 
-
+ - added 1000 chromium in Norrbotten
+---
