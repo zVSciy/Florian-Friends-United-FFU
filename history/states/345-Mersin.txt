@@ -4,21 +4,23 @@ state={
 	name="STATE_345"
 
 	history={
-		owner = TUR
-		# victory_points = {
-		# 	10056 1 
-		# }
-		# victory_points = {
-		# 	11810 5 
-		# }
-		buildings = {
-			infrastructure = 6
-			4008 = {
-				naval_base = 1
-			}
+		owner = WST
+		add_core_of = WST
+		# owner = TUR
+		# # victory_points = {
+		# # 	10056 1 
+		# # }
+		# # victory_points = {
+		# # 	11810 5 
+		# # }
+		# buildings = {
+		# 	infrastructure = 6
+		# 	4008 = {
+		# 		naval_base = 1
+		# 	}
 
-		}
-		add_core_of = TUR
+		# }
+		# add_core_of = TUR
 
 	}
 

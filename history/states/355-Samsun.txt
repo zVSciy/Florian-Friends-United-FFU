@@ -6,17 +6,19 @@ state={
 	state_category = rural
 
 	history={
-		owner = TUR
-		victory_points = {
-			11881 10
-		}
-		buildings = {
-			infrastructure = 6 #3
-			# 11881 = {
-			# 	naval_base = 3
-			# }
-		}
-		add_core_of = TUR
+		owner = WST
+		add_core_of = WST
+		# owner = TUR
+		# victory_points = {
+		# 	11881 10
+		# }
+		# buildings = {
+		# 	infrastructure = 6 #3
+		# 	# 11881 = {
+		# 	# 	naval_base = 3
+		# 	# }
+		# }
+		# add_core_of = TUR
 	}
 
 	provinces={

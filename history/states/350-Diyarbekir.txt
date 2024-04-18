@@ -4,34 +4,36 @@ state={
 	name="STATE_350"
 
 	history={
-		owner = TUR
-		# victory_points = {
-		# 	4512 5 
-		# }
-		# victory_points = {
-		# 	9823 1 
-		# }
-		# victory_points = {
-		# 	12387 1 
-		# }
-		buildings = {
-			infrastructure = 6 #3
-			# air_base = 2
+		owner = WST
+		add_core_of = WST
+		# owner = TUR
+		# # victory_points = {
+		# # 	4512 5 
+		# # }
+		# # victory_points = {
+		# # 	9823 1 
+		# # }
+		# # victory_points = {
+		# # 	12387 1 
+		# # }
+		# buildings = {
+		# 	infrastructure = 6 #3
+		# 	# air_base = 2
 
-		}
-		# if = {
-		# 	limit = {
-		# 		has_dlc = "Battle for the Bosporus"
-		# 	}
-		# 	add_core_of = KUR
 		# }
-		# if = {
-		# 	limit = {
-		# 		NOT = { has_dlc = "Battle for the Bosporus" }
-		# 	}
-		# 	add_core_of = TUR
-		# 	add_core_of = KUR
-		# }
+		# # if = {
+		# # 	limit = {
+		# # 		has_dlc = "Battle for the Bosporus"
+		# # 	}
+		# # 	add_core_of = KUR
+		# # }
+		# # if = {
+		# # 	limit = {
+		# # 		NOT = { has_dlc = "Battle for the Bosporus" }
+		# # 	}
+		# # 	add_core_of = TUR
+		# # 	add_core_of = KUR
+		# # }
 	}
 
 	provinces={

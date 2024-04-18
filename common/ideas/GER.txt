@@ -685,6 +685,21 @@ ideas = {
 			}
 		}
 
+		GER_axis_research_group = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
 		triumphant_will = {
 			
 			allowed = {

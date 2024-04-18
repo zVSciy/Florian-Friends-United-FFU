@@ -7,22 +7,24 @@ state={
 	state_category = rural
 
 	history={
-		owner = TUR
-		buildings = {
-			infrastructure = 6 #3
-			# air_base = 5
-		}
+		owner = WST
+		add_core_of = WST
+		# owner = TUR
+		# buildings = {
+		# 	infrastructure = 6 #3
+		# 	# air_base = 5
+		# }
 		
-		# victory_points = {
-		# 	9861 5
-		# }
-		# victory_points = {
-		# 	6807 3
-		# }
-		# victory_points = {
-		# 	784 1
-		# }
-		add_core_of = TUR
+		# # victory_points = {
+		# # 	9861 5
+		# # }
+		# # victory_points = {
+		# # 	6807 3
+		# # }
+		# # victory_points = {
+		# # 	784 1
+		# # }
+		# add_core_of = TUR
 	}
 
 	provinces={

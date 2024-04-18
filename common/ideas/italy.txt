@@ -40,6 +40,21 @@ ideas = {
 			}
 		}
 
+		ITA_axis_research_group = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
 		ITA_mobilise_the_africans = {			
 			
 			allowed = {
@@ -51,7 +66,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.20
+				industrial_capacity_factory = -0.15
 			}
 		}
 

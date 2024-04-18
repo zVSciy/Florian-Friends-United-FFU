@@ -211,6 +211,48 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = BUL_expand_chrome_mining
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {
+			focus = BUL_farming_modernisation
+		}
+		x = 2
+		y = 1
+		relative_position_id = BUL_farming_modernisation
+		cost = 5
+
+		completion_reward = {
+			add_resource = {
+				type = chromium
+				amount = 1000
+				state = 48
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_help_the_german_chrome_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = BUL_expand_chrome_mining
+		}
+		x = 0
+		y = 1
+		relative_position_id = BUL_expand_chrome_mining
+		cost = 10
+
+		completion_reward = {
+			add_resource = {
+				type = chromium
+				amount = 1300
+				state = 60
+			}
+		}
+
+	}
+
 	
 	focus = {
 		id = BUL_heavy_industry_investments

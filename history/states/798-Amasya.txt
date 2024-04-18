@@ -9,17 +9,19 @@ state={
 	state_category = rural
 
 	history= {
-		owner = TUR
+		owner = WST
+		# add_core_of = WST
+		# owner = TUR
 		# victory_points = {
 		# 	3862 3
 		# }
 		# victory_points = {
 		# 	919 5
 		# }
-		buildings = {
-			infrastructure = 6 #3
-		}
-		add_core_of = TUR
+		# buildings = {
+		# 	infrastructure = 6 #3
+		# }
+		# add_core_of = TUR
 	}
 
 	local_supplies=0.0 

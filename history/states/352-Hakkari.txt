@@ -7,33 +7,35 @@ state={
 	state_category = rural
 
 	history={
-		owner = TUR
-		# victory_points = {
-		# 	12476 1 
+		owner = WST
+		add_core_of = WST
+		# owner = TUR
+		# # victory_points = {
+		# # 	12476 1 
+		# # }
+		# # victory_points = {
+		# # 	7530 1 
+		# # }
+		# # victory_points = {
+		# # 	10497 1 
+		# # }
+		# buildings = {
+		# 	infrastructure = 6 #3
 		# }
-		# victory_points = {
-		# 	7530 1 
-		# }
-		# victory_points = {
-		# 	10497 1 
-		# }
-		buildings = {
-			infrastructure = 6 #3
-		}
-		add_core_of = TUR
-		# if = {
-		# 	limit = {
-		# 		has_dlc = "Battle for the Bosporus"
-		# 	}
-		# 	add_core_of = KUR
-		# }
-		# if = {
-		# 	limit = {
-		# 		NOT = { has_dlc = "Battle for the Bosporus" }
-		# 	}
-		# 	add_core_of = TUR
-		# 	add_core_of = KUR
-		# }
+		# add_core_of = TUR
+		# # if = {
+		# # 	limit = {
+		# # 		has_dlc = "Battle for the Bosporus"
+		# # 	}
+		# # 	add_core_of = KUR
+		# # }
+		# # if = {
+		# # 	limit = {
+		# # 		NOT = { has_dlc = "Battle for the Bosporus" }
+		# # 	}
+		# # 	add_core_of = TUR
+		# # 	add_core_of = KUR
+		# # }
 	}
 
 	provinces={
