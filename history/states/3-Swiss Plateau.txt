@@ -2,25 +2,27 @@
 state={
 	id=3
 	name="STATE_3"
-	manpower = 1216838
-	resources={
-		aluminium=180 # was: 28
-	}
+	manpower = 1 #1216838
+	# resources={
+	# 	aluminium=180 # was: 28
+	# }
 
 	state_category = city
 
 
 	history={
-		owner = SWI
-		victory_points = { 9620 15 }
-		victory_points = { 663 10 }
-		buildings = {
-			infrastructure = 6
-			arms_factory = 4
-			industrial_complex = 4
-			air_base = 4
-		}
-		add_core_of = SWI
+		owner = WST
+		add_core_of = WST
+		# owner = SWI
+		# victory_points = { 9620 15 }
+		# victory_points = { 663 10 }
+		# buildings = {
+		# 	infrastructure = 6
+		# 	arms_factory = 4
+		# 	industrial_complex = 4
+		# 	air_base = 4
+		# }
+		# add_core_of = SWI
 	}
 
 	provinces={

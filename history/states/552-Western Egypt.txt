@@ -8,6 +8,8 @@ state={
 	impassable = yes
 
 	history={
+		owner = WST
+		add_core_of = WST
 		# #owner = ENG
 		# buildings = {
 		# 	infrastructure = 0

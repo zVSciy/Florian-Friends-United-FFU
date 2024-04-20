@@ -2,17 +2,19 @@
 state={
 	id=847
 	name="STATE_847"
-	manpower = 178429
+	manpower = 1 #178429
 	state_category = pastoral
-	resources={
-	}
+	# resources={
+	# }
 	history={
-		owner = SWI
-		buildings = {
-			infrastructure = 1 
-			industrial_complex = 1
-		}
-		add_core_of = SWI
+		owner = WST
+		add_core_of = WST
+		# owner = SWI
+		# buildings = {
+		# 	infrastructure = 1 
+		# 	industrial_complex = 1
+		# }
+		# add_core_of = SWI
 	}
 	provinces={
 		636 9587 3612 9618  

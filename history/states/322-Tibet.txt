@@ -4,6 +4,8 @@ state={
 
 
 	history={
+		owner = WST
+		add_core_of = WST
 		# #owner = TIB
 		# buildings = {
 		# 	infrastructure = 1
