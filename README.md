@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = 865f**
+**Checksum = ad33**
 
 ## Generel changes
 
@@ -11,7 +11,7 @@ PMFU submod
 - marine doctrin now grants +100% invasion planning speed
 - dispersed industry now gives +5% efficiency growth for each upgrade
 - planning bonus daily loose decreased from 5% to **3%**
-- added no tradeback idea to axis until 01.09.1939
+- added no tradeback idea to axis until 01.06.1939
 - removed turkey and splited the chromium between bulgaria and sweden
 
 ### Air
@@ -39,6 +39,7 @@ PMFU submod
 - nerfed focus on germany **minus** dockyard output from -5% --> **-15%**
 - nerfed focus on japan **minus** factory output from -5% --> **-15%**
 - nerfed two ocean navy act from 10 dockyard --> **8**
+- removed useless focuses
 ---
 ### Italy
 
@@ -67,6 +68,7 @@ PMFU submod
 - added Kill the soviets focus which grants idea with 10% attack bonus against Soviet Union and Mongolia for 100 days --> After 01.05.1944
 - added Secure Soviet Oil focus which adds 700 oil in hannover
 - proclaim total war now adds another +1% to General Staff idea
+- added early barb focus
 ---
 ### France
 
@@ -125,11 +127,18 @@ offmap factories from 15 mils and civs to **20**
 ---
 ### Romania
 
-- The ZB-53 focus grant 2x 100% Infantry research bonus
+- The ZB-53 focus grant 1x 100% Infantry research bonus
 ---
 ### Bulgaria
 
 - added focuses which grants 2300 chromium in total
+---
+### Mongolia
+
+ - changes Legacy of the Khanate --> +10% attack and defense for special forces
+ - added focus "new artillery"
+ - added focus "new anti_tank"
+ - added focus "invite soviet army advisors"
 ---
 ### Sweden
 
