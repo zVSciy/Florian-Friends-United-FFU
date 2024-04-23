@@ -4918,38 +4918,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = USA_airborne_divisions
-		icon = GFX_USA_airborne_divisions
-		x = -2
-		y = 2
-		prerequisite = { focus = USA_first_special_service_force }
-		relative_position_id = USA_selective_training_act
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			# US_Airborne_increase_double = yes
-			# add_ideas = USA_airborne_divisions
-			USA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
-		}
-	}
+	
 	focus = {
 		id = USA_army_of_the_united_states
 		icon = GFX_focus_generic_little_entente

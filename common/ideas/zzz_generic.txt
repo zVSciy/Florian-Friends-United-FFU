@@ -237,7 +237,7 @@ ideas = {
 			picture = generic_infantry_bonus
 			
 			modifier = {
-				special_forces_cap = 100
+				special_forces_min = 6000
 			}
 		}
 

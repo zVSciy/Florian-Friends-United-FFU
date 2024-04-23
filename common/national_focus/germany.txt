@@ -3456,6 +3456,99 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = GER_early_barb
+		icon = GFX_ger_final_crusade
+		prerequisite = { focus = GER_prepare_barb }
+
+		available = {
+			# has_army_manpower = { size > 1199999 }
+			if = {
+				limit = {
+					has_country_flag = GER_offensive_cooldown
+				}
+				has_country_flag = {
+					flag = GER_offensive_cooldown
+					days > 250
+				}
+				custom_trigger_tooltip = {
+					tooltip = GER_offensive_cooldown_tt
+					has_country_flag = {
+						flag = GER_offensive_cooldown
+						days > 250
+					}
+				}
+			}
+			OR = {
+				AND = {
+					date > 1940.5.1
+					date < 1940.8.1
+				}
+			}
+			if = {
+				limit = {
+					GER  = { is_ai = yes }
+				}
+				VIC = {
+					has_country_flag = VIC_france_capped
+				}
+				# FRA  = { has_capitulated = yes }
+			}
+		}
+
+		bypass = {
+			has_war_with = SOV
+		}
+
+		will_lead_to_war_with = SOV
+		x = -2
+		y = 1
+		relative_position_id = GER_prepare_barb
+		cancel_if_invalid = no
+		available_if_capitulated = no
+		continue_if_invalid = yes
+		cost = 2
+
+		completion_reward = {
+			add_advisor_role = {
+				character = GER_walter_model
+				activate = yes
+				advisor = {
+					slot = army_chief
+					cost = 50
+					idea_token = GER_walter_model
+					traits = {
+						army_chief_offensive_3
+					}
+				}
+			}
+			set_country_flag = GER_offensive_cooldown
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MON
+				type = annex_everything
+			}
+			SOV = {
+				declare_war_on_enemy_faction = yes
+			}
+			add_timed_idea = {
+				idea = GER_barbarossa
+				days = 75
+			}
+							
+			# remove_ideas = GER_good_weather_army
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_acclimatization_cold_climate_gain_factor = 9.99 tooltip = acclimatization_cold_climate_gain_factor_tt }
+			
+			activate_mission = GER_barbarossa_mission_moscow
+			activate_mission = GER_barbarossa_mission_kiev
+			activate_mission = GER_barbarossa_mission_lenin
+		}
+	}
 	
 	focus = {
 		id = GER_barb
@@ -3572,7 +3665,7 @@ focus_tree = {
 	focus = {
 		id = GER_secure_soviet_oil
 		icon = GFX_focus_GER_autarky
-		prerequisite = { focus = GER_barb }
+		prerequisite = { focus = GER_barb focus = GER_early_barb }
 
 		available = {
 			has_full_control_of_state = 234
@@ -3598,7 +3691,7 @@ focus_tree = {
 	focus = {
 		id = GER_fall_blau
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_barb }
+		prerequisite = { focus = GER_barb focus = GER_early_barb }
 		
 		available = {
 			Date > 1942.5.1
@@ -3746,7 +3839,7 @@ focus_tree = {
 	focus = {
 		id = GER_roa
 		icon = GFX_roa
-		prerequisite = { focus = GER_barb }
+		prerequisite = { focus = GER_barb focus = GER_early_barb }
 		
 		available = {
 			has_war_with = SOV

@@ -8,6 +8,8 @@ state={
 	state_category = town
 
 	history={
+		owner = WST
+		add_core_of = WST
 		#owner = NIC
 		# buildings = {
 		# 	infrastructure = 4

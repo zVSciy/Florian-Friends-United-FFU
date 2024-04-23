@@ -11,6 +11,8 @@ state={
 	# 	steel=100 # was: 2
 	# }
 	history={
+		owner = WST
+		add_core_of = WST
 		#owner = URG
 		# buildings = {
 		# 	infrastructure = 5

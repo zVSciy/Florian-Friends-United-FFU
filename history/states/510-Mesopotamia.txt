@@ -10,6 +10,8 @@ state={
 	state_category = large_town
 
 	history={
+		owner = WST
+		add_core_of = WST
 		# #owner = ARG
 		# buildings = {
 		# 	infrastructure = 5

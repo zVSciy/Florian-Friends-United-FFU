@@ -29,6 +29,11 @@
   MON_soviet_experts_desc:0 "Though possessing a long martial history, Mongolia lacks experience in this form of prolonged trench warfare. Let us learn from those more experienced than us."
   MON_support_pan_mongolism:0 "Support Pan-Mongolism"
   MON_support_pan_mongolism_desc:0 "We may have been reduced to a meager acreage, but the Mongol Uls once stood tall above all else, strenching across the world from sea to sea. Our destiny may not lay with the Atlantic, but we might yet spark a sense of union with our westwhile brethren."
+  MON_new_artillery_1:0 "Develop Artillery"
+  MON_new_anti_tank:0 "Anti-Tank Weapons"
+  MON_soviet_army_advisor:0 "Invite Soviet Army Advisors"
+
+
   # MON_abandon_collectivisation:0 "Abandon Collectivisation" #don't think this is a focus anymore
   # MON_integrate_tannu:0 "Integrate the Tuvans" #don't think this is a focus anymore
   # MON_integrate_sik:0 "Integrate Sinkiang" #don't think this is a focus anymore
@@ -161,6 +166,7 @@
   MON_buddhist_compromise_idea:0 "Buddhist Cooperation"
   MON_religious_taxation:0 "Religious Taxations"
   MON_nomadic_war_idea:0 "Nomadic Warriors"
+  MON_sov_army_advisors:0 "Soviet Army Advisors"
 
   #### CHARACTERS ####
   MON_buyannmeh:0 "Genghis Force Ghost"

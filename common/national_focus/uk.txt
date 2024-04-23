@@ -123,8 +123,8 @@ focus_tree = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
 			# add_ideas = ENG_shadow_scheme_idea
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt }
-			add_to_variable = { ENG_british_economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt}
+			add_to_variable = { ENG_british_economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt}
 			
 			# add_to_variable= { ENG.shadow_civs1 = 2 }
 			# random_owned_controlled_state= {

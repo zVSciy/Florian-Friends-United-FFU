@@ -27,7 +27,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 1375 y = 600 }
+	continuous_focus_position = { x = 1375 y = 700 }
 	
   # Collectivization Tree
 
@@ -1616,6 +1616,57 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = MON_new_artillery_1
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = MON_new_rifles }
+		x = -2
+		y = 1
+		relative_position_id = MON_new_rifles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.5
+				uses = 2
+				category = artillery
+				category = heavy_artillery
+			}
+		
+		}
+	}
+
+	focus = {
+		id = MON_new_anti_tank
+		icon = GFX_SOV_artillery_development
+		prerequisite = { focus = MON_new_artillery_1 }
+		x = 0
+		y = 1
+		relative_position_id = MON_new_artillery_1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.5
+				uses = 2
+				category = cat_anti_tank
+			}
+		}
+
+	}
 	
 	focus = {
 		id = MON_new_artillery
@@ -1792,7 +1843,7 @@ focus_tree = {
 			add_ideas = MON_spirit_of_genghis_idea
 			add_corps_commander_role = {
 				character = MON_khan
-				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer commando }
+				traits = { infantry_leader war_hero brilliant_strategist trait_engineer commando }
 				skill = 4
 				attack_skill = 4
 				defense_skill = 4
@@ -1800,6 +1851,26 @@ focus_tree = {
 				logistics_skill = 6
 			}
 		}
+	}
+
+	focus = {
+		id = MON_soviet_army_advisor
+		icon = GFX_SOV_new_officer_academies
+		prerequisite = { focus = MON_legacy_of_khanate}
+		x = 0
+		y = 1
+		relative_position_id = MON_legacy_of_khanate
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = MON_sov_army_advisors
+		}
+
 	}
 	
 	focus = {
