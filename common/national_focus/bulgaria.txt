@@ -223,6 +223,10 @@ focus_tree = {
 		relative_position_id = BUL_farming_modernisation
 		cost = 5
 
+		ai_will_do = {
+			factor = 27
+		}
+
 		completion_reward = {
 			add_resource = {
 				type = chromium
@@ -242,6 +246,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_expand_chrome_mining
 		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
 
 		completion_reward = {
 			add_resource = {
