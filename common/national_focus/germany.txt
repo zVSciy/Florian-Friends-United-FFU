@@ -3535,10 +3535,6 @@ focus_tree = {
 			SOV = {
 				declare_war_on_enemy_faction = yes
 			}
-			add_timed_idea = {
-				idea = GER_barbarossa
-				days = 75
-			}
 							
 			# remove_ideas = GER_good_weather_army
 			GER_army_dynamic_modifier_tt = yes # tooltip
