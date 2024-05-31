@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = ad33**
+**Checksum = 17e3**
 
 ## Generel changes
 
