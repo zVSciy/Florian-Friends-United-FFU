@@ -104,7 +104,7 @@ offmap factories from 15 mils and civs to **20**
 ---
 ### Spain
 
-- Buffed Unite Iberia focus now add **10%** factory output and **5%** production cap
+- Buffed Unite Iberia focus now adds **5%** production cap
   
 ---
 ### Japan
