@@ -53,6 +53,7 @@ PMFU submod
 - prepare for the inevitable factory output increased 5% --> **10%**
 - royal ordmace, filler factories and royal arsenal add 1 military factory 2 --> **3**
 - destroyer for bases gives 5% max production cap escape the cage gets 5% dockyard output
+- fortify the rock builds lvl 100 airbase
 ---
 ### Germany
 
