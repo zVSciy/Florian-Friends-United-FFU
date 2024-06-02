@@ -4361,13 +4361,13 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_english_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
-			}
+			add_ideas = ENG_destroyers_for_bases1
+			
 			USA = {
 				custom_effect_tooltip = needs_approval
 			}
 			country_event = { id = usa.4 days = 1 }
+
 			effect_tooltip = {
 				custom_effect_tooltip = USA_destroyers_for_bases_tt
 				transfer_state = 696
@@ -4378,8 +4378,8 @@ focus_tree = {
 				transfer_state = 691
 			}
 		}
-	}
 	
+	}
 	focus = {
 		id = ENG_home_guard
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
