@@ -410,8 +410,7 @@ shared_focus = {
 			}
 			# custom_effect_tooltip = available_mio_tt
 			# show_mio_tooltip = COM_vauxhall_organization
-			mio:SAF_cope_organization = {
-
+			mio:ENG_vauxhall_organization = {
 				add_mio_size = 2
 			}
 		}

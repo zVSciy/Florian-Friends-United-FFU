@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = 3f34**
+**Checksum = ad33**
 
 ## Generel changes
 
@@ -45,7 +45,7 @@ PMFU submod
 
 - mobilize naval workers add 10% dockyard output
 - focus on naval industry, green water navy and
-- the legions gains +5% division attack and defense
+- the legions gains +10% division attack and defense
 - added focus which grants 750000 manpower and -15% factory output (365 days)
 ---
 ### UK
@@ -53,7 +53,6 @@ PMFU submod
 - prepare for the inevitable factory output increased 5% --> **10%**
 - royal ordmace, filler factories and royal arsenal add 1 military factory 2 --> **3**
 - destroyer for bases gives 5% max production cap escape the cage gets 5% dockyard output
-- fortify the rock builds lvl 100 airbase
 ---
 ### Germany
 
@@ -65,7 +64,7 @@ PMFU submod
 - Fritz Todt construction speed increased 5% --> **10%**
 - synthetic rubber add 3 in each states 2 --> **3**
 - Weserübung now annexes norway and gives 40% compliance on denmark and norway
-- Steiner counter attack duration increased 14 days --> **45 days**
+- Steiner counter attack duration increased 14 days --> **90 days**
 - added Kill the soviets focus which grants idea with 10% attack bonus against Soviet Union and Mongolia for 100 days --> After 01.05.1944
 - added Secure Soviet Oil focus which adds 700 oil in hannover
 - proclaim total war now adds another +1% to General Staff idea
@@ -104,7 +103,7 @@ offmap factories from 15 mils and civs to **20**
 ---
 ### Spain
 
-- Buffed Unite Iberia focus now adds **5%** production cap
+- Buffed Unite Iberia focus now add **10%** factory output and **5%** production cap
   
 ---
 ### Japan

@@ -3463,6 +3463,7 @@ focus_tree = {
 		prerequisite = { focus = GER_prepare_barb }
 
 		available = {
+			always = false
 			# has_army_manpower = { size > 1199999 }
 			if = {
 				limit = {
@@ -5112,46 +5113,11 @@ focus_tree = {
 		}
 	}	
 
-	focus = {
-		id = GER_operation_tannenbaum
-		icon = GFX_GER_operation_tannenbaum
-		prerequisite = { focus = GER_danzig_or_war }
-		mutually_exclusive = { focus = GER_swiss_banks }
-		available = {
-			is_puppet = no
-			NOT = { is_in_faction_with = SWI }
-		}
-		bypass = {
-			NOT = { country_exists = SWI }
-			has_war_with = SWI
-		}
-		cancel_if_invalid = yes
-		will_lead_to_war_with = SWI
-		x = -3
-		y = 1
-		relative_position_id = GER_danzig_or_war
-		cost = 1
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		
-		completion_reward = {
-			declare_war_on = {
-				target = SWI
-				type = annex_everything
-			}
-		}
-	}
 	
 	focus = {
 		id = GER_swiss_banks
 		icon = GFX_GER_swiss_money_laundry
 		prerequisite = { focus = GER_danzig_or_war }
-		mutually_exclusive = { focus = GER_operation_tannenbaum }
 		available = {
 			is_puppet = no
 			NOT = { is_in_faction_with = SWI }
@@ -5162,7 +5128,7 @@ focus_tree = {
 			has_war_with = SWI
 		}
 		cancel_if_invalid = yes
-		x = -5
+		x = -4
 		y = 1
 		relative_position_id = GER_danzig_or_war
 		cost = 5
@@ -7026,10 +6992,6 @@ focus_tree = {
 		y = 1
 		cost = 1
 
-		available = {
-			surrender_progress > 0.20
-		}
-		
 		ai_will_do = {
 			factor = 5
 		}
@@ -7048,7 +7010,7 @@ focus_tree = {
 				logistics_skill=7
 			}
 			
-		   add_timed_idea = {idea = GER_steiner_idea days = 45 }
+		   add_timed_idea = {idea = GER_steiner_idea days = 90 }
 
 			hidden_effect ={
 			# 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
