@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = ad33**
+**Checksum = idk**
 
 ## Generel changes
 
@@ -13,6 +13,8 @@ PMFU submod
 - planning bonus daily loose decreased from 5% to **3%**
 - added no tradeback idea to axis until 01.06.1939
 - removed turkey and splited the chromium between bulgaria and sweden
+- added no tradeback to japan, manchu and siam
+- added "Show Speed In Construction View" to mod **Thanks to "Yes, Paimon"
 
 ### Air
 
