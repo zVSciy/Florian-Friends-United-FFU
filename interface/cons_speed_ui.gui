@@ -1,0 +1,233 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "cons_speed_opener_container"
+		position = { x = 50 y = 201 }
+		size = { width = 677 height = 1330 }
+		
+		buttonType = {
+			name = "construction_speed_open"
+			quadTextureSprite = "GFX_cons_speed"
+			position = { x = 363 y = -196 } 
+			shortcut = "c"
+			pdx_tooltip = construction_speed_open_tt
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+	
+	containerWindowType = {
+		name = "cons_speed_container"
+		position = { x = 50 y = 201 }  
+		size = { width = 677 height = 1330 }
+
+		instantTextBoxType = {
+			name = "infrastructure_speed"   
+			position = { x = 387 y = -66 }
+			font = "cg_16b"              
+			text = "[?infrastructure_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "air_base_speed"   
+			position = { x = 433 y = -66 }
+			font = "cg_16b"              
+			text = "[?air_base_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "anti_air_building_speed"   
+			position = { x = 387 y = -23 } 
+			font = "cg_16b"              
+			text = "[?anti_air_building_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "synthetic_refinery_speed"   
+			position = { x = 433 y = -23 } 
+			font = "cg_16b"              
+			text = "[?synthetic_refinery_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "steel_refinery_speed"
+			position = { x = 387 y = 21 }
+			font = "cg_16b"
+			text = "[?steel_refinery_const_speed_var|%0=+]"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "fuel_silo_speed"   
+			position = { x = 433 y = 21 } 
+			font = "cg_16b"              
+			text = "[?fuel_silo_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "radar_station_speed"   
+			position = { x = 387 y = 65 } 
+			font = "cg_16b"              
+			text = "[?radar_station_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "rocket_site_speed"   
+			position = { x = 433 y = 65 } 
+			font = "cg_16b"              
+			text = "[?rocket_site_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "nuclear_reactor_speed"   
+			position = { x = 387 y = 109 } 
+			font = "cg_16b"              
+			text = "[?nuclear_reactor_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "arms_factory_speed"   
+			position = { x = 387 y = 214 } 
+			font = "cg_16b"              
+			text = "[?arms_factory_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "industrial_complex_speed"   
+			position = { x = 433 y = 214 }
+			font = "cg_16b"              
+			text = "[industrial_complex_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "dockyard_speed"   
+			position = { x = 387 y = 258 }
+			font = "cg_16b"              
+			text = "[?dockyard_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "supply_node_speed"   
+			position = { x = 387 y = 370 } 
+			font = "cg_16b"              
+			text = "[?supply_node_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "rail_way_speed"   
+			position = { x = 433 y = 370 } 
+			font = "cg_16b"              
+			text = "[?rail_way_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "naval_base_speed"   
+			position = { x = 387 y = 414 } 
+			font = "cg_16b"              
+			text = "[?naval_base_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "bunker_speed"   
+			position = { x = 433 y = 414 }
+			font = "cg_16b"              
+			text = "[?bunker_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "coastal_bunker_speed"   
+			position = { x = 433 y = 458 }
+			font = "cg_16b"              
+			text = "[?coastal_bunker_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "coastal_fortress_speed"
+			position = { x = 387 y = 502 }
+			font = "cg_16b"
+			text = "[?coastal_fortress_const_speed_var|%0=+]"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "fortress_speed"
+			position = { x = 387 y = 458 }
+			font = "cg_16b"
+			text = "[?fortress_const_speed_var|%0=+]"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		
+	}
+}

@@ -164,19 +164,6 @@ ideas = {
 				army_infantry_defence_factor = 0.10
 			}
 		}
-
-		ENG_destroyers_for_bases1 = {
-
-			picture = great_depression
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-			}
-		}
-
 		ENG_tallboys = {
 
 			picture = generic_air_research
