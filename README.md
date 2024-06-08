@@ -60,7 +60,7 @@ PMFU submod
 ---
 ### Germany
 
-- Danzig or War date 1.06.1939 --> 1.06.1938 (Early war)
+- Danzig or War date 1.06.1939 --> 01.01.1939
 - Mobilise the Reich prodcution cap increased **5** --> **10%**
 - tripartite gains **10%** research speed for all
 - align romania increase from 200 --> **400**
