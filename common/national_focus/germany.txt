@@ -2830,7 +2830,7 @@ focus_tree = {
 		available = {
 			
 			is_puppet = no	
-			date > 1939.1.1		
+			date > 1939.6.1	
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
