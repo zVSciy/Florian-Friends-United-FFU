@@ -43,6 +43,9 @@ PMFU submod
 - nerfed focus on japan **minus** factory output from -5% --> **-15%**
 - nerfed two ocean navy act from 10 dockyard --> **8**
 - removed useless focuses
+- changed victory plan requirements Sov Surrender_progress to 85% and added USA Surrender_progress 50%
+- changed focustime for wartime industry 70 to 35 days
+  
 ---
 ### Italy
 
