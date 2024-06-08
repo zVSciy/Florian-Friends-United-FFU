@@ -15,6 +15,7 @@ PMFU submod
 - removed turkey and splited the chromium between bulgaria and sweden
 - added no tradeback to japan, manchu and siam
 - added "Show Speed In Construction View" to mod **Thanks to "Yes, Paimon"
+- added 15 Army/Navy/Air XP dayOne 
 
 ### Air
 
@@ -72,6 +73,7 @@ PMFU submod
 - added Secure Soviet Oil focus which adds 700 oil in hannover
 - proclaim total war now adds another +1% to General Staff idea
 - added early barb focus
+- danzig or war focus removes noTradeback for Axis
 ---
 ### France
 
@@ -126,7 +128,6 @@ offmap factories from 15 mils and civs to **20**
   factory output **+10%**
   military factory construction speed **+10%**
   attack bonus against germany **+5%**
-
 ---
 ### Romania
 
