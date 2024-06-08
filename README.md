@@ -112,9 +112,7 @@ offmap factories from 15 mils and civs to **20**
 ---
 ### Japan
 
-- added noTradeback until 
-
-- 
+- added noTradeback until 01.09.1938
 ---
 ### Canada
 
