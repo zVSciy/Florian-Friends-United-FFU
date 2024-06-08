@@ -134,7 +134,7 @@ guiTypes = {
 			name = "industrial_complex_speed"   
 			position = { x = 433 y = 214 }
 			font = "cg_16b"              
-			text = "[industrial_complex_const_speed_var|%0=+]"	   
+			text = "[?industrial_complex_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
