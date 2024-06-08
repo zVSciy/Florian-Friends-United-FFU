@@ -69,11 +69,6 @@ set_rule = {
 	can_join_factions = no
 }
 
-add_timed_idea = {
-	idea = no_tradeback
-	days = 974
-}
-
 set_variable = {
 	var = min_fuel
 	value = 0.800

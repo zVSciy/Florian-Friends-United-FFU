@@ -56,11 +56,6 @@ set_popularities = {
 	neutrality = 20
 }
 
-add_timed_idea = {
-	idea = no_tradeback
-	days = 974
-}
-
 # MP_garrison_division_standard = yes
 
 recruit_character = MAN_zhang_jinghui

@@ -496,7 +496,7 @@ focus_tree = {
 			328 = {
 				add_resource = {
 					type = aluminium
-					amount = 320
+					amount = 960
 				}
 			}
 		}
@@ -527,17 +527,21 @@ focus_tree = {
 			328 = {
 				add_resource = {
 					type = chromium
-					amount = 180
+					amount = 380
 				}
 			}
 			716 = {
 				add_resource = {
 					type = chromium
-					amount = 140
+					amount = 240
 				}
 				add_resource = {
 					type = tungsten
-					amount = 260
+					amount = 360
+				}
+				add_resource = {
+					type = aluminium
+					amount = 450
 				}
 			}
 		}
