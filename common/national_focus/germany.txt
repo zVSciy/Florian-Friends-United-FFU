@@ -2902,6 +2902,41 @@ focus_tree = {
 			}
 		}	
 		completion_reward = { 
+
+			# ! Remove noTradeback from Axis
+			GER = {
+				remove_ideas = { no_tradeback }
+			}
+
+			ITA = {
+				remove_ideas = { no_tradeback }
+			}
+
+			ROM = {
+				remove_ideas = { no_tradeback }
+			}
+
+			HUN = {
+				remove_ideas = { no_tradeback }
+			}
+
+			BUL = {
+				remove_ideas = { no_tradeback }
+			}
+
+			FIN = {
+				remove_ideas = { no_tradeback }
+			}
+
+			SPR = {
+				remove_ideas = { no_tradeback }
+			}
+
+			YUG = {
+				remove_ideas = { no_tradeback }
+			}
+
+
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			if = {
 				limit = {
@@ -2918,6 +2953,7 @@ focus_tree = {
 					remove_state_claim = 86
 					remove_state_claim = 762
 				}
+
 				POL = {
 					# country_event = { id = germany.86 }
 					GER = {
