@@ -2329,4 +2329,17 @@ on_actions = {
 			}
 		}
 	}
+
+	#! New - FFU 
+	on_startup = {
+		# Add 15 Army/Navy/Air Force experience
+		effect = {
+			every_country = {
+				army_experience = 15
+				navy_experience = 15
+				air_experience = 15
+			}
+		}
+	
+	}
 }
