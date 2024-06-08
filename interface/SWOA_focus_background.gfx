@@ -44,35 +44,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/Focus_Tree_BG/BAX.dds"
 	}
 	spriteType = {
-		name = "GFX_RAJ_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/RAJ.dds"
-	}
-	spriteType = {
-		name = "GFX_ROM_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/ROM.dds"
-	}
-	spriteType = {
-		name = "GFX_BUL_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/BUL.dds"
-	}
-	spriteType = {
-		name = "GFX_CAN_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/CAN.dds"
-	}
-	spriteType = {
-		name = "GFX_AUS_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/AUS.dds"
-	}
-	spriteType = {
-		name = "GFX_FIN_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/FIN.dds"
-	}
-	spriteType = {
-		name = "GFX_SAF_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/SAF.dds"
-	}
-	spriteType = {
-		name = "GFX_SPR_focus_background"
-		texturefile = "gfx/interface/Focus_Tree_BG/SPR.dds"
+		name = "GFX_BAL_focus_background"
+		texturefile = "gfx/interface/Focus_Tree_BG/BAL.dds"
 	}
 }

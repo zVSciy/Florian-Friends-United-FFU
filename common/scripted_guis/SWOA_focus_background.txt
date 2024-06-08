@@ -1,17 +1,42 @@
-scripted_gui = {
-	SWOA_focus_background = {
-		context_type = player_context
-		parent_window_name = "a_focus_background"
-        window_name = "SWOA_focus_background_container"
+# scripted_gui = {
+# 	SWOA_focus_background = {
+# 		context_type = player_context
+# 		parent_window_name = "a_focus_background"
+# 		window_name = "SWOA_focus_background_container"
 
-		visible = {
-			check_variable = { show_background > 0 }
-		}
+# 		visible = {
+# 			check_variable = { show_background > 0 }
+# 			has_country_flag = FOCUS_BG_background
+# 		}
 
-		properties = {
-			SWOA_focus_background_image = {
-                image = "[THIS.GetFocusBG]"
-			}
-		}
-	}
-}
+# 		properties = {
+# 			SWOA_focus_background_image = {
+# 				image = "[THIS.GetFocusBG]"
+# 			}
+# 		}
+# 	}
+# 	tool_open= {
+# 		context_type = player_context
+# 		parent_window_name = "nationalfocusview"
+# 		window_name = "focus_bg_container"
+# 		visible = {
+# 			always = yes
+# 		}
+# 		effects = {
+# 			tool_open_click = {
+# 				if = {
+# 					limit = { ROOT = { NOT = { has_country_flag = FOCUS_BG_background } } }
+# 					ROOT = { set_country_flag = FOCUS_BG_background }
+# 				}
+# 				else = {
+# 					ROOT = { clr_country_flag = FOCUS_BG_background }
+# 				}
+# 			}
+# 		}
+# 		triggers = {
+# 			tool_open_click_enabled = {
+# 				always = yes
+# 			}
+# 		}
+# 	}
+# }

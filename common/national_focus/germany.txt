@@ -6992,6 +6992,10 @@ focus_tree = {
 		y = 1
 		cost = 1
 
+		available = {
+			surrender_progress > 0.30
+		}
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -7009,8 +7013,8 @@ focus_tree = {
 				planning_skill=6
 				logistics_skill=7
 			}
-			
-		   add_timed_idea = {idea = GER_steiner_idea days = 90 }
+			 
+		   add_timed_idea = {idea = GER_steiner_idea days = 45 }
 
 			hidden_effect ={
 			# 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }

@@ -58,90 +58,18 @@ defined_text = {
 		trigger = {
 			check_variable = { show_background = 10 }
 		}
-		localization_key = "GFX_BRA_focus_background"
+		localization_key = "GFX_TUR_focus_background"
 	}
 	text = {
 		trigger = {
 			check_variable = { show_background = 11 }
 		}
-		localization_key = "GFX_BUL_focus_background"
+		localization_key = "GFX_BAX_focus_background"
 	}
 	text = {
 		trigger = {
 			check_variable = { show_background = 12 }
 		}
-		localization_key = "GFX_FIN_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 13 }
-		}
-		localization_key = "GFX_HOL_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 14 }
-		}
-		localization_key = "GFX_HUN_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 15 }
-		}
-		localization_key = "GFX_IRE_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 16 }
-		}
-		localization_key = "GFX_MAN_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 17 }
-		}
-		localization_key = "GFX_MEX_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 18 }
-		}
-		localization_key = "GFX_POL_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 19 }
-		}
-		localization_key = "GFX_ROM_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 20 }
-		}
-		localization_key = "GFX_SPR_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 21 }
-		}
-		localization_key = "GFX_YUG_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 22 }
-		}
-		localization_key = "GFX_SWE_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 23 }
-		}
-		localization_key = "GFX_NOR_focus_background"
-	}
-	text = {
-		trigger = {
-			check_variable = { show_background = 24 }
-		}
-		localization_key = "GFX_DEN_focus_background"
+		localization_key = "GFX_BAL_focus_background"
 	}
 }

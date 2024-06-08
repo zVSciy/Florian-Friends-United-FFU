@@ -9,6 +9,7 @@ guiTypes = {
 			name = "SWOA_focus_background_image"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
+			scale = 1
 		}
 	}
 }
