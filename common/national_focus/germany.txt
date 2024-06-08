@@ -2830,7 +2830,7 @@ focus_tree = {
 		available = {
 			
 			is_puppet = no	
-			date > 1938.6.1		
+			date > 1939.6.1	
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -3136,7 +3136,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 10	
 			modifier = {
