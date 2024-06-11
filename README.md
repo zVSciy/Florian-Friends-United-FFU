@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = 2f83**
+**Checksum = idk**
 
 ## Generel changes
 
@@ -15,7 +15,8 @@ PMFU submod
 - removed turkey and splited the chromium between bulgaria and sweden
 - added no tradeback to japan, manchu and siam
 - added "Show Speed In Construction View" to mod **Thanks to "Yes, Paimon"
-- added 15 Army/Navy/Air XP dayOne 
+- added 15 Army/Navy/Air XP dayOne
+- added warn hotjoin decision for the hosttool country (Version 1 - News Popup)
 
 ### Air
 
