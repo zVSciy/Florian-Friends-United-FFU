@@ -1,0 +1,14 @@
+add_namespace = hotjoin_event
+news_event = {
+    id = hotjoin_event.1
+    title = hotjoin_event.1.t
+    desc = hotjoin_event.1.d
+    picture = GFX_report_event_generic_newspaper
+
+    is_triggered_only = yes  # This event can only be triggered via script
+
+    option = {
+        name = hotjoin_event.1.a
+        # You might add effects if needed
+    }
+}
