@@ -303,12 +303,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# add_resource = {
-			# 	type = chromium
-			# 	amount = 1000
-			# 	state = 48
-			# }
-			
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -473,14 +467,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# add_resource = {
-			# 	type = chromium
-			# 	amount = 1300
-			# 	state = 60
-			# }
 			add_research_slot = 1
 		}
-		
 	}
 	
 	focus = {
