@@ -15,7 +15,8 @@ PMFU submod
 - removed turkey and splited the chromium between bulgaria and sweden
 - added "Show Speed In Construction View" to mod **Thanks to "Yes, Paimon"
 - added 15 Army/Navy/Air XP dayOne
-- added warn hotjoin decision for the hosttool country (Version 1 - News Popup)
+- added warn hotjoin decision for the hosttool country (Version 1 - News Popup) (doesnt work rn :>)
+- nerfed concentrated, buffed later dispersed
 
 ### Air
 
@@ -33,6 +34,7 @@ PMFU submod
 - dozer blades defense increased 6 --> **8**
 - apcr rounds piercing increased +10% --> **+15%**
 - cast amour ic increased +5% --> **+10%**
+- tank variants -100 brakethrough
 ---
 ## Country changes
 
@@ -100,6 +102,7 @@ offmap factories from 15 mils and civs to **20**
 - winter offensive idea duration increased 100 days --> **120 days**
 - expand the tractor plants buffed, 12 civilian factories --> **15 civilian factories**
 - ural factories bufffed, 8 military factories --> **12 military factories**
+- new spawnin focus to last a couple of weeks longer
 ---
 ### Finland
 
