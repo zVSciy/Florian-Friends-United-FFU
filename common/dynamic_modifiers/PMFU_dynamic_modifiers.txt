@@ -214,6 +214,7 @@ ENG_army_dynamic_modifier = {
 	command_power_gain_mult = ENG_british_army_command_power_gain_mult
 	production_speed_bunker_factor = ENG_british_army_production_speed_bunker_factor
 	production_speed_coastal_bunker_factor = ENG_british_army_production_speed_coastal_bunker_factor
+	repair_speed_air_base_factor = ENG_british_army_repair_speed
 }
 
 ENG_air_dynamic_modifier = {

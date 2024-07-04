@@ -2824,6 +2824,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_repair_speed = 0.9 tooltip = repair_speed_repair_air_tt }
 		}
 	}
 	

@@ -2903,39 +2903,6 @@ focus_tree = {
 		}	
 		completion_reward = { 
 
-			# ! Remove noTradeback from Axis
-			GER = {
-				remove_ideas = { no_tradeback }
-			}
-
-			ITA = {
-				remove_ideas = { no_tradeback }
-			}
-
-			ROM = {
-				remove_ideas = { no_tradeback }
-			}
-
-			HUN = {
-				remove_ideas = { no_tradeback }
-			}
-
-			BUL = {
-				remove_ideas = { no_tradeback }
-			}
-
-			FIN = {
-				remove_ideas = { no_tradeback }
-			}
-
-			SPR = {
-				remove_ideas = { no_tradeback }
-			}
-
-			YUG = {
-				remove_ideas = { no_tradeback }
-			}
-
 
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			if = {
@@ -4475,6 +4442,38 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
+			# ! Remove noTradeback from Axis
+			GER = {
+				remove_ideas = { no_tradeback }
+			}
+
+			ITA = {
+				remove_ideas = { no_tradeback }
+			}
+
+			ROM = {
+				remove_ideas = { no_tradeback }
+			}
+
+			HUN = {
+				remove_ideas = { no_tradeback }
+			}
+
+			BUL = {
+				remove_ideas = { no_tradeback }
+			}
+
+			FIN = {
+				remove_ideas = { no_tradeback }
+			}
+
+			SPR = {
+				remove_ideas = { no_tradeback }
+			}
+
+			YUG = {
+				remove_ideas = { no_tradeback }
+			}
 			if =  {
 				limit = {
 					OR = {

@@ -273,6 +273,7 @@ ideas = {
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 				training_time_factor = 0.1
+				 mobilization_speed = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -398,6 +399,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
 				training_time_factor = 0.2
+				 mobilization_speed = 0.1
 			}
 
 			cancel_if_invalid = no
@@ -518,6 +520,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
 				training_time_factor = 0.4
+				 mobilization_speed = 0.2
 			}
 
 			cancel_if_invalid = no
@@ -623,6 +626,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.5
 				production_speed_buildings_factor = -0.5
 				training_time_factor = 0.6
+				 mobilization_speed = 0.2
 			}
 			
 			cancel_if_invalid = no

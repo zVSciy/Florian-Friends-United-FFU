@@ -3971,7 +3971,12 @@ focus_tree = {
 					}
 				}
 				252 = {
-					# 20 Spawn ins
+					# 25 Spawn ins
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
 					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
 					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
 					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
@@ -3995,7 +4000,12 @@ focus_tree = {
 				}
 
 				249 = {
-					# 20 Spawn ins
+					# 25 Spawn ins
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
+					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
 					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
 					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
 					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
