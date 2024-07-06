@@ -4442,38 +4442,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			# ! Remove noTradeback from Axis
-			GER = {
-				remove_ideas = { no_tradeback }
-			}
-
-			ITA = {
-				remove_ideas = { no_tradeback }
-			}
-
-			ROM = {
-				remove_ideas = { no_tradeback }
-			}
-
-			HUN = {
-				remove_ideas = { no_tradeback }
-			}
-
-			BUL = {
-				remove_ideas = { no_tradeback }
-			}
-
-			FIN = {
-				remove_ideas = { no_tradeback }
-			}
-
-			SPR = {
-				remove_ideas = { no_tradeback }
-			}
-
-			YUG = {
-				remove_ideas = { no_tradeback }
-			}
+			
 			if =  {
 				limit = {
 					OR = {
@@ -7490,7 +7459,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_plan_z
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -7521,7 +7490,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_air_effort
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -7529,6 +7498,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = no_tradeback
+				days = 100
+			}
 			add_tech_bonus = {
 				name = cv_bonus
 				bonus = 0.75

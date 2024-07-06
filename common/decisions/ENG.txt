@@ -2400,7 +2400,7 @@ ENG_persian_corridor = {
 				}
 			}
 			has_equipment = {
-				infantry_equipment > 5000
+				infantry_equipment > 9000
 			}
 		}
 		visible = {
@@ -2417,7 +2417,7 @@ ENG_persian_corridor = {
 		remove_effect = {
 			send_equipment = {
 				equipment = infantry_equipment
-				amount = 5000
+				amount = 9000
 				target = SOV
 			}
 		}
@@ -2494,7 +2494,7 @@ ENG_persian_corridor = {
 				}
 			}
 			has_equipment = {
-				squad_equipment > 500
+				squad_equipment > 900
 			}
 		}
 		visible = {
@@ -2511,7 +2511,7 @@ ENG_persian_corridor = {
 		remove_effect = {
 			send_equipment = {
 				equipment = squad_equipment
-				amount = 500
+				amount = 900
 				target = SOV
 			}
 		}
@@ -2588,7 +2588,7 @@ ENG_persian_corridor = {
 				}
 			}
 			has_equipment = {
-				radio_equipment > 500
+				radio_equipment > 900
 			}
 		}
 		visible = {
@@ -2605,7 +2605,7 @@ ENG_persian_corridor = {
 		remove_effect = {
 			send_equipment = {
 				equipment = radio_equipment
-				amount = 500
+				amount = 900
 				target = SOV
 			}
 		}
@@ -2682,7 +2682,7 @@ ENG_persian_corridor = {
 				}
 			}
 			has_equipment = {
-				support_equipment > 500
+				support_equipment > 900
 			}
 		}
 		visible = {
@@ -2699,7 +2699,7 @@ ENG_persian_corridor = {
 		remove_effect = {
 			send_equipment = {
 				equipment = support_equipment
-				amount = 500
+				amount = 900
 				target = SOV
 			}
 		}
@@ -2776,7 +2776,7 @@ ENG_persian_corridor = {
 				}
 			}
 			has_equipment = {
-				motorized_equipment > 1000
+				motorized_equipment > 1900
 			}
 		}
 		visible = {
@@ -2793,7 +2793,7 @@ ENG_persian_corridor = {
 		remove_effect = {
 			send_equipment = {
 				equipment = motorized_equipment
-				amount = 1000
+				amount = 1900
 				target = SOV
 			}
 		}
@@ -2870,7 +2870,7 @@ ENG_persian_corridor = {
 				}
 			}
 			has_equipment = {
-				small_plane_airframe > 200
+				small_plane_airframe > 500
 			}
 		}
 		visible = {
@@ -2887,7 +2887,7 @@ ENG_persian_corridor = {
 		remove_effect = {
 			send_equipment = {
 				equipment = small_plane_airframe
-				amount = 200
+				amount = 500
 				target = SOV
 			}
 		}
