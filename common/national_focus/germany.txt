@@ -4268,7 +4268,7 @@ focus_tree = {
 			
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
-				NOT = { BEL = { is_in_faction_with = GER } }
+				# NOT = { BEL = { is_in_faction_with = GER } }
 				# NOT = { LUX = { is_in_faction_with = GER } }
 			}
 		}
@@ -4317,23 +4317,25 @@ focus_tree = {
 		cost = 1	
 		completion_reward = {
 			#limit wargoals to when it makes sense to give them. No faction, war or non exist
-			if = { 
-				limit = {
-					country_exists = BEL
-					NOT = { BEL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = BEL }
-				}
-				declare_war_on = {
-					target = BEL
-					type = annex_everything
-				}
-				BEL = {
-					declare_war_on_enemy_faction = yes
-				}
-				hidden_effect = {
-					ENG = { add_to_faction = BEL }					
-				}
-			}
+
+			# if = { 
+			# 	limit = {
+			# 		country_exists = BEL
+			# 		NOT = { BEL = { is_in_faction_with = GER } }
+			# 		NOT = { has_war_with = BEL }
+			# 	}
+			# 	declare_war_on = {
+			# 		target = BEL
+			# 		type = annex_everything
+			# 	}
+			# 	BEL = {
+			# 		declare_war_on_enemy_faction = yes
+			# 	}
+			# 	hidden_effect = {
+			# 		ENG = { add_to_faction = BEL }					
+			# 	}
+			# }
+			
 			if =  {
 				limit = {
 					country_exists = HOL
@@ -7498,10 +7500,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = no_tradeback
-				days = 100
-			}
 			add_tech_bonus = {
 				name = cv_bonus
 				bonus = 0.75

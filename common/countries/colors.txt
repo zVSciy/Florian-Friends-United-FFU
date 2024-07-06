@@ -36,11 +36,11 @@ FRA = {
 # 	color = rgb { 65 175 179 }
 # 	color_ui = rgb { 85 228 233 }
 # }
-BEL = { color 	 = rgb { 193 171 8  }
-		color_ui = rgb { 251 222 10 }
-	  }
-HOL = {	color = rgb { 203 138 74 }
-		color_ui = rgb { 255 179 96 }
+# BEL = { color 	 = rgb { 193 171 8  }
+# 		color_ui = rgb { 251 222 10 }
+# 	  }
+HOL = {	color = rgb { 35 170 216 }
+		color_ui = rgb { 35 170 216 }
 }
 CZE = {	color = rgb { 54 167 156 }
 		color_ui = rgb { 70 217 203 }
@@ -53,18 +53,18 @@ AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 } 
 }
-LIT = {
-	color = rgb { 219 219 119 }
-	color_ui = rgb { 255 255 155 }
-}
+# LIT = {
+# 	color = rgb { 219 219 119 }
+# 	color_ui = rgb { 255 255 155 }
+# }
 EST = {
 	color = rgb { 50 135 175 }
 	color_ui = rgb { 99 204 254 }
 }
-LAT = {
-	color = rgb { 75 77 186 }
-	color_ui = rgb { 124 125 184 }
-}
+# LAT = {
+# 	color = rgb { 75 77 186 }
+# 	color_ui = rgb { 124 125 184 }
+# }
 SPR = {
 	color = rgb { 242 205 94 }
 	color_ui = rgb { 255 255 122 }
@@ -187,9 +187,9 @@ MON = {
 	color = rgb { 108 140 42 }
 	color_ui = rgb { 209 247 133 }
 }
-INS = {	color = rgb { 203 138 74 }
-		color_ui = rgb { 203 138 74 }
-}
+# INS = {	color = rgb { 35 170 216 }
+# 		color_ui = rgb { 35 170 216 }
+# }
 # MAL = {
 # 	color = rgb { 213  169  121 }
 # 	color_ui = rgb { 213  169  121 }

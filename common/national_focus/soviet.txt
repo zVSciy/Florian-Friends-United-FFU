@@ -5798,8 +5798,8 @@ focus_tree = {
 			# LAT = { country_event = { id = baltic.2 days = 1 } }
 			# LIT = { country_event = { id = baltic.3 days = 1 } }
 			annex_country = { target = EST }
-			annex_country = { target = LAT }
-			annex_country = { target = LIT }
+			# annex_country = { target = LAT }
+			# annex_country = { target = LIT }
 		}
 	}
 
@@ -6418,10 +6418,27 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		will_lead_to_war_with = GER
-		available = { 
+		available = {
+			OR = {
 			has_war = no
 			date > 1942.8.1
+			AND = {
+				date > 1941.8.1
+				ENG = {
+					126  = {
+						is_core_of = ENG
+						NOT = {
+							is_controlled_by = ENG
+						}
+					}
+				}
+				}
+			}
 		}
+	
+		
+
+	
 
 		completion_reward = {
 			add_timed_idea = {
