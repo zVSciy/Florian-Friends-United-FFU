@@ -2802,12 +2802,12 @@ focus_tree = {
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
 			if = {
 				limit = {
-					LIT = { 
+					EST = { 
 						owns_state = 188
 						controls_state = 188 
 					}
 				}
-				LIT = {
+				EST = {
 					# country_event = { id = baltic.4 }
 					GER = {
 						transfer_state = 188

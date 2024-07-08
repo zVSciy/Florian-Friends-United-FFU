@@ -87,6 +87,7 @@ if = {
 set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
 set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
+	stupid_ai
 	HOL_wilhelmina
 	father_check
 	neutrality_idea2

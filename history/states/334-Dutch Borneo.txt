@@ -11,7 +11,7 @@ state= {
 
 	history= {
 		owner = HOL
-		add_core_of = HOL
+		add_core_of = INS
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
 		victory_points = {

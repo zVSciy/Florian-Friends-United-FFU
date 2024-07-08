@@ -187,9 +187,9 @@ MON = {
 	color = rgb { 108 140 42 }
 	color_ui = rgb { 209 247 133 }
 }
-# INS = {	color = rgb { 35 170 216 }
-# 		color_ui = rgb { 35 170 216 }
-# }
+INS = {	color = rgb { 35 170 216 }
+		color_ui = rgb { 35 170 216 }
+}
 # MAL = {
 # 	color = rgb { 213  169  121 }
 # 	color_ui = rgb { 213  169  121 }
