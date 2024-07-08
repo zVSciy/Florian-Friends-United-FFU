@@ -353,6 +353,15 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
+
+		188 = {
+			add_extra_state_shared_building_slots = 8
+			add_building_construction = {
+				type = industrial_complex
+				level = 8
+				instant_build = yes
+			}
+		}
 		random_owned_controlled_state = {
 			limit = {
 				is_core_of = ROOT
@@ -924,7 +933,10 @@ shared_focus = {
 			BALTIC_catholic_opposition_idea
 		}
 	}
+
 }
+
+
 # ########################
 # #### SOVIET SUPPORT ####
 # ########################
