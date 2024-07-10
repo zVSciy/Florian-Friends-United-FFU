@@ -177,7 +177,7 @@ country = {
 			army_core_attack_factor = 0.1
 			army_core_defence_factor = 0.1
 			industry_air_damage_factor = -0.9
-			cas_damage_reduction = 0.5
+			cas_damage_reduction = 0.25
 			army_speed_factor = 0.1 
 			weekly_manpower = 5000
 		}
