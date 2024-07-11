@@ -1,7 +1,7 @@
 # Florians Friends United (FFU) changelog
 PMFU submod
 
-**Checksum = 2f09**
+**Checksum = 4ebc**
 
 ## Generel changes
 
@@ -17,6 +17,8 @@ PMFU submod
 - added 15 Army/Navy/Air XP dayOne
 - added warn hotjoin decision for the hosttool country (Version 1 - News Popup) (doesnt work rn :>)
 - nerfed concentrated, buffed later dispersed
+- merged benelux into one country
+- merged baltics into one country
 
 ### Air
 
