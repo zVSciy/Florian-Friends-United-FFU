@@ -1382,16 +1382,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			ROOT = { country_event = { id = france.2 } }
-			BEL = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = FRA_extend_the_maginot_line_focus_neg
-				}
-				add_opinion_modifier = {
-					target = GER
-					modifier = FRA_extend_the_maginot_line_focus_pos
-				}
-			}
+			# BEL = {
+			# 	add_opinion_modifier = {
+			# 		target = ROOT
+			# 		modifier = FRA_extend_the_maginot_line_focus_neg
+			# 	}
+			# 	add_opinion_modifier = {
+			# 		target = GER
+			# 		modifier = FRA_extend_the_maginot_line_focus_pos
+			# 	}
+			# }
 		}
 	}
 

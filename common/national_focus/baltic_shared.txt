@@ -174,28 +174,28 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		if = {
-			limit = { original_tag = LIT }
-			11 = {
-				add_building_construction = { type = bunker province = 6296 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 327 level = 2 instant_build = yes }
-			}
-			814 = {
-				add_building_construction = { type = bunker province = 3272 level = 3 instant_build = yes }
-			}
-		}
-		if = {
-			limit = { original_tag = LAT }
-			808 = {
-				add_building_construction = { type = bunker province = 9340 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 9240 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 10323 level = 2 instant_build = yes }
-			}
-			809 = {
-				add_building_construction = { type = bunker province = 6222 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 265 level = 2 instant_build = yes }
-			}
-		}
+		# if = {
+		# 	limit = { original_tag = LIT }
+		# 	11 = {
+		# 		add_building_construction = { type = bunker province = 6296 level = 2 instant_build = yes }
+		# 		add_building_construction = { type = bunker province = 327 level = 2 instant_build = yes }
+		# 	}
+		# 	814 = {
+		# 		add_building_construction = { type = bunker province = 3272 level = 3 instant_build = yes }
+		# 	}
+		# }
+		# if = {
+		# 	limit = { original_tag = LAT }
+		# 	808 = {
+		# 		add_building_construction = { type = bunker province = 9340 level = 2 instant_build = yes }
+		# 		add_building_construction = { type = bunker province = 9240 level = 2 instant_build = yes }
+		# 		add_building_construction = { type = bunker province = 10323 level = 2 instant_build = yes }
+		# 	}
+		# 	809 = {
+		# 		add_building_construction = { type = bunker province = 6222 level = 2 instant_build = yes }
+		# 		add_building_construction = { type = bunker province = 265 level = 2 instant_build = yes }
+		# 	}
+		# }
 		if = {
 			limit = { original_tag = EST }
 			812 = {
@@ -334,13 +334,13 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
-		if = {
-			limit = { original_tag = LIT }
-			swap_ideas = {
-				remove_idea = LIT_agrarian_society
-				add_idea = LIT_invested_in_farms
-			}
-		}
+		# if = {
+		# 	limit = { original_tag = LIT }
+		# 	swap_ideas = {
+		# 		remove_idea = LIT_agrarian_society
+		# 		add_idea = LIT_invested_in_farms
+		# 	}
+		# }
 		random_owned_controlled_state = {
 			limit = {
 				is_core_of = ROOT
@@ -631,22 +631,6 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
 		if = {
-			limit = { original_tag = LIT }
-			swap_ideas = {
-				remove_idea = LIT_invested_in_farms
-				add_idea = LIT_invested_in_farms_1
-			}
-		}
-		else_if = {
-			limit = { original_tag = LAT }
-			190 = {
-				add_resource = {
-					type = steel
-					amount = 16
-				}
-			}
-		}
-		else_if = {
 			limit = { original_tag = EST }
 			13 = {
 				add_resource = {
@@ -690,8 +674,8 @@ shared_focus = {
 			limit = {
 				OR = {
 					original_tag = EST
-					original_tag = LAT
-					original_tag = LIT
+					# original_tag = LAT
+					# original_tag = LIT
 				}
 				NOT = { original_tag = ROOT }
 			}
@@ -701,48 +685,6 @@ shared_focus = {
 			}
 		}
 		if = {
-			limit = { original_tag = LIT }
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		else_if = {
-			limit = { original_tag = LAT }
-			190 = {
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-			}
-		}
-		else_if = {
 			limit = { original_tag = EST }
 			13 = {
 				add_resource = {
@@ -864,7 +806,6 @@ shared_focus = {
 ###########################
 shared_focus = {
 	id = BALTIC_restore_workers_republic
-	mutually_exclusive = { focus = LIT_secure_a_loyal_cabinet focus = LAT_suspend_the_constitution focus = EST_era_of_silence focus = EST_rally_the_nation }
 	icon = GFX_goal_support_communism
 	x = 0
 
@@ -901,37 +842,6 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
-		if = {
-			limit = {
-				original_tag = EST
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = EST_johannes_kabin
-		}
-		if = {
-			limit = {
-				original_tag = LAT
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = LAT_augusts_kirhensteins
-		}
-		if = {
-			limit = {
-				original_tag = LIT
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = LIT_antanas_snieckus
-		}
-		add_popularity = {
-			ideology = communism
-			popularity = 0.1
-		}
-		add_ideas = {
-			BALTIC_restore_workers_republic_idea
-		}
-		add_ideas = {
-			BALTIC_catholic_opposition_idea
-		}
 	}
 
 }

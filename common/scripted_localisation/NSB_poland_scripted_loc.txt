@@ -88,9 +88,9 @@ defined_text = { # Country
 	# 	localization_key = bohemia_strength
 	# }
 	text = {
-		trigger = {
-			LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
-		}
+		# trigger = {
+		# 	LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
+		# }
 		localization_key = poland_strength
 	}
 }
@@ -116,9 +116,9 @@ defined_text = { # Country
 	# 	localization_key = CZE_neutrality
 	# }
 	text = {
-		trigger = {
-			LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
-		}
+		# trigger = {
+		# 	LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
+		# }
 		localization_key = POL_neutrality
 	}
 }

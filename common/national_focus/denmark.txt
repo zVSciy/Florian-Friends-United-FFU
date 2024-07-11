@@ -7561,12 +7561,12 @@ focus_tree = {
 				EST = {
 					exists = yes
 				}
-				LAT = {
-					exists = yes
-				}
-				LIT = {
-					exists = yes
-				}
+				# LAT = {
+				# 	exists = yes
+				# }
+				# LIT = {
+				# 	exists = yes
+				# }
 				SMI = {
 					exists = yes
 				}
@@ -7606,12 +7606,12 @@ focus_tree = {
 				EST = {
 					exists = yes
 				}
-				LAT = {
-					exists = yes
-				}
-				LIT = {
-					exists = yes
-				}
+				# LAT = {
+				# 	exists = yes
+				# }
+				# LIT = {
+				# 	exists = yes
+				# }
 				SMI = {
 					exists = yes
 				}

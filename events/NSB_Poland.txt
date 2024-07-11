@@ -1479,10 +1479,10 @@ country_event = {
 			base = 10
 		}
 		effect_tooltip = {
-			if = {
-				limit = { original_tag = LIT }
-				set_cosmetic_tag = LIT_MONARCHY
-			}
+			# if = {
+			# 	limit = { original_tag = LIT }
+			# 	set_cosmetic_tag = LIT_MONARCHY
+			# }
 			if = {
 				limit = { original_tag = ROM }
 				set_cosmetic_tag = ROM_polish_loyalists
@@ -3142,31 +3142,31 @@ country_event = {
 	
 	option = {
 		name = NSB_polish_fascist_events.2.a
-		trigger = {
-			LIT = {
-				exists = yes
-			}
-		}
-		ai_chance = {
-			base = 50
-			modifier = { #Lithuania is in a faction
-				factor = 0.75
-				LIT = {
-					is_in_faction = yes
-				}
-			}
-			modifier = { #Lithuania is in a big faction
-				factor = 0.5
-				LIT = {
-					is_in_faction = yes
-				}
-				any_other_country = {
-					is_major = yes
-					is_in_faction_with = LIT
-				}
-			}
-		}
-		LIT = { country_event = NSB_polish_fascist_events.201 }
+		# trigger = {
+		# 	LIT = {
+		# 		exists = yes
+		# 	}
+		# }
+		# ai_chance = {
+		# 	base = 50
+		# 	modifier = { #Lithuania is in a faction
+		# 		factor = 0.75
+		# 		LIT = {
+		# 			is_in_faction = yes
+		# 		}
+		# 	}
+		# 	modifier = { #Lithuania is in a big faction
+		# 		factor = 0.5
+		# 		LIT = {
+		# 			is_in_faction = yes
+		# 		}
+		# 		any_other_country = {
+		# 			is_major = yes
+		# 			is_in_faction_with = LIT
+		# 		}
+		# 	}
+		# }
+		# LIT = { country_event = NSB_polish_fascist_events.201 }
 		custom_effect_tooltip = if_they_accept_tt
 		effect_tooltip = {
 			POL_divide_lithuania_effect = yes
@@ -3176,9 +3176,9 @@ country_event = {
 	option = { #I have already annexed Lithuania
 		name = NSB_polish_fascist_events.2.b
 		trigger = { #If Lithuania does not exist, just divide the occupation
-			LIT = {
-				exists = no
-			}
+			# LIT = {
+			# 	exists = no
+			# }
 		}
 		ai_chance = {
 			base = 50

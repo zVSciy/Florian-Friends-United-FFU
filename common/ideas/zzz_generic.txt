@@ -1708,7 +1708,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = SPR tag = HOL tag = HUN tag = ROM tag = BUL tag = YUG tag = FIN tag = MON tag = SIA tag = BUL tag = RAJ tag = VIC tag = IRE tag = BRA } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = SPR tag = HOL tag = HUN tag = ROM tag = BUL tag = YUG tag = FIN tag = MON tag = SIA tag = BUL tag = RAJ tag = VIC tag = IRE tag = BRA } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}

@@ -829,92 +829,92 @@ on_actions = {
 	#ROOT is capitulated country, FROM is winner.
 	on_capitulation_immediate = {
 		effect = {
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = BEL
-						is_in_faction = yes
-						#is_government_in_exile = yes
-					}
-				}
-				if = {
-					limit = {
-						295 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
-					295 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# if = {
+			# 	limit = {
+			# 		ROOT = {
+			# 			original_tag = BEL
+			# 			is_in_faction = yes
+			# 			#is_government_in_exile = yes
+			# 		}
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			295 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
+			# 		295 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-				if = {
-					limit = {
-						538 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
+			# 	if = {
+			# 		limit = {
+			# 			538 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
 
-					538 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 		538 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-				if = {
-					limit = {
-						888 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
+			# 	if = {
+			# 		limit = {
+			# 			888 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
 
-					888 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 		888 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-				if = {
-					limit = {
-						889 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
-					889 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	if = {
+			# 		limit = {
+			# 			889 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
+			# 		889 = { set_state_flag = prevent_auto_flip_after_capitulation }
 
-				}
+			# 	}
 
-				if = {
-					limit = {
-						890 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
+			# 	if = {
+			# 		limit = {
+			# 			890 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
 
-					890 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 		890 = { set_state_flag = prevent_auto_flip_after_capitulation }
 
-				}
+			# 	}
 
-				if = {
-					limit = {
-						769 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
+			# 	if = {
+			# 		limit = {
+			# 			769 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
 
-					769  = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 		769  = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-				if = {
-					limit = {
-						768 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
-					768 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 	if = {
+			# 		limit = {
+			# 			768 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
+			# 		768 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-				if = {
-					limit = {
-						718 = {
-							is_fully_controlled_by = ROOT
-						}
-					}
-					718 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
-			}
+			# 	if = {
+			# 		limit = {
+			# 			718 = {
+			# 				is_fully_controlled_by = ROOT
+			# 			}
+			# 		}
+			# 		718 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
+			# }
 
 			# if = {
 			# 	limit = {

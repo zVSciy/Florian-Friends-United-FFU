@@ -66,6 +66,7 @@ country_event = {
 				transfer_state = 903
 				transfer_state = 904
 				transfer_state = 905
+
 				#Belgian Congo
 				transfer_state = 295
 				transfer_state = 538
@@ -77,7 +78,7 @@ country_event = {
 				transfer_state = 889
 
 				give_resource_rights = { receiver = ENG state = 542 }
-				give_resource_rights = { receiver = ENG state = 771 }
+				# give_resource_rights = { receiver = ENG state = 771 }
 			}
 		}
 		
@@ -199,7 +200,7 @@ country_event = {
 		#Belgian Congo
 		if = {
 			limit = {
-				295 = {	is_fully_controlled_by = BEL }
+				295 = {	is_fully_controlled_by = POR }
 			}
 			transfer_state = 295
 		} else = {
@@ -207,7 +208,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				538 = {	is_fully_controlled_by = BEL }
+				538 = {	is_fully_controlled_by = POR }
 			}
 			transfer_state = 538
 		} else = {
@@ -215,7 +216,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				718 = {	is_fully_controlled_by = BEL }
+				718 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 718
 		} else = {
@@ -223,7 +224,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				769 = {	is_fully_controlled_by = BEL }
+				769 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 769
 		} else = {
@@ -231,7 +232,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				888 = {	is_fully_controlled_by = BEL }
+				888 = {	is_fully_controlled_by = POR }
 			}
 			transfer_state = 888
 		} else = {
@@ -239,7 +240,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				889 = {	is_fully_controlled_by = BEL }
+				889 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 889
 		} else = {
@@ -247,7 +248,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				768 = {	is_fully_controlled_by = BEL }
+				768 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 768
 		} else = {
@@ -255,7 +256,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				890 = {	is_fully_controlled_by = BEL }
+				890 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 890
 		} else = {
@@ -377,7 +378,7 @@ country_event = {
 		#Belgian Congo
 		if = {
 			limit = {
-				295 = {	is_fully_controlled_by = BEL }
+				295 = {	is_fully_controlled_by = POR }
 			}
 			transfer_state = 295
 		} else = {
@@ -385,7 +386,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				538 = {	is_fully_controlled_by = BEL }
+				538 = {	is_fully_controlled_by = POR }
 			}
 			transfer_state = 538
 		} else = {
@@ -393,7 +394,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				718 = {	is_fully_controlled_by = BEL }
+				718 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 718
 		} else = {
@@ -401,7 +402,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				769 = {	is_fully_controlled_by = BEL }
+				769 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 769
 		} else = {
@@ -409,7 +410,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				888 = {	is_fully_controlled_by = BEL }
+				888 = {	is_fully_controlled_by = POR }
 			}
 			transfer_state = 888
 		} else = {
@@ -417,7 +418,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				889 = {	is_fully_controlled_by = BEL }
+				889 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 889
 		} else = {
@@ -425,7 +426,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				768 = {	is_fully_controlled_by = BEL }
+				768 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 768
 		} else = {
@@ -433,7 +434,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				890 = {	is_fully_controlled_by = BEL }
+				890 = {	is_fully_controlled_by = ENG }
 			}
 			transfer_state = 890
 		} else = {

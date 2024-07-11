@@ -729,58 +729,58 @@ on_actions = {
 			if = {
 				limit = {
 					has_country_flag = LIT_poland_personal_union_flag
-					LIT = { 
-						is_subject = no
-						has_government = neutrality 
-					}
+					# LIT = { 
+					# 	is_subject = no
+					# 	has_government = neutrality 
+					# }
 				}
-				LIT = {
-					set_autonomy = {
-						target = PREV
-						autonomy_state = autonomy_personal_union
-					}
-				}
+				# LIT = {
+				# 	set_autonomy = {
+				# 		target = PREV
+				# 		autonomy_state = autonomy_personal_union
+				# 	}
+				# }
 			}
-			if = {
-				limit = {
-					original_tag = LIT
-					NOT = { has_focus_tree = lithuania_tree }
-					has_dlc = "No Step Back"
-				}
-				load_focus_tree = { tree = lithuania_tree keep_completed = yes }
-				if = { #Give Lithuania their focus tree back if the Iron Wolf win the civil war.
-					limit = { has_government = fascism }
-					if = {
-						limit = { has_completed_focus = LIT_exile_voldemares }
-						uncomplete_national_focus = { #Voldemares shouldn't exile himself
-							focus = LIT_exile_voldemares
-							uncomplete_children = yes
-						}
-					}
-					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
-						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
-							uncomplete_children = yes
-						}
-					}
-					complete_national_focus = LIT_lithuanian_activist_front
-					complete_national_focus = LIT_organize_the_iron_wolf
-					complete_national_focus = LIT_lithuanian_youth
-					complete_national_focus = LIT_unify_the_military
-				}
-				if = { #In case the old government defeats the Communists
-					limit = { has_government = neutrality }
-					if = {
-						limit = { has_completed_focus = BALTIC_restore_workers_republic }
-						uncomplete_national_focus = {
-							focus = BALTIC_restore_workers_republic
-							uncomplete_children = yes
-						}
-					}
-					complete_national_focus = LIT_secure_a_loyal_cabinet
-				}
-			}
+			# if = {
+			# 	# limit = {
+			# 	# 	original_tag = LIT
+			# 	# 	NOT = { has_focus_tree = lithuania_tree }
+			# 	# 	has_dlc = "No Step Back"
+			# 	# }
+			# 	load_focus_tree = { tree = lithuania_tree keep_completed = yes }
+			# 	if = { #Give Lithuania their focus tree back if the Iron Wolf win the civil war.
+			# 		limit = { has_government = fascism }
+			# 		if = {
+			# 			limit = { has_completed_focus = LIT_exile_voldemares }
+			# 			uncomplete_national_focus = { #Voldemares shouldn't exile himself
+			# 				focus = LIT_exile_voldemares
+			# 				uncomplete_children = yes
+			# 			}
+			# 		}
+			# 		if = {
+			# 			limit = { has_completed_focus = BALTIC_restore_workers_republic }
+			# 			uncomplete_national_focus = {
+			# 				focus = BALTIC_restore_workers_republic
+			# 				uncomplete_children = yes
+			# 			}
+			# 		}
+			# 		complete_national_focus = LIT_lithuanian_activist_front
+			# 		complete_national_focus = LIT_organize_the_iron_wolf
+			# 		complete_national_focus = LIT_lithuanian_youth
+			# 		complete_national_focus = LIT_unify_the_military
+			# 	}
+			# 	if = { #In case the old government defeats the Communists
+			# 		limit = { has_government = neutrality }
+			# 		if = {
+			# 			limit = { has_completed_focus = BALTIC_restore_workers_republic }
+			# 			uncomplete_national_focus = {
+			# 				focus = BALTIC_restore_workers_republic
+			# 				uncomplete_children = yes
+			# 			}
+			# 		}
+			# 		complete_national_focus = LIT_secure_a_loyal_cabinet
+			# 	}
+			# }
 			if = {
 				limit = {
 					original_tag = EST
@@ -1334,26 +1334,26 @@ on_actions = {
 					every_controlled_state = { #This transfers any baltic states SOV controls to the player if the player is a baltic country puppeted by SOV. 
 						limit = {
 							OR = {
-								is_core_of = LIT
-								is_core_of = LAT
+								# is_core_of = LIT
+								# is_core_of = LAT
 								is_core_of = EST
 							}
 						}
-						if = { #This is to check if territories of more than one country are being transferred
-							limit = {
-								is_core_of = LIT 
-								NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
-							}
-							set_global_flag = BALTIC_more_than_one_territory
-						}
-						else_if = {
-							limit = {
-								is_core_of = LAT 
-								NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
-							}
-							set_global_flag = BALTIC_more_than_one_territory
-						}
-						else_if = {
+						# if = { #This is to check if territories of more than one country are being transferred
+						# 	limit = {
+						# 		is_core_of = LIT 
+						# 		NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
+						# 	}
+						# 	set_global_flag = BALTIC_more_than_one_territory
+						# }
+						# else_if = {
+						# 	limit = {
+						# 		is_core_of = LAT 
+						# 		NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
+						# 	}
+						# 	set_global_flag = BALTIC_more_than_one_territory
+						# }
+						if = {
 							limit = {
 								is_core_of = EST 
 								NOT = { is_core_of = event_target:BALTIC_country_to_transfer }

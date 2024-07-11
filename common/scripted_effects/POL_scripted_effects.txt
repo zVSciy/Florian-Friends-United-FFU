@@ -574,25 +574,25 @@ POL_become_german_puppet_effect = {
 
 POL_divide_lithuania_effect = {
 	188 = { add_core_of = GER }
-	LIT = {
-		every_owned_state = {
-			limit = {
-				OR = {
-					is_core_of = GER
-					is_claimed_by = GER
-					state = 188
-				}
-			}
-			GER = {
-				transfer_state = PREV
-			}
-		}
-	}
+	# LIT = {
+	# 	every_owned_state = {
+	# 		limit = {
+	# 			OR = {
+	# 				is_core_of = GER
+	# 				is_claimed_by = GER
+	# 				state = 188
+	# 			}
+	# 		}
+	# 		GER = {
+	# 			transfer_state = PREV
+	# 		}
+	# 	}
+	# }
 	POL = {
-		annex_country = {
-			target = LIT
-			transfer_troops = no
-		}
+		# annex_country = {
+		# 	# target = LIT
+		# 	transfer_troops = no
+		# }
 	}
 }
 
@@ -603,11 +603,11 @@ POL_lithuania_wargoal_claims_effect = {
 	11 = { add_claim_by = POL }
 	814 = { add_claim_by = POL }
 	GER = {
-		create_wargoal = {
-			type = take_core_state
-			generator = { 188 }
-			target = LIT
-		}
+	# 	create_wargoal = {
+	# 		type = take_core_state
+	# 		generator = { 188 }
+	# 		target = EST
+	# 	}
 	}
 }
 
@@ -619,12 +619,12 @@ POL_set_attempted_royal_takeover_flag = {
 				set_country_flag = attempted_royal_takeover_in_POL
 			}
 		}
-		else_if = {
-			limit = { original_tag = LIT }
-			FROM = {
-				set_country_flag = attempted_royal_takeover_in_LIT
-			}
-		}
+		# else_if = {
+		# 	limit = { original_tag = LIT }
+		# 	FROM = {
+		# 		set_country_flag = attempted_royal_takeover_in_LIT
+		# 	}
+		# }
 		else_if = {
 			limit = { original_tag = ROM }
 			FROM = {

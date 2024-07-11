@@ -1248,15 +1248,15 @@ SWE_politics = {
 				}
 
 
-				LAT = {
-					hidden_trigger = {
-						all_of_scopes = {
-						 	array = core_states_at_game_start
-						 	is_fully_controlled_by = ROOT
+				# LAT = {
+				# 	hidden_trigger = {
+				# 		all_of_scopes = {
+				# 		 	array = core_states_at_game_start
+				# 		 	is_fully_controlled_by = ROOT
 						 
-						 } 
-					 }
-				}
+				# 		 } 
+				# 	 }
+				# }
 			}
 			
 
@@ -1433,18 +1433,18 @@ SWE_politics = {
 			}
 
 
-			LAT = {
-				custom_trigger_tooltip = {
-				 	tooltip = SWE_proclaim_big_power_sweden_tt
-				}
-				hidden_trigger = {
-					all_of_scopes = {
-					 	array = core_states_at_game_start
-					 	is_fully_controlled_by = ROOT
+			# LAT = {
+			# 	custom_trigger_tooltip = {
+			# 	 	tooltip = SWE_proclaim_big_power_sweden_tt
+			# 	}
+			# 	hidden_trigger = {
+			# 		all_of_scopes = {
+			# 		 	array = core_states_at_game_start
+			# 		 	is_fully_controlled_by = ROOT
 					 
-					 } 
-				 }
-			}
+			# 		 } 
+			# 	 }
+			# }
 
 			208 = { #Luga
 				is_fully_controlled_by = ROOT
@@ -1496,13 +1496,13 @@ SWE_politics = {
 					}
 				}
 
-				LAT = {
-					for_each_scope_loop = {
-					 	array = core_states_at_game_start
-					 	add_compliance = 70
+				# LAT = {
+				# 	for_each_scope_loop = {
+				# 	 	array = core_states_at_game_start
+				# 	 	add_compliance = 70
 					 
-					 }
-				}
+				# 	 }
+				# }
 
 				59 = { #Hannover
 					add_compliance = 70

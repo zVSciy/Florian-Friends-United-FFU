@@ -3979,9 +3979,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
-			ROOT = {
-				add_to_faction = BEL
-			}
+			add_stability = 0.1
+			# ROOT = {
+			# 	add_to_faction = BEL
+			# }
 		}
 	}
 	

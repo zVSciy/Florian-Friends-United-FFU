@@ -350,14 +350,14 @@ SOV_has_already_built_national_academy_of_sciences = {
 			FROM = { tag = EST }
 			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_EST_flag }
 		}
-		AND = {
-			FROM = { tag = LAT }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LAT_flag }
-		}
-		AND = {
-			FROM = { tag = LIT }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LIT_flag }
-		}
+		# AND = {
+		# 	FROM = { tag = LAT }
+		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LAT_flag }
+		# }
+		# AND = {
+		# 	FROM = { tag = LIT }
+		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LIT_flag }
+		# }
 		AND = {
 			FROM = { tag = POL }
 			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_POL_flag }

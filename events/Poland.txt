@@ -859,14 +859,14 @@ country_event = {
 	title = poland.15.t
 	desc = {
 		text = poland.15.d
-		trigger = {
-			tag = LIT
-		}
+		# trigger = {
+		# 	tag = LIT
+		# }
 	}
 	desc = {
 		text = poland.15.d.notlit
 		trigger = {
-			NOT = { tag = LIT }
+		# 	NOT = { tag = LIT }
 		}
 	}
 	picture = GFX_report_event_lithuanian_ultimatum
@@ -934,9 +934,9 @@ country_event = {
 		POL = {
 			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
 			country_event = { hours = 2 id = poland.1502 }
-			if = { limit = { is_in_faction_with = LIT }
-				remove_from_faction = LIT
-			}
+			# if = { limit = { is_in_faction_with = LIT }
+			# 	remove_from_faction = LIT
+			# }
 		}
 	}
 }

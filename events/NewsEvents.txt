@@ -598,20 +598,20 @@ news_event = {
 		name = news.19.b
 		trigger = { TAG = GER }
 	}
-	option = {
-		name = news.19.c
-		trigger = { TAG = LIT }
-	}
-	option = {
-		name = news.19.e
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = LIT
-			}
-			is_in_faction_with = GER
-		}
-	}
+	# option = {
+	# 	name = news.19.c
+	# 	trigger = { TAG = LIT }
+	# }
+	# option = {
+	# 	name = news.19.e
+	# 	trigger = {
+	# 		NOT = {
+	# 			TAG = GER
+	# 			TAG = LIT
+	# 		}
+	# 		is_in_faction_with = GER
+	# 	}
+	# }
 }
 
 # German Claims Memel - Lithuania Rejects Demands
@@ -639,20 +639,20 @@ news_event = {
 		name = news.20.b
 		trigger = { TAG = GER }
 	}
-	option = {
-		name = news.20.c
-		trigger = { TAG = LIT }
-	}
-	option = {
-		name = news.20.b
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = LIT
-			}
-			is_in_faction_with = GER
-		}
-	}
+	# option = {
+	# 	name = news.20.c
+	# 	trigger = { TAG = LIT }
+	# }
+	# option = {
+	# 	name = news.20.b
+	# 	trigger = {
+	# 		NOT = {
+	# 			TAG = GER
+	# 			TAG = LIT
+	# 		}
+	# 		is_in_faction_with = GER
+	# 	}
+	# }
 }
 
 # Treaty of Craiova
@@ -2667,15 +2667,15 @@ news_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		if = {
-			limit = { FROM = { tag = LIT } }
-		 	SOV = {
-		 		annex_country = {
-				target = LIT
-				transfer_troops = yes } 
-				add_named_threat = { threat = 2 name = soviet.35_threat_LIT }
-			}
-		}
+		# if = {
+		# 	limit = { FROM = { tag = LIT } }
+		#  	SOV = {
+		#  		annex_country = {
+		# 		target = LIT
+		# 		transfer_troops = yes } 
+		# 		add_named_threat = { threat = 2 name = soviet.35_threat_LIT }
+		# 	}
+		# }
 		if = {
 			limit = { FROM = { tag = FIN } }
 		 	SOV = { 
@@ -2694,15 +2694,15 @@ news_event = {
 				add_named_threat = { threat = 2 name = soviet.35_threat_EST }
 			}
 		}
-		if = {
-			limit = { FROM = { tag = LAT } }
-		 	SOV = {
-		 		annex_country = {
-				target = LAT
-				transfer_troops = yes }
-				add_named_threat = { threat = 2 name = soviet.35_threat_LAT }
-			}
-		}
+		# if = {
+		# 	limit = { FROM = { tag = LAT } }
+		#  	SOV = {
+		#  		annex_country = {
+		# 		target = LAT
+		# 		transfer_troops = yes }
+		# 		add_named_threat = { threat = 2 name = soviet.35_threat_LAT }
+		# 	}
+		# }
 	}
 }
 
@@ -9042,16 +9042,16 @@ news_event = {
 		}
 	}
 
-	option = {
-		name = news.223.b
-		trigger = {
-			OR = {
-				tag = BEL
-				tag = HOL
-				# tag = LUX
-			}
-		}
-	}
+	# option = {
+	# 	name = news.223.b
+	# 	trigger = {
+	# 		OR = {
+	# 			tag = BEL
+	# 			tag = HOL
+	# 			# tag = LUX
+	# 		}
+	# 	}
+	# }
 
 	option = {
 		name = news.223.c
@@ -9072,7 +9072,7 @@ news_event = {
 			}
 			NOT = {
 				OR = {
-					tag = BEL
+					# tag = BEL
 					tag = HOL
 					# tag = LUX
 				}
@@ -9086,7 +9086,7 @@ news_event = {
 			NOT = {
 				OR = {
 					tag = ENG
-					tag = BEL
+					# tag = BEL
 					tag = HOL
 					# tag = LUX
 					is_in_faction_with = ENG
@@ -9666,22 +9666,22 @@ news_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = news.234.a
-		trigger = {
-			OR = {
-				tag = BEL
-				# tag = LUX
-			}
-		}
-	}
+	# option = {
+	# 	name = news.234.a
+	# 	trigger = {
+	# 		OR = {
+	# 			# tag = BEL
+	# 			# tag = LUX
+	# 		}
+	# 	}
+	# }
 
 	option = {
 		name = news.234.b
 		trigger = {
 			OR = {
 				tag = HOL
-				is_in_faction_with = BEL
+				# is_in_faction_with = BEL
 				# is_in_faction_with = LUX
 				is_in_faction_with = HOL
 			}
@@ -9695,11 +9695,11 @@ news_event = {
 			NOT = {
 				OR = {
 					tag = HOL
-					tag = BEL
+					# tag = BEL
 					# tag = LUX
 					is_in_faction_with = HOL
 					# is_in_faction_with = LUX
-					is_in_faction_with = BEL
+					# is_in_faction_with = BEL
 				}
 			}
 		}
@@ -10693,7 +10693,7 @@ news_event = {
 		trigger = {
 			OR = {
 				Tag = ENG
-				TAG = BEL
+				# TAG = BEL
 				TAG = POR
 				TAG = FRA
 			}
@@ -10708,7 +10708,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				Tag = ENG
-				TAG = BEL
+				# TAG = BEL
 				TAG = POR
 				TAG = FRA
 				TAG = SOV

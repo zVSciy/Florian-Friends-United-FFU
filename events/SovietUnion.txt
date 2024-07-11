@@ -1258,19 +1258,19 @@ country_event = {
 	
 	trigger = {
 		tag = SOV
-		FROM = {
-			tag = LAT
-			any_owned_state = { is_claimed_by = SOV }
-		}
+		# FROM = {
+		# 	tag = LAT
+		# 	any_owned_state = { is_claimed_by = SOV }
+		# }
 		NOT = { has_country_flag = latvia_demand }
 	}
 	
 	immediate = { set_country_flag = latvia_demand } 
 		
-	option = {
-		name = soviet.33.a
-		LAT = { country_event = { days = 2 id = baltic.2 } }
-	}
+	# option = {
+	# 	name = soviet.33.a
+	# 	LAT = { country_event = { days = 2 id = baltic.2 } }
+	# }
 	option = {
 		name = soviet.33.b
 		ai_chance = { factor = 0 }
@@ -1289,19 +1289,19 @@ country_event = {
 	
 	trigger = {
 		tag = SOV
-		FROM = {
-			tag = LIT
-			any_owned_state = { is_claimed_by = SOV }
-		}
+		# FROM = {
+		# 	tag = LIT
+		# 	any_owned_state = { is_claimed_by = SOV }
+		# }
 		NOT = { has_country_flag = lithuania_demand }
 	}
 	
 	immediate = { set_country_flag = lithuania_demand } 
 		
-	option = {
-		name = soviet.34.a
-		LIT = { country_event = { days = 2 id = baltic.3 } }
-	}
+	# option = {
+	# 	name = soviet.34.a
+	# 	LIT = { country_event = { days = 2 id = baltic.3 } }
+	# }
 	option = {
 		name = soviet.34.b
 		ai_chance = { factor = 0 }
@@ -1323,15 +1323,15 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		effect_tooltip = {
-			if = {
-				limit = { FROM = { tag = LIT } }
-			 	SOV = {
-			 		annex_country = {
-					target = LIT
-					transfer_troops = yes } 
-					add_named_threat = { threat = 2 name = soviet.35_threat_LIT }
-				}
-			}
+			# if = {
+			# 	limit = { FROM = { tag = LIT } }
+			#  	SOV = {
+			#  		annex_country = {
+			# 		target = LIT
+			# 		transfer_troops = yes } 
+			# 		add_named_threat = { threat = 2 name = soviet.35_threat_LIT }
+			# 	}
+			# }
 			if = {
 				limit = { FROM = { tag = FIN } } 
 			 	SOV = { 
@@ -1350,15 +1350,15 @@ country_event = {
 					add_named_threat = { threat = 2 name = soviet.35_threat_EST }
 				}
 			}
-			if = {
-				limit = { FROM = { tag = LAT } } 
-			 	SOV = {
-			 		annex_country = {
-					target = LAT
-					transfer_troops = yes } 
-					add_named_threat = { threat = 2 name = soviet.35_threat_LAT }
-				}
-			}
+			# if = {
+			# 	limit = { FROM = { tag = LAT } } 
+			#  	SOV = {
+			#  		annex_country = {
+			# 		target = LAT
+			# 		transfer_troops = yes } 
+			# 		add_named_threat = { threat = 2 name = soviet.35_threat_LAT }
+			# 	}
+			# }
 		} 
 
 		hidden_effect = {
@@ -1400,10 +1400,10 @@ country_event = {
 			SOV = { puppet = FROM }
 		}
 		ai_chance = { factor = 100 }
-			if = {
-				limit = { FROM = { tag = LIT } }
-				add_named_threat = { threat = 1 name = soviet.36_threat_LIT }
-			}	
+			# if = {
+			# 	limit = { FROM = { tag = LIT } }
+			# 	add_named_threat = { threat = 1 name = soviet.36_threat_LIT }
+			# }	
 			if = {
 				limit = { FROM = { tag = FIN } }
 				add_named_threat = { threat = 2 name = soviet.36_threat_FIN }
@@ -1412,10 +1412,10 @@ country_event = {
 				limit = { FROM = { tag = EST } }
 				add_named_threat = { threat = 1 name = soviet.36_threat_EST }
 			}			
-			if = {
-				limit = { FROM = { tag = LAT } }
-				add_named_threat = { threat = 1 name = soviet.36_threat_LAT }
-			}		
+			# if = {
+			# 	limit = { FROM = { tag = LAT } }
+			# 	add_named_threat = { threat = 1 name = soviet.36_threat_LAT }
+			# }		
 
 		#trigger news event
 		hidden_effect = {

@@ -48,25 +48,6 @@ country_event = {
 				}
 			}
 		}
-		else_if={limit = {
-				tag=BEL
-			}
-			transfer_navy={target=ENG}
-			every_owned_state={limit={is_core_of=ROOT}
-				add_state_modifier = {
-					modifier = {
-						local_building_slots_factor = 0.5
-					}
-				}
-				GER={transfer_state=PREV}}
-			FRA={annex_country={target=ROOT transfer_troops=yes}
-				set_state_controller=465
-				set_state_controller=636
-				set_state_controller=282
-				set_state_controller=682
-				set_state_controller=683
-			}
-		}
 		else_if = {
 			limit = {
 				OR = {

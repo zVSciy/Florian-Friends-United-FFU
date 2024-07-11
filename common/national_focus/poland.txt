@@ -2656,7 +2656,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = POL_polish_revanchism }
 		prerequisite = { focus = POL_lithuanian_annexation }
-		will_lead_to_war_with = LAT
+		# will_lead_to_war_with = LAT
 		will_lead_to_war_with = EST
 		
 		x = 1
@@ -2670,11 +2670,11 @@ focus_tree = {
 
 		available = {
 			OR = {
-				LAT = { 
-					exists = yes
-					has_capitulated = no
-					NOT = { has_war_with = ROOT }
-				}
+				# LAT = { 
+				# 	exists = yes
+				# 	has_capitulated = no
+				# 	NOT = { has_war_with = ROOT }
+				# }
 				EST = { 
 					exists = yes
 					has_capitulated = no
@@ -2690,24 +2690,24 @@ focus_tree = {
 		completion_reward = {
 			#Poland demands Latvian annexation
 			if = {
-				limit = {
-					LAT = {
-						has_war = no
-						is_subject = no
-					}
-				}
-				LAT = {
-					country_event = {
-						id = poland.15
-						days = 5
-					}
-				}
+				# limit = {
+				# 	LAT = {
+				# 		has_war = no
+				# 		is_subject = no
+				# 	}
+				# }
+				# LAT = {
+				# 	country_event = {
+				# 		id = poland.15
+				# 		days = 5
+				# 	}
+				# }
 			}
 			else = {
-				create_wargoal = {
-					type = annex_everything
-					target = LAT
-				}
+				# create_wargoal = {
+				# 	type = annex_everything
+				# 	target = LAT
+				# }
 			}
 			#Poland demands Estonian annexation
 			if = {
@@ -2879,20 +2879,20 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				AND = {
-					LIT = {
-						exists = yes
-						NOT = { has_war_with = ROOT }
-						is_in_faction = no
-					}
-				}
-				AND = {
-					LAT = {
-						exists = yes
-						NOT = { has_war_with = ROOT }
-						is_in_faction = no
-					}
-				}
+				# AND = {
+				# 	LIT = {
+				# 		exists = yes
+				# 		NOT = { has_war_with = ROOT }
+				# 		is_in_faction = no
+				# 	}
+				# }
+				# AND = {
+				# 	LAT = {
+				# 		exists = yes
+				# 		NOT = { has_war_with = ROOT }
+				# 		is_in_faction = no
+				# 	}
+				# }
 				AND = {
 					EST = {
 						exists = yes
@@ -2905,20 +2905,20 @@ focus_tree = {
 		}
 
 		bypass = {
-			LIT = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_in_faction = yes
-				}
-			}
-			LAT = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_in_faction = yes
-				}
-			}
+			# LIT = {
+			# 	OR = {
+			# 		exists = no
+			# 		has_war_with = ROOT
+			# 		is_in_faction = yes
+			# 	}
+			# }
+			# LAT = {
+			# 	OR = {
+			# 		exists = no
+			# 		has_war_with = ROOT
+			# 		is_in_faction = yes
+			# 	}
+			# }
 			EST = {
 				OR = {
 					exists = no
@@ -2931,60 +2931,60 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
-			if = {
-				limit = {
-					LIT = {
-						exists = yes
-						is_subject = no
-					}
-					NOT = { has_war_with = LIT }
-				}
-				# give_guarantee = LIT
-				add_opinion_modifier = {
-					target = LIT
-					modifier = baltic_security_opinion
-				}
-				reverse_add_opinion_modifier = {
-					target = LIT
-					modifier = baltic_security_opinion
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { has_war_with = EST }
-				}
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = LIT
-				}
-			}
-			if = {
-				limit = {
-					LAT = {
-						exists = yes
-						is_subject = no
-					}
-					NOT = { has_war_with = LAT }
-				}
-				# give_guarantee = LAT
-				add_opinion_modifier = {
-					target = LAT
-					modifier = baltic_security_opinion
-				}
-				reverse_add_opinion_modifier = {
-					target = LAT
-					modifier = baltic_security_opinion
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { has_war_with = EST }
-				}
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = LAT
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		LIT = {
+			# 			exists = yes
+			# 			is_subject = no
+			# 		}
+			# 		NOT = { has_war_with = LIT }
+			# 	}
+			# 	# give_guarantee = LIT
+			# 	add_opinion_modifier = {
+			# 		target = LIT
+			# 		modifier = baltic_security_opinion
+			# 	}
+			# 	reverse_add_opinion_modifier = {
+			# 		target = LIT
+			# 		modifier = baltic_security_opinion
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		NOT = { has_war_with = EST }
+			# 	}
+			# 	create_wargoal = {
+			# 		type = puppet_wargoal_focus
+			# 		target = LIT
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		LAT = {
+			# 			exists = yes
+			# 			is_subject = no
+			# 		}
+			# 		NOT = { has_war_with = LAT }
+			# 	}
+			# 	# give_guarantee = LAT
+			# 	add_opinion_modifier = {
+			# 		target = LAT
+			# 		modifier = baltic_security_opinion
+			# 	}
+			# 	reverse_add_opinion_modifier = {
+			# 		target = LAT
+			# 		modifier = baltic_security_opinion
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		NOT = { has_war_with = EST }
+			# 	}
+			# 	create_wargoal = {
+			# 		type = puppet_wargoal_focus
+			# 		target = LAT
+			# 	}
+			# }
 			if = {
 				limit = {
 					EST = {
@@ -3105,20 +3105,20 @@ focus_tree = {
 
 		available = {
 			OR = {
-				AND = {
-					LIT = {
-						exists = yes
-						NOT = { has_war_with = ROOT }
-						is_in_faction = no
-					}
-				}
-				AND = {
-					LAT = {
-						exists = yes
-						NOT = { has_war_with = ROOT }
-						is_in_faction = no
-					}
-				}
+				# AND = {
+				# 	LIT = {
+				# 		exists = yes
+				# 		NOT = { has_war_with = ROOT }
+				# 		is_in_faction = no
+				# 	}
+				# }
+				# AND = {
+				# 	LAT = {
+				# 		exists = yes
+				# 		NOT = { has_war_with = ROOT }
+				# 		is_in_faction = no
+				# 	}
+				# }
 				AND = {
 					EST = {
 						exists = yes
@@ -3139,20 +3139,20 @@ focus_tree = {
 		}
 
 		bypass = {
-			LIT = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_in_faction = yes
-				}
-			}
-			LAT = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_in_faction = yes
-				}
-			}
+			# LIT = {
+			# 	OR = {
+			# 		exists = no
+			# 		has_war_with = ROOT
+			# 		is_in_faction = yes
+			# 	}
+			# }
+			# LAT = {
+			# 	OR = {
+			# 		exists = no
+			# 		has_war_with = ROOT
+			# 		is_in_faction = yes
+			# 	}
+			# }
 			EST = {
 				OR = {
 					exists = no
@@ -3175,30 +3175,30 @@ focus_tree = {
 			create_faction = POL_baltic_alliance
 			set_rule = { can_create_factions = yes }
 			hidden_effect = {
-				if = {
-					limit = {
-						has_guaranteed = LIT
-						LIT = {
-							is_in_faction = no
-							is_puppet = no
-						}
-					}
-					LIT = {
-						country_event = { id = baltic.7 days = 1 }
-					}
-				}
-				if = {
-					limit = {
-						has_guaranteed = LAT
-						LAT = {
-							is_in_faction = no
-							is_puppet = no
-						}
-					}
-					LAT = {
-						country_event = { id = baltic.7 days = 1 }
-					}
-				}
+				# if = {
+				# 	limit = {
+				# 		has_guaranteed = LIT
+				# 		LIT = {
+				# 			is_in_faction = no
+				# 			is_puppet = no
+				# 		}
+				# 	}
+				# 	LIT = {
+				# 		country_event = { id = baltic.7 days = 1 }
+				# 	}
+				# }
+				# if = {
+				# 	limit = {
+				# 		has_guaranteed = LAT
+				# 		LAT = {
+				# 			is_in_faction = no
+				# 			is_puppet = no
+				# 		}
+				# 	}
+				# 	LAT = {
+				# 		country_event = { id = baltic.7 days = 1 }
+				# 	}
+				# }
 				if = {
 					limit = {
 						has_guaranteed = EST
@@ -3221,30 +3221,30 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					LIT = {
-						is_in_faction = no
-						is_puppet = no
-						NOT = { has_war_with = POL }
-					}
-				}
-				LIT = {
-					custom_effect_tooltip = POL_invite_to_faction_tooltip
-				}
-			}
-			if = {
-				limit = {
-					LAT = {
-						is_in_faction = no
-						is_puppet = no
-						NOT = { has_war_with = POL }
-					}
-				}
-				LAT = {
-					custom_effect_tooltip = POL_invite_to_faction_tooltip
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		LIT = {
+			# 			is_in_faction = no
+			# 			is_puppet = no
+			# 			NOT = { has_war_with = POL }
+			# 		}
+			# 	}
+			# 	LIT = {
+			# 		custom_effect_tooltip = POL_invite_to_faction_tooltip
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		LAT = {
+			# 			is_in_faction = no
+			# 			is_puppet = no
+			# 			NOT = { has_war_with = POL }
+			# 		}
+			# 	}
+			# 	LAT = {
+			# 		custom_effect_tooltip = POL_invite_to_faction_tooltip
+			# 	}
+			# }
 			if = {
 				limit = {
 					EST = {
@@ -4613,10 +4613,10 @@ focus_tree = {
 		
 		available = {
 			is_subject = no 
-			LIT = { 
-				exists = yes
-				has_capitulated = no
-			}
+			# LIT = { 
+			# 	exists = yes
+			# 	has_capitulated = no
+			# }
 			784 = {
 				owns_or_subject_of = yes
 			}
@@ -4632,26 +4632,26 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			#Poland asks for peace
-			LIT = {
-				country_event = {
-					id = poland.14
-					days = 5
-				}
-			}
+			# LIT = {
+			# 	country_event = {
+			# 		id = poland.14
+			# 		days = 5
+			# 	}
+			# }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
-				diplomatic_relation = {
-					country = LIT
-					relation = guarantee
-					active = yes
-				}
-				LIT = {
-					diplomatic_relation = {
-						country = POL
-						relation = guarantee
-						active = yes
-					}
-				}
+				# diplomatic_relation = {
+				# 	country = LIT
+				# 	relation = guarantee
+				# 	active = yes
+				# }
+				# LIT = {
+				# 	diplomatic_relation = {
+				# 		country = POL
+				# 		relation = guarantee
+				# 		active = yes
+				# 	}
+				# }
 			}
 		}
 	}
@@ -4671,78 +4671,78 @@ focus_tree = {
 		available = {
 			is_subject = no 
 			is_in_faction = yes
-			LIT = { 
-				exists = yes
-				has_capitulated = no
-				NOT = { has_war_with = ROOT }
-			}
-			NOT = { any_allied_country = { has_war_with = LIT } }
+			# LIT = { 
+			# 	exists = yes
+			# 	has_capitulated = no
+			# 	NOT = { has_war_with = ROOT }
+			# }
+			# NOT = { any_allied_country = { has_war_with = LIT } }
 		}
 
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			#Brings Lithuania into the faction if Poland is faction leader
-			if = {
-				limit = {
-					is_faction_leader = yes
-					LIT = {
-						NOT = {
-							is_in_faction = yes
-						}
-					}
-					NOT = { has_war_with = LIT }
-					NOT = { any_allied_country = { has_war_with = LIT } }
-				}
-				LIT = {
-					country_event = {
-						id = poland.1301
-						days = 5
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		is_faction_leader = yes
+			# 		LIT = {
+			# 			NOT = {
+			# 				is_in_faction = yes
+			# 			}
+			# 		}
+			# 		NOT = { has_war_with = LIT }
+			# 		NOT = { any_allied_country = { has_war_with = LIT } }
+			# 	}
+			# 	LIT = {
+			# 		country_event = {
+			# 			id = poland.1301
+			# 			days = 5
+			# 		}
+			# 	}
+			# }
 			#Asks faction leader for permission to invite Lithuania if not faction leader
-			else_if = {
-				limit = {
-					is_in_faction = yes
-					LIT = {
-						NOT = {
-							is_in_faction = yes
-						}
-					}
-					NOT = { has_war_with = LIT }
-					NOT = { any_allied_country = { has_war_with = LIT } }
-				}
-				LIT = { save_event_target_as = faction_invitee_target }
-				effect_tooltip = {
-					LIT = {
-						country_event = {
-							id = poland.1301
-							days = 5
-						}
-					}
-				}
-				hidden_effect = {
-					random_country = {
-						limit = {
-							is_in_faction_with = ROOT
-							is_faction_leader = yes
-						}
-						country_event = {
-							id = poland.13
-							days = 5
-						}
-					}
-				}
-			}
+			# else_if = {
+			# 	limit = {
+			# 		is_in_faction = yes
+			# 		LIT = {
+			# 			NOT = {
+			# 				is_in_faction = yes
+			# 			}
+			# 		}
+			# 		NOT = { has_war_with = LIT }
+			# 		NOT = { any_allied_country = { has_war_with = LIT } }
+			# 	}
+			# 	LIT = { save_event_target_as = faction_invitee_target }
+			# 	effect_tooltip = {
+			# 		LIT = {
+			# 			country_event = {
+			# 				id = poland.1301
+			# 				days = 5
+			# 			}
+			# 		}
+			# 	}
+			# 	hidden_effect = {
+			# 		random_country = {
+			# 			limit = {
+			# 				is_in_faction_with = ROOT
+			# 				is_faction_leader = yes
+			# 			}
+			# 			country_event = {
+			# 				id = poland.13
+			# 				days = 5
+			# 			}
+			# 		}
+			# 	}
+			# }
 			else = {
 				effect_tooltip = {
-					LIT = {
-						country_event = {
-							id = poland.1301
-							days = 5
-						}
-					}
+					# LIT = {
+					# 	country_event = {
+					# 		id = poland.1301
+					# 		days = 5
+					# 	}
+					# }
 				}
 			}
 		}
@@ -4774,11 +4774,11 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no 
-			LIT = { 
-				exists = yes
-				has_capitulated = no
-				NOT = { has_war_with = ROOT }
-			}
+			# LIT = { 
+			# 	exists = yes
+			# 	has_capitulated = no
+			# 	NOT = { has_war_with = ROOT }
+			# }
 			784 = {
 				owns_or_subject_of = yes
 			}
@@ -4795,23 +4795,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			#Poland demands Lithuanian annexation
-			if = {
-				limit = {
-					LIT = { has_war = no }
-				}
-				LIT = {
-					country_event = {
-						id = poland.15
-						days = 5
-					}
-				}
-			}
-			else = {
-				create_wargoal = {
-					type = annex_everything
-					target = LIT
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		LIT = { has_war = no }
+			# 	}
+			# 	LIT = {
+			# 		country_event = {
+			# 			id = poland.15
+			# 			days = 5
+			# 		}
+			# 	}
+			# }
+			# else = {
+			# 	create_wargoal = {
+			# 		type = annex_everything
+			# 		target = LIT
+			# 	}
+			# }
 		}
 	}
 

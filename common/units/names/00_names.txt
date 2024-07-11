@@ -395,173 +395,173 @@ AUS = {
 
 }
 
-BEL = {
-	submarine = {
-		prefix = "BNS"
-		generic = { "Sous-Marin" }
-		unique = {
-			"Artevelde" "Zinnia" "Jan Breydel" "Victor Billet" "Wielingen" "Westdiep" "Wandelaar" "Westhinder" "Leopold I" "Louise-Marie" "Brugge" 
-		}
-	}
-	destroyer = {
-		prefix = "BNS"
-		generic = { 
-			"Contre-Torpilleur"
-		}
-		unique = {
-			"Artevelde" "Zinnia" "Jan Breydel" "Victor Billet" "Wielingen" "Westdiep" "Wandelaar" "Westhinder" "Leopold I" "Louise-Marie" "Brugge" 
-		}
-	}
-	light_cruiser = {
-		prefix = "BNS"
-		generic = { "Croiseur Léger" }
-		unique = {
-			"Wielingen" "Westdiep" "Wandelaar" "Albertville" "Elisabethville" "Antwerpen" "Bruxelles" "Gent" "Ieper" "Liege" "Brugge" "Roeselare" 
-		}
-	}
-	heavy_cruiser = {
-		prefix = "BNS"
-		generic = { "Croiseur Lourd" }
-		unique = {
-			"Wielingen" "Westdiep" "Wandelaar" "Albertville" "Elisabethville" "Antwerpen" "Bruxelles" "Gent" "Ieper" "Liège" "Brugge" "Roeselare" 
-		}
-	}
-	battle_cruiser = {
-		prefix = "BNS"
-		generic = { "Croiseur Cuirassé" }
-		unique = {
-			"Roi Leopold I" "Roi Leopold II" "Roi Albert I" "Reine Astrid" "Jeneval" "General Brialmont" "Leopoldville" 
-		}
-	}
-	battleship = {
-		prefix = "BNS"
-		generic = { "Navire de Ligne" }
-		unique = {
-			"Roi Leopold I" "Roi Leopold II" "Roi Albert I" "Reine Astrid" "Jeneval" "Général Brialmont" "Leopoldville" 
-		}
-	}
-	carrier = {
-		prefix = "BNS"
-		generic = { "Porte-Avions" }
-		unique = {
-			"Graaf van Vlaanderen" "Hainaut" "Robrecht de Béthune" 	"Aster" "Bellis" "Crocus" "Lobelia" "Narcis" "Primula" 
-		}
-	}
-	air_wing_names_template = AIR_WING_NAME_GER_FALLBACK
+# BEL = {
+# 	submarine = {
+# 		prefix = "BNS"
+# 		generic = { "Sous-Marin" }
+# 		unique = {
+# 			"Artevelde" "Zinnia" "Jan Breydel" "Victor Billet" "Wielingen" "Westdiep" "Wandelaar" "Westhinder" "Leopold I" "Louise-Marie" "Brugge" 
+# 		}
+# 	}
+# 	destroyer = {
+# 		prefix = "BNS"
+# 		generic = { 
+# 			"Contre-Torpilleur"
+# 		}
+# 		unique = {
+# 			"Artevelde" "Zinnia" "Jan Breydel" "Victor Billet" "Wielingen" "Westdiep" "Wandelaar" "Westhinder" "Leopold I" "Louise-Marie" "Brugge" 
+# 		}
+# 	}
+# 	light_cruiser = {
+# 		prefix = "BNS"
+# 		generic = { "Croiseur Léger" }
+# 		unique = {
+# 			"Wielingen" "Westdiep" "Wandelaar" "Albertville" "Elisabethville" "Antwerpen" "Bruxelles" "Gent" "Ieper" "Liege" "Brugge" "Roeselare" 
+# 		}
+# 	}
+# 	heavy_cruiser = {
+# 		prefix = "BNS"
+# 		generic = { "Croiseur Lourd" }
+# 		unique = {
+# 			"Wielingen" "Westdiep" "Wandelaar" "Albertville" "Elisabethville" "Antwerpen" "Bruxelles" "Gent" "Ieper" "Liège" "Brugge" "Roeselare" 
+# 		}
+# 	}
+# 	battle_cruiser = {
+# 		prefix = "BNS"
+# 		generic = { "Croiseur Cuirassé" }
+# 		unique = {
+# 			"Roi Leopold I" "Roi Leopold II" "Roi Albert I" "Reine Astrid" "Jeneval" "General Brialmont" "Leopoldville" 
+# 		}
+# 	}
+# 	battleship = {
+# 		prefix = "BNS"
+# 		generic = { "Navire de Ligne" }
+# 		unique = {
+# 			"Roi Leopold I" "Roi Leopold II" "Roi Albert I" "Reine Astrid" "Jeneval" "Général Brialmont" "Leopoldville" 
+# 		}
+# 	}
+# 	carrier = {
+# 		prefix = "BNS"
+# 		generic = { "Porte-Avions" }
+# 		unique = {
+# 			"Graaf van Vlaanderen" "Hainaut" "Robrecht de Béthune" 	"Aster" "Bellis" "Crocus" "Lobelia" "Narcis" "Primula" 
+# 		}
+# 	}
+# 	air_wing_names_template = AIR_WING_NAME_GER_FALLBACK
 
-	#Air wings can only be named through archetype
-	small_plane_airframe = {
-		prefix = ""
-		generic = { "Escadrille de Chasse" "Jachtvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	#Air wings can only be named through archetype
+# 	small_plane_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Chasse" "Jachtvliegtuiggroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	medium_plane_scout_plane_airframe = {
-		prefix = ""
-		generic = { "Escadre de Reconnaissance" "Verkenningsgroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	medium_plane_scout_plane_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadre de Reconnaissance" "Verkenningsgroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	jet_fighter_equipment = {
-		prefix = ""
-		generic = { "Escadrille de Chasse" "Jachtvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	jet_fighter_equipment = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Chasse" "Jachtvliegtuiggroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	medium_plane_fighter_airframe = {
-		prefix = ""
-		generic = { "Escadrille de Chasse" "Jachtvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	medium_plane_fighter_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Chasse" "Jachtvliegtuiggroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	small_plane_cas_airframe = {
-		prefix = ""
-		generic = { "Escadrille d'Assaut" "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	small_plane_cas_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille d'Assaut" "Bommenwerpergroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	cv_small_plane_airframe = {
-		prefix = ""
-		generic = { "Escadrille de Chasse Naval" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	cv_small_plane_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Chasse Naval" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	cv_small_plane_cas_airframe = {
-		prefix = ""
-		generic = { "Escadrille d'Assaut Naval" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
-	cv_small_plane_naval_bomber_airframe = {
-		prefix = ""
-		generic = { "Escadrille de Torpilleur" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	cv_small_plane_cas_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille d'Assaut Naval" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
+# 	cv_small_plane_naval_bomber_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Torpilleur" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	medium_plane_airframe = {
-		prefix = ""
-		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	medium_plane_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	jet_tac_bomber_equipment = {
-		prefix = ""
-		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	jet_tac_bomber_equipment = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	small_plane_naval_bomber_airframe = {
-		prefix = ""
-		generic = { "Escadrille de Bombardement Naval" "Escadrille de Torpilleur" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	small_plane_naval_bomber_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Bombardement Naval" "Escadrille de Torpilleur" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	large_plane_airframe = {
-		prefix = ""
-		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	large_plane_airframe = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	jet_strat_bomber_equipment = {
-		prefix = ""
-		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_BEL_GENERIC
-		unique = {
-		}	
-	}
+# 	jet_strat_bomber_equipment = {
+# 		prefix = ""
+# 		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
+# 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 
-	transport_plane_equipment = {
-		prefix = ""
-		generic = { " Wing Luchttransport"}
-		generic_pattern = AIR_WING_NAME_ROM_GENERIC
-		unique = {
-		}	
-	}
+# 	transport_plane_equipment = {
+# 		prefix = ""
+# 		generic = { " Wing Luchttransport"}
+# 		generic_pattern = AIR_WING_NAME_ROM_GENERIC
+# 		unique = {
+# 		}	
+# 	}
 	
-}
+# }
 
 BRA = {
 	submarine = {
@@ -1957,110 +1957,110 @@ IRE = {
 	}
 }
 
-LAT = {
-	submarine = {
-		prefix = ""
-		generic = { "Zemudene" }
-		unique = {
-			"Ronis" "Spidola" 
-		}
-	}
-	destroyer = {
-		prefix = ""
-		generic = { "Iznicinatajs" }
-		unique = {
-		}
-	}
-	light_cruiser = {
-		prefix = ""
-		generic = { "Gaismas Kruizeri" }
-		unique = {
-			"Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
-		}
-	}
-	heavy_cruiser = {
-		prefix = ""
-		generic = { "Smagais Kruizeri" }
-		unique = {
-			"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" 
-		}
-	}
-	battle_cruiser = {
-		prefix = ""
-		generic = { "Linijkreiseris" }
-		unique = {
-			"Valmiera" "Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
-		}
-	}
-	battleship = {
-		prefix = ""
-		generic = { "Linijkugis" }
-		unique = {
-			"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" 
-		}
-	}
-	carrier = {
-		prefix = ""
-		generic = { "Lidmasinu Parvadatajs" }
-		unique = {
-			"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" "Cesis" "Liepaja" 
-			"Priekule" "Daugavpils" "Aglona" "Auce" "Virsaitis" "Namejs" 
-		}
-	}
+# LAT = {
+# 	submarine = {
+# 		prefix = ""
+# 		generic = { "Zemudene" }
+# 		unique = {
+# 			"Ronis" "Spidola" 
+# 		}
+# 	}
+# 	destroyer = {
+# 		prefix = ""
+# 		generic = { "Iznicinatajs" }
+# 		unique = {
+# 		}
+# 	}
+# 	light_cruiser = {
+# 		prefix = ""
+# 		generic = { "Gaismas Kruizeri" }
+# 		unique = {
+# 			"Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
+# 		}
+# 	}
+# 	heavy_cruiser = {
+# 		prefix = ""
+# 		generic = { "Smagais Kruizeri" }
+# 		unique = {
+# 			"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" 
+# 		}
+# 	}
+# 	battle_cruiser = {
+# 		prefix = ""
+# 		generic = { "Linijkreiseris" }
+# 		unique = {
+# 			"Valmiera" "Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
+# 		}
+# 	}
+# 	battleship = {
+# 		prefix = ""
+# 		generic = { "Linijkugis" }
+# 		unique = {
+# 			"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" 
+# 		}
+# 	}
+# 	carrier = {
+# 		prefix = ""
+# 		generic = { "Lidmasinu Parvadatajs" }
+# 		unique = {
+# 			"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" "Cesis" "Liepaja" 
+# 			"Priekule" "Daugavpils" "Aglona" "Auce" "Virsaitis" "Namejs" 
+# 		}
+# 	}
 	
-}
+# }
 
-LIT = {
-	submarine = {
-		prefix = ""
-		generic = { "Povandeninis" }
-		unique = {
-			"Ronis" "Spidola" 
-		}
-	}
-	destroyer = {
-		prefix = ""
-		generic = { "Nakintojas" }
-		unique = {
-		}
-	}
-	light_cruiser = {
-		prefix = ""
-		generic = { "Sviesos Kreiseris" }
-		unique = {
-			"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" 
-		}
-	}
-	heavy_cruiser = {
-		prefix = ""
-		generic = { "Sunkiuju Kreiseris" }
-		unique = {
-			"Kaunas" "Moletai" "Vilnius" "Siauliai" "Plunge" "Palanga" 
-		}
-	}
-	battle_cruiser = {
-		prefix = ""
-		generic = { "Linijinis Kreiseris" }
-		unique = {
-			"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" 
-		}
-	}
-	battleship = {
-		prefix = ""
-		generic = { "Sarvuotiniai" }
-		unique = {
-			"Kaunas" "Moletai" "Vilnius" "Siauliai" "Plunge" "Palanga" 
-		}
-	}
-	carrier = {
-		prefix = ""
-		generic = { "Lektuvnesio" }
-		unique = {
-			"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" "Dzkas" "Slis" "Skalvis" 
-		}
-	}
+# LIT = {
+# 	submarine = {
+# 		prefix = ""
+# 		generic = { "Povandeninis" }
+# 		unique = {
+# 			"Ronis" "Spidola" 
+# 		}
+# 	}
+# 	destroyer = {
+# 		prefix = ""
+# 		generic = { "Nakintojas" }
+# 		unique = {
+# 		}
+# 	}
+# 	light_cruiser = {
+# 		prefix = ""
+# 		generic = { "Sviesos Kreiseris" }
+# 		unique = {
+# 			"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" 
+# 		}
+# 	}
+# 	heavy_cruiser = {
+# 		prefix = ""
+# 		generic = { "Sunkiuju Kreiseris" }
+# 		unique = {
+# 			"Kaunas" "Moletai" "Vilnius" "Siauliai" "Plunge" "Palanga" 
+# 		}
+# 	}
+# 	battle_cruiser = {
+# 		prefix = ""
+# 		generic = { "Linijinis Kreiseris" }
+# 		unique = {
+# 			"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" 
+# 		}
+# 	}
+# 	battleship = {
+# 		prefix = ""
+# 		generic = { "Sarvuotiniai" }
+# 		unique = {
+# 			"Kaunas" "Moletai" "Vilnius" "Siauliai" "Plunge" "Palanga" 
+# 		}
+# 	}
+# 	carrier = {
+# 		prefix = ""
+# 		generic = { "Lektuvnesio" }
+# 		unique = {
+# 			"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" "Dzkas" "Slis" "Skalvis" 
+# 		}
+# 	}
 	
-}
+# }
 
 SAF = {
 	submarine = {

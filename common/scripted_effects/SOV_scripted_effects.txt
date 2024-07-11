@@ -3165,18 +3165,18 @@ SOV_set_appropriate_national_academy_of_sciences_flag_effect = {
 		}
 		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_EST_flag }
 	}
-	else_if = {
-		limit = {
-			FROM = { tag = LAT }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_LAT_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = LIT }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_LIT_flag }
-	}
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = LAT }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_LAT_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = LIT }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_LIT_flag }
+	# }
 	else_if = {
 		limit = {
 			FROM = { tag = POL }

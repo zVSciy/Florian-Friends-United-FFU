@@ -4743,68 +4743,68 @@ country_event = {
 			}
 		}
 		if = {
-			limit = {
-				country_exists = LIT
-				any_state = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							# is_core_of = DDR
-							# is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-			}
+			# limit = {
+			# 	country_exists = LIT
+			# 	any_state = {
+			# 		is_core_of = LIT
+			# 		is_owned_and_controlled_by = GER
+			# 		NOT = {
+			# 			OR = {
+			# 				# is_core_of = DDR
+			# 				# is_core_of = WGR
+			# 				is_core_of = POL
+			# 			}
+			# 		}
+			# 	}
+			# }
 			#Give LIT any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
 			every_state = {
-				limit = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							# is_core_of = DDR
-							# is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-				LIT = {
-					transfer_state = PREV
-				}
+				# limit = {
+				# 	is_core_of = LIT
+				# 	is_owned_and_controlled_by = GER
+				# 	NOT = {
+				# 		OR = {
+				# 			# is_core_of = DDR
+				# 			# is_core_of = WGR
+				# 			is_core_of = POL
+				# 		}
+				# 	}
+				# }
+				# LIT = {
+				# 	transfer_state = PREV
+				# }
 			}
 		}
 		if = {
 			limit = {
-				NOT = {
-					country_exists = LIT
-				}
-				any_state = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							# is_core_of = DDR
-							# is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
+				# NOT = {
+				# 	country_exists = LIT
+				# }
+				# any_state = {
+				# 	is_core_of = LIT
+				# 	is_owned_and_controlled_by = GER
+				# 	NOT = {
+				# 		OR = {
+				# 			# is_core_of = DDR
+				# 			# is_core_of = WGR
+				# 			is_core_of = POL
+				# 		}
+				# 	}
+				# }
 			}
 			#Give any LIT cores to SOV if they have been taken in a previous war/focus
 			every_state = {
-				limit = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							# is_core_of = DDR
-							# is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
+				# limit = {
+				# 	is_core_of = LIT
+				# 	is_owned_and_controlled_by = GER
+				# 	NOT = {
+				# 		OR = {
+				# 			# is_core_of = DDR
+				# 			# is_core_of = WGR
+				# 			is_core_of = POL
+				# 		}
+				# 	}
+				# }
 				SOV = {
 					transfer_state = PREV
 				}

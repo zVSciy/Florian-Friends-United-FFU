@@ -1214,8 +1214,8 @@ is_germanic = {
 		original_tag = DEN
 		original_tag = SWI
 		original_tag = HOL
-		original_tag = LUX
-		original_tag = BEL
+		# original_tag = LUX
+		# original_tag = BEL
 		original_tag = AUS
 	}
 }

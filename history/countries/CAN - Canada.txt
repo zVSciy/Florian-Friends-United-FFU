@@ -447,23 +447,23 @@ add_operation_token = {
 	tag = HOL
 	token = token_navy_friendly
 }
-# BEL
-add_operation_token = {
-	tag = BEL
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = BEL
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = BEL
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = BEL
-	token = token_navy_friendly
-}
+# # BEL
+# add_operation_token = {
+# 	tag = BEL
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = BEL
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = BEL
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = BEL
+# 	token = token_navy_friendly
+# }
 # LUX
 # add_operation_token = {
 # 	tag = LUX

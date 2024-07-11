@@ -7130,7 +7130,7 @@ DEN_danish_faction_category = {
 			}
 		}
 
-		targets = { SWE NOR FIN EST LAT LIT SMI POL HOL }
+		targets = { SWE NOR FIN EST SMI POL HOL }
 
 		target_trigger = {
 			FROM = {
@@ -7218,7 +7218,7 @@ DEN_danish_faction_category = {
 			}
 		}
 
-		targets = { SWE NOR FIN EST LAT LIT SMI POL HOL }
+		targets = { SWE NOR FIN EST SMI POL HOL }
 
 		target_trigger = {
 			FROM = {
@@ -7372,7 +7372,7 @@ DEN_influence_countries_category = {
 			}
 		}
 
-		targets = { SWE NOR FIN EST LAT LIT SMI }
+		targets = { SWE NOR FIN EST SMI }
 
 		target_trigger = {
 			FROM = {
@@ -7490,7 +7490,7 @@ DEN_offer_protection_category = {
 			}
 		}
 
-		targets = { SWE NOR FIN EST LAT LIT SMI }
+		targets = { SWE NOR FIN EST SMI }
 
 		target_trigger = {
 			FROM = {

@@ -145,7 +145,7 @@ on_actions = {
 					OR = {
 						VEN = { is_ai = no}
 						POR = { is_ai = no}
-						BEL = { is_ai = no}
+						# BEL = { is_ai = no}
 						# LUX = { is_ai = no}
 						SWI = { is_ai = no}
 						AUS = { is_ai = no}
@@ -155,8 +155,8 @@ on_actions = {
 						NOR = { is_ai = no}
 						# YUG = { is_ai = no}
 						GRE = { is_ai = no}
-						LIT = { is_ai = no}
-						LAT = { is_ai = no}
+						# LIT = { is_ai = no}
+						# LAT = { is_ai = no}
 						EST = { is_ai = no}
 						CHI = { is_ai = no}
 						INS = { is_ai = no}						
@@ -477,30 +477,30 @@ on_actions = {
 		}
 	}
 
-	on_capitulation_immediate = {
-		effect = {
-			if = {
-				limit = {
-					original_tag = BEL
-					FROM = { is_in_faction_with = GER }
-				}
-				BEL = {
-					set_equipment_fraction = 0
-				}
-			}
-		}
-	}
+	# on_capitulation_immediate = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = BEL
+	# 				FROM = { is_in_faction_with = GER }
+	# 			}
+	# 			BEL = {
+	# 				set_equipment_fraction = 0
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	on_capitulation = {
 		effect = {
 			if = {
-				limit = {
-					original_tag = BEL
-					FROM = { is_in_faction_with = GER }
-				}
-				BEL = {
-					set_equipment_fraction = 0
-				}
+				# limit = {
+				# 	original_tag = BEL
+				# 	FROM = { is_in_faction_with = GER }
+				# }
+				# BEL = {
+				# 	set_equipment_fraction = 0
+				# }
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
@@ -553,7 +553,7 @@ on_actions = {
 					transfer_state = 34
 					transfer_state = 8
 				}
-				ENG = { annex_country = { target = BEL transfer_troops = no } }
+				# ENG = { annex_country = { target = BEL transfer_troops = no } }
 				SAF = {
 					transfer_state = 295
 					transfer_state = 538
@@ -1558,14 +1558,14 @@ on_actions = {
 						ALB = { transfer_state = PREV }
 					}
 				}
-				BEL = {
-					every_state = {
-						limit = {
-							is_core_of = BEL
-						}
-						BEL = { transfer_state = PREV }
-					}
-				}
+				# BEL = {
+				# 	every_state = {
+				# 		limit = {
+				# 			is_core_of = BEL
+				# 		}
+				# 		BEL = { transfer_state = PREV }
+				# 	}
+				# }
 				GRE = {
 					every_state = {
 						limit = {
@@ -1699,10 +1699,10 @@ on_actions = {
 						target = FIN
 						autonomy_state = autonomy_integrated_puppet
 					}
-					set_autonomy = {
-						target = BEL
-						autonomy_state = autonomy_integrated_puppet
-					}
+					# set_autonomy = {
+					# 	target = BEL
+					# 	autonomy_state = autonomy_integrated_puppet
+					# }
 					set_autonomy = {
 						target = POL
 						autonomy_state = autonomy_integrated_puppet
@@ -1792,14 +1792,14 @@ on_actions = {
 						HOL = { transfer_state = PREV }
 					}
 				}
-				BEL = {
-					every_state = {
-						limit = {
-							is_core_of = BEL
-						}
-						BEL = { transfer_state = PREV }
-					}
-				}
+				# BEL = {
+				# 	every_state = {
+				# 		limit = {
+				# 			is_core_of = BEL
+				# 		}
+				# 		BEL = { transfer_state = PREV }
+				# 	}
+				# }
 				GRE = {
 					every_state = {
 						limit = {
@@ -2063,14 +2063,14 @@ on_actions = {
 						popularity = 100
 					}
 				}
-				BEL = {
-					every_state = {
-						limit = {
-							is_core_of = BEL
-						}
-						BEL = { transfer_state = PREV }
-					}
-				}
+				# BEL = {
+				# 	every_state = {
+				# 		limit = {
+				# 			is_core_of = BEL
+				# 		}
+				# 		BEL = { transfer_state = PREV }
+				# 	}
+				# }
 				GRE = {
 					every_state = {
 						limit = {

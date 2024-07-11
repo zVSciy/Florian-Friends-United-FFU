@@ -4142,30 +4142,30 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
-					LIT = {
-						has_completed_focus = LIT_secure_a_loyal_cabinet
-					}
+					# LIT = {
+					# 	has_completed_focus = LIT_secure_a_loyal_cabinet
+					# }
 				}
 
-				LIT = {
-					LIT_mecislovas_gedvilas = { set_nationality = ROOT }
-					LIT_vladas_mironas = { set_nationality = ROOT }
-				}
+				# LIT = {
+				# 	LIT_mecislovas_gedvilas = { set_nationality = ROOT }
+				# 	LIT_vladas_mironas = { set_nationality = ROOT }
+				# }
 			}
 
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
-					LAT = {
-						has_completed_focus = LAT_suspend_the_constitution
-					}
+					# LAT = {
+					# 	has_completed_focus = LAT_suspend_the_constitution
+					# }
 				}
 
-				LAT = {
-					LAT_janis_rudzutaks = { set_nationality = ROOT }
-					LAT_emilija_veinberga = { set_nationality = ROOT }
-					LAT_janis_sudrabkalns = { set_nationality = ROOT }
-				}
+				# LAT = {
+				# 	LAT_janis_rudzutaks = { set_nationality = ROOT }
+				# 	LAT_emilija_veinberga = { set_nationality = ROOT }
+				# 	LAT_janis_sudrabkalns = { set_nationality = ROOT }
+				# }
 			}
 
 			if = {
@@ -4173,8 +4173,8 @@ focus_tree = {
 					has_dlc = "No Step Back"
 					EST = {
 						OR = {
-							has_completed_focus = EST_era_of_silence
-							has_completed_focus = EST_rally_the_nation
+							# has_completed_focus = EST_era_of_silence
+							# has_completed_focus = EST_rally_the_nation
 						}
 					}
 				}
@@ -9453,14 +9453,14 @@ focus_tree = {
 			has_war_support > 0.4
 			has_army_manpower = { size > 80000 }
 			OR = {
-				LAT = { 
-					exists = yes 
-					NOT = { is_in_faction_with = ROOT }
-				}
-				LIT = { 
-					exists = yes 
-					NOT = { is_in_faction_with = ROOT }
-				}
+				# LAT = { 
+				# 	exists = yes 
+				# 	NOT = { is_in_faction_with = ROOT }
+				# }
+				# LIT = { 
+				# 	exists = yes 
+				# 	NOT = { is_in_faction_with = ROOT }
+				# }
 				EST = { 
 					exists = yes 
 					NOT = { is_in_faction_with = ROOT }
@@ -9475,34 +9475,34 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			IF = {
-				limit = {
-					LAT = {
-						exists = yes 
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-					target = LAT
-					type = puppet_wargoal_focus
-					generator = { 11 }
-					expire = 0
-				}
-			}
-			IF = {
-				limit = {
-					LIT = {
-						exists = yes 
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-					target = LIT
-					type = puppet_wargoal_focus
-					generator = { 808 }
-					expire = 0
-				}
-			}
+			# IF = {
+			# 	limit = {
+			# 		LAT = {
+			# 			exists = yes 
+			# 			NOT = { is_in_faction_with = ROOT }
+			# 		}
+			# 	}
+			# 	create_wargoal = {
+			# 		target = LAT
+			# 		type = puppet_wargoal_focus
+			# 		generator = { 11 }
+			# 		expire = 0
+			# 	}
+			# }
+			# IF = {
+			# 	limit = {
+			# 		LIT = {
+			# 			exists = yes 
+			# 			NOT = { is_in_faction_with = ROOT }
+			# 		}
+			# 	}
+			# 	create_wargoal = {
+			# 		target = LIT
+			# 		type = puppet_wargoal_focus
+			# 		generator = { 808 }
+			# 		expire = 0
+			# 	}
+			# }
 			IF = {
 				limit = {
 					EST = {

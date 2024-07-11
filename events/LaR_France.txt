@@ -2248,176 +2248,176 @@ country_event = {
 #  # #    #  #  # #  #     #  # #   #   #  #  #  #  # #   # 
 #  # ### ###  ##  #  #     ###  ### ###  ##  ###  ##  #   # 
 
-add_namespace = lar_align_belgium
+# add_namespace = lar_align_belgium
 
-#initial event - France wants to control country
-country_event = {
-	id = lar_align_belgium.1
-	title = lar_align_belgium.1.t
-	desc = lar_align_belgium.1.desc
-	picture = GFX_report_event_fascist_speech
-	is_triggered_only = yes
-	option = {
-		name = lar_align_belgium.1.a #agree
-		ai_chance = {
-			factor = 70
-		}
-		FROM = {
-			country_event = lar_align_belgium.2
-		}
-		effect_tooltip = {
-			FROM = {
-				puppet = PREV
-			}
-		}
-	}
+# #initial event - France wants to control country
+# country_event = {
+# 	id = lar_align_belgium.1
+# 	title = lar_align_belgium.1.t
+# 	desc = lar_align_belgium.1.desc
+# 	picture = GFX_report_event_fascist_speech
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = lar_align_belgium.1.a #agree
+# 		ai_chance = {
+# 			factor = 70
+# 		}
+# 		FROM = {
+# 			country_event = lar_align_belgium.2
+# 		}
+# 		effect_tooltip = {
+# 			FROM = {
+# 				puppet = PREV
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = lar_align_belgium.1.b #refuse
-		ai_chance = {
-			factor = 30
-		}
-		FROM = {
-			country_event = lar_align_belgium.3
-		}
-		effect_tooltip = {
-			create_wargoal = {
-				target = ROOT
-				type = puppet_wargoal_focus
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = lar_align_belgium.1.b #refuse
+# 		ai_chance = {
+# 			factor = 30
+# 		}
+# 		FROM = {
+# 			country_event = lar_align_belgium.3
+# 		}
+# 		effect_tooltip = {
+# 			create_wargoal = {
+# 				target = ROOT
+# 				type = puppet_wargoal_focus
+# 			}
+# 		}
+# 	}
+# }
 
-# rasponse event for France - country agrees
-country_event = {
-	id = lar_align_belgium.2
-	title = lar_align_belgium.2.t
-	desc = lar_align_belgium.2.desc
-	Picture = GFX_report_event_generic_sign_treaty1
-	is_triggered_only = yes
-	option = {
-		name = lar_align_belgium.2.a #agree
-		ai_chance = {
-			factor = 100
-		}
-		puppet = FROM
-	}
-}
-#response event for France - country refuses
-country_event = {
-	id = lar_align_belgium.3
-	title = lar_align_belgium.3.t
-	desc = lar_align_belgium.3.desc
-	picture = GFX_report_event_generic_defensive_preparations
-	is_triggered_only = yes
-	option = {
-		name = lar_align_belgium.3.a #agree
-		ai_chance = {
-			factor = 80
-		}
-		create_wargoal = {
-				target = FROM
-				type = puppet_wargoal_focus
-			}
-	}
-	option = {
-		name = lar_align_belgium.3.b #back down
-		ai_chance = {
-			factor = 20
-		}
-	}
-}
+# # rasponse event for France - country agrees
+# country_event = {
+# 	id = lar_align_belgium.2
+# 	title = lar_align_belgium.2.t
+# 	desc = lar_align_belgium.2.desc
+# 	Picture = GFX_report_event_generic_sign_treaty1
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = lar_align_belgium.2.a #agree
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 		puppet = FROM
+# 	}
+# }
+# #response event for France - country refuses
+# country_event = {
+# 	id = lar_align_belgium.3
+# 	title = lar_align_belgium.3.t
+# 	desc = lar_align_belgium.3.desc
+# 	picture = GFX_report_event_generic_defensive_preparations
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = lar_align_belgium.3.a #agree
+# 		ai_chance = {
+# 			factor = 80
+# 		}
+# 		create_wargoal = {
+# 				target = FROM
+# 				type = puppet_wargoal_focus
+# 			}
+# 	}
+# 	option = {
+# 		name = lar_align_belgium.3.b #back down
+# 		ai_chance = {
+# 			factor = 20
+# 		}
+# 	}
+# }
 
- ## ###  #   ### ###     ###  ### #    ##  ### #  # #   # 
-#   #  # #    #   #      #  # #   #   #     #  #  # ## ## 
- #  ###  #    #   #      ###  ##  #   # ##  #  #  # # # # 
-  # #    #    #   #      #  # #   #   #  #  #  #  # #   # 
-##  #    ### ###  #      ###  ### ###  ##  ###  ##  #   # 
+#  ## ###  #   ### ###     ###  ### #    ##  ### #  # #   # 
+# #   #  # #    #   #      #  # #   #   #     #  #  # ## ## 
+#  #  ###  #    #   #      ###  ##  #   # ##  #  #  # # # # 
+#   # #    #    #   #      #  # #   #   #  #  #  #  # #   # 
+# ##  #    ### ###  #      ###  ### ###  ##  ###  ##  #   # 
 
 
-add_namespace = lar_split_belgium
+# add_namespace = lar_split_belgium
 
-#initial event - France wants to control country
-country_event = {
-	id = lar_split_belgium.1
-	title = lar_split_belgium.1.t
-	desc = lar_split_belgium.1.desc
-	picture = GFX_report_event_fascist_speech
-	is_triggered_only = yes
-	option = {
-		name = lar_split_belgium.1.a #agree
-		ai_chance = {
-			factor = 40
-		}
-		FRA = {
-			country_event = lar_split_belgium.2
-		}
-		effect_tooltip = {
-			FRA = {
-				puppet = PREV
-				transfer_state = 34
-			}
-		}
-	}
+# #initial event - France wants to control country
+# country_event = {
+# 	id = lar_split_belgium.1
+# 	title = lar_split_belgium.1.t
+# 	desc = lar_split_belgium.1.desc
+# 	picture = GFX_report_event_fascist_speech
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = lar_split_belgium.1.a #agree
+# 		ai_chance = {
+# 			factor = 40
+# 		}
+# 		FRA = {
+# 			country_event = lar_split_belgium.2
+# 		}
+# 		effect_tooltip = {
+# 			FRA = {
+# 				puppet = PREV
+# 				transfer_state = 34
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = lar_split_belgium.1.b #refuse
-		ai_chance = {
-			factor = 60
-		}
-		FRA = {
-			country_event = lar_split_belgium.3
-		}
-		effect_tooltip = {
-			create_wargoal = {
-				target = ROOT
-				type = puppet_wargoal_focus
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = lar_split_belgium.1.b #refuse
+# 		ai_chance = {
+# 			factor = 60
+# 		}
+# 		FRA = {
+# 			country_event = lar_split_belgium.3
+# 		}
+# 		effect_tooltip = {
+# 			create_wargoal = {
+# 				target = ROOT
+# 				type = puppet_wargoal_focus
+# 			}
+# 		}
+# 	}
+# }
 
-# rasponse event for France - country agrees
-country_event = {
-	id = lar_split_belgium.2
-	title = lar_split_belgium.2.t
-	desc = lar_split_belgium.2.desc
-	Picture = GFX_report_event_generic_sign_treaty1
-	is_triggered_only = yes
-	option = {
-		name = lar_split_belgium.2.a #agree
-		ai_chance = {
-			factor = 100
-		}
-		puppet = FROM
-		transfer_state = 34
-	}
-}
-#response event for France - Belgium refuses
-country_event = {
-	id = lar_split_belgium.3
-	title = lar_split_belgium.3.t
-	desc = lar_split_belgium.3.desc
-	Picture = GFX_report_event_generic_defensive_preparations
-	is_triggered_only = yes
-	option = {
-		name = lar_split_belgium.3.a #agree
-		ai_chance = {
-			factor = 80
-		}
-		create_wargoal = {
-			target = FROM
-			type = puppet_wargoal_focus
-		}
-	}
-	option = {
-		name = lar_split_belgium.3.b #back down
-		ai_chance = {
-			factor = 20
-		}
-	}
-}
+# # rasponse event for France - country agrees
+# country_event = {
+# 	id = lar_split_belgium.2
+# 	title = lar_split_belgium.2.t
+# 	desc = lar_split_belgium.2.desc
+# 	Picture = GFX_report_event_generic_sign_treaty1
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = lar_split_belgium.2.a #agree
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 		puppet = FROM
+# 		transfer_state = 34
+# 	}
+# }
+# #response event for France - Belgium refuses
+# country_event = {
+# 	id = lar_split_belgium.3
+# 	title = lar_split_belgium.3.t
+# 	desc = lar_split_belgium.3.desc
+# 	Picture = GFX_report_event_generic_defensive_preparations
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = lar_split_belgium.3.a #agree
+# 		ai_chance = {
+# 			factor = 80
+# 		}
+# 		create_wargoal = {
+# 			target = FROM
+# 			type = puppet_wargoal_focus
+# 		}
+# 	}
+# 	option = {
+# 		name = lar_split_belgium.3.b #back down
+# 		ai_chance = {
+# 			factor = 20
+# 		}
+# 	}
+# }
 
  ##   ##  #  #  ##  ###  ##  ## ###  ##  #  #  ##     ###  ##      ### ###  ##  #   #   # 
 #  # #  # ## # #  # #   #   #    #  #  # ## # #        #  #  #      #   #  #  # #    # #  
