@@ -494,13 +494,13 @@ on_actions = {
 	on_capitulation = {
 		effect = {
 			if = {
-				# limit = {
-				# 	original_tag = BEL
-				# 	FROM = { is_in_faction_with = GER }
-				# }
-				# BEL = {
-				# 	set_equipment_fraction = 0
-				# }
+				limit = {
+					original_tag = HOL
+					FROM = { is_in_faction_with = GER }
+				}
+				HOL = {
+					set_equipment_fraction = 0
+				}
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
@@ -548,11 +548,11 @@ on_actions = {
 						producer = GER
 					}
 				}
-				GER = {
-					transfer_state = 6
-					transfer_state = 34
-					transfer_state = 8
-				}
+				# GER = {
+				# 	transfer_state = 6
+				# 	transfer_state = 34
+				# 	transfer_state = 8
+				# }
 				# ENG = { annex_country = { target = BEL transfer_troops = no } }
 				SAF = {
 					transfer_state = 295
