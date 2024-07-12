@@ -11,7 +11,15 @@
 opinion_modifiers = {
 
 	### PMFU
-	
+	anti_cross_faction_trade = {
+		trade = yes
+		value = -500
+	}
+
+	anti_cross_faction_trade_efr = {
+		trade = yes
+		value = -80
+	}
 	####
 
 	cheat_opinion_modifier_good = {

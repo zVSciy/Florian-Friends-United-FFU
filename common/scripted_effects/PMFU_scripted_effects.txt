@@ -285,10 +285,7 @@ anti_cross_faction_trade_allies = {
 		target = MEX
 		modifier = anti_cross_faction_trade
 	}
-	add_opinion_modifier = {
-		target = HOL
-		modifier = anti_cross_faction_trade
-	}
+
 	add_opinion_modifier = {
 		target = MAL
 		modifier = anti_cross_faction_trade
@@ -341,9 +338,6 @@ anti_cross_faction_trade_all = {
 		anti_cross_faction_trade_axis = yes
 	}
 	MEX = {
-		anti_cross_faction_trade_axis = yes
-	}
-	HOL = {
 		anti_cross_faction_trade_axis = yes
 	}
 	MAL = {
