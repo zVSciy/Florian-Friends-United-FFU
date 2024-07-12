@@ -12,6 +12,15 @@ category = {
 	BlackShirts
 	wot_ze_fok
 	asia
+	rizen1
+	rizen2
+	rizen3
+	rizen4
+	rizen5
+	rizen6
+	rizen7
+	rizen8
+	rizen9
 	}
 }
 
@@ -578,26 +587,60 @@ soundeffect = {
 #################################################################
 ########################## UNITS ################################
 #################################################################
+sound = {
+	name = "rizen1"
+	file = "ger/rizen1.wav"
+}
+sound = {
+	name = "rizen2"
+	file = "ger/rizen2.wav"
+}
+sound = {
+	name = "rizen3"
+	file = "ger/rizen3.wav"
+}
+sound = {
+	name = "rizen4"
+	file = "ger/rizen4.wav"
+}
+sound = {
+	name = "rizen5"
+	file = "ger/rizen5.wav"
+}
+sound = {
+	name = "rizen6"
+	file = "ger/rizen6.wav"
+}
+sound = {
+	name = "rizen7"
+	file = "ger/rizen7.wav"
+}
+sound = {
+	name = "rizen8"
+	file = "ger/rizen8.wav"
+}
+sound = {
+	name = "rizen9"
+	file = "ger/rizen9.wav"
+}
 soundeffect =
 {
 	name = select_army
 	sounds = {
-		sound = select_army01
-		sound = select_army02
-		sound = select_army03
-		sound = select_army04
-		sound = select_army05
-		sound = select_army06
+		sound = "rizen1"
+		sound = "rizen2"
+		sound = "rizen3"
+		sound = "rizen4"
+		sound = "rizen5"
+		sound = "rizen6"
 	}
-	volume = 0.4
+	volume = 0.6
 }
 soundeffect =
 {
 	name = select_vehicle
 	sounds = {
-		sound = select_vehicle01
-		sound = select_vehicle02
-		sound = select_vehicle03
+		sound = "rizen9"
 	}
 	volume = 0.4
 }
@@ -605,9 +648,8 @@ soundeffect =
 {
 	name = select_tank
 	sounds = {
-		sound = select_tank_01
-		sound = select_tank_02
-		sound = select_tank_03
+		sound = "rizen8"
+		sound = "rizen7"
 	}
 	volume = 0.4
 }
