@@ -3355,6 +3355,47 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = GER_strike_the_rebellion
+		icon = GFX_GER_SS_armed_branch
+		prerequisite = {
+			focus = GER_reintegrate_east
+		}
+		relative_position_id = GER_reintegrate_east
+		x = 0
+		y = 1
+
+		
+		available={
+			date > 1941.1.1
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			36 = {
+				set_compliance = 80
+			}
+			7 = {
+				set_compliance = 80
+			}
+			35 = {
+				set_compliance = 80
+			}
+			6 = {
+				set_compliance = 80
+			}
+			34 = {
+				set_compliance = 80
+			}
+			8 = {
+				set_compliance = 80
+			}
+		}
+	
+	}
 	
 	focus = {
 		id = GER_prepare_barb
