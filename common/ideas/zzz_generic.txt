@@ -260,6 +260,7 @@ ideas = {
 				air_training_xp_gain_factor = 5
 				experience_gain_navy_unit_factor = 10
 				attrition = -1
+				air_accidents = -1
 				experience_gain_army = 0.3
 			}
 		}
