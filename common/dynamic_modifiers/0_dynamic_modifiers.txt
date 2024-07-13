@@ -541,7 +541,21 @@ ROM_transnistria_governorate = {
 	production_speed_buildings_factor = 0.4
 	recruitable_population_factor = -0.2
 }
+####
+#### UK STATE MODIFIERS ####
+####
 
+ENG_defend_gibraltar = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.15
+	cas_damage_reduction = 0.2
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.2
+	pocket_penalty = -0.15
+}
 
 ####
 #### SOVIET STATE MODIFIERS ####

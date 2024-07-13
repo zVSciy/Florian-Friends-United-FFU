@@ -2823,11 +2823,72 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				# add_dynamic_modifier = { modifier = ENG_defend_gibraltar scope = ENG }
 			}
 			ENG_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ENG_british_army_repair_speed = 0.9 tooltip = repair_speed_repair_air_tt }
+
+			# hidden_effect = {
+			# 	division_template = {
+			# 		name = "Gibraltar"
+			# 		priority = 1
+			# 		regiments = {
+			# 			mountaineers = { x = 0 y = 0 }
+			# 			mountaineers = { x = 0 y = 1 }
+			# 			mountaineers = { x = 0 y = 2 }
+			# 			mountaineers = { x = 0 y = 3 }
+
+			# 			mountaineers = { x = 1 y = 0 }
+			# 			mountaineers = { x = 1 y = 1 }
+			# 			mountaineers = { x = 1 y = 2 }
+			# 			mountaineers = { x = 1 y = 3 }
+
+			# 			mountaineers = { x = 2 y = 0 }
+			# 			mountaineers = { x = 2 y = 1 }
+			# 			mountaineers = { x = 2 y = 2 }	
+
+			# 			pack_artillery_brigade = { x = 3 y = 0}
+			# 			pack_artillery_brigade = { x = 3 y = 1}
+			# 			pack_artillery_brigade = { x = 3 y = 2}
+			# 			pack_artillery_brigade = { x = 3 y = 3}
+
+			# 			pack_artillery_brigade = { x = 4 y = 0}
+			# 			pack_artillery_brigade = { x = 4 y = 1}
+			# 			pack_artillery_brigade = { x = 4 y = 2}
+			# 			pack_artillery_brigade = { x = 4 y = 3}
+			# 		}
+			# 		support = {
+			# 			hq_company = { x = 0 y = 0 } 
+			# 			engineer = { x = 0 y = 1 }   
+			# 			light_tank_recon = { x = 0 y = 2 }
+			# 			anti_air = { x = 0 y = 4 }
+			# 			logistics_company_mot = { x = 1 y = 0 }
+			# 		}
+			# 	}
+			# 	118 = {
+			# 		# 12 Spawn ins
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+			# 		create_unit = { division = "division_template = \"Gibraltar\" start_experience_factor = 0.20 force_equipment_variants = { infantry_equipment_2 = { owner = \"ENG\" } } force_equipment_variants = { squad_equipment_1 = { owner = \"ENG\" } }" owner = ENG }
+
+			# 	}
+			
+			# 	}
+			# 	custom_effect_tooltip = ENG_defend_gibraltar_tt
+			}
+			
 		}
-	}
+	
+
 	
 	focus = {
 		id = ENG_fortify_suez
@@ -3469,6 +3530,11 @@ focus_tree = {
 		id = ENG_imperial_conference
 		prerequisite = { focus = ENG_commonwealth_ties }
 
+
+		available = {
+			has_completed_focus = ENG_fortify_the_rock 
+
+		}
 		# available = {
 		# 	CAN = {
 		# 		OR = {

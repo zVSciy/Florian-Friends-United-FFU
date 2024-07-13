@@ -270,6 +270,7 @@
   ENG_prepare_for_the_inevitable_mil:0 "Prepare for the Inevitable (Military Factories)"
   ENG_prepare_for_the_inevitable_dock:0 "Prepare for the Inevitable (Naval Dockyards)"
   ENG_destroyers_for_bases1:0 "Destroyers for Bases"
+  ENG_defend_gibraltar:0 "Defend Gibraltar"
 
   ### DYNAMIC MODIFIERS ###
   ENG_economy_dynamic_modifier:0 "[ENG_economy_dynam_mod_sl]"
@@ -279,6 +280,8 @@
   ENG_modify_economy_shadow_scheme:0 "The Shadow Scheme"
   ENG_modify_economy_war:0 "British War Economy"
   ENG_shadow_scheme_2_tt:0 "£factory_bombing_defence_texticon  Factory Bomb Vulnerability: §G-10.00%§!\n£repair_civ_factory_texticon  Factory Repair Speed: §G+10.00%§!"
+  ENG_defend_gibraltar_tt:0 "§YGibraltar§!: RSpawn! §Y12x 30 Width Mountaineers Division§! in RGibraltar!\n\n"	
+
 
   ENG_army_dynamic_modifier:0 "[ENG_army_dynam_mod_sl]"
   ENG_modify_british_army_ns_intro:0 "Modify §Y$ENG_army_dynamic_modifier$§! by"
