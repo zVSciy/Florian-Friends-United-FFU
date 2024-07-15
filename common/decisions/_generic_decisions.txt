@@ -1460,6 +1460,43 @@ political_actions = {
 			}
 		}
 	}
+
+	add_convoy = {
+		priority = 100
+
+		icon = SWE_set_navy_budget
+
+		allowed = {
+		}
+
+		visible = {
+			is_ai = no
+		}
+
+		days_remove = 10
+
+		cost = 0
+
+		complete_effect = {
+			add_manpower = 1
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 1
+			}
+		}
+
+		remove_effect = {
+			add_manpower = -1
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
 
 economy_decisions = {
