@@ -633,6 +633,7 @@ soundeffect =
 		sound = "rizen4"
 		sound = "rizen5"
 		sound = "rizen6"
+		sound = "rizen8"
 	}
 	volume = 0.6
 }
@@ -648,7 +649,6 @@ soundeffect =
 {
 	name = select_tank
 	sounds = {
-		sound = "rizen8"
 		sound = "rizen7"
 	}
 	volume = 0.4
