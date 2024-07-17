@@ -124,7 +124,7 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = 0.33 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 			}
 		}
@@ -507,16 +507,25 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				local_building_slots_factor = -0.2
+				local_building_slots_factor = 0
 				industrial_capacity_factory = -0.1
-				local_resources_factor = -0.1
+				local_resources_factor = -0.2
 				production_speed_buildings_factor = -0.1
-				supply_consumption_factor = -0.05
-				mobilization_speed = -0.25
+				supply_consumption_factor = -0.1
+				mobilization_speed = -0.20
 			}
 			equipment_bonus = {
 				horse_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.1 instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				squad_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				sf_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}	
@@ -536,14 +545,25 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				local_building_slots_factor = -0.1
-				industrial_capacity_factory = -0.05
-				production_speed_buildings_factor = -0.05
-				mobilization_speed = -0.1
+				local_building_slots_factor = 0
+				industrial_capacity_factory = 0
+				local_resources_factor = -0.2
+				production_speed_buildings_factor = 0
+				supply_consumption_factor = -0.1
+				mobilization_speed = -0.20
 			}
 			equipment_bonus = {
 				horse_equipment = {
-					build_cost_ic = -0.10 instant = yes
+					build_cost_ic = -0.1 instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				squad_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				sf_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -569,6 +589,44 @@ ideas = {
 			equipment_bonus = {
 				horse_equipment = {
 					build_cost_ic = -0.30 instant = yes
+				}
+			}
+		}
+
+		MON_nomad_5 = {
+
+			picture = chi_army_corruption2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_building_slots_factor = 0
+				industrial_capacity_factory = 0.05
+				local_resources_factor = -0.1
+				production_speed_buildings_factor = 0
+				supply_consumption_factor = -0.15
+				mobilization_speed = 0
+			}
+			equipment_bonus = {
+				horse_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				squad_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				sf_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -616,6 +674,20 @@ ideas = {
 			}
 		}
 
+		MON_anti_finland = {
+			picture = generic_manpower_bonus
+			allowed = {
+				original_tag = MON
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = FIN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
 	}
 
 }

@@ -52,7 +52,7 @@
   MON_industrialised_nation_desc:0 "The future is now! The nomads of old have all but disappeared, and in their place is a truly modern nation, capable of tackling the dangers to come."
   MON_traditional_way:0 "The Traditional Way"
   MON_traditional_way_desc:0 "Though we have learned much from Stalin and his predecessors, we cannot abandon the roots of Mongolian pastoralism. The steppes are ours to rule, and we will do so as we always have."
-  MON_encourage_nomadism:0 "Encourage Nomadism"
+  MON_encourage_nomadism:0 "Encourage Modernisation"
   MON_encourage_nomadism_desc:0 "The new wave of industrial thought is both dangerous and harmful to the growth of the Mongol Uls. Let us endeavor to ensure these thoughts do not spread."
   MON_tribute_system:0 "Reintroduce the Tribute System"
   MON_tribute_system_desc:0 "There are certain things nomads, by nature, cannot produce. Agriculture is the business of the Chinese, and thus we will leave it to them. Mongolia once subsisted off of tribute from vassals and foreign powers, and there is no reason we cannot do so again."
@@ -156,13 +156,14 @@
   MON_nomad_2:0 "Nomadic Society"
   MON_nomad_3:0 "Nomadic Society"
   MON_nomad_4:0 "Nomadic Society"
+  MON_nomad_5:0 "Nomadic Powerhouse"
   MON_mobilize_steppes:0 "Mobilize the Mongol People"
   MON_brothers_war:0 "Brothers War"
   MON_brothers_war_desc:0 "This debuff will expire upon the end of the winter war, or if at war with Germany."
   MON_self_sufficient_idea:0 "Self-Sufficent"
   MON_volunteers_idea:0 "Mongolian Volunteers"
   MON_mobilise_the_workers_idea:0 "Mobilising the Workers" 
-  MON_nomadic_priortize_horses_ideas:0 "Priortizing Horses over Armour"
+  MON_nomadic_priortize_horses_ideas:0 "Priortizing Armour over Horses"
   MON_buddhist_compromise_idea:0 "Buddhist Cooperation"
   MON_religious_taxation:0 "Religious Taxations"
   MON_nomadic_war_idea:0 "Nomadic Warriors"
@@ -178,7 +179,7 @@
   MON_tribute:0 "The Tribute"
 
   #### TOOLTIPS ####
-  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
+  MON_adaptable_cavalry_designs:0 "Enables §HArmor Designs§!\n§HArmor:\n    Forest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!\n "
 
   #### PROPAGANDA ####
   MON_propaganda_transport:0 "Transport is the Sibling of the Red Army"

@@ -1057,7 +1057,7 @@ focus_tree = {
 		icon = GFX_SOV_capitals_of_socialism_1
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_industrial_development }
 		relative_position_id = MON_industrial_development
 		
@@ -1124,7 +1124,7 @@ focus_tree = {
 		icon = GFX_SOV_stakhonovite
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_forced_urbanisation }
 		relative_position_id = MON_forced_urbanisation
 		
@@ -1175,7 +1175,7 @@ focus_tree = {
 		icon = GFX_SOV_production_speed
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_industrial_development }
 		relative_position_id = MON_industrial_development
 		
@@ -1224,7 +1224,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_road_of_life
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_local_arms_production }
 
 		available_if_capitulated = yes
@@ -1240,75 +1240,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# 330 = {
-			# 	add_building_construction = {
-			# 		type = infrastructure
-			# 		level = 2
-			# 		instant_build = yes
-			# 	}
-			# }
-
-			# 818 = {
-			# 	add_building_construction = {
-			# 		type = infrastructure
-			# 		level = 2
-			# 		instant_build = yes
-			# 	}
-			# }
-
-			# 819 = {
-			# 	add_building_construction = {
-			# 		type = infrastructure
-			# 		level = 2
-			# 		instant_build = yes
-			# 	}
-			# }
-
-			# 820 = {
-			# 	add_building_construction = {
-			# 		type = infrastructure
-			# 		level = 2
-			# 		instant_build = yes
-			# 	}
-			# }
-			# 329 = {
-			# 	add_building_construction = {
-			# 		type = infrastructure
-			# 		level = 2
-			# 		instant_build = yes
-			# 	}
-			# }
-
-			# 329 = {
-			# 	if = {
-			# 		limit = {
-			# 			free_building_slots = {
-			# 				building = infrastructure
-			# 				size > 1
-			# 			}
-			# 		}	
-			# 		add_building_construction = {
-			# 			type = infrastructure
-			# 			level = 1
-			# 			instant_build = yes
-			# 		}
-			# 	}
-			# }
-			# 330 = {
-			# 	if = {
-			# 		limit = {
-			# 			free_building_slots = {
-			# 				building = infrastructure
-			# 				size > 1
-			# 			}
-			# 		}	
-			# 		add_building_construction = {
-			# 			type = infrastructure
-			# 			level = 1
-			# 			instant_build = yes
-			# 		}
-			# 	}
-			# }
 			every_state = {
 				limit = {
 					is_fully_controlled_by = MON
@@ -1319,6 +1250,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_ideas = MON_anti_finland
 		}
 	}
 	
@@ -1346,7 +1278,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MON_nomad_3
+			swap_ideas = {
+				remove_idea = MON_nomad_3
+				add_idea = MON_nomad_5	
+			}
 			330 = {
 				add_extra_state_shared_building_slots = 4
 			}
@@ -1423,7 +1358,22 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
+			820 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			818 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1500,10 +1450,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MON_nomad_1
-				add_idea = MON_nomad_4
-			}
+			remove_ideas = MON_nomad_1
 
 			add_ideas = { MON_nomadic_priortize_horses_ideas }
 			
@@ -1548,7 +1495,7 @@ focus_tree = {
 		completion_reward = {
 
 			custom_effect_tooltip = MON_adaptable_cavalry_designs
-			hidden_effect = { set_technology = { adaptable_cavalry_designs = 1 } }
+			hidden_effect = { set_technology = { forest_warfare = 1 } }
 
 			#add_ideas = MON_nomad_mob
 			add_ideas = MON_nomadic_war_idea
