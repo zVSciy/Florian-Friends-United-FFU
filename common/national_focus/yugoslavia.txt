@@ -1311,7 +1311,7 @@ focus_tree = {
 		x = -3
 		y = 0
 	
-		cost = 4
+		cost = 3
 	
 		ai_will_do = {
 			factor = 100
@@ -1323,7 +1323,7 @@ focus_tree = {
 				GER = {
 					has_war_with = ENG
 				}
-				date > 1939.9.1
+				date > 1939.8.1
 			}
 			has_completed_focus = YUG_invite_german_military_mission
 		}
@@ -1355,7 +1355,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_join_axis
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 0
@@ -1406,7 +1406,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 5
+		cost = 3
 	
 		ai_will_do = {
 			factor = 80
@@ -1458,7 +1458,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 5
+		cost = 3
 	
 		ai_will_do = {
 			factor = 0
@@ -1531,7 +1531,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 5
+		cost = 3
 	
 		ai_will_do = {
 			factor = 0
@@ -1714,6 +1714,38 @@ focus_tree = {
 				target = GER
 				modifier = ROM_license_german_equipment
 			}
+		}
+	}
+
+		focus = {
+		id = YUG_attack_the_sov
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = YUG_license_german_equipment }
+		relative_position_id = YUG_license_german_equipment
+		x = 0
+		y = 1
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 0
+		}
+	
+		available = {
+			SAF = {has_capitulated = yes}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			remove_ideas = no_brothers_war
 		}
 	}
 

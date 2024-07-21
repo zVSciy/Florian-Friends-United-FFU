@@ -372,7 +372,7 @@ focus_tree = {
 			#  army_bonus_air_superiority_factor = 0.05
 			#  air_interception_attack_factor = 0.05
 			ENG_airforce_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.05 tooltip = air_interception_attack_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.05 tooltip = air_intercept_efficiency_tt }
 			add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
 	 	}
 	 }
@@ -475,7 +475,7 @@ focus_tree = {
 			add_to_variable = { ENG_british_airforce_air_range_factor = 0.05 tooltip = air_range_factor_tt }
 			add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.025 tooltip = naval_strike_targetting_factor_tt }
 			add_to_variable = { ENG_british_airforce_air_home_defence_factor = 0.2 tooltip = air_home_defence_factor_tt }
-			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.025 tooltip = air_interception_attack_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.025 tooltip = air_intercept_efficiency_tt }
 			add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
 			add_to_variable = { ENG_british_airforce_air_night_penalty = -0.05 tooltip = air_night_penalty_tt }
 			add_to_variable = { ENG_british_airforce_air_weather_penalty = -0.05 tooltip = air_weather_penalty_tt }

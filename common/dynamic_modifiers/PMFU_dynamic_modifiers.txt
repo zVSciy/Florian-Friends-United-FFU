@@ -222,7 +222,7 @@ ENG_air_dynamic_modifier = {
 
 	icon = GFX_idea_raf
 
-	air_interception_attack_factor = ENG_british_airforce_air_interception_attack_factor
+	air_intercept_efficiency = ENG_british_airforce_air_interception_attack_factor
 	army_bonus_air_superiority_factor = ENG_british_airforce_army_bonus_air_superiority_factor
 	air_range_factor = ENG_british_airforce_air_range_factor
 	air_night_penalty = ENG_british_airforce_air_night_penalty

@@ -1314,7 +1314,7 @@ focus_tree = {
 		icon = GFX_focus_generic_steel
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_traditional_way }
 		relative_position_id = MON_traditional_way
 		
@@ -1382,7 +1382,7 @@ focus_tree = {
 		icon = GFX_rubber_2
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_search_for_resources }
 		relative_position_id = MON_search_for_resources
 		
@@ -1439,7 +1439,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_traditional_way }
 		relative_position_id = MON_traditional_way
 		
@@ -1482,7 +1482,7 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_encourage_nomadism }
 		relative_position_id = MON_encourage_nomadism
 		
@@ -1529,7 +1529,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MON_mongolia_people_army
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -1761,7 +1761,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MON_mongolia_people_army
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
