@@ -103,12 +103,12 @@ assault_gun = {
 		text = "RULE_OPTION_ASSAULT_GUN_DISABLED"
 		desc = "RULE_OPTION_ASSAULT_GUN_DISABLED_DESC"
 	}
-	default = {
+	option = {
 		name = "ASSAULT_GUN_LINE"
 		text = "RULE_OPTION_ASSAULT_GUN_LINE"
 		desc = "RULE_OPTION_ASSAULT_GUN_LINE_DESC"
 	}
-	option = {
+	default = {
 		name = "ASSAULT_GUN_SUPPORT"
 		text = "RULE_OPTION_ASSAULT_GUN_SUPPORT"
 		desc = "RULE_OPTION_ASSAULT_GUN_SUPPORT_DESC"

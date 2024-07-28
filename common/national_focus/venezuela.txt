@@ -59,12 +59,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			AST = {
-				add_offsite_building = { type = industrial_complex level = 15 }
-				add_offsite_building = { type = arms_factory level = 15 }
+				add_offsite_building = { type = industrial_complex level = 10 }
+				add_offsite_building = { type = arms_factory level = 10 }
 			}
 			ENG = {
-				add_offsite_building = { type = industrial_complex level = 15 }
-				add_offsite_building = { type = arms_factory level = 15 }
+				add_offsite_building = { type = industrial_complex level = 10 }
+				add_offsite_building = { type = arms_factory level = 10 }
 			}
 		}
 	}
@@ -92,20 +92,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			CAN = {
-				add_offsite_building = { type = industrial_complex level = 20 }
-				add_offsite_building = { type = arms_factory level = 20 }
+				add_offsite_building = { type = industrial_complex level = 15 }
+				add_offsite_building = { type = arms_factory level = 15 }
 			}
 			SAF = {
-				add_offsite_building = { type = industrial_complex level = 20 }
-				add_offsite_building = { type = arms_factory level = 20 }
-			}
-			AST = {
-				add_offsite_building = { type = industrial_complex level = 5 }
-				add_offsite_building = { type = arms_factory level = 5 }
-			}
-			ENG = {
-				add_offsite_building = { type = industrial_complex level = 5 }
-				add_offsite_building = { type = arms_factory level = 5 }
+				add_offsite_building = { type = industrial_complex level = 15 }
+				add_offsite_building = { type = arms_factory level = 15 }
 			}
 		}
 	}

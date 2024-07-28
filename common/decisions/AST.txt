@@ -136,6 +136,19 @@ political_actions = {
 			add_state_core = 723 
 			add_state_core = 284
 			add_state_core = 726
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				WST = {
+					transfer_state = 723
+					transfer_state = 284
+					transfer_state = 726
+				}
+				add_manpower = 100000
+				523 = { add_core_of = AST }
+				add_ideas = AST_no_nzl_annex
+			}
 		}
 	}
 
