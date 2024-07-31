@@ -19,6 +19,20 @@ ideas = {
 			# }
 		}
 
+		ITA_no_asia_buff = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
 		ITA_naval_air = {			
 			
 			allowed = {

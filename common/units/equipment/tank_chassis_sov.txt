@@ -27,7 +27,7 @@ equipments = {
 		upgrades = {
 			tank_nsb_light_armor_1_upgrade
 		}
-		maximum_speed = 4.5
+		maximum_speed = 5
 		build_cost_ic = 9
 		reliability = 0.85
 		armor_value = 10
@@ -60,7 +60,7 @@ equipments = {
 		upgrades = {
 			tank_nsb_light_armor_2_upgrade
 		}
-		maximum_speed = 7
+		maximum_speed = 7.7
 		build_cost_ic = 10
 		reliability = 0.85
 		armor_value = 20
@@ -129,7 +129,7 @@ equipments = {
 		upgrades = {
 			tank_nsb_light_armor_2_upgrade
 		}
-		maximum_speed = 6.5
+		maximum_speed = 7.1
 		build_cost_ic = 12
 		reliability = 0.85
 		armor_value = 40
@@ -167,7 +167,7 @@ equipments = {
 		upgrades = {
 			tank_nsb_light_armor_2_upgrade
 		}
-		maximum_speed = 6
+		maximum_speed = 6.6
 		build_cost_ic = 14
 		reliability = 0.85
 		armor_value = 50
@@ -250,7 +250,7 @@ equipments = {
 		upgrades = {
 			tank_nsb_light_armor_2_upgrade
 		}
-		maximum_speed = 4
+		maximum_speed = 4.4
 		build_cost_ic = 4
 		reliability = 0.75
 		armor_value = 5

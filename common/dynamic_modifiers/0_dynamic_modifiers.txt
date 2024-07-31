@@ -556,6 +556,21 @@ ENG_defend_gibraltar = { #STATE MODIFIER
 	max_dig_in_factor = 0.2
 	pocket_penalty = -0.15
 }
+####
+#### FIN STATE MODIFIERS ####
+####
+
+FIN_defend_finland = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_core_attack_factor = 0.20
+	army_core_defence_factor = 0.15
+	cas_damage_reduction = 0.2
+	dig_in_speed_factor = 0.25
+
+}
 
 ####
 #### SOVIET STATE MODIFIERS ####

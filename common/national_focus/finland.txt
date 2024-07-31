@@ -1223,6 +1223,8 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 2 }
 			add_offsite_building = { type = industrial_complex level = 2 }
+			
+
 		}
 	}
 	
@@ -1250,6 +1252,12 @@ focus_tree = {
 				traits = {
 					mannerheim
 				}
+			}
+			146 = {
+			add_dynamic_modifier = { modifier = FIN_defend_finland scope = FIN days = 500 }
+			}
+			929 = {
+				add_dynamic_modifier = { modifier = FIN_defend_finland scope = FIN days = 500 }
 			}
 		}
 	}
