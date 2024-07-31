@@ -37,17 +37,11 @@ host_decisions = {
         fire_only_once = no
         cost = 0
 
-        effect = {
-            every_country = {  # This will target every country
-                news_event = { id = hotjoin_event.1 days = 0 }  # Trigger the event immediately
-            }
-        }
-
         ai_will_do = {
             factor = 0  # Ensure AI does not trigger this
         }
 		complete_effect = {
-			FROM = {news_event = { id = hotjoin_event.1 }}
+			every_country = {news_event = { id = hotjoin_event.1 days = 0}}
 		}
 	}
 
