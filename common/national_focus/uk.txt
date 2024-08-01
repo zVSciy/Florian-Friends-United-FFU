@@ -3530,11 +3530,6 @@ focus_tree = {
 		id = ENG_imperial_conference
 		prerequisite = { focus = ENG_commonwealth_ties }
 
-
-		available = {
-			has_completed_focus = ENG_fortify_the_rock 
-
-		}
 		# available = {
 		# 	CAN = {
 		# 		OR = {
@@ -4282,27 +4277,37 @@ focus_tree = {
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 0 y = 3 }
+				
 						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 						infantry = { x = 1 y = 3 }
+				
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						anti_tank_brigade = { x = 4 y = 0 }
-						anti_tank_brigade = { x = 4 y = 1 }
-						anti_tank_brigade = { x = 4 y = 2 }
+				
+						pack_artillery_brigade = { x = 3 y = 0}
+						pack_artillery_brigade = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 3 y = 2 }
+						pack_artillery_brigade = { x = 3 y = 3 }
+						
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 2 }
+						pack_artillery_brigade = { x = 4 y = 3 }
+						
+				
 					}
 					support = {
-						hq_company = { x = 0 y = 0 } 
-						engineer = { x = 0 y = 1 }   
-						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
-						anti_air = { x = 1 y = 0 }
+						engineer = { x = 0 y = 0 }   
+						anti_air = { x = 0 y = 1 }
+						hq_company = { x = 0 y = 2 }
+						logistics_company_mot = { x = 0 y = 3 }
+
+						mot_recon = { x = 1 y = 0 }
+						military_police = { x = 1 y = 1 }
+						signal_company = { x = 1 y = 2 }
 					}
 				}
 				random_owned_controlled_state = {

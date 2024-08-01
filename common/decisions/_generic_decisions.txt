@@ -34,7 +34,7 @@ host_decisions = {
 		available = {
             always = yes
         }
-        fire_only_once = no
+        fire_only_once = yes
         cost = 0
 
         ai_will_do = {
