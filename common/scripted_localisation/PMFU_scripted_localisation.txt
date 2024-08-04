@@ -1955,6 +1955,32 @@ defined_text = { # global
 	}
 }
 
+
+defined_text = {
+	name = bloated_game_mode_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = bloated_game_mode
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = bloated_game_mode
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+
+}
+
+
 defined_text = { # global
 	name = no_asia_bra_mex_status_rule_sl
 	text = {

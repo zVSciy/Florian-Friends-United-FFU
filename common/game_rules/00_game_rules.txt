@@ -296,6 +296,22 @@ no_asia_bra_mex_status = {
 	}
 }
 
+bloated_game_mode = {
+	name = "RULE_BLOATED_GAME_MODE"
+	group = "RULE_GROUP_TFB"
+	icon = ""
+	default = {
+		name = "Bloated_Mode_DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_BLOATED_GAME_MODE_DISABLED_DESC"
+	}
+	option = {
+		name = "Bloated_Mode_ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_BLOATED_GAME_MODE_ENABLED_DESC"
+	}
+}
+
 usa_volunteers_in_china = {
 	name = "RULE_USA_VOLS_CHI"
 	group = "RULE_GROUP_TFB"

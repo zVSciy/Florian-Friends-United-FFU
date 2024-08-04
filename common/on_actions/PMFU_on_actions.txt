@@ -1036,6 +1036,7 @@ on_actions = {
 				set_variable = { coastal_bunker_const_speed_var = country_const_speed }
 				set_variable = { coastal_fortress_const_speed_var = country_const_speed }
 				add_to_variable = { const_ = modifier@production_speed_infrastructure_factor }
+				add_to_variable = { infrastructure_const_speed_var = modifier@production_speed_infrastructure_factor }
 				add_to_variable = { air_base_const_speed_var = modifier@production_speed_air_base_factor }
 				add_to_variable = { anti_air_building_const_speed_var = modifier@production_speed_anti_air_building_factor }
 				add_to_variable = { synthetic_refinery_const_speed_var = modifier@production_speed_synthetic_refinery_factor }
@@ -1198,6 +1199,29 @@ on_actions = {
 			every_country = {
 				limit = { has_country_flag = fuel_system_enabled }
 				add_to_array = { GLOBAL.fuel_system_manager = THIS.id }
+			}
+		}
+	}
+
+	# Bloated Game Mode
+	on_startup = {
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = bloated_game_mode
+						option = Bloated_Mode_ENABLED
+					}
+
+				}
+			every_country = {
+				add_ideas = {
+				bloated_game_mode
+				}
+				add_offsite_building = { type = industrial_complex level = 20 }
+				add_offsite_building = { type = arms_factory level = 10 }
+			}
 			}
 		}
 	}

@@ -75,8 +75,8 @@ ideas = {
                 production_factory_max_efficiency_factor = -10
 			}
 		}
-	
-	
+
+		
 		CHI_ai_boost = {
 
 			allowed = {
@@ -195,6 +195,29 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
+
+		bloated_game_mode = {
+
+			picture = civilian_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+ 
+			modifier = {
+			local_resources_factor = 3
+			production_speed_dockyard_factor = 2
+			production_speed_arms_factory_factor = 4
+			production_speed_industrial_complex_factor = 4
+			}
+	
+		}
 
 		no_tradeback = {
 

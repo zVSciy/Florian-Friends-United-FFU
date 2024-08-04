@@ -1566,6 +1566,9 @@ fifty_cas_dmg_reduction:0 "From focus"
  RULE_USA_VOLS_CHI:0 "US and UK Volunteers in China"
  RULE_USA_VOLS_CHI_ENABLED_DESC:0 "USA, UK and the Soviet Union can send 4 volunteers each"
  RULE_USA_VOLS_CHI_DISABLED_DESC:0 "The Soviet Union can send 6 volunteers and USA and UK can send none"
+ RULE_BLOATED_GAME_MODE:0 "Bloated Game Mode"
+ RULE_BLOATED_GAME_MODE_ENABLED_DESC:0 "§RCAUTION WHEN USING, HEAVYILY DISCOURAGED, USE AT YOUR OWN RISK, PROBABLY VERY UNBALANCED§! Adds a lot of extra stuff to the game"
+ RULE_BLOATED_GAME_MODE_DISABLED_DESC:0 "Disables the bloated game mode"
  RULE_AST_ANNEX_DEI_AT_HOL_CAP:0 "Australia DEI Annex if Netherlands AI"
  RULE_AST_ANNEX_DEI_AT_HOL_CAP_ENABLED_DESC:0 "Dutch East Indies will get annexed by Australia if Netherlands is AI"
  RULE_AST_ANNEX_DEI_AT_HOL_CAP_DISABLED_DESC:0 "Dutch East Indies will not get annexed by Australia if Netherlands is AI"
@@ -1673,3 +1676,7 @@ fifty_cas_dmg_reduction:0 "From focus"
  antitank2:0 "Anti-Tank II"
  antitank3:0 "Anti-Tank III"
  antitank4:0 "Anti-Tank IV"
+
+### FFU ###
+
+ bloated_game_mode:0 "Bloated Game Mode"
