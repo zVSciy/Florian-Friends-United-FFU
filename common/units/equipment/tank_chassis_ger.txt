@@ -139,9 +139,9 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 14
-		reliability = 0.85
-		armor_value = 30
+		build_cost_ic = 10
+		reliability = 0.75
+		armor_value = 15
 		defense = 5
 		breakthrough = 30
 	}
@@ -181,7 +181,7 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 20
+		build_cost_ic = 16
 		reliability = 0.85
 		armor_value = 80
 		defense = 6
@@ -221,7 +221,7 @@ equipments = {
 		maximum_speed = 7.1
 		build_cost_ic = 14
 		reliability = 0.85
-		armor_value = 30
+		armor_value = 20
 		defense = 6
 		breakthrough = 40
 	}
@@ -511,9 +511,9 @@ equipments = {
 			special_type_slot_4 = inherit
 		}
 		maximum_speed = 4.5
-		build_cost_ic = 25
+		build_cost_ic = 22
 		reliability = 0.7
-		armor_value = 15
+		armor_value = 20
 		defense = 6
 		breakthrough = 50
 	}

@@ -955,10 +955,11 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = -0.1
+			max_strength = -1
 		}
 		
 		multiply_stats = {
-			build_cost_ic = -0.05			
+			build_cost_ic = -0.1			
 		}
 	}
 
@@ -969,13 +970,14 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.1
-			# defense = 4
+			defense = 4
 			# breakthrough = 4
 			hardness = 0.1
+			max_strength = 1
 		}
 		
 		multiply_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.075
 			armor_value = 0.30
 		}
 		build_cost_resources = {
@@ -1409,7 +1411,7 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			build_cost_ic = 4
+			build_cost_ic = 2
 		}
 		# multiply_stats = {
 		# 	soft_attack = -0.1
@@ -1445,7 +1447,7 @@ equipment_modules = {
 		# }
 		
 		add_stats = {
-			build_cost_ic = 5
+			build_cost_ic = 2.5
 		}
 		
 		build_cost_resources = {
@@ -1472,7 +1474,7 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			build_cost_ic = 6
+			build_cost_ic = 3
 		}
 
 		multiply_stats = {  }
@@ -1499,7 +1501,7 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 1
 			# hardness = -0.2
 		}
 		
@@ -1527,7 +1529,7 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			build_cost_ic = 4
+			build_cost_ic = 2
 			hardness = -0.2
 		}
 		
@@ -1559,7 +1561,7 @@ equipment_modules = {
 		}
 		
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 1
 		}
 
 		multiply_stats = {
@@ -3105,8 +3107,8 @@ equipment_modules = {
 		parent = tank_med_gun_1
 
 		add_stats = {
-			soft_attack = 40
-			hard_attack = 30
+			soft_attack = 44
+			hard_attack = 33
 			ap_attack = 70
 			# breakthrough = -10
 			build_cost_ic = 7
@@ -3131,8 +3133,8 @@ equipment_modules = {
 		parent = tank_med_gun_2
 
 		add_stats = {
-			soft_attack = 46
-			hard_attack = 34
+			soft_attack = 49
+			hard_attack = 38
 			ap_attack = 90
 			# breakthrough = -10
 			build_cost_ic = 8
@@ -3203,8 +3205,8 @@ equipment_modules = {
 		parent = tank_med_hv_gun_1
 
 		add_stats = {
-			soft_attack = 30
-			hard_attack = 39
+			soft_attack = 32
+			hard_attack = 41
 			ap_attack = 77
 			# breakthrough = -10
 			build_cost_ic = 8
@@ -3229,8 +3231,8 @@ equipment_modules = {
 		parent = tank_med_hv_gun_2
 
 		add_stats = {
-			soft_attack = 34
-			hard_attack = 44
+			soft_attack = 36
+			hard_attack = 46
 			ap_attack = 99
 			# breakthrough = -10
 			build_cost_ic = 9
@@ -3483,8 +3485,8 @@ equipment_modules = {
 		# forbid_equipment_type = amphibious 
 
 		add_stats = {
-			soft_attack = 50
-			hard_attack = 54
+			soft_attack = 58
+			hard_attack = 62
 			ap_attack = 90
 			build_cost_ic = 12
 		}
@@ -3507,15 +3509,14 @@ equipment_modules = {
 		parent = tank_heavy_gun_1
 
 		add_stats = {
-			soft_attack = 62
-			hard_attack = 66
+			soft_attack = 70
+			hard_attack = 74
 			ap_attack = 110
 			# breakthrough = -10
 			build_cost_ic = 14
 		}
 		multiply_stats = {
 			# maximum_speed = -0.25
-			breakthrough = -0.10
 		}
 		build_cost_resources = {
 			tungsten = 15

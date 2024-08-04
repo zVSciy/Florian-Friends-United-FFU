@@ -31,11 +31,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.1
-		build_cost_ic = 12
+		build_cost_ic = 9
 		reliability = 0.8
 		armor_value = 15
 		defense = 5
-		breakthrough = 15
+		breakthrough = 20
 	}
 
 	# Improved Light Tank
@@ -67,11 +67,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 14
+		build_cost_ic = 12
 		reliability = 0.8
-		armor_value = 30
+		armor_value = 20
 		defense = 5
-		breakthrough = 25
+		breakthrough = 30
 	}
 	
 	# Advanced Light Tank
@@ -106,11 +106,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 7.1
-		build_cost_ic = 16
+		build_cost_ic = 14
 		reliability = 0.8
 		armor_value = 30
 		defense = 6
-		breakthrough = 35
+		breakthrough = 40
 	}
 
   # Medium Tanks
