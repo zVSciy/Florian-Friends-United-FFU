@@ -215,9 +215,10 @@ ideas = {
 			production_speed_dockyard_factor = 2
 			production_speed_arms_factory_factor = 4
 			production_speed_industrial_complex_factor = 4
+			global_building_slots_factor = 3
 			}
-	
 		}
+	
 
 		no_tradeback = {
 
