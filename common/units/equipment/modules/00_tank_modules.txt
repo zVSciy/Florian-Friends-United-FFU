@@ -977,7 +977,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			build_cost_ic = 0.075
+			build_cost_ic = 0.1
 			armor_value = 0.30
 		}
 		build_cost_resources = {
@@ -989,6 +989,64 @@ equipment_modules = {
 	tank_welded_armor = {
 		abbreviation = "wel"
 		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			# defense = 2
+			# breakthrough = 2
+			hardness = 0.05
+		}
+
+		multiply_stats = {
+			armor_value = 0.15
+		}
+		build_cost_resources = {
+			steel = 5
+		}
+		dismantle_cost_ic = 1
+	}
+
+	### Mech armor type #ffu #gaps
+
+	mech_riveted_armor = {
+		abbreviation = "riv"
+		category = mech_armor_type
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			reliability = -0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.1			
+		}
+	}
+
+	mech_cast_armor = {
+		abbreviation = "cas"
+		category = mech_armor_type
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			reliability = 0.1
+			defense = 4
+			# breakthrough = 4
+			hardness = 0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.1
+			armor_value = 0.30
+		}
+		build_cost_resources = {
+			chromium = 5
+		}
+		dismantle_cost_ic = 1
+	}
+
+	mech_welded_armor = {
+		abbreviation = "wel"
+		category = mech_armor_type
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {

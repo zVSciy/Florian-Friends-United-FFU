@@ -1730,6 +1730,9 @@ technologies = {
 			tank_anti_air_cannon_mech
 			tank_small_cannon_mech
 			tank_close_support_gun_mech
+			mech_riveted_armor
+			mech_cast_armor
+			mech_welded_armor
 		}
 		
 		# motorized = {
