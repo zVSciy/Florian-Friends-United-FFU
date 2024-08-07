@@ -731,8 +731,8 @@ technologies = {
 		# xor = { marines_commandoes }
 
 		special_forces_cap = 0.05
-		naval_invasion_planning_bonus_speed = 1.00
-		
+		naval_invasion_prep_speed = 1
+		naval_invasion_planning_bonus_speed = 0.2
 		army_bonus_air_superiority_factor = 0.10
 		
 		doctrine = yes	
