@@ -212,9 +212,9 @@ ideas = {
  
 			modifier = {
 			local_resources_factor = 3
-			production_speed_dockyard_factor = 2
-			production_speed_arms_factory_factor = 4
-			production_speed_industrial_complex_factor = 4
+			production_speed_dockyard_factor = 1
+			production_speed_arms_factory_factor = 2
+			production_speed_industrial_complex_factor = 2
 			global_building_slots_factor = 3
 			}
 		}
