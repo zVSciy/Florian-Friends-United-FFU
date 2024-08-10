@@ -91,21 +91,6 @@ ideas = {
 			}
 		}
 		### LW END
-		
-		GER_african_resource_tank_production = {
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-			
-			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-			}
-		}
 
 		GER_blau = {
 			

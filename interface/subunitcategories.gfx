@@ -207,4 +207,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+	spriteType = { 
+		name = "GFX_unit_Converts_icon_medium"
+		textureFile = "gfx/interface/counters/division_templates_large/custom_template_000.dds"
+		noOfFrames = 1 
+		}
+
+
 }

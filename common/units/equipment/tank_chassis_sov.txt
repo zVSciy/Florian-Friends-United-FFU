@@ -322,6 +322,7 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_armor_2_upgrade
@@ -361,6 +362,7 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			# tank_nsb_med_engine_1_upgrade
@@ -371,7 +373,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 55
 		defense = 8
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	# T34 M1942

@@ -970,14 +970,12 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.1
-			defense = 4
-			# breakthrough = 4
 			hardness = 0.1
 			max_strength = 1
 		}
 		
 		multiply_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.075
 			armor_value = 0.30
 		}
 		build_cost_resources = {
@@ -1029,8 +1027,6 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.1
-			defense = 4
-			# breakthrough = 4
 			hardness = 0.1
 		}
 		
@@ -1050,8 +1046,6 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			# defense = 2
-			# breakthrough = 2
 			hardness = 0.05
 		}
 

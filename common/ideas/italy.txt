@@ -139,6 +139,22 @@ ideas = {
 				}
 			}
 		}
+			 		# ffu
+
+		ITA_balkan_overlord = {
+			allowed = { original_tag = ITA}
+			picture = generic_economic_increase
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = ITA
+				mic_to_target_factor = 0.2
+			}
+		}
 	}
 
 	country = {
@@ -957,7 +973,6 @@ ideas = {
 				naval_speed_factor = 0.05	
 			}
 		}	
-	
 	}
 	
 		

@@ -286,6 +286,8 @@ ideas = {
 				attrition = -1
 				air_accidents = -1
 				experience_gain_army = 0.3
+				navy_fuel_consumption_factor = -0.8
+				air_fuel_consumption_factor = -0.8
 			}
 		}
 

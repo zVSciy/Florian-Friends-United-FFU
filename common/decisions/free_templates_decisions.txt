@@ -29,7 +29,7 @@ free_templates = {
 
 		available = {
 			NOT = {
-				has_template = "XP"
+				has_template = "CONVERTS"
 			}
 		}
 
@@ -44,33 +44,33 @@ free_templates = {
 
 		complete_effect = {
 			division_template = {
-				name = "XP"
+				name = "CONVERTS"
 				is_locked = no
 				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
+					Converts = { x = 0 y = 0 }
+					Converts = { x = 0 y = 1 }
+					Converts = { x = 0 y = 2 }
+					Converts = { x = 0 y = 3 }
 			
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 1 y = 3 }
+					Converts = { x = 1 y = 0 }
+					Converts = { x = 1 y = 1 }
+					Converts = { x = 1 y = 2 }
+					Converts = { x = 1 y = 3 }
 			
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-					infantry = { x = 2 y = 3 }
+					Converts = { x = 2 y = 0 }
+					Converts = { x = 2 y = 1 }
+					Converts = { x = 2 y = 2 }
+					Converts = { x = 2 y = 3 }
 					
-					infantry = { x = 3 y = 0 }
-					infantry = { x = 3 y = 1 }
-					infantry = { x = 3 y = 2 }
-					infantry = { x = 3 y = 3 }
+					Converts = { x = 3 y = 0 }
+					Converts = { x = 3 y = 1 }
+					Converts = { x = 3 y = 2 }
+					Converts = { x = 3 y = 3 }
 
-					infantry = { x = 4 y = 0 }
-					infantry = { x = 4 y = 1 }
-					infantry = { x = 4 y = 2 }
-					infantry = { x = 4 y = 3 }
+					Converts = { x = 4 y = 0 }
+					Converts = { x = 4 y = 1 }
+					Converts = { x = 4 y = 2 }
+					Converts = { x = 4 y = 3 }
 				}
 			}
 		}		

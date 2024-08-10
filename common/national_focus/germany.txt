@@ -3068,6 +3068,18 @@ focus_tree = {
 				}
 				# custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
 			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SPR
+						tag = HUN
+						tag = ROM
+						tag = BUL
+					}
+				}
+				add_ideas = ITA_balkan_overlord
+			}
+
 		}
 	}
 	
