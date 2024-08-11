@@ -556,6 +556,18 @@ ENG_defend_gibraltar = { #STATE MODIFIER
 	max_dig_in_factor = 0.2
 	pocket_penalty = -0.15
 }
+
+####
+#### ITA STATE MODIFIERS ####
+####
+
+NO_ITA_ON_BARB = {
+	
+	army_defence_factor = 10
+	army_attack_factor = 10
+	icon = GFX_idea_generic_fortify_the_borders
+}
+
 ####
 #### FIN STATE MODIFIERS ####
 ####
