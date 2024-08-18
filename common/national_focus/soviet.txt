@@ -3436,19 +3436,10 @@ focus_tree = {
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
+			add_to_variable = { SOV_the_red_army_surrender_limit = 0.1 }
 
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt
 
-			# if = {
-			# 	limit = {
-			# 		GER = {has_idea = GER_barbarossa}
-			# 	}
-			# 	GER = {
-			# 		remove_ideas = {
-			# 			GER_barbarossa
-			# 		}
-			# 	}
-			# }
 
 			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
 			hidden_effect = {

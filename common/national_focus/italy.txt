@@ -2853,6 +2853,30 @@ focus_tree = {
 			unlock_decision_tooltip = ITA_demand_tunisia			
 		}
 	}
+
+	focus = {
+		id = ITA_i_go_barb
+		icon = GFX_strike_france
+		prerequisite = { focus = ITA_pact_of_steel }
+		available = {
+			OR = {
+				date > 1942.7.1
+
+				SOV = {
+					controls_state = 10  # Checks if the Soviet Union controls state 10
+				}
+			}
+		}
+		x = 2
+		y = 2
+		relative_position_id = ITA_pact_of_steel
+		cost = 5
+
+		completion_reward = {
+			remove_ideas = ITA_no_barb_for_you		
+		}
+	}
+
 	
 	focus = {
 		id = ITA_new_land
@@ -4951,6 +4975,8 @@ focus_tree = {
 		completion_reward = {
 			ITA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ITA_italian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { ITA_italian_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
+			add_to_variable = { ITA_italian_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -5311,8 +5337,7 @@ focus_tree = {
 			}
 			ITA_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ITA_italian_navy_naval_speed_factor = 0.05 tooltip = naval_speed_factor_tt }
-			add_to_variable = { ITA_italian_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
-			add_to_variable = { ITA_italian_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
+			
 		}
 	}
 

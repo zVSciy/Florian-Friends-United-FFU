@@ -105,7 +105,7 @@ buildings = {
 		land_fort = 1
 		max_level = 10
 		value = 5
-		damage_factor = 0.45
+		damage_factor = 0.30
 		allied_build = yes
 	}
 
@@ -137,7 +137,7 @@ buildings = {
 		naval_fort = 1
 		max_level = 10
 		value = 5
-		damage_factor = 0.45
+		damage_factor = 0.30
 		allied_build = yes
 	}
 
@@ -294,4 +294,18 @@ buildings = {
 		value = 10
 		infrastructure_construction_effect = yes
 	}
+	
+	gib_air_base = {
+		show_on_map = 1
+		base_cost = 999999
+		icon_frame = 5
+		air_base = yes
+		max_level = 20
+		value = 28
+		infrastructure_construction_effect = yes
+		allied_build = yes
+		damage_factor = 0
+		disabled_in_dmz = yes
+	}
+
 }

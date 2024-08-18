@@ -5637,6 +5637,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
+			add_to_variable = { USA_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
+
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = USA_man_the_guns
 			685 = {

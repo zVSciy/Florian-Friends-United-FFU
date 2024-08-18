@@ -3719,6 +3719,9 @@ focus_tree = {
 			584 = {
 				add_dynamic_modifier = { modifier = NO_ITA_ON_BARB scope = SOV days = 365 }
 			}
+			ITA = {
+                    add_ideas = ITA_no_barb_for_you
+            }
 		}
 	}
 

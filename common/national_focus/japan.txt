@@ -5677,6 +5677,11 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = mitsubishi
 			}
+			JAP_navy_and_air_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
+			add_to_variable = { JAP_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
+
+
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = JAP_air2_prop
 		}

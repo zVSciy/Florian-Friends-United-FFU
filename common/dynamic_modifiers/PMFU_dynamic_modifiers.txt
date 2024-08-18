@@ -102,10 +102,17 @@ gibraltar_defences = {
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	cas_damage_reduction = 0.75
+	cas_damage_reduction = 0.5
 	dig_in_speed_factor = 0.5
 	max_dig_in_factor = 0.25
 	army_defence_factor = 0.15
+}
+
+ENG_no_AIR = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	state_production_speed_air_base_factor = -4
 }
 
 SOV_the_economy_dynamic_peace_modifier = {
@@ -313,6 +320,8 @@ JAP_navy_and_air_dynamic_modifier = {
 	convoy_escort_efficiency = JAP_japanese_navy_air_forces_convoy_escort_efficiency
 	naval_torpedo_screen_penetration_factor = JAP_japanese_navy_air_forces_naval_torpedo_screen_penetration_factor
 	custom_modifier_tooltip = JAP_duplicate_research_effort_tt
+	refit_speed = JAP_navy_refit_speed
+	refit_ic_cost = JAP_navy_refit_ic_cost
 }
 
 ITA_economy_dynamic_modifier = {
@@ -521,6 +530,10 @@ USA_economy_dynamic_modifier = {
 	# not our war
 	industrial_capacity_factory = USA_american_economy_now_industrial_capacity_factory
 	command_power_gain_mult = USA_american_economy_now_command_power_gain_mult
+
+	# depr 2.0
+	refit_speed = USA_navy_refit_speed
+	refit_ic_cost = USA__navy_refit_ic_cost
 }
 
 USA_army_dynamic_modifier = {
