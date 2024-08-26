@@ -1201,14 +1201,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			# set_technology = {
-			# 	mot_radio3 = 1
-			# }
-			add_tech_bonus = {
-				name = radio_bonus
-				bonus = 1000
-				uses = 1
-				technology = mot_radio3
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = tungsten
+			   amount = 100
 			}
 		}
 	}
