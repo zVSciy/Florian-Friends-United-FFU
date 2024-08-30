@@ -90,11 +90,11 @@ focus_tree = {
 	focus = {
 		id = SOV_railway_5
 		icon = GFX_goal_socialist_realism
-		prerequisite = { focus = SOV_railway_4 }
-		prerequisite = {focus = SOV_siberia_1 }
+		prerequisite = { focus = SOV_railway_3 }
+		prerequisite = {focus = SOV_railway_2 }
 
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = SOV_heavy_industry_expansion
 		cost = 1
 		ai_will_do = {
@@ -214,30 +214,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		}
-	}
 
-	focus = {
-		id = SOV_siberia_1
-		icon = GFX_SOV_one_way_trip_to_hell
-		prerequisite = { focus = SOV_railway_2 }
-		x = 0
-		y = 1
-		relative_position_id = SOV_railway_2
-		cost = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		complete_tooltip = {
-		}
-
-		completion_reward = {
 			408 = {
 				add_building_construction = {
 					type = infrastructure
@@ -331,6 +308,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = SOV_railway_3
@@ -506,30 +484,7 @@ focus_tree = {
 			build_railway = {
 				path = { 3189 86 3008 9162 3121 6181 9201 11117 3134 }
 			}
-		}
-	}
 
-	focus = {
-		id = SOV_railway_4
-		icon = GFX_goal_generic_soviet_infrastructure
-		prerequisite = { focus = SOV_railway_3 }
-		x = 0
-		y = 1
-		relative_position_id = SOV_railway_3
-		cost = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		complete_tooltip = {
-		}
-
-		completion_reward = {
 			229 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1156,7 +1111,7 @@ focus_tree = {
 		icon = GFX_SOV_borrow_spanish_gold
 		prerequisite = { focus = SOV_aluminium focus = SOV_tolkach }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SOV_railway_5
 		cost = 1
 		ai_will_do = {
@@ -6961,7 +6916,7 @@ focus_tree = {
 			SOV_agitprop_modifier_tt = yes # tooltip
 			add_to_variable = { SOV_agitprop_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
 			add_to_variable = { SOV_agitprop_stability_factor = 0.2 tooltip = stability_factor_tt }
-			add_to_variable = { SOV_agitprop_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SOV_agitprop_production_speed_buildings_factor = 0.15 tooltip = production_speed_buildings_factor_tt }
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
@@ -7040,7 +6995,7 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = SOV_stakhanovite
 			SOV_agitprop_modifier_tt = yes # tooltip
-			add_to_variable = { SOV_agitprop_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SOV_agitprop_production_factory_max_efficiency_factor = 0.10 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { SOV_agitprop_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 		}
 	}
