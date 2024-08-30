@@ -813,28 +813,17 @@ country_event = {
 				factor = 2
 			}
 		}
-		CZE = {
-			country_event = { id = czech.33 hours = 6 }
-		}
+		transfer_state = 70
+		transfer_state = 71
+		transfer_state = 73
+		transfer_state = 664
 		
 		hidden_effect = {
 			
 		}
 	}
 	
-	option = {
-		name = czech.1.b
-		ai_chance = {
-			factor = 40
-		}
-		CZE = {
-			country_event = { id = czech.34 hours = 6 }
-		}
-		
-		hidden_effect = {
-		
-		}
-	}
+	
 }
 # HUN says yes
 country_event = {

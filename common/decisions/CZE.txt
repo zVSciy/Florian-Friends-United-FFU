@@ -1,0 +1,34 @@
+political_actions = {
+	"Poltical Collapse" = {
+		allowed = {
+			tag = CZE
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			tag = CZE
+		}
+		is_good = no
+		cancel_trigger = {
+			has_completed_focus = CZE_german_puppet
+		}
+		fire_only_once = yes
+
+
+		days_mission_timeout = 900
+
+		timeout_effect = {
+			add_political_power = -300
+			add_stability = -0.3
+			hidden_effect = {
+			complete_national_focus = CZE_strategy_decisions
+			complete_national_focus = CZE_german_leanings
+			complete_national_focus = CZE_deliver_sudetenland
+			complete_national_focus = CZE_rapprochement_with_hungary
+			complete_national_focus = CZE_german_puppet
+			}
+			
+		} 
+	}
+}
