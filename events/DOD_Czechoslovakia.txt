@@ -576,19 +576,19 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = czech.1.b
-		ai_chance = {
-			factor = 0
-		}
-		CZE = {
-			country_event = { id = czech.24 hours = 6 }
-		}
-		
-		hidden_effect = {
-			
-		}
-	}
+	#option = {
+	#	name = czech.1.b
+	#	ai_chance = {
+	#		factor = 0
+	#	}
+	#	CZE = {
+	#		country_event = { id = czech.24 hours = 6 }
+	#	}
+	#	
+	#	hidden_effect = {
+	#		
+	#	}
+	#}
 }
 # GER says yes
 country_event = {

@@ -20,6 +20,7 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+
 	}
 
 	CZE_jaroslav_krejchi={
@@ -34,6 +35,7 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+
 	}
 
 	CZE_frantishek_havlik={
@@ -92,7 +94,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ offensive_doctrine fast_planner }
+			traits={ brilliant_strategist organizer panzer_leader }
 			skill=3
 			attack_skill=4
 			defense_skill=2
@@ -111,7 +113,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ defensive_doctrine thorough_planner }
+			traits={ inflexible_strategist organizer infantry_leader }
 			skill=3
 			attack_skill=3
 			defense_skill=4
@@ -130,7 +132,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={ panzer_leader trickster trait_engineer }
 			skill=2
 			attack_skill=4
 			defense_skill=1
@@ -149,7 +151,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ winter_specialist }
+			traits={ winter_specialist infantry_leader commando }
 			skill=3
 			attack_skill=4
 			defense_skill=3

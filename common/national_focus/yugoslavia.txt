@@ -1718,7 +1718,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = YUG_attack_the_sov
+		id = "Join The Eastern Front"
 		icon = GFX_focus_attack_soviet
 		prerequisite = { focus = YUG_license_german_equipment }
 		relative_position_id = YUG_license_german_equipment
