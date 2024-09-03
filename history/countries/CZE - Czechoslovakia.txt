@@ -161,6 +161,10 @@ if = {
 		peace_training
 		special_forces_cap
 	}
+	add_timed_idea = {
+		idea = no_tradeback
+		days = 765
+	}
 	# give_guarantee = YUG
 	# give_guarantee = ROM
 }
