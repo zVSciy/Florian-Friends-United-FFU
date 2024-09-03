@@ -5,6 +5,7 @@ state = {
 	state_category = rural
 	
 	history = {
+		set_state_flag = ita_dday
 		victory_points = {
 			317 3 
 		}

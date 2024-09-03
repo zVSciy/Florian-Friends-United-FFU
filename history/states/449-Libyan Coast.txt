@@ -7,6 +7,7 @@ state={
 	state_category = enclave
 
 	history={
+		set_state_flag = italy_dday_state
 		victory_points = {
 			1041 3
 		}

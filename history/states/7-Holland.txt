@@ -6,6 +6,7 @@ state={
 	}
 
 	history={
+		set_state_flag = ita_dday
 		owner = HOL
 		add_core_of = HOL
 		victory_points = {

@@ -7,6 +7,7 @@ state={
 	state_category = city
 
 	history={
+		set_state_flag = ita_dday
 		owner = SPR
 		#add_core_of = GLC
 		victory_points = {

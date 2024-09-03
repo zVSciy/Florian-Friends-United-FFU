@@ -4645,3 +4645,98 @@ store_core_states_on_game_start = { #Should be called from history file
 		}
 	}
 }
+ITA_dday_level_up = {
+    if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT9 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT9 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT10 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT8 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT8 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT9 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT7 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT7 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT8 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT6 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT6 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT7 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT5 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT5 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT6 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT4 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT4 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT5 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT3 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT3 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT4 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT2 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT2 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT3 }
+    }
+    else_if = {
+        limit = {  has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT1 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT1 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT2 }
+    }
+}
+
+ITA_dday_level_down = {
+    if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT2 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT2 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT1 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT3 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT3 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT2 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT4 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT4 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT3 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT5 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT5 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT4 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT6 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT6 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT5 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT7 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT7 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT6 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT8 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT8 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT7 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT9 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT9 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT8 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT10 } }
+        remove_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT10 }
+        add_dynamic_modifier = { modifier = ITALY_DDAY_ENTRENCHMENT9 }
+    }
+}

@@ -4,6 +4,7 @@ state = {
 	name = "STATE_115"
 
 	history = {
+		set_state_flag = italy_dday_state
 		owner = ITA
 		victory_points = {
 			10074 20 

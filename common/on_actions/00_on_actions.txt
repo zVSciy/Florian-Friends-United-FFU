@@ -2409,6 +2409,48 @@ on_actions = {
 				}
 				news_event = news.139
 			}
+#dday naval penalty
+            
+if = {
+	limit = {
+		FROM.FROM = {
+			has_state_flag = ita_dday = yes
+		}
+	}
+	
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = ENG
+					tag = ENG
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				has_state_flag = ita_dday = yes
+			}
+			ITA_dday_level_up = yes
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = ITA
+					tag = ITA
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				has_state_flag = ita_dday = yes
+			}
+			ITA_dday_level_down = yes
+		}
+	}
+}
 			# if = {
 			# 	limit = {
 			# 		tag = GER

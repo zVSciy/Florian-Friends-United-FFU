@@ -6,6 +6,7 @@ state = {
 	
 	state_category = town
 	history = {
+		set_state_flag = italy_dday_state
 		owner = ITA
 		victory_points = {
 			9990 1 

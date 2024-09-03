@@ -6,6 +6,7 @@ state={
 	}
 
 	history={
+		set_state_flag = ita_dday
 		owner = POR
 		victory_points = {
 			11805 20 

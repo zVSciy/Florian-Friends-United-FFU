@@ -283,33 +283,33 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = SPA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = HUN
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
 			}			
 		}
 		USA_island_hopping5 = {
@@ -331,33 +331,33 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = SPA
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = HUN
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}	
 		}
 		USA_island_hopping6 = {
@@ -377,34 +377,34 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = SPA
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = HUN
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
-			}		
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}	
 		}
 		USA_island_hopping7 = {
 			allowed = {
@@ -425,33 +425,33 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = SPA
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = HUN
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 		}
 		USA_island_hopping8 = {

@@ -10,6 +10,7 @@ state={
 	state_category = large_city
 
 	history={
+		set_state_flag = ita_dday
 		owner = GER
 		victory_points = {
 			3326 5 

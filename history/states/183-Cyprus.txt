@@ -12,6 +12,7 @@ state= {
 	{
 		set_state_flag = ENG_controls_stiff_upper_lip
 		set_state_flag = ENG_controls
+		set_state_flag = italy_dday_state
 		owner = ENG
 		#add_core_of = CYP
 		victory_points = {

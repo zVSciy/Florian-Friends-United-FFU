@@ -10,6 +10,7 @@ state={
 	state_category = metropolis
 
 	history={
+		set_state_flag = ita_dday
 		owner = HOL
 		victory_points = { 516 30 }
 		victory_points = { 6598 30 }

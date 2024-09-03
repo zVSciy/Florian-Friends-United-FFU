@@ -10,6 +10,7 @@ state={
 	}
 	
 	history={
+		set_state_flag = ita_dday
 		victory_points = {
 			11420 5
 		}

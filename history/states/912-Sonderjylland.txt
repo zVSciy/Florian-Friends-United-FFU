@@ -6,6 +6,7 @@ state = {
 	state_category = rural
 
 	history = {
+		set_state_flag = ita_dday
 		owner = DEN
 		add_core_of = DEN
 		victory_points = {
