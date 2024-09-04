@@ -12,6 +12,7 @@ state = {
 	}
 
 	history = {
+		set_state_flag = italy_dday_state
 		owner = ITA
 		victory_points = {
 			819 20 

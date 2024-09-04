@@ -7,6 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
+		set_state_flag = italy_dday_state
 		owner = ITA
 		
 		victory_points = {

@@ -5,6 +5,7 @@ state = {
 	manpower = 2642000 
 	state_category = city
 	history = {
+		set_state_flag = italy_dday_state
 		owner = ITA
 		victory_points = { #Bari
 			9784 3

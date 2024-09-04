@@ -3,6 +3,7 @@ state={
 	name="STATE_665"
 
 	history={
+		set_state_flag = italy_dday_state
 		owner = FRA
 		add_core_of = WST
 		victory_points = {

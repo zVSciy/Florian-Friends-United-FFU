@@ -1430,53 +1430,76 @@ fleet_overstack_dynamic_modifier = {
 # dday naval penalty
 ITALY_DDAY_ENTRENCHMENT1 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.3
-    naval_invasion_penalty = 0.20
+    max_dig_in_factor = 0.4
+    naval_invasion_penalty = 0.4
 }
 ITALY_DDAY_ENTRENCHMENT2 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.25
-    naval_invasion_penalty = 0.20
+    max_dig_in_factor = 0.35
+    naval_invasion_penalty = 0.35
 }
 ITALY_DDAY_ENTRENCHMENT3 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.20
-    naval_invasion_penalty =0.15
+    max_dig_in_factor = 0.30
+    naval_invasion_penalty =0.30
 }
 ITALY_DDAY_ENTRENCHMENT4 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.15
-    naval_invasion_penalty = 0.10
+    max_dig_in_factor = 0.25
+    naval_invasion_penalty = 0.25
 }
 ITALY_DDAY_ENTRENCHMENT5 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.1
-    naval_invasion_penalty = 0.09
+    max_dig_in_factor = 0.20
+    naval_invasion_penalty = 0.20
 }
 ITALY_DDAY_ENTRENCHMENT6 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.1
-    naval_invasion_penalty = 0.08
+    max_dig_in_factor = 0.20
+    naval_invasion_penalty = 0.18
 }
 ITALY_DDAY_ENTRENCHMENT7 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.05
-    naval_invasion_penalty = 0.07
+    max_dig_in_factor = 0.20
+    naval_invasion_penalty = 0.16
 }
 ITALY_DDAY_ENTRENCHMENT8 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.05
-    naval_invasion_penalty = 0.06
+    max_dig_in_factor = 0.25
+    naval_invasion_penalty = 0.14
 }
 ITALY_DDAY_ENTRENCHMENT9 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    naval_invasion_penalty = 0.05
+	max_dig_in_factor = 0.10
+    naval_invasion_penalty = 0.12
 }
 ITALY_DDAY_ENTRENCHMENT10 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = -0.1
-    naval_invasion_penalty = 0
+    max_dig_in_factor = 0.1
+    naval_invasion_penalty = 0.1
+}	
+ITALY_DDAY_ENTRENCHMENT11 = {
+		icon = GFX_idea_generic_fascism_drift_bonus
+		max_dig_in_factor = 0.05
+		naval_invasion_penalty = 0.08
 }
-ITALY_DDAY_ENTRENCHMENT10 = {
-    icon = GFX_idea_generic_fascism_drift_bonus
+ITALY_DDAY_ENTRENCHMENT12 = {
+	icon = GFX_idea_generic_fascism_drift_bonus
+	max_dig_in_factor = 0.04
+	naval_invasion_penalty = 0.06
+}
+ITALY_DDAY_ENTRENCHMENT13 = {
+	icon = GFX_idea_generic_fascism_drift_bonus
+	max_dig_in_factor = 0.03
+	naval_invasion_penalty = 0.04
+}
+ITALY_DDAY_ENTRENCHMENT14 = {
+	icon = GFX_idea_generic_fascism_drift_bonus
+	max_dig_in_factor = 0.02
+	naval_invasion_penalty = 0.02
+}
+ITALY_DDAY_ENTRENCHMENT15 = {
+	icon = GFX_idea_generic_fascism_drift_bonus
+	max_dig_in_factor = 0.01
+	naval_invasion_penalty = 0.01
 }

@@ -2414,10 +2414,10 @@ on_actions = {
 if = {
 	limit = {
 		FROM.FROM = {
-			has_state_flag = ita_dday = yes
+			has_state_flag = italy_dday_state
 		}
 	}
-	
+
 	if = {
 		limit = {
 			ROOT = {
@@ -2428,9 +2428,6 @@ if = {
 			}
 		}
 		every_state = {
-			limit = {
-				has_state_flag = ita_dday = yes
-			}
 			ITA_dday_level_up = yes
 		}
 	}
@@ -2444,12 +2441,10 @@ if = {
 			}
 		}
 		every_state = {
-			limit = {
-				has_state_flag = ita_dday = yes
-			}
 			ITA_dday_level_down = yes
 		}
 	}
+}
 }
 			# if = {
 			# 	limit = {

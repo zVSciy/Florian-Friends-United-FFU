@@ -11,6 +11,7 @@ state={
 	state_category = rural
 	
 	history={
+		set_state_flag = italy_dday_state
 		owner = FRA
 		add_core_of = WST
 		victory_points = {

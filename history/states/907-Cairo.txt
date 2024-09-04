@@ -9,8 +9,8 @@ state={
 	}
 
 	history={
+		set_state_flag = italy_dday_state
 		set_state_flag = ENG_controls
-		set_state_flag = ENG_controls_egypt_labour
 		owner = ENG
 		buildings = {
 			infrastructure = 5
