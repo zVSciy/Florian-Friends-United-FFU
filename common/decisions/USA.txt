@@ -3398,7 +3398,6 @@ USA_propaganda_campaigns = {
 		targeted_modifier = {
 			tag = ENG
 			license_purchase_cost = -0.2
-			license_production_speed = 0.2
 			license_tech_difference_speed = 0.2
 			trade_cost_for_target_factor = -0.2
 		}

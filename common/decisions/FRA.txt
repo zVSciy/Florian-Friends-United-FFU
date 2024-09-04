@@ -2894,7 +2894,6 @@ FRA_propaganda_campaigns = {
 		}
 		targeted_modifier = {
 			tag = USA
-			license_production_speed = 0.15
 			license_tech_difference_speed = 0.15
 		}
 

@@ -322,40 +322,6 @@ ideas = {
 				}
 			}
 		}
-
-		JAP_SIA_trade = {
-			
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			picture = ger_ita_trade
-
-			targeted_modifier = {
-				tag = SIA
-				license_production_speed = 0.2
-			}
-		}
-		
-		SIA_JAP_trade = {
-
-			name = JAP_SIA_trade
-			
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			picture = ger_ita_trade
-
-			targeted_modifier = {
-				tag = JAP
-				license_production_speed = 0.2
-			}
-		}
 	
 		JAP_break_mitsubishi_idea = {
 			allowed = {

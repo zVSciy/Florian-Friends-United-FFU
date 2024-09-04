@@ -544,54 +544,6 @@ ideas = {
 			}
 		}
 		
-		ITA_GER_trade = {
-			
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			picture = ger_ita_trade
-
-			targeted_modifier = {
-				tag = GER
-				license_production_speed = 0.2
-			}
-		}
-	
-		GER_JAP_trade = {
-			
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			picture = ger_jap_trade
-
-			targeted_modifier = {
-				tag = JAP
-				license_production_speed = 0.2
-			}
-		}
-		
-		JAP_GER_trade = {
-			
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			picture = ger_jap_trade
-
-			targeted_modifier = {
-				tag = GER
-				license_production_speed = 0.2
-			}
-		}
-		
 		GER_auftragstaktik = {
 			
 			allowed = {

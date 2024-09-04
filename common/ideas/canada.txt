@@ -165,10 +165,6 @@ ideas = {
 				air_doctrine_cost_factor = -0.05
 				naval_doctrine_cost_factor = -0.05
 			}
-			targeted_modifier = {
-				tag = USA
-				license_production_speed = 0.2
-			}
 		}
 		
 		COM_british_experts_idea = {
@@ -187,10 +183,6 @@ ideas = {
 				land_doctrine_cost_factor = -0.05
 				air_doctrine_cost_factor = -0.05
 				naval_doctrine_cost_factor = -0.05
-			}
-			targeted_modifier = {
-				tag = ENG
-				license_production_speed = 0.2
 			}
 		}
 

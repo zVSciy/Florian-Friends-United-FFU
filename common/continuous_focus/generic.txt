@@ -609,22 +609,4 @@ continuous_focus_palette = {
 		available_if_capitulated = yes
 	}
 	
-	focus = {
-		id = continuous_licensing
-		
-		icon = GFX_goal_continuous_license
-
-		modifier = {
-			license_production_speed = 0.10
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
-
 }

@@ -913,52 +913,8 @@ focus_tree = {
                     }
                 }
             }
-    }
-
-    focus = {
-		id = MEX_focus_capital_reserves
-            icon = GFX_focus_generic_license_production
-            prerequisite = { focus = MEX_focus_oil_revenue_reinvestment }
-            relative_position_id = MEX_focus_oil_revenue_reinvestment
-            x = 0
-            y = 1
-
-            cost = 5
-
-            ai_will_do = {
-                factor = 1
-            }
-
-            available = {
-                
-            }
-
-            bypass = {
-                
-            }
-
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-
-            completion_reward = {
-                if = {
-                    limit = {
-                        has_dlc = "Death or Dishonor"
-                    }
-                    # add_ideas = MEX_capital_reserves
-					MEX_economy_dynamic_modifier_tt = yes # tooltip
-					add_to_variable = { MEX_mexican_economy_license_production_speed = 0.20 tooltip = license_production_speed_tt }
-                }
-                if = {
-                    limit = {
-                        NOT = { has_dlc = "Death or Dishonor" }
-                    }
-                    add_political_power = 150
-                }
-            }
 	}
-
+	
 	focus = {
         id = MEX_focus_enforce_the_calles_law
             icon = GFX_goal_generic_forceful_treaty
