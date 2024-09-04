@@ -177,6 +177,23 @@ if = {
 		CZE_fortification_focus
 	}
 }
+			# GER
+			add_operation_token = {
+				tag = GER
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = GER
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = GER
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = GER
+				token = token_navy_friendly
+			}
 			# ITA
 			add_operation_token = {
 				tag = ITA

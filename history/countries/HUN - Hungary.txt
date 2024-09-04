@@ -393,3 +393,20 @@ recruit_character = HUN_laszlo_hollosy_kuthy
 				tag = SIA
 				token = token_navy_friendly
 			}
+			# CZE
+			add_operation_token = {
+				tag = CZE
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = CZE
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = CZE
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = CZE
+				token = token_navy_friendly
+			}

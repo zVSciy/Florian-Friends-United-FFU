@@ -181,7 +181,6 @@ set_variable = { FRA_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLO
 set_variable = { FRA_poster_left_icon_frame = FRA_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
 set_variable = { FRA_poster_center_icon_frame = FRA_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
-# give_guarantee = CZE
 # give_guarantee = YUG
 # give_guarantee = ROM
 
@@ -1031,23 +1030,6 @@ add_operation_token = {
 }
 add_operation_token = {
 	tag = NOR
-	token = token_navy_friendly
-}
-# CZE
-add_operation_token = {
-	tag = CZE
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = CZE
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = CZE
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = CZE
 	token = token_navy_friendly
 }
 # GRE
