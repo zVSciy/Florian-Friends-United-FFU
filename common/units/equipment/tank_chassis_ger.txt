@@ -15,7 +15,6 @@ equipments = {
 				required = yes	
 				allowed_module_categories = {
 					tank_light_turret_type_1
-					tank_light_turret_type_2
 					tank_light_turret_type_open
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
@@ -31,11 +30,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 10
+		build_cost_ic = 4
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 20
+		breakthrough = 15
 	}
 
 	# Panzer 2
@@ -67,11 +66,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 11
+		build_cost_ic = 6
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 25
+		breakthrough = 20
 	}
 
 	# Panzer 35(t)
@@ -103,11 +102,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.1
-		build_cost_ic = 12
+		build_cost_ic = 8
 		reliability = 0.85
 		armor_value = 20
 		defense = 4
-		breakthrough = 20
+		breakthrough = 25
 	}
 
 	# Panzer 38(t)
@@ -134,6 +133,7 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
 		upgrades = {
 			tank_nsb_light_armor_2_upgrade
@@ -181,11 +181,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 16
+		build_cost_ic = 12
 		reliability = 0.85
 		armor_value = 80
 		defense = 6
-		breakthrough = 45
+		breakthrough = 35
 	}
 	
 	# Luchs
@@ -260,11 +260,11 @@ equipments = {
 			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
-		build_cost_ic = 14
+		build_cost_ic = 16
 		reliability = 0.8
 		armor_value = 30
 		defense = 6
-		breakthrough = 30
+		breakthrough = 20
 	}
 
 	# Panzer 4
@@ -305,7 +305,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 35
 		defense = 8
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	ger_medium_tank_chassis_p4_2 = {
@@ -344,7 +344,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 55
 		defense = 8
-		breakthrough = 40
+		breakthrough = 25
 	}
 
 	ger_medium_tank_chassis_p3_2 = {
@@ -378,11 +378,11 @@ equipments = {
 			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
-		build_cost_ic = 16
+		build_cost_ic = 18
 		reliability = 0.8
 		armor_value = 50
 		defense = 6
-		breakthrough = 35
+		breakthrough = 25
 	}
 
 	# Panther
@@ -424,7 +424,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 80
 		defense = 8
-		breakthrough = 55
+		breakthrough = 40
 	}
 	
 	# E50

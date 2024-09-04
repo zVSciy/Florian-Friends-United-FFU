@@ -733,30 +733,6 @@ tactic_partisan_sweeps = {
     attacker = 0.1
 }
 
-tactic_guerrilla_tactics = { #People's army defender tactic. also for German volksturm branch.
-	is_attacker = no
-	trigger = {
-		is_attacker = no
-		phase = no
-		OR = {
-			skill > 2
-			has_trait = trickster
-		}
-		NOT = {	has_combat_modifier = shore_bombard }
-	}
-	
-	active = no
-	
-	base =  {
-		factor = 4
-	}
-	picture = tactic_guerrilla_tactics
-	countered_by = tactic_partisan_sweeps
-	
-	combat_width = -0.5
-	attacker = -0.7
-	defender = -0.6
-}
 
 tactic_human_wave_tactics = { #People's army attacker tactic
 	is_attacker = yes

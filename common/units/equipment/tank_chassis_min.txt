@@ -26,11 +26,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 5.0
-		build_cost_ic = 8
+		build_cost_ic = 6
 		reliability = 0.75
 		armor_value = 10
 		defense = 4
-		breakthrough = 12
+		breakthrough = 15
 	}
 
 	# French H35
@@ -63,7 +63,7 @@ equipments = {
 			tank_nsb_light_armor_1_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 9
+		build_cost_ic = 8
 		reliability = 0.90
 		armor_value = 15
 		defense = 5
@@ -100,11 +100,11 @@ equipments = {
 			tank_nsb_light_armor_1_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 9
+		build_cost_ic = 10
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 24
+		breakthrough = 30
 	}
 
 	# French AMX12
@@ -133,7 +133,7 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 8.0
-		build_cost_ic = 15
+		build_cost_ic = 16
 		reliability = 0.85
 		armor_value = 20
 		defense = 8
@@ -174,7 +174,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 45
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	# French S40
@@ -213,7 +213,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 55
 		defense = 7
-		breakthrough = 40
+		breakthrough = 30
 	}
 
 	# French SARL42
@@ -253,7 +253,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 60
 		defense = 8
-		breakthrough = 50
+		breakthrough = 40
 	}
 
 	# French AMX4
@@ -424,6 +424,8 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type_cv33
+					tank_light_turret_type_1
+					tank_light_turret_type_2
 				}
 			}
 			suspension_type_slot = inherit
@@ -438,7 +440,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 5
 		defense = 4
-		breakthrough = 15
+		breakthrough = 20
 	}
 
 	# Italian L6/40
@@ -475,7 +477,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 30
 		defense = 4
-		breakthrough = 30
+		breakthrough = 35
 	}
 
 	# Italian M11/39
@@ -514,7 +516,7 @@ equipments = {
 		reliability = 0.90
 		armor_value = 25
 		defense = 5
-		breakthrough = 30
+		breakthrough = 20
 	}
 
 	# Italian M13/40
@@ -553,7 +555,7 @@ equipments = {
 		reliability = 0.95
 		armor_value = 35
 		defense = 8
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	# Italian M14/41
@@ -592,7 +594,7 @@ equipments = {
 		reliability = 0.80
 		armor_value = 40
 		defense = 8
-		breakthrough = 40
+		breakthrough = 25
 	}
 
 	# Italian M15/42
@@ -775,7 +777,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 45
 		defense = 8
-		breakthrough = 40
+		breakthrough = 25
 	}
 
 	# Hungarian 44M
@@ -816,7 +818,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 90
 		defense = 8
-		breakthrough = 55
+		breakthrough = 35
 	}
 
   # Japanese Tanks
@@ -850,11 +852,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 10
+		build_cost_ic = 6
 		reliability = 0.85
 		armor_value = 10
 		defense = 5
-		breakthrough = 15
+		breakthrough = 20
 	}
 
 	# Japanese T98 Ke-Ni
@@ -888,7 +890,7 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.0
-		build_cost_ic = 8
+		build_cost_ic = 10
 		reliability = 0.70
 		armor_value = 15
 		defense = 6
@@ -930,7 +932,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 15
 		defense = 5
-		breakthrough = 30
+		breakthrough = 20
 	}
 
 	# Japanese T97 Chi-Ha
@@ -969,7 +971,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 25
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	# Japanese T01 Chi-He
@@ -1008,7 +1010,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 40
 		defense = 6
-		breakthrough = 40
+		breakthrough = 25
 	}
 	
 	# Japanese T03 Chi-Nu
@@ -1048,7 +1050,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 50
 		defense = 6
-		breakthrough = 50
+		breakthrough = 45
 	}
 
 	# Japanese T04 Chi-To

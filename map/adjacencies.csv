@@ -382,4 +382,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3938;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
 6914;11666;sea;;-1;-1;-1;-1;Vienna-Madrid;Vienna-Madrid
 10011;1054;sea;2708;-1;-1;-1;-1;;Kyushu-South Korea
+2003;5047;impassable;-1;-1;-1;-1;-1;;Safari-line
+2003;5017;impassable;-1;-1;-1;-1;-1;;Safari-line
+2088;5017;impassable;-1;-1;-1;-1;-1;;Safari-line
+2088;12723;impassable;-1;-1;-1;-1;-1;;Safari-line
+2088;13251;impassable;-1;-1;-1;-1;-1;;Safari-line
+2088;1984;impassable;-1;-1;-1;-1;-1;;Safari-line
+12862;1984;impassable;-1;-1;-1;-1;-1;;Safari-line
+12862;2040;impassable;-1;-1;-1;-1;-1;;Safari-line
+4918;2040;impassable;-1;-1;-1;-1;-1;;Safari-line
+4918;4954;impassable;-1;-1;-1;-1;-1;;Safari-line
+12887;4954;impassable;-1;-1;-1;-1;-1;;Safari-line
+12887;2009;impassable;-1;-1;-1;-1;-1;;Safari-line
+12800;2009;impassable;-1;-1;-1;-1;-1;;Safari-line
+12800;13243;impassable;-1;-1;-1;-1;-1;;Safari-line
+12800;13244;impassable;-1;-1;-1;-1;-1;;Safari-line
 -1;-1;;-1;-1;-1;-1;-1;-1

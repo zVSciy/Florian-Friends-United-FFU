@@ -67,11 +67,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 8
+		build_cost_ic = 10
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 25
+		breakthrough = 30
 	}
 
 	# Harry Hopkins
@@ -105,7 +105,7 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 10
+		build_cost_ic = 14
 		reliability = 0.85
 		armor_value = 30
 		defense = 6
@@ -150,7 +150,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 25
 		defense = 5
-		breakthrough = 30
+		breakthrough = 20
 	}
 
 	# Crusier MkIV
@@ -189,7 +189,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 35
 		defense = 5
-		breakthrough = 30
+		breakthrough = 25
 	}
 	
 	# Coventer - Removed
@@ -260,7 +260,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 45
 		defense = 6
-		breakthrough = 40
+		breakthrough = 25
 	}
 
 	# Cromwell
@@ -301,7 +301,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 75
 		defense = 7
-		breakthrough = 60
+		breakthrough = 45
 	}
 
 	# Comet
@@ -422,7 +422,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 65
 		defense = 6
-		breakthrough = 50
+		breakthrough = 25
 	}
 
 	# AST/NZL Sentinel
@@ -462,7 +462,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 65
 		defense = 6
-		breakthrough = 50
+		breakthrough = 25
 	}
 
 	# AST/NZL Thunderbolt
@@ -503,7 +503,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 75
 		defense = 7
-		breakthrough = 55
+		breakthrough = 35
 	}
 
   # Heavy Tanks

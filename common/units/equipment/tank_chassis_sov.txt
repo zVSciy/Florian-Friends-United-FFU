@@ -28,11 +28,11 @@ equipments = {
 			tank_nsb_light_armor_1_upgrade
 		}
 		maximum_speed = 5
-		build_cost_ic = 9
+		build_cost_ic = 6
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 20
+		breakthrough = 15
 	}
 
 	# BT5
@@ -61,11 +61,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 7.7
-		build_cost_ic = 8
+		build_cost_ic = 6
 		reliability = 0.85
 		armor_value = 20
 		defense = 4
-		breakthrough = 20
+		breakthrough = 15
 	}
 
 	# BT7
@@ -94,11 +94,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 7.5
-		build_cost_ic = 10
+		build_cost_ic = 8
 		reliability = 0.85
 		armor_value = 20
 		defense = 4
-		breakthrough = 25
+		breakthrough = 20
 	}
 
 	# T50
@@ -134,7 +134,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 25
 		defense = 6
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# T70
@@ -151,10 +151,10 @@ equipments = {
 				allowed_module_categories = {
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_light_turret_type_open
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
-					tank_light_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -168,52 +168,12 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 12
+		build_cost_ic = 14
 		reliability = 0.85
 		armor_value = 35
 		defense = 6
 		breakthrough = 40
 	}
-
-	# ZIS30
-	# sov_light_tank_chassis_zis30 = {
-	# 	abbreviation = "zis"
-	# 	visual_level = 0
-	# 	year = 1941
-	# 	archetype = light_tank_chassis
-	# 	priority = 2000
-	# 	module_slots = {
-	# 		main_armament_slot = {
-	# 			required = yes
-	# 			allowed_module_categories = {					
-	# 				tank_armament_tier_light_td
-	# 				tank_armament_tier_aa
-	# 			}
-	# 		}
-	# 		turret_type_slot = {
-	# 			required = yes
-	# 			allowed_module_categories = {
-	# 				tank_light_turret_type_zis
-	# 			}
-	# 		}
-	# 		suspension_type_slot = inherit
-	# 		engine_type_slot = {
-	# 			required = yes
-	# 			allowed_module_categories = {
-	# 				tank_engine_type
-	# 			}
-	# 		}
-	# 	}
-	# 	upgrades = {
-	# 		tank_nsb_light_armor_2_upgrade
-	# 	}
-	# 	maximum_speed = 4
-	# 	build_cost_ic = 4
-	# 	reliability = 0.75
-	# 	armor_value = 5
-	# 	defense = 2
-	# 	breakthrough = 5
-	# }
 
 	# ZIS30
 	sov_light_tank_chassis_zis30 = {
@@ -291,7 +251,7 @@ equipments = {
 		hardness = 0.6
 		armor_value = 15
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	# T34 placeholder
@@ -373,7 +333,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 55
 		defense = 8
-		breakthrough = 35
+		breakthrough = 25
 	}
 
 	# T34 M1942
@@ -415,7 +375,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 65
 		defense = 8
-		breakthrough = 55
+		breakthrough = 35
 	}
 
 	# T44
@@ -457,7 +417,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 95
 		defense = 8
-		breakthrough = 70
+		breakthrough = 45
 	}
 	
   # Heavy Tanks

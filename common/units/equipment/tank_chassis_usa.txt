@@ -15,7 +15,6 @@ equipments = {
 				required = yes	
 				allowed_module_categories = {
 					tank_light_turret_type_1
-					tank_light_turret_type_2
 					tank_light_turret_type_open
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
@@ -52,10 +51,10 @@ equipments = {
 				allowed_module_categories = {
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_light_turret_type_open
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
-					tank_light_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -69,11 +68,11 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.6
-		build_cost_ic = 12
+		build_cost_ic = 10
 		reliability = 0.85
 		armor_value = 20
 		defense = 6
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# Light M5 Stuart
@@ -90,10 +89,10 @@ equipments = {
 				allowed_module_categories = {
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_light_turret_type_open
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
-					tank_light_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -149,7 +148,7 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 8.4
-		build_cost_ic = 16
+		build_cost_ic = 18
 		reliability = 0.85
 		armor_value = 40
 		defense = 8
@@ -199,7 +198,7 @@ equipments = {
 			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 9
-		build_cost_ic = 14
+		build_cost_ic = 20
 		reliability = 0.85
 		armor_value = 15
 		defense = 8
@@ -245,7 +244,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 35
 		defense = 6
-		breakthrough = 30
+		breakthrough = 20
 	}
 
 	# Medium M3 Lee
@@ -298,7 +297,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 50
 		defense = 7
-		breakthrough = 35
+		breakthrough = 25
 	}
 
 	# Medium M4 Sherman
@@ -339,7 +338,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 65
 		defense = 8
-		breakthrough = 50
+		breakthrough = 35
 	}
 
 	# Medium M26 Pershing
@@ -380,7 +379,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 100
 		defense = 10
-		breakthrough = 60
+		breakthrough = 45
 	}
 
   # Heavy Tanks
