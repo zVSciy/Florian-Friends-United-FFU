@@ -3209,7 +3209,7 @@ equipment_modules = {
 		parent = tank_med_gun_2
 
 		add_stats = {
-			soft_attack = 26
+			soft_attack = 28
 			hard_attack = 34
 			ap_attack = 55
 			build_cost_ic = 7
@@ -3231,7 +3231,7 @@ equipment_modules = {
 		parent = tank_med_hv_gun_1
 
 		add_stats = {
-			soft_attack = 32
+			soft_attack = 34
 			hard_attack = 41
 			ap_attack = 77
 			# breakthrough = -10
@@ -3257,7 +3257,7 @@ equipment_modules = {
 		parent = tank_med_hv_gun_2
 
 		add_stats = {
-			soft_attack = 36
+			soft_attack = 38
 			hard_attack = 46
 			ap_attack = 99
 			# breakthrough = -10
