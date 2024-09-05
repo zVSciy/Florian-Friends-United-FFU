@@ -131,6 +131,7 @@ sub_units = {
 		breakthrough = -1
 		# breakthrough = -0.626
 		defense = -0.25
+		soft_attack = 0.1
 
 		plains = {
 			attack = 0.05 
@@ -231,6 +232,7 @@ sub_units = {
 		breakthrough = -1
 		# breakthrough = -0.65
 		defense = -0.25
+		soft_attack = 0.1
 
 		plains = {
 			attack = 0.05 
@@ -331,6 +333,7 @@ sub_units = {
 		breakthrough = -1
 		# breakthrough = -0.725
 		defense = -0.25
+		soft_attack = 0.1
 
 		plains = {
 			attack = 0.05 
