@@ -35,6 +35,7 @@ sub_units = {
 		suppression = 0.01
 		supply_consumption = 0.45
 		supply_consumption_factor = 0.065
+		breakthrough = 0.1
 
 		plains = {
 			attack = 0.05 
