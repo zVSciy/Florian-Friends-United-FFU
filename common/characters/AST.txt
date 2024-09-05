@@ -99,8 +99,8 @@ characters={
 				large="GFX_AST_thomas_blamey"
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader trait_engineer }
+		field_marshal={
+			traits={ infantry_leader trait_engineer panzer_leader }
 			skill=4
 			attack_skill=3
 			defense_skill=2

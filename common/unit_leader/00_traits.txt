@@ -1508,7 +1508,6 @@ leader_traits = {
 			desert = {
 				movement = 0.05
 				attack = 0.1
-				defence = 0.1
 			}
 		}
 		# non_shared_modifier = {
