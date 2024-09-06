@@ -29,7 +29,7 @@ sub_units = {
 			horse_equipment = 20
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = 20
 		default_morale = 0
 		max_strength = 1
 		training_time = 120
@@ -192,7 +192,7 @@ sub_units = {
 			motorized_equipment = 12
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 1
 		training_time = 120
@@ -274,7 +274,7 @@ sub_units = {
 		}
 		
 		max_strength = 1
-		max_organisation = 0
+		max_organisation = 20
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5

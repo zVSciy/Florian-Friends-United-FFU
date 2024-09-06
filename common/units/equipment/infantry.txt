@@ -327,7 +327,7 @@ equipments = {
 		defense = 2
 		breakthrough = 4
 		soft_attack = 1
-		max_organisation = 0.8
+		max_organisation = 0.4
 
 		#Space taken in convoy
 		lend_lease_cost = 0.4
