@@ -70,7 +70,7 @@ sub_units = {
 		combat_width = 0
 		
 		manpower = 500
-		max_organisation = 5
+		max_organisation = 20
 		default_morale = 0.3
 		max_strength = 1.0
 		training_time = 180
@@ -114,7 +114,7 @@ sub_units = {
 		combat_width = 0
 		
 		manpower = 500
-		max_organisation = 5
+		max_organisation = 20
 		default_morale = 0.3
 		max_strength = 1.0
 		training_time = 180
