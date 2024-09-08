@@ -650,19 +650,19 @@ defined_text = {
 	}
 	text = {
 		trigger = { 
-			check_variable = { THIS.command_limit_used < 100 }
+			check_variable = { THIS.command_limit_used < 150 }
 		}
 		localization_key = GetCommandLimit_under_def
 	}
 	text = {
 		trigger = { 
-			check_variable = { THIS.command_limit_used = 100 }
+			check_variable = { THIS.command_limit_used = 150 }
 		}
 		localization_key = GetCommandLimit_equal_def
 	}
 	text = {
 		trigger = { 
-			check_variable = { THIS.command_limit_used > 100 }
+			check_variable = { THIS.command_limit_used > 150 }
 		}
 		localization_key = GetCommandLimit_over_def
 	}	
