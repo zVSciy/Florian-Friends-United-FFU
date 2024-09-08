@@ -229,6 +229,7 @@ ideas = {
 				acclimatization_cold_climate_gain_factor = 0.25
 				acclimatization_hot_climate_gain_factor = 0.25
 				planning_speed = 0.4
+				additional_brigade_column_size = 1
 			}
 			ai_will_do = {
 				factor = 1
