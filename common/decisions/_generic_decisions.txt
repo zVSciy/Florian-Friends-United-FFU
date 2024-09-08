@@ -1947,12 +1947,12 @@ propaganda_efforts = {
 
 operations = {
 	NO_ASIA_attache = {
-        cost = 100
+        cost = 50
 
         fire_only_once = yes
 
         available = {
-			command_power > 49
+			command_power > 24
 			if = {
 				limit = {
 					OR = {
@@ -2005,7 +2005,7 @@ operations = {
 		}
 
         complete_effect = {
-			add_command_power = -50
+			add_command_power = -25
 			if = {
 				limit = {
 					has_game_rule = {
