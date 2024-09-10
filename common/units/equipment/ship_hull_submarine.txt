@@ -100,7 +100,7 @@ equipments = {
 		year = 1922
 
 		archetype = ship_hull_submarine
-		priority = 2500
+		priority = 2500	
 		
 		module_slots = inherit
 	}
@@ -129,7 +129,7 @@ equipments = {
 			rear_1_custom_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
-		sub_visibility = 22
+		sub_visibility = 24
 		naval_speed = 14
 		reliability = 0.70
 
@@ -179,7 +179,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 20
+		sub_visibility = 22
 		naval_speed = 16
 		reliability = 0.75
 		
@@ -227,7 +227,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 15
+		sub_visibility = 18
 		naval_speed = 18
 		reliability = 0.80
 

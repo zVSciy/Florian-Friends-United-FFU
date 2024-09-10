@@ -589,6 +589,9 @@ ideas = {
 				submarine = {
 					build_cost_ic = 100.00 instant = yes
 				}
+				destroyer = {
+					build_cost_ic = 1.00 instant = yes
+				}
 				large_plane_airframe = {
 					build_cost_ic = 2.00 instant = yes
 				}

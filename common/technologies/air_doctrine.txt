@@ -657,7 +657,9 @@ technologies = {
 	offensive_formations = {
 
 		# EFFECT ########
-		air_bombing_targetting = 0.2
+		cas = {
+            air_defence = 0.15
+        }
 		###########
 		
 		XOR = {
@@ -701,8 +703,8 @@ technologies = {
 	mass_destruction = {
 
 		# EFFECT ########
-		air_strategic_bomber_bombing_factor = 0.5
-		air_bombing_targetting = -0.5
+		air_strategic_bomber_bombing_factor = 0.4
+		air_bombing_targetting = -0.1
 		###########
 		
 		XOR = {
