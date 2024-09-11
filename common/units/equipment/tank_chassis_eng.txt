@@ -148,7 +148,7 @@ equipments = {
 		maximum_speed = 5.0
 		build_cost_ic = 16
 		reliability = 0.85
-		armor_value = 25
+		armor_value = 30
 		defense = 5
 		breakthrough = 20
 	}
@@ -258,7 +258,7 @@ equipments = {
 		maximum_speed = 5.75
 		build_cost_ic = 18
 		reliability = 0.85
-		armor_value = 45
+		armor_value = 40
 		defense = 6
 		breakthrough = 25
 	}
@@ -299,7 +299,7 @@ equipments = {
 		maximum_speed = 6
 		build_cost_ic = 28
 		reliability = 0.85
-		armor_value = 75
+		armor_value = 50
 		defense = 7
 		breakthrough = 45
 	}
@@ -340,7 +340,7 @@ equipments = {
 		maximum_speed = 6.25
 		build_cost_ic = 32
 		reliability = 0.85
-		armor_value = 80
+		armor_value = 60
 		defense = 8
 		breakthrough = 65
 	}
@@ -380,7 +380,7 @@ equipments = {
 		maximum_speed = 6.25
 		build_cost_ic = 38
 		reliability = 0.85
-		armor_value = 95
+		armor_value = 60
 		defense = 10
 		breakthrough = 65
 	}
@@ -420,7 +420,7 @@ equipments = {
 		maximum_speed = 5.5
 		build_cost_ic = 22
 		reliability = 0.8
-		armor_value = 65
+		armor_value = 40
 		defense = 6
 		breakthrough = 25
 	}
@@ -501,7 +501,7 @@ equipments = {
 		maximum_speed = 6.0
 		build_cost_ic = 26
 		reliability = 0.8
-		armor_value = 75
+		armor_value = 60
 		defense = 7
 		breakthrough = 35
 	}
@@ -538,7 +538,7 @@ equipments = {
 		maximum_speed = 4
 		build_cost_ic = 16
 		reliability = 0.75
-		armor_value = 45
+		armor_value = 35
 		defense = 4
 		breakthrough = 35
 	}
@@ -573,7 +573,7 @@ equipments = {
 		maximum_speed = 4
 		build_cost_ic = 20
 		reliability = 0.75
-		armor_value = 60
+		armor_value = 45
 		defense = 6
 		breakthrough = 45
 	}
@@ -608,7 +608,7 @@ equipments = {
 		maximum_speed = 4.25
 		build_cost_ic = 24
 		reliability = 0.8
-		armor_value = 70
+		armor_value = 55
 		defense = 7
 		breakthrough = 50
 	}
@@ -627,7 +627,7 @@ equipments = {
 		maximum_speed = 4.0
 		build_cost_ic = 36 #40
 		reliability = 0.8
-		armor_value = 80
+		armor_value = 65
 		defense = 10
 		breakthrough = 65
 	}
@@ -646,7 +646,7 @@ equipments = {
 		maximum_speed = 5.5
 		build_cost_ic = 44
 		reliability = 0.8
-		armor_value = 95
+		armor_value = 75
 		defense = 10
 		breakthrough = 75
 	}
@@ -685,7 +685,7 @@ equipments = {
 		maximum_speed = 5.75
 		build_cost_ic = 50
 		reliability = 0.80
-		armor_value = 110
+		armor_value = 85
 		hardness = 0.85
 		defense = 14
 		breakthrough = 95
@@ -721,7 +721,7 @@ equipments = {
 		maximum_speed = 4.5
 		build_cost_ic = 50
 		reliability = 0.8
-		armor_value = 120
+		armor_value = 85
 		defense = 12
 		breakthrough = 90
 	}
