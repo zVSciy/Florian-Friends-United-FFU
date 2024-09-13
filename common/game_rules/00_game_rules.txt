@@ -68,12 +68,12 @@ air_minors = {
 dockyard_cg = {
 	name = "RULE_DOCK_CG"
 	group = "RULE_GROUP_TFB"
-	default = {
+	option = {
 		name = "ENABLED"
 		text = "RULE_OPTION_ENABLED"
 		desc = "RULE_OPTION_DOCK_CG_ENABLED_DESC"
 	}
-	option = {
+	default = {
 		name = "DISABLED"
 		text = "RULE_OPTION_DISABLED"
 		desc = "RULE_OPTION_DOCK_CG_DISABLED_DESC"
