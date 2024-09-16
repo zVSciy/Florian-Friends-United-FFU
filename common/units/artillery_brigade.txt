@@ -488,7 +488,7 @@ sub_units = {
 		supply_consumption = 0.3
 		supply_consumption_factor = 0.06
 		
-		maximum_speed = -0.62
+		maximum_speed = 0
 		
 		forest = {
 			attack = -0.1

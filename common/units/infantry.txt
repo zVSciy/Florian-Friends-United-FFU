@@ -42,7 +42,7 @@ sub_units = {
 		suppression = 1
 		weight = 0.5
 		
-		maximum_speed = -0.25
+		maximum_speed = 0
 		
 		supply_consumption = 0.15
 		supply_consumption_factor = 0.035

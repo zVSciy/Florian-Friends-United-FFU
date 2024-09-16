@@ -410,8 +410,18 @@ shared_focus = {
 			}
 			# custom_effect_tooltip = available_mio_tt
 			# show_mio_tooltip = COM_vauxhall_organization
-			mio:SAF_cope_organization = {
+			if = {
+				limit = {
+					original_TAG = SAF
+				}
+				mio:SAF_cope_organization = {
 				add_mio_size = 2
+				}
+			}
+			else = {
+				mio:ENG_vauxhall_organization = {
+				add_mio_size = 2
+				}
 			}
 		}
 		else = {
