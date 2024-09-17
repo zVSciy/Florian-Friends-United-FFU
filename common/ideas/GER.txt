@@ -423,7 +423,7 @@ ideas = {
 			picture = strategic_bombing_focus
 	
 			modifier = {
-				naval_strike_targetting_factor = 0.5
+				naval_strike_targetting_factor = 0.2
 			}
 	
 		}
