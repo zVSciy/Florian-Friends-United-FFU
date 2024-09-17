@@ -3704,11 +3704,7 @@ focus_tree = {
 				idea = GER_barbarossa
 				days = 150
 			}
-							
-			# remove_ideas = GER_good_weather_army
-			GER_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_army_acclimatization_cold_climate_gain_factor = 9.99 tooltip = acclimatization_cold_climate_gain_factor_tt }
-			
+										
 			activate_mission = GER_barbarossa_mission_moscow
 			activate_mission = GER_barbarossa_mission_kiev
 			activate_mission = GER_barbarossa_mission_lenin
@@ -6453,6 +6449,9 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = -100
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_acclimatization_cold_climate_gain_factor = 9.99 tooltip = acclimatization_cold_climate_gain_factor_tt }
+
 			every_army_leader = {
 				add_attack = 1
 			}
