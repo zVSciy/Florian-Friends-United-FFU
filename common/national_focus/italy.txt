@@ -3600,14 +3600,6 @@ focus_tree = {
 					}
 				}
 			}
-			118 = {
-				CONTROLLER = {
-					OR = {
-						tag = ITA
-						is_subject_of = ITA
-					}
-				}
-			}
 			1 = {
 				CONTROLLER = {
 					OR = {
@@ -4041,8 +4033,6 @@ focus_tree = {
 			add_to_variable = { ITA_italian_army_training_time_army_factor = -0.25 tooltip = training_time_army_factor_tt }
 			add_to_variable = { ITA_italian_army_conscription = 0.01 tooltip = conscription_tt }
 			add_to_variable = { ITA_italian_army_resistance_damage_to_garrison = -0.05 tooltip = resistance_damage_to_garrison_tt }
-			add_to_variable = { ITA_italian_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
-			add_to_variable = { ITA_italian_army_army_defence_factor = 0.050 tooltip = army_defence_factor_tt }
 		}
 	}
 
