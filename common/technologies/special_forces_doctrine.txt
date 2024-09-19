@@ -26,7 +26,7 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		#xor = { special_forces_marines special_forces_paratroopers }
 		
@@ -457,7 +457,7 @@ technologies = {
 		doctrine_name = "MARINES_DOCTRINE"
 		
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		#xor = { special_forces_mountaineers special_forces_paratroopers }
 		
@@ -1009,7 +1009,7 @@ technologies = {
 		doctrine_name = "PARATROOPERS_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 60
+		xp_unlock_cost = 0
 		
 		force_use_small_tech_layout = yes
 		
