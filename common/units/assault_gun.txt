@@ -296,7 +296,7 @@ sub_units = {
 		ai_priority = 100
 		active = no
 		training_time = 200
-		
+		affects_speed = no
 		type = {
 			armor
 			artillery
@@ -394,7 +394,7 @@ sub_units = {
 		ai_priority = 100
 		active = no
 		training_time = 200
-		
+		affects_speed = no
 		type = {
 			armor
 			artillery
@@ -490,7 +490,7 @@ sub_units = {
 		ai_priority = 100
 		active = no
 		training_time = 200
-		
+		affects_speed = no
 		type = {
 			armor
 			artillery
