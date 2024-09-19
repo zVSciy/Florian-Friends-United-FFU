@@ -830,97 +830,97 @@ technologies = {
 
 		light_assault_gun_brigade = {
 			need = {
-				light_assault_gun_chassis = -8
+				light_assault_gun_chassis = -6
 			}
 		}
 		medium_assault_gun_brigade = {
 			need = {
-				medium_assault_gun_chassis = -8
+				medium_assault_gun_chassis = -6
 			}
 		}
 		heavy_assault_gun_brigade = {
 			need = {
-				heavy_assault_gun_chassis = -8
+				heavy_assault_gun_chassis = -6
 			}
 		}
 		light_armor = {
 			need = {
-				light_tank_chassis = -8
+				light_tank_chassis = -6
 			}
 		}
 		medium_armor = {
 			need = {
-				medium_tank_chassis = -8
+				medium_tank_chassis = -6
 			}
 		}
 		heavy_armor = {
 			need = {
-				heavy_tank_chassis = -8
+				heavy_tank_chassis = -6
 			}
 		}
 		light_tank_destroyer_brigade = {
 			need = {
-				light_tank_destroyer_chassis = -4
+				light_tank_destroyer_chassis = -2
 			}
 		}
 		medium_tank_destroyer_brigade = {
 			need = {
-				medium_tank_destroyer_chassis = -4
+				medium_tank_destroyer_chassis = -2
 			}
 		}
 		heavy_tank_destroyer_brigade = {
 			need = {
-				heavy_tank_destroyer_chassis = -4
+				heavy_tank_destroyer_chassis = -2
 			}
 		}
 		light_sp_artillery_brigade = {
 			need = {
-				light_tank_artillery_chassis = -4
+				light_tank_artillery_chassis = -2
 			}
 		}
 		medium_sp_artillery_brigade = {
 			need = {
-				medium_tank_artillery_chassis = -4
+				medium_tank_artillery_chassis = -2
 			}
 		}
 		heavy_sp_artillery_brigade = {
 			need = {
-				heavy_tank_artillery_chassis = -4
+				heavy_tank_artillery_chassis = -2
 			}
 		}
 		amphibious_light_armor = {
 			need = {
-				light_tank_amphibious_chassis = -8
+				light_tank_amphibious_chassis = -6
 			}
 		}
 		amphibious_medium_armor = {
 			need = {
-				medium_tank_amphibious_chassis = -8
+				medium_tank_amphibious_chassis = -6
 			}
 		}
 		amphibious_heavy_armor = {
 			need = {
-				heavy_tank_amphibious_chassis = -8
+				heavy_tank_amphibious_chassis = -6
 			}
 		}
 		light_sp_anti_air_brigade = {
 			need = {
-				light_tank_aa_chassis = -4
+				light_tank_aa_chassis = -2
 			}
 		}
 		medium_sp_anti_air_brigade = {
 			need = {
-				medium_tank_aa_chassis = -4
+				medium_tank_aa_chassis = -2
 			}
 		}
 		light_tank_recon = {
 			need = {
-				light_tank_chassis = -8
+				light_tank_chassis = -6
 			}
 		}
 		armored_car_recon = {
 			need = {
-				armored_car_chassis = -8
+				armored_car_chassis = -6
 			}
 		}
 		# motorized = {			

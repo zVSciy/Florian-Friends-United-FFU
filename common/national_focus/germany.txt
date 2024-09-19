@@ -5345,34 +5345,6 @@ focus_tree = {
 
 		completion_reward = {
 			16 = {
-				remove_building = {
-					type = arms_factory
-					level = 10
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 10
-				}
-			}
-			7 = {
-				remove_building = {
-					type = arms_factory
-					level = 3
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			6 = {
-				remove_building = {
-					type = arms_factory
-					level = 4
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 4
-				}
 			}
 			add_offsite_building = { type = arms_factory level = 10 }
 			add_offsite_building = { type = industrial_complex level = 10 }
@@ -5390,7 +5362,7 @@ focus_tree = {
 			}
 			# every_controlled_state = {
 			# 	limit = {
-			# 		is_core_of = BEL
+			# 		is_core_of = HOL
 			# 	}
 			# 	set_compliance = 40
 			# }
