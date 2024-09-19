@@ -1283,6 +1283,7 @@ focus_tree = {
 			GER_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_army_training_time_army_factor = -0.1 tooltip = training_time_army_factor_tt }
 			add_to_variable = { GER_german_army_max_dig_in = 5 tooltip = max_dig_in_tt }
+			add_to_variable = { GER_german_army_land_night_attack = 0.075 tooltip = land_night_attack_tt }
 		}
 	}
 	
@@ -1313,8 +1314,7 @@ focus_tree = {
 			# 	remove_idea = GER_rad
 			# }
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
-			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { GER_german_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 		}
 	}
 	
