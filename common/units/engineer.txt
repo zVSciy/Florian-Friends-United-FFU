@@ -345,7 +345,7 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = no
-
+		affects_speed = no
 		type = {
 			armor
 			support

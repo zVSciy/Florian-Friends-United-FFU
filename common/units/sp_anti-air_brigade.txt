@@ -7,7 +7,7 @@ sub_units = {
 		priority = 301
 		ai_priority = 100
 		active = yes
-		
+		affects_speed = no
 		type = {
 			armor
 			support
@@ -48,7 +48,7 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = yes
-		
+		affects_speed = no
 		type = {
 			armor
 			anti_air
@@ -92,7 +92,7 @@ sub_units = {
 		priority = 301
 		ai_priority = 100
 		active = yes
-		
+		affects_speed = no
 		type = {
 			armor
 			anti_air
