@@ -779,10 +779,10 @@ technologies = {
 
 		dig_in_speed_factor = 0.5
 		category_all_infantry = {
-			defense = 0.2			
+			defense = 0.1
 		}
 		category_militia = {
-			defense = 0.2			
+			defense = 0.1			
 		}
 		
 		path = {
@@ -1032,10 +1032,10 @@ technologies = {
 	mobile_defence = {
 
 		category_all_infantry = {
-			defense = 0.1			
+			defense = 0.05
 		}
 		category_militia = {
-			defense = 0.1			
+			defense = 0.05			
 		}
 		
 		enable_tactic = tactic_elastic_defense		
@@ -1925,12 +1925,12 @@ technologies = {
 	prepared_defense = {
 
 		category_all_infantry = {
-			defense = 0.10
+			defense = 0.05
 			max_organisation = 5
 		}
 
 		category_militia = {
-			defense = 0.10
+			defense = 0.05
 			max_organisation = 5
 		}
 		

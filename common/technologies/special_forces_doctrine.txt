@@ -227,10 +227,10 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		category_mountaineers = {
-			defense = 0.10
+			defense = 0.05
 		}
 		category_rangers = {
-			defense = 0.10
+			defense = 0.05
 		}
 		# mountaineers = {
 		# 	combat_width = -0.2
@@ -1246,7 +1246,7 @@ technologies = {
 		signal_company = {
 			battalion_mult = {
 				category = category_paratroopers
-				defense = 0.10
+				defense = 0.05
 			}
 		}
 			
