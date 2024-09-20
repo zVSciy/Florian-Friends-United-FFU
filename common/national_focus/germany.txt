@@ -8956,6 +8956,7 @@ focus_tree = {
 			}
 			add_offsite_building = { type = industrial_complex level = 2 }
 			ITA = { add_offsite_building = { type = industrial_complex level = 2 } }
+			ITA = { add_offsite_building = { type = dockyard level = 2 } }
 		}
 	}
 
