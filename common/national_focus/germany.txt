@@ -24,7 +24,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 1960 y = 700 }
+	continuous_focus_position = { x = 1905 y = 800 }
 	
 	default = no
 
@@ -2170,7 +2170,7 @@ focus_tree = {
 		id = GER_bewegungskrieg
 		icon = GFX_doctrine_tank_warfare
 		prerequisite = { focus = GER_heer }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = GER_heer
 		cost = 5
@@ -2336,7 +2336,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_GER_rhineland
-		x = 29
+		x = 40
 		y = 0
 		cost = 5
 		available = {
@@ -2373,10 +2373,10 @@ focus_tree = {
 	focus = {
 		id = GER_west_wall
 		icon = GFX_GER_west_wall
-		prerequisite = { focus = GER_rhineland }
-		x = 1
-		y = 1
-		relative_position_id = GER_rhineland
+		prerequisite = { focus = GER_mol_rib_pact }
+		x = 2
+		y = 2
+		relative_position_id = GER_mol_rib_pact
 		cost = 2
 		ai_will_do = {
 			factor = 8
@@ -2460,10 +2460,10 @@ focus_tree = {
 	focus = {
 		id = GER_abwehr
 		icon = GFX_GER_strengthen_die_abwehr
-		prerequisite = { focus = GER_rhineland }
-		x = -2
+		prerequisite = { focus = GER_danzig_or_war }
+		x = -3
 		y = 1
-		relative_position_id = GER_rhineland
+		relative_position_id = GER_danzig_or_war
 		cost = 3
 		ai_will_do = {
 			factor = 8
@@ -2492,7 +2492,7 @@ focus_tree = {
 		}
 		
 		available = {
-			has_war = yes
+			
 		}
 			
 		completion_reward = {
@@ -2508,10 +2508,10 @@ focus_tree = {
 	focus = {
 		id = GER_waffen_ss
 		icon = GFX_GER_SS_armed_branch
-		prerequisite = { focus = GER_rhineland }
-		x = 3
+		prerequisite = { focus = GER_danzig_or_war }
+		x = -5
 		y = 1
-		relative_position_id = GER_rhineland
+		relative_position_id = GER_danzig_or_war
 		cost = 1
 		ai_will_do = {
 			factor = 8
@@ -2543,6 +2543,28 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_rizen
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = GER_waffen_ss }
+		x = 0
+		y = 1
+		relative_position_id = GER_waffen_ss
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		
+		available = {
+			# has_idea = GER_heinrich_himmler
+		}
+
+		completion_reward = {
+			GER_army_dynamic_modifier_tt = yes
+			add_to_variable = { GER_german_army_experience_gain_army_unit_factor = 0.2 tooltip = experience_gain_army_unit_factor_tt }
+		}
+	}
+
+	focus = {
 		id = GER_anschluss
 		icon = GFX_GER_anschluss
 		prerequisite = { focus = GER_rhineland }
@@ -2559,8 +2581,8 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 0
-		y = 2
+		x = -5
+		y = 1
 		relative_position_id = GER_rhineland
 		cost = 5
 		ai_will_do = {
@@ -2776,11 +2798,12 @@ focus_tree = {
 	focus = {
 		id = GER_demand_memel
 		icon = GFX_GER_demand_memel
-		prerequisite = { focus = GER_anschluss }
-		available = { is_puppet = no }
-		x = 1
+		prerequisite = { focus = GER_rhineland }
+		available = { is_puppet = no
+		has_completed_focus = GER_anschluss }
+		x = -1
 		y = 1
-		relative_position_id = GER_anschluss
+		relative_position_id = GER_rhineland
 		cost = 5
 		bypass = {
 			188 = { is_owned_by = GER }
@@ -2824,7 +2847,6 @@ focus_tree = {
 	focus = {
 		id = GER_danzig_or_war
 		icon = GFX_GER_danzig_or_war
-		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
@@ -2881,8 +2903,8 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		x = 0
-		y = 4
-		relative_position_id = GER_demand_memel
+		y = 2
+		relative_position_id = GER_mol_rib_pact
 		cost = 5
 		ai_will_do = {
 			factor = 10	
@@ -3412,7 +3434,7 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_barb
 		icon = GFX_GER_special_operation
-		prerequisite = { focus = GER_danzig_or_war }
+		prerequisite = { focus = GER_mobilise_reich }
 		
 		available = {
 			98 = { is_controlled_by_ROOT_or_ally = yes } 
@@ -3426,9 +3448,9 @@ focus_tree = {
 			5 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 		
-		x = -7
+		x = 0
 		y = 1
-		relative_position_id = GER_danzig_or_war
+		relative_position_id = GER_mobilise_reich
 		cost = 10
 		ai_will_do = {
 			factor = 10	
@@ -3514,102 +3536,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_early_barb
-		icon = GFX_ger_final_crusade
-		prerequisite = { focus = GER_prepare_barb }
-
-		available = {
-			always = false
-			# has_army_manpower = { size > 1199999 }
-			if = {
-				limit = {
-					has_country_flag = GER_offensive_cooldown
-				}
-				has_country_flag = {
-					flag = GER_offensive_cooldown
-					days > 250
-				}
-				custom_trigger_tooltip = {
-					tooltip = GER_offensive_cooldown_tt
-					has_country_flag = {
-						flag = GER_offensive_cooldown
-						days > 250
-					}
-				}
-			}
-			OR = {
-				AND = {
-					date > 1940.5.1
-					date < 1940.8.1
-				}
-			}
-			if = {
-				limit = {
-					GER  = { is_ai = yes }
-				}
-				VIC = {
-					has_country_flag = VIC_france_capped
-				}
-				# FRA  = { has_capitulated = yes }
-			}
-		}
-
-		bypass = {
-			has_war_with = SOV
-		}
-
-		will_lead_to_war_with = SOV
-		x = -2
-		y = 1
-		relative_position_id = GER_prepare_barb
-		cancel_if_invalid = no
-		available_if_capitulated = no
-		continue_if_invalid = yes
-		cost = 2
-
-		completion_reward = {
-			add_advisor_role = {
-				character = GER_walter_model
-				activate = yes
-				advisor = {
-					slot = army_chief
-					cost = 50
-					idea_token = GER_walter_model
-					traits = {
-						army_chief_offensive_3
-					}
-				}
-			}
-			set_country_flag = GER_offensive_cooldown
-			declare_war_on = {
-				target = SOV
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = MON
-				type = annex_everything
-			}
-			SOV = {
-				declare_war_on_enemy_faction = yes
-			}
-							
-			# remove_ideas = GER_good_weather_army
-			GER_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_army_acclimatization_cold_climate_gain_factor = 9.99 tooltip = acclimatization_cold_climate_gain_factor_tt }
-			
-			activate_mission = GER_barbarossa_mission_moscow
-			activate_mission = GER_barbarossa_mission_kiev
-			activate_mission = GER_barbarossa_mission_lenin
-		}
-	}
-	
-	focus = {
 		id = GER_barb
 		icon = GFX_ger_final_crusade
 		prerequisite = { focus = GER_prepare_barb }
 		
 		available = {
-			# has_army_manpower = { size > 1199999 }
 			if = {
 				limit = {
 					has_country_flag = GER_offensive_cooldown
@@ -3722,35 +3653,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_secure_soviet_oil
-		icon = GFX_focus_GER_autarky
-		prerequisite = { focus = GER_barb focus = GER_early_barb }
-
-		available = {
-			has_full_control_of_state = 234
-			has_full_control_of_state = 202
-			has_full_control_of_state = 226
-		}
-
-		completion_reward = {
-			add_resource = {
-				type = oil
-				amount = 700
-				state = 59
-			}
-		}
-
-		x = -3
-		y = 1
-		relative_position_id = GER_barb
-
-
-	}
-
-	focus = {
 		id = GER_fall_blau
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_barb focus = GER_early_barb }
+		prerequisite = { focus = GER_barb }
 		
 		available = {
 			Date > 1942.5.1
@@ -3898,7 +3803,7 @@ focus_tree = {
 	focus = {
 		id = GER_roa
 		icon = GFX_roa
-		prerequisite = { focus = GER_barb focus = GER_early_barb }
+		prerequisite = { focus = GER_barb }
 		
 		available = {
 			has_war_with = SOV
@@ -4467,7 +4372,7 @@ focus_tree = {
 	focus = {
 		id = GER_demand_sudetenland
 		icon = GFX_GER_demand_sudetenland
-		prerequisite = { focus = GER_anschluss }
+		prerequisite = { focus = GER_rhineland }
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		available = {
@@ -4479,6 +4384,7 @@ focus_tree = {
 				}
 			}
 			date > 1938.1.1
+			has_completed_focus = GER_anschluss
 		}
 		bypass = {
 			OR = {
@@ -4495,9 +4401,9 @@ focus_tree = {
 			is_puppet = yes
 		}
 		cancel_if_invalid = yes
-		x = -1
+		x = -3
 		y = 1
-		relative_position_id = GER_anschluss
+		relative_position_id = GER_rhineland
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4669,7 +4575,7 @@ focus_tree = {
 	focus = {
 		id = GER_first_vienna_award
 		icon = GFX_GER_first_vienna_award
-		prerequisite = { focus = GER_demand_sudetenland }
+		prerequisite = { focus = GER_rhineland }
 		bypass = {
 			OR = {
 				AND = {
@@ -4684,10 +4590,11 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			owns_state = 69
+			has_completed_focus = GER_demand_sudetenland
 		}
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = GER_demand_sudetenland
+		relative_position_id = GER_rhineland
 		cost = 2
 		ai_will_do = {
 			factor = 10
@@ -4710,10 +4617,11 @@ focus_tree = {
 	focus = {
 		id = GER_end_of_czechoslovakia
 		icon = GFX_GER_end_of_czechoslovakia
-		prerequisite = { focus = GER_first_vienna_award }
+		prerequisite = { focus = GER_rhineland }
 		available = { 
 			is_puppet = no
 			NOT = { has_war_with = CZE }
+			has_completed_focus = GER_first_vienna_award
 		}
 
 		bypass = {
@@ -4731,9 +4639,9 @@ focus_tree = {
 			}
 		}
 
-		x = 0
+		x = 3
 		y = 1
-		relative_position_id = GER_first_vienna_award
+		relative_position_id = GER_rhineland
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4884,7 +4792,13 @@ focus_tree = {
 	focus = {
 		id = GER_mol_rib_pact
 		icon = GFX_GER_mol_rib_pact
+		prerequisite = { focus = GER_second_vienna_award }
+        prerequisite = { focus = GER_demand_sudetenland }
+		prerequisite = { focus = GER_anschluss }
+		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_end_of_czechoslovakia }
+		prerequisite = { focus = GER_first_vienna_award }
+
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -4900,9 +4814,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 0
-		y = 1
-		relative_position_id = GER_end_of_czechoslovakia
+		x = -1
+		y = 1.5
+		relative_position_id = GER_first_vienna_award
 		cost = 5	
 		completion_reward = {
 			# REVISIT Rework event series to fit new design or retain old design
@@ -4985,8 +4899,8 @@ focus_tree = {
 			}
 		}
 
-		x = -1
-		y = 1
+		x = -2
+		y = 2
 		relative_position_id = GER_mol_rib_pact
 		cost = 2
 		ai_will_do = {
@@ -5018,10 +4932,10 @@ focus_tree = {
 	focus = {
 		id = GER_second_vienna_award
 		icon = GFX_GER_second_vienna_award
-		prerequisite = { focus = GER_end_of_czechoslovakia }
-		x = -2
+		prerequisite = { focus = GER_rhineland }
+		x = 5
 		y = 1
-		relative_position_id = GER_end_of_czechoslovakia
+		relative_position_id = GER_rhineland
 		cost = 2
 		ai_will_do = {
 			factor = 10
@@ -5029,6 +4943,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_capitulated = no
+			has_completed_focus = GER_end_of_czechoslovakia
 		}
 		bypass = {
 			OR = {
@@ -5182,7 +5097,7 @@ focus_tree = {
 	focus = {
 		id = GER_swiss_banks
 		icon = GFX_GER_swiss_money_laundry
-		prerequisite = { focus = GER_danzig_or_war }
+		prerequisite = { focus = GER_rearmed_and_ready }
 		available = {
 			is_puppet = no
 			NOT = { is_in_faction_with = SWI }
@@ -5193,9 +5108,9 @@ focus_tree = {
 			has_war_with = SWI
 		}
 		cancel_if_invalid = yes
-		x = -4
+		x = 0
 		y = 1
-		relative_position_id = GER_danzig_or_war
+		relative_position_id = GER_rearmed_and_ready
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -6433,10 +6348,10 @@ focus_tree = {
 	focus = {
 		id = GER_share_tanks
 		icon = GFX_goal_share_tanks
-		prerequisite = { focus = GER_panzer }
-		x = -2
+		prerequisite = { focus = GER_heer }
+		x = 0.5
 		y = 1
-		relative_position_id = GER_panzer
+		relative_position_id = GER_heer
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -6465,7 +6380,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_avenge_versailles
 		cost = 5
 		ai_will_do = {
@@ -6503,7 +6418,7 @@ focus_tree = {
 		}
 		
 		cancel_if_invalid = yes
-		x = -1
+		x = -3
 		y = 1
 		
 		cost = 5
@@ -6532,7 +6447,7 @@ focus_tree = {
 		}
 		
 		cancel_if_invalid = yes
-		x = 0
+		x = -1
 		y = 1
 		
 		cost = 5
@@ -6711,7 +6626,7 @@ focus_tree = {
 	focus = {
 		id = GER_volksturm
 		icon = GFX_focus_GER_volkssturm
-		prerequisite = { focus = GER_mobilise_reich }
+		prerequisite = { focus = GER_ardennes }
 		available = {
 			surrender_progress > 0.1
 			has_war_with = SOV
@@ -6721,7 +6636,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		x = 1
 		y = 1
-		relative_position_id = GER_mobilise_reich
+		relative_position_id = GER_ardennes
 		cost = 2
 		ai_will_do = {
 			factor = 10
@@ -6752,6 +6667,8 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = {
+			}
 			create_field_marshal = {
 				name = "Adolf Hitler"
 				picture = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
@@ -6765,6 +6682,29 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_ardennes
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_mobilise_reich }
+		available = {
+			surrender_progress > 0.15
+			has_war_with = SOV
+		}
+		bypass = {
+		}
+		x = 3
+		y = 1
+		relative_position_id = GER_mobilise_reich
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = GER_ardennes_offensive days = 45 }
+
+		}
+    }
 
 	focus = {
 		id = GER_defend_berlin
@@ -7125,9 +7065,9 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_GER_naval_rearmament
-		x = 36
+		x = 29
 		y = 0
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7215,7 +7155,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_rearmament
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7306,7 +7246,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_naval_effort2
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 0.25
 		}	
@@ -7397,7 +7337,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_plan_z
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7435,7 +7375,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_germaniawerft
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7505,7 +7445,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_plan_z
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7536,7 +7476,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_air_effort
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7625,7 +7565,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_appoint_raeder
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -7645,7 +7585,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_naval_effort2
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -7708,7 +7648,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7739,7 +7679,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_u_boot_bunker
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7784,7 +7724,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -7821,7 +7761,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_trade_interdiction
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
