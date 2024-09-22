@@ -1,5 +1,5 @@
 add_namespace = hotjoin_event
-news_event = {
+country_event = {
     id = hotjoin_event.1
     title = hotjoin_event.1.t
     desc = hotjoin_event.1.d

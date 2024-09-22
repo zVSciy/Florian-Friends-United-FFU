@@ -41,7 +41,12 @@ host_decisions = {
             factor = 0  # Ensure AI does not trigger this
         }
 		complete_effect = {
-			every_country = {news_event = { id = hotjoin_event.1 days = 0}}
+			limit = {
+				is_ai = no
+			}
+			country_event = { 
+				id = hotjoin_event.1 days = 0
+			}
 		}
 	}
 
