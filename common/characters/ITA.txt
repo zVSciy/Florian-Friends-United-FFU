@@ -528,7 +528,7 @@ characters={
 				original_tag = ITA
 			}
 			traits = {
-				navy_capital_ship_2
+				navy_screen_3
 			}
 			ai_will_do = {
 				factor = 1.000
@@ -548,10 +548,10 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold navy_career_officer superior_tactician spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
+			traits={ bold navy_career_officer superior_tactician spotter green_water_expert }
+			skill=5
+			attack_skill=5
+			defense_skill=4
 			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=-1
@@ -877,7 +877,7 @@ characters={
 				original_tag = ITA
 			}
 			traits  = {
-				navy_chief_commerce_raiding_1 
+				navy_chief_maneuver_2
 			}
 			ai_will_do = {
 				factor = 1
