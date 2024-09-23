@@ -303,7 +303,7 @@ country_event = {
 		FRA = { set_technology = { naval_base_construction = 1 popup = no } }
 	}
 }
-
+ 
 # France suggests a Union (Britain)
 country_event = {
 	id = france.11

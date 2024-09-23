@@ -470,11 +470,20 @@ on_actions = {
 				835 = { set_demilitarized_zone = yes }
 				844 = { set_demilitarized_zone = yes }
 				559 = { set_demilitarized_zone = yes }
-				665 = { set_demilitarized_zone = yes }
 			}
 		}
 	}
-
+	on_startup = {
+		effect = {
+			665 = { set_demilitarized_zone = yes }
+			458 = { set_demilitarized_zone = yes }
+			460 = { set_demilitarized_zone = yes }
+			513 = { set_demilitarized_zone = yes }
+			459 = { set_demilitarized_zone = yes }
+			461 = { set_demilitarized_zone = yes }
+			462 = { set_demilitarized_zone = yes }
+		}
+	}
 	on_startup = {
 		effect = {
 			if = {

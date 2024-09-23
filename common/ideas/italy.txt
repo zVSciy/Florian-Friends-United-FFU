@@ -1,5 +1,19 @@
 ideas = {
 	hidden_ideas = {
+		ITA_pre_france_buff = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			modifier = {
+				# buff goes here @smuth
+			}
+		}
 		ITA_german_investments = {			
 			
 			allowed = {
