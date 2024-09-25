@@ -3766,7 +3766,7 @@ leader_traits = {
 		trait_type = personality_trait
 
 		corps_commander_modifier = {
-			terrain_penalty_reduction = 0.05		
+			terrain_penalty_reduction = 0.025	
 		}
 
 		new_commander_weight = {

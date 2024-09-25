@@ -223,7 +223,7 @@ characters={
 					original_tag  = JAP 
 				}
 				traits  = {
-					army_infantry_3 
+					army_infantry_2 
 				}
 				ai_will_do  = {
 					factor  = 3.000
@@ -481,7 +481,7 @@ characters={
 		}
 		corps_commander={
 			traits={ JAP_samurai_lineage infantry_leader trait_engineer infantry_expert }
-			skill=6
+			skill=5
 			attack_skill=6
 			defense_skill=4
 			planning_skill=4
