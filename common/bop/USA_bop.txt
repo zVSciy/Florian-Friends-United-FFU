@@ -4,11 +4,11 @@ USA_war_bop = {
     right_side = USA_focus_on_europe
     decision_category = USA_war_bop
 	
-range = {
-		id = USA_war_bop
-		min = -0.10
-		max = 0.10
-    }
+	range = {
+			id = USA_war_bop
+			min = -0.10
+			max = 0.10
+	}
 	side = {
 		id = USA_focus_on_asia	
 		icon = ?
@@ -36,8 +36,8 @@ range = {
 				naval_doctrine_cost_factor = -0.2
 				land_doctrine_cost_factor = 0.1
 			}
-			}
 		}
+	}
 
 	side = {
 		id = USA_focus_on_europe	
@@ -48,7 +48,7 @@ range = {
 			min = 0.1
 			max = 0.55
 			modifier = {
-				max_planning = 0.075
+				max_planning_factor = 0.075
 				industrial_capacity_dockyard = -0.15
 				industrial_capacity_factory = 0.075
                 land_doctrine_cost_factor = -0.1
@@ -61,12 +61,11 @@ range = {
 			min = 0.55
 			max = 1
 			modifier = {
-				max_planning = 0.12
+				max_planning_factor = 0.12
 				industrial_capacity_dockyard = -0.2
 				industrial_capacity_factory = 0.125
 				naval_doctrine_cost_factor = 0.2
 				land_doctrine_cost_factor = -0.15
-				
 			}
 		}
 	}

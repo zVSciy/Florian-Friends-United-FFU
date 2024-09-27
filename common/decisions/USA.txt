@@ -7578,7 +7578,7 @@ political_actions = {
 }
 
 USA_war_bop = {
-	
+
 	USA_bop_cooldown = {
 		priority = 100
 		allowed = { tag = USA }
@@ -7587,12 +7587,12 @@ USA_war_bop = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 189
+		days_mission_timeout = 179
 		is_good = no
 		fire_only_once = no
 
 		cancel_trigger = {
-			NOT = {has_country_flag = USA_pentagon_conference_cd}
+			NOT = { has_country_flag = USA_pentagon_conference_cd }
 		}
 
 		visible = {
@@ -7610,43 +7610,56 @@ USA_war_bop = {
 
 		available = { 
 			has_completed_focus = USA_department_of_defense
-			
-				NOT = {
-					has_country_flag = USA_pentagon_conference_cd
-				}
+			NOT = {
+				has_country_flag = USA_pentagon_conference_cd
+			}
 		}
+		days_remove = 180
 		cost = 50
-		fire_only_once = no
-		days_remove = -1
 		ai_will_do = {
 			factor = 1
 		}
 		
 		complete_effect = {
+			set_country_flag = { 
+				flag = USA_pentagon_conference_cd 
+				days = 180 
+				value = 1 
+			}
 			add_power_balance_value = {
 				id = USA_war_bop
 				value = -0.5
 			}
 		}
-	}
+	} 
+
 	USA_europe_focus = {
 
 		icon = generic_tank
 
 		available = { 
 			has_completed_focus = USA_department_of_defense
-				NOT = {
-					has_country_flag = USA_pentagon_conference_cd
-				}
+			NOT = {
+				has_country_flag = USA_pentagon_conference_cd
+			}
 		}
+
+		modifier = {
+		}
+
+
+		days_remove = 180
 		cost = 50
-		fire_only_once = no
-		days_remove = -1
 		ai_will_do = {
 			factor = 1
 		}
 		
 		complete_effect = {
+			set_country_flag = { 
+				flag = USA_pentagon_conference_cd 
+				days = 180
+				value = 1 
+			}
 			add_power_balance_value = {
 				id = USA_war_bop
 				value = 0.5

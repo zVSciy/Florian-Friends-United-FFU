@@ -537,14 +537,22 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		pioneer_support = {
+		marine ={
 			jungle = {
 				attack = 0.10
 				defence = 0.10
 				movement = 0.10
 			}
+        }
+
+		jaeger = {
+			jungle = {
+				attack = 0.10
+				defence = 0.10
+				movement = 0.10
+			}	
 		}
-		
+
 		path = {
 			leads_to_tech = marines_recon 
 			research_cost_coeff = 1
@@ -588,10 +596,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		pioneer_support = {
+		marine = {
 			amphibious = {
-				attack = 0.25
-				defence = 0.15
+				attack = 0.50
+				defence = 0.30
 				movement = 0.20
 			}
 		}
