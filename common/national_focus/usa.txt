@@ -5265,6 +5265,8 @@ focus_tree = {
 			# add_ideas = USA_department_of_defense
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
+			add_ideas = USA_focus_on_nothing
+			set_country_flag = USA_bop_center
 		}
 	}
 
