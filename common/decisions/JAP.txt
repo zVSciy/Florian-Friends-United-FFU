@@ -479,7 +479,7 @@ JAP_interservice_rivalry = {
 			factor = 1
 		}
 		modifier = {
-			special_forces_cap = 0.02
+			naval_invasion_capacity = 6
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
@@ -515,8 +515,7 @@ JAP_interservice_rivalry = {
 			factor = 1
 		}
 		modifier = {
-			special_forces_attack_factor = 0.02
-			special_forces_defence_factor = 0.02
+			special_forces_attack_factor = 0.05
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
@@ -544,7 +543,7 @@ JAP_interservice_rivalry = {
 				OR = { 
 					has_country_flag = JAP_everybody_serves
 					has_country_flag = JAP_draft_exemptions
-				}
+				}	
 				OR = { 
 					has_country_flag = JAP_prioritize_naval_aircraft_construction
 					has_country_flag = JAP_prioritize_army_aircraft_construction

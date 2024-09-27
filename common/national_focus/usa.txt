@@ -3860,31 +3860,11 @@ focus_tree = {
 				days = 730
 			}
 			set_country_flag = USA_war_plan_cooldown
-		}
-	}
-	
-	focus = {
-		id = USA_war_plan_orange
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_japan_first }
-
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		x = 0
-		y = 1
-		relative_position_id = USA_japan_first
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-
-		completion_reward = {
-			JAP = {
-				add_opinion_modifier = { target = USA modifier = war_plan_orange }
+			add_power_balance_value = {
+				id = USA_war_bop
+				value = -1
 			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange }
 		}
 	}
 	
@@ -3926,29 +3906,11 @@ focus_tree = {
 				days = 730
 			}
 			set_country_flag = USA_war_plan_cooldown
-		}
-	}
-	
-	focus = {
-		id = USA_war_plan_black
-		icon = GFX_focus_attack_germany
-		prerequisite = { focus = USA_germany_first }
-
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		x = 0
-		y = 1
-		relative_position_id = USA_germany_first
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = USA modifier = war_plan_black }
+			add_power_balance_value = {
+				id = USA_war_bop
+				value = 1
 			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_black }
 		}
 	}
 	

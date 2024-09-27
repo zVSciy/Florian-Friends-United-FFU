@@ -1381,3 +1381,13 @@ add_operation_token = {
 	tag = MON
 	token = token_navy_friendly
 }
+set_power_balance = {
+
+	id = USA_war_bop
+			
+	left_side = USA_focus_on_asia
+			
+	right_side = USA_focus_on_europe
+			
+	set_value = 0
+}

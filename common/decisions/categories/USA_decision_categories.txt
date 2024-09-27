@@ -236,3 +236,10 @@ USA_election_campaigns = {
 
 	# visible_when_empty = yes
 }
+USA_war_bop = {
+    priority = 90
+    allowed = {
+        original_tag = USA
+        has_dlc = "Waking the Tiger"
+    }
+}
