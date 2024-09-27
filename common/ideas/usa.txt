@@ -584,7 +584,57 @@ ideas = {
 	}
 
 	country = {
-
+		USA_focus_on_nothing = {
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0
+			}
+		}
+		USA_focus_on_asia1 = {
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.05
+			}
+		}
+		USA_focus_on_asia2 = {
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.1
+			}
+		}
+		USA_focus_on_europe1 = {
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+			}
+		}
+		USA_focus_on_europe2 = {
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+			}
+		}
+		
 		USA_tackling_waste_idea = {
 
 			picture = generic_disjointed_gov			
