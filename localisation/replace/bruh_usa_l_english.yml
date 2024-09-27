@@ -215,6 +215,8 @@
   USA_fortify_midway:0 "Fortify Midway"
   USA_fortify_hawaii:0 "Fortify Hawaii"
   USA_island_fortification:0 "Island Fortification"
+  USA_europe_focus:0 "Support Operations In European Theater"
+  USA_asia_focus:0 "Support Operations In The Pacific Theater"
 
   #### PROPAGANDA ####
   USA_propaganda_campaigns:0 "United States Office of War Information"
@@ -450,3 +452,11 @@
   usa.split_china_western.2.b:0 "Give it to Canada"
   usa.split_china_western.2.c:0 "Give it to South Africa"
   usa.split_china_western.2.e:0 "Give it to the Netherlands"
+
+  # USA BOP
+  USA_war_bop:0 "The War Department"
+  USA_full_focus_on_japan:0 "Japan First"
+  USA_full_focus_on_europe:0 "Germany First"
+  USA_light_focus_on_japan:0 "Prioritize Asia"
+  USA_light_focus_on_europe:0 "Germany Is The Bigger Threat"
+  USA_pentagon_conference_cd:0 "Resources Already Allocated"
