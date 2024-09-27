@@ -1603,7 +1603,7 @@ leader_traits = {
 			jungle = {
 				movement = 0.05
 				attack = 0.1
-				defence = 0.1
+				defence = 0.05	
 			}
 		}
 		# non_shared_modifier = {
@@ -1627,7 +1627,7 @@ leader_traits = {
 			forest = {
 				movement = 0.05
 				attack = 0.1
-				defence = 0.1
+				defence = 0.05
 			}
 		}
 		# non_shared_modifier = {
