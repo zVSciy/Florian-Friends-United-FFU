@@ -77,10 +77,10 @@
   ENG_war_office_desc:0 "We need an organization to manage the British Army."
   ENG_cruiser_tanks2:0 "Advanced Cruiser Tanks"
   ENG_cruiser_tanks2_desc:0 "Advanced medium tanks will help us gain a decisive edge over our opponents."
-  ENG_centurion:0 "Main Battle Tank Concept"
-  ENG_centurion_desc:0 "A new type of tank that is good at everything could help us gain a decisive edge over our enemies."
-  ENG_infantry_tanks2:0 "Advanced Infantry Tanks"
-  ENG_infantry_tanks2_desc:0 "Advanced heavy tanks will help us gain a decisive edge over our opponents."
+  ENG_centurion:0 "Tank Mass Production"
+  ENG_centurion_desc:0 "Tanks are necessary to provide support for our infantry, we must mass produce it to have any chance to win this war."
+  ENG_infantry_tanks2:0 "Advanced Light Tanks"
+  ENG_infantry_tanks2_desc:0 "Advanced light tanks will help us gain a decisive edge over our opponents."
   ENG_learn_from_war:0 "Learn from the War"
   ENG_learn_from_war_desc:0 "We have learnt a lot from the war and we can put that knowledge to good use."
   ENG_special_forces:0 "Special Forces Expansion"
@@ -202,9 +202,14 @@
   ENG_fortify_the_coast:0 "Fortify the Coast" 
   ENG_british_invasion_of_iran:0 "Operation Countenance"
   ENG_khartoum_airfield:0 "Build Up the Khartoum Airfield"
-  ENG_dockyard_expansion:0 "Dockyard Expansion"
+  ENG_dockyard_expansion:0 "Begin Wartime Dockyard Construction"
+  ENG_dockyard_expansion2:0 "Finish Wartime Dockyard Construction"
   ENG_prepare_for_the_inevitable:0 "Prepare for the Inevitable"
   ENG_embargo_germany:0 "Prepare for the Inevitable"
+  ENG_mid_atlantic_gap:0 "Bridge The Atlantic Gap"
+  ENG_navs:0 "Develop RNFAA Torpedoes"
+  ENG_carriers:0 "Carrier Development"
+  ENG_rnfaa:0 "The Fleet Air Arm"
 
   #### EVENTS ####
   britain.500.t:0 "Anglo-Soviet Agreement"
@@ -232,6 +237,7 @@
   mtg_britain.1002.a:0 "To victory!"
 
   ### IDEAS ###
+  ENG_medium_tanks:0 "Tank Mass Production"
   enfield:0 "Small Arms Experts"
   ENG_war_cabinet_idea:0 "War Cabinet"
   ENG_watu_idea:0 "WATU"

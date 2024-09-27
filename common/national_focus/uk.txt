@@ -33,7 +33,7 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 1575 y = 800 }
+	continuous_focus_position = { x = 1575 y = 1500 }
 
 	shared_focus = COM_commonwealth_command
 	
@@ -91,7 +91,7 @@ focus_tree = {
 		id = ENG_air_rearmament
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = limited_rearmament_focus }
-		x = -8
+		x = -7
 		y = 1
 		cost = 1
 		relative_position_id = limited_rearmament_focus
@@ -112,7 +112,7 @@ focus_tree = {
 		id = shadow_scheme_focus
 		icon = GFX_ENG_shadow_scheme
 		prerequisite = { focus = ENG_air_rearmament }
-		x = -2
+		x = -1
 		y = 1
 		cost = 5
 		relative_position_id = ENG_air_rearmament
@@ -296,7 +296,7 @@ focus_tree = {
 		id = ENG_modernise_the_raf
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = ENG_air_rearmament }
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 		relative_position_id = ENG_air_rearmament
@@ -335,7 +335,7 @@ focus_tree = {
 		id = ENG_fighter_effort
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = ENG_modernise_the_raf }
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		relative_position_id = ENG_modernise_the_raf
@@ -374,57 +374,6 @@ focus_tree = {
 			ENG_airforce_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.05 tooltip = air_intercept_efficiency_tt }
 			add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
-	 	}
-	 }
-	
-	focus = {
-		id = ENG_bomber_effort
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = ENG_modernise_the_raf }
-		x = 1
-		y = 1
-		cost = 5
-		relative_position_id = ENG_modernise_the_raf
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = bomb_bonus
-				bonus = 0.50
-				uses = 2
-				category = cat_strategic_bomber
-			}
-			add_tech_bonus = {
-				name = bomb_bonus
-				bonus = 0.50
-				uses = 2
-				category = tactical_bomber
-			}
-			
-		}
-	}
-	
-	 focus = {
-	 	id = ENG_bomber_command
-	 	icon = GFX_bomber_command
-	 	prerequisite = { focus = ENG_bomber_effort }
-	 	x = 0
-	 	y = 1
-	 	cost = 5
-	 	relative_position_id = ENG_bomber_effort
-	 	ai_will_do = {
-	 		factor = 1
-	 	}	
-	 	completion_reward = {
-	 		air_experience = 50
-	 		# add_ideas = ENG_bomber_com
-			#  air_night_penalty = -0.10
-			#  air_range_factor = 0.05
-			# add_ideas = ENG_coastal_com
-			# air_weather_penalty = -0.10
-			# naval_strike_targetting_factor = 0.05
-			ENG_airforce_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ENG_british_airforce_air_range_factor = 0.05 tooltip = air_range_factor_tt }
 			add_to_variable = { ENG_british_airforce_air_night_penalty = -0.10 tooltip = air_night_penalty_tt }
 			add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt }
@@ -457,12 +406,12 @@ focus_tree = {
 	focus = {
 		id = ENG_raf
 		icon = GFX_the_raf
-		prerequisite = { focus = ENG_bomber_command }
-		prerequisite = { focus = ENG_fighter_command }
+		prerequisite = { focus = ENG_air_production_group }
+		prerequisite = { focus = ENG_radar }
 		x = 1
-		y = 2
+		y = 1
 		cost = 5
-		relative_position_id = ENG_fighter_effort
+		relative_position_id = ENG_air_production_group
 		ai_will_do = {
 			factor = 1
 		}	
@@ -473,25 +422,81 @@ focus_tree = {
 			# add_ideas = ENG_raf_idea
 			ENG_airforce_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ENG_british_airforce_air_range_factor = 0.05 tooltip = air_range_factor_tt }
-			add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.025 tooltip = naval_strike_targetting_factor_tt }
 			add_to_variable = { ENG_british_airforce_air_home_defence_factor = 0.2 tooltip = air_home_defence_factor_tt }
-			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.025 tooltip = air_intercept_efficiency_tt }
+			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.0125 tooltip = air_intercept_efficiency_tt }
 			add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
-			add_to_variable = { ENG_british_airforce_air_night_penalty = -0.05 tooltip = air_night_penalty_tt }
-			add_to_variable = { ENG_british_airforce_air_weather_penalty = -0.05 tooltip = air_weather_penalty_tt }
-			
+			add_to_variable = { ENG_british_airforce_air_night_penalty = -0.05 tooltip = air_night_penalty_tt }			
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ENG_wings_victory_prop
+		}
+	}
+	focus = {
+		id = ENG_rnfaa
+		icon = GFX_the_raf
+		prerequisite = { focus = ENG_merchant_fleet }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ENG_merchant_fleet
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			ENG_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.025 tooltip = naval_strike_targetting_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.0125 tooltip = air_intercept_efficiency_tt }
+			add_to_variable = { ENG_british_airforce_air_weather_penalty = -0.05 tooltip = air_weather_penalty_tt }
+		}
+	}
+	focus = {
+		id = ENG_carriers
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = ENG_rnfaa }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ENG_rnfaa
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = shp_bonus
+				bonus = 0.75
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = ENG_navs
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = ENG_carriers }
+		prerequisite = { focus = ENG_refitting_effort }
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = ENG_carriers
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = shp_bonus
+				bonus = 1
+				uses = 2
+				category = naval_air
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_radar
 		icon = GFX_goal_generic_radar
-		x = 1
+		x = 0
 		y = 1
-		prerequisite = { focus = ENG_raf }
-		relative_position_id = ENG_raf
+		prerequisite = { focus = ENG_fighter_command }
+		relative_position_id = ENG_fighter_command
 		cost = 5
 
 		ai_will_do = {
@@ -502,7 +507,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_radar
-				uses = 2
+				uses = 3
 				bonus = 0.75
 				category = radar_tech
 			}
@@ -512,11 +517,11 @@ focus_tree = {
 	focus = {
 		id = ENG_air_ministry
 		icon = GFX_focus_eng_the_sun_never_sets
-		prerequisite = { focus = ENG_raf focus = ENG_air_production_group }
+		prerequisite = { focus = ENG_raf }
 		# prerequisite = { focus = ENG_raf }
 		# prerequisite = { focus = ENG_air_production_group }
 		available = { has_completed_focus = ENG_war_cabinet }
-		x = -2
+		x = 0
 		y = 1
 		cost = 1
 		relative_position_id = ENG_raf
@@ -524,7 +529,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 		}
 	}
 	
@@ -532,7 +537,7 @@ focus_tree = {
 		id = ENG_air_ministry_production
 		icon = GFX_goal_continuous_air_production
 		prerequisite = { focus = ENG_air_ministry }
-		x = -3
+		x = -2
 		y = 1
 		cost = 5
 		relative_position_id = ENG_air_ministry
@@ -555,7 +560,7 @@ focus_tree = {
 		id = ENG_fighter_effort2
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = ENG_air_ministry }
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		relative_position_id = ENG_air_ministry
@@ -565,7 +570,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				technology = advanced_small_airframe
 			}
@@ -575,11 +580,11 @@ focus_tree = {
 	focus = {
 		id = ENG_advanced_bombers
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = ENG_air_ministry }
-		x = -1
+		prerequisite = { focus = ENG_air_ministry_production }
+		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = ENG_air_ministry
+		relative_position_id = ENG_air_ministry_production
 		ai_will_do = {
 			factor = 1
 		}	
@@ -593,15 +598,15 @@ focus_tree = {
 			}
 		}
 	}
-	
+		
 	focus = {
-		id = ENG_fighter_effort3
-		icon = GFX_GER_heavy_fighter
-		prerequisite = { focus = ENG_air_ministry }
-		x = 3
+		id = ENG_jet_effort
+		icon = GFX_goal_ar
+		prerequisite = { focus = ENG_fighter_effort2 }
+		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = ENG_air_ministry
+		relative_position_id = ENG_fighter_effort2
 		ai_will_do = {
 			factor = 1
 		}	
@@ -609,30 +614,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.75
-				ahead_reduction = 0.5
-				uses = 1
-				technology = modern_small_airframe
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_jet_effort
-		icon = GFX_goal_ar
-		prerequisite = { focus = ENG_fighter_effort3 }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = ENG_fighter_effort3
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.5
 				uses = 2
 				category = jet_technology
+			add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					technology = modern_small_airframe
+			}
 			}
 		}
 	}
@@ -733,12 +722,13 @@ focus_tree = {
 		id = ENG_learn_from_war
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = ENG_gloucestershire_diesel_factory_aero }
-		prerequisite = { focus = ENG_filler }
-		available = { has_army_experience > 50 }
-		x = 0
-		y = 4
-		cost = 2
-		relative_position_id = ENG_royal_ordnance
+		prerequisite = { focus = ENG_enfield }
+		prerequisite = { focus = ENG_expand_the_army }
+		prerequisite = { focus = ENG_cruiser_tanks }
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = ENG_special_arty
 		
 		cancel_if_invalid = yes
 		
@@ -746,7 +736,6 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			army_experience = -50
 			add_doctrine_cost_reduction = {
 				name = doc_bonus
 				cost_reduction = 0.40
@@ -867,11 +856,11 @@ focus_tree = {
 	focus = {
 		id = ENG_enfield
 		icon = GFX_focus_focus_fra_maquis
-		prerequisite = { focus = ENG_rof }
+		prerequisite = { focus = ENG_filler }
 		x = 0
 		y = 1
-		cost = 5
-		relative_position_id = ENG_rof
+		cost = 2
+		relative_position_id = ENG_filler
 		ai_will_do = {
 			factor = 1
 		}	
@@ -896,11 +885,11 @@ focus_tree = {
 	focus = {
 		id = ENG_filler
 		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = ENG_enfield }
+		prerequisite = { focus = ENG_rof }
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = ENG_enfield
+		relative_position_id = ENG_rof
 		ai_will_do = {
 			factor = 1
 		}	
@@ -952,7 +941,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_expand_royal_arsenal }
 		x = -1
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = ENG_expand_royal_arsenal
 		ai_will_do = {
 			factor = 1
@@ -973,7 +962,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_modern_artillery }
 		x = 0
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = ENG_modern_artillery
 		ai_will_do = {
 			factor = 1
@@ -983,17 +972,13 @@ focus_tree = {
 				name = at_bonus
 				bonus = 0.75
 				uses = 2
-				technology = antitank2
-				technology = antitank3
-				technology = antitank4
-				#technology = antitank6
+				category = cat_anti_tank
 			}
 			add_tech_bonus = {
 				name = aa_bonus
 				bonus = 0.75
-				uses = 1
-				technology = antiair2
-				technology = antiair3
+				uses = 2
+				category = cat_anti_air
 			}
 		}
 	}
@@ -1004,7 +989,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_expand_royal_arsenal }
 		x = 1
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = ENG_expand_royal_arsenal
 		ai_will_do = {
 			factor = 1
@@ -1013,16 +998,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = inf_bonus
 				bonus = 0.75
-				uses = 1
-				technology = support_weapons3				
-				technology = support_weapons2
-			}
-			add_tech_bonus = {
-				name = inf_bonus
-				bonus = 0.75
-				uses = 1
-				technology = improved_infantry_weapons
-				technology = advanced_infantry_weapons
+				uses = 3
+				category = infantry_weapons
 			}
 		}
 	}
@@ -1033,7 +1010,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_bren }
 		x = 0
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = ENG_bren
 		ai_will_do = {
 			factor = 1
@@ -1041,7 +1018,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = at_bonus
-				bonus = 0.75
+				bonus = 1
 				uses = 2
 				category = cat_mechanized_equipment
 			}
@@ -1051,11 +1028,11 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_the_army
 		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = ENG_mechanise_army focus = ENG_special_arty }
-		x = -1
+		prerequisite = { focus = ENG_special_arty }
+		x = 0
 		y = 1
-		cost = 5
-		relative_position_id = ENG_mechanise_army
+		cost = 2
+		relative_position_id = ENG_special_arty
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1070,36 +1047,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ENG_infantry_tanks
-		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = ENG_expand_the_army }
-		mutually_exclusive = { focus = ENG_cruiser_tanks }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = ENG_expand_the_army
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = at_bonus
-				bonus = 0.75
-				uses = 2
-				category = cat_heavy_armor
-			}
-		}
-	}
-	
-	focus = {
 		id = ENG_cruiser_tanks
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = ENG_expand_the_army }
-		mutually_exclusive = { focus = ENG_infantry_tanks }
-		x = 1
+		prerequisite = { focus = ENG_mechanise_army }
+		x = 0
 		y = 1
-		cost = 5
-		relative_position_id = ENG_expand_the_army
+		cost = 2
+		relative_position_id = ENG_mechanise_army
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1116,20 +1070,18 @@ focus_tree = {
 	focus = {
 		id = ENG_war_office
 		icon = GFX_focus_eng_the_sun_never_sets
-		prerequisite = { focus = ENG_cruiser_tanks focus = ENG_infantry_tanks focus = ENG_learn_from_war }
-		# prerequisite = { focus = ENG_cruiser_tanks focus = ENG_infantry_tanks }
-		# prerequisite = { focus = ENG_learn_from_war }
+		prerequisite = { focus = ENG_learn_from_war }
 		
 		available = { has_completed_focus = ENG_war_cabinet }
-		x = -1
-		y = 1
+		x = -3
+		y = 2
 		cost = 1
-		relative_position_id = ENG_infantry_tanks
+		relative_position_id = ENG_cruiser_tanks
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-			army_experience = 25
+			army_experience = 50
 		}
 	}
 	
@@ -1166,24 +1118,18 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_tech_bonus = {
-				name = cent_bonus
-				bonus = 0.75
-				ahead_reduction = 0.5
-				uses = 1
-				technology = eng_medium_tank_6
-			}
+			add_ideas = ENG_medium_tanks
 		}
 	}
 	
 	focus = {
 		id = ENG_infantry_tanks2
 		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = ENG_war_office }
+		prerequisite = { focus = ENG_centurion }
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = ENG_war_office
+		relative_position_id = ENG_centurion
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1191,8 +1137,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = at_bonus
 				bonus = 0.75
-				uses = 1
-				category = cat_heavy_armor
+				uses = 2
+				category = cat_light_armor
 			}
 		}
 	}
@@ -1217,8 +1163,7 @@ focus_tree = {
 				category = special_forces_doctrine
 			}
 			ENG_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ENG_british_army_special_forces_cap = 0.02 tooltip = special_forces_cap_tt }
-			add_to_variable = { ENG_british_army_special_forces_training_time_factor = -0.1 tooltip = special_forces_training_time_factor_tt }
+			add_to_variable = { ENG_british_army_special_forces_training_time_factor = -0.2 tooltip = special_forces_training_time_factor_tt }
 			# add_potential_special_forces_tree = yes
 			# Royal_Commandos_increase_double = yes
 		}
@@ -1228,7 +1173,7 @@ focus_tree = {
 		id = ENG_special_air_service
 		icon = GFX_focus_eng_special_air_service
 		prerequisite = { focus = ENG_special_forces }
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		relative_position_id = ENG_special_forces
@@ -1239,33 +1184,11 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
 			add_tech_bonus = {
-				name = mar_bonus
-				bonus = 0.5
-				uses = 1
-				category = para_tech
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_royal_marines
-		icon = GFX_royal_marines_laurel
-		prerequisite = { focus = ENG_special_forces }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = ENG_special_forces
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			# Royal_Commandos_increase_double = yes
-			add_tech_bonus = {
-				name = mar_bonus
-				bonus = 0.5
-				uses = 2
-				category = marine_tech
-				category = tp_tech
+			name = mar_bonus
+			bonus = 0.75
+			uses = 4
+			category = marine_tech
+			category = tp_tech
 			}
 		}
 	}
@@ -1273,11 +1196,11 @@ focus_tree = {
 	focus = {
 		id = ENG_commandos
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = ENG_royal_marines }
+		prerequisite = { focus = ENG_special_air_service }
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = ENG_royal_marines
+		relative_position_id = ENG_special_air_service
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1296,7 +1219,7 @@ focus_tree = {
 		id = ENG_naval_rearmament
 		icon = GFX_goal_eng_naval_rearm 
 		prerequisite = { focus = limited_rearmament_focus }
-		x = 8
+		x = 7
 		y = 1
 		cost = 1
 		relative_position_id = limited_rearmament_focus
@@ -1390,7 +1313,7 @@ focus_tree = {
 		id = ENG_new_dockyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ENG_naval_rearmament }
-		x = -3
+		x = -1
 		y = 1
 		cost = 5
 		relative_position_id = ENG_naval_rearmament
@@ -1484,11 +1407,11 @@ focus_tree = {
 	focus = {
 		id = ENG_capital_effort
 		icon = GFX_goal_eng_vanguard
-		prerequisite = { focus = ENG_naval_rearmament }
+		prerequisite = { focus = ENG_repair_yards }
 		x = 0
 		y = 1
 		cost = 4
-		relative_position_id = ENG_naval_rearmament
+		relative_position_id = ENG_repair_yards
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1538,7 +1461,7 @@ focus_tree = {
 		id = ENG_screen_effort
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = ENG_naval_rearmament }
-		x = 3
+		x = 1
 		y = 1
 		cost = 4
 		relative_position_id = ENG_naval_rearmament
@@ -1564,32 +1487,6 @@ focus_tree = {
 				bonus = 0.50
 				uses = 1
 				category = cl_tech
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_secure_shipping
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = ENG_screen_effort }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = ENG_screen_effort
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			hidden_effect = {
-				add_ideas = ENG_secure_the_imperial_shipping_routes
-			}
-			ENG_navy_dynamic_modifier_tt = yes # tooltip
-			custom_effect_tooltip = ENG_secure_the_imperial_shipping_routes_10_ftt
-			add_tech_bonus = {
-				name = shp_bonus
-				bonus = 0.50
-				uses = 2
-				category = asw_tech
 			}
 		}
 	}
@@ -1640,7 +1537,7 @@ focus_tree = {
 		id = ENG_merchant_fleet
 		icon = GFX_focus_generic_africa_naval
 		prerequisite = { focus = ENG_screen_effort }
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		relative_position_id = ENG_screen_effort
@@ -1659,22 +1556,27 @@ focus_tree = {
 			}
 			ENG_navy_dynamic_modifier_tt = yes # tooltip
 			custom_effect_tooltip = ENG_merchant_navy_10_ftt
+			add_ideas = ENG_secure_the_imperial_shipping_routes
+			}
+			ENG_navy_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_secure_the_imperial_shipping_routes_10_ftt
+			add_tech_bonus = {
+				name = shp_bonus
+				bonus = 0.50
+				uses = 2
+				category = asw_tech
 		}
 	}
 	
 	focus = {
 		id = ENG_admiralty
 		icon = GFX_focus_eng_the_sun_never_sets
-		prerequisite = { focus = ENG_merchant_fleet focus = ENG_secure_shipping focus = ENG_refitting_effort focus = ENG_repair_yards }
-		# prerequisite = { focus = ENG_merchant_fleet }
-		# prerequisite = { focus = ENG_secure_shipping }
-		# prerequisite = { focus = ENG_refitting_effort }
-		# prerequisite = { focus = ENG_repair_yards }
+		prerequisite = { focus = ENG_navs }
 		available = { has_completed_focus = ENG_war_cabinet }
-		x = -4
+		x = 0
 		y = 1
 		cost = 1
-		relative_position_id = ENG_merchant_fleet
+		relative_position_id = ENG_navs
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1736,10 +1638,40 @@ focus_tree = {
 		id = ENG_dockyard_expansion
 		icon = GFX_goal_ENG_grand_british_fleet
 		prerequisite = { focus = ENG_admiralty }
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		relative_position_id = ENG_admiralty
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			126 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level =5
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level =5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_dockyard_expansion2
+		icon = GFX_goal_ENG_grand_british_fleet
+		prerequisite = { focus = ENG_dockyard_expansion }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ENG_dockyard_expansion
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1760,22 +1692,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			126 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level =5
-					instant_build = yes
-				}
-			}
-			127 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level =5
-					instant_build = yes
-				}
-			}
 		}
 	}
 	
@@ -1783,7 +1699,7 @@ focus_tree = {
 		id = ENG_watu
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = ENG_admiralty }
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		relative_position_id = ENG_admiralty
@@ -1793,21 +1709,25 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = ENG_watu_idea
 			ENG_navy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ENG_british_navy_navy_submarine_detection_factor = 0.1 tooltip = navy_submarine_detection_factor_tt }
-			add_to_variable = { ENG_british_navy_convoy_escort_efficiency = 0.2 tooltip = convoy_escort_efficiency_tt }
-
-			add_tech_bonus = {
-				name = shp_bonus
-				bonus = 0.50
-				uses = 1
-				category = cv_tech
-			}
-			add_tech_bonus = {
-				name = shp_bonus
-				bonus = 0.50
-				uses = 1
-				category = naval_air
-			}
+			add_to_variable = { ENG_british_navy_navy_submarine_detection_factor = 0.2 tooltip = navy_submarine_detection_factor_tt }
+			add_to_variable = { ENG_british_navy_convoy_escort_efficiency = 0.3 tooltip = convoy_escort_efficiency_tt }
+		}
+	}
+	focus = {
+		id = ENG_mid_atlantic_gap
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = ENG_watu }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ENG_watu
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			ENG_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_airforce_air_range_factor = 0.1 tooltip = air_range_factor_tt }
+			add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt }
 		}
 	}
 
@@ -4230,7 +4150,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_military_training_act
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}	

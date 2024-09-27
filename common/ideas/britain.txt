@@ -1920,6 +1920,26 @@ ideas = {
 
 			removal_cost = -1
 		}
+		ENG_medium_tanks = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+			
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
 
 		ENG_service_overseas_idea = {
 
