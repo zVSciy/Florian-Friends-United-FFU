@@ -1,6 +1,5 @@
 operations = {
 
-
 	SPA_SCW_ending = {
 
 		name = "The Spanish Civil War"
@@ -319,7 +318,6 @@ operations = {
 }
 foreign_politics = {
 	
-	}
 	SPA_civil_war = {
 
 		priority = 10
