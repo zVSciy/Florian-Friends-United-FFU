@@ -124,6 +124,12 @@ spriteTypes = {
 	}
 	
 	spriteType = { 
+		name = "GFX_unit_category_camelry"
+		textureFile = "gfx/interface/counters/divisions_large/unit_camelry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = { 
 		name = "GFX_unit_category_marines"
 		textureFile = "gfx/interface/counters/divisions_large/unit_marine_icon.dds"
 		noOfFrames = 2
@@ -170,7 +176,13 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_paratroop_icon.dds"
 		noOfFrames = 2
 	}
-	
+
+	spriteType = { 
+		name = "GFX_unit_category_camelry"
+		textureFile = "gfx/interface/counters/divisions_large/unit_camelry_icon.dds"
+		noOfFrames = 2
+	}
+
 	spriteType = { 
 		name = "GFX_unit_category_marines"
 		textureFile = "gfx/interface/counters/divisions_large/unit_marine_icon.dds"

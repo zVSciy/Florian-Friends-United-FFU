@@ -1030,8 +1030,12 @@ technologies = {
 		category_paratroopers = {
 			soft_attack = 0.05
 		}
+		category_camelry = {
+			soft_attack = 0.05
+		}
 		enable_subunits = {
 			paratrooper
+			camelry
 		}
 		
 		# allow = { 
@@ -1110,7 +1114,9 @@ technologies = {
 		category_paratroopers = {
 			initiative = 0.01
 		}
-		
+		category_camelry = {
+			initiative = 0.01
+		}
 		categories = {
 			special_forces_doctrine
 			para_tech
@@ -1159,6 +1165,12 @@ technologies = {
 				attack = 0.10
 			}
 		}
+
+		camelry = {
+			hills = {
+				attack = 0.05
+			}
+		}
 		
 		categories = {
 			special_forces_doctrine
@@ -1197,6 +1209,14 @@ technologies = {
 			}
 			urban = {
 				attack = 0.10
+			}
+		}
+		camelry = {
+			urban = {
+				attack = 0.05
+			}
+			town = {
+				attack = 0.05
 			}
 		}
 		
@@ -1257,7 +1277,14 @@ technologies = {
 				defense = 0.05
 			}
 		}
-			
+
+		signal_company = {
+			battalion_mult = {
+				category = category_camelry
+				defense = 0.05
+			}
+		}
+
 		doctrine = yes	
 		research_cost = 2.25
 		
@@ -1297,6 +1324,13 @@ technologies = {
 		field_hospital = {
 			battalion_mult = {
 				category = category_paratroopers
+				default_morale = 0.15
+			}
+		}
+
+		field_hospital = {
+			battalion_mult = {
+				category = category_camelry
 				default_morale = 0.15
 			}
 		}
@@ -1343,7 +1377,10 @@ technologies = {
 			max_organisation = 5
 			# supply_consumption = -0.02
 		}
-		
+		category_camelry = {
+			max_organisation = 5
+		}
+
 		acclimatization_hot_climate_gain_factor = 0.10
 		acclimatization_cold_climate_gain_factor = 0.10
 			
@@ -1421,7 +1458,9 @@ technologies = {
 		category_paratroopers = {
 			breakthrough = 0.15
 		}
-		
+		category_camelry = {
+			breakthrough = 0.15
+		}
 		special_forces_training_time_factor = 0.20
 			
 		doctrine = yes	
@@ -1460,6 +1499,10 @@ technologies = {
 		# special_forces_attack_factor = 0.10
 		
 		category_paratroopers = {
+			soft_attack = 0.10
+		}
+
+		category_camelry = {
 			soft_attack = 0.10
 		}
 

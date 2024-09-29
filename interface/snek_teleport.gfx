@@ -8,6 +8,13 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+	spriteType = { 
+		name = "GFX_unit_category_camelry_icon_small"
+		textureFile = "gfx/texticons/unit_camelry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
 	### MIO ###
 	spriteType = {
 		name = "GFX_mio_cat_eq_all_tank_variants"
