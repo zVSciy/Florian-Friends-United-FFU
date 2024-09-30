@@ -161,7 +161,7 @@ USA_detroit_arsenal_organization = {
 		all_parents = { generic_mio_trait_mass_production }
 
 		available = {
-			FROM = { has_completed_focus = USA_main_battle_tanks }
+			FROM = { has_completed_focus = USA_the_sherman }
 		}
 
 		equipment_bonus = {
