@@ -580,16 +580,12 @@ sub_units = {
 		training_time = 120
 		weight = 0.5
 
-		supply_consumption = 0.18
-		supply_consumption_factor = 0.04
+		supply_consumption = 0.12
+		supply_consumption_factor = 0.03
 		
 		forest = {
-			attack = -0.1
-			movement = -0.1
-		}
-
-		hills = {
-			movement = -0.05
+			attack = 0.05
+			movement = 0.05
 		}
 
 		mountain = {
@@ -601,8 +597,8 @@ sub_units = {
 		}
 
 		jungle = {
-			attack = -0.15
-			movement = -0.1
+			attack = 0.05
+			movement = 0.05
 		}
 
 		marsh = {
@@ -620,15 +616,15 @@ sub_units = {
 		}
 
 		amphibious = {
-			attack = -0.2
+			attack = -0.1
 		}
 		
 		urban = {
-			attack = 0.2
+			attack = 0.15
 		}
 		
 		dense_urban = {
-			attack = 0.4
+			attack = 0.30
 		}
 		
 		town = {

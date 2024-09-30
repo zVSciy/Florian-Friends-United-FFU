@@ -1486,18 +1486,18 @@ technologies = {
 		
 		research_cost = 1
 		
-		start_year = 1942
+		start_year = 1941
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 15 y = 12 }
+			position = { x = 15 y = 10 }
 		}
 
 		categories = {
 			rocketry
 			artillery
 			mio_cat_all_artillery_equipment
-			year_1942
+			year_1941
 		}
 	}
 	
@@ -1518,18 +1518,18 @@ technologies = {
 
 		research_cost = 2.0
 
-		start_year = 1944
+		start_year = 1943
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 15 y = 16 }
+			position = { x = 15 y = 14 }
 		}
 	
 		categories = {
 			rocketry
 			artillery
 			mio_cat_all_artillery_equipment
-			year_1944
+			year_1943
 		}
 	}
 
@@ -1545,18 +1545,18 @@ technologies = {
 		
 		research_cost = 1
 		
-		start_year = 1944
+		start_year = 1943
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 13 y = 16 }
+			position = { x = 13 y = 14 }
 		}
 
 		categories = {
 			rocketry
 			artillery
 			mio_cat_all_artillery_equipment
-			year_1944
+			year_1943
 		}
 	}
 
