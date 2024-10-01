@@ -123,7 +123,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RAJ_go_with_the_Empire }
 		x = -5
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = RAJ_anti_corruption_laws
 
 		ai_will_do = {
@@ -173,13 +173,13 @@ focus_tree = {
 		icon = GFX_focus_generic_court
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = RAJ_start_quit_india_movement }
 		relative_position_id = RAJ_start_quit_india_movement
 
 		completion_reward = {
 			remove_ideas = RAJ_Political_corruption_1
-			add_stability = 0.2
+			add_stability = 0.1
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -288,7 +288,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_open_the_new_mines
 		icon = GFX_focus_generic_steel
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		prerequisite = { focus = RAJ_declare_the_republic_of_india }
@@ -322,15 +322,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		prerequisite = { focus = RAJ_open_the_new_mines }
-		relative_position_id = RAJ_open_the_new_mines
+		prerequisite = { focus = RAJ_declare_the_republic_of_india }
+		relative_position_id = RAJ_declare_the_republic_of_india
 
 		completion_reward = {
 			439 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -351,7 +351,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_expand_the_military
 		icon = GFX_focus_generic_combined_arms
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		prerequisite = { focus = RAJ_declare_the_republic_of_india }
@@ -359,10 +359,10 @@ focus_tree = {
 		
 		completion_reward = {
 			428 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -382,22 +382,15 @@ focus_tree = {
 		icon = GFX_focus_eng_the_sun_never_sets
 		x = 5
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = RAJ_anti_corruption_laws }
 		mutually_exclusive = { focus = RAJ_start_quit_india_movement }
 		relative_position_id = RAJ_anti_corruption_laws
 
 		completion_reward = {
-			# custom_effect_tooltip = raj_bengal_famine_tt
-			add_stability = -0.05
 			swap_ideas = {
 				remove_idea = RAJ_British_Investment_1
 				add_idea = RAJ_British_Investment_2
-			}
-		    remove_ideas = RAJ_the_dream_of_free_india
-			add_timed_idea = {
-				idea = RAJ_strikes_for_independence
-				days = 210
 			}
 		}
 		continue_if_invalid = yes
@@ -415,7 +408,7 @@ focus_tree = {
 		icon = GFX_focus_generic_monarchy_2
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = RAJ_go_with_the_Empire }
 		relative_position_id = RAJ_go_with_the_Empire
 
@@ -479,16 +472,29 @@ focus_tree = {
 		completion_reward = {
 			RAJ = {
 				set_cosmetic_tag = RAJ_british_far_east
-				transfer_state = 733 # andaman
-				transfer_state = 281 # maldives
+				transfer_state = 733
+				transfer_state = 281
+				transfer_state = 422
+				transfer_state = 658
+				transfer_state = 765
+				transfer_state = 294
+				transfer_state = 659
+				transfer_state = 709
+				transfer_state = 906
+				transfer_state = 710
+				add_state_core = 288
+				add_state_core = 640
+				add_state_core = 442
+				add_state_core = 281
+				add_state_core = 733
 			}
-			add_stability = 0.05
-			add_war_support = 0.1
+			add_stability = 0.15
+			add_war_support = 0.15
 			435 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -625,7 +631,7 @@ focus_tree = {
 		relative_position_id = RAJ_pass_the_dominion_bill
 		x = -5
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 30
 		}
@@ -1508,29 +1514,21 @@ focus_tree = {
 
 		completion_reward = {
 			430 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					province = 11968
 					level = 3
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					province = 11968
 					level = 2
 					instant_build = yes
 				}
 			}
-			431 = {
-                add_building_construction = {
-					type = coastal_bunker
-					province = 4245
-					level = 3
-					instant_build = yes
-				}
-			}
 			423 = {
-                add_building_construction = {
+                set_building_level = {
 					type = coastal_bunker
 					province = 10278
 					level = 2
@@ -1538,7 +1536,7 @@ focus_tree = {
 				}
 			}
 			429 = {
-                add_building_construction = {
+                set_building_level = {
 					type = coastal_bunker
 					province = 1349
 					level = 2
@@ -1546,7 +1544,7 @@ focus_tree = {
 				}
 			}
 			428 = {
-                add_building_construction = {
+                set_building_level = {
 					type = coastal_bunker
 					province = 9975
 					level = 1
@@ -1554,7 +1552,7 @@ focus_tree = {
 				}
 			}
 			443 = {
-                add_building_construction = {
+                set_building_level = {
 					type = coastal_bunker
 					province = 3456
 					level = 1
@@ -1562,7 +1560,7 @@ focus_tree = {
 				}
 			}
 			422 = {
-                add_building_construction = {
+                set_building_level = {
 					type = coastal_bunker
 					province = 10201
 					level = 3
@@ -1570,7 +1568,7 @@ focus_tree = {
 				}
 			}
 			281 = {
-                add_building_construction = {
+                set_building_level = {
 					type = coastal_bunker
 					province = 4967
 					level = 3
@@ -1605,11 +1603,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			288 = {
-				add_building_construction = {
-					type = air_base
-					level = 5
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = bunker
 					province = 4336
@@ -1667,13 +1660,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			432 = {
-				add_building_construction = {
-					type = air_base
-					level = 5
-					instant_build = yes
-				}
-			}
 		}
 	}
 	focus = {
@@ -1703,26 +1689,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			431 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					province = 9991
-					level = 2
-					instant_build = yes
-				}
-			}
-			324 = {
-				add_building_construction = {
-					type = air_base
-					level = 3
-					instant_build = yes
-				}
-			}
 			432 = {
 				add_building_construction = {
 					type = bunker
