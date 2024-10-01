@@ -105,7 +105,7 @@ focus_tree = {
 			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -365,8 +365,8 @@ focus_tree = {
 			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = AST_hmas_assault
-				cost_reduction = 0.25
-				uses = 1
+				cost_reduction = 0.75
+				uses = 3
 				category = land_doctrine
 			}
 			add_tech_bonus = {
@@ -732,9 +732,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AST_z_special_unit
 				bonus = 0.75
-				uses = 1
+				uses = 3
 				category = marine_tech
 				category = para_tech
+				category = mountaineers_tech
 			}
 			add_ideas = AST_z_special_unit_idea
 		}

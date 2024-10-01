@@ -36,7 +36,7 @@ focus_tree = {
 
 	shared_focus = COM_commonwealth_command
 
-	continuous_focus_position = { x = 2450 y = 700 }
+	continuous_focus_position = { x = 1150 y = 950 }
 
 	############################
 	## THE BIG QUEEN SECTION ###
@@ -583,7 +583,7 @@ focus_tree = {
 			ENG = {
 				add_timed_idea = {
 					idea = ENG_far_east_military_investment
-					days = 365
+					days = 730
 				}
 			}
 		}
@@ -874,7 +874,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_lessons_of_the_great_war
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 19
+		x = 32
 		y = 0
 		cost = 5
 
@@ -900,11 +900,11 @@ focus_tree = {
 		relative_position_id = RAJ_lessons_of_the_great_war
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 75
 			add_doctrine_cost_reduction = {
 				name = RAJ_lessons_of_the_great_war
-				cost_reduction = 0.40
-				uses = 1
+				cost_reduction = 0.75
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1079,7 +1079,7 @@ focus_tree = {
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = RAJ_lessons_of_the_great_war
-				cost_reduction = 0.30
+				cost_reduction = 0.5
 				uses = 3
 				category = land_doctrine
 			}
@@ -2123,7 +2123,7 @@ focus_tree = {
 		id = RAJ_far_east_development_plan
 		icon = GFX_focus_generic_improve_the_administration
 		x = 19
-		y = 7
+		y = 0
 		cost = 5
 
 		ai_will_do = {
