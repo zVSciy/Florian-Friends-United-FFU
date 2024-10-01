@@ -3590,13 +3590,15 @@ focus_tree = {
 		continue_if_invalid = yes
 		
 		completion_reward = {
-			# 100 = {
-			# 	set_building_level = {
-			# 		type = air_base
-			# 		level = 50
-			# 		instant_build = yes
-			# 	}
-			# }
+			hidden_effect = {
+			 100 = {
+			 	set_building_level = {
+			 		type = gib_air_base
+			 		level = 50
+			 		instant_build = yes
+				}
+			 }
+			}
 
 			USA = {
 				add_offsite_building = {
