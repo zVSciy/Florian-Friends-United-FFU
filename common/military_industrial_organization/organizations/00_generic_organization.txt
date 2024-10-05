@@ -90,7 +90,7 @@ generic_tank_organization = {
 			build_cost_ic = -0.03
 		}
 	}
-
+ 
 	trait = {
 		token = generic_mio_trait_simplified_suspension
 		name = generic_mio_trait_simplified_suspension

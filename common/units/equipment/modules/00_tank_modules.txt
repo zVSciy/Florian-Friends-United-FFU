@@ -773,7 +773,7 @@ equipment_modules = {
 			reliability = 0.075
 		}
 	    multiply_stats = {
-		   build_cost_ic = -0.025
+		   build_cost_ic = -0.05
 	    }
 	    dismantle_cost_ic = 2
 		multiply_stats = {
@@ -4062,11 +4062,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.05
-			build_cost_ic = 1
+			reliability = 0.1
 		}
 
-		multiply_stats = {  }
+		multiply_stats = { 
+			build_cost_ic = -0.05
+		 }
 		
 		dismantle_cost_ic = 1
 	}

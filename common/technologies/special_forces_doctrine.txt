@@ -486,6 +486,7 @@ technologies = {
 		
 		# marines_special_forces_contribution_factor = -0.25
 		naval_invasion_capacity = 5
+		naval_invasion_planning_bonus_speed = 0.05
 		category_marines = {
 			soft_attack = 0.05
 		}
@@ -986,6 +987,8 @@ technologies = {
 
 		extra_marine_supply_grace = 24
 		naval_invasion_capacity = 5 #10
+		naval_invasion_planning_bonus_speed = 0.15
+
 			
 		doctrine = yes	
 		research_cost = 2.25
