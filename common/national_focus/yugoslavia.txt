@@ -10,7 +10,7 @@
 #!gfx:interface\replace\bruh_ita_interface.gfx
 #!gfx:interface\replace\bruh_jap_interface.gfx
 #!gfx:interface\replace\bruh_nsb_interface.gfx
-#!gfx:interface\replace\bruh_sov_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx 
 
 focus_tree = {
 	id = yugoslavian_focus
@@ -1323,7 +1323,7 @@ focus_tree = {
 				GER = {
 					has_war_with = ENG
 				}
-				date > 1939.8.1
+				date > 1939.5.1
 			}
 			has_completed_focus = YUG_invite_german_military_mission
 		}
@@ -1343,6 +1343,9 @@ focus_tree = {
 			# ITA = {
 			# 	give_guarantee = YUG
 			# }
+			GER = {
+				add_to_faction = ROOT
+			}
 			add_political_power = 150
 		}
 	}
@@ -1553,9 +1556,7 @@ focus_tree = {
 			# GER = {
 			# 	country_event = generic.2
 			# }
-			GER = {
-				add_to_faction = ROOT
-			}
+			
 			# custom_effect_tooltip = yugo_into_croatia_tt
 			YUG = {
 				set_cosmetic_tag = YUG_croatia
@@ -2290,9 +2291,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = YUG_idea_slovene_nationalism
-			}
+			has_completed_focus = YUG_Under_New_Regime
 		}
 
 		bypass = {

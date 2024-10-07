@@ -21,7 +21,7 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 ### search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 ### search_filters = {FOCUS_FILTER_SPA_CARLIST_UPRISING}
-### search_filters = {FOCUS_FILTER_SPA_ANARCHIST_UPRISING}
+### search_filters = {FOCUS_FILTER_SPA_ANARCHIST_UPRISING} 
 
 focus_tree = {
 	id = spanish_focus
@@ -800,6 +800,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			GER = {
+				add_to_faction = ROOT
+			}
 			add_ideas = SPA_fascist_economic_aid
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war
@@ -2748,9 +2751,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			GER = {
-				add_to_faction = ROOT
-			}
+			
 			add_ideas = SPA_la_division_azul
 			custom_effect_tooltip = "The Spanish Fleet will be disbanded"
 			hidden_effect = {
