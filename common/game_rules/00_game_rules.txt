@@ -676,12 +676,12 @@ allow_leave_faction = {
 	name = "RULE_ALLOW_LEAVE_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_leave_faction"
-	default = {
+	option = {
 		name = "ALLOWED"
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_LEAVE_FACTION_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = "BLOCKED"
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_LEAVE_FACTION_BLOCKED_DESC"
@@ -697,7 +697,7 @@ allow_kick_faction = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_KICK_FACTION_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = "BLOCKED"
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_KICK_FACTION_BLOCKED_DESC"

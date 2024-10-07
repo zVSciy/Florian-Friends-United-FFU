@@ -1675,3 +1675,159 @@ country_event = {
 		hidden_effect = { set_technology = { FRA_elevated = 1 } }
 	}
 }
+
+country_event = {
+	id = france.501
+	title = france.501.t
+	desc = france.501.d
+	picture = GFX_report_event_generic_funeral
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.501.a
+		hidden_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Last Stand of Egypt"
+					is_locked = no
+					regiments = {
+						mountaineers = { x = 0 y = 0 }
+						mountaineers = { x = 0 y = 1 }
+						mountaineers = { x = 0 y = 2 }
+						mountaineers = { x = 0 y = 3 }
+				
+						mountaineers = { x = 1 y = 0 }
+						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 1 y = 2 }
+						mountaineers = { x = 1 y = 3 }
+				
+						mountaineers = { x = 2 y = 0 }
+						mountaineers = { x = 2 y = 1 }
+						mountaineers = { x = 2 y = 2 }
+				
+						pack_artillery_brigade = { x = 3 y = 0 }
+						pack_artillery_brigade = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 3 y = 2 }
+						pack_artillery_brigade = { x = 3 y = 3 }
+						
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 2 }
+						pack_artillery_brigade = { x = 4 y = 3 }
+					}
+
+					support = {
+						pioneer_support = { x = 0 y = 0 }   
+						anti_air = { x = 0 y = 1 }
+						hq_company = { x = 0 y = 2 }
+						logistics_company_mot = { x = 0 y = 3 }
+
+						rangers_support = { x = 1 y = 0 }
+						military_police = { x = 1 y = 1 }
+						signal_company = { x = 1 y = 2 }
+					}
+				}
+				# 12 Spawn Ins
+				905 = {
+					if = {					
+						limit = { is_controlled_by = ENG }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+					}
+				}
+				904 = {
+					if = {					
+						limit = { is_controlled_by = ENG }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = FRA_mnt_30w_tt
+	}
+
+	option = {
+		name = france.501.b
+		hidden_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Last Stand of Egypt"
+					is_locked = no
+					regiments = {
+						camelry = { x = 0 y = 0 }
+						camelry = { x = 0 y = 1 }
+						camelry = { x = 0 y = 2 }
+						camelry = { x = 0 y = 3 }
+				
+						camelry = { x = 1 y = 0 }
+						camelry = { x = 1 y = 1 }
+						camelry = { x = 1 y = 2 }
+						camelry = { x = 1 y = 3 }
+				
+						camelry = { x = 2 y = 0 }
+						camelry = { x = 2 y = 1 }
+						camelry = { x = 2 y = 2 }
+				
+						pack_artillery_brigade = { x = 3 y = 0 }
+						pack_artillery_brigade = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 3 y = 2 }
+						pack_artillery_brigade = { x = 3 y = 3 }
+						
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 2 }
+						pack_artillery_brigade = { x = 4 y = 3 }
+					}
+
+					support = {
+						pioneer_support = { x = 0 y = 0 }   
+						anti_air = { x = 0 y = 1 }
+						hq_company = { x = 0 y = 2 }
+						logistics_company_mot = { x = 0 y = 3 }
+
+						rangers_support = { x = 1 y = 0 }
+						military_police = { x = 1 y = 1 }
+						signal_company = { x = 1 y = 2 }
+					}
+				}
+				# 12 Spawn Ins
+				905 = {
+					if = {					
+						limit = { is_controlled_by = ENG }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+					}
+				}
+				904 = {
+					if = {					
+						limit = { is_controlled_by = ENG }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = FRA_cml_30w_tt
+	}
+}
+

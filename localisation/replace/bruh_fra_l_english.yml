@@ -94,6 +94,9 @@
   FRA_remove_pre_cap_buffs:0 "§YRemoves pre-capitulation buffs§!"
   fra_usa_tank_post_cap_tt:0 "§RCan only be researched by Free France after France capitulates§!"
   FRA_15_africa_spawn_in_tt:0 "Mobilizes §Y15 Units§! of §Y30 Width Infantry§!\n"
+  FRA_mnt_30w_tt:0 "The last hope of Egypt is here. Spawns in §G12 Mountaineers"
+  FRA_cml_30w_tt:0 "The last hope of Egypt is here. Spawns in §G12 Camelry"
+
 
   #### DECISIONS ####
   FRA_move_capital:0 "Move Capital to Central Africa"
@@ -142,6 +145,10 @@
   france.500.a:0 "We should focus on Brush"
   france.500.b:0 "We should focus on Open Ground"
   france.500.c:0 "We should focus on Elevation"
+  france.501.t:0 "The last hope of egypt!"
+  france.501.d:0 "With war breaking out in Europe, the Suez canal must be protected at all cost! Pick your best chance to fight back against the axis threat."
+  france.501.a:0 "MOUNTAINEERS"
+  france.501.b:0 "CAMELS"
 
   #### TECHNOLOGIES ####
   #FRA_slacken_inf_tt:0 "§GReduces the cost of all infantry battalions by 20 guns and 5 squad equipment as well as Garrisons/Militia by 15 guns§!"

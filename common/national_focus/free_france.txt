@@ -50,6 +50,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			country_event = france.501
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 250
@@ -1426,8 +1427,8 @@ focus_tree = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
-			
+		prerequisite = {
+
 		}
 		
 		cost = 5
@@ -1435,6 +1436,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			has_completed_focus = FRA_appeal_to_the_french_nation
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"

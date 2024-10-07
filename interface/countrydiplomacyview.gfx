@@ -129,11 +129,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
 	}
 
-	spriteType = {
-		name = "GFX_diplo_action_invite_to_faction_bg"
-		textureFile = "gfx//interface//diplo_action_invite_to_faction_bg.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
-	}
 
 	spriteType = {
 		name = "GFX_diplo_action_guarantee_independence_bg"
