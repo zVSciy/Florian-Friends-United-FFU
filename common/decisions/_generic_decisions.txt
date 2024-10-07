@@ -29,14 +29,14 @@ host_decisions = {
 		}
 
 	}
-
+ 
 	hotjoin_incoming = {
 		available = {
             always = yes
         }
-        fire_only_once = yes
+        fire_only_once = no
         cost = 0
-
+		days_remove = 2
         ai_will_do = {
             factor = 0  # Ensure AI does not trigger this
         }
