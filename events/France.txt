@@ -1690,6 +1690,8 @@ country_event = {
 		name = france.501.a
 		hidden_effect = {
 			hidden_effect = {
+				set_technology = { heavy_antitank = 1 }
+				set_technology = { antitank2 = 1 }
 				division_template = {
 					name = "Last Stand of Egypt"
 					is_locked = no
@@ -1721,7 +1723,7 @@ country_event = {
 
 					support = {
 						pioneer_support = { x = 0 y = 0 }   
-						anti_air = { x = 0 y = 1 }
+						heavy_anti_air = { x = 0 y = 1 }
 						hq_company = { x = 0 y = 2 }
 						logistics_company_mot = { x = 0 y = 3 }
 
@@ -1755,6 +1757,7 @@ country_event = {
 				}
 			}
 		}
+		
 		custom_effect_tooltip = FRA_mnt_30w_tt
 	}
 
@@ -1762,6 +1765,8 @@ country_event = {
 		name = france.501.b
 		hidden_effect = {
 			hidden_effect = {
+				set_technology = { heavy_antitank = 1 }
+				set_technology = { antitank2 = 1 }
 				division_template = {
 					name = "Last Stand of Egypt"
 					is_locked = no
@@ -1780,20 +1785,20 @@ country_event = {
 						camelry = { x = 2 y = 1 }
 						camelry = { x = 2 y = 2 }
 				
-						pack_artillery_brigade = { x = 3 y = 0 }
+						pack_artillery_brigade = { x = 3 y = 0 } 
 						pack_artillery_brigade = { x = 3 y = 1 }
 						pack_artillery_brigade = { x = 3 y = 2 }
 						pack_artillery_brigade = { x = 3 y = 3 }
 						
-						pack_artillery_brigade = { x = 4 y = 0 }
-						pack_artillery_brigade = { x = 4 y = 1 }
-						pack_artillery_brigade = { x = 4 y = 2 }
-						pack_artillery_brigade = { x = 4 y = 3 }
+						anti_tank_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+						anti_tank_brigade = { x = 4 y = 3 }
 					}
 
 					support = {
 						pioneer_support = { x = 0 y = 0 }   
-						anti_air = { x = 0 y = 1 }
+						heavy_anti_air = { x = 0 y = 1 }
 						hq_company = { x = 0 y = 2 }
 						logistics_company_mot = { x = 0 y = 3 }
 
