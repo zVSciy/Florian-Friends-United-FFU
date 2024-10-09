@@ -2647,10 +2647,8 @@ focus_tree = {
 					add_idea = vittoria_mutilata2
 				}
 			}
+
 			add_to_tech_sharing_group = axis_research
-			# GER = {
-			# 	add_to_faction = ROOT
-			# }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ITA_vincere_prop
 		}
@@ -2895,9 +2893,25 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
+			451 = {
+				set_building_level = {
+					type = naval_base
+					level = 10
+					province = 1130
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				path = { 9904 11846 923 9826 11803 883 6843 9784 11837 }
+				level = 5
+			}
+
+			build_railway = {
+				path = { 10120 4136 1130 9992 7082 1204 4151 12094 10123 11954 1062 12079 9977 13278 11951 1060 }
+				level = 5
+			}		
 		}
-		
 	}
 	
 	focus = {
@@ -2917,6 +2931,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+
 			every_controlled_state = {
 				limit = {
 					is_core_of = YUG

@@ -2703,17 +2703,11 @@ focus_tree = {
 					province = 4076
 					instant_build = yes
 				}
-				add_building_construction= {
-					type = bunker
-					level = 1
-					province = 4076
-					instant_build = yes
+				set_building_level = {
+					type = air_base
+				 	level = 10
+				 	instant_build = yes
 				}
-				# set_building_level = {
-				# 	type = air_base
-				# 	level = 5
-				# 	instant_build = yes
-				# }
 				add_building_construction = {
 					type = anti_air_building
 					level = 2
@@ -2727,21 +2721,9 @@ focus_tree = {
 					province = 12049
 					instant_build = yes
 				}
-				add_building_construction= {
-					type = bunker
-					level = 1
-					province = 12049
-					instant_build = yes
-				}
 				set_building_level = {
 					type = coastal_bunker
 					level = 3
-					province = 4073
-					instant_build = yes
-				}
-				add_building_construction= {
-					type = bunker
-					level = 1
 					province = 4073
 					instant_build = yes
 				}
@@ -2753,38 +2735,14 @@ focus_tree = {
 			}
 			947 = {
 				set_building_level = {
-					type = bunker
-					level = 3
-					province = 1155
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 9947
-					instant_build = yes
-				}
-				set_building_level = {
 					type = coastal_bunker
 					level = 3
-					province = 1155
-					instant_build = yes
-				}
-				add_building_construction= {
-					type = bunker
-					level = 1
 					province = 1155
 					instant_build = yes
 				}
 				set_building_level = {
 					type = coastal_bunker
 					level = 3
-					province = 9947
-					instant_build = yes
-				}
-				add_building_construction= {
-					type = bunker
-					level = 1
 					province = 9947
 					instant_build = yes
 				}
@@ -2796,130 +2754,34 @@ focus_tree = {
 			}
 			936 = {
 				set_building_level = {
-					type = bunker
-					level = 4
-					province = 1071
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 4
-					province = 13291
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 13295
-					instant_build = yes
+					type = air_base
+				 	level = 8
+				 	instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 			}
-			452 = {
+			907 = {
 				set_building_level = {
-					type = bunker
-					level = 3
-					province = 13334
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 10061
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 13290
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 12033
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 12091
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 13285
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 7148
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 13283
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 13289
-					instant_build = yes
-				}
-				set_building_level = {
-					type = coastal_bunker
-					level = 3
-					province = 13334
-					instant_build = yes
-				}
-				add_building_construction= {
-					type = bunker
+					type = supply_node
+					province = 992
 					level = 1
-					province = 13334
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
+				set_building_level = {
+					type = supply_node
+					province = 4055
+					level = 1
 					instant_build = yes
 				}
 			}
 			447 = {
 				set_building_level = {
-					type = bunker
-					level = 3
-					province = 7091
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 10073
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 10005
-					instant_build = yes
-				}
-				set_building_level = {
 					type = coastal_bunker
 					level = 3
-					province = 12002
-					instant_build = yes
-				}
-				add_building_construction= {
-					type = bunker
-					level = 1
 					province = 12002
 					instant_build = yes
 				}
@@ -2931,23 +2793,11 @@ focus_tree = {
 					province = 10099
 					instant_build = yes
 				}
-				add_building_construction= {
-					type = bunker
-					level = 1
-					province = 10099
-					instant_build = yes
-				}
 			}
 			454 = {
 				set_building_level = {
 					type = coastal_bunker
 					level = 3
-					province = 4206
-					instant_build = yes
-				}
-				add_building_construction= {
-					type = bunker
-					level = 1
 					province = 4206
 					instant_build = yes
 				}
@@ -2959,46 +2809,14 @@ focus_tree = {
 					province = 12725
 					instant_build = yes
 				}
-				add_building_construction= {
-					type = bunker
-					level = 1
-					province = 12725
-					instant_build = yes
-				}
 			}
-			907 = {
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 7011
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 12004
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 4143
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 7188
-					instant_build = yes
-				}
+			build_railway = {
+				path = { 4076 4145 992 13291 }
+				level = 5
 			}
-			445 = {
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 1544
-					instant_build = yes
-				}
+			build_railway = {
+				path = { 4055 4143 10126 9957 12002 }
+				level = 5
 			}
 		}
 	}
