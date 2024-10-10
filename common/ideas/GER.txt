@@ -248,6 +248,21 @@ ideas = {
 				}
 			}
 		}
+		GER_spain_trade_got_cooked = {			
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = SPR
+				trade_cost_for_target_factor = -0.35
+			}
+		}
 
 		GER_greater_german_reich_idea = {			
 			

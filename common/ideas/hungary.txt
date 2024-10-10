@@ -39,7 +39,22 @@ ideas = {
 				air_night_penalty = -0.10
 				air_range_factor = 0.10
 			}
-		}	
+		}
+		HUN_hungarian_investments = {			
+			
+			allowed = {
+				original_tag = "HUN"
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.75
+			}
+		}
 	
 		HUN_anti_bolshevism = {
 			picture = generic_manpower_bonus

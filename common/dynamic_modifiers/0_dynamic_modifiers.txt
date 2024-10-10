@@ -525,7 +525,7 @@ unplanned_offensive = {
 ROM_unintegrated_territory = {
 	icon = GFX_idea_POL_disjointed_industry
 
-	production_speed_buildings_factor = -0.4
+	production_speed_buildings_factor = -0.2
 	recruitable_population_factor = -0.8
 }
 
@@ -538,7 +538,7 @@ ROM_ongoing_integration = {
 ROM_transnistria_governorate = {
 	icon = GFX_idea_ROM_iron_guard
 
-	production_speed_buildings_factor = 0.4
+	production_speed_buildings_factor = 0.6
 	recruitable_population_factor = -0.2
 }
 ####

@@ -17,7 +17,7 @@
   ITA_german_industrial_cooperation_desc:0 "The heart of the nation may lay with the people, but only in industry may we find the soul. This is an unsettling analogy."
   ITA_integrate_economies:0 "Integrate the Economies"
   ITA_integrate_economies_desc:0 "None have proven as reliable as the Germans in terms of industrial might and consistency, the two most important factors in a partner. Let this romance blossom."
-  ITA_balkan_trade:0 "Balkan Cooperation"
+  ITA_balkan_trade:0 "European Cooperation"
   ITA_balkan_trade_desc:0 "We are certain Hitler wouldn't mind us picking up some extra friends on the side. The Balkans might just spice things up."
   ITA_romanian_cooperation:0 "Romanian Trade Treaty"
   ITA_romanian_cooperation_desc:0 "When searching for a partner, one should consider what one lacks. After all, the spark of friendship oftentimes grows into much more."
@@ -40,6 +40,7 @@
   ITA_sulcis_basin:0 "Expand the Sulcis Basin" #not a focus
   ITA_elba_mines:0 "Expand the Elba Mines"
   ITA_elba_mines_desc:0 "The northern Elba Mines are some of the most productive in Italy. We would do well to capitalize on this."
+  
   ITA_focus_mil_expansion:0 "Expand Military Production"
   ITA_focus_mil_expansion_desc:0 "True independence may be a myth, but if you're forced to cooperate, you need to have a place to vent your anger. Perhaps through the barrel of a rifle."
   ITA_steel_production:0 "Take Over the Steel Industry"
@@ -377,7 +378,7 @@
   ITA_nationalisation:0 "Industrial Nationalisation"
   ITA_farming:0 "Agricultural Boom"
   ITA_bank_loans_idea:0 "Bank Loans"
-  ITA_german_investments:0 "German Investments"
+  ITA_german_investments:0 "German Economic Aid"
   ITA_romanian_payments:0 "Romanian Payments"
   ITA_german_payments:0 "German Payments"
   ITA_europe_trade:0 "Intercontinental Trade"
@@ -392,6 +393,10 @@
   SPA_spanish_civil_war_commitments_2:0 "Spanish Civil War Commitments (No Asia)"
   ITA_axis_research_group:0 "Axis Research Group"
   ITA_no_asia_buff:0 "No Asia Buff"
+  ITA_ger_investments:0 "Trade Treaty With Germany"
+  ITA_bul_investments:0 "Trade Treaty With Bulgaria"
+  ITA_rom_investments:0 "Trade Treaty With Romania"
+  ITA_hun_investments:0 "Trade Treaty with Hungary"
   
   ### DYNAMIC MODIFIERS ###
   ITA_economy_dynamic_modifier:0 "[ITA_economy_dynam_mod_sl]"
@@ -403,8 +408,6 @@
   ITA_german_investments_tt:0 "[ITA_german_investments_sl]"
   ITA_german_investments_0_tt:0 ""
   ITA_german_investments_25_tt:0 "([GER.GetFlag]§Y[GER.GetName]§!)£trade_texticon  Target country trade cost: §G-25.00%§!"
-  ITA_german_investments_25_ftt:0 "  ([GER.GetFlag]§Y[GER.GetName]§!)£trade_texticon  Target country trade cost: §G-25.00%§!"
-
   ITA_army_dynamic_modifier:0 "[ITA_army_dynam_mod_sl]"
   ITA_modify_italian_army_ns_intro:0 "Modify §Y$ITA_army_dynamic_modifier$§! by"
   ITA_modify_army_regio_esercito:0 "Regio Esercito"

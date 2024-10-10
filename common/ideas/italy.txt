@@ -17,6 +17,21 @@ ideas = {
 		ITA_german_investments = {			
 			
 			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+		ITA_hungarian_investments = {			
+			
+			allowed = {
 				original_tag = "ITA"
 			}
 			
@@ -25,12 +40,9 @@ ideas = {
 			picture = generic_economic_increase
 			
 			targeted_modifier = {
-				tag = GER
-				trade_cost_for_target_factor = -0.25
+				tag = HUN
+				trade_cost_for_target_factor = -0.75
 			}
-			# modifier = {
-			# 	consumer_goods_factor = -0.09
-			# }
 		}
 
 		ITA_no_asia_buff = {			

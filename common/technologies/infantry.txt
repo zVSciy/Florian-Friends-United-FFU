@@ -2274,13 +2274,13 @@ technologies = {
 			}
 
 			fort = {
-				attack = 0.20
+				attack = 0.05
 				defence = 0.05
 				movement = 0.05
 			}
 			
 			night = {
-				attack = 0.15
+				attack = 0.075
 			}
 		}
 		

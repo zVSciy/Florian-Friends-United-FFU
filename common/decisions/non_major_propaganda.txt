@@ -1273,7 +1273,6 @@ COM_propaganda_campaigns = {
 				}
 				OR = {
 					surrender_progress > 0.25
-					casualties > 300000
 				}
 			}
 		}

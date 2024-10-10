@@ -20,7 +20,22 @@ ideas = {
 				}
 			}
 
-		}	
+		}
+		ROM_romanian_investments = {			
+			
+			allowed = {
+				original_tag = "ROM"
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.75
+			}
+		}
 	
 		ROM_national_struggle = {
 

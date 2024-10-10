@@ -1949,6 +1949,21 @@ ideas = {
 				democratic_drift = 0.05
 			}
 		}
+		BUL_bulgarian_investments = {			
+			
+			allowed = {
+				original_tag = "BUL"
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.75
+			}
+		}
 
 		BUL_new_cavalry = {
 			allowed = {
