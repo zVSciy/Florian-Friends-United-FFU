@@ -538,7 +538,7 @@ ROM_ongoing_integration = {
 ROM_transnistria_governorate = {
 	icon = GFX_idea_ROM_iron_guard
 
-	production_speed_buildings_factor = 0.6
+	state_production_speed_buildings_factor = 0.4
 	recruitable_population_factor = -0.2
 }
 ####
