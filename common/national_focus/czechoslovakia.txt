@@ -1856,7 +1856,14 @@ focus_tree = {
 			GER = {add_war_support = 0.1}
 			FRA = {add_war_support = 0.1}
 			ENG = {add_war_support = 0.1}
-			
+			hidden_effect = {
+				GER = {
+					set_technology = { ger_cze_tank_1 = 1 }
+				}
+				GER = {
+					set_technology = { ger_cze_tank_2 = 1 }
+				}
+			}
 		}
 	}
 
@@ -1890,7 +1897,6 @@ focus_tree = {
 			add_stability = 0.05
 			add_war_support = 0.1 }
 			add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
-			
 		}
 	}
 

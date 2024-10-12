@@ -2,36 +2,35 @@
 
 operations = {
 
-	GER_africa_prepare = {
+#	GER_africa_prepare = {
+#		icon = generic_air
+#		
+#		available = {
+#			452 = {
+#				is_controlled_by_ROOT_or_ally = yes	
+#			}
+#		}
+#		fire_only_once = yes
 
-		icon = generic_air
-		
-		available = {
-			452 = {
-				is_controlled_by_ROOT_or_ally = yes	
-			}
-		}
-		fire_only_once = yes
+#		ai_will_do = {
+#			factor = 0
+#		}
 
-		ai_will_do = {
-			factor = 0
-		}
+#		days_mission_timeout  = 20
+#   	selectable_mission = yes
 
-		days_mission_timeout  = 20
-    	selectable_mission = yes
+#		modifier = {
+#			planning_speed = 0.1
+#			army_org_regain = 0.05
+#			org_loss_when_moving = -0.05
+#			max_planning = 0.02
+#			supply_consumption_factor = -0.1
+#		}
 
-		modifier = {
-			planning_speed = 0.1
-			army_org_regain = 0.05
-			org_loss_when_moving = -0.05
-			max_planning = 0.02
-			supply_consumption_factor = -0.1
-		}
-
-		timeout_effect = {
-			set_country_flag = GER_prepeared
-		}
-	}
+#		timeout_effect = {
+#			set_country_flag = GER_prepeared
+#		}
+#	}
 
 	# GER_attack_africa = {
 
