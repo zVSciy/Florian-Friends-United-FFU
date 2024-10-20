@@ -3634,14 +3634,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_lessons
-				bonus = 0.50
-				uses = 2
+				bonus = 0.75
+				uses = 1
 				category = infantry_weapons
 			}
 			# add_potential_special_forces_tree = yes
 			# add_ideas = JAP_expand_the_army
 			JAP_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { JAP_japanese_army_training_time_army_factor = -0.3 tooltip = training_time_army_factor_tt }
+			add_to_variable = { JAP_japanese_army_training_time_army_factor = -0.4 tooltip = training_time_army_factor_tt }
 		}
 	}
 	
@@ -3663,14 +3663,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_lessons
 				bonus = 0.50
-				uses = 2
+				uses = 4
 				category = marine_tech
 				category = tp_tech
 			}
-			# add_potential_special_forces_tree = yes
-			# add_ideas = JAP_expand_the_snlf
-			JAP_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { JAP_japanese_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	
@@ -3690,32 +3686,36 @@ focus_tree = {
 
 		completion_reward = {
 			289 = {
-				add_building_construction = {
+				set_building_level = {
 					type = naval_base
-					level = 5
+					level = 10
 					province = 7408
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 5
+					level = 10
 					instant_build = yes
 				}
 			}
 			724 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
+				set_building_level = {
+					type = air_base
+					level = 10
 					instant_build = yes
 				}
-				add_building_construction = {
+			}
+			869 = {
+				set_building_level = {
 					type = air_base
-					level = 3
+					level = 10
+					instant_build = yes
+				}
+			}
+			747 = {
+				set_building_level = {
+					type = air_base
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -3738,59 +3738,59 @@ focus_tree = {
 
 		completion_reward = {
 			645 = {
-				add_building_construction = {
+				set_building_level = {
 					type = naval_base
-					level = 4
+					level = 5
 					province = 13025
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker 
-					level = 2
+					level = 3
 					province = 13025
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 3
+					level = 10
 					instant_build = yes
 				}
 			}
 			526 = {
-				add_building_construction = {
+				set_building_level = {
 					type = naval_base
-					level = 3
+					level = 5
 					province = 11932
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker 
 					level = 3
 					province = 11932
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
 			646 = {
-				add_building_construction = {
+				set_building_level = {
 					type = naval_base
-					level = 4
+					level = 5
 					province = 3995
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker 
 					level = 3
 					province = 3995
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
