@@ -1653,7 +1653,6 @@ focus_tree = {
 		prerequisite = { focus = SOV_war_mobilisation }
 		
 		available = {
-			date > 1941.11.01
 			if = {
 				limit = {
 					has_country_flag = SOV_offensive_cooldown
@@ -1668,6 +1667,32 @@ focus_tree = {
 						flag = SOV_offensive_cooldown
 						days > 250
 					}
+				}
+			}
+			OR = {
+				AND = {
+					date > 1941.11.1
+					date < 1942.3.1
+				}
+				AND = {
+					date > 1942.11.1
+					date < 1942.3.1
+				}
+				AND = {
+					date > 1943.11.1
+					date < 1943.3.1
+				}
+				AND = {
+					date > 1944.11.1
+					date < 1944.3.1
+				}
+				AND = {
+					date > 1945.11.1
+					date < 1945.3.1
+				}
+				AND = {
+					date > 1946.11.1
+					date < 1946.3.1
 				}
 			}
 		}
@@ -6919,9 +6944,9 @@ focus_tree = {
 
 			# add_ideas = SOV_collectivist_propaganda
 			SOV_agitprop_modifier_tt = yes # tooltip
-			add_to_variable = { SOV_agitprop_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
+			add_to_variable = { SOV_agitprop_production_factory_max_efficiency_factor = 0.10 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
 			add_to_variable = { SOV_agitprop_stability_factor = 0.2 tooltip = stability_factor_tt }
-			add_to_variable = { SOV_agitprop_production_speed_buildings_factor = 0.15 tooltip = production_speed_buildings_factor_tt }
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
@@ -6974,8 +6999,8 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = SOV_positive
 			SOV_agitprop_modifier_tt = yes # tooltip
-			add_to_variable = { SOV_agitprop_mobilization_speed = 0.5 tooltip = mobilization_speed_tt }
-			add_to_variable = { SOV_agitprop_stability_weekly = 0.001 tooltip = stability_weekly_tt }
+			add_to_variable = { SOV_agitprop_production_factory_max_efficiency_factor = 0.10 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SOV_agitprop_production_factory_efficiency_gain_factor = 0.125 tooltip = production_factory_efficiency_gain_factor_tt }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_heroes_forward
 			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
@@ -7000,8 +7025,8 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = SOV_stakhanovite
 			SOV_agitprop_modifier_tt = yes # tooltip
-			add_to_variable = { SOV_agitprop_production_factory_max_efficiency_factor = 0.10 tooltip = production_factory_max_efficiency_factor_tt }
-			add_to_variable = { SOV_agitprop_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_agitprop_mobilization_speed = 0.5 tooltip = mobilization_speed_tt }
+			add_to_variable = { SOV_agitprop_stability_weekly = 0.001 tooltip = stability_weekly_tt }	
 		}
 	}
 	

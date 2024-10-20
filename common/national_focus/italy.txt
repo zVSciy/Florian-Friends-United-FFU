@@ -335,7 +335,7 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 2
+							size > 3
 							include_locked = yes
 						}
 						is_core_of = ROM
