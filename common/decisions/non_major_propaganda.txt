@@ -1272,7 +1272,7 @@ COM_propaganda_campaigns = {
 					original_tag = RAJ
 				}
 				OR = {
-					surrender_progress > 0.25
+					surrender_progress > 0.18
 				}
 			}
 		}
