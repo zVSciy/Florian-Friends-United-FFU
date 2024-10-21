@@ -55,7 +55,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 8000
+		base_cost = 4000
 		#Cost Reduction?
 		provincial = yes
 		disabled_in_dmz = no
