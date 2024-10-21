@@ -2268,7 +2268,8 @@ technologies = {
 	
 	armored_operations = {
 
-		planning_speed = 0.1
+		planning_speed = 0.15
+		max_planning = 0.05
 		category_tanks = {
 			max_organisation = 5
 		}
@@ -2493,6 +2494,7 @@ technologies = {
 	
 	infiltration_assault = {
 
+		max_planning = 0.05
 		category_light_infantry = {
 			breakthrough = 0.1
 		}
