@@ -82,6 +82,7 @@ technologies = {
 
 	# Stat Buff Research
 	antiair_research1 = {
+		tech_air_damage_factor = -0.02
 
 		anti_air = {
 			air_attack = 0.1
@@ -111,6 +112,7 @@ technologies = {
 			tank_small_gun_2
 			tank_light_cs_gun_1
 		}
+		
 		path = {
 			leads_to_tech = antiair_research2
 			research_cost_coeff = 1
@@ -203,6 +205,7 @@ technologies = {
 
 	# Stat Buff Research 
 	antiair_research2 = {
+		tech_air_damage_factor = -0.02
 
 		anti_air = {
 			air_attack = 0.1
@@ -331,6 +334,7 @@ technologies = {
 
 	# Stat Buff Research 
 	antiair_research3 = {
+		tech_air_damage_factor = -0.02
 
 		anti_air = {
 			air_attack = 0.1
@@ -456,6 +460,7 @@ technologies = {
 	}
 
 	antiair_research4 = {
+		tech_air_damage_factor = -0.02
 
 		anti_air = {
 			air_attack = 0.1
