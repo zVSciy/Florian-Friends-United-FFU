@@ -45,7 +45,7 @@ country_event = { #Czechoslovakia MIO event 2
 			base = 10
 		}
 		mio:CZE_skoda_shipyards_organization = {
-			add_mio_size = 1
+			add_mio_size = 2
 		}
 	}
 
@@ -54,9 +54,9 @@ country_event = { #Czechoslovakia MIO event 2
 		ai_chance = {
 			base = 10
 		}
-		# mio:CZE_skoda_armor_organization = {
-		# 	add_mio_size = 1
-		# }
+		 mio:GER_nibelungenwerke_organization = {
+		 	add_mio_size = 2
+		 }
 	}
 
 	option = { #Boost Skoda Artillery
@@ -65,7 +65,7 @@ country_event = { #Czechoslovakia MIO event 2
 			base = 10
 		}
 		mio:CZE_skoda_artillery_organization = {
-			add_mio_size = 1
+			add_mio_size = 2
 		}
 	}
 }
