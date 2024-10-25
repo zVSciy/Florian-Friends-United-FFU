@@ -424,6 +424,7 @@ technologies = {
 	ger_p34_tank_3 = {
 
 		enable_equipment_modules = {
+			sloped_armor
 			armor_skirts
 		}
 		on_research_complete = {
@@ -458,7 +459,6 @@ technologies = {
 			ger_medium_tank_chassis_p5
 		}
 		enable_equipment_modules = {
-			sloped_armor
 			tank_medium_turret_3
 			tank_large_medium_superstructure
 		}
@@ -600,6 +600,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		enable_equipment_modules = {
+			sloped_armor
 			tank_heavy_turret_1
 			tank_heavy_superstructure
 			tank_heavy_open_superstructure

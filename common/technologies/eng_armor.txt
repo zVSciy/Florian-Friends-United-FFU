@@ -536,6 +536,10 @@ technologies = {
 		enable_equipments = {
 			eng_heavy_tank_chassis_val
 		}
+
+		enable_equipment_modules = {
+			sloped_armor
+		}
 	
 		path = {
 			leads_to_tech = eng_heavy_tank_4

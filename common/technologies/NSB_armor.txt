@@ -876,6 +876,7 @@ technologies = {
 	hun_medium_tank_2 = {
 
 		enable_equipment_modules = {
+			sloped_armor
 			tank_medium_turret_2
 		}
 		
@@ -1071,6 +1072,7 @@ technologies = {
 			jap_medium_tank_chassis_t01
 		}
 		enable_equipment_modules = {
+			sloped_armor
 			tank_medium_turret_2
 		}
 		

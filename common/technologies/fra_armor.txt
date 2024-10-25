@@ -374,6 +374,7 @@ technologies = {
 			fra_heavy_tank_chassis_arl
 		}
 		enable_equipment_modules = {
+			sloped_armor
 			tank_heavy_turret_1
 			tank_heavy_superstructure
 			tank_heavy_open_superstructure
