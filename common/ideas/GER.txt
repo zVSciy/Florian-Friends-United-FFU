@@ -35,6 +35,34 @@ ideas = {
 				naval_strike = 0.05
 			}
 		}
+		GER_Funkmessgeraete = {
+			picture = ai_limiter
+			name = "Funkmessgeräte"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			modifier = {
+				consumer_goods_factor  = 0.03
+				industrial_capacity_factory = -0.075
+				
+			}	
+			equipment_bonus = {
+				radio_equipment_0 = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				
+			}		
+		}
 		GER_atlantikschlacht = {
 			allowed = {
 				always = no

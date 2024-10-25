@@ -6027,6 +6027,145 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_focus_funkmessstellungen
+		text = "Radarstellungen"
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = GER_atlantikwall }
+		available = {
+			OR = {
+				has_tech = radio_detection
+				has_full_control_of_state = 19
+				has_full_control_of_state = 23
+				has_full_control_of_state = 30
+				has_full_control_of_state = 14
+				has_full_control_of_state = 15
+				has_full_control_of_state = 29
+				has_full_control_of_state = 6
+				has_full_control_of_state = 7
+				has_full_control_of_state = 36
+				has_full_control_of_state = 99
+				has_full_control_of_state = 110
+				has_full_control_of_state = 142
+				has_full_control_of_state = 143
+				has_full_control_of_state = 144
+				has_full_control_of_state = 785
+			}
+		}
+		cancel_if_invalid = yes
+		x = -1
+		y = 1
+		relative_position_id = GER_atlantikwall
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_Funkmessgeraete
+				days = 100
+			} 
+			14 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			29 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			7 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			65 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			51 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			42 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			4 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			64 = {
+				add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}		
+			add_building_construction = {
+				type = anti_air_building
+				level = 4
+				instant_build = yes
+			}	
+			}
+			
+		}
+	}
+	
+	focus = {
 		id = GER_italian_social_republic
 		icon = GFX_focus_chi_reach_out_to_italy
 		prerequisite = { focus = GER_avenge_versailles }
@@ -6122,7 +6261,7 @@ focus_tree = {
 		id = GER_gothic_line
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = GER_gustav_line}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_gustav_line
 		cost = 2
