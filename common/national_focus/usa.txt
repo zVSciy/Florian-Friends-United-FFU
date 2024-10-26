@@ -3316,7 +3316,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.35
+				has_war_support > 0.30
 			}
 			democratic > 0.95
 		}
