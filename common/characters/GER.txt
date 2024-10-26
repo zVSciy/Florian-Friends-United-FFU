@@ -461,20 +461,6 @@ characters={
 	}
 	GER_kurt_student={
 		name="Kurt Student"
-		advisor={
-			slot = high_command
-			idea_token = kurt_student
-			ledger  = air 
-				allowed  = {
-					original_tag  = GER 
-				}
-				traits  = {
-					army_concealment_1 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
 		portraits={
 			army={
 				small="GFX_idea_kurt_student"
@@ -484,13 +470,13 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader commando paratrooper }
+			traits={ infantry_leader commando hill_fighter }
 			skill=4
 			attack_skill=2
 			defense_skill=4
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=16
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
 		}
 	}
 	GER_erwin_von_witzleben={
