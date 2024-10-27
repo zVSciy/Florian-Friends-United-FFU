@@ -82,8 +82,6 @@ technologies = {
 
 	# Stat Buff Research
 	antiair_research1 = {
-		tech_air_damage_factor = -0.02
-
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -205,7 +203,6 @@ technologies = {
 
 	# Stat Buff Research 
 	antiair_research2 = {
-		tech_air_damage_factor = -0.02
 
 		anti_air = {
 			air_attack = 0.1
@@ -334,7 +331,6 @@ technologies = {
 
 	# Stat Buff Research 
 	antiair_research3 = {
-		tech_air_damage_factor = -0.02
 
 		anti_air = {
 			air_attack = 0.1
@@ -460,7 +456,6 @@ technologies = {
 	}
 
 	antiair_research4 = {
-		tech_air_damage_factor = -0.02
 
 		anti_air = {
 			air_attack = 0.1
@@ -1060,7 +1055,6 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.05
 		}
-		# tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = heavy_artillery_research2
@@ -1176,7 +1170,6 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.05
 		}
-		# tech_air_damage_factor = -0.02
 		
 		enable_equipment_modules = {
 		}
@@ -1299,7 +1292,6 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.1
 		}
-		# tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = heavy_artillery4
@@ -1350,7 +1342,6 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.1
 		}
-		# tech_air_damage_factor = -0.02
 
 		enable_equipment_modules = {
 			tank_heavy_gun_3
