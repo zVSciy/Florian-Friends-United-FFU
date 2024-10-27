@@ -139,7 +139,11 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			light_ship_engine_3
+			ship_sonar_3
 			ship_depth_charge_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
 		}
 		on_research_complete = {
 			custom_effect_tooltip = depth_charges_advice_tt
@@ -188,7 +192,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			light_ship_engine_4
-			ship_sonar_3
 			ship_depth_charge_4
 		}
 		on_research_complete = {
