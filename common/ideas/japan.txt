@@ -1677,6 +1677,7 @@ ideas = {
 				naval_damage_factor = 0.1
 				naval_defense_factor = 0.1
 				navy_anti_air_attack_factor = 0.1
+				navy_submarine_detection_factor = 0.5
 				experience_gain_navy_unit_factor = 0.33
 			}
 			targeted_modifier = {
