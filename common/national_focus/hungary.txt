@@ -1520,7 +1520,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
+			factor = 90
 		}
 
 		available = {
@@ -1733,7 +1733,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 80
+			factor = 0
 		}
 
 		available = {
