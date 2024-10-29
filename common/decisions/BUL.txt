@@ -5814,6 +5814,7 @@ BUL_rearmament = {
 					NOT = { is_in_faction_with = ENG }
 				}
 				threat > 0.5
+				is_ai = no
 			}
 		}
 
