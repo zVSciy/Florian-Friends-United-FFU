@@ -1822,6 +1822,7 @@ equipment_modules = {
             add_stats = {
             naval_strike_targetting = 2
 			air_defence = 4
+			sub_detection = 4
             }
 			multiply_stats = {
 				air_ground_attack = 0.2			
@@ -1833,7 +1834,6 @@ equipment_modules = {
 			}
             add_stats = {
 			air_defence = 4
-			sub_detection = 3
             }
 			multiply_stats = {
 				air_ground_attack = 0.2			
@@ -1957,6 +1957,7 @@ equipment_modules = {
            	add_stats = {
             	naval_strike_targetting = 2
                 air_defence = 3
+				sub_detection = 4
             }
 			multiply_stats = {
 				air_ground_attack = 0.10
