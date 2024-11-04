@@ -8165,6 +8165,16 @@ spriteType = {
 		texturefile = "gfx/interface/goals/GER/GER_danzig_or_war_icon.tga"
 	}
 
+	SpriteType = {
+		name = "GFX_GER_goal_hold_africa1"
+		texturefile = "gfx/interface/goals/GER/goal_hold_africa1.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_goal_hold_africa2"
+		texturefile = "gfx/interface/goals/GER/goal_hold_africa2.tga"
+	}
+
 	# SpriteType = {
 	# 	name = "GFX_GER_mol_rib_pact"
 	# 	texturefile = "gfx/interface/goals/GER/GER_molotov_ribbentrop_pact_icon.tga"

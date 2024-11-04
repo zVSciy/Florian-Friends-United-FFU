@@ -193,6 +193,7 @@
   GER_flak_36:0 "Flak 36"
   GER_early_barb:0 "Operation Barbarossa"
   GER_strike_the_rebellion:0 "Strike the Beneluxian Rebellion"
+  GER_hold_africa:0 "Unternehmen Theseus"
 
   #### EVENTS ####
   germany.501.t:0 "Question of the Economy"
@@ -317,6 +318,7 @@
   GER_axis_research_group:0 "Axis Research Group"
   GER_benelux_trade:0 "Benelux Trade Agreement"
   ITA_no_barb_for_you:0 "No Barb"
+  GER_hold_afrika_idea:0 "Unternehmen Theseus"  
 
   ### DYNAMIC MODIIFERS ###
   GER_economy_dynamic_modifier:0 "[GER_economy_dynam_mod_sl]"

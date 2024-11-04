@@ -10,6 +10,8 @@ set_fuel_ratio = 0.8
 # }
 
 set_country_flag=fuel_system_enabled
+set_country_flag = GER_barb_flag
+
 
 set_variable = {
 	var = min_fuel

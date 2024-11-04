@@ -306,6 +306,21 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+
+		GER_hold_afrika_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			
+			picture = generic_reserve_divisions
+
+			modifier = {
+				cas_damage_reduction = 0.3
+				army_defence_factor = 0.10 
+			}
+		}
 		
 		GER_good_weather_army = {
 			allowed = {

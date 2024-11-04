@@ -3596,6 +3596,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		cost = 2
 		completion_reward = {
+			set_country_flag = GER_barb_flag
 			add_advisor_role = {
 				character = GER_walter_model
 				activate = yes
@@ -3640,6 +3641,7 @@ focus_tree = {
             }
 		}
 	}
+
 
 	focus = {
 		id = GER_fall_blau
@@ -6762,7 +6764,7 @@ focus_tree = {
 		bypass = {
 		}
 		cancel_if_invalid = yes
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_ardennes
 		cost = 2
@@ -6810,6 +6812,34 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = GER_hold_africa
+		icon = GFX_GER_goal_hold_africa1
+		prerequisite = { focus = GER_mobilise_reich }
+		x = 2
+		y = 1
+		relative_position_id = GER_mobilise_reich
+		cost = 5
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		available = {
+			has_war_with = SOV
+			has_full_control_of_state = 202
+			has_full_control_of_state = 221
+		} 
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_hold_afrika_idea days = 180 
+			}
+
+		}
+	}
+
 	focus = {
 		id = GER_ardennes
 		icon = GFX_focus_ger_reichskommisariats
@@ -6820,7 +6850,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = GER_mobilise_reich
 		cost = 2
@@ -6833,6 +6863,7 @@ focus_tree = {
 
 		}
     }
+
 
 	focus = {
 		id = GER_defend_berlin
