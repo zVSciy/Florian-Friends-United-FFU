@@ -6833,12 +6833,11 @@ focus_tree = {
 		} 
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_hold_afrika_idea days = 180 
-			}
-
-		}
+				ITA = {add_timed_idea = {
+					idea = GER_hold_afrika_idea days = 180
+				}}
 	}
+}
 
 	focus = {
 		id = GER_ardennes
