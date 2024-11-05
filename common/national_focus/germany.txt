@@ -6836,6 +6836,10 @@ focus_tree = {
 				ITA = {add_timed_idea = {
 					idea = GER_hold_afrika_idea days = 180
 				}}
+
+				CRO = {add_timed_idea = {
+					idea = GER_hold_afrika_idea days = 180
+				}}
 	}
 }
 
