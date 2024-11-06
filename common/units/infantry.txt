@@ -1287,13 +1287,13 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 0
-		max_organisation = -50
+		max_organisation = -90
 		default_morale = 0.3
 		manpower = 1000
 
 		#Misc Abilities
 		training_time = 20
-		suppression = 1.5
+		suppression = 0
 		weight = 0.5
 		
 		supply_consumption = 0.02
