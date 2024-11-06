@@ -241,9 +241,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_medium_turret_type_p3_early_1
-					# tank_medium_turret_type_1
-					#tank_medium_turret_type_2
-					#tank_medium_turret_type_3
 					tank_medium_turret_type_open_p3_early
 					tank_medium_turret_type_casemate_p3_early
 				}
@@ -280,11 +277,9 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_medium_turret_type_1
-					# tank_medium_turret_type_2
-					#tank_medium_turret_type_3
-					tank_medium_turret_type_open_p3_early
-					tank_medium_turret_type_casemate_p3_early
-					tank_medium_turret_type_open_superstructure_p3_early
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit

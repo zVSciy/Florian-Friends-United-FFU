@@ -2037,6 +2037,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = GER_flame_tank
+				bonus = 1
+				uses = 2
+				category = support_equipment
+				technology = tech_engineers2
+				technology = tech_engineers3
+			}
 			army_experience = 10
 			# add_ideas = GER_auftragstaktik
 			GER_army_dynamic_modifier_tt = yes # tooltip

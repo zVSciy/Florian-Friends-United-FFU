@@ -4621,6 +4621,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = GER_flame_tank
+				bonus = 1
+				uses = 2
+				category = support_equipment
+				technology = tech_engineers2
+				technology = tech_engineers3
+			}
 			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
