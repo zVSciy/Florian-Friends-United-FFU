@@ -572,14 +572,14 @@ focus_tree = {
 		x = 8
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
 		}
 
 		available = {
-			threat > 0.25
+			threat > 0.20
 		}
 		
 		continue_if_invalid = yes
@@ -997,10 +997,6 @@ focus_tree = {
 				has_completed_focus = CAN_mine_the_shield
 			}
 		}
-
-		available = {
-			threat > 0.3
-		}
 		
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1208,10 +1204,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-			has_war = yes
 		}
 		
 		bypass = {

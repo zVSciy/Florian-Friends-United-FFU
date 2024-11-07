@@ -1896,6 +1896,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			42 = {
+				set_building_level = {
+					type = radar_station
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -6181,15 +6188,10 @@ focus_tree = {
 		prerequisite = { focus = GER_avenge_versailles }
 		available = {
 			ITA = { 
-				OR = {
-					surrender_progress > 0.05
-						AND = {
-							NOT	= { controls_state = 115 }
-							NOT	= { controls_state = 450 }
-							NOT	= { controls_state = 448 }
-						}
+				NOT = {
+					controls_state = 115
 				}
-			} 
+			}
 		}
 		bypass = {
 		}
