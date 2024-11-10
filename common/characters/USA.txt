@@ -28,7 +28,7 @@ characters={
 	}
 	USA_earl_browder={
 		name="Earl Browder"
-		advisor={
+		advisor={	
 			slot = political_advisor
 			idea_token = earl_browder
 			allowed  = {
@@ -180,8 +180,9 @@ characters={
 		name="Alexander Vandegrift"
 		portraits={
 			army={
-				small="GFX_portrait_usa_alexander_vandegrift"
-			}
+                large="GFX_portrait_USA_alexander_vandegrift"
+                small="GFX_portrait_USA_alexander_vandegrift_small"
+            }
 		}
 		advisor={
 			slot = high_command
