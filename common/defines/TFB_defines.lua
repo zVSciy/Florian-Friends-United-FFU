@@ -407,6 +407,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 0.0, -- NAVAL_MINES_SWEEPING
 0.0, -- MISSION_RECON
 }
+NDefines.NAir.AIR_SUPERIORITY_FOR_FRIENDLY_CAS_RATIO = 0.30     -- Air needed for cas in battle
 NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 10					-- Each Point of carrier_size state adds capacity for this many planes
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0
