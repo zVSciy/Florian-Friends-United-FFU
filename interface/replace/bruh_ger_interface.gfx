@@ -2025,6 +2025,43 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = GFX_GER_kampfgruppen
+		textureFile = "gfx/interface/goals/ger/ger_kampfgruppen.tga"
+	}
+
+	spriteType = {
+		name = GFX_GER_kampfgruppen_shine
+		textureFile = "gfx/interface/goals/ger/ger_kampfgruppen.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/ger_kampfgruppen.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/ger_kampfgruppen.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+
 	SpriteType = {
 		name = "GFX_goal_share_tanks"
 		textureFile = "gfx/interface/goals/ger/goal_share_tanks.dds"

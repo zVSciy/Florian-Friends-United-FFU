@@ -205,6 +205,14 @@ if = {
 	# give_guarantee = ALB
 }
 
+if = {
+	limit = {
+		date > 1936.01.01
+		has_global_flag = NO_ASIA
+	}
+	add_ideas = ITA_no_asia_buff
+}
+
 
 set_convoys = 200
 
