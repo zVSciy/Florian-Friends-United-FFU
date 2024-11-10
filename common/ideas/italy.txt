@@ -55,8 +55,14 @@ ideas = {
 			
 			picture = generic_economic_increase
 			
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
+				production_speed_synthetic_refinery_factor = 0.30
 			}
 		}
 		ITA_naval_air = {			

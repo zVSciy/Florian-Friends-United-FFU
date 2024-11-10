@@ -1735,7 +1735,9 @@ country_event = {
 				# 12 Spawn Ins
 				905 = {
 					if = {					
-						limit = { is_controlled_by = ENG }
+						limit = { 
+							is_controlled_by = ENG
+						}
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }

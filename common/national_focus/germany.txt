@@ -2519,6 +2519,32 @@ focus_tree = {
 			add_to_variable = { GER_german_army_operative_slot = 1 tooltip = operative_slot_tt }
 		}
 	}
+
+	focus = {
+		id = GER_pervitin
+		icon = GFX_GER_kampfgruppen 
+		prerequisite = { focus = GER_rizen }
+		x = 0
+		y = 1
+		relative_position_id = GER_rizen
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			GER_army_dynamic_modifier_tt = yes
+			add_to_variable = { SOV_agitprop_army_morale_factor = 0.05 tooltip = army_morale_factor_factor_tt }
+			add_to_variable = { GER_german_org_loss_when_moving = -0.1 tooltip = org_loss_when_moving_tt }
+		}
+
+
+	
+	}
 	
 	focus = {
 		id = GER_waffen_ss
@@ -6487,7 +6513,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_share_tanks
-		icon = GFX_goal_share_tanks
+		icon = GFX_GER_kampfgruppen
 		prerequisite = { focus = GER_heer }
 		x = 0.5
 		y = 1
