@@ -491,7 +491,7 @@ focus_tree = {
 			715 = {
 				add_resource = {
 					type = steel
-					amount = 480
+					amount = 500
 				}
 			}
 			716 = {
@@ -503,7 +503,7 @@ focus_tree = {
 			328 = {
 				add_resource = {
 					type = aluminium
-					amount = 960
+					amount = 1000
 				}
 			}
 		}
@@ -585,10 +585,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = steel_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -626,10 +626,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -641,17 +641,17 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			610 = {
 				add_resource = {
 					type = oil
-					amount = 280
+					amount = 300
 				}
 			}
 		}
@@ -689,10 +689,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = steel_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2237,19 +2237,19 @@ focus_tree = {
 			715 = {
 				add_resource = {
 					type = steel
-					amount = 440
+					amount = 1000
 				}
 			}
 			716 = {
 				add_resource = {
 					type = steel
-					amount = 300
+					amount = 500
 				}
 			}
 			328 = {
 				add_resource = {
 					type = aluminium
-					amount = 300
+					amount = 1000
 				}
 			}
 		}
@@ -2622,11 +2622,11 @@ completion_reward = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			army_experience = 50
+			army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.40
-				uses = 1
+				cost_reduction = 0.50
+				uses = 4
 				category = land_doctrine
 			}
 		}
@@ -2685,7 +2685,7 @@ completion_reward = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.25
+				cost_reduction = 0.75
 				uses = 2
 				category = land_doctrine
 			}
