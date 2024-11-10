@@ -1034,7 +1034,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 		category_camelry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		enable_subunits = {
 			paratrooper
@@ -1171,7 +1171,7 @@ technologies = {
 
 		camelry = {
 			hills = {
-				attack = 0.05
+				attack = 0.025
 			}
 		}
 		
@@ -1219,7 +1219,7 @@ technologies = {
 				attack = 0.05
 			}
 			town = {
-				attack = 0.05
+				attack = 0.025
 			}
 		}
 		
@@ -1284,7 +1284,7 @@ technologies = {
 		signal_company = {
 			battalion_mult = {
 				category = category_camelry
-				defense = 0.05
+				defense = 0.025
 			}
 		}
 
