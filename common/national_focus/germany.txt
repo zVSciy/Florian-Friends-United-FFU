@@ -6214,9 +6214,7 @@ focus_tree = {
 		prerequisite = { focus = GER_avenge_versailles }
 		available = {
 			ITA = { 
-				NOT = {
-					controls_state = 115
-				}
+				surrender_progress > 0.25
 			}
 		}
 		bypass = {
