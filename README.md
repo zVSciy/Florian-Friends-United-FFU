@@ -2,7 +2,7 @@
 PMFU submod
 Note: Lots of stuff here is outdated and has been significantly changed, this is the "1.0" of FFU, and since then, multiple large updates have changed the mod's balance.
 
-**Checksum = df34**
+**Checksum = ef54**
 
 ## Generel changes
 
