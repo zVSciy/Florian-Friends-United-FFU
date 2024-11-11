@@ -1585,7 +1585,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_Under_New_Regime
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -1625,7 +1625,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_Under_New_Regime
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -1661,7 +1661,7 @@ focus_tree = {
 		x = -1
 		y = 1
 	
-		cost = 8
+		cost = 5
 	
 		ai_will_do = {
 			factor = 0
@@ -1692,7 +1692,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 8
+		cost = 5
 	
 		ai_will_do = {
 			factor = 0
@@ -1726,14 +1726,22 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 10
+		cost = 1
 	
 		ai_will_do = {
 			factor = 0
 		}
 	
 		available = {
-			SAF = {has_capitulated = yes}
+			681 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
 		}
 	
 		bypass = {
