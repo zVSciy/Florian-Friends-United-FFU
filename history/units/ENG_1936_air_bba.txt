@@ -34,14 +34,6 @@ air_wings = {
 			version_name = "Hurricane"
 		}
 	}	
-	126 = { 
-		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_1 = {
-			owner = "ENG" 
-			amount = 100
-			version_name = "Hurricane"
-		}
-	}	
 	
 	### RAF Bomber Command ###
 	126 = { 
@@ -122,13 +114,6 @@ air_wings = {
 			owner = "ENG" 
 			amount = 100
 			version_name = "Hector"
-		}
-	}
-	126 = { 
-		small_plane_airframe_1 = {
-			owner = "ENG" 
-			amount = 60
-			version_name = "Hurricane"
 		}
 	}
 
