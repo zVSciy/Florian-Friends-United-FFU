@@ -180,9 +180,11 @@ characters={
 		name="Alexander Vandegrift"
 		portraits={
 			army={
-                large="GFX_portrait_USA_alexander_vandegrift"
-                small="GFX_portrait_USA_alexander_vandegrift_small"
-            }
+				small="GFX_portrait_USA_alexander_vandegrift_small"
+			}
+			army={
+				large="GFX_portrait_USA_alexander_vandegrift"
+			}
 		}
 		advisor={
 			slot = high_command
