@@ -1430,13 +1430,13 @@ fleet_overstack_dynamic_modifier = {
 # dday naval penalty
 ITALY_DDAY_ENTRENCHMENT1 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.4
-    naval_invasion_penalty = 0.4
+    max_dig_in_factor = 0.9
+    naval_invasion_penalty = 1
 }
 ITALY_DDAY_ENTRENCHMENT2 = {
     icon = GFX_idea_generic_fascism_drift_bonus
-    max_dig_in_factor = 0.35
-    naval_invasion_penalty = 0.35
+    max_dig_in_factor = 0.4
+    naval_invasion_penalty = 0.4
 }
 ITALY_DDAY_ENTRENCHMENT3 = {
     icon = GFX_idea_generic_fascism_drift_bonus
