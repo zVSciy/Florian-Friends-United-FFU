@@ -8,12 +8,9 @@ state={
 	impassable = yes
 
 	history={
-		owner = PER
+		owner = WST
 		buildings = {
 			infrastructure = 1
-		}
-		victory_points = {
-			10913 1 
 		}
 		victory_points = {
 			7990 1 
@@ -22,7 +19,7 @@ state={
 	}
 
 	provinces={
-		1986 7990 10759 10890 10913 11249 12739 12809 12852 12895 
+		7990 10759 10890 11249 12739 12809 12852 12895 10828 10873 1963 4983 8074 5067 2026 
 	}
 
 	local_supplies=0.0 
