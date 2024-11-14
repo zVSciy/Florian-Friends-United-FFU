@@ -3598,7 +3598,7 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = ITA_shock_tactics
 			ITA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ITA_italian_army_terrain_penalty_reduction = 0.05 tooltip = terrain_penalty_reduction_tt }
+			add_to_variable = { ITA_italian_army_terrain_penalty_reduction = 0.025 tooltip = terrain_penalty_reduction_tt }
 			add_to_variable = { ITA_italian_army_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
 			hidden_effect = {
 				every_army_leader={
