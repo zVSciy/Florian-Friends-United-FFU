@@ -23,7 +23,7 @@ state={
 		#add_core_of = KUR
 		#add_core_of = AZR
 	}
-
+	impassable = yes
 	provinces={
 		1636 1822 1896 2071 4755 4825 7604 12793 12861 13120 
 	}

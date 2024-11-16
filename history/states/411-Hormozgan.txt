@@ -1,31 +1,29 @@
-
-state={
-	id=411
-	name="STATE_411" # Isfahan
+state = {
+	id = 411
+	name = "STATE_411"	# Isfahan
 	manpower = 885272
-	resources={
-		oil=170 # was: 14
+	resources = {
+		oil = 170		# was: 14
 	}
 	state_category = rural
-	
-
-	history={
+	history = {
 		owner = PER
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			air_base = 3
 		}
 		victory_points = {
-			4928 1 
+			4928
+			1
 		}
 		victory_points = {
-			8031 1 
+			8031
+			1
 		}
 		add_core_of = PER
 	}
-
-	provinces={
-			8031 4928 
+	provinces = {
+		8031 4928
 	}
-
-	local_supplies=0.0 
+	local_supplies = 0
 }
