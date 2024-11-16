@@ -3822,7 +3822,7 @@ focus_tree = {
 			# 	remove_idea = ITA_blackshirts
 			# }
 			ITA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ITA_italian_army_non_core_manpower = 0.15 tooltip = non_core_manpower_tt }
+			add_to_variable = { ITA_italian_army_non_core_manpower = 0.3 tooltip = non_core_manpower_tt }
 			add_to_variable = { ITA_italian_army_training_time_army_factor = -0.25 tooltip = training_time_army_factor_tt }
 			add_to_variable = { ITA_italian_army_conscription = 0.01 tooltip = conscription_tt }
 			add_to_variable = { ITA_italian_army_resistance_damage_to_garrison = -0.05 tooltip = resistance_damage_to_garrison_tt }

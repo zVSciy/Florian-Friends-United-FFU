@@ -48,7 +48,7 @@ sub_units = {
 			movement = 0.05
 		}
 		forest = {
-		    attack = -0.2
+		    attack = -0.25
 			movement = -0.3
 			defence = -0.35
 		}
