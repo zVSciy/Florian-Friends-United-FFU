@@ -1672,27 +1672,6 @@ focus_tree = {
 			OR = {
 				AND = {
 					date > 1941.11.1
-					date < 1942.3.1
-				}
-				AND = {
-					date > 1942.11.1
-					date < 1942.3.1
-				}
-				AND = {
-					date > 1943.11.1
-					date < 1943.3.1
-				}
-				AND = {
-					date > 1944.11.1
-					date < 1944.3.1
-				}
-				AND = {
-					date > 1945.11.1
-					date < 1945.3.1
-				}
-				AND = {
-					date > 1946.11.1
-					date < 1946.3.1
 				}
 			}
 		}
@@ -2208,16 +2187,10 @@ focus_tree = {
 
 				419 = { NOT = { is_controlled_by = PER } } # tibriz
 				420 = { NOT = { is_controlled_by = PER } } # gilan
-				421 = { NOT = { is_controlled_by = PER } } # kurdistan
-				417 = { NOT = { is_controlled_by = PER } } # hamadan
 				266 = { NOT = { is_controlled_by = PER } } # tehran
 				416 = { NOT = { is_controlled_by = PER } } # khorasan
 				418 = { NOT = { is_controlled_by = PER } } # semnan
-				411 = { NOT = { is_controlled_by = PER } } # isfahan
-				413 = { NOT = { is_controlled_by = PER } } # khuzestan
 				414 = { NOT = { is_controlled_by = PER } } # kerman
-				412 = { NOT = { is_controlled_by = PER } } # fars
-				410 = { NOT = { is_controlled_by = PER } } # sistan
 			}
 		}
 		
@@ -2398,11 +2371,6 @@ focus_tree = {
 					}
 				}
 			}
-			transfer_state = 419 #Tibriz (AZB)
-			transfer_state = 420 #Gilan (AZB)
-			transfer_state = 416 #Khorasan
-			transfer_state = 266 #Tehran
-			transfer_state = 418 #Semnan
 			ENG = {
 				give_resource_rights = { receiver = SOV state = 411 }
 				give_resource_rights = { receiver = SOV state = 412 }

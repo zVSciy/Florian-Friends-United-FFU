@@ -4361,11 +4361,6 @@ focus_tree = {
 				SOV = {
 					custom_effect_tooltip = SOV_iran_spawn_in_tt
 				}
-				transfer_state = 419 #Tibriz (AZB)
-				transfer_state = 420 #Gilan (AZB)
-				transfer_state = 416 #Khorasan
-				transfer_state = 266 #Tehran
-				transfer_state = 418 #Semnan
 			}
 			give_resource_rights = { receiver = SOV state = 411 }
 			give_resource_rights = { receiver = SOV state = 412 }
