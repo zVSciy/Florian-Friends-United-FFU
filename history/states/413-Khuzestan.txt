@@ -14,10 +14,15 @@ state={
 		owner = PER
 		buildings = {
 			infrastructure = 5
+			5005 = {
+				naval_base = 5
+			}
+			air_base = 5
 		}
 		victory_points = {
-			7953 1 
+			5005 1 
 		}
+		
 		add_core_of = PER
 	}
 

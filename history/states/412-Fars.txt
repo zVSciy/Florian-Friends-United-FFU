@@ -18,13 +18,14 @@ state={
 			12832 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			7982 = {
 				naval_base = 4
 			}
 			12832 = {
 				naval_base = 2
 			}
+			air_base = 7
 		}
 		add_core_of = PER
 	}

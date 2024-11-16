@@ -2,7 +2,7 @@
 state={
 	id=350
 	name="STATE_350"
-
+	impassable = yes
 	history={
 		owner = WST
 		add_core_of = WST
