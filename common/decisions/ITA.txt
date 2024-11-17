@@ -370,15 +370,10 @@ operations = {
 					}
 				}
 			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = WST
-						is_subject_of = WST
-						is_in_faction_with = WST
-					}
-				}
+			GER = {
+				has_war_with = SOV
 			}
+			country_exists = PER
 		}
 		
 		complete_effect = {
