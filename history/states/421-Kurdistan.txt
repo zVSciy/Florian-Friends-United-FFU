@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = PER
+		owner = WST
 		victory_points = {
 			4943 5
 		}
@@ -19,8 +19,7 @@ state={
 			air_base = 3
 
 		}
-		add_core_of = PER
-		#add_core_of = KUR
+		add_core_of = WST
 	}
 
 	provinces={

@@ -2194,8 +2194,8 @@ country_event = {
 
 news_event = {
 	id = generic.33 # iran invasion
-	title = "Invasion of [PER.GetName]"
-	desc = "In the early moring hours of[GetDateText], [From.GetLeader] announced invasion of [PER.GetName] by [From.GetNameDef]"
+	title = "Invasion of Iran"
+	desc = "In the early moring hours of[GetDateText], [From.GetLeader] announced invasion of Iran by [From.GetNameDef]"
 	
 	picture = GFX_news_event_004
 

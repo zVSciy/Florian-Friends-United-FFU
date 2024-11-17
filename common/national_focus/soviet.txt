@@ -2183,20 +2183,15 @@ focus_tree = {
 		
 		bypass = {
 			OR = {
-				PER = { is_puppet = yes }
-
-				419 = { NOT = { is_controlled_by = PER } } # tibriz
-				420 = { NOT = { is_controlled_by = PER } } # gilan
-				266 = { NOT = { is_controlled_by = PER } } # tehran
-				416 = { NOT = { is_controlled_by = PER } } # khorasan
-				418 = { NOT = { is_controlled_by = PER } } # semnan
-				414 = { NOT = { is_controlled_by = PER } } # kerman
+				413 = { NOT = { is_controlled_by = WST } } # khorasan
+				412 = { NOT = { is_controlled_by = WST } } # semnan
+				410 = { NOT = { is_controlled_by = WST } } # kerman
+				421 = { NOT = { is_controlled_by = WST } } # kerman
+				417 = { NOT = { is_controlled_by = WST } } # kerman
 			}
 		}
 		
 		available = {
-			country_exists = PER
-			NOT = { has_war_with = PER }
 			446 = {
 				CONTROLLER = {
 					tag = ENG
@@ -2271,7 +2266,14 @@ focus_tree = {
 			
 			### ACTUAL EFFECT NGL ###
 			ENG = {
-				annex_country = { target = PER transfer_troops = no }
+				ENG = {
+					transfer_state = 421
+					transfer_state = 417
+					transfer_state = 413
+					transfer_state = 411
+					transfer_state = 412
+					transfer_state = 410
+				}
 				if = {
 					limit = {
 						446 = {
@@ -2454,21 +2456,6 @@ focus_tree = {
 					}
 				}
 			}
-			# PMFU - END
-
-			# effect_tooltip = {
-			# 	custom_effect_tooltip = if_they_accept_tt
-			# 	ROOT = {
-			# 		puppet = PER
-			# 	}
-
-			# 	custom_effect_tooltip = if_they_refuse_tt
-			# 	effect_tooltip = {
-			# 		activate_mission = SOV_preparations_for_operation_countenance
-			# 		custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
-			# 	}
-			# 	custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
-			# }
 		}
 	}
 	
@@ -2484,14 +2471,8 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
-			every_controlled_state = {
-				limit = {
-					is_core_of = PER
-				}
-				add_compliance = 100
-			}
 			# FROM IRAN FOCUS #
-			229 = {
+			229 = {  # BAKU
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory

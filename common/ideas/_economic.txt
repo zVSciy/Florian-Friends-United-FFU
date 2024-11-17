@@ -554,7 +554,6 @@ ideas = {
 					factor = 300
 
 					OR = {
-						tag = PER
 						tag = IRQ
 					}
 					is_in_faction = no
@@ -642,7 +641,7 @@ ideas = {
 						tag = SWE
 
 						# Iraq & Iran are special oil snowflakes
-						tag = PER
+						tag = WST
 						tag = IRQ
 					}
 				}

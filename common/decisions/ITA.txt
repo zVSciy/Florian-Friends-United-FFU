@@ -370,18 +370,35 @@ operations = {
 					}
 				}
 			}
-			country_exists = PER
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = WST
+						is_subject_of = WST
+						is_in_faction_with = WST
+					}
+				}
+			}
 		}
 		
 		complete_effect = {
 			hidden_effect = {
 				every_country = {
+					limit = { 
+						has_capitulated = no
+					}
 					news_event = generic.33
 				}
 			}
-			declare_war_on = {
-				target = PER
-				type = annex_everything
+			ITA = {
+				transfer_state = 421
+				transfer_state = 417
+				transfer_state = 413
+				transfer_state = 411
+				transfer_state = 412
+			}
+			ENG = {
+				transfer_state = 410
 			}
 		}
 	}

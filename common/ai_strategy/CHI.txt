@@ -16,7 +16,7 @@ CHI_unit_production = {
 		always = yes
 	}
 	abort = {
-		always = no
+		always = yes
 	}
 	
 	ai_strategy = {

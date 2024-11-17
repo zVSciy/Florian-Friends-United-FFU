@@ -163,7 +163,7 @@ on_actions = {
 						MAL = { is_ai = no}
 						TUR = { is_ai = no}						
 						IRQ = { is_ai = no}
-						PER = { is_ai = no}
+						# PER = { is_ai = no}
 					}
 				}
 				every_country = { 
@@ -1332,36 +1332,7 @@ on_actions = {
 			}
 		}
 
-		# Iran caps to soviet before iran invasion focus
-		effect = { 
-			if = {
-				limit = {
-					original_tag = PER
-					FROM = { is_in_faction_with = SOV }
-					SOV = { NOT = { has_completed_focus = SOV_preemptive_invasion_of_iran } }
-				}
-				SOV = {
-					annex_country = {
-						target = PER
-						transfer_troops = no
-					}
-					add_named_threat = { threat = 20 name = "Treaty of Tehran" }
-				}
-				set_global_flag = SOV_transfer_iran_2_mongolia_decision
-				if = {
-					limit = {
-						NOT = { MON = { has_idea = peace_training } }
-					}
-					MON = { add_ideas = peace_training }
-				}
-				if = {
-					limit = {
-						NOT = { SOV = { has_idea = peace_training } }
-					}
-					SOV = { add_ideas = peace_training }
-				}
-			}
-		}	
+		
 
 		# Allies/comintern cap germany
 		effect = { 
@@ -1424,10 +1395,10 @@ on_actions = {
 						target = ALB
 						autonomy_state = autonomy_integrated_puppet
 					}
-					set_autonomy = {
-						target = PER
-						autonomy_state = autonomy_integrated_puppet
-					}
+					#set_autonomy = {
+					#	target = PER
+					#	autonomy_state = autonomy_integrated_puppet
+					#}
 					set_autonomy = {
 						target = POL
 						autonomy_state = autonomy_integrated_puppet
@@ -1586,14 +1557,14 @@ on_actions = {
 						transfer_state = 766
 					}
 				}
-				PER = {
-					every_state = {
-						limit = {
-							is_core_of = PER
-						}
-						PER = { transfer_state = PREV }
-					}
-				}
+				#PER = {
+				#	every_state = {
+				#		limit = {
+				#			is_core_of = PER
+				#		}
+				#		PER = { transfer_state = PREV }
+				#	}
+				#}
 				FIN = {
 					every_state = {
 						limit = {
@@ -2102,22 +2073,7 @@ on_actions = {
 						popularity = 100
 					}
 				}
-				PER = {
-					every_state = {
-						limit = {
-							is_core_of = PER
-						}
-						PER = { transfer_state = PREV }
-					}
-					set_politics = {
-						ruling_party = democratic
-						elections_allowed = yes
-					}
-					set_political_party = {
-						ideology = democratic
-						popularity = 100
-					}
-				}
+				
 				FIN = {
 					every_state = {
 						limit = {

@@ -122,24 +122,7 @@ SOV_great_patriotic_war = {
 	}	
 }
 
-SOV_diplomacy_middle_east_decision_category = {
-	priority = 23
 
-	icon = generic_foreign_policy
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_preemptive_invasion_of_iran
-		OR = {
-			country_exists = IRQ
-			country_exists = PER
-		}
-		is_subject = no
-	}
-}
 
 # SOV_soviet_aid_decision_category = { #Dec cat for Sinkiang (mission dummies go here)
 # 	icon = decision_category_generic_communism

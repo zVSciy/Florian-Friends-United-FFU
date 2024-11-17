@@ -16,10 +16,10 @@ ENG = {
 	color = rgb { 181 46 45 } 
 	color_ui = rgb { 201 56 55 } 
 }
-PER = {
-	color = rgb { 71 113 97 }
-	color_ui = rgb { 92 147 126 }
-}
+#PER = {
+#	color = rgb { 71 113 97 }
+#	color_ui = rgb { 92 147 126 }
+#}
 SOV = {
 	color = rgb { 159 0 0 }
 	color_ui = rgb { 159 0 0 }

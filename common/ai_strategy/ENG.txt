@@ -4,10 +4,6 @@ careful_with_early_invasions = {
 		date < 1943.1.1
 
 		if = {
-			limit = { NOT = { has_dlc = "Man the Guns"} }
-			NOT = { has_tech = landing_craft }
-		}
-		else = {
 			NOT = { has_tech = mtg_landing_craft }
 		}
 		
@@ -25,7 +21,6 @@ careful_with_early_invasions = {
 	}
 	abort = {
 		OR = {
-			has_tech = landing_craft
 			has_tech = mtg_landing_craft
 		}
 		OR = {

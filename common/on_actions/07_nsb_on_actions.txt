@@ -1718,76 +1718,76 @@ on_actions = {
 		}
 
 		# Iran (or overlord) at war with SOV -> Remove resource rights
-		effect = {
-			if = { #British Puppet
-				limit = {
-					OR = {
-						AND = {
-							ROOT = { original_tag = SOV }
-							OR = {
-								FROM = { original_tag = PER }
-								PER = { is_subject_of = FROM }
-							}
-						}
-						AND = {
-							FROM = { original_tag = SOV }
-							OR = {
-								ROOT = { original_tag = PER }
-								PER = { is_subject_of = ROOT }
-							}
-						}
-					}
-					PER = {
-						any_owned_state = {
-							has_state_flag = SOV_soviet_resource_rights_iran_flag
-						}
-					}
-				}
-				PER = {
-					every_owned_state = {
-						limit = {
-							has_state_flag = SOV_soviet_resource_rights_iran_flag
-						}
-						PREV = { remove_resource_rights = PREV }
-						clr_state_flag = SOV_soviet_resource_rights_iran_flag
-					}
-				}
-			}
-			else_if = { #Soviet Puppet
-				limit = {
-					OR = {
-						AND = {
-							ROOT = { original_tag = ENG }
-							OR = {
-								FROM = { original_tag = PER }
-								PER = { is_subject_of = FROM }
-							}
-						}
-						AND = {
-							FROM = { original_tag = ENG }
-							OR = {
-								ROOT = { original_tag = PER }
-								PER = { is_subject_of = ROOT }
-							}
-						}
-					}
-					PER = {
-						any_owned_state = {
-							has_state_flag = SOV_british_resource_rights_iran_flag
-						}
-					}
-				}
-				PER = {
-					every_owned_state = {
-						limit = {
-							has_state_flag = SOV_british_resource_rights_iran_flag
-						}
-						PREV = { remove_resource_rights = PREV }
-						clr_state_flag = SOV_british_resource_rights_iran_flag
-					}
-				}
-			}
-		}
+		#effect = {
+		#	if = { #British Puppet
+		#		limit = {
+		#			OR = {
+		#				AND = {
+		#					ROOT = { original_tag = SOV }
+		#					OR = {
+		#						FROM = { original_tag = PER }
+		#						PER = { is_subject_of = FROM }
+		#					}
+		#				}
+		#				AND = {
+		#					FROM = { original_tag = SOV }
+		#					OR = {
+		#						ROOT = { original_tag = PER }
+		#						PER = { is_subject_of = ROOT }
+		#					}
+		#				}
+		#			}
+		#			PER = {
+		#				any_owned_state = {
+		#					has_state_flag = SOV_soviet_resource_rights_iran_flag
+		#				}
+		#			}
+		#		}
+		#		PER = {
+		#			every_owned_state = {
+		#				limit = {
+		#					has_state_flag = SOV_soviet_resource_rights_iran_flag
+		#				}
+		#				PREV = { remove_resource_rights = PREV }
+		#				clr_state_flag = SOV_soviet_resource_rights_iran_flag
+		#			}
+		#		}
+		#	}
+		#	else_if = { #Soviet Puppet
+		#		limit = {
+		#			OR = {
+		#				AND = {
+		#					ROOT = { original_tag = ENG }
+		#					OR = {
+		#						FROM = { original_tag = PER }
+		#						PER = { is_subject_of = FROM }
+		#					}
+		#				}
+		#				AND = {
+		#					FROM = { original_tag = ENG }
+		#					OR = {
+		#						ROOT = { original_tag = PER }
+		#						PER = { is_subject_of = ROOT }
+		#					}
+		#				}
+		#			}
+		#			PER = {
+		#				any_owned_state = {
+		#					has_state_flag = SOV_british_resource_rights_iran_flag
+		#				}
+		#			}
+		#		}
+		#		PER = {
+		#			every_owned_state = {
+		#				limit = {
+		#					has_state_flag = SOV_british_resource_rights_iran_flag
+		#				}
+		#				PREV = { remove_resource_rights = PREV }
+		#				clr_state_flag = SOV_british_resource_rights_iran_flag
+		#			}
+		#		}
+		#	}
+		#}
 	}
 
 	on_weekly_SOV = {
@@ -2073,16 +2073,6 @@ on_actions = {
 		}
 	}
 
-	on_startup = {
-		effect = {
-			#Set Iranian initial states (for Anglo-Soviet invasion of Iran)
-			PER = {
-				every_owned_state = {
-					add_to_array = { SOV_iranian_initial_states = PREV }
-				}
-			}
-		}
-	}
 
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
@@ -2118,55 +2108,7 @@ on_actions = {
 				}
 			}
 		}
-		#Soviet / Anglo-Soviet Invasion of Iran
-		effect = {
-			if = {
-				limit = {
-					original_tag = PER
-					FROM = { original_tag = SOV }
-				}
-				if = { #Soviets alone (or joint but ENG died)
-					limit = {
-						OR = {
-							has_global_flag = SOV_soviet_invasion_of_iran_flag
-							AND = {
-								has_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-								NOT = { country_exists = ENG }
-							}
-						}
-					}
-					FROM = {
-						white_peace = PER
-						puppet = ROOT #SOV puppet Iran
-					}
 
-					if = {
-						limit = {
-							has_global_flag = SOV_soviet_invasion_of_iran_flag
-						}
-						clr_global_flag = SOV_soviet_invasion_of_iran_flag
-					}
-					else = {
-						clr_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-					}
-					FROM = { country_event = { id = NSB_soviet_foreign_politics_events.156 days = 1 } } #Hidden Effect to transfer states and give resource rights
-				}
-				else_if = {
-					limit = {
-						has_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-					}
-					FROM = { white_peace = PER }
-					ENG = {
-						white_peace = PER
-						puppet = ROOT #ENG gets to puppet Iran
-					}
-
-					clr_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-
-					FROM = { country_event = { id = NSB_soviet_foreign_politics_events.157 days = 1 } } #Hidden Effect to transfer states and give resource rights and military access
-				}
-			}
-		}
 
 		#Spanish general from SPD/SPC exile in SOV -> NSB
 		#effect = {

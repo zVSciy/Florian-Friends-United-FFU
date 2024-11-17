@@ -289,7 +289,7 @@ every_possible_country = {
 # Generic Advisors
 every_possible_country = {
 	limit = {
-		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
 	}
 	generate_character = {
 		token_base = generic_silent_workhorse # token will be TAG_token_base
@@ -325,7 +325,7 @@ every_possible_country = {
 # Generic Theorists
 every_possible_country = {
 	limit = {
-		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
 	}
 	generate_character = {
 		token_base = generic_military_theorist # token will be TAG_token_base
@@ -361,7 +361,7 @@ every_possible_country = {
 # Generic High Command
 every_possible_country = {
 	limit = {
-		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL}
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL}
 	}
 	generate_character = {
 		token_base = generic_army_art # token will be TAG_token_base
@@ -407,7 +407,7 @@ every_possible_country = {
 # Generic Army Chief
 every_possible_country = {
 	limit = {
-		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL}
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL}
 	}
 	generate_character = {
 		token_base = generic_army_chief_off # token will be TAG_token_base
@@ -434,7 +434,7 @@ every_possible_country = {
 # Generic Navy Chief
 every_possible_country = {
 	limit = {
-		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
 	}
 	generate_character = {
 		token_base = generic_navy_chief_decisive_bat # token will be TAG_token_base
@@ -461,7 +461,7 @@ every_possible_country = {
 # Generic Air Chief
 every_possible_country = {
 	limit = {
-		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL }
 	}
 	generate_character = {
 		token_base = generic_air_close_air_sup # token will be TAG_token_base

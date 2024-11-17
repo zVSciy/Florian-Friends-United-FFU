@@ -7,7 +7,7 @@ state = {
 	}
 	state_category = rural
 	history = {
-		owner = PER
+		owner = WST
 		buildings = {
 			infrastructure = 3
 			air_base = 3
@@ -20,7 +20,7 @@ state = {
 			8031
 			1
 		}
-		add_core_of = PER
+		add_core_of = WST
 	}
 	provinces = {
 		8031 4928

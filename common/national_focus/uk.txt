@@ -4284,8 +4284,15 @@ focus_tree = {
 					news_event = generic.33
 				}
 			}
+			ITA = {
+				transfer_state = 421
+				transfer_state = 417
+				transfer_state = 413
+				transfer_state = 411
+			}
 			ENG = {
-				annex_country = { target = PER transfer_troops = no }
+				transfer_state = 410
+				transfer_state = 412
 			}
 			division_template = {
 				name = "Colonial Infantry (Iran)"

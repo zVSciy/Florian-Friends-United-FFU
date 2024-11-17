@@ -874,51 +874,9 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = britain.502
-	title = britain.502.t
-	desc = britain.502.d
-	picture = GFX_report_event_indian_soldiers
 
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.502.a
-		SOV = {
-			transfer_state= 416
-			transfer_state= 418
-			transfer_state= 266
-			transfer_state= 420
-			transfer_state= 419
-		}
-		set_autonomy = {
-			target = PER
-			autonomous_state = autonomy_protectorate
-		}
-	}
-	
-}
 
-country_event = {
-	id = britain.503
-	title = britain.503.t
-	desc = britain.503.d
-	picture = GFX_report_event_indian_soldiers
 
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.501.a
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = PER
-		}	
-	}
-	
-	option = {
-		name = britain.501.b
-	}
-}
 
 country_event = {
 	id = britain.504
