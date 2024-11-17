@@ -2198,20 +2198,6 @@ focus_tree = {
 					is_in_faction_with = ENG
 				}
 			}
-			# is_subject = no
-			# any_enemy_country = { is_major = yes }
-			# OR = {
-			# 	291 = {
-			# 		controller = {
-			# 			is_in_faction_with = eng
-			# 		}
-			# 	}
-			# 	444 = {
-			# 		controller = {
-			# 			is_in_faction_with = eng
-			# 		}
-			# 	}
-			# }
 		}
 		
 		search_filters = {}

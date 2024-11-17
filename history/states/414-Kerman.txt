@@ -4,11 +4,10 @@ state={
 	name="STATE_414"
 	manpower = 486013
 	
-	state_category = wasteland
-	impassable = yes
+	state_category = rural
 
 	history={
-		owner = PER
+		owner = WST
 		buildings = {
 			infrastructure = 1
 		}

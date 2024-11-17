@@ -370,10 +370,13 @@ operations = {
 					}
 				}
 			}
-			GER = {
-				has_war_with = SOV
-			}
-			country_exists = PER
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = WST
+					}
+				}
+			}		
 		}
 		
 		complete_effect = {
@@ -394,6 +397,16 @@ operations = {
 			}
 			ENG = {
 				transfer_state = 410
+			}
+			ENG = {
+				every_army_leader = {
+					add_attack = 1
+				}
+				ENG_andrew_cunningham = {
+					add_trait = {
+						trait = green_water_expert
+					}
+				}
 			}
 		}
 	}

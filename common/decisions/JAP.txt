@@ -1990,7 +1990,7 @@ operations = {
 			GER = {
 				has_war_with = SOV
 			}
-			291 = {
+			412 = {
 				CONTROLLER = {
 					OR = {
 						tag = WST
@@ -2017,6 +2017,16 @@ operations = {
 			JAP = {
 				transfer_state = 410
 				transfer_state = 412
+			}
+			ENG = {
+				every_army_leader = {
+					add_attack = 1
+				}
+				ENG_andrew_cunningham = {
+					add_trait = {
+						trait = green_water_expert
+					}
+				}
 			}
 		}
 	}
