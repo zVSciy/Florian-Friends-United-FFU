@@ -581,6 +581,76 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			421 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			417 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			411 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			413 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			414 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			410 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			412 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
 			766 = {
 				add_dynamic_modifier = {
 					modifier = anti_dockyard_construction
