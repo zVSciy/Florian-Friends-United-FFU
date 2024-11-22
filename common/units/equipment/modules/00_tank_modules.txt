@@ -3462,8 +3462,8 @@ equipment_modules = {
 		# forbid_equipment_type = amphibious 
 
 		add_stats = {
-			soft_attack = 50
-			hard_attack = 62
+			soft_attack = 40 #50
+			hard_attack = 58 #62
 			ap_attack = 90
 			build_cost_ic = 14
 		}
@@ -3486,8 +3486,8 @@ equipment_modules = {
 		parent = tank_heavy_gun_1
 
 		add_stats = {
-			soft_attack = 70
-			hard_attack = 74
+			soft_attack = 50 #70
+			hard_attack = 65 #74
 			ap_attack = 110
 			# breakthrough = -10
 			build_cost_ic = 16
