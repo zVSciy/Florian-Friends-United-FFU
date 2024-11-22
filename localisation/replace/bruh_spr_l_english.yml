@@ -1,5 +1,7 @@
 ﻿l_english:
-
+  autonomous_state:0 "Autonomous State"
+  semi_autonomous_state:0 "Semi-Autonomous State"
+  non_autonomous_state:0 "Non-Autonomous State"
   #### FOCUSES ####
   SPA_abandon_neutrality:0 "Abandon Neutrality"
   SPA_abandon_neutrality_desc:0 "Spain can't stay neutral, we need to take action!"
@@ -18,6 +20,12 @@
   SPA_italian_naval_designers:0 "Italian Naval Designers"
   SPA_the_iberian_wall:0 "The Iberian Wall"
   SPA_garrison_the_iberian_wall:0 "The National Guard"
+  SPA_equipment_modernization:0 "Tank Modernisation"
+  SPA_unlock_the_tank_guns:0 "Motorisation Effort"
+  SPA_less_steel_per_tank:0 "Steel Preservation Brakethrough"
+  SPA_cheaper_heavys:0 "Porsche Investments"
+  SPA_INFantry_bonus:0 "Modernise the Infantry"
+  SPA_arti_mio_win:0 "New Artilery Findings"
 
   #### DECISIONS ####
   SPA_civil_war:0 "The Start of the Spanish Civil War"

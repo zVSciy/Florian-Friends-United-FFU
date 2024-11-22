@@ -1034,11 +1034,6 @@ ideas = {
 				local_resources_factor = 0.1
 				min_export = -0.05
 			}
-
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-			}
 		}
 
 		SPA_disjointed_carlist_juntas = {
