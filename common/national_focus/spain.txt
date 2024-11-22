@@ -621,8 +621,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPA_tank_modernization
-				bonus = 1
-				uses = 1
+				ahead_reduction = 0.5
+				bonus = 0.75
+				uses = 1 
 				technology = improved_heavy_tank_chassis
 			}
 		}
