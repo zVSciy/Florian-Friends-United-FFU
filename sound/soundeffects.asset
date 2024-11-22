@@ -2087,7 +2087,7 @@ soundeffect =
 soundeffect =
 {
 	name = "alert_naval_invasion_sound"
-	volume = 0.35
+	volume = 1
 	sounds = {
 		sound = "no_alert_01"
 	}
@@ -2097,7 +2097,7 @@ soundeffect =
 soundeffect =
 {
 	name = "alert_dangerous_naval_invasion_sound"
-	volume = 0.35
+	volume = 1
 	sounds = {
 		sound = "naval_alert_01"
 	}
@@ -2147,7 +2147,7 @@ soundeffect =
 soundeffect =
 {
 	name = "alert_enemy_air_superiority_sound"
-	volume = 1.4
+	volume = 2
 	sounds = {
 		sound = "alert_air_01"
 	}
