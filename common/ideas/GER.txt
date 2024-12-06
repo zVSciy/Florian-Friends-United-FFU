@@ -266,13 +266,13 @@ ideas = {
 			picture = generic_acquire_tanks
 			equipment_bonus = {
 				infantry = {
-					max_strength = 16 instant = yes
+					max_strength = 24 instant = yes
 				}
 				motorized_equipment = {
-					max_strength = 33 instant = yes
+					max_strength = 38 instant = yes
 				}
 				mechanized_equipment = {
-					max_strength = 29 instant = yes
+					max_strength = 48 instant = yes
 				}
 			}
 		}
