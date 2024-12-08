@@ -862,44 +862,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = MAN_expand_eastern_railways
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = MAN_national_works }
-		x = 0
-		y = 1
-		relative_position_id = MAN_national_works
-
-		cost = 5
-
-		available = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			build_railway = {
-				path = { 4506 1588 12618 7832 4725 }
-			}
-			build_railway = {
-				path = { 10433 9782 10503 12482 11906 6811 810 3977 957 }
-			}
-			build_railway = {
-				path = { 957 3977 810 6811 9766 973 9897 }
-			}
-			build_railway = {
-				path = { 4572 7663 11864 9913 9928 11893 6964 9897 }
-			}
-			build_railway = {
-				path = { 4572 4503 7652 10433 }
-			}
-
-		}
-	}
 
 	focus = {
 		id = MAN_forced_collectivisation
@@ -1881,33 +1843,6 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			add_manpower = 200000
-		}
-	}
-
-	focus = {
-		id = MAN_increased_conscription
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = MAN_army_settlements }
-		x = 0
-		y = 1
-		relative_position_id = MAN_army_settlements
-
-		cost = 5
-
-		available = {
-			has_game_rule = {
-				rule = china_war_rule
-				option = ENABLED
-			}
-			has_global_flag = JAP_china_has_capped
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = MAN_increased_conscription
 		}
 	}
 
