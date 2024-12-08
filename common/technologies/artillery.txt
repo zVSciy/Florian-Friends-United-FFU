@@ -1429,11 +1429,11 @@ technologies = {
 
 		enable_equipments = {
 			rocket_artillery_equipment_1
-			
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher
 			tank_light_rocket_launcher_mech
+			add_on_rockets
 		}
 		enable_subunits = {
 			rocket_artillery_brigade
@@ -1471,9 +1471,6 @@ technologies = {
 			soft_attack = 0.1
 		}
 		
-		enable_equipment_modules = {
-			add_on_rockets
-		}
 		
 		path = {
 			leads_to_tech = rocket_artillery4
