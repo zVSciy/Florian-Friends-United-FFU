@@ -265,7 +265,7 @@ technologies = {
 		}		
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1939 }
@@ -274,7 +274,7 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
-			year_1942
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -845,7 +845,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1939 }
@@ -854,7 +854,7 @@ technologies = {
 		categories = {
 			support_tech
 			recon_tech
-			year_1942
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -1162,7 +1162,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1939 }
@@ -1171,7 +1171,7 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
-			year_1942
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -1346,7 +1346,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1939 }
@@ -1355,7 +1355,7 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
-			year_1942
+			year_1941
 		}
 		
 		on_research_complete = {
@@ -1546,7 +1546,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1939 }
@@ -1557,7 +1557,7 @@ technologies = {
 			hospital_tech
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
-			year_1942
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -1771,7 +1771,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1939 }
@@ -1782,7 +1782,7 @@ technologies = {
 			logistics_tech
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
-			year_1942
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -1954,7 +1954,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1939 }
@@ -1964,7 +1964,7 @@ technologies = {
 			support_tech
 			signal_company_tech
 			electronics
-			year_1942
+			year_1941
 		}
 		
 		ai_will_do = {
