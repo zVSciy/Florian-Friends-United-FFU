@@ -235,7 +235,7 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 	
-		equipment_conversion_speed = 0.40
+		equipment_conversion_speed = 0.65
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -274,39 +274,7 @@ technologies = {
 			year_1939
 		}
 	}
-	
-	advanced_equipment_conversion = {
-		
-		equipment_conversion_speed = 0.60
 
-		research_cost = 1.5
-		start_year = 1942
-		
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
-		}
-		
-		categories = {
-			industry
-			cat_production
-			year_1942
-		}
-	}
 
 	###############
 	concentrated_industry = {
