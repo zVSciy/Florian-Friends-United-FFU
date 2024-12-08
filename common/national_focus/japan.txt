@@ -207,8 +207,7 @@ focus_tree = {
 	focus = {
 		id = JAP_appoint_tojo
 		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = JAP_technlogical_supremacy }
-		prerequisite = { focus = JAP_combat_gekokoju }
+		prerequisite = { focus = JAP_combat_gekokoju focus = JAP_technlogical_supremacy }
 		x = -1
 		y = 1
 		relative_position_id = JAP_combat_gekokoju
@@ -539,8 +538,7 @@ focus_tree = {
 	focus = {
 		id = JAP_showa_restoration
 		icon = GFX_focus_jap_showa_restoration
-		prerequisite = { focus = JAP_military_government }
-		prerequisite = { focus = JAP_purge_the_bureaucracy }
+		prerequisite = { focus = JAP_purge_the_bureaucracy focus = JAP_military_government }
 		x = -1
 		y = 1
 		relative_position_id = JAP_military_government
