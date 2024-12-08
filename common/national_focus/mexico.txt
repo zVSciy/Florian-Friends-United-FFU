@@ -651,14 +651,14 @@ focus_tree = {
             relative_position_id = MEX_focus_abolish_capital_punishment
                 x = -1
                 y = 1
-            cost = 5
+            cost = 1
         
             ai_will_do = {
                 factor = 100
             }
     
             available = {
-                date > 1940.6.1
+                date > 1940.1.1
             }
     
             bypass = {
