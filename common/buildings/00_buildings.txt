@@ -9,11 +9,17 @@ buildings = {
 		base_cost = 3000
 		icon_frame = 3
 		infrastructure = yes
-		max_level = 10
+		level_cap = {
+			state_max = 10
+		}
 		value = 1
 		allied_build = yes
 		show_modifier = yes
-		max_fuel_building = 1.0 #k
+		country_modifiers = {
+			modifiers = {
+				max_fuel_building = 1.0 #k
+			}
+		}
 	}
 
 	arms_factory = {
@@ -22,8 +28,11 @@ buildings = {
 		base_cost_conversion = 3000
 		military_production = 1
 		icon_frame = 2
-		max_level = 99
-		shares_slots = yes
+		disabled_in_dmz = no
+		level_cap = {
+			shares_slots = yes
+			state_max = 99
+		}
 		value = 8
 		infrastructure_construction_effect = yes
 	}
@@ -34,8 +43,10 @@ buildings = {
 		base_cost_conversion = 6000
 		general_production = 1
 		icon_frame = 1
-		max_level = 99
-		shares_slots = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 99
+		}
 		value = 5
 		infrastructure_construction_effect = yes
 	}
@@ -45,7 +56,9 @@ buildings = {
 		base_cost = 900
 		icon_frame = 5
 		air_base = yes
-		max_level = 100
+		level_cap = {
+			state_max = 100
+		}
 		value = 28
 		infrastructure_construction_effect = yes
 		allied_build = yes
@@ -57,10 +70,11 @@ buildings = {
 		show_on_map = 1
 		base_cost = 4000
 		#Cost Reduction?
-		provincial = yes
+		level_cap = {
+			province_max = 1
+		}
 		disabled_in_dmz = no
 		icon_frame = 15
-		max_level = 1
 		centered = yes
 		supply_node = yes
 		damage_factor = 0.1
@@ -72,10 +86,11 @@ buildings = {
 	rail_way = {
 		base_cost = 170
 		# per_level_extra_cost = 130
-		provincial = yes
 		disabled_in_dmz = no
 		icon_frame = 16
-		max_level = 1
+		level_cap = {
+			province_max = 1
+		}
 		infrastructure_construction_effect = yes
 	}
 	
@@ -107,7 +122,7 @@ buildings = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
-		base_cost = 3000
+		base_cost = 2500
 		per_level_extra_cost = 10
 		spawn_point = naval_base_spawn 
 		only_costal = yes
@@ -127,11 +142,12 @@ buildings = {
 		has_destroyed_mesh = yes
 		base_cost = 2000
 		per_level_extra_cost = 800
-		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
-		max_level = 10
+		level_cap = {
+			province_max = 10
+		}
 		value = 5
 		damage_factor = 0.30
 		allied_build = yes
@@ -143,11 +159,12 @@ buildings = {
 		has_destroyed_mesh = no
 		base_cost = 3000
 		per_level_extra_cost = 1000
-		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1 # Maybe get rid of?
-		max_level = 10
+		level_cap = {
+			province_max = 10
+		}
 		value = 10 # Normal forts have 1 health
 		damage_factor = -0.5 # modifies the damage that this building gets from air bombing or land combat.
 		#allied_build = yes
@@ -158,12 +175,13 @@ buildings = {
 		has_destroyed_mesh = yes
 		base_cost = 1500
 		per_level_extra_cost = 500
-		provincial = yes
 		disabled_in_dmz = yes
 		only_costal = yes
 		icon_frame = 8
 		naval_fort = 1
-		max_level = 10
+		level_cap = {
+			province_max = 10
+		}
 		value = 5
 		damage_factor = 0.30
 		allied_build = yes
@@ -175,12 +193,13 @@ buildings = {
 		has_destroyed_mesh = no
 		base_cost = 2500
 		per_level_extra_cost = 800
-		provincial = yes
 		disabled_in_dmz = yes
 		only_costal = yes
 		icon_frame = 8
 		naval_fort = 1 # Maybe get rid of?
-		max_level = 10
+		level_cap = {
+			province_max = 10
+		}
 		value = 10 # Normal forts have 1 health
 		damage_factor = -0.5 # modifies the damage that this building gets from air bombing or land combat.
 		#allied_build = yes
@@ -194,8 +213,10 @@ buildings = {
 		naval_production = 1
 		icon_frame = 4
 		only_costal = yes
-		max_level = 99
-		shares_slots = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 99
+		}
 		value = 5
 		infrastructure_construction_effect = yes
 	}
@@ -209,7 +230,9 @@ buildings = {
 		anti_air = yes
 		disabled_in_dmz = no
 		air_defence = 1
-		max_level = 5 # This is the max unlock level
+		level_cap = {
+			state_max = 5
+		}
 		value = 10
 		allied_build = yes
 		infrastructure_construction_effect = yes
@@ -222,33 +245,23 @@ buildings = {
 		icon_frame = 17
 		local_resources_rubber = 30
 		refinery = yes
-		max_level = 99 # This is the max unlock level
-		shares_slots = no
 		value = 8
 		allied_build = no
 		infrastructure_construction_effect = yes
-		damage_factor = 0.20
+		damage_factor = 0
 		
 		show_modifier = yes
-		fuel_gain_from_states = 2
+		country_modifiers = {
+			modifiers = {
+				fuel_gain_from_states = 2.0 #per hour
+			}
+		}
+
+		level_cap = {
+			shares_slots = no
+			state_max = 99
+		}
 	}
-	
-	# synthetic_rubber_refinery = {
-	# 	show_on_map = 1
-	# 	base_cost = 8000
-	# 	icon_frame = 10
-	# 	local_resources_rubber = 30
-	# 	refinery = yes
-	# 	max_level = 3 # This is the max unlock level
-	# 	shares_slots = no
-	# 	value = 8
-	# 	allied_build = yes
-	# 	infrastructure_construction_effect = yes
-	# 	damage_factor = 0.20
-		
-	# 	show_modifier = yes
-	# 	fuel_gain_from_states = 5.0 
-	# }
 	
 	steel_refinery = {
 		show_on_map = 1
@@ -259,12 +272,14 @@ buildings = {
         local_resources_chromium = 5
         local_resources_tungsten = 5
 		refinery = yes
-		max_level = 99 #3
-		shares_slots = no
+		level_cap = {
+			shares_slots = no
+			state_max = 99
+		}
 		value = 8
 		allied_build = no
 		infrastructure_construction_effect = yes
-		damage_factor = 0.20
+		damage_factor = 0
 		
 		show_modifier = yes
 	}
@@ -273,8 +288,6 @@ buildings = {
 		show_on_map = 1
 		base_cost = 4000
 		icon_frame = 14
-		max_level = 99 #3
-		shares_slots = no
 		value = 999
 		allied_build = yes
 		infrastructure_construction_effect = yes
@@ -282,7 +295,16 @@ buildings = {
 		damage_factor = -0.5
 		
 		show_modifier = yes
-		max_fuel_building = 250.0 #k
+		country_modifiers = {
+			modifiers = {
+				max_fuel_building = 250.0 #k
+			}
+		}
+
+		level_cap = {
+			shares_slots = no
+			state_max = 999
+		}
 	}
 
 	radar_station = {
@@ -290,8 +312,9 @@ buildings = {
 		base_cost = 3000
 		icon_frame = 11
 		radar = yes
-		#max_level = 0 # max: 5
-		max_level = 6 # This is the max unlock level
+		level_cap = {
+			state_max = 6 # This is the max unlock level
+		}
 		damage_factor = 0.5
 		value = 4
 		infrastructure_construction_effect = yes
@@ -352,7 +375,9 @@ buildings = {
 		base_cost = 999999
 		icon_frame = 5
 		air_base = yes
-		max_level = 20
+		level_cap = {
+			state_max = 20# This is the max unlock level
+		}
 		value = 28
 		infrastructure_construction_effect = yes
 		allied_build = yes
