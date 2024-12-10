@@ -238,7 +238,7 @@ ENG_air_dynamic_modifier = {
 	air_home_defence_factor = ENG_british_airforce_air_home_defence_factor
 	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
 }
-
+ 
 ENG_navy_dynamic_modifier = {
 	enable = { always = yes }
 
@@ -246,7 +246,7 @@ ENG_navy_dynamic_modifier = {
 
 	repair_speed_factor = ENG_british_navy_repair_speed_factor
 	refit_speed = ENG_british_navy_refit_speed
-	refit_ic_cost = ENG_british_navy_refit_ic_cost
+	repair_speed_factor = ENG_british_navy_refit_ic_cost
 	navy_submarine_detection_factor = ENG_british_navy_navy_submarine_detection_factor
 	convoy_escort_efficiency = ENG_british_navy_convoy_escort_efficiency
 	custom_modifier_tooltip = ENG_british_navy_secure_the_imperial_shipping_routes_tt
@@ -321,7 +321,7 @@ JAP_navy_and_air_dynamic_modifier = {
 	naval_torpedo_screen_penetration_factor = JAP_japanese_navy_air_forces_naval_torpedo_screen_penetration_factor
 	custom_modifier_tooltip = JAP_duplicate_research_effort_tt
 	refit_speed = JAP_navy_refit_speed
-	refit_ic_cost = JAP_navy_refit_ic_cost
+	repair_speed_factor = JAP_navy_refit_ic_cost
 }
 
 ITA_economy_dynamic_modifier = {
@@ -405,7 +405,7 @@ ITA_navy_dynamic_modifier = {
 	naval_torpedo_screen_penetration_factor = ITA_italian_navy_naval_torpedo_screen_penetration_factor
 	naval_speed_factor = ITA_italian_navy_naval_speed_factor
 	refit_speed = ITA_italian_navy_refit_speed
-	refit_ic_cost = ITA_italian_navy_refit_ic_cost
+	repair_speed_factor = ITA_italian_navy_refit_ic_cost
 }
 
 GER_economy_dynamic_modifier = {
@@ -534,7 +534,7 @@ USA_economy_dynamic_modifier = {
 
 	# depr 2.0
 	refit_speed = USA_navy_refit_speed
-	refit_ic_cost = USA__navy_refit_ic_cost
+	repair_speed_factor = USA__navy_refit_ic_cost
 }
 
 USA_army_dynamic_modifier = {

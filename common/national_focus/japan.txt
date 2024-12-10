@@ -5700,7 +5700,7 @@ focus_tree = {
 			}
 			JAP_navy_and_air_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { JAP_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
-			add_to_variable = { JAP_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
+			add_to_variable = { JAP_navy_refit_ic_cost = 0.1 tooltip = repair_speed_factor_tt }
 
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt

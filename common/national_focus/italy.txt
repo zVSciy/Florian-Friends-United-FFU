@@ -4598,7 +4598,7 @@ focus_tree = {
 			ITA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ITA_italian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { ITA_italian_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
-			add_to_variable = { ITA_italian_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
+			add_to_variable = { ITA_italian_navy_refit_ic_cost = 0.1 tooltip = repair_speed_factor_tt }
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
