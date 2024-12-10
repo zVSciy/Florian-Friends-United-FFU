@@ -27,6 +27,9 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
 		}
+		special_project_specialization = {
+			specialization_nuclear
+		}
 		
 		ai_will_do = {
 			factor = 30
@@ -1075,6 +1078,9 @@ technologies = {
 		ai_will_do = {
 			factor = 7
 		}
+		special_project_specialization = {
+			specialization_nuclear
+		}
 		
 		categories = {
 			electronics
@@ -1106,6 +1112,9 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 6 }
+		}
+		special_project_specialization = {
+			specialization_nuclear
 		}
 
 		enable_equipment_modules = { 
@@ -1155,6 +1164,9 @@ technologies = {
 		enable_equipment_modules = {
 			stabilizer
 			mech_stabilizer
+		}
+		special_project_specialization = {
+			specialization_nuclear
 		}
 		
 		research_cost = 2.5
@@ -1217,6 +1229,9 @@ technologies = {
 
 		enable_equipment_modules = {
 			bomb_sights_2
+		}
+		special_project_specialization = {
+			specialization_nuclear
 		}
 		
 		ai_will_do = {
@@ -1510,6 +1525,9 @@ technologies = {
 			name = electronics_folder
 			position = { x = 2 y = 4 }
 		}
+		special_project_specialization = {
+			specialization_naval
+		}
 		
 		path = {
 			leads_to_tech = improved_fire_control_system
@@ -1565,6 +1583,9 @@ technologies = {
 		path = {
 			leads_to_tech = advanced_fire_control_system
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_naval
 		}
 		
 		ai_will_do = {
@@ -1624,6 +1645,9 @@ technologies = {
 			}
 			
 		}
+		special_project_specialization = {
+			specialization_naval
+		}
 		
 		categories = {
 			electronics
@@ -1656,6 +1680,9 @@ technologies = {
 	
 		ai_will_do = {
 			factor = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -1691,6 +1718,9 @@ technologies = {
 		path = {
 			leads_to_tech = jet_engines 
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		research_cost = 2
@@ -1741,6 +1771,9 @@ technologies = {
 			leads_to_tech = advanced_rocket_engines 
 			research_cost_coeff = 1
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		research_cost = 1.5
 		start_year = 1944
@@ -1789,6 +1822,9 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 8 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1828,6 +1864,9 @@ technologies = {
 			jet_engine_4x
 			jet_engine_6x
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1855,6 +1894,9 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
+		}
+		special_project_specialization = {
+			specialization_nuclear
 		}
 		
 		ai_will_do = {
@@ -1913,6 +1955,9 @@ technologies = {
 				factor = 2
 			}
 		}
+		special_project_specialization = {
+			specialization_nuclear
+		}
 		
 		categories = {
 			nuclear
@@ -1937,6 +1982,9 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+		}
+		special_project_specialization = {
+			specialization_nuclear
 		}
 		
 		nuclear_production = 1
