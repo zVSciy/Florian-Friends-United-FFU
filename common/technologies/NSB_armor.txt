@@ -106,6 +106,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = -4 y = 6 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -131,6 +134,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -4 y = 10 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -166,6 +172,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 4 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -197,6 +206,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 10 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -222,6 +234,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 14 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -301,6 +316,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 7 y = @1941 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -370,6 +388,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 7 y = 14 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -461,6 +482,9 @@ technologies = {
 			leads_to_tech = ita_medium_tank_1
 			research_cost_coeff = 1
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		research_cost = 2
 		start_year = 1936
@@ -503,6 +527,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -2 y = 8 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -559,6 +586,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 0 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -586,6 +616,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 4 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -622,6 +655,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 8 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -644,6 +680,9 @@ technologies = {
 		path = {
 			leads_to_tech = ita_medium_tank_4
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		research_cost = 2
@@ -673,6 +712,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 14 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -704,6 +746,9 @@ technologies = {
 		folder	= {
 			name = nsb_armour_folder
 			position = { x = 6 y = 12 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -917,6 +962,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 12 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -980,6 +1028,9 @@ technologies = {
 				tag = SIA
 			}
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -1008,6 +1059,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -2 y = 8 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
@@ -1056,6 +1110,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 4 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -1087,6 +1144,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 8 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -1117,6 +1177,9 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 14 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		categories = {
 			armor
@@ -1141,6 +1204,9 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 18 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		categories = {
