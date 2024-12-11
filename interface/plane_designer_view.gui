@@ -826,16 +826,28 @@ guiTypes = {
 
 		# plane role field
 		containerWindowType = {
-			name = "air_theatre_wing_item"
-			position = { x=0 y=0 }
-			size = { width=23 height=23 }
-	
-			buttonType = {
-				name ="background"
-				quadTextureSprite = "GFX_wing_types_map"
-				position = { x = 0 y = 0 }
+			name = "plane_role"
+			position = { x = 20 y = 95 }
+			size = { width = 280 height = 40 }
+
+			containerWindowType = {
+				name = "equipment_name_bg"
+				size = { width = 100% height = 100% }
+
+				background = {
+					name = "name_bg"
+					quadTextureSprite = "GFX_generic_background"
+					alwaystransparent = yes
+				}
 			}
-	
+
+			iconType = {
+				name = "role_icon"
+				spriteType = "GFX_wing_types_map"
+				position = { x = 8 y = 14 }
+				alwaystransparent = yes
+			}
+
 			#iconType = {
 			#	name ="highlight"
 			#	quadTextureSprite = "GFX_theatre_army_shield_selected"
@@ -843,14 +855,12 @@ guiTypes = {
 			#	position = { x = 0 y = 0 }
 			#}
 	
-			instantTextBoxType = {
-				name = "air_wing_count_box"
-				position = { x = 6 y = 10 }
+			instantTextboxType = {
+				name = "role_text"
+				position = { x = 48 y = 10 }
 				font = "hoi_18mbs"
-				maxWidth = 36
-				maxHeight = 23
-				fixedsize = yes
-				format = center
+				maxWidth = 220
+				maxHeight = 18
 				alwaystransparent = yes
 			}
 		}
