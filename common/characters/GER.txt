@@ -1123,9 +1123,10 @@ characters={
 	}
 	GER_joseph_goebbels={
 		name="GER_joseph_goebbels"
-		portraits={
-			army={
-				small="GFX_idea_joseph_goebbels"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_joseph_goebbels
+				small = GFX_portrait_GER_joseph_goebbels_small
 			}
 		}
 		advisor={
@@ -1157,9 +1158,10 @@ characters={
 	}
 	GER_rudolf_hess={
 		name="GER_rudolf_hess"
-		portraits={
-			army={
-				small="GFX_idea_rudolf_hess"
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_rudolf_hess
+				small = GFX_portrait_GER_rudolf_hess_small
 			}
 		}
 		advisor={
@@ -1182,9 +1184,13 @@ characters={
 	}
 	GER_heinrich_himmler={
 		name="GER_heinrich_himmler"
-		portraits={
-			army={
-				small="GFX_idea_GER_heinrich_himmler"
+		portraits = {
+			army = {
+				small = GFX_portrait_GER_heinrich_himmler_small
+				large = GFX_portrait_GER_heinrich_himmler
+			}
+			civilian = {
+				large = GFX_portrait_GER_heinrich_himmler
 			}
 		}
 		advisor={
@@ -1337,9 +1343,9 @@ characters={
 	}
 	GER_otto_ciliax={
 		name="GER_otto_ciliax"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_5"
+		portraits = {
+			civilian = {
+				small = GFX_portrait_GER_otto_ruhle_small
 			}
 		}
 		advisor={
@@ -1358,9 +1364,9 @@ characters={
 	# Army Chief
 	GER_ludwig_beck={
 		name="GER_ludwig_beck"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_ludwig_beck
 			}
 		}
 		advisor={
@@ -1405,9 +1411,9 @@ characters={
 	}
 	GER_walther_von_brauchitsch={
 		name="GER_walther_von_brauchitsch"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_walther_von_brauchitsch
 			}
 		}
 		advisor={
@@ -1431,9 +1437,9 @@ characters={
 	# Air Chief
 	GER_ritter_von_greim={
 		name="GER_ritter_von_greim"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_ritter_von_greim
 			}
 		}
 		advisor={
@@ -1459,9 +1465,9 @@ characters={
 	# High Command
 	GER_ferdinand_schorner={
 		name="GER_ferdinand_schorner"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_ferdinand_schorner
 			}
 		}
 		advisor={
@@ -1482,9 +1488,10 @@ characters={
 	}
 	GER_werner_von_fritsch={
 		name="GER_werner_von_fritsch"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_werner_von_blomberg
+				small = GFX_portrait_GER_werner_von_blomberg_small
 			}
 		}
 		advisor={
@@ -1503,34 +1510,34 @@ characters={
 			}
 		}
 	}
-	 GER_erich_hartmann={
-	 	name="GER_erich_hartmann"
-	 	portraits={
-	 		army={
-	 			small="GFX_idea_generic_army_europe_1"
-	 		}
-	 	}
-	 	advisor={
-	 		slot = high_command
-	 		idea_token = GER_erich_hartmann
-			 ledger = air
-	 		allowed = {
-	 			original_tag = GER
-	 		}
-	 		traits  = {
-	 			air_bomber_interception_2 
-	 		}
-			 cost = 100
-	 		ai_will_do = {
-	 			factor = 1
-	 		}
-	 	}
-	 }
+	#  GER_erich_hartmann={
+	#  	name="GER_erich_hartmann"
+	#  	portraits={
+	#  		civilian = {
+	#  			small="GFX_idea_generic_army_europe_1"
+	#  		}
+	#  	}
+	#  	advisor={
+	#  		slot = high_command
+	#  		idea_token = GER_erich_hartmann
+	# 		 ledger = air
+	#  		allowed = {
+	#  			original_tag = GER
+	#  		}
+	#  		traits  = {
+	#  			air_bomber_interception_2 
+	#  		}
+	# 		 cost = 100
+	#  		ai_will_do = {
+	#  			factor = 1
+	#  		}
+	#  	}
+	#  }
 	GER_hugo_sperrle={
 		name="GER_hugo_sperrle"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_hugo_sperrle
 			}
 		}
 		advisor={
@@ -1544,7 +1551,33 @@ characters={
 				has_completed_focus = GER_luft
 			}
 			traits  = {
-				air_close_air_support_2 
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	GER_robert_knauss = {
+		name = GER_robert_knauss
+		portraits = {
+			army = {
+				small = GFX_portrait_GER_robert_knauss_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = GER_robert_knauss
+			ledger = air
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_luft
+			}
+			traits = {
+				air_bomber_interception_2 
 			}
 			cost = 100
 			ai_will_do = {
@@ -1554,9 +1587,9 @@ characters={
 	}
 	GER_erhard_milch={
 		name="GER_erhard_milch"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_erhard_milch
 			}
 		}
 		advisor={
@@ -1576,9 +1609,9 @@ characters={
 	}
 	GER_erich_bey={
 		name="GER_erich_bey"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_erich_bey
 			}
 		}
 		advisor={
@@ -1599,9 +1632,9 @@ characters={
 	}
 	GER_viktor_schutze={
 		name="GER_viktor_schutze"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+		portraits = {
+			army = {
+				small = GFX_idea_viktor_schutze
 			}
 		}
 		advisor={
