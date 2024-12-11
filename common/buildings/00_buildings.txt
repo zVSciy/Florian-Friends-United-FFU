@@ -340,11 +340,11 @@ buildings = {
 	}
 
 	nuclear_reactor = {
-		hide_if_missing_tech = yes
-		missing_tech_loc = { 
-			localization_key = SP_BUILDING_MISSING_PROJECT
-			PROJECT = sp_nuclear_reactor
-		}
+		#hide_if_missing_tech = yes
+		#missing_tech_loc = { 
+		#	localization_key = SP_BUILDING_MISSING_PROJECT
+		#	PROJECT = sp_nuclear_reactor
+		#}
 		spawn_point = nuclear_reactor_spawn
 		show_on_map = 1
 		base_cost = 30000
@@ -371,11 +371,11 @@ buildings = {
 	}
 
 	nuclear_reactor_heavy_water = {
-		hide_if_missing_tech = yes
-		missing_tech_loc = { 
-			localization_key = SP_BUILDING_MISSING_PROJECT
-			PROJECT = sp_nuclear_reactor
-		}
+		#hide_if_missing_tech = yes
+		#missing_tech_loc = { 
+		#	localization_key = SP_BUILDING_MISSING_PROJECT
+		#	PROJECT = sp_nuclear_reactor
+		#}
 		spawn_point = nuclear_reactor_spawn
 		show_on_map = 1
 		base_cost = 25000
