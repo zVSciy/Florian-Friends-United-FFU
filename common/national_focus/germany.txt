@@ -3454,7 +3454,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_abwehr2
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_secret_service_agency
 		prerequisite = { focus = GER_abwehr }
 		x = 0
 		y = 1
@@ -4189,6 +4189,7 @@ focus_tree = {
 		id = GER_kill_the_soviets
 		icon = GFX_GER_danzig_or_war
 		prerequisite = { focus = GER_operation_citadel }
+		prerequisite = { focus = GER_ostwall }
 		
 		available = {
 			date > 1944.5.1
@@ -4210,7 +4211,7 @@ focus_tree = {
 			}
 		}
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_operation_citadel
 		cancel_if_invalid = yes
@@ -5097,7 +5098,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_swiss_banks
-		icon = GFX_GER_swiss_money_laundry
+		icon = GFX_focus_GER_the_swiss_gold
 		prerequisite = { focus = GER_rearmed_and_ready }
 		available = {
 			is_puppet = no
@@ -6448,7 +6449,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_lessons_of_war
-		icon = GFX_ger_kampfgruppen
+		icon = GFX_focus_generic_tank_air_support
 		prerequisite = { focus = GER_improved_command }
 		x = 0
 		y = 1
@@ -6677,33 +6678,12 @@ focus_tree = {
 			add_to_variable = { GER_german_economy_production_lack_of_resource_penalty_factor = -0.33 tooltip = production_lack_of_resource_penalty_factor_tt }
 		}
 	}
-
-	focus = {
-		id = GER_underground_factories
-		icon = GFX_underground
-		prerequisite = { focus = GER_prioritise_aircraft focus = GER_prioritise_tanks }
-		relative_position_id = GER_prioritise_aircraft
-		
-		available = {
-			has_war_with = SOV
-		}
-		
-		cancel_if_invalid = yes
-		x = 0
-		y = 1
-		
-		cost = 5
-		
-		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 4 }
-		}
-	}
 	
 	focus = {
 		id = GER_factory_relocation
 		icon = GFX_ger_undercover_industries
-		prerequisite = { focus = GER_underground_factories }
-		relative_position_id = GER_underground_factories
+		prerequisite = { focus = GER_prioritise_aircraft }
+		relative_position_id = GER_prioritise_aircraft
 		
 		available = {
 			has_tech = dispersed_industry3
@@ -6818,7 +6798,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_hold_africa
-		icon = GFX_GER_goal_hold_africa1
+		icon = GFX_focus_GER_mittelafrika
 		prerequisite = { focus = GER_mobilise_reich }
 		x = 3
 		y = 1
@@ -7725,7 +7705,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_operation_sealion
-		icon = GFX_focus_GER_operation_sealion
+		icon = GFX_focus_generic_naval_invasion
 		prerequisite = { focus = GER_appoint_raeder focus = GER_monsoon_boats }
 		x = 2
 		y = 1
