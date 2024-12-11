@@ -117,9 +117,6 @@ technologies = {
 			mio_cat_tech_light_armor_and_modules
 			year_1939
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 0
@@ -153,9 +150,6 @@ technologies = {
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
 			year_1941
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		ai_will_do = {
@@ -262,9 +256,6 @@ technologies = {
 			mio_cat_tech_medium_armor_and_modules
 			year_1940
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 0
@@ -364,9 +355,6 @@ technologies = {
 			mio_cat_tech_medium_armor_and_modules
 			year_1942
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 0
@@ -438,9 +426,6 @@ technologies = {
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
 			year_1944
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		ai_will_do = {
@@ -548,9 +533,6 @@ technologies = {
 			mio_cat_tech_heavy_armor_and_modules
 			year_1939
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 0
@@ -585,9 +567,6 @@ technologies = {
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 			year_1940
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		ai_will_do = {
@@ -740,9 +719,6 @@ technologies = {
 			mio_cat_tech_heavy_armor_and_modules
 			year_1943
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 0
@@ -844,9 +820,6 @@ technologies = {
 
 		on_research_complete = {
 			custom_effect_tooltip = sov_zis_30_short_tt
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		ai_will_do = {

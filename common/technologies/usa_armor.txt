@@ -113,9 +113,6 @@ technologies = {
 			name = usa_armour_folder
 			position = { x = -7 y = 8 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			armor
@@ -143,9 +140,6 @@ technologies = {
 		path = {
 			leads_to_tech = usa_light_td
 			research_cost_coeff = 1
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		research_cost = 2
@@ -188,9 +182,6 @@ technologies = {
 			mio_cat_tech_light_armor_and_modules
 			year_1944
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 
 		on_research_complete = {
 			custom_effect_tooltip = usa_m24_short_tt
@@ -216,9 +207,6 @@ technologies = {
 		folder = {
 			name = usa_armour_folder
 			position = { x = -5 y = 14 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -261,9 +249,6 @@ technologies = {
 			name = usa_armour_folder
 			position = { x = 0 y = 4 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			armor
@@ -298,9 +283,6 @@ technologies = {
 		folder = {
 			name = usa_armour_folder
 			position = { x = 0 y = 6 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -344,9 +326,6 @@ technologies = {
 		folder = {
 			name = usa_armour_folder
 			position = { x = 0 y = 10 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -441,9 +420,6 @@ technologies = {
 			name = usa_armour_folder
 			position = { x = -2 y = 16 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			armor
@@ -520,9 +496,6 @@ technologies = {
 			name = usa_armour_folder
 			position = { x = 7 y = 10 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			armor
@@ -545,9 +518,6 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_turret_2
 			tank_heavy_turret_3
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		research_cost = 2
@@ -581,9 +551,6 @@ technologies = {
 		folder = {
 			name = usa_armour_folder
 			position = { x = 10 y = 16 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
