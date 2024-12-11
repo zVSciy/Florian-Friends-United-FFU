@@ -29,6 +29,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			light_air
@@ -66,6 +69,9 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			engine_2_1x
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 	
 		path = {
@@ -145,6 +151,9 @@ technologies = {
 		path = {
 			leads_to_tech = advanced_small_airframe
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 				
 
@@ -233,6 +242,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			light_air
@@ -297,6 +309,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 12 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			light_air
@@ -350,6 +365,9 @@ technologies = {
 			mio_cat_all_medium_aircraft_and_modules
 			year_1933
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -378,6 +396,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 4 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -438,6 +459,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 6 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -506,6 +530,9 @@ technologies = {
 			mio_cat_all_medium_aircraft_and_modules
 			year_1942
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -549,6 +576,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 12 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			medium_air
@@ -584,6 +614,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -626,6 +659,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 4 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			heavy_air
@@ -667,6 +703,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			heavy_air
@@ -706,6 +745,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -747,6 +789,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 12 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -811,6 +856,9 @@ technologies = {
 			mio_cat_all_light_aircraft_and_modules
 			year_1943
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -847,6 +895,9 @@ technologies = {
 		path = {
 			leads_to_tech = cas_2
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -888,6 +939,9 @@ technologies = {
 		path = {
 			leads_to_tech = cas_3
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 
 		folder = {
@@ -942,6 +996,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 
 		categories = {
 			air_equipment
@@ -989,6 +1046,9 @@ technologies = {
 			leads_to_tech = nav_2
 			research_cost_coeff = 1
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			air_equipment
@@ -1033,6 +1093,9 @@ technologies = {
 		path = {
 			leads_to_tech = nav_3
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -1080,6 +1143,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 8 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 
 		
 		categories = {
@@ -1125,6 +1191,9 @@ technologies = {
 		path = {
 			leads_to_tech = tac_1
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		categories = {
@@ -1174,6 +1243,9 @@ technologies = {
 			leads_to_tech = tac_2
 			research_cost_coeff = 1
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		categories = {
 			air_equipment
@@ -1222,6 +1294,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 8 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 
 		path = {
@@ -1275,6 +1350,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 10 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 
 		
 		categories = {
@@ -1325,6 +1403,9 @@ technologies = {
 			cat_scout_plane
 			year_1933
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1362,6 +1443,9 @@ technologies = {
 		path = {
 			leads_to_tech = aa_hmg
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 
 		
@@ -1402,6 +1486,9 @@ technologies = {
 			hmg_defense_turret
 			hmg_defense_turret_2x
 			tank_buster_1
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		research_cost = 0.5
@@ -1457,6 +1544,9 @@ technologies = {
 			aircraft_cannon_1_2x
 			ammunition_2
 			tank_buster_2
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		research_cost = 0.5
@@ -1537,6 +1627,9 @@ technologies = {
 			mio_cat_all_light_aircraft_and_modules
 			year_1942
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1571,6 +1664,9 @@ technologies = {
 			engine_1_3x
 			engine_1_4x
 			engine_1_6x	
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		research_cost = 0.5
@@ -1662,6 +1758,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 3 y = 4 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 
 		path = {
 			leads_to_tech = engines_3
@@ -1729,6 +1828,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 3 y = 6 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 
 		path = {
@@ -1806,6 +1908,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 3 y = 8 }
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 
 		categories = {
 			air_equipment
@@ -1864,6 +1969,9 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 5 y = 4 }
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 
 		categories = {
@@ -1936,6 +2044,9 @@ technologies = {
 			mio_cat_all_light_aircraft_and_modules
 			year_1939
 		}
+		special_project_specialization = {
+			specialization_air
+		}
 	}
 	aircraft_construction = {
 
@@ -1953,6 +2064,9 @@ technologies = {
 			flying_boat_medium
 			# non_strategic_materials_large
 			flying_boat_large
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		research_cost = 0.5
@@ -2007,6 +2121,9 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 			year_1939
+		}
+		special_project_specialization = {
+			specialization_air
 		}
 		
 		ai_will_do = {
