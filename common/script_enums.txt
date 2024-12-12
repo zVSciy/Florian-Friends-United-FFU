@@ -1395,7 +1395,28 @@ script_enum_equipment_bonus_type = {
 	mega_carrier
 	ballistic_missile_equipment
 	sam_missile_equipment
-	
+	land_cruiser
+	emplacement_gun_ammo
+	ballistic_missile
+	nuclear_missile
+	sam_missile
+	ballistic_missile_equipment_1
+	ballistic_missile_equipment_2
+	ballistic_missile_equipment_3
+	explosive_ammo_equipment
+	explosive_ammo_equipment_1
+	helicopter_equipment_1
+	mothership_equipment_0
+	nuclear_missile_equipment
+	nuclear_missile_equipment_1
+	nuclear_missile_equipment_2
+	sam_missile_equipment_1
+	sh_carrier
+	ship_hull_carrier_super_1
+	armored_support_vehicle
+	armored_support_vehicle_1
+	super_heavy_railway_gun_equipment
+	super_heavy_railway_gun_equipment_1
 
 	eng_medium_tank_chassis_a10
 }

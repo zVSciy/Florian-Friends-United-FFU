@@ -2621,7 +2621,12 @@ technologies = {
 			building = bunker
 			level = 5
 		}
-		
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_commercial_nuclear_reactor	
+			}
+		}
 		enable_building = {
 			building = coastal_bunker
 			level = 3

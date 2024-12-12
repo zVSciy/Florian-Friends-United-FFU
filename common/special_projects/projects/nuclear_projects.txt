@@ -277,10 +277,10 @@ sp_commercial_nuclear_reactor = {
 	}
 	available = {
 		FROM = {
-			has_tech = construction4
+			has_tech = construction2
 		}
 	}
-
+ 
 	project_output = {
 		country_effects = {
 			custom_override_tooltip = {
