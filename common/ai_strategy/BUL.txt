@@ -90,7 +90,7 @@ BUL_befriend_ITA = {
 		has_dlc = "Battle for the Bosporus"
 	}
 	enable = {
-		has_completed_focus = BUL_approach_germany
+		
 		country_exists = ITA
 		ITA = {
 			has_opinion	= {

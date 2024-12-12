@@ -139,38 +139,6 @@ ITA_crda_organization = {
 			}
 			FROM = { NOT = { has_war_with = ITA } }
 		}
-		# ELSE = { #original_tag = ITA
-		# 	FROM = { controls_state = 736 } #LITORALE (Trieste) 
-		# 	# ITA_is_northern_designer = yes
-		# }
-
-		# IF = {
-		# 	limit = { FROM = { original_tag = BUL } }
-		# 	# custom_trigger_tooltip = {
-		# 	# 	tooltip = has_invited_mio_tt
-		# 	# 	FROM = {
-		# 	# 		has_country_flag = has_invited_crda_mio_flag
-		# 	# 	}
-		# 	# }
-		# 	FROM = {
-		# 		OR = {
-		# 			is_subject = no
-		# 			is_subject_of = ITA
-		# 		}
-		# 		has_completed_focus = BUL_cooperation_with_italy
-		# 		#is_in_faction_with = ITA
-		# 		#NOT = { has_completed_focus = BUL_nationalization }
-		# 	}
-		# }
-
-		if = {
-			limit = {
-				FROM = {
-					original_tag = SPR
-				}
-			}
-			FROM = { has_completed_focus = SPA_italian_naval_designers }
-		}
 	}
 
 	# add_trait = { 
@@ -213,22 +181,6 @@ ITA_cantiere_oto_organization = {
 			tag = YUG 
 		}
 	}
-	
-	available = {
-		# FROM = {
-		# 	controls_state = 158 #PIEDMONT (Genova)
-		# }
-		# ITA_is_northern_designer = yes
-
-		if = {
-			limit = {
-				FROM = {
-					original_tag = SPR
-				}
-			}
-			FROM = { has_completed_focus = SPA_italian_naval_designers }
-		}
-	}
 
 	# add_trait = { 
 	# 	token = ITA_mio_trait_new_industrialization_program
@@ -269,21 +221,6 @@ ITA_navalmeccanica_organization = {
 		}
 	}
 	
-	available = {
-		# FROM = {
-		# 	controls_state = 117 # CAMPAGNA (Napoli)	
-		# }
-		# ITA_is_southern_designer = yes
-
-		if = {
-			limit = {
-				FROM = {
-					original_tag = SPR
-				}
-			}
-			FROM = { has_completed_focus = SPA_italian_naval_designers }
-		}
-	}
 } 
 
 ITA_cantiere_navale_di_ancona_organization = {
@@ -296,22 +233,6 @@ ITA_cantiere_navale_di_ancona_organization = {
 			tag = SPR 
 			tag = BUL 
 			tag = YUG 
-		}
-	}
-	
-	available = {
-		# FROM = {
-		# 	controls_state = 157 # ABRUZZO (Ancona)		
-		# }
-		# ITA_is_southern_designer = yes
-
-		if = {
-			limit = {
-				FROM = {
-					original_tag = SPR
-				}
-			}
-			FROM = { has_completed_focus = SPA_italian_naval_designers }
 		}
 	}
 

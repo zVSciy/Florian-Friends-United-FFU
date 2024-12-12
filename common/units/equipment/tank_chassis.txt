@@ -1120,5 +1120,16 @@ equipments = {
 		defense = 12
 		breakthrough = 80
 	}
-
+	land_cruiser_chassis_1 = {
+		abbreviation = "LCR"
+		derived_variant_name = land_cruiser_equipment_1
+		visual_level = 0
+		year = 1945
+		archetype = land_cruiser_chassis
+		priority = 2000
+		module_slots = inherit
+		# upgrades = {
+		# 	tank_nsb_armor_upgrade_1
+		# }
+	}
 }

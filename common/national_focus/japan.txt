@@ -5533,7 +5533,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_modern_escorts
 
-		cost = 10
+		cost = 4
 
 		completion_reward = {
 			# add_ideas = JAP_asw_training
@@ -5691,7 +5691,7 @@ focus_tree = {
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = JAP_mitsubishi_organization
 				mio:JAP_mitsubishi_organization = {
-					add_mio_funds = 1500
+					add_mio_funds = 2500
 				}
 			}
 			ELSE = {

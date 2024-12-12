@@ -110,6 +110,9 @@ technologies = {
 			engineers_tech
 			year_1936
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -180,6 +183,9 @@ technologies = {
 			support_tech
 			engineers_tech
 			year_1939
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -262,7 +268,10 @@ technologies = {
 		path = {
 			leads_to_tech = tech_engineers_urban
 			research_cost_coeff = 1
-		}		
+		}
+		special_project_specialization = {
+			specialization_land
+		}
 
 		research_cost = 1.5
 		start_year = 1941
@@ -416,6 +425,9 @@ technologies = {
 			engineers_tech
 			year_1945
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 2
@@ -463,6 +475,9 @@ technologies = {
 			support_tech
 			recon_tech
 			year_1936
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -648,6 +663,9 @@ technologies = {
 			support_tech
 			recon_tech
 			year_1939
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -850,6 +868,9 @@ technologies = {
 			name = support_folder
 			position = { x = 2 y = @1939 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		categories = {
 			support_tech
@@ -1026,6 +1047,9 @@ technologies = {
 			recon_tech
 			year_1945
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1069,6 +1093,9 @@ technologies = {
 			support_tech
 			military_police_tech
 			year_1936
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -1133,6 +1160,9 @@ technologies = {
 			name = support_folder
 			position = { x = 4 y = @1938 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		categories = {
 			support_tech
@@ -1173,6 +1203,9 @@ technologies = {
 			military_police_tech
 			year_1941
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 0.5
@@ -1201,6 +1234,9 @@ technologies = {
 			support_tech
 			military_police_tech
 			year_1945
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -1253,6 +1289,9 @@ technologies = {
 		
 		on_research_complete = {
 			custom_effect_tooltip = maintanance_hp_change_1_short_tt
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -1310,6 +1349,9 @@ technologies = {
 			easy_maintenance
 			mech_easy_maintenance
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1357,6 +1399,9 @@ technologies = {
 			maintenance_company_tech
 			year_1941
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		on_research_complete = {
 			custom_effect_tooltip = maintanance_hp_change_1_short_tt
@@ -1401,6 +1446,9 @@ technologies = {
 			support_tech
 			maintenance_company_tech
 			year_1945
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		on_research_complete = {
@@ -1457,6 +1505,9 @@ technologies = {
 			mio_cat_tech_all_motorized_mechanized
 			year_1936
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1499,6 +1550,9 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1938 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		categories = {
@@ -1551,6 +1605,9 @@ technologies = {
 			name = support_folder
 			position = { x = 8 y = @1939 }
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		categories = {
 			support_tech
@@ -1595,6 +1652,9 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1940 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		categories = {
@@ -1673,6 +1733,9 @@ technologies = {
 			mio_cat_tech_all_motorized_mechanized
 			year_1936
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1712,6 +1775,9 @@ technologies = {
 		path = {
 			leads_to_tech = tech_logistics_company3
 			research_cost_coeff = 1
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 
 		research_cost = 1.5
@@ -1784,6 +1850,9 @@ technologies = {
 			mio_cat_tech_all_motorized_mechanized
 			year_1941
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1820,6 +1889,9 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1940 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		categories = {
@@ -1880,6 +1952,9 @@ technologies = {
 			electronics
 			year_1936
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1911,6 +1986,9 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1938 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		categories = {
@@ -1966,6 +2044,9 @@ technologies = {
 			electronics
 			year_1941
 		}
+		special_project_specialization = {
+			specialization_land
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -2006,6 +2087,9 @@ technologies = {
 			signal_company_tech
 			electronics
 			year_1945
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -2122,6 +2206,9 @@ technologies = {
 			train_tech
 			heavy_artillery
 			year_1936
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		ai_will_do = {
@@ -2250,6 +2337,9 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = -10 y = 17 }
+		}
+		special_project_specialization = {
+			specialization_land
 		}
 		
 		categories = {

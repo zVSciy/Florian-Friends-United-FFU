@@ -229,16 +229,16 @@ on_actions = {
 			}
 		}
 
-		effect = { 
-			every_country = {
-				limit = {
-					NOT = {
-						tag = FRA
-					}
-				}
-				set_technology = { naval_base_construction = 1 popup = no }
-			}
-		}
+		#effect = { 
+		#	every_country = {
+		#		limit = {
+		#			NOT = {
+		#				tag = FRA
+		#			}
+		#		}
+		#		set_technology = { naval_base_construction = 1 popup = no }
+		#	}
+		#}
 
 		effect = { 
 			every_country = {

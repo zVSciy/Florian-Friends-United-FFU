@@ -63,7 +63,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			text= [aluminium_text]
+			text= "[?resource@aluminium|+0]"
 			maxWidth = 57
 			maxHeight = 24
 			fixedsize = yes
@@ -96,7 +96,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			text= [rubber_text]
+			text= "[?resource@rubber|+0]"
 			maxWidth = 57
 			maxHeight = 24
 			fixedsize = yes
@@ -127,7 +127,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			text= [tungsten_text]
+			text= "[?resource@tungsten|+0]"
 			maxWidth = 57
 			maxHeight = 24
 			fixedsize = yes
@@ -159,7 +159,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			text= [steel_text]
+			text= "[?resource@steel|+0]"
 			maxWidth = 57
 			maxHeight = 24
 			fixedsize = yes
@@ -190,7 +190,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			text= [chromium_text]
+			text= "[?resource@chromium|+0]"
 			maxWidth = 57
 			maxHeight = 24
 			fixedsize = yes
