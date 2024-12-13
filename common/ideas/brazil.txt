@@ -1,8 +1,174 @@
 ideas = {
 
 	country = {
+
+
+		BRA_psad_idea = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			picture = GFX_focus_ARG_pan_american_cooperation
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory_tt = 0.05
+				research_speed_factor = 0.05
+			}
+		}
 	
-		BRA_usa_license = {
+	
+		BRA_decree_no_37 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			picture = GFX_focus_BRA_banco_do_brasil
+
+			modifier = { 
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.3
+			}
+		}
+
+
+		Bra_Aut = {
+				allowed = {
+					original_tag = BRA
+				}
+
+				picture = GFX_focus_BRA_international_crisis
+
+				modifier = { 
+					production_speed_industrial_complex_factor = 0.15
+				}
+			}
+
+
+
+
+		Bra_Cor = {
+				allowed = {
+					original_tag = BRA
+				}
+
+				picture = GFX_focus_BRA_international_crisis
+
+				modifier = { 
+					production_factory_max_efficiency_factor = 0.05
+					consumer_goods_factor = -0.075
+					industrial_capacity_arms_factory = 0.05
+				}
+			}
+
+		Decree_Number_37 = {
+		
+					 allowed = {
+						original_tag = BRA
+					}
+
+				picture = GFX_focus_BRA_utilize_security_law
+
+				modifier = { 
+					stability_factor = -0.1
+					
+				}
+			}
+
+
+
+		BRA_army_reward = {
+		
+					 allowed = {
+						original_tag = BRA
+					}
+
+				picture = saf_history_of_segregation_2
+
+				modifier = {  
+					production_speed_arms_factory_factor = 0.1
+					production_speed_industrial_complex_factor = -0.3
+
+				}
+			}
+
+
+
+
+		BRA_consodilation_labor_laws = {
+		
+					 allowed = {
+						original_tag = BRA }
+
+
+						modifier = {  
+							production_speed_buildings_factor = 0.075
+							consumer_goods_factor = -0.05
+							
+					}
+	}
+			
+
+		BRA_propaganda_idea = {
+			allowed = {
+				tag = BRA
+			}
+			picture = FRA_matignon_agreements
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.05
+				drift_defence_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+
+		BRA_rail_investment = {
+			allowed = {
+				tag = BRA
+			}
+		picture = ARG_construction_guilds
+		modifier = {
+		production_speed_rail_way_factor = 0.5
+
+			}
+		}
+
+		BRA_port_investment = {
+			allowed = {
+				tag = BRA
+				}
+				picture = ARG_buying_the_islands
+				modifier =  {
+					production_speed_dockyard_factor = 0.05
+					industrial_capacity_dockyard = 0.15
+
+			}
+		}
+
+		BRA_Increase_Gun_production = {
+			allowed = {
+				tag = BRA
+				}
+				picture = ARG_buying_the_islands
+				modifier =  {
+					infantry_equipment = {
+						build_cost_ic = -0.15 instant = yes 
+					}
+					squad_equipment = {
+						build_cost_ic = -0.075 instant = yes
+					}
+		}
+	}
+
+
+
+
+
+		BRA_usa_license = { 
+				
 
 			picture = generic_license_production
 			
@@ -217,5 +383,7 @@ ideas = {
 				}
 			}
 		}
+
+	
 	}
 }

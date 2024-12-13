@@ -42,7 +42,6 @@ victory_plan_nations_2 = {
 		tag = SAF
 		tag = RAJ
 		tag = AST
-		tag = FRA
 	}
 }
 
@@ -51,7 +50,7 @@ victory_plan_nations_major = {
 		tag = USA
 		tag = ENG
 	}
-}	
+}
 
 british_coastline = {
 	OR = {

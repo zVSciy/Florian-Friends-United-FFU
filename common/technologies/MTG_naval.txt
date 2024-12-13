@@ -58,9 +58,6 @@ technologies = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 2 }
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -99,9 +96,6 @@ technologies = {
 		path = {
 			leads_to_tech = improved_ship_hull_light
 			research_cost_coeff = 1
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 		research_cost = 1.5
@@ -159,9 +153,6 @@ technologies = {
 			leads_to_tech = advanced_ship_hull_light
 			research_cost_coeff = 1
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		research_cost = 1.5
 
@@ -217,9 +208,6 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 20 }
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 		ai_will_do = {
@@ -683,9 +671,6 @@ technologies = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		research_cost = 1.5
 
@@ -733,9 +718,6 @@ technologies = {
 		path = {
 			leads_to_tech = improved_ship_hull_cruiser
 			research_cost_coeff = 1
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 
@@ -794,9 +776,6 @@ technologies = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 14 }
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -838,9 +817,6 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 20 }
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 		ai_will_do = {
@@ -1005,9 +981,6 @@ technologies = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 2 }
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -1053,9 +1026,6 @@ technologies = {
 			leads_to_tech = improved_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 		
 		research_cost = 1.5
 
@@ -1098,6 +1068,37 @@ technologies = {
 			year_1936
 		}
 	}
+	ship_hull_super_heavy = {
+
+		enable_equipments = {
+			ship_hull_super_heavy_1
+		}
+
+		enable_equipment_modules = {
+			ship_armor_shbb
+		}
+
+		research_cost = 1.5
+
+		start_year = 1939
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 25
+				tag = JAP
+			}
+		}
+
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			year_1939
+		}
+	}
 
 	improved_ship_hull_heavy = {
 
@@ -1112,9 +1113,6 @@ technologies = {
 		path = {
 			leads_to_tech = advanced_ship_hull_heavy
 			research_cost_coeff = 1
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 		research_cost = 1.5
@@ -1163,9 +1161,6 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 20 }
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 		ai_will_do = {
@@ -1225,9 +1220,6 @@ early_ship_hull_carrier = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 2 }
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		ai_will_do = {
 			factor = 0
@@ -1265,9 +1257,6 @@ early_ship_hull_carrier = {
 
 		sub_technologies = {
 			super_ship_hull_carrier
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 		
 		research_cost = 1.5
@@ -1321,9 +1310,6 @@ early_ship_hull_carrier = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 14 }
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		ai_will_do = {
 			factor = 0
@@ -1366,9 +1352,6 @@ early_ship_hull_carrier = {
 			mio_cat_tech_all_carrier_and_modules
 			year_1939
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 	}
 
 	advanced_ship_hull_carrier = {
@@ -1386,9 +1369,6 @@ early_ship_hull_carrier = {
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 20 }
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 		ai_will_do = {
@@ -1454,9 +1434,6 @@ early_ship_hull_carrier = {
 				}
 			}
 		}
-		special_project_specialization = {
-			specialization_naval
-		}
 
 		categories = {
 			naval_equipment
@@ -1478,9 +1455,6 @@ early_ship_hull_carrier = {
 		path = {
 			leads_to_tech = improved_ship_hull_submarine
 			research_cost_coeff = 1
-		}
-		special_project_specialization = {
-			specialization_naval
 		}
 
 		research_cost = 1.5
@@ -1521,8 +1495,15 @@ early_ship_hull_carrier = {
 			ship_torpedo_sub_3
 			sub_ship_engine_3
 		}
-		special_project_specialization = {
-			specialization_naval
+
+		path = {
+			leads_to_tech = advanced_ship_hull_submarine
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_submarine_snorkel
+			research_cost_coeff = 1
 		}
 
 		research_cost = 2.0

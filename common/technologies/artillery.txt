@@ -65,9 +65,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = 0 y = 0 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			artillery
@@ -155,9 +152,6 @@ technologies = {
 			# mech
 			tank_anti_air_cannon_mech
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		research_cost = 3.0
 		start_year = 1938
@@ -197,9 +191,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -6 y = 6 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		categories = {
@@ -295,9 +286,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = -10 y = 9 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 
 		categories = {
 			artillery
@@ -331,9 +319,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -6 y = 9 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -428,9 +413,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = -10 y = 13 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 
 		categories = {
 			artillery
@@ -463,9 +445,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -6 y = 13 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -600,9 +579,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = -2 y = 6 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			artillery
@@ -635,9 +611,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 2 y = 6 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		categories = {
@@ -761,9 +734,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = -2 y = 9 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			artillery
@@ -790,9 +760,6 @@ technologies = {
 			apcr_round
 			mech_tungston_core_ammunition
 			tank_medium_td_2
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		# path = {
@@ -952,9 +919,6 @@ technologies = {
 			tank_med_gun_3
 			tank_art_gun_3
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		research_cost = 3.0
 
@@ -995,9 +959,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 2 y = 13 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		categories = {
@@ -1146,9 +1107,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = 6 y = 6 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			heavy_artillery
@@ -1177,9 +1135,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 10 y = 6 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -1275,9 +1230,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = 6 y = 9 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			heavy_artillery
@@ -1309,9 +1261,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 10 y = 9 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -1433,9 +1382,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = 6 y = 13 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			heavy_artillery
@@ -1467,9 +1413,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = 10 y = 13 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			heavy_artillery
@@ -1486,11 +1429,11 @@ technologies = {
 
 		enable_equipments = {
 			rocket_artillery_equipment_1
+			
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher
 			tank_light_rocket_launcher_mech
-			add_on_rockets
 		}
 		enable_subunits = {
 			rocket_artillery_brigade
@@ -1499,9 +1442,6 @@ technologies = {
 		path = {
 			leads_to_tech = rocket_artillery2
 			research_cost_coeff = 1
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		research_cost = 3.0
@@ -1531,6 +1471,9 @@ technologies = {
 			soft_attack = 0.1
 		}
 		
+		enable_equipment_modules = {
+			add_on_rockets
+		}
 		
 		path = {
 			leads_to_tech = rocket_artillery4
@@ -1567,9 +1510,6 @@ technologies = {
 		path = {
 			leads_to_tech = rocket_artillery3
 			research_cost_coeff = 1
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		research_cost = 2.0

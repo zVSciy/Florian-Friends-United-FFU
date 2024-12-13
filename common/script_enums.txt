@@ -1369,54 +1369,6 @@ script_enum_equipment_bonus_type = {
 	heavy_assault_gun_chassisgeneric_heavy_tank_chassis_2
 	heavy_assault_gun_chassisgeneric_heavy_tank_chassis_3
 
-	#Gotterdammerung bug fix
-	strat_bomber_intercontinental_equipment_1
-	strat_bomber_intercontinental_equipment
-	mothership_equipment
-	small_plane_airframe_5
-	supersonic_fighter_equipment_1
-	helicopter_equipment
-	land_cruiser_chassis_1
-	super_heavy_artillery_equipment_1
-	self_propelled_super_heavy_artillery_equipment_1
-	cruiser_submarine
-	ship_hull_fleet_submarine
-	fleet_submarine
-	ship_hull_nuclear_submarine
-	nuclear_submarine
-	rocket_submarine
-	nuclear_missile_submarine
-	midget_submarine
-	ship_hull_heavy_modern
-	modern_battleship
-	ship_hull_carrier_modern
-	modern_carrier
-	ship_hull_mega_carrier
-	mega_carrier
-	ballistic_missile_equipment
-	sam_missile_equipment
-	land_cruiser
-	emplacement_gun_ammo
-	ballistic_missile
-	nuclear_missile
-	sam_missile
-	ballistic_missile_equipment_1
-	ballistic_missile_equipment_2
-	ballistic_missile_equipment_3
-	explosive_ammo_equipment
-	explosive_ammo_equipment_1
-	helicopter_equipment_1
-	mothership_equipment_0
-	nuclear_missile_equipment
-	nuclear_missile_equipment_1
-	nuclear_missile_equipment_2
-	sam_missile_equipment_1
-	sh_carrier
-	ship_hull_carrier_super_1
-	armored_support_vehicle
-	armored_support_vehicle_1
-	super_heavy_railway_gun_equipment
-	super_heavy_railway_gun_equipment_1
 
 	eng_medium_tank_chassis_a10
 }

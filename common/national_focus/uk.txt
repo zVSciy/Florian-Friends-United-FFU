@@ -4267,9 +4267,6 @@ focus_tree = {
 					}	
 				}
 			}
-			NOT = {
-				has_global_flag = ITA_opened_iran
-			}
 		}
 
 		available_if_capitulated = yes

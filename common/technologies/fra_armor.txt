@@ -222,9 +222,6 @@ technologies = {
 			name = fra_armour_folder
 			position = { x = -4 y = 18 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 
 		categories = {
 			armor
@@ -281,9 +278,6 @@ technologies = {
 			name = fra_armour_folder
 			position = { x = 0 y = 8 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 
 		categories = {
 			armor
@@ -313,9 +307,6 @@ technologies = {
 			name = fra_armour_folder
 			position = { x = 0 y = 12 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 
 		categories = {
 			armor
@@ -339,9 +330,6 @@ technologies = {
 		folder = {
 			name = fra_armour_folder
 			position = { x = 0 y = 18 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		categories = {
@@ -371,9 +359,6 @@ technologies = {
 		folder = {
 			name = fra_armour_folder
 			position = { x = 4 y = 4 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		categories = {
@@ -405,9 +390,6 @@ technologies = {
 		folder = {
 			name = fra_armour_folder
 			position = { x = 4 y = 10 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 
 		categories = {

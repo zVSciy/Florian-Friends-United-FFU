@@ -67,9 +67,6 @@ technologies = {
 			infantry_weapons
 			year_1936
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -112,9 +109,6 @@ technologies = {
 		categories = {
 			infantry_weapons
 			year_1939
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		ai_will_do = {
@@ -164,9 +158,6 @@ technologies = {
 			infantry_weapons
 			year_1942
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 0.8
@@ -204,9 +195,6 @@ technologies = {
 		categories = {
 			infantry_weapons
 			year_1945
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		ai_will_do = {
@@ -1312,6 +1300,49 @@ technologies = {
 
 	}
 
+
+
+desert_warfare = {
+
+		research_cost = 1
+
+		# only from focus!
+		allow = {
+			always = no
+		}
+
+
+	infantry = {
+			desert = {
+				defence = 0.05
+				movement = 0.05
+			}
+		}
+
+		marine = {
+			desert = {
+				attack = 0.05 
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			desert = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+
+		paratrooper = {
+			desert = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+}
+
+
 	night_vision = {
 
 		land_night_attack = 0.1
@@ -1447,9 +1478,6 @@ technologies = {
 			infantry_weapons
 			year_1938
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1512,9 +1540,6 @@ technologies = {
 			infantry_weapons
 			year_1941
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1561,9 +1586,6 @@ technologies = {
 		categories = {
 			infantry_weapons
 			year_1944
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		ai_will_do = {
@@ -1797,9 +1819,6 @@ technologies = {
 		sub_technologies = {
 			# mechanised_anti_air
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 2
@@ -1917,14 +1936,11 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 5 y = @1943 }
-			}
-			
-			categories = {
+		}
+		
+		categories = {
 			armor
 			year_1942
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 	}
@@ -1976,9 +1992,6 @@ technologies = {
 
 		sub_technologies = {
 			# mechanised_anti_air_2
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		ai_will_do = {
@@ -2042,9 +2055,6 @@ technologies = {
 			cat_mechanized_equipment
 			year_1944
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -2083,9 +2093,6 @@ technologies = {
 			name = infantry_folder
 			position = { x = 2 y = 0 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			motorized_equipment
@@ -2122,9 +2129,6 @@ technologies = {
 			name = infantry_folder
 			position = { x = 2 y = @1940 }
 		}
-		special_project_specialization = {
-			specialization_land
-		}
 		
 		categories = {
 			motorized_equipment
@@ -2154,9 +2158,6 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 2 y = @1942 }
-		}
-		special_project_specialization = {
-			specialization_land
 		}
 		
 		categories = {
@@ -2553,13 +2554,13 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = 38
+			max_strength = 17
 		}
 		mechanized = {
-			max_strength = 48
+			max_strength = 13
 		}
 		category_all_infantry = {
-			max_strength = 24
+			max_strength = 16
 		}
 	}
 
@@ -2574,13 +2575,13 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = -38
+			max_strength = -17
 		}
 		mechanized = {
-			max_strength = -48
+			max_strength = -13
 		}
 		category_all_infantry = {
-			max_strength = -24	
+			max_strength = -16
 		}
 	}
 	

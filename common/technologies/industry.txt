@@ -235,7 +235,7 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 	
-		equipment_conversion_speed = 0.65
+		equipment_conversion_speed = 0.40
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -274,7 +274,39 @@ technologies = {
 			year_1939
 		}
 	}
+	
+	advanced_equipment_conversion = {
+		
+		equipment_conversion_speed = 0.60
 
+		research_cost = 1.5
+		start_year = 1942
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}
+		
+		categories = {
+			industry
+			cat_production
+			year_1942
+		}
+	}
 
 	###############
 	concentrated_industry = {
@@ -2589,12 +2621,7 @@ technologies = {
 			building = bunker
 			level = 5
 		}
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_commercial_nuclear_reactor	
-			}
-		}
+		
 		enable_building = {
 			building = coastal_bunker
 			level = 3
@@ -3045,15 +3072,15 @@ technologies = {
 			}
 		}
 	}			
-	#naval_base_construction = {
-	#	enable_building = {
-	#		building = naval_base
-	#		level = 10
-	#	}
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
+	naval_base_construction = {
+		enable_building = {
+			building = naval_base
+			level = 10
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 	fuel_silo_construction_disabled = {
 		enable_building = {

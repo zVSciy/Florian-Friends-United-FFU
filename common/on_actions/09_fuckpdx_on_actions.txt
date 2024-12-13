@@ -229,16 +229,16 @@ on_actions = {
 			}
 		}
 
-		#effect = { 
-		#	every_country = {
-		#		limit = {
-		#			NOT = {
-		#				tag = FRA
-		#			}
-		#		}
-		#		set_technology = { naval_base_construction = 1 popup = no }
-		#	}
-		#}
+		effect = { 
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+				}
+				set_technology = { naval_base_construction = 1 popup = no }
+			}
+		}
 
 		effect = { 
 			every_country = {
@@ -348,25 +348,25 @@ on_actions = {
 				309 = { set_compliance = 20 }
 
 				# DEI - go to australia
-				ENG = {
+				AST = {
 					transfer_state = 672
-					672 = { set_compliance = 30 }
+					672 = { set_compliance = 20 }
 					transfer_state = 334
-					334 = { set_compliance = 30 }
+					334 = { set_compliance = 20 }
 					transfer_state = 335
-					335 = { set_compliance = 30 }
+					335 = { set_compliance = 20 }
 					transfer_state = 667
-					667 = { set_compliance = 30 }
+					667 = { set_compliance = 20 }
 					transfer_state = 673
-					673 = { set_compliance = 30 }
+					673 = { set_compliance = 20 }
 					transfer_state = 668
-					668 = { set_compliance = 30 }
+					668 = { set_compliance = 20 }
 					transfer_state = 669
-					669 = { set_compliance = 30 }
+					669 = { set_compliance = 20 }
 					transfer_state = 738
-					738 = { set_compliance = 30 }
+					738 = { set_compliance = 20 }
 				}
-				ENG = { annex_country = { target = INS transfer_troops = yes } }
+				AST = { annex_country = { target = INS transfer_troops = yes } }
 
 				GER = {
 					transfer_state = 35

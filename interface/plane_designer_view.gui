@@ -848,13 +848,6 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
-			#iconType = {
-			#	name ="highlight"
-			#	quadTextureSprite = "GFX_theatre_army_shield_selected"
-			#	alwaystransparent = yes
-			#	position = { x = 0 y = 0 }
-			#}
-	
 			instantTextboxType = {
 				name = "role_text"
 				position = { x = 48 y = 10 }

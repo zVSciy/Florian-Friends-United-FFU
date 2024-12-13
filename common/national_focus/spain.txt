@@ -38,7 +38,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 1300 y = 2000 }
+	continuous_focus_position = { x = 725 y = 2250 }
 
 #  #  ##  ### ###  ##  #  #  ##  #   ###  ## ###     ###  #  # ### #   ###     #  # ###  
 ## # #  #  #   #  #  # ## # #  # #    #  #    #      #  # #  #  #  #   #  #    #  # #  # 
@@ -513,7 +513,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_banish_the_party_leaders
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -537,7 +537,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_fuse_the_parties }
 		
 		icon = GFX_goal_generic_army_doctrines
-		x = -8
+		x = -5
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 5
@@ -583,9 +583,9 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
-		mutually_exclusive = { focus = SPA_equipment_modernization }
+		
 		icon = GFX_goal_generic_army_artillery
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = SPA_the_national_and_popular_army_of_spain
 		cost = 5
@@ -593,11 +593,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = inf_bonus1
-				bonus = 0.5
-				uses = 3
-				category = artillery
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = SPA_the_army_of_africa_model
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
 			}
 		}
 	}
@@ -608,23 +609,22 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
-		mutually_exclusive = { focus = SPA_the_army_of_africa_model }
-		icon = GFX_ger_achtung_panzer
-		x = 1
+		prerequisite = { focus = SPA_the_army_of_africa_model }
+		
+		icon = GFX_goal_generic_small_arms
+		x = 0
 		y = 1
-		relative_position_id = SPA_the_national_and_popular_army_of_spain
+		relative_position_id = SPA_the_army_of_africa_model
 		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
-				name = SPA_tank_modernization
-				ahead_reduction = 0.5
-				bonus = 0.75
-				uses = 1 
-				technology = improved_heavy_tank_chassis
+				name = SPA_equipment_modernization
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
 			}
 		}
 	}
@@ -637,9 +637,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_equipment_modernization }
 		
-		icon = GFX_SOV_artillery_development
+		icon = GFX_goal_generic_army_artillery2
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = SPA_equipment_modernization
 		cost = 5
 
@@ -648,24 +648,49 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPA_artillery_modernization
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
-				technology = heavy_artillery_research2
-				technology = heavy_antitank2
+				category = artillery
 			}
 		}
 	}
 
 	focus = {
-		id = SPA_unlock_the_tank_guns
+		id = SPA_expand_the_special_forces
 		available = {
 		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_equipment_modernization }
 		
-		icon = GFX_SOV_mass_mechanization
+		icon = GFX_goal_generic_special_forces
 		x = 1
+		y = 2
+		relative_position_id = SPA_equipment_modernization
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_expand_the_special_forces
+				bonus = 0.5
+				uses = 2
+				category = cat_special_forces_generic
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_motorization
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_equipment_modernization }
+		
+		icon = GFX_goal_generic_army_motorized
+		x = 0
 		y = 1
 		relative_position_id = SPA_equipment_modernization
 		cost = 5
@@ -674,142 +699,37 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
-				name = CAN_cmp_truck
-				ahead_reduction = 0.6
+				name = SPA_equipment_modernization
 				bonus = 0.75
 				uses = 1
+				category = motorized_equipment
 				category = cat_mechanized_equipment
 			}
 		}
 	}
+
 	focus = {
-		id = SPA_cheaper_heavys
+		id = SPA_an_armored_corps
 		available = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_unlock_the_tank_guns }
+		prerequisite = { focus = SPA_motorization }
 		
-		icon = GFX_hungarianstoplightank
+		icon = GFX_goal_generic_army_tanks
 		x = 0
 		y = 2
-		relative_position_id = SPA_unlock_the_tank_guns
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				mio:GER_porsche_organization = {
-					unlock_mio_trait_tooltip = SPR_porsche_upgrade_spr_buff2
-				}
-				mio:GER_porsche_organization = {
-					add_mio_size = 1
-				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = cape_cope
-			}
-		}
-	}	
-
-	focus = {
-		id = SPA_less_steel_per_tank
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_artillery_modernization }
-		
-		icon = GFX_hungarianantitankhetzer2
-		x = 0
-		y = 2
-		relative_position_id = SPA_artillery_modernization
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				mio:GER_porsche_organization = {
-					unlock_mio_trait_tooltip = SPR_porsche_upgrade_spr_buff
-				}
-				mio:GER_porsche_organization = {
-					add_mio_size = 2
-				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = cape_cope
-			}
-		}
-	}
-
-
-	focus = {
-		id = SPA_INFantry_bonus
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_army_of_africa_model }
-		
-		icon = GFX_ger_infantry_tactics
-		x = 0
-		y = 1
-		relative_position_id = SPA_the_army_of_africa_model
+		relative_position_id = SPA_motorization
 		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
-				name = inf_bonus
-				bonus = 0.75
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = SPA_arti_mio_win
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_INFantry_bonus }
-		
-		icon = GFX_goal_ITA_infantry_artillery_coordination
-		x = 0
-		y = 2
-		relative_position_id = SPA_INFantry_bonus
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				mio:SPR_esperanza_y_cia_organization = {
-					unlock_mio_trait_tooltip = SPR_esperanza_y_cia_organization_mio_buff
-				}
-				mio:SPR_esperanza_y_cia_organization = {
-					add_mio_size = 2
-				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = cape_cope
+				name = SPA_an_armored_corps
+				bonus = 1.0
+				uses = 1
+				category = armor
 			}
 		}
 	}
@@ -827,7 +747,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -876,7 +796,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = SPA_national_recovery
-		cost = 7
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -990,33 +910,12 @@ focus_tree = {
 	focus = {
 		id = SPA_support_the_war_industry
 		available = {
-			if = {
-				limit = {
-					OR = {
-						has_game_rule = {
-							rule = china_war_rule
-							option = ENABLED
-						}
-						has_global_flag = NO_ASIA
-					}
-				}
-				date > 1937.12.1
-				NOT = {
-					GER = {
-						has_completed_focus = GER_danzig_or_war
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_game_rule = {
-						rule = china_war_rule
-						option = DISABLED
-					}
-				}
-				JAP = {
-					has_completed_focus = JAP_intervene_in_china
-				}
+			OR = {
+				threat > 0.8
+				GER = { has_war_with = POL }
+				NOT = { country_exists = POL }
+				POL = { is_subject_of = GER}
+				date > 1940.1.1
 			}
 		}
 		bypass = {
@@ -1027,7 +926,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_facilitate_pyrenees_freight_transports
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1103,6 +1002,140 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SPA_italian_shipbuilding_expertise
+		available = {
+			is_in_faction_with = ITA
+			has_completed_focus = SPA_abandon_neutrality
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_invest_in_naval_infrastructure }
+		
+		icon = GFX_goal_ITA_mobilize_nav_workers
+		x = 2
+		y = 1
+		relative_position_id = SPA_support_the_war_industry
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_ideas = SPA_italian_shipbuilding_expertise
+			add_tech_bonus = {
+				name = SPA_italian_shipbuilding_expertise
+				bonus = 0.5
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_italian_naval_designers
+		available = {
+			
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_italian_shipbuilding_expertise }
+		
+		icon = GFX_goal_ITA_expand_naval_dockyards
+		x = 1
+		y = 1
+		relative_position_id = SPA_italian_shipbuilding_expertise
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = italian_mio_tt
+			}
+			else = {
+				custom_effect_tooltip = italian_designer_tt
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_italian_naval_guns
+		available = {
+			
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_italian_shipbuilding_expertise }
+		
+		icon = GFX_goal_navy_upgrade
+		x = -1
+		y = 1
+		relative_position_id = SPA_italian_shipbuilding_expertise
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 0.50
+				uses = 3
+				technology = improved_medium_battery
+				technology = advanced_medium_battery
+				technology = improved_heavy_battery
+				technology = advanced_heavy_battery
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_italian_firecontrol
+		available = {
+			
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_italian_naval_guns focus = SPA_italian_naval_designers }
+		
+		icon = GFX_goal_generic_build_navy
+		x = 1
+		y = 1
+		relative_position_id = SPA_italian_naval_guns
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 0.75
+				uses = 2
+				technology = basic_fire_control_system
+				technology = improved_fire_control_system
+				technology = advanced_fire_control_system
+			}
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 0.75
+				uses = 2
+				technology = fire_control_methods_1
+				technology = fire_control_methods_2
+				technology = fire_control_methods_3
+			}
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 0.75
+				uses = 2
+				technology = damage_control_1
+				technology = damage_control_2
+				technology = damage_control_3
+			}
+		}
+	}
+
+	focus = {
 		id = SPA_the_duty_to_work
 		available = {
 			is_in_faction_with = GER
@@ -1116,7 +1149,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1139,7 +1172,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1262,7 +1295,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_improve_cross_country_railways
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1313,10 +1346,11 @@ focus_tree = {
 	focus = {
 		id = SPA_ensure_agricultural_self_sufficiency
 		available = {
-			GER = {
-				has_completed_focus = GER_mol_rib_pact
-			}
-			
+			# OR = {
+			# 	FRA = { has_capitulated = yes }
+			# 	date > 1942.1.1
+			# }
+			date > 1940.1.1
 		}
 		bypass = {
 		}
@@ -1493,7 +1527,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1662,7 +1696,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -1718,7 +1752,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SPA_adopt_the_26_points
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1782,6 +1816,272 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SPA_invest_in_naval_infrastructure
+		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_dictator_for_life }
+		
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0 #-2
+		y = 1
+		relative_position_id = SPA_dictator_for_life
+		cost = 10
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SPA_invest_in_naval_infrastructure_3DY }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = { has_state_flag = SPA_invest_in_naval_infrastructure_3DY2 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 50
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPA_invest_in_naval_infrastructure_3DY
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPA_invest_in_naval_infrastructure_3DY2
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_expand_the_slipways
+		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_invest_in_naval_infrastructure }
+		
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		relative_position_id = SPA_invest_in_naval_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SPA_expand_the_slipways_3DY }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPA_expand_the_slipways_3DY
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_expand_the_slipways_3DY }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPA_expand_the_slipways_3DY
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_spanish_navy
+		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_expand_the_slipways }
+		
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 2
+		relative_position_id = SPA_expand_the_slipways
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = admiral_alfonso_jofre_tenorio_tt
+			hidden_effect = {
+				create_navy_leader = {
+					name = "Alfonso Jofré Tenorio"
+					picture = "Portrait_France_Francois_Darlan.dds"
+					traits = { trait_SPA_nationalist_sympathies superior_tactician bold spotter battleship_adherent }
+					skill = 4
+					attack_skill = 7
+					defense_skill = 6
+					maneuvering_skill = 1
+					coordination_skill = 1
+				}
+			}
+			add_tech_bonus = {
+				name = SPA_restart_small_scale_shipbuilding
+				bonus = 0.5
+				uses = 2
+				category = naval_equipment
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_plan_imperial
+		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_spanish_navy }
+		mutually_exclusive = { focus = SPA_the_cruiser_plan focus = SPA_the_submarine_plan }
+		
+		icon = GFX_goal_generic_navy_battleship
+		x = -1
+		y = 1
+		relative_position_id = SPA_the_spanish_navy
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = SPA_the_plan_imperial
+			add_tech_bonus = {
+				name = SPA_glory_and_wealth_on_the_sea_lanes
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+			# add_tech_bonus = {
+			# 	name = SPA_glory_and_wealth_on_the_sea_lanes
+			# 	bonus = 1
+			# 	uses = 1
+			# 	category = cv_tech
+			# }
+		}
+	}
+
+	focus = {
+		id = SPA_the_cruiser_plan
+		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_spanish_navy }
+		mutually_exclusive = { focus = SPA_the_plan_imperial focus = SPA_the_submarine_plan }
+		
+		icon = GFX_focus_generic_cruiser2
+		x = 1
+		y = 1
+		relative_position_id = SPA_the_spanish_navy
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = SPA_the_plan_cruiser
+			add_tech_bonus = {
+				name = SPA_glory_and_wealth_on_the_sea_lanes
+				bonus = 1
+				uses = 1
+				category = ca_tech
+				category = cl_tech
+			}
+		}
+	}
 
 	focus = {
 		id = SPA_the_submarine_plan
@@ -1823,6 +2123,48 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SPA_restart_small_scale_shipbuilding
+		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_invest_in_naval_infrastructure }
+		
+		icon = GFX_focus_generic_destroyer
+		x = 1
+		y = 2
+		relative_position_id = SPA_invest_in_naval_infrastructure
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = SPA_restart_small_scale_shipbuilding
+				bonus = 1
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = SPA_restart_small_scale_shipbuilding
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = SPA_restart_small_scale_shipbuilding
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
 
 	focus = {
 		id = SPA_the_tangiers_enclave
@@ -2158,6 +2500,37 @@ focus_tree = {
     # }
 
 	focus = {
+		id = SPA_retake_gibraltar
+		available = {
+			NOT = {
+				is_in_faction_with = ENG
+				has_war_with = ENG
+				controls_state = 118
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_demand_french_north_africa }
+		
+		icon = GFX_focus_attack_britain
+		x = 0
+		y = 1
+		relative_position_id = SPA_demand_french_north_africa
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 118 }
+				expire = 0
+			}
+		}
+	}
+
+	focus = {
 		id = SPA_abandon_neutrality
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		available = {
@@ -2327,7 +2700,7 @@ focus_tree = {
 						state = 795
 					}
 				}
-				add_dynamic_modifier = { modifier = non_autonomous_state }
+				add_dynamic_modifier = { modifier = autonomous_state }
 			}
 			add_timed_idea = {idea = SPR_subjugate_por days = 720}
 		}
@@ -2374,7 +2747,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_maintain_neutrality
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 

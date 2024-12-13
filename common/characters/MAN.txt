@@ -35,7 +35,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ organizer hill_fighter panzer_leader }
+			traits={ organizer hill_fighter }
 			skill=5
 			attack_skill=5
 			defense_skill=3
@@ -115,8 +115,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trait_engineer trait_mountaineer cavalry_leader }
-			skill=4
+			traits={ infantry_leader trait_engineer trait_mountaineer }
+			skill=3
 			attack_skill=3
 			defense_skill=4
 			planning_skill=5
@@ -135,10 +135,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster trait_engineer panzer_leader jungle_rat }
-			skill=5
-			attack_skill=6
-			defense_skill=4
+			traits={ trickster trait_engineer panzer_leader }
+			skill=3
+			attack_skill=4
+			defense_skill=2
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=-1

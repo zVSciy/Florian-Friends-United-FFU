@@ -8,7 +8,7 @@ guiTypes = {
 		buttonType = {
 			name = "construction_speed_open"
 			quadTextureSprite = "GFX_cons_speed"
-			position = { x = 570 y = -152 } 
+			position = { x = 363 y = -196 } 
 			shortcut = "c"
 			pdx_tooltip = construction_speed_open_tt
 			clicksound = click_ok
@@ -18,14 +18,14 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "cons_speed_container"
-		position = { x = 55 y = 201 }  
+		position = { x = 50 y = 201 }  
 		size = { width = 677 height = 1330 }
 
 		instantTextBoxType = {
 			name = "infrastructure_speed"   
-			position = { x = 395  y = -71  }
+			position = { x = 387 y = -66 }
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_infrastructure_factor|%0=+]"	   
+			text = "[?infrastructure_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -34,9 +34,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "air_base_speed"   
-			position = { x = 442 y = -71 } 
+			position = { x = 433 y = -66 }
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_air_base_factor|%0=+]"	   
+			text = "[?air_base_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -44,9 +44,9 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "anti_air_building_speed"   
-			position = { x = 488 y = -71 } # 369
+			position = { x = 387 y = -23 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_anti_air_building_factor|%0=+]"	   
+			text = "[?anti_air_building_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -55,18 +55,18 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "synthetic_refinery_speed"   
-			position = { x = 534 y = -71 } 
+			position = { x = 433 y = -23 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_synthetic_refinery_factor|%0=+]"	   
+			text = "[?synthetic_refinery_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
 			alwaystransparent = yes
-		}		
+		}
 
-	instantTextBoxType = {
+		instantTextBoxType = {
 			name = "steel_refinery_speed"
-			position = { x = 395 y = -30 }
+			position = { x = 387 y = 21 }
 			font = "cg_16b"
 			text = "[?steel_refinery_const_speed_var|%0=+]"
 			maxWidth = 50
@@ -77,42 +77,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "fuel_silo_speed"   
-			position = { x = 442 y = -30 } 
+			position = { x = 433 y = 21 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_fuel_silo_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}		
-
-		instantTextBoxType = {
-			name = "radar_station_speed"   
-			position = { x = 488 y = -30 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_radar_station_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "arms_factory_speed"   
-			position = { x = 395  y = 66  } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_arms_factory_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "industrial_complex_speed"   
-			position = { x = 442 y = 66 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_industrial_complex_factor|%0=+]"	   
+			text = "[?fuel_silo_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -120,10 +87,10 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "dockyard_speed"   
-			position = { x = 488 y = 66 } 
+			name = "radar_station_speed"   
+			position = { x = 387 y = 65 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_dockyard_factor|%0=+]"	   
+			text = "[?radar_station_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -132,9 +99,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "rocket_site_speed"   
-			position = { x = 534 y = 66 } 
+			position = { x = 433 y = 65 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_rocket_site_factor|%0=+]"	   
+			text = "[?rocket_site_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -142,10 +109,21 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "heavy_water_reactor_speed"   
-			position = { x = 395 y = 107 } 
+			name = "nuclear_reactor_speed"   
+			position = { x = 387 y = 109 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_reactor_factor|%0=+]"	   
+			text = "[?nuclear_reactor_const_speed_var|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "arms_factory_speed"   
+			position = { x = 387 y = 214 } 
+			font = "cg_16b"              
+			text = "[?arms_factory_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -153,43 +131,32 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "civilian_nuclear_reactor_speed"   
-			position = { x = 442 y = 107 } 
+			name = "industrial_complex_speed"   
+			position = { x = 433 y = 214 }
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_reactor_factor|%0=+]"	   
+			text = "[?industrial_complex_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
 			alwaystransparent = yes
 		}
-
+		
 		instantTextBoxType = {
-			name = "multi_charge_large_caliber_gun_speed"   
-			position = { x = 488 y = 107 } 
+			name = "dockyard_speed"   
+			position = { x = 387 y = 258 }
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_reactor_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}				
-
-		instantTextBoxType = {
-			name = "conversion_civ_to_mil_speed"   
-			position = { x = 534 y = 107 } 
-			font = "cg_16b"              
-			text = "[?modifier@modifier_conversion_cost_civ_to_mil_factor|%0=+]"	   
+			text = "[?dockyard_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
 			alwaystransparent = yes
 		}
-
+		
 		instantTextBoxType = {
 			name = "supply_node_speed"   
-			position = { x = 395 y = 203 } 
+			position = { x = 387 y = 370 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_supply_node_factor|%0=+]"	   
+			text = "[?supply_node_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -198,9 +165,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "rail_way_speed"   
-			position = { x = 442 y = 203 } 
+			position = { x = 433 y = 370 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_rail_way_factor|%0=+]"	   
+			text = "[?rail_way_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -209,9 +176,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "naval_base_speed"   
-			position = { x = 488 y = 203 } 
+			position = { x = 387 y = 414 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_naval_base_factor|%0=+]"	   
+			text = "[?naval_base_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -220,42 +187,20 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bunker_speed"   
-			position = { x = 534 y = 203 } 
+			position = { x = 433 y = 414 }
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_bunker_factor|%0=+]"	   
+			text = "[?bunker_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
 			alwaystransparent = yes
 		}
-
-		instantTextBoxType = {
-			name = "fortress_speed"   
-			position = { x = 395 y = 246 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_fortress_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "coastal_fortress_speed"   
-			position = { x = 442 y = 246 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_coastal_fortress_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
+		
 		instantTextBoxType = {
 			name = "coastal_bunker_speed"   
-			position = { x = 488 y = 246 } 
+			position = { x = 433 y = 458 }
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_coastal_bunker_factor|%0=+]"	   
+			text = "[?coastal_bunker_const_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -263,47 +208,26 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "naval_facility_speed"   
-			position = { x = 396 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_naval_facility_factor|%0=+]"	   
-			maxWidth = 50  
+			name = "coastal_fortress_speed"
+			position = { x = 387 y = 502 }
+			font = "cg_16b"
+			text = "[?coastal_fortress_const_speed_var|%0=+]"
+			maxWidth = 50
 			maxHeight = 20
 			format = right
 			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
-			name = "nuclear_facility_speed"   
-			position = { x = 442 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_facility_factor|%0=+]"	   
-			maxWidth = 50  
+			name = "fortress_speed"
+			position = { x = 387 y = 458 }
+			font = "cg_16b"
+			text = "[?fortress_const_speed_var|%0=+]"
+			maxWidth = 50
 			maxHeight = 20
 			format = right
 			alwaystransparent = yes
 		}
-
-		instantTextBoxType = {
-			name = "air_facility_speed"   
-			position = { x = 488 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_air_facility_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "land_facility_speed"   
-			position = { x = 534 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_land_facility_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
+		
 	}
 }

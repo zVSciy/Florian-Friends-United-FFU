@@ -288,7 +288,7 @@ country_event = {
 		BRA = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		SPR = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		RAJ = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
-		FRA = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		HOL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		hidden_effect = {
 			GER = { add_ideas = GER_africaaaaaaaaaaaaaa }
 			ITA = { add_ideas = GER_africaaaaaaaaaaaaaa }
@@ -300,7 +300,7 @@ country_event = {
 			YUG = { add_ideas = GER_africaaaaaaaaaaaaaa }
 		}
 		# enable ports on francce
-		#FRA = { set_technology = { naval_base_construction = 1 popup = no } }
+		FRA = { set_technology = { naval_base_construction = 1 popup = no } }
 	}
 }
  
@@ -454,7 +454,7 @@ country_event = {
 			YUG = { add_ideas = GER_africaaaaaaaaaaaaaa }
 		}
 		# enable ports on francce
-		#FRA = { set_technology = { naval_base_construction = 1 popup = no } }
+		FRA = { set_technology = { naval_base_construction = 1 popup = no } }
 		
 		GER = {
 			custom_effect_tooltip = "Gets 120,000 French POWs"

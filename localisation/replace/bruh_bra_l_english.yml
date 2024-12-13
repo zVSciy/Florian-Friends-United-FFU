@@ -99,6 +99,10 @@
   BRA_light_cruiser_effort_desc:0 "Light cruisers will be our glory."
   BRA_capital_ship_effort:0 "Capital Ship Effort"
   BRA_capital_ship_effort_desc:0 "With strong capital ships we can have a grand navy."
+  BRA_rise_of_new_empire:0 "A new empire arises"
+  BRA_army:0 "revive the bandeirantes"
+  
+
 
   #### IDEAS ####
   BRA_usa_license:0 "US Advisors"
@@ -114,9 +118,9 @@
   BRA_modify_brazilian_economy_ns_intro:0 "Modify §Y$BRA_economy_dynamic_modifier$§! by"
   BRA_modify_economy_brazilian_economy:0 "Brazilian Economy"
 
-  BRA_army_navy_dynamic_modifier:0 "[BRA_army_navy_dynam_mod_sl]"
-  BRA_modify_brazilian_army_navy_ns_intro:0 "Modify §Y$BRA_army_navy_dynamic_modifier$§! by"
-  BRA_modify_army_navy_brazilian_armed_forces:0 "Brazilian Armed Forces"
+  BRA_army_dynamic_modifier:0 "[BRA_army_navy_dynam_mod_sl]"
+  BRA_modify_brazilian_army_ns_intro:0 "Modify §Y$BRA_army_navy_dynamic_modifier$§! by"
+  BRA_modify_army_brazilian_armed_forces:0 "Brazilian Armed Forces"
 
   #### CHARACTERS ####
   BRA_washington_luis_pereira:0 "Washington Luis"
@@ -131,11 +135,17 @@
   BRA_joao_baptista_de_morais:0 "João Baptista Mascarenhas de Morais"
   BRA_eurico_gaspar_dutra:0 "Eurico Gaspar Dutra"
   BRA_capy_bara:0 "Capy Bara"
+  BRA_alberto_pani:0 "alberto Pani"
+
+
+
 
   #### TOOLTIP ####
   BRA_third_republic:0 "Third Brazilian Republic"
   BRA_snek_third_republic:0 "Third Snek Republic"
   BRA_brazil_expedionary_forces_tt:2 "The deployment of the Brazilian Expedionary Forces!:\nDeploy §Y5 Divisions§! of §Y10 Garrison§! battalions"
+  Bra_adaptable_desert_designs:0 "Enables §HSInfantry Designs§!\n§HInfantry:\n    Desert§!\n    Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!\n "
+ 
 
   #### TRAITS ####
   coffee_oligarch:0 "Coffee Oligarch"

@@ -168,28 +168,15 @@ SPR_esperanza_y_cia_organization = {
 		tag = SPR
 	}
 
-	add_trait = { 
-		token = SPR_esperanza_y_cia_organization_mio_buff
-		name = SPR_esperanza_y_cia_organization_mio_buff
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_technology
-		special_trait_background = yes
-
-		position = { x=4 y=4 }
-
-        available = {
-            FROM = {
-                has_completed_focus = SPA_arti_mio_win
-            }
-        }
-
-		equipment_bonus = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			build_cost_ic = -0.03
+	available = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = SPR_scw_not_in_progress_tt
+				NOT = { SPR_scw_in_progress = yes }
+			}
+			FROM = { controls_state = 792 }
 		}
 	}
-
-
 }
 
 SPR_llama_gabilondo_y_cia_organization = {

@@ -691,7 +691,7 @@ ENG_rsaf_enfield_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = ENG_enfield
+				has_completed_focus = BALTIC_british_designers
 			}
 		}
 	}
@@ -855,7 +855,7 @@ ENG_royal_arsenal_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = ENG_enfield
+				has_completed_focus = BALTIC_british_designers
 			}
 		}
 	}
