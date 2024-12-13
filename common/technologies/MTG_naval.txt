@@ -1098,40 +1098,6 @@ technologies = {
 			year_1936
 		}
 	}
-	ship_hull_super_heavy = {
-
-		enable_equipments = {
-			ship_hull_super_heavy_1
-		}
-
-		enable_equipment_modules = {
-			ship_armor_shbb
-		}
-
-		research_cost = 1.5
-
-		start_year = 1939
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 25
-				tag = JAP
-			}
-		}
-		special_project_specialization = {
-			specialization_naval
-		}
-
-		categories = {
-			naval_equipment
-			bb_tech
-			bc_tech
-			mio_cat_tech_all_capital_ship_and_modules
-			year_1939
-		}
-	}
 
 	improved_ship_hull_heavy = {
 
