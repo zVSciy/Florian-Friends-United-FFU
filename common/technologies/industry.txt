@@ -3045,15 +3045,15 @@ technologies = {
 			}
 		}
 	}			
-	naval_base_construction = {
-		enable_building = {
-			building = naval_base
-			level = 10
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	#naval_base_construction = {
+	#	enable_building = {
+	#		building = naval_base
+	#		level = 10
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
 
 	fuel_silo_construction_disabled = {
 		enable_building = {
