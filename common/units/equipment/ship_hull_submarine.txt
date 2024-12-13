@@ -597,7 +597,7 @@ equipments = {
 		fuel_consumption = 1
 
 
-		sub_visibility = 26
+		sub_visibility = 27
 		naval_speed = 16
 		reliability = 0.75
 
@@ -753,7 +753,7 @@ equipments = {
 		fuel_consumption = 1
 
 
-		sub_visibility = 13
+		sub_visibility = 14
 		naval_speed = 19
 
 		naval_range = 6500
@@ -1120,7 +1120,7 @@ equipments = {
 
 		surface_detection = 60
 		sub_detection = 0
-		surface_visibility = 1
+		surface_visibility = 10
 		reliability = 0.8
 		fuel_consumption = 0
 
@@ -1182,7 +1182,7 @@ equipments = {
 
 		armor_value = 0
 
-		sub_visibility = 15
+		sub_visibility = 20
 		naval_speed = 8.3
 		reliability = 0.60
 		fuel_consumption = 1
@@ -1193,9 +1193,9 @@ equipments = {
 		manpower = 100
 
 
-		build_cost_ic = 150
+		build_cost_ic = 450
 		resources = {
-			steel = 1
+			steel = 12
 		}
 	}
 }

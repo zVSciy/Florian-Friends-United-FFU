@@ -1804,27 +1804,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_strategic_air_effort2
-		icon = GFX_focus_GER_Amerika_Bomber
-		prerequisite = { focus = GER_strategic_air_effort }
-		x = 0
-		y = 2
-		relative_position_id = GER_strategic_air_effort
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			set_technology = {
-				amerikabomber = 1
-			}
-		}
-	}
-	
-	focus = {
 		id = GER_air_doc
 		icon = GFX_goal_luftwaffe
 		prerequisite = { focus = GER_tactical_air_effort focus = GER_cas_air_effort }
