@@ -563,7 +563,7 @@ operations = {
 					producer = ITA
 				}
 			}
-			set_autonomy = { target = ETH autonomy_state = autonomy_reichskommissariat }
+			set_autonomy = { target = ETH autonomy_state = autonomy_integrated_puppet }
 			create_corps_commander = {
 				name = "Fresh Prince Amedeo"
 				picture = "Portrait_Duke_of_Aosta.dds"
