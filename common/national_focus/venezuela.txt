@@ -335,6 +335,31 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = ITA_no_asia_buff_focus
+		icon = GFC_goal_generic_buff
+		x = 12
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+
+
+		available = {
+			date > 1939.6.1
+			has_global_flag = NO_ASIA
+		}
+
+		completion_reward = {
+
+			ITA = {
+				add_ideas = ITA_no_asia_buff
+			}
+		}
+	}
 	# focus = {
 	# 	id = yames_yames7
 	# 	icon = GFX_goal_generic_consumer_goods
