@@ -1238,6 +1238,8 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			add_to_variable = { SOV_soviet_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
 			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_soviet_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+
 		}
 	}
 	focus = {
@@ -2725,6 +2727,11 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
+		bypass = {
+			219 = {is_controlled_by_ROOT_or_ally = no}
+
+		}
+
 		completion_reward = {
 			219 = {
 				add_dynamic_modifier = { modifier = SOV_defend_city }
@@ -2890,6 +2897,10 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
+		bypass = {
+			217 = {is_controlled_by_ROOT_or_ally = no}
+		}
 
 		completion_reward = {
 			217 = {
@@ -3076,6 +3087,11 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
+		bypass = {
+			195 = {is_controlled_by_ROOT_or_ally = no}
+		}
+		
 
 		completion_reward = {
 			195 = {
@@ -3580,6 +3596,10 @@ focus_tree = {
 						division = "name = \"8th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
 						owner = SOV
 					}
+					create_unit = {
+						division = "name = \"9th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
 				}
 			}
 		}
@@ -3676,10 +3696,14 @@ focus_tree = {
 							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
 							owner = SOV
 						}
-						# create_unit = {
-						# 	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-						# 	owner = SOV
-						# }						
+						create_unit = {
+							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+							owner = SOV
+						}	
+						create_unit = {
+							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+							owner = SOV
+						}					
 					}
 				}
 				else = {
@@ -3698,10 +3722,14 @@ focus_tree = {
 							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
 							owner = SOV
 						}
-						# create_unit = {
-						# 	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-						# 	owner = SOV
-						# }						
+						create_unit = {
+							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+							owner = SOV
+						}	
+						create_unit = {
+							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+							owner = SOV
+						}						
 					}
 				}
 			}
@@ -5759,6 +5787,7 @@ focus_tree = {
 			}
 			add_named_threat = { threat = 3 name = SOV_baltic_security }
 			activate_mission = SOV_winter_war
+			
 			hidden_effect = {
 				MON = {
 					add_ideas = MON_brothers_war

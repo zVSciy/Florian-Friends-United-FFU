@@ -8554,7 +8554,8 @@ SOV_great_patriotic_war = {
 		days_remove = 9999
 
 		modifier = {
-			army_core_defence_factor = 0.1
+			army_core_defence_factor = 0.2
+			supply_consumption_factor = -0.3
 			mobilization_speed = 0.15
 		}
 
