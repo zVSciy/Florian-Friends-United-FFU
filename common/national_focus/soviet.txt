@@ -3596,10 +3596,10 @@ focus_tree = {
 						division = "name = \"8th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
 						owner = SOV
 					}
-					create_unit = {
-						division = "name = \"9th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-						owner = SOV
-					}
+					#create_unit = {
+					#	division = "name = \"9th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+					#	owner = SOV
+					#}
 				}
 			}
 		}
@@ -3696,14 +3696,14 @@ focus_tree = {
 							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
 							owner = SOV
 						}
-						create_unit = {
-							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-							owner = SOV
-						}	
-						create_unit = {
-							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-							owner = SOV
-						}					
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}	
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}					
 					}
 				}
 				else = {
@@ -3722,14 +3722,14 @@ focus_tree = {
 							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
 							owner = SOV
 						}
-						create_unit = {
-							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-							owner = SOV
-						}	
-						create_unit = {
-							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-							owner = SOV
-						}						
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}	
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}						
 					}
 				}
 			}
