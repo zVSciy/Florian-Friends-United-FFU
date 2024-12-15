@@ -385,6 +385,8 @@ small_plane_airframe_2 = { #Improved
 			allowed_module_categories = {
 				plane_engine_type
 				plane_rocket_engine_type
+				plane_jet_engine_type
+				twin_plane_jet_engine_type
 			}
 		}
 
@@ -508,6 +510,8 @@ small_plane_airframe_3 = { #Advanced
 			allowed_module_categories = {
 				plane_engine_type
 				plane_rocket_engine_type
+				plane_jet_engine_type
+				twin_plane_jet_engine_type				
 			}
 		}
 
