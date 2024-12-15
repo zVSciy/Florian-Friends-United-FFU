@@ -2727,10 +2727,9 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		bypass = {
-			219 = {is_controlled_by_ROOT_or_ally = no}
-
-		}
+		# bypass = {
+		# 	242 = {is_controlled_by_ROOT_or_ally = no}
+		# }
 
 		completion_reward = {
 			219 = {
@@ -2898,9 +2897,9 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		bypass = {
-			217 = {is_controlled_by_ROOT_or_ally = no}
-		}
+		# bypass = {
+		# 	218 = {is_controlled_by_ROOT_or_ally = no}
+		# }
 
 		completion_reward = {
 			217 = {
@@ -3088,9 +3087,9 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		bypass = {
-			195 = {is_controlled_by_ROOT_or_ally = no}
-		}
+		# bypass = {
+		# 	808 = {is_controlled_by_ROOT_or_ally = no}
+		# }
 		
 
 		completion_reward = {
