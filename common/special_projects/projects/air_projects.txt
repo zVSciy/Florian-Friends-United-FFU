@@ -845,6 +845,8 @@ sp_air_jet_engine = {
 
 	project_output = {
 
+		
+
 		country_effects = {
 			if = {
 				limit = {
@@ -859,6 +861,7 @@ sp_air_jet_engine = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
+
 				add_design_template_bonus = {
 					name = air_equipment
 					uses = 1
@@ -921,6 +924,7 @@ sp_air_jet_engine = {
 			limit = { has_dlc = "No Step Back"}
 			tank_gas_turbine_engine
 		}
+
 	}
 
 	generic_prototype_rewards = {
