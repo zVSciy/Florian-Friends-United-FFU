@@ -1148,6 +1148,17 @@ ideas = {
 			}
 		}
 
+		FFU_NO_SOV_COOPS = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				air_range_factor = 15
+			}				
+		}
+
 		neutrality_idea2 = {
 			
 			allowed = {

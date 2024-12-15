@@ -27,9 +27,36 @@ host_decisions = {
 				set_global_flag = host_tool_decision_enabled
 			}
 		}
-
 	}
- 
+	noSOV_Coops = {
+		icon = generic_air
+		available = {
+            always = yes
+        }
+        fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+            factor = 0  # Ensure AI does not trigger this
+        }
+		complete_effect = {
+			SOV = {
+				add_ideas = FFU_NO_SOV_COOPS
+			}
+			
+			249 = {
+				set_building_level = {
+					type = anti_air_building
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = gib_air_base
+					level = 100
+					instant_build = yes
+				}								
+			}
+		}		
+	}
 	hotjoin_incoming = {
 		available = {
             always = yes
