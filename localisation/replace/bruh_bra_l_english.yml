@@ -7,9 +7,9 @@
   BRA_adopt_federalism_desc:0 "Federalism is a system of government in which power is divided between a central government and regional governments. In a federal system, the central government has certain powers that are reserved to it, while the regional governments have a degree of autonomy and are responsible for certain functions within their own jurisdiction."
   BRA_declare_third_republic:0 "Declare the Third Republic"
   BRA_declare_third_republic_desc:0 "The Third Republic will bring us through the future!"
-  BRA_State_of_emergency_dynamic_modifier:0 "State of emergency"
   BRA_new_constitution:0 "Sign the New Constitution"
   BRA_new_constitution_desc:0 "Its time we get a new stable constitution."
+BRA_State_of_emergency_dynamic_modifier:0 "State of emergency"
   BRA_great_depression_recovery:0 "National Recovery Act"
   BRA_great_depression_recovery_desc:0 "We need a strong plan to get through the great depression."
   BRA_full_econonmic_recovery:0 "Tax Reform Bill"
@@ -145,7 +145,7 @@
   BRA_Aut:0 "Autarky"
   Bra_Cor:0 "corporatism"
   Decree_Number_37:0 "decree 37"
-  
+
 
   ### DYNAMIC MODIFIERS ###
   BRA_economy_dynamic_modifier:0 "[BRA_economy_dynam_mod_sl]"
