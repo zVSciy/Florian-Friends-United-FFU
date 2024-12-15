@@ -525,10 +525,10 @@ characters={
 		}
 		corps_commander={
 			traits={ naval_invader trait_engineer commando }
-			skill=4
-			attack_skill=3
+			skill=5
+			attack_skill=5
 			defense_skill=3
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=5
 		}
 	}
@@ -548,30 +548,37 @@ characters={
 			planning_skill=5
 			logistics_skill=4
 
-}
-	  BRA_alberto_pani = {
-		name = "BRA_alberto_pani"
-		portraits= {
-			army= {
-				small = "GFX_portrait_MEX_alberto_pani_small"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_alberto_pani
-			
-			cost = 150.000
-			allowed = {
-				original_tag = BRA
-			}
-			available = {
-				
-					has_completed_focus = BRA_Invest_into_the_infrastructure
-				}
-			
-			traits = {
-				captain_of_industry 
-			}
+
 		}
 	}
+			BRA_alberto_pani = {
+				name = "BRA_alberto_pani"
+				portraits= {
+					army= {
+						small = "GFX_portrait_MEX_alberto_pani_small"
+					}
+				}
+				advisor={
+					slot = political_advisor
+					idea_token = BRA_alberto_pani
+					
+					cost = 150.000
+					allowed = {
+						original_tag = BRA
+					}
+					available = {
+						
+							has_completed_focus = BRA_Invest_into_the_infrastructure
+						}
+					
+					traits = {
+						captain_of_industry 
+					}
+				}
+			}
+		
 
+
+
+		}
+	  

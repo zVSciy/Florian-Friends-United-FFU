@@ -33,16 +33,29 @@ ideas = {
 			}
 		}
 
+		Bra_Supply = {
+			allowed = {
+				original_tag = BRA
+			}
+
+			picture = GFX_focus_CHL_focus_on_cattle_and_wool
+
+			modifier = { 
+				acclimatization_hot_climate_gain_factor = 0.2
+				local_non_core_supply_impact_factor = -0.15
+			}
+		}
+
 
 		Bra_Aut = {
 				allowed = {
 					original_tag = BRA
 				}
 
-				picture = GFX_focus_BRA_international_crisis
+				picture = GFX_focus_BRA_autarky
 
 				modifier = { 
-					production_speed_industrial_complex_factor = 0.15
+					production_speed_industrial_complex_factor = 0.3
 				}
 			}
 
@@ -54,7 +67,7 @@ ideas = {
 					original_tag = BRA
 				}
 
-				picture = GFX_focus_BRA_international_crisis
+				picture = GFX_focus_ICE_state_corporatism
 
 				modifier = { 
 					production_factory_max_efficiency_factor = 0.05
@@ -104,7 +117,7 @@ ideas = {
 
 
 						modifier = {  
-							production_speed_buildings_factor = 0.075
+							production_speed_buildings_factor = 0.125
 							consumer_goods_factor = -0.05
 							
 					}
@@ -153,7 +166,7 @@ ideas = {
 				tag = BRA
 				}
 				picture = ARG_buying_the_islands
-				modifier =  {
+				equipment_bonus =  {
 					infantry_equipment = {
 						build_cost_ic = -0.15 instant = yes 
 					}
@@ -163,7 +176,21 @@ ideas = {
 		}
 	}
 
+	BRA_Increase_mechanized_production = {
+		
+		allowed = {
+		   original_tag = BRA }
 
+
+		   equipment_bonus =  {
+			mechaanized_equipment = {
+				build_cost_ic = -0.15 instant = yes 
+			}
+			Amphibious_Mechanized_equipment= {
+				build_cost_ic = -0.075 instant = yes
+			}
+}
+}
 
 
 

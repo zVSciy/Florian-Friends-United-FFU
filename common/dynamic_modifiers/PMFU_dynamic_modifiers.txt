@@ -650,25 +650,25 @@ BRA_economy_dynamic_modifier = {
 	production_speed_synthetic_refinery_factor = BRA_production_speed_synthetic_refinery_factor 
 }
 
-BRA_army_dynamic_modifier = {
-	enable = { always = yes }
-	icon = GFX_idea_chi_army_corruption3
-
-	special_forces_cap = BRA_army_special_forces_cap
-	heat_attrition_factor = BRA_army_heat_attrition_factor
-	supply_consumption_factor = BRA_army_supply_consumption_factor
-	no_supply_grace = BRA_army_no_supply_grace
-	acclimatization_hot_climate_gain_factor = BRA_army_acclimatization_hot_climate_gain_factor
-	experience_gain_army_unit_factor = BRA_army_experience_gain_army_unit_factor
-	training_time_army_factor = BRA_army_training_time_army_factor
-	army_org_factor = BRA_army_army_org_factor
-	army_morale_factor = BRA_army_army_morale_factor
-	minimum_training_level = BRA_army_navy_minimum_training_level
-	army_infantry_defence_factor = BRA_army_infantry_defence_factor
-	army_infantry_attack_factor = BRA_army_infantry_attack_factor
-	mechanized_defense_factor = BRA_army_mechanized_defense_factor
-	mechanized_attack_factor = BRA_army_mechanized_attack_factor
-	dig_in_speed = BRA_army_dig_in_speed 
+# BRA_army_dynamic_modifier = {
+#	enable = { always = yes }
+#	icon = GFX_idea_chi_army_corruption3
+#
+##	special_forces_cap = BRA_army_special_forces_cap
+#	heat_attrition_factor = BRA_army_heat_attrition_factor
+#	supply_consumption_factor = BRA_army_supply_consumption_factor
+#	no_supply_grace = BRA_army_no_supply_grace
+#	acclimatization_hot_climate_gain_factor = BRA_army_acclimatization_hot_climate_gain_factor
+##	experience_gain_army_unit_factor = BRA_army_experience_gain_army_unit_factor
+#	training_time_army_factor = BRA_army_training_time_army_factor
+#	army_org_factor = BRA_army_army_org_factor
+#	army_morale_factor = BRA_army_army_morale_factor
+#	minimum_training_level = BRA_army_navy_minimum_training_level
+#	army_infantry_defence_factor = BRA_army_infantry_defence_factor
+#	army_infantry_attack_factor = BRA_army_infantry_attack_factor
+#	mechanized_defense_factor = BRA_army_mechanized_defense_factor
+#	mechanized_attack_factor = BRA_army_mechanized_attack_factor
+#	dig_in_speed = BRA_army_dig_in_speed 
 }
 
 BRA_State_of_emergency_dynamic_modifier = { 

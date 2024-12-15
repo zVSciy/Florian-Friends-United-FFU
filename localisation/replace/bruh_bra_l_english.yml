@@ -7,6 +7,7 @@
   BRA_adopt_federalism_desc:0 "Federalism is a system of government in which power is divided between a central government and regional governments. In a federal system, the central government has certain powers that are reserved to it, while the regional governments have a degree of autonomy and are responsible for certain functions within their own jurisdiction."
   BRA_declare_third_republic:0 "Declare the Third Republic"
   BRA_declare_third_republic_desc:0 "The Third Republic will bring us through the future!"
+  BRA_State_of_emergency_dynamic_modifier:0 "State of emergency"
   BRA_new_constitution:0 "Sign the New Constitution"
   BRA_new_constitution_desc:0 "Its time we get a new stable constitution."
   BRA_great_depression_recovery:0 "National Recovery Act"
@@ -101,7 +102,33 @@
   BRA_capital_ship_effort_desc:0 "With strong capital ships we can have a grand navy."
   BRA_rise_of_new_empire:0 "A new empire arises"
   BRA_army:0 "revive the bandeirantes"
-  
+  BRA_military_facilities:0 "expand military facilities"
+  BRA_motorized:0 "advance motorisation research"
+  BRA_tank_warfare:0 "the brasillian tank corps"
+  BRA_Artillery_bad:0 "Sponsor the SBC"
+  BRA_truck_radio:0 "renew the motorised units"
+  BRA_artillery:0 "Privatize the SBC"
+  BRA_Jungle_training:0 "Train for Jungle combat"
+  BRA_landing_crafts:0 "research new landing models"
+  BRA_Infantry_radio:0 "renew the infantry"
+  BRA_Mountain_training:0 "Train for Mountain combat"
+  BRA_foreign_advisors:0 "Gather experience from the chino-japansese war"
+  BRA_Increase_mechanized_production:0 "Increase mechanized production"
+  BRA_Increase_Gun_production:0 "Increase gun production"
+  BRA_Martial_Law:0 "Declare martial law"
+  BRA_reopen_the_army_university:0 "reopen the army university"
+  BRA_Preparations_world_cup:0 "Make a bid for the World cup"
+  BRA_World_Cup:0 "Host the world cup"
+  BRA_regular_infantry:0 "advance infantry research"
+  BRA_Jap_worker:0 "Put to work the japanese immigrants"
+  BRA_army_academy:0 "expand the academy"
+  BRA_Invest_into_the_infrastructure:0 "invest into infrastructure"
+  BRA_domestic_production:0 "increase domestic production"
+  BRA_Supply:0 "min-maxing supply"
+
+
+
+
 
 
   #### IDEAS ####
@@ -112,6 +139,13 @@
   BRA_great_depression_1:0 "Great Depression"
   BRA_pracinhas_idea:0 "Pracinhas"
   BRA_bandeirantes_idea:0 "Bandeirantes"
+  BRA_psad_idea:0 "PSAD"
+  BRA_decree_no_37:0 "decree NO 37"
+  Bra_Supply:0 "suplly usage"
+  BRA_Aut:0 "Autarky"
+  Bra_Cor:0 "corporatism"
+  Decree_Number_37:0 "decree 37"
+  
 
   ### DYNAMIC MODIFIERS ###
   BRA_economy_dynamic_modifier:0 "[BRA_economy_dynam_mod_sl]"

@@ -36,7 +36,7 @@ focus_tree = {
 
 focus = {
 		id = BRA_rise_of_new_empire
-		icon = GFX_focus_generic_road_investment
+		icon = GFX_focus_BRA_restore_brazilian_honor
 		prerequisite = { }
 		
 
@@ -65,7 +65,7 @@ focus = {
 		id = BRA_tribunal_de_seguranca_nacional
 		icon = GFX_focus_BRA_tribunal
 		prerequisite = { focus = BRA_rise_of_new_empire}
-		x = 9
+		x = 10
 		y = 2
 		#relative_position_id =
 		mutually_exclusive = { }
@@ -127,7 +127,7 @@ focus = {
 		x = -1.5
 		y = 1
 		relative_position_id = BRA_tribunal_de_seguranca_nacional
-		cost = 10
+		cost = 5
 		available = {
 			neutrality > 0.40
 		}
@@ -396,7 +396,7 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id = BRA_establish_psad
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -488,6 +488,7 @@ focus = {
 		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt}
 		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
 		add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
+		add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.02 tooltip = production_factory_start_efficiency_factor_tt}
 
 			
 		}
@@ -514,7 +515,7 @@ focus = {
 		completion_reward = {
 			
 				BRA_economy_dynamic_modifier_tt = yes
-		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt}
+		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt}
 		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
 		add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt}
 		add_to_variable = { BRA_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt } 
@@ -764,53 +765,40 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					OR = {
-						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
-						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				custom_effect_tooltip = BRA_modify_neglected_state
-				add_to_variable = {
-					BRA_state_development_production_speed = 0.1
-					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
-				}
-				add_to_variable = {
-					BRA_state_development_local_factories = 0.1
-					tooltip = local_factories_tt
-				}
-			}
+		
+
+			completion_reward = {
+                every_state = {
+                    limit = {
+                        is_owned_by = ROOT
+                        is_controlled_by = ROOT
+                        OR = {
+							state = 502
+                            state = 503
+                            state = 497
+                            state = 498
+                            state = 499
+                            state = 496
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+				  }
+                
 			
-			add_timed_idea = {
-				idea = BRA_rail_investment
-				days = 730
-			}
-			IF = {
-				limit = {
-					495 = { is_owned_and_controlled_by = ROOT }
-				}
-				495 = {
-					add_building_construction = {
-						type = supply_node
-						province = 1979
-						level = 1
-						instant_build = yes
-					}
-				}
-				build_railway = {
-					level = 3
-					build_only_on_allied = yes
-					fallback = yes
-					start_province = 8189
-					target_province = 1979
-				}
-			}
 		}
-	}
+}
+
+		
+			
+			
+			
+			
+			
+	
 
 	focus = {
 		id = BRA_national_petroleum_council
@@ -819,7 +807,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = BRA_invest_in_railways
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 19
 		}
@@ -864,7 +852,7 @@ focus = {
 		x = 2
 		y = 1
 		relative_position_id = BRA_companhia_siderurgica_nacional
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -881,7 +869,7 @@ focus = {
 				add_extra_state_shared_building_slots = 6
 				add_resource = {
 					type = rubber
-					amount = 50
+					amount = 100
 				}
 				add_to_variable = {
 					BRA_state_development_local_building_slots_factor = 0.2
@@ -898,7 +886,7 @@ focus = {
 
 	focus = {
 		id = BRA_Invest_into_the_infrastructure
-		icon = GFX_focus_generic_road_investment
+		icon = GFX_focus_CHL_la_corporacion_araucania
 		prerequisite = { 
 			focus = BRA_batalha_do_borracha 
 			focus = BRA_invest_in_railways }
@@ -962,7 +950,7 @@ focus = {
 		y = 2
 		relative_position_id = BRA_Invest_into_the_infrastructure
 		mutually_exclusive = { focus = BRA_expand_fordlandia }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -985,7 +973,7 @@ focus = {
 		y = 2
 		relative_position_id = BRA_Invest_into_the_infrastructure
 		mutually_exclusive = { focus = BRA_fabrica_nacional_de_motores }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -999,13 +987,13 @@ focus = {
 			938 = {
 				add_resource = {
 					type = rubber
-					amount = 50
+					amount = 150
 				}
 				
 			}
 			
 			BRA_economy_dynamic_modifier_tt = yes
-				add_to_variable = { BRA_production_speed_synthetic_refinery_factor = 0.2 tooltip = production_speed_synthetic_refinery_factor_tt}
+				add_to_variable = { BRA_production_speed_synthetic_refinery_factor = 0.3 tooltip = production_speed_synthetic_refinery_factor_tt}
 			
 		}
 	}
@@ -1017,7 +1005,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = BRA_Invest_into_the_infrastructure
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1078,13 +1066,14 @@ focus = {
 			
 			
 			BRA_economy_dynamic_modifier_tt = yes
-			add_to_variable = {BRA_production_speed_buildings_factor = 0.075 tooltip = production_speed_buildings_factor_tt } 
+			add_to_variable = {BRA_production_speed_buildings_factor = 0.025 tooltip = production_speed_buildings_factor_tt } 
 			}
 
 			completion_reward = {
 
 			BRA_State_of_emergency_dynamic_modifier_tt = yes 
 			add_to_variable = { BRA_State_of_emergency_stability_factor  = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
 
 		}
 	}
@@ -1388,7 +1377,7 @@ focus = {
 		x = -1
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -1402,13 +1391,14 @@ focus = {
 
 		completion_reward = {
 			
-				add_ideas = idea_JUNO_truck_production_cost
-				add_tech_bonus = {
-					name = JUNO_motorization_initiative
-					bonus = 0.75
-					uses = 1
-					category = truck_equipment
-				}
+				
+			add_tech_bonus = {
+				name = CAN_cmp_truck
+				ahead_reduction = 0.5
+				bonus = 0.75
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 			
 		}
 	}
@@ -1422,7 +1412,7 @@ focus = {
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		available = { 
 		}
@@ -1442,7 +1432,7 @@ focus = {
 				category = armor
 			}
 
-			custom_effect_tooltip = BRA_tank_warfare_tt
+			
 		}
 	}
 
@@ -1457,7 +1447,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -1472,6 +1462,8 @@ focus = {
 			}
 
 		completion_reward = {
+
+			add_ideas = FRA_motorized_focus
 			
 		
 		}
@@ -1523,7 +1515,7 @@ focus = {
 		x = 1
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1556,7 +1548,7 @@ focus = {
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 20
@@ -1571,7 +1563,7 @@ focus = {
 		completion_reward = {
 
 			add_tech_bonus = {
-				name = "Heavy Guns Modernization Efforts"
+				name = "artillery research speed"
 				bonus = 0.75
 				uses = 2
 				category = artillery
@@ -1579,10 +1571,11 @@ focus = {
 			
 			
 		}
+		
 	}
 
 	focus = {
-		id = BRA_foreign_designs
+		id = BRA_landing_crafts
 		icon = GFX_focus_generic_license_production
 		
 		relative_position_id = BRA_artillery
@@ -1590,7 +1583,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 20
@@ -1618,7 +1611,7 @@ focus = {
 	id = BRA_foreign_advisors
 	icon = GFX_focus_generic_military_mission
 	relative_position_id = BRA_domestic_production
-	prerequisite = { focus = BRA_Truck_radio focus = BRA_inf_radio}
+	prerequisite = { focus =  BRA_Jungle_training focus = BRA_Mountain_training}
 	
 	
 	y = 2
@@ -1641,149 +1634,21 @@ focus = {
 	}
 }
 
-	focus = {
-		id = BRA_army_professionalism
-		icon = GFX_focus_generic_full_social_mobilization
-		relative_position_id = BRA_foreign_advisors
-		prerequisite = { focus = BRA_foreign_advisors }
-		mutually_exclusive = { focus = BRA_training_for_desert_road }
-		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		completion_reward = {
-			hidden_effect = {
-			completion_reward = {
-			custom_effect_tooltip = mountain_training_effect 
-			hidden_effect = { set_technology = { jungle_warfare = 1 } }
-        }
-					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.05 }
-					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 }
-			}
-			custom_effect_tooltip = RAJ_jungle_training_effect
-		}
-	}
-
-	focus = {
-		id = BRA_conscription
-		icon = GFX_focus_generic_limited_social_mobilization
-		relative_position_id = BRA_foreign_advisors
-		prerequisite = { focus = BRA_foreign_advisors }
-		mutually_exclusive = { focus = BRA_army_professionalism }
-		x = 2
-		y = 1
 	
-		cost = 10
 
-		available = {
-		}
-
-		bypass = {
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
 	
-			custom_effect_tooltip = mountain_training_effect 
-			hidden_effect = { set_technology = { mountain_warfare = 1 } }
-				
-					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.10 }
-					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.10 }
-			
-		}
-		
-		
-	}
 
-	focus = {
-		id = BRA_experimental_weapons_department
-		icon = GFX_focus_rocketry
-		relative_position_id = BRA_conscription
-		prerequisite = { focus = BRA_army_professionalism focus = BRA_conscription focus = BRA_training_for_desert_road }
-		x = 0
-		y = 1
 
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {	
-		}
-
-		ai_will_do = {
-				factor = 20
-			}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 0.5
-				uses = 1
-				category = electronics
-				category = nuclear
-				category = rocketry
-			}
-		}
-	}
  
-	focus = {
-		id = BRA_special_forces
-		icon = GFX_focus_eng_special_air_service
-		relative_position_id = BRA_army_professionalism
-		prerequisite = { focus = BRA_army_professionalism focus = BRA_conscription focus= BRA_training_for_desert_road }
-		x = 2
-		y = 1
 
-		cost = 5 
-	
-		available = {  
-		}  
-
-		bypass = {
-		}
-
-		ai_will_do = {
-			factor = 20
-		}   
-
-		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_doctrine_cost_reduction = {
-					name = JUNO_expand_the_special_foces
-					cost_reduction = 0.25
-					uses = 2
-					category = special_forces_doctrine
-				}
-			}
-			
-		}
-	}
 
 	focus = {
-		id = BRA_special_forces_option_1
+		id = BRA_Increase_mechanized_production
 		icon = GFX_focus_SMB_special_forces_option_1
-		relative_position_id = BRA_special_forces
-		prerequisite = { focus = BRA_special_forces }
+		relative_position_id = BRA_foreign_advisors
+		prerequisite = { focus = BRA_foreign_advisors }
 		mutually_exclusive = { focus = BRA_special_forces_option_2 focus = BRA_special_forces_option_3 }
-		x = -2
+		x = -1
 		y = 1
 
 		cost = 5
@@ -1800,48 +1665,20 @@ focus = {
 
 		completion_reward = {
 
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_doctrine_cost_reduction = {
-					name = JUNO_expand_the_special_foces
-					cost_reduction = 0.25
-					uses = 1
-					category = special_forces_doctrine
-				}
-			}
-
-			IF = {
-				limit = { 
-					NOT = { has_tech = night_vision }
-					date > 1941.1.1
-				}
-				set_technology = { night_vision = 1 }
-			}
-			ELSE_IF = {
-				limit = { 
-					NOT = { has_tech = night_vision2 }
-					date > 1942.1.1
-				}
-				set_technology = { night_vision2 = 1 }
-			}	
-			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_special_forces_cap = 0.1 tooltip = special_forces_cap_tt }
-
-			army_experience = 30
+			add_ideas = BRA_Increase_mechanized_production
+		
 		}
 	}
 
 	focus = {
-		id = BRA_special_forces_option_2
+		id = BRA_Increase_Gun_production 
 		icon = {
 			value = GFX_focus_BRA_corpo_navais
 		}
-		relative_position_id = BRA_special_forces
-		prerequisite = { focus = BRA_special_forces }
+		relative_position_id = BRA_foreign_advisors
+		prerequisite = {focus = BRA_foreign_advisors }
 		mutually_exclusive = { focus = BRA_special_forces_option_1 focus = BRA_special_forces_option_3 }
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 5
@@ -1862,48 +1699,7 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = BRA_special_forces_option_3
-		icon = GFX_focus_SMB_special_forces_option_3  
-		relative_position_id = BRA_special_forces
-		prerequisite = { focus = BRA_special_forces }
-		mutually_exclusive = { focus = BRA_special_forces_option_1 focus = BRA_special_forces_option_2 }
-		x = 0
-		y = 1
 
-		cost = 5
-	
-		available = {
-		}
-
-		bypass = {	
-		}
-
-		ai_will_do = {
-			factor = 10
-		} 
-
-		completion_reward = {
-
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_doctrine_cost_reduction = {
-					name = JUNO_expand_the_special_foces
-					cost_reduction = 0.25
-					uses = 1
-					category = special_forces_doctrine
-				}
-			}
-			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_special_forces_out_of_supply_factor = -0.15 tooltip = special_forces_out_of_supply_factor_tt }
-
-			
-			army_experience = 15
-			air_experience = 15
-		}
-	}
 
 	ocus = {
 		id = BRA_joint_operative_command
@@ -1962,46 +1758,13 @@ focus = {
 	#	}
 	#}
 
-	focus = {  
-		id = BRA_jungle_pioneers
-		icon = GFX_goal_generic_construction2
-		relative_position_id = BRA_army_professionalism 
-		prerequisite = { focus = BRA_army_professionalism focus = BRA_training_for_desert_road focus = BRA_conscription  }  
-		x = 0
-		y = 1
-
-		cost = 10
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = JUNO_support_company_initiative
-				bonus = 0.5
-				uses = 1
-				category = support_tech
-			}
-			
-			
-		}
-
-	}
+	
 
 	
 
 		focus = {
-		id = BRA_Propaganda_ministerium
-		icon = GFX_focus_generic_road_investment
+		id = BRA_Martial_Law
+		icon = GFX_focus_BRA_repeale_national_security_law
 		prerequisite = { 
 			focus = BRA_desenvolvimentismo }
 			prerequisite = {  focus = BRA_ensure_continued_military_support}
@@ -2038,13 +1801,13 @@ focus = {
 
 	focus = {
 		id = BRA_reopen_the_army_university
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = BRA_Propaganda_ministerium}
+		icon = GFX_focus_generic_low_cost_housing
+		prerequisite = { focus = BRA_Martial_Law}
 		prerequisite = { focus = BRA_invest_in_ports }
 		prerequisite = { focus = BRA_departamento_de_ordem_politica_e_social }
 		x = 0
 		y = 3
-		relative_position_id = BRA_Propaganda_ministerium
+		relative_position_id = BRA_Martial_Law
 		cost = 5
 		ai_will_do = {
 			factor = 8
@@ -2067,8 +1830,8 @@ focus = {
 	}
 
 	focus = {
-		id = BRA_Placebo4
-		icon = GFX_focus_generic_road_investment
+		id = BRA_Preparations_world_cup
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = BRA_reopen_the_army_university}
 		
 		x = 0
@@ -2119,7 +1882,7 @@ focus = {
 
 	focus = {
 		id = Jap_worker
-		icon = GFX_focus_generic_road_investment
+		icon = GFX_focus_BRA_pro_business_taxes
 		prerequisite = { focus = BRA_expand_fordlandia focus = BRA_fabrica_nacional_de_motores}
 		
 
@@ -2146,15 +1909,15 @@ focus = {
 
 	focus = {
 		id = BRA_World_Cup
-		icon = GFX_focus_generic_road_investment
+		icon = GFX_focus_NORDIC_com_capstone_research
 		prerequisite = { focus = Jap_worker}
-		prerequisite = { focus = BRA_Placebo4}
+		prerequisite = { focus = BRA_Preparations_world_cup}
 		prerequisite = { focus = BRA_support_industrialists}
 
 		
 		x = 0
 		y = 1
-		relative_position_id = BRA_Placebo4
+		relative_position_id = BRA_Preparations_world_cup
 		cost = 5
 		ai_will_do = {
 			factor = 8
@@ -2206,8 +1969,8 @@ focus = {
 	}
 
 	focus = {
-		id = BRA_Placebo9
-		icon = GFX_focus_generic_road_investment
+		id = BRA_Artillery_bad
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = BRA_motorized}
 		
 
@@ -2215,7 +1978,7 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id =BRA_motorized
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 8
 		}
@@ -2235,16 +1998,16 @@ focus = {
 	}
 
 	focus = {
-		id = BRA_Placebo10
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = BRA_motorized}
+		id = BRA_truck_radio
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = BRA_Artillery_bad}
 		
 
 		
 		x = 0
 		y = 1
-		relative_position_id = BRA_Placebo9
-		cost = 5
+		relative_position_id = BRA_Artillery_bad
+		cost = 3
 		ai_will_do = {
 			factor = 8
 		}
@@ -2255,88 +2018,6 @@ focus = {
 
 		completion_reward = {
 		
-			
-		}
-	}
-
-
-	focus = {
-		id = BRA_Placebo11
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = BRA_regular_infantry}
-		
-
-		
-		x = 1
-		y = 1
-		relative_position_id = BRA_regular_infantry
-		cost = 5
-		ai_will_do = {
-			factor = 8
-		}
-		available = { 
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			
-				BRA_army_dynamic_modifier_tt = yes
-			add_to_variable = { BRA_army_army_org_factor = 0.05 tooltip = army_org_factor_tt }
-			add_to_variable = { BRA_army_army_supply_consumption_factor = -0.1 tooltip = army_supply_consumption_factor_tt }
-			
-		}
-	}
-
-
-	focus = {
-		id = BRA_Placebo12
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = BRA_Placebo11}
-		
-
-		
-		x = 0
-		y = 1
-		relative_position_id = BRA_Placebo11
-		cost = 5
-		ai_will_do = {
-			factor = 8
-		}
-		available = { 
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-		
-		BRA_army_dynamic_modifier_tt = yes
-		add_to_variable = { BRA_infantry_attack_factor = 0.025 tooltip = army_infantry_attack_factor_tt}
-		add_to_variable = { BRA_infantry_defence_factor = 0.05 tooltip = army_infantry_defence_factor_tt}	
-		}
-	}
-
-
-	focus = {
-		id = BRA_Truck_radio
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = BRA_Placebo10 focus = BRA_domestic_production}
-		
-
-		
-		x = -1
-		y = 1
-		relative_position_id = BRA_Placebo10
-		cost = 5
-		ai_will_do = {
-			factor = 8
-		}
-		available = { 
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
 			add_tech_bonus = {
 				name = radio_bonus
 				bonus = 1000
@@ -2345,21 +2026,22 @@ focus = {
 				technology = mot_radio3
 				technology = mot_radio1
 		}
-	}
+			
+		}
 	}
 
 
 	focus = {
-		id = BRA_inf_radio
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = BRA_Placebo12 focus = BRA_foreign_designs}
+		id = BRA_Supply
+		icon = GFX_focus_CHL_focus_on_cattle_and_wool
+		prerequisite = { focus = BRA_regular_infantry}
 		
 
 		
-		x = -1
+		x = 1
 		y = 1
-		relative_position_id = BRA_Placebo12
-		cost = 5
+		relative_position_id = BRA_regular_infantry
+		cost = 3
 		ai_will_do = {
 			factor = 8
 		}
@@ -2369,8 +2051,34 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			
+				add_ideas = Bra_Supply
+			
+		}
+	}
 
 
+	focus = {
+		id = BRA_Infantry_radio
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BRA_Supply}
+		
+
+		
+		x = 0
+		y = 1
+		relative_position_id = BRA_Supply
+		cost = 3
+		ai_will_do = {
+			factor = 8
+		}
+		available = { 
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		
 			add_tech_bonus = {
 				name = infantry_bonus
 				bonus = 1000
@@ -2380,23 +2088,20 @@ focus = {
 				technology = inf_radio1
 		}
 		
-			
 		}
 	}
 
 
 	focus = {
-		id = BRA_training_for_desert_road
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = BRA_foreign_advisors}
-		mutually_exclusive = { focus = BRA_conscription }
-		mutually_exclusive = { focus = BRA_conscription }
-
+		id = BRA_Jungle_training
+		icon = GFX_focus_por_the_kingdom_reunited
+		prerequisite = { focus = BRA_truck_radio focus = BRA_domestic_production}
+		
 
 		
-		x = 0
+		x = -1
 		y = 1
-		relative_position_id = BRA_foreign_advisors
+		relative_position_id = BRA_truck_radio
 		cost = 5
 		ai_will_do = {
 			factor = 8
@@ -2407,14 +2112,55 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			
+
+		hidden_effect = {
+			completion_reward = {
+			custom_effect_tooltip = mountain_training_effect 
+			hidden_effect = { set_technology = { jungle_warfare = 1 } }
+        }
+					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.05 }
+					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 }
+			}
+			custom_effect_tooltip = RAJ_jungle_training_effect
+	}
+	}
+
+
+	focus = {
+		id =  BRA_Mountain_training
+		icon = GFX_focus_ETH_scavenging_tactics
+		prerequisite = { focus = BRA_Infantry_radio focus = BRA_landing_crafts}
 		
-  
-		custom_effect_tooltip = Bra_adaptable_desert_designs
-		hidden_effect = { set_technology = { desert_warfare = 1 } }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = BRA_Infantry_radio
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = { 
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+
+			custom_effect_tooltip = mountain_training_effect 
+			hidden_effect = { set_technology = { mountain_warfare = 1 } }
+				
 					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.10 }
 					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.10 }
+			
+		
+			
 		}
 	}
+
+
+	
 
 	
 }
