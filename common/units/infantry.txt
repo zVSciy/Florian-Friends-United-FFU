@@ -859,7 +859,6 @@ sub_units = {
 		forest = {
 			attack = -0.2
 			defence = -0.1
-			movement = -0.25
 		}
 		mountain = {
 			attack = -0.15

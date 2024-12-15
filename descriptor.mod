@@ -22,4 +22,3 @@ replace_path="history/states"
 replace_path="map/strategicregions"
 supported_version="1.15.3"
 remote_file_id="3197260989"
-
