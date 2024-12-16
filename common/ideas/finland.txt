@@ -436,6 +436,7 @@ country = {
 		modifier = {
 			experience_loss_factor = -0.20
 			consumer_goods_factor = -0.05
+			production_cost_dockyard_factor = 0.5
 		}
 	}
 
