@@ -2583,6 +2583,36 @@ technologies = {
 			max_strength = -24	
 		}
 	}
+
+	barb_river = {
+
+		allow = {
+			always = no
+		}
+
+		start_year = 1942
+
+		research_cost = 1
+
+		river = {
+			attack = 0.10
+		}
+	}
+	
+	barb_river_off = {
+
+		allow = {
+			always = no
+		}
+
+		start_year = 1942
+
+		research_cost = 1
+
+		river = {
+			attack = -0.10
+		}
+	}
 	
 	gurkhas = {
 
