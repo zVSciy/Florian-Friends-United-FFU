@@ -200,7 +200,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = BRA_estado_novo
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -223,7 +223,7 @@ focus = {
 		relative_position_id = BRA_the_polaca
 		cost = 5
 		available = {
-			num_of_factories > 30
+			num_of_factories > 25
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
@@ -231,6 +231,35 @@ focus = {
 		completion_reward = {
 			#add_ideas = GER_autarky_idea
 			add_ideas = Bra_Aut
+
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						OR = {
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
+					instant_build = yes
+				}
+			}
 				}
 			
 		
@@ -430,10 +459,10 @@ focus = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -485,7 +514,7 @@ focus = {
 			
 
 			BRA_economy_dynamic_modifier_tt = yes # tooltip
-		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt}
+		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt}
 		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
 		add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
 		add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.02 tooltip = production_factory_start_efficiency_factor_tt}
@@ -785,6 +814,8 @@ focus = {
                         type = infrastructure
                         level = 2
                         instant_build = yes
+						industrial_complex = 4
+					
                     }
 				  }
                 
@@ -1038,7 +1069,7 @@ focus = {
 			
 			BRA_economy_dynamic_modifier_tt = yes
 		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt}
-		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt}
+		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
 						
 		}
 	}
@@ -1092,7 +1123,7 @@ focus = {
 		y = 1
 		relative_position_id = BRA_reward_army_loyalty
 		mutually_exclusive = { focus = BRA_support_rural_folk }
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -1120,9 +1151,9 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id = BRA_reward_army_loyalty
-		cost = 10
+		cost = 7
 		ai_will_do = {
-			factor = 10
+			factor = 7
 		}
 		available = {
 		}
@@ -1148,9 +1179,9 @@ focus = {
 		y = 1
 		relative_position_id = BRA_support_the_landowners
 		mutually_exclusive = { focus = BRA_consolidation_of_labor_laws }
-		cost = 10
+		cost = 7
 		ai_will_do = {
-			factor = 5
+			factor = 7
 		}
 		available = {
 		}
@@ -1171,31 +1202,22 @@ focus = {
 							has_dynamic_modifier = {
 								modifier = BRA_neglected_state_dynamic_modifier
 							}
-							state = 961
-							state = 962
-							state = 963
-							state = 964
-							state = 965
-							state = 966
-							state = 967
-							state = 968
+							state = 496
+							state = 497
+							state = 498
+							state = 499
+							state = 500
+							state = 501
+							state = 502
+							state = 503
 						}
-						OR = {
-							state = 961
-							state = 962
-							state = 963
-							state = 964
-							state = 965
-							state = 966
-							state = 967
-							state = 968
-						}
+						
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1210,9 +1232,9 @@ focus = {
 		y = 1
 		relative_position_id = BRA_support_the_landowners
 		mutually_exclusive = { focus = BRA_support_industrialists }
-		cost = 10
+		cost = 7
 		ai_will_do = {
-			factor = 10
+			factor = 7
 		}
 		available = {
 		}
@@ -1630,7 +1652,18 @@ focus = {
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = BRA_foreign_advisors_tt
+		add_advisor_role = {
+			character = BRA_capy_bara
+			activate = yes
+			advisor = {
+				slot = army_chief
+				cost = 75
+				idea_token = BRA_capy_bara
+				traits = {
+					army_chief_offensive_2
+				}
+			}
+		}
 	}
 }
 
@@ -1647,7 +1680,7 @@ focus = {
 		icon = GFX_focus_SMB_special_forces_option_1
 		relative_position_id = BRA_foreign_advisors
 		prerequisite = { focus = BRA_foreign_advisors }
-		mutually_exclusive = { focus = BRA_special_forces_option_2 focus = BRA_special_forces_option_3 }
+		mutually_exclusive = { focus = BRA_Increase_Gun_production}
 		x = -1
 		y = 1
 
@@ -1677,7 +1710,7 @@ focus = {
 		}
 		relative_position_id = BRA_foreign_advisors
 		prerequisite = {focus = BRA_foreign_advisors }
-		mutually_exclusive = { focus = BRA_special_forces_option_1 focus = BRA_special_forces_option_3 }
+		mutually_exclusive = { focus = BRA_Increase_mechanized_production }
 		x = 1
 		y = 1
 
@@ -1796,6 +1829,41 @@ focus = {
 				popularity = 0.05
 			}
 
+			
+
+				random_core_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						is_owned_and_controlled_by = ROOT
+						NOT = {
+							OR = {
+								state = 496
+							state = 497
+							state = 498
+							state = 499
+							state = 500
+							state = 501
+							state = 502
+							state = 503
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			
+
+
+			
+
 		}
 	}
 
@@ -1869,10 +1937,10 @@ focus = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1901,7 +1969,7 @@ focus = {
 
 		completion_reward = {
 		BRA_economy_dynamic_modifier_tt = yes
-			add_to_variable = {BRA_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = {BRA_production_speed_buildings_factor = 0.025 tooltip = production_speed_buildings_factor_tt }
 			add_to_variable = {BRA_production_factory_efficiency_gain_factor= 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 		
 		}
@@ -1912,7 +1980,7 @@ focus = {
 		icon = GFX_focus_NORDIC_com_capstone_research
 		prerequisite = { focus = Jap_worker}
 		prerequisite = { focus = BRA_Preparations_world_cup}
-		prerequisite = { focus = BRA_support_industrialists}
+		prerequisite = { focus = BRA_support_industrialists focus = BRA_consolidation_of_labor_laws}
 
 		
 		x = 0
@@ -1931,8 +1999,8 @@ focus = {
 		
 		BRA_economy_dynamic_modifier_tt = yes
 		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt}
-		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.06 tooltip = production_factory_efficiency_gain_factor_tt}
-		add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
+		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
+		add_to_variable = { BRA_economy_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt}
 		add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.03 tooltip = production_factory_start_efficiency_factor_tt }
 			
 		}
@@ -2160,7 +2228,275 @@ focus = {
 	}
 
 
-	
+	focus = {
+		id = BRA_militarise_society
+		icon = GFX_focus_generic_attack_brazil
+		prerequisite = { focus = BRA_World_Cup}
+		
+		x = 1
+		y = 1
+		relative_position_id = BRA_World_Cup
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = { 
+			has_war = yes
+		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						OR = {
+							state = 496
+							state = 497
+							state = 498
+							state = 499
+							state = 500
+							state = 501
+							state = 502
+							state = 503
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_militarise_society2
+		icon = GFX_focus_BRA_international_crisis
+		prerequisite = { focus = BRA_World_Cup}
+		
+		x = -1
+		y = 1
+		relative_position_id = BRA_World_Cup
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = { 
+			has_war = yes
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						OR = {
+							state = 496
+							state = 497
+							state = 498
+							state = 499
+							state = 500
+							state = 501
+							state = 502
+							state = 503
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_join_the_allies
+		icon = GFX_focus_hol_the_fourth_ally
+
+		prerequisite = {focus = BRA_Increase_Gun_production focus = BRA_Increase_mechanized_production }
+		
+		x = 0
+		y = 2
+		relative_position_id = BRA_foreign_advisors
+
+		cost = 5
+		
+		available = {
+			date > 1941.1.1
+			ENG = {
+				has_war_with = GER
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			# ENG = {
+			# 	country_event = generic.2
+			# }
+			ENG = {
+				add_to_faction = ROOT
+			}
+			remove_ideas = neutrality_idea2
+			hidden_effect = {
+				ENG = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				CAN = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				SAF = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				AST = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				NZL = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				RAJ = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				IRE = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				MEX = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				FRA = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				USA = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				POL = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+				BRA = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Brazil"
+					}
+				}
+			}
+		}
+	}
 	
 }

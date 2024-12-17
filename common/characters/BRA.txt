@@ -516,22 +516,25 @@ characters={
 			}
 		}
 	}
-	BRA_capy_bara={
-		name=BRA_capy_bara
-		portraits={
-			army={
-				large="GFX_portrait_capy_bara"
+	BRA_capy_bara = {
+		name = BRA_capy_bara
+		portraits = {
+			army = {
+				large = "GFX_portrait_capy_bara"
 			}
 		}
-		corps_commander={
-			traits={ naval_invader trait_engineer commando }
-			skill=5
-			attack_skill=5
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=5
+		
+		corps_commander = {
+			traits = { naval_invader trait_engineer commando }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 5
 		}
 	}
+	
+	
 
 	BRA_oswaldo_cordeiro_de_farias= {
 		name="Oswaldo Cordeiro de Farias"

@@ -72,7 +72,7 @@ add_dynamic_modifier = {
 add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = -0.15 tooltip = production_factory_max_efficiency_factor_tt}
 add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = -0.1 tooltip = production_factory_efficiency_gain_factor_tt}
 add_to_variable = { BRA_economy_industrial_capacity_factory = -0.05 tooltip = industrial_capacity_factory_tt}
-add_to_variable = { BRA_economy_production_speed_buildings_factor = -0.1 tooltip = production_speed_buildings_factor_tt}
+add_to_variable = { BRA_production_speed_buildings_factor = -0.025 tooltip = production_speed_buildings_factor_tt } 
 add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = -0.075 tooltip = production_factory_start_efficiency_factor_tt }
 
 

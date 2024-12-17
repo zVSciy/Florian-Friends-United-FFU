@@ -9,7 +9,7 @@ ideas = {
 				original_tag = BRA
 			}
 
-			picture = GFX_focus_ARG_pan_american_cooperation
+			picture = HABSBURG_economy
 
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -25,7 +25,7 @@ ideas = {
 				original_tag = BRA
 			}
 
-			picture = GFX_focus_BRA_banco_do_brasil
+			picture = gre_venerate_the_ancient_hellenes
 
 			modifier = { 
 				production_speed_arms_factory_factor = 0.15
@@ -38,7 +38,7 @@ ideas = {
 				original_tag = BRA
 			}
 
-			picture = GFX_focus_CHL_focus_on_cattle_and_wool
+			picture = GER_proud_eagle_that_ate_the_sun
 
 			modifier = { 
 				acclimatization_hot_climate_gain_factor = 0.2
@@ -52,10 +52,10 @@ ideas = {
 					original_tag = BRA
 				}
 
-				picture = GFX_focus_BRA_autarky
+				picture = FIN_finnish_federation_of_trade_unions_heavy
 
 				modifier = { 
-					production_speed_industrial_complex_factor = 0.3
+					production_speed_industrial_complex_factor = 0.4
 				}
 			}
 
@@ -67,7 +67,7 @@ ideas = {
 					original_tag = BRA
 				}
 
-				picture = GFX_focus_ICE_state_corporatism
+				picture = FIN_finnish_federation_of_trade_unions_light
 
 				modifier = { 
 					production_factory_max_efficiency_factor = 0.05
@@ -82,7 +82,7 @@ ideas = {
 						original_tag = BRA
 					}
 
-				picture = GFX_focus_BRA_utilize_security_law
+				picture = gre_venerate_the_ancient_hellenes
 
 				modifier = { 
 					stability_factor = -0.1
@@ -98,11 +98,11 @@ ideas = {
 						original_tag = BRA
 					}
 
-				picture = saf_history_of_segregation_2
+				picture = NORDIC_industry_monarchis
 
 				modifier = {  
 					production_speed_arms_factory_factor = 0.1
-					production_speed_industrial_complex_factor = -0.3
+					production_speed_industrial_complex_factor = -0.5 
 
 				}
 			}
@@ -115,9 +115,11 @@ ideas = {
 					 allowed = {
 						original_tag = BRA }
 
+						picture = HUN_revaluing_the_pengo
+
 
 						modifier = {  
-							production_speed_buildings_factor = 0.125
+							production_speed_buildings_factor = 0.05
 							consumer_goods_factor = -0.05
 							
 					}
