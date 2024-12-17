@@ -1296,46 +1296,6 @@ operations = {
 			}
 		}
 	}
-
-	ENG_annex_saf = {
-
-		allowed = {
-			original_tag = ENG
-		}
-
-		available = {
-			# FRA = { has_capitulated = yes }
-			# VIC = {
-            #     has_country_flag = VIC_france_capped
-            # }
-			GER = {
-				has_war = yes
-			}
-			SAF = {is_ai = yes}
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		visible = {
-			always = yes
-		}
-		fire_only_once = yes
-		complete_effect = {
-			ENG = {
-				SAF = {
-					pow_before_annex = yes
-				}
-			}
-			annex_country = { target = SAF transfer_troops = yes }
-			add_state_core = 275
-			add_state_core = 541
-			add_state_core = 681
-			add_state_core = 719
-
-		}
-	}
 	
 	invade_ireland = {
 
