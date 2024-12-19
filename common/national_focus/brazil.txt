@@ -38,9 +38,7 @@ focus = {
 		id = BRA_rise_of_new_empire
 		icon = GFX_focus_BRA_restore_brazilian_honor
 		prerequisite = { }
-		
 
-		
 		x = 0
 		y = -2
 		relative_position_id = BRA_coffee_crisis_aftermath
@@ -2048,7 +2046,7 @@ focus = {
 		relative_position_id =BRA_motorized
 		cost = 3
 		ai_will_do = {
-			factor = 8
+			factor = 9
 		}
 		available = { 
 		}
