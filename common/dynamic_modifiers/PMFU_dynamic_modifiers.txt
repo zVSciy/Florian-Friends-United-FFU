@@ -238,7 +238,7 @@ ENG_air_dynamic_modifier = {
 	air_home_defence_factor = ENG_british_airforce_air_home_defence_factor
 	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
 }
- 
+
 ENG_navy_dynamic_modifier = {
 	enable = { always = yes }
 
@@ -246,7 +246,7 @@ ENG_navy_dynamic_modifier = {
 
 	repair_speed_factor = ENG_british_navy_repair_speed_factor
 	refit_speed = ENG_british_navy_refit_speed
-	repair_speed_factor = ENG_british_navy_refit_ic_cost
+	refit_ic_cost = ENG_british_navy_refit_ic_cost
 	navy_submarine_detection_factor = ENG_british_navy_navy_submarine_detection_factor
 	convoy_escort_efficiency = ENG_british_navy_convoy_escort_efficiency
 	custom_modifier_tooltip = ENG_british_navy_secure_the_imperial_shipping_routes_tt
@@ -321,7 +321,7 @@ JAP_navy_and_air_dynamic_modifier = {
 	naval_torpedo_screen_penetration_factor = JAP_japanese_navy_air_forces_naval_torpedo_screen_penetration_factor
 	custom_modifier_tooltip = JAP_duplicate_research_effort_tt
 	refit_speed = JAP_navy_refit_speed
-	repair_speed_factor = JAP_navy_refit_ic_cost
+	refit_ic_cost = JAP_navy_refit_ic_cost
 }
 
 ITA_economy_dynamic_modifier = {
@@ -405,7 +405,7 @@ ITA_navy_dynamic_modifier = {
 	naval_torpedo_screen_penetration_factor = ITA_italian_navy_naval_torpedo_screen_penetration_factor
 	naval_speed_factor = ITA_italian_navy_naval_speed_factor
 	refit_speed = ITA_italian_navy_refit_speed
-	repair_speed_factor = ITA_italian_navy_refit_ic_cost
+	refit_ic_cost = ITA_italian_navy_refit_ic_cost
 }
 
 GER_economy_dynamic_modifier = {
@@ -534,7 +534,7 @@ USA_economy_dynamic_modifier = {
 
 	# depr 2.0
 	refit_speed = USA_navy_refit_speed
-	repair_speed_factor = USA__navy_refit_ic_cost
+	refit_ic_cost = USA__navy_refit_ic_cost
 }
 
 USA_army_dynamic_modifier = {
@@ -628,37 +628,59 @@ MEX_army_navy_dynamic_modifier = {
 
 BRA_economy_dynamic_modifier = {
 	enable = { always = yes }
-
 	icon = GFX_idea_MEX_callistas
 
 	production_speed_buildings_factor = BRA_brazilian_economy_production_speed_buildings_factor
 	consumer_goods_factor = BRA_brazilian_economy_consumer_goods_factor
 	local_resources_factor = BRA_brazilian_economy_local_resources_factor
-	industrial_capacity_factory = BRA_brazilian_economy_industrial_capacity_factory
-	industrial_capacity_dockyard = BRA_brazilian_economy_industrial_capacity_dockyard
+	industrial_capacity_factory = BRA_economy_industrial_capacity_factory
+	industrial_capacity_dockyard = BRA_economy_industrial_capacity_dockyard
 	stability_factor = BRA_brazilian_economy_stability_factor
 	war_support_factor = BRA_brazilian_economy_war_support_factor
 	political_power_cost = BRA_brazilian_economy_political_power_cost
 	production_speed_industrial_complex_factor = BRA_brazilian_economy_production_speed_industrial_complex_factor
-	production_speed_arms_factory_factor = BRA_brazilian_economy_production_speed_arms_factory_factor
+	production_speed_arms_factory_factor = BRA_production_speed_arms_factory_factor
 	production_speed_bunker_factor = BRA_brazilian_economy_production_speed_bunker_factor
 	production_speed_coastal_bunker_factor = BRA_brazilian_economy_production_speed_coastal_bunker_factor
 	production_speed_anti_air_building_factor = BRA_brazilian_economy_production_speed_anti_air_building_factor
+	production_factory_efficiency_gain_factor = BRA_economy_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = BRA_economy_production_factory_max_efficiency_factor 
+	production_factory_start_efficiency_factor = BRA_economy_production_factory_start_efficiency_factor
+	production_speed_buildings_factor = BRA_production_speed_buildings_factor
+	production_speed_synthetic_refinery_factor = BRA_production_speed_synthetic_refinery_factor 
 }
 
-BRA_army_navy_dynamic_modifier = {
-	enable = { always = yes }
+# BRA_army_dynamic_modifier = {
+#	enable = { always = yes }
+#	icon = GFX_idea_chi_army_corruption3
+#
+# special_forces_cap = BRA_army_special_forces_cap
+#	heat_attrition_factor = BRA_army_heat_attrition_factor
+#	supply_consumption_factor = BRA_army_supply_consumption_factor
+#	no_supply_grace = BRA_army_no_supply_grace
+#	acclimatization_hot_climate_gain_factor = BRA_army_acclimatization_hot_climate_gain_factor
+#	experience_gain_army_unit_factor = BRA_army_experience_gain_army_unit_factor
+#	training_time_army_factor = BRA_army_training_time_army_factor
+#	army_org_factor = BRA_army_army_org_factor
+#	army_morale_factor = BRA_army_army_morale_factor
+#	minimum_training_level = BRA_army_navy_minimum_training_level
+#	army_infantry_defence_factor = BRA_army_infantry_defence_factor
+#	army_infantry_attack_factor = BRA_army_infantry_attack_factor
+#	mechanized_defense_factor = BRA_army_mechanized_defense_factor
+#	mechanized_attack_factor = BRA_army_mechanized_attack_factor
+#	dig_in_speed = BRA_army_dig_in_speed 
 
-	icon = GFX_idea_chi_army_corruption3
 
-	special_forces_cap = BRA_brazilian_army_navy_special_forces_cap
-	heat_attrition_factor = BRA_brazilian_army_navy_heat_attrition_factor
-	supply_consumption_factor = BRA_brazilian_army_navy_supply_consumption_factor
-	no_supply_grace = BRA_brazilian_army_navy_no_supply_grace
-	acclimatization_hot_climate_gain_factor = BRA_brazilian_army_navy_acclimatization_hot_climate_gain_factor
-	experience_gain_army_unit_factor = BRA_brazilian_army_navy_experience_gain_army_unit_factor
-	training_time_army_factor = BRA_brazilian_army_navy_training_time_army_factor
-	army_org_factor = BRA_brazilian_army_navy_army_org_factor
-	army_morale_factor = BRA_brazilian_army_navy_army_morale_factor
-	minimum_training_level = BRA_brazilian_army_navy_minimum_training_level
+BRA_State_of_emergency_dynamic_modifier = { 
+	enable ={ always = yes } 
+	icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+
+	stability_factor = BRA_State_of_emergency_stability_factor
+	communism_drift = BRA_State_of_emergency_communism_drift
+	democratic_drift = BRA_State_of_emergency_democracy_drift
+	neutrality_drift = BRA_State_of_emergency_neutrality_drift
+	war_support_factor = BRA_State_of_emergency_war_support_factor
+
+
+
 }
