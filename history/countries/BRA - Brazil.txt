@@ -5,7 +5,7 @@ oob = "BRA_1936"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	infantry_weapons = 2
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
@@ -21,9 +21,8 @@ set_variable = {
 }
 set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
-	# BRA_great_depression_1
-	# BRA_coffee_oligarchs
-	# BRA_revolution_of_1930
+
+	
 	neutrality_idea2
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
@@ -34,26 +33,65 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 	special_forces_cap
+	Decree_Number_37
+ 	# BRA_great_depression_1
+	# BRA_coffee_oligarchs
+	# BRA_revolution_of_1930
+
 }
 
 ### DYNAMIC MODIFIERS ###
 add_dynamic_modifier = {
-	modifier = BRA_economy_dynamic_modifier
+	modifier = BRA_State_of_emergency_dynamic_modifier
+
 }
+
+add_to_variable = { BRA_State_of_emergency_stability_factor = -0.05 tooltip = stability_factor_tt}
+add_to_variable = { BRA_State_of_emergency_communism_drift = 0.10 tooltip = communism_drift_tt}
+
+
 # GREAT DEPRESSION
-add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = 0.4 tooltip = consumer_goods_factor_tt }
-add_to_variable = { BRA_brazilian_economy_local_resources_factor = -0.25 tooltip = local_resources_factor_tt }
-add_to_variable = { BRA_brazilian_economy_industrial_capacity_factory = -0.2 tooltip = industrial_capacity_factory_tt }
-add_to_variable = { BRA_brazilian_economy_industrial_capacity_dockyard = -0.2 tooltip = industrial_capacity_dockyard_tt }
+# add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = 0.4 tooltip = consumer_goods_factor_tt }
+# add_to_variable = { BRA_brazilian_economy_local_resources_factor = -0.25 tooltip = local_resources_factor_tt }
+# add_to_variable = { BRA_brazilian_economy_industrial_capacity_factory = -0.2 tooltip = industrial_capacity_factory_tt }
+# add_to_variable = { BRA_brazilian_economy_industrial_capacity_dockyard = -0.2 tooltip = industrial_capacity_dockyard_tt }
 # COFFEE OLIGARCHS
-add_to_variable = { BRA_brazilian_economy_stability_factor = -0.1 tooltip = stability_factor_tt }
-add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
-add_to_variable = { BRA_brazilian_economy_production_speed_buildings_factor = -0.1 tooltip = production_speed_buildings_factor_tt }
+# add_to_variable = { BRA_brazilian_economy_stability_factor = -0.1 tooltip = stability_factor_tt }
+# add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
 # REVOLUTION OF 1930
-add_to_variable = { BRA_brazilian_economy_stability_factor = -0.15 tooltip = stability_factor_tt }
-add_to_variable = { BRA_brazilian_economy_war_support_factor = -0.15 tooltip = war_support_factor_tt }
-add_to_variable = { BRA_brazilian_economy_political_power_cost = 0.5 tooltip = political_power_cost_tt }
-# MP_garrison_division_standard = yes
+# add_to_variable = { BRA_brazilian_economy_stability_factor = -0.15 tooltip = stability_factor_tt }
+# add_to_variable = { BRA_brazilian_economy_war_support_factor = -0.15 tooltip = war_support_factor_tt }
+# add_to_variable = { BRA_brazilian_economy_political_power_cost = 0.5 tooltip = political_power_cost_tt }
+# State of emergency 
+
+
+add_dynamic_modifier = {
+		modifier = BRA_economy_dynamic_modifier
+
+}
+add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = -0.15 tooltip = production_factory_max_efficiency_factor_tt}
+add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = -0.1 tooltip = production_factory_efficiency_gain_factor_tt}
+add_to_variable = { BRA_economy_industrial_capacity_factory = -0.05 tooltip = industrial_capacity_factory_tt}
+add_to_variable = { BRA_production_speed_buildings_factor = -0.025 tooltip = production_speed_buildings_factor_tt } 
+add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = -0.075 tooltip = production_factory_start_efficiency_factor_tt }
+
+
+
+
+add_dynamic_modifier = { 
+modifier = BRA_army_dynamic_modifier
+}
+
+add_to_variable = { BRA_army_infantry_attack_factor = 0.01 tooltip = production_speed_buildings_factor_tt}
+add_to_variable = { BRA_army_mechanized_attack_factor = 0 tooltip = production_factory_start_efficiency_factor_tt}
+add_to_variable = { BRA_army_infantry_defence_factor = 0 tooltip = production_speed_buildings_factor_tt}
+add_to_variable = { BRA_army_mechanized_defense_factor = 0 tooltip = production_factory_start_efficiency_factor_tt}
+
+
+
+
+
+
 
 if = {
 	limit = {
@@ -88,16 +126,19 @@ if = {
 set_country_flag = monroe_doctrine
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1934.7.17"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	neutrality = 60
-	democratic = 40
+	neutrality = 30
+	democratic = 60
+	communism = 10
 }
+
+
 
 recruit_character = BRA_getúlio_vargas
 recruit_character = BRA_eurico_gaspar_dutra
@@ -126,19 +167,20 @@ recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_newton_cavalcanti
 recruit_character = BRA_capy_bara
 recruit_character = BRA_oswaldo_cordeiro_de_farias
+recruit_character = BRA_alberto_pani
 
 
 set_convoys = 40
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = Democratic
 		last_election = "1934.7.17"
 		election_frequency = 48
-		elections_allowed = no
+		elections_allowed = yes
 	}
 	set_popularities = {
-		neutrality = 100
+		Democratic = 50
 	}
 }
 
