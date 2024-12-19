@@ -4982,6 +4982,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_sherman
+			hidden_effect = {
+				
 					IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -5003,6 +5005,7 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = tank_destroyer_board
 			}
+		}
 		}
 	}
 	
