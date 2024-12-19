@@ -68,10 +68,10 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ infantry_leader inflexible_strategist trait_cautious infantry_leader trickster ranger logistics_wizard winter_specialist } #war_hero
-			skill=6
-			attack_skill=3
-			defense_skill=6
+			traits={ infantry_leader inflexible_strategist trait_cautious infantry_leader trickster ranger logistics_wizard } #war_hero #winter_specialist
+			skill=5
+			attack_skill=4 #3
+			defense_skill=4 #6
 			planning_skill=5
 			logistics_skill=4
 			legacy_id=58
@@ -83,9 +83,9 @@ characters={
 				original_tag  = FIN
 			}
 			traits  = {
-				army_chief_defensive_3 
+				army_chief_defensive_2 
 			}
-			cost = 150
+			cost = 100
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -106,7 +106,7 @@ characters={
 			traits={ winter_specialist ranger infantry_leader trickster commando }
 			skill=4
 			attack_skill=4
-			defense_skill=5
+			defense_skill=4 #5
 			planning_skill=4
 			logistics_skill=5
 			legacy_id=-1
@@ -123,7 +123,7 @@ characters={
 		}
 		corps_commander={
 			traits={ commando winter_specialist trait_engineer fortress_buster infantry_leader ranger }
-			skill=4
+			skill=3
 			attack_skill=3
 			defense_skill=4
 			planning_skill=4
@@ -146,7 +146,7 @@ characters={
 			traits={ brilliant_strategist infantry_officer infantry_leader ranger commando winter_specialist }
 			skill=4
 			attack_skill=3
-			defense_skill=6
+			defense_skill=4 #6
 			planning_skill=3
 			logistics_skill=5
 			legacy_id=-1

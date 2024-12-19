@@ -565,12 +565,12 @@ country = {
 			army_core_defence_factor = 0.15
 			acclimatization_cold_climate_gain_factor = 0.5
 			winter_attrition_factor = -0.25
-			no_supply_grace = 45
-			out_of_supply_factor = -0.45
+			no_supply_grace = 30
+			out_of_supply_factor = -0.15
 			# equipment_capture = 0.15
-			pocket_penalty = -0.20
+			pocket_penalty = -0.05
 			neutrality_drift = 0.25
-			supply_consumption_factor = -0.15
+			supply_consumption_factor = -0.05
 			custom_modifier_tooltip = FIN_no_allies_attack_tt
 		}
 	}
