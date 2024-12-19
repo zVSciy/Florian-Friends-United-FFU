@@ -348,7 +348,7 @@ on_actions = {
 				309 = { set_compliance = 20 }
 
 				# DEI - go to australia
-				ENG = {
+				AST = {
 					transfer_state = 672
 					672 = { set_compliance = 30 }
 					transfer_state = 334
@@ -366,8 +366,9 @@ on_actions = {
 					transfer_state = 738
 					738 = { set_compliance = 30 }
 				}
-				ENG = { annex_country = { target = INS transfer_troops = yes } }
-
+				
+				AST = { annex_country = { target = INS transfer_troops = yes } }
+				
 				GER = {
 					transfer_state = 35
 					transfer_state = 7
