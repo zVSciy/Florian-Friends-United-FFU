@@ -4928,6 +4928,7 @@ focus_tree = {
 		}
 
 		available = {
+			date > 1939.12.1
 
 		}
 		
@@ -4945,6 +4946,12 @@ focus_tree = {
 				uses = 3
 				bonus = 0.75
 				category = armor
+			}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 0.75
+				uses = 1
+				technology = mot_radio3
 			}
 		}
 	}
