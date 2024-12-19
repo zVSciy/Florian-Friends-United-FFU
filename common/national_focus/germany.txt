@@ -6330,12 +6330,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = GER_wunderwaffe
-			add_tech_bonus = {
-				name = radio_bonus
-				bonus = 0.75
-				uses = 1
-				technology = mot_radio3
-			}
 		}
 	}
 	
@@ -6439,8 +6433,6 @@ focus_tree = {
 		}
 		
 		available = {
-			has_war = yes
-			has_army_experience > 100
 		}
 		
 		cancel_if_invalid = yes
@@ -6448,12 +6440,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = -100
-			GER_army_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = {
+				localization_key = GER_lessons_of_war_tt
+			}				
+			hidden_effect = {
 			add_to_variable = { GER_german_army_acclimatization_cold_climate_gain_factor = 9.99 tooltip = acclimatization_cold_climate_gain_factor_tt }
-
 			every_army_leader = {
 				add_attack = 1
+			}
+		}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 0.75
+				uses = 1
+				technology = mot_radio3
 			}
 		}
 	}
