@@ -604,10 +604,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = 2.00
 				}
-				small_plane_cas_airframe = {
-					instant = yes
-					build_cost_ic = 2.00
-				}
+				# small_plane_cas_airframe = {
+				# 	instant = yes
+				# 	build_cost_ic = 2.00
+				# }
 			}
 		}
 	
