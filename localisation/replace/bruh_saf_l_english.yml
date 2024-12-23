@@ -12,7 +12,16 @@
   #SAF_old_way:0 "The Old Way" 
   SAF_develop_new_lands:0 "Develop New Lands"
   SAF_develop_new_lands_desc:0 "Former British colonies have been left underdeveloped and in poverty, only a greater South Africa can bring an end to this madness!"
-
+  SAF_heavy_tank:0"Heavy Tank Focus"
+  SAF_heavy_tank_desc:0 "a drunk slovenian man told us heavier armor is the key to defeating other tanks."
+  SAF_medium_tank:0 "Medium Tank Focus"
+  SAF_medium_tank_desc:0 "a new tank design has been created the Crusader MK4 we must rush it into production as soon as possible"
+  SAF_medium_tank_gun:0 "QF-6 Pdr"
+  SAF_medium_tank_gun_desc:0 "advancement in weight reduction now allows heavier guns on lighter and cheaper chassis"
+  SAF_mechanization_effort_medium:0 "Mechanization Effort"
+  SAF_mechanization_effort_medium_desc:0 "we must protect our infantry better with heavier armored vehicles"
+  SAF_the_ram_tank:0 "The Ram Tank"
+  SAF_the_ram_tank_desc:0 "lessons learned from Africa have resulted in a more advanced medium design of the Ram Chassis"
   ### IDEAS ###
   SAF_heavy_artillery2:0 "Heavy Artillery"
   SAF_cope_organization:0 "Cape Cope"

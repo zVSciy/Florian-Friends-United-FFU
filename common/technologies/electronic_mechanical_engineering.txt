@@ -2120,11 +2120,6 @@ technologies = {
 			year_1940
 		}
 
-		enable_building = {
-			building = nuclear_facility
-			level = 1
-		}
-
 		#special_project_specialization = { specialization_nuclear }
 
 		on_research_complete = {
