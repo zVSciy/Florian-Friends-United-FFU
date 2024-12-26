@@ -8759,6 +8759,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		hidden_effect = {
+			add_ideas = SOV_soviet_fighter_nerf
+		}
+		
 		}
 	}
 
@@ -8809,12 +8813,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.75
-				uses = 1
-				technology = advanced_small_airframe
-			}
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.75
@@ -8937,7 +8935,6 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
-			add_to_variable = { SOV_soviet_airforce_air_agility_factor = 0.05 }
 			custom_effect_tooltip = SOV_modernize_aircraft_facilities_ns_tt
 		}
 	}
@@ -9074,7 +9071,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.1 }
