@@ -357,7 +357,14 @@ focus_tree = {
 
 			ITA = {
 				add_ideas = ITA_no_asia_buff
+				
+				modify_building_resources = {
+					building = synthetic_refinery #synthetic_rubber_refinery
+					resource = rubber
+					amount = 10
+				 }
 			}
+
 		}
 	}
 	# focus = {
