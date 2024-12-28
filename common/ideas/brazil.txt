@@ -185,10 +185,10 @@ ideas = {
 
 
 		   equipment_bonus =  {
-			mechanized_equipment = {
+			mechaanized_equipment = {
 				build_cost_ic = -0.15 instant = yes 
 			}
-			Amphibious_mechanized_equipment= {
+			Amphibious_Mechanized_equipment= {
 				build_cost_ic = -0.075 instant = yes
 			}
 }
