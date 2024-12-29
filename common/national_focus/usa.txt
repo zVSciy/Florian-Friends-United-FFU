@@ -2991,7 +2991,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			democratic > 0.95
+			#democratic > 0.95
 			has_war_support > 0.30
 		}
 		bypass = {
@@ -3126,7 +3126,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		available = {
-			democratic > 0.95
+			#democratic > 0.95
 			has_war_support > 0.30
 		}
 
@@ -3318,7 +3318,6 @@ focus_tree = {
 				has_war = yes
 				has_war_support > 0.30
 			}
-			democratic > 0.95
 		}
 		continue_if_invalid = yes
 		x = 1
