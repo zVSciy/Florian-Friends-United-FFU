@@ -1836,8 +1836,8 @@ focus = {
 			# }
 			# casualties > 150000
 			OR = {
-				SOV_tankograd_all_trigger = yes
-				date > 1941.11.01
+				
+				date > 1942.01.01
 			}
 		}
 		
@@ -1923,23 +1923,7 @@ focus = {
 		y = 1
 		relative_position_id = MON_tankograd
 		available = {
-			casualties > 2000000
-			# surrender_progress > 0.32
-			if = {
-				limit = {
-					has_completed_focus = SOV_secure_new_conquests
-				}
-				surrender_progress > 0.38
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = SOV_improve_stalin_line
-				}
-				surrender_progress > 0.32 
-			}
-			else = {
-				surrender_progress > 0.32
-			}
+			
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -1965,23 +1949,8 @@ focus = {
 		y = 1
 		relative_position_id = MON_tankograd
 		available = {
-			casualties > 2000000
-			# surrender_progress > 0.32
-			if = {
-				limit = {
-					has_completed_focus = SOV_secure_new_conquests
-				}
-				surrender_progress > 0.38
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = SOV_improve_stalin_line
-				}
-				surrender_progress > 0.32 
-			}
-			else = {
-				surrender_progress > 0.32
-			}
+		
+			
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
