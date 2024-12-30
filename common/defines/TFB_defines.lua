@@ -735,3 +735,11 @@ NDefines.NGraphics.ROOT_FRONT_OFFSET = 2
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
 NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 6
+
+
+NDefines.NProject.RECRUIT_SCIENTIST_COST = {    -- Amount of pp to hire a scientist based on available scientist
+10,            -- pp cost if no available scientist
+20,            -- pp cost if 1 available scientist
+25,            -- pp cost if 2 available scientist
+30,            -- pp cost if more than 2 available scientist
+}
