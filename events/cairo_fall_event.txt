@@ -1,0 +1,248 @@
+add_namespace = news
+news_event = {
+	id = news.1010
+	title = news.1010.t
+	desc = news.1010.d
+	picture = GFX_news_event_042
+	hidden = yes
+	major = yes
+	trigger = {
+		907 = {
+			is_controlled_by = ITA
+		}
+		907 = {
+			is_owned_by = ENG
+		}
+		GER = {
+			has_war_with = ENG
+		}
+		NOT = {
+			has_global_flag = fall_of_cairo
+		}
+	}
+	immediate = {
+		set_global_flag = fall_of_cairo
+		GER = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		ITA = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		HUN = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		ROM = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		SPR = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		FIN = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		BUL = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		CRO = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		VIC = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		CZE = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = news.1010.a
+	}
+}
+
+news_event = {
+	id = news.1011
+	title = news.1011.t
+	desc = news.1011.d
+	picture = GFX_news_event_042
+	hidden = yes
+	major = yes
+	trigger = {
+		907 = {
+			is_controlled_by = ENG
+		}
+		907 = {
+			is_owned_by = ENG
+		}
+		GER = {
+			has_war_with = ENG
+		}
+		has_global_flag = fall_of_cairo
+	}
+	immediate = {
+
+		hidden_effect = {
+			GER = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			ITA = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			HUN = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			ROM = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			SPR = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			FIN = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			BUL = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			CRO = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			VIC = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			CZE = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			ENG = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			CAN = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			SAF = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			IRE = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			AST = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			FRA = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			MEX = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+			BRA = {
+				remove_ideas = {
+					triumph_in_africa
+				}
+			}
+		}
+
+		ENG = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		CAN = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		SAF = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		IRE = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		AST = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		FRA = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		MEX = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+		BRA = {
+			add_ideas = {
+				triumph_in_africa
+			}
+		}
+
+		clr_global_flag = fall_of_cairo
+	
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = news.1011.a
+	}
+}

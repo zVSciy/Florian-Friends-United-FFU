@@ -122,6 +122,7 @@ equipments = {
 		year = 1938
 		archetype = medium_tank_chassis
 		priority = 2000
+		v
 		module_slots = {
 			main_armament_slot = inherit
 			turret_type_slot = 	{	
@@ -141,6 +142,7 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade
