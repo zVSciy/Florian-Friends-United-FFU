@@ -122,7 +122,6 @@ equipments = {
 		year = 1938
 		archetype = medium_tank_chassis
 		priority = 2000
-		v
 		module_slots = {
 			main_armament_slot = inherit
 			turret_type_slot = 	{	
