@@ -709,6 +709,12 @@ focus_tree = {
 				mio:GER_porsche_organization = {
 					add_mio_size = 1
 				}
+				mio:GER_nibelungenwerke_organization = {
+					unlock_mio_trait_tooltip = SPR_nibelungenwerke_upgrade_spr_buff
+				}
+				mio:GER_nibelungenwerke_organization = {
+					add_mio_size = 1
+				}
 			}
 			else = {
 				custom_effect_tooltip = available_designer
