@@ -4070,7 +4070,7 @@ focus_tree = {
 				BRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-				HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				FRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				hidden_effect = {
 					GER = { remove_ideas = GER_africaaaaaaaaaaaaaa }
 					ITA = { remove_ideas = GER_africaaaaaaaaaaaaaa }
