@@ -141,17 +141,20 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade
 			# tank_nsb_engine_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 16
+		build_cost_ic = 18
 		reliability = 0.75
 		armor_value = 30
 		defense = 6
-		breakthrough = 20
+		breakthrough = 25
+
+		can_license = no 
 	}
 
 	# Improved Light Tank
@@ -187,11 +190,15 @@ equipments = {
 			# tank_nsb_engine_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 22
-		reliability = 0.75
+		build_cost_ic = 24
+		reliability = 0.80
 		armor_value = 45
 		defense = 7
-		breakthrough = 25
+		breakthrough = 30
+
+		can_license = no 
+           
+        
 	}
 
 	# Advanced Light Tank
