@@ -132,47 +132,6 @@ free_templates = {
 		}		
 	}
 
-	free_template_spam = {
-
-		# icon = generic_naval
-
-		available = {
-			NOT = {
-				has_template = "Spam"
-			}
-		}
-
-		fire_only_once = no
-		
-		visible = {
-			has_game_rule = {
-				rule = free_templates
-				option = ENABLED
-			}
-		}
-
-		complete_effect = {
-			division_template = {
-				name = "Spam"
-				is_locked = no
-				regiments = {
-					garrison = { x = 0 y = 0 }
-					garrison = { x = 0 y = 1 }
-					garrison = { x = 0 y = 2 }
-					garrison = { x = 0 y = 3 }
-			
-					garrison = { x = 1 y = 0 }
-					garrison = { x = 1 y = 1 }
-					garrison = { x = 1 y = 2 }
-					garrison = { x = 1 y = 3 }
-
-					garrison = { x = 2 y = 0 }
-					garrison = { x = 2 y = 1 }
-				}
-			}
-		}		
-	}
-
 	free_template_11_8 = {
 
 		# icon = generic_naval
@@ -211,77 +170,25 @@ free_templates = {
 					infantry = { x = 2 y = 1 }
 					infantry = { x = 2 y = 2 }
 			
-					artillery_brigade = { x = 3 y = 0 }
-					artillery_brigade = { x = 3 y = 1 }
-					artillery_brigade = { x = 3 y = 2 }
-					artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
 					
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-					artillery_brigade = { x = 4 y = 3 }
-					
-			
-				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	anti_air = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# }
-			}
-		}		
-	}
-
-	free_template_9_2 = {
-
-		# icon = generic_naval
-
-		available = {
-			NOT = {
-				has_template = "9/2"
-			}
-		}
-
-		fire_only_once = no
-		
-		visible = {
-			has_game_rule = {
-				rule = free_templates
-				option = ENABLED
-			}
-		}
-
-		complete_effect = {
-			division_template = {
-				name = "9/2"
-				is_locked = no
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-			
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-			
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-			
-					artillery_brigade = { x = 3 y = 0 }
-					artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
 					
 			
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	anti_air = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# }
+				support = {
+					engineer = { x = 0 y = 0 }   
+					anti_air = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					rangers_support = { x = 0 y = 3 }
+					logistics_company = { x = 1 y = 0 }
+				}
 			}
 		}		
 	}
@@ -325,28 +232,28 @@ free_templates = {
 					marine = { x = 2 y = 1 }
 					marine = { x = 2 y = 2 }
 			
-					artillery_brigade = { x = 3 y = 0 }
-					artillery_brigade = { x = 3 y = 1 }
-					artillery_brigade = { x = 3 y = 2 }
-					artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
 					
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-					artillery_brigade = { x = 4 y = 3 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
 					
 			
 				}
-				# support = {
-				# 	assault_engineer = { x = 0 y = 0 }   
-				# 	anti_air = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
+				support = {
+					pioneer_support = { x = 0 y = 0 }   
+					anti_air = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					rangers_support = { x = 0 y = 3 }
+					logistics_company = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
+				}
 			}
 		}		
 	}
@@ -390,28 +297,28 @@ free_templates = {
 					mountaineers = { x = 2 y = 1 }
 					mountaineers = { x = 2 y = 2 }
 			
-					artillery_brigade = { x = 3 y = 0 }
-					artillery_brigade = { x = 3 y = 1 }
-					artillery_brigade = { x = 3 y = 2 }
-					artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
 					
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-					artillery_brigade = { x = 4 y = 3 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
 					
 			
 				}
-				# support = {
-				# 	assault_engineer = { x = 0 y = 0 }   
-				# 	anti_air = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
+				support = {
+					pioneer_support = { x = 0 y = 0 }   
+					anti_air = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					rangers_support = { x = 0 y = 3 }
+					logistics_company = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
+				}
 			}
 		}		
 	}
@@ -465,19 +372,82 @@ free_templates = {
 					pack_artillery_brigade = { x = 4 y = 2 }
 					pack_artillery_brigade = { x = 4 y = 3 }
 				}
-				# support = {
-				# 	assault_engineer = { x = 0 y = 0 }   
-				# 	anti_air = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
+				support = {
+					engineer = { x = 0 y = 0 }   
+					anti_air = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					rangers_support = { x = 0 y = 3 }
+					logistics_company_mot = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
+				}
 			}
 		}		
 	}
+	free_template_camelry = {
+
+		# icon = generic_naval
+
+		available = {
+			has_tech = special_forces_paratroopers
+			NOT = {
+				has_template = "11/8 Camelry"
+			}
+		}
+
+		fire_only_once = no
+		
+		visible = {
+			has_game_rule = {
+				rule = free_templates
+				option = ENABLED
+			}
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "11/8 Camelry"
+				is_locked = no
+				regiments = {
+					camelry = { x = 0 y = 0 }
+					camelry = { x = 0 y = 1 }
+					camelry = { x = 0 y = 2 }
+					camelry = { x = 0 y = 3 }
+			
+					camelry = { x = 1 y = 0 }
+					camelry = { x = 1 y = 1 }
+					camelry = { x = 1 y = 2 }
+					camelry = { x = 1 y = 3 }
+			
+					camelry = { x = 2 y = 0 }
+					camelry = { x = 2 y = 1 }
+					camelry = { x = 2 y = 2 }
+			
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
+					
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }   
+					anti_air = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					rangers_support = { x = 0 y = 3 }
+					logistics_company_mot = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
+				}
+			}
+		}		
+	}
+
 
 	free_template_light_tank_mot_no_td = {
 
@@ -522,77 +492,16 @@ free_templates = {
 					light_armor = { x = 3 y = 2 }
 					light_armor = { x = 3 y = 3 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
-			}
-		}		
-	}
-
-	free_template_light_tank_mot_td = {
-
-		# icon = generic_naval
-
-		available = {
-			NOT = {
-				has_template = "Motorized Light Tank w/ TD"
-			}
-		}
-
-		fire_only_once = no
-		
-		visible = {
-			has_game_rule = {
-				rule = free_templates
-				option = ENABLED
-			}
-		}
-
-		complete_effect = {
-			division_template = {
-				name = "Motorized Light Tank w/ TD"
-				is_locked = no
-				regiments = {
-					motorized = { x = 0 y = 0 }
-					motorized = { x = 0 y = 1 }
-					motorized = { x = 0 y = 2 }
-			
-					motorized = { x = 1 y = 0 }
-					motorized = { x = 1 y = 1 }
-					motorized = { x = 1 y = 2 }
-			
-					light_armor = { x = 2 y = 0 }
-					light_armor = { x = 2 y = 1 }
-					light_armor = { x = 2 y = 2 }
-					light_armor = { x = 2 y = 3 }
-			
-					light_armor = { x = 3 y = 0 }
-					light_armor = { x = 3 y = 1 }
-					light_armor = { x = 3 y = 2 }
-					# light_armor = { x = 3 y = 3 }
-					
-					light_tank_destroyer_brigade = { x = 4 y = 0 }
-					light_tank_destroyer_brigade = { x = 4 y = 1 }
-					# light_tank_destroyer_brigade = { x = 4 y = 2 }
-					# light_tank_destroyer_brigade = { x = 4 y = 3 }
+				support = {
+					engineer = { x = 0 y = 0 }   
+					mot_anti_air_brigade = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					light_tank_recon = { x = 0 y = 3 }
+					logistics_company_mot = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
 			}
 		}		
 	}
@@ -640,77 +549,16 @@ free_templates = {
 					light_armor = { x = 3 y = 2 }
 					light_armor = { x = 3 y = 3 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
-			}
-		}		
-	}
-
-	free_template_light_tank_mech_td = {
-
-		# icon = generic_naval
-
-		available = {
-			NOT = {
-				has_template = "Mechanized Light Tank w/ TD"
-			}
-		}
-
-		fire_only_once = no
-		
-		visible = {
-			has_game_rule = {
-				rule = free_templates
-				option = ENABLED
-			}
-		}
-
-		complete_effect = {
-			division_template = {
-				name = "Mechanized Light Tank w/ TD"
-				is_locked = no
-				regiments = {
-					mechanized = { x = 0 y = 0 }
-					mechanized = { x = 0 y = 1 }
-					mechanized = { x = 0 y = 2 }
-			
-					mechanized = { x = 1 y = 0 }
-					mechanized = { x = 1 y = 1 }
-					mechanized = { x = 1 y = 2 }
-			
-					light_armor = { x = 2 y = 0 }
-					light_armor = { x = 2 y = 1 }
-					light_armor = { x = 2 y = 2 }
-					light_armor = { x = 2 y = 3 }
-			
-					light_armor = { x = 3 y = 0 }
-					light_armor = { x = 3 y = 1 }
-					light_armor = { x = 3 y = 2 }
-					# light_armor = { x = 3 y = 3 }
-					
-					light_tank_destroyer_brigade = { x = 4 y = 0 }
-					light_tank_destroyer_brigade = { x = 4 y = 1 }
-					# light_tank_destroyer_brigade = { x = 4 y = 2 }
-					# light_tank_destroyer_brigade = { x = 4 y = 3 }
+				support = {
+					engineer = { x = 0 y = 0 }   
+					mot_anti_air_brigade = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					light_tank_recon = { x = 0 y = 3 }
+					logistics_company_mot = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
 			}
 		}		
 	}
@@ -758,74 +606,16 @@ free_templates = {
 					medium_armor = { x = 3 y = 2 }
 					medium_armor = { x = 3 y = 3 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
-			}
-		}		
-	}
-
-	free_template_med_tank_mot_td = {
-
-		# icon = generic_naval
-
-		available = {
-			NOT = {
-				has_template = "Motorized Medium Tank w/ TD"
-			}
-		}
-
-		fire_only_once = no
-		
-		visible = {
-			has_game_rule = {
-				rule = free_templates
-				option = ENABLED
-			}
-		}
-
-		complete_effect = {
-			division_template = {
-				name = "Motorized Medium Tank w/ TD"
-				is_locked = no
-				regiments = {
-					motorized = { x = 0 y = 0 }
-					motorized = { x = 0 y = 1 }
-					motorized = { x = 0 y = 2 }
-			
-					motorized = { x = 1 y = 0 }
-					motorized = { x = 1 y = 1 }
-					motorized = { x = 1 y = 2 }
-			
-					medium_armor = { x = 2 y = 0 }
-					medium_armor = { x = 2 y = 1 }
-					medium_armor = { x = 2 y = 2 }
-					medium_armor = { x = 2 y = 3 }
-			
-					medium_armor = { x = 3 y = 0 }
-					medium_armor = { x = 3 y = 1 }
-					medium_armor = { x = 3 y = 2 }
-					
-					medium_tank_destroyer_brigade = { x = 4 y = 0 }
-					medium_tank_destroyer_brigade = { x = 4 y = 1 }
+				support = {
+					engineer = { x = 0 y = 0 }   
+					mot_anti_air_brigade = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					light_tank_recon = { x = 0 y = 3 }
+					logistics_company_mot = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
 			}
 		}		
 	}
@@ -857,7 +647,6 @@ free_templates = {
 					mechanized = { x = 0 y = 0 }
 					mechanized = { x = 0 y = 1 }
 					mechanized = { x = 0 y = 2 }
-					mechanized = { x = 0 y = 3 }
 			
 					mechanized = { x = 1 y = 0 }
 					mechanized = { x = 1 y = 1 }
@@ -866,23 +655,25 @@ free_templates = {
 					medium_armor = { x = 2 y = 0 }
 					medium_armor = { x = 2 y = 1 }
 					medium_armor = { x = 2 y = 2 }
-					medium_armor = { x = 2 y = 3 }
 			
 					medium_armor = { x = 3 y = 0 }
 					medium_armor = { x = 3 y = 1 }
 					medium_armor = { x = 3 y = 2 }
-					medium_armor = { x = 3 y = 3 }
+
+					medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 4 y = 1 }
+					medium_armor = { x = 4 y = 2 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
+				support = {
+					engineer = { x = 0 y = 0 }   
+					mot_anti_air_brigade = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					light_tank_recon = { x = 0 y = 3 }
+					logistics_company_mot = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
+				}
 			}
 		}		
 	}
@@ -922,25 +713,25 @@ free_templates = {
 					medium_armor = { x = 2 y = 0 }
 					medium_armor = { x = 2 y = 1 }
 					medium_armor = { x = 2 y = 2 }
-					medium_armor = { x = 2 y = 3 }
-			
+								
 					medium_armor = { x = 3 y = 0 }
 					medium_armor = { x = 3 y = 1 }
 					medium_armor = { x = 3 y = 2 }
 					
 					medium_tank_destroyer_brigade = { x = 4 y = 0 }
 					medium_tank_destroyer_brigade = { x = 4 y = 1 }
+					medium_tank_destroyer_brigade = { x = 4 y = 2 }
 				}
-				# support = {
-				# 	engineer = { x = 0 y = 0 }   
-				# 	mot_anti_air_brigade = { x = 0 y = 1 }
-				# 	hq_company = { x = 0 y = 2 }
-				# 	mot_recon = { x = 0 y = 3 }
-				# 	logistics_company_mot = { x = 1 y = 0 }
-				# 	maintenance_company = { x = 1 y = 1 }
-				# 	signal_company = { x = 1 y = 2 }
-				# 	military_police = { x = 1 y = 3 }
-				# }
+				support = {
+					engineer = { x = 0 y = 0 }   
+					mot_anti_air_brigade = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					light_tank_recon = { x = 0 y = 3 }
+					logistics_company_mot = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
+				}
 			}
 		}		
 	}

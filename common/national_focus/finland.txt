@@ -1257,47 +1257,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FIN_join_axis
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = FIN_marshal_of_finland }
-		x = -1
-		y = 1
-		relative_position_id = FIN_marshal_of_finland
-
-		cost = 5
-
-		available = {
-			GER = { 
-				is_faction_leader = yes
-				has_government = fascism
-			}
-			is_in_faction = no
-			NOT = { has_war_with = GER }
-			is_subject = no
-			NOT = {
-				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = FIN
-				}
-			}
-		}
-
-		bypass = {
-			is_in_faction_with = GER
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			GER = {
-				add_to_faction = ROOT
-			}
-		}
-	}
-	
-	focus = {
 		id = FIN_continuation
 		icon = GFX_focus_attack_soviet
 		prerequisite = { focus = FIN_marshal_of_finland }
@@ -1341,6 +1300,50 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = FIN_join_axis
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = FIN_marshal_of_finland }
+		x = -1
+		y = 1
+		relative_position_id = FIN_marshal_of_finland
+
+		cost = 5
+
+		available = {
+			GER = { has_war_with = SOV }
+
+			
+			GER = { 
+				is_faction_leader = yes
+				has_government = fascism
+			}
+			is_in_faction = no
+			NOT = { has_war_with = GER }
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GER
+					has_war_with = FIN
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = GER
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+
 	focus = {
 		id = FIN_field_kitchens
 		icon = GFX_focus_FIN_sissi

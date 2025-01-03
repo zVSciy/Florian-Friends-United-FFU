@@ -3887,6 +3887,39 @@ focus_tree = {
 		}
 	}
 	
+		focus = {
+		id = ENG_take_ast_rubber
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		prerequisite = { focus = ENG_equip_foreign_exiles }
+		available = {
+			HOL = {
+				has_capitulated = yes
+			}
+		}
+
+		available_if_capitulated = yes
+
+		x = 0
+		y = 1
+		relative_position_id = ENG_equip_foreign_exiles
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			AST = {
+				give_resource_rights = { receiver = ENG state = 672 }
+				give_resource_rights = { receiver = ENG state = 334 }
+				give_resource_rights = { receiver = ENG state = 667 }
+				give_resource_rights = { receiver = ENG state = 673 }
+				give_resource_rights = { receiver = ENG state = 668 }
+				give_resource_rights = { receiver = ENG state = 669 }
+				give_resource_rights = { receiver = ENG state = 738 }
+				give_resource_rights = { receiver = ENG state = 335 }
+            }
+		}
+	}
+
 	focus = {
 		id = ENG_arms_purchases
 		icon = GFX_focus_chi_mission_to_the_us

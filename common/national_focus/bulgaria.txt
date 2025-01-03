@@ -75,6 +75,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_resource = {
+				type = chromium
+				amount = 1300
+				state = 60
+			}
 			add_timed_idea = { idea = BUL_golden_age_idea days = 730 }
 			add_stability = 0.1
 		}
@@ -306,11 +311,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_resource = {
-				type = chromium
-				amount = 1300
-				state = 60
-			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

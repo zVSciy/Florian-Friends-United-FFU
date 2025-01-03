@@ -362,7 +362,32 @@ recruit_character = JAP_yoshio_nishina
 recruit_character = JAP_hideo_itokawa
 # recruit_character = JAP_yoshijiro_umezu
 
-
+###STOCKPILE###
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 50000
+    producer = JAP	
+}
+add_equipment_to_stockpile = {
+    type = horse_equipment_0
+    amount = 10000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = squad_equipment_0
+    amount = 10000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = radio_equipment_0
+    amount = 1000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 3000
+	producer = JAP
+}
 
 # create_equipment_variant = {
 # 	name = "Type 89 I-Go"

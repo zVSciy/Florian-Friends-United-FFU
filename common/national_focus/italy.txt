@@ -5433,27 +5433,7 @@ focus_tree = {
 		}
 	}
 
-	 focus = {
-	 	id = ITA_no_asia_buff_focus
-	 	icon = GFC_goal_generic_buff
-	 	x = 10
-	 	y = 0
-	 	cost = 1
-	 	ai_will_do = {
-	 		factor = 1
-	 	}
-
-
-
-	 	available = {
-	 		date > 1939.6.1
-	 		has_global_flag = NO_ASIA
-	 	}
-
-	 	completion_reward = {
-	 		add_ideas = ITA_no_asia_buff
-	 	}
-	 }
+	
 
 
 	focus = {

@@ -670,7 +670,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_subtitle_trains"
-					position = { x = 1415 y = 100 }
+					position = { x = 1942 y = 100 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -685,8 +685,8 @@ guiTypes = {
 				
 			containerWindowType = {
 				name = "tiled_research_bg"
-				position = { x= 1068 y=240 }
-				size = { width = 133 height = 590 }
+				position = { x= 1425 y=240 }
+				size = { width = 200 height = 590 }
 				clipping = no
 			
 				background = {
@@ -697,8 +697,8 @@ guiTypes = {
 				
 			containerWindowType = {
 				name = "tiled_research_bg_2"
-				position = { x=800 y=240 }
-				size = { width = 400 height = 590 }
+				position = { x=1000 y=240 }
+				size = { width = 625 height = 590 }
 				clipping = no
 			
 				background = {
@@ -716,7 +716,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "basic_train_tree"
-				position = { x = 100 y = 1180 }
+				position = { x = 130 y = 1180 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -5749,12 +5749,25 @@ guiTypes = {
 				# }
 
 				instantTextBoxType = {
-					name = "wonderweapon_year3"
-					position = { x = 0 y = 260 }
+					name = "wonderweapon_year2"
+					position = { x = 0 y = 150 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
 					text = "1940"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "wonderweapon_year3"
+					position = { x = 0 y = 275 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1941"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -5979,7 +5992,33 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year10"
-					position = { x = 0 y = 1258 }
+					position = { x = 0 y = 1100 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1943"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "wonderweapon_year11"
+					position = { x = 0 y = 1220 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1944"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "wonderweapon_year12"
+					position = { x = 0 y = 1340 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -6005,23 +6044,35 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
+					name = "fortification_eng_subtitle"
+					position = { x = 670 y = 100 }
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "TITLE_FORTIFICATION_SUBTITLE"
+					maxWidth = 250
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
 					name = "experimental_rockets_subtitle"
 					position = { x = 1295 y = 325 }
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "EXPERIENCE ROCKETS"
+					text = "TITLE_EXP_ROCKETS_SUBTITLE"
 					maxWidth = 200
 					maxHeight = 122
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-				
+
 				instantTextBoxType = {
 					name = "atomic_research_subtitle"
-					position = { x = 1100 y = 220 }
+					position = { x = 1200 y = 100 }
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "ATOMIC RESEARCH"
+					text = "TITLE_ATOMIC_RESEARCH_SUBTITLE"
 					maxWidth = 200
 					maxHeight = 122
 					format = center
@@ -6045,19 +6096,49 @@ guiTypes = {
 			}			
 			
 			gridboxtype = {
+				name = "basic_fortification_tech_tree"
+				position = { x=500 y=172 }
+				size = { width = 680 height = 800 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+			}
+
+
+			gridboxtype = {
 				name = "experimental_rockets_tree"
-				position = { x=1150 y=412 }
+				position = { x=1050 y=172 }
 				size = { width = 480 height = 650 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
-
-			
-				
 			}
+
+			#gridboxtype = {
+			#	name = "sp_rockets_improved_guidance_tree" 
+			#	position = { x=980 y=172 }
+			#	size = { width = 480 height = 650 }
+			#	slotsize = { width=60 height= 60 }
+			#	format = "UP"
+			#}
+			
+			#gridboxtype = {
+			#	name = "sp_rockets_rocket_bomber_tree" 
+			#	position = { x=980 y=172 }
+			#	size = { width = 480 height = 650 }
+			#	slotsize = { width=60 height= 60 }
+			#	format = "UP"
+			#} 
+				
+			#gridboxtype = {
+			#	name = "sp_rockets_glide_bombs_tree" 
+			#	position = { x=980 y=172 }
+			#	size = { width = 480 height = 650 }
+			#	slotsize = { width=60 height= 60 }
+			#	format = "UP"
+			#}  
 			
 			gridboxtype = {
 				name = "atomic_research_tree"
-				position = { x=855 y=292 }
+				position = { x=955 y=172 }
 				size = { width = 680 height = 500 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
@@ -6684,10 +6765,12 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
 		}
+
 		iconType = {
 			name = "Icon"
 			position = { x=90 y=50 }
@@ -6763,10 +6846,12 @@ guiTypes = {
 			name = "bg"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
 		}
+
 		iconType = {
 			name = "Icon"
 			position = { x=3 y=3 }
@@ -8114,7 +8199,7 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		size = { width = 20 height = 32 }
 		clipping = no
-		
+
 		positionType = {
 			name = "adjustment"
 			position = { x = -2 y = -2 }
@@ -8124,7 +8209,7 @@ guiTypes = {
 			name = "technology_specialization_tag_primary"
 			position = { x=0 y=0 }
 			spriteType = "GFX_technology_specialization_tag_primary"
-			centerposition = yes
+			centerposition = yes	
 			alwaystransparent = yes
 		}
 		
@@ -8615,10 +8700,12 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
 		}
+
 		iconType = {
 			name = "Icon"
 			position = { x=34 y=35}
@@ -8638,10 +8725,12 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
+
 		gridboxtype = {
 			# contains detailed_output_item
 			name = "special_project_specialization_list"
 		}
+
 		iconType = {
 			name = "Icon"
 			position = { x=34 y=35 }

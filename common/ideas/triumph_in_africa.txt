@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		triumph_in_africa = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = {
+				NOT = {
+					907 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+			}
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				industrial_capacity_factory = 0.075
+			}
+		}
+	}
+}
