@@ -604,10 +604,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = 2.00
 				}
-				small_plane_cas_airframe = {
-					instant = yes
-					build_cost_ic = 2.00
-				}
+				# small_plane_cas_airframe = {
+				# 	instant = yes
+				# 	build_cost_ic = 2.00
+				# }
 			}
 		}
 	
@@ -1146,6 +1146,17 @@ ideas = {
 				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
 				ai_get_ally_desire_factor = -1000
 			}
+		}
+
+		FFU_NO_SOV_COOPS = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				air_range_factor = 15
+			}				
 		}
 
 		neutrality_idea2 = {

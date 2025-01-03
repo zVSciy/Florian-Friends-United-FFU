@@ -1238,6 +1238,8 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			add_to_variable = { SOV_soviet_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
 			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+			#add_to_variable = { SOV_soviet_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+
 		}
 	}
 	focus = {
@@ -2725,6 +2727,10 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
+		# bypass = {
+		# 	242 = {is_controlled_by_ROOT_or_ally = no}
+		# }
+
 		completion_reward = {
 			219 = {
 				add_dynamic_modifier = { modifier = SOV_defend_city }
@@ -2890,6 +2896,10 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
+		# bypass = {
+		# 	218 = {is_controlled_by_ROOT_or_ally = no}
+		# }
 
 		completion_reward = {
 			217 = {
@@ -3076,6 +3086,11 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
+		# bypass = {
+		# 	808 = {is_controlled_by_ROOT_or_ally = no}
+		# }
+		
 
 		completion_reward = {
 			195 = {
@@ -3580,6 +3595,10 @@ focus_tree = {
 						division = "name = \"8th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
 						owner = SOV
 					}
+					#create_unit = {
+					#	division = "name = \"9th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+					#	owner = SOV
+					#}
 				}
 			}
 		}
@@ -3676,10 +3695,14 @@ focus_tree = {
 							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
 							owner = SOV
 						}
-						# create_unit = {
-						# 	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-						# 	owner = SOV
-						# }						
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}	
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}					
 					}
 				}
 				else = {
@@ -3698,10 +3721,14 @@ focus_tree = {
 							division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
 							owner = SOV
 						}
-						# create_unit = {
-						# 	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-						# 	owner = SOV
-						# }						
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}	
+						#create_unit = {
+						#	division = "division_template = \"Strelki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						#	owner = SOV
+						#}						
 					}
 				}
 			}
@@ -5759,6 +5786,7 @@ focus_tree = {
 			}
 			add_named_threat = { threat = 3 name = SOV_baltic_security }
 			activate_mission = SOV_winter_war
+			
 			hidden_effect = {
 				MON = {
 					add_ideas = MON_brothers_war
@@ -5820,6 +5848,74 @@ focus_tree = {
 					news_event = { id = news.199 }
 				}
 			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 60 #35
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 60
+			}
+            add_resource = {
+                type = chromium
+                amount = 144
+                state = 516
+            }
+			add_resource = {
+                type = chromium
+                amount = 144
+                state = 878
+            }
+			add_resource = {
+                type = chromium
+                amount = 144
+                state = 876
+            }
+            add_resource = {
+                type = tungsten
+                amount = 234
+                state = 516
+            }
+			add_resource = {
+                type = tungsten
+                amount = 234
+                state = 878
+            }
+			add_resource = {
+                type = tungsten
+                amount = 234
+                state = 876
+            }
+			add_resource = {
+                type = steel
+                amount = 207
+                state = 516
+            }
+			add_resource = {
+                type = steel
+                amount = 207
+                state = 878
+            }
+			add_resource = {
+                type = steel
+                amount = 207
+                state = 876
+            }
+			add_resource = {
+                type = aluminium
+                amount = 40
+                state = 516
+            }
+			add_resource = {
+                type = aluminium
+                amount = 40
+                state = 878
+            }
+			add_resource = {
+                type = aluminium
+                amount = 40
+                state = 876
+            }
 		}
 	}
 	
@@ -7350,6 +7446,12 @@ focus_tree = {
 				uses = 1
 				technology = sov_light_tank_3
 			}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 0.75
+				uses = 1
+				technology = mot_radio3
+			}
 		}
 	}
 	
@@ -8657,6 +8759,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		hidden_effect = {
+			add_ideas = SOV_soviet_fighter_nerf
+		}
+		
 		}
 	}
 
@@ -8683,6 +8789,12 @@ focus_tree = {
 				uses = 1
 				technology = improved_small_airframe
 			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.75
+				uses = 1
+				technology = improved_medium_airframe
+			}
 		}
 	}
 
@@ -8703,21 +8815,15 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
-				category = light_fighter
-		}
+				technology = advanced_small_airframe
+			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
-				category = light_fighter
-	}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.5
-				uses = 1
-				category = cat_heavy_fighter
+				technology = advanced_medium_airframe
 			}
 		}
 	}
@@ -8834,8 +8940,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = -0.05 }
-			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_agility_factor = 0.05 }
+			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
 			custom_effect_tooltip = SOV_modernize_aircraft_facilities_ns_tt
 		}
 	}

@@ -292,7 +292,6 @@ country_event = {
 	option = {
 		name = lar_france_political_violence.1.a #ignore
 		add_stability = -0.05
-		add_popularity = { ideology = communism popularity = 0.025 }
 	}
 
 	option = {
@@ -3459,7 +3458,6 @@ country_event = {
 					has_government = communism
 				}
 			}
-			add_popularity = { ideology = communism popularity = 0.05 }
 			army_experience = 10
 		}
 		else_if = {

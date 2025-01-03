@@ -814,8 +814,8 @@ sp_air_jet_engine = {
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
 				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
+					has_tech = advanced_small_airframe
+					has_tech = advanced_medium_airframe
 				}
 			}
 			else = {
@@ -839,11 +839,13 @@ sp_air_jet_engine = {
 		}
 	}
 
-	prototype_time = sp_time.prototype.long
+	prototype_time = sp_time.prototype.medium
 
 	complexity = sp_complexity.large
 
 	project_output = {
+
+		
 
 		country_effects = {
 			if = {
@@ -859,6 +861,7 @@ sp_air_jet_engine = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
+
 				add_design_template_bonus = {
 					name = air_equipment
 					uses = 1
@@ -921,6 +924,7 @@ sp_air_jet_engine = {
 			limit = { has_dlc = "No Step Back"}
 			tank_gas_turbine_engine
 		}
+
 	}
 
 	generic_prototype_rewards = {
@@ -934,10 +938,7 @@ sp_air_jet_engine = {
 		sp_air_generic_reward_air_xp_3
 		sp_air_generic_reward_major_progress_1
 		sp_air_generic_reward_major_progress_2
-		sp_air_generic_reward_major_progress_3
 		sp_air_generic_reward_test_failure_1
-		sp_air_generic_reward_test_failure_2
-		sp_air_generic_reward_test_failure_3
 	}
 
 	unique_prototype_rewards = {

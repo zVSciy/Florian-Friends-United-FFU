@@ -671,7 +671,7 @@ technologies = {
 	
 		enable_tactic = tactic_backhand_blow
 		
-		category_tanks = {
+		category_all_armor = {
 			hard_attack = 0.10
 		}
 		

@@ -1262,6 +1262,15 @@ operations = {
 					has_war_with = GER
 					has_offensive_war = no
 				}
+				444 = {
+					CONTROLLER = {
+						OR = {
+							tag = GER
+							is_subject_of = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
 				ENG = { surrender_progress > 0.1 }
 				SOV = { surrender_progress > 0.35 }
 				date > 1942.1.1
@@ -3371,7 +3380,7 @@ USA_propaganda_campaigns = {
 			tag = ENG
 			license_purchase_cost = -0.2
 			license_tech_difference_speed = 0.2
-			trade_cost_for_target_factor = -0.2
+			trade_cost_for_target_factor = -0.5
 		}
 
 
@@ -7536,7 +7545,7 @@ political_actions = {
 			}
 		}
 		fire_only_once = yes
-		days_remove = 730
+		days_remove = 365
 		cost = 25
 		modifier = {
 			political_power_gain = -0.05

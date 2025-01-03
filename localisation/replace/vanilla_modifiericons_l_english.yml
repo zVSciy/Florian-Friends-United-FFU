@@ -1818,6 +1818,10 @@
 
  large_plane_airframe_design_cost_factor: "£air_design_cost_texticon  Large Plane Design Cost"
  MODIFIER_SPECIAL_FORCES_CAP_FLAT: "£specops_cap_texticon  Special Forces Cap"
+ modifier_production_cost_dockyard_factor:0 "§YNaval Dockyard§! production cost"
+ modifier_production_cost_arms_factory_factor:0 "§YMilitary Factory§! production cost"
+ modifier_production_cost_industrial_complex_factor:0 "§YCivilian Factory§! production cost"
+ modifier_production_cost_infrastructure_factor:0 "§YInfrastructure§! production cost"
 
 #politics_l_english
  POLITICS_IDEOLOGY_POPULARITY_CHANGE:0 "£boost_popularity_texticon  Change in popularity of $IDEOLOGY$: $VALUE|+2%$"

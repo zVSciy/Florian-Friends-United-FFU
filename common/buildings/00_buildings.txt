@@ -96,8 +96,8 @@ buildings = {
 	
 	naval_facility = {
 		show_on_map = 1
-		base_cost = 12000
-		per_controlled_building_extra_cost = 5000
+		base_cost = 8000
+		per_controlled_building_extra_cost = 2000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
 		icon_frame = 18
 		value = 1
@@ -443,7 +443,7 @@ buildings = {
 		icon_frame = 5
 		air_base = yes
 		level_cap = {
-			state_max = 20# This is the max unlock level
+			state_max = 100# This is the max unlock level
 		}
 		value = 28
 		infrastructure_construction_effect = yes
@@ -474,8 +474,8 @@ buildings = {
 
 	nuclear_facility = {
 		show_on_map = 1
-		base_cost = 15000
-		per_controlled_building_extra_cost = 5000
+		base_cost = 9000
+		per_controlled_building_extra_cost = 2000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
 		icon_frame = 20
 		value = 1
@@ -487,17 +487,6 @@ buildings = {
 		disabled_in_dmz = yes
 		only_display_if_exists = yes
 		special_icon = GFX_specialization_nuclear
-		#state_damage_modifier = { conscription_exemptions_granted }
-		#construction_speed_factor = {
-		#	trigger = {
-		#		OR = {
-		#			state = 56
-		#			state = 59
-		#			state = 64
-		#		}
-		#	}
-		#	factor = 10
-		#}
 		level_cap = {
 			province_max = 1
 			state_max = 1
@@ -507,8 +496,8 @@ buildings = {
 
 	air_facility = {
 		show_on_map = 1
-		base_cost = 12000
-		per_controlled_building_extra_cost = 5000
+		base_cost = 8000
+		per_controlled_building_extra_cost = 2000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
 		icon_frame = 17
 		value = 1
@@ -530,8 +519,8 @@ buildings = {
 
 	land_facility = {
 		show_on_map = 1
-		base_cost = 12000
-		per_controlled_building_extra_cost = 5000
+		base_cost = 8000
+		per_controlled_building_extra_cost = 2000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
 		icon_frame = 19
 		value = 1
