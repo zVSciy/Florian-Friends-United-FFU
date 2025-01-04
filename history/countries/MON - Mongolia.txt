@@ -56,7 +56,11 @@ set_popularities = {
 }
 
 
-
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 150
+	producer = MON
+}
 
 
 
