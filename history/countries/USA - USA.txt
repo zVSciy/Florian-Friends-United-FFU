@@ -16,7 +16,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-
+set_variable = { dockyard_major = 1 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"

@@ -41,6 +41,7 @@ set_research_slots = 6
 set_stability = 0.6
 set_war_support = 0.1
 
+set_variable = { dockyard_major = 1 }
 #set_variable = { ENG_poster_center_icon_frame = 1 }
 set_variable = { ENG_new_propaganda_campaign = 0 } #Used to pick a poster slot
 set_variable = { ENG_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot

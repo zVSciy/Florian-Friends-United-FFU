@@ -41,6 +41,7 @@ add_to_variable = { JAP_japanese_economy_consumer_goods_factor = 0.15 tooltip = 
 add_dynamic_modifier = {
 	modifier = JAP_army_dynamic_modifier
 }
+set_variable = { dockyard_major = 1 }
 # unyielding spirit
 add_to_variable = { JAP_japanese_army_minimum_training_level = 0.20 tooltip = minimum_training_level_tt }
 add_to_variable = { JAP_japanese_army_training_time_army_factor = 0.40 tooltip = training_time_army_factor_tt }
