@@ -1462,33 +1462,42 @@ focus_tree = {
     
 	focus = {
 		id = SAF_medium_tank
-		icon = GFX_crusader #GFX_goal_generic_army_tanks
-		prerequisite = {focus = SAF_armor_effort}
-		mutually_exclusive = { focus = SAF_heavy_tank  }
+		icon = GFX_crusader
+		prerequisite = { focus = SAF_armor_effort }
+		mutually_exclusive = { focus = SAF_heavy_tank }
 		x = -2.5
 		y = 1
-
+	
 		relative_position_id = SAF_armor_effort
-
+	
 		cost = 5
-
+	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+	
 		complete_tooltip = {
-
+			# This focus provides bonuses to medium tank research and adds a skilled corps commander.
 		}
-
+	
 		completion_reward = {
-            
 			add_tech_bonus = {
 				name = SAF_medium_tank
 				bonus = 0.70
 				ahead_reduction = 1
 				uses = 1
 				technology = eng_medium_tank_2
-
+			}
+	
+			create_corps_commander = {
+				name = SAF_CHARACTER_TSHABALALA
+				GFX = GFX_portrait_saf_tshabalala
+				skill = 4
+				traits = { organizer trickster trait_engineer panzer_leader panzer_expert desert_fox }
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 6
 			}
 		}
 	}
@@ -1642,11 +1651,11 @@ focus_tree = {
 				name = SAF_CHARACTER_TSHABALALA 
 				GFX = GFX_portrait_saf_tshabalala
 				skill = 4
-				traits = {  organizer infantry_leader commando desert_fox }
+				traits = {  organizer  trickster trait_engineer panzer_leader  panzer_expert desert_fox }
 				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 4
-				logistics_skill = 4
+				logistics_skill = 6
 			}
 		}
 	}
