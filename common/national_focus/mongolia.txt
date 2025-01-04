@@ -1661,7 +1661,7 @@ focus = {
 					for_loop_effect = {
 						end = 9
 						create_unit = {
-							division = "division_template = \"Katyushas\" start_experience_factor = 1"
+							division = "division_template = \"Katyushas\" start_experience_factor = 0.5"
 							owner = MON
 						}
 					}
