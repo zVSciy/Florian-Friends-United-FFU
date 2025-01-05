@@ -718,10 +718,10 @@ technologies = {
 	modern_blitzkrieg = {
 		
 		category_assault_gun = {
-			breakthrough = 0.20
+			breakthrough = 0.25
 		}
 		category_tanks = {
-			breakthrough = 0.20
+			breakthrough = 0.25
 		}		
 		category_all_armor = {
 			default_morale = 0.2
@@ -1327,10 +1327,10 @@ technologies = {
 			max_strength = 2
 		}
 		category_assault_gun = {
-			breakthrough = 0.10
+			breakthrough = 0.05
 		}
 		category_tanks = {
-			breakthrough = 0.10
+			breakthrough = 0.05
 		}
 		
 		enable_tactic = tactic_blitz
@@ -1391,7 +1391,7 @@ technologies = {
 			centralized_fire_control
 		}
 
-		category_army = {
+		category_line_artillery = {
 			hard_attack = 0.05
 		}
 		
@@ -1443,7 +1443,7 @@ technologies = {
 	
 	combined_arms = {
 
-		category_army = {
+		category_line_artillery = {
 			hard_attack = 0.05
 		}
 		max_planning = 0.05
@@ -1603,7 +1603,7 @@ technologies = {
 			concentrated_fire_plans
 		}
 
-		category_army = {
+		category_line_artillery = {
 			soft_attack = 0.05
 		}
 		
@@ -1769,7 +1769,7 @@ technologies = {
 	
 	shock_and_awe = {
 
-		category_army = { 
+		category_line_artillery = { 
 			soft_attack = 0.05
 		}
 		
