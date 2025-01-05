@@ -3,6 +3,7 @@ state={
 	name="STATE_730"
 	manpower=3426
 	state_category = tiny_island
+	chromium=600 
 
 	history={
 		add_core_of = FRA
@@ -11,11 +12,12 @@ state={
 			infrastructure = 3
 			373 = {
 				naval_base = 1
+				steel_refinery = 3
 			}
 		}
 	}
 	
-	provinces={ 373 }
+	provinces= { 373 }
 
 	local_supplies=0.0 
 }

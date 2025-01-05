@@ -1173,12 +1173,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = MON_nomad_1
-			mio:SOV_morozov_design_bureau_organization = {
-				unlock_mio_trait_tooltip = MON_morozov_upgrade_buff
-			}
-			mio:SOV_morozov_design_bureau_organization = {
-				add_mio_size = 1
-			}
+			add_ideas = MON_improvement_of_motorization
 		}
 	}
 	##############################################################
