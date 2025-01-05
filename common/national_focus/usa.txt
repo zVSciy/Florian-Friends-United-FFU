@@ -3234,7 +3234,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_military_industrial_complex }
 		relative_position_id = USA_military_industrial_complex
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -3242,13 +3242,13 @@ focus_tree = {
 
 		available = {
 			OR = {
-				# FRA = {
-				# 	has_capitulated = yes
-				# }
+				ENG = {
+					has_capitulated = yes
+				}
 				VIC = {
 					has_country_flag = VIC_france_capped
 				}
-				date > 1940.1.1
+				date > 1939.12.1
 			}
 		}
 		
@@ -3368,7 +3368,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_the_giant_wakes
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3497,15 +3497,18 @@ focus_tree = {
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_USA_rubber_program
-		prerequisite = { focus = USA_wartime_industry }
-		relative_position_id = USA_wartime_industry
-		x = 2
+		prerequisite = { focus = USA_construction_4 }
+		relative_position_id = USA_construction_4
+		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		#ai_will_do = {
 		#	factor = 1
 		#}
 		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_war = yes
+		}
 		completion_reward = {
 			hidden_effect = {
 			modify_building_resources = {
@@ -3564,24 +3567,21 @@ focus_tree = {
 	focus = {
 		id = USA_victory_plan
 		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = USA_wartime_industry }
-		x = -2
+		prerequisite = { focus = USA_lend_lease_act }
+		x = 0
 		y = 1
-		cost = 5
+		cost = 1
 
-		relative_position_id = USA_wartime_industry
+		relative_position_id = USA_lend_lease_act
 
 		available = { 
 			AND = {
-				date > 1941.1.1
+				date > 1939.9.1
 				OR = {
 					ENG = {has_capitulated = yes}
 					SOV= {surrender_progress > 0.85 }
 					USA = {surrender_progress > 0.50 }
 				}
-			}
-			ENG = {
-				casualties > 100000
 			}
 		}
 				

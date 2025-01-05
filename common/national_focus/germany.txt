@@ -3949,7 +3949,7 @@ focus_tree = {
 	focus = {
 		id = GER_barb
 		icon = GFX_ger_final_crusade
-		prerequisite = { focus = GER_prepare_barb }
+		prerequisite = { focus = GER_hold_africa }
 		
 		available = {
 			if = {
@@ -4011,7 +4011,7 @@ focus_tree = {
 
 		will_lead_to_war_with = SOV
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_prepare_barb
 		cancel_if_invalid = yes
 		available_if_capitulated = no
@@ -6726,7 +6726,7 @@ focus_tree = {
 		bypass = {
 		}
 		cancel_if_invalid = yes
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GER_ardennes
 		cost = 2
@@ -6778,19 +6778,18 @@ focus_tree = {
 	focus = {
 		id = GER_hold_africa
 		icon = GFX_focus_GER_mittelafrika
-		prerequisite = { focus = GER_mobilise_reich }
-		x = 3
+		prerequisite = { focus = GER_prepare_barb }
+		x = 0
 		y = 1
-		relative_position_id = GER_mobilise_reich
-		cost = 5
+		relative_position_id = GER_prepare_barb
+		cost = 1
 		
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		available = {
-			has_war_with = SOV
-			202 = {is_controlled_by_ROOT_or_ally = yes}
+			date > 1941.1.1
 		} 
 
 		completion_reward = {
@@ -6807,16 +6806,16 @@ focus_tree = {
 	focus = {
 		id = GER_ardennes
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_hold_africa }
+		prerequisite = { focus = GER_mobilise_reich }
 		available = {
-			surrender_progress > 0.15
+			surrender_progress > 0.05
 			has_war_with = SOV
 		}
 		bypass = {
 		}
-		x = 1
+		x = 3
 		y = 1
-		relative_position_id = GER_hold_africa
+		relative_position_id = GER_mobilise_reich
 		cost = 2
 		ai_will_do = {
 			factor = 10
