@@ -718,10 +718,10 @@ technologies = {
 	modern_blitzkrieg = {
 		
 		category_assault_gun = {
-			breakthrough = 0.25
+			breakthrough = 0.20
 		}
 		category_tanks = {
-			breakthrough = 0.25
+			breakthrough = 0.20
 		}		
 		category_all_armor = {
 			default_morale = 0.2
@@ -943,7 +943,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		category_army = {
+		category_light_infantry = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 		}
@@ -983,7 +983,7 @@ technologies = {
 	
 	sup_delay = {
 
-		category_all_infantry = {
+		category_light_infantry = {
 			max_organisation = 5
 		}
 		category_militia = {
@@ -1031,7 +1031,7 @@ technologies = {
 	
 	mobile_defence = {
 
-		category_all_infantry = {
+		category_light_infantry = {
 			defense = 0.05
 		}
 		category_militia = {
@@ -1323,13 +1323,8 @@ technologies = {
 	
 	sup_mechanized_offensive = {
 
-		category_all_armor = {			
+		category_light_infantry = {			
 			max_strength = 2
-		}
-		category_assault_gun = {
-			breakthrough = 0.05
-		}
-		category_tanks = {
 			breakthrough = 0.05
 		}
 		
@@ -1392,7 +1387,7 @@ technologies = {
 		}
 
 		category_line_artillery = {
-			hard_attack = 0.05
+			hard_attack = 0.1
 		}
 		
 		path = {
@@ -1444,7 +1439,7 @@ technologies = {
 	combined_arms = {
 
 		category_line_artillery = {
-			hard_attack = 0.05
+			hard_attack = 0.1
 		}
 		max_planning = 0.05
 		
@@ -1604,7 +1599,7 @@ technologies = {
 		}
 
 		category_line_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1706,7 +1701,7 @@ technologies = {
 	
 	advanced_firebases = {
 
-		category_all_infantry = {
+		category_light_infantry = {
 			max_organisation = 10
 			default_morale = 0.05
 			max_strength = 1
@@ -1714,9 +1709,6 @@ technologies = {
 		category_militia = {
 			max_organisation = 5
 			default_morale = 0.05
-			max_strength = 1
-		}
-		category_all_armor = {
 			max_strength = 1
 		}
 		
@@ -1770,7 +1762,7 @@ technologies = {
 	shock_and_awe = {
 
 		category_line_artillery = { 
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		enable_tactic = tactic_breakthrough
