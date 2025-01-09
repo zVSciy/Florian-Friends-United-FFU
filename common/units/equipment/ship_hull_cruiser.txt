@@ -1138,7 +1138,7 @@ equipments = {
 		
 
 		
-		build_cost_ic = 1700
+		build_cost_ic = 2000
 		resources = {
 			#oil = 2
 			steel = 20
@@ -1220,7 +1220,7 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 1
-		surface_visibility = 14
+		surface_visibility = 17.5
 		naval_speed = 32
 		reliability = 0.9
 		
@@ -1230,7 +1230,7 @@ equipments = {
 		sub_attack = 1
 
 		
-		build_cost_ic = 1700
+		build_cost_ic = 2200
 		resources = {
 			#oil = 2
 			steel = 20
