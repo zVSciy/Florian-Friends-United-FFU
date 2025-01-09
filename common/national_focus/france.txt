@@ -1961,42 +1961,6 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
-		id = FRA_ban_the_leagues
-		icon = GFX_FRA_ban_the_leagues
-		x = -1
-		y = 1
-		
-		prerequisite = {
-			focus = FRA_form_the_popular_front
-		}
-		relative_position_id = FRA_form_the_popular_front
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_idea = FRA_political_violence
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
-		completion_reward = {
-			remove_ideas = { FRA_political_violence }
-			set_temp_variable = { FRA_rw_support = party_popularity@neutrality }
-			add_to_temp_variable = { FRA_rw_support = party_popularity@fascism }
-			multiply_temp_variable = { FRA_rw_support = -0.5 }
-			add_stability = FRA_rw_support
-		}
-	}
 	
 	focus = {
 		id = FRA_protect_the_rights_of_man
@@ -2228,12 +2192,6 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				country_event = lar_france_french_union.1
-			}
-			if = {
-				limit = {
-					has_idea = FRA_political_violence
-				}
-				country_event = lar_france_political_violence.3
 			}
 			custom_effect_tooltip = FRA_french_union_tt
 		}
