@@ -943,7 +943,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		category_army = {
+		category_light_infantry = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 		}
@@ -983,7 +983,7 @@ technologies = {
 	
 	sup_delay = {
 
-		category_all_infantry = {
+		category_light_infantry = {
 			max_organisation = 5
 		}
 		category_militia = {
@@ -1031,7 +1031,7 @@ technologies = {
 	
 	mobile_defence = {
 
-		category_all_infantry = {
+		category_light_infantry = {
 			defense = 0.05
 		}
 		category_militia = {
@@ -1323,14 +1323,9 @@ technologies = {
 	
 	sup_mechanized_offensive = {
 
-		category_all_armor = {			
+		category_light_infantry = {			
 			max_strength = 2
-		}
-		category_assault_gun = {
-			breakthrough = 0.10
-		}
-		category_tanks = {
-			breakthrough = 0.10
+			breakthrough = 0.05
 		}
 		
 		enable_tactic = tactic_blitz
@@ -1391,8 +1386,8 @@ technologies = {
 			centralized_fire_control
 		}
 
-		category_army = {
-			hard_attack = 0.05
+		category_line_artillery = {
+			hard_attack = 0.1
 		}
 		
 		path = {
@@ -1443,8 +1438,8 @@ technologies = {
 	
 	combined_arms = {
 
-		category_army = {
-			hard_attack = 0.05
+		category_line_artillery = {
+			hard_attack = 0.1
 		}
 		max_planning = 0.05
 		
@@ -1603,8 +1598,8 @@ technologies = {
 			concentrated_fire_plans
 		}
 
-		category_army = {
-			soft_attack = 0.05
+		category_line_artillery = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1706,7 +1701,7 @@ technologies = {
 	
 	advanced_firebases = {
 
-		category_all_infantry = {
+		category_light_infantry = {
 			max_organisation = 10
 			default_morale = 0.05
 			max_strength = 1
@@ -1714,9 +1709,6 @@ technologies = {
 		category_militia = {
 			max_organisation = 5
 			default_morale = 0.05
-			max_strength = 1
-		}
-		category_all_armor = {
 			max_strength = 1
 		}
 		
@@ -1769,8 +1761,8 @@ technologies = {
 	
 	shock_and_awe = {
 
-		category_army = { 
-			soft_attack = 0.05
+		category_line_artillery = { 
+			soft_attack = 0.1
 		}
 		
 		enable_tactic = tactic_breakthrough
