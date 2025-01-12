@@ -1698,8 +1698,8 @@ technologies = {
 	
 	advanced_firebases = {
 
-		category_army = {
-			max_organisation = 10
+		category_light_infantry = {
+			max_organisation = 5
 			default_morale = 0.05
 			max_strength = 1
 		}
