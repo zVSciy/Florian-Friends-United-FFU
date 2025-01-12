@@ -117,6 +117,14 @@ BRA_army_navy_dynamic_modifier_tt = {
 	custom_effect_tooltip = BRA_modify_brazilian_army_navy_ns_intro
 }
 
+MON_the_economy_dynamic_war_modifier_tt = {
+	custom_effect_tooltip = MON_the_economy_dynamic_war_modifier_loc_intro
+}
+
+MON_the_agitprop_dynamic_modifier_tt = {
+	custom_effect_tooltip = MON_the_agitprop_dynamic_modifier_loc_intro
+}
+
 declare_war_on_enemy_faction = {
 	if = {
 		limit = { 
