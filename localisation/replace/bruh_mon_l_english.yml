@@ -198,5 +198,10 @@
 
 
  ### TOOLTIP DYNAMIC MODIFIER ###
- MON_the_economy_dynamic_war_modifier_desc:0 "MON_the_economy_dynamic_war_modifier"
- 
+ MON_the_agitprop_dynamic_modifier:0 "[MON_the_agitprop_dynamic_modifier_sl]"
+ MON_the_agitprop_dynamic_modifier_loc_intro:0 "Modify §Y$MON_the_agitprop_dynamic_modifier$§! by"
+ MON_the_agitprop_dynamic_modifier_loc:0 "bayard fix"
+
+ MON_the_economy_dynamic_war_modifier:0 "[MON_the_economy_dynamic_war_modifier_sl]"
+ MON_the_economy_dynamic_war_modifier_loc_intro:0 "Modify §Y$MON_the_economy_dynamic_war_modifier$§! by"
+ MON_the_economy_dynamic_war_modifier_loc:0 "bayard Economy"
