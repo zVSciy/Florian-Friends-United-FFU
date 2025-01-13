@@ -4,7 +4,7 @@ oob = "ITA_1936"
 
 set_research_slots = 6
 set_stability = 0.6
-set_war_support = 0.65
+set_war_support = 0.7
 
 #set_variable = { ITA_poster_center_icon_frame = 1 }
 set_variable = { ITA_new_propaganda_campaign = 0 } #Used to pick a poster slot
