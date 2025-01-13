@@ -1449,14 +1449,9 @@ focus_tree = {
 				}
 				add_compliance = 40
 			}
-			if = {
-				limit = {
-					ETH = { is_puppet_of = ITA }
-				}
 				ITA = {
 					add_manpower = 250000
 				}
-			}
 		}
 	}
 	
@@ -4921,16 +4916,8 @@ focus_tree = {
 
 		completion_reward = {
 			# add_ideas = ITA_xmas
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.50
-				uses = 1
-				category = marine_tech
-			}
 			ITA_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ITA_italian_navy_naval_torpedo_screen_penetration_factor = 0.10 tooltip = naval_torpedo_screen_penetration_factor_tt }
-			ITA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = {  ITA_italian_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	

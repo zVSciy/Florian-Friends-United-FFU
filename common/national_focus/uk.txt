@@ -33,7 +33,7 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 1575 y = 1500 }
+	continuous_focus_position = { x = 2150 y = 800 }
 
 	shared_focus = COM_commonwealth_command
 	
@@ -436,7 +436,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_merchant_fleet }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_merchant_fleet
 		ai_will_do = {
 			factor = 1
@@ -454,7 +454,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_rnfaa }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_rnfaa
 		ai_will_do = {
 			factor = 1
@@ -471,11 +471,10 @@ focus_tree = {
 	focus = {
 		id = ENG_navs
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = ENG_carriers }
-		prerequisite = { focus = ENG_refitting_effort }
+		prerequisite = { focus = ENG_carriers focus = ENG_refitting_effort }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_carriers
 		ai_will_do = {
 			factor = 1
@@ -1315,7 +1314,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_naval_rearmament }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_naval_rearmament
 		ai_will_do = {
 			factor = 1
@@ -1362,7 +1361,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_new_dockyards }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_new_dockyards
 		ai_will_do = {
 			factor = 1
@@ -1444,7 +1443,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_capital_effort }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_capital_effort
 		ai_will_do = {
 			factor = 1
@@ -1539,7 +1538,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_screen_effort }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_screen_effort
 		ai_will_do = {
 			factor = 1
@@ -1640,7 +1639,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_admiralty }
 		x = 2
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_admiralty
 		ai_will_do = {
 			factor = 1
@@ -1670,7 +1669,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_dockyard_expansion }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_dockyard_expansion
 		ai_will_do = {
 			factor = 1
@@ -1701,7 +1700,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_admiralty }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_admiralty
 		ai_will_do = {
 			factor = 1
@@ -1719,7 +1718,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_watu }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = ENG_watu
 		ai_will_do = {
 			factor = 1

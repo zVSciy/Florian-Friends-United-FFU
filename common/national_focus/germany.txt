@@ -8990,8 +8990,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = GER_JAP_trade
-			JAP = { add_ideas = JAP_GER_trade }
+			JAP = { add_offsite_building = { type = industrial_complex level = 1 } }
 		}
 	}
 	
@@ -9017,8 +9016,7 @@ focus_tree = {
 				add_opinion_modifier = { target = GER modifier = ger_jap_diplomacy_focus }
 			}
 			add_offsite_building = { type = industrial_complex level = 2 }
-			ITA = { add_offsite_building = { type = industrial_complex level = 2 } }
-			ITA = { add_offsite_building = { type = dockyard level = 2 } }
+			ITA = { add_offsite_building = { type = industrial_complex level = 4 } }
 		}
 	}
 
@@ -9043,7 +9041,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GER_ITA_trade
-			ITA= { add_ideas = ITA_GER_trade }
 			ITA = { add_offsite_building = { type = industrial_complex level = 2 } }
 		}
 	}
