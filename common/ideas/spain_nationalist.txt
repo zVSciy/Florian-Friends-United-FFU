@@ -1035,6 +1035,29 @@ ideas = {
 				min_export = -0.05
 			}
 		}
+		SPA_not_within_our_interest = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+		}
 
 		SPA_disjointed_carlist_juntas = {
 
