@@ -69,7 +69,7 @@ if = {
 
 set_research_slots = 8
 set_stability = 0.75
-set_war_support = 0
+set_war_support = 5
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
 set_variable = { var = representatives_support value = 218 }
@@ -243,8 +243,7 @@ add_to_variable = { USA_american_economy_gd_conscription_factor = -0.5 tooltip =
 add_to_variable = { USA_american_economy_gd_join_faction_tension = 0.20 tooltip = join_faction_tension_tt }
 add_to_variable = { USA_american_economy_gd_local_resources_factor = -0.25 tooltip = local_resources_factor_tt }
 add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.25 tooltip = industrial_capacity_factory_tt }
-add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.5 tooltip = industrial_capacity_dockyard_tt }
-add_to_variable = { USA_american_economy_production_speed_dockyard_factor = -0.2 tooltip = production_speed_dockyard_factor_tt}
+add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.25 tooltip = industrial_capacity_dockyard_tt }
 
 # NEW DEAL
 add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }
