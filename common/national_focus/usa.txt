@@ -3617,50 +3617,13 @@ focus_tree = {
 					level = 10
 				}
 			}
-		    # CAN = { 
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}
-			# }
-			# SAF = {
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}
-			# }
-			# MEX = { 
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}	
-			# }
-			# BRA = {
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}
-			# }
+			hidden_effect = {
+				every_state = { limit = { has_state_flag = ita_dday}
+					remove_dynamic_modifier = {
+						modifier = ITALY_DDAY_ENTRENCHMENT5
+					}
+				}			
+			}
 			
 		}
 	}
