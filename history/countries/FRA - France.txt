@@ -22,7 +22,7 @@ set_variable = {
 
 set_research_slots = 5
 set_stability = 0.5
-set_war_support = 0.15
+set_war_support = 0.1
 
 # MP_garrison_division_standard = yes
 set_variable = { dockyard_major = 1 }

@@ -39,7 +39,7 @@ load_oob = "ENG_Motorized"
 set_research_slots = 6
 
 set_stability = 0.6
-set_war_support = 0.15
+set_war_support = 0.1
 
 set_variable = { dockyard_major = 1 }
 #set_variable = { ENG_poster_center_icon_frame = 1 }

@@ -159,7 +159,7 @@ set_variable = { GER_poster_center_icon_frame = GER_propaganda_empty_slot_index 
 set_research_slots = 6
 set_convoys = 200
 set_stability = 0.75 
-set_war_support = 0.35
+set_war_support = 0.3
 set_variable = { GER_SS_division_cap = 0 }
 set_variable = { GER_SS_cap_increase = 2 }
 set_variable = { GER_SS_cap_decrease = -2 }
