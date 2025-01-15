@@ -213,6 +213,11 @@ set_popularities = {
 	communism = 1
 }
 
+add_timed_idea = {
+	idea = USA_dockyard_treaty
+	days = 730
+}
+
 add_ideas = {
 	ENG_tension_vol
 	undisturbed_isolation

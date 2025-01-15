@@ -2066,7 +2066,7 @@ focus_tree = {
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 26
+		x = 25
 		y = 0		
 
 		offset = {
@@ -2082,7 +2082,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -2107,10 +2107,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = SAF_seaward_defence_force_DY
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2128,21 +2128,13 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_seaward_defence_force_DY
-			}			
-			add_doctrine_cost_reduction = {
-				name = SAF_seaward_defence_force
-				cost_reduction = 0.25
-				uses = 1
-				category = naval_doctrine
-			
-				
 			}
 		}
 	}
