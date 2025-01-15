@@ -1320,22 +1320,6 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			120 = {
-				add_extra_state_shared_building_slots = 2 # was 3
-				add_building_construction = {
-					type = fuel_silo
-					level = 2 # was 3
-					instant_build = yes
-				}
-			}
-			123 = {
-				add_extra_state_shared_building_slots = 2 # was 3
-				add_building_construction = {
-					type = fuel_silo
-					level = 2 # was 3
-					instant_build = yes
-				}
-			}
 			132 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -1371,10 +1355,10 @@ focus_tree = {
 			ENG_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ENG_british_navy_repair_speed_factor = 0.20 tooltip = repair_speed_factor_tt }
 			131 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1691,6 +1675,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.10 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 	
