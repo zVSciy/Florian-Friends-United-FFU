@@ -1234,10 +1234,10 @@ dockyard_cg_calculation = {
 		}
 		
 	}
-	if = {
-		limit = {
-			has_naval_treaty_trigger = yes
-		}
-		set_variable = { dockyard_cg = 0 }
-	}
+	#if = {
+	#	limit = {
+	#		has_naval_treaty_trigger = yes
+	#	}
+	#	set_variable = { dockyard_cg = 0 }
+	#}
 }
