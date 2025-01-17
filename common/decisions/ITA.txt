@@ -361,6 +361,9 @@ operations = {
 		fire_only_once = yes
 		
 		available = {
+			GER = {
+				has_war_with = SOV
+			}
 			291 = {
 				CONTROLLER = {
 					OR = {
