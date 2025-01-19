@@ -156,6 +156,25 @@ characters={
 			}
 		}
 	}
+
+
+	SAF_tshabalala={
+		name = SAF_CHARACTER_TSHABALALA 
+		portraits = {
+			army = {
+				large=GFX_SAF_tshabalala
+			}
+		}
+		corps_commander={
+			traits={ substance_abuser substance_addict media_personality infantry_officer commando }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 	SAF_evered_poole={
 		name="Evered Poole"
 		portraits={
