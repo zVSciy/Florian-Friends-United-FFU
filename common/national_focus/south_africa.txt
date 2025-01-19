@@ -1640,7 +1640,7 @@ focus_tree = {
               	# }
 			create_corps_commander = {
 				name = SAF_CHARACTER_TSHABALALA 
-				GFX = GFX_portrait_saf_tshabalala
+				GFX = GFX_SAF_tshabalala
 				skill = 4
 				traits = {  organizer infantry_leader commando desert_fox }
 				attack_skill = 4
