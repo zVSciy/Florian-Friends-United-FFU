@@ -143,6 +143,11 @@ if = {
 		days = 765
 	}
 
+	add_timed_idea = {
+		idea = SPA_not_within_our_interest
+		days = 2311
+	}
+
 	add_ideas = {
 		SPA_carlism_1	
 		SPR_political_violence	

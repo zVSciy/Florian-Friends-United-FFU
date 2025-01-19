@@ -38,22 +38,6 @@ USA_persian_corridor = {
 					}
 				}
 			}
-			420 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			419 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
 			229 = {
 				CONTROLLER = {
 					OR = {
@@ -131,22 +115,6 @@ USA_persian_corridor = {
 					OR = {
 						tag = ENG
 						is_subject_of = ENG
-					}
-				}
-			}
-			420 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			419 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
 					}
 				}
 			}
@@ -230,22 +198,6 @@ USA_persian_corridor = {
 					}
 				}
 			}
-			420 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			419 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
 			229 = {
 				CONTROLLER = {
 					OR = {
@@ -323,22 +275,6 @@ USA_persian_corridor = {
 					OR = {
 						tag = ENG
 						is_subject_of = ENG
-					}
-				}
-			}
-			420 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			419 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
 					}
 				}
 			}
@@ -422,22 +358,6 @@ USA_persian_corridor = {
 					}
 				}
 			}
-			420 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			419 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
 			229 = {
 				CONTROLLER = {
 					OR = {
@@ -518,22 +438,6 @@ USA_persian_corridor = {
 					}
 				}
 			}
-			420 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			419 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
 			229 = {
 				CONTROLLER = {
 					OR = {
@@ -611,22 +515,6 @@ USA_persian_corridor = {
 					OR = {
 						tag = ENG
 						is_subject_of = ENG
-					}
-				}
-			}
-			420 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			419 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
 					}
 				}
 			}
