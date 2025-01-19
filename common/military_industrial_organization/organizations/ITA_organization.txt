@@ -498,7 +498,7 @@ ITA_caproni_organization = {
 	
 	available = {
 		ITA = {
-			has_completed_focus = ITA_naval_strike
+			has_completed_focus = ITA_regia_aeronautica
 		}
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {

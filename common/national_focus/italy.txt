@@ -4960,6 +4960,20 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ITA_caproni_organization
+				mio:ITA_caproni_organization = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = caproni
+			}
 		}
 	}
 	
@@ -5098,47 +5112,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = ITA_caproni_organization
-				mio:ITA_caproni_organization = {
-					add_mio_size = 2
-				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = caproni
-			}
-		}
-	}
-	
-	focus = {
-		id = ITA_naval_air_coordination
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = ITA_naval_strike }
-		prerequisite = { focus = ITA_fleet_air_arm }
-		x = -1
-		y = 1
-		relative_position_id = ITA_naval_strike
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_tech_bonus = {
 				name = air_bonus
 				bonus = 0.75
 				uses = 2
@@ -5153,12 +5126,14 @@ focus_tree = {
 			custom_effect_tooltip = ITA_naval_air_coordination_10_ftt
 		}
 	}
+	
 
 	focus = {
 		id = ITA_license_the_airframe
 		icon = GFX_junker_production
 		prerequisite = { focus = ITA_naval_strike }
-		x = 0
+		prerequisite = {focus = ITA_fleet_air_arm}
+		x = -1
 		y = 2
 		relative_position_id = ITA_naval_strike
 		cost = 5
