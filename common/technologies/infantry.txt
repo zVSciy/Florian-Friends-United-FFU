@@ -2636,6 +2636,25 @@ technologies = {
 		}
 	}
 
+	urban_invasion = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+		marine = {
+			urban = {
+				attack = 0.1
+			}
+			town = {
+				attack = 0.1
+			}
+		}
+	}
+
 	######### FROM ITALIAN FOCUS ##########
 	blackshirt_assault_battalion_tech = {
 		
