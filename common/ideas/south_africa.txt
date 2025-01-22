@@ -113,7 +113,7 @@ ideas = {
 			picture = ast_abandon_the_westminster_system
 
 			modifier = {
-				autonomy_gain = 0.5
+				autonomy_gain = 1
 				democratic_drift = -0.03
 			}
 
@@ -288,7 +288,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.15
-				autonomy_gain = 0.5
+				autonomy_gain = 1
 			}
 		}
 
