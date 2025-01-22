@@ -3862,7 +3862,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_mobilise_reich
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -3970,7 +3970,7 @@ focus_tree = {
 			}
 			OR = {
 				AND = {
-					date > 1941.5.1
+					date > 1941.6.22
 					date < 1941.8.1
 				}
 				AND = {
