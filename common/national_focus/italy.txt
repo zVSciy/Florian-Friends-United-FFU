@@ -1536,7 +1536,7 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = ITA_mobilized_naval_workers
 			ITA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ITA_italian_economy_industrial_capacity_dockyard = 0.10 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { ITA_italian_economy_industrial_capacity_dockyard = 0.025 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 

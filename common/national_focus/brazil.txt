@@ -1948,7 +1948,7 @@ focus = {
 	
 
 	focus = {
-		id = Jap_worker
+		id = BRA_jap_worker
 		icon = GFX_focus_BRA_pro_business_taxes
 		prerequisite = { focus = BRA_expand_fordlandia focus = BRA_fabrica_nacional_de_motores}
 		
@@ -1977,7 +1977,7 @@ focus = {
 	focus = {
 		id = BRA_World_Cup
 		icon = GFX_focus_NORDIC_com_capstone_research
-		prerequisite = { focus = Jap_worker}
+		prerequisite = { focus = BRA_jap_worker}
 		prerequisite = { focus = BRA_Preparations_world_cup}
 		prerequisite = { focus = BRA_support_industrialists focus = BRA_consolidation_of_labor_laws}
 
@@ -2339,7 +2339,7 @@ focus = {
 		y = 2
 		relative_position_id = BRA_foreign_advisors
 
-		cost = 5
+		cost = 1
 		
 		available = {
 			date > 1941.1.1
