@@ -521,7 +521,7 @@ NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy 
 NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.1 			-- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 0.9 -- org will clamped to this ratio on manual move
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12 -- unit speed on water :) -> vanilla 6
-
+NDefines.NNavy.MISSION_MAX_REGIONS = 5             --vanilla 0 | Limit of the regions that can be assigned to naval mission. Set to 0 for unlimited.
 
 NDefines.NRailwayGun.ANNEX_RATIO = 1				-- How many railway guns will be transferred on annexation
 
