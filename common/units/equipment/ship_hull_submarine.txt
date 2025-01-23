@@ -656,19 +656,18 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 
-		sub_visibility = 21
-		naval_speed = 18
-		reliability = 0.75
+		sub_visibility = 29
+		naval_speed = 14
+		reliability = 0.70
 
-		naval_range = 6500
-
-		max_strength = 40
+		naval_range = 4000
+		max_strength = 20
 
 
 
 		build_cost_ic = 800 # 650
 		resources = {
-			steel = 40
+			steel = 50
 		}
 	}
 	fleet_submarine = {
@@ -748,23 +747,21 @@ equipments = {
 
 		surface_detection = 60
 		sub_detection = 0
-		surface_visibility = 1
-		reliability = 0.75
 		fuel_consumption = 1
 
 
-		sub_visibility = 14
-		naval_speed = 19
+		sub_visibility = 29
+		naval_speed = 14
+		reliability = 0.70
 
-		naval_range = 6500
-
-		max_strength = 40
-
+		naval_range = 4000
+		max_strength = 20
 
 
-		build_cost_ic = 650
+
+		build_cost_ic = 850
 		resources = {
-			steel = 3
+			steel = 24
 		}
 	}
 	ship_hull_nuclear_submarine = {
@@ -820,14 +817,12 @@ equipments = {
 			fixed_ship_engine_slot = sub_ship_nuclear_engine_1
 		}
 
-		sub_visibility = 16
-		naval_speed = 20
-		reliability = 0.75
+		sub_visibility = 25
+		naval_speed = 14
+		reliability = 0.70
 
-		naval_range = 10000
-
-		manpower = 400
-		max_strength = 50
+		naval_range = 5000
+		max_strength = 22
 
 
 
@@ -922,20 +917,20 @@ equipments = {
 		fuel_consumption = 0
 
 
-		sub_visibility = 12
+		sub_visibility = 24
 		naval_speed = 22
 
 
 		naval_range = 10000
 
-		max_strength = 50
+		max_strength = 30
 
 		manpower = 400
 
 		build_cost_ic = 1150
 		resources = {
-			steel = 4
-			chromium = 2
+			steel = 24
+			chromium = 16
 		}
 	}
 	rocket_submarine = {
