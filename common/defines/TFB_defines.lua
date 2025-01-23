@@ -109,7 +109,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED = 3 				-- Base factory speed multiplier
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
-NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 200
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.50	-- How much fuel will be transferred on annexation
 NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.25			-- How many convoys will be transferred on annexation
 NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 100	-- Ratio which % of army in field can be trained
@@ -320,7 +320,7 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.50                    -- speed bonus
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0
 NDefines.NMilitary.GENERATE_AI_DIV_COMMAND_HISTORY_ENTRIES = false	--Should we generate history entries for the AI (may cause savegame bloat)
 NDefines.NMilitary.FIELD_OFFICER_PROMOTION_PENALTY = 0.0		--Amount of division experience lost when promoting a commander (reduced by modifiers)
-NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 5				-- 	cost to assign a new trait to a unit leader
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0				-- 	cost to assign a new trait to a unit leader
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1			-- Which level a field marhal or general has to be before they can pick their preferred tactic
 
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.05

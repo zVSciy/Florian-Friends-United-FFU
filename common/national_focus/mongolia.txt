@@ -1616,7 +1616,9 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-	
+			custom_effect_tooltip = {
+                localization_key = MON_spawn_ins_tt
+            }
 			hidden_effect = {
 				division_template = {
 					name = "Katyushas"
