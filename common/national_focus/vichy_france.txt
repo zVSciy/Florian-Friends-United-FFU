@@ -86,6 +86,7 @@ focus_tree = {
             add_stability = 0.1
 			# 300pp
             # 10% stability
+            add_timed_idea = { idea = VIC_accelerated_production_reorganization days = 60 }
 		}
 	}
 
@@ -183,7 +184,7 @@ focus_tree = {
             random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
+						building = arms_factory
 						size > 2
 						include_locked = yes
 					}
@@ -191,7 +192,23 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -263,32 +280,32 @@ focus_tree = {
             random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
-						size > 2
+						building = arms_factory
+						size > 3
 						include_locked = yes
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = arms_factory
+					level = 3
 					instant_build = yes
 				}
 			}
             random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
-						size > 2
+						building = arms_factory
+						size > 3
 						include_locked = yes
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = arms_factory
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -589,7 +606,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1121,9 +1138,9 @@ focus_tree = {
                     # 	}
                     # }
                         traits={ panzer_leader inflexible_strategist old_guard urban_assault_specialist ambusher }
-                        skill=3
-                        attack_skill=3
-                        defense_skill=4
+                        skill=4
+                        attack_skill=5
+                        defense_skill=2
                         planning_skill=3
                         logistics_skill=4
                         legacy_id=-1
@@ -1232,8 +1249,8 @@ focus_tree = {
                     # }
                         traits={ panzer_leader desert_fox brilliant_strategist trickster }
                         skill=3
-                        attack_skill=4
-                        defense_skill=3
+                        attack_skill=5
+                        defense_skill=2
                         planning_skill=3
                         logistics_skill=4
                         legacy_id=-1
@@ -1374,9 +1391,9 @@ focus_tree = {
                     # 	}
                     # }
                         traits={ panzer_leader winter_specialist ranger fortress_buster }
-                        skill=3
-                        attack_skill=3
-                        defense_skill=3
+                        skill=4
+                        attack_skill=5
+                        defense_skill=2
                         planning_skill=3
                         logistics_skill=5
                         legacy_id=-1

@@ -28,6 +28,21 @@ ideas = {
 			}
 		}
 
+		VIC_accelerated_production_reorganization = {
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				production_factory_start_efficiency_factor = 0.50
+			}
+		}
+
 		VIC_ramped_up_prodution = {
 
 			picture = generic_economic_increase
