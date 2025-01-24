@@ -93,7 +93,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_golden_age
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -126,7 +126,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_industrial_expansion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -159,7 +159,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_golden_age
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -192,7 +192,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_agricultural_development
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -304,7 +304,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_heavy_industry_investments
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -337,7 +337,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_heavy_industry_investments
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
