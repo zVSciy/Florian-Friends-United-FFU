@@ -11,7 +11,7 @@ USA_war_bop = {
 	}
 	side = {
 		id = USA_focus_on_asia	
-		icon = ?
+		icon = USA_union_pacific_railway
 
 		range = {
 			id = USA_light_focus_on_japan # JAP_interservice_rivalry_army_strengthened
