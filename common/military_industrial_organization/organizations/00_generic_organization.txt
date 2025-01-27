@@ -2315,7 +2315,7 @@ commonwealth_medium_tank_organization = {
 		position = { x=0 y=0 }
 
 		equipment_bonus = {
-			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 	}
 
@@ -2328,7 +2328,7 @@ commonwealth_medium_tank_organization = {
 		relative_position_id = generic_mio_trait_light_tank_improvements
 		
 		equipment_bonus = {
-			hard_attack = 0.05
+			soft_attack = 0.05
 		}
 
 
@@ -2359,8 +2359,8 @@ commonwealth_medium_tank_organization = {
 		all_parents = { generic_mio_trait_heavy_tank_improvements }
 
 		equipment_bonus = {
-			soft_attack = 0.03
-			reliability = 0.03
+			soft_attack = 0.05
+			reliability = 0.05
 		}
 	}
 
@@ -2477,7 +2477,7 @@ commonwealth_medium_tank_organization = {
 
 		equipment_bonus = {
 			build_cost_ic = -0.03
-			reliability = -0.05
+			reliability = 0.05
 		}
 	}
 
@@ -2619,8 +2619,8 @@ commonwealth_medium_tank_organization = {
 			armor_value = 0.1
 			soft_attack = 0.07
 			hard_attack = 0.05
-			reliability = -0.1
-			build_cost_ic = 0.08
+			reliability = 0.1
+			build_cost_ic = 0.05
 		}
 	}
 
@@ -2636,11 +2636,11 @@ commonwealth_medium_tank_organization = {
 
 		equipment_bonus = {
 			hardness = 0.05
-			build_cost_ic = 0.03
+			build_cost_ic = 0.01
 		}
 
 		production_bonus = {
-			production_resource_need_factor = 0.1
+			production_resource_need_factor = -0.1
 		}
 	}
 }
