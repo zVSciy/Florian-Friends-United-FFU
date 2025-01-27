@@ -2343,7 +2343,7 @@ commonwealth_medium_tank_organization = {
 		relative_position_id = generic_mio_trait_medium_tank_improvements
 
 		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.1
+			military_industrial_organization_funds_gain = 0.3
 			military_industrial_organization_research_bonus = 0.1
 		}
 	}
@@ -2927,7 +2927,7 @@ generic_pmfu_heavy_tank_organization = {
 		name = generic_mio_initial_trait_pmfu_heavy_tank_designer
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
+			military_industrial_organization_funds_gain = 0.3
 		}
 	}
 
