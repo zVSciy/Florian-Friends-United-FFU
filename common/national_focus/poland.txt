@@ -6179,10 +6179,7 @@ focus_tree = {
 			factor = 10
 		}
 		
-		bypass = {
-			85 = { controls_or_subject_of = no }
-			807 = { controls_or_subject_of = no }
-		}
+		
 
 		available_if_capitulated = yes
 		completion_reward = {
