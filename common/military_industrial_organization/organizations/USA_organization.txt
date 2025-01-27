@@ -200,7 +200,7 @@ USA_tank_destroyer_board_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_tank_destroyers }
 
 		available = {
-			FROM = { has_completed_focus = USA_tank_destroyer_doctrine }
+			FROM = { has_completed_focus = USA_the_sherman }
 		}
 
 		equipment_bonus = {
