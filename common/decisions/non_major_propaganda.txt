@@ -1277,9 +1277,9 @@ COM_propaganda_campaigns = {
 			}
 		}
 
-		days_remove = 365
+		days_remove = 120
 
-		days_re_enable = 120
+		days_re_enable = 360
 
 		cost = 25
 
