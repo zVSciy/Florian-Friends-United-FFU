@@ -586,18 +586,6 @@ owns_or_subject_of = {
 	}
 }
 
-controls_or_subject_of = {
-	custom_trigger_tooltip = {
-		tooltip = controls_or_subject_of_tt
-		controller = {
-			OR = {
-				tag = ROOT
-				is_subject_of = ROOT
-			}
-		}
-	}
-}
-
 is_core_or_compliance_60 = {
 	custom_trigger_tooltip = {
 		tooltip = is_core_or_compliance_60_tt

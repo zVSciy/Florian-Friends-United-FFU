@@ -585,13 +585,18 @@ NDefines.NOperatives.PROPAGANDA_SUB_NETWORK_STRENGTH_FACTOR = 0				-- Multiplied
 NDefines.NOperatives.PROPAGANDA_DEFENSE_FACTOR = 0					-- Multiplied to the target's defense before being subtracted from the Stability/WarSupport drift caused by an operative
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0				-- Multiplied to the Stability/WarSupport drift values of each operative after the one with the greatest values. The process is done separatly for Stability and WarSupport
 NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0
-NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political power used to become Spy Master
+NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 100					-- Number of political power used to become Spy Master
 NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0			-- Number of agency upgrades you need before becoming Spy Master
 -- NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999						-- Number of days needed to create an intelligence agency
 -- NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 1				-- The minimum value of the highest VP in a state to consider the state as a valid target to start building an intel network
 NDefines.NOperatives.INTEL_NETWORK_MIN_STRENGTH_TO_TARGET = 1		-- 	The minimum value of the intel network in a state to consider it a valid target to deploy an operative in
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 50			--	Number of days needed to upgrade an intelligence agency
+NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
+	0.0, 	0.0, --0.0, 	0.0, -- 0 operative for [0, 10)
+	1.0,  	1.0, --0.25,  	10.0, -- 0.25 operative for [10, 50)
+	1.0, 	50.0, --0.5, 	50.0, -- 0.5 operative for >= 50
+}
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
