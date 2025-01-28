@@ -2542,10 +2542,10 @@ sp_naval_modern_carrier = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_tech = advanced_ship_hull_carrier
+				has_tech = improved_ship_hull_carrier
 			}
 			else = {
-				has_tech = advanced_carrier
+				has_tech = improved_carrier
 			}
 
 		}
