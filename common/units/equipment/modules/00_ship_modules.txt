@@ -1826,9 +1826,8 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 28 #22 #26
-			naval_torpedo_hit_chance_factor = 0.01
-			build_cost_ic = 120
+			torpedo_attack = 26
+			build_cost_ic = 80
 		}
 		multiply_stats = {
 			naval_speed = -0.02		
@@ -1837,14 +1836,14 @@ dp_ship_secondaries_2 = {
 			steel = 0
 		}
 		 
-		dismantle_cost_ic = 60
+		dismantle_cost_ic = 10
 		dismantle_cost_resources = {
 			steel = 0
 		}
 
 		can_convert_from = {
 			module_category = ship_torpedo
-			convert_cost_ic = 60
+			convert_cost_ic = 30
 			convert_cost_resources = {
 				steel = 0
 			}
@@ -1860,9 +1859,8 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 36 #28 #32.5
-			build_cost_ic = 150
-			naval_torpedo_hit_chance_factor = 0.015
+			torpedo_attack = 30
+			build_cost_ic = 120
 		}
 		multiply_stats = {
 			naval_speed = -0.03			
@@ -1884,9 +1882,8 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 44 #34 #39
-			build_cost_ic = 180
-			naval_torpedo_hit_chance_factor = 0.02
+			torpedo_attack = 34
+			build_cost_ic = 125
 		}
 		multiply_stats = {
 			naval_speed = -0.04			
