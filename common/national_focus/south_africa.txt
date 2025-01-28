@@ -1330,7 +1330,7 @@ focus_tree = {
 				}
 				275 = {
 					for_loop_effect = {
-						end = 9
+						end = 6
 						create_unit = {
 							division = "division_template = \"Boer Battalion\" start_experience_factor = 0.7"
 							owner = SAF
