@@ -115,6 +115,7 @@ buildings = {
 			state_max = 1
 			group_by = special_project_facility
 		}
+		infrastructure_construction_effect = yes
 		only_costal = yes
 	}
 
@@ -492,6 +493,7 @@ buildings = {
 			state_max = 1
 			group_by = special_project_facility
 		}
+		infrastructure_construction_effect = yes
 	}
 
 	air_facility = {
@@ -515,6 +517,7 @@ buildings = {
 			state_max = 1
 			group_by = special_project_facility
 		}
+		infrastructure_construction_effect = yes
 	}
 
 	land_facility = {
@@ -538,6 +541,7 @@ buildings = {
 			state_max = 1
 			group_by = special_project_facility
 		}
+		infrastructure_construction_effect = yes
 	}
 	dam = {
 		show_on_map = 1

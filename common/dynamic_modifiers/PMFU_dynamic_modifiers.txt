@@ -115,6 +115,13 @@ ENG_no_AIR = {
 	state_production_speed_air_base_factor = -4
 }
 
+ENG_no_portspam = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	state_production_speed_naval_base_factor = -10
+}
+
 SOV_the_economy_dynamic_peace_modifier = {
 	enable = { always = yes }
 

@@ -3715,6 +3715,64 @@ focus_tree = {
 				id = USA_war_bop
 				value = -1
 			}
+			if = { # is it far left? -> already far left, make sure to apply the modifiers
+				limit = {
+					has_country_flag = USA_far_left
+				}
+				# Reapply the idea to make sure the modifiers are still active
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_asia2
+				}
+			}	
+
+			if = { # is it slightly left? -> move it to the far left
+				limit = {
+					has_country_flag = USA_left1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_asia2
+				}
+				clr_country_flag = USA_left1
+				set_country_flag = USA_far_left
+			}
+
+			if = { # is it center? -> move it to the far left
+				limit = {
+					has_country_flag = USA_bop_center
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_nothing
+					add_idea = USA_focus_on_asia2
+				}
+				clr_country_flag = USA_bop_center
+				set_country_flag = USA_far_left
+			}
+
+			if = { # is it slightly right? -> move it to slight left
+				limit = {
+					has_country_flag = USA_right1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_asia1
+				}
+				clr_country_flag = USA_right1
+				set_country_flag = USA_left1
+			}
+
+			if = { # is it far right? -> move it to the center
+				limit = {
+					has_country_flag = USA_far_right
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe2
+					add_idea = USA_focus_on_nothing
+				}
+				clr_country_flag = USA_far_right
+				set_country_flag = USA_bop_center
+			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange }
 		}
 	}
@@ -3760,6 +3818,64 @@ focus_tree = {
 			add_power_balance_value = {
 				id = USA_war_bop
 				value = 1
+			}
+			if = { # is it far right? -> already far right, make sure to apply the modifiers
+				limit = {
+					has_country_flag = USA_far_right
+				}
+				# Reapply the idea to make sure the modifiers are still active
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_europe2
+				}
+			}	
+			
+			if = { # is it slightly right? -> move it to the far right
+				limit = {
+					has_country_flag = USA_right1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_europe2
+				}
+				clr_country_flag = USA_right1
+				set_country_flag = USA_far_right
+			}
+
+			if = { # is it center? -> move it to the far right
+				limit = {
+					has_country_flag = USA_bop_center
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_nothing
+					add_idea = USA_focus_on_europe2
+				}
+				clr_country_flag = USA_bop_center
+				set_country_flag = USA_far_right
+			}
+
+			if = { # is it slightly left? -> move it to slight right
+				limit = {
+					has_country_flag = USA_left1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_europe1
+				}
+				clr_country_flag = USA_left1
+				set_country_flag = USA_right1
+			}
+
+			if = { # is it far left? -> move it to the center
+				limit = {
+					has_country_flag = USA_far_left
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia2
+					add_idea = USA_focus_on_nothing
+				}
+				clr_country_flag = USA_far_left
+				set_country_flag = USA_bop_center
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black }
 		}
