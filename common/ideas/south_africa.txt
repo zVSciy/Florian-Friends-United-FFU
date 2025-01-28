@@ -202,7 +202,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.025
 				industrial_capacity_dockyard = 0.025
-				conscription_factor = -0.05
+				conscription_factor = -0.15
 			}
 
 		}
@@ -224,7 +224,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				consumer_goods_factor = -0.06
-				conscription_factor = -0.10
+				conscription_factor = -0.15
 			}
 
 		}
@@ -262,13 +262,13 @@ ideas = {
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
-				production_factory_efficiency_gain_factor = -0.05
-				industrial_capacity_factory = 0.10
-				production_factory_max_efficiency_factor = 0.0755
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = 0.075
+				production_factory_max_efficiency_factor = 0.025
 			}
 
 			targeted_modifier = {
-				tag = GER
+				tag = GER 
 				attack_bonus_against = 0.05
 			}
 		}
@@ -288,7 +288,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.15
-				autonomy_gain = 1
+				autonomy_gain = 2
 			}
 		}
 
@@ -484,7 +484,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				production_speed_industrial_complex_factor = 0.1
 			}
 
 		}
@@ -500,25 +500,171 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
+				anti_tank_equipment = {
+					hard_attack = 0.1
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				squad_equipment = {
+					hard_attack = 0.1
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				heavy_anti_tank_equipment = {
+					hard_attack = 0.1
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				dp_artillery_equipment = {
+					hard_attack = 0.05
+					instant = yes
+					build_cost_ic = 0.05
+				}
+			}
+		}
+
+		SAF_soft_artillery = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
 				artillery_equipment = {
 					soft_attack = 0.1
 					instant = yes
-				}
-				dp_artillery_equipment = {
-					soft_attack = 0.05
-					hard_attack = 0.05
-					instant = yes
+					build_cost_ic = 0.05
 				}
 				squad_equipment = {
 					soft_attack = 0.1
 					instant = yes
+					build_cost_ic = 0.05
 				}
 				heavy_artillery_equipment = {
 					soft_attack = 0.1
 					instant = yes
+					build_cost_ic = 0.05
+				}
+				dp_artillery_equipment = {
+					soft_attack = 0.05
+					instant = yes
+					build_cost_ic = 0.05
 				}
 			}
 		}
+
+		SAF_cheaper_guns = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SAF_cheaper_sf_gear = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				sf_equipment = {
+					instant = yes
+					build_cost_ic = -0.025
+				}
+			}
+		}
+
+		SAF_reinforce_rate = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				land_reinforce_rate = 0.025
+			}
+		}
+
+		SAF_recovery_rate = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+
+		SAF_breakthrough_buff = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					armor_value = 0.1
+					hardness = 0.1
+					reliability = -0.10
+					build_cost_ic = 0.075
+					instant = yes
+				}
+			}
+		}
+
+		SAF_coord_buff = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					armor_value = -0.15
+					hardness = -0.10
+					reliability = 0.10
+					build_cost_ic = -0.075
+					instant = yes
+				}
+			}
+		}
+
 	
 
 		SAF_joint_air_training_scheme = {

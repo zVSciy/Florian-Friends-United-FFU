@@ -1812,7 +1812,7 @@ form_mutapa_category = {
 		}
 
 		available = {
-			date > 1941.1.1
+			date > 1940.6.1
 			controls_state = 541
 			controls_state = 681
 			controls_state = 719
