@@ -198,9 +198,9 @@ focus_tree = {
 			NOT = {
 				controls_state = 78
 				controls_state = 766
-				controls_state = 80
+				
 			}
-			has_country_flag = bessarabia_ceded
+			
 		}
 	
 		bypass = {
@@ -243,9 +243,8 @@ focus_tree = {
 	
 		available = {
 			NOT = {
-				controls_state = 82
-				controls_state = 83
-				controls_state = 84
+				controls_state = 76
+				
 			}
 		}
 	
@@ -660,39 +659,23 @@ mutually_exclusive = {
 	
 		
 		completion_reward = {
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			46 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = GER_industrial_effort_2IC
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			81 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
 					instant_build = yes
 				}
-				set_state_flag = GER_industrial_effort_2IC
 			}
+			
 		}
 	}
 
@@ -724,39 +707,23 @@ mutually_exclusive = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			46 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
 				}
-			
 			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			81 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
 					instant_build = yes
 				}
-				
 			}
+			
 		}
 	}
 
@@ -959,39 +926,23 @@ mutually_exclusive = {
 	
 		
 		completion_reward = {
+			46 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			81 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2IC
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2IC
-			}
 		}
 	}
 
@@ -1012,7 +963,7 @@ mutually_exclusive = {
 
 		complete_tooltip = {
 			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
+				
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -1023,39 +974,23 @@ mutually_exclusive = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
+			46 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
 					level = 5
 					instant_build = yes
 				}
-				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			81 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
 			}
 			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
 		}
 	}
 
