@@ -219,10 +219,10 @@ focus_tree = {
 			add_manpower = 100000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 6
+				level = 5
 			}
 			79 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 5
 			}
 		}
 	}
@@ -257,7 +257,7 @@ focus_tree = {
 			add_manpower = 150000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 6
+				level = 5
 			}
 			81 = {
 				add_extra_state_shared_building_slots = 6
@@ -298,10 +298,10 @@ focus_tree = {
 			add_manpower = 50000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 6
+				level = 5
 			}
 			46 = {				
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 			}
 		}
 	}
@@ -713,8 +713,8 @@ mutually_exclusive = {
 
 		complete_tooltip = {
 			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-				add_extra_state_shared_building_slots = 3
+				
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
@@ -738,7 +738,7 @@ mutually_exclusive = {
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = GER_industrial_effort_2_2IC
+			
 			}
 			
 			random_owned_controlled_state = {
@@ -749,13 +749,13 @@ mutually_exclusive = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
 					instant_build = yes
 				}
-				set_state_flag = GER_industrial_effort_2_2IC
+				
 			}
 		}
 	}
@@ -1823,10 +1823,10 @@ focus = {
 				}
 			}
 			prioritize = { 46 }
-			add_extra_state_shared_building_slots = 6
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = industrial_complex
-				level = 6
+				level = 4
 				instant_build = yes
 			}
 		}
@@ -2244,7 +2244,40 @@ focus = {
 
 	completion_reward = {
 
-		add_ideas = ROM_recruit_the_masses
+
+	
+			
+				79 = {
+					set_building_level = {
+						type = radar_station
+						level = 4
+						instant_build = yes
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+				}
+				80 = {
+					set_building_level = {
+						type = anti_air
+						level = 10
+						instant_build = yes
+					}
+
+					set_building_level = {
+						type = radar_station
+						level = 4
+						instant_build = yes
+					}
+				}
+				
+				
+			
+		
+
+
 
 	}
 }
@@ -2357,7 +2390,8 @@ focus = {
 			days = 30
 		}
 		
-
+		add_ideas = HUN_paramilitary_organizations
+	
 
 	}
 }
