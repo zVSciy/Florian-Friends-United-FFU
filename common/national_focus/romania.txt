@@ -80,7 +80,7 @@ focus_tree = {
 
 	focus = {
         id = ROM_Placebo2
-        icon = GFX_focus_generic_road_investment
+        icon = GFX_focus_NORDIC_com_civilian
         
 
 
@@ -113,7 +113,7 @@ focus_tree = {
 
 	focus = {
         id = ROM_Placebo3
-        icon = GFX_focus_generic_road_investment
+        icon = GFX_focus_NORDIC_com_materiel
         
 
 
@@ -145,7 +145,7 @@ focus_tree = {
 
 	focus = {
         id = ROM_placebo4
-        icon = GFX_focus_CZE_german_puppe
+        icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = ROM_Placebo2 focus = ROM_Placebo3 }
 
 
@@ -308,7 +308,7 @@ focus_tree = {
 
 	focus = {
         id =  ROM_expand_greater_romania
-        icon = GFX_focus_generic_road_investment
+        icon = GFX_ROM_for_the_preservation_of_greater_romania
 		prerequisite = { focus = ROM_southern_refugees }
 		prerequisite = { focus = ROM_eastern_refugees }
 		prerequisite = { focus = ROM_western_refugees }
@@ -362,8 +362,8 @@ focus_tree = {
 	}
 
 	focus = {
-        id = ROM_placebo11
-        icon = GFX_focus_generic_road_investment
+        id = ROM_build_up_the_new_territories
+        icon = GFX_focus_SWE_varnplikt
 		prerequisite = {
 			focus =  ROM_expand_greater_romania
 		}
@@ -439,8 +439,8 @@ focus_tree = {
 	}
 
 	focus = {
-        id = ROM_placebo12
-        icon = GFX_focus_generic_road_investment
+        id = ROM_develop_whats_ours
+        icon = GFX_focus_generic_military_industry
 		prerequisite = {
 			focus =  ROM_expand_greater_romania
 		}
@@ -528,13 +528,13 @@ focus_tree = {
 	}
 
 	focus = {
-        id = ROM_placebo13
-        icon = GFX_focus_generic_road_investment
+        id = ROM_integrate_ukraine
+        icon = GFX_focus_invite_romania
 		prerequisite = {
-			focus = ROM_placebo11
+			focus = ROM_build_up_the_new_territories
 		}
 		prerequisite = {
-			focus = ROM_placebo12
+			focus = ROM_develop_whats_ours
 		}
 		
 
@@ -698,7 +698,7 @@ mutually_exclusive = {
 
 	focus = {
 		id = ROM_civ_2
-		icon = GFX_GER_curtail_the_steel_barons
+		icon = GFX_focus_mex_privatisation
 		dynamic = yes
 		prerequisite = { focus = ROM_civ_1 }
 		x = 0
@@ -764,7 +764,7 @@ mutually_exclusive = {
 	
 	focus = {
 		id = ROM_org_todt
-		icon = GFX_org_todt
+		icon = GFX_focus_generic_monetary_union
 		prerequisite = { focus = ROM_autobahn }
 		relative_position_id = ROM_autobahn
 		x = 1
@@ -840,7 +840,7 @@ mutually_exclusive = {
 	
 	focus = {
 		id = ROM_reichsarbeit
-		icon = GFX_goal_ger_reichsarbeitsdienst
+		icon = GFX_focus_generic_agricultural_subsidies
 		dynamic = yes
 		prerequisite = { focus = ROM_oade }
 		prerequisite = { focus = ROM_civ_2 }
@@ -864,7 +864,7 @@ mutually_exclusive = {
 
 	focus = {
         id = ROM_placebo6
-        icon = GFX_focus_generic_road_investment
+        icon = GFX_advanced_industry
        prerequisite = { focus = ROM_Placebo3} 
 
 mutually_exclusive = {
@@ -890,7 +890,7 @@ mutually_exclusive = {
 
 	focus = {
         id = ROM_placebo5
-        icon = GFX_focus_generic_road_investment
+        icon = GFX_r56_goal_generic_industrial_investment
        prerequisite = { focus = ROM_Placebo2 }
 
 	   
@@ -921,7 +921,7 @@ mutually_exclusive = {
 
 	focus = {
 		id = ROM_prepare_for_war
-		icon = h
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
 		prerequisite = { focus = ROM_placebo6 }
 		x = 0
 		y = 1
@@ -943,7 +943,7 @@ mutually_exclusive = {
 
 	focus = {
 		id = ROM_mill_1
-		icon = GFX_GER_private_owned_industry
+		icon = GFX_focus_GER_autonomous_organization_todt
 		dynamic = yes
 		prerequisite = { focus = ROM_prepare_for_war}
 		x = -1
@@ -997,7 +997,7 @@ mutually_exclusive = {
 
 	focus = {
 		id = ROM_mill_2
-		icon = GFX_GER_curtail_the_steel_barons
+		icon = GFX_goal_generic_construct_mil_factory
 		dynamic = yes
 		prerequisite = { focus = ROM_mill_1 }
 		x = 0
@@ -1063,7 +1063,7 @@ mutually_exclusive = {
 	
 	focus = {
 		id = ROM_George_Cretzianu
-		icon = GFX_org_todt
+		icon = GFX_focus_GER_customs_union
 		prerequisite = { focus = ROM_prepare_for_war }
 		relative_position_id = ROM_prepare_for_war
 		x = 1
@@ -1116,7 +1116,7 @@ mutually_exclusive = {
 	
 	focus = {
 		id = ROM_enslave_gypsies
-		icon = GFX_goal_defence_economy_and_armament_office
+		icon = GFX_focus_generic_mass_production
 		dynamic = yes
 		prerequisite = { focus = ROM_George_Cretzianu }
 		x = 0
@@ -1169,7 +1169,7 @@ mutually_exclusive = {
 	
 	focus = {
 		id = ROM_follow_the_germans
-		icon = GFX_goal_ger_reichsarbeitsdienst
+		icon = GFX_focus_DEN_schleswigian_farmers
 		dynamic = yes
 		prerequisite = { focus = ROM_enslave_gypsies }
 		prerequisite = { focus = ROM_mill_2 }
@@ -1193,16 +1193,16 @@ mutually_exclusive = {
 
 
 	focus = {
-        id = ROM_placebo14
-        icon = GFX_focus_generic_road_investment
+        id = ROM_end_of_the_economic_programm
+        icon = GFX_focus_CONGO_gold_and_diamonds
 		
-		prerequisite = { focus = ROM_placebo15 focus = ROM_placebo16} 
+		prerequisite = { focus = ROM_jump_start_the_enconomy focus = ROM_concentrate_on_millitary} 
 
 
 
-        x = -5
+        x = 5
         y = 1
-        relative_position_id = ROM_placebo16
+        relative_position_id = ROM_jump_start_the_enconomy
         cost = 5
 
         available = { 
@@ -1251,8 +1251,8 @@ mutually_exclusive = {
 	}
 
 	focus = {
-        id = ROM_placebo15
-        icon = GFX_focus_generic_road_investment
+        id = ROM_jump_start_the_enconomy
+        icon = GFX_ROM_romanian_rearmament
 		
 		prerequisite = { focus = ROM_reichsarbeit }
 
@@ -1282,8 +1282,8 @@ mutually_exclusive = {
 
 
 	focus = {
-        id = ROM_placebo16
-        icon = GFX_focus_generic_road_investment
+        id = ROM_concentrate_on_millitary
+        icon = GFX_ROM_invite_axis_motor_companies
 		
 		prerequisite = { focus = ROM_follow_the_germans }
 
@@ -1310,9 +1310,9 @@ mutually_exclusive = {
 	}
 
 	focus = {
-		id = ROM_placebo17
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = ROM_placebo14 }
+		id = ROM_victory_over_the_allies
+		icon = GFX_focus_GER_weltpolitik
+		prerequisite = { focus = ROM_end_of_the_economic_programm }
 		
 		available = {
 
@@ -1323,7 +1323,7 @@ mutually_exclusive = {
 	
 		x = 0
 		y = 1
-		relative_position_id = ROM_placebo14
+		relative_position_id = ROM_end_of_the_economic_programm
 		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1339,9 +1339,9 @@ mutually_exclusive = {
 	}
 	
 	focus = {
-		id = ROM_placebo18
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = ROM_placebo14 }
+		id = ROM_the_great_revenge
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		prerequisite = { focus = ROM_end_of_the_economic_programm }
 		
 		available = {
 			has_war_with = SOV
@@ -1349,7 +1349,7 @@ mutually_exclusive = {
 	
 		x = 2
 		y = 1
-		relative_position_id = ROM_placebo14
+		relative_position_id = ROM_end_of_the_economic_programm
 		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1363,9 +1363,9 @@ mutually_exclusive = {
 	}
 	
 	focus = {
-		id = ROM_placebo19
-		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = ROM_placebo14 }
+		id = ROM_fight_the_west
+		icon = GFX_focus_ger_reichskommisariats_historical
+		prerequisite = { focus = ROM_end_of_the_economic_programm }
 		
 		available = {
 			has_war_with = FRA
@@ -1373,14 +1373,15 @@ mutually_exclusive = {
 	
 		x = -2
 		y = 1
-		relative_position_id = ROM_placebo14
+		relative_position_id = ROM_end_of_the_economic_programm
 		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	
 		completion_reward = {
 
-			add_ideas = ROM_switch_over_the_production
+			#  add_ideas = ROM_switch_over_the_production
+
 			
 		}
 	}
@@ -1647,7 +1648,7 @@ focus = {
 
 focus = {
 	id = ROM_his_majestys_loyal_government
-	icon = GFX_goal_generic_propaganda
+	icon = GFX_focus_GER_monarchy_compromise
 	prerequisite = { focus = ROM_institute_royal_dictatorship }
 	mutually_exclusive = { focus = ROM_flexible_foreign_policy }
 	x = -4
@@ -2226,7 +2227,7 @@ focus = {
 focus = {
 
 	id = BRA_Placebo18
-	icon = GFX_focus_generic_road_investment
+	icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
 	prerequisite = { focus = ROM_force_abdication focus = ROM_all_parties_must_end} 
 	y = 1
 	x = -4
@@ -2284,8 +2285,8 @@ focus = {
 
 focus = {
 
-	id = BRA_Placebo19
-	icon = GFX_focus_generic_road_investment
+	id = ROM_crush_the_ressistance
+	icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
 	prerequisite = { focus = BRA_Placebo18 } 
 	y = 2
 	x = -1
@@ -2319,8 +2320,8 @@ focus = {
 
 focus = {
 
-	id = BRA_Placebo20
-	icon = GFX_focus_generic_road_investment
+	id = ROM_develop_ressources
+	icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
 	prerequisite = { focus = BRA_Placebo18 } 
 	y = 2
 	x = -7
@@ -2367,8 +2368,8 @@ focus = {
 
 focus = {
 
-	id = BRA_Placebo21
-	icon = GFX_focus_generic_road_investment
+	id = ROM_the_grand_offensive
+	icon = GFX_focus_PAR_neuter_the_guion_rojo
 	prerequisite = { focus = BRA_Placebo18 } 
 	y = 2
 	x = -4
@@ -2504,7 +2505,7 @@ focus = {
 
 focus = {
 	id = ROM_standardized_kits
-	icon = GFX_GOAL_support_equipment
+	icon = GFX_focus_GER_wirtschaftswunder
 	prerequisite = { focus = ROM_victors_of_the_great_war }
 	x = -1
 	y = 1
