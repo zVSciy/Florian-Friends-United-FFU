@@ -25,7 +25,7 @@ ideas = {
 			picture = generic_economic_increase
 			
 			targeted_modifier = {
-				tag = ITA
+				tag = GER
 				trade_cost_for_target_factor = -0.5
 			}
 		}
