@@ -850,6 +850,11 @@ mutually_exclusive = {
 
         completion_reward = {
 
+			add_power_balance_value = { 
+				id = ROM_balance_of_power
+				value = 0.3
+			}
+
 
         }
 
@@ -1074,12 +1079,12 @@ mutually_exclusive = {
 
 			add_resource = {
 				type = steel
-				amount = 400
+				amount = 700
 				state = 81
 			}
 			add_resource = {
 				type = chromium
-				amount = 100
+				amount = 200
 				state = 81
 			}
 			
@@ -1262,64 +1267,78 @@ mutually_exclusive = {
 		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+
+		available = {
+			907 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
 	
 		completion_reward = {
 
 			add_timed_idea = {
 				idea = ROM_proclaim_the_victory_over_the_allies
-				days = 180
+				days = 120
 			}
 			
 		}
 	}
 	
-	focus = {
-		id = ROM_the_great_revenge
-		icon = GFX_focus_GER_support_the_proletarian_uprising
-		prerequisite = { focus = ROM_end_of_the_economic_programm }
-		
-		available = {
-			has_war_with = SOV
-		}
+# 	focus = {
+# 		id = ROM_the_great_revenge
+# 		icon = GFX_focus_GER_support_the_proletarian_uprising
+# 		prerequisite = { focus = ROM_end_of_the_economic_programm }
+# 		
+# 		available = {
+# 			has_war_with = SOV
+# 		}
 	
-		x = 2
-		y = 1
-		relative_position_id = ROM_end_of_the_economic_programm
-		cost = 5
+# 		x = 2
+# 		y = 1
+# 		relative_position_id = ROM_end_of_the_economic_programm
+# 		cost = 5
 	
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+# 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	
-		completion_reward = {
+# 		completion_reward = {
 
 			
 
 			
-		}
-	}
+# 		}
+# 	}
 	
-	focus = {
-		id = ROM_fight_the_west
-		icon = GFX_focus_ger_reichskommisariats_historical
-		prerequisite = { focus = ROM_end_of_the_economic_programm }
+	# focus = {
+	# 	id = ROM_fight_the_west
+	# 	icon = GFX_focus_ger_reichskommisariats_historical
+	# 	prerequisite = { focus = ROM_end_of_the_economic_programm }
 		
-		available = {
-			has_war_with = FRA
-		}
+	# 	available = {
+	# 		has_war_with = FRA
+	# 	}
+	# 
+	# 	x = -2
+	# 	y = 1
+	# 	relative_position_id = ROM_end_of_the_economic_programm
+	# 	cost = 5
 	
-		x = -2
-		y = 1
-		relative_position_id = ROM_end_of_the_economic_programm
-		cost = 5
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	
-		completion_reward = {
+	# 	completion_reward = {
 
 			#  add_ideas = ROM_switch_over_the_production
 
 			
-		}
-	}
+	# 	}
+	# }
 
 
 
@@ -2197,7 +2216,7 @@ focus = {
 				}
 				80 = {
 					set_building_level = {
-						type = anti_air
+						type = air_base
 						level = 10
 						instant_build = yes
 					}
@@ -2702,34 +2721,34 @@ focus = {
 	}
 }
 
- focus = {
-	id = ROM_Tanks_path
-	icon = GFX_focus_generic_road_investment
+ # focus = {
+	# id = ROM_Tanks_path
+	# icon = GFX_focus_generic_road_investment
 	
-	prerequisite = { }
-	x = 0
-	y = 10
-	relative_position_id = ROM_integrate_the_iron_guard
-	cost = 5
+# 	prerequisite = { }
+# 	x = 0
+# 	y = 10
+# 	relative_position_id = ROM_integrate_the_iron_guard
+# 	cost = 5
+# 
+# 	available = { 
+# 
+# 		has_completed_focus = ROM_taking_out_the_trash
+# 	}
+# 	
+# 
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 
+# 	completion_reward = {
+  #    add_tech_bonus = {
+	# 	name = Pz4_ausf_e
+	# 	bonus = 4
+	# 	technology = ger_p4_tank_2
+	#  }
 
-	available = { 
+	# }
 
-		has_completed_focus = ROM_taking_out_the_trash
-	}
-	
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	completion_reward = {
-     add_tech_bonus = {
-		name = Pz4_ausf_e
-		bonus = 4
-		technology = ger_p4_tank_2
-	 }
-
-	}
-
-}
+# }
 
 focus = {
 	id = ROM_expand_the_galati_shipyards
