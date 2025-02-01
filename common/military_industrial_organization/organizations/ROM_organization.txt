@@ -55,6 +55,28 @@ ROM_leonidas_works_organization = {
  
 #####################
 
+
+ROM_shore_bombardment = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_generic_sea_focused_navy
+	allowed = { 
+		tag = ROM
+		has_dlc = "Death or Dishonor"
+	}
+	available = {
+		always = yes
+	}
+	initial_trait = {
+		name = ROM_mio_trait_coastal_defense_production
+		limit_to_equipment_type = { mio_cat_eq_all_battleship }
+		production_bonus = {
+			production_resource_need_factor = -1
+		}
+		
+	}
+}
+
+
 ROM_constanta_shipyard_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_generic_naval_manufacturer_2
@@ -83,6 +105,8 @@ ROM_galati_shipyard_organization = {
 			lg_attack = 0.05
 			naval_range = -0.1
 		}
+
+		
 	}
 }
 
