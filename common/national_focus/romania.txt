@@ -28,7 +28,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 4000 y = 1000 }
+	continuous_focus_position = { x = 3400 y = 900 }
 
 #	focus = {
 #		id = ROM_
@@ -85,7 +85,7 @@ focus_tree = {
 
 
 
-        x = 10
+        x = 9
         y = 0
         
         cost = 5
@@ -118,7 +118,7 @@ focus_tree = {
 
 
 
-        x = 14
+        x = 13
         y = 0
         
         cost = 5
