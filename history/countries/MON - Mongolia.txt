@@ -25,14 +25,14 @@ set_research_slots = 5
 add_ideas = {
 	limited_conscription
 	MON_collectivisation_1
-	MON_nomad_1
+	MON_nomad_2
 	russian_closed_eco
 	MON_allow_soviet_trade
 	peace_training
 	father_check
 	no_grinding
 	special_forces_cap
-	MON_overlord_factories
+#	MON_overlord_factories
 }
 
 set_variable = {
@@ -54,6 +54,15 @@ set_popularities = {
 	communism = 60
 	neutrality = 40
 }
+
+
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 150
+	producer = MON
+}
+
+
 
 # MP_garrison_division_standard = yes
 
@@ -80,6 +89,27 @@ recruit_character = MON_ulanhu
 recruit_character = MON_khan
 recruit_character = MON_throat_singer
 recruit_character = MON_pdchigin_abaga
+
+
+
+add_dynamic_modifier = {
+	modifier = MON_the_agitprop_dynamic_modifier
+}
+
+add_to_variable = { MON_local_resources_factor = -0.15 tooltip = local_resources_factor_tt}
+add_to_variable = { MON_supply_consumption_factor = 0.15 tooltip = supply_consumption_factor_tt}
+add_to_variable = { MON_agitrop_industrial_capacity_factory = -0.15 tooltip = industrial_capacity_factory_tt}
+add_to_variable = { MON_agitprop_production_speed_buildings_factor = -0.25 tooltip = production_speed_buildings_factor_tt } 
+add_to_variable = { MON_mobilization_speed = -0.4 tooltip = mobilization_speed_tt}
+
+
+add_dynamic_modifier = {
+	modifier = MON_the_economy_dynamic_war_modifier
+}
+
+add_to_variable = {MON_economy_political_power_gain = -0.1 tooltip = political_power_gain }
+add_to_variable = {MON_economy_production_speed_industrial_complex_factor = 0.1 tooltip = production_speed_industrial_complex_factor}
+
 
 add_operation_token = {
 	tag = ENG

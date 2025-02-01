@@ -22,6 +22,19 @@ set_variable = {
 	add_dynamic_modifier = { modifier = gibraltar_defences }
 }
 
+457 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+446 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+947 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+453 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+
 starting_train_buffer = 2.5
 
 set_rule = { 
@@ -41,6 +54,7 @@ set_research_slots = 6
 set_stability = 0.6
 set_war_support = 0.1
 
+set_variable = { dockyard_major = 1 }
 #set_variable = { ENG_poster_center_icon_frame = 1 }
 set_variable = { ENG_new_propaganda_campaign = 0 } #Used to pick a poster slot
 set_variable = { ENG_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot

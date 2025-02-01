@@ -15,7 +15,7 @@ set_party_name = {
 	long_name = SOV_fascism_party_russian_long
 	name = SOV_fascism_party_russian
 }
-
+set_variable = { dockyard_major = 1 }
 starting_train_buffer = 3.2
 
 # DIPLOMACY

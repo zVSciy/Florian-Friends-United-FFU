@@ -270,6 +270,14 @@ JAP_yokosuka_organization = {
 	}
 }
 
+JAP_TakeoDoi_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_douglas_aircraft_company
+	
+	allowed = {	
+		tag = JAP 
+	}
+}
 
 
 ################################### 

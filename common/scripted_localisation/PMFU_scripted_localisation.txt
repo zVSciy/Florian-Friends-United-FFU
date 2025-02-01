@@ -19,6 +19,26 @@ defined_text = { # global
 }
 
 defined_text = { # global
+	name = MON_the_agitprop_dynamic_modifier_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "MON_the_agitprop_dynamic_modifier_loc" 
+	}
+}
+
+defined_text = { # global
+	name = MON_the_economy_dynamic_war_modifier_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "MON_the_economy_dynamic_war_modifier_loc" 
+	}
+}
+
+defined_text = { # global
 	name = MEX_economy_dynam_mod_sl
 	text = {
 		trigger = {

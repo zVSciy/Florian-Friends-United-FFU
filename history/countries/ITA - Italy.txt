@@ -28,7 +28,7 @@ set_variable = {
 
 army_experience = 200
 air_experience = 100
-
+set_variable = { dockyard_major = 1 }
 add_timed_idea = {
 	idea = no_tradeback
 	days = 765

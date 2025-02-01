@@ -1036,3 +1036,26 @@ defined_text = {
 		
 	}
 }
+defined_text = { # global
+	name = consumer_goods_dockyards_sl
+	text = {
+		trigger = {
+			tag = USA
+			has_variable = dockyard_major
+		}
+		localization_key = "dockyard_cg_mod_usa" 
+	}
+	text = {
+		trigger = {
+			NOT = { tag = USA }
+			has_variable = dockyard_major
+		}
+		localization_key = "dockyard_cg_mod_major" 
+	}
+	text = {
+		trigger = {
+			NOT = {	has_variable = dockyard_major }
+		}
+		localization_key = "dockyard_cg_mod_minor"
+	}
+}

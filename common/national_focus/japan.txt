@@ -1882,36 +1882,22 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			# add_ideas = JAP_indochina_terrain_training
-			JAP_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { JAP_japanese_army_terrain_penalty_reduction = 0.025 tooltip = terrain_penalty_reduction_tt }
+			custom_effect_tooltip = JAP_urban_invasion_effect
 			hidden_effect = {
-				every_army_leader={
-					add_trait = {
-     					trait = five_terrain_penalty_reduction
-					}
-				}
+				set_technology = { urban_invasion = 1 }
 			}
 			MAN = {
-				add_ideas = JAP_indochina_terrain_training
+				custom_effect_tooltip = JAP_urban_invasion_effect
 				hidden_effect = {
-					every_army_leader={
-						add_trait = {
-     						trait = five_terrain_penalty_reduction
-						}
-					}
+					set_technology = { urban_invasion = 1 }
 				}
 			}
 			SIA = {
-				add_ideas = JAP_indochina_terrain_training
+				custom_effect_tooltip = JAP_urban_invasion_effect
 				hidden_effect = {
-					every_army_leader={
-						add_trait = {
-     						trait = five_terrain_penalty_reduction
-						}
-					}
-				}
-			}
+					set_technology = { urban_invasion = 1 }
+				}  
+			}  
 		}
 	}
 
@@ -4070,7 +4056,7 @@ focus_tree = {
 				BRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-				HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				FRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				hidden_effect = {
 					GER = { remove_ideas = GER_africaaaaaaaaaaaaaa }
 					ITA = { remove_ideas = GER_africaaaaaaaaaaaaaa }
@@ -5312,10 +5298,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -5336,10 +5322,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}

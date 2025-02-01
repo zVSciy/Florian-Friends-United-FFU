@@ -122,6 +122,15 @@
   MON_soviet_transportation_desc:0 "The Mongolian railway network is very underdeveloped or doesn't exist at all, without proper infrastructure our army will have an hard time fighting on the eastern front"
   MON_volunteers:0 "Mongolian Volunteers"
   MON_volunteers_desc:0 "As a socialist state, we believe in the international solidarity of the working class and the struggle against imperialism and fascism. Therefore, we will send Mongolia volunteers to support our Soviet comrades in Spain who are fighting against Franco's fascist regime."
+  MON_war_mobilisation:0 "Mobilization of the Mongolian Economy"
+  MON_technical_assistance:0 "American Technical Assistance"
+  MON_tankograd:0 "Create Our Tankograd"
+  MON_coordinate_industry:0 "Soviet Industrial Advisors"
+  MON_slacken_armor:0 "Slacken Armor Standards"
+  MON_slacken_inf:0 "Slacken Infantry Standards"
+  MON_pcdi:0 "Form Our Own PCDI"
+  MON_exploit_ressources:0 "Exploit Untapped Resources"
+  SOV_stalins_organ:0 "Mobilize Mechanized Divisions"
 
   #### EVENTS ####
   mongolia.1.t:0 "Mongolia Calls for Mongol Unity" #pretty much all of these events seem outdated
@@ -195,3 +204,14 @@
 
   ### DESCRIPTION ###
   MON_GATHERING_STORM_DESC:0 "In 1936, Mongolia was a landlocked country located between China and the Soviet Union, and was ruled by a totalitarian communist regime under the leadership of Khorloogiin Choibalsan. However, Mongolia's independence was threatened by both China and the Soviet Union, who had claims on the territory./n/nIn addition to its geopolitical challenges, Mongolia also faced internal strife. The country was divided between several powerful factions, including Buddhist monasteries and feudal lords."
+
+
+ ### TOOLTIP DYNAMIC MODIFIER ###
+ MON_the_agitprop_dynamic_modifier:0 "[MON_the_agitprop_dynamic_modifier_sl]"
+ MON_the_agitprop_dynamic_modifier_loc_intro:0 "Modify §Y$MON_the_agitprop_dynamic_modifier$§! by"
+ MON_the_agitprop_dynamic_modifier_loc:0 "bayard fix"
+
+ MON_the_economy_dynamic_war_modifier:0 "[MON_the_economy_dynamic_war_modifier_sl]"
+ MON_the_economy_dynamic_war_modifier_loc_intro:0 "Modify §Y$MON_the_economy_dynamic_war_modifier$§! by"
+ MON_the_economy_dynamic_war_modifier_loc:0 "bayard Economy"
+ MON_spawn_ins_tt:0 "§OSpawns in 9 Mechanized Katyusha Divisions!§!"

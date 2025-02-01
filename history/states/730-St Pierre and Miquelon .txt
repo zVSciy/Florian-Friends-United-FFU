@@ -3,12 +3,16 @@ state={
 	name="STATE_730"
 	manpower=3426
 	state_category = tiny_island
+	resources={
+		chromium=600 # moved from new caledonia 635
+	}
 
 	history={
 		add_core_of = FRA
 		owner = FRA
 		buildings = {
 			infrastructure = 3
+			steel_refinery = 3
 			373 = {
 				naval_base = 1
 			}

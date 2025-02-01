@@ -1733,7 +1733,7 @@ country_event = {
 					}
 				}
 				# 12 Spawn Ins
-				905 = {
+				549 = {
 					if = {					
 						limit = { 
 							is_controlled_by = ENG
@@ -1746,7 +1746,7 @@ country_event = {
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
 					}
 				}
-				904 = {
+				885 = {
 					if = {					
 						limit = { is_controlled_by = ENG }
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
@@ -1810,7 +1810,7 @@ country_event = {
 					}
 				}
 				# 12 Spawn Ins
-				905 = {
+				549 = {
 					if = {					
 						limit = { is_controlled_by = ENG }
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
@@ -1821,7 +1821,7 @@ country_event = {
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }
 					}
 				}
-				904 = {
+				885 = {
 					if = {					
 						limit = { is_controlled_by = ENG }
 						create_unit = { division = "division_template = \"Last Stand of Egypt\" start_experience_factor = 0.4 force_equipment_variants = { infantry_equipment_2 = { owner = \"FRA\" } }" owner = FRA }

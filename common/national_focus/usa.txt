@@ -2991,7 +2991,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			democratic > 0.95
+			#democratic > 0.95
 			has_war_support > 0.30
 		}
 		bypass = {
@@ -3126,7 +3126,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		available = {
-			democratic > 0.95
+			#democratic > 0.95
 			has_war_support > 0.30
 		}
 
@@ -3234,7 +3234,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_military_industrial_complex }
 		relative_position_id = USA_military_industrial_complex
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -3242,13 +3242,13 @@ focus_tree = {
 
 		available = {
 			OR = {
-				# FRA = {
-				# 	has_capitulated = yes
-				# }
+				ENG = {
+					has_capitulated = yes
+				}
 				VIC = {
 					has_country_flag = VIC_france_capped
 				}
-				date > 1940.1.1
+				date > 1939.12.1
 			}
 		}
 		
@@ -3318,7 +3318,6 @@ focus_tree = {
 				has_war = yes
 				has_war_support > 0.30
 			}
-			democratic > 0.95
 		}
 		continue_if_invalid = yes
 		x = 1
@@ -3369,7 +3368,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_the_giant_wakes
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3455,42 +3454,6 @@ focus_tree = {
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 4
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 4
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = USA_we_can_do_it
 		}
@@ -3498,15 +3461,18 @@ focus_tree = {
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_USA_rubber_program
-		prerequisite = { focus = USA_wartime_industry }
-		relative_position_id = USA_wartime_industry
-		x = 2
+		prerequisite = { focus = USA_construction_4 }
+		relative_position_id = USA_construction_4
+		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		#ai_will_do = {
 		#	factor = 1
 		#}
 		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_war = yes
+		}
 		completion_reward = {
 			hidden_effect = {
 			modify_building_resources = {
@@ -3565,24 +3531,21 @@ focus_tree = {
 	focus = {
 		id = USA_victory_plan
 		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = USA_wartime_industry }
-		x = -2
+		prerequisite = { focus = USA_lend_lease_act }
+		x = 0
 		y = 1
-		cost = 5
+		cost = 1
 
-		relative_position_id = USA_wartime_industry
+		relative_position_id = USA_lend_lease_act
 
 		available = { 
 			AND = {
-				date > 1941.1.1
+				date > 1939.9.1
 				OR = {
 					ENG = {has_capitulated = yes}
 					SOV= {surrender_progress > 0.85 }
 					USA = {surrender_progress > 0.50 }
 				}
-			}
-			ENG = {
-				casualties > 100000
 			}
 		}
 				
@@ -3654,50 +3617,13 @@ focus_tree = {
 					level = 10
 				}
 			}
-		    # CAN = { 
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}
-			# }
-			# SAF = {
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}
-			# }
-			# MEX = { 
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}	
-			# }
-			# BRA = {
-			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
-			# 	add_offsite_building = {
-			# 		type = industrial_complex
-			# 		level = 20
-			# 	}
-			# 	add_offsite_building = {
-			# 		type = arms_factory
-			# 		level = 20
-			# 	}
-			# }
+			hidden_effect = {
+				every_state = { limit = { has_state_flag = ita_dday}
+					remove_dynamic_modifier = {
+						modifier = ITALY_DDAY_ENTRENCHMENT5
+					}
+				}			
+			}
 			
 		}
 	}
@@ -3789,6 +3715,64 @@ focus_tree = {
 				id = USA_war_bop
 				value = -1
 			}
+			if = { # is it far left? -> already far left, make sure to apply the modifiers
+				limit = {
+					has_country_flag = USA_far_left
+				}
+				# Reapply the idea to make sure the modifiers are still active
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_asia2
+				}
+			}	
+
+			if = { # is it slightly left? -> move it to the far left
+				limit = {
+					has_country_flag = USA_left1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_asia2
+				}
+				clr_country_flag = USA_left1
+				set_country_flag = USA_far_left
+			}
+
+			if = { # is it center? -> move it to the far left
+				limit = {
+					has_country_flag = USA_bop_center
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_nothing
+					add_idea = USA_focus_on_asia2
+				}
+				clr_country_flag = USA_bop_center
+				set_country_flag = USA_far_left
+			}
+
+			if = { # is it slightly right? -> move it to slight left
+				limit = {
+					has_country_flag = USA_right1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_asia1
+				}
+				clr_country_flag = USA_right1
+				set_country_flag = USA_left1
+			}
+
+			if = { # is it far right? -> move it to the center
+				limit = {
+					has_country_flag = USA_far_right
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe2
+					add_idea = USA_focus_on_nothing
+				}
+				clr_country_flag = USA_far_right
+				set_country_flag = USA_bop_center
+			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange }
 		}
 	}
@@ -3834,6 +3818,64 @@ focus_tree = {
 			add_power_balance_value = {
 				id = USA_war_bop
 				value = 1
+			}
+			if = { # is it far right? -> already far right, make sure to apply the modifiers
+				limit = {
+					has_country_flag = USA_far_right
+				}
+				# Reapply the idea to make sure the modifiers are still active
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_europe2
+				}
+			}	
+			
+			if = { # is it slightly right? -> move it to the far right
+				limit = {
+					has_country_flag = USA_right1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_europe2
+				}
+				clr_country_flag = USA_right1
+				set_country_flag = USA_far_right
+			}
+
+			if = { # is it center? -> move it to the far right
+				limit = {
+					has_country_flag = USA_bop_center
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_nothing
+					add_idea = USA_focus_on_europe2
+				}
+				clr_country_flag = USA_bop_center
+				set_country_flag = USA_far_right
+			}
+
+			if = { # is it slightly left? -> move it to slight right
+				limit = {
+					has_country_flag = USA_left1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_europe1
+				}
+				clr_country_flag = USA_left1
+				set_country_flag = USA_right1
+			}
+
+			if = { # is it far left? -> move it to the center
+				limit = {
+					has_country_flag = USA_far_left
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia2
+					add_idea = USA_focus_on_nothing
+				}
+				clr_country_flag = USA_far_left
+				set_country_flag = USA_bop_center
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black }
 		}

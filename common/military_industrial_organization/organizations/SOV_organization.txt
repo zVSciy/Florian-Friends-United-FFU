@@ -85,48 +85,27 @@ SOV_morozov_design_bureau_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		# IF = {
-		# 	limit = {
-		# 		FROM = { NOT = { original_tag = SOV } }
-		# 	}
-		# 	FROM = { NOT = { has_war_with = SOV } }
-		# }
-		# # ELSE = {
-		# # 	OR = {
-		# # 		FROM = { has_completed_focus = SOV_depoliticize_industry }
-		# # 		AND = {
-		# # 			FROM = { has_completed_focus = SOV_tank1 }
-		# # 			FROM = { has_completed_focus = SOV_new_corps2 }
-		# # 		}
-		# # 	}
-		# # }
+		
+		
 
-		# IF = {
-		# 	limit = {
-		# 		FROM = { tag = MEX }
-		# 	}
-		# 	FROM = { is_in_faction_with = SOV }
-		# }
-		# ELSE_IF = {
-		# 	limit = {
-		# 		FROM = {
-		# 			OR = {
-		# 				is_literally_china = yes
-		# 				tag = MAN
-		# 				tag = MEN
-		# 			}
-		# 		} 
-		# 	}
-		# 	FROM = { has_completed_focus = CHI_hire_soviet_designer }
-		# }
-		# ELSE_IF = {
-		# 	limit = {
-		# 		FROM = { original_tag = NOR }
-		# 	}
-		# 	FROM = { has_completed_focus = NOR_invite_soviet_designers }
-		# }
-
+	}
+	add_trait = {
+		token = MON_morozov_upgrade_buff
+		name = MON_morozov_upgrade_buff
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_technology
+		special_trait_background = yes
+		position = {
+			x = 0
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = MON_encourage_nomadism
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.15
+		}
 	}
 
 	# add_trait = { 

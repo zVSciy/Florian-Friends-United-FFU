@@ -1516,7 +1516,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 10
+		cost = 3
 
 		ai_will_do = {
 			factor = 90
@@ -1728,7 +1728,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 0
@@ -1799,7 +1799,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_domestic_arms_industry
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 60

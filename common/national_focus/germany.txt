@@ -3862,7 +3862,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_mobilise_reich
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -3949,7 +3949,7 @@ focus_tree = {
 	focus = {
 		id = GER_barb
 		icon = GFX_ger_final_crusade
-		prerequisite = { focus = GER_prepare_barb }
+		prerequisite = { focus = GER_hold_africa }
 		
 		available = {
 			if = {
@@ -3970,7 +3970,7 @@ focus_tree = {
 			}
 			OR = {
 				AND = {
-					date > 1941.5.1
+					date > 1941.6.22
 					date < 1941.8.1
 				}
 				AND = {
@@ -4011,7 +4011,7 @@ focus_tree = {
 
 		will_lead_to_war_with = SOV
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_prepare_barb
 		cancel_if_invalid = yes
 		available_if_capitulated = no
@@ -6726,7 +6726,7 @@ focus_tree = {
 		bypass = {
 		}
 		cancel_if_invalid = yes
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GER_ardennes
 		cost = 2
@@ -6778,19 +6778,18 @@ focus_tree = {
 	focus = {
 		id = GER_hold_africa
 		icon = GFX_focus_GER_mittelafrika
-		prerequisite = { focus = GER_mobilise_reich }
-		x = 3
+		prerequisite = { focus = GER_prepare_barb }
+		x = 0
 		y = 1
-		relative_position_id = GER_mobilise_reich
-		cost = 5
+		relative_position_id = GER_prepare_barb
+		cost = 1
 		
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		available = {
-			has_war_with = SOV
-			202 = {is_controlled_by_ROOT_or_ally = yes}
+			date > 1941.1.1
 		} 
 
 		completion_reward = {
@@ -6807,16 +6806,16 @@ focus_tree = {
 	focus = {
 		id = GER_ardennes
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_hold_africa }
+		prerequisite = { focus = GER_mobilise_reich }
 		available = {
-			surrender_progress > 0.15
+			surrender_progress > 0.05
 			has_war_with = SOV
 		}
 		bypass = {
 		}
-		x = 1
+		x = 3
 		y = 1
-		relative_position_id = GER_hold_africa
+		relative_position_id = GER_mobilise_reich
 		cost = 2
 		ai_will_do = {
 			factor = 10
@@ -7190,7 +7189,7 @@ focus_tree = {
 		icon = GFX_GER_naval_rearmament
 		x = 29
 		y = 0
-		cost = 2
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -7278,7 +7277,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_rearmament
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -7300,7 +7299,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					dockyard > 0
 					free_building_slots = {
 						building = dockyard
 						size > 2
@@ -7318,7 +7316,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					dockyard > 0
 					free_building_slots = {
 						building = dockyard
 						size > 2
@@ -7369,7 +7366,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_naval_effort2
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}	
@@ -7387,16 +7384,16 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = bb_tech
 			}
@@ -7479,16 +7476,6 @@ focus_tree = {
 				}
 			}
 			add_ideas = GER_germaniawerft
-			GER_navy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_navy_refit_speed = 0.05 tooltip = refit_speed_tt }
-			58 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-			}
 		}
 	}
 	focus = {
@@ -7579,15 +7566,15 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = ti_bonus
 				name = GER_trade_interdiction
-				cost_reduction = 0.5
-				uses = 2
+				cost_reduction = 0.75
+				uses = 5
 				category = naval_doctrine
 			}
 			add_tech_bonus = {
 				name = nav_bomber_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 2
-				category = naval_bomber
+				category = naval_air
 			}
 		}
 	}
@@ -7708,7 +7695,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_naval_effort2
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -7730,27 +7717,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			navy_experience = 50
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = GER_u_boat_effort_2dockyards
-			}
+			navy_experience = 150
 			add_tech_bonus = {
 				name = GER_u_boat_effort
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ss_tech
 			}
@@ -7780,10 +7750,10 @@ focus_tree = {
 
 		completion_reward = {
 			58 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 				set_building_level = {
@@ -7812,12 +7782,6 @@ focus_tree = {
 		
 		completion_reward = {
 			19 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
 				set_building_level = {
 					type = naval_base
 					province = 9737 #bordaux
@@ -8991,8 +8955,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = GER_JAP_trade
-			JAP = { add_ideas = JAP_GER_trade }
+			JAP = { add_offsite_building = { type = industrial_complex level = 1 } }
 		}
 	}
 	
@@ -9018,8 +8981,7 @@ focus_tree = {
 				add_opinion_modifier = { target = GER modifier = ger_jap_diplomacy_focus }
 			}
 			add_offsite_building = { type = industrial_complex level = 2 }
-			ITA = { add_offsite_building = { type = industrial_complex level = 2 } }
-			ITA = { add_offsite_building = { type = dockyard level = 2 } }
+			ITA = { add_offsite_building = { type = industrial_complex level = 4 } }
 		}
 	}
 
@@ -9044,7 +9006,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GER_ITA_trade
-			ITA= { add_ideas = ITA_GER_trade }
 			ITA = { add_offsite_building = { type = industrial_complex level = 2 } }
 		}
 	}

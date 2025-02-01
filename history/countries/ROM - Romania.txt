@@ -35,6 +35,15 @@ set_technology = {
 	fra_light_tank_export = 1
 }
 
+
+
+add_dynamic_modifier = {
+	modifier = ROM_army_dynamic_modifier
+	modifier = ROM_occupation_dynamic_modifier
+}
+
+
+
 # MP_garrison_division_standard = yes
 
 add_timed_idea = {
@@ -490,4 +499,15 @@ add_operation_token = {
 add_operation_token = {
 	tag = CZE
 	token = token_navy_friendly
+}
+
+set_power_balance = {
+
+	id = ROM_balance_of_power
+			
+	left_side = ROM_welfare_side
+			
+	right_side = ROM_warfare_side
+			
+	set_value = 0
 }

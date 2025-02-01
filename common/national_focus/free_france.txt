@@ -1473,7 +1473,6 @@ focus_tree = {
 			# remove_ideas = { FRA_market_dynamism }
 			remove_ideas = { FRA_disjointed_government }
 			remove_ideas = { FRA_no_weird_licensed_tanks }
-			remove_ideas = { FRA_outdated_tank_production_lines }
 			# custom_effect_tooltip = FRA_remove_pre_cap_buffs
 			# hidden_effect = {
 			# 	remove_ideas = { FRA_defeatism }
@@ -1493,7 +1492,6 @@ focus_tree = {
 			# 	remove_ideas = { FRA_market_dynamism }
 			# 	remove_ideas = { FRA_disjointed_government }
 			# 	remove_ideas = { FRA_no_weird_licensed_tanks }
-			# 	remove_ideas = { FRA_outdated_tank_production_lines }
 			# }
 		}
 	}

@@ -168,29 +168,6 @@ characters={
 			}
 		}
 	}
-	BRA_epaminondas_dos_santos={
-		advisor={
-			slot = high_command
-			idea_token = BRA_epaminondas_dos_santos
-			ledger = air 
-			allowed = {
-				original_tag  = BRA
-			}
-			traits  = {
-				air_air_combat_training_2 
-			}
-			cost = 100
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-		name="BRA_epaminondas_dos_santos"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_south_america_1"
-			}
-		}
-	}
 	BRA_ismael_motta_paes={
 		advisor={
 			slot = air_chief
@@ -210,53 +187,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_south_america_2"
-			}
-		}
-	}
-	BRA_lindolfo_collor={
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_lindolfo_collor
-			allowed = {
-				original_tag  = BRA
-			}
-			available = {
-				has_completed_focus = BRA_adopt_federalism
-			}
-			traits  = {
-				financial_expert 
-			}
-		}
-		name="BRA_lindolfo_collor"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_south_america_3"
-			}
-		}
-	}
-	BRA_mark_clark={
-		advisor={
-			slot = high_command
-			idea_token = BRA_mark_clark
-			ledger = army 
-			allowed = {
-				original_tag  = BRA
-			}
-			available  = {
-				has_completed_focus  = BRA_brazilian_expeditionary_force 
-			}
-			traits  = {
-				army_infantry_3 
-			}
-			cost = 150
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-		name="BRA_mark_clark"
-		portraits={
-			army={
-				small="GFX_idea_mark_clark"
 			}
 		}
 	}
@@ -349,27 +279,6 @@ characters={
 			}
 		}
 	}
-	BRA_estavao_alves_correa={
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_estavao_alves_correa
-			allowed = {
-				original_tag  = BRA
-			}
-			available  = {
-				has_completed_focus  = BRA_appease_the_coffee_oligarchs 
-			}
-			traits  = {
-				coffee_oligarch 
-			}
-		}
-		name="BRA_estavao_alves_correa"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_south_america_2"
-			}
-		}
-	}
 	BRA_joao_baptista_de_morais={
 		advisor={
 			slot = army_chief
@@ -434,48 +343,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_south_america_1"
-			}
-		}
-	}
-	BRA_gustavo_campanema={
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_gustavo_campanema
-			allowed = {
-				original_tag  = BRA
-			}
-			available  = {
-				has_completed_focus  = BRA_stay_with_vargas 
-			}
-			traits  = {
-				technocrat 
-			}
-		}
-		name="BRA_gustavo_campanema"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-	}
-	BRA_washington_luis_pereira={
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_washington_luis_pereira
-			allowed = {
-				original_tag  = BRA
-			}
-			available  = {
-				has_completed_focus  = BRA_adopt_federalism 
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-		name="BRA_washington_luis_pereira"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_south_america_1"
 			}
 		}
 	}

@@ -115,6 +115,13 @@ ENG_no_AIR = {
 	state_production_speed_air_base_factor = -4
 }
 
+ENG_no_portspam = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	state_production_speed_naval_base_factor = -10
+}
+
 SOV_the_economy_dynamic_peace_modifier = {
 	enable = { always = yes }
 
@@ -681,6 +688,86 @@ BRA_State_of_emergency_dynamic_modifier = {
 	neutrality_drift = BRA_State_of_emergency_neutrality_drift
 	war_support_factor = BRA_State_of_emergency_war_support_factor
 
+
+
+}
+
+
+MON_the_agitprop_dynamic_modifier = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_generic_reserve_divisions
+	
+	mobilization_speed = MON_agitprop_mobilization_speed
+	stability_weekly = MON_agitprop_stability_weekly
+	production_factory_max_efficiency_factor = MON_agitprop_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = MON_agitprop_production_factory_efficiency_gain_factor
+	conscription = MON_agitprop_conscription
+	research_speed_factor = MON_agitprop_research_speed_factor
+	operative_slot = MON_agitprop_operative_slot
+	stability_factor = MON_agitprop_stability_factor
+	production_speed_buildings_factor = MON_agitprop_production_speed_buildings_factor
+	local_resources_factor = MON_agitprop_local_resources_factor
+	experience_gain_factor = MON_agitprop_experience_gain_factor
+	army_morale_factor = MON_agitprop_army_morale_factor
+	local_resources_factor = MON_local_resources_factor
+	supply_consumption_factor = MON_supply_consumption_factor
+	industrial_capacity_factory = MON_agitrop_industrial_capacity_factory
+	mobilization_speed = MON_mobilization_speed
+}
+
+
+
+MON_the_economy_dynamic_war_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan_military
+	
+	production_speed_industrial_complex_factor = MON_economy_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = MON_economy_production_speed_arms_factory_factor
+	political_power_gain = MON_economy_political_power_gain
+	production_speed_bunker_factor = MON_economy_production_speed_bunker_factor
+	line_change_production_efficiency_factor = MON_economy_equipment_line_change_production_efficiency_factor
+	production_factory_efficiency_gain_factor = MON_economy_production_factory_efficiency_gain_factor
+	global_building_slots_factor = MON_economy_global_building_slots_factor
+	production_speed_synthetic_refinery_factor = MON_economy_production_speed_synthetic_refinery_factor
+	production_factory_start_efficiency_factor = MON_economy_production_factory_start_efficiency_factor
+	conscription = MON_economy_conscription
+	consumer_goods_factor = MON_economy_consumer_goods_factor
+	industrial_capacity_factory = MON_economy_industrial_capacity_factory
+	local_resources_factor = MON_economy_local_resources_factor
+	production_speed_buildings_factor = MON_economy_production_speed_buildings_factor
+	production_factory_max_efficiency_factor = MON_economy_production_factory_max_efficiency_factor
+	
+}
+
+
+ROM_army_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_romanian_army_icon_idea
+
+	army_core_attack_factor = ROM_romanian_army_army_core_attack_factor
+	army_core_defence_factor = ROM_romanian_army_army_core_defence_factor
+	conscription_factor = ROM_romanian_army_conscription_factor
+	conscription = ROM_romanian_army_conscription
+	railway_gun_bombardment_factor = ROM_romanian_army_railway_gun_bombardment_factor
+	army_morale_factor = ROM_romanian_army_army_morale_factor
+	army_org_factor = ROM_romanian_army_army_org_factor
+}
+
+
+ROM_occupation_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_romanian_army_icon_idea
+
+	compliance_gain = ROM_occupation_compliance_gain
+	compliance_growth = ROM_occupation_compliance_growth
+	non_core_manpower = ROM_occupation_non_core_manpower
+	resistance_growth = ROM_occupation_resistance_growth
+	starting_compliance = ROM_occupation_starting_compliance
+	required_garrison_factor = ROM_required_garrison_factor
 
 
 }

@@ -316,15 +316,6 @@ is_csa_state = {
 	}
 }
 
-has_naval_treaty_trigger = {
-	OR = {
-		has_idea = MTG_naval_treaty_adherent
-		has_idea = MTG_naval_treaty_cheating
-		has_idea = MTG_naval_treaty_adherent_reduced
-		has_idea = MTG_naval_treaty_cheating_reduced
-	}
-}
-
 ai_air_doctrine_tier_1_trigger = {
 	OR = {
 		has_tech = naval_strike_tactics
@@ -587,18 +578,6 @@ owns_or_subject_of = {
 	custom_trigger_tooltip = {
 		tooltip = owns_or_subject_of_tt
 		owner = {
-			OR = {
-				tag = ROOT
-				is_subject_of = ROOT
-			}
-		}
-	}
-}
-
-controls_or_subject_of = {
-	custom_trigger_tooltip = {
-		tooltip = controls_or_subject_of_tt
-		controller = {
 			OR = {
 				tag = ROOT
 				is_subject_of = ROOT

@@ -29,7 +29,7 @@ operations = {
 		}
 
 		fire_only_once = yes
-		days_mission_timeout = 1975
+		days_mission_timeout = 1825
 		
 		available = {
 			always = no
@@ -54,7 +54,7 @@ operations = {
 			BRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }	
+			FRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }	
 			hidden_effect = {
 				GER = { remove_ideas = GER_africaaaaaaaaaaaaaa }
 				ITA = { remove_ideas = GER_africaaaaaaaaaaaaaa }

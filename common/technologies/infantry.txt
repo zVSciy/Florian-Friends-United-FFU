@@ -946,8 +946,6 @@ technologies = {
 			acclimatization_hot_climate_gain_factor = 0.05
 			acclimatization_cold_climate_gain_factor = 0.05
 		}
-		special_forces_cap = 0.05
-		special_forces_min = 44
 		
 		#dependencies = {
 		#	OR = { 
@@ -996,14 +994,8 @@ technologies = {
 
 		category_special_forces = {
 			max_organisation = 5 #10
-			max_strength = 1
-			# soft_attack = 0.05
-			# hard_attack = 0.05
-			defense = 0.05
+			soft_attack = 0.05
 		}
-
-		special_forces_training_time_factor = 0.1
-		special_forces_min = 44
 		
 		path = {
 			leads_to_tech = extreme_environment_training
@@ -1038,12 +1030,8 @@ technologies = {
 
 		category_special_forces = {
 			breakthrough = 0.05
-			max_organisation = 5
+			max_strength = 1
 		}
-
-		special_forces_cap = 0.05
-		special_forces_training_time_factor = -0.2
-		special_forces_min = 44
 		
 		path = {
 			leads_to_tech = survival_training
@@ -1075,17 +1063,11 @@ technologies = {
 	extreme_environment_training = {
 
 		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.50
-			acclimatization_cold_climate_gain_factor = 0.50
-			soft_attack = 0.05
-			# hard_attack = 0.05
-			breakthrough = 0.05
-			# supply_consumption_factor = -0.01
+			hard_attack = 0.05
 		}
-		
+		coordination_bonus = 0.025
+
 		# special_forces_no_supply_grace = 48
-		special_forces_training_time_factor = 0.1
-		special_forces_min = 44
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -1117,14 +1099,11 @@ technologies = {
 	survival_training = {
 
 		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.20
-			acclimatization_cold_climate_gain_factor = 0.20
-			supply_consumption_factor = -0.01
+			default_morale = 0.1
 		}
+		land_reinforce_rate = 0.05
 		
-		special_forces_no_supply_grace = 48
-		special_forces_out_of_supply_factor = -0.2
-		special_forces_min = 44
+		special_forces_no_supply_grace = 72
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -1163,7 +1142,6 @@ technologies = {
 		}
 		
 		special_forces_no_supply_grace = 48
-		special_forces_min = 55
 
 		research_cost = 2
 		start_year = 1944
@@ -2553,13 +2531,13 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = 38
+			max_strength = 26
 		}
 		mechanized = {
-			max_strength = 48
+			max_strength = 30
 		}
 		category_all_infantry = {
-			max_strength = 24
+			max_strength = 20
 		}
 	}
 
@@ -2574,13 +2552,13 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = -38
+			max_strength = -26
 		}
 		mechanized = {
-			max_strength = -48
+			max_strength = -30
 		}
 		category_all_infantry = {
-			max_strength = -24	
+			max_strength = -20
 		}
 	}
 
@@ -2655,6 +2633,25 @@ technologies = {
 
 		enable_subunits = {
 			penal_battalion
+		}
+	}
+
+	urban_invasion = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+		marine = {
+			urban = {
+				attack = 0.1
+			}
+			town = {
+				attack = 0.1
+			}
 		}
 	}
 

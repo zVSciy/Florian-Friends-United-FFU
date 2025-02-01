@@ -109,7 +109,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED = 3 				-- Base factory speed multiplier
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
-NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 200
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.50	-- How much fuel will be transferred on annexation
 NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.25			-- How many convoys will be transferred on annexation
 NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 100	-- Ratio which % of army in field can be trained
@@ -320,7 +320,7 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.50                    -- speed bonus
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0
 NDefines.NMilitary.GENERATE_AI_DIV_COMMAND_HISTORY_ENTRIES = false	--Should we generate history entries for the AI (may cause savegame bloat)
 NDefines.NMilitary.FIELD_OFFICER_PROMOTION_PENALTY = 0.0		--Amount of division experience lost when promoting a commander (reduced by modifiers)
-NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 5				-- 	cost to assign a new trait to a unit leader
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0				-- 	cost to assign a new trait to a unit leader
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1			-- Which level a field marhal or general has to be before they can pick their preferred tactic
 
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.05
@@ -414,7 +414,8 @@ NDefines.NAir.FUEL_COST_MULT = 0.17 --0.35
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1.6 -- How much aircrafts in region improves air detection (up to effective count).
-NDefines.NAir.ESCORT_FACTOR = 5  		-- cas enters battle earlier, fucks a lot of shit up
+NDefines.NAir.DISRUPTION_FACTOR = 4
+NDefines.NAir.ESCORT_FACTOR = 5.5		-- cas enters battle earlier, fucks a lot of shit up
 NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.70
 NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.70
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.2			--	Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
@@ -520,7 +521,7 @@ NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy 
 NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.1 			-- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 0.9 -- org will clamped to this ratio on manual move
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12 -- unit speed on water :) -> vanilla 6
-
+NDefines.NNavy.MISSION_MAX_REGIONS = 5             --vanilla 0 | Limit of the regions that can be assigned to naval mission. Set to 0 for unlimited.
 
 NDefines.NRailwayGun.ANNEX_RATIO = 1				-- How many railway guns will be transferred on annexation
 
@@ -584,13 +585,18 @@ NDefines.NOperatives.PROPAGANDA_SUB_NETWORK_STRENGTH_FACTOR = 0				-- Multiplied
 NDefines.NOperatives.PROPAGANDA_DEFENSE_FACTOR = 0					-- Multiplied to the target's defense before being subtracted from the Stability/WarSupport drift caused by an operative
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0				-- Multiplied to the Stability/WarSupport drift values of each operative after the one with the greatest values. The process is done separatly for Stability and WarSupport
 NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0
-NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political power used to become Spy Master
+NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 100					-- Number of political power used to become Spy Master
 NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0			-- Number of agency upgrades you need before becoming Spy Master
 -- NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999						-- Number of days needed to create an intelligence agency
 -- NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 1				-- The minimum value of the highest VP in a state to consider the state as a valid target to start building an intel network
 NDefines.NOperatives.INTEL_NETWORK_MIN_STRENGTH_TO_TARGET = 1		-- 	The minimum value of the intel network in a state to consider it a valid target to deploy an operative in
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 50			--	Number of days needed to upgrade an intelligence agency
+NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
+	0.0, 	0.0, --0.0, 	0.0, -- 0 operative for [0, 10)
+	1.0,  	1.0, --0.25,  	10.0, -- 0.25 operative for [10, 50)
+	1.0, 	50.0, --0.5, 	50.0, -- 0.5 operative for >= 50
+}
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
@@ -735,3 +741,11 @@ NDefines.NGraphics.ROOT_FRONT_OFFSET = 2
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
 NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 6
+
+
+NDefines.NProject.RECRUIT_SCIENTIST_COST = {    -- Amount of pp to hire a scientist based on available scientist
+10,            -- pp cost if no available scientist
+20,            -- pp cost if 1 available scientist
+25,            -- pp cost if 2 available scientist
+30,            -- pp cost if more than 2 available scientist
+}
