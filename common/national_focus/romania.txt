@@ -1535,11 +1535,7 @@ focus = {
 	}
 
 	available = {
-		is_subject = no
-		has_war_with = SOV
-		surrender_progress > 0.05
-		NOT = { GER = { has_idea = GER_barbarossa } }
-		is_in_faction_with = GER
+		always = no
 	}
 
 	bypass = {
