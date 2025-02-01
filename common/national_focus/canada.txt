@@ -761,7 +761,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -785,7 +785,7 @@ focus_tree = {
 			CAN_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { CAN_canadian_economy_local_resources_factor = 0.10 tooltip = local_resources_factor_tt }
 			add_to_variable = { CAN_canadian_economy_stability_factor = -0.05 tooltip = stability_factor_tt }
-			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { CAN_canadian_economy_production_speed_synthetic_refinery_factor = 0.1 tooltip = production_speed_synthetic_refinery_factor_tt }
 			add_to_variable = { CAN_canadian_economy_production_speed_steel_refinery_factor = 0.1 tooltip = production_speed_steel_refinery_factor_tt }
@@ -800,7 +800,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -859,6 +859,7 @@ focus_tree = {
 			CAN_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { CAN_canadian_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 			add_to_variable = { CAN_canadian_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
@@ -871,7 +872,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -903,7 +904,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -987,7 +988,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1011,8 +1012,8 @@ focus_tree = {
 			# }
 			CAN_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { CAN_canadian_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.025 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 
@@ -1024,7 +1025,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1128,7 +1129,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -1229,7 +1230,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1432,7 +1433,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1533,7 +1534,8 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
+
 		ai_will_do = {
 			factor = 25
 		}
@@ -1567,7 +1569,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
