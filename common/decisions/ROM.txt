@@ -1,3 +1,90 @@
+
+
+
+
+ROM_balance_of_power = {
+
+
+    ROM_welfare_focus = {	
+        icon = GFX_bop_DEN_welfare_side
+        available = {
+			OR = {has_completed_focus = ROM_follow_the_germans
+			has_completed_focus = ROM_reichsarbeit}
+           
+        }
+        days_remove = 365
+        cost = 50
+        ai_will_do = {
+            factor = 1
+        }
+        complete_effect = {
+            add_power_balance_value = {
+                id = ROM_balance_of_power
+                value = -0.2
+            }
+
+                add_offsite_building = { type = industrial_complex level = 4 }
+            }
+        }
+
+	ROM_warfare_focus = {
+		icon = GFX_bop_DEN_warfare_side
+		available = {
+			OR = {has_completed_focus = ROM_follow_the_germans
+			has_completed_focus = ROM_reichsarbeit}
+		}
+        days_remove = 365
+		cost = 50
+        ai_will_do = {
+            factor = 1
+        }
+
+		complete_effect = {
+            add_power_balance_value = {
+                id = ROM_balance_of_power
+                value = 0.2
+            }
+
+                add_offsite_building = { type = arms_factory level = 4 }
+            }
+
+
+	}
+}
+
+
+# ROM_economic_reforms_category = {
+  #   name = "Economic Reform Decisions"
+ #    desc = "A gradual reduction in consumer goods for a more efficient economy."
+   #  picture = GFX_ROM_economic_policy
+  #   allowed = yes
+  #   visible = yes
+
+
+
+ #    ROM_weekly_consumer_goods_reduction = {
+ #    icon = GFX_ROM_economic_policy
+
+#     days_remove = 7  
+ #    cost = 0
+#     ai_will_do = { factor = 1 }
+
+ #    available = {
+  #       has_completed_focus = ROM_placebo16
+  #   }
+
+  #   complete_effect = {
+  #      add_stability = 0.1 # Example buff
+  #       add_timed_idea = {
+ #            idea = ROM_weekly_reduction 
+ #            days = 7
+ #        }
+#   }
+# 
+# }
+# }
+
+
 operations = {
 
 	ROM_expand_greater_romania = {
@@ -232,3 +319,4 @@ operations = {
 	}
 }
 
+	
