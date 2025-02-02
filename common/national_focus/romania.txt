@@ -799,6 +799,19 @@ mutually_exclusive = {
 				}
 			}
 	}
+
+
+	84 = {
+		if = {
+			limit = { is_controlled_by = ROOT }
+
+			add_building_construction = {
+				type = infrastructure
+				level = 6
+				instant_build = yes
+			}
+		}
+}
         }
     
 
@@ -932,18 +945,18 @@ mutually_exclusive = {
 		
 		completion_reward = {
 			46 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -969,10 +982,10 @@ mutually_exclusive = {
 		complete_tooltip = {
 			every_state = {
 				
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -980,18 +993,18 @@ mutually_exclusive = {
 
 		completion_reward = {
 			46 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1079,18 +1092,18 @@ mutually_exclusive = {
 
 			add_resource = {
 				type = steel
-				amount = 700
+				amount = 400
 				state = 81
 			}
 			add_resource = {
 				type = chromium
-				amount = 200
+				amount = 150
 				state = 81
 			}
 			
 			add_resource = {
 				type = oil
-				amount = 600
+				amount = 400
 				state = 79
 			}
 
@@ -2513,11 +2526,7 @@ focus = {
 				railway_gun = 1
 			}
 		}
-		create_railway_gun = {
-			equipment = railway_gun_equipment_1
-			name = "Uriașul Ion"
-			location = 9617
-		}
+		
 
 		ROM_army_dynamic_modifier_tt = yes #tooltip
 		add_to_variable = { ROM_romanian_army_railway_gun_bombardment_factor = 0.1 tooltip = railway_gun_bombardment_factor_tt }
