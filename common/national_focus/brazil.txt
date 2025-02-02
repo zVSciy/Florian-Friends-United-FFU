@@ -1496,7 +1496,6 @@ focus = {
 		}
 		relative_position_id = BRA_army
 		prerequisite = { focus = BRA_army }
-		mutually_exclusive = { focus = BRA_military_facilities}
 		x = 1
 		y = 1
 
