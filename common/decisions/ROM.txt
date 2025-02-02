@@ -23,7 +23,7 @@ ROM_balance_of_power = {
                 value = -0.2
             }
 
-                add_offsite_building = { type = industrial_complex level = 4 }
+         #        add_offsite_building = { type = industrial_complex level = 4 }
             }
         }
 
@@ -45,7 +45,7 @@ ROM_balance_of_power = {
                 value = 0.2
             }
 
-                add_offsite_building = { type = arms_factory level = 4 }
+       #          add_offsite_building = { type = arms_factory level = 4 }
             }
 
 
