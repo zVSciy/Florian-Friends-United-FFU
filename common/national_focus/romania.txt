@@ -2209,7 +2209,7 @@ focus = {
 
 focus = {
 
-	id = BRA_Placebo18
+	id = ROM_Placebo18
 	icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
 	prerequisite = { focus = ROM_force_abdication focus = ROM_all_parties_must_end} 
 	y = 1
@@ -2270,7 +2270,7 @@ focus = {
 
 	id = ROM_crush_the_ressistance
 	icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
-	prerequisite = { focus = BRA_Placebo18 } 
+	prerequisite = { focus = ROM_Placebo18 } 
 	y = 2
 	x = -1
 	relative_position_id = ROM_force_abdication
@@ -2305,7 +2305,7 @@ focus = {
 
 	id = ROM_develop_ressources
 	icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
-	prerequisite = { focus = BRA_Placebo18 } 
+	prerequisite = { focus = ROM_Placebo18 } 
 	y = 2
 	x = -7
 	relative_position_id = ROM_force_abdication
@@ -2353,7 +2353,7 @@ focus = {
 
 	id = ROM_the_grand_offensive
 	icon = GFX_focus_PAR_neuter_the_guion_rojo
-	prerequisite = { focus = BRA_Placebo18 } 
+	prerequisite = { focus = ROM_Placebo18 } 
 	y = 2
 	x = -4
 	relative_position_id = ROM_force_abdication
@@ -2569,7 +2569,8 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		add_ideas = ROM_one_size_fits_all_philosophy
+		custom_effect_tooltip = "Gives 5% Forest and 5% Jungle Attack "
+		 set_technology = { FRA_trees = 1 } 
 	}
 }
 
@@ -2587,9 +2588,12 @@ focus = {
 	}
 
 	available_if_capitulated = yes
+	
 
 	completion_reward = {
-		add_ideas = ROM_specialized_development
+		#  add_ideas = ROM_specialized_development
+		custom_effect_tooltip = "Gives 5% Desert and 5% Plain Attack "
+		set_technology = { FRA_flat = 1 }
 	}
 }
 
