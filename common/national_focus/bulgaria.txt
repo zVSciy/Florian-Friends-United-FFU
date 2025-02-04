@@ -1102,11 +1102,7 @@ focus_tree = {
 			add_stability = -0.05
 			add_ideas = BUL_tsar_boris_positive_01
 
-			BUL_zveno_low_loyalty_decrease_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-			custom_effect_tooltip = BUL_power_to_the_tsar_tt
+			
 		}
 	}
 
@@ -1129,11 +1125,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 35
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_bs_low_loyalty_increase_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
-			BUL_nsm_low_loyalty_decrease_effect = yes
-			custom_effect_tooltip = BUL_condemn_macedonian_organizations_tt
+			
 			every_country = {
 				limit = {
 					BUL_country_seeks_macedonian_stability = yes
@@ -1264,10 +1256,7 @@ focus_tree = {
 			add_political_power = 70
 			add_stability = 0.15
 			add_ideas = BUL_zveno_ns
-			BUL_zveno_high_loyalty_decrease_effect = yes
-			BUL_zveno_medium_popularity_decrease_effect = yes
-			custom_effect_tooltip = BUL_dissolve_the_military_union_tt
-			custom_effect_tooltip = BUL_dissolve_the_military_union_zveno_coup_tt
+			
 		}
 	}
 
@@ -1295,12 +1284,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_war_support = 0.05
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_zveno_low_popularity_increase_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_decrease_effect = yes
-			custom_effect_tooltip = BUL_cooperate_with_the_zveno_tt
-			custom_effect_tooltip = BUL_cooperate_with_the_zveno_coup_tt
+			
 		}
 	}
 
@@ -1328,10 +1312,7 @@ focus_tree = {
 			}
 			add_political_power = 70
 			add_stability = -0.05
-			BUL_zveno_low_loyalty_decrease_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
+			
 		}
 	}
 
@@ -1363,10 +1344,7 @@ focus_tree = {
 			}
 			add_war_support = 0.1
 			add_ideas = BUL_paramilitary_organizations
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-			BUL_nsm_low_popularity_increase_effect = yes
+			
 			custom_effect_tooltip = BUL_restrained_paramilitary_organizations_tt
 		}
 	}
@@ -1395,11 +1373,7 @@ focus_tree = {
 			}
 			add_stability = 0.1
 			add_war_support = -0.05
-			BUL_bs_low_loyalty_increase_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
-			BUL_nsm_high_loyalty_decrease_effect = yes
-			BUL_nsm_medium_popularity_decrease_effect = yes
-			custom_effect_tooltip = BUL_ban_far_right_organizations_tt
+			
 		}
 	}
 
@@ -1424,9 +1398,7 @@ focus_tree = {
 				popularity = 0.1
 			}
 			add_political_power = 70
-			BUL_zveno_low_loyalty_decrease_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
+			
 		}
 	}
 
@@ -1454,17 +1426,7 @@ focus_tree = {
 			}
 			add_political_power = 120
 			add_stability = 0.1
-			BUL_bs_low_loyalty_increase_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-			if = {
-				limit = {
-					NOT = { has_completed_focus = BUL_crush_the_communists }
-					NOT = { has_country_flag = BUL_bs_destroyed_flag }
-				}
-				custom_effect_tooltip = BUL_freedom_of_press_tt
-			}
-			custom_effect_tooltip = BUL_freedom_of_press_ban_faction_media_tt
+			
 		}
 	}
 
@@ -1511,32 +1473,7 @@ focus_tree = {
 				ideology = communism
 				popularity = -0.10
 			}
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_bs_high_loyalty_decrease_effect = yes
-			BUL_bs_medium_popularity_decrease_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-
-			#Reduce Oppress Broad Socialists decisions cost
-			divide_variable = { BUL_broad_socialist_opression_cost_standard = 2 }
-			custom_effect_tooltip = BUL_reduced_communist_oppression_cost_tt
-
-			#Stability impact
-			hidden_effect = {
-				set_variable = { stability_impact = BUL_bs_popularity }
-				divide_variable = { stability_impact = 1000 }
-				add_to_variable = { stability_impact = party_popularity@communism }
-				multiply_variable = { stability_impact = -1 }
-				add_stability = stability_impact
-			}
-			custom_effect_tooltip = BUL_stability_impact_tt
-			custom_effect_tooltip = BUL_crush_the_communists_tt
-			if = {
-				limit = {
-					NOT = { has_completed_focus = BUL_appoint_right_wing_ministers }
-				}
-				custom_effect_tooltip = BUL_crush_the_communists_no_cooperation_tt
-			}
+			
 		}
 	}
 
@@ -1562,9 +1499,7 @@ focus_tree = {
 				remove_idea = BUL_tsar_boris_positive_01
 				add_idea = BUL_tsar_boris_positive_02
 			}
-			divide_variable = { BUL_faction_interaction_cost_standard = 2 }
-			divide_variable = { BUL_broad_socialist_opression_cost_standard = 2 }
-			custom_effect_tooltip = BUL_reduced_faction_interaction_cost_tt
+		
 		}
 	}
 
@@ -1605,8 +1540,7 @@ focus_tree = {
 				}
 			}
 			add_stability = 0.05
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = BUL_dimitrana_ivanova
+			
 		}
 	}
 
@@ -1681,16 +1615,7 @@ focus_tree = {
 				remove_idea = BUL_tsar_boris_positive_02
 				add_idea = BUL_tsar_boris_positive_03
 			}
-			add_to_variable = { BUL_faction_low_increase = 5 }
-			add_to_variable = { BUL_faction_medium_increase = 5 }
-			add_to_variable = { BUL_faction_high_increase = 5 }
-			add_to_variable = { BUL_faction_low_decrease = -5 }
-			add_to_variable = { BUL_faction_medium_decrease = -5 }
-			add_to_variable = { BUL_faction_high_decrease = -5 }
-			custom_effect_tooltip = BUL_improved_faction_effects_tt
 			
-			BUL_halve_faction_management_decision_times = yes
-			custom_effect_tooltip = BUL_reduced_faction_interaction_cooldown_tt
 		}
 	}
 	
@@ -2547,11 +2472,7 @@ focus_tree = {
 			add_political_power = 70
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = BUL_nikola_zhekov
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-			custom_effect_tooltip = BUL_appoint_right_wing_ministers_tt
+			
 		}
 	}
 
@@ -2603,10 +2524,7 @@ focus_tree = {
 				}
 				add_ideas = tot_economic_mobilisation
 			}
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
+			
 		}
 	}
 
@@ -2749,10 +2667,7 @@ focus_tree = {
 				add_stability = -0.1
 			}
 
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_bs_low_loyalty_increase_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
-			BUL_nsm_low_loyalty_decrease_effect = yes
+			
 
 			# custom_effect_tooltip = BUL_potential_civil_war_low_requirement_tt
 		}
@@ -2916,17 +2831,14 @@ focus_tree = {
 				popularity = 0.1
 			}
 			add_stability = -0.05
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_medium_loyalty_increase_effect = yes
-			BUL_nsm_medium_popularity_increase_effect = yes
+			
 
 			if = {
 				limit = {
 					NOT = { has_country_flag = BUL_nsm_legalized_flag }
 				}
 				set_country_flag = BUL_nsm_legalized_flag
-				custom_effect_tooltip = BUL_allow_far_right_organizations_tt
+				
 			}		
 		}
 	}
@@ -2948,9 +2860,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			add_ideas = BUL_ratniks
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
+			
 		}
 	}
 
@@ -2971,8 +2881,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			add_ideas = BUL_government_reforms_fascists_01
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
+			
 		}
 	}
 
@@ -2996,9 +2905,7 @@ focus_tree = {
 				remove_idea = BUL_government_reforms_fascists_01
 				add_idea = BUL_government_reforms_fascists_02
 			}
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
+			
 		}
 	}
 
@@ -3047,7 +2954,7 @@ focus_tree = {
 				remove_idea = BUL_government_reforms_fascists_02
 				add_idea = BUL_government_reforms_fascists_03
 			}
-			BUL_nsm_low_loyalty_increase_effect = yes
+			
 		}
 	}
 	
