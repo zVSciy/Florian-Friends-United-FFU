@@ -34,7 +34,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 15
+		breakthrough = 10
 	}
 
 	# Panzer 2
@@ -70,7 +70,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Panzer 35(t)
@@ -106,7 +106,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 20
 		defense = 4
-		breakthrough = 25
+		breakthrough = 15
 	}
 
 	# Panzer 38(t)
@@ -143,7 +143,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 15
 		defense = 5
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# Hezter
@@ -223,7 +223,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 20
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
   # Medium Tanks
