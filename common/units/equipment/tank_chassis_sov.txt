@@ -32,7 +32,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 15
+		breakthrough = 10
 	}
 
 	# BT5
@@ -134,7 +134,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 25
 		defense = 6
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# T70
@@ -172,7 +172,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 35
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
 	# ZIS30

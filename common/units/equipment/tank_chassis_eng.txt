@@ -35,7 +35,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Tetrarch
@@ -71,7 +71,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# Harry Hopkins
@@ -109,7 +109,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 30
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
   # Medium Tanks
