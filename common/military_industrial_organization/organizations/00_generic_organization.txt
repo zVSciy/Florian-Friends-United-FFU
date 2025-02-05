@@ -3479,7 +3479,7 @@ generic_pmfu_variant_tank_organization = {
 		position = { x=1 y=2 }
 		relative_position_id = generic_mio_trait_mass_small_arms_ammunition_production
 
-		all_parents = { generic_mio_trait_mass_small_arms_ammunition_production generic_mio_trait_24h_rotation_shifts }
+		any_parent = { generic_mio_trait_mass_small_arms_ammunition_production generic_mio_trait_24h_rotation_shifts }
 
 		equipment_bonus = {
 			soft_attack = 0.05
