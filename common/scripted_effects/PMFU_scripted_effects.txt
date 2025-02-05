@@ -1151,10 +1151,13 @@ training_time_fixer = {
 
 dockyard_cg_calculation = {
     set_variable = { dockcount1 = 0 }
-    for_each_scope_loop = {
-        array = owned_controlled_states
-        add_to_variable = { PREV.dockcount1 = building_level@dockyard}
-    }
+    #for_each_scope_loop = {
+    #    array = owned_controlled_states
+    #    add_to_variable = { PREV.dockcount1 = building_level@dockyard}
+    #}
+	add_to_variable = {
+		dockcount1 = num_of_naval_factories
+	}
 	# USA could be 60 or 80
     if = {
 		limit = {
