@@ -1286,13 +1286,6 @@ mutually_exclusive = {
 		id = ROM_victory_over_the_allies
 		icon = GFX_focus_GER_weltpolitik
 		prerequisite = { focus = ROM_end_of_the_economic_programm }
-		
-		available = {
-
-			has_full_control_of_state = 907
-			
-			
-		}
 	
 		x = 0
 		y = 1
@@ -1300,8 +1293,6 @@ mutually_exclusive = {
 		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-
 
 		available = {
 			907 = {
