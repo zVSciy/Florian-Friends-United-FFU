@@ -71,8 +71,8 @@ equipments = {
 
 		resources = {
 			#oil = 1
-			aluminium = 8
-			rubber = 4
+			aluminium = 100
+			rubber = 50
 		}
 		build_cost_ic = 300 #
 		manpower = 100
