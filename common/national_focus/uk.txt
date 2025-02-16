@@ -4280,6 +4280,11 @@ focus_tree = {
 		id = ENG_british_invasion_of_iran
 		icon = GFX_focus_generic_attack_iran
 		prerequisite = { focus = ENG_anglo_soviet_agreement }
+		bypass = {
+			SOV = {
+				has_completed_focus = SOV_preemptive_invasion_of_iran
+			}
+		}
 		available = {
 			SOV = { has_war_with = GER }
 			NOT = {
@@ -4299,7 +4304,7 @@ focus_tree = {
 				has_global_flag = ITA_opened_iran
 			}
 		}
-
+		
 		available_if_capitulated = yes
 
 		x = 0
