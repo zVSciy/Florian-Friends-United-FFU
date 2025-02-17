@@ -673,6 +673,7 @@ technologies = {
 		
 		category_all_armor = {
 			hard_attack = 0.10
+			soft_attack = 0.10
 		}
 		
 		path = {
@@ -1324,6 +1325,9 @@ technologies = {
 			max_strength = 2
 			breakthrough = 0.05
 		}
+		category_mobile_infantry = {
+			max_organisation = 10
+		}
 		
 		enable_tactic = tactic_blitz
 		
@@ -1489,6 +1493,11 @@ technologies = {
 	
 	tactical_control = {
 
+		category_all_infantry = {
+			max_organisation = 5
+			default_morale = 0.05
+			max_strength = 1
+		}
 		land_reinforce_rate = 0.02
 	
 		enable_tactic = tactic_tactical_withdrawal
@@ -1698,7 +1707,7 @@ technologies = {
 	
 	advanced_firebases = {
 
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 5
 			default_morale = 0.05
 			max_strength = 1
