@@ -1250,6 +1250,18 @@ set_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 }
 	}
 }
 
+###STOCKPILE###
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 50000
+    producer = SOV	
+}
+add_equipment_to_stockpile = {
+    type = horse_equipment_0
+    amount = 10000
+    producer = SOV
+}
+
 
 set_convoys = 550
 
