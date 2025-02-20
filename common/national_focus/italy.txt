@@ -3804,7 +3804,7 @@ focus_tree = {
 			add_to_variable = { ITA_italian_army_planning_speed = 0.15 tooltip = planning_speed_tt }
 			add_to_variable = { ITA_italian_army_max_planning = -0.1 tooltip = max_planning_tt }
 			add_to_variable = { ITA_italian_army_max_dig_in = -2.5 tooltip = max_dig_in_tt }
-			add_to_variable = { ITA_italian_army_cat_mobile_warfare_cost_factor = -0.30 tooltip = cat_superior_firepower_cost_factor_tt }
+			add_to_variable = { ITA_italian_army_cat_mobile_warfare_cost_factor = -0.30 tooltip = cat_mobile_warfare_cost_factor_tt }
 			add_to_variable = { ITA_italian_army_cat_grand_battle_plan_cost_factor = 0.35 tooltip = cat_grand_battle_plan_cost_factor_tt }
 			# add_timed_idea = {
 			# 	idea = ITA_reforming
