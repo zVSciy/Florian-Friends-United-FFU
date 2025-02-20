@@ -8033,7 +8033,6 @@ focus_tree = {
 
 		completion_reward = {
 			GER_airforce_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_air_agility_factor = 0.05 tooltip = air_agility_factor_tt }
 			add_to_variable = { GER_air_range_factor = 0.10 tooltip = air_range_factor_tt }
 			add_ideas = GER_cheaper_fighters2 # incomplete
 		}
@@ -8374,7 +8373,7 @@ focus_tree = {
 					has_dlc = "Arms Against Tyranny"
 				}	
 			    mio:GER_messerschmitt_organization = {
-				add_mio_size = 1 }
+				add_mio_size = 2 }
 			    
 			    mio:GER_junkers_organization = {
 				add_mio_size = 2 }
