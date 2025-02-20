@@ -484,18 +484,6 @@ on_actions = {
 			462 = { set_demilitarized_zone = yes }
 		}
 	}
-	on_startup = {
-		effect = {
-			if = {
-				limit = {
-					has_global_flag = NO_ASIA
-				}
-				ENG = {
-					add_ideas = home_of_the_free_NO_ASIA
-				}
-			}
-		}
-	}
 
 	on_startup = {
 		effect = {

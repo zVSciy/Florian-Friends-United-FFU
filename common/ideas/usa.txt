@@ -2148,27 +2148,6 @@ ideas = {
 			}
 		}
 
-		home_of_the_free_NO_ASIA = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-			name = home_of_the_free
-			
-			targeted_modifier = {
-				tag = CAN
-				trade_cost_for_target_factor = -0.5
-			}
-		}
-
 		# idea for the protect Amercians focus - USA democratic
 		american_influence_defence_democratic = {
 			allowed = { always = no	}

@@ -580,7 +580,10 @@ ideas = {
 					naval_range = 0.33 instant = yes
 				}
 			}
-			
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.5
+			}
 			rule = {
 				can_create_factions = yes
 			}			
@@ -619,7 +622,10 @@ ideas = {
 					naval_range = 0.28 instant = yes
 				}
 			}
-			
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.5
+			}
 			rule = {
 				can_create_factions = yes
 			}			
@@ -658,7 +664,10 @@ ideas = {
 					naval_range = 0.25 instant = yes
 				}
 			}
-			
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.5
+			}
 			rule = {
 				can_create_factions = yes
 			}			
@@ -697,7 +706,10 @@ ideas = {
 					naval_range = 0.18 instant = yes
 				}
 			}
-			
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.5
+			}
 			rule = {
 				can_create_factions = yes
 			}			
@@ -723,6 +735,10 @@ ideas = {
 				army_core_attack_factor = 0.6
 				army_core_defence_factor = 0.6
 				industrial_capacity_dockyard = 0.16
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.5
 			}
 
 			equipment_bonus = {
@@ -763,7 +779,10 @@ ideas = {
 				army_core_defence_factor = 0.3
 				industrial_capacity_dockyard = 0.20
 			}
-			
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.5
+			}
 			rule = {
 				can_create_factions = yes
 			}			
