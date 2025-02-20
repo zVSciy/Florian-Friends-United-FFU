@@ -89,9 +89,9 @@ sub_units = {
 		combat_width = 0
 
 		#Size Definitions
-		max_strength = 1
+		max_strength = 10
 		max_organisation = 20
-		default_morale = 0.3
+		default_morale = 0.4
 		manpower = 500
 		training_time = 60
 
@@ -101,7 +101,7 @@ sub_units = {
 		can_be_parachuted = no
 
 		# Important Ability
-		reliability_factor = 0.15
+		reliability_factor = 0.20
 		# equipment_capture_factor = 0.05
 
 		breakthrough = -0.5
