@@ -20,6 +20,18 @@ set_variable = {
 	value = 0.800
 }
 
+735 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
+21 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
+32 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
+851 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
 set_research_slots = 5
 set_stability = 0.5
 set_war_support = 0.1

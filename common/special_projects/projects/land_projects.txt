@@ -1541,7 +1541,7 @@ sp_land_stronghold_network = {
 
 	available = {
 		FROM = {
-			has_tech = construction3
+			has_tech = construction5
 		}
 	}
 
