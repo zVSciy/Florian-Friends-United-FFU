@@ -25,7 +25,9 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-
+158 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
 army_experience = 200
 air_experience = 100
 set_variable = { dockyard_major = 1 }

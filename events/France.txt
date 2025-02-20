@@ -299,8 +299,22 @@ country_event = {
 			VIC = { add_ideas = GER_africaaaaaaaaaaaaaa }
 			YUG = { add_ideas = GER_africaaaaaaaaaaaaaa }
 		}
-		# enable ports on francce
-		#FRA = { set_technology = { naval_base_construction = 1 popup = no } }
+		
+		158 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive2 }
+		}
+		735 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive2 }
+		}
+		21 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive2 }
+		}
+		32 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive2 }
+		}
+		851 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive2 }
+		}
 	}
 }
  
