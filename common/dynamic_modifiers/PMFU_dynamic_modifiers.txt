@@ -243,6 +243,7 @@ ENG_air_dynamic_modifier = {
 	naval_strike_targetting_factor = ENG_british_airforce_naval_strike_targetting_factor
 	air_weather_penalty = ENG_british_airforce_air_weather_penalty
 	air_home_defence_factor = ENG_british_airforce_air_home_defence_factor
+	air_defence_factor = ENG_british_airforce_air_defence_factor
 	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
 }
 
@@ -492,6 +493,16 @@ GER_air_dynamic_modifier = {
 	air_training_xp_gain_factor = GER_german_airforce_air_training_xp_gain_factor
 	army_bonus_air_superiority_factor = GER_german_airforce_army_bonus_air_superiority_factor
 	air_mission_xp_gain_factor = GER_german_airforce_air_mission_xp_gain_factor
+	air_agility_factor = GER_air_agility_factor
+	air_attack_factor = GER_air_attack_factor
+	air_defence_factor = GER_air_defence_factor
+	air_detection = GER_air_detection
+	air_night_penalty = GER_air_night_penalty
+	air_fuel_consumption_factor = GER_air_fuel_consumption_factor
+	air_accidents_factor = GER_air_accidents_factor
+	air_wing_xp_loss_when_killed_factor = GER_air_wing_xp_loss_when_killed_factor
+	air_range_factor = GER_air_range_factor
+	air_home_defence_factor = GER_air_home_defence_factor
 }
 
 GER_navy_dynamic_modifier = {

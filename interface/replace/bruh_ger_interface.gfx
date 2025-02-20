@@ -3998,4 +3998,24 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_GER_air_superiority"
+		textureFile = "gfx/interface/goals/ger/GER_air_superiority.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_udets_strike_force"
+		texturefile = "gfx/interface/goals/ger/GER_ju87_ftw.tga"
+	}
+	spriteType = {
+		name = "GFX_GER_ration_fuels"
+		texturefile = "gfx/interface/goals/ger/GER_ration_fuel.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_german_cas_doctrine"
+		texturefile = "gfx/interface/goals/ger/GER_german_cas_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Messerschmitts"
+		texturefile = "gfx/interface/goals/ger/GER_modern_fighter.dds"
+	}
 }

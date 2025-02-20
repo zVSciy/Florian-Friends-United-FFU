@@ -307,6 +307,147 @@ ideas = {
 			}
 		}
 
+		GER_air_research_speed_bonus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ger_greater_german_reich
+			
+			research_bonus = { air_equipment = 0.15 }
+		}
+
+		GER_rocketry_research = {
+			picture = generic_research_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				sp_tag_rocket_speed_factor = 0.1
+			}
+		}
+
+		GER_anti_air_buff = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ger_greater_german_reich
+			
+			equipment_bonus = {
+				light_tank_aa_chassis = {
+					build_cost_ic = -0.025
+				}
+				medium_tank_aa_chassis = {
+					build_cost_ic = -0.025
+				}
+				heavy_tank_aa_chassis = {
+					build_cost_ic = -0.025
+				}
+			}
+		}
+
+		GER_faster_fighters_idea = {			
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_greater_german_reich
+
+			equipment_bonus = {
+				fighter = {
+					maximum_speed = 0.1
+				}
+				heavy_fighter = {
+					maximum_speed = 0.1
+				}
+			}
+		}
+
+		GER_cheaper_fighters1 = {			
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_greater_german_reich
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.075 # maybe make this 7.5% if people arent doing it bc its too expensive
+				}
+				heavy_fighter = {
+					build_cost_ic = 0.05
+				}
+			}
+		}
+
+		GER_cheaper_fighters2 = {			
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_greater_german_reich
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.025
+					reliability = 0.1
+				}
+				heavy_fighter = {
+					build_cost_ic = -0.025
+					reliability = 0.1
+				}
+			}
+		}
+
+		GER_cheaper_fighters3 = {			
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_greater_german_reich
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.075
+				}
+				heavy_fighter = {
+					build_cost_ic = -0.075
+				}
+			}
+		}
+
 		GER_hold_afrika_idea = {
 			allowed = {
 				always = no
