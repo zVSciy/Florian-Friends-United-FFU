@@ -8044,7 +8044,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_airstats_right
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8077,7 +8077,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_radar_spawnins
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8116,8 +8116,11 @@ focus_tree = {
 			    mio:GER_messerschmitt_organization = {
 				add_mio_size = 2 }
 			    
-			    mio:GER_junkers_organization = {
+			    mio:GER_focke_wulf_organization = {
 				add_mio_size = 1 }
+				
+				mio:GER_junkers_organization = {
+					add_mio_size = 1 }
 			}
 			ELSE = {
 				custom_effect_tooltip = available_designer
@@ -8156,7 +8159,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_airstats_right
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8177,7 +8180,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_cheaper_aa
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8223,7 +8226,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_airstats_left
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8249,7 +8252,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_air_research_speed
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8276,7 +8279,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_airstats_left
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8297,7 +8300,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_aces
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -8373,10 +8376,13 @@ focus_tree = {
 					has_dlc = "Arms Against Tyranny"
 				}	
 			    mio:GER_messerschmitt_organization = {
-				add_mio_size = 2 }
-			    
-			    mio:GER_junkers_organization = {
-				add_mio_size = 2 }
+					add_mio_size = 2 }
+					
+				mio:GER_focke_wulf_organization = {
+					add_mio_size = 2 }
+					
+				mio:GER_junkers_organization = {
+					add_mio_size = 1 }
 			}
 			ELSE = {
 				custom_effect_tooltip = available_designer
