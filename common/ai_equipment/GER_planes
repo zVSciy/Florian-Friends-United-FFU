@@ -1,0 +1,200 @@
+# AI plane design for testing
+
+generic_fighter = {
+	category = air
+
+	blocked_for = {}
+
+	available_for = { GER }
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+	}
+
+	improved_fighter_default = {
+		priority = {
+			factor = 10
+			modifier = {
+				has_tech = advanced_small_airframe
+                has_tech = aircraft_cannon_1_2x
+                has_tech = aircraft_cannon_1_1x
+                has_tech = engine_3_1x
+                has_tech = radio_navigation_2
+                has_tech = ammunition_1
+                has_tech = fuel_injection_s
+				factor = 0 
+			}
+		}
+
+		target_variant = {
+			match_value = 300000
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_1x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = ammunition_1
+				special_type_slot_2 = plane_special_module_fuel_injection_s
+				special_type_slot_3 = plane_special_module_radio_navigation
+			}
+			upgrades = {
+				plane_armor_upgrade = 5
+				plane_engine_upgrade = 5
+			}
+		}
+
+		allowed_modules = {
+			aircraft_cannon_1_2x
+			aircraft_cannon_1_1x
+			engine_3_1x
+			radio_navigation_1
+			radio_navigation_2
+			ammunition_1
+			fuel_injection_s
+			fuel_injection2_s
+		}
+	}
+
+	advanced_fighter_default = {
+		priority = {
+			factor = 10
+			modifier = {
+				has_tech = modern_small_airframe
+				factor = 0 
+			}
+		}
+
+		target_variant = {
+			match_value = 300000
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_1x
+				fixed_auxiliary_weapon_slot_3 = aircraft_cannon_2_1x
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = plane_ammunition
+				special_type_slot_2 = plane_special_module_fuel_injection_s
+				special_type_slot_3 = plane_special_module_radio_navigation
+			}
+			upgrades = {
+				plane_armor_upgrade = 5
+				plane_engine_upgrade = 5
+			}
+		}
+
+		allowed_modules = {
+			aircraft_cannon_1_2x
+			aircraft_cannon_1_1x
+			engine_3_1x
+			radio_navigation_1
+			radio_navigation_2
+			ammunition_1
+			ammunition_3
+			fuel_injection_s
+			fuel_injection2_s
+		}
+	}
+}
+
+generic_cas = {
+	category = air
+
+	blocked_for = {}
+
+	available_for = { GER }
+
+	roles = {
+		air_cas
+	}
+
+	priority = {
+		factor = 100
+	}
+
+	cas_2 = {
+		priority = {
+			factor = 10
+			modifier = {
+				has_tech = advanced_small_airframe
+				factor = 0 
+			}
+		}
+
+		target_variant = {
+			match_value = 300000
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = tank_buster_2
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_2 = cluster_bombs
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = ammunition_2
+				special_type_slot_2 = dive_brakes_small
+				special_type_slot_3 = plane_special_module_radio_navigation
+			}
+			upgrades = {
+				plane_armor_upgrade = 5
+				plane_engine_upgrade = 2
+			}
+		}
+
+		allowed_modules = {
+			tank_buster_1
+			tank_buster_2
+			lmg_defense_turret
+			cluster_bombs
+			engine_3_1x
+			ammunition_2
+			dive_brakes_small
+			radio_navigation_1
+			radio_navigation_2
+		}
+	}
+
+	cas_3 = {
+		priority = {
+			factor = 10
+			modifier = {
+				has_tech = modern_small_airframe
+				factor = 0 
+			}
+		}
+
+		target_variant = {
+			match_value = 300000
+			type = small_plane_cas_airframe_3
+			modules = {
+				fixed_main_weapon_slot = rocket_rails
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_2 = cluster_bombs
+				fixed_auxiliary_weapon_slot_3 = cluster_bombs
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = plane_ammunition
+				special_type_slot_2 = dive_brakes_small
+				special_type_slot_3 = plane_special_module_air_ground_radar
+			}
+			upgrades = {
+				plane_armor_upgrade = 5
+				plane_engine_upgrade = 4
+			}
+		}
+
+		allowed_modules = {
+			rocket_rails
+			lmg_defense_turret
+			cluster_bombs
+			engine_3_1x
+			ammunition_2
+			ammunition_3
+			dive_brakes_small
+			air_ground_radar_1
+			air_ground_radar_2
+		}
+	}
+}
