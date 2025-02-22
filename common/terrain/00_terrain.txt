@@ -26,7 +26,7 @@ categories =  {
 	
 	forest = {
 		color = { 89 199 85 }
-		movement_cost = 1.5
+		movement_cost = 2.0
 		#combat_width = -0.20
 		combat_width = 90
 		combat_support_width = 30	
@@ -132,7 +132,7 @@ categories =  {
 	
 	plains = {
 		color = { 255 129 66 }
-		movement_cost = 1.0
+		movement_cost = 1.5
 		ai_terrain_importance_factor = 0.1
 		combat_width = 90
 		combat_support_width = 30
@@ -243,7 +243,7 @@ categories =  {
 	
 	marsh = {
 		color = { 76 96 35 }
-		movement_cost = 2.0
+		movement_cost = 2.5
 		attrition = 0.5
 		#combat_width = -0.25
 		combat_width = 90
