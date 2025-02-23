@@ -8429,7 +8429,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = GER_goering
+			add_ideas = GER_goering
 		}	
 	}
 
@@ -8450,7 +8450,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = GER_ritter_greim
+			add_ideas = GER_ritter_greim
 		}	
 	}
 	focus = {
