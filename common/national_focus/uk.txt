@@ -33,7 +33,7 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 2150 y = 800 }
+	continuous_focus_position = { x = 2150 y = 1800 }
 
 	shared_focus = COM_commonwealth_command
     focus = {
@@ -81,7 +81,7 @@ focus_tree = {
 	focus = {
         id = ENG_raj_dev
         x = 0
-        y = 3
+        y = 2
         cost = 2
 		prerequisite = {
 			focus = ENG_economy
@@ -264,7 +264,11 @@ focus_tree = {
             # Add rewards here
         }
     }
-
+    ################
+    ################
+        #LATE MOB
+    ################
+    ################
 	focus = {
         id = ENG_scaling_path
         x = -8
@@ -274,6 +278,9 @@ focus_tree = {
 			focus = ENG_economy
 		}
 		relative_position_id = ENG_economy 
+        mutually_exclusive = {
+            focus = ENG_early_ic
+        }
         available = {
             # Add any conditions here
         }
@@ -645,4 +652,274 @@ focus_tree = {
             # Add rewards here
         }
     }
+
+    ################
+    ################
+        #EARLY MOB
+    ################
+    ################
+
+    focus = {
+        id = ENG_early_ic
+        x = 8
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_economy
+		}
+		relative_position_id = ENG_economy 
+        mutually_exclusive = {
+            focus = ENG_scaling_path
+        }
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_mil_bonus
+        x = -2
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_ic
+		}
+		relative_position_id = ENG_early_ic 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_shadow_scheme
+        x = 2
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_ic
+		}
+		relative_position_id = ENG_early_ic 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_infra_spawnin
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_mil_bonus
+		}
+		relative_position_id = ENG_early_mil_bonus 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_resource_excav
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_infra_spawnin
+		}
+		relative_position_id = ENG_infra_spawnin 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_colonial_excav
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_resource_excav
+		}
+		relative_position_id = ENG_resource_excav 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_industry_bonus2
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_mil_bonus
+		}
+		relative_position_id = ENG_early_mil_bonus 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_output
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_industry_bonus2
+		}
+		relative_position_id = ENG_industry_bonus2 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_dock_output
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_output
+		}
+		relative_position_id = ENG_early_output 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_mills1
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_shadow_scheme
+		}
+		relative_position_id = ENG_early_shadow_scheme 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_mills2
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_mills1
+		}
+		relative_position_id = ENG_early_mills1 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_shadow_factories2
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_mills2
+		}
+		relative_position_id = ENG_early_mills2 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_total_mob_right
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_shadow_factories2
+		}
+        prerequisite = {
+            focus = ENG_early_dock_output
+        }
+		relative_position_id = ENG_shadow_factories2 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_radioIC
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_shadow_scheme
+		}
+		relative_position_id = ENG_early_shadow_scheme 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_artiIC
+        x = 0
+        y = 2
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_radioIC
+		}
+		relative_position_id = ENG_early_radioIC 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_early_gunIC
+        x = 3
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_early_artiIC
+		}
+		relative_position_id = ENG_early_artiIC 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+
 }
