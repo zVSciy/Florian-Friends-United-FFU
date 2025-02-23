@@ -1062,6 +1062,7 @@ focus_tree = {
 				uses = 4
 				category = cat_superior_firepower
 			}
+			ENG_army_dynamic_modifier_tt = yes
 			add_to_variable = { ENG_british_army_cat_superior_firepower_cost_factor = -1.2 tooltip = cat_superior_firepower_cost_factor_tt}
 
         }
@@ -1080,7 +1081,12 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_tech_bonus = {
+				name = ENG_art_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
         }
     }
     focus = {
@@ -1097,7 +1103,20 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ENG_rsaf_enfield_organization
+				mio:ENG_rsaf_enfield_organization = {
+					add_mio_size = 3
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = rsaf_enfield
+			}
         }
     }
     focus = {
@@ -1114,7 +1133,13 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+
+            add_tech_bonus = {
+				name = inf_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
         }
     }
     focus = {
@@ -1131,7 +1156,8 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+			ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_defence = 0.05 tooltip = amphibious_invasion_defence_tt }
         }
     }
     focus = {
@@ -1148,7 +1174,19 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 1
+			}
+		
+			128 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+					province = 9297
+				}
+			}
         }
     }
     focus = {
@@ -1165,7 +1203,8 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+			ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_army_attack_factor = 0.05 tooltip = soft_attack_tt}
         }
     }
     focus = {
@@ -1183,7 +1222,9 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            custom_effect_tooltip = {
+				localization_key = ENG_sfp_advisor_enable_tt
+			}				
         }
     }
 
@@ -1205,7 +1246,15 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.25
+				uses = 4
+				category = cat_grand_battle_plan_cost_factor
+			}
+			ENG_army_dynamic_modifier_tt = yes
+			add_to_variable = { ENG_british_army_cat_grand_battle_plan_cost_factor = -1.2 tooltip = cat_grand_battle_plan_cost_factor_tt}
+
         }
     }
     focus = {
@@ -1222,7 +1271,12 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+           add_tech_bonus = {
+				name = ENG_art_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
         }
     }
     focus = {
@@ -1239,7 +1293,20 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ENG_rsaf_enfield_organization
+				mio:ENG_rsaf_enfield_organization = {
+					add_mio_size = 3
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = rsaf_enfield
+			}
         }
     }
     focus = {
@@ -1256,7 +1323,12 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_tech_bonus = {
+				name = inf_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
         }
     }
     focus = {
@@ -1273,7 +1345,8 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_naval_invasion_planning_bonus_speed = 0.4 tooltip = naval_invasion_planning_bonus_speed_tt }
         }
     }
     focus = {
@@ -1290,7 +1363,8 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_max_planning = 0.1 tooltip = max_planning_tt }
         }
     }
     focus = {
@@ -1307,7 +1381,8 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_naval_invasion_prep_speed = 0.7 tooltip = naval_invasion_prep_speed_tt }
         }
     }
     focus = {
@@ -1325,7 +1400,15 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_corps_commander_role = {
+				character = ENG_arthur_percival
+				traits = { naval_invader commando jungle_rat trait_engineer }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
         }
     }
 

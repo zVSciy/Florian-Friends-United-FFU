@@ -442,7 +442,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader jungle_rat }
+			traits={ jungle_rat }
 			skill=3
 			attack_skill=2
 			defense_skill=4
@@ -1297,6 +1297,9 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_sfp_advisor
 			}
 			traits = {
 				army_infantry_2
