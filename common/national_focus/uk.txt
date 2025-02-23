@@ -46,7 +46,9 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+            set_variable = { ENG_british_economy_production_speed_buildings_factor = 0.10 tooltip = production_speed_buildings_factor_tt }
         }
     }
 	focus = {
@@ -63,7 +65,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+            set_variable = { ENG_british_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+            set_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
         }
     }
 	focus = {
@@ -78,7 +83,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+            set_variable = { ENG_british_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+            set_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
         }
     }
 	focus = {
@@ -323,7 +331,7 @@ focus_tree = {
 		icon = x
         x = -8
         y = 2
-        cost = 2
+        cost = 1
 		prerequisite = {
 			focus = ENG_economy
 		}
@@ -343,7 +351,7 @@ focus_tree = {
 		icon = x
         x = -3
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_scaling_path
 		}
@@ -353,8 +361,8 @@ focus_tree = {
             
         }
         completion_reward = {
-            
-        }
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }        }
     }
     focus = {
         id = ENG_build_civs
@@ -378,7 +386,7 @@ focus_tree = {
 		icon = x
         x = 3
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_scaling_path
 		}
@@ -388,8 +396,8 @@ focus_tree = {
             
         }
         completion_reward = {
-            
-        }
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }        }
     }
     focus = {
         id = ENG_civs_to_cansaf
@@ -405,7 +413,30 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            276 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }        
+            }
+            275 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }        
+            }
+            126 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -422,7 +453,30 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            439 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }        
+            }
+            285 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }        
+            }
+            130 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -439,7 +493,22 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            121 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}		
+			}
+            133 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
         }
     }
     focus = {
@@ -554,8 +623,63 @@ focus_tree = {
             
         }
         completion_reward = {
-            
-        }
+            custom_effect_tooltip = shadow_scheme_focus_conv_tt
+			custom_effect_tooltip = ENG_shadow_scheme_2_focus_tt
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_shadow_scheme_2_tt
+			add_to_variable = { ENG_british_economy_industry_air_damage_factor = -0.1 }
+			add_to_variable = { ENG_british_economy_industry_repair_factor = 0.1 }
+			
+			for_each_scope_loop = {
+				array = ENG.starting_core_states
+		
+				add_to_variable = { ENG.shadow_civs2 = industrial_complex_level }
+			}
+			subtract_from_variable = { ENG.shadow_civs2 = ENG.shadow_civs1 }
+			clamp_variable = {
+				var = ENG.shadow_civs2
+				min = 0
+				max = 20
+			}
+			divide_variable = { ENG.shadow_civs2 = 2 }
+			set_variable = { ENG.shadow_civs3 = ENG.shadow_civs2 }
+			round_variable = ENG.shadow_civs2
+			if = {
+				limit={
+					check_variable = {
+						var = ENG.shadow_civs3
+						value = ENG.shadow_civs2
+						compare = less_than
+					}
+				}
+				subtract_from_variable = { ENG.shadow_civs2 = 1 }	
+			}
+			for_loop_effect = {
+				end = ENG.shadow_civs2
+				ENG={
+					random_owned_controlled_state= {
+						prioritize = { 120 136 }
+						limit= {
+							is_core_of = ENG
+							is_on_continent = europe
+							NOT = {
+								OR = {
+									state = 118
+									state = 116
+									state = 183
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}	
+					}
+				}
+			}
+		}
     }
     focus = {
         id = ENG_total_mob
@@ -571,15 +695,15 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_ideas = tot_economic_mobilisation
         }
     }
     focus = {
-        id = ENG_civs_to_uk1
+        id = ENG_civs_to_uk1 # develop southern england
 		icon = x
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_centralised
 		}
@@ -588,15 +712,38 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            126 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}		
+			}
+            125 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}		
+			}
+            127 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
         }
     }
     focus = {
-        id = ENG_civs_to_uk2
+        id = ENG_civs_to_uk2 # develop central england
 		icon = x
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_civs_to_uk1
 		}
@@ -605,7 +752,22 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            129 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}		
+			}
+            128 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
         }
     }
     focus = {
@@ -639,7 +801,22 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            121 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}		
+			}
+            133 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
         }
     }
     focus = {
@@ -680,7 +857,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_tech_bonus = {
+				name = ENG_industry_bonus
+				bonus = 0.75
+				uses = 3
+				category = industry
+			}
         }
     }
     focus = {
@@ -697,7 +879,8 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
         }
     }
     focus = {
@@ -735,7 +918,7 @@ focus_tree = {
 		icon = x
         x = 8
         y = 2
-        cost = 2
+        cost = 1
 		prerequisite = {
 			focus = ENG_economy
 		}
@@ -934,8 +1117,63 @@ focus_tree = {
             
         }
         completion_reward = {
-            
-        }
+            custom_effect_tooltip = shadow_scheme_focus_conv_tt
+			custom_effect_tooltip = ENG_shadow_scheme_2_focus_tt
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_shadow_scheme_2_tt
+			add_to_variable = { ENG_british_economy_industry_air_damage_factor = -0.1 }
+			add_to_variable = { ENG_british_economy_industry_repair_factor = 0.1 }
+			
+			for_each_scope_loop = {
+				array = ENG.starting_core_states
+		
+				add_to_variable = { ENG.shadow_civs2 = industrial_complex_level }
+			}
+			subtract_from_variable = { ENG.shadow_civs2 = ENG.shadow_civs1 }
+			clamp_variable = {
+				var = ENG.shadow_civs2
+				min = 0
+				max = 20
+			}
+			divide_variable = { ENG.shadow_civs2 = 2 }
+			set_variable = { ENG.shadow_civs3 = ENG.shadow_civs2 }
+			round_variable = ENG.shadow_civs2
+			if = {
+				limit={
+					check_variable = {
+						var = ENG.shadow_civs3
+						value = ENG.shadow_civs2
+						compare = less_than
+					}
+				}
+				subtract_from_variable = { ENG.shadow_civs2 = 1 }	
+			}
+			for_loop_effect = {
+				end = ENG.shadow_civs2
+				ENG={
+					random_owned_controlled_state= {
+						prioritize = { 120 136 }
+						limit= {
+							is_core_of = ENG
+							is_on_continent = europe
+							NOT = {
+								OR = {
+									state = 118
+									state = 116
+									state = 183
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}	
+					}
+				}
+			}
+		}
     }
     focus = {
         id = ENG_total_mob_right
@@ -954,7 +1192,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_ideas = tot_economic_mobilisation
         }
     }
     focus = {
