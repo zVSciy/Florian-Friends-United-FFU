@@ -1025,10 +1025,17 @@ focus_tree = {
         cost = 5
         relative_position_id = ENG_economy
         available = {
-            # Add any conditions here
+            threat > 0.05
         }
         completion_reward = {
-            # Add rewards here
+            army_experience = 25
+			add_tech_bonus = {
+				name = ENG_art_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_research_slot = 1
         }
     }
     focus = {
@@ -1049,7 +1056,14 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.25
+				uses = 4
+				category = cat_superior_firepower
+			}
+			add_to_variable = { ENG_british_army_cat_superior_firepower_cost_factor = -1.2 tooltip = cat_superior_firepower_cost_factor_tt}
+
         }
     }
     focus = {

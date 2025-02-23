@@ -234,8 +234,12 @@ ENG_army_dynamic_modifier = {
 	production_speed_bunker_factor = ENG_british_army_production_speed_bunker_factor
 	production_speed_coastal_bunker_factor = ENG_british_army_production_speed_coastal_bunker_factor
 	repair_speed_air_base_factor = ENG_british_army_repair_speed
+	cat_mobile_warfare_cost_factor = ENG_british_army_cat_mobile_warfare_cost_factor
+	cat_superior_firepower_cost_factor = ENG_british_army_cat_superior_firepower_cost_factor
+	cat_mass_assault_cost_factor = ENG_british_cat_mass_assault_cost_factor
+	cat_grand_battle_plan_cost_factor = ENG_british_army_cat_grand_battle_plan_cost_factor
 }
-
+ 
 ENG_air_dynamic_modifier = {
 	enable = { always = yes }
 

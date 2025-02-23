@@ -226,6 +226,10 @@ add_dynamic_modifier = {
 }
 set_variable = { ENG_british_army_conscription_factor = -0.30 tooltip = conscription_factor_tt }
 set_variable = { ENG_british_army_war_support_factor = -0.05 tooltip = war_support_factor_tt }
+set_variable = { ENG_british_army_cat_mobile_warfare_cost_factor = 1 tooltip = cat_mobile_warfare_cost_factor_tt }
+set_variable = { ENG_british_army_cat_superior_firepower_cost_factor = 1 tooltip = cat_superior_firepower_cost_factor_tt }
+set_variable = { ENG_british_cat_mass_assault_cost_factor = 1 tooltip = cat_mass_assault_cost_factor }
+set_variable = { ENG_british_army_cat_grand_battle_plan_cost_factor = 1 tooltip = cat_grand_battle_plan_cost_factor }
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment
