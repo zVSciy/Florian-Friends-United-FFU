@@ -1235,28 +1235,6 @@ characters={
 				factor = 0.2
 			}
 		}
-	}
-	JAP_shigetaro_shimada={
-		name="JAP_shigetaro_shimada"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_asia_3"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = JAP_shigetaro_shimada
-			allowed  = {
-				original_tag = JAP
-			}
-			traits  = {
-				navy_chief_decisive_battle_2 
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.2
-			}
-		}
 	}	
 	# Air Chief
 	JAP_torashiro_kawabe={
