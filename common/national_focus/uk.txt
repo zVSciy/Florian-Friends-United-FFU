@@ -42,10 +42,10 @@ focus_tree = {
         y = 1
         cost = 5
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 	focus = {
@@ -58,10 +58,10 @@ focus_tree = {
 		}
 		relative_position_id =  ENG_economy 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 	focus = {
@@ -72,10 +72,10 @@ focus_tree = {
 		prerequisite = { focus = ENG_economy }
 		relative_position_id = ENG_economy 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 	focus = {
@@ -88,10 +88,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_economy 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 	focus = {
@@ -104,10 +104,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_raj_dev 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 	focus = {
@@ -120,10 +120,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_can_dev 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 	focus = {
@@ -136,10 +136,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_can_dev 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -157,10 +157,10 @@ focus_tree = {
             focus = ENG_RAF
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -178,10 +178,10 @@ focus_tree = {
             focus = ENG_BAF
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -199,10 +199,10 @@ focus_tree = {
             focus = ENG_BAF
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -220,10 +220,10 @@ focus_tree = {
             focus = ENG_trade_USA
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -241,10 +241,10 @@ focus_tree = {
             focus = ENG_trade_minors
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -258,10 +258,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_trade_USA
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     ################
@@ -282,10 +282,10 @@ focus_tree = {
             focus = ENG_early_ic
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -299,10 +299,10 @@ focus_tree = {
 		relative_position_id = ENG_scaling_path
         mutually_exclusive = { focus = ENG_centralised }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -315,10 +315,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_scaling_path 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -332,10 +332,10 @@ focus_tree = {
 		relative_position_id = ENG_scaling_path
         mutually_exclusive = { focus = ENG_decentralised } 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -348,10 +348,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_decentralised 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -364,10 +364,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_civs_to_cansaf 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -380,10 +380,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_civs_to_astraj 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -396,10 +396,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_civs_to_astraj 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -418,10 +418,10 @@ focus_tree = {
             focus = ENG_royal_ordin
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -435,10 +435,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_produce_equipmet 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -451,10 +451,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_catchup_air 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -473,10 +473,10 @@ focus_tree = {
             focus = ENG_royal_ordin
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -489,10 +489,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_build_civs 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -505,10 +505,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_left_shadw_schme 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -521,10 +521,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_centralised 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -537,10 +537,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_civs_to_uk1 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -553,10 +553,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_civs_to_uk2 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -569,10 +569,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_civs_to_uk2 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -591,10 +591,10 @@ focus_tree = {
             focus = ENG_royal_ordin
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -608,10 +608,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_resourcestouk 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -624,10 +624,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_industry_bonus 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -646,10 +646,10 @@ focus_tree = {
             focus = ENG_navy_inv
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 
@@ -672,10 +672,10 @@ focus_tree = {
             focus = ENG_scaling_path
         }
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -688,10 +688,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_ic 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -704,10 +704,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_ic 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -720,10 +720,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_mil_bonus 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -736,10 +736,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_infra_spawnin 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -752,10 +752,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_resource_excav 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -768,10 +768,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_mil_bonus 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -784,10 +784,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_industry_bonus2 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -800,10 +800,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_output 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -816,10 +816,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_shadow_scheme 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -832,10 +832,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_mills1 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -848,10 +848,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_mills2 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -867,10 +867,10 @@ focus_tree = {
         }
 		relative_position_id = ENG_shadow_factories2 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -883,10 +883,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_shadow_scheme 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -899,10 +899,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_radioIC 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
     focus = {
@@ -915,10 +915,10 @@ focus_tree = {
 		}
 		relative_position_id = ENG_early_artiIC 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 
