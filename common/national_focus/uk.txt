@@ -81,7 +81,7 @@ focus_tree = {
 	focus = {
         id = ENG_raj_dev
         x = 0
-        y = 2
+        y = 3
         cost = 2
 		prerequisite = {
 			focus = ENG_economy
@@ -272,7 +272,7 @@ focus_tree = {
 	focus = {
         id = ENG_scaling_path
         x = -8
-        y = 1
+        y = 2
         cost = 2
 		prerequisite = {
 			focus = ENG_economy
@@ -662,7 +662,7 @@ focus_tree = {
     focus = {
         id = ENG_early_ic
         x = 8
-        y = 1
+        y = 2
         cost = 2
 		prerequisite = {
 			focus = ENG_economy
@@ -907,12 +907,15 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_gunIC
-        x = 3
+        x = 2
         y = 1
         cost = 2
 		prerequisite = {
 			focus = ENG_early_artiIC
 		}
+        prerequisite = {
+            focus = ENG_sfp_advisor
+        }
 		relative_position_id = ENG_early_artiIC 
         available = {
             # Add any conditions here
@@ -922,4 +925,670 @@ focus_tree = {
         }
     }
 
+    ################
+    ################
+        #ARMY TREE
+    ################
+    ################
+    focus = {
+        id = ENG_british_army
+        x = 20
+        y = 1
+        cost = 5
+        relative_position_id = ENG_economy
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp
+        x = -5
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_british_army
+		}
+		relative_position_id = ENG_british_army 
+        mutually_exclusive = {
+            focus = ENG_tank
+            focus = ENG_gbp
+        }
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp_arti_bon
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sfp
+		}
+		relative_position_id = ENG_sfp 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp_gun_mio
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sfp_arti_bon
+		}
+		relative_position_id = ENG_sfp_arti_bon 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp_gun_bon
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sfp_gun_mio
+		}
+		relative_position_id = ENG_sfp_gun_mio 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp_inv_def
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sfp
+		}
+		relative_position_id = ENG_sfp 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp_land_fac
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sfp_inv_def
+		}
+		relative_position_id = ENG_sfp_inv_def 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp_soft
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sfp_land_fac
+		}
+		relative_position_id = ENG_sfp_land_fac 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sfp_advisor
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sfp_soft
+            focus = ENG_sfp_gun_bon
+		}
+		relative_position_id = ENG_sfp_soft 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+
+    focus = {
+        id = ENG_gbp
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_british_army
+		}
+		relative_position_id = ENG_british_army 
+        mutually_exclusive = {
+            focus = ENG_tank
+            focus = ENG_sfp
+        }
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_gbp_arti_bon
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp
+		}
+		relative_position_id = ENG_gbp 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_gbp_gun_mio
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp_arti_bon
+		}
+		relative_position_id = ENG_gbp_arti_bon 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_gbp_gun_bon
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp_gun_mio
+		}
+		relative_position_id = ENG_gbp_gun_mio 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_gbp_naval_plan
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp
+		}
+		relative_position_id = ENG_gbp
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_gbp_max_plan
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp_naval_plan
+		}
+		relative_position_id = ENG_gbp_naval_plan 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_gbp_prep_time
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp_max_plan
+		}
+		relative_position_id = ENG_gbp_max_plan 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_gbp_advisor
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp_prep_time
+            focus = ENG_gbp_gun_bon
+		}
+		relative_position_id = ENG_gbp_prep_time 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+
+    focus = {
+        id = ENG_tank
+        x = 5
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_british_army
+		}
+		relative_position_id = ENG_british_army 
+        mutually_exclusive = {
+            focus = ENG_sfp
+            focus = ENG_gbp
+        }
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_tank_bonus
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_tank
+		}
+		relative_position_id = ENG_tank 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_tank_arti_bonus
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_tank_bonus
+		}
+		relative_position_id = ENG_tank_bonus 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_tank_mio_click
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_tank_arti_bonus
+		}
+		relative_position_id = ENG_tank_arti_bonus 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_tank_radio2
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_tank
+		}
+		relative_position_id = ENG_tank
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_tank_catch_up
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_tank_radio2
+		}
+		relative_position_id = ENG_tank_radio2 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_tank_recrate
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_tank_catch_up
+		}
+		relative_position_id = ENG_tank_catch_up 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_tank_advisor
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_tank_recrate
+            focus = ENG_tank_mio_click
+		}
+		relative_position_id = ENG_tank_recrate 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_lesson_of_war
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_gbp_advisor
+            focus = ENG_sfp_advisor
+            focus = ENG_tank_advisor
+		}
+		relative_position_id = ENG_gbp_advisor 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_cheap_sf
+        x = -2
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_lesson_of_war
+		}
+		relative_position_id = ENG_lesson_of_war 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sf_doc
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_cheap_sf
+		}
+		relative_position_id = ENG_cheap_sf 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_sf_advisor
+        x = 2
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_lesson_of_war
+		}
+		relative_position_id = ENG_lesson_of_war 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_commandos
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sf_advisor
+		}
+		relative_position_id = ENG_sf_advisor 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+
+    focus = {
+        id = ENG_compass
+        x = -2
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sf_doc
+		}
+        prerequisite = {
+			focus = ENG_commandos
+		}
+		relative_position_id = ENG_sf_doc 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_crusader
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sf_doc
+		}
+        prerequisite = {
+			focus = ENG_commandos
+		}
+		relative_position_id = ENG_sf_doc 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_torch
+        x = 2
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sf_doc
+		}
+        prerequisite = {
+			focus = ENG_commandos
+		}
+		relative_position_id = ENG_sf_doc 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_countinence
+        x = 4
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sf_doc
+		}
+        prerequisite = {
+			focus = ENG_commandos
+		}
+		relative_position_id = ENG_sf_doc 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_husky
+        x = 6
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_sf_doc
+		}
+        prerequisite = {
+			focus = ENG_commandos
+		}
+		relative_position_id = ENG_sf_doc 
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+
+    focus = {
+        id = ENG_bomb_europe
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_compass
+            focus = ENG_countinence
+            focus = ENG_husky
+            focus = ENG_torch
+            focus = ENG_crusader
+		}
+		relative_position_id = ENG_crusader 
+        mutually_exclusive = {
+            focus = ENG_land_in_eu
+        }
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+    focus = {
+        id = ENG_land_in_eu
+        x = 3
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_compass
+            focus = ENG_countinence
+            focus = ENG_husky
+            focus = ENG_torch
+            focus = ENG_crusader
+		}
+		relative_position_id = ENG_crusader
+        mutually_exclusive = {
+            focus = ENG_bomb_europe
+        }
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+        }
+    }
+
+    focus = {
+        id = ENG_overlord
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_land_in_eu
+            focus = ENG_bomb_europe
+		}
+		relative_position_id = ENG_bomb_europe
+        available = {
+            # Add any conditions here
+        }
+        completion_reward = {
+            # Add rewards here
+            #speech
+        }
+    }
+
+
+    
 }
