@@ -38,6 +38,7 @@ focus_tree = {
 	shared_focus = COM_commonwealth_command
     focus = {
         id = ENG_economy
+		icon = x
         x = 5
         y = 1
         cost = 5
@@ -50,6 +51,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_depr1
+		icon = x
         x = 1
         y = 1
         cost = 5
@@ -66,6 +68,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_depr2
+		icon = x
         x = -1
         y = 1
         cost = 5
@@ -80,6 +83,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_raj_dev
+		icon = x
         x = 0
         y = 3
         cost = 2
@@ -96,6 +100,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_can_dev
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -112,6 +117,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_saf_dev
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -128,6 +134,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_ast_dev
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -144,6 +151,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_BAF
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -165,6 +173,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_balance_BAF_RAF
+		icon = x
         x = 0
         y = 2
         cost = 2
@@ -186,6 +195,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_RAF
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -207,6 +217,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_trade_minors
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -228,6 +239,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_trade_USA
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -249,6 +261,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_a_thousant_year_empire
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -271,6 +284,7 @@ focus_tree = {
     ################
 	focus = {
         id = ENG_scaling_path
+		icon = x
         x = -8
         y = 2
         cost = 2
@@ -290,6 +304,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_decentralised
+		icon = x
         x = -3
         y = 1
         cost = 2
@@ -307,6 +322,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_build_civs
+		icon = x
         x = 0
         y = 2
         cost = 2
@@ -323,6 +339,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_centralised
+		icon = x
         x = 3
         y = 1
         cost = 2
@@ -340,6 +357,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_cansaf
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -356,6 +374,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_astraj
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -372,6 +391,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_mills_scale1
+		icon = x
         x = -2
         y = 1
         cost = 2
@@ -388,6 +408,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_produce_equipmet
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -404,6 +425,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_fortress_uk
+		icon = x
         x = 0
         y = 3
         cost = 2
@@ -426,6 +448,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_catchup_air
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -443,6 +466,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_build_mils
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -459,6 +483,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_navy_inv
+		icon = x
         x = -2
         y = 3
         cost = 2
@@ -481,6 +506,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_left_shadw_schme
+		icon = x
         x = 0
         y = 3
         cost = 2
@@ -497,6 +523,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_total_mob
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -513,6 +540,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_uk1
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -529,6 +557,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_uk2
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -545,6 +574,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_resourcestouk
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -561,6 +591,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_mills_scale2
+		icon = x
         x = 2
         y = 1
         cost = 2
@@ -577,6 +608,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_shadow_fact_expans
+		icon = x
         x = 0
         y = 3
         cost = 2
@@ -599,6 +631,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_industry_bonus
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -616,6 +649,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_build_slots
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -632,6 +666,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_royal_ordin
+		icon = x
         x = 2
         y = 3
         cost = 2
@@ -661,6 +696,7 @@ focus_tree = {
 
     focus = {
         id = ENG_early_ic
+		icon = x
         x = 8
         y = 2
         cost = 2
@@ -680,6 +716,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_mil_bonus
+		icon = x
         x = -2
         y = 1
         cost = 2
@@ -696,6 +733,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_shadow_scheme
+		icon = x
         x = 2
         y = 1
         cost = 2
@@ -712,6 +750,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_infra_spawnin
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -728,6 +767,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_resource_excav
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -744,6 +784,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_colonial_excav
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -760,6 +801,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_industry_bonus2
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -776,6 +818,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_output
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -792,6 +835,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_dock_output
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -808,6 +852,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_mills1
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -824,6 +869,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_mills2
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -840,6 +886,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_shadow_factories2
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -856,6 +903,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_total_mob_right
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -875,6 +923,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_radioIC
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -891,6 +940,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_artiIC
+		icon = x
         x = 0
         y = 2
         cost = 2
@@ -907,6 +957,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_gunIC
+		icon = x
         x = 2
         y = 1
         cost = 2
@@ -932,6 +983,7 @@ focus_tree = {
     ################
     focus = {
         id = ENG_british_army
+		icon = x
         x = 20
         y = 1
         cost = 5
@@ -945,6 +997,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp
+		icon = x
         x = -5
         y = 1
         cost = 2
@@ -965,6 +1018,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_arti_bon
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -981,6 +1035,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_gun_mio
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -997,6 +1052,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_gun_bon
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1013,6 +1069,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_inv_def
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -1029,6 +1086,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_land_fac
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1045,6 +1103,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_soft
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1061,6 +1120,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_advisor
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -1079,6 +1139,7 @@ focus_tree = {
 
     focus = {
         id = ENG_gbp
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1099,6 +1160,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_arti_bon
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -1115,6 +1177,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_gun_mio
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1131,6 +1194,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_gun_bon
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1147,6 +1211,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_naval_plan
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -1163,6 +1228,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_max_plan
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1179,6 +1245,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_prep_time
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1195,6 +1262,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_advisor
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -1213,6 +1281,7 @@ focus_tree = {
 
     focus = {
         id = ENG_tank
+		icon = x
         x = 5
         y = 1
         cost = 2
@@ -1233,6 +1302,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_bonus
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -1249,6 +1319,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_arti_bonus
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1265,6 +1336,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_mio_click
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1281,6 +1353,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_radio2
+		icon = x
         x = 1
         y = 1
         cost = 2
@@ -1297,6 +1370,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_catch_up
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1313,6 +1387,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_recrate
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1329,6 +1404,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_advisor
+		icon = x
         x = -1
         y = 1
         cost = 2
@@ -1346,6 +1422,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_lesson_of_war
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1364,6 +1441,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_cheap_sf
+		icon = x
         x = -2
         y = 1
         cost = 2
@@ -1380,6 +1458,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sf_doc
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1396,6 +1475,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sf_advisor
+		icon = x
         x = 2
         y = 1
         cost = 2
@@ -1412,6 +1492,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_commandos
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1429,6 +1510,7 @@ focus_tree = {
 
     focus = {
         id = ENG_compass
+		icon = x
         x = -2
         y = 1
         cost = 2
@@ -1448,6 +1530,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_crusader
+		icon = x
         x = 0
         y = 1
         cost = 2
@@ -1467,6 +1550,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_torch
+		icon = x
         x = 2
         y = 1
         cost = 2
@@ -1485,7 +1569,8 @@ focus_tree = {
         }
     }
     focus = {
-        id = ENG_countinence
+        id = ENG_countenance
+		icon = x
         x = 4
         y = 1
         cost = 2
@@ -1505,6 +1590,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_husky
+		icon = x
         x = 6
         y = 1
         cost = 2
@@ -1525,12 +1611,13 @@ focus_tree = {
 
     focus = {
         id = ENG_bomb_europe
+		icon = x
         x = 1
         y = 1
         cost = 2
 		prerequisite = {
 			focus = ENG_compass
-            focus = ENG_countinence
+            focus = ENG_countenance
             focus = ENG_husky
             focus = ENG_torch
             focus = ENG_crusader
@@ -1548,12 +1635,13 @@ focus_tree = {
     }
     focus = {
         id = ENG_land_in_eu
+		icon = x
         x = 3
         y = 1
         cost = 2
 		prerequisite = {
 			focus = ENG_compass
-            focus = ENG_countinence
+            focus = ENG_countenance
             focus = ENG_husky
             focus = ENG_torch
             focus = ENG_crusader
@@ -1572,6 +1660,7 @@ focus_tree = {
 
     focus = {
         id = ENG_overlord
+		icon = x
         x = 1
         y = 1
         cost = 2
