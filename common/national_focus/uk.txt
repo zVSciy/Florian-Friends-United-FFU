@@ -149,8 +149,8 @@ focus_tree = {
             
         }
     }
-    focus = {
-        id = ENG_BAF
+	focus = {
+        id = ENG_def_el_ala
 		icon = x
         x = 1
         y = 1
@@ -166,8 +166,25 @@ focus_tree = {
             
         }
     }
-    focus = {
-        id = ENG_balance_BAF_RAF
+	focus = {
+        id = ENG_def_karth
+		icon = x
+        x = -1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_saf_dev
+		}
+		relative_position_id = ENG_saf_dev 
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+	focus = {
+        id = ENG_imperial_conf
 		icon = x
         x = 0
         y = 2
@@ -183,121 +200,116 @@ focus_tree = {
             
         }
     }
-    focus = {
-        id = ENG_RAF
+	focus = {
+        id = ENG_def_raj
 		icon = x
-        x = -1
+        x = 0
         y = 1
         cost = 2
 		prerequisite = {
-			focus = ENG_defend_el_ala
-			focus = ENG_defend_karth
-			focus = ENG_imperial_conf
+			focus = ENG_def_karth
+			focus = ENG_def_el_ala
 		}
-		relative_position_id = ENG_defend_el_ala 
+		relative_position_id = ENG_def_karth 
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
-    focus = {
+	focus = {
+        id = ENG_africa_retake
+		icon = x
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_def_karth
+			focus = ENG_def_el_ala
+		}
+		relative_position_id = ENG_imperial_conf 
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+	focus = {
+        id = ENG_def_rubber
+		icon = x
+        x = 0
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_def_karth
+			focus = ENG_def_el_ala
+		}
+		relative_position_id = ENG_def_el_ala 
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+	focus = {
         id = ENG_trade_minors
 		icon = x
         x = 1
         y = 1
         cost = 2
 		prerequisite = {
-			focus = ENG_defend_el_ala
-			focus = ENG_defend_karth
-			focus = ENG_imperial_conf
+			focus = ENG_def_rubber
+			focus = ENG_africa_retake
+			focus = ENG_def_raj
 		}
-		relative_position_id = ENG_imperial_conf 
+		relative_position_id = ENG_def_raj
+		mutually_exclusive = {focus = ENG_trade_usa}
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 	focus = {
-        id = ENG_rubber_def
-        x = 0
-        y = 1
-        cost = 2
-		prerequisite = {
-			focus = ENG_defend_el_ala
-			focus = ENG_defend_karth
-			focus = ENG_imperial_conf
-		}
-		relative_position_id = ENG_defend_karth 
-        available = {
-            
-        }
-        completion_reward = {
-            
-        }
-    }
-    focus = {
-        id = ENG_trade_USA
+        id = ENG_trade_usa
 		icon = x
-        x = -1
-        y = 1
-        cost = 2
-		prerequisite = {
-			focus = ENG_rubber_def
-			focus = ENG_africa_retake
-			focus = ENG_raj_buildup
-		}
-		relative_position_id = ENG_rubber_def 
-		mutually_exclusive {
-			focus = ENG_trade_minors
-		} 
-        available = {
-            
-        }
-        completion_reward = {
-            
-        }
-    }
-    focus = {
-        id = ENG_a_thousant_year_empire
-		icon = x
-        x = -1
-        y = 1
-        cost = 2
-		prerequisite = {
-			focus = ENG_rubber_def
-			focus = ENG_africa_retake
-			focus = ENG_raj_buildup
-		}
-		relative_position_id = ENG_raj_buildup
-		mutually_exclusive {
-			focus = ENG_trade_USA
-		} 
-        available = {
-            # Add any conditions here
-        }
-        completion_reward = {
-            # Add rewards here
-        }
-    }
-	focus = {
-        id = ENG_thousant_year
         x = 1
         y = 1
         cost = 2
 		prerequisite = {
-			focus = ENG_trade_USA
+			focus = ENG_def_rubber
+			focus = ENG_africa_retake
+			focus = ENG_def_raj
+		}
+		relative_position_id = ENG_africa_retake
+		mutually_exclusive = { focus = ENG_trade_minors}
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+	focus = {
+        id = ENG_thousant_year
+		icon = x
+        x = 1
+        y = 1
+        cost = 2
+		prerequisite = {
+			focus = ENG_trade_usa
 			focus = ENG_trade_minors
 		}
 		relative_position_id = ENG_trade_minors
         available = {
-            # Add any conditions here
+            
         }
         completion_reward = {
-            # Add rewards here
+            
         }
     }
 
