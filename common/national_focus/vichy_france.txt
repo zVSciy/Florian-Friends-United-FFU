@@ -794,12 +794,7 @@ focus_tree = {
         }
         
         available = {
-            OR = {
-                date > 1941.8.1
-                GER = {
-                    has_war_with = SOV
-                }
-            }
+            date > 1941.9.1
         }
         
         bypass = {
@@ -1530,12 +1525,7 @@ focus_tree = {
         }
         
         available = {
-            OR = {
-                date > 1941.8.1
-                GER = {
-                    has_war_with = SOV
-                }
-            }
+            date > 1941.9.1
         }
         
         bypass = {

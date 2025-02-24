@@ -4064,6 +4064,58 @@ focus_tree = {
 			ITA = {
                     add_ideas = ITA_no_barb_for_you
             }
+
+
+			hidden_effect = {
+				#country_event = torchger.1999
+				ITA = {
+					transfer_state = 460
+					transfer_state = 513
+					transfer_state = 459
+				}
+				460 = {
+					add_building_construction = {
+						type = naval_base
+						level = 4
+						province = 7081
+						instant_build = yes
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+				459 = {
+					set_building_level = {
+						type = air_base
+						level = 5
+						instant_build = yes 
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+				513 = {
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
