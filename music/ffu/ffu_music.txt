@@ -1,0 +1,91 @@
+
+music_station = "ffu_music"
+
+music = {
+	song = "0"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}	
+}
+music = {
+	song = "1"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "2"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}	
+}
+music = {
+	song = "3"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}	
+}
+music = {
+	song = "4"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "5"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "6"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "7"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "8"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}	
+}
+music = {
+	song = "9"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}	
+}
+music = {
+	song = "10"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}

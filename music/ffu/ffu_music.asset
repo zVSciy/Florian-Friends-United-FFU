@@ -1,0 +1,55 @@
+music = {
+	name = "0"
+	file = "barbger.ogg"
+	volume = 1.25
+}
+music = {
+	name = "1"
+	file = "liberation_of_warsaw.ogg"
+	volume = 1
+}
+music = {
+	name = "2"
+	file = "danzig.ogg"
+	volume = 1
+}
+music = {
+	name = "3"
+	file = "focus_on_ger.ogg"
+	volume = 1
+}
+music = {
+	name = "4"
+	file = "sov_winter_off.ogg"
+	volume = 1
+}
+music = {
+	name = "5"
+	file = "sp_blood_toil_tears_sweat.ogg"
+	volume = 1
+}
+music = {
+	name = "6"
+	file = "sp_dday_cooked.ogg"
+	volume = 1
+}
+music = {
+	name = "7"
+	file = "sp_eng_fight_them_cooked.ogg"
+	volume = 1
+}
+music = {
+	name = "8"
+	file = "sp_jap_sov.ogg"
+	volume = 1
+}
+music = {
+	name = "9"
+	file = "totalenkrieg.ogg"
+	volume = 1
+}
+music = {
+	name = "10"
+	file = "sp_ger_volk.ogg"
+	volume = 1
+}
