@@ -1620,7 +1620,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_army_dynamic_modifier_tt = yes
-            add_to_variable = { ENG_british_naval_invasion_prep_speed = 0.7 tooltip = naval_invasion_prep_speed_tt }
+            add_to_variable = { ENG_british_invasion_preparation = 0.7 tooltip = naval_invasion_prep_speed_tt }
         }
     }
     focus = {
