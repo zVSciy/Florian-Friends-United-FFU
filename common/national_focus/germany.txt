@@ -2363,6 +2363,8 @@ focus_tree = {
 			GER = {
 				add_war_support = 0.1
 			}
+			#speech
+				play_song = "0" 
 			# if = {
 			# 	limit = { FRA = { is_puppet = no } }
 			# 	FRA = {
