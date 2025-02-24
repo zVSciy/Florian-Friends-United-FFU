@@ -4115,6 +4115,8 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+				#speech
+				play_song = "0" 
 			}
 		}
 	}
