@@ -10782,5 +10782,706 @@ focus_tree = {
 			army_experience = 25
 		}
 	}
+
+
+
+
+
+	############################################################################################################################################
+	############################################################################################################################################
+	############################################################################################################################################
+	############################################################################################################################################
+	############################################################################################################################################
+	################################################## NEW SOVIET ARMY TREE ###################################################################
+	############################################################################################################################################
+	############################################################################################################################################
+	############################################################################################################################################
+	############################################################################################################################################
+	############################################################################################################################################
+
+	focus = {
+		id = SOV_Army_tree
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = x}
+		x = 40
+		y = 10
+		relative_position_id = x
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_red_armyy
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Army_tree}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Army_tree
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_Mobile_Warfare
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_red_armyy}
+		x = -11
+		y = 1
+		relative_position_id = SOV_red_armyy
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Timoshenko
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Mobile_Warfare}
+		mutually_exclusive = {
+			focus = SOV_Zhukov
+		}
+		x = -2
+		y = 1
+		relative_position_id = SOV_Mobile_Warfare
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Timoshenko_2
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Timoshenko}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Timoshenko
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_Timoshenko_3
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Timoshenko_2}
+		x = 0
+		y = 2
+		relative_position_id = SOV_Timoshenko
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_Zhukov
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Mobile_Warfare}
+		x = -0
+		y = 1
+		relative_position_id = SOV_Mobile_Warfare
+		cost = 3
+
+		available = {
+
+		}
+
+		mutually_exclusive = {
+			focus = SOV_Buddyonny
+			focus = SOV_Timoshenko
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Zhukov_2
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Zhukov}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Zhukov
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Zhukov_3
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Zhukov_2}
+		x = 0
+		y = 2
+		relative_position_id = SOV_Zhukov
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Buddyonny
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Mobile_Warfare}
+		x = 2
+		y = 1
+		relative_position_id = SOV_Mobile_Warfare
+		cost = 3
+
+		mutually_exclusive = {
+			
+				focus = SOV_Zhukov
+			
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Buddyonny_2
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Buddyonny}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Buddyonny
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Buddyonny_3
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Buddyonny_2}
+		x = 0
+		y = 2
+		relative_position_id = SOV_Buddyonny
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Tank_MIO
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Buddyonny_3 focus = SOV_Timoshenko_3 focus = SOV_Zhukov_3 }
+		x = -1
+		y = 1
+		relative_position_id = SOV_Buddyonny_3
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Tank/Mech_research
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Buddyonny_3 focus = SOV_Timoshenko_3 focus = SOV_Zhukov_3 }
+		x = -3
+		y = 1
+		relative_position_id = SOV_Buddyonny_3
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_Heavy_Fire
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Tank_MIO focus = SOV_Tank/Mech_research focus = SOV_SF_Genius focus = SOV_Mechanised_Advisor }
+		x = 5
+		y = 2
+		relative_position_id = SOV_Tank/Mech_research
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+	focus = {
+		id = SOV_SF
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_red_armyy}
+		x = -4
+		y = 1
+		relative_position_id = SOV_red_armyy
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_Konev
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_SF}
+		x = 2
+		y = 1
+		relative_position_id = SOV_SF
+		cost = 3
+
+		available = {
+
+		}
+
+		mutually_exclusive = {
+			focus = SOV_Gorbatov
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Konev_2
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Konev}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Konev
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Konev_3
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Konev_2 }
+		x = 0
+		y = 1
+		relative_position_id = SOV_Konev_2
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Gorbatov
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_SF}
+		x = 0
+		y = 1
+		relative_position_id = SOV_SF
+		cost = 3
+
+		available = {
+
+		}
+
+		mutually_exclusive = {
+			focus = SOV_Rokosovsky
+			focus = SOV_Konev
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Gorbatov_2
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Gorbatov}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Gorbatov
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Gorbatov_3
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Gorbatov_2 }
+		x = 0
+		y = 1
+		relative_position_id = SOV_Gorbatov_2
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Rokosovsky
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_SF}
+		x = -2
+		y = 1
+		relative_position_id = SOV_SF
+		cost = 3
+
+		available = {
+
+		}
+
+		mutually_exclusive = {
+			focus = SOV_Gorbatov
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Rokosovsky_2
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Rokosovsky}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Rokosovsky
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Rokosovsky_3
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Rokosovsky_2 }
+		x = 0
+		y = 1
+		relative_position_id = SOV_Rokosovsky_2
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_SF_Genius
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Konev_3 focus = SOV_Rokosovsky_3 focus = SOV_Gorbatov_3   }
+		x = 1
+		y = 1
+		relative_position_id = SOV_Rokosovsky_3
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Mechanised_Advisor
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Konev_3 focus = SOV_Rokosovsky_3 focus = SOV_Gorbatov_3   }
+		x = -1
+		y = 1
+		relative_position_id = SOV_Konev_3
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Tank_MIO
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Buddyonny_3 focus = SOV_Timoshenko_3 focus = SOV_Zhukov_3 }
+		x = -1
+		y = 1
+		relative_position_id = SOV_Buddyonny_3
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Tank/Mech_research
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_Buddyonny_3 focus = SOV_Timoshenko_3 focus = SOV_Zhukov_3 }
+		x = -3
+		y = 1
+		relative_position_id = SOV_Buddyonny_3
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_GBP
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_red_armyy}
+		x = 4
+		y = 1
+		relative_position_id = SOV_red_armyy
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_Mass_Assault
+
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = SOV_red_armyy}
+		x = 10
+		y = 1
+		relative_position_id = SOV_red_armyy
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			
+		}
+	}
 	
 }
