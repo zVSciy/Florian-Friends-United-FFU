@@ -244,7 +244,7 @@ ENG_army_dynamic_modifier = {
 	army_attack_factor = ENG_british_army_attack_factor
 	naval_invasion_planning_bonus_speed = ENG_british_naval_invasion_planning_bonus_speed
 	max_planning = ENG_british_max_planning
-	naval_invasion_prep_speed == ENG_british_naval_invasion_prep_speed
+	invasion_preparation = ENG_british_invasion_preparation
 }
  
 ENG_air_dynamic_modifier = {

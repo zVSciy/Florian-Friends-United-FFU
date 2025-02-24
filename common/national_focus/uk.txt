@@ -1493,7 +1493,7 @@ focus_tree = {
 				name = doc_bonus
 				cost_reduction = 0.25
 				uses = 4
-				category = cat_grand_battle_plan_cost_factor
+				category = cat_grand_battle_plan
 			}
 			ENG_army_dynamic_modifier_tt = yes
 			add_to_variable = { ENG_british_army_cat_grand_battle_plan_cost_factor = -1.2 tooltip = cat_grand_battle_plan_cost_factor_tt}
@@ -1625,7 +1625,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_army_dynamic_modifier_tt = yes
-            add_to_variable = { ENG_british_naval_invasion_prep_speed = 0.7 tooltip = naval_invasion_prep_speed_tt }
+            add_to_variable = { ENG_british_invasion_preparation = 0.7 tooltip = naval_invasion_prep_speed_tt }
         }
     }
     focus = {
@@ -1673,7 +1673,16 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_doctrine_cost_reduction = {
+				name = doc_bonus2
+				cost_reduction = 0.25
+				uses = 4
+				category = cat_mass_assault
+				category = cat_mobile_warfare
+			}
+			ENG_army_dynamic_modifier_tt = yes
+			add_to_variable = { ENG_british_cat_mass_assault_cost_factor = -1.2 tooltip = cat_mass_assault_cost_factor_tt }
+			add_to_variable = { ENG_british_army_cat_mobile_warfare_cost_factor = -1.2 tooltip = cat_mobile_warfare_cost_factor_tt}
         }
     }
     focus = {
@@ -1690,7 +1699,12 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_tech_bonus = {
+				name = tnk_bonus
+				bonus = 0.75
+				uses = 2
+				category = cat_medium_armor
+			}
         }
     }
     focus = {
@@ -1707,7 +1721,13 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            army_experience = 10
+			add_tech_bonus = {
+				name = art_bonus
+				bonus = 0.75
+				uses = 4
+				category = artillery
+			}
         }
     }
     focus = {
@@ -1741,7 +1761,12 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_tech_bonus = {
+				name = radio_bonus
+				bonus = 1000
+				uses = 1
+				technology = mot_radio2
+			}
         }
     }
     focus = {
@@ -1758,7 +1783,10 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_timed_idea = {
+				idea = ENG_tank_catch_up_idea
+				days = 90
+			}
         }
     }
     focus = {
