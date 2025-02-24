@@ -206,6 +206,7 @@ ENG_economy_dynamic_modifier = {
 	production_factory_start_efficiency_factor = ENG_british_economy_production_factory_start_efficiency_factor
 	production_factory_efficiency_gain_factor = ENG_british_economy_production_factory_efficiency_gain_factor
 	production_speed_industrial_complex_factor = ENG_british_economy_production_speed_industrial_complex_factor
+	local_resources_factor = ENG_british_economy_local_resources_factor
 }
 
 ENG_army_dynamic_modifier = {

@@ -50,6 +50,33 @@ ideas = {
 				}
 			}
 		}
+
+		CAN_rightside_equipment_buff = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				radio_equipment = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				sf_equipment = {
+					build_cost_ic = -0.025 instant = yes
+				}
+			}
+		}
 		
 		CAN_kangaroo = {
 

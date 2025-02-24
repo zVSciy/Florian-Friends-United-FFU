@@ -525,7 +525,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_ideas = ENG_rightside_equipment_buff
         }
     }
     focus = {
@@ -566,7 +566,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_timed_idea = {
+                idea = ENG_british_fighter_rightside
+                days = 90
+            }
         }
     }
     focus = {
@@ -583,7 +586,8 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.075 tooltip = production_speed_arms_factory_factor_tt } 
         }
     }
     focus = {
@@ -784,7 +788,8 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            ENG_economy_dynamic_modifier_tt = yes # tooltip
+            set_variable = { ENG_british_economy_local_resources_factor = 0.1 tooltip = local_resources_factor_tt } 
         }
     }
     focus = {
