@@ -29,6 +29,21 @@ ideas = {
 				trade_cost_for_target_factor = -0.5
 			}
 		}
+		CAN_cheaper_trade_UK = {			
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.5
+			}
+		}
 
 		CAN_ford_general_motors = {
 
