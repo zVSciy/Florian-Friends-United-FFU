@@ -146,7 +146,7 @@ HMP_check_fleet_size = {
 			value = destroyer_count
 		}
 		multiply_temp_variable  = { 
-			var =  destroyer_count_temp value = 0.5
+			var =  destroyer_count_temp value = 1
 		}
 		add_to_temp_variable = {
 			var = command_limit_used_temp

@@ -31,7 +31,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_light_battery
-			convert_cost_ic = 60
+			convert_cost_ic = 30
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -60,12 +60,12 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = ship_light_battery
-			convert_cost_ic = 75 #conversion cost from ANY ship_light_battery module
+			convert_cost_ic = 30 #conversion cost from ANY ship_light_battery module
 		}
 		
 		can_convert_from = {
 			module = ship_light_battery_1
-			convert_cost_ic = 45 #conversion cost from that specific module
+			convert_cost_ic = 30 #conversion cost from that specific module
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -88,14 +88,16 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.03
 		}
+
 		can_convert_from = {
 			module_category = ship_light_battery
-			convert_cost_ic = 75
-		}
-		build_cost_resources = {
-			steel = 3			
+			convert_cost_ic = 30 #conversion cost from ANY ship_light_battery module
 		}
 		
+		can_convert_from = {
+			module = ship_light_battery_1
+			convert_cost_ic = 30 #conversion cost from that specific module
+		}
 		can_convert_from = {
 			module= ship_light_battery_2
 			convert_cost_ic = 45
@@ -114,9 +116,6 @@ equipment_modules = {
 			build_cost_ic = 180	
 			lg_armor_piercing = 0.25
 		}
-		build_cost_resources = {
-			steel = 4
-		}
 		multiply_stats = {
 			naval_speed = -0.04
 		}
@@ -126,12 +125,20 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = ship_light_battery
-			convert_cost_ic = 190
+			convert_cost_ic = 30 #conversion cost from ANY ship_light_battery module
 		}
-			
+		
 		can_convert_from = {
-			module = ship_light_battery_3
-			convert_cost_ic = 120
+			module = ship_light_battery_1
+			convert_cost_ic = 30 #conversion cost from that specific module
+		}
+		can_convert_from = {
+			module= ship_light_battery_2
+			convert_cost_ic = 45
+		}
+		can_convert_from = {
+			module= ship_light_battery_3
+			convert_cost_ic = 60
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -149,9 +156,6 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.01
-		}
-		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1
@@ -177,9 +181,6 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.02
-		}
-		build_cost_resources = {
-			steel = 2
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1
@@ -283,9 +284,6 @@ equipment_modules = {
 			hg_attack = 15.0
 			build_cost_ic = 1250
 		}
-		build_cost_resources = {
-			steel = 5
-		}
 		multiply_stats = {
 			naval_speed = -0.05
 		}
@@ -295,7 +293,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = ship_heavy_battery
-			convert_cost_ic = 700
+			convert_cost_ic = 250
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -319,13 +317,13 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = ship_heavy_battery
-			convert_cost_ic = 900
+			module = ship_heavy_battery_1
+			convert_cost_ic = 250
 		}
 		
 		can_convert_from = {
-			module = ship_heavy_battery_1
-			convert_cost_ic = 600
+			module_category = ship_heavy_battery
+			convert_cost_ic = 500
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -347,15 +345,20 @@ equipment_modules = {
 		add_average_stats = {
 			hg_armor_piercing = 38
 		}
-	
-		can_convert_from = {
-			module_category = ship_heavy_battery
-			convert_cost_ic = 1200
-		}
 		
 		can_convert_from = {
 			module = ship_heavy_battery_2
-			convert_cost_ic = 600
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_heavy_battery_1
+			convert_cost_ic = 500
+		}
+		
+		can_convert_from = {
+			module_category = ship_heavy_battery
+			convert_cost_ic = 750
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -380,12 +383,22 @@ equipment_modules = {
 		}
 	
 		can_convert_from = {
-			module_category = ship_heavy_battery
-			convert_cost_ic = 1450
+			module = ship_heavy_battery_3
+			convert_cost_ic = 250
 		}
 		
 		can_convert_from = {
-			module = ship_heavy_battery_3
+			module = ship_heavy_battery_2
+			convert_cost_ic = 500
+		}
+		
+		can_convert_from = {
+			module = ship_heavy_battery_1
+			convert_cost_ic = 600
+		}
+		
+		can_convert_from = {
+			module_category = ship_heavy_battery
 			convert_cost_ic = 800
 		}
 		critical_parts = { damaged_heavy_guns }
@@ -439,9 +452,6 @@ equipment_modules = {
 			naval_speed = -0.04
 			surface_visibility = 0.03
 		}
-		build_cost_resources = {
-			steel = 2
-		}
 		add_average_stats = {
 			hg_armor_piercing = 13
 			lg_armor_piercing = 13
@@ -476,9 +486,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.06
 			surface_visibility = 0.03
-		}
-		build_cost_resources = {
-			steel = 4
 		}
 		add_average_stats = {
 			hg_armor_piercing = 16
@@ -517,9 +524,6 @@ equipment_modules = {
 			naval_speed = -0.07
 			surface_visibility = 0.03
 		}
-		build_cost_resources = {
-			steel = 6
-		}
 		add_average_stats = {
 			hg_armor_piercing = 19
 			lg_armor_piercing = 19
@@ -556,9 +560,6 @@ equipment_modules = {
 			naval_speed = -0.08
 			surface_visibility = 0.03
 		}
-		build_cost_resources = {
-			steel = 8
-		}
 		add_average_stats = {
 			hg_armor_piercing = 23
 			lg_armor_piercing = 23
@@ -588,9 +589,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.03
 		}
-		build_cost_resources = {
-			steel = 2
-		}
 		add_average_stats = {
 			lg_armor_piercing = 6.5
 			max_strength = 25
@@ -614,9 +612,6 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.04
-		}
-		build_cost_resources = {
-			steel = 4
 		}
 		add_average_stats = {
 			lg_armor_piercing = 8.2
@@ -644,9 +639,6 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.05
-		}
-		build_cost_resources = {
-			steel = 6
 		}
 		add_average_stats = {
 			lg_armor_piercing = 9
@@ -680,10 +672,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.06
 		}
-		build_cost_resources = {
-			steel = 8
-		}
-
 		add_average_stats = {
 			lg_armor_piercing = 10.3
 			max_strength = 25
@@ -722,10 +710,6 @@ equipment_modules = {
 			lg_armor_piercing = 8
 			max_strength = 25
 		}
-		build_cost_resources = {
-			steel = 6
-		}
-
 
 		forbid_module_categories = {
 		     ship_medium_battery
@@ -1806,14 +1790,11 @@ dp_ship_secondaries_2 = {
 
 		
 		add_stats = {
-			torpedo_attack = 20 #16 #19.5
+			torpedo_attack = 15
 			build_cost_ic = 90
 		}
 		multiply_stats = {
 			naval_speed = -0.01			
-		}
-		build_cost_resources = {
-			steel = 0
 		}
 		critical_parts = { damaged_torpedoes }
 	}
@@ -1826,7 +1807,7 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 26
+			torpedo_attack = 19.5
 			build_cost_ic = 80
 		}
 		multiply_stats = {
@@ -1859,7 +1840,7 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 30
+			torpedo_attack = 22.5
 			build_cost_ic = 120
 		}
 		multiply_stats = {
@@ -1882,7 +1863,7 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 34
+			torpedo_attack = 25.5
 			build_cost_ic = 125
 		}
 		multiply_stats = {
@@ -2461,7 +2442,7 @@ dp_ship_secondaries_2 = {
 			armor_value = 32
 			# naval_torpedo_enemy_critical_chance_factor = -0.1
 			# naval_torpedo_damage_reduction_factor = 0.1
-			naval_torpedo_damage_reduction_factor = -0.4
+			naval_torpedo_damage_reduction_factor = -0.3
 		}
 		dismantle_cost_ic = 2000
 		
@@ -2482,7 +2463,7 @@ dp_ship_secondaries_2 = {
 		add_stats = {
 			armor_value = 23
 			# naval_torpedo_damage_reduction_factor = 0.05
-			naval_torpedo_damage_reduction_factor = -0.4
+			naval_torpedo_damage_reduction_factor = -0.3
 		}
 		dismantle_cost_ic = 1600
 		
@@ -2504,7 +2485,7 @@ dp_ship_secondaries_2 = {
 			armor_value = 38
 			# naval_torpedo_enemy_critical_chance_factor = -0.15
 			# naval_torpedo_damage_reduction_factor = 0.15
-			naval_torpedo_damage_reduction_factor = -0.4
+			naval_torpedo_damage_reduction_factor = -0.3
 		}
 		dismantle_cost_ic = 2400
 		
@@ -2527,7 +2508,7 @@ dp_ship_secondaries_2 = {
 			armor_value = 29
 			# naval_torpedo_enemy_critical_chance_factor = -0.05
 			# naval_torpedo_damage_reduction_factor = 0.05
-			naval_torpedo_damage_reduction_factor = -0.4
+			naval_torpedo_damage_reduction_factor = -0.3
 		}
 		dismantle_cost_ic = 2000
 	}
@@ -2548,7 +2529,7 @@ dp_ship_secondaries_2 = {
 			armor_value = 44
 			# naval_torpedo_enemy_critical_chance_factor = -0.2
 			# naval_torpedo_damage_reduction_factor = 0.2
-			naval_torpedo_damage_reduction_factor = -0.4
+			naval_torpedo_damage_reduction_factor = -0.3
 		}
 		dismantle_cost_ic = 2800
 		
@@ -2571,7 +2552,7 @@ dp_ship_secondaries_2 = {
 			armor_value = 35
 			# naval_torpedo_enemy_critical_chance_factor = -0.1
 			# naval_torpedo_damage_reduction_factor = 0.1
-			naval_torpedo_damage_reduction_factor = -0.4
+			naval_torpedo_damage_reduction_factor = -0.3
 		}
 		dismantle_cost_ic = 2400
 		
