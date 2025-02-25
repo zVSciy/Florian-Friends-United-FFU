@@ -602,7 +602,21 @@ operations = {
 						prince_of_terror
 					}
 				}
-				
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 20000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = squad_equipment_0
+					amount = 5000
+					producer = ITA
+				}
+				add_equipment_to_stockpile = {
+					type = horse_equipment_0
+					amount = 5000
+					producer = ITA
+				}
 			}
 			set_autonomy = { target = ETH autonomy_state = autonomy_integrated_puppet }
 			create_corps_commander = {
