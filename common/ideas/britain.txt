@@ -117,6 +117,26 @@ ideas = {
 			}
 		}
 
+		ENG_civ_boost = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = -0.8
+			}
+		}
+
 		ENG_secure_the_imperial_shipping_routes = {
 
 			picture = generic_coastal_defense_ships
