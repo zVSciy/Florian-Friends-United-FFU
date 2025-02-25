@@ -103,6 +103,7 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.25
+				NOT = { tag = ENG }
 				if = {
 					limit = {
 						original_tag = HUN
