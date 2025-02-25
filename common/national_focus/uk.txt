@@ -158,7 +158,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 3
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_economy
 		}
@@ -180,7 +180,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_raj_dev
 		}
@@ -202,7 +202,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_can_dev
 		}
@@ -224,7 +224,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_can_dev
 		}
@@ -246,7 +246,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_ast_dev
 		}
@@ -391,7 +391,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_saf_dev
 		}
@@ -1136,7 +1136,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_civs_to_astraj
 		}
@@ -1553,7 +1553,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_civs_to_uk2
 		}
@@ -1771,7 +1771,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_early_mil_bonus
 		}
@@ -1808,7 +1808,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_infra_spawnin
 		}
@@ -1826,7 +1826,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_resource_excav
 		}
@@ -1852,7 +1852,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_early_mil_bonus
 		}
@@ -1874,7 +1874,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_industry_bonus2
 		}
@@ -2168,7 +2168,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -5
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_british_army
 		}
@@ -2197,7 +2197,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sfp
 		}
@@ -2219,7 +2219,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sfp_arti_bon
 		}
@@ -2249,7 +2249,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sfp_gun_mio
 		}
@@ -2272,7 +2272,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sfp
 		}
@@ -2290,7 +2290,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sfp_inv_def
 		}
@@ -2319,7 +2319,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sfp_land_fac
 		}
@@ -2337,7 +2337,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sfp_soft
             focus = ENG_sfp_gun_bon
@@ -2358,7 +2358,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_british_army
 		}
@@ -2387,7 +2387,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp
 		}
@@ -2409,7 +2409,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp_arti_bon
 		}
@@ -2439,7 +2439,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp_gun_mio
 		}
@@ -2461,7 +2461,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp
 		}
@@ -2479,7 +2479,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp_naval_plan
 		}
@@ -2497,7 +2497,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp_max_plan
 		}
@@ -2515,7 +2515,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp_prep_time
             focus = ENG_gbp_gun_bon
@@ -2542,7 +2542,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 5
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_british_army
 		}
@@ -2572,7 +2572,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_tank
 		}
@@ -2594,7 +2594,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_tank_bonus
 		}
@@ -2617,7 +2617,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_tank_arti_bonus
 		}
@@ -2647,7 +2647,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_tank
 		}
@@ -2669,7 +2669,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_tank_radio2
 		}
@@ -2689,7 +2689,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_tank_catch_up
 		}
@@ -2706,7 +2706,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_tank_recrate
             focus = ENG_tank_mio_click
@@ -2732,7 +2732,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_gbp_advisor
             focus = ENG_sfp_advisor
@@ -2765,7 +2765,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -2
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_lesson_of_war
 		}
@@ -2782,7 +2782,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_cheap_sf
 		}
@@ -2804,7 +2804,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 2
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_lesson_of_war
 		}
@@ -2822,7 +2822,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sf_advisor
 		}
@@ -2978,7 +2978,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 4
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sf_doc
 		}
@@ -2986,11 +2986,187 @@ focus_tree = {
 			focus = ENG_commandos
 		}
 		relative_position_id = ENG_sf_doc 
+        bypass = {
+            SOV = {
+                has_completed_focus = SOV_preemptive_invasion_of_iran
+            }
+        }
         available = {
-            # Add any conditions here
+            SOV = { has_war_with = GER }
+            NOT = {
+                SOV = {
+                    has_completed_focus = SOV_preemptive_invasion_of_iran
+                }
+            }
+            446 = {
+                NOT = {
+                    CONTROLLER = {
+                        tag = ENG
+                        is_in_faction_with = ENG        
+                    }    
+                }
+            }
+            NOT = {
+                has_global_flag = ITA_opened_iran
+            }
         }
         completion_reward = {
-            # Add rewards here
+            hidden_effect = { 
+                every_country = {
+                    news_event = generic.33
+                }
+            }
+            ITA = {
+                transfer_state = 421
+                transfer_state = 417
+                transfer_state = 413
+                transfer_state = 411
+            }
+            ENG = {
+                transfer_state = 410
+                transfer_state = 412
+            }
+            division_template = {
+                name = "Colonial Infantry (Iran)"
+                division_names_group = ENG_INF_01
+            
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 }
+                    infantry = { x = 2 y = 1 }
+                    artillery_brigade = { x = 3 y = 0 }
+                    artillery_brigade = { x = 3 y = 1 }
+                    anti_tank_brigade = { x = 4 y = 0 }
+                    anti_tank_brigade = { x = 4 y = 1 }
+                }
+                support = {
+                    hq_company = { x = 0 y = 0 } 
+                    engineer = { x = 0 y = 1 }   
+                    recon = { x = 0 y = 2 }
+                    logistics_company_mot  = { x = 0 y = 3 }
+                    anti_air = { x = 1 y = 0 }
+                }
+            }
+            444 = {
+                for_loop_effect = {
+                    end = 10
+                    create_unit = {
+                        division = "name = \"Colonial Infantry (Iran)\" division_template = \"Colonial Infantry (Iran)\" start_experience_factor = 0.5"
+                        owner = ENG
+                    }
+                }
+            }
+            SOV = {
+                division_template = {
+                    name = "1st Iranian Front"
+                    division_names_group = SOV_INF_01
+                    
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 2 y = 1 }
+                        artillery_brigade = { x = 3 y = 0 }
+                        artillery_brigade = { x = 3 y = 1 }
+                        anti_tank_brigade = { x = 4 y = 0 }
+                        anti_tank_brigade = { x = 4 y = 1 }
+                    }
+                    support = {
+                        hq_company = { x = 0 y = 0 } 
+                        engineer = { x = 0 y = 1 }   
+                        recon = { x = 0 y = 2 }
+                        logistics_company_mot  = { x = 0 y = 3 }
+                        anti_air = { x = 1 y = 0 }
+                    }
+                }
+                229 = {
+                    for_loop_effect = {
+                        end = 10
+                        create_unit = {
+                            division = "name = \"1st Iranian Front\" division_template = \"1st Iranian Front\" start_experience_factor = 0.5"
+                            owner = SOV
+                        }
+                    }
+                }
+                SOV = {
+                    custom_effect_tooltip = SOV_iran_spawn_in_tt
+                }
+            }
+            give_resource_rights = { receiver = SOV state = 411 }
+            give_resource_rights = { receiver = SOV state = 412 }
+            hidden_effect = {
+                ENG = { country_event = { id = NSB_soviet_foreign_politics_events.270 days = 1 } } #Hidden Effect to transfer states and give resource rights
+            }
+            custom_effect_tooltip = ENG_iran_spawn_in_tt
+            ENG = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+                ENG_andrew_cunningham = {
+                    add_trait = {
+                        trait = green_water_expert
+                    }
+                }
+            }
+            CAN = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            BRA = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            MEX = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            IRE = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            HOL = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            FRA = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            SAF = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            RAJ = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            AST = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
+            NZL = {
+                every_army_leader = {
+                    add_attack = 1
+                }
+            }
         }
     }
     focus = {
@@ -2998,7 +3174,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 6
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_sf_doc
 		}
@@ -3010,16 +3186,33 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            every_state = {
+				limit = {
+					OR = {
+						state = 115
+						state = 156
+						state = 117
+						state = 849
+						state = 2
+						state = 157
+					}
+				}
+				add_dynamic_modifier = { modifier = OPERATION_HUSKY days = 60  }
+			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.46
+				}
+			}
         }
     }
 
     focus = {
-        id = ENG_bomb_europe
+        id = ENG_lend_lease_sov
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_compass
             focus = ENG_countenance
@@ -3035,7 +3228,10 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            custom_effect_tooltip = "Will allow the UK and the USA to lend lease the USSR with decisions"
+            SOV = { add_offsite_building = { type = arms_factory level = 15 } }
+            SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
+            SOV = { remove_ideas =  home_of_revolution  }
         }
     }
     focus = {
@@ -3043,7 +3239,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 3
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_compass
             focus = ENG_countenance
@@ -3053,13 +3249,14 @@ focus_tree = {
 		}
 		relative_position_id = ENG_crusader
         mutually_exclusive = {
-            focus = ENG_bomb_europe
+            focus = ENG_lend_lease_sov
         }
         available = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+			ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_naval_invasion_capacity = 15 tooltip = naval_invasion_capacity_tt }
         }
     }
 
@@ -3068,18 +3265,42 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 2
+        cost = 5
 		prerequisite = {
 			focus = ENG_land_in_eu
-            focus = ENG_bomb_europe
+            focus = ENG_lend_lease_sov
 		}
-		relative_position_id = ENG_bomb_europe
+		relative_position_id = ENG_lend_lease_sov
         available = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
-            #speech
+            every_state = {
+				limit = {
+					OR = {
+						state = 19
+						state = 23
+						state = 30
+						state = 14
+						state = 15
+						state = 29
+						state = 6
+						state = 35
+						state = 7
+						state = 36
+						state = 56
+						state = 59
+						state = 99
+					}
+				}
+				add_dynamic_modifier = { modifier = OPERATION_OVERLORD days = 60  }
+			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.47
+				}
+			}
+			#play_song = 
         }
     }
 

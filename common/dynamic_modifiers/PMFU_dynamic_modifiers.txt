@@ -47,6 +47,18 @@ USA_islands_local_supply = {
 }
 
 OPERATION_TORCH = {
+	max_dig_in_factor = -0.6
+
+	icon = GFX_idea_generic_fortify_the_borders
+}
+
+OPERATION_HUSKY = {
+	max_dig_in_factor = -0.3
+
+	icon = GFX_decision_category_generic_prospect_for_resources
+}
+
+OPERATION_OVERLORD = {
 	max_dig_in_factor = -0.5
 
 	icon = GFX_idea_generic_fortify_the_borders
@@ -245,6 +257,7 @@ ENG_army_dynamic_modifier = {
 	naval_invasion_planning_bonus_speed = ENG_british_naval_invasion_planning_bonus_speed
 	max_planning = ENG_british_max_planning
 	invasion_preparation = ENG_british_invasion_preparation
+	naval_invasion_capacity = ENG_british_naval_invasion_capacity
 }
  
 ENG_air_dynamic_modifier = {

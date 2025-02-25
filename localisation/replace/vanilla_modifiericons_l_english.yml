@@ -2073,3 +2073,4 @@ repair_speed_repair_air_tt:0 " $modifier_production_speed_repair_air$: $RIGHT|+=
 amphibious_invasion_defence_tt:0 " $MODIFIER_NAVAL_INVASION_DEFENSE$: $RIGHT|+=%1$"
 soft_attack_tt:0 " $BM_ATTACK_VALUE$: $RIGHT|+=%1$"
 naval_invasion_planning_bonus_speed_tt:0 " $MODIFIER_NAVAL_INVASION_PLANNING_SPEED$: $RIGHT|+=%1$"
+naval_invasion_capacity_tt:0 " $MODIFIER_NAVAL_INVASION_CAPACITY$: $RIGHT|+=1$"
