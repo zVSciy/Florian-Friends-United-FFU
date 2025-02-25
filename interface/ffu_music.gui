@@ -100,14 +100,14 @@ guiTypes = {
 			}
 		}
 
-		buttonType = {
-			name = "shuffle_button"
-			position = { x = 425 y = 20 }
-			quadTextureSprite ="GFX_toggle_shuffle_buttons"
-			buttonFont = "Main_14_black"
-			Orientation = "LOWER_LEFT"
-			clicksound = click_close
-		}
+		#buttonType = {
+		#	name = "shuffle_button"
+		#	position = { x = 425 y = 20 }
+		#	quadTextureSprite ="GFX_toggle_shuffle_buttons"
+		#	buttonFont = "Main_14_black"
+		#	Orientation = "LOWER_LEFT"
+		#	clicksound = click_close
+		#}
 	}
 
 	containerWindowType={

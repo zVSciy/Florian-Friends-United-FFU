@@ -3878,6 +3878,10 @@ focus_tree = {
 				set_country_flag = USA_bop_center
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black }
+
+			hidden_effect = {
+				play_song = "3"
+			}
 		}
 	}
 	

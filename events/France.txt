@@ -315,6 +315,9 @@ country_event = {
 		851 = {
 			remove_dynamic_modifier = { modifier = unplanned_offensive2 }
 		}
+		hidden_effect = {
+			play_song = "5"
+		}
 	}
 }
  

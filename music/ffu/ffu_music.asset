@@ -53,3 +53,13 @@ music = {
 	file = "sp_ger_volk.ogg"
 	volume = 1
 }
+music = {
+	name = "11"
+	file = "white_noise.ogg"
+	volume = 0
+}
+music = {
+	name = "12"
+	file = "white_noise1.ogg"
+	volume = 0
+}

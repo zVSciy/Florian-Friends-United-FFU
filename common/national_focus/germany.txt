@@ -2363,8 +2363,6 @@ focus_tree = {
 			GER = {
 				add_war_support = 0.1
 			}
-			#speech
-				play_song = "0" 
 			# if = {
 			# 	limit = { FRA = { is_puppet = no } }
 			# 	FRA = {
@@ -3369,6 +3367,7 @@ focus_tree = {
 					}		
 					hidden_effect = {
 						news_event = { hours = 1 id = news.204 }
+						play_song = "2"
 					}
 					if = {
 						limit = { NOT = { is_in_faction_with = ROOT } }
@@ -6623,6 +6622,9 @@ focus_tree = {
 
 			GER_economy_dynamic_modifier_tt = yes
 			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			hidden_effect = {
+				play_song = "9"
+			}
 		}
 	}
 	
@@ -6848,6 +6850,9 @@ focus_tree = {
 				logistics_skill = 1
 				id = -1
 				traits = { substance_abuser media_personality militias_officer substance_addict trait_reckless }
+			}
+			hidden_effect = {
+				play_song = "10"
 			}
 		}
 	}

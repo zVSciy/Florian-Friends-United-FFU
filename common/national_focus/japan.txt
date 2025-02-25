@@ -5859,6 +5859,9 @@ focus_tree = {
 				target = SOV
 				type = annex_everything
 			}
+			hidden_effect = {
+				play_song = "8"
+			}
 		}
 	}
 

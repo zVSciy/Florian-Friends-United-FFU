@@ -1746,6 +1746,9 @@ focus_tree = {
 					news_event = generic.36
 				}
 			}
+			hidden_effect = {
+				play_song = "4"
+			}
 		}
 	}
 
