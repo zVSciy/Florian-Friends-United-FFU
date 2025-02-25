@@ -2707,6 +2707,22 @@ ideas = {
 			}
 		}
 
+		ENG_cheap_sf_gear_idea = {
+
+			picture = generic_armor
+
+			allowed_civil_war = {
+				
+			}
+			
+			equipment_bonus = {
+				sf_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+
 	}
 	
 	

@@ -2626,8 +2626,21 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
-        }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:ENG_COM_gloucestershire_diesel_factory_organization = {
+					unlock_mio_trait_tooltip = ENG_mio_buff_focus
+				}
+				mio:ENG_COM_gloucestershire_diesel_factory_organization = {
+					add_mio_size = 1
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = cape_cope
+			}        }
     }
     focus = {
         id = ENG_tank_radio2
@@ -2703,7 +2716,15 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
+            add_corps_commander_role = {
+				character = ENG_arthur_percival
+				traits = { organizer combined_arms_expert desert_fox panzer_leader }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
         }
     }
     focus = {
@@ -2719,10 +2740,24 @@ focus_tree = {
 		}
 		relative_position_id = ENG_gbp_advisor 
         available = {
-            # Add any conditions here
+            has_war = yes
         }
         completion_reward = {
-            # Add rewards here
+            army_experience = 50
+			add_tech_bonus = {
+				name = suomi
+				bonus = 0.75
+				ahead_reduction = 0.5
+				uses = 1
+				technology = advanced_infantry_weapons
+				technology = improved_infantry_weapons
+			}
+			add_tech_bonus = {
+				name = suomi
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
         }
     }
     focus = {
@@ -2739,8 +2774,8 @@ focus_tree = {
             # Add any conditions here
         }
         completion_reward = {
-            # Add rewards here
-        }
+			add_ideas = ENG_cheap_sf_gear_idea
+		}
     }
     focus = {
         id = ENG_sf_doc
