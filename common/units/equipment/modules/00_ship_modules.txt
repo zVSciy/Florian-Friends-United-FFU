@@ -647,9 +647,6 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 500
-			convert_cost_resources = {
-				steel = 5
-			}
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_2
@@ -679,9 +676,6 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 600			
-			convert_cost_resources = {
-				steel = 5
-			}
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_3
@@ -718,9 +712,6 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 650
-				convert_cost_resources = {
-				steel = 1
-			}
 
 		}
 		can_convert_from = {
