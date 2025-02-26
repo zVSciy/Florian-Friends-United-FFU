@@ -1486,7 +1486,7 @@ leader_traits = {
 		# non_shared_modifier = {
 		# 	experience_gain_factor = -0.1
 		# }
-		
+		enable_ability = faster_naval_invasion_planning
 		ai_will_do = {
 			factor = 1
 		}
