@@ -33,7 +33,7 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 1700 y = 1300 }
+	continuous_focus_position = { x = 3000 y = 1700 }
 
 	shared_focus = COM_commonwealth_command
     focus = {
@@ -3304,6 +3304,423 @@ focus_tree = {
         }
     }
 
+	focus = {
+		id = ENG_air_and_navy
+		icon = GFX_focus_PLACEHOLDER
+		x = -20
+		y = 0
+		cost = 5
+		relative_position_id =  ENG_economy 
+		available = {
+			
+		}
+		completion_reward = {
 
-    
+		}
+	}
+    focus = {
+		id = ENG_air1
+		icon = GFX_focus_PLACEHOLDER
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_air_and_navy
+		}
+		relative_position_id =  ENG_air_and_navy 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_agility
+		icon = GFX_focus_PLACEHOLDER
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_air1
+		}
+		mutually_exclusive = {
+			focus = ENG_airatk
+		}
+		relative_position_id =  ENG_air1 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_airatk
+		icon = GFX_focus_PLACEHOLDER
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_air1
+		}
+		mutually_exclusive = {
+			focus = ENG_agility
+		}
+		relative_position_id =  ENG_air1 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_mission_eff
+		icon = GFX_focus_PLACEHOLDER
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_agility
+		}
+		relative_position_id =  ENG_agility 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_ground_sup
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_airatk
+		}
+		relative_position_id =  ENG_airatk 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_range
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_mission_eff
+		}
+		relative_position_id =  ENG_mission_eff 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_ground_sup
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_airatk
+		}
+		relative_position_id =  ENG_airatk 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_rela_air
+		icon = GFX_focus_PLACEHOLDER
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_ground_sup
+		}
+		relative_position_id =  ENG_ground_sup 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_ground_atk
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_range
+		}
+		mutually_exclusive = {
+			focus = ENG_detection
+		}
+		relative_position_id =  ENG_range 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_detection
+		icon = GFX_focus_PLACEHOLDER
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_rela_air
+		}
+		mutually_exclusive = {
+			focus = ENG_ground_atk
+		}
+		relative_position_id =  ENG_rela_air 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_fighter3
+		icon = GFX_focus_PLACEHOLDER
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_detection
+			focus = ENG_ground_atk
+		}
+		relative_position_id =  ENG_detection 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	
+
+
+
+	focus = {
+		id = ENG_navy1
+		icon = GFX_focus_PLACEHOLDER
+		x = -3
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_air_and_navy
+		}
+		relative_position_id =  ENG_air_and_navy 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_cruiser_bonus
+		icon = GFX_focus_PLACEHOLDER
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_navy1
+		}
+		mutually_exclusive = {
+			focus = ENG_watu1
+		}
+		relative_position_id =  ENG_navy1 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_watu1
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_navy1
+		}
+		mutually_exclusive = {
+			focus = ENG_cruiser_bonus
+		}
+		relative_position_id =  ENG_navy1 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_doctrine_bonus_navy
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_cruiser_bonus
+		}
+		relative_position_id =  ENG_cruiser_bonus 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_refit_speed
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_doctrine_bonus_navy
+		}
+		relative_position_id =  ENG_doctrine_bonus_navy 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_doctrine_bonus_navy2
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_watu1
+		}
+		relative_position_id =  ENG_watu1 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_light_hull
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_doctrine_bonus_navy2
+		}
+		relative_position_id =  ENG_doctrine_bonus_navy2 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_asw_guy
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_light_hull
+		}
+		relative_position_id =  ENG_light_hull 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_watu2
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_asw_guy
+		}
+		prerequisite = {
+			focus = ENG_ground_atk
+			focus = ENG_detection
+		}
+		relative_position_id =  ENG_asw_guy 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_wartime_docks1
+		icon = GFX_focus_PLACEHOLDER
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_refit_speed
+			focus = ENG_light_hull
+		}
+		relative_position_id =  ENG_refit_speed 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_wartime_docks2
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = ENG_wartime_docks1
+		}
+		relative_position_id =  ENG_wartime_docks1 
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
 }
