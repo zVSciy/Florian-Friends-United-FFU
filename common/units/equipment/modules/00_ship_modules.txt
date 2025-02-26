@@ -445,7 +445,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 2.5
-			build_cost_ic = 375
+			build_cost_ic = 325 #375
 			lg_attack = 2.5
 		}
 		multiply_stats = {
@@ -480,7 +480,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 3.0
-			build_cost_ic = 400
+			build_cost_ic = 350 #400
 			lg_attack = 3.0
 		}
 		multiply_stats = {
@@ -517,7 +517,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 3.75
-			build_cost_ic = 450
+			build_cost_ic = 400 #450
 			lg_attack = 3.75
 		}
 		multiply_stats = {
@@ -553,7 +553,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 4.5
-			build_cost_ic = 550
+			build_cost_ic = 500 #550
 			lg_attack = 4.5
 		}
 		multiply_stats = {
@@ -584,7 +584,7 @@ equipment_modules = {
 
 		add_stats = {	
 			lg_attack = 3.5
-			build_cost_ic = 300
+			build_cost_ic = 275 #300
 		}
 		multiply_stats = {
 			naval_speed = -0.03
@@ -608,7 +608,7 @@ equipment_modules = {
 
 		add_stats = {	
 			lg_attack = 5
-			build_cost_ic = 350
+			build_cost_ic = 325 #350
 		}
 		multiply_stats = {
 			naval_speed = -0.04
@@ -619,11 +619,11 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 400
+			convert_cost_ic = 300
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_1
-			convert_cost_ic = 300
+			convert_cost_ic = 275
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -635,7 +635,7 @@ equipment_modules = {
 		forbid_module_categories = {   ship_medium_battery 	}
 		add_stats = {
 			lg_attack = 5
-			build_cost_ic = 375
+			build_cost_ic = 350 #375
 		}
 		multiply_stats = {
 			naval_speed = -0.05
@@ -650,7 +650,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_2
-			convert_cost_ic = 350
+			convert_cost_ic = 300
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -664,7 +664,7 @@ equipment_modules = {
 
 		add_stats = {
 			lg_attack = 6.5
-			build_cost_ic = 425
+			build_cost_ic = 400 #425
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -1781,7 +1781,7 @@ dp_ship_secondaries_2 = {
 
 		
 		add_stats = {
-			torpedo_attack = 15
+			torpedo_attack = 12
 			build_cost_ic = 90
 		}
 		multiply_stats = {
@@ -1798,7 +1798,7 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 19.5
+			torpedo_attack = 15
 			build_cost_ic = 80
 		}
 		multiply_stats = {
@@ -1831,7 +1831,7 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 22.5
+			torpedo_attack = 18
 			build_cost_ic = 120
 		}
 		multiply_stats = {
@@ -1854,7 +1854,7 @@ dp_ship_secondaries_2 = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 25.5
+			torpedo_attack = 20
 			build_cost_ic = 125
 		}
 		multiply_stats = {
