@@ -547,6 +547,9 @@ NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.1 			-- Multiplier
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0 -- org will clamped to this ratio on manual move
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12 -- unit speed on water :) -> vanilla 6
 NDefines.NNavy.MISSION_MAX_REGIONS = 5             --vanilla 0 | Limit of the regions that can be assigned to naval mission. Set to 0 for unlimited.
+NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.7
+
+
 NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		8.00,		
 		4.00,	
