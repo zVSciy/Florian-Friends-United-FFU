@@ -158,7 +158,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 3
-        cost = 5
+        cost = 2
 		prerequisite = {
 			focus = ENG_economy
 		}
@@ -180,7 +180,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 0
         y = 1
-        cost = 5
+        cost = 2
 		prerequisite = {
 			focus = ENG_raj_dev
 		}
@@ -202,7 +202,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = -1
         y = 1
-        cost = 5
+        cost = 2
 		prerequisite = {
 			focus = ENG_can_dev
 		}
@@ -224,7 +224,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
         x = 1
         y = 1
-        cost = 5
+        cost = 2
 		prerequisite = {
 			focus = ENG_can_dev
 		}
