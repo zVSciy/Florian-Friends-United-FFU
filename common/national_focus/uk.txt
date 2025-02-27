@@ -112,6 +112,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+                add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 365 }
 			}
         }
     }
@@ -3298,7 +3299,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		x = -20
 		y = 0
-		cost = 5
+		cost = 1
 		relative_position_id =  ENG_economy 
 		available = {
 			
