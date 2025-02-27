@@ -108,7 +108,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_anti_air_gun_1
-			ship_anti_air_2
 			tank_auto_cannon_2
 			tank_small_gun_2
 			tank_light_cs_gun_1
@@ -150,7 +149,7 @@ technologies = {
 			anti_air_equipment_2
 		}
 		enable_equipment_modules = {
-			ship_anti_air_3
+			ship_anti_air_2
 			tank_anti_air_gun_2
 			# mech
 			tank_anti_air_cannon_mech
@@ -240,7 +239,7 @@ technologies = {
 			}
 		}
 		enable_equipment_modules = { 
-			ship_anti_air_4
+			ship_anti_air_3
 			tank_small_gun_3
 			tank_light_cs_gun_2
 		}
@@ -376,6 +375,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_light_cs_gun_3
+			ship_anti_air_4
 		}
 		
 		path = {
