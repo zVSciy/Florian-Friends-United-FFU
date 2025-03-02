@@ -27,7 +27,9 @@ add_ideas = peace_training
 add_ideas = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
 add_ideas = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 add_ideas = PACIFIC_COMMONWEALTH_controls_capitals_1
-
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
 #set_variable = { allies_poster_center_icon_frame = 1 }
 if = {
 	limit = {

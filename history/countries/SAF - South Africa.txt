@@ -27,7 +27,9 @@ set_technology = {
 	basic_train = 1
 	armored_car1 = 1
 }
-
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
 	amount = 5000

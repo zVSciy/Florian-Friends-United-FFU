@@ -24,6 +24,8 @@ set_technology = {
 	infantry_weapons1 = 1
 	motorised_infantry = 1
 }
+give_military_access = USA
+give_military_access = BRA
 
 set_variable = {
 	var = min_fuel

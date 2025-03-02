@@ -97,6 +97,11 @@ set_country_flag = USA_Marine_Corps_division_standard
 set_country_flag = US_Airborne_division_standard
 set_country_flag = USA_timeout_conference_done
 
+give_military_access = BRA
+give_military_access = MEX
+
+
+
 USA_recalc_congress_icon_frames = yes
 # USA = {
 # 	country_event = { id = usa.50 days = 2 }

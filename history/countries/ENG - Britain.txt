@@ -47,6 +47,11 @@ set_country_flag=fuel_system_enabled
 #     name = "MI6"
 # }
 
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
+
+
 load_oob = "ENG_Motorized"
 
 set_research_slots = 6

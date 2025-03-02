@@ -20,6 +20,10 @@ set_variable = {
 	value = 0.800
 }
 set_variable = { allies_poster_center_icon_frame = 1 }
+
+give_military_access = USA
+give_military_access = MEX
+
 add_ideas = {
 
 	
