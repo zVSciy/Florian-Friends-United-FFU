@@ -83,6 +83,10 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
+
 add_ideas = { 
 	PACIFIC_COMMONWEALTH_controls_original
 	home_of_the_free_can

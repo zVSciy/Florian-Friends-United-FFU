@@ -30,6 +30,10 @@ set_variable = {
 
 starting_train_buffer = 2
 
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
+
 # MP_garrison_division_standard = yes
 
 if = {

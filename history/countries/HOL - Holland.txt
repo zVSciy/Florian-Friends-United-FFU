@@ -17,7 +17,9 @@ set_variable = {
 set_research_slots = 5
 set_stability = 0.75
 set_war_support = 0
-
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

@@ -15,6 +15,10 @@ if = {
 #     name = "Deuxième Bureau"
 # }
 
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
+
 set_variable = {
 	var = min_fuel
 	value = 0.800
