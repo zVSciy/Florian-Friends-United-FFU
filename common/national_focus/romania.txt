@@ -28,7 +28,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 3400 y = 900 }
+	continuous_focus_position = { x = 3400 y = 1200 }
 
 #	focus = {
 #		id = ROM_
@@ -86,7 +86,7 @@ focus_tree = {
 
 
         x = 9
-        y = 0
+        y = 1
         
         cost = 5
         ai_will_do = {
@@ -119,7 +119,7 @@ focus_tree = {
 
 
         x = 13
-        y = 0
+        y = 1
         
         cost = 5
         ai_will_do = {
@@ -744,7 +744,33 @@ mutually_exclusive = {
 
 
 		completion_reward = {
-			add_ideas = ROM_boost_civilian_construction
+			
+		
+				add_resource = {
+					type = steel
+					amount = 600
+					state = 81
+				}
+				add_resource = {
+					type = chromium
+					amount = 200
+					state = 81
+				}
+				
+				add_resource = {
+					type = oil
+					amount = 500
+					state = 79
+				}
+		
+				add_resource = {
+					type = tungsten
+					amount = 400
+					state = 79
+				}
+				
+		
+			
 		}
 	}
 	
@@ -1165,7 +1191,7 @@ mutually_exclusive = {
 	}
 
 
-	focus = {
+	ocus = {
         id = ROM_end_of_the_economic_programm
         icon = GFX_focus_CONGO_gold_and_diamonds
 		
@@ -1285,11 +1311,11 @@ mutually_exclusive = {
 	focus = {
 		id = ROM_victory_over_the_allies
 		icon = GFX_focus_GER_weltpolitik
-		prerequisite = { focus = ROM_end_of_the_economic_programm }
+		prerequisite = { focus = ROM_jump_start_the_enconomy focus = ROM_concentrate_on_millitary} 
 	
-		x = 0
+		x = -5
 		y = 1
-		relative_position_id = ROM_end_of_the_economic_programm
+		relative_position_id = ROM_concentrate_on_millitary
 		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1312,6 +1338,44 @@ mutually_exclusive = {
 				idea = ROM_proclaim_the_victory_over_the_allies
 				days = 120
 			}
+
+
+			
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+					set_state_flag = GER_industrial_effort_2_2IC
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					set_state_flag = GER_industrial_effort_2_2IC
+				}
+				
+	
+			
 			
 		}
 	}
@@ -2087,7 +2151,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_ideas = ROM_integration_of_iron_guard_idea
+		add_ideas = HUN_paramilitary_organizations
 	}
 }
 
@@ -2257,7 +2321,7 @@ focus = {
 	}
 }
 
-focus = {
+ocus = {
 
 	id = ROM_crush_the_ressistance
 	icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
@@ -2292,7 +2356,7 @@ focus = {
 
 
 
-focus = {
+ocus = {
 
 	id = ROM_develop_ressources
 	icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
@@ -2340,7 +2404,7 @@ focus = {
 
 
 
-focus = {
+ocus = {
 
 	id = ROM_the_grand_offensive
 	icon = GFX_focus_PAR_neuter_the_guion_rojo
@@ -2365,7 +2429,7 @@ focus = {
 			days = 30
 		}
 		
-		add_ideas = HUN_paramilitary_organizations
+		
 	
 
 	}
@@ -2376,8 +2440,8 @@ focus = {
 focus = {
 	id = ROM_victors_of_the_great_war
 	icon = GFX_ROM_for_the_preservation_of_greater_romania
-	x = 36
-	y = 0
+	x = 37
+	y = 1
 	cost = 5
 	ai_will_do = {
 		factor = 1
@@ -2738,7 +2802,7 @@ focus = {
 					heavy_anti_air = { x = 1 y = 0 }
 					military_police = { x = 1 y = 1 }
 					field_hospital = { x = 1 y = 2 }
-					maintenance_company = { x = 1 y = 3 }
+					rangers_support = { x = 1 y = 3} 
 				}
 			}
 		}
@@ -2808,17 +2872,12 @@ focus = {
 			category = naval_doctrine
 		}
 		navy_experience = 25
-		random_state = {
-			limit = {
-				has_state_flag = ROM_expand_the_galati_shipyards_AB
-			}
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
+
+			add_offsite_building = {
 				type = dockyard
 				level = 4
-				instant_build = yes
 			}
-		}
+		
 		set_technology = {
 			basic_ship_hull_light = 1
 			early_ship_hull_submarine = 1
@@ -2843,15 +2902,10 @@ focus = {
 			category = naval_doctrine
 		}
 		navy_experience = 25
-		46 = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
+		add_offsite_building = {
 				type = dockyard
 				level = 4
-				instant_build = yes
 			}
-			set_state_flag = ROM_expand_the_galati_shipyards_AB
-		}
 		set_technology = {
 			basic_ship_hull_light = 1
 			early_ship_hull_submarine = 1
@@ -2907,14 +2961,9 @@ focus = {
 			add_mio_funds = 2000
 		}
 		
-		46 = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-				type = dockyard
-				level = 4
-				instant_build = yes
-			}
-			set_state_flag = ROM_expand_the_galati_shipyards_AB
+		add_offsite_building = {
+			type = dockyard
+			level = 4
 		}
 	}
 }
@@ -2953,14 +3002,9 @@ focus = {
 		add_ideas = ROM_coastal_defense_ships
 		#custom_effect_tooltip = ROM_coastal_defense_ships_tech_tt
 		#hidden_effect = { set_technology = { coastal_defense_ships = 1 } }
-		46 = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-				type = dockyard
-				level = 4
-				instant_build = yes
-			}
-			set_state_flag = ROM_expand_the_galati_shipyards_AB
+		add_offsite_building = {
+			type = dockyard
+			level = 4
 		}
 
 	}
@@ -3178,14 +3222,9 @@ focus = {
 	}
 
 	completion_reward = {
-		46 = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-				type = dockyard
-				level = 4
-				instant_build = yes
-			}
-			set_state_flag = ROM_expand_the_galati_shipyards_AB
+		add_offsite_building = {
+			type = dockyard
+			level = 4
 		}
 		add_tech_bonus = {
 			name = ROM_capital_ships
