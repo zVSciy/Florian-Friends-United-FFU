@@ -83,7 +83,7 @@ focus = {
 			add_to_variable = { BRA_State_of_emergency_democracy_drift = -0.1 tooltip = democratic_drift_factor_tt }
 			add_to_variable = { BRA_State_of_emergency_neutrality_drift = 0.1 tooltip = neutrality_drift_factor_tt }
 			add_to_variable = { BRA_State_of_emergency_communism_drift = -0.1 tooltip = communism_drift_factor_tt }
-			add_political_power = 100
+			
 
 			
 		}
@@ -111,10 +111,9 @@ focus = {
 			#custom_effect_tooltip = "TODO_JUNO: Add decision system"
 			add_war_support = 0.05
 			custom_effect_tooltip = BRA_modify_aotci_ns_intro
-			add_to_variable = {
-				BRA_coup_neutrality_factor = 0.05
-				tooltip = neutrality_drift_factor_tt
-			}
+			BRA_State_of_emergency_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_State_of_emergency_neutrality_drift = 0.05 tooltip = neutrality_drift_factor_tt }
+			
 		}
 	}
 
@@ -205,8 +204,8 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
-			add_to_variable = { BRA_estado_novo_neutrality_factor = 0.1 tooltip = neutrality_drift_factor_tt }
+			add_political_power = 100
+			add_command_power = 15
 			
 		}
 	}
@@ -221,7 +220,8 @@ focus = {
 		relative_position_id = BRA_the_polaca
 		cost = 5
 		available = {
-			num_of_factories > 25
+			num_of_controlled_factories > 25
+			 
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
@@ -276,7 +276,7 @@ focus = {
 			factor = 10
 		}
 		available = {
-			num_of_factories > 35
+			num_of_controlled_factories > 35
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
@@ -434,8 +434,8 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
-			add_to_variable = { BRA_estado_novo_recruitable_population_factor = -0.02 tooltip = conscription_factor_tt}
+		# 	custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
+		# 	add_to_variable = { BRA_estado_novo_recruitable_population_factor = -0.02 tooltip = conscription_factor_tt}
 			random_core_state = {
 				limit = {
 					free_building_slots = {
@@ -853,22 +853,15 @@ focus = {
 				
 				add_resource = {
 					type = oil
-					amount = 200
+					amount = 400
 				}	
-				add_to_variable = {
-					BRA_state_development_local_building_slots_factor = 0.1
-					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
-				}
-				add_to_variable = {
-					BRA_state_development_state_resources_factor = 0.1
-					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
-				}
-				set_state_flag = BRA_resource_boost
+				
+				
 			}
 			add_tech_bonus = {
 				name = BRA_oil_industry_bonus
-				bonus = 0.5
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = synth_resources
 			}
 		}
@@ -1096,15 +1089,14 @@ focus = {
 			
 			BRA_economy_dynamic_modifier_tt = yes
 			add_to_variable = {BRA_production_speed_buildings_factor = 0.025 tooltip = production_speed_buildings_factor_tt } 
-			}
+			add_to_variable = {BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
 
-			completion_reward = {
+			
 
-			BRA_State_of_emergency_dynamic_modifier_tt = yes 
-			add_to_variable = { BRA_State_of_emergency_stability_factor  = 0.1 tooltip = stability_factor_tt }
-			add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
-
+			
+			
 		}
+		
 	}
 
 	
@@ -1447,8 +1439,8 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JUNO_armor_modernization_initiative
-				bonus = 0.5
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = armor
 			}
 
@@ -1483,7 +1475,7 @@ focus = {
 
 		completion_reward = {
 
-			add_ideas = FRA_motorized_focus
+			add_ideas = { USA_ford }
 			
 		
 		}
@@ -1561,6 +1553,10 @@ focus = {
 		}
 	}
 
+	
+	
+
+
 	focus = {
 		id = BRA_artillery
 		icon = GFX_goal_generic_army_artillery2
@@ -1581,20 +1577,24 @@ focus = {
 		bypass = {
 		}
 
-		completion_reward = {
+	
 
-			add_tech_bonus = {
-				name = "artillery research speed"
-				bonus = 0.75
-				uses = 2
-				category = artillery
-			}
+			completion_reward = {
 			
+				add_tech_bonus = {
+					name = BRA_Fund_More_Subsidies
+					uses = 2
+					bonus = 0.75
+					category = artillery
+					category = support_tech
+				}
 			
 		}
+			
+			
+		
 		
 	}
-
 	focus = {
 		id = BRA_landing_crafts
 		icon = GFX_focus_generic_license_production
@@ -1617,12 +1617,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_fusiliers_marine
-				category = tp_tech
-				category = marine_tech
-				uses = 2
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = USA_special_forces
+				cost_reduction = 0.75
+				uses = 3
+				category = special_forces_doctrine
 			}
 			
 		}
@@ -2055,12 +2054,15 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-		add_tech_bonus = {
-		bonus = 0.25
-				uses = 2
-				category = artillery
 			
-		}
+				add_tech_bonus = {
+					name = BRA_Cut_Down_Subsidies
+					uses = 2
+					bonus = 0.5
+					category = artillery
+					category = support_tech
+				}
+			
 		}
 	}
 
