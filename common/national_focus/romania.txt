@@ -907,47 +907,7 @@ mutually_exclusive = {
 
 	}
 
-	focus = {
-        id = ROM_placebo5
-        icon = GFX_r56_goal_generic_industrial_investment
-       prerequisite = { focus = ROM_Placebo2 }
-
-	   
-mutually_exclusive = {
-	focus = ROM_placebo6
-}
-
-        x = -3
-        y = 1
-        relative_position_id = ROM_Placebo2
-        cost = 5
-
-        available = { 
-        }
-
-        search_filters = { FOCUS_FILTER_INDUSTRY }
-
-        completion_reward = {
-
-
-
-			add_tech_bonus = {
-				name = HUN_industrial_revitalization
-				bonus = 0.75
-				uses = 2
-				category = industry
-			}
-
-			add_power_balance_value = { 
-				id = ROM_balance_of_power
-				value = -0.3
-			}
-
-
-
-        }
-
-	}
+	
 
 
 	focus = {
