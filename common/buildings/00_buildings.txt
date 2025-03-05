@@ -77,7 +77,7 @@ buildings = {
 		icon_frame = 15
 		centered = yes
 		supply_node = yes
-		damage_factor = 0.1
+		damage_factor = 0
 		allied_build = yes
 		always_shown = yes
 		infrastructure_construction_effect = yes
@@ -88,6 +88,7 @@ buildings = {
 		# per_level_extra_cost = 130
 		disabled_in_dmz = no
 		icon_frame = 16
+		damage_factor = 0
 		level_cap = {
 			province_max = 1
 		}
