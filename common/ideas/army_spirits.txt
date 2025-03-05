@@ -39,23 +39,6 @@ ideas = {
 			}
 
 		}
-		academy_scholarships_spirit = {
-			ledger = army
-			visible = { 
-				# has_government = communism
-			}
-			modifier = {
-				custom_modifier_tooltip = academy_weekly_training_speed_tooltip_gain
-				custom_modifier_tooltip = academy_weekly_training_speed_tooltip_current
-				# army_leader_start_level = 1
-				# army_leader_cost_factor = -0.5
-				# unit_leader_as_advisor_cp_cost_factor = -0.75
-				# custom_modifier_tooltip = academy_scholarships_spirit_tt
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		political_loyalty_spirit = {
 			ledger = army
 			visible = { 

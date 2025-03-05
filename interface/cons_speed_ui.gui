@@ -178,7 +178,7 @@ guiTypes = {
 			name = "conversion_civ_to_mil_speed"   
 			position = { x = 534 y = 107 } 
 			font = "cg_16b"              
-			text = "[?modifier@modifier_conversion_cost_civ_to_mil_factor|%0=+]"	   
+			text = "[?modifier@conversion_cost_mil_to_civ_factor|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right

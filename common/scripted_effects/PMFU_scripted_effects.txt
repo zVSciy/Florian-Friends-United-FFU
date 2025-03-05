@@ -1008,61 +1008,6 @@ update_sov_major_city_status = {
 	}
 }
 
-update_academy_weekly ={
-	# training_time_fixer = yes
-	every_country = {
-		limit = {
-			is_playable_country = yes
-		}
-		if = {
-			limit = {
-				has_idea = academy_scholarships_spirit
-			}
-			add_to_variable = { academy_weekly_training_speed = -0.005 }
-		}
-		# if = {
-		# 	limit = {
-		# 		has_idea = political_loyalty_spirit
-		# 	}
-		# 	add_to_variable = { academy_weekly_pp = 0.005 }
-		# }
-		# if = {
-		# 	limit = { 
-		# 		has_idea = relief_of_command_spirit
-		# 	}
-		# 	add_to_variable = { academy_experience_gain = 0.005 }	
-		# }
-		# if = {
-		# 	limit = {
-		# 		has_idea = grand_battleplan_army_spirit
-		# 	}
-		# 	add_to_variable = { academy_special_forces_capacity = 0.5 }
-		# 	if = {
-		# 		limit = {
-		# 			is_major = yes
-		# 		}
-		# 		add_to_variable = { academy_special_forces_capacity = 0.5 }
-		# 	}
-		# }
-		# set_variable = { academy_weekly_training_speed_total = modifier@training_time_army_factor }
-		set_variable = { academy_weekly_training_speed_total = academy_weekly_training_speed }
-		if = {
-			limit = {
-				check_variable = { academy_weekly_training_speed_total < -0.60 }
-			}
-			set_variable = {
-				academy_weekly_training_speed_result = -0.60
-			}
-			# subtract_from_variable = { 
-			# 	academy_weekly_training_speed_result = academy_weekly_training_speed_total
-			# }
-		}
-		else = {
-			set_variable = { academy_weekly_training_speed_result = academy_weekly_training_speed }
-		}
-	}
-}
-
 training_time_fixer = {
 	every_country = {
 		limit = {

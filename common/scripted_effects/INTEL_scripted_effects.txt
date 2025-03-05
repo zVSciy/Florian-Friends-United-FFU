@@ -1256,63 +1256,6 @@ intel_sharing_fixer_effect = {
 				token = token_navy_friendly
 			}
 		}
-		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
 		# NZL
 		if = {
 			limit = {
@@ -1888,62 +1831,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -2802,63 +2690,6 @@ intel_sharing_fixer_effect = {
 				token = token_navy_friendly
 			}
 		}
-		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
 		# AST
 		if = {
 			limit = {
@@ -3434,62 +3265,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -4406,62 +4182,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -5265,62 +4986,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -6523,62 +6189,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -7781,62 +7392,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -8641,62 +8197,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -9272,62 +8773,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -10244,62 +9690,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -10876,62 +10267,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -12247,62 +11583,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -12878,62 +12159,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -14709,62 +13935,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -15340,62 +14511,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -16141,62 +15257,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -16885,62 +15946,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -17800,62 +16806,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -18716,62 +17667,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -19917,62 +18813,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -20833,62 +19674,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -21635,62 +20421,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -22893,62 +21624,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -23752,62 +22428,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -24383,62 +23004,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -25355,62 +23921,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -26043,62 +24554,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -27015,62 +25471,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -27588,62 +25989,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# YUG
 		if = {
 			limit = {
@@ -28560,62 +26906,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		# INS
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = INS
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = INS_sukarno
-				token = token_navy_friendly
-			}
-		}
+ 
 		# AST
 		if = {
 			limit = {
@@ -29248,62 +27539,7 @@ intel_sharing_fixer_effect = {
 			}
 		}
 		#ETH
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_airforce_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_airforce_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_army_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_army_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_civilian_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_civilian_friendly
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_operation_token = {
-						tag = ETH
-						token = token_navy_friendly
-					}
-				}
-			}
-			add_operation_token = {
-				tag = ETH
-				token = token_navy_friendly
-			}
-		}
+  
 		# ALB
 		if = {
 			limit = {

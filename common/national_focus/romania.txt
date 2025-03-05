@@ -1151,7 +1151,7 @@ mutually_exclusive = {
 	}
 
 
-	ocus = {
+	focus = {
         id = ROM_end_of_the_economic_programm
         icon = GFX_focus_CONGO_gold_and_diamonds
 		
@@ -2281,7 +2281,7 @@ focus = {
 	}
 }
 
-ocus = {
+focus = {
 
 	id = ROM_crush_the_ressistance
 	icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
@@ -2316,7 +2316,7 @@ ocus = {
 
 
 
-ocus = {
+focus = {
 
 	id = ROM_develop_ressources
 	icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
@@ -2364,7 +2364,7 @@ ocus = {
 
 
 
-ocus = {
+focus = {
 
 	id = ROM_the_grand_offensive
 	icon = GFX_focus_PAR_neuter_the_guion_rojo
