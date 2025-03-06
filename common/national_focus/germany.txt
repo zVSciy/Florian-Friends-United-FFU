@@ -5453,6 +5453,11 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
+				ITA = {
+					load_oob = "ATLANTIKWALL_48"
+				}
+			}
+			hidden_effect = {
 				if = {
 					limit = {
 						any_country = {
