@@ -3712,9 +3712,8 @@ generic_raider_ship_organization = {
 			lg_attack = 0.15
 			torpedo_attack = 0.2
 			hg_attack = 0.05
-			surface_detection = 0.05
+			surface_detection = 0.15
 			sub_visibility = -0.05
-			surface_detection = 0.1
 		}
 	}
 }

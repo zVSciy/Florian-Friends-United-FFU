@@ -1715,15 +1715,15 @@ technologies = {
 
 		is_special_project_tech = yes
 
-		heavy_artillery = {
+		heavy_artillery_brigade = {
 			soft_attack = 0.1
 		}
 
-		pack_artillery = {
+		pack_artillery_brigade = {
 			soft_attack = 0.1
 		}
 
-		artillery = {
+		artillery_brigade = {
 			soft_attack = 0.1
 		}
 

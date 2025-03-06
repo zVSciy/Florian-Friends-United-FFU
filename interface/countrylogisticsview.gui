@@ -1452,6 +1452,12 @@ guiTypes = {
 			spriteType ="GFX_fuel_logisctics_graph_entry_bg"
 		}
 
+		buttonType = {
+			name = "icon_checkbox"
+			position = { x=7 y=7 }	
+			spriteType = "GFX_fuel_logisctics_graph_entry_color"
+		}
+
 		iconType = {
 			name = "icon"
 			position = { x=7 y=7 }	
