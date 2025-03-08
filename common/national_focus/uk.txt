@@ -38,7 +38,7 @@ focus_tree = {
 	shared_focus = COM_commonwealth_command
     focus = {
         id = ENG_economy
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_labour
         x = 5
         y = 1
         cost = 5
@@ -156,7 +156,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_raj_dev
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_eng_develop_raj
         x = 0
         y = 3
         cost = 2
@@ -176,7 +176,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_can_dev
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_eng_develop_can
         x = 0
         y = 1
         cost = 2
@@ -196,7 +196,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_saf_dev
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_eng_develop_saf
         x = -1
         y = 1
         cost = 2
@@ -216,7 +216,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_ast_dev
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_eng_develop_ast
         x = 1
         y = 1
         cost = 2
@@ -381,7 +381,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_def_karth
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_wizna_forts
         x = -1
         y = 1
         cost = 5
@@ -931,7 +931,7 @@ focus_tree = {
     ################
 	focus = {
         id = ENG_scaling_path
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_advanced_industry
         x = -8
         y = 2
         cost = 5
@@ -958,7 +958,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_decentralised
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_eng_imperial_federation
         x = -3
         y = 1
         cost = 5
@@ -976,7 +976,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_build_civs
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_synthetic_rubber_refinery
         x = 0
         y = 2
         cost = 5
@@ -996,7 +996,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_centralised
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_rearm
         x = 3
         y = 1
         cost = 5
@@ -1014,7 +1014,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_cansaf
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_heavy_armour_canadian
         x = 1
         y = 1
         cost = 5
@@ -1054,7 +1054,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_astraj
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_AST_dreams_of_a_republic
         x = 1
         y = 1
         cost = 5
@@ -1094,7 +1094,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_mills_scale1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_amend_factory_acts
         x = -2
         y = 1
         cost = 5
@@ -1126,7 +1126,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_produce_equipmet
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_GBR_royal_army
         x = 0
         y = 1
         cost = 5
@@ -1155,7 +1155,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_fortress_uk
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_NORDIC_mon_capstone_army
         x = 0
         y = 3
         cost = 5
@@ -1326,7 +1326,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_catchup_air
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_bomber
         x = -1
         y = 1
         cost = 5
@@ -1347,7 +1347,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_build_mils
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_suburban_industry
         x = 0
         y = 1
         cost = 5
@@ -1366,7 +1366,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_navy_inv
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_NORDIC_mon_navy
         x = -2
         y = 3
         cost = 5
@@ -1390,7 +1390,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_left_shadw_schme
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_r56_goal_generic_industrial_planning
         x = 0
         y = 3
         cost = 5
@@ -1462,7 +1462,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_total_mob
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_AUS_bring_back_the_habsburg_rule
         x = 0
         y = 1
         cost = 5
@@ -1479,7 +1479,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_uk1 # develop southern england
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_FRA_colonial_industry
         x = -1
         y = 1
         cost = 5
@@ -1511,7 +1511,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_civs_to_uk2 # develop central england
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_advanced_industry_jap
         x = -1
         y = 1
         cost = 5
@@ -1543,7 +1543,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_resourcestouk
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GOAL_resource_extraction
         x = 0
         y = 1
         cost = 5
@@ -1561,7 +1561,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_mills_scale2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_amend_factory_acts
         x = 2
         y = 1
         cost = 5
@@ -1593,7 +1593,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_shadow_fact_expans
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_NORDIC_mon_civilian
         x = 0
         y = 3
         cost = 5
@@ -1617,7 +1617,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_industry_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_hasten
         x = 1
         y = 1
         cost = 3
@@ -1640,7 +1640,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_build_slots
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_supply
         x = 0
         y = 1
         cost = 3
@@ -1658,7 +1658,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_royal_ordin
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_NORDIC_mon_army
         x = 2
         y = 3
         cost = 5
@@ -1962,7 +1962,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_shadow_factories2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_r56_goal_generic_industrial_planning
         x = 0
         y = 1
         cost = 5

@@ -11413,4 +11413,14 @@ SpriteType = {
 		name = "GFX_allgood_military_govenor"
 		texturefile = "gfx/interface/goals/vic/EFR_allgood_hates_civ_greeding.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_advanced_industry_jap"
+		texturefile = "gfx/interface/goals/jap/advanced_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_wizna_forts"
+		texturefile = "gfx/interface/goals/goal_POL_Land_Coastal_Defence.dds"
+	}
 }
