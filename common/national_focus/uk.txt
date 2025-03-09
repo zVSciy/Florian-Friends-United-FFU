@@ -236,7 +236,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_def_el_ala
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_defence
         x = 1
         y = 1
         cost = 5
@@ -589,7 +589,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_def_raj
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_last_line
         x = 0
         y = 1
         cost = 5
