@@ -2220,54 +2220,6 @@ focus_tree = {
 					transfer_state = 412
 					transfer_state = 410
 				}
-				if = {
-					limit = {
-						446 = {
-							CONTROLLER = {
-								is_in_faction_with = GER
-								tag = GER
-							}
-						}
-					}
-					division_template = {
-						name = "Colonial Infantry (Iran)"
-						division_names_group = ENG_INF_01
-					
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							dp_artillery_brigade = { x = 3 y = 0 }
-							dp_artillery_brigade = { x = 3 y = 1 }
-							dp_artillery_brigade = { x = 4 y = 0 }
-							dp_artillery_brigade = { x = 4 y = 1 }
-						}
-						support = {
-							hq_company = { x = 0 y = 0 } 
-							engineer = { x = 0 y = 1 }   
-							recon = { x = 0 y = 2 }
-							logistics_company_mot  = { x = 0 y = 3 }
-							anti_air = { x = 1 y = 0 }
-						}
-					}
-					444 = {
-						for_loop_effect = {
-							end = 10
-							create_unit = {
-								division = "name = \"Colonial Infantry (Iran)\" division_template = \"Colonial Infantry (Iran)\" start_experience_factor = 0.5"
-								owner = ENG
-							}
-						}
-					}
-					ENG = {
-						custom_effect_tooltip = ENG_iran_spawn_in_tt
-					}
-				}
 			}
 			SOV = {
 				if = {
