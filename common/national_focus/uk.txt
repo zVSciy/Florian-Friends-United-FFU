@@ -3360,23 +3360,7 @@ focus_tree = {
 
 		}
 	}
-	focus = {
-		id = ENG_ground_sup
-		icon = GFX_focus_PLACEHOLDER
-		x = 1
-		y = 1
-		cost = 5
-		prerequisite = {
-			focus = ENG_airatk
-		}
-		relative_position_id =  ENG_airatk 
-		available = {
-			
-		}
-		completion_reward = {
-
-		}
-	}
+	
 	focus = {
 		id = ENG_range
 		icon = GFX_bomber_command
