@@ -127,8 +127,11 @@ focus_tree = {
 		}
 		relative_position_id =  ENG_economy 
         available = {
-            
-        }
+			OR = {
+				GER = { has_completed_focus = GER_anschluss }
+				date > 1937.6.1
+			}
+	}
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
             add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
@@ -145,8 +148,11 @@ focus_tree = {
 		prerequisite = { focus = ENG_economy }
 		relative_position_id = ENG_economy 
         available = {
-            
-        }
+			OR = {
+				JAP = { has_completed_focus = JAP_intervene_in_china }
+				date > 1938.1.1
+			}
+	}
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
             add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
