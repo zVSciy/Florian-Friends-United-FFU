@@ -1424,7 +1424,7 @@ focus_tree = {
 			clamp_variable = {
 				var = ENG.shadow_civs2
 				min = 0
-				max = 20
+				max = 40
 			}
 			divide_variable = { ENG.shadow_civs2 = 2 }
 			set_variable = { ENG.shadow_civs3 = ENG.shadow_civs2 }
@@ -1722,6 +1722,7 @@ focus_tree = {
 			GER = { has_completed_focus = GER_anschluss }
         }
         completion_reward = {
+            add_ideas = ENG_mil_boost
             add_ideas = partial_economic_mobilisation
         }
     }
@@ -1894,7 +1895,22 @@ focus_tree = {
 
         }
         completion_reward = {
-            add_ideas = ENG_mil_boost
+            338 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}		
+			}
+            128 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
         }
     }
     focus = {
@@ -3684,14 +3700,14 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = ENG_refit_speed
 			focus = ENG_light_hull
 		}
 		relative_position_id =  ENG_refit_speed 
 		available = {
-			
+			date > 1940.1.1
 		}
 		completion_reward = {
             932 = {
@@ -3717,7 +3733,7 @@ focus_tree = {
 		icon = GFX_goal_ENG_grand_british_fleet
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = ENG_wartime_docks1
 		}

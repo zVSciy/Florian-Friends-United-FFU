@@ -362,7 +362,7 @@ on_actions = {
 			clamp_variable = {
 				var = ENG.shadow_mils_gotten_tt
 				min = 0
-				max = 20
+				max = 40
 			}
 			divide_variable = { ENG.shadow_mils_gotten_tt = 2 }
 			set_variable = { ENG.shadow_mils_gotten_2_tt = ENG.shadow_mils_gotten_tt }
