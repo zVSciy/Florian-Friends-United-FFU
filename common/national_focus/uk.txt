@@ -1158,7 +1158,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_capstone_army
         x = 0
         y = 3
-        cost = 5
+        cost = 10
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1369,7 +1369,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_navy
         x = -2
         y = 3
-        cost = 5
+        cost = 10
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1385,7 +1385,7 @@ focus_tree = {
         }
         completion_reward = {
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.075 tooltip = industrial_capacity_dockyard_tt } 
+            set_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt } 
         }
     }
     focus = {
@@ -1596,7 +1596,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_civilian
         x = 0
         y = 3
-        cost = 5
+        cost = 10
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1612,7 +1612,7 @@ focus_tree = {
         }
         completion_reward = {
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt } 
+            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.125 tooltip = production_speed_arms_factory_factor_tt } 
         }
     }
     focus = {
@@ -1661,7 +1661,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_army
         x = 2
         y = 3
-        cost = 5
+        cost = 10
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1677,7 +1677,7 @@ focus_tree = {
         }
         completion_reward = {
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt } 
+            set_variable = { ENG_british_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt } 
         }
     }
 
@@ -3344,7 +3344,8 @@ focus_tree = {
 		}
 		relative_position_id =  ENG_air1 
 		available = {
-			
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_navy_navy_submarine_detection_factor = 0.2 tooltip = navy_submarine_detection_factor_tt }
 		}
 		completion_reward = {
 
@@ -3419,7 +3420,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_air_range_factor = 0.1 tooltip = air_range_factor_tt }
+            add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt }
 		}
 	}
 	focus = {
@@ -3564,15 +3567,18 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_navy1
 		}
-		mutually_exclusive = {
-			focus = ENG_watu1
-		}
 		relative_position_id =  ENG_navy1 
 		available = {
 			
 		}
 		completion_reward = {
-
+            add_tech_bonus = {
+                name = ENG_cruiser_bonus
+                bonus = 0.75
+                uses = 1
+                category = ca_tech
+                category = cl_tech
+            }
 		}
 	}
 	focus = {
@@ -3584,15 +3590,14 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_navy1
 		}
-		mutually_exclusive = {
-			focus = ENG_cruiser_bonus
-		}
 		relative_position_id =  ENG_navy1 
 		available = {
 			
 		}
 		completion_reward = {
-
+            ENG_navy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_navy_navy_submarine_detection_factor = 0.2 tooltip = navy_submarine_detection_factor_tt }
+            add_to_variable = { ENG_british_navy_convoy_escort_efficiency = 0.3 tooltip = convoy_escort_efficiency_tt }
 		}
 	}
 	focus = {
@@ -3609,7 +3614,12 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            add_tech_bonus = {
+                name = ENG_cruiser_bonus
+                bonus = 0.75
+                uses = 1
+                category = bb_tech
+            }
 		}
 	}
 	focus = {
@@ -3626,7 +3636,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_navy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
+            add_to_variable = { ENG_british_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
 		}
 	}
 
@@ -3644,7 +3656,12 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            add_doctrine_cost_reduction = {
+                name = shp_bonus
+                cost_reduction = 0.5
+                uses = 3
+                category = naval_doctrine
+            }
 		}
 	}
 	focus = {
@@ -3661,7 +3678,13 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            hidden_effect = {
+                add_ideas = ENG_merchant_navy
+                add_ideas = ENG_secure_the_imperial_shipping_routes
+            }
+            ENG_navy_dynamic_modifier_tt = yes # tooltip
+            custom_effect_tooltip = ENG_merchant_navy_10_ftt
+            custom_effect_tooltip = ENG_secure_imperial_shipping_tt
 		}
 	}
 	focus = {
@@ -3678,7 +3701,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            custom_effect_tooltip = available_military_high_command
+            show_ideas_tooltip = max_horton
 		}
 	}
 	focus = {
@@ -3699,7 +3723,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_navy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_navy_navy_submarine_detection_factor = 0.2 tooltip = navy_submarine_detection_factor_tt }
+            add_to_variable = { ENG_british_navy_convoy_escort_efficiency = 0.3 tooltip = convoy_escort_efficiency_tt }
 		}
 	}
 
@@ -3718,7 +3744,22 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            932 = {
+                add_extra_state_shared_building_slots = 5
+                add_building_construction = {
+                    type = dockyard
+                    level = 5
+                    instant_build = yes
+                }
+            }
+            120 = {
+                add_extra_state_shared_building_slots = 5
+                add_building_construction = {
+                    type = dockyard
+                    level = 5
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -3735,7 +3776,22 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            132 = {
+                add_extra_state_shared_building_slots = 5
+                add_building_construction = {
+                    type = dockyard
+                    level = 5
+                    instant_build = yes
+                }
+            }
+            133 = {
+                add_extra_state_shared_building_slots = 5
+                add_building_construction = {
+                    type = dockyard
+                    level = 5
+                    instant_build = yes
+                }
+            }
 		}
 	}
 }

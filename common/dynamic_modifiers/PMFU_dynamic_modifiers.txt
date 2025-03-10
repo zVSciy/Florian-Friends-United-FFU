@@ -273,6 +273,7 @@ ENG_air_dynamic_modifier = {
 	air_weather_penalty = ENG_british_airforce_air_weather_penalty
 	air_home_defence_factor = ENG_british_airforce_air_home_defence_factor
 	air_defence_factor = ENG_british_airforce_air_defence_factor
+	air_attack_factor = ENG_british_airforce_air_attack_factor
 	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
 }
 

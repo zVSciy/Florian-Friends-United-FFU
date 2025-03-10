@@ -648,41 +648,41 @@ characters={
 		}
 	}
 
-	ENG_henry_harwood={
-		name=ENG_henry_harwood
-		portraits={
-			navy={
-				small="GFX_idea_henry_harwood"
-			}
-			army={
-				large=GFX_portrait_ENG_henry_harwood
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy bold }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=984
-		}
-		advisor={
-			slot = high_command
-			idea_token = henry_harwood
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				navy_screen_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.700
-			}
-		}
-	}
+	# ENG_henry_harwood={
+	# 	name=ENG_henry_harwood
+	# 	portraits={
+	# 		navy={
+	# 			small="GFX_idea_henry_harwood"
+	# 		}
+	# 		army={
+	# 			large=GFX_portrait_ENG_henry_harwood
+	# 		}
+	# 	}
+	# 	navy_leader={
+	# 		traits={ old_guard_navy bold }
+	# 		skill=3
+	# 		attack_skill=3
+	# 		defense_skill=2
+	# 		maneuvering_skill=1
+	# 		coordination_skill=1
+	# 		legacy_id=984
+	# 	}
+	# 	advisor={
+	# 		slot = high_command
+	# 		idea_token = henry_harwood
+	# 		ledger = navy
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
+	# 		traits = {
+	# 			navy_screen_2
+	# 		}
+	# 		cost = 100
+	# 		ai_will_do = {
+	# 			factor = 0.700
+	# 		}
+	# 	}
+	# }
 
 	ENG_andrew_cunningham={
 		name=ENG_andrew_cunningham
@@ -1421,8 +1421,11 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			available = {
+				has_completed_focus = ENG_asw_guy
+			}
 			traits = {
-				navy_submarine_2
+				navy_screen_2
 			}
 			cost = 100
 			ai_will_do = {
