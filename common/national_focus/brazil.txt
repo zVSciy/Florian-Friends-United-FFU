@@ -511,7 +511,7 @@ focus = {
 		completion_reward = {
 			
 
-			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			ROM_army_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt}
 		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
 		add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
