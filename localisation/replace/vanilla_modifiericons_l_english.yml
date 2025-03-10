@@ -2066,7 +2066,11 @@ license_production_speed_tt:0 " $MODIFIER_LICENSE_PRODUCTION_SPEED$: $RIGHT|+=%1
 naval_invasion_prep_speed_tt:0 " $MODIFIER_NAVAL_INVASION_PREPARATION_SPEED$: $RIGHT|+=%1$"
 shore_bombardment_bonus_tt:0 " $MODIFIER_SHORE_BOMBARDMENT$: $RIGHT|+=%1$"
 heat_attrition_factor_tt:0 " $MODIFIER_HEAT_ATTRITION_FACTOR$: $RIGHT|-=%1$"
-
- modifier_production_speed_repair_air:0 "£construction_speed_airbase_texticon  §YAir Base§! repair speed"
- modifier_production_speed_repair_air_desc:0 "Modifies the speed of Air Base repairing."
+### FFU
+modifier_production_speed_repair_air:0 "£construction_speed_airbase_texticon  §YAir Base§! repair speed"
+modifier_production_speed_repair_air_desc:0 "Modifies the speed of Air Base repairing."
 repair_speed_repair_air_tt:0 " $modifier_production_speed_repair_air$: $RIGHT|+=%1$"
+amphibious_invasion_defence_tt:0 " $MODIFIER_NAVAL_INVASION_DEFENSE$: $RIGHT|+=%1$"
+soft_attack_tt:0 " $BM_ATTACK_VALUE$: $RIGHT|+=%1$"
+naval_invasion_planning_bonus_speed_tt:0 " $MODIFIER_NAVAL_INVASION_PLANNING_SPEED$: $RIGHT|+=%1$"
+naval_invasion_capacity_tt:0 " $MODIFIER_NAVAL_INVASION_CAPACITY$: $RIGHT|+=1$"

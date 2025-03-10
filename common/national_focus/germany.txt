@@ -34,14 +34,30 @@ focus_tree = {
 		x = 5
 		y = 0
 		cost = 5
-		
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 0.5
-				uses = 2
-				category = industry
+			custom_effect_tooltip = {
+				localization_key = GER_four_yr_plan_tt
 			}
+			hidden_effect = {
+				add_tech_bonus = {
+					name = GER_four_year_plan
+					bonus = 0.5
+					uses = 1
+					technology = dispersed_industry2
+				}
+				add_tech_bonus = {
+					name = GER_four_year_plan
+					bonus = 0.5
+					uses = 1
+					technology = concentrated_industry2
+				}
+				add_tech_bonus = {
+					name = GER_four_year_plan
+					bonus = 0.5
+					uses = 1
+					technology = improved_machine_tools
+				}
+		}
 			country_event = germany.501
 		}
 	}
@@ -4073,6 +4089,10 @@ focus_tree = {
 					transfer_state = 460
 					transfer_state = 513
 					transfer_state = 459
+					transfer_state = 677
+					transfer_state = 680
+					transfer_state = 554
+					transfer_state = 553
 				}
 				460 = {
 					add_building_construction = {
@@ -4340,7 +4360,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_roa
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4812,25 +4832,25 @@ focus_tree = {
 
 	focus = {
 		id = GER_secure_spain
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_GER_afrikakorps
 		prerequisite = { focus = GER_around_maginot }
 		available = {
-			# FRA = { has_capitulated = yes }
-			VIC = {
-                has_country_flag = VIC_france_capped
-            }
-			OR = {
-				SPR = { has_government = democratic }
-				SPR = { has_government = communism }
+			date > 1940.4.1
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				NOT = { owns_state = 907 }
 			}
 		}
 		completion_reward = {
-			
-			ENG = {add_to_faction = SPR }
-			declare_war_on = {
-					target = SPR
-					type = annex_everything
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
 				}
+				add_timed_idea = { idea = GER_Africa_offensive days = 30 }
+			}
 		}
 		cost = 1
 		relative_position_id = GER_around_maginot
@@ -6813,7 +6833,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_ardennes
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -6903,7 +6923,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_mobilise_reich
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -8257,7 +8277,7 @@ focus_tree = {
 
 		completion_reward = {
 			GER_airforce_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_air_home_defence_factor = 0.15 tooltip = air_home_defence_factor_tt }
+			add_to_variable = { GER_air_home_defence_factor = 0.025 tooltip = air_home_defence_factor_tt }
 		}
     }
 

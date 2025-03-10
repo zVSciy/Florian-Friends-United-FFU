@@ -312,7 +312,7 @@ buildings = {
 
 	radar_station = {
 		show_on_map = 1
-		base_cost = 3000
+		base_cost = 1500
 		icon_frame = 11
 		radar = yes
 		level_cap = {

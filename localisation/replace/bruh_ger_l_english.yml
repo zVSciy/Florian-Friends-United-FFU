@@ -172,8 +172,7 @@
   GER_defend_berlin_desc:0 "Berlin will never fall!"
   GER_confiscate_romanian_oil:0 "Confiscate Romanian Oil Fields"
   GER_confiscate_romanian_oil_desc:0 "Do not click unless dumb/AI Romanians"
-  GER_secure_spain:0 "Secure Spain"
-  GER_secure_spain_desc:0 "Franco tried and failed, but he did not have the full backing of the German war machine."
+  GER_secure_spain:0 "Unternehmen Sonnenblume"
   GER_roa:0 "ROA Ost-battalions"
   GER_roa_desc:0 "With every mile of Soviet land gained, we find ourselves with more and more surplus population. Let us put these people to work for the Reich."
   GER_ROA_TT:0 "Will add §Y20 Compliance Strength§! to every Soviet core state we own"
@@ -366,6 +365,7 @@
   GER_rocketery_research:0 "Wunderwaffe"
   GER_cheaper_fighters3:0 "Modular Assembly"
   GER_anti_air_buff:0 "Flak-Massenproduktion"
+  GER_africa_offensive:0 "Unternehmen Sonnenblume"
 
   ### DYNAMIC MODIIFERS ###
   GER_economy_dynamic_modifier:0 "[GER_economy_dynam_mod_sl]"
@@ -569,3 +569,4 @@
   GER_lessons_of_war_tt:0 "§ORemoves cold acclimatization malus; boosts generals offensive stats!§!"
   GER_air_research_speed_bonus_tt:0 "£research_speed_texticon  Air Research Speed: §G+15%§!"
   GER_air__speed_bonus_tt:0 "£speed_air_texticon  Air Speed: §G+10%§!"
+  GER_four_yr_plan_tt:0 "£GFX_research_bonus_texticon §Y2x§! §G50%§! Research bonus for: §YIndustry§!."

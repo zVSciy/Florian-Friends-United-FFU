@@ -1948,6 +1948,11 @@ spriteTypes = {
 
 		legacy_lazy_load = no
 	}
+
+	SpriteType = {
+		name = "GFX_GER_afrikakorps"
+		textureFile = "gfx/interface/goals/ger/ger_afrikakorps.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_GER_exploit_and_plunder"

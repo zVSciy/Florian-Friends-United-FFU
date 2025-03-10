@@ -220,6 +220,42 @@ ideas = {
 
 		}
 
+		GER_africa_offensive = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = SAF
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.10
+			}
+		}
+
 		GER_kill_the_soviets = {
 			
 			allowed = {
@@ -266,13 +302,13 @@ ideas = {
 			picture = generic_acquire_tanks
 			equipment_bonus = {
 				infantry = {
-					max_strength = 20 instant = yes
+					max_strength = 30 instant = yes
 				}
 				motorized_equipment = {
-					max_strength = 26 instant = yes
+					max_strength = 38 instant = yes
 				}
 				mechanized_equipment = {
-					max_strength = 30 instant = yes
+					max_strength = 48 instant = yes
 				}
 			}
 		}

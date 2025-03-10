@@ -103,6 +103,7 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.25
+				NOT = { tag = ENG }
 				if = {
 					limit = {
 						original_tag = HUN
@@ -168,6 +169,7 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.35
+				NOT = { tag = ENG }
 				if = {
 					limit = {
 						original_tag = HUN
@@ -230,6 +232,7 @@ ideas = {
 					threat > 0.30
 				}
 				has_war_support > 0.55
+				NOT = { tag = ENG }
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -291,6 +294,7 @@ ideas = {
 			available = {
 				has_war = yes
 				has_war_support > 0.8
+				NOT = { tag = ENG }
 				any_enemy_country = {
 					ic_ratio = { 
 						tag = ROOT 

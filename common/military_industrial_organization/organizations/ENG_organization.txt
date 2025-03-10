@@ -188,6 +188,25 @@ ENG_COM_gloucestershire_diesel_factory_organization = {
 		# 	FROM = { NOT = { has_war_with = ENG } }
 		# }
 	}
+	add_trait = {
+		token = ENG_mio_buff_focus
+		name = ENG_mio_buff_focus
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_technology
+		special_trait_background = yes
+		position = {
+			x = 2
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = ENG_tank_mio_click
+			}
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			build_cost_ic = -0.05
+		}
+	}
 }
 
 ENG_COM_massachusetts_design_bureau = {

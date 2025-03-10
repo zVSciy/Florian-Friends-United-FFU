@@ -2531,13 +2531,13 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = 26
+			max_strength = 38
 		}
 		mechanized = {
-			max_strength = 30
+			max_strength = 48
 		}
 		category_all_infantry = {
-			max_strength = 20
+			max_strength = 30
 		}
 	}
 
@@ -2552,13 +2552,13 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = -26
+			max_strength = -38
 		}
 		mechanized = {
-			max_strength = -30
+			max_strength = -48
 		}
 		category_all_infantry = {
-			max_strength = -20
+			max_strength = -30
 		}
 	}
 
