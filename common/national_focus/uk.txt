@@ -674,7 +674,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_africa_retake
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_ITA_guerra_di_posizioni_e_decisioni
         x = 0
         y = 1
         cost = 3
@@ -754,7 +754,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_def_rubber
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_singapur_strategy
         x = 0
         y = 1
         cost = 5
@@ -851,7 +851,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_trade_minors
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_AST_dreams_of_a_republic
         x = 1
         y = 1
         cost = 5
@@ -882,7 +882,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_trade_usa
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_conjunted_training
         x = 1
         y = 1
         cost = 5
@@ -904,7 +904,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_thousand_year_reich
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_blood_sweat
         x = 1
         y = 1
         cost = 10
@@ -1689,7 +1689,7 @@ focus_tree = {
 
     focus = {
         id = ENG_early_ic
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ordnance
         x = 8
         y = 2
         cost = 5
@@ -1709,7 +1709,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_mil_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_general_rearmament
         x = -2
         y = 1
         cost = 5
@@ -1726,7 +1726,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_shadow_scheme
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_construct_mil_factory
         x = 2
         y = 1
         cost = 5
@@ -1758,7 +1758,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_infra_spawnin
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_FRA_work_smarter_by_getting_an_education_or_a_degree_in_some_form_of_engineering_school
         x = -1
         y = 1
         cost = 5
@@ -1795,7 +1795,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_resource_excav
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_shadow_scheme
         x = 0
         y = 1
         cost = 5
@@ -1813,7 +1813,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_colonial_excav
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GOAL_resource_extraction
         x = 0
         y = 1
         cost = 5
@@ -1839,7 +1839,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_industry_bonus2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_license_production
         x = 1
         y = 1
         cost = 5
@@ -1861,7 +1861,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_output
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_The_Shadow_Scheme
         x = 0
         y = 1
         cost = 5
@@ -1881,7 +1881,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_dock_output
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_stonks
         x = 0
         y = 1
         cost = 5
@@ -1898,7 +1898,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_mills1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_construct_civilian
         x = -1
         y = 1
         cost = 5
@@ -1930,7 +1930,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_mills2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_tank_production
         x = 0
         y = 1
         cost = 5
@@ -2034,7 +2034,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_total_mob_right
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_industrial_mob
         x = -1
         y = 1
         cost = 5
@@ -2054,7 +2054,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_radioIC
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_production2
         x = 1
         y = 1
         cost = 5
@@ -2086,7 +2086,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_artiIC
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_italy_besagliari
         x = 0
         y = 2
         cost = 3
@@ -2106,7 +2106,7 @@ focus_tree = {
     }	
     focus = {
         id = ENG_early_gunIC
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_bsa
         x = 2
         y = 1
         cost = 5
@@ -2134,7 +2134,7 @@ focus_tree = {
     ################
     focus = {
         id = ENG_british_army
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_invade_libya
         x = 20
         y = 0
         cost = 5
@@ -2155,7 +2155,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_equpiment
         x = -5
         y = 1
         cost = 5
@@ -2184,7 +2184,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_arti_bon
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_arty
         x = -1
         y = 1
         cost = 5
@@ -2206,7 +2206,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_gun_mio
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_focus_fra_maquis
         x = 0
         y = 1
         cost = 5
@@ -2236,7 +2236,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_gun_bon
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CIC_bren_guns
         x = 0
         y = 1
         cost = 5
@@ -2259,7 +2259,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_inv_def
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_infantry_flames
         x = 1
         y = 1
         cost = 5
@@ -2277,7 +2277,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_land_fac
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_tank_board
         x = 0
         y = 1
         cost = 5
@@ -2306,7 +2306,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_soft
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_handle_the_inevitable
         x = 0
         y = 1
         cost = 5
@@ -2324,7 +2324,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sfp_advisor
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_homeguard
         x = -1
         y = 1
         cost = 5
@@ -2345,7 +2345,7 @@ focus_tree = {
 
     focus = {
         id = ENG_gbp
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_plan
         x = 0
         y = 1
         cost = 5
@@ -2374,7 +2374,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_arti_bon
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_arty
         x = -1
         y = 1
         cost = 5
@@ -2396,7 +2396,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_gun_mio
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_focus_fra_maquis
         x = 0
         y = 1
         cost = 5
@@ -2426,7 +2426,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_gun_bon
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CIC_bren_guns
         x = 0
         y = 1
         cost = 5
@@ -2448,7 +2448,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_naval_plan
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_royal_marines_laurel
         x = 1
         y = 1
         cost = 5
@@ -2466,7 +2466,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_max_plan
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CIC_school_of_attack
         x = 0
         y = 1
         cost = 5
@@ -2484,7 +2484,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_prep_time
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_CAN_WCMC
         x = 0
         y = 1
         cost = 5
@@ -2502,7 +2502,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_gbp_advisor
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_minister_inskip
         x = -1
         y = 1
         cost = 5
@@ -2529,7 +2529,7 @@ focus_tree = {
 
     focus = {
         id = ENG_tank
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_matilda
         x = 5
         y = 1
         cost = 5
@@ -2559,7 +2559,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_heavy_armour_canadian
         x = -1
         y = 1
         cost = 5
@@ -2581,7 +2581,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_arti_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_industrial_research_committee
         x = 0
         y = 1
         cost = 5
@@ -2604,7 +2604,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_mio_click
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_mobile_forces
         x = 0
         y = 1
         cost = 5
@@ -2634,7 +2634,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_radio2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_radio_development
         x = 1
         y = 1
         cost = 5
@@ -2656,7 +2656,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_catch_up
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_centurion
         x = 0
         y = 1
         cost = 5
@@ -2676,7 +2676,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_recrate
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_universal
         x = 0
         y = 1
         cost = 5
@@ -2693,7 +2693,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_tank_advisor
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_hobart
         x = -1
         y = 1
         cost = 5
@@ -2719,7 +2719,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_lesson_of_war
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_eng_the_sun_never_sets
         x = 0
         y = 1
         cost = 5
@@ -2752,7 +2752,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_cheap_sf
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_anglo_tech
         x = -2
         y = 1
         cost = 5
@@ -2769,7 +2769,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sf_doc
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_eng_special_air_service
         x = 0
         y = 1
         cost = 5
@@ -2791,7 +2791,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_sf_advisor
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_special_forces
         x = 2
         y = 1
         cost = 5
@@ -2809,7 +2809,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_commandos
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_amphibious_assault
         x = 0
         y = 1
         cost = 5
@@ -2832,7 +2832,7 @@ focus_tree = {
 
     focus = {
         id = ENG_compass
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_more_territorial_claims
         x = -2
         y = 1
         cost = 1
@@ -2867,7 +2867,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_crusader
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_call_montgomery
         x = 0
         y = 1
         cost = 1
@@ -2924,7 +2924,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_torch
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_USA_torch
         x = 2
         y = 1
         cost = 1
@@ -2965,7 +2965,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_countenance
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_attack_iran
         x = 4
         y = 1
         cost = 5
@@ -3161,7 +3161,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_husky
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_operation_husky
         x = 6
         y = 1
         cost = 5
@@ -3199,7 +3199,7 @@ focus_tree = {
 
     focus = {
         id = ENG_lend_lease_sov
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_SOV_protect_the_east
         x = 1
         y = 1
         cost = 5
@@ -3226,7 +3226,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_land_in_eu
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_prepare
         x = 3
         y = 1
         cost = 5
@@ -3252,7 +3252,7 @@ focus_tree = {
 
     focus = {
         id = ENG_overlord
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_usa_european_intervention
         x = 1
         y = 1
         cost = 5
@@ -3296,7 +3296,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_air_and_navy
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ENG_rule_britannia
 		x = -20
 		y = 0
 		cost = 1
@@ -3310,7 +3310,7 @@ focus_tree = {
 	}
     focus = {
 		id = ENG_air1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_GBR_royal_air_force
 		x = 3
 		y = 1
 		cost = 5
@@ -3332,7 +3332,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_agility
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_fighter
 		x = -2
 		y = 1
 		cost = 5
@@ -3352,7 +3352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_airatk
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_the_raf
 		x = 2
 		y = 1
 		cost = 5
@@ -3373,7 +3373,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_mission_eff
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_carrier
 		x = -1
 		y = 1
 		cost = 5
@@ -3407,7 +3407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_range
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_bomber_command
 		x = 1
 		y = 1
 		cost = 5
@@ -3424,7 +3424,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ground_sup
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_cas
 		x = 1
 		y = 1
 		cost = 5
@@ -3441,7 +3441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_rela_air
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_modernize
 		x = -1
 		y = 1
 		cost = 5
@@ -3458,7 +3458,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ground_atk
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_bomber
 		x = 1
 		y = 1
 		cost = 5
@@ -3478,7 +3478,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_detection
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_fighter_command
 		x = -1
 		y = 1
 		cost = 5
@@ -3498,7 +3498,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_fighter3
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_heavy_fighter
 		x = -1
 		y = 1
 		cost = 5
@@ -3525,7 +3525,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_navy1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_AST_coa_navy
 		x = -3
 		y = 1
 		cost = 5
@@ -3557,7 +3557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_cruiser_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_eng_vanguard
 		x = -1
 		y = 1
 		cost = 5
@@ -3577,7 +3577,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_watu1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_occupy_states_coastal
 		x = 1
 		y = 1
 		cost = 5
@@ -3597,7 +3597,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_doctrine_bonus_navy
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_eng_naval_rearm
 		x = 0
 		y = 1
 		cost = 5
@@ -3614,7 +3614,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_refit_speed
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_production
 		x = 0
 		y = 1
 		cost = 5
@@ -3632,7 +3632,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_doctrine_bonus_navy2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_eng_naval_rearm
 		x = 0
 		y = 1
 		cost = 5
@@ -3649,7 +3649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_light_hull
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_destroyer
 		x = 0
 		y = 1
 		cost = 5
@@ -3705,7 +3705,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_wartime_docks1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_production2
 		x = 1
 		y = 1
 		cost = 5
@@ -3723,7 +3723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_wartime_docks2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_ENG_grand_british_fleet
 		x = 0
 		y = 1
 		cost = 5
