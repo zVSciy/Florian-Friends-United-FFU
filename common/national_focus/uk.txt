@@ -3299,7 +3299,7 @@ focus_tree = {
 		icon = GFX_ENG_rule_britannia
 		x = -20
 		y = 0
-		cost = 1
+		cost = 2
 		relative_position_id =  ENG_economy 
 		available = {
 			
