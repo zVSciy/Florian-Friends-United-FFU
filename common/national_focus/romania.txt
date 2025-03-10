@@ -2452,9 +2452,17 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = ROM_the_orita_series
+			name = suomi
 			bonus = 0.75
-			uses = 2
+			ahead_reduction = 0.5
+			uses = 1
+			technology = advanced_infantry_weapons
+			technology = improved_infantry_weapons
+		}
+		add_tech_bonus = {
+			name = suomi
+			bonus = 0.5
+			uses = 1
 			category = infantry_weapons
 		}
 	}

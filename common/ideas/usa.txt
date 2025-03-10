@@ -64,6 +64,21 @@ ideas = {
 				can_join_factions = no
 			}
 		}
+		USA_cheaper_trade_UK = {			
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.33
+			}
+		}
 		USA_final_table = {
 			
 			allowed = {

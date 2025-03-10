@@ -47,6 +47,18 @@ USA_islands_local_supply = {
 }
 
 OPERATION_TORCH = {
+	max_dig_in_factor = -0.6
+
+	icon = GFX_idea_generic_fortify_the_borders
+}
+
+OPERATION_HUSKY = {
+	max_dig_in_factor = -0.3
+
+	icon = GFX_decision_category_generic_prospect_for_resources
+}
+
+OPERATION_OVERLORD = {
 	max_dig_in_factor = -0.5
 
 	icon = GFX_idea_generic_fortify_the_borders
@@ -200,6 +212,13 @@ ENG_economy_dynamic_modifier = {
 	research_speed_factor = ENG_british_economy_research_speed_factor
 	production_speed_arms_factory_factor = ENG_british_economy_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = ENG_british_economy_production_speed_dockyard_factor
+	global_building_slots_factor = ENG_british_economy_global_building_slots_factor
+	production_speed_infrastructure_factor = ENG_british_economy_production_speed_infrastructure_factor
+	production_factory_max_efficiency_factor = ENG_british_economy_production_factory_max_efficiency_factor
+	production_factory_start_efficiency_factor = ENG_british_economy_production_factory_start_efficiency_factor
+	production_factory_efficiency_gain_factor = ENG_british_economy_production_factory_efficiency_gain_factor
+	production_speed_industrial_complex_factor = ENG_british_economy_production_speed_industrial_complex_factor
+	local_resources_factor = ENG_british_economy_local_resources_factor
 }
 
 ENG_army_dynamic_modifier = {
@@ -229,8 +248,18 @@ ENG_army_dynamic_modifier = {
 	production_speed_bunker_factor = ENG_british_army_production_speed_bunker_factor
 	production_speed_coastal_bunker_factor = ENG_british_army_production_speed_coastal_bunker_factor
 	repair_speed_air_base_factor = ENG_british_army_repair_speed
+	cat_mobile_warfare_cost_factor = ENG_british_army_cat_mobile_warfare_cost_factor
+	cat_superior_firepower_cost_factor = ENG_british_army_cat_superior_firepower_cost_factor
+	cat_mass_assault_cost_factor = ENG_british_cat_mass_assault_cost_factor
+	cat_grand_battle_plan_cost_factor = ENG_british_army_cat_grand_battle_plan_cost_factor
+	amphibious_invasion_defence = ENG_british_amphibious_invasion_defence
+	army_attack_factor = ENG_british_army_attack_factor
+	naval_invasion_planning_bonus_speed = ENG_british_naval_invasion_planning_bonus_speed
+	max_planning = ENG_british_max_planning
+	invasion_preparation = ENG_british_invasion_preparation
+	naval_invasion_capacity = ENG_british_naval_invasion_capacity
 }
-
+ 
 ENG_air_dynamic_modifier = {
 	enable = { always = yes }
 
@@ -244,6 +273,7 @@ ENG_air_dynamic_modifier = {
 	air_weather_penalty = ENG_british_airforce_air_weather_penalty
 	air_home_defence_factor = ENG_british_airforce_air_home_defence_factor
 	air_defence_factor = ENG_british_airforce_air_defence_factor
+	air_attack_factor = ENG_british_airforce_air_attack_factor
 	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
 }
 
