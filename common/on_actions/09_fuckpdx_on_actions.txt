@@ -984,7 +984,7 @@ on_actions = {
 						is_core_of = CHI
 						is_on_continent = asia
 					}
-					set_compliance = 80
+					set_compliance = 100
 				}
 				JAP = {
 					set_global_flag = JAP_china_has_capped
