@@ -236,6 +236,10 @@ set_variable = { ENG_british_army_cat_superior_firepower_cost_factor = 1 tooltip
 set_variable = { ENG_british_cat_mass_assault_cost_factor = 1 tooltip = cat_mass_assault_cost_factor }
 set_variable = { ENG_british_army_cat_grand_battle_plan_cost_factor = 1 tooltip = cat_grand_battle_plan_cost_factor }
 
+add_dynamic_modifier = {
+	modifier = ENG_air_dynamic_modifier
+}
+
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment
 	amount = 500

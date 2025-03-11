@@ -278,6 +278,8 @@ ENG_air_dynamic_modifier = {
 	air_agility_factor = ENG_british_airforce_air_agility_factor
 	air_superiority_efficiency = ENG_british_airforce_air_superiority_efficiency
 	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
+	air_ace_generation_chance_factor = ENG_english_airforce_air_ace_generation_chance_factor
+	ground_attack_factor = ENG_english_ground_attack_factor
 }
 
 ENG_navy_dynamic_modifier = {

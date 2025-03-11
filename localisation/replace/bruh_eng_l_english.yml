@@ -116,6 +116,7 @@
  ENG_wartime_docks1:0 "Wartime Dockyards 1"
  ENG_wartime_docks2:0 "Wartime Dockyards 2"
  shadow_scheme_focus_conv_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y20§!. \n\n"
+ shadow_scheme_focus_conv1_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y10§!. \n\n"
 
   #### EVENTS ####
   britain.500.t:0 "Anglo-Soviet Agreement"
