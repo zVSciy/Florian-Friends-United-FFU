@@ -146,6 +146,7 @@ set_technology = {
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
+	range_improvements = 1
 }
 if = {
 	limit = {
@@ -214,6 +215,7 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 			photo_reconnaisance = 1
+			aa_hmg = 1
 	}
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"
@@ -1027,7 +1029,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = light_mg_4x
 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			special_type_slot_1 = radio_navigation_1
+			special_type_slot_1 = drop_tanks
 			engine_type_slot = engine_2_1x
 		}
 		icon = "GFX_JAP_fighter1_medium"
@@ -1036,12 +1038,11 @@ if = {
 		name = "Ki-32"
 		type = small_plane_cas_airframe_1
 		modules = {
-			fixed_main_weapon_slot = bomb_locks
+			fixed_main_weapon_slot = tank_buster_1
 			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
 			engine_type_slot = engine_2_1x				
-			special_type_slot_1 = radio_navigation_1
+			special_type_slot_1 = drop_tanks
 			special_type_slot_2 = dive_brakes_small
-			
 		}
 		icon = "GFX_JAP_CAS1_medium"
 	}
