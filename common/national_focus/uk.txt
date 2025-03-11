@@ -805,6 +805,18 @@ focus_tree = {
             ENG_army_dynamic_modifier_tt = yes
             add_to_variable = { ENG_british_army_conscription = 0.025 tooltip = conscription_tt }
 			add_to_variable = { ENG_british_army_conscription_factor = 0.15 tooltip = conscription_factor_tt }
+			hidden_effect = {
+				AST = {
+					give_resource_rights = { receiver = ENG state = 672 }
+					give_resource_rights = { receiver = ENG state = 334 }
+					give_resource_rights = { receiver = ENG state = 667 }
+					give_resource_rights = { receiver = ENG state = 673 }
+					give_resource_rights = { receiver = ENG state = 668 }
+					give_resource_rights = { receiver = ENG state = 669 }
+					give_resource_rights = { receiver = ENG state = 738 }
+					give_resource_rights = { receiver = ENG state = 335 }
+				}
+			}
         }
     }
 

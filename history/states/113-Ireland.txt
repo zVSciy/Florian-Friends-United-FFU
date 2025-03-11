@@ -11,7 +11,7 @@ state={
 	state_category = megalopolis
 	
 	history={
-		owner = IRE
+		owner = ENG
 		victory_points = {
 			285 1 #Wexford
 		}
@@ -23,14 +23,12 @@ state={
 		}
 		buildings = {
 			infrastructure = 8
-			arms_factory = 8
-			industrial_complex = 12
 			air_base = 3
 			11293 = {
 				naval_base = 9
 			}
 		}
-		add_core_of = IRE
+		add_core_of = ENG
 	}
 
 	provinces={
