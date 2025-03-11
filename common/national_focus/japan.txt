@@ -843,6 +843,149 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = ENABLED
+						}
+					}
+					FRA = {
+						16 = { #fra
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = FRA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = FRA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = FRA }
+						}
+					}
+					ENG = {
+						126 = { #uk
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ENG }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ENG }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ENG }
+						}
+					}
+					USA = {
+						361 = { #usa
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = USA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = USA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = USA }
+						}
+					}
+					CAN = {
+						276 = { #canada
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = CAN }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = CAN }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = CAN }
+						}
+					}
+					SAF = {
+						275 = { #saf
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SAF }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SAF }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SAF }
+						}
+					}
+					RAJ = {
+						439 = { #raj
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = RAJ }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = RAJ }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = RAJ }
+						}
+					}
+					AST = {
+						285 = { #australia
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = AST }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = AST }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = AST }
+						}
+					}
+					BRA = {
+						500 = { #brazil
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = BRA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = BRA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = BRA }
+						}
+					}
+					SOV = {
+						219 = { #sov
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SOV }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SOV }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SOV }
+						}
+					}
+					#axis
+					GER = {
+						65 = { #ger
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = GER }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = GER }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = GER }
+						}
+					}
+					ITA = {
+						2 = { #ita
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ITA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ITA }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ITA }
+						}
+					}
+					SPR = {
+						41 = { #spr
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SPR }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SPR }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SPR }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SPR }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SPR }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = SPR }
+						}
+					}
+					HUN = {
+						43 = { #hun
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = HUN }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = HUN }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = HUN }
+						}
+					}
+					ROM = {
+						46 = { #rom
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ROM }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ROM }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ROM }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ROM }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ROM }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = ROM }
+						}
+					}
+					BUL = {
+						48 = { #bul
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = BUL }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = BUL }
+							create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = BUL }
+						}
+					}
+					YUG = {
+						if = {
+							limit = {
+								is_ai = yes
+							}
+							HUN = {
+								43 = { #hun
+									create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = HUN }
+									create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = HUN }
+									create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = HUN }
+								}
+							}
+							else = {
+								48 = { #yug
+									create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = YUG }
+									create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = YUG }
+									create_unit = { division = "division_template = \"China War Vol\" start_experience_factor = 0.4" owner = YUG }
+								}
+							}
+						}
+					}
+				}	
+			}
 		}
 	}
 	
@@ -1011,40 +1154,6 @@ focus_tree = {
 					#}
 					USA = {
 						country_event = { id = panay_incident.2 days = 150 } #40 days before
-					}
-					if = {
-						limit = {
-							has_game_rule = {
-								rule = usa_volunteers_in_china
-								option = ENABLED
-							}
-						}
-						SOV = {
-							swap_ideas = {
-								remove_idea = volunteer_minimum_major
-								add_idea = volunteer_minimum_minor
-							}
-						}
-						
-						USA = {
-							add_ideas = volunteer_minimum_minor
-							set_rule = { 
-								can_send_volunteers = yes
-							}
-						}
-
-						ENG = {
-							set_rule = { 
-								can_send_volunteers = yes
-							}
-						}
-
-						ENG = {
-							swap_ideas = {
-								remove_idea = volunteer_minimum_major
-								add_idea = volunteer_minimum_minor
-							}
-						}
 					}
 					hidden_effect = {
 						country_event = { days = 5 id = news.1 }

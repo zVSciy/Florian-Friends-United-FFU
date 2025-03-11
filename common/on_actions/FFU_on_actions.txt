@@ -14,3 +14,53 @@
 # }
 
 # }
+
+on_actions = {
+
+    on_startup = {
+		effect = {
+			every_country = {
+				set_rule = {
+					can_send_volunteers = no
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = ENABLED
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = SOV
+							tag = ENG
+							tag = USA
+							tag = FRA
+							tag = AST
+							tag = CAN
+							tag = SAF
+							tag = RAJ
+                            tag = BRA
+
+							tag = GER
+							tag = ITA
+                            tag = SPR
+							tag = HUN
+							tag = ROM
+							tag = BUL
+							tag = YUG
+						}
+					}
+					set_rule = {
+						can_send_volunteers = yes
+					}
+                    add_ideas = volunteer_minimum_minor
+				}
+			}
+		}
+	}
+
+
+}

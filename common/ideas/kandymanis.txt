@@ -60,7 +60,7 @@ ideas = {
 			picture = MEX_revolutionary_army
 
 			modifier = {
-                send_volunteer_size = 5
+                send_volunteer_size = 3
 				special_forces_min = 66
 			}
 		}	
@@ -85,7 +85,7 @@ ideas = {
 			picture = MEX_revolutionary_army
 
 			modifier = {
-                send_volunteer_size = 3
+                send_volunteer_size = 2
 				special_forces_min = 44
 			}
 		}
@@ -105,7 +105,7 @@ ideas = {
 
 
 			modifier = {
-                send_volunteer_size = 3
+                send_volunteer_size = 2
 				special_forces_min = 44
 			}
 		}	
