@@ -258,6 +258,7 @@ ENG_army_dynamic_modifier = {
 	max_planning = ENG_british_max_planning
 	invasion_preparation = ENG_british_invasion_preparation
 	naval_invasion_capacity = ENG_british_naval_invasion_capacity
+	conscription = ENG_british_army_conscription
 }
  
 ENG_air_dynamic_modifier = {

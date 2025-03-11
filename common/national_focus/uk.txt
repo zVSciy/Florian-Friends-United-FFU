@@ -800,8 +800,11 @@ focus_tree = {
             add_to_variable = { ENG_british_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
             add_to_variable = { ENG_british_economy_production_factory_start_efficiency_factor = 0.075 tooltip = production_factory_start_efficiency_factor_tt }
             add_to_variable = { ENG_british_economy_production_factory_efficiency_gain_factor = 0.10 tooltip = production_factory_efficiency_gain_factor_tt }
-            add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.15 tooltip = conversion_cost_civ_to_mil_factor_tt }
-
+            add_to_variable = { ENG_british_economy_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
+            add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt }
+            ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_army_conscription = 0.025 tooltip = conscription_tt }
+			add_to_variable = { ENG_british_army_conscription_factor = 0.15 tooltip = conscription_factor_tt }
         }
     }
 
@@ -1530,7 +1533,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
+            add_to_variable = { ENG_british_economy_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
         }
     }
     focus = {
@@ -2641,6 +2644,8 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
+            ENG_army_dynamic_modifier_tt = yes
+            add_to_variable = { ENG_british_army_conscription = 0.01 tooltip = conscription_tt }
         }
     }
     focus = {
@@ -3192,7 +3197,7 @@ focus_tree = {
 		icon = GFX_goal_GBR_royal_air_force
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ENG_air_and_navy
 		}
@@ -3401,10 +3406,8 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = ENG_detection
-		}
-        prerequisite = {
             focus = ENG_ground_atk
-        }
+		}
 		relative_position_id =  ENG_detection 
 		available = {
 			
