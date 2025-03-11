@@ -498,7 +498,7 @@ on_actions = {
 					country_event = startingevent.1005
 					add_collaboration = {
 						target = CHI
-						value = 0.4
+						value = 0.9
 					}
 				}
 			}
