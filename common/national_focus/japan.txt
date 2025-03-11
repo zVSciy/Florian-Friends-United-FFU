@@ -1004,12 +1004,14 @@ focus_tree = {
 					}
 				}
 				hidden_effect = {
-					ENG = {
-						set_rule = { 
-							can_send_volunteers = no
-						}
+					#ENG = {
+					#	set_rule = { 
+					#		can_send_volunteers = no
+					#	}
+					#}
+					USA = {
+						country_event = { id = panay_incident.2 days = 150 } #40 days before
 					}
-					
 					if = {
 						limit = {
 							has_game_rule = {
@@ -1111,18 +1113,8 @@ focus_tree = {
 						}
 					}
 				}
-				add_named_threat = { threat = 5 name = JAP_intervene_in_china }
 				
-				if = {
-					limit = {
-						OR = { 
-							JAP = { is_ai = no }
-							MAN = { is_ai = no } 
-						}
-					}
-					add_ideas = JAP_intervene_in_china_5
-					MAN = { add_ideas = MAN_intervene_in_china_5 }
-				}
+				add_named_threat = { threat = 22.5 name = JAP_intervene_in_china }
 			}
 			else_if = {
 				limit = {

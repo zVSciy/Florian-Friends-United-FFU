@@ -75,7 +75,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 4
+			factor = 1000
 		}
 
 		available = {
@@ -97,6 +97,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.05
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = ENABLED
+					}
+				}
+				load_oob = "CHI_1936"
+				else = {
+					load_oob = "CHI_EMPTY"
+				}
+			}
 		}
 	}
 

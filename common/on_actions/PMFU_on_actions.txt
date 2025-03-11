@@ -498,7 +498,7 @@ on_actions = {
 					country_event = startingevent.1005
 					add_collaboration = {
 						target = CHI
-						value = 0.9
+						value = 0.8
 					}
 				}
 			}
@@ -544,13 +544,6 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			CHI = {
-				every_army_leader={
-					add_trait = {
-						trait = fifty_cas_dmg_reduction
-					}
-				}
-			}
 			CHI = {	
 				if = {
 					limit = {
