@@ -47,7 +47,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+            add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.25 tooltip = consumer_goods_factor_tt }
             add_to_variable = { ENG_british_economy_production_speed_buildings_factor = 0.10 tooltip = production_speed_buildings_factor_tt }
 			hidden_effect = {
 				118 = {
@@ -119,7 +119,7 @@ focus_tree = {
 	focus = {
         id = ENG_depr1
 		icon = GFX_focus_PLACEHOLDER
-        x = 1
+        x = -1
         y = 1
         cost = 5
 		prerequisite = {
@@ -134,7 +134,7 @@ focus_tree = {
 	}
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+            add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
             add_to_variable = { ENG_british_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
             add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
         }
@@ -142,7 +142,7 @@ focus_tree = {
 	focus = {
         id = ENG_depr2
 		icon = GFX_focus_PLACEHOLDER
-        x = -1
+        x = 1
         y = 1
         cost = 5
 		prerequisite = { focus = ENG_economy }
@@ -155,7 +155,7 @@ focus_tree = {
 	}
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+            add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
             add_to_variable = { ENG_british_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
             add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
         }
@@ -251,14 +251,6 @@ focus_tree = {
 		}
 		relative_position_id = ENG_ast_dev 
         available = {
-			907 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                    }
-                }
-			}
         }
 		completion_reward = {
 			447 = {
@@ -272,11 +264,6 @@ focus_tree = {
 					type = air_base
 				 	level = 10
 				 	instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
 				}
 			}
 			446 = {
@@ -320,13 +307,8 @@ focus_tree = {
 			936 = {
 				set_building_level = {
 					type = air_base
-				 	level = 8
+				 	level = 10
 				 	instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
 				}
 			}
 			907 = {
@@ -396,38 +378,6 @@ focus_tree = {
 		}
 		relative_position_id = ENG_saf_dev 
         available = {
-			551 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                    }
-                }
-			}
-			550 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                    }
-                }
-			}
-			293 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                    }
-                }
-			}
-			886 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                    }
-                }
-			}
         }
 		completion_reward = {
 			551 = {
@@ -505,6 +455,7 @@ focus_tree = {
 		}
         completion_reward = {
 			add_war_support = 0.10
+            hidden_effect = {
 			every_country = {
                 limit = {
                     OR = {
@@ -532,6 +483,9 @@ focus_tree = {
                 }
                 add_war_support = 0.1
             }
+        }
+            hidden_effect = {
+        
             every_country = {
                 limit = {
                     OR = {
@@ -588,9 +542,13 @@ focus_tree = {
                 }
                 add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
             }
+        }
             add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
 
             hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
+            custom_effect_tooltip = {
+				localization_key = ENG_imperial_conf_tt
+			}
         }
     }
 	focus = {
@@ -605,42 +563,7 @@ focus_tree = {
 		}
 		relative_position_id = ENG_def_karth 
 		available = {
-            430 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
-            432 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
-            434 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
-            324 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
+
         }
 		completion_reward = {
             430 = {
@@ -690,42 +613,7 @@ focus_tree = {
 		}
 		relative_position_id = ENG_imperial_conf 
         available = {
-			883 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
-			946 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
-			551 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
-			886 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
+
         }
         completion_reward = {
 			883 = {
@@ -770,24 +658,6 @@ focus_tree = {
 		}
 		relative_position_id = ENG_def_el_ala 
 		available = {
-            672 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
-            335 = {
-                CONTROLLER = {
-                    OR = {
-                        tag = ENG
-                        is_subject_of = ENG
-                        is_in_faction_with = ENG
-                    }
-                }
-            }
         }
 
 		completion_reward = {
@@ -927,6 +797,11 @@ focus_tree = {
 		}
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+            add_to_variable = { ENG_british_economy_production_factory_start_efficiency_factor = 0.075 tooltip = production_factory_start_efficiency_factor_tt }
+            add_to_variable = { ENG_british_economy_production_factory_efficiency_gain_factor = 0.10 tooltip = production_factory_efficiency_gain_factor_tt }
+            add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.15 tooltip = conversion_cost_civ_to_mil_factor_tt }
+
         }
     }
 
@@ -952,14 +827,8 @@ focus_tree = {
             
         }
         completion_reward = {
-			123 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}		
-			}
+			custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = ENG_nevile_henderson
         }
     }
     focus = {
@@ -1333,14 +1202,13 @@ focus_tree = {
     focus = {
         id = ENG_catchup_air
 		icon = GFX_bomber
-        x = -1
+        x = 0
         y = 1
         cost = 5
 		prerequisite = {
-			focus = ENG_produce_equipmet
-            focus = ENG_resourcestouk
+			focus = ENG_build_mils
 		}
-		relative_position_id = ENG_produce_equipmet 
+		relative_position_id = ENG_build_mils 
         available = {
             
         }
@@ -1354,19 +1222,20 @@ focus_tree = {
     focus = {
         id = ENG_build_mils
 		icon = GFX_suburban_industry
-        x = 0
+        x = -1
         y = 1
         cost = 5
 		prerequisite = {
-			focus = ENG_catchup_air
+			focus = ENG_produce_equipmet
+            focus = ENG_resourcestouk
 		}
-		relative_position_id = ENG_catchup_air 
+		relative_position_id = ENG_produce_equipmet 
         available = {
             NOT = { has_idea = ENG_civ_boost }
         }
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.20 tooltip = production_speed_arms_factory_factor_tt }
+            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.25 tooltip = production_speed_arms_factory_factor_tt }
 			set_variable = { ENG_british_economy_production_factory_start_efficiency_factor = 0.1	 tooltip = production_factory_start_efficiency_factor_tt }
         }
     }
@@ -1405,15 +1274,16 @@ focus_tree = {
 		}
 		relative_position_id = ENG_build_civs 
         available = {
-            
-        }
+            OR = {
+                JAP = { has_completed_focus = JAP_intervene_in_china }
+                date > 1938.1.1
+            }
+    }
         completion_reward = {
             custom_effect_tooltip = shadow_scheme_focus_conv_tt
 			custom_effect_tooltip = ENG_shadow_scheme_2_focus_tt
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
 			custom_effect_tooltip = ENG_shadow_scheme_2_tt
-			add_to_variable = { ENG_british_economy_industry_air_damage_factor = -0.1 }
-			add_to_variable = { ENG_british_economy_industry_repair_factor = 0.1 }
 			
 			for_each_scope_loop = {
 				array = ENG.starting_core_states
@@ -1464,6 +1334,7 @@ focus_tree = {
 					}
 				}
 			}
+            add_ideas = partial_economic_mobilisation
 		}
     }
     focus = {
@@ -1633,10 +1504,15 @@ focus_tree = {
 		}
 		relative_position_id = ENG_resourcestouk 
         available = {
-            date > 1938.6.1
+           
         }
         completion_reward = {
-            add_ideas = partial_economic_mobilisation
+            add_tech_bonus = {
+				name = ENG_industry_bonus
+				bonus = 0.75
+				uses = 3
+				category = industry
+			}
         }
     }
     focus = {
@@ -1896,7 +1772,7 @@ focus_tree = {
         }
         completion_reward = {
             338 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 4
@@ -1904,7 +1780,7 @@ focus_tree = {
 				}		
 			}
             128 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 4
@@ -3287,7 +3163,28 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            126 = {
+				set_building_level = {
+					type = naval_base
+					level = 20
+                    province = 11374
+					instant_build = yes
+				}
+			}
+            447 = {
+				set_building_level = {
+					type = naval_base
+					level = 10
+                    province = 4076
+					instant_build = yes
+				}
+			}
+            build_railway = {
+				path = { 6103 11374 }
+				level = 5
+			}
+            air_experience = 75
+            navy_experience = 75
 		}
 	}
     focus = {
@@ -3295,7 +3192,7 @@ focus_tree = {
 		icon = GFX_goal_GBR_royal_air_force
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = ENG_air_and_navy
 		}
@@ -3306,10 +3203,28 @@ focus_tree = {
 		completion_reward = {
             add_tech_bonus = {
                 name = fighter_bonus
-                bonus = 0.5
+                bonus = 0.75
                 uses = 1
                 technology = improved_small_airframe
             }
+		}
+	}
+
+    focus = {
+		id = ENG_fighter_bonus
+		icon = GFX_goal_GBR_royal_air_force
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = {
+			focus = ENG_air1
+		}
+		relative_position_id =  ENG_air1 
+        available = {
+			GER = { has_completed_focus = GER_end_of_czechoslovakia }
+        }
+		completion_reward = {
+            add_ideas = ENG_british_fighter_discount
 		}
 	}
 	focus = {
@@ -3326,11 +3241,11 @@ focus_tree = {
 		}
 		relative_position_id =  ENG_air1 
 		available = {
-            ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_navy_navy_submarine_detection_factor = 0.2 tooltip = navy_submarine_detection_factor_tt }
+
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_air_agility_factor = 0.05 tooltip = air_agility_factor_tt }
 		}
 	}
 	focus = {
@@ -3350,7 +3265,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_air_attack_factor = 0.025 tooltip = air_attack_factor_tt }
+            add_to_variable = { ENG_british_airforce_air_defence_factor = 0.025 tooltip = air_defence_factor_tt }
 		}
 	}
 
@@ -3368,7 +3285,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_air_intercept_efficiency = 0.075 tooltip = air_intercept_efficiency_tt }
 		}
 	}
 
@@ -3388,7 +3306,7 @@ focus_tree = {
 		completion_reward = {
             ENG_airforce_dynamic_modifier_tt = yes # tooltip
             add_to_variable = { ENG_british_airforce_air_range_factor = 0.1 tooltip = air_range_factor_tt }
-            add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt }
+            add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.075 tooltip = naval_strike_targetting_factor_tt }
 		}
 	}
 	focus = {
@@ -3405,7 +3323,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.075 tooltip = army_bonus_air_superiority_factor_tt }
 		}
 	}
 	focus = {
@@ -3422,7 +3341,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_air_superiority_efficiency = 0.05 tooltip = air_superiority_efficiency_tt }
 		}
 	}
 	focus = {
@@ -3442,7 +3362,14 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_air_home_defence_factor = 0.05 tooltip = air_home_defence_factor_tt }
+            add_tech_bonus = {
+				name = ENG_radar_bonus
+				bonus = 0.75
+				uses = 2
+				category = radar_tech
+			}
 		}
 	}
 	focus = {
@@ -3462,7 +3389,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-
+            ENG_airforce_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_airforce_air_night_penalty = -0.1 tooltip = air_night_penalty_tt }
 		}
 	}
 	focus = {
@@ -3473,8 +3401,10 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = ENG_detection
-			focus = ENG_ground_atk
 		}
+        prerequisite = {
+            focus = ENG_ground_atk
+        }
 		relative_position_id =  ENG_detection 
 		available = {
 			
@@ -3682,7 +3612,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ENG_ground_atk
-			focus = ENG_detection
 		}
 		relative_position_id =  ENG_asw_guy 
 		available = {
@@ -3700,15 +3629,17 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ENG_refit_speed
-			focus = ENG_light_hull
 		}
+        prerequisite = {
+            focus = ENG_light_hull
+        }
 		relative_position_id =  ENG_refit_speed 
-		available = {
-			date > 1940.1.1
-		}
+        available = {
+			GER = { has_completed_focus = GER_danzig_or_war }
+        }
 		completion_reward = {
             932 = {
                 add_extra_state_shared_building_slots = 5
@@ -3733,7 +3664,7 @@ focus_tree = {
 		icon = GFX_goal_ENG_grand_british_fleet
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ENG_wartime_docks1
 		}
@@ -3742,7 +3673,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-            132 = {
+            125 = {
                 add_extra_state_shared_building_slots = 5
                 add_building_construction = {
                     type = dockyard
@@ -3750,7 +3681,7 @@ focus_tree = {
                     instant_build = yes
                 }
             }
-            133 = {
+            123 = {
                 add_extra_state_shared_building_slots = 5
                 add_building_construction = {
                     type = dockyard

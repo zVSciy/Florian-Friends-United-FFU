@@ -1003,8 +1003,11 @@ characters={
 			allowed  = {
 				original_tag  = ENG
 			}
+			available = {
+				has_completed_focus = ENG_scaling_path
+			}
 			traits  = {
-				backroom_backstabber 
+				captain_of_industry 
 			}
 		}
 	}
