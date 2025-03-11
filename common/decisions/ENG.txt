@@ -2629,7 +2629,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = ENG_commonwealth_ties
+			has_completed_focus = ENG_imperial_conf
 		}
 
 		days_remove = 365
@@ -2780,7 +2780,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = ENG_raf
+			has_completed_focus = ENG_air1
 			has_war = yes
 		}
 
@@ -2818,7 +2818,6 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = ENG_war_cabinet
 		}
 
 		days_remove = 365
@@ -2898,7 +2897,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = ENG_new_dockyards 
+			has_completed_focus = ENG_navy1 
 		}
 
 		days_remove = 365
@@ -2937,7 +2936,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = ENG_air_production_group
+			has_completed_focus = ENG_fighter_bonus
 		}
 
 		days_remove = 365
