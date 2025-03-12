@@ -118,7 +118,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_depr1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_industrial_mob
         x = -1
         y = 1
         cost = 5
@@ -141,7 +141,7 @@ focus_tree = {
     }
 	focus = {
         id = ENG_depr2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_stonks
         x = 1
         y = 1
         cost = 5
@@ -987,7 +987,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_mills_scale1
-		icon = GFX_ENG_amend_factory_acts
+		icon = GFX_bsa
         x = -2
         y = 1
         cost = 5
@@ -1781,7 +1781,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_early_dock_output
-		icon = GFX_stonks
+		icon = GFX_goal_generic_construct_mil_factory
         x = 0
         y = 1
         cost = 5
@@ -1949,7 +1949,7 @@ focus_tree = {
     }
     focus = {
         id = ENG_total_mob_right
-		icon = GFX_industrial_mob
+		icon = GFX_buy
         x = -1
         y = 1
         cost = 5
@@ -2024,7 +2024,7 @@ focus_tree = {
     }	
     focus = {
         id = ENG_early_gunIC
-		icon = GFX_bsa
+		icon = GFX_supply
         x = 2
         y = 1
         cost = 5
@@ -2161,7 +2161,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sfp_gun_mio
 		}
-		relative_position_id = ENG_sfp_gun_mio 
+		relative_position_id = ENG_sfp_gun_mio
         available = {
             # Add any conditions here
         }
@@ -3058,7 +3058,13 @@ focus_tree = {
 		}
 		relative_position_id = ENG_sf_doc 
         available = {
-            # Add any conditions here
+            controls_state = 907
+			controls_state = 448
+			controls_state = 450
+			controls_state = 183
+			controls_state = 116
+			controls_state = 118
+			date > 1941.1.1
         }
         completion_reward = {
             every_state = {
@@ -3416,44 +3422,44 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ace = {
-				name = "Otto"
-				surname = "Kittel"
-				callsign = "Der Zerstörer"
+				name = "James"
+				surname = "Johnson"
+				callsign = "Johnny"
 				type = fighter_genius
 			}
 			
 			add_ace = {
-				name = "Erich"
-				surname = "Hartmann"
-				callsign = "Bubi"
+				name = "Douglas"
+				surname = "Bader"
+				callsign = "The Legless Wonder"
 				type = fighter_genius
 			}
 			
 			add_ace = {
-				name = "Gerhard"
-				surname = "Barkhorn"
-				callsign = "Barkhorn"
+				name = "John"
+				surname = "Plagis"
+				callsign = "Rhodesian Hawk"
 				type = fighter_genius
 			}
 			
 			add_ace = {
-				name = "Hans-Joachim"
-				surname = "Marseille"
-				callsign = "The Star of Africa"
+				name = "George"
+				surname = "Beurling"
+				callsign = "The Falcon of Malta"
 				type = fighter_genius
 			}
 			
 			add_ace = {
-				name = "Walter"
-				surname = "Nowotny"
-				callsign = "The Eagle"
+				name = "Stanford"
+				surname = "Tuck"
+				callsign = "Tucky"
 				type = fighter_genius
 			}
 			
 			add_ace = {
-				name = "Rudolf"
-				surname = "Sitz"
-				callsign = "The Shadow"
+				name = "Edward"
+				surname = "Manners"
+				callsign = "Ghost of Dover"
 				type = support_genius
 			}
 			add_tech_bonus = {
