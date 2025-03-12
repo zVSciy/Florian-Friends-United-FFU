@@ -739,7 +739,10 @@ focus_tree = {
 		relative_position_id = ENG_def_raj
 		mutually_exclusive = {focus = ENG_trade_usa}
         available = {
-            has_war = yes
+			controls_state = 947
+			controls_state = 446
+			controls_state = 118
+			has_war = yes
         }
         completion_reward = {
 			CAN = {
@@ -770,7 +773,7 @@ focus_tree = {
 		relative_position_id = ENG_africa_retake
 		mutually_exclusive = { focus = ENG_trade_minors}
         available = {
-            has_war = yes
+			USA = { has_completed_focus = USA_lend_lease_act }
         }
         completion_reward = {
 			USA = {
@@ -803,7 +806,7 @@ focus_tree = {
             add_to_variable = { ENG_british_economy_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
             add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt }
             ENG_army_dynamic_modifier_tt = yes
-            add_to_variable = { ENG_british_army_conscription = 0.025 tooltip = conscription_tt }
+            add_to_variable = { ENG_british_army_conscription = 0.02 tooltip = conscription_tt }
 			add_to_variable = { ENG_british_army_conscription_factor = 0.15 tooltip = conscription_factor_tt }
 			hidden_effect = {
 				AST = {
@@ -1525,7 +1528,8 @@ focus_tree = {
             add_tech_bonus = {
 				name = ENG_industry_bonus
 				bonus = 0.75
-				uses = 3
+				ahead_reduction = 1
+				uses = 1
 				category = industry
 			}
         }
@@ -1953,9 +1957,12 @@ focus_tree = {
             focus = ENG_early_dock_output
         }
 		relative_position_id = ENG_shadow_factories2 
-        available = {
-            date > 1941.1.1
-        }
+		available = {
+			OR = {
+				USA = { has_war = yes }
+				date > 1941.1.1
+			}
+		}
         completion_reward = {
             add_ideas = tot_economic_mobilisation
         }
@@ -3600,7 +3607,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_asw_guy
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_military_dictatorship
 		x = 1
 		y = 1
 		cost = 5
@@ -3618,7 +3625,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_watu2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_navy_anti_submarine
 		x = 1
 		y = 1
 		cost = 5
