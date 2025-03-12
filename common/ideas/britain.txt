@@ -27,6 +27,26 @@ ideas = {
 			}
 		}	
 
+		ENG_rela_fighter = {			
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_greater_german_reich
+
+			equipment_bonus = {
+				fighter = {
+					reliability = 0.05
+				}
+				heavy_fighter = {
+					reliability = 0.05
+				}
+			}
+		}
+
 		ENG_british_fighter_discount = {
 			
 			allowed = {

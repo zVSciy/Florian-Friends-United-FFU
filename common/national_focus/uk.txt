@@ -1527,9 +1527,9 @@ focus_tree = {
         completion_reward = {
             add_tech_bonus = {
 				name = ENG_industry_bonus
+				ahead_reduction = 0.5
 				bonus = 0.75
-				ahead_reduction = 1
-				uses = 1
+				uses = 2
 				category = industry
 			}
         }
@@ -1886,7 +1886,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            custom_effect_tooltip = shadow_scheme_focus_conv_tt
+            custom_effect_tooltip = shadow_scheme_focus_conv1_tt
 			custom_effect_tooltip = ENG_shadow_scheme_2_focus_tt
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
 			custom_effect_tooltip = ENG_shadow_scheme_2_tt
@@ -3290,8 +3290,8 @@ focus_tree = {
 		}
 		completion_reward = {
             ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_airforce_air_attack_factor = 0.025 tooltip = air_attack_factor_tt }
-            add_to_variable = { ENG_british_airforce_air_defence_factor = 0.025 tooltip = air_defence_factor_tt }
+            add_to_variable = { ENG_british_airforce_air_attack_factor = 0.075 tooltip = air_attack_factor_tt }
+            add_to_variable = { ENG_british_airforce_air_defence_factor = 0.075 tooltip = air_defence_factor_tt }
 		}
 	}
 
@@ -3310,13 +3310,13 @@ focus_tree = {
 		}
 		completion_reward = {
             ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_airforce_air_intercept_efficiency = 0.075 tooltip = air_intercept_efficiency_tt }
+            add_to_variable = { ENG_british_airforce_air_night_penalty = -0.075 tooltip = air_night_penalty_tt }
 		}
 	}
 
 	focus = {
 		id = ENG_range
-		icon = GFX_bomber_command
+		icon = GFX_cas
 		x = 1
 		y = 1
 		cost = 5
@@ -3335,7 +3335,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ground_sup
-		icon = GFX_cas
+		icon = GFX_bomber_command
 		x = 1
 		y = 1
 		cost = 5
@@ -3348,7 +3348,7 @@ focus_tree = {
 		}
 		completion_reward = {
             ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.075 tooltip = army_bonus_air_superiority_factor_tt }
+            add_to_variable = { ENG_english_airforce_air_ace_generation_chance_factor = 0.6 tooltip = air_ace_generation_chance_factor_tt }
 		}
 	}
 	focus = {
@@ -3365,8 +3365,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-            ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_airforce_air_superiority_efficiency = 0.05 tooltip = air_superiority_efficiency_tt }
+            add_ideas = ENG_rela_fighter
 		}
 	}
 	focus = {
@@ -3387,7 +3386,7 @@ focus_tree = {
 		}
 		completion_reward = {
             ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_airforce_air_home_defence_factor = 0.05 tooltip = air_home_defence_factor_tt }
+            add_to_variable = { ENG_english_ground_attack_factor = 0.1 tooltip = ground_attack_factor_tt }
             add_tech_bonus = {
 				name = ENG_radar_bonus
 				bonus = 0.75
@@ -3413,8 +3412,53 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-            ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_airforce_air_night_penalty = -0.1 tooltip = air_night_penalty_tt }
+			add_ace = {
+				name = "Otto"
+				surname = "Kittel"
+				callsign = "Der Zerstörer"
+				type = fighter_genius
+			}
+			
+			add_ace = {
+				name = "Erich"
+				surname = "Hartmann"
+				callsign = "Bubi"
+				type = fighter_genius
+			}
+			
+			add_ace = {
+				name = "Gerhard"
+				surname = "Barkhorn"
+				callsign = "Barkhorn"
+				type = fighter_genius
+			}
+			
+			add_ace = {
+				name = "Hans-Joachim"
+				surname = "Marseille"
+				callsign = "The Star of Africa"
+				type = fighter_genius
+			}
+			
+			add_ace = {
+				name = "Walter"
+				surname = "Nowotny"
+				callsign = "The Eagle"
+				type = fighter_genius
+			}
+			
+			add_ace = {
+				name = "Rudolf"
+				surname = "Sitz"
+				callsign = "The Shadow"
+				type = support_genius
+			}
+			add_tech_bonus = {
+				name = ENG_radar_bonus
+				bonus = 0.75
+				uses = 2
+				category = radar_tech
+			}
 		}
 	}
 	focus = {

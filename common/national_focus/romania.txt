@@ -2282,122 +2282,6 @@ focus = {
 }
 
 focus = {
-
-	id = ROM_crush_the_ressistance
-	icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
-	prerequisite = { focus = ROM_Placebo18 } 
-	y = 2
-	x = -1
-	relative_position_id = ROM_force_abdication
-	cost = 5
-	ai_will_do = {
-		factor = 8
-	}
-	available = { 
-
-		
-	}
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	completion_reward = {
-
-		ROM_occupation_dynamic_modifier_tt = yes #tooltip
-		add_to_variable = { ROM_occupation_starting_compliance = 0.1 tooltip = non_core_manpower_tt }
-		add_to_variable = { ROM_required_garrison_factor = -0.15 tooltip = required_garrison_factor_tt }
-		add_to_variable = { ROM_occupation_compliance_gain = 0.1 tooltip = compliance_gain_tt }
-		add_to_variable = { ROM_occupation_compliance_growth = 0.15 tooltip = compliance_growth_tt }
-		add_to_variable = { ROM_occupation_resistance_growth = -0.15 tooltip = resistance_growth_tt }
-
-
-
-	}
-}
-
-
-
-focus = {
-
-	id = ROM_develop_ressources
-	icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
-	prerequisite = { focus = ROM_Placebo18 } 
-	y = 2
-	x = -7
-	relative_position_id = ROM_force_abdication
-	cost = 5
-	ai_will_do = {
-		factor = 8
-	}
-	available = { 
-	}
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	completion_reward = {
-		
-		add_resource = {
-			type = steel
-			amount = 600
-			state = 81
-		}
-		add_resource = {
-			type = chromium
-			amount = 200
-			state = 81
-		}
-		
-		add_resource = {
-			type = oil
-			amount = 500
-			state = 79
-		}
-
-		add_resource = {
-			type = tungsten
-			amount = 400
-			state = 79
-		}
-		
-
-	}
-}
-
-
-
-focus = {
-
-	id = ROM_the_grand_offensive
-	icon = GFX_focus_PAR_neuter_the_guion_rojo
-	prerequisite = { focus = ROM_Placebo18 } 
-	y = 2
-	x = -4
-	relative_position_id = ROM_force_abdication
-	cost = 5
-	ai_will_do = {
-		factor = 8
-	}
-	available = { 
-	}
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	completion_reward = {
-
-
-		add_timed_idea = {
-			idea = ROM_elua_ce_este_al_nostru
-			days = 30
-		}
-		
-		
-	
-
-	}
-}
-
-
-
-focus = {
 	id = ROM_victors_of_the_great_war
 	icon = GFX_ROM_for_the_preservation_of_greater_romania
 	x = 37
@@ -2725,7 +2609,7 @@ focus = {
 
 	completion_reward = {
 		ROM_army_dynamic_modifier_tt = yes #tooltip
-		add_to_variable = { ROM_romanian_army_army_morale_factor = 0.1 tooltip = army_morale_factor_tt }
+		add_to_variable = { ROM_romanian_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
 		add_to_variable = { ROM_romanian_army_army_org_factor = 0.05 tooltip = army_org_factor_tt }
 
 		
