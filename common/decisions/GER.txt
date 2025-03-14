@@ -3633,7 +3633,7 @@ GER_wunderwaffe = {
 
 		available = {
 			NOT = { has_country_flag = GER_wunderwaffe_flag }
-			has_tech = jet_engines
+			is_special_project_completed = sp:sp_air_jet_engine
 		}
 
 		cost = 50
