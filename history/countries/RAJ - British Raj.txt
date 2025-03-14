@@ -28,9 +28,7 @@ add_equipment_to_stockpile = {
 	amount = 1250
 	producer = RAJ
 }
-give_military_access = USA
-give_military_access = BRA
-give_military_access = MEX
+
 add_equipment_to_stockpile = {
 	type = squad_equipment_0
 	amount = 1250
@@ -117,6 +115,10 @@ if = {
 }
 
 set_convoys = 50
+
+give_military_access = BRA
+give_military_access = MEX
+give_military_access = USA
 
 set_cosmetic_tag = RAJ_UK # British Raj
 

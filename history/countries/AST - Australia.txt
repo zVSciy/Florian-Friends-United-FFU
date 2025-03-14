@@ -1,5 +1,9 @@
 ﻿capital = 285
 
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
+
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.36
@@ -30,10 +34,6 @@ set_variable = {
 
 starting_train_buffer = 2
 
-give_military_access = USA
-give_military_access = BRA
-give_military_access = MEX
-
 # MP_garrison_division_standard = yes
 
 if = {
@@ -63,9 +63,7 @@ if = {
 		early_ship_hull_submarine = 1
 		basic_battery = 1
 		basic_torpedo = 1
-		basic_depth_charges = 1
 		#basic_secondary_battery = 1
-		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
 		basic_train = 1
 	}
