@@ -24,8 +24,6 @@ set_technology = {
 	infantry_weapons1 = 1
 	motorised_infantry = 1
 }
-give_military_access = USA
-give_military_access = BRA
 
 set_variable = {
 	var = min_fuel
@@ -343,6 +341,15 @@ if = {
 		}
 	}
 }
+
+give_military_access = BRA
+give_military_access = USA
+give_military_access = ENG
+give_military_access = CAN
+give_military_access = AST
+give_military_access = SAF
+give_military_access = RAJ
+give_military_access = FRA
 
 add_operation_token = {
 	tag = ENG
