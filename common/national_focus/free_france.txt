@@ -1965,7 +1965,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			always = no	
 		}
 		
 		bypass = {
