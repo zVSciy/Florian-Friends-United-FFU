@@ -1747,7 +1747,7 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				play_song = "4"
+				play_song = "4-speech"
 			}
 		}
 	}
@@ -1821,6 +1821,9 @@ focus_tree = {
 				every_country = {
 					news_event = generic.37
 				}
+
+
+				play_song - "1-speech"
 			}
 		}
 	}

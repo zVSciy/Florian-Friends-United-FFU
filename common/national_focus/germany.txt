@@ -3383,7 +3383,7 @@ focus_tree = {
 					}		
 					hidden_effect = {
 						news_event = { hours = 1 id = news.204 }
-						play_song = "2"
+						play_song = "2-speech"
 					}
 					if = {
 						limit = { NOT = { is_in_faction_with = ROOT } }
@@ -4137,7 +4137,7 @@ focus_tree = {
 					}
 				}
 				#speech
-				play_song = "0" 
+				play_song = "0-speech" 
 			}
 		}
 	}
@@ -6649,7 +6649,7 @@ focus_tree = {
 			GER_economy_dynamic_modifier_tt = yes
 			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 			hidden_effect = {
-				play_song = "9"
+				play_song = "9-speech"
 			}
 		}
 	}
@@ -6878,7 +6878,7 @@ focus_tree = {
 				traits = { substance_abuser media_personality militias_officer substance_addict trait_reckless }
 			}
 			hidden_effect = {
-				play_song = "10"
+				play_song = "10-speech"
 			}
 		}
 	}

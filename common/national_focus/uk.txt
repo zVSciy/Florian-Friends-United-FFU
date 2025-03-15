@@ -3165,8 +3165,10 @@ focus_tree = {
 				every_country = {
 					news_event = generic.47
 				}
+
+				play_song = "6-speech"
 			}
-			#play_song = 
+			
         }
     }
 
