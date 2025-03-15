@@ -3880,7 +3880,7 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black }
 
 			hidden_effect = {
-				play_song = "3"
+				play_song = "3-speech"
 			}
 		}
 	}
