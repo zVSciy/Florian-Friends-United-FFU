@@ -137,47 +137,6 @@ ideas = {
 			}
 		}
 
-		ENG_civ_boost = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-
-			modifier = {
-				production_speed_industrial_complex_factor = 0.2
-				production_speed_arms_factory_factor = -0.8
-			}
-		}
-
-		ENG_mil_boost = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-
-			modifier = {
-				production_speed_arms_factory_factor = 0.25
-				production_speed_dockyard_factor = 0.3
-				production_speed_industrial_complex_factor = -0.8
-			}
-		}
-
 		ENG_equipment_buff_temp = {
 			
 			allowed = {
@@ -1440,6 +1399,47 @@ ideas = {
 			
 			removal_cost = -1	
 
+		}
+
+		ENG_mil_boost = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.3
+				production_speed_industrial_complex_factor = -0.8
+			}
+		}
+
+		ENG_civ_boost = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = -0.8
+			}
 		}
 
 		# ENG_the_sun_never_sets_idea_1 = {
