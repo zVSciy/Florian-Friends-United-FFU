@@ -5,7 +5,7 @@ types = {
 
 		category = nuclear_raids
 
-		command_power = 20 # command power allocation cost
+		command_power = 1 # command power allocation cost
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -91,7 +91,7 @@ types = {
 
 		success_factors = {
 			success = {
-				base = 0.5
+				base = 1
 				experience = {
 					weight = 0.1
 					start_weight = -0.1
