@@ -3040,7 +3040,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_dockyard = 0.15
+			industrial_capacity_dockyard = 0.075
 		}
 
 		complete_effect = {
