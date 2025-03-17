@@ -3105,9 +3105,9 @@ focus_tree = {
         mutually_exclusive = {
             focus = ENG_land_in_eu
         }
-        available = {
-            # Add any conditions here
-        }
+		available = {
+			date > 1941.6.22
+		}
         completion_reward = {
             custom_effect_tooltip = "Will allow the UK and the USA to lend lease the USSR with decisions"
             SOV = { add_offsite_building = { type = arms_factory level = 15 } }
@@ -3132,9 +3132,9 @@ focus_tree = {
         mutually_exclusive = {
             focus = ENG_lend_lease_sov
         }
-        available = {
-            # Add any conditions here
-        }
+		available = {
+			date > 1941.6.22
+		}
         completion_reward = {
 			ENG_army_dynamic_modifier_tt = yes
             add_to_variable = { ENG_british_naval_invasion_capacity = 15 tooltip = naval_invasion_capacity_tt }
