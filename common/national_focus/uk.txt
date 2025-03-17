@@ -786,7 +786,7 @@ focus_tree = {
 		icon = GFX_blood_sweat
         x = 1
         y = 1
-        cost = 10
+        cost = 5
 		prerequisite = {
 			focus = ENG_trade_usa
 			focus = ENG_trade_minors
@@ -795,7 +795,7 @@ focus_tree = {
 		available = {
 			OR = {
 				USA = { has_war = yes }
-				date > 1941.1.1
+				date > 1940.1.1
 			}
 		}
         completion_reward = {
@@ -3709,15 +3709,15 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = ENG_refit_speed
+			focus = ENG_light_hull
 		}
-        prerequisite = {
-            focus = ENG_light_hull
-        }
 		relative_position_id =  ENG_refit_speed 
         available = {
 			GER = { has_completed_focus = GER_danzig_or_war }
         }
 		completion_reward = {
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
             932 = {
                 add_extra_state_shared_building_slots = 5
                 add_building_construction = {
