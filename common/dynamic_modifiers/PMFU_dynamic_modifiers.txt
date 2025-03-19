@@ -426,6 +426,9 @@ ITA_army_dynamic_modifier = {
 	experience_loss_factor = ITA_italian_army_experience_loss_factor
 	winter_attrition_factor = ITA_italian_army_winter_attrition_factor
 	acclimatization_cold_climate_gain_factor = ITA_italian_army_acclimatization_cold_climate_gain_factor
+	acclimatization_hot_climate_gain_factor = ITA_italian_army_acclimatization_hot_climate_gain_factor
+	heat_attrition_factor = ITA_italian_army_summer_attrition_factor
+
 }
 
 ITA_air_dynamic_modifier = {
