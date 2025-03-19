@@ -677,6 +677,10 @@ political_actions = {
 				USA = { set_country_flag = fight_on_the_beaches_speech }
 			}
 			set_country_flag = fight_on_the_beaches_speech
+
+			hidden_effect = {
+				play_song = "7-speech"
+			}
 		}
 
 		ai_will_do = {

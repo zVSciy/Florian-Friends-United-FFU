@@ -3077,7 +3077,7 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 0.5
 	}
-
+    	
 	tank_art_gun_2 = { ###5
 		abbreviation = "ar2"
 		category = tank_armament_tier_arty

@@ -3383,7 +3383,7 @@ focus_tree = {
 					}		
 					hidden_effect = {
 						news_event = { hours = 1 id = news.204 }
-						play_song = "2"
+						play_song = "2-speech"
 					}
 					if = {
 						limit = { NOT = { is_in_faction_with = ROOT } }
@@ -4137,7 +4137,7 @@ focus_tree = {
 					}
 				}
 				#speech
-				play_song = "0" 
+				play_song = "0-speech" 
 			}
 		}
 	}
@@ -6649,7 +6649,7 @@ focus_tree = {
 			GER_economy_dynamic_modifier_tt = yes
 			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 			hidden_effect = {
-				play_song = "9"
+				play_song = "9-speech"
 			}
 		}
 	}
@@ -6821,69 +6821,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_volksturm
-		icon = GFX_focus_GER_volkssturm
-		prerequisite = { focus = GER_ardennes }
-		available = {
-			surrender_progress > 0.1
-			has_war_with = SOV
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		x = 1
-		y = 1
-		relative_position_id = GER_ardennes
-		cost = 1
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = unlock_propaganda_campaign_tt
-			unlock_decision_tooltip = GER_ensieg_prop
-			# add_ideas = GER_volksturm_idea
-			GER_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_army_conscription = 0.01 tooltip = conscription_tt }
-			add_to_variable = { GER_german_army_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
-			add_to_variable = { GER_german_army_army_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
-			set_technology = {
-				militia_tech = 1
-			}
-			hidden_effect = {
-				load_oob = GER_volk
-				GER = {
-					if = { 
-                        limit = {
-                            has_game_rule = {
-                                rule = allow_voice_lines
-                                option = ENABLED
-                            }
-                        }
-					scoped_sound_effect = "children"
-					}
-				}
-			}
-			hidden_effect = {
-			}
-			create_field_marshal = {
-				name = "Adolf Hitler"
-				picture = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-				id = -1
-				traits = { substance_abuser media_personality militias_officer substance_addict trait_reckless }
-			}
-			hidden_effect = {
-				play_song = "10"
-			}
-		}
-	}
-
-	focus = {
 		id = GER_hold_africa
 		icon = GFX_focus_GER_mittelafrika
 		prerequisite = { focus = GER_prepare_barb }
@@ -6931,7 +6868,35 @@ focus_tree = {
 		
 		completion_reward = {
 			add_timed_idea = { idea = GER_ardennes_offensive days = 45 }
-
+			# add_ideas = GER_volksturm_idea
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { GER_german_army_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+			add_to_variable = { GER_german_army_army_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
+			hidden_effect = {
+				load_oob = GER_volk
+				GER = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "children"
+					}
+				}
+			}
+			hidden_effect = {
+				set_technology = {
+					militia_tech = 1
+				}
+			}
+			hidden_effect = {
+				play_song = "10-speech"
+			}
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = GER_ensieg_prop
 		}
     }
 
@@ -6939,10 +6904,10 @@ focus_tree = {
 	focus = {
 		id = GER_defend_berlin
 		icon = GFX_GER_defend_berlin
-		prerequisite = { focus = GER_volksturm}
-		x = 0
+		prerequisite = { focus = GER_ardennes}
+		x = 1
 		y = 1
-		relative_position_id = GER_volksturm
+		relative_position_id = GER_ardennes
 		cost = 1
 		
 		available = {
@@ -7011,38 +6976,44 @@ focus_tree = {
 			}
 			hidden_effect = {
 				division_template = {
-					name = "Volksturm Battalions"
+					name = "Reserve Army"
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-
+						infantry = { x = 0 y = 3 }
+				
 						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
-
+						infantry = { x = 1 y = 3 }
+				
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
-
-						artillery_brigade = { x = 3 y = 0}
-						anti_tank_brigade = { x = 3 y = 1}
-
+				
+						dp_artillery_brigade = { x = 3 y = 0 }
+						dp_artillery_brigade = { x = 3 y = 1 }
+						dp_artillery_brigade = { x = 3 y = 2 }
+						dp_artillery_brigade = { x = 3 y = 3 }
+				
+						dp_artillery_brigade = { x = 4 y = 0 }
+						dp_artillery_brigade = { x = 4 y = 1 }
+						dp_artillery_brigade = { x = 4 y = 2 }
+						dp_artillery_brigade = { x = 4 y = 3 }
 					}
 					support = {
-						hq_company = { x = 0 y = 0 } 
-						engineer = { x = 0 y = 1 }   
-						recon = { x = 0 y = 2 }
-						logistics_company_mot  = { x = 0 y = 3 }
-						anti_air = { x = 1 y = 0 }
-						# logistics_company_horse = { x = 1 y = 1 }
+						rangers_support = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
 					}
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7050,7 +7021,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7058,7 +7029,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7066,7 +7037,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7074,7 +7045,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7082,7 +7053,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7090,7 +7061,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}				
@@ -7098,7 +7069,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7106,7 +7077,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7114,7 +7085,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7122,7 +7093,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7130,7 +7101,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7138,7 +7109,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7146,7 +7117,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7154,7 +7125,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7162,7 +7133,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7170,7 +7141,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7178,7 +7149,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7186,7 +7157,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
@@ -7194,12 +7165,61 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 64 }
 					create_unit = {
-						division = "division_template = \"Volksturm Battalions\" start_experience_factor = 0.1"
+						division = "division_template = \"Reserve Army\" start_experience_factor = 0.1"
 						owner = GER
 					}
 				}
 			}
 			custom_effect_tooltip = GER_defend_berlin_tt
+			hidden_effect ={
+				# 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+				# 		scoped_sound_effect="untergang"
+				#    }
+				   division_template = {
+						name = "Panzerjagd-Division"
+						regiments = {
+							medium_armor = { x = 0 y = 0 }
+							medium_armor = { x = 0 y = 1 }
+							medium_armor = { x = 0 y = 2 }
+	
+							medium_armor = { x = 1 y = 0 }
+							medium_armor = { x = 1 y = 1 }
+							medium_armor = { x = 1 y = 2 }
+	
+							medium_tank_destroyer_brigade = { x = 2 y = 0 }
+							medium_tank_destroyer_brigade = { x = 2 y = 1 }
+							medium_tank_destroyer_brigade = { x = 2 y = 2 }
+					
+							mechanized = { x = 3 y = 0 }
+							mechanized = { x = 3 y = 1 }
+							mechanized = { x = 3 y = 2 }
+					
+							mechanized = { x = 4 y = 0 }
+							mechanized = { x = 4 y = 1 }
+							mechanized = { x = 4 y = 2 }
+							
+						}
+						support = {
+							mech_field_hospital = { x = 0 y = 0 }
+							logistics_company_mot = { x = 0 y = 1 }
+							light_tank_recon = { x = 0 y = 2 }
+							medium_sp_anti_air_brigade = { x = 0 y = 3 }
+							ss_hq_company_medium = { x = 1 y = 0 }
+							mech_engineers = { x = 1 y = 1 }
+							signal_company = { x = 1 y = 2 }
+							maintenance_company = { x = 1 y = 3 }
+						}
+					}
+					64 = {
+						for_loop_effect = {
+							end = 9
+							create_unit = {
+								division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
+								owner = GER
+							}
+						}
+					}
+				}
 		}
 	}
 
@@ -7235,58 +7255,6 @@ focus_tree = {
 			}
 			 
 		   add_timed_idea = {idea = GER_steiner_idea days = 45 }
-
-			hidden_effect ={
-			# 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
-			# 		scoped_sound_effect="untergang"
-			#    }
-			   division_template = {
-					name = "Panzerjagd-Division"
-					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
-				
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-				
-						mechanized = { x = 2 y = 0 }
-						mechanized = { x = 2 y = 1 }
-						mechanized = { x = 2 y = 2 }
-				
-						mechanized = { x = 3 y = 0 }
-						mechanized = { x = 3 y = 1 }
-						mechanized = { x = 3 y = 2 }
-						mechanized = { x = 3 y = 3 }
-				
-						medium_tank_destroyer_brigade = { x = 4 y = 0 }
-						medium_tank_destroyer_brigade = { x = 4 y = 1 }
-				
-					}
-					support = {
-						logistics_company = { x = 0 y = 0 }
-						logistics_company_mot = { x = 0 y = 1 }
-						mot_recon = { x = 0 y = 2 }
-						mot_anti_air_brigade = { x = 0 y = 3 }
-				
-						ss_hq_company_medium = { x = 1 y = 0 }
-						engineer = { x = 1 y = 1 }
-						signal_company = { x = 1 y = 2 }
-						maintenance_company = { x = 1 y = 3 }
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 4
-						create_unit = {
-							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
-				}
-			}
 		}
 	}
 
