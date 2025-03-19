@@ -1518,7 +1518,6 @@ focus_tree = {
         cost = 5
 		prerequisite = {
 			focus = ENG_resourcestouk
-            focus = ENG_resourcestouk
 		}
 		relative_position_id = ENG_resourcestouk 
         available = {
@@ -3271,9 +3270,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_air1
 		}
-		mutually_exclusive = {
-			focus = ENG_airatk
-		}
 		relative_position_id =  ENG_air1 
 		available = {
 
@@ -3292,17 +3288,13 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_air1
 		}
-		mutually_exclusive = {
-			focus = ENG_agility
-		}
 		relative_position_id =  ENG_air1 
 		available = {
 			
 		}
 		completion_reward = {
             ENG_airforce_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { ENG_british_airforce_air_attack_factor = 0.075 tooltip = air_attack_factor_tt }
-            add_to_variable = { ENG_british_airforce_air_defence_factor = 0.075 tooltip = air_defence_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_home_defence_factor = 0.2 tooltip = air_home_defence_factor_tt }
 		}
 	}
 
