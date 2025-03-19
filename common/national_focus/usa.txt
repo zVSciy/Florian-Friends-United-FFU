@@ -4958,11 +4958,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
-				name = USA_support_rock_island
-				uses = 2
-				bonus = 0.75
-				category = artillery
-				category = support_tech
+				name = mountaineers_tech
+				bonus = 0.50
+				ahead_reduction  = 0.5
+				uses = 1
+				technology = artillery3
 			}
 		}
 	}

@@ -4169,9 +4169,8 @@ focus_tree = {
 				add_tech_bonus = {
 					name = mountaineers_tech
 					bonus = 0.50
-					ahead_reduction  = 0.5
-					uses = 1
-					technology = artillery3
+					uses = 2
+					category = artillery
 				}
 				add_ideas = MEX_better_pack_arty
 			}
