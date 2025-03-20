@@ -32,7 +32,7 @@ sp_naval_cruiser_submarine = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_tech = early_ship_hull_submarine
+				has_tech = improved_ship_hull_submarine
 			}
 			else = {
 				has_tech = early_submarine

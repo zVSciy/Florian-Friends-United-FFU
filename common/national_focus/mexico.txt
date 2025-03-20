@@ -2787,12 +2787,7 @@ focus_tree = {
 					uses = 2
 					category = ss_tech
 				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					set_technology = { cruiser_submarines = 1 }
-				}
+				
 				add_ideas = MEX_Invest_in_submarine_warfare
 			}
 	}

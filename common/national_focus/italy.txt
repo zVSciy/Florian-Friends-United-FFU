@@ -4763,12 +4763,10 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			add_breakthrough_progress = {
+                specialization = specialization_naval
+                value = 1
+            }
 		}
 	}
 	
