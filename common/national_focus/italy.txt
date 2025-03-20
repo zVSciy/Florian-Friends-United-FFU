@@ -4117,7 +4117,6 @@ focus_tree = {
 			# }
 			ITA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ITA_italian_army_special_forces_attack_factor = 0.05 tooltip = special_forces_attack_factor_tt }
-			add_to_variable = { ITA_italian_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	
@@ -4306,10 +4305,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = arm_bonus
+				name = doc_bonus
 				bonus = 0.75
 				uses = 2
-				category = armor
+				category = artillery
 			}
 		}
 	}
@@ -4453,8 +4452,8 @@ focus_tree = {
 			# 	remove_idea = ITA_csir_idea
 			# }
 			ITA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { ITA_italian_army_winter_attrition_factor = -0.1 tooltip = winter_attrition_factor_tt }
-			add_to_variable = { ITA_italian_army_acclimatization_cold_climate_gain_factor = 0.15 tooltip = acclimatization_cold_climate_gain_factor_tt }
+			add_to_variable = {ITA_italian_army_summer_attrition_factor = -0.1 tooltip = heat_attrition_factor_tt }
+			add_to_variable = { ITA_italian_army_acclimatization_hot_climate_gain_factor = 0.15 tooltip = acclimatization_hot_climate_gain_factor_tt }
 		}
 	}
 	
