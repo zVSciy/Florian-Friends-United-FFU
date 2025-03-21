@@ -3136,7 +3136,7 @@ focus_tree = {
 		}
         completion_reward = {
 			ENG_army_dynamic_modifier_tt = yes
-            add_to_variable = { ENG_british_naval_invasion_capacity = 15 tooltip = naval_invasion_capacity_tt }
+            add_to_variable = { ENG_british_naval_invasion_capacity = 9 tooltip = naval_invasion_capacity_tt }
         }
     }
 
