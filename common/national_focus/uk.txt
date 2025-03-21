@@ -450,7 +450,7 @@ focus_tree = {
         available = {
 				OR = {
 					JAP = { has_completed_focus = JAP_intervene_in_china }
-					date > 1938.1.1
+					date > 1937.12.1
 				}
 		}
         completion_reward = {
@@ -742,7 +742,6 @@ focus_tree = {
 			controls_state = 947
 			controls_state = 446
 			controls_state = 118
-			has_war = yes
         }
         completion_reward = {
 			CAN = {
@@ -793,10 +792,7 @@ focus_tree = {
 		}
 		relative_position_id = ENG_trade_minors
 		available = {
-			OR = {
-				USA = { has_war = yes }
-				date > 1940.1.1
-			}
+			has_war = yes
 		}
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
@@ -1507,7 +1503,7 @@ focus_tree = {
         }
         completion_reward = {
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.125 tooltip = production_speed_arms_factory_factor_tt } 
+            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.15 tooltip = production_speed_arms_factory_factor_tt } 
         }
     }
     focus = {
@@ -2798,7 +2794,7 @@ focus_tree = {
 		}
 		relative_position_id = ENG_sf_doc 
         available = {
-			date > 1941.8.1
+			date > 1941.6.1
 			NOT = { has_idea = ENG_compass }
 			NOT = { has_country_flag = OPERATION_TORCH_ONGING }
 			NOT = {
@@ -3108,10 +3104,14 @@ focus_tree = {
 			date > 1941.6.22
 		}
         completion_reward = {
-            custom_effect_tooltip = "Will allow the UK and the USA to lend lease the USSR with decisions"
+			custom_effect_tooltip = {
+				localization_key = ENG_russia_aid_tt
+			}
             SOV = { add_offsite_building = { type = arms_factory level = 15 } }
             SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
+			hidden_effect = {
             SOV = { remove_ideas =  home_of_revolution  }
+			}
         }
     }
     focus = {
@@ -3152,7 +3152,7 @@ focus_tree = {
 		}
 		relative_position_id = ENG_lend_lease_sov
         available = {
-            # Add any conditions here
+            date > 1942.1.1
         }
         completion_reward = {
             every_state = {

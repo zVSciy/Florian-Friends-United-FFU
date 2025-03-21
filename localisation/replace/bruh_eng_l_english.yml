@@ -90,7 +90,7 @@
  ENG_torch:0 "Operation Torch"
  ENG_countenance:0 "Operation Countenance"
  ENG_husky:0 "Operation Husky"
- ENG_lend_lease_sov:0 "Help the Soviet War"
+ ENG_lend_lease_sov:0 "Aid the Soviet War Effort"
  ENG_land_in_eu:0 "Prepare for a Landing"
  ENG_overlord:0 "Operation Overlord"
  ENG_air_and_navy:0 "Begin RAF & RN Investments"
@@ -300,6 +300,7 @@
   ENG_imperial_conf_tt:0 "§OThe Commonwealth will receive the same bonuses!§!"
   OPERATION_OVERLORD:0 "Operation Overlord"
   OPERATION_HUSKY:0 "Operation Husky"
+  ENG_russia_aid_tt:0 "§OThe U.S. will unlock decisions to lend lease the Soviet Union in their war against Germany!§!"
 
   #### FLAGS ####
   ENG_seize_col:0 "Has Seized Portugese Colonies"
