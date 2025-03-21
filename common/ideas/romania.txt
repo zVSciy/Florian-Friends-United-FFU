@@ -33,6 +33,23 @@ ideas = {
 			}
 		}
 
+		ROM_railway_bonus = {
+
+			picture = por_colonial_assimilation
+		
+			allowed = {
+				original_tag = ROM
+			}
+		
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				railway_gun_bombardment_factor = 0.10
+			}
+		}
+
 
 		ROM_one_size_fits_all_philosophy = {
 			picture = generic_artillery_regiments

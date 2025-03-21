@@ -1503,39 +1503,6 @@ focus = {
 	}
 }
 
-
-focus = {
-	id = ROM_taking_out_the_trash
-	icon = GFX_focus_generic_road_investment
-	
-	prerequisite = { focus = ROM_protect_the_church_against_communist}
-
-	available = {
-		 always = false
-	}
-
-	
-
-	x = 1
-	y = 1
-	relative_position_id = ROM_protect_the_church_against_communist
-	cost = 35
-
-	available = { 
-	}
-	
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	completion_reward = {
-
-		custom_effect_tooltip = "nur noch eine runde mama"
-	}
-
-}
-
-
-
 focus = {
 	id = ROM_institute_royal_dictatorship
 	icon = GFX_focus_rom_royal_dictatorship
@@ -2448,15 +2415,12 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
+		add_ideas = ROM_railway_bonus
 		hidden_effect = {
 			set_technology = {
 				railway_gun = 1
 			}
 		}
-		
-
-		ROM_army_dynamic_modifier_tt = yes #tooltip
-		add_to_variable = { ROM_romanian_army_railway_gun_bombardment_factor = 0.1 tooltip = railway_gun_bombardment_factor_tt }
 	}
 }
 
