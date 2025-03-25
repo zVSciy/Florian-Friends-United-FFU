@@ -3556,7 +3556,7 @@ focus_tree = {
 			hidden_effect = {
 			 100 = {
 			 	set_building_level = {
-			 		type = gib_air_base
+			 		type = air_base
 			 		level = 20
 			 		instant_build = yes
 				}

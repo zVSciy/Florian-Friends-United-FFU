@@ -62,7 +62,7 @@ buildings = {
 		value = 28
 		infrastructure_construction_effect = yes
 		allied_build = yes
-		damage_factor = 0.1
+		damage_factor = 0
 		disabled_in_dmz = yes
 	}
 
@@ -437,21 +437,6 @@ buildings = {
 			shares_slots = yes
 			group_by = reactors
 		}
-	}
-	
-	gib_air_base = {
-		show_on_map = 1
-		base_cost = 999999
-		icon_frame = 5
-		air_base = yes
-		level_cap = {
-			state_max = 100# This is the max unlock level
-		}
-		value = 28
-		infrastructure_construction_effect = yes
-		allied_build = yes
-		damage_factor = 0
-		disabled_in_dmz = yes
 	}
 	
 	mega_gun_emplacement = {

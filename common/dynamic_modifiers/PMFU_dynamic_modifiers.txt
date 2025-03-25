@@ -120,13 +120,6 @@ gibraltar_defences = {
 	army_defence_factor = 0.15
 }
 
-ENG_no_AIR = {
-	enable = { always = yes }
-	icon = GFX_modifiers_SOV_armored_battery
-	
-	state_production_speed_air_base_factor = -4
-}
-
 ENG_no_portspam = {
 	enable = { always = yes }
 	icon = GFX_modifiers_SOV_armored_battery
