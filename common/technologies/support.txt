@@ -234,7 +234,7 @@ technologies = {
 		engineer = {
 			entrenchment  = 2
 			fort = {	
-				defence = 0.15
+				defence = 0.10
 			}
 		}
 		# assault_engineer = {
@@ -312,6 +312,9 @@ technologies = {
 		fortification_collateral_chance = 0.5
 		
 		engineer = {
+			fort = {	
+				attack = 0.10
+			}
 			urban = {
 				attack = 0.05
 				defence = 0.05

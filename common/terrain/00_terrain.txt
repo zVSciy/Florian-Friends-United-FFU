@@ -275,7 +275,7 @@ categories =  {
 		sound_type = desert
 		
 		units = {
-			attack = -0.075
+			attack = -0.1
 		}
 
 		supply_flow_penalty_factor = 0.14
