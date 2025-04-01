@@ -329,7 +329,7 @@ equipments = {
 			tank_nsb_med_armor_2_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 18
+		build_cost_ic = 22
 		reliability = 0.75
 		armor_value = 40
 		defense = 8
@@ -371,7 +371,7 @@ equipments = {
 			tank_nsb_med_armor_2_upgrade
 		}
 		maximum_speed = 6
-		build_cost_ic = 20
+		build_cost_ic = 24
 		reliability = 0.75
 		armor_value = 45
 		defense = 8
