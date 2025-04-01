@@ -250,72 +250,12 @@ technology_folders = {
 			NOT = { 
 				has_dlc = "By Blood Alone"
 			}
-			OR = {
-				NOT = { 
-					original_tag = CAN
-					original_tag = MEX
-					original_tag = BRA
-					original_tag = IRE 
-					original_tag = HOL
-					original_tag = SPR
-					original_tag = HUN 
-					original_tag = ROM
-					original_tag = BUL 
-					original_tag = YUG
-					original_tag = MON
-					original_tag = MAN
-					original_tag = FIN
-					original_tag = SAF
-					original_tag = RAJ
-					original_tag = AST
-					original_tag = NZL
-					original_tag = SIA
-					original_tag = VIC
-					original_tag = FRA
-				}
-				NOT = {
-					has_game_rule = {
-						rule = air_minors
-						option = DISABLED
-					}
-				}
-			}
 		}
 		ledger = air
 	}
 	bba_air_techs_folder = {
 		available = {
 			has_dlc = "By Blood Alone"
-			OR = {
-				NOT = { 
-					original_tag = CAN
-					original_tag = MEX
-					original_tag = BRA
-					original_tag = IRE 
-					original_tag = HOL
-					original_tag = SPR
-					original_tag = HUN 
-					original_tag = ROM
-					original_tag = BUL 
-					original_tag = YUG
-					original_tag = MON
-					original_tag = MAN
-					original_tag = FIN
-					original_tag = SAF
-					original_tag = RAJ
-					original_tag = AST
-					original_tag = NZL
-					original_tag = SIA
-					original_tag = VIC
-					original_tag = FRA
-				}
-				NOT = {
-					has_game_rule = {
-						rule = air_minors
-						option = DISABLED
-					}
-				}
-			}
 		}
 		ledger = air
 	}

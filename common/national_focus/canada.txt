@@ -1718,11 +1718,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_forced_quebec_conscription
+		id = CAN_remove_mp_malus
 		icon = GFX_goal_tfv_can_forced_quebec_conscription 
 		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
-		mutually_exclusive = { focus =  CAN_compromise_with_quebec }
-		x = 2
+		x = 3
 		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1746,50 +1745,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
-			# remove_ideas = CAN_conscription_crisis
 			CAN_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { CAN_canadian_army_conscription_factor = 0.30 tooltip = conscription_factor_tt }
-			
-			# Opens up the MTTH events tfv_canada.50 - tfv_canada.53
-		}
-	}
-
-	focus = {
-		id = CAN_compromise_with_quebec
-		icon = GFX_goal_tfv_can_compromise_with_quebec
-		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
-		mutually_exclusive = { focus =  CAN_forced_quebec_conscription }
-		x = 4
-		y = 6
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			# swap_ideas = {
-			# 	remove_idea = CAN_conscription_crisis
-			# 	add_idea = CAN_conscription_crisis_mended
-			# }
-			CAN_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { CAN_canadian_army_conscription_factor = 0.20 tooltip = conscription_factor_tt }
 		}
 	}
 
@@ -1799,7 +1756,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_national_steel_car }
 		prerequisite = { focus = CAN_if_day }
 		x = 1
-		y = 7
+		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
 
 		cost = 5
@@ -2372,10 +2329,10 @@ focus_tree = {
 	focus = {
 		id = CAN_the_grizzly
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = CAN_the_ram_tank }
+		prerequisite = { focus = CAN_american_licenses }
 		x = 0
 		y = 1
-		relative_position_id = CAN_the_ram_tank 
+		relative_position_id = CAN_american_licenses 
 
 		cost = 5
 
@@ -3910,7 +3867,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_american_licenses }
 		
 		cost = 10
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = CAN_american_licenses
 
@@ -3950,7 +3907,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_american_licenses }
 		
 		cost = 10
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = CAN_american_licenses
 		
