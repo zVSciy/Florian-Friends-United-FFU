@@ -1916,7 +1916,8 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_arty
+				tank_armament_tier_arty_1
+				tank_armament_tier_arty_2
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
 				# tank_armament_tier_light_td
@@ -1953,7 +1954,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_arty
+				tank_armament_tier_arty_1
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
 				# tank_armament_tier_light_td
@@ -2082,7 +2083,8 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_arty
+				tank_armament_tier_arty_1
+				tank_armament_tier_arty_2
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
 				# tank_armament_tier_light_td
@@ -2121,7 +2123,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_arty
+				tank_armament_tier_arty_1
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
 				# tank_armament_tier_light_td
@@ -2383,7 +2385,8 @@ equipment_modules = {
    # tank_armament_tier_medium_td_3
    # tank_armament_tier_aa
    # tank_armament_tier_heavy_aa
-   # tank_armament_tier_arty
+   # tank_armament_tier_arty_1
+   # tank_armament_tier_arty_2
    # tank_armament_tier_light_arty
    # tank_armament_tier_assault
 
@@ -3059,7 +3062,7 @@ equipment_modules = {
 
 	tank_art_gun_1 = { ###3
 		abbreviation = "ar1"
-		category = tank_armament_tier_arty
+		category = tank_armament_tier_arty_1
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
@@ -3080,7 +3083,7 @@ equipment_modules = {
     	
 	tank_art_gun_2 = { ###5
 		abbreviation = "ar2"
-		category = tank_armament_tier_arty
+		category = tank_armament_tier_arty_2
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
@@ -3104,7 +3107,7 @@ equipment_modules = {
 
 	tank_art_gun_3 = { ###6
 		abbreviation = "ar3"
-		category = tank_armament_tier_arty
+		category = tank_armament_tier_arty_2
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
