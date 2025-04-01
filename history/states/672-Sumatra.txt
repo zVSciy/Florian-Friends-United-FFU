@@ -6,7 +6,7 @@ state={
 	state_category = town
 	
 	resources={
-		rubber=800 # was: 268 ## WAS 1500 BEFORE MIKOLAJ
+		rubber=1000 # was: 268 ## WAS 1500 BEFORE MIKOLAJ
 		oil=520 # was: 24
 		aluminium=280 # was: 50
 	}
@@ -30,6 +30,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 1
 			4652 = {
 				naval_base = 3
