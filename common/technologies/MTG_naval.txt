@@ -1346,6 +1346,31 @@ early_ship_hull_carrier = {
 		}
 	}
 
+	super_ship_hull_carrier = {
+
+		enable_equipments = {
+			ship_hull_carrier_super
+		}
+		
+		enable_equipment_modules = { 
+			ship_armor_shbb
+		}
+
+		research_cost = 1.5
+
+		start_year = 1939
+		
+		categories = {
+			naval_equipment
+			cv_tech
+			mio_cat_tech_all_carrier_and_modules
+			year_1939
+		}
+		special_project_specialization = {
+			specialization_naval
+		}
+	}
+
 	advanced_ship_hull_carrier = {
 
 		enable_equipments = {
