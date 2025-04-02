@@ -312,6 +312,7 @@ JAP_economy_dynamic_modifier = {
 	air_fuel_consumption_factor = JAP_japanese_economy_air_fuel_consumption_factor
 	production_speed_radar_station_factor = JAP_japanese_economy_production_speed_radar_station_factor
 	industrial_capacity_factory = JAP_japanese_economy_industrial_capacity_factory
+	industrial_capacity_dockyard = JAP_japanese_economy_industrial_capacity_dockyard
 }
 
 JAP_army_dynamic_modifier = {

@@ -767,6 +767,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/jap/goal_JAP_IJN_takeover.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_japan_attack_singapore"
+		texturefile = "gfx/interface/goals/jap/JAP_attack_singapore.png"
+	}
+	spriteType = {
 		name = "GFX_goal_JAP_adaptive_war_industry"
 		texturefile = "gfx/interface/goals/jap/goal_JAP_adaptive_war_industry.dds"
 	}

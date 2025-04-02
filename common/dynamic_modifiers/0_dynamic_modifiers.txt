@@ -332,10 +332,9 @@ coastal_defence_battery = {
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 0.25
-	cas_damage_reduction = 0.25
 	dig_in_speed_factor = 0.5
-	max_dig_in_factor = 0.25
+	max_dig_in_factor = 0.5
+	cas_damage_reduction = 0.25
 }
 
 island_defences = {
