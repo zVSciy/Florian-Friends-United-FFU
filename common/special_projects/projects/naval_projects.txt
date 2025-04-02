@@ -1647,7 +1647,9 @@ sp_naval_torpedo_cruiser = {
 	}
 
 	allowed = {
-		#FREE
+		FROM = {
+			has_tech = advanced_ship_hull_cruiser
+		}
 	}
 	available = {
 		FROM = {
