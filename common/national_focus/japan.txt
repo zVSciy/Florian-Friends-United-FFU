@@ -4533,7 +4533,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_philippines
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_japan_attack_phillippinen
 		prerequisite = { focus = JAP_strike_the_west }
 		x = 1
 		y = 1
@@ -4585,7 +4585,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_borneo
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_japan_attack_indonesia
 		prerequisite = { focus = JAP_strike_the_west }
 		x = 3
 		y = 1
@@ -4636,7 +4636,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_papua
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_japan_attack_indonesia
 		prerequisite = { focus = JAP_take_borneo }
 		prerequisite = { focus = JAP_take_philippines }
 		x = -1
@@ -4679,7 +4679,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_sumatra
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_japan_attack_indonesia
 		prerequisite = { focus = JAP_strike_the_west }
 		x = -1
 		y = 1
@@ -4710,7 +4710,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_malaya
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_japan_attack_singapore
 		prerequisite = { focus = JAP_strike_the_west }
 		x = -3
 		y = 1
@@ -4741,7 +4741,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_java
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_japan_attack_indonesia
 		prerequisite = { focus = JAP_take_malaya }
 		prerequisite = { focus = JAP_take_sumatra }
 		x = 1

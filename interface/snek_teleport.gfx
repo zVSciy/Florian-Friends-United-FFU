@@ -768,8 +768,18 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_japan_attack_singapore"
-		texturefile = "gfx/interface/goals/jap/JAP_attack_singapore.png"
+		texturefile = "gfx/interface/goals/JAP_attack_singapore.png"
 	}
+	spriteType = {
+		name = "GFX_goal_japan_attack_phillippinen"
+		texturefile = "gfx/interface/goals/JAP_attack_phillippinen.png"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_japan_attack_indonesia"
+		texturefile = "gfx/interface/goals/JAP_attack_indonesia.png"
+	}
+	
 	spriteType = {
 		name = "GFX_goal_JAP_adaptive_war_industry"
 		texturefile = "gfx/interface/goals/jap/goal_JAP_adaptive_war_industry.dds"
