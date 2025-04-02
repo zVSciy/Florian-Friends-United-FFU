@@ -4124,8 +4124,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_oceanic_collaborators
-		icon = GFX_goal_JAP_oceanic_collab
+		id = JAP_secure_territories
+		icon = GFX_placeholder
 		prerequisite = { focus = JAP_take_philippines }
 		x = 0
 		y = 2
