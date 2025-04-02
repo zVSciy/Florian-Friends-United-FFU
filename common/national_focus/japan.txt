@@ -4073,7 +4073,7 @@ focus_tree = {
 	focus = {
 		id = JAP_island_defences
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = JAP_take_sumatra }
+		prerequisite = { focus = JAP_strike_the_west }
 		x = 0
 		y = 3
 		relative_position_id = JAP_strike_the_west
@@ -4126,7 +4126,7 @@ focus_tree = {
 	focus = {
 		id = JAP_secure_territories
 		icon = GFX_placeholder
-		prerequisite = { focus = JAP_take_philippines }
+		prerequisite = { focus = JAP_strike_the_west }
 		x = 0
 		y = 2
 		relative_position_id = JAP_strike_the_west
