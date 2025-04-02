@@ -4075,8 +4075,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = JAP_take_sumatra }
 		x = 0
-		y = 1
-		relative_position_id = JAP_take_sumatra
+		y = 3
+		relative_position_id = JAP_strike_the_west
 
 		cost = 5
 
@@ -4126,14 +4126,14 @@ focus_tree = {
 	focus = {
 		id = JAP_oceanic_collaborators
 		icon = GFX_goal_JAP_oceanic_collab
-		prerequisite = { focus = JAP_strike_the_west }
+		prerequisite = { focus = JAP_take_philippines }
 		x = 0
-		y = 1
-		relative_position_id = JAP_take_philippines
+		y = 2
+		relative_position_id = JAP_strike_the_west
 
 		cost = 5
-
 		available = {
+			
 		}
 
 		cancel_if_invalid = yes
@@ -4141,115 +4141,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {
-			if = { # singapore
-				limit = {
-					336 = { is_controlled_by = JAP }
-				}
-				336 = {
-					add_compliance = 30
-				}
-			}
-			if = { # palembang
-				limit = {
-					672 = { is_controlled_by = JAP }
-				}
-				672 = {
-					add_compliance = 30
-				}
-			}
-			if = { # batavia
-				limit = {
-					335 = { is_controlled_by = JAP }
-				}
-				335 = {
-					add_compliance = 30
-				}
-				667 = {
-					add_compliance = 30
-				}
-			}
-			if = { # brunei
-				limit = {
-					333 = { is_controlled_by = JAP }
-				}
-				333 = {
-					add_compliance = 30
-				}
-			}
-			if = { # balikpapan
-				limit = {
-					334 = { is_controlled_by = JAP }
-				}
-				334 = {
-					add_compliance = 30
-				}
-			}
-			if = { # makassar
-				limit = {
-					673 = { is_controlled_by = JAP }
-				}
-				673 = {
-					add_compliance = 30
-				}
-				668 = {
-					add_compliance = 30
-				}
-			}
-			if = { # manila
-				limit = {
-					327 = { is_controlled_by = JAP }
-				}
-				327 = {
-					add_compliance = 30
-				}
-				623 = {
-					add_compliance = 30
-				}
-				624 = {
-					add_compliance = 30
-				}
-				625 = {
-					add_compliance = 30
-				}
-				628 = {
-					add_compliance = 30
-				}
-				627 = {
-					add_compliance = 30
-				}
-				626 = {
-					add_compliance = 30
-				}
-			}
-			if = { # port moresby
-				limit = {
-					523 = { is_controlled_by = JAP }
-				}
-				523 = {
-					add_compliance = 30
-				}
-				669 = {
-					add_compliance = 30
-				}
-				738 = {
-					add_compliance = 30
-				}
-				737 = {
-					add_compliance = 30
-				}
-				634 = {
-					add_compliance = 30
-				}
-			}
-		}
-			custom_effect_tooltip = oceanic_collaborators_tt
+
 		}
 	}
 
+
 	focus = {
 		id = JAP_take_philippines
-		icon = GFX_goal_JAP_WAY
+		icon = GFX_placeholder
 		prerequisite = { focus = JAP_strike_the_west }
 		x = 1
 		y = 1
@@ -4271,7 +4170,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_borneo
-		icon = GFX_goal_JAP_WAY
+		icon = GFX_placeholder
 		prerequisite = { focus = JAP_strike_the_west }
 		x = 3
 		y = 1
@@ -4287,15 +4186,24 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			333 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = JAP_take_papua
-		icon = GFX_goal_JAP_WAY
-		prerequisite = { focus = JAP_take_borneo }
-		x = 0
+		icon = GFX_placeholder
+		prerequisite = { focus = JAP_strike_the_west }
+		x = -1
 		y = 1
 		relative_position_id = JAP_take_borneo
 
@@ -4316,7 +4224,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_sumatra
-		icon = GFX_goal_JAP_WAY
+		icon = GFX_placeholder
 		prerequisite = { focus = JAP_strike_the_west }
 		x = -1
 		y = 1
@@ -4338,7 +4246,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_malaya
-		icon = GFX_goal_JAP_WAY
+		icon = GFX_placeholder
 		prerequisite = { focus = JAP_strike_the_west }
 		x = -3
 		y = 1
@@ -4360,9 +4268,9 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_java
-		icon = GFX_goal_JAP_WAY
-		prerequisite = { focus = JAP_take_malaya }
-		x = 0
+		icon = GFX_placeholder
+		prerequisite = { focus = JAP_strike_the_west }
+		x = 1
 		y = 1
 		relative_position_id = JAP_take_malaya
 
@@ -4409,94 +4317,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = JAP_plunder_philippines
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = JAP_island_defences }
-		prerequisite = { focus = JAP_oceanic_collaborators }
-		x = 0
-		y = 1
-		relative_position_id = JAP_island_defences
 
-		cost = 5
-
-		available = {
-			has_full_control_of_state = 327
-			has_full_control_of_state = 623
-			has_full_control_of_state = 627
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 10 }
-			add_offsite_building = { type = arms_factory level = 10 }
-		}
-	}
-
-	focus = {
-		id = JAP_plunder_sumatra
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = JAP_island_defences }
-		prerequisite = { focus = JAP_oceanic_collaborators }
-		x = 2
-		y = 1
-		relative_position_id = JAP_island_defences
-
-		cost = 5
-
-		available = {
-			has_full_control_of_state = 672
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 10 }
-			add_offsite_building = { type = arms_factory level = 10 }
-		}
-	}
-
-	focus = {
-		id = JAP_plunder_java
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = JAP_plunder_philippines }
-		prerequisite = { focus = JAP_plunder_sumatra }
-		x = 1
-		y = 1
-		relative_position_id = JAP_plunder_philippines
-
-		cost = 5
-
-		available = {
-			has_full_control_of_state = 672
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 15 }
-			add_offsite_building = { type = arms_factory level = 15 }
-		}
-	}
 	
 	focus = {
 		id = JAP_guide_the_zaibatsus
