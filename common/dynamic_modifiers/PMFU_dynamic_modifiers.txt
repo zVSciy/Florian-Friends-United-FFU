@@ -119,7 +119,11 @@ gibraltar_defences = {
 	max_dig_in_factor = 0.25
 	army_defence_factor = 0.15
 }
+NO_FORTS_IN_AFRICA = {
+	land_bunker_effectiveness_factor = -1
 
+	icon = GFX_idea_generic_fortify_the_borders
+}
 ENG_no_portspam = {
 	enable = { always = yes }
 	icon = GFX_modifiers_SOV_armored_battery
