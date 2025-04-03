@@ -12,10 +12,10 @@ state=
             owner = WST 	
 		}	
 		buildings = {
-			infrastructure = 3
+			infrastructure = 6
 			air_base = 1
 			13026 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 

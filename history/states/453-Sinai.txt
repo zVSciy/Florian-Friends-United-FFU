@@ -7,7 +7,7 @@ state={
 		set_state_flag = UK_controls
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			10099 = {
 				naval_base = 5
 			}
