@@ -4231,7 +4231,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_plunder_territories
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_JAP_greater_east_asian_co_prosperity_sphere
 		prerequisite = { focus = JAP_oceanic_collaborators }
 		x = 0
 		y = 1
@@ -4279,7 +4279,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_plunder_territories2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_JAP_superiority_of_man
 		prerequisite = { focus = JAP_plunder_territories }
 		x = -1
 		y = 1
@@ -4327,7 +4327,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_plundered_everything
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_JAP_fumimaro_konoe_cabinet
 		prerequisite = { focus = JAP_plunder_territories3 }
 		prerequisite = { focus = JAP_plunder_territories2 }
 		x = -1
@@ -4372,7 +4372,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_plunder_territories3
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_JAP_the_emperors_wave
 		prerequisite = { focus = JAP_plunder_territories }
 		x = 1
 		y = 1
@@ -4420,13 +4420,13 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_midway
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_JAP_the_yen_bloc
 		prerequisite = { focus = JAP_oceanic_collaborators }
 		x = 3
 		y = 1
 		relative_position_id = JAP_oceanic_collaborators
 
-		cost = 5
+		cost = 2
 		available = {
 		}
 
@@ -4439,10 +4439,48 @@ focus_tree = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 13305
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 13305
+				}
+			}
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13306
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13306
+				}
+			}
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13052
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13052
+				}
+			}
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13307
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13307
 				}
 			}
 		}
@@ -4450,7 +4488,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_successfully_took_midway
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_JAP_r56_goal_JAP_co_prosperity_sphere
 		prerequisite = { focus = JAP_take_midway }
 		x = 0
 		y = 1
@@ -4475,13 +4513,13 @@ focus_tree = {
 
 	focus = {
 		id = JAP_take_wake
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_JAP_supremacy_of_will
 		prerequisite = { focus = JAP_oceanic_collaborators }
 		x = -3
 		y = 1
 		relative_position_id = JAP_oceanic_collaborators
 
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4495,10 +4533,48 @@ focus_tree = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 13308
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 13308
+				}
+			}
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13047
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13047
+				}
+			}
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13309
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13309
+				}
+			}
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13310
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13310
 				}
 			}
 		}
@@ -4506,7 +4582,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_successfully_took_wake
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_JAP_r56_goal_JAP_co_prosperity_sphere
 		prerequisite = { focus = JAP_take_wake }
 		x = 0
 		y = 1
@@ -4539,7 +4615,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_strike_the_west
 
-		cost = 5
+		cost = 1
 		available = {
 			
 		}
@@ -4553,33 +4629,62 @@ focus_tree = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 12213
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 12213
+				}
+			}
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 1415
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1415
 				}
 			}
 			327 = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 10265
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 10265
+				}
+			}
+			327 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 1221
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1221
 				}
 			}
 			627 = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 4241
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 4241
 				}
 			}
-
 		}
 	}
 
@@ -4591,7 +4696,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_strike_the_west
 
-		cost = 5
+		cost = 1
 		available = {
 			
 		}
@@ -4605,30 +4710,60 @@ focus_tree = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 1208
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 1208
+				}
+			}
+			333 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 7371
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7371
 				}
 			}
 			334 = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 10237
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 10237
 				}
 			}
 			673 = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 10263
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 10263
+				}
+			}
+			673 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10153
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10153
 				}
 			}
 		}
@@ -4643,7 +4778,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_take_borneo
 
-		cost = 5
+		cost = 1
 		available = {
 			
 		}
@@ -4656,21 +4791,73 @@ focus_tree = {
 			669 = {
 				damage_building = {
 					type = coastal_bunker
-					damage = 2
+					damage = 4
+					province = 4509
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 4509
+				}
+			}
+			669 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 4
+					province = 10369
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10369
 				}
 			}
 			523 = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
-				}
+					province = 12240
+				} 
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 12240
+				}
+			}
+			523 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12154
+				} 
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12154
+				}
+			}
+			523 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12237
+				} 
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12237
+				}
+			}
+			523 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4329
+				} 
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4329
 				}
 			}
 		}
@@ -4685,7 +4872,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_strike_the_west
 
-		cost = 5
+		cost = 1
 		available = {
 			
 		}
@@ -4699,10 +4886,60 @@ focus_tree = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 12268
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 12268
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4652
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4652
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 1401
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1401
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4364
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4364
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 7673
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7673
 				}
 			}
 		}
@@ -4716,7 +4953,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_strike_the_west
 
-		cost = 5
+		cost = 1
 		available = {
 			
 		}
@@ -4730,10 +4967,24 @@ focus_tree = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 12299
 				}
 				damage_building = {
-					type = fortress
-					damage = 1
+					type = bunker
+					damage = 2
+					province = 12299
+				}
+			}
+			336 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10297
+				}
+				damage_building = {
+					type = bunker
+					damage = 2
+					province = 10297
 				}
 			}
 		}
@@ -4748,7 +4999,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_take_malaya
 
-		cost = 5
+		cost = 1
 		available = {
 			
 		}
@@ -4762,10 +5013,84 @@ focus_tree = {
 				damage_building = {
 					type = coastal_bunker
 					damage = 2
+					province = 10279
 				}
 				damage_building = {
-					type = fortress
+					type = bunker
 					damage = 1
+					province = 10279
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 7381
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7381
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12249
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12249
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4608
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4608
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4390
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4390
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10479
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10479
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4306
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4306
 				}
 			}
 		}
