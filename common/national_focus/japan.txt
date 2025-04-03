@@ -3786,7 +3786,7 @@ focus_tree = {
 		will_lead_to_war_with = ENG
 		x = 0
 		y = 4
-		cost = 2
+		cost = 1
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
@@ -3822,38 +3822,21 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				if = {
-					limit = {
-						has_full_control_of_state = 645
-					}
 					645 = {
 						add_dynamic_modifier = { modifier = island_defences }
-					}
-				}
-				if = {
-					limit = {
-						has_full_control_of_state = 647
 					}
 					647 = {
 						add_dynamic_modifier = { modifier = island_defences }
 					}
-				}
-				if = {
-					limit = {
-						has_full_control_of_state = 526
-					}
 					526 = {
 						add_dynamic_modifier = { modifier = island_defences }
-					}
-				}
-				if = {
-					limit = {
-						has_full_control_of_state = 646
 					}
 					646 = {
 						add_dynamic_modifier = { modifier = island_defences }
 					}
-				}	
+					524 = {
+						add_dynamic_modifier = { modifier = island_defences }
+					}
 			}
 			add_advisor_role = {
 				character = JAP_kanin_kotohito

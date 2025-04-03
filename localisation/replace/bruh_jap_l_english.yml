@@ -346,6 +346,13 @@
   JAP_embargo_SOV:0 "Embargo the Comintern"
   JAP_allow_a_treaty_with_the_bandits:0 "Permit a treaty with the bandits"
   JAP_transfer_beijing_to_manchu:0 "Transfer Beijing to Manchukuo"
+  JAP_island_fortification:0 "Fortify Our Holdings"
+  JAP_fortify_philippines:0 "Fortify the Philippines"
+  JAP_fortify_malaya:0 "Fortify Singapore"
+  JAP_fortify_borneo:0 "Fortify Borneo"
+  JAP_fortify_sumatra:0 "Fortify Sumatra"
+  JAP_fortify_java:0 "Fortify Java"
+  JAP_island_fortification_ongoing:0 "Resources Diverted to Fortification Construction"
 
   #### FLAGS ####
   JAP_early_war:0 "Early War Japan"

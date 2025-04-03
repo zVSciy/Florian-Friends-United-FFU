@@ -7614,6 +7614,11 @@ spriteType = {
 	}		
 
 	SpriteType = {
+		name = "GFX_USA_operation_forager"
+		texturefile = "gfx/interface/goals/usa/USA_operation_forager.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_USA_quality_and_quantity"
 		texturefile = "gfx/interface/goals/usa/USA_quantity_and_quality.dds"
 	}		
