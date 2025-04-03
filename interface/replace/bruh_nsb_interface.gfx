@@ -540,7 +540,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_arty_1.dds"
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_armament_tier_assault"
+		name = "GFX_EMI_tank_armament_tier_assault_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_cs_gun_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_armament_tier_assault_2"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_cs_gun_1.dds"
 	}
 	spriteType = {
