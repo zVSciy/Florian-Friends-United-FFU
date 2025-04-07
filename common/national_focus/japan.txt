@@ -4479,6 +4479,9 @@ focus_tree = {
 
 		cost = 5
 		available = {
+			631 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -4504,7 +4507,6 @@ focus_tree = {
 
 		cost = 2
 		available = {
-			
 		}
 
 		cancel_if_invalid = yes
@@ -4573,7 +4575,9 @@ focus_tree = {
 
 		cost = 5
 		available = {
-			
+			632 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 
 		cancel_if_invalid = yes
