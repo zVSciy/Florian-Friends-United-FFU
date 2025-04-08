@@ -5479,6 +5479,15 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
+				ITA = {
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 300
+						producer = ITA
+					}
+				}
+			}
+			hidden_effect = {
 				if = {
 					limit = {
 						any_country = {
