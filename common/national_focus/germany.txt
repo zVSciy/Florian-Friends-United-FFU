@@ -7318,6 +7318,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			763 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -8533,6 +8540,13 @@ focus_tree = {
 		
 
 		completion_reward = {
+			66 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.75

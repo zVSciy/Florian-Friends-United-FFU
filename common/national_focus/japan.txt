@@ -1241,7 +1241,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_army_experience > 25
+
 		}
 
 		bypass = {
@@ -1259,7 +1259,13 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine	
 			}
-			army_experience = -25
+			530 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -3698,6 +3704,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			534 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -3770,6 +3783,13 @@ focus_tree = {
 				set_building_level = {
 					type = air_base
 					level = 10
+					instant_build = yes
+				}
+			}
+			534 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4096,7 +4116,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_take_java
 
-		cost = 5
+		cost = 3
 
 		available = {
 		}
@@ -6463,6 +6483,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			528 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+					province = 9950
+				}
+			}
 			add_tech_bonus = {
 				name = JAP_zero
 				bonus = 1

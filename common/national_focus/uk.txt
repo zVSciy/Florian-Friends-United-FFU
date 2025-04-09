@@ -3259,6 +3259,13 @@ focus_tree = {
         }
 		completion_reward = {
             add_ideas = ENG_british_fighter_discount
+			129 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3505,6 +3512,13 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			121 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					instant_build = yes
+				}
+			}
             132 = {
                 add_extra_state_shared_building_slots = 5
                 add_building_construction = {

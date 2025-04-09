@@ -8914,11 +8914,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_found_the_jet_institute
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
+			408 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

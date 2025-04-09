@@ -3371,6 +3371,20 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ITA_mare_nostrum
 			add_political_power = 200
+			162 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 			unlock_decision_tooltip = form_roman_empire
 		}
 	}
