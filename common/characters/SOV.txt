@@ -3885,7 +3885,7 @@ SOV_semyon_timoshenko={
 		scientist = {
 			traits = { scientist_trait_nuclear_specialist scientist_trait_fast_learner }
 			skills = {
-				specialization_nuclear = 2
+				specialization_nuclear = 1
 				specialization_naval = 2
 			}
 		}
@@ -3918,7 +3918,7 @@ SOV_semyon_timoshenko={
 		scientist = {
 			traits = { scientist_trait_nuclear_power_expert }
 			skills = {
-				specialization_nuclear = 2
+				specialization_nuclear = 1
 			}
 		}
 	}
