@@ -156,6 +156,11 @@ recruit_character = SOV_arno_andreyev
 #recruit_character = SOV_sidor_kovpak
 #recruit_character = SOV_lev_dovator
 #recruit_character = SOV_pavel_rybalko
+recruit_character = SOV_abram_ioffe
+recruit_character = SOV_boris_stechkin
+recruit_character = SOV_arkady_nazarov
+recruit_character = SOV_vladimir_kotelnikov
+
 
 if = {
 	limit = {
