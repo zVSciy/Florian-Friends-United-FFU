@@ -3168,7 +3168,7 @@ equipment_modules = {
 		}
 		multiply_stats = { 
 			# maximum_speed = -0.10
-			breakthrough = -0.10
+			#	breakthrough = -0.10
 		 }
 		
 		build_cost_resources = {
@@ -3194,7 +3194,7 @@ equipment_modules = {
 		}
 		multiply_stats = { 
 			# maximum_speed = -0.15
-			breakthrough = -0.10
+				#breakthrough = -0.10
 		 }
 		
 		build_cost_resources = {
@@ -3242,7 +3242,7 @@ equipment_modules = {
 		}
 		multiply_stats = { 
 			# maximum_speed = -0.10
-			breakthrough = -0.10
+			#	breakthrough = -0.10
 		}
 		
 		build_cost_resources = {
@@ -3268,7 +3268,7 @@ equipment_modules = {
 		}
 		multiply_stats = { 
 			# maximum_speed = -0.15
-			breakthrough = -0.10
+				#breakthrough = -0.10
 		}
 		
 		build_cost_resources = {
