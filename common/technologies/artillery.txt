@@ -149,7 +149,6 @@ technologies = {
 			anti_air_equipment_2
 		}
 		enable_equipment_modules = {
-			ship_anti_air_2
 			tank_anti_air_gun_2
 			# mech
 			tank_anti_air_cannon_mech
@@ -239,7 +238,7 @@ technologies = {
 			}
 		}
 		enable_equipment_modules = { 
-			ship_anti_air_3
+			ship_anti_air_2
 			tank_small_gun_3
 			tank_light_cs_gun_2
 		}
@@ -375,7 +374,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_light_cs_gun_3
-			ship_anti_air_4
+			ship_anti_air_3
 		}
 		
 		path = {
@@ -448,6 +447,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			ship_anti_air_4
 			tank_light_art_gun_3
 			tank_light_td_3
 			# mech
@@ -498,6 +498,10 @@ technologies = {
 		}
 		pack_antitank_brigade = {
 			hard_attack = 0.1
+		}
+
+		enable_equipment_modules = {
+			ship_anti_air_4
 		}
 		
 		research_cost = 1
