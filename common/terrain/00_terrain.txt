@@ -35,9 +35,9 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.2
+			attack = -0.25
 			#movement = -0.2
-			defence = -0.2
+			defence = -0.15
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.1

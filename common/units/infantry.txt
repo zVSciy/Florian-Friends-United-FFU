@@ -41,6 +41,8 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 0.5
+
+		defense = 0.5
 		
 		maximum_speed = 0
 		
