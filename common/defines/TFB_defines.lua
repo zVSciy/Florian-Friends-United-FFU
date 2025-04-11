@@ -1065,7 +1065,7 @@ NNavy = {
 	NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1,
 	NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 3,                         -- how much score factor from low health (scales between 0->this number)
 	NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 40,                           -- how much score factor from low AA guns (scales between 0->this number)
-},
+}
 
 
 
