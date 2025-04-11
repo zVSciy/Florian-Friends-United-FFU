@@ -1301,8 +1301,6 @@ foreign_politics = {
 	}
 }
 
-#Category allowed for JAP
-#Not visible if puppet
 JAP_southern_expansion = {
 
 	JAP_pressure_france = { 
@@ -1439,376 +1437,6 @@ JAP_southern_expansion = {
 
 	}
 }
-
-#Category allowed for JAP
-#Visible when has completed JAP_pacific_guardian focus.
-#Visible if independent
-# JAP_pacific_guardian = {
-
-# 	JAP_release_korea = {
-
-# 		icon = generic_independence
-
-# 		available = {
-# 			country_exists = KOR
-# 		}
-
-# 		days_mission_timeout = 180
-
-# 		fire_only_once = yes
-# 		is_good = no 
-# 		activation = {
-# 			always = no
-# 			has_full_control_of_state = 525
-# 			has_full_control_of_state = 527
-# 			KOR = { exists = no }
-# 		}
-
-# 		complete_effect = {
-# 			add_political_power = 50
-# 		}
-# 		timeout_effect = {
-# 			add_stability = -0.1 #naughty
-# 		}
-# 	}
-
-# 	JAP_guardian_of_INS = {
-
-# 		icon = jap_pacific_guardian
-
-# 		available = {
-# 			HOL = {
-# 				#has_capitulated = yes
-# 			}
-# 			"INS" = {
-# 				is_puppet_of = HOL
-# 			}
-# 		}
-
-# 		fire_only_once = yes
-
-
-# 		modifier = {
-
-# 		}
-
-# 		days_remove = 0
-# 		days_re_enable = 0
-
-# 		cost = 50
-
-# 		ai_will_do = {
-# 			factor = 1
-# 		}
-
-# 		complete_effect = {
-# 			HOL = { country_event = { id = wtt_japan.1 } }
-# 		}
-# 	}
-
-# 	JAP_guardian_of_MAL = {
-
-# 		icon = jap_pacific_guardian
-
-# 		available = {
-# 			ENG = {
-# 				#has_capitulated = yes
-# 			}
-# 			MAL = {
-# 				is_puppet_of = ENG
-# 			}
-# 		}
-
-# 		fire_only_once = yes
-
-
-# 		modifier = {
-
-# 		}
-
-# 		days_remove = 0
-# 		days_re_enable = 0
-
-# 		cost = 50
-
-# 		ai_will_do = {
-# 			factor = 1
-# 		}
-
-# 		complete_effect = {
-# 			ENG = { country_event = { id = wtt_japan.1 } }
-# 		}
-# 	}
-
-# 	JAP_guardian_of_indochina = {
-
-# 		icon = jap_pacific_guardian
-
-# 		available = {
-# 			FRA = {
-# 				#has_capitulated = yes
-# 				OR = {
-# 					has_full_control_of_state = 670
-# 					has_full_control_of_state = 671
-# 					has_full_control_of_state = 286
-# 					has_full_control_of_state = 741
-# 				}
-# 			}
-# 		}
-
-# 		fire_only_once = yes
-
-
-# 		modifier = {
-
-# 		}
-
-# 		days_remove = 0
-# 		days_re_enable = 0
-
-# 		cost = 50
-
-# 		ai_will_do = {
-# 			factor = 1
-# 		}
-
-# 		complete_effect = {
-# 			FRA = { country_event = { id = wtt_japan.1 } }
-# 		}
-# 	}
-# }
-
-# JAP_colonial_independence = {
-# 	JAP_return_manchuria = {
-
-# 		icon = generic_independence
-
-# 		allowed = {
-# 			original_tag = JAP
-# 		}
-
-# 		available = {
-# 			609 = {
-# 				is_fully_controlled_by = controller
-# 				CONTROLLER = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			610 = {
-# 				is_fully_controlled_by = controller
-# 				CONTROLLER = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			716 = {
-# 				is_fully_controlled_by = controller
-# 				CONTROLLER = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			715 = {
-# 				is_fully_controlled_by = controller
-# 				CONTROLLER = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			328 = {
-# 				is_fully_controlled_by = controller
-# 				CONTROLLER = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			717 = {
-# 				is_fully_controlled_by = controller
-# 				CONTROLLER = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			714 = {
-# 				is_fully_controlled_by = controller
-# 				CONTROLLER = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 		}
-
-# 		visible = {
-# 			always = no
-# 			609 = {
-# 				owner = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			610 = {
-# 				owner = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			716 = {
-# 				owner = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			715 = {
-# 				owner = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			328 = {
-# 				owner = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			717 = {
-# 				owner = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 			714 = {
-# 				owner = {
-# 					OR = {
-# 						is_puppet_of = JAP
-# 						original_tag = JAP
-# 					}
-# 				}
-# 			}
-# 		}
-
-# 		fire_only_once = yes
-
-
-# 		modifier = {
-
-# 		}
-
-# 		days_remove = 0
-# 		days_re_enable = 0
-
-# 		cost = 0
-
-# 		ai_will_do = {
-# 			factor = 1
-# 		}
-
-# 		complete_effect = {
-# 			if = {
-# 				limit = {
-# 					country_exists = event_target:WTT_current_china_leader
-# 				}
-# 				event_target:WTT_current_china_leader = { 
-# 					transfer_state = 609
-# 					transfer_state = 610
-# 					transfer_state = 716
-# 					transfer_state = 715
-# 					transfer_state = 328
-# 					transfer_state = 717
-# 					transfer_state = 714
-# 					transfer_state = 761
-# 					transfer_state = 745
-# 					transfer_state = 612
-# 					transfer_state = 611
-# 					country_event = { id = wtt_japan.101 days = 1 }
-# 					custom_effect_tooltip = JAP_liberate_manchuria_alliance_tt
-# 				}
-# 			}
-# 			if = {
-# 				limit = {
-# 					country_exists = event_target:WTT_communist_china
-# 					NOT = { country_exists = event_target:WTT_current_china_leader }
-# 				}
-# 				event_target:WTT_communist_china = { 
-# 					transfer_state = 609
-# 					transfer_state = 610
-# 					transfer_state = 716
-# 					transfer_state = 715
-# 					transfer_state = 328
-# 					transfer_state = 717
-# 					transfer_state = 714
-# 					transfer_state = 761
-# 					transfer_state = 745
-# 					transfer_state = 612
-# 					transfer_state = 611
-# 					country_event = { id = wtt_japan.101 days = 1 }
-# 				}
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOT = { country_exists = event_target:WTT_communist_china }
-# 					NOT = { country_exists = event_target:WTT_current_china_leader }
-# 				}
-# 				random_other_country = {
-# 					limit = {
-# 						OR = {
-# 							original_tag = GXC
-# 							original_tag = YUN
-# 							original_tag = XSM
-# 							original_tag = SIK
-# 							original_tag = SHX
-# 							original_tag = MEN
-# 						}
-# 						NOT = {
-# 							has_government = communism
-# 							has_government = fascism
-# 						}
-# 					}
-# 					transfer_state = 609
-# 					transfer_state = 610
-# 					transfer_state = 716
-# 					transfer_state = 715
-# 					transfer_state = 328
-# 					transfer_state = 717
-# 					transfer_state = 714
-# 					transfer_state = 761
-# 					transfer_state = 745
-# 					transfer_state = 612
-# 					transfer_state = 611
-# 					country_event = { id = wtt_japan.101 days = 1 }
-# 					custom_effect_tooltip = JAP_liberate_manchuria_alliance_tt
-# 				}
-# 			}
-# 		}
-# 	}
-# }
-
 political_actions = {
 	JAP_annex_man = {
 
@@ -2030,7 +1658,6 @@ operations = {
 			}
 		}
 	}
-
 	
 	# SOV_border_war_JAP = {
 
@@ -2767,6 +2394,339 @@ operations = {
 
 }
 
+JAP_island_fortification = {
+	JAP_fortify_philippines = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			327 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			623 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			627 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			has_completed_focus = JAP_oceanic_collaborators
+			NOT = { has_country_flag = JAP_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			327 = {
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 10265
+					level = 4
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+			623 = {
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 1415
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 12213
+					level = 3
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+			627 = {
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 4241
+					level = 3
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_island_fortification_ongoing value = 1 days = 60 }
+		}
+	}
+
+	JAP_fortify_malaya = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			336 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			has_completed_focus = JAP_oceanic_collaborators
+			NOT = { has_country_flag = JAP_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 15
+		}
+		remove_effect = {
+			336 = {
+				set_building_level  = {
+					type = coastal_bunker
+					province = 10297
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 12299
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_island_fortification_ongoing value = 1 days = 60 }
+		}
+	}
+
+	JAP_fortify_borneo = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			333 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			334 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			has_completed_focus = JAP_oceanic_collaborators
+			NOT = { has_country_flag = JAP_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 15
+		}
+		remove_effect = {
+			333 = {
+				set_building_level  = {
+					type = coastal_bunker
+					province = 1208
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 7371
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+			334 = {
+				set_building_level  = {
+					type = coastal_bunker
+					province = 10237
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_island_fortification_ongoing value = 1 days = 60 }
+		}
+	}
+
+	JAP_fortify_sumatra = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			672 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			has_completed_focus = JAP_oceanic_collaborators
+			NOT = { has_country_flag = JAP_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 15
+		}
+		remove_effect = {
+			631 = {
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 12268
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 4652
+					level = 3
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_island_fortification_ongoing value = 1 days = 60 }
+		}
+	}
+
+	JAP_fortify_java = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			335 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			673 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			has_completed_focus = JAP_oceanic_collaborators
+			NOT = { has_country_flag = JAP_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			335 = {
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 4608
+					level = 4
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 7381
+					level = 4
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+			673 = {
+				set_building_level  = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 10153
+					level = 3
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					province = 10263
+					level = 3
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_island_fortification_ongoing value = 1 days = 60 }
+		}
+	}
+}
+
 prospect_for_resources = {
 
 #  #  ##  ###  ### #  # ### ###  #  #     ###  ###  ##  ##  #  # ###   ##  ###      ##  ###  ###  ##  
@@ -3465,45 +3425,6 @@ JAP_propaganda_campaigns = {
 			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
 		}
 	}
-
-	# JAP_strike_prop = { # ID = 6
-	# 	priority = 8
-
-	# 	icon = eng_propaganda_campaigns
-
-	# 	allowed = {
-	# 		original_tag = JAP
-	# 	}
-
-	# 	available = {
-	# 		JAP_propaganda_poster_slot_available = yes
-	# 		has_completed_focus = JAP_strike_the_west
-	# 	}
-
-	# 	days_remove = 365
-
-	# 	days_re_enable = 360
-
-	# 	cost = 25
-
-	# 	modifier = {
-	# 		navy_max_range_factor = 0.25
-	# 		naval_strike = 0.1
-	# 		naval_speed_factor = 0.05
-	# 		naval_has_potf_in_combat_attack = 0.1
-	# 	}
-
-	# 	complete_effect = {
-	# 		set_variable = { JAP_new_propaganda_campaign = 6 }
-	# 		JAP_pick_propaganda_campaign_slot_effect = yes
-	# 	}
-
-	# 	remove_effect = {
-	# 		set_variable = { JAP_propaganda_campaign_to_remove = 6 }
-	# 		JAP_reset_propaganda_campaign_slot_effect = yes
-	# 		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
-	# 	}
-	# }
 
 	JAP_bombing_prop = { # ID = 7
 		priority = 7

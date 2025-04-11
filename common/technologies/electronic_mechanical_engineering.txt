@@ -304,7 +304,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 10 }
+			position = { x = -4 y = 11 }
 		}
 		
 		start_year = 1940
@@ -372,11 +372,11 @@ technologies = {
 		
 		research_cost = 2.0
 		
-		start_year = 1942
+		start_year = 1943
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 14 }
+			position = { x = -4 y = 16 }
 		}
 		
 		on_research_complete = {
@@ -406,7 +406,7 @@ technologies = {
 
 		categories = {
 			electronics
-			year_1942
+			year_1943
 		}
 	}
 	
@@ -496,7 +496,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -6 y = 10 }
+			position = { x = -6 y = 11 }
 		}
 		
 		start_year = 1940
@@ -557,11 +557,11 @@ technologies = {
 		
 		research_cost = 2.0
 		
-		start_year = 1942
+		start_year = 1943
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -6 y = 14 }
+			position = { x = -6 y = 16 }
 		}
 
 		on_research_complete = {
@@ -590,7 +590,7 @@ technologies = {
 
 		categories = {
 			electronics
-			year_1942
+			year_1943
 		}
 	}
 	
@@ -683,7 +683,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 10 }
+			position = { x = -2 y = 11 }
 		}
 		
 		start_year = 1940
@@ -745,11 +745,11 @@ technologies = {
 		
 		research_cost = 2.0
 		
-		start_year = 1942
+		start_year = 1943
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 14}
+			position = { x = -2 y = 16 }
 		}
 		
 		on_research_complete = {
@@ -782,7 +782,7 @@ technologies = {
 
 		categories = {
 			electronics
-			year_1942
+			year_1943
 		}
 	}
 	

@@ -25,7 +25,9 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
 starting_train_buffer = 5
 
 # MP_garrison_division_standard = yes
@@ -108,6 +110,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 	special_forces_cap
+	stupid_ai
 }
 
 add_equipment_to_stockpile = {

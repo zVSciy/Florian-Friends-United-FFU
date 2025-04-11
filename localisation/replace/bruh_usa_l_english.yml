@@ -30,7 +30,18 @@
   USA_side_with_workers_union2:0 "Side with the Workers Union"
   USA_sit_down_strikes:0 "Sit Down Strikes"
   USA_rebuilding_the_nation:0 "Rebuilding the Nation"
-
+  USA_midway:0 "Operation Iron Tide"
+  USA_wake:0 "Operation Resolute Wave"
+  USA_guam:0 "Operation Forager"
+  USA_philippines:0 "Operation Mike"
+  USA_taiwan:0 "Operation Causeway"
+  USA_iwojima:0 "Operation Detachment"
+  USA_okinawa:0 "Operation Iceberg"
+  USA_naval_invasion_bonuses:0 "Operation Downfall"
+  USA_malaya:0 "Operation Zipper"
+  USA_borneo:0 "Operation Oboe"
+  USA_java:0 "Operation Iron Lance"
+  USA_department_of_defense:0 "Establish the Department of Defense"
 
   USA_landon_deal:0 "Landon's Deal"
   USA_landon_deal_desc:0 "One of the New Deal's most influential supporters is, ironically enough, Alf Landon himself. Criticizing some portions of the policies, he also supported many more instances of New Deal legislation. Landon's Deal will bring out what the New Deal is meant to be, without any of the dangerous radicalism Roosevelt included."
@@ -220,6 +231,13 @@
   USA_island_fortification:0 "Island Fortification"
   USA_europe_focus:0 "Support Operations In The European Theater"
   USA_asia_focus:0 "Support Operations In The Pacific Theater"
+  USA_persian_corridor:0 "Aid to the Eastern Front"
+  USA_lease_guns:0 "Lend Lease Infantry Equipment to the Soviets"
+  USA_lease_squad:0 "Lend Lease Squad Weapons to the Soviets"
+  USA_lease_support:0 "Lend Lease Support Equipment to the Soviets"
+  USA_lease_radios:0 "Lend Lease Radios to the Soviets"
+  USA_lease_trucks:0 "Lend Lease Trucks to the Soviets"
+
 
   #### PROPAGANDA ####
   USA_propaganda_campaigns:0 "United States Office of War Information"

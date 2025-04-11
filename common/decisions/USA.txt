@@ -1,560 +1,150 @@
 USA_persian_corridor = {
-
+	
 	USA_lease_guns = {
 		icon = generic_prepare_civil_war
 		allowed = {
 			original_tag = USA
 		}
 		available = {
-			656 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			291 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			413 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			229 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			230 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
+			GER = { has_completed_focus = GER_barb }
+			ENG = { has_completed_focus = ENG_lend_lease_sov }
+			439 = {
+				is_controlled_by_ROOT_or_ally = yes
 			}
 			has_equipment = {
-				infantry_equipment > 10000
-			}
-		}
-		visible = {
-			ENG = {
-				has_completed_focus = ENG_soviet_lend_lease
+				infantry_equipment > 20000
 			}
 		}
 		
-		days_remove = 30
+		days_remove = 120
 		cost = 0
 		complete_effect = {
 		}
-		
-		# days_re_enable = 60
-		
+
 		remove_effect = {
 			send_equipment = {
 				equipment = infantry_equipment
-				amount = 10000
+				amount = 20000
 				target = SOV
 			}
 		}
 	}
-	
+
 	USA_lease_squad = {
 		icon = generic_prepare_civil_war
 		allowed = {
 			original_tag = USA
 		}
 		available = {
-			656 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			291 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			413 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			229 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			230 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
+			GER = { has_completed_focus = GER_barb }
+			ENG = { has_completed_focus = ENG_lend_lease_sov }
+			439 = {
+				is_controlled_by_ROOT_or_ally = yes
 			}
 			has_equipment = {
-				squad_equipment > 1000
-			}
-		}
-		visible = {
-			ENG = {
-				has_completed_focus = ENG_soviet_lend_lease
+				squad_equipment > 3000
 			}
 		}
 		
-		days_remove = 30
+		days_remove = 120
 		cost = 0
 		complete_effect = {
 		}
-		
-		# days_re_enable = 60
-		
+
 		remove_effect = {
 			send_equipment = {
 				equipment = squad_equipment
-				amount = 1000
+				amount = 2500
 				target = SOV
 			}
 		}
 	}
-	
-	USA_lease_radios = {
-		icon = generic_prepare_civil_war
-		allowed = {
-			original_tag = USA
-		}
-		available = {
-			656 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			291 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			413 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			229 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			230 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			has_equipment = {
-				radio_equipment > 1000
-			}
-		}
-		visible = {
-			ENG = {
-				has_completed_focus = ENG_soviet_lend_lease
-			}
-		}
-		
-		days_remove = 30
-		cost = 0
-		complete_effect = {
-		}
-		
-		# days_re_enable = 60
-		
-		remove_effect = {
-			send_equipment = {
-				equipment = radio_equipment
-				amount = 1000
-				target = SOV
-			}
-		}
-	}
-	
+
 	USA_lease_support = {
 		icon = generic_prepare_civil_war
 		allowed = {
 			original_tag = USA
 		}
 		available = {
-			656 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			291 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			413 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			229 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			230 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
+			GER = { has_completed_focus = GER_barb }
+			ENG = { has_completed_focus = ENG_lend_lease_sov }
+			439 = {
+				is_controlled_by_ROOT_or_ally = yes
 			}
 			has_equipment = {
-				support_equipment > 1000
-			}
-		}
-		visible = {
-			ENG = {
-				has_completed_focus = ENG_soviet_lend_lease
+				support_equipment > 3000
 			}
 		}
 		
-		days_remove = 30
+		days_remove = 120
 		cost = 0
 		complete_effect = {
 		}
-		
-		# days_re_enable = 60
-		
+
 		remove_effect = {
 			send_equipment = {
 				equipment = support_equipment
-				amount = 1000
+				amount = 3000
 				target = SOV
 			}
 		}
 	}
-	
+
+	USA_lease_radios = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			GER = { has_completed_focus = GER_barb }
+			ENG = { has_completed_focus = ENG_lend_lease_sov }
+			439 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			has_equipment = {
+				radio_equipment > 2500
+			}
+		}
+		
+		days_remove = 120
+		cost = 0
+		complete_effect = {
+		}
+
+		remove_effect = {
+			send_equipment = {
+				equipment = radio_equipment
+				amount = 2500
+				target = SOV
+			}
+		}
+	}
+
 	USA_lease_trucks = {
 		icon = generic_prepare_civil_war
 		allowed = {
 			original_tag = USA
 		}
 		available = {
-			656 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			291 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			413 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			229 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			230 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
+			GER = { has_completed_focus = GER_barb }
+			ENG = { has_completed_focus = ENG_lend_lease_sov }
+			439 = {
+				is_controlled_by_ROOT_or_ally = yes
 			}
 			has_equipment = {
-				motorized_equipment > 2000
-			}
-		}
-		visible = {
-			ENG = {
-				has_completed_focus = ENG_soviet_lend_lease
+				motorized_equipment > 1000
 			}
 		}
 		
-		days_remove = 30
+		days_remove = 120
 		cost = 0
 		complete_effect = {
 		}
-		
-		# days_re_enable = 60
-		
+
 		remove_effect = {
 			send_equipment = {
 				equipment = motorized_equipment
-				amount = 2000
-				target = SOV
-			}
-		}
-	}
-	
-	USA_lease_planes = {
-		icon = generic_prepare_civil_war
-		allowed = {
-			original_tag = USA
-		}
-		available = {
-			656 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			291 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			413 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			229 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			230 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			has_equipment = {
-				small_plane_airframe > 500
-			}
-		}
-		visible = {
-			ENG = {
-				has_completed_focus = ENG_soviet_lend_lease
-			}
-		}
-		
-		days_remove = 30
-		cost = 0
-		complete_effect = {
-		}
-		
-		# days_re_enable = 60
-		
-		remove_effect = {
-			send_equipment = {
-				equipment = small_plane_airframe
-				amount = 500
-				target = SOV
-			}
-		}
-	}
-
-	USA_lease_heavy_planes = {
-		icon = generic_prepare_civil_war
-		allowed = {
-			original_tag = USA
-		}
-		available = {
-			656 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			291 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			413 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			412 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-			229 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			230 = {
-				CONTROLLER = {
-					OR = {
-						tag = SOV
-						is_subject_of = SOV
-					}
-				}
-			}
-			has_equipment = {
-				medium_plane_fighter_airframe > 500
-			}
-		}
-		visible = {
-			ENG = {
-				has_completed_focus = ENG_soviet_lend_lease
-			}
-		}
-		
-		days_remove = 30
-		cost = 0
-		complete_effect = {
-		}
-		
-		# days_re_enable = 60
-		
-		remove_effect = {
-			send_equipment = {
-				equipment = medium_plane_fighter_airframe
-				amount = 500
+				amount = 1000
 				target = SOV
 			}
 		}
@@ -626,7 +216,7 @@ USA_island_fortification = {
 			}
 		}
 		complete_effect = {
-			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 90 }
 		}
 	}
 
@@ -688,7 +278,7 @@ USA_island_fortification = {
 			}
 		}
 		complete_effect = {
-			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 90 }
 		}
 	}
 
@@ -756,7 +346,7 @@ USA_island_fortification = {
 			}
 		}
 		complete_effect = {
-			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 90 }
 		}
 	}
 
@@ -819,7 +409,7 @@ USA_island_fortification = {
 			}
 		}
 		complete_effect = {
-			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 90 }
 		}
 	}
 }
@@ -3040,7 +2630,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_dockyard = 0.15
+			industrial_capacity_dockyard = 0.075
 		}
 
 		complete_effect = {

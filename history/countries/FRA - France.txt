@@ -15,11 +15,27 @@ if = {
 #     name = "Deuxième Bureau"
 # }
 
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
+
 set_variable = {
 	var = min_fuel
 	value = 0.800
 }
 
+735 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
+21 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
+32 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
+851 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
 set_research_slots = 5
 set_stability = 0.5
 set_war_support = 0.1
@@ -97,7 +113,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
 		basic_dp_light_battery = 1
-		cruiser_submarines = 1
+		#cruiser_submarines = 1
 	}
 	add_ideas = MTG_naval_treaty_adherent
 }
@@ -165,6 +181,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 	FRA_defense_of_metropolitan_france
 	special_forces_cap
+	father_check
 }
 
 28 = {

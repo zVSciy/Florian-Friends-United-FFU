@@ -328,11 +328,12 @@ equipment_modules = {
 	}
 
 	ship_heavy_battery_4 = {
+		abbreviation = "sal"
 		category = ship_heavy_battery
 		parent = ship_heavy_battery_3
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
-		
+
 		add_stats = {		
 			hg_attack = 21
 			build_cost_ic = 1500
@@ -342,11 +343,13 @@ equipment_modules = {
 			naval_speed = -0.08
 		}
 		add_average_stats = {
+
 			hg_armor_piercing = 40
 		}
 		build_cost_resources = {
 			steel = 2
 			chromium = 1
+
 		}
 
 		critical_parts = { damaged_heavy_guns }
@@ -357,6 +360,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
 		
+
 		add_stats = {
 			hg_attack = 23
 			build_cost_ic = 1800
@@ -364,6 +368,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.08
 			reliability = -0.04
+
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
@@ -378,6 +383,7 @@ equipment_modules = {
 	}
 
 	ship_super_heavy_battery_1 = {
+		abbreviation = "sam"
 		category = ship_super_heavy_battery
 		sfx = sfx_ui_sd_module_turret
 		gfx = ship_heavy_battery_5
@@ -414,17 +420,20 @@ equipment_modules = {
 			max_strength = 50
 			build_cost_ic = 2300
 		}
+
 		multiply_stats = {
 			naval_speed = -0.07
 			reliability = -0.04
 		}
 		add_average_stats = {
+
 			hg_armor_piercing = 65
 		}
 
 		build_cost_resources = {
 			steel = 1
 			tungsten = 1
+
 		}
 
 		critical_parts = { damaged_heavy_guns }
@@ -439,10 +448,12 @@ equipment_modules = {
 
 
 	ship_medium_battery_1 = {
+		abbreviation = "san"
 		category = ship_medium_battery
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
 		add_stats = {
+
 			lg_attack = 4
 			build_cost_ic = 480
 			max_strength = 13
@@ -464,16 +475,19 @@ equipment_modules = {
 		    ship_light_medium_battery
 		    dp_light_battery
 		    ship_light_battery  
+
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
 	ship_medium_battery_2 = {
+		abbreviation = "sao"
 		category = ship_medium_battery
 		parent = ship_medium_battery_1
 		sfx = sfx_ui_sd_module_turret
 
 		add_equipment_type = capital_ship
 		add_stats = {
+
 			lg_attack = 5
 			build_cost_ic = 520
 			max_strength = 13
@@ -497,15 +511,18 @@ equipment_modules = {
 		    ship_light_battery  
 		}
 
+
 		critical_parts = { damaged_heavy_guns }
 	}
 	ship_medium_battery_3 = {
+		abbreviation = "sap"
 		category = ship_medium_battery
 		parent = ship_medium_battery_2
 		add_equipment_type = capital_ship
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
+
 			lg_attack = 6
 			build_cost_ic = 560
 			max_strength = 12
@@ -529,9 +546,11 @@ equipment_modules = {
 		    ship_light_battery  
 		}
 
+
 		critical_parts = { damaged_heavy_guns }
 	}
 	ship_medium_battery_4 = {
+		abbreviation = "saq"
 		category = ship_medium_battery
 		parent = ship_medium_battery_3
 		add_equipment_type = capital_ship
@@ -561,9 +580,11 @@ equipment_modules = {
 		    ship_light_battery  
 		}
 
+
 		critical_parts = { damaged_heavy_guns }
 	}
 	ship_light_medium_battery_1 = {
+		abbreviation = "sar"
 		category = ship_light_medium_battery
 		gui_category = ship_light_battery
 
@@ -584,12 +605,14 @@ equipment_modules = {
 		}
 		forbid_module_categories = {
 		     ship_medium_battery
+
 		}
 
 
 		critical_parts = { damaged_light_guns }
 	}
 	ship_light_medium_battery_2 = {
+		abbreviation = "sas"
 		category = ship_light_medium_battery
 		gui_category = ship_light_battery
 		parent = ship_light_medium_battery_1
@@ -616,6 +639,7 @@ equipment_modules = {
 		critical_parts = { damaged_light_guns }
 	}
 	ship_light_medium_battery_3 = {
+		abbreviation = "sat"
 		category = ship_light_medium_battery
 		gui_category = ship_light_battery
 		parent = ship_light_medium_battery_2
@@ -671,6 +695,7 @@ equipment_modules = {
 
 		critical_parts = { damaged_light_guns }
 	}
+
 	dp_ship_medium_1 = {
 		abbreviation = "sdq"
 		category = ship_light_medium_battery
@@ -698,7 +723,6 @@ equipment_modules = {
 			steel = 1
 		}
 		
-
 		critical_parts = { damaged_secondaries }
 	}
  ## ###  ##   ##  #  # ###   ##  ###  ### ###  ## 
@@ -710,52 +734,63 @@ equipment_modules = {
 
 
 	ship_secondaries_1 = {
+		abbreviation = "sav"
 		category = ship_secondaries
 		sfx = sfx_ui_sd_module_turret
 
 		
 		add_stats = {
+
 			lg_attack = 6
 			build_cost_ic = 200
 		}
 
 		add_average_stats = {
 			lg_armor_piercing = 3.4
+
 		}
 		
 		critical_parts = { damaged_secondaries }
 	}
 
 	ship_secondaries_2 = {
+		abbreviation = "saw"
 		category = ship_secondaries
 		parent = ship_secondaries_1
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
+
 			lg_attack = 7
 			build_cost_ic = 250
 		}
 		
 		add_average_stats = {
 			lg_armor_piercing = 3.4
+
 		}
 		
 		critical_parts = { damaged_secondaries }
 	}
+
 	
 	dp_ship_secondaries_1 = {
 		abbreviation = "sax"
 		category = ship_dp_secondaries
 		gui_category = ship_secondaries
 		gfx = dp_secondary_battery_1
+
 		sfx = sfx_ui_sd_module_turret
+
 		add_stats = {
 			lg_attack = 5
+
 			anti_air_attack = 1
 			build_cost_ic = 200
-		}
 
+		}
 		multiply_stats = {
+
 		}
 		
 		add_average_stats = {
@@ -767,10 +802,10 @@ equipment_modules = {
 
 	dp_ship_secondaries_2 = {
 		abbreviation = "say"
+
 		category = ship_dp_secondaries
 		gui_category = ship_secondaries
-		parent = dp_ship_secondaries_1
-		gfx = dp_secondary_battery_2
+		gfx = dp_secondary_battery_1
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 6
@@ -788,20 +823,24 @@ equipment_modules = {
 		critical_parts = { damaged_secondaries }
 	}
 
+
 	dp_ship_secondaries_3 = {
 		abbreviation = "saz"
+
 		category = ship_dp_secondaries
 		gui_category = ship_secondaries
-		parent = dp_ship_secondaries_2
-		gfx = dp_secondary_battery_3
+		parent = dp_ship_secondaries_1
+		gfx = dp_secondary_battery_2
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
+
 			lg_attack = 7
 			anti_air_attack = 2
 			build_cost_ic = 300
 		}
 
 		multiply_stats = {
+
 		}
 		
 		add_average_stats = {
@@ -811,14 +850,17 @@ equipment_modules = {
 		critical_parts = { damaged_secondaries }
 	}
 
+
 	dp_ship_secondaries_4 = {
 		abbreviation = "sba"
+
 		category = ship_dp_secondaries
 		gui_category = ship_secondaries
-		parent = dp_ship_secondaries_3
-		gfx = dp_secondary_battery_4
+		parent = dp_ship_secondaries_2
+		gfx = dp_secondary_battery_3
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
+
 			lg_attack = 8
 			anti_air_attack = 2.5
 			build_cost_ic = 350
@@ -832,12 +874,13 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 1
+
 		}
 
 		critical_parts = { damaged_secondaries }
 	}
 
- ##  #  # ### ###	  ##  ### ###  
+
 #  # ## #  #   #      #  #  #  #  # 
 #### # ##  #   #      ####  #  ###  
 #  # #  #  #   #      #  #  #  #  # 
@@ -1687,7 +1730,9 @@ equipment_modules = {
 
 		
 		add_stats = {
+
 			torpedo_attack = 22
+
 			build_cost_ic = 90
 		}
 		multiply_stats = {
@@ -1706,7 +1751,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
+
 			torpedo_attack = 25
+
 			build_cost_ic = 120
 		}
 		multiply_stats = {
@@ -1715,7 +1762,6 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 0
 		}
-
 		critical_parts = { damaged_torpedoes }
 	}
 
@@ -1728,6 +1774,7 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 28
 			build_cost_ic = 150
+
 		}
 		multiply_stats = {
 			naval_speed = -0.03			
@@ -1743,8 +1790,10 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
+
 			torpedo_attack = 32
 			build_cost_ic = 180
+
 		}
 		multiply_stats = {
 			naval_speed = -0.03			

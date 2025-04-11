@@ -50,7 +50,7 @@ equipments = {
 					tank_light_turret_type_open
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
-					tank_light_turret_type_3
+					#tank_light_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -67,7 +67,7 @@ equipments = {
 		reliability = 0.90
 		armor_value = 15
 		defense = 5
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# French R35
@@ -104,7 +104,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# French AMX12
@@ -137,7 +137,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 20
 		defense = 8
-		breakthrough = 55
+		breakthrough = 40
 	}
 
 	# French S35
@@ -440,7 +440,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 5
 		defense = 4
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Italian L6/40
@@ -477,7 +477,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 25
 		defense = 4
-		breakthrough = 35
+		breakthrough = 15
 	}
 
 	# Italian M11/39
@@ -732,7 +732,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 35
 		defense = 5
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# Hungarian 40M
@@ -856,7 +856,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 5
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Japanese T98 Ke-Ni
@@ -894,7 +894,7 @@ equipments = {
 		reliability = 0.70
 		armor_value = 15
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
 	# Japanese T89 Chi-Ro

@@ -34,7 +34,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 15
+		breakthrough = 10
 	}
 
 	# Panzer 2
@@ -70,7 +70,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Panzer 35(t)
@@ -106,7 +106,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 20
 		defense = 4
-		breakthrough = 25
+		breakthrough = 15
 	}
 
 	# Panzer 38(t)
@@ -143,7 +143,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 15
 		defense = 5
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# Hezter
@@ -161,7 +161,7 @@ equipments = {
 					tank_armament_tier_medium_td_1
 					tank_armament_tier_medium_td_2
 					tank_armament_tier_medium_td_3
-					tank_armament_tier_assault
+					tank_armament_tier_assault_1
 				}
 			}
 			turret_type_slot = {
@@ -223,7 +223,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 20
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
   # Medium Tanks
@@ -257,7 +257,7 @@ equipments = {
 			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
-		build_cost_ic = 16
+		build_cost_ic = 18
 		reliability = 0.8
 		armor_value = 30
 		defense = 6
@@ -277,9 +277,11 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_medium_turret_type_1
-					tank_medium_turret_type_open
-					tank_medium_turret_type_casemate
-					tank_medium_turret_type_open_superstructure
+					# tank_medium_turret_type_2
+ 					#tank_medium_turret_type_3
+ 					tank_medium_turret_type_open_p3_early
+ 					tank_medium_turret_type_casemate_p3_early
+ 					tank_medium_turret_type_open_superstructure_p3_early
 				}
 			}
 			suspension_type_slot = inherit
@@ -296,7 +298,7 @@ equipments = {
 			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 18
+		build_cost_ic = 20
 		reliability = 0.8
 		armor_value = 35
 		defense = 8

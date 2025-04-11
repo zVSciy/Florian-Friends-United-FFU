@@ -342,6 +342,15 @@ if = {
 	}
 }
 
+give_military_access = BRA
+give_military_access = USA
+give_military_access = ENG
+give_military_access = CAN
+give_military_access = AST
+give_military_access = SAF
+give_military_access = RAJ
+give_military_access = FRA
+
 add_operation_token = {
 	tag = ENG
 	token = token_airforce_friendly

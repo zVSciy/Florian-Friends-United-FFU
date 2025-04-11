@@ -3556,7 +3556,7 @@ focus_tree = {
 			hidden_effect = {
 			 100 = {
 			 	set_building_level = {
-			 		type = gib_air_base
+			 		type = air_base
 			 		level = 20
 			 		instant_build = yes
 				}
@@ -3645,6 +3645,11 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.2
 			add_political_power = 100
+			hidden_effect = {
+			USA = {
+				transfer_state = 101
+			}
+		}
 		}
 	}
 
@@ -3659,7 +3664,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		available = {
-			date > 1942.1.1
+			461 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -3715,6 +3722,64 @@ focus_tree = {
 				id = USA_war_bop
 				value = -1
 			}
+			if = { # is it far left? -> already far left, make sure to apply the modifiers
+				limit = {
+					has_country_flag = USA_far_left
+				}
+				# Reapply the idea to make sure the modifiers are still active
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_asia2
+				}
+			}	
+
+			if = { # is it slightly left? -> move it to the far left
+				limit = {
+					has_country_flag = USA_left1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_asia2
+				}
+				clr_country_flag = USA_left1
+				set_country_flag = USA_far_left
+			}
+
+			if = { # is it center? -> move it to the far left
+				limit = {
+					has_country_flag = USA_bop_center
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_nothing
+					add_idea = USA_focus_on_asia2
+				}
+				clr_country_flag = USA_bop_center
+				set_country_flag = USA_far_left
+			}
+
+			if = { # is it slightly right? -> move it to slight left
+				limit = {
+					has_country_flag = USA_right1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_asia1
+				}
+				clr_country_flag = USA_right1
+				set_country_flag = USA_left1
+			}
+
+			if = { # is it far right? -> move it to the center
+				limit = {
+					has_country_flag = USA_far_right
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe2
+					add_idea = USA_focus_on_nothing
+				}
+				clr_country_flag = USA_far_right
+				set_country_flag = USA_bop_center
+			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange }
 		}
 	}
@@ -3761,7 +3826,69 @@ focus_tree = {
 				id = USA_war_bop
 				value = 1
 			}
+			if = { # is it far right? -> already far right, make sure to apply the modifiers
+				limit = {
+					has_country_flag = USA_far_right
+				}
+				# Reapply the idea to make sure the modifiers are still active
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_europe2
+				}
+			}	
+			
+			if = { # is it slightly right? -> move it to the far right
+				limit = {
+					has_country_flag = USA_right1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_europe1
+					add_idea = USA_focus_on_europe2
+				}
+				clr_country_flag = USA_right1
+				set_country_flag = USA_far_right
+			}
+
+			if = { # is it center? -> move it to the far right
+				limit = {
+					has_country_flag = USA_bop_center
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_nothing
+					add_idea = USA_focus_on_europe2
+				}
+				clr_country_flag = USA_bop_center
+				set_country_flag = USA_far_right
+			}
+
+			if = { # is it slightly left? -> move it to slight right
+				limit = {
+					has_country_flag = USA_left1
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia1
+					add_idea = USA_focus_on_europe1
+				}
+				clr_country_flag = USA_left1
+				set_country_flag = USA_right1
+			}
+
+			if = { # is it far left? -> move it to the center
+				limit = {
+					has_country_flag = USA_far_left
+				}
+				swap_ideas = {
+					remove_idea = USA_focus_on_asia2
+					add_idea = USA_focus_on_nothing
+				}
+				clr_country_flag = USA_far_left
+				set_country_flag = USA_bop_center
+			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black }
+
+			hidden_effect = {
+				play_song = "3-speech"
+			}
 		}
 	}
 	
@@ -3795,7 +3922,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = USA_the_giant_wakes
-		cost = 5
+		cost = 3
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -3806,16 +3933,22 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
-				bonus = 0.5
-				uses = 1
-				category = nuclear
-			}
-			add_tech_bonus = {
-				name = USA_manhattan_project
 				bonus = 0.75
 				ahead_reduction = 0.5
 				uses = 1
 				category = nuclear
+			}
+			376 = {
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					instant_build = yes
+					province = 12684
+				}
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 2
 			}
 		}
 	}
@@ -4537,7 +4670,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_focus_secret_rearmament
-		x = 32
+		x = 42
 		y = 0
 		cost = 5
 
@@ -4620,7 +4753,7 @@ focus_tree = {
 	focus = {
 		id = USA_selective_training_act
 		icon = GFX_USA_selective_service_act
-		x = -3
+		x = -14
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -4731,12 +4864,11 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			army_experience = 25
-			add_doctrine_cost_reduction = {
-				name = USA_louisiana_maneuvers
-				cost_reduction = 0.5 #0.25
-				uses = 2
-				category = land_doctrine
+			add_tech_bonus = {
+				name = artillery_boni
+				bonus = 0.75
+				uses = 3
+				category = support_tech
 			}
 		}
 	}
@@ -4807,11 +4939,11 @@ focus_tree = {
 			# add_ideas = USA_womens_armed_service_integration_act
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_conscription = 0.02 tooltip = conscription_tt }
-			add_tech_bonus = {
-				name = USA_infantry
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 0.75
 				uses = 2
-				category = infantry_weapons
+				category = land_doctrine
 			}
 		}
 	}
@@ -4832,11 +4964,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
-				name = USA_support_rock_island
-				uses = 2
-				bonus = 0.75
-				category = artillery
-				category = support_tech
+				name = mountaineers_tech
+				bonus = 0.50
+				ahead_reduction  = 0.5
+				uses = 1
+				technology = artillery3
 			}
 		}
 	}
@@ -4854,7 +4986,6 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1939.12.1
 
 		}
 		
@@ -4878,6 +5009,14 @@ focus_tree = {
 				bonus = 0.75
 				uses = 1
 				technology = mot_radio3
+			}
+			393 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+					province = 6710
+				}
 			}
 		}
 	}
@@ -5003,10 +5142,430 @@ focus_tree = {
 	focus = {
 		id = USA_department_of_defense
 		icon = GFX_Goal_USA_War
-		x = 0
+		x = -6
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1941.3.1
+				ENG = {has_capitulated = yes}
+				NOT = {
+					controls_state = 638
+				}
+				NOT = {
+					controls_state = 632
+				}
+				NOT = {
+					controls_state = 631
+				}
+				NOT = {
+					controls_state = 629
+				}
+			}
+		}	
+
+		bypass = {	
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
+			add_to_variable = { USA_american_army_planning_speed = 0.1 tooltip = planning_speed_tt }
+			add_to_variable = { USA_american_army_max_planning = 0.05 tooltip = max_planning_tt }
+			hidden_effect = {
+			add_ideas = USA_focus_on_nothing
+			set_country_flag = USA_bop_center
+			}
+		}
+	}
+
+	focus = {
+		id = USA_midway
+		icon = GFX_USA_islands
+		x = -2
+		y = 1
+		prerequisite = { focus = USA_department_of_defense }
+		relative_position_id = USA_department_of_defense
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			OR = {
+				date > 1941.6.1
+				NOT = {
+					controls_state = 631
+				}
+			}	
+		}	
+
+		bypass = {	
+			date > 1941.9.1
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13052
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13052
+				}
+			}
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13305
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13305
+				}
+			}
+
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13306
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13306
+				}
+			}
+
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13307
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13307
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_guam
+		icon = GFX_USA_mariana_turkey_shooting
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_department_of_defense }
+		relative_position_id = USA_department_of_defense
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			OR = {
+				date > 1941.6.1
+				NOT = {
+					controls_state = 638
+				}
+			}	
+		}	
+
+		bypass = {	
+			date > 1941.9.1
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			638 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13313
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13313
+				}
+			}
+			638 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13312
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13312
+				}
+			}
+
+			638 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13311
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13311
+				}
+			}
+
+			638 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12140
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13307
+				}
+			}
+
+			# SAIPAN
+			646 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 3995
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 3995
+				}
+			}
+			646 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13024
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13024
+				}
+			}
+
+			646 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13314
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13314
+				}
+			}
+
+			646 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13023
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13023
+				}
+			}
+			646 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13315
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13315
+				}
+			}
+			646 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13316
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13316
+				}
+			}
+
+			646 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13317
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13317
+				}
+			}
+			# PALAU
+			
+			647 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 4357
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4357
+				}
+			}
+			
+			647 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12103
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12103
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_wake
+		icon = GFX_USA_the_island_hopping_campaign
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_department_of_defense }
+		relative_position_id = USA_department_of_defense
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1941.6.1
+				NOT = {
+					controls_state = 632
+				}
+			}	
+		}	
+
+		bypass = {	
+			date > 1941.9.1
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13047
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13047
+				}
+			}
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13309
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13309
+				}
+			}
+
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13310
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13310
+				}
+			}
+
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 13308
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13308
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_philippines
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_wake }
+		relative_position_id = USA_wake
 		cost = 5
 
 		ai_will_do = {
@@ -5026,17 +5585,863 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			# add_ideas = USA_department_of_defense
-			USA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
-			add_to_variable = { USA_american_army_planning_speed = 0.1 tooltip = planning_speed_tt }
-			add_to_variable = { USA_american_army_max_planning = 0.05 tooltip = max_planning_tt }
-			hidden_effect = {
-			add_ideas = USA_focus_on_nothing
-			set_country_flag = USA_bop_center
+			
+		}
+	}
+
+	focus = {
+		id = USA_philippines
+		icon = GFX_USA_i_ve_returned
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_wake }
+		relative_position_id = USA_wake
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			OR = {
+				date > 1941.8.1
+				NOT = {
+					controls_state = 327
+				}
+			}
+			647 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			648 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			638 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			646 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}	
+
+		bypass = {	
+			date > 1943.1.1
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			327 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10265 
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10265
+				}
+			}
+			327 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 1221
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1221
+				}
+			}
+			327 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7323
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7323
+				}
+			}
+			# luzon
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 1415
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1415
+				}
+			}
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10280
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10280
+				}
+			}
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12253
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12253
+				}
+			}
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12213
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12213
+				}
+			}
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10241
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10241
+				}
+			}
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 4104
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4104
+				}
 			}
 		}
 	}
+
+	focus = {
+		id = USA_naval_invasion_bonuses
+		icon = GFX_USA_operation_downfall
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_malaya }
+		prerequisite = { focus = USA_philippines }
+		prerequisite = { focus = USA_taiwan }
+		prerequisite = { focus = USA_borneo }
+		prerequisite = { focus = USA_iwojima }
+		relative_position_id = USA_philippines
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			632 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			638 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			646 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			648 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			647 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			645 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			526 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			524 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			623 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			327 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			627 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			523 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			669 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			333 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			334 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			336 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			672 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			335 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}	
+
+		bypass = {	
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { USA_american_army_navy_naval_invasion_capacity = 9 tooltip = naval_invasion_capacity_tt }
+		}
+	}
+
+	focus = {
+		id = USA_malaya
+		icon = GFX_USA_secure_supply_chains
+		x = -2
+		y = 1
+		prerequisite = { focus = USA_wake }
+		relative_position_id = USA_wake
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1941.9.1
+				any_country = {
+					OR = {
+						tag = ENG
+						is_in_faction_with = USA
+					}
+					NOT = { owns_state = 336 }
+				}
+			}
+		}
+		
+
+		bypass = {	
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			336 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12299
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12299
+				}
+			}
+			336 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10297
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10297
+				}
+			}
+			336 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7329
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7329
+				}
+			}
+			724 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7236
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7236
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_taiwan
+		icon = GFX_USA_retake_phillippines
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_wake }
+		relative_position_id = USA_wake
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			date > 1941.7.1
+			623 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			327 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			645 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}	
+
+		bypass = {	
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			524 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 1091
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1091
+				}
+			}
+			524 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 11914
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 11914
+				}
+			}
+			524 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12068
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12068
+				}
+			}
+			524 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7186
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7186
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_okinawa
+		icon = GFX_USA_operation_iceberg
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_iwojima focus = USA_taiwan }
+		relative_position_id = USA_iwojima
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			524 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			645 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			623 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			638 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			646 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}	
+
+		bypass = {	
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			526 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7115
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7115
+				}
+			}
+			526 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10124
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10124
+				}
+			}
+
+			526 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 11932
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 11932
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_borneo
+		icon = GFX_USA_the_island_hopping_campaign
+		x = -4
+		y = 1
+		prerequisite = { focus = USA_wake }
+		relative_position_id = USA_wake
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1941.9.1
+				any_country = {
+					OR = {
+						tag = ENG
+						is_in_faction_with = USA
+					}
+					NOT = { owns_state = 333 }
+					NOT = { owns_state = 334 }
+				}
+			}
+		}
+
+		bypass = {
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			333 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 1208
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1208
+				}
+			}
+			333 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7371
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7371
+				}
+			}
+			334 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10237
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10237
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_java
+		icon = GFX_USA_destroy_their_supply_chains
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_borneo focus = USA_malaya }
+		relative_position_id = USA_borneo
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				date > 1941.9.1
+				any_country = {
+					OR = {
+						tag = AST
+						is_in_faction_with = USA
+					}
+					NOT = { owns_state = 335 }
+					NOT = { owns_state = 672 }
+				}
+			}
+		}
+
+		bypass = {	
+			
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7381
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7381
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10279
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10279
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12249
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12249
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 4608
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4608
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 10479
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10479
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 4390
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4390
+				}
+			}
+			# sumatra
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 12268
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12268
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 7673
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7673
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 4652
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4652
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 1401
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1401
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 4364
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4364
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 3
+					province = 1648
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1648
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = USA_iwojima
+		icon = GFX_USA_semper_fi
+		x = 4
+		y = 1
+		prerequisite = { focus = USA_wake }
+		relative_position_id = USA_wake
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			date > 1941.7.1
+			638 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			646 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			632 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			647 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}	
+
+		bypass = {	
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			645 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 4
+					province = 13303
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13303
+				}
+			}
+			645 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 4
+					province = 13304
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13304
+				}
+			}
+
+			645 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 4
+					province = 13301
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13301
+				}
+			}
+
+			645 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 4
+					province = 13302
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13302
+				}
+			}
+		}
+	}
+
+
+
 
 
 
@@ -5049,7 +6454,7 @@ focus_tree = {
 	focus = {
 		id = USA_air_war_plans_division
 		icon = GFX_USA_autonomous_airforce
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -5133,7 +6538,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			date > 1939.4.1
 		}
 		
 		bypass = {
@@ -5146,6 +6551,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			358 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 0.75
@@ -5204,7 +6616,7 @@ focus_tree = {
 	focus = {
 		id = USA_two_ocean_navy_act
 		icon = GFX_USA_two_ocean_navy_act
-		x = 10
+		x = 9
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -5594,12 +7006,10 @@ focus_tree = {
 				uses = 2
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			add_breakthrough_progress = {
+                specialization = specialization_naval
+                value = 1
+            }
 		}
 	}
 

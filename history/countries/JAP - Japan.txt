@@ -173,7 +173,7 @@ if = {
 		coastal_defense_ships = 1
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
-		cruiser_submarines = 1
+		#cruiser_submarines = 1
 		basic_dp_light_battery = 1
 		ship_hull_super_heavy = 1
 	}
@@ -361,6 +361,12 @@ recruit_character = JAP_yoshitoshi_tokugawa
 recruit_character = JAP_hino_kumazo
 recruit_character = JAP_yoshio_nishina
 recruit_character = JAP_hideo_itokawa
+recruit_character = JAP_kijiro_nambu
+recruit_character = JAP_keiji_fukuda
+recruit_character = JAP_jiro_horikoshi
+recruit_character = JAP_hideki_yukawa
+recruit_character = JAP_yoji_ito
+
 # recruit_character = JAP_yoshijiro_umezu
 
 ###STOCKPILE###

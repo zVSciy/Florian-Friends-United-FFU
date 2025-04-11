@@ -50,7 +50,7 @@ host_decisions = {
 					instant_build = yes
 				}
 				set_building_level = {
-					type = gib_air_base
+					type = air_base
 					level = 100
 					instant_build = yes
 				}								
@@ -68,11 +68,13 @@ host_decisions = {
             factor = 0  # Ensure AI does not trigger this
         }
 		complete_effect = {
-			limit = {
-				is_ai = no
-			}
-			country_event = { 
-				id = hotjoin_event.1 days = 0
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { 
+					id = hotjoin_event.1 days = 0
+				}
 			}
 		}
 	}

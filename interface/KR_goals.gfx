@@ -7614,6 +7614,11 @@ spriteType = {
 	}		
 
 	SpriteType = {
+		name = "GFX_USA_operation_forager"
+		texturefile = "gfx/interface/goals/usa/USA_operation_forager.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_USA_quality_and_quantity"
 		texturefile = "gfx/interface/goals/usa/USA_quantity_and_quality.dds"
 	}		
@@ -11412,5 +11417,15 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_allgood_military_govenor"
 		texturefile = "gfx/interface/goals/vic/EFR_allgood_hates_civ_greeding.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_industry_jap"
+		texturefile = "gfx/interface/goals/jap/advanced_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_wizna_forts"
+		texturefile = "gfx/interface/goals/goal_POL_Land_Coastal_Defence.dds"
 	}
 }

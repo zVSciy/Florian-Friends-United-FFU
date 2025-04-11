@@ -2315,7 +2315,7 @@ news_event = {
 news_event = {
 	id = generic.41 # generic operation
 	title = "Operation Torch"
-	desc = "In the early moring hours of[GetDateText], Operation Compass Torch"
+	desc = "In the early moring hours of[GetDateText], Operation Torch"
 	
 	picture = GFX_news_event_004
 
@@ -2324,6 +2324,35 @@ news_event = {
 
 	option = {
 		name = "Concerning..."
+	}
+}
+news_event = {
+	id = generic.46 # generic operation
+	title = "Operation Husky - Mud season in Italy"
+	desc = "In the early moring hours of[GetDateText], Operation Husky began. The Italian army is having dificulties defending due to the mud."
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Darn Mud!"
+	}
+}
+
+news_event = {
+	id = generic.47 # generic operation
+	title = "Operation Overlord - It's finaly here. Good Luck Soliders"
+	desc = "In the early moring hours of[GetDateText], Operation Overlord began."
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Hmmm..."
 	}
 }
 

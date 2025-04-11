@@ -35,7 +35,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 15
 		defense = 5
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Improved Light Tank
@@ -71,7 +71,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 20
 		defense = 5
-		breakthrough = 30
+		breakthrough = 15
 	}
 	
 	# Advanced Light Tank
@@ -110,7 +110,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 30
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
   # Medium Tanks

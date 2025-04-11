@@ -64,6 +64,21 @@ ideas = {
 				can_join_factions = no
 			}
 		}
+		USA_cheaper_trade_UK = {			
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.33
+			}
+		}
 		USA_final_table = {
 			
 			allowed = {
@@ -283,33 +298,33 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
+				attack_bonus_against = -0.45
+				defense_bonus_against = -0.45
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
+				attack_bonus_against = -0.45
+				defense_bonus_against = -0.45
 			}
 			targeted_modifier = {
 				tag = SPA
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
+				attack_bonus_against = -0.45
+				defense_bonus_against = -0.45
 			}
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
+				attack_bonus_against = -0.45
+				defense_bonus_against = -0.45
 			}
 			targeted_modifier = {
 				tag = HUN
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
+				attack_bonus_against = -0.45
+				defense_bonus_against = -0.45
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
+				attack_bonus_against = -0.45
+				defense_bonus_against = -0.45
 			}			
 		}
 		USA_island_hopping5 = {
@@ -331,33 +346,33 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}
 			targeted_modifier = {
 				tag = SPA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}
 			targeted_modifier = {
 				tag = HUN
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}	
 		}
 		USA_island_hopping6 = {
@@ -377,33 +392,33 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}
 			targeted_modifier = {
 				tag = SPA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}
 			targeted_modifier = {
 				tag = HUN
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}	
 		}
 		USA_island_hopping7 = {
@@ -2142,27 +2157,6 @@ ideas = {
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
 			}
-			targeted_modifier = {
-				tag = CAN
-				trade_cost_for_target_factor = -0.5
-			}
-		}
-
-		home_of_the_free_NO_ASIA = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-			name = home_of_the_free
-			
 			targeted_modifier = {
 				tag = CAN
 				trade_cost_for_target_factor = -0.5

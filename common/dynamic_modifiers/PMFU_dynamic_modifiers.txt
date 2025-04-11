@@ -47,6 +47,18 @@ USA_islands_local_supply = {
 }
 
 OPERATION_TORCH = {
+	max_dig_in_factor = -0.6
+
+	icon = GFX_idea_generic_fortify_the_borders
+}
+
+OPERATION_HUSKY = {
+	max_dig_in_factor = -0.3
+
+	icon = GFX_decision_category_generic_prospect_for_resources
+}
+
+OPERATION_OVERLORD = {
 	max_dig_in_factor = -0.5
 
 	icon = GFX_idea_generic_fortify_the_borders
@@ -107,12 +119,16 @@ gibraltar_defences = {
 	max_dig_in_factor = 0.25
 	army_defence_factor = 0.15
 }
+NO_FORTS_IN_AFRICA = {
+	land_bunker_effectiveness_factor = -1
 
-ENG_no_AIR = {
+	icon = GFX_idea_generic_fortify_the_borders
+}
+ENG_no_portspam = {
 	enable = { always = yes }
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	state_production_speed_air_base_factor = -4
+	state_production_speed_naval_base_factor = -10
 }
 
 SOV_the_economy_dynamic_peace_modifier = {
@@ -193,6 +209,13 @@ ENG_economy_dynamic_modifier = {
 	research_speed_factor = ENG_british_economy_research_speed_factor
 	production_speed_arms_factory_factor = ENG_british_economy_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = ENG_british_economy_production_speed_dockyard_factor
+	global_building_slots_factor = ENG_british_economy_global_building_slots_factor
+	production_speed_infrastructure_factor = ENG_british_economy_production_speed_infrastructure_factor
+	production_factory_max_efficiency_factor = ENG_british_economy_production_factory_max_efficiency_factor
+	production_factory_start_efficiency_factor = ENG_british_economy_production_factory_start_efficiency_factor
+	production_factory_efficiency_gain_factor = ENG_british_economy_production_factory_efficiency_gain_factor
+	production_speed_industrial_complex_factor = ENG_british_economy_production_speed_industrial_complex_factor
+	local_resources_factor = ENG_british_economy_local_resources_factor
 }
 
 ENG_army_dynamic_modifier = {
@@ -222,8 +245,19 @@ ENG_army_dynamic_modifier = {
 	production_speed_bunker_factor = ENG_british_army_production_speed_bunker_factor
 	production_speed_coastal_bunker_factor = ENG_british_army_production_speed_coastal_bunker_factor
 	repair_speed_air_base_factor = ENG_british_army_repair_speed
+	cat_mobile_warfare_cost_factor = ENG_british_army_cat_mobile_warfare_cost_factor
+	cat_superior_firepower_cost_factor = ENG_british_army_cat_superior_firepower_cost_factor
+	cat_mass_assault_cost_factor = ENG_british_cat_mass_assault_cost_factor
+	cat_grand_battle_plan_cost_factor = ENG_british_army_cat_grand_battle_plan_cost_factor
+	amphibious_invasion_defence = ENG_british_amphibious_invasion_defence
+	army_attack_factor = ENG_british_army_attack_factor
+	naval_invasion_planning_bonus_speed = ENG_british_naval_invasion_planning_bonus_speed
+	max_planning = ENG_british_max_planning
+	invasion_preparation = ENG_british_invasion_preparation
+	naval_invasion_capacity = ENG_british_naval_invasion_capacity
+	conscription = ENG_british_army_conscription
 }
-
+ 
 ENG_air_dynamic_modifier = {
 	enable = { always = yes }
 
@@ -236,7 +270,13 @@ ENG_air_dynamic_modifier = {
 	naval_strike_targetting_factor = ENG_british_airforce_naval_strike_targetting_factor
 	air_weather_penalty = ENG_british_airforce_air_weather_penalty
 	air_home_defence_factor = ENG_british_airforce_air_home_defence_factor
+	air_defence_factor = ENG_british_airforce_air_defence_factor
+	air_attack_factor = ENG_british_airforce_air_attack_factor
+	air_agility_factor = ENG_british_airforce_air_agility_factor
+	air_superiority_efficiency = ENG_british_airforce_air_superiority_efficiency
 	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
+	air_ace_generation_chance_factor = ENG_english_airforce_air_ace_generation_chance_factor
+	ground_attack_factor = ENG_english_ground_attack_factor
 }
 
 ENG_navy_dynamic_modifier = {
@@ -272,6 +312,7 @@ JAP_economy_dynamic_modifier = {
 	air_fuel_consumption_factor = JAP_japanese_economy_air_fuel_consumption_factor
 	production_speed_radar_station_factor = JAP_japanese_economy_production_speed_radar_station_factor
 	industrial_capacity_factory = JAP_japanese_economy_industrial_capacity_factory
+	industrial_capacity_dockyard = JAP_japanese_economy_industrial_capacity_dockyard
 }
 
 JAP_army_dynamic_modifier = {
@@ -383,6 +424,9 @@ ITA_army_dynamic_modifier = {
 	experience_loss_factor = ITA_italian_army_experience_loss_factor
 	winter_attrition_factor = ITA_italian_army_winter_attrition_factor
 	acclimatization_cold_climate_gain_factor = ITA_italian_army_acclimatization_cold_climate_gain_factor
+	acclimatization_hot_climate_gain_factor = ITA_italian_army_acclimatization_hot_climate_gain_factor
+	heat_attrition_factor = ITA_italian_army_summer_attrition_factor
+
 }
 
 ITA_air_dynamic_modifier = {
@@ -485,6 +529,16 @@ GER_air_dynamic_modifier = {
 	air_training_xp_gain_factor = GER_german_airforce_air_training_xp_gain_factor
 	army_bonus_air_superiority_factor = GER_german_airforce_army_bonus_air_superiority_factor
 	air_mission_xp_gain_factor = GER_german_airforce_air_mission_xp_gain_factor
+	air_agility_factor = GER_air_agility_factor
+	air_attack_factor = GER_air_attack_factor
+	air_defence_factor = GER_air_defence_factor
+	air_detection = GER_air_detection
+	air_night_penalty = GER_air_night_penalty
+	air_fuel_consumption_factor = GER_air_fuel_consumption_factor
+	air_accidents_factor = GER_air_accidents_factor
+	air_wing_xp_loss_when_killed_factor = GER_air_wing_xp_loss_when_killed_factor
+	air_range_factor = GER_air_range_factor
+	air_home_defence_factor = GER_air_home_defence_factor
 }
 
 GER_navy_dynamic_modifier = {
@@ -545,8 +599,8 @@ USA_army_dynamic_modifier = {
 	army_speed_factor = USA_american_army_army_speed_factor
 	army_attack_factor = USA_american_army_army_attack_factor
 	army_defence_factor = USA_american_army_army_defence_factor
-	special_forces_cap = USA_american_army_special_forces_cap
 	mobilization_speed = USA_american_army_mobilization_speed
+	naval_invasion_capacity = USA_american_army_navy_naval_invasion_capacity
 	conscription = USA_american_army_conscription
 	planning_speed = USA_american_army_planning_speed
 	max_planning = USA_american_army_max_planning
@@ -732,4 +786,36 @@ MON_the_economy_dynamic_war_modifier = {
 	production_speed_buildings_factor = MON_economy_production_speed_buildings_factor
 	production_factory_max_efficiency_factor = MON_economy_production_factory_max_efficiency_factor
 	
+}
+
+
+ROM_army_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_romanian_army_icon_idea
+
+	army_core_attack_factor = ROM_romanian_army_army_core_attack_factor
+	army_core_defence_factor = ROM_romanian_army_army_core_defence_factor
+	conscription_factor = ROM_romanian_army_conscription_factor
+	conscription = ROM_romanian_army_conscription
+	railway_gun_bombardment_factor = ROM_romanian_army_railway_gun_bombardment_factor
+	army_morale_factor = ROM_romanian_army_army_morale_factor
+	army_org_factor = ROM_romanian_army_army_org_factor
+	 
+}
+
+
+ROM_occupation_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_romanian_army_icon_idea
+
+	compliance_gain = ROM_occupation_compliance_gain
+	compliance_growth = ROM_occupation_compliance_growth
+	non_core_manpower = ROM_occupation_non_core_manpower
+	resistance_growth = ROM_occupation_resistance_growth
+	starting_compliance = ROM_occupation_starting_compliance
+	required_garrison_factor = ROM_required_garrison_factor
+
+
 }

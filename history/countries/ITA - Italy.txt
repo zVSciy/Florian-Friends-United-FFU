@@ -25,7 +25,9 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-
+158 = {
+	add_dynamic_modifier = { modifier = unplanned_offensive2 }
+}
 army_experience = 200
 air_experience = 100
 set_variable = { dockyard_major = 1 }
@@ -275,6 +277,13 @@ recruit_character = ITA_gaetano_crocco
 recruit_character = ITA_angelo_di_maria
 recruit_character = ITA_mario_fama
 recruit_character = ITA_mario_federico
+recruit_character = ITA_enrico_fermi
+recruit_character = ITA_robert_longhi
+recruit_character = ITA_mario_castoldi
+recruit_character = ITA_giovanni_giorgi
+recruit_character = ITA_filippo_bonfiglietti
+recruit_character = ITA_curio_bernardis
+
 
 create_equipment_variant = {
 	name = "L3/33"

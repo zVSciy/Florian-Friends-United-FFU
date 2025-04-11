@@ -294,8 +294,10 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 8
-		naval_speed = 12
+
+		sub_visibility = 24
+		naval_speed = 16
+
 		reliability = 0.75
 		anti_air_attack = 6
 		
@@ -657,6 +659,7 @@ equipments = {
 
 		
 		build_cost_ic = 400
+
 		resources = {
 			steel = 8
 			chromium = 3

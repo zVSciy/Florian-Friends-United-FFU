@@ -116,6 +116,10 @@ if = {
 
 set_convoys = 50
 
+give_military_access = BRA
+give_military_access = MEX
+give_military_access = USA
+
 set_cosmetic_tag = RAJ_UK # British Raj
 
 1939.1.1 = {

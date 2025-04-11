@@ -25,7 +25,7 @@ guiTypes = {
 			name = "infrastructure_speed"   
 			position = { x = 395  y = -71  }
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_infrastructure_factor|%0=+]"	   
+			text = "[?infrastructure_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -36,7 +36,7 @@ guiTypes = {
 			name = "air_base_speed"   
 			position = { x = 442 y = -71 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_air_base_factor|%0=+]"	   
+			text = "[?air_base_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -46,7 +46,7 @@ guiTypes = {
 			name = "anti_air_building_speed"   
 			position = { x = 488 y = -71 } # 369
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_anti_air_building_factor|%0=+]"	   
+			text = "[?anti_air_building_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -57,7 +57,7 @@ guiTypes = {
 			name = "synthetic_refinery_speed"   
 			position = { x = 534 y = -71 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_synthetic_refinery_factor|%0=+]"	   
+			text = "[?synthetic_refinery_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -68,7 +68,7 @@ guiTypes = {
 			name = "steel_refinery_speed"
 			position = { x = 395 y = -30 }
 			font = "cg_16b"
-			text = "[?steel_refinery_const_speed_var|%0=+]"
+			text = "[?steel_refinery_speed_var|%0=+]"
 			maxWidth = 50
 			maxHeight = 20
 			format = right
@@ -79,7 +79,7 @@ guiTypes = {
 			name = "fuel_silo_speed"   
 			position = { x = 442 y = -30 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_fuel_silo_factor|%0=+]"	   
+			text = "[?fuel_silo_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -90,7 +90,7 @@ guiTypes = {
 			name = "radar_station_speed"   
 			position = { x = 488 y = -30 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_radar_station_factor|%0=+]"	   
+			text = "[?radar_station_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -101,7 +101,7 @@ guiTypes = {
 			name = "arms_factory_speed"   
 			position = { x = 395  y = 66  } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_arms_factory_factor|%0=+]"	   
+			text = "[?arms_factory_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -112,7 +112,7 @@ guiTypes = {
 			name = "industrial_complex_speed"   
 			position = { x = 442 y = 66 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_industrial_complex_factor|%0=+]"	   
+			text = "[?industrial_complex_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -123,7 +123,7 @@ guiTypes = {
 			name = "dockyard_speed"   
 			position = { x = 488 y = 66 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_dockyard_factor|%0=+]"	   
+			text = "[?dockyard_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -134,7 +134,7 @@ guiTypes = {
 			name = "rocket_site_speed"   
 			position = { x = 534 y = 66 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_rocket_site_factor|%0=+]"	   
+			text = "[?rocket_site_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -145,7 +145,7 @@ guiTypes = {
 			name = "heavy_water_reactor_speed"   
 			position = { x = 395 y = 107 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_reactor_factor|%0=+]"	   
+			text = "[?nuclear_reactor_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -156,7 +156,7 @@ guiTypes = {
 			name = "civilian_nuclear_reactor_speed"   
 			position = { x = 442 y = 107 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_reactor_factor|%0=+]"	   
+			text = "[?nuclear_reactor_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -167,7 +167,7 @@ guiTypes = {
 			name = "multi_charge_large_caliber_gun_speed"   
 			position = { x = 488 y = 107 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_reactor_factor|%0=+]"	   
+			text = "[?nuclear_reactor_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -178,7 +178,7 @@ guiTypes = {
 			name = "conversion_civ_to_mil_speed"   
 			position = { x = 534 y = 107 } 
 			font = "cg_16b"              
-			text = "[?modifier@modifier_conversion_cost_civ_to_mil_factor|%0=+]"	   
+			text = "[?modifier@conversion_cost_mil_to_civ_factor|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -189,7 +189,7 @@ guiTypes = {
 			name = "supply_node_speed"   
 			position = { x = 395 y = 203 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_supply_node_factor|%0=+]"	   
+			text = "[?supply_node_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -200,7 +200,7 @@ guiTypes = {
 			name = "rail_way_speed"   
 			position = { x = 442 y = 203 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_rail_way_factor|%0=+]"	   
+			text = "[?rail_way_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -211,7 +211,7 @@ guiTypes = {
 			name = "naval_base_speed"   
 			position = { x = 488 y = 203 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_naval_base_factor|%0=+]"	   
+			text = "[?naval_base_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -222,7 +222,7 @@ guiTypes = {
 			name = "bunker_speed"   
 			position = { x = 534 y = 203 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_bunker_factor|%0=+]"	   
+			text = "[?bunker_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -233,7 +233,7 @@ guiTypes = {
 			name = "fortress_speed"   
 			position = { x = 395 y = 246 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_fortress_factor|%0=+]"	   
+			text = "[?fortress_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -244,7 +244,7 @@ guiTypes = {
 			name = "coastal_fortress_speed"   
 			position = { x = 442 y = 246 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_coastal_fortress_factor|%0=+]"	   
+			text = "[?coastal_fortress_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -255,7 +255,7 @@ guiTypes = {
 			name = "coastal_bunker_speed"   
 			position = { x = 488 y = 246 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_coastal_bunker_factor|%0=+]"	   
+			text = "[?coastal_bunker_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -266,7 +266,7 @@ guiTypes = {
 			name = "naval_facility_speed"   
 			position = { x = 396 y = 340 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_naval_facility_factor|%0=+]"	   
+			text = "[?naval_facility_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -277,7 +277,7 @@ guiTypes = {
 			name = "nuclear_facility_speed"   
 			position = { x = 442 y = 340 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_facility_factor|%0=+]"	   
+			text = "[?nuclear_facility_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -288,7 +288,7 @@ guiTypes = {
 			name = "air_facility_speed"   
 			position = { x = 488 y = 340 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_air_facility_factor|%0=+]"	   
+			text = "[?air_facility_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -299,7 +299,7 @@ guiTypes = {
 			name = "land_facility_speed"   
 			position = { x = 534 y = 340 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_land_facility_factor|%0=+]"	   
+			text = "[?land_facility_speed_var|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right

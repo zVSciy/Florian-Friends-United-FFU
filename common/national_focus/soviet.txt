@@ -1379,7 +1379,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			217 = {
+			578 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1387,7 +1387,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			218 = {
+			403 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1395,7 +1395,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			265 = {
+			581 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1403,7 +1403,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			245 = {
+			560 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1424,7 +1424,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			247 = {
+			568 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1432,7 +1432,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			248 = {
+			825 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1440,7 +1440,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			254 = {
+			578 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1448,7 +1448,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			219 = {
+			565 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1542,7 +1542,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_ural_factories2
-		cost = 5
+		cost = 3
 		
 		available = {
 			OR = {
@@ -1746,6 +1746,9 @@ focus_tree = {
 					news_event = generic.36
 				}
 			}
+			hidden_effect = {
+				play_song = "4-speech"
+			}
 		}
 	}
 
@@ -1818,6 +1821,9 @@ focus_tree = {
 				every_country = {
 					news_event = generic.37
 				}
+
+
+				play_song = "1-speech"
 			}
 		}
 	}
@@ -2003,22 +2009,22 @@ focus_tree = {
 		y = 2
 		relative_position_id = SOV_tankograd
 		available = {
-			casualties > 2000000
+			casualties > 1000000
 			# surrender_progress > 0.32
 			if = {
 				limit = {
 					has_completed_focus = SOV_secure_new_conquests
 				}
-				surrender_progress > 0.38
+				surrender_progress > 0.28
 			}
 			else_if = {
 				limit = {
 					has_completed_focus = SOV_improve_stalin_line
 				}
-				surrender_progress > 0.32 
+				surrender_progress > 0.26
 			}
 			else = {
-				surrender_progress > 0.32
+				surrender_progress > 0.26
 			}
 		}
 		cancel_if_invalid = no
@@ -2210,48 +2216,6 @@ focus_tree = {
 					news_event = generic.33
 				}
 			}
-			# PER = {
-			# 	set_country_flag = SOV_ultimatum_sent_flag
-			# 	country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
-			# }
-
-			# PMFU
-			# 229 = {
-			# 	add_extra_state_shared_building_slots = 4
-			# 	add_building_construction = {
-			# 		type = arms_factory
-			# 		level = 4
-			# 		instant_build = yes
-			# 	}
-			# }
-
-			# 230 = {
-			# 	add_extra_state_shared_building_slots = 4
-			# 	add_building_construction = {
-			# 		type = arms_factory
-			# 		level = 4
-			# 		instant_build = yes
-			# 	}
-			# }
-
-			# 586 = {
-			# 	add_extra_state_shared_building_slots = 4
-			# 	add_building_construction = {
-			# 		type = arms_factory
-			# 		level = 4
-			# 		instant_build = yes
-			# 	}
-			# }
-
-			# 405 = {
-			# 	add_extra_state_shared_building_slots = 4
-			# 	add_building_construction = {
-			# 		type = arms_factory
-			# 		level = 4
-			# 		instant_build = yes
-			# 	}
-			# }
-			
 			### ACTUAL EFFECT NGL ###
 			ENG = {
 				ENG = {
@@ -2261,54 +2225,6 @@ focus_tree = {
 					transfer_state = 411
 					transfer_state = 412
 					transfer_state = 410
-				}
-				if = {
-					limit = {
-						446 = {
-							CONTROLLER = {
-								is_in_faction_with = GER
-								tag = GER
-							}
-						}
-					}
-					division_template = {
-						name = "Colonial Infantry (Iran)"
-						division_names_group = ENG_INF_01
-					
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							dp_artillery_brigade = { x = 3 y = 0 }
-							dp_artillery_brigade = { x = 3 y = 1 }
-							dp_artillery_brigade = { x = 4 y = 0 }
-							dp_artillery_brigade = { x = 4 y = 1 }
-						}
-						support = {
-							hq_company = { x = 0 y = 0 } 
-							engineer = { x = 0 y = 1 }   
-							recon = { x = 0 y = 2 }
-							logistics_company_mot  = { x = 0 y = 3 }
-							anti_air = { x = 1 y = 0 }
-						}
-					}
-					444 = {
-						for_loop_effect = {
-							end = 10
-							create_unit = {
-								division = "name = \"Colonial Infantry (Iran)\" division_template = \"Colonial Infantry (Iran)\" start_experience_factor = 0.5"
-								owner = ENG
-							}
-						}
-					}
-					ENG = {
-						custom_effect_tooltip = ENG_iran_spawn_in_tt
-					}
 				}
 			}
 			SOV = {
@@ -2709,7 +2625,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_war_mobilisation
-		cost = 2
+		cost = 1
 		
 		available = {
 			OR = {
@@ -2879,7 +2795,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = SOV_war_mobilisation
-		cost = 2
+		cost = 1
 		
 		available = {
 			OR = {
@@ -3070,7 +2986,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SOV_war_mobilisation
-		cost = 2
+		cost = 1
 		
 		available = {
 			OR = {
@@ -3260,7 +3176,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SOV_war_mobilisation
-		cost = 5
+		cost = 2
 
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -8998,11 +8914,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_found_the_jet_institute
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
+			408 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

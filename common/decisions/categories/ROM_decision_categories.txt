@@ -1,0 +1,20 @@
+ROM_balance_of_power = {
+    priority = 90
+    allowed = {
+        original_tag = ROM
+        has_dlc = "Waking the Tiger"
+    }
+}
+
+
+ROM_economic_reforms_category = {
+priority = 90
+
+allowed = {
+    original_tag = ROM
+    has_dlc = "La Resistance"
+    
+}
+
+
+}

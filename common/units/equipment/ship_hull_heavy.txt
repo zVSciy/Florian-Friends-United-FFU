@@ -132,7 +132,9 @@ equipments = {
 
 		fuel_consumption = 6
 		
+
 		build_cost_ic = 3865
+
 		resources = {
 			steel = 3
 			chromium = 3
@@ -315,11 +317,13 @@ equipments = {
 		reliability = 0.85
 		fuel_consumption = 6
 		
+
 		build_cost_ic = 3865
 		resources = {
 			steel = 3
 			chromium = 1
 		}
+
 	}
 
 	ship_hull_heavy_2 = {
@@ -384,11 +388,13 @@ equipments = {
 	
 		naval_range = 3500
 		
+
 		max_strength = 410
 		reliability = 0.9
 		fuel_consumption = 6
 		naval_speed = 23
 		build_cost_ic = 4000
+
 		resources = {
 			steel = 3
 			chromium = 2
@@ -647,11 +653,13 @@ equipments = {
 		}
 		naval_range = 5000
 		
+
 		max_strength = 580
 		naval_speed = 28
 		fuel_consumption = 6
 		reliability = 1
 		build_cost_ic = 4350
+
 		resources = {
 			steel = 6
 			chromium = 5
@@ -751,11 +759,13 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		naval_range = 4500
+
 		naval_speed = 22
 		max_strength = 480
 		fuel_consumption = 7
 		reliability = 0.85
 		build_cost_ic = 5500
+
 		resources = {
 			steel = 6
 			chromium = 4

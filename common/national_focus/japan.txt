@@ -1241,7 +1241,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_army_experience > 25
+
 		}
 
 		bypass = {
@@ -1259,7 +1259,13 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine	
 			}
-			army_experience = -25
+			530 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1306,17 +1312,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = JAP_lessons
-				bonus = 0.75
-				uses = 2
-				category = artillery
-			}
-			add_tech_bonus = {
-				name = JAP_lessons
-				bonus = 0.75
-				uses = 2
-				category = rocketry
-			}
+				name = mountaineers_tech
+				bonus = 0.50
+				ahead_reduction  = 0.5
+				uses = 1
+				technology = artillery3
+			} 
 			army_experience = -25
 		}
 	}
@@ -3505,7 +3506,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 9
 		y = 1
-		cost = 20
+		cost = 14
 		relative_position_id = JAP_intervene_in_china
 		
 		select_effect = {
@@ -3703,6 +3704,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			534 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -3778,6 +3786,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			534 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -3791,7 +3806,7 @@ focus_tree = {
 		will_lead_to_war_with = ENG
 		x = 0
 		y = 4
-		cost = 2
+		cost = 1
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
@@ -3826,6 +3841,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			hidden_effect = {
+					645 = {
+						add_dynamic_modifier = { modifier = island_defences }
+					}
+					647 = {
+						add_dynamic_modifier = { modifier = island_defences }
+					}
+					526 = {
+						add_dynamic_modifier = { modifier = island_defences }
+					}
+					646 = {
+						add_dynamic_modifier = { modifier = island_defences }
+					}
+					524 = {
+						add_dynamic_modifier = { modifier = island_defences }
+					}
+			}
 			add_advisor_role = {
 				character = JAP_kanin_kotohito
 				activate = yes
@@ -4076,71 +4108,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_island_defences
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = JAP_strike_the_west }
-		x = -1
-		y = 1
-		relative_position_id = JAP_strike_the_west
-
-		cost = 5
-
-		available = {
-			OR = {
-				has_idea = JAP_island_hopping4
-				has_idea = JAP_island_hopping5
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_full_control_of_state = 645
-				}
-				645 = {
-					add_dynamic_modifier = { modifier = island_defences }
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 647
-				}
-				647 = {
-					add_dynamic_modifier = { modifier = island_defences }
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 526
-				}
-				526 = {
-					add_dynamic_modifier = { modifier = island_defences }
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 646
-				}
-				646 = {
-					add_dynamic_modifier = { modifier = island_defences }
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_oceanic_collaborators
 		icon = GFX_goal_JAP_oceanic_collab
-		prerequisite = { focus = JAP_strike_the_west }
-		x = 1
+		prerequisite = { focus = JAP_take_java }
+		prerequisite = { focus = JAP_take_papua }
+		x = 2
 		y = 1
-		relative_position_id = JAP_strike_the_west
+		relative_position_id = JAP_take_java
 
-		cost = 5
+		cost = 3
 
 		available = {
 		}
@@ -4150,12 +4126,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			hidden_effect = {
 			if = { # singapore
 				limit = {
 					336 = { is_controlled_by = JAP }
 				}
 				336 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
 			if = { # palembang
@@ -4163,7 +4140,7 @@ focus_tree = {
 					672 = { is_controlled_by = JAP }
 				}
 				672 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
 			if = { # batavia
@@ -4171,10 +4148,10 @@ focus_tree = {
 					335 = { is_controlled_by = JAP }
 				}
 				335 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				667 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
 			if = { # brunei
@@ -4182,7 +4159,7 @@ focus_tree = {
 					333 = { is_controlled_by = JAP }
 				}
 				333 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
 			if = { # balikpapan
@@ -4190,7 +4167,7 @@ focus_tree = {
 					334 = { is_controlled_by = JAP }
 				}
 				334 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
 			if = { # makassar
@@ -4198,10 +4175,10 @@ focus_tree = {
 					673 = { is_controlled_by = JAP }
 				}
 				673 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				668 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
 			if = { # manila
@@ -4209,25 +4186,25 @@ focus_tree = {
 					327 = { is_controlled_by = JAP }
 				}
 				327 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				623 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				624 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				625 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				628 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				627 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				626 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
 			if = { # port moresby
@@ -4235,40 +4212,908 @@ focus_tree = {
 					523 = { is_controlled_by = JAP }
 				}
 				523 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				669 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				738 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				737 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 				634 = {
-					add_compliance = 10
+					add_compliance = 30
 				}
 			}
+		}
 			custom_effect_tooltip = oceanic_collaborators_tt
+		}
+	}
+
+	focus = {
+		id = JAP_plunder_territories
+		icon = GFX_goal_JAP_greater_east_asian_co_prosperity_sphere
+		prerequisite = { focus = JAP_oceanic_collaborators }
+		x = 0
+		y = 1
+		relative_position_id = JAP_oceanic_collaborators
+
+		cost = 5
+		available = {
+			638 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			623 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			327 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			326 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			282 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			531 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_plunder_territories2
+		icon = GFX_JAP_superiority_of_man
+		prerequisite = { focus = JAP_plunder_territories }
+		x = -1
+		y = 1
+		relative_position_id = JAP_plunder_territories
+
+		cost = 5
+		available = {
+			336 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			672 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			334 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			333 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			528 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			529 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_plundered_everything
+		icon = GFX_goal_JAP_fumimaro_konoe_cabinet
+		prerequisite = { focus = JAP_plunder_territories3 }
+		prerequisite = { focus = JAP_plunder_territories2 }
+		x = -1
+		y = 1
+		relative_position_id = JAP_plunder_territories3
+
+		cost = 5
+		available = {
+			OR = {
+				439 = { is_controlled_by_ROOT_or_ally = yes }
+				285 = { is_controlled_by_ROOT_or_ally = yes }
+			}
+		}
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			282 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}
+			531 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { JAP_japanese_economy_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+		}
+	}
+
+	focus = {
+		id = JAP_plunder_territories3
+		icon = GFX_JAP_the_emperors_wave
+		prerequisite = { focus = JAP_plunder_territories }
+		x = 1
+		y = 1
+		relative_position_id = JAP_plunder_territories
+
+		cost = 5
+		available = {
+			335 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			673 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			669 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			523 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			536 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			533 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_take_midway
+		icon = GFX_goal_JAP_the_yen_bloc
+		prerequisite = { focus = JAP_oceanic_collaborators }
+		x = 3
+		y = 1
+		relative_position_id = JAP_oceanic_collaborators
+
+		cost = 2
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13305
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13305
+				}
+			}
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13306
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13306
+				}
+			}
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13052
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13052
+				}
+			}
+			631 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13307
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13307
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_successfully_took_midway
+		icon = GFX_JAP_r56_goal_JAP_co_prosperity_sphere
+		prerequisite = { focus = JAP_take_midway }
+		x = 0
+		y = 1
+		relative_position_id = JAP_take_midway
+
+		cost = 5
+		available = {
+			631 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = 0.075 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_army_war_support_factor = 0.1 tooltip = war_support_factor_tt }
+		}
+	}
+
+
+	focus = {
+		id = JAP_take_wake
+		icon = GFX_goal_JAP_supremacy_of_will
+		prerequisite = { focus = JAP_oceanic_collaborators }
+		x = -3
+		y = 1
+		relative_position_id = JAP_oceanic_collaborators
+
+		cost = 2
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13308
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13308
+				}
+			}
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13047
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13047
+				}
+			}
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13309
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13309
+				}
+			}
+			632 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 13310
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 13310
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_successfully_took_wake
+		icon = GFX_JAP_r56_goal_JAP_co_prosperity_sphere
+		prerequisite = { focus = JAP_take_wake }
+		x = 0
+		y = 1
+		relative_position_id = JAP_take_wake
+
+		cost = 5
+		available = {
+			632 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = 0.05 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_army_war_support_factor = 0.05 tooltip = war_support_factor_tt }
+		}
+	}
+
+
+
+	focus = {
+		id = JAP_take_philippines
+		icon = GFX_goal_japan_attack_phillippinen
+		prerequisite = { focus = JAP_strike_the_west }
+		x = 1
+		y = 1
+		relative_position_id = JAP_strike_the_west
+
+		cost = 1
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12213
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12213
+				}
+			}
+			623 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 1415
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1415
+				}
+			}
+			327 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10265
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10265
+				}
+			}
+			327 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 1221
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1221
+				}
+			}
+			627 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4241
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4241
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_take_borneo
+		icon = GFX_goal_japan_attack_indonesia
+		prerequisite = { focus = JAP_strike_the_west }
+		x = 3
+		y = 1
+		relative_position_id = JAP_strike_the_west
+
+		cost = 1
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			333 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 1208
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1208
+				}
+			}
+			333 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 7371
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7371
+				}
+			}
+			334 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10237
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10237
+				}
+			}
+			673 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10263
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10263
+				}
+			}
+			673 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10153
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10153
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_take_papua
+		icon = GFX_goal_japan_attack_indonesia
+		prerequisite = { focus = JAP_take_borneo }
+		prerequisite = { focus = JAP_take_philippines }
+		x = -1
+		y = 1
+		relative_position_id = JAP_take_borneo
+
+		cost = 1
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			669 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 4
+					province = 4509
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4509
+				}
+			}
+			669 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 4
+					province = 10369
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10369
+				}
+			}
+			523 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12240
+				} 
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12240
+				}
+			}
+			523 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12154
+				} 
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12154
+				}
+			}
+			523 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12237
+				} 
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12237
+				}
+			}
+			523 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4329
+				} 
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4329
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = JAP_take_sumatra
+		icon = GFX_goal_japan_attack_indonesia
+		prerequisite = { focus = JAP_strike_the_west }
+		x = -1
+		y = 1
+		relative_position_id = JAP_strike_the_west
+
+		cost = 1
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12268
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12268
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4652
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4652
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 1401
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 1401
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4364
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4364
+				}
+			}
+			672 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 7673
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7673
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_take_malaya
+		icon = GFX_goal_japan_attack_singapore
+		prerequisite = { focus = JAP_strike_the_west }
+		x = -3
+		y = 1
+		relative_position_id = JAP_strike_the_west
+
+		cost = 1
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			336 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12299
+				}
+				damage_building = {
+					type = bunker
+					damage = 2
+					province = 12299
+				}
+			}
+			336 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10297
+				}
+				damage_building = {
+					type = bunker
+					damage = 2
+					province = 10297
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_take_java
+		icon = GFX_goal_japan_attack_indonesia
+		prerequisite = { focus = JAP_take_malaya }
+		prerequisite = { focus = JAP_take_sumatra }
+		x = 1
+		y = 1
+		relative_position_id = JAP_take_malaya
+
+		cost = 1
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10279
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10279
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 7381
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 7381
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 12249
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 12249
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4608
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4608
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4390
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4390
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 10479
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 10479
+				}
+			}
+			335 = {
+				damage_building = {
+					type = coastal_bunker
+					damage = 2
+					province = 4306
+				}
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 4306
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = JAP_warrior_spirit
 		icon = GFX_goal_JAP_WAY
-		prerequisite = { focus = JAP_strike_the_west }
-		x = 3
-		y = 1
-		relative_position_id = JAP_strike_the_west
+		prerequisite = { focus = JAP_oceanic_collaborators }
+		x = 2
+		y = 3
+		relative_position_id = JAP_oceanic_collaborators
 
 		cost = 5
-
 		available = {
-			OR = {
-				surrender_progress > 0.05
-				has_idea = JAP_island_hopping4
-			}
+			has_tech = experimental_rockets
 		}
 
 		cancel_if_invalid = yes
@@ -4281,37 +5126,12 @@ focus_tree = {
 					can_use_kamikaze_pilots = yes
 				}
 			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
-		}
-	}
-	
-	focus = {
-		id = JAP_strengthen_the_divine_wind
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = JAP_warrior_spirit }
-		x = 0
-		y = 1
-		relative_position_id = JAP_warrior_spirit
-
-		cost = 5
-
-		available = {
-			has_tech = rocket_engines
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
 			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
+			custom_effect_tooltip = kamikaze_focus_tooltip
 			hidden_effect = { set_technology = { suicide_craft = 1 } }
 		}
 	}
+
 	
 	focus = {
 		id = JAP_guide_the_zaibatsus
@@ -5663,6 +6483,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			528 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+					province = 9950
+				}
+			}
 			add_tech_bonus = {
 				name = JAP_zero
 				bonus = 1
@@ -5683,6 +6511,16 @@ focus_tree = {
 			ELSE = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = mitsubishi
+			}
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JAP_subaru_organization
+				mio:JAP_subaru_organization = {
+					add_mio_funds = 2500
+				}
 			}
 			JAP_navy_and_air_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { JAP_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
@@ -5817,10 +6655,10 @@ focus_tree = {
 	focus = {
 		id = JAP_war_with_SOV
 		icon = GFX_goal_JAP_the_unthinkable_option
-		prerequisite = { focus = JAP_strike_the_west }
-		x = -3
-		y = 1
-		relative_position_id = JAP_strike_the_west
+		prerequisite = { focus = JAP_oceanic_collaborators }
+		x = -2
+		y = 3
+		relative_position_id = JAP_oceanic_collaborators
 
 		cost = 5
 
@@ -5858,6 +6696,9 @@ focus_tree = {
 			create_wargoal = {
 				target = SOV
 				type = annex_everything
+			}
+			hidden_effect = {
+				play_song = "8-speech"
 			}
 		}
 	}

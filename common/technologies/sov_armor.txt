@@ -285,8 +285,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
-		start_year = 1941
+		research_cost = 1.0
+		start_year = 1940
 		folder = {
 			name = sov_armour_folder
 			position = { x = 0 y = 8 }
@@ -301,7 +301,7 @@ technologies = {
 			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
-			year_1941
+			year_1940
 		}
 		
 		ai_will_do = {

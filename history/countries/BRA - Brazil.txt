@@ -20,6 +20,7 @@ set_variable = {
 	value = 0.800
 }
 set_variable = { allies_poster_center_icon_frame = 1 }
+
 add_ideas = {
 
 	
@@ -254,6 +255,16 @@ if = {
 		}
 	}
 }
+
+give_military_access = USA
+give_military_access = MEX
+give_military_access = ENG
+give_military_access = CAN
+give_military_access = AST
+give_military_access = SAF
+give_military_access = RAJ
+give_military_access = FRA
+
 
 # 1939 Start #
 1939.1.1 = {

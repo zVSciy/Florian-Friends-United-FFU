@@ -24,14 +24,14 @@ news_event = {
 		set_global_flag = fall_of_cairo
 		if = {
 			limit = {
-				date > 1940.2.1
+				date > 1940.5.1
 			}
 			set_global_flag = fall_of_cairo_skill_issue
 			custom_effect_tooltip = "NOTHING"
 		}
 		else_if = {
 			limit = {
-				date > 1939.12.1
+				date > 1940.3.1
 			}
 			set_global_flag = fall_of_cairo_december
 			GER = {
@@ -82,7 +82,7 @@ news_event = {
 		}
 		else_if = {
 			limit = {
-				date > 1939.9.1
+				date > 1939.11.1
 			}
 			set_global_flag = fall_of_cairo_september
 			GER = {
@@ -133,7 +133,7 @@ news_event = {
 		}
 		else_if = {
 			limit = {
-				date < 1939.9.1
+				date < 1939.11.1
 			}
 			set_global_flag = fall_of_cairo_early
 			GER = {

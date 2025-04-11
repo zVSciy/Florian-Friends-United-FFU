@@ -1,0 +1,107 @@
+
+music_station = "ffu_music"
+
+music = {
+	song = "0-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}	
+}
+music = {
+	song = "1-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "2-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}	
+}
+music = {
+	song = "3-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}	
+}
+music = {
+	song = "4-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "5-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "6-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "7-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "8-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}	
+}
+music = {
+	song = "9-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}	
+}
+music = {
+	song = "10-speech"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "11-speech"
+	chance = {
+		modifier = {
+			factor = 1000
+		}
+	}
+}
+music = {
+	song = "12-speech"
+	chance = {
+		modifier = {
+			factor = 1000
+		}
+	}
+}

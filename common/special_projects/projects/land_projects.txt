@@ -143,9 +143,11 @@ sp_land_military_engineering_vehicles = {
 			armored_support_vehicle_1
 		}
 
-		# enable_subunits = {
-		# 	assault_engineer
-		# }
+		enable_subunits = {
+			armored_engineer
+			armored_maintenance
+			armored_signal
+		}
 
 		country_effects = {
 			if = {
@@ -237,10 +239,10 @@ sp_land_land_cruiser = {
 
 	prototype_time = sp_time.prototype.medium
 
-	complexity = sp_complexity.insane
+	complexity = sp_complexity.large
 
 	breakthrough_cost = {
-		specialization_land = 3
+		specialization_land = 2
 	}
 
 	resource_cost = {
@@ -951,7 +953,7 @@ sp_land_super_heavy_howitzer = {
 	complexity = sp_complexity.medium
 
 	breakthrough_cost = {
-		specialization_land = 2
+		specialization_land = 1
 	}
 
 	resource_cost = {
@@ -1539,7 +1541,7 @@ sp_land_stronghold_network = {
 
 	available = {
 		FROM = {
-			has_tech = construction3
+			has_tech = construction5
 		}
 	}
 

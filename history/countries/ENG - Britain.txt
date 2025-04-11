@@ -22,6 +22,19 @@ set_variable = {
 	add_dynamic_modifier = { modifier = gibraltar_defences }
 }
 
+457 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+446 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+947 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+453 = {
+	add_dynamic_modifier = { modifier = ENG_no_portspam }
+}
+
 starting_train_buffer = 2.5
 
 set_rule = { 
@@ -33,6 +46,11 @@ set_country_flag=fuel_system_enabled
 # create_intelligence_agency = {
 #     name = "MI6"
 # }
+
+give_military_access = USA
+give_military_access = BRA
+give_military_access = MEX
+
 
 load_oob = "ENG_Motorized"
 
@@ -203,32 +221,81 @@ add_ideas = {
 add_dynamic_modifier = {
 	modifier = ENG_economy_dynamic_modifier
 }
-set_variable = { ENG_british_economy_consumer_goods_factor = 0.20 tooltip = consumer_goods_factor_tt }
+set_variable = { ENG_british_economy_consumer_goods_factor = 0.4 tooltip = consumer_goods_factor_tt }
 set_variable = { ENG_british_economy_industrial_capacity_factory = -0.10 tooltip = industrial_capacity_factory_tt }
 set_variable = { ENG_british_economy_industrial_capacity_dockyard = -0.10 tooltip = industrial_capacity_dockyard_tt }
-set_variable = { ENG_british_economy_production_speed_buildings_factor = -0.10 tooltip = production_speed_buildings_facto_tt }
+set_variable = { ENG_british_economy_production_speed_buildings_factor = -0.10 tooltip = production_speed_buildings_factor_tt }
 
 add_dynamic_modifier = {
 	modifier = ENG_army_dynamic_modifier
 }
 set_variable = { ENG_british_army_conscription_factor = -0.30 tooltip = conscription_factor_tt }
 set_variable = { ENG_british_army_war_support_factor = -0.05 tooltip = war_support_factor_tt }
+set_variable = { ENG_british_army_cat_mobile_warfare_cost_factor = 1 tooltip = cat_mobile_warfare_cost_factor_tt }
+set_variable = { ENG_british_army_cat_superior_firepower_cost_factor = 1 tooltip = cat_superior_firepower_cost_factor_tt }
+set_variable = { ENG_british_cat_mass_assault_cost_factor = 1 tooltip = cat_mass_assault_cost_factor }
+set_variable = { ENG_british_army_cat_grand_battle_plan_cost_factor = 1 tooltip = cat_grand_battle_plan_cost_factor }
+
+add_dynamic_modifier = {
+	modifier = ENG_air_dynamic_modifier
+}
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment
-	amount = 500
+	amount = 900
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 2500
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 5000
+	amount = 10000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 35000
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = squad_equipment
+	amount = 8900
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 3600
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = radio_equipment
 	amount = 1000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = horse_equipment
+	amount = 12000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 900
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 212
 	producer = ENG
 }
 
@@ -384,6 +451,11 @@ recruit_character = ENG_arthur_harris
 recruit_character = ENG_james_chadwick
 recruit_character = ENG_frank_whittle
 recruit_character = ENG_jfc_fuller
+recruit_character = ENG_john_cockcroft
+recruit_character = ENG_charles_goodeve
+recruit_character = ENG_nevil_shute
+recruit_character = ENG_robert_watson_watt
+
 
 
 

@@ -97,6 +97,17 @@ set_country_flag = USA_Marine_Corps_division_standard
 set_country_flag = US_Airborne_division_standard
 set_country_flag = USA_timeout_conference_done
 
+give_military_access = BRA
+give_military_access = MEX
+give_military_access = ENG
+give_military_access = CAN
+give_military_access = AST
+give_military_access = SAF
+give_military_access = RAJ
+give_military_access = FRA
+
+
+
 USA_recalc_congress_icon_frames = yes
 # USA = {
 # 	country_event = { id = usa.50 days = 2 }
@@ -333,6 +344,12 @@ recruit_character = USA_henry_stimson
 recruit_character = USA_jimmy_doolittle
 recruit_character = USA_claire_lee_chennault
 recruit_character = USA_alexander_vandegrift
+recruit_character = USA_leslie_skinner
+recruit_character = USA_edward_curtis_wells
+recruit_character = USA_william_francis_gibbs
+recruit_character = USA_andrew_mckee
+recruit_character = USA_john_walter_christie
+recruit_character = USA_vannevar_bush
 
 create_equipment_variant = {
 	name = "M2 Light"

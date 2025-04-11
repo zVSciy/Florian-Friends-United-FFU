@@ -681,50 +681,6 @@ SWI_federal_council_decisions_category = {
 	}
 
 
-	SWI_invite_to_entente = {
-		icon = GFX_decision_hol_exchange_intelligence_data
-		priority = 100
-		target_trigger = {
-			FROM = {
-				exists = yes 
-				is_in_faction = no
-				NOT = { has_country_flag = SWI_entente_request_sent }
-				OR = {
-					has_idea = neutrality_idea 
-					has_idea = HOL_aloof_neutrality
-					original_tag = POR 
-					original_tag = IRE
-					original_tag = TUR
-					original_tag = YEM
-					original_tag = SAU
-					original_tag = AFG 
-				}
-			}
-		}
-
-		visible = { has_completed_focus = SWI_neutral_entente }
-
-		complete_effect = {
-			FROM = {
-				set_country_flag = SWI_entente_request_sent
-				country_event = { id = BBA_switzerland.19 hours = 2}
-			}
-			if = {
-				limit = {
-					ROOT = {
-						NOT = {	is_in_faction = yes	}
-					}
-				}
-				create_faction = SWI_neutral_entente_faction
-			}
-		}
-
-		ai_will_do = { #The ai should not get this decision, but if they somehow do, let them invite everyone ¯\_(ツ)_/¯
-			base = 120 
-		}
-	}
-
-
 	SWI_buy_ships_from_country = {
 		icon = GFX_decision_generic_naval
 		priority = 20

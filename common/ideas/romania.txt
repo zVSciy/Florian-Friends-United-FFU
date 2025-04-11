@@ -1,7 +1,254 @@
 ideas = {
 
+
 	country = {
-	
+			
+
+
+		ROM_specialized_development = {
+			picture = generic_artillery_regiments
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.075
+					soft_attack = 0.05
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.075
+					hard_attack = 0.05
+					ap_attack = 0.1
+					instant = yes
+				}
+			}
+		}
+
+		ROM_railway_bonus = {
+
+			picture = por_colonial_assimilation
+		
+			allowed = {
+				original_tag = ROM
+			}
+		
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				railway_gun_bombardment_factor = 0.10
+			}
+		}
+
+
+		ROM_one_size_fits_all_philosophy = {
+			picture = generic_artillery_regiments
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				dp_artillery_equipment = {
+					build_cost_ic = -0.1
+					soft_attack = 0.025
+					hard_attack = 0.025
+					ap_attack = 0.2
+					instant = yes
+				}
+			}
+		}
+
+
+
+
+		ROM_simplified_electronics = {
+			picture = USA_infantry_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				radio_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
+
+		ROM_standardized_kits = {
+			picture = USA_infantry_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
+
+
+		
+		ROM_switch_over_the_production = {
+
+			picture = GFX_ROM_economic_policy
+			allowed = {  original_tag = rom }
+
+			modifier = {
+			conversion_cost_civ_to_mill_factor = -0.75 
+			}
+
+
+		}
+
+
+		ROM_recruit_the_masses = {
+
+			picture = GFX_ROM_economic_policy
+			allowed = {  original_tag = rom }
+
+
+			modifier = {
+
+
+				
+			non_core_manpower = 0.1
+
+		}
+
+		}
+
+
+
+		ROM_elua_ce_este_al_nostru = {
+
+			picture = GFX_ROM_economic_policy
+			allowed = {  original_tag = rom }
+
+
+			modifier = {
+
+				army_speed_factor = 0.1
+				army_defence_factor = 0.05
+				dig_in_speed_factor = 0.1
+				offence = 0.05
+
+			}
+
+
+
+
+
+		}
+
+			
+
+
+		ROM_proclaim_the_victory_over_the_allies = {
+
+			picture = GFX_ROM_economic_policy
+				allowed = { original_tag = ROM }
+
+
+			modifier = {
+			industrial_capacity_factory = 0.1
+			production_factory_max_efficiency_factor = 0.05
+			power_balance_daily = 0.01
+			conversion_cost_civ_to_mil_factor = -0.25
+			}
+		}
+
+
+		ROM_maximise_ressource_usage = {
+
+			picture = GFX_ROM_economic_policy
+				allowed = { original_tag = ROM }
+
+
+
+			modifier = {
+
+				production_lack_of_resource_penalty_factor = -0.2
+
+			}
+		}
+
+			ROM_jump_start_the_industry = {
+				picture = GFX_ROM_economic_policy
+				allowed = { original_tag = ROM }
+				
+				modifier = {
+					production_factory_start_efficiency_factor = 0.3
+					production_factory_efficiency_gain_factor = 0.2
+					line_change_production_efficiency_factor = 0.2
+					
+
+
+
+
+				}
+
+
+			}
+
+		
+			ROM_minimise_civillian_expenses = {
+			picture = GFX_ROM_economic_policy
+			allowed = { original_tag = ROM }
+			
+		
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+
+		ROM_boost_civilian_construction = {
+			picture = HABSBURG_economy        # Image used in UI, optional
+		
+			allowed = {
+				original_tag = ROM            # Restricts modifier to Romania only
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05        # Reduces consumer goods factory usage by 5%
+				production_speed_buildings_factor = 0.05 # Boosts civilian industry construction speed by 5%
+				research_speed_factor = 0.05  # Improves research speed by 5%
+			}
+		}
+
 		ROM_resita75 = {
 
 			picture = generic_artillery_regiments
@@ -19,8 +266,58 @@ ideas = {
 					ap_attack = 0.1			
 				}
 			}
+		}
+
+		concentrate_the_industry = {
+
+		picture = gff
+
+		allowed = {
+	original_tag = ROM
+			}
+
+		modifier = {
+
+			industrial_capacity_factory = 0.075
+			industrial_capacity_dockyard =  0.075
+		}
+
+
 
 		}
+
+		ROM_Dismantle_the_military_industry = {
+			picture =  HABSBURG_economy 
+		
+			allowed = {
+			original_tag = ROM
+			}	
+
+			modifier = {
+				conversion_cost_mil_to_civ_factor = -0.75
+			}
+		}
+
+
+		
+			ROM_economic_reform = {
+			picture = GFX_ROM_economic_policy
+			allowed = { original_tag = ROM }
+			
+			removal_cost = -1
+			available = { has_dlc = "La Résistance" }  # Optional DLC check
+		
+			modifier = {
+				consumer_goods_factor = -0.01 # Reduces consumer goods by 1% passively
+			}
+		
+			weekly_changes = {
+				modifier = {
+					consumer_goods_factor = -0.002 # Additional 0.2% reduction per week
+				}
+			}
+		}
+		
 		ROM_romanian_investments = {			
 			
 			allowed = {
@@ -375,7 +672,6 @@ ideas = {
 			}			
 
 			modifier = {
-				army_morale_factor = 0.12
 				max_dig_in = 4
 				military_leader_cost_factor = -0.4
 				conscription = 0.03
@@ -786,6 +1082,8 @@ ideas = {
 				}
 			}
 		}
+	
+
 
 		ROM_white_squadron = {
 
@@ -822,6 +1120,7 @@ ideas = {
 			}
 		}
 	}
+}
 	
 	tank_manufacturer = { 
 		
@@ -1233,151 +1532,14 @@ ideas = {
 		}
 	}
 	
-	aircraft_manufacturer = { 		
-			
-		designer = yes
+	
+
+	
+
+	
+
 		
-		iar = {
-			
-			picture = generic_air_manufacturer_2
 
-			cost = 150
+		
 
-			allowed = {
-				original_tag = ROM
-				NOT = {
-					has_dlc = "Death or Dishonor"
-				}
-			}
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { light_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# produced the IAR-80 fighter/ground attack aircraft around 350 of them during 36-44
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = { aircraft_manufacturer_cost_factor = -1 }
-		}
-
-		ROM_iar = {
-			
-			picture = generic_air_manufacturer_2
-
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_invest_in_the_iar
-				}
-			}
-
-			cost = 50
-
-			allowed = {
-				original_tag = ROM
-				has_dlc = "Death or Dishonor"
-			}
-			
-			research_bonus = {
-				air_equipment = 0.05
-			}			
-			
-			equipment_bonus = {
-				# produced the IAR-80 fighter/ground attack aircraft around 350 of them during 36-44
-				small_plane_airframe = {
-					air_attack = 0.1
-				}
-				cv_small_plane_airframe = {
-					air_attack = 0.1
-				}
-				medium_plane_airframe = {
-					air_ground_attack = 0.1
-				}
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = { aircraft_manufacturer_cost_factor = -1 }
-		}
-
-		ROM_ICAR = {
-			
-			picture = generic_air_manufacturer_1
-
-			allowed = {
-				original_tag = ROM
-				has_dlc = "Death or Dishonor"
-			}
-			
-			research_bonus = {
-				air_equipment = 0.1
-			}			
-			
-			equipment_bonus = {
-				
-				small_plane_airframe = {
-					air_agility = 0.15
-				}
-				cv_small_plane_airframe = {
-					air_agility = 0.15
-				}
-				medium_plane_fighter_airframe = {
-					air_agility = 0.15
-				}
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = { aircraft_manufacturer_cost_factor = -1 }
-		}
-
-		ROM_SET = {
-			
-			picture = generic_air_manufacturer_2
-
-			allowed = {
-				original_tag = ROM
-				has_dlc = "Death or Dishonor"
-			}
-			
-			research_bonus = {
-				air_equipment = 0.1
-			}			
-			
-			equipment_bonus = {
-				
-				medium_plane_airframe = {
-					air_ground_attack = 0.1
-					build_cost_ic = -0.1
-				}
-				small_plane_naval_bomber_airframe = {
-					naval_strike_attack = 0.1
-					build_cost_ic = -0.1
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					naval_strike_attack = 0.1
-					build_cost_ic = -0.1
-				}
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = { aircraft_manufacturer_cost_factor = -1 }
-		}
 	}
-}

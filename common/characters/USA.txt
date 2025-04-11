@@ -733,8 +733,8 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
-			skill=4
+			traits={ old_guard_navy bold superior_tactician ironside }
+			skill=3
 			attack_skill=3
 			defense_skill=3
 			maneuvering_skill=1
@@ -1390,6 +1390,16 @@ characters={
 			}
 		}
 	}
+  #####                                                              
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
+ #        #    #  #  #       ##   #    #    #  #         #    #      
+  #####   #       #  #####   # #  #    #    #   ####     #     ####  
+       #  #       #  #       #  # #    #    #       #    #         # 
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
+  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+
+
+
 	USA_robert_oppenheimer = {
 		name = USA_robert_oppenheimer
 		portraits = {
@@ -1400,9 +1410,9 @@ characters={
 		}
 
 		scientist = {
-			traits = { scientist_trait_nuclear_specialist scientist_trait_brilliant_theorist }
+			traits = { scientist_trait_nuclear_warfare_expert scientist_trait_bright scientist_trait_brilliant_theorist }
 			skills = {
-				specialization_nuclear = 2
+				specialization_nuclear = 3
 			}
 		}
 

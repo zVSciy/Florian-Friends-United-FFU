@@ -522,6 +522,22 @@ guiTypes = {
 			frame = 1
 			scale = 0.95
 		}
+
+		buttonType = {
+			name = "aggressivness_btn_individual"
+			position = { x=453 y=7 }
+			spriteType = "GFX_aggressivness_btn"
+			clicksound = click_default
+			frame = 1
+		}
+
+		buttonType = {
+			name = "day_night_btn_individual"
+			position = { x=483 y=7 }
+			spriteType = "GFX_strategicair_day_night"
+			clicksound = click_default
+			frame = 1
+		}
 	}
 
 

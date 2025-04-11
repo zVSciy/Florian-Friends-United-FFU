@@ -160,6 +160,20 @@
   JAP_war_with_SOV:0 "Operation Kantokuen"
   JAP_war_with_SOV_desc:0 "Kantōgun Tokushu Enshū is a plan created by the General Staff of the Imperial Japanese Army for an invasion and occupation of the Russian Far East."
   JAP_secure_china:0 "[secure_china_name_sl]"
+  JAP_take_malaya:0 "Sakusen E"
+  JAP_take_sumatra:0 "Sakusen T"
+  JAP_take_java:0 "Sakusen J"
+  JAP_take_borneo:0 "Sakusen B"
+  JAP_take_philippines:0 "Sakusen M"
+  JAP_take_papua:0 "Sakusen SR"
+  JAP_take_wake:0 "WA Sakusen"
+  JAP_take_midway:0 "MI Sakusen"
+  JAP_plunder_territories:0 "Sakusen Sho-I"
+  JAP_plunder_territories2:0 "Sakusen Lustre"
+  JAP_plunder_territories3:0 "Sakusen Gomu"
+  JAP_plundered_everything:0 "Sakusen Seiryu"
+  JAP_successfully_took_wake:0 "Triumph Over Wake Island"
+  JAP_successfully_took_midway:0 "Triumph Over Midway Atoll"
 
   #### EVENTS ####
   japan.500.t:0 "Southern Strike: Siam"
@@ -332,6 +346,13 @@
   JAP_embargo_SOV:0 "Embargo the Comintern"
   JAP_allow_a_treaty_with_the_bandits:0 "Permit a treaty with the bandits"
   JAP_transfer_beijing_to_manchu:0 "Transfer Beijing to Manchukuo"
+  JAP_island_fortification:0 "Fortify Our Holdings"
+  JAP_fortify_philippines:0 "Fortify the Philippines"
+  JAP_fortify_malaya:0 "Fortify Singapore"
+  JAP_fortify_borneo:0 "Fortify Borneo"
+  JAP_fortify_sumatra:0 "Fortify Sumatra"
+  JAP_fortify_java:0 "Fortify Java"
+  JAP_island_fortification_ongoing:0 "Resources Diverted to Fortification Construction"
 
   #### FLAGS ####
   JAP_early_war:0 "Early War Japan"
@@ -365,10 +386,10 @@
   JAP_late_war_intel_tt:0 "We will recieve §Y20 Civilian, Army, Navy, and Air intel§! on all of the Allies\n§RExample:§!"
   JAP_late_war_collab_tt:0 "\nWe will recieve  §Y60% Collaboration§! in the Dutch East Indies, Malaya, and the Philippines when the war begins."
   JAP_late_war_destruction_tt:0 "§GAt the outbreak of the war our carefully planned sabotage and air strikes will cripple enemy defenses. Note that Attacks against the US and Philippines only occur if you go to war with them.§!"
-  oceanic_collaborators_tt:0 "§0+10% compliance in each occupied state in Malaya, Borneo, Sumatra, Java, Philippines, Sulawesi, and Papua for each VP occupied. (Singapore, Palembang, Batavia, Brunei, Balikpapan, Makassar, Manila, Port Moresby)§!"
+  oceanic_collaborators_tt:0 "§0+30% compliance in each occupied state in Malaya, Borneo, Sumatra, Java, Philippines, Sulawesi, and Papua for each VP occupied. (Singapore, Palembang, Batavia, Brunei, Balikpapan, Makassar, Manila, Port Moresby)§!"
   JAP_china_war_happening_cooldown_tt:0 "Current days are: [?JAP_china_war_happening_cooldown:days|Y0]"
   JAP_china_war_happening_cooldown:0 "Marco-Polo Happened"
-  JAP_urban_invasion_effect:0 "Enables §HUrban Inasions§!\n§HMarines:\n    Urban & Town§!\n      Attack: §G+10%§!"
+  JAP_urban_invasion_effect:0 "Enables §HUrban Invasions§!\n§HMarines:\n    Urban & Town§!\n      Attack: §G+10%§!"
 
   #### PARTIES ####
   JAP_fascism_party:0 "Kōdōha"

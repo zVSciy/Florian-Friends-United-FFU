@@ -34,7 +34,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Light M3 Stuart
@@ -72,7 +72,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 20
 		defense = 6
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# Light M5 Stuart
@@ -110,7 +110,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 30
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
 	# Light M24 Chaffee
@@ -152,7 +152,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 40
 		defense = 8
-		breakthrough = 50
+		breakthrough = 30
 	}
 
 	# Light M18 Hellcat
@@ -171,7 +171,7 @@ equipments = {
 					tank_armament_tier_medium_td_1
 					tank_armament_tier_medium_td_2
 					tank_armament_tier_medium_td_3
-					tank_armament_tier_assault
+					tank_armament_tier_assault_1
 				}
 			}
 			turret_type_slot = 	{		
@@ -202,7 +202,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 15
 		defense = 8
-		breakthrough = 45
+		breakthrough = 25
 	}
 
   # Medium Tanks
@@ -463,6 +463,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_heavy_turret_type_casemate
+					tank_heavy_turret_type_open_casemate
 				}
 			}
 			suspension_type_slot = inherit

@@ -156,6 +156,11 @@ recruit_character = SOV_arno_andreyev
 #recruit_character = SOV_sidor_kovpak
 #recruit_character = SOV_lev_dovator
 #recruit_character = SOV_pavel_rybalko
+recruit_character = SOV_abram_ioffe
+recruit_character = SOV_boris_stechkin
+recruit_character = SOV_arkady_nazarov
+recruit_character = SOV_vladimir_kotelnikov
+
 
 if = {
 	limit = {
@@ -1248,6 +1253,18 @@ set_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 }
 			basic_ship_hull_cruiser = 1
 		}
 	}
+}
+
+###STOCKPILE###
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 50000
+    producer = SOV	
+}
+add_equipment_to_stockpile = {
+    type = horse_equipment_0
+    amount = 10000
+    producer = SOV
 }
 
 

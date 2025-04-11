@@ -35,7 +35,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	# Tetrarch
@@ -71,7 +71,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 15
 		defense = 5
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# Harry Hopkins
@@ -109,7 +109,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 30
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
   # Medium Tanks
@@ -127,11 +127,11 @@ equipments = {
 				required = yes	
 				allowed_module_categories = {
 					tank_medium_turret_type_1
-					#tank_medium_turret_type_2
-					#tank_medium_turret_type_3
-					tank_medium_turret_type_open
-					tank_medium_turret_type_casemate
-					tank_medium_turret_type_open_superstructure
+					# tank_medium_turret_type_2
+ 					#tank_medium_turret_type_3
+ 					tank_medium_turret_type_open_p3_early
+ 					tank_medium_turret_type_casemate_p3_early
+ 					tank_medium_turret_type_open_superstructure_p3_early
 				}
 			}
 			suspension_type_slot = inherit
@@ -146,7 +146,7 @@ equipments = {
 			# tank_nsb_engine_upgrade
 		}
 		maximum_speed = 5.0
-		build_cost_ic = 16
+		build_cost_ic = 14
 		reliability = 0.85
 		armor_value = 30
 		defense = 5
@@ -185,7 +185,7 @@ equipments = {
 			# tank_nsb_engine_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 14
+		build_cost_ic = 13
 		reliability = 0.85
 		armor_value = 35
 		defense = 5
@@ -522,6 +522,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_heavy_turret_type_0
 					tank_medium_turret_type_casemate
+					tank_heavy_turret_type_open_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -557,6 +558,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_heavy_turret_type_0
 					tank_medium_turret_type_casemate
+					tank_heavy_turret_type_open_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -704,6 +706,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_heavy_turret_type_casemate
+					tank_heavy_turret_type_open_casemate
 				}
 			}
 			suspension_type_slot = inherit

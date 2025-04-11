@@ -363,6 +363,14 @@ focus_tree = {
 					resource = rubber
 					amount = 10
 				 }
+				show_mio_tooltip = ITA_caproni_organization
+				mio:ITA_caproni_organization = {
+					add_mio_size = 3
+				}
+				show_mio_tooltip = ITA_caproni_organization
+				mio:ITA_macchi_organization = {
+					add_mio_size = 5
+				}
 			}
 
 		}

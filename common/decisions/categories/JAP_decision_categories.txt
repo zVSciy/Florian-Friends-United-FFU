@@ -57,3 +57,14 @@ JAP_propaganda_campaigns = {
 	visible = {
 	}
 }
+
+JAP_island_fortification = {
+	allowed = {
+		original_tag = JAP
+	}
+	priority = 80
+
+	visible = {
+		always = yes
+	}
+}

@@ -32,7 +32,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 10
 		defense = 4
-		breakthrough = 15
+		breakthrough = 10
 	}
 
 	# BT5
@@ -134,7 +134,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 25
 		defense = 6
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	# T70
@@ -172,7 +172,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 35
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
 	# ZIS30
@@ -190,7 +190,7 @@ equipments = {
 					tank_armament_tier_medium_td_1
 					tank_armament_tier_medium_td_2
 					tank_armament_tier_medium_td_3
-					tank_armament_tier_assault
+					tank_armament_tier_assault_1
 					tank_armament_tier_aa
 				}
 			}
@@ -329,7 +329,7 @@ equipments = {
 			tank_nsb_med_armor_2_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 18
+		build_cost_ic = 22
 		reliability = 0.75
 		armor_value = 40
 		defense = 8
@@ -371,7 +371,7 @@ equipments = {
 			tank_nsb_med_armor_2_upgrade
 		}
 		maximum_speed = 6
-		build_cost_ic = 20
+		build_cost_ic = 24
 		reliability = 0.75
 		armor_value = 45
 		defense = 8

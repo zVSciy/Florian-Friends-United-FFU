@@ -15,7 +15,7 @@
 shared_focus = {
 	id = COM_commonwealth_command
 	icon = GFX_focus_eng_unite_the_anglosphere
-	x = 40
+	x = 47
 	y = 0
 	offset = {
 		x = -6
@@ -25,7 +25,7 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = -4
+		x = -10
 		y = 0
 		trigger = {
 			has_game_rule = {
@@ -43,7 +43,7 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = -3
+		x = -10
 		y = 0
 		trigger = {
 			has_game_rule = {
@@ -97,7 +97,7 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = -3
+		x = -10
 		y = 0
 		trigger = {
 			has_game_rule = {
@@ -108,8 +108,8 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 8
-		y = 0
+		x = -10
+		y = 1
 		trigger = {
 			tag = ENG
 		}

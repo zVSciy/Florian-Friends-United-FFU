@@ -47,9 +47,11 @@ equipments = {
 					ship_torpedo
 					ship_anti_air
 					ship_light_battery
+
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
+
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
@@ -64,9 +66,11 @@ equipments = {
 					ship_torpedo
 					ship_anti_air
 					ship_light_battery
+
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
+
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
@@ -130,7 +134,9 @@ equipments = {
 
 		fuel_consumption = 1.5
 		
+
 		build_cost_ic = 1850
+
 		resources = {
 			steel = 8
 		}
@@ -155,11 +161,13 @@ equipments = {
 		priority = 1900
 		parent = ship_hull_cruiser_1
 		manpower = 800
+
 		naval_speed = 24
 		reliability = 0.9
 		build_cost_ic = 1950
 		naval_range = 3000
 		max_strength = 235
+
 		module_slots = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
@@ -171,6 +179,7 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+
 					ship_depth_charge
 					ship_torpedo
 					ship_anti_air
@@ -181,6 +190,7 @@ equipments = {
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
+
 				}
 			}
 			
@@ -189,11 +199,14 @@ equipments = {
 				allowed_module_categories = {
 					ship_depth_charge
 					ship_torpedo
+					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
+
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
@@ -203,16 +216,19 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+
 					ship_depth_charge
 					ship_torpedo
 					ship_anti_air
 					ship_light_battery
+
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
+
 				}
 			}
 		}
@@ -234,10 +250,12 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1900
 		parent = ship_hull_cruiser_2
+
 		naval_speed = 25
 		build_cost_ic = 2050
 		reliability = 0.95
 		max_strength = 245
+
 		naval_range = 4000
 		manpower = 1200
 		module_slots = {
@@ -267,7 +285,6 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_torpedo
 					ship_anti_air
 					ship_light_battery
 					ship_medium_battery
@@ -276,9 +293,9 @@ equipments = {
 					ship_dp_secondaries
 					ship_airplane_launcher
 					torpedo_belt
+
 				}
 			}
-			mid_2_custom_slot = mid_1_custom_slot
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -292,6 +309,7 @@ equipments = {
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
+
 				}
 			}
 			rear_2_custom_slot = {
@@ -307,6 +325,7 @@ equipments = {
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
+
 				}
 			}
 		}
@@ -333,7 +352,9 @@ equipments = {
 		naval_speed = 26
 		reliability = 1
 		manpower = 1400
+
 		build_cost_ic = 2150
+
 		naval_range = 4500
 		max_strength = 255
 		module_slots = {
@@ -347,6 +368,7 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+
 					ship_depth_charge
 					ship_torpedo
 					ship_anti_air
@@ -357,6 +379,7 @@ equipments = {
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
+
 				}
 			}
 			
@@ -365,7 +388,11 @@ equipments = {
 				allowed_module_categories = {
 					ship_depth_charge
 					ship_torpedo
+
 					ship_anti_air
+					ship_torpedo
+					ship_airplane_launcher
+					ship_depth_charge
 					ship_light_battery
 					ship_medium_battery
 					ship_light_medium_battery
@@ -390,6 +417,7 @@ equipments = {
 					ship_airplane_launcher
 					ship_dp_secondaries
 					torpedo_belt
+
 				}
 			}
 			rear_2_custom_slot = rear_1_custom_slot
@@ -974,6 +1002,7 @@ equipments = {
 
 		
 		build_cost_ic = 1700
+
 		resources = {
 			steel = 3
 		}
@@ -983,6 +1012,7 @@ equipments = {
 
 	###special snowflake hulls
 	ship_hull_torpedo_cruiser = {
+		abbreviation = "hbe"
 		year = 1940
 		visual_level = 0
 		archetype = ship_hull_cruiser
@@ -1014,7 +1044,6 @@ equipments = {
 					torpedo_belt
 				}
 			}
-			
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -1058,7 +1087,6 @@ equipments = {
 				allowed_module_categories = {
 					ship_torpedo
 			
-				
 				}
 			}
 		}

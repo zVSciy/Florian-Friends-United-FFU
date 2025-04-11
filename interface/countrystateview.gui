@@ -358,19 +358,19 @@ guiTypes = {
 			instantTextboxType = {
 				name = "state_modifiers"
 				text = "STATE_MODIFIERS"
-				position = { x = 28 y= -168 }
+				position = { x = 28 y= -170 }
 				font = "hoi_16mbs"
 				maxWidth = 200
-				maxHeight = 30
+				maxHeight = 40
 				format = left
 			}
 			
 			gridBoxType = {
 				name = "dynamic_modifiers_grid"	
-				position = { x = -5 y = -109 }	
+				position = { x = -5 y = -140 }	
 				size = { width = 0 height = 0 }	
 				format = "LOWER_LEFT"	
-				slotsize = { width = 33 height = 33 }	
+				slotsize = { width = 28 height = 28 }	
 				max_slots_vertical = 1				
 			}
 			

@@ -442,7 +442,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader jungle_rat }
+			traits={ }
 			skill=3
 			attack_skill=2
 			defense_skill=4
@@ -648,41 +648,41 @@ characters={
 		}
 	}
 
-	ENG_henry_harwood={
-		name=ENG_henry_harwood
-		portraits={
-			navy={
-				small="GFX_idea_henry_harwood"
-			}
-			army={
-				large=GFX_portrait_ENG_henry_harwood
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy bold }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=984
-		}
-		advisor={
-			slot = high_command
-			idea_token = henry_harwood
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				navy_screen_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.700
-			}
-		}
-	}
+	# ENG_henry_harwood={
+	# 	name=ENG_henry_harwood
+	# 	portraits={
+	# 		navy={
+	# 			small="GFX_idea_henry_harwood"
+	# 		}
+	# 		army={
+	# 			large=GFX_portrait_ENG_henry_harwood
+	# 		}
+	# 	}
+	# 	navy_leader={
+	# 		traits={ old_guard_navy bold }
+	# 		skill=3
+	# 		attack_skill=3
+	# 		defense_skill=2
+	# 		maneuvering_skill=1
+	# 		coordination_skill=1
+	# 		legacy_id=984
+	# 	}
+	# 	advisor={
+	# 		slot = high_command
+	# 		idea_token = henry_harwood
+	# 		ledger = navy
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
+	# 		traits = {
+	# 			navy_screen_2
+	# 		}
+	# 		cost = 100
+	# 		ai_will_do = {
+	# 			factor = 0.700
+	# 		}
+	# 	}
+	# }
 
 	ENG_andrew_cunningham={
 		name=ENG_andrew_cunningham
@@ -1003,8 +1003,11 @@ characters={
 			allowed  = {
 				original_tag  = ENG
 			}
+			available = {
+				has_completed_focus = ENG_scaling_path
+			}
 			traits  = {
-				backroom_backstabber 
+				captain_of_industry 
 			}
 		}
 	}
@@ -1298,6 +1301,9 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			available = {
+				has_completed_focus = ENG_sfp_advisor
+			}
 			traits = {
 				army_infantry_2
 			}
@@ -1418,8 +1424,11 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
+			available = {
+				has_completed_focus = ENG_asw_guy
+			}
 			traits = {
-				navy_submarine_2
+				navy_screen_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1440,7 +1449,7 @@ characters={
 			idea_token = ENG_david_stirling
 			ledger = army
 			available = {
-				has_completed_focus = ENG_special_air_service
+				has_completed_focus = ENG_sf_advisor
 			}
 			allowed = {
 				original_tag = ENG
@@ -1640,7 +1649,7 @@ characters={
 		scientist = {
 			traits = { scientist_trait_nuclear_power_expert }
 			skills = {
-				specialization_nuclear = 2
+				specialization_nuclear = 1
 			}
 		}
 	}

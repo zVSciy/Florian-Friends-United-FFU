@@ -41,6 +41,8 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 0.5
+
+		defense = 0.5
 		
 		maximum_speed = 0
 		
@@ -707,9 +709,9 @@ sub_units = {
 		amphibious = {
 			attack = -0.4
 		}
-		hills = {
-		 	defence = 0.05
-		}
+		#hills = {
+		# 	defence = 0.05
+		#}
 	}
 	motorized = {
 		sprite = motorized

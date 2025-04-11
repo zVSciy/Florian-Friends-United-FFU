@@ -323,6 +323,72 @@ free_templates = {
 		}		
 	}
 
+	free_template_rangers = {
+
+		# icon = generic_naval
+
+		available = {
+			has_tech = special_forces_mountaineers
+			NOT = {
+				has_template = "11/8 Rangers"
+			}
+		}
+
+		fire_only_once = no
+		
+		visible = {
+			has_game_rule = {
+				rule = free_templates
+				option = ENABLED
+			}
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "11/8 Rangers"
+				is_locked = no
+				regiments = {
+					jaeger = { x = 0 y = 0 }
+					jaeger = { x = 0 y = 1 }
+					jaeger = { x = 0 y = 2 }
+					jaeger = { x = 0 y = 3 }
+			
+					jaeger = { x = 1 y = 0 }
+					jaeger = { x = 1 y = 1 }
+					jaeger = { x = 1 y = 2 }
+					jaeger = { x = 1 y = 3 }
+			
+					jaeger = { x = 2 y = 0 }
+					jaeger = { x = 2 y = 1 }
+					jaeger = { x = 2 y = 2 }
+			
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
+					
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
+					
+			
+				}
+				support = {
+					pioneer_support = { x = 0 y = 0 }   
+					anti_air = { x = 0 y = 1 }
+					hq_company = { x = 0 y = 2 }
+					rangers_support = { x = 0 y = 3 }
+					logistics_company = { x = 1 y = 0 }
+					maintenance_company = { x = 1 y = 1 }
+					signal_company = { x = 1 y = 2 }
+					military_police = { x = 1 y = 3 }
+				}
+			}
+		}		
+	}
+
+
 	free_template_paratroopers = {
 
 		# icon = generic_naval

@@ -332,10 +332,9 @@ coastal_defence_battery = {
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 0.25
-	cas_damage_reduction = 0.25
 	dig_in_speed_factor = 0.5
-	max_dig_in_factor = 0.25
+	max_dig_in_factor = 0.5
+	cas_damage_reduction = 0.25
 }
 
 island_defences = {
@@ -528,6 +527,17 @@ unplanned_offensive = {
 	army_speed_factor = -0.75
 	ground_attack_factor = -0.75
 	local_org_regain = -0.5
+}
+
+unplanned_offensive2 = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.90
+	army_attack_factor = -0.95
+	army_speed_factor = -0.90
+	ground_attack_factor = -0.90
+	local_org_regain = -0.90
 }
 
 ROM_unintegrated_territory = {

@@ -2010,15 +2010,10 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			add_state_core = 459
-			add_state_core = 460
-			add_state_core = 513
-			# if = {
-			# 	limit = {
-			# 		country_exists = ALG
-			# 	}
-			# 	annex_country = { target = ALG }
-			# }
+			add_state_core = 773
+			add_state_core = 660
+			add_state_core = 772
+			add_state_core = 539
 			FRA_right_wing_riot_effect = yes
 			add_stability = 0.08
 		}

@@ -1272,12 +1272,12 @@ COM_propaganda_campaigns = {
 					original_tag = RAJ
 				}
 				OR = {
-					surrender_progress > 0.18
+					surrender_progress > 0.20
 				}
 			}
 		}
 
-		days_remove = 365
+		days_remove = 120
 
 		days_re_enable = 360
 

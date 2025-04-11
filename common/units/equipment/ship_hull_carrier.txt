@@ -314,8 +314,10 @@ equipments = {
 
 		fuel_consumption = 95		
 		resources = {
+
 			steel = 8
 			chromium = 5
+
 		}
 		manpower = 6000
 	}
@@ -385,8 +387,10 @@ equipments = {
 
 		build_cost_ic = 6600
 		resources = {
+
 			steel = 7
 			chromium = 5
+
 		}
 		manpower = 6000
 	}
@@ -429,8 +433,10 @@ equipments = {
 
 		build_cost_ic = 5000
 		resources = {
+
 			steel = 7
 			chromium = 3
+
 		}
 		manpower = 5000
 	}

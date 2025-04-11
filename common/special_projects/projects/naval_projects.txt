@@ -32,7 +32,7 @@ sp_naval_cruiser_submarine = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_tech = early_ship_hull_submarine
+				has_tech = improved_ship_hull_submarine
 			}
 			else = {
 				has_tech = early_submarine
@@ -1647,7 +1647,9 @@ sp_naval_torpedo_cruiser = {
 	}
 
 	allowed = {
-		#FREE
+		FROM = {
+			has_tech = advanced_ship_hull_cruiser
+		}
 	}
 	available = {
 		FROM = {
@@ -2200,11 +2202,11 @@ sp_naval_modern_battleship = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_tech = advanced_ship_hull_heavy
+				has_tech = improved_ship_hull_heavy
 
 			}
 			else = {
-				has_tech = advanced_battleship
+				has_tech = improved_ship_hull_heavy
 			}
 		}
 	}
@@ -3078,13 +3080,6 @@ sp_naval_underway_replenishment = {
 	}
 
 	available = {
-		FROM = {
-			OR = {
-				has_tech = base_strike
-				has_tech = fleet_in_being
-			}
-		}
-
 	}
 
 	resource_cost = {
@@ -3094,7 +3089,7 @@ sp_naval_underway_replenishment = {
 	}
 
 	breakthrough_cost = {
-		specialization_naval = 2
+		specialization_naval = 1
 	}
 
 	complexity = sp_complexity.large
@@ -3216,7 +3211,7 @@ sp_naval_proximity_fuze = {
 
 	available = {
 		FROM = {
-			has_tech = hq_radio1
+			has_tech = antiair_research1
 		}
 	}
 
@@ -3232,7 +3227,7 @@ sp_naval_proximity_fuze = {
 	prototype_time = sp_time.prototype.long
 
 	breakthrough_cost = {
-		specialization_naval = 2
+		specialization_naval = 1
 	}
 
 	project_output = {

@@ -1,0 +1,65 @@
+music = {
+	name = "0-speech"
+	file = "barbger.ogg"
+	volume = 1.25
+}
+music = {
+	name = "1-speech"
+	file = "liberation_of_warsaw.ogg"
+	volume = 1
+}
+music = {
+	name = "2-speech"
+	file = "danzig.ogg"
+	volume = 1
+}
+music = {
+	name = "3-speech"
+	file = "focus_on_ger.ogg"
+	volume = 1
+}
+music = {
+	name = "4-speech"
+	file = "sov_winter_off.ogg"
+	volume = 1
+}
+music = {
+	name = "5-speech"
+	file = "sp_blood_toil_tears_sweat.ogg"
+	volume = 1
+}
+music = {
+	name = "6-speech"
+	file = "sp_dday_cooked.ogg"
+	volume = 1
+}
+music = {
+	name = "7-speech"
+	file = "sp_eng_fight_them_cooked.ogg"
+	volume = 1
+}
+music = {
+	name = "8-speech"
+	file = "sp_jap_sov.ogg"
+	volume = 1
+}
+music = {
+	name = "9-speech"
+	file = "totalenkrieg.ogg"
+	volume = 1
+}
+music = {
+	name = "10-speech"
+	file = "sp_ger_volk.ogg"
+	volume = 1
+}
+music = {
+	name = "11-speech"
+	file = "white_noise.ogg"
+	volume = 0
+}
+music = {
+	name = "12-speech"
+	file = "white_noise1.ogg"
+	volume = 0
+}
