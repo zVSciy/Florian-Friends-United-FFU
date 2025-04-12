@@ -3376,6 +3376,7 @@ focus_tree = {
 					type = land_facility
 					level = 1
 					instant_build = yes
+					province = 11833
 				}
 			}
 			159 = {
@@ -3383,6 +3384,7 @@ focus_tree = {
 					type = air_facility
 					level = 1
 					instant_build = yes
+					province = 11568
 				}
 			}
 			unlock_decision_tooltip = form_roman_empire
