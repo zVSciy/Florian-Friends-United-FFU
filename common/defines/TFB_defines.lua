@@ -584,8 +584,8 @@ NNavy = {
 	COMBAT_TORPEDO_CRITICAL_CHANCE = 0.12,							-- chance for critical hit from torpedo.
 	COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 2.0,						-- multiplier to damage when got critical hit from torpedo. (Critical hits are devastating as usualy torpedo_attack are pretty high base values).
 	
-	COMBAT_DAMAGE_TO_STR_FACTOR = 0.34,								-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
-	COMBAT_DAMAGE_TO_ORG_FACTOR = 0.25,							-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+	COMBAT_DAMAGE_TO_STR_FACTOR = 0.20,								-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+	COMBAT_DAMAGE_TO_ORG_FACTOR = 0.15,							-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 	
 	NAVY_MAX_XP = 100,
 	COMBAT_ON_THE_WAY_INIT_DISTANCE_BALANCE = 0.25, 					-- Value to balance initial distance to arrive for ships that are "on the way"	
