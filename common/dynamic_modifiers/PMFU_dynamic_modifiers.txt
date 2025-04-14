@@ -819,3 +819,55 @@ ROM_occupation_dynamic_modifier = {
 
 
 }
+
+
+
+SPR_army_dynamic_modifier = {
+ enable = {
+	always = yes
+ }
+
+
+}
+
+
+SPR_political_dynamic_modifier = {
+enable = {
+
+always = yes
+
+}
+
+
+}
+
+
+
+SPR_economic_dynamic_modifier = {
+
+enable = {
+
+	always = yes
+}
+
+	icon = GFX_idea_romanian_army_icon_idea
+
+
+production_speed_industrial_complex_factor = SPR_economy_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor =  SPR_economy_production_speed_arms_factory_factor
+	political_power_gain =  SPR_economy_political_power_gain
+	production_speed_bunker_factor =  SPR_economy_production_speed_bunker_factor
+	line_change_production_efficiency_factor =  SPR_economy_equipment_line_change_production_efficiency_factor
+	production_factory_efficiency_gain_factor =  SPR_economy_production_factory_efficiency_gain_factor
+	global_building_slots_factor =  SPR_economy_global_building_slots_factor
+	production_speed_synthetic_refinery_factor =  SPR_economy_production_speed_synthetic_refinery_factor
+	production_factory_start_efficiency_factor =  SPR_economy_production_factory_start_efficiency_factor
+	conscription =  SPR_economy_conscription
+	consumer_goods_factor =  SPR_economy_consumer_goods_factor
+	industrial_capacity_factory =  SPR_economy_industrial_capacity_factory
+	local_resources_factor =  SPR_economy_local_resources_factor
+	production_speed_buildings_factor =  SPR_economy_production_speed_buildings_factor
+	production_factory_max_efficiency_factor = SPR_economy_production_factory_max_efficiency_factor
+	production_speed_building_factor = SPR_economy_production_speed_buildings_factor
+
+}

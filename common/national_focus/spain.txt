@@ -125,8 +125,13 @@ focus = {
 	available_if_capitulated = yes
 	search_filters = {FOCUS_FILTER_SPR_CIVIL_WAR}
 	completion_reward = {
-		army_experience = 10
-		custom_effect_tooltip = SPR_the_army_of_africa_tt
+		add_state_claim = 461
+		add_state_claim = 462
+		add_state_claim = 459
+		add_state_claim = 513
+		add_state_claim = 460
+		add_state_claim = 118
+		
 	}
 }
 
@@ -148,7 +153,8 @@ focus = {
 	available_if_capitulated = yes
 	search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPR_CIVIL_WAR}
 	completion_reward = {
-		custom_effect_tooltip = SPR_con_paquito_tt
+		add_stability = 0.1
+		add_war_support = 0.1
 	}
 }
 
@@ -170,7 +176,11 @@ focus = {
 	available_if_capitulated = yes
 	search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPR_CIVIL_WAR}
 	completion_reward = {
-		custom_effect_tooltip = SPR_con_paquito_tt
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+		
 	}
 }
 
@@ -987,12 +997,12 @@ focus = {
 	available_if_capitulated = yes
 	search_filters = {FOCUS_FILTER_MANPOWER}
 	completion_reward = {
-		set_party_name = { ideology = fascism long_name = SPR_fascism_SPRncoist_party_long name = SPR_fascism_SPRncoist_party }
-		set_party_name = { ideology = neutrality long_name = SPR_fascism_SPRncoist_party_long name = SPR_fascism_SPRncoist_party }
-		swap_ideas = {
-			remove_idea = SPR_carlism_2
-			add_idea = SPR_carlism_5
-		}
+		
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+		
 	}
 }
 
@@ -1710,12 +1720,75 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SPR_national_industry_01
-				add_idea = SPR_national_industry_011
+			
+				
+					custom_effect_tooltip = SPA_facilitate_pyrenees_freight_transports_tt
+					hidden_effect = {
+						793 = {
+							set_building_level = {
+								type = infrastructure
+								level = 10
+								instant_build = yes
+							}
+						}
+						794 = {
+							set_building_level = {
+								type = infrastructure
+								level = 10
+								instant_build = yes
+							}
+						}
+						165 = {
+							set_building_level = {
+								type = infrastructure
+								level = 10
+								instant_build = yes
+							}
+						}
+						176 = {
+							set_building_level = {
+								type = infrastructure
+								level = 10
+								instant_build = yes
+							}
+						}
+						792 = {
+							set_building_level = {
+								type = infrastructure
+								level = 10
+								instant_build = yes
+							}
+						}
+						41 = {
+							set_building_level = {
+								type = infrastructure
+								level = 10
+								instant_build = yes
+							}
+						}
+					}
+					build_railway = { #Madrid - Zaragoza - Pyrinnes
+						level = 3
+						path = {
+							3938 9767 6993 9785 11766 813 3816 9813 11821 915
+						}
+					}
+					build_railway = { #Zaragoza - Barcelona - French Border
+						level = 3
+						path = {
+							3816 3954 13223 6966 6812 9764 854 9824 
+						}
+					}
+					build_railway = { #Madrid - Valladolid - Burgos - Bilbao - French Border
+						level = 3
+						path = {
+							3938 3794 9800 9846 11825 6936 903 885 11852 13233 740 6756
+						}
+					}
+				}
 			}
-		}
-	}
+		
+	
 
 	focus = {
 		id = SPR_trust_in_ricardo
@@ -1780,12 +1853,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_political_power = 100
-			swap_ideas = {
-				remove_idea = SPR_national_industry_011
-				add_idea = SPR_national_industry_02
+			SPR_economic_dynamic_modifier_tt = yes
+			add_to_variable = {SPR_economy_production_speed_buildings_factor = 0.2 tooltip = production_speed_buildings_factor_tt }
 			}
 		}
-	}
+	
 
 	focus = {
 		id = SPR_specialisation_on_construction
@@ -1802,7 +1874,8 @@ focus = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1
+			add_to_variable = {SPR_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			
 		}
 	}
 
@@ -1957,12 +2030,31 @@ focus = {
 					instant_build = yes
 				}
 			}
-			swap_ideas = {
-				remove_idea = SPR_national_industry_02
-				add_idea = SPR_national_industry_03
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			SPR_economic_dynamic_modifier_tt = yes
+			add_to_variable = { SPR_production_speed_industrial_complex_factor = 0.2 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SPR_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+			
+		
 			}
 		}
-	}
+	
 
 	focus = {
 		id = SPR_develop_the_industrial_giants
@@ -1980,9 +2072,36 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SPR_national_industry_03
-				add_idea = SPR_national_industry_04
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -2137,16 +2256,37 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			every_owned_state = {
+			random_owned_state = {
 				limit = {
-					is_core_of = SPR
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = inSPRstructure
-					level = 1
+					type = industrial_complex
+					level = 3
 					instant_build = yes
 				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			
 			}
 		}
 	}

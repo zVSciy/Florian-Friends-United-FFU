@@ -1336,5 +1336,23 @@ ideas = {
 				}
 			}
 		}
+
+		SPA_missing_caudillo = { 
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+modifier = {
+			stability_weekly = -0.02
+			army_leader_cost_factor = 0.25
+			political_power_cost = 0.15
+			research_speed_factor = -0.10
+}
+
+		}
 	}
 }
