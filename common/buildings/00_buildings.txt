@@ -217,8 +217,8 @@ buildings = {
 		icon_frame = 4
 		only_costal = yes
 		level_cap = {
-			shares_slots = yes
-			state_max = 99
+			shares_slots = no
+			state_max = 30
 		}
 		value = 5
 		infrastructure_construction_effect = yes
