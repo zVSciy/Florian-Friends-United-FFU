@@ -255,8 +255,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			cruiser_ship_engine_2
-			ship_armor_bb_2
-			ship_armor_bc_2
 			ship_armor_cruiser_3
 		}
 
@@ -303,8 +301,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			cruiser_ship_engine_3
-			ship_armor_bb_3
-			ship_armor_bc_3
 			ship_armor_cruiser_4
 		}
 		path = {
@@ -456,6 +452,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			heavy_ship_engine_2
+			ship_armor_bb_2
+			ship_armor_bc_2
 		}
 		path = {
 			leads_to_tech = improved_ship_hull_heavy
@@ -542,6 +540,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			heavy_ship_engine_3
+			ship_armor_bb_3
+			ship_armor_bc_3
 		}
 		path = {
 			leads_to_tech = advanced_ship_hull_heavy
