@@ -187,7 +187,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			remove_ideas = SAF_history_of_segregation_2
+			remove_ideas = SAF_history_of_segregation
 		}
 	}
 
