@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 3f38b41 (florian bricked the mod funny)
 ██████╗  █████╗ ██████╗ ███████╗     ███╗   ███╗ ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗     ██╗    ██╗ █████╗ ██╗    ██╗ █████╗ ██╗    ██╗ █████╗ 
 =======
 ██████╗  █████╗ ██████╗ ███████╗    ███╗   ███╗ ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗     ██╗    ██╗ █████╗ ██╗    ██╗ █████╗ ██╗    ██╗ █████╗ 
@@ -11,12 +14,15 @@
 ╚██████╔╝██║  ██║██║     ███████║    ██║ ╚═╝ ██║╚██████╔╝██████╔╝██████╔╝██║██║ ╚████║╚██████╔╝    ╚███╔███╔╝██║  ██║╚███╔███╔╝██║  ██║╚███╔███╔╝██║  ██║
  ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚══════╝    ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝      ╚══╝╚══╝ ╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝
                                                                                                                                                          
+<<<<<<< HEAD
 =======
 
 >>>>>>> parent of aa05c00 (Combat Rework)
 =======
 
 >>>>>>> parent of aa05c00 (Combat Rework)
+=======
+>>>>>>> parent of 3f38b41 (florian bricked the mod funny)
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 120				-- Days of client lag for decrease of gamespeed
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60				-- Days of client lag for pause of gamespeed.
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.11, 0.27, 0.07, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
