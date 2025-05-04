@@ -882,7 +882,7 @@ focus_tree = {
         completion_reward = {
             add_timed_idea = {
 				idea = ENG_civ_boost
-				days = 730
+				days = 545
 			}
         }
     }
