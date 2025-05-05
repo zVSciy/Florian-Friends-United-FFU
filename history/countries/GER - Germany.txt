@@ -111,6 +111,7 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
+	add_ideas = MTG_naval_treaty_adherent
 	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
