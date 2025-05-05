@@ -3547,16 +3547,14 @@ generic_task_force_ship_organization = {
 			production_capacity_factor = 0.1
 		}
 		equipment_bonus = {
+			carrier_size = 2
+			hg_attack = 0.05
+			hg_armor_piercing = 0.1
+			anti_air_attack = 0.2
 			max_strength = 0.15
 			naval_range = 0.1
 			armor_value = 0.1
 			fuel_consumption = -0.15
-			anti_air_attack = 0.2
-			naval_light_gun_hit_chance_factor = 0.05
-			lg_attack = 0.1
-			hg_attack = 0.05
-			hg_armor_piercing = 0.1
-			carrier_size = 2
 		}
 	}
 }
@@ -3600,15 +3598,15 @@ generic_battle_line_ship_organization = {
 			production_capacity_factor = 0.15
 		}
 		equipment_bonus = {
+			lg_attack = 0.2
+			naval_light_gun_hit_chance_factor = 0.05
+			hg_attack = 0.15
+			hg_armor_piercing = 0.1
 			armor_value = 0.35
 			max_strength = 0.15
 			naval_speed = 0.05
 			build_cost_ic = 0.08
 			anti_air_attack = 0.15
-			lg_attack = 0.2
-			naval_light_gun_hit_chance_factor = 0.05
-			hg_attack = 0.15
-			hg_armor_piercing = 0.1
 		}
 	}
 }
@@ -3649,8 +3647,8 @@ generic_escort_ship_organization = {
 			production_capacity_factor = 0.1
 		}
 		equipment_bonus = {
-			sub_detection = 0.2
-			sub_attack = 0.2
+			sub_detection = 0.3
+			sub_attack = 0.3
 			naval_speed = 0.05
 			surface_visibility = -0.05
 			anti_air_attack = 0.55
@@ -3705,13 +3703,13 @@ generic_raider_ship_organization = {
 			production_resource_need_factor = 0.1
 		}
 		equipment_bonus = {
+			lg_attack = 0.05
+			torpedo_attack = 0.15
+			hg_attack = 0.05
 			surface_visibility = -0.1
 			naval_range = 0.35
 			naval_speed = 0.05
 			fuel_consumption = -0.1
-			lg_attack = 0.15
-			torpedo_attack = 0.2
-			hg_attack = 0.05
 			surface_detection = 0.15
 			sub_visibility = -0.05
 		}
