@@ -111,7 +111,7 @@ equipments = {
  			main_armament_slot = secondary_turret_hmg_mech
  			turret_type_slot = tank_module_troop_carrier
  			suspension_type_slot = tank_wheeled_suspension_mech
- 			armor_type_slot = tank_riveted_armor
+ 			armor_type_slot = mech_riveted_armor
  			engine_type_slot = tank_gasoline_engine
  		}
  		

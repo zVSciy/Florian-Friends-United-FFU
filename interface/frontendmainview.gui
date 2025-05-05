@@ -280,10 +280,15 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=0 y =0}
-		size = { width = 320 height = 435 }
+		size = { width = 320 height = 450 }
 		Orientation = CENTER
 		Origo = center		
 
+		positionType = {
+			name = "subscription_size"
+			position = { x = 320 y = 575 }
+		}
+				
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
@@ -319,7 +324,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 396 }
+			position = { x = 35 y = 411 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -329,6 +334,12 @@ guiTypes = {
 			maxHeight = 20	
 		}
 
+		positionType = {
+			name = "version_label_subscription_position"
+			position = { x = 35 y = 539 }
+		}
+		
+		
 		ButtonType = {
 			name = "settings_button"
 			position = { x = 16 y = 98 }
@@ -397,6 +408,42 @@ guiTypes = {
 			
 		}
 
+		iconType = {
+			name = "subscription_divider"
+			position = { x = 4 y = 336 }
+			spriteType = "GFX_main_lobby_divider"
+		}
+
+		containerWindowType = {
+			name = "subscription_widget"
+			position = { x = 16 y = 352 }
+			size = { width = 288 height = 108 }
+
+			ButtonType = {
+				name = "show_subscription"
+				position = { x = 0 y = 0 }
+				quadTextureSprite ="GFX_subscription_widget"
+				buttonText = "SUBSCRIPTION_WIDGET"
+				buttonFont = "hoi_24header"
+				multiline = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "subscription_widget_subscribed"
+			position = { x = 16 y = 352 }
+			size = { width = 288 height = 108 }
+
+			ButtonType = {
+				name = "show_subscription"
+				position = { x = 0 y = 0 }
+				quadTextureSprite ="GFX_subscription_widget_active"
+				frame = 1
+				buttonText = "SUBSCRIPTION_WIDGET_SUBSCRIBED"
+				buttonFont = "hoi_24header"
+				multiline = yes
+			}
+		}
 	}
 	
 	containerWindowType = {
@@ -411,6 +458,16 @@ guiTypes = {
 			position = { x = 0 y = 175 }
 		}
 
+		positionType = {
+			name = "subscription_position"
+			position = { x = -50 y = 109 }
+		}
+
+		positionType = {
+			name = "subscription_position_without_social_gui"
+			position = { x = 0 y = 239 }
+		}
+		
 		containerWindowType = {
 			name = "social_view_interface_window"
 			position = { x = 250 y = 0  }
@@ -455,77 +512,93 @@ guiTypes = {
 				pdx_tooltip = "SOCIAL_NEW_FRIEND"
 			}
 		}
-		
-		ButtonType = {
-			name = "homepage_button"
-			position = { x=-24 y=0 }
-			quadTextureSprite ="homepage"
-			clicksound = click_default
-			pdx_tooltip = "MENU_HOMEPAGE"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "forum_button"
-			position = { x=12 y=0 }
-			quadTextureSprite ="forum"
-			clicksound = click_default
-			pdx_tooltip = "MENU_FORUM"
-			web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "facebook_button"
-			position = { x=48 y=0 }
-			quadTextureSprite ="facebook"
-			clicksound = click_default
-			pdx_tooltip = "MENU_FACEBOOK"
-			web_link = "https://www.facebook.com/Heartsofiron"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "twitter_button"
-			position = { x=84 y=0 }
-			quadTextureSprite ="twitter"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://twitter.com/hoi_game"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "instagram_button"
-			position = { x=120 y=0 }
-			quadTextureSprite ="instagram"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_INSTAGRAM"
-			web_link = "https://www.instagram.com/hearts_of_iron_pdx"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "discord_button"
-			position = { x=156 y=0 }
-			quadTextureSprite ="discord"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_DISCORD"
-			web_link = "https://discord.gg/hoi4"
-			scale = 0.9
-		}
+        containerWindowType = {
+            name = "first_row"
+			position = { x=48 y=-17 }
+            ButtonType = {
+                name = "homepage_button"
+                position = { x=0 y=0 }
+                quadTextureSprite ="homepage"
+                clicksound = click_default
+                pdx_tooltip = "MENU_HOMEPAGE"
+                scale = 0.9
+            }
+            ButtonType = {
+                name = "forum_button"
+                position = { x=36 y=0 }
+                quadTextureSprite ="forum"
+                clicksound = click_default
+                pdx_tooltip = "MENU_FORUM"
+                web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
+                scale = 0.9
+            }
+            ButtonType = {
+                name = "discord_button"
+                position = { x=72 y=0 }
+                quadTextureSprite ="discord"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_DISCORD"
+                web_link = "https://discord.gg/hoi4"
+                scale = 0.9
+            }
+            ButtonType = {
+                name = "privacy_policy_button"
+                position = { x=108 y=0 }
+                quadTextureSprite ="privacy"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_PRIVACY_POLICY"
+                scale = 0.9
+            }
+        }
+        containerWindowType = {
+            name = "second_row"
+			position = { x=30 y=19 }
+            ButtonType = {
+                name = "bluesky_button"
+                position = { x=0 y=0 }
+                quadTextureSprite ="bluesky"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_BLUESKY"
+                web_link = "https://bsky.app/profile/hoi.paradoxinteractive.com"
+                scale = 0.9
+            }
+            ButtonType = {
+                name = "twitter_button"
+                position = { x=36 y=0 }
+                quadTextureSprite ="x"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_X"
+                web_link = "https://x.com/hoi_game"
+                scale = 0.9
+            }
+            ButtonType = {
+                name = "facebook_button"
+                position = { x=72 y=0 }
+                quadTextureSprite ="facebook"
+                clicksound = click_default
+                pdx_tooltip = "MENU_FACEBOOK"
+                web_link = "https://www.facebook.com/Heartsofiron"
+                scale = 0.9
+            }
+            ButtonType = {
+                name = "instagram_button"
+                position = { x=108 y=0 }
+                quadTextureSprite ="instagram"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_INSTAGRAM"
+                web_link = "https://www.instagram.com/hearts_of_iron_pdx"
+                scale = 0.9
+            }
 
-		ButtonType = {
-			name = "youtube_button"
-			position = { x=192 y=0 }
-			quadTextureSprite ="youtube"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_YOUTUBE"
-			web_link = "https://www.youtube.com/@HeartsOfIronOfficial"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "privacy_policy_button"
-			position = { x=228 y=0 } 
-			quadTextureSprite ="privacy"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_PRIVACY_POLICY"
-			scale = 0.9
+            ButtonType = {
+                name = "youtube_button"
+                position = { x=144 y=0 }
+                quadTextureSprite ="youtube"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_YOUTUBE"
+                web_link = "https://www.youtube.com/@HeartsOfIronOfficial"
+                scale = 0.9
+            }
 		}
 	}
 

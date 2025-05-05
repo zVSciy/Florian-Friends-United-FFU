@@ -843,6 +843,9 @@ focus_tree = {
         completion_reward = {
 			custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = ENG_nevile_henderson
+			custom_effect_tooltip = {
+				localization_key = ENG_left_side_tt
+			}
         }
     }
     focus = {
@@ -879,7 +882,7 @@ focus_tree = {
         completion_reward = {
             add_timed_idea = {
 				idea = ENG_civ_boost
-				days = 730
+				days = 545
 			}
         }
     }

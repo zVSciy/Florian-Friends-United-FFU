@@ -1076,9 +1076,9 @@ NNavy = {
 	NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1,
 	NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 3,                         -- how much score factor from low health (scales between 0->this number)
 	NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 40,                           -- how much score factor from low AA guns (scales between 0->this number)
+  NAVAL_TRANSFER_BASE_SPEED = 12 -- unit speed on water :) -> vanilla 6
+  MISSION_MAX_REGIONS = 0             --vanilla 0 | Limit of the regions that can be assigned to naval mission. Set to 0 for unlimited.
 }
-
-
 
 NDefines.NRailwayGun.ANNEX_RATIO = 1				-- How many railway guns will be transferred on annexation
 
