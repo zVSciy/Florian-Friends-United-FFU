@@ -1688,6 +1688,10 @@ fifty_cas_dmg_reduction:0 "From focus"
 
  bloated_game_mode:0 "Bloated Game Mode"
 
+ EQ_MOD_CAT_torpedo_belt_TITLE:0 "Heavy Torpedo Belt"
+ ship_heavy_torpedo_bulges:0"Heavy Torpedo Bulges"
+ ship_heavy_torpedo_bulges_short:0"Heavy Torpedo Bulges"
+ ship_heavy_torpedo_bulges_desc:"An enlarged armored bulge fitted along the hull to absorb the impact of torpedoes and underwater explosions."
 
  torpedoMAX:0 "Torpedo Destroyer"
  aaMAX:0 "AA Destroyer"
