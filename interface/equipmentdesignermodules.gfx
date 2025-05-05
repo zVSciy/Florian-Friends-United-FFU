@@ -197,7 +197,10 @@ spriteTypes = {
 ###################################################
 # Cruiser
 ###################################################
-
+	spriteType = {
+		name = "GFX_SMI_torpedo_belt"
+		textureFile = "gfx/interface/technologies/bulge.dds"
+	}
 	spriteType = {
 		name = "GFX_SM_cruiser_hull_fixed_anti_air"
 		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/cruiser_hull/cruiser_hull_fixed_anti_air.dds"

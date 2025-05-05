@@ -456,9 +456,6 @@ country_event = {
 				remove_ideas = SPR_political_violence
 				remove_ideas = SPR_national_strikes_3
 			}
-			ITA = {
-				boot_naval_treaty_f = yes
-			}
 		}
 		custom_effect_tooltip = nationalists_chosen
 		SPR = { add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = SPR } }

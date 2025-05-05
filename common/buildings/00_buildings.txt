@@ -211,14 +211,14 @@ buildings = {
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
-		base_cost = 5500
+		base_cost = 3000
 		#only_costal = yes
 		naval_production = 1
 		icon_frame = 4
 		only_costal = yes
 		level_cap = {
-			shares_slots = yes
-			state_max = 99
+			shares_slots = no
+			state_max = 30
 		}
 		value = 5
 		infrastructure_construction_effect = yes
