@@ -1459,6 +1459,7 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			add_research_slot = 1
 			JAP = {
 				MAN = {
 					pow_before_annex = yes

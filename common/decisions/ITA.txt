@@ -882,12 +882,7 @@ ITA_propaganda_campaigns = {
 
 		available = {
 			ITA_propaganda_poster_slot_available = yes
-			NOT = {
-				any_state = {
-					is_controlled_by = ITA
-					is_on_continent = africa
-				}
-			}
+			surrender_progress > 0.15
 		}
 
 		days_remove = 365
