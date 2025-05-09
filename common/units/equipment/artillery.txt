@@ -646,7 +646,7 @@ equipments = {
 
 		interface_category = interface_category_land
 
-		max_military_factories = 5
+		max_military_factories = 10
 
 		#Misc Abilities
 		reliability = 0.7
@@ -663,7 +663,7 @@ equipments = {
 		ap_attack = 7
 		air_attack = 0
 
-		fuel_consumption = 0.25
+		#fuel_consumption = 0.25
 
 		additional_collateral_damage = 350
 
@@ -700,7 +700,7 @@ equipments = {
 
 		interface_category = interface_category_land
 
-		max_military_factories = 5
+		max_military_factories = 10
 
 		#Misc Abilities
 		reliability = 0.7
@@ -717,7 +717,7 @@ equipments = {
 		ap_attack = 9
 		air_attack = 0
 
-		fuel_consumption = 1.8
+		#fuel_consumption = 1.8
 
 		additional_collateral_damage = 450
 
