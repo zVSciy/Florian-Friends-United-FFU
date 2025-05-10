@@ -1147,12 +1147,10 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				has_completed_focus  = FRA_buy_time 
-				has_government  = democratic 
 			}
-			cost  = 75.000
+			cost  = 150
 			traits  = {
-				appeaser 
+				popular_figurehead
 			}
 			do_effect  = {
 			}
