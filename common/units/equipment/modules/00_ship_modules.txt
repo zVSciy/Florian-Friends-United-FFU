@@ -396,7 +396,7 @@ equipment_modules = {
 			build_cost_ic = 2000
 		}
 		build_cost_resources = {
-			steel = 1
+			steel = 2
 		}
 		multiply_stats = {
 			naval_speed = -0.07
