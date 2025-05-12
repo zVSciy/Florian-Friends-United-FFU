@@ -2753,6 +2753,21 @@ country_event = {
 		name = "x"
 	}
 }
+news_event = {
+	id = generic.48 # iran invasion
+	title = "Japanese pathway to Europe"
+	desc = "In the early moring hours of[GetDateText], [From.GetLeader] announced Japan's arrival at europe by [From.GetNameDef]"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
 
 add_namespace = horsttool
 news_event = {

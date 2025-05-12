@@ -1601,6 +1601,58 @@ political_actions = {
 }
 
 operations = {
+	
+
+	JAP_mil_access = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			GER = {
+					has_war_with = SOV
+			}
+			OR = {
+				SAF = {
+					has_capitulated = yes
+				}
+				
+				500 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+			
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				every_country = {
+					news_event = generic.48
+				}
+			}
+			JAP = {
+				give_military_access = GER
+				give_military_access = ITA
+			}
+			GER = {
+				give_military_access = JAP
+			}
+			ITA = {
+				give_military_access = JAP
+			}
+		}
+	}
 
 	JAP_invade_iran = {
 
