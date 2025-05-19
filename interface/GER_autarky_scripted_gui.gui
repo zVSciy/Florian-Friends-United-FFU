@@ -1,0 +1,177 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ger_autarky_ui_window"
+		orientation = lower_left
+		position = { x = 0 y = 0 }
+		size = { width = 600 height = 300 }
+		clipping = no
+
+		#BACKGROUND
+		background = {
+			name = "background"
+			quadTextureSprite="GFX_tiled_window_1b_border"
+			alwaystransparent = yes
+		}
+
+		#TITLE
+		instantTextBoxType = {
+			name ="autarky_title_name"
+			orientation = center_up
+			position = { x = -280 y = 20 }
+			font = "hoi_36header"
+			text = "GER_autarky_title_text"
+			format = center
+			maxWidth = 600
+		}
+
+		#Statement Text
+		instantTextBoxType = {
+			name ="autarky_description"
+			orientation = center_up
+			position = { x = -280 y = 230 }
+			font = "hoi_16mbs"
+			text = "GER_autarky_description_text"
+			format = center
+			maxWidth = 550
+		}
+
+		# Steel
+		instantTextBoxType = {
+			name ="steel_text"
+			orientation = upper_left
+			position = { x = 20 y = 65 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetGermanSteel]"
+			context_aware_tooltip = "Counts all Steel owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
+			format = left
+			maxWidth = 300
+		}
+		# Aluminium
+		instantTextBoxType = {
+			name ="aluminium_text"
+			orientation = upper_left
+			position = { x = 20 y = 115 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetGermanAluminium]"
+			context_aware_tooltip = "Counts all Aluminium owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
+			format = left
+			maxWidth = 300
+		}
+		# Rubber
+		instantTextBoxType = {
+			name ="rubber_text"
+			orientation = upper_left
+			position = { x = 20 y = 165 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetGermanRubber]"
+			context_aware_tooltip = "Counts all Rubber owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
+			format = left
+			maxWidth = 300
+		}
+		# Tungsten
+		instantTextBoxType = {
+			name ="tungsten_text"
+			orientation = upper_left
+			position = { x = 350 y = 65 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetGermanTungsten]"
+			context_aware_tooltip = "Counts all Tungsten owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
+			format = left
+			maxWidth = 400
+		}
+		# Chromium
+		instantTextBoxType = {
+			name ="chromium_text"
+			orientation = upper_left
+			position = { x = 350 y = 115 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetGermanChromium]"
+			context_aware_tooltip = "Counts all Chromium owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
+			format = left
+			maxWidth = 400
+		}
+		# Oil
+		instantTextBoxType = {
+			name ="oil_text"
+			orientation = upper_left
+			position = { x = 350 y = 165 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetGermanOil]"
+			context_aware_tooltip = "Counts all Oil owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
+			format = left
+			maxWidth = 400
+		}
+
+		##########################
+		# Faction
+
+		# Steel Faction
+		instantTextBoxType = {
+			name ="steel_faction_text"
+			orientation = upper_left
+			position = { x = 45 y = 90 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetFactionSteel]"
+			context_aware_tooltip = "Counts all Steel in the Faction not in a Spanish or Portugese Core"
+			format = left
+			maxWidth = 300
+		}
+		# Aluminium Faction
+		instantTextBoxType = {
+			name ="aluminium_faction_text"
+			orientation = upper_left
+			position = { x = 45 y = 140 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetFactionAluminium]"
+			context_aware_tooltip = "Counts all Aluminium in the Faction not in a Spanish or Portugese Core"
+			format = left
+			maxWidth = 300
+		}
+		# Rubber Faction
+		instantTextBoxType = {
+			name ="rubber_faction_text"
+			orientation = upper_left
+			position = { x = 45 y = 190 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetFactionRubber]"
+			context_aware_tooltip = "Counts all Rubber in the Faction not in a Spanish or Portugese Core"
+			format = left
+			maxWidth = 300
+		}
+		# Tungsten Faction
+		instantTextBoxType = {
+			name ="tungsten_faction_text"
+			orientation = upper_left
+			position = { x = 375 y = 90 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetFactionTungsten]"
+			context_aware_tooltip = "Counts all Tungsten in the Faction not in a Spanish or Portugese Core"
+			format = left
+			maxWidth = 400
+		}
+		# Chromium Faction
+		instantTextBoxType = {
+			name ="chromium_faction_text"
+			orientation = upper_left
+			position = { x = 375 y = 140 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetFactionChromium]"
+			context_aware_tooltip = "Counts all Chromium in the Faction not in a Spanish or Portugese Core"
+			format = left
+			maxWidth = 400
+		}
+		# Oil Faction
+		instantTextBoxType = {
+			name ="oil_faction_text"
+			orientation = upper_left
+			position = { x = 375 y = 190 }
+			font = "hoi_18mbs"
+			context_aware_text = "[GetFactionOil]"
+			context_aware_tooltip = "Counts all Oil in the Faction not in a Spanish or Portugese Core"
+			format = left
+			maxWidth = 400
+		}
+
+	}
+}
