@@ -252,3 +252,661 @@ going_war_with_SOV = {
 		has_wargoal_against = SOV
 	}
 }
+GER_axis_has_enough_steel = {
+	set_temp_variable = { num_faction_steel = GER.resource_produced@steel }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_faction_steel = resource_produced@steel }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_faction_steel = resource_produced@steel } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_faction_steel = resource_produced@steel } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_faction_steel = resource_produced@steel } }
+	}
+
+	# Remove Iberia
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_temp_variable = { num_iberian_steel = resource@steel }
+		}
+	}
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_temp_variable = { num_iberian_steel = resource@steel }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_temp_variable = { num_iberian_steel = 0.5 }
+	subtract_from_temp_variable = { num_faction_steel = num_iberian_steel }
+
+	# Add Non-Spain to the Germans Resource Count
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			add_to_temp_variable = { num_faction_steel = resource_produced@steel }
+		}
+	}
+
+	check_variable = { num_faction_steel > GER_autarky_steel }
+
+	# Not going to calculate that resource factor because its messy
+	#set_temp_variable = { resource_factor_temp = modifier@local_resources_factor }
+}
+
+GER_has_enough_steel = {
+	set_temp_variable = { num_ger_steel = GER.resource_produced@steel }
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_ger_steel = resource_produced@steel }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_ger_steel = resource_produced@steel } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_ger_steel = resource_produced@steel } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_ger_steel = resource_produced@steel } }
+	}
+	set_temp_variable = { num_faction_highest_steel = 0 }
+
+	# Check against non Spain to see if Germany has more Steel than anyone else in the faction
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			set_temp_variable = { country_steel_amount = resource@steel }
+			# Find the ally with the most Steel
+			if = {
+				limit = {
+					check_variable = { country_steel_amount > num_faction_highest_steel }
+				}
+				set_temp_variable = { num_faction_highest_steel = country_steel_amount }
+			}
+		}
+	}
+	# If Germany has more, than we are Gucchi
+	check_variable = { num_ger_steel > num_faction_highest_steel }
+}
+
+GER_axis_has_enough_aluminium = {
+	set_temp_variable = { num_faction_aluminium = GER.resource_produced@aluminium }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_faction_aluminium = resource_produced@aluminium }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_faction_aluminium = resource_produced@aluminium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_faction_aluminium = resource_produced@aluminium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_faction_aluminium = resource_produced@aluminium } }
+	}
+	# Remove Iberia
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_temp_variable = { num_iberian_aluminium = resource@aluminium }
+		}
+	}
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_temp_variable = { num_iberian_aluminium = resource@aluminium }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_temp_variable = { num_iberian_aluminium = 0.5 }
+	subtract_from_temp_variable = { num_faction_aluminium = num_iberian_aluminium }
+
+	# Add Non-Spain to the Germans Resource Count
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			add_to_temp_variable = { num_faction_aluminium = resource_produced@aluminium }
+		}
+	}
+	
+
+	check_variable = { num_faction_aluminium > GER_autarky_aluminium }
+
+	# Not going to calculate that resource factor because its messy
+	#set_temp_variable = { resource_factor_temp = modifier@local_resources_factor }
+}
+
+GER_has_enough_aluminium = {
+	set_temp_variable = { num_ger_aluminium = GER.resource_produced@aluminium }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_ger_aluminium = resource_produced@aluminium }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_ger_aluminium = resource_produced@aluminium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_ger_aluminium = resource_produced@aluminium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_ger_aluminium = resource_produced@aluminium } }
+	}
+
+	set_temp_variable = { num_faction_highest_aluminium = 0 }
+
+	# Check against non Spain to see if Germany has more aluminium than anyone else in the faction
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			set_temp_variable = { country_aluminium_amount = resource@aluminium }
+			# Find the ally with the most aluminium
+			if = {
+				limit = {
+					check_variable = { country_aluminium_amount > num_faction_highest_aluminium }
+				}
+				set_temp_variable = { num_faction_highest_aluminium = country_aluminium_amount }
+			}
+		}
+	}
+	# If Germany has more, than we are Gucchi
+	check_variable = { num_ger_aluminium > num_faction_highest_aluminium }
+}
+
+GER_axis_has_enough_rubber = {
+	set_temp_variable = { num_faction_rubber = GER.resource_produced@rubber }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_faction_rubber = resource_produced@rubber }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_faction_rubber = resource_produced@rubber } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_faction_rubber = resource_produced@rubber } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_faction_rubber = resource_produced@rubber } }
+	}
+	# Remove Iberia
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_temp_variable = { num_iberian_rubber = resource@rubber }
+		}
+	}
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_temp_variable = { num_iberian_rubber = resource@rubber }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_temp_variable = { num_iberian_rubber = 0.5 }
+	subtract_from_temp_variable = { num_faction_rubber = num_iberian_rubber }
+
+	# Add Non-Spain to the Germans Resource Count
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			add_to_temp_variable = { num_faction_rubber = resource_produced@rubber }
+		}
+	}
+
+
+	check_variable = { num_faction_rubber > GER_autarky_rubber }
+
+	# Not going to calculate that resource factor because its messy
+	#set_temp_variable = { resource_factor_temp = modifier@local_resources_factor }
+}
+
+GER_has_enough_rubber = {
+	set_temp_variable = { num_ger_rubber = GER.resource_produced@rubber }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_ger_rubber = resource_produced@rubber }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_ger_rubber = resource_produced@rubber } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_ger_rubber = resource_produced@rubber } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_ger_rubber = resource_produced@rubber } }
+	}
+
+	set_temp_variable = { num_faction_highest_rubber = 0 }
+
+	# Check against non Spain to see if Germany has more rubber than anyone else in the faction
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			set_temp_variable = { country_rubber_amount = resource@rubber }
+			# Find the ally with the most rubber
+			if = {
+				limit = {
+					check_variable = { country_rubber_amount > num_faction_highest_rubber }
+				}
+				set_temp_variable = { num_faction_highest_rubber = country_rubber_amount }
+			}
+		}
+	}
+	# If Germany has more, than we are Gucchi
+	check_variable = { num_ger_rubber > num_faction_highest_rubber }
+}
+
+GER_axis_has_enough_tungsten = {
+	set_temp_variable = { num_faction_tungsten = GER.resource_produced@tungsten }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_faction_tungsten = resource_produced@tungsten }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_faction_tungsten = resource_produced@tungsten } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_faction_tungsten = resource_produced@tungsten } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_faction_tungsten = resource_produced@tungsten } }
+	}
+	# Remove Iberia
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_temp_variable = { num_iberian_tungsten = resource@tungsten }
+		}
+	}
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_temp_variable = { num_iberian_tungsten = resource@tungsten }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_temp_variable = { num_iberian_tungsten = 0.5 }
+	subtract_from_temp_variable = { num_faction_tungsten = num_iberian_tungsten }
+
+		# Add Non-Spain to the Germans Resource Count
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			add_to_temp_variable = { num_faction_tungsten = resource_produced@tungsten }
+		}
+	}
+	
+
+	check_variable = { num_faction_tungsten > GER_autarky_tungsten }
+
+	# Not going to calculate that resource factor because its messy
+	#set_temp_variable = { resource_factor_temp = modifier@local_resources_factor }
+}
+
+GER_has_enough_tungsten = {
+	set_temp_variable = { num_ger_tungsten = GER.resource_produced@tungsten }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_ger_tungsten = resource_produced@tungsten }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_ger_tungsten = resource_produced@tungsten } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_ger_tungsten = resource_produced@tungsten } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_ger_tungsten = resource_produced@tungsten } }
+	}
+
+	set_temp_variable = { num_faction_highest_tungsten = 0 }
+
+	# Check against non Spain to see if Germany has more tungsten than anyone else in the faction
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			set_temp_variable = { country_tungsten_amount = resource@tungsten }
+			# Find the ally with the most tungsten
+			if = {
+				limit = {
+					check_variable = { country_tungsten_amount > num_faction_highest_tungsten }
+				}
+				set_temp_variable = { num_faction_highest_tungsten = country_tungsten_amount }
+			}
+		}
+	}
+	# If Germany has more, than we are Gucchi
+	check_variable = { num_ger_tungsten > num_faction_highest_tungsten }
+}
+
+GER_axis_has_enough_chromium = {
+	set_temp_variable = { num_faction_chromium = GER.resource_produced@chromium }
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_faction_chromium = THIS.resource_produced@chromium }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_faction_chromium = resource_produced@chromium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_faction_chromium = resource_produced@chromium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_faction_chromium = resource_produced@chromium } }
+	}
+	# Remove Iberia
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_temp_variable = { num_iberian_chromium = resource@chromium }
+		}
+	}
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_temp_variable = { num_iberian_chromium = resource@chromium }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_temp_variable = { num_iberian_chromium = 0.5 }
+	subtract_from_temp_variable = { num_faction_chromium = num_iberian_chromium }
+
+	# Add Non-Spain to the Germans Resource Count
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			add_to_temp_variable = { num_faction_chromium = resource_produced@chromium }
+		}
+	}
+	
+
+	check_variable = { num_faction_chromium > GER_autarky_chromium }
+
+	# Not going to calculate that resource factor because its messy
+	#set_temp_variable = { resource_factor_temp = modifier@local_resources_factor }
+}
+
+GER_has_enough_chromium = {
+	set_temp_variable = { num_ger_chromium = GER.resource_produced@chromium }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_ger_chromium = resource_produced@chromium }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_ger_chromium = resource_produced@chromium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_ger_chromium = resource_produced@chromium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_ger_chromium = resource_produced@chromium } }
+	}
+
+	set_temp_variable = { num_faction_highest_chromium = 0 }
+
+	# Check against non Spain to see if Germany has more chromium than anyone else in the faction
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			set_temp_variable = { country_chromium_amount = resource@chromium }
+			# Find the ally with the most chromium
+			if = {
+				limit = {
+					check_variable = { country_chromium_amount > num_faction_highest_chromium }
+				}
+				set_temp_variable = { num_faction_highest_chromium = country_chromium_amount }
+			}
+		}
+	}
+	# If Germany has more, than we are Gucchi
+	check_variable = { num_ger_chromium > num_faction_highest_chromium }
+}
+
+GER_axis_has_enough_oil = {
+	set_temp_variable = { num_faction_oil = GER.resource_produced@oil }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_faction_oil = resource_produced@oil }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_faction_oil = resource_produced@oil } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_faction_oil = resource_produced@oil } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_faction_oil = resource_produced@oil } }
+	}
+	# Remove Iberia
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_temp_variable = { num_iberian_oil = resource@oil }
+		}
+	}
+	all_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_temp_variable = { num_iberian_oil = resource@oil }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_temp_variable = { num_iberian_oil = 0.5 }
+	subtract_from_temp_variable = { num_faction_oil = num_iberian_oil }
+
+	# Add Non-Spain to the Germans Resource Count
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			add_to_temp_variable = { num_faction_oil = resource_produced@oil }
+		}
+	}
+	
+
+	check_variable = { num_faction_oil > GER_autarky_oil }
+
+	# Not going to calculate that resource factor because its messy
+	#set_temp_variable = { resource_factor_temp = modifier@local_resources_factor }
+}
+
+GER_has_enough_oil = {
+	set_temp_variable = { num_ger_oil = GER.resource_produced@oil }
+
+	# Add all Puppets
+	all_subject_countries = {
+		add_to_temp_variable = { num_ger_oil = resource_produced@oil }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_temp_variable = { num_ger_oil = resource_produced@oil } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_temp_variable = { num_ger_oil = resource_produced@oil } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_temp_variable = { num_ger_oil = resource_produced@oil } }
+	}
+
+	set_temp_variable = { num_faction_highest_oil = 0 }
+
+	# Check against non Spain to see if Germany has more oil than anyone else in the faction
+	all_allied_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+			}
+			set_temp_variable = { country_oil_amount = resource@oil }
+			# Find the ally with the most oil
+			if = {
+				limit = {
+					check_variable = { country_oil_amount > num_faction_highest_oil }
+				}
+				set_temp_variable = { num_faction_highest_oil = country_oil_amount }
+			}
+		}
+	}
+	# If Germany has more, than we are Gucchi
+	check_variable = { num_ger_oil > num_faction_highest_oil }
+}
+
+GER_steel_check = {
+	custom_trigger_tooltip = {
+		tooltip = GER_meets_steel_tt
+		GER_axis_has_enough_steel = yes
+		GER_has_enough_steel = yes
+	}
+}
+GER_aluminium_check = {
+	custom_trigger_tooltip = {
+		tooltip = GER_meets_aluminium_tt
+		GER_axis_has_enough_aluminium = yes
+		GER_has_enough_aluminium = yes
+	}
+}
+GER_rubber_check = {
+	custom_trigger_tooltip = {
+		tooltip = GER_meets_rubber_tt
+		GER_axis_has_enough_rubber = yes
+		GER_has_enough_rubber = yes
+	}
+}
+GER_tungsten_check = {
+	custom_trigger_tooltip = {
+		tooltip = GER_meets_tungsten_tt
+		GER_axis_has_enough_tungsten = yes
+		GER_has_enough_tungsten = yes
+	}
+}
+GER_chromium_check = {
+	custom_trigger_tooltip = {
+		tooltip = GER_meets_chromium_tt
+		GER_axis_has_enough_chromium = yes
+		GER_has_enough_chromium = yes
+	}
+}
+GER_oil_check = {
+	custom_trigger_tooltip = {
+		tooltip = GER_meets_oil_tt
+		GER_axis_has_enough_oil = yes
+		GER_has_enough_oil = yes
+	}
+}
+
+GER_meets_4_of_6 = {
+	set_temp_variable = { number_met = 0}
+
+	if = { limit = { GER_steel_check = yes } add_to_temp_variable = { number_met = 1 } }
+	if = { limit = { GER_aluminium_check = yes } add_to_temp_variable = { number_met = 1 } }
+	if = { limit = { GER_rubber_check = yes } add_to_temp_variable = { number_met = 1 } }
+	if = { limit = { GER_tungsten_check = yes } add_to_temp_variable = { number_met = 1 } }
+	if = { limit = { GER_chromium_check = yes } add_to_temp_variable = { number_met = 1 } }
+	if = { limit = { GER_oil_check = yes } add_to_temp_variable = { number_met = 1 } }
+
+	check_variable = { number_met > 3 }
+}

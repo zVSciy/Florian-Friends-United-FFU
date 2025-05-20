@@ -16,6 +16,24 @@
 # }
 
 on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					GER = { NOT = { has_completed_focus = GER_free_trade_path }}
+				}
+				GER = {
+					# Update German Stuff
+					GER_check_steel = yes
+					GER_check_aluminium = yes
+					GER_check_rubber = yes
+					GER_check_tungsten = yes
+					GER_check_chromium = yes
+					GER_check_oil = yes
+				}
+			}
+		}
+	}
     on_startup = {
 		effect = {
 			every_state = {
@@ -58,6 +76,17 @@ on_actions = {
 				add_dynamic_modifier = {
 					modifier = NO_FORTS_IN_AFRICA
 				}
+			}
+		}
+		effect = {
+			# Update German Stuff
+			GER = {
+				GER_check_steel = yes
+				GER_check_aluminium = yes
+				GER_check_rubber = yes
+				GER_check_tungsten = yes
+				GER_check_chromium = yes
+				GER_check_oil = yes
 			}
 		}
 	}
