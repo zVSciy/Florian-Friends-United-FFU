@@ -40,7 +40,50 @@ focus_tree = {
 		y = 0
 		cost = 5
 		completion_reward = {
+			custom_effect_tooltip = GER_autobahn_tt
+			hidden_effect = {
+				64 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				59 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
 
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				60 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				54 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -54,6 +97,64 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 51 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {	
+				prioritize = { 59 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {	
+				prioritize = { 64 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {	
+				prioritize = { 53 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {	
+				prioritize = { 50 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {	
+				prioritize = { 5 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+
 
 		}
 	}
@@ -81,7 +182,28 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			52 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}		
+			}
+            53 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			    add_tech_bonus = {
+				name = GER_industry_bonus
+				bonus = 0.75
+				uses = 3
+				category = industry
+			}
 		}
 	}
 
@@ -96,7 +218,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
 		}
 	}
 
@@ -498,7 +619,40 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}		
+			}
+            59 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 60 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {	
+				prioritize = { 65 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
