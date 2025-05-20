@@ -1024,7 +1024,8 @@ characters={
 				fortification_engineer
 			}
 			available = {
-				has_completed_focus = GER_org_todt
+				has_completed_focus = GER_todt
+				has_war = no
 			}
 			ai_will_do = {
 				factor = 0.5
@@ -1069,7 +1070,7 @@ characters={
 				schacht 
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan
+				has_completed_focus = GER_schacht
 				has_war = no
 			}
 			ai_will_do = {
@@ -1094,7 +1095,7 @@ characters={
 				goring 
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan
+				has_completed_focus = GER_goering
 				has_war = no
 			}
 			ai_will_do = {
