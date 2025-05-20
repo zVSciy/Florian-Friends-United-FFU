@@ -4,7 +4,7 @@ ger_autarky_inlay_window = {
 
     internal = no
     visible = {
-        NOT = { GER = { has_completed_focus = GER_autarky_path } }
+        NOT = { GER = { has_completed_focus = GER_free_trade_path } }
         OR = {
             tag = GER
             tag = ITA

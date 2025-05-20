@@ -26,7 +26,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 1700 y = 960 }
 	
-		inlay_window = {
+	inlay_window = {
 		id = ger_autarky_inlay_window
 		position = { x = 50 y = 1000 }
 	}
@@ -696,13 +696,67 @@ focus_tree = {
 	}
 
 		focus = {
-		id = GER_romanian_ig_farben
+		id = GER_autarky_achieved
 		icon = GFX_ger_achtung_panzer
 		prerequisite = { focus = GER_research_slot }
 		relative_position_id = GER_research_slot
 		x = 0
 		y = 1
 		cost = 5
+		available = {
+			all_core_state = {
+				is_controlled_by = ROOT
+			}
+
+			custom_trigger_tooltip = {
+				tooltip = GER_axis_has_enough_steel_tt
+				GER_axis_has_enough_steel = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_has_enough_steel_tt
+				GER_has_enough_steel = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_axis_has_enough_aluminium_tt
+				GER_axis_has_enough_aluminium = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_has_enough_aluminium_tt
+				GER_has_enough_aluminium = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_axis_has_enough_rubber_tt
+				GER_axis_has_enough_rubber = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_has_enough_rubber_tt
+				GER_has_enough_rubber = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_axis_has_enough_tungsten_tt
+				GER_axis_has_enough_tungsten = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_has_enough_tungsten_tt
+				GER_has_enough_tungsten = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_axis_has_enough_chromium_tt
+				GER_axis_has_enough_chromium = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_has_enough_chromium_tt
+				GER_has_enough_chromium = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_axis_has_enough_oil_tt
+				GER_axis_has_enough_oil = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = GER_has_enough_oil_tt
+				GER_has_enough_oil = yes
+			}
+		}
 		completion_reward = {
 
 		}

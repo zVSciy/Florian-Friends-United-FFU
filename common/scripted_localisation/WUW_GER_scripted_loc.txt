@@ -1,0 +1,269 @@
+defined_text = { 
+	name = GetGermanSteel 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_steel < GER.GER_autarky_steel }
+		}
+		localization_key = GER_FACTION_steel_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_steel = GER.GER_autarky_steel }
+		}
+		localization_key = GER_FACTION_steel_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_steel > GER.GER_autarky_steel }
+		}
+		localization_key = GER_FACTION_steel_over_def
+	}	
+
+}
+
+defined_text = { 
+	name = GetGermanAluminium 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_aluminium < GER.GER_autarky_aluminium }
+		}
+		localization_key = GER_FACTION_aluminium_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_aluminium = GER.GER_autarky_aluminium }
+		}
+		localization_key = GER_FACTION_aluminium_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_aluminium > GER.GER_autarky_aluminium }
+		}
+		localization_key = GER_FACTION_aluminium_over_def
+	}	
+
+}
+
+defined_text = { 
+	name = GetGermanRubber 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_rubber < GER.GER_autarky_rubber }
+		}
+		localization_key = GER_FACTION_rubber_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_rubber = GER.GER_autarky_rubber }
+		}
+		localization_key = GER_FACTION_rubber_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_rubber > GER.GER_autarky_rubber }
+		}
+		localization_key = GER_FACTION_rubber_over_def
+	}	
+
+}
+
+defined_text = { 
+	name = GetGermanTungsten 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_tungsten < GER.GER_autarky_tungsten }
+		}
+		localization_key = GER_FACTION_tungsten_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_tungsten = GER.GER_autarky_tungsten }
+		}
+		localization_key = GER_FACTION_tungsten_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_tungsten > GER.GER_autarky_tungsten }
+		}
+		localization_key = GER_FACTION_tungsten_over_def
+	}	
+
+}
+
+defined_text = { 
+	name = GetGermanChromium 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_chromium < GER.GER_autarky_chromium }
+		}
+		localization_key = GER_FACTION_chromium_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_chromium = GER.GER_autarky_chromium }
+		}
+		localization_key = GER_FACTION_chromium_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_chromium > GER.GER_autarky_chromium }
+		}
+		localization_key = GER_FACTION_chromium_over_def
+	}	
+
+}
+
+defined_text = { 
+	name = GetGermanOil 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_oil < GER.GER_autarky_oil }
+		}
+		localization_key = GER_FACTION_oil_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_oil = GER.GER_autarky_oil }
+		}
+		localization_key = GER_FACTION_oil_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_total_oil > GER.GER_autarky_oil }
+		}
+		localization_key = GER_FACTION_oil_over_def
+	}	
+}
+
+
+defined_text = { 
+	name = GetFactionSteel 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_steel > GER.num_ger_steel }
+		}
+		localization_key = GER_steel_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_steel = GER.num_ger_steel }
+		}
+		localization_key = GER_steel_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_steel < GER.num_ger_steel }
+		}
+		localization_key = GER_steel_over_def
+	}	
+}
+
+defined_text = { 
+	name = GetFactionAluminium 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_aluminium > GER.num_ger_aluminium }
+		}
+		localization_key = GER_aluminium_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_aluminium = GER.num_ger_aluminium }
+		}
+		localization_key = GER_aluminium_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_aluminium < GER.num_ger_aluminium }
+		}
+		localization_key = GER_aluminium_over_def
+	}	
+}
+
+defined_text = { 
+	name = GetFactionRubber 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_rubber > GER.num_ger_rubber }
+		}
+		localization_key = GER_rubber_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_rubber = GER.num_ger_rubber }
+		}
+		localization_key = GER_rubber_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_rubber < GER.num_ger_rubber }
+		}
+		localization_key = GER_rubber_over_def
+	}	
+}
+
+defined_text = { 
+	name = GetFactionTungsten 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_tungsten > GER.num_ger_tungsten }
+		}
+		localization_key = GER_tungsten_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_tungsten = GER.num_ger_tungsten }
+		}
+		localization_key = GER_tungsten_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_tungsten < GER.num_ger_tungsten }
+		}
+		localization_key = GER_tungsten_over_def
+	}	
+}
+
+defined_text = { 
+	name = GetFactionChromium 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_chromium > GER.num_ger_chromium }
+		}
+		localization_key = GER_chromium_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_chromium = GER.num_ger_chromium }
+		}
+		localization_key = GER_chromium_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_chromium < GER.num_ger_chromium }
+		}
+		localization_key = GER_chromium_over_def
+	}	
+}
+
+defined_text = { 
+	name = GetFactionOil 
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_oil > GER.num_ger_oil }
+		}
+		localization_key = GER_oil_under_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_oil = GER.num_ger_oil }
+		}
+		localization_key = GER_oil_over_def
+	}
+	text = {
+		trigger = { 
+			check_variable = { GER.num_faction_oil < GER.num_ger_oil }
+		}
+		localization_key = GER_oil_over_def
+	}	
+}

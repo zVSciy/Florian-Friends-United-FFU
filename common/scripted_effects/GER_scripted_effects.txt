@@ -796,3 +796,401 @@ MR_pact_transfer_faction_state_effect = {
 		}
 	}
 }
+GER_check_steel = {
+	set_variable = { GER.num_ger_steel = GER.resource_produced@steel }
+	set_variable = { GER.num_faction_steel = 0 }
+	set_variable = { GER.num_faction_total_steel = 0 }
+
+	# Add all Puppets
+	every_subject_country = {
+		add_to_variable = { GER.num_ger_steel = resource_produced@steel }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_variable = { GER.num_ger_steel = resource_produced@steel } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_variable = { GER.num_ger_steel = resource_produced@steel } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_variable = { GER.num_ger_steel = resource_produced@steel } }
+	}
+
+	# Check against non Spain to see if Germany has more Steel than anyone else in the faction
+	every_other_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+				is_in_faction_with = GER
+			}
+			set_variable = { country_steel_amount = resource_produced@steel }
+			# Find the ally with the most Steel
+			if = {
+				limit = {
+					check_variable = { country_steel_amount > GER.num_faction_steel }
+				}
+				set_variable = { GER.num_faction_steel = country_steel_amount }
+			}
+			add_to_variable = {	GER.num_faction_total_steel = country_steel_amount }
+		}
+	}
+
+	# Remove Iberia
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_variable = { num_iberian_steel = resource@steel }
+		}
+	}
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_variable = { num_iberian_steel = resource@steel }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_variable = { num_iberian_steel = 0.5 }
+	subtract_from_variable = { GER.num_ger_steel = num_iberian_steel }
+
+	add_to_variable = {	GER.num_faction_total_steel = GER.num_ger_steel }
+}
+
+
+GER_check_aluminium = {
+	set_variable = { GER.num_ger_aluminium = GER.resource_produced@aluminium }
+	set_variable = { GER.num_faction_aluminium = 0 }
+	set_variable = { GER.num_faction_total_aluminium = 0 }
+
+	# Add all Puppets
+	every_subject_country = {
+		add_to_variable = { GER.num_ger_aluminium = resource_produced@aluminium }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_variable = { GER.num_ger_aluminium = resource_produced@aluminium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_variable = { GER.num_ger_aluminium = resource_produced@aluminium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_variable = { GER.num_ger_aluminium = resource_produced@aluminium } }
+	}
+
+	# Check against non Spain to see if Germany has more aluminium than anyone else in the faction
+	every_other_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+				is_in_faction_with = GER
+			}
+			set_variable = { country_aluminium_amount = resource_produced@aluminium }
+			# Find the ally with the most aluminium
+			if = {
+				limit = {
+					check_variable = { country_aluminium_amount > GER.num_faction_aluminium }
+				}
+				set_variable = { GER.num_faction_aluminium = country_aluminium_amount }
+			}
+			add_to_variable = {	GER.num_faction_total_aluminium = country_aluminium_amount }
+		}
+	}
+	# Remove Iberia
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_variable = { num_iberian_aluminium = resource@aluminium }
+		}
+	}
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_variable = { num_iberian_aluminium = resource@aluminium }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_variable = { num_iberian_aluminium = 0.5 }
+	subtract_from_variable = { GER.num_ger_aluminium = num_iberian_aluminium }
+
+	add_to_variable = {	GER.num_faction_total_aluminium = GER.num_ger_aluminium }
+}
+
+GER_check_rubber = {
+	set_variable = { GER.num_ger_rubber = GER.resource_produced@rubber }
+	set_variable = { GER.num_faction_rubber = 0 }
+	set_variable = { GER.num_faction_total_rubber = 0 }
+
+	# Add all Puppets
+	every_subject_country = {
+		add_to_variable = { GER.num_ger_rubber = resource_produced@rubber }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_variable = { GER.num_ger_rubber = resource_produced@rubber } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_variable = { GER.num_ger_rubber = resource_produced@rubber } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_variable = { GER.num_ger_rubber = resource_produced@rubber } }
+	}
+
+	# Check against non Spain to see if Germany has more rubber than anyone else in the faction
+	every_other_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+				is_in_faction_with = GER
+			}
+			set_variable = { country_rubber_amount = resource_produced@rubber }
+			# Find the ally with the most rubber
+			if = {
+				limit = {
+					check_variable = { country_rubber_amount > GER.num_faction_rubber }
+				}
+				set_variable = { GER.num_faction_rubber = country_rubber_amount }
+			}
+			add_to_variable = {	GER.num_faction_total_rubber = country_rubber_amount }
+		}
+	}
+
+	# Remove Iberia
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_variable = { num_iberian_rubber = resource@rubber }
+		}
+	}
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_variable = { num_iberian_rubber = resource@rubber }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_variable = { num_iberian_rubber = 0.5 }
+	subtract_from_variable = { GER.num_ger_rubber = num_iberian_rubber }
+
+	add_to_variable = {	GER.num_faction_total_rubber = GER.num_ger_rubber }
+}
+
+GER_check_tungsten = {
+	set_variable = { GER.num_ger_tungsten = GER.resource_produced@tungsten }
+	set_variable = { GER.num_faction_tungsten = 0 }
+	set_variable = { GER.num_faction_total_tungsten = 0 }
+
+	# Add all Puppets
+	every_subject_country = {
+		add_to_variable = { GER.num_ger_tungsten = resource_produced@tungsten }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_variable = { GER.num_ger_tungsten = resource_produced@tungsten } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_variable = { GER.num_ger_tungsten = resource_produced@tungsten } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_variable = { GER.num_ger_tungsten = resource_produced@tungsten } }
+	}
+
+	# Check against non Spain to see if Germany has more tungsten than anyone else in the faction
+	every_other_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+				is_in_faction_with = GER
+			}
+			set_variable = { country_tungsten_amount = resource_produced@tungsten }
+			# Find the ally with the most tungsten
+			if = {
+				limit = {
+					check_variable = { country_tungsten_amount > GER.num_faction_tungsten }
+				}
+				set_variable = { GER.num_faction_tungsten = country_tungsten_amount }
+			}
+			add_to_variable = {	GER.num_faction_total_tungsten = country_tungsten_amount }
+		}
+	}
+	# Remove Iberia
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_variable = { num_iberian_tungsten = resource@tungsten }
+		}
+	}
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_variable = { num_iberian_tungsten = resource@tungsten }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_variable = { num_iberian_tungsten = 0.5 }
+	subtract_from_variable = { GER.num_ger_tungsten = num_iberian_tungsten }
+
+	add_to_variable = {	GER.num_faction_total_tungsten = GER.num_ger_tungsten }
+
+}
+
+GER_check_chromium = {
+	set_variable = { GER.num_ger_chromium = GER.resource_produced@chromium }
+	set_variable = { GER.num_faction_chromium = 0 }
+	set_variable = { GER.num_faction_total_chromium = 0 }
+
+	# Add all Puppets
+	every_subject_country = {
+		add_to_variable = { GER.num_ger_chromium = resource_produced@chromium }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_variable = { GER.num_ger_chromium = resource_produced@chromium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_variable = { GER.num_ger_chromium = resource_produced@chromium } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_variable = { GER.num_ger_chromium = resource_produced@chromium } }
+	}
+
+
+
+	# Check against non Spain to see if Germany has more chromium than anyone else in the faction
+	every_other_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+				is_in_faction_with = GER
+			}
+			set_variable = { country_chromium_amount = resource_produced@chromium }
+			# Find the ally with the most chromium
+			if = {
+				limit = {
+					check_variable = { country_chromium_amount > GER.num_faction_chromium }
+				}
+				set_variable = { GER.num_faction_chromium = country_chromium_amount }
+			}
+			add_to_variable = {	GER.num_faction_total_chromium = country_chromium_amount }
+		}
+	}
+
+	# Remove Iberia
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_variable = { num_iberian_chromium = resource@chromium }
+		}
+	}
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_variable = { num_iberian_chromium = resource@chromium }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_variable = { num_iberian_chromium = 0.5 }
+	subtract_from_variable = { GER.num_ger_chromium = num_iberian_chromium }
+	
+	add_to_variable = {	GER.num_faction_total_chromium = GER.num_ger_chromium }
+}
+
+GER_check_oil = {
+	set_variable = { GER.num_ger_oil = GER.resource_produced@oil }
+	set_variable = { GER.num_faction_oil = 0 }
+	set_variable = { GER.num_faction_total_oil = 0 }
+
+	# Add all Puppets
+	every_subject_country = {
+		add_to_variable = { GER.num_ger_oil = resource_produced@oil }
+	}
+	# Add Vichy 
+	if = {
+		limit = { country_exists = VIC }
+		VIC = { add_to_variable = { GER.num_ger_oil = resource_produced@oil } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D04 } } }
+		D04 = { add_to_variable = { GER.num_ger_oil = resource_produced@oil } }
+	}
+	else_if = {
+		limit = { 26 = { CONTROLLER = { tag = D05 } } }
+		D05 = { add_to_variable = { GER.num_ger_oil = resource_produced@oil } }
+	}
+
+
+	# Check against non Spain to see if Germany has more oil than anyone else in the faction
+	every_other_country = {
+		if = {
+			limit = {
+				NOT = { original_tag = SPR }
+				is_in_faction_with = GER
+			}
+			set_variable = { country_oil_amount = resource_produced@oil }
+			# Find the ally with the most oil
+			if = {
+				limit = {
+					check_variable = { country_oil_amount > GER.num_faction_oil }
+				}
+				set_variable = { GER.num_faction_oil = country_oil_amount }
+			}
+			add_to_variable = {	GER.num_faction_total_oil = country_oil_amount }
+		}
+	}
+
+	# Remove Iberia
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = POR
+			}
+			add_to_variable = { num_iberian_oil = resource@oil }
+		}
+	}
+	every_controlled_state = {
+		if = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_to_variable = { num_iberian_oil = resource@oil }
+		}
+	}
+	# Remove half for being Non-Core
+	multiply_variable = { num_iberian_oil = 0.5 }
+	subtract_from_variable = { GER.num_ger_oil = num_iberian_oil }
+
+	add_to_variable = {	GER.num_faction_total_oil = GER.num_ger_oil }
+}
