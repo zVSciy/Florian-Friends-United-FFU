@@ -1,11 +1,11 @@
 version="1.16"
 tags={
-    "Balance"
-    "Events"
-    "Gameplay"
-    "Historical"
-    "National Focuses"
-    "Technologies"
+	"Balance"
+	"Events"
+	"Gameplay"
+	"Historical"
+	"National Focuses"
+	"Technologies"
 }
 name="Florian Friends United (FFU)"
 picture="thumbnail.png"
