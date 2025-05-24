@@ -288,8 +288,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+				64 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_mefo_production_speed_infrastructure_factor = 0.15 tooltip = production_speed_infrastructure_factor_tt }
+			add_to_variable = { GER_german_economy_production_speed_infrastructure_factor = 0.15 tooltip = production_speed_infrastructure_factor_tt }
 			add_to_variable = { GER_german_economy_mefo_line_change_production_efficiency_factor = 0.075 tooltip = line_change_production_efficiency_factor_tt }
 			add_to_variable = { GER_german_economy_mefo_production_factory_efficiency_gain_factor = 0.075 tooltip = production_factory_efficiency_gain_factor_tt }
 
@@ -305,6 +313,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+				763 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.15 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { GER_german_economy_mefo_production_factory_efficiency_gain_factor = 0.075 tooltip = production_factory_efficiency_gain_factor_tt }
@@ -320,6 +336,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+				56 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.15 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { GER_german_economy_mefo_line_change_production_efficiency_factor = 0.075 tooltip = line_change_production_efficiency_factor_tt }		}
@@ -334,8 +358,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+				5 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.125 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { GER_german_economy_mefo_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
 		}
 	}
@@ -350,8 +382,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+				65 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_mefo_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_mefo_production_factory_max_efficiency_factor = 0.075 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 
@@ -364,44 +404,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-						random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
+				61 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -409,17 +412,26 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
+				68 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+				57 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+				909 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
 					level = 3
 					instant_build = yes
 				}
@@ -437,7 +449,17 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+				51 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_industrial_complex_factor = 0.15 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { GER_german_economy_production_speed_infrastructure_factor = 0.125 tooltip = production_speed_infrastructure_factor_tt }
 		}
 	}
 
@@ -450,6 +472,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+				42 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_infrastructure_factor = 0.125 tooltip = production_speed_infrastructure_factor_tt }
 
 		}
 	}
@@ -463,6 +495,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+				50 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
 
 		}
 	}
@@ -476,7 +518,26 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+				53 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+				52 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { GER_german_economy_line_change_production_efficiency_factor = 0.075 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 
@@ -492,7 +553,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+				55 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_factory_start_efficiency_factor = 0.075 tooltip = production_factory_start_efficiency_factor_tt }
 		}
 	}
 
@@ -505,7 +575,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_research_slot = 1
+				add_tech_bonus = {
+				name = GER_industry_bonus
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
 		}
 	}
 
@@ -787,7 +863,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_research_slot = 1
 		}
 	}
 
