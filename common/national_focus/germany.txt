@@ -594,7 +594,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
@@ -851,6 +853,11 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			modify_building_resources = {
+			   building = synthetic_refinery
+			   resource = rubber
+			   amount = 15
+			}
 		}
 	}
 
@@ -930,7 +937,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-
+			add_ideas = german_limited_exports_eco
 		}
 	}
 
