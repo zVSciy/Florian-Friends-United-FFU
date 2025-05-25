@@ -837,7 +837,8 @@ focus_tree = {
 		y = 2
 		cost = 5
 		completion_reward = {
-
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ig_faben
 		}
 	}
 
@@ -850,7 +851,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
 		}
 	}
 
@@ -1024,7 +1024,8 @@ focus_tree = {
 		y = 2
 		cost = 5
 		completion_reward = {
-
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = krupp
 		}
 	}
 
