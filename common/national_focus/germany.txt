@@ -143,6 +143,7 @@ focus_tree = {
 					is_in_faction_with = GER
 				}
 				add_ideas = free_trade 
+				add_ideas = axis_trade_treaty
 			}
 			42 = {
 				add_extra_state_shared_building_slots = 2
@@ -170,7 +171,7 @@ focus_tree = {
 		relative_position_id = GER_free_trade_path
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			52 = {
 				add_extra_state_shared_building_slots = 2
@@ -1988,7 +1989,7 @@ focus_tree = {
 		relative_position_id = GER_free_trade_path
 		x = -5
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			64 = {
 				add_extra_state_shared_building_slots = 2
@@ -2591,7 +2592,7 @@ focus_tree = {
 		relative_position_id = GER_wehrmacht
 		x = -4
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_political_power = 100
 			add_ideas = GER_heinrich_himmler
@@ -2753,6 +2754,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		available = {
+			always = no
+		}
 		completion_reward = {
 
 		}
@@ -5165,6 +5169,7 @@ focus_tree = {
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
+			has_completed_focus = GER_prepare_barbarossa
 			if = {
 				limit = {
 					has_country_flag = GER_offensive_cooldown
