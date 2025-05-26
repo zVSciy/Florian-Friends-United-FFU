@@ -35,7 +35,7 @@ focus_tree = {
 
 	focus = { 
 		id = GER_reichsautobahn
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_autobahn
 		x = 10
 		y = 0
 		cost = 5
@@ -89,7 +89,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_autarky_path
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_autarky
 		prerequisite = { focus = GER_reichsautobahn }
 		relative_position_id = GER_reichsautobahn
 		mutually_exclusive = { focus = GER_free_trade_path }
@@ -130,7 +130,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_free_trade_path
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_freedom_to_the_steel_barons
 		prerequisite = { focus = GER_reichsautobahn }
 		relative_position_id = GER_reichsautobahn
 		mutually_exclusive = { focus = GER_autarky_path }
@@ -165,7 +165,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_industry_bonus
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_curtail_steel_barons
 		prerequisite = { focus = GER_free_trade_path focus = GER_autarky_path }
 		relative_position_id = GER_free_trade_path
 		x = -1
@@ -199,7 +199,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_schacht
-		icon = GFX_ger_achtung_panzer
+		icon = GER_continue_the_new_plan
 		prerequisite = { focus = GER_steel_refs }
 		prerequisite = { focus = GER_industry_bonus }
 		relative_position_id = GER_industry_bonus
@@ -232,7 +232,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_goering
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_focus_goal_goring_plan
 		prerequisite = { focus = GER_steel_refs }
 		prerequisite = { focus = GER_industry_bonus }
 		relative_position_id = GER_industry_bonus
@@ -1963,7 +1963,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_steel_refs
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_the_steel_most_flow
 		prerequisite = { focus = GER_free_trade_path focus = GER_autarky_path }
 		relative_position_id = GER_free_trade_path
 		x = -5
@@ -2009,7 +2009,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ig_farben_company
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_ig_faben_focus
 		prerequisite = { focus = GER_autarky_path }
 		relative_position_id = GER_autarky_path
 		x = -4
@@ -2023,7 +2023,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ig_farben_rubber_per_ref
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_ig_faben_oil
 		prerequisite = { focus = GER_ig_farben_company }
 		relative_position_id = GER_ig_farben_company
 		x = 0
@@ -2120,7 +2120,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichsarbeitsdienst
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_goal_ger_reichsarbeitsdienst
 		prerequisite = { focus = GER_autarky_path }
 		relative_position_id = GER_autarky_path
 		x = -7
