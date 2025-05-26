@@ -1256,6 +1256,37 @@ leader_traits = {
 		expert_advisor_trait = army_logistics_2
 		genius_advisor_trait = army_logistics_3
 	}
+
+		tactical_commander = { 
+		type = field_marshal
+
+		cost = 2000
+		
+		field_marshal_modifier = {
+			max_army_group_size = -4
+		}
+
+		corps_commander_modifier = {
+			max_commander_army_size = -28
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		logistics_skill_factor = 2
+		
+		gui_row = 17
+
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		slot = high_command
+		specialist_advisor_trait = army_logistics_1
+		expert_advisor_trait = army_logistics_2
+		genius_advisor_trait = army_logistics_3
+	}
+
 	trickster = { 
 		type = corps_commander
 		gain_xp = {

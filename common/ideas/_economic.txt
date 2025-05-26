@@ -847,7 +847,7 @@ ideas = {
 			}
 
 			modifier = {
-				min_export = 0.4
+				min_export = 0.2
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15

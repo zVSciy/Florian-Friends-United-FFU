@@ -629,15 +629,6 @@ characters={
 				large="gfx/leaders/GER/Portrait_Germany_Josef_Dietrich.dds"
 			}
 		}
-		corps_commander={
-			traits={ trickster trait_engineer panzer_leader panzer_expert }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=24
-		}
 	}
 	GER_hasso_von_manteuffel={
 		name="Hasso von Manteuffel"

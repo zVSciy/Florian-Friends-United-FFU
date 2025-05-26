@@ -107,15 +107,6 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {	
-				prioritize = { 59 }
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = steel_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {	
 				prioritize = { 64 }
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -134,28 +125,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
-			random_owned_controlled_state = {	
-				prioritize = { 50 }
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			random_owned_controlled_state = {	
-				prioritize = { 5 }
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-
-
 		}
 	}
 
@@ -589,7 +558,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_mobilise_reich
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_mobilize_the_reich
 		prerequisite = { focus = GER_schacht_civs4 focus = GER_goering_mils6 }
 		relative_position_id = GER_schacht_civs4
 		x = 1
@@ -1424,7 +1393,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_prepare_barbarossa
-		icon = GFX_GER_special_operation
+		icon = GFX_ger_prepare_to_invade_union_shine
 		prerequisite = { focus = GER_reintegrate_east }
 		relative_position_id = GER_reintegrate_east
 		x = 1
@@ -1482,7 +1451,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_oder_vistula
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
 		prerequisite = { focus = GER_total_war }
 		relative_position_id = GER_total_war
 		x = 2
@@ -2417,7 +2386,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = GER_heavy_arty_bonus
+				bonus = 0.75
+				uses = 2
+				category = heavy_artillery
+			}
 		}
 	}
 
@@ -2581,12 +2555,12 @@ focus_tree = {
 
 		focus = { 
 		id = GER_wehrmacht
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_focus_GER_army
 		x = 40
 		y = 0
 		cost = 5
 		completion_reward = {
-
+			add_ideas = GER_walter_model
 		}
 	}
 
@@ -2599,7 +2573,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_political_power = 100
+			add_ideas = GER_heinrich_himmler
 		}
 	}
 
@@ -2612,7 +2587,58 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			hidden_effect ={
+				   division_template = {
+				    name = "SS-Jägerdivision"
+				    division_names_group = GER_ARM_01
+				    is_locked = no
+			        force_allow_recruiting = yes
+					template_counter = 32
+				    priority = 2
+				    division_cap = 12
+					    regiments = {
+							medium_armor = { x = 0 y = 0 }
+							medium_armor = { x = 0 y = 1 }
+							medium_armor = { x = 0 y = 2 }
+	
+							medium_armor = { x = 1 y = 0 }
+							medium_armor = { x = 1 y = 1 }
+							medium_armor = { x = 1 y = 2 }
+	
+							medium_tank_destroyer_brigade = { x = 2 y = 0 }
+							medium_tank_destroyer_brigade = { x = 2 y = 1 }
+							medium_tank_destroyer_brigade = { x = 2 y = 2 }
+					
+							mechanized = { x = 3 y = 0 }
+							mechanized = { x = 3 y = 1 }
+							mechanized = { x = 3 y = 2 }
+					
+							mechanized = { x = 4 y = 0 }
+							mechanized = { x = 4 y = 1 }
+							mechanized = { x = 4 y = 2 }
+							
+						}
+						support = {
+							mech_field_hospital = { x = 0 y = 0 }
+							logistics_company_mot = { x = 0 y = 1 }
+							light_tank_recon = { x = 0 y = 2 }
+							medium_sp_anti_air_brigade = { x = 0 y = 3 }
+							ss_hq_company_medium = { x = 1 y = 0 }
+							mech_engineers = { x = 1 y = 1 }
+							armored_signal = { x = 1 y = 2 }
+							armored_maintenance = { x = 1 y = 3 }
+						}
+					}
+					64 = {
+						for_loop_effect = {
+							end = 9
+							create_unit = {
+								division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
+								owner = GER
+							}
+						}
+					}
+				}
 		}
 	}
 
@@ -2638,7 +2664,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_field_marshal_role = {
+				character = GER_sepp_dietrich
+				traits = { panzer_leader panzer_expert urban_assault_specialist organizer offensive_doctrine aggressive_assaulter tactical_commander inspirational_leader logistics_wizard }
+				skill = 5
+				attack_skill = 7
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 6
+			}
 		}
 	}
 
@@ -2967,8 +3001,54 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+		custom_effect_tooltip = {
+                localization_key = GER_SS_inf_tt
+            }
+		hidden_effect = {
+			division_template = {
+				name = "SS-Jägerdivision"
+				division_names_group = GER_SS_01
+				template_counter = 4
+				is_locked = no
+				force_allow_recruiting = yes
+				priority = 2
+				division_cap = 21
 
-		}
+				regiments = {
+					jaeger = { x = 0 y = 0 }
+					jaeger = { x = 0 y = 1 }
+					jaeger = { x = 0 y = 2 }
+					jaeger = { x = 0 y = 3 }
+					jaeger = { x = 1 y = 0 }
+					jaeger = { x = 1 y = 1 }
+					jaeger = { x = 1 y = 2 }
+					jaeger = { x = 1 y = 3 }
+					jaeger = { x = 2 y = 0 }
+					jaeger = { x = 2 y = 1 }
+					jaeger = { x = 2 y = 2 }
+
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					heavy_anti_tank_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					iron_guard_recon_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					signal_company = { x = 0 y = 2 }
+					logistics_company_mot = { x = 0 y = 3 }
+					heavy_anti_air = { x = 1 y = 0 }
+					hq_company = { x = 1 y = 1 }
+					super_heavy_artillery = { x = 1 y = 2 }
+					rangers_support = { x = 1 y = 3} 
+				}
+			}
+		  }
+	   }
 	}
 
 		focus = {
@@ -2980,7 +3060,49 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			custom_effect_tooltip = {
+                localization_key = GER_spawn_ss_spawnins_tt
+            }
+			hidden_effect = {
+				division_template = {
+					name = "SS Battalions"
 
+					regiments = {
+						Converts = { x = 0 y = 0 }
+						Converts = { x = 0 y = 1 }
+						Converts = { x = 0 y = 2 }
+						Converts = { x = 0 y = 3 }
+
+						Converts = { x = 1 y = 0 }
+						Converts = { x = 1 y = 1 }
+						Converts = { x = 1 y = 2 }
+						Converts = { x = 1 y = 3 }
+
+						Converts = { x = 2 y = 0 }
+						Converts = { x = 2 y = 1 }
+						Converts = { x = 2 y = 2 }
+
+						Converts = { x = 3 y = 0 }
+						Converts = { x = 3 y = 1 }
+						Converts = { x = 3 y = 2 }
+						Converts = { x = 3 y = 3 }
+
+						Converts = { x = 4 y = 0 }
+						Converts = { x = 4 y = 1 }
+						Converts = { x = 4 y = 2 }
+						Converts = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 12
+						create_unit = {
+							division = "division_template = \"SS Battalions\" start_experience_factor = 0.7"
+							owner = SAF
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -2993,7 +3115,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_corps_commander_role = {
+			character = GER_albert_kesselring
+			traits={ infantry_leader commando }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			}
 		}
 	}
 
@@ -3006,7 +3136,11 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_intelligence_agency_defense = 1 tooltip = intelligence_agency_defense_tt }
+			add_to_variable = { GER_german_army_operative_slot = 3 tooltip = operative_slot_tt }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = GER_intel_prop
 		}
 	}
 
@@ -3019,7 +3153,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+						IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				upgrade_intelligence_agency = upgrade_form_department
+				upgrade_intelligence_agency = upgrade_decryption_boost
+				upgrade_intelligence_agency = upgrade_decryption_boost
+			}
 		}
 	}
 
@@ -3032,7 +3173,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				upgrade_intelligence_agency = upgrade_crypto_strength
+				upgrade_intelligence_agency = upgrade_crypto_strength
+			}
 		}
 	}
 
@@ -3058,7 +3205,10 @@ focus_tree = {
 		y = 2
 		cost = 5
 		completion_reward = {
-
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_experience_gain_army_unit_factor = 0.10 tooltip = experience_gain_army_unit_factor_tt }
+			add_to_variable = { GER_german_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
+			add_to_variable = { GER_german_army_experience_loss_factor = -0.15 tooltip = experience_loss_factor_tt }
 		}
 	}
 
@@ -3071,7 +3221,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
 		}
 	}
 
@@ -3097,7 +3246,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			hidden_effect = {
+				set_technology = { ger_cze_tank_1 = 1 }
+				set_technology = { ger_cze_tank_2 = 1 }
+			}
 		}
 	}
 
@@ -3110,7 +3262,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+				add_tech_bonus = {
+				name = luuchs_bonus
+				bonus = 0.5
+				ahead_reduction = 0.5
+				uses = 1
+				category = cat_light_armor
+			}
 		}
 	}
 
@@ -3119,6 +3277,9 @@ focus_tree = {
 		icon = GFX_ger_achtung_panzer
 		prerequisite = { focus = GER_luuchs_bonus }
 		relative_position_id = GER_luuchs_bonus
+		mutually_exclusive = {
+			focus = GER_light_tank_mios
+		}
 		x = -1
 		y = 1
 		cost = 5
@@ -3132,6 +3293,9 @@ focus_tree = {
 		icon = GFX_ger_achtung_panzer
 		prerequisite = { focus = GER_luuchs_bonus }
 		relative_position_id = GER_luuchs_bonus
+		mutually_exclusive = {
+			focus = GER_light_tank_ic
+		}
 		x = 1
 		y = 1
 		cost = 5
@@ -3175,6 +3339,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_planning_speed = 0.15 tooltip = planning_speed_tt }
+			add_to_variable = { GER_german_army_max_planning = 0.075 tooltip = max_planning_tt }
 
 		}
 	}
@@ -3184,11 +3351,20 @@ focus_tree = {
 		icon = GFX_ger_achtung_panzer
 		prerequisite = { focus = GER_planning_speed }
 		relative_position_id = GER_planning_speed
+		mutually_exclusive = {
+			focus = GER_truck_ic
+		}
 		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
-
+				add_tech_bonus = {
+				name = tnk_bonus
+				bonus = 0.75
+				ahead_reduction = 1
+				uses = 1
+				technology = mechanised_infantry
+			}
 		}
 	}
 
@@ -3202,7 +3378,11 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+		set_technology = {
+				mot_radio1 = 1
+				mot_radio2 = 1
+			}
+			
 		}
 	}
 
@@ -3215,7 +3395,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+				add_tech_bonus = {
+				name = tnk_bonus
+				bonus = 1
+				uses = 2
+				category = cat_medium_armor
+			}
 		}
 	}
 
@@ -3224,6 +3409,9 @@ focus_tree = {
 		icon = GFX_ger_achtung_panzer
 		prerequisite = { focus = GER_planning_speed }
 		relative_position_id = GER_planning_speed
+		mutually_exclusive = {
+			focus = GER_mech
+		}
 		x = -1
 		y = 1
 		cost = 5
@@ -3268,7 +3456,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = inf_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -3281,21 +3474,67 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = GER_flame_tank
+				bonus = 0.69
+				uses = 2
+				category = support_equipment
+				technology = tech_engineers2
+				technology = tech_engineers3
+			}
 		}
 	}
 
 	
 		focus = {
 		id = GER_flak_36
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_focus_GER_flak_36
 		prerequisite = { focus = GER_flamethrower }
 		relative_position_id = GER_flamethrower
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-
+		    set_technology = { antiair2 = 1 popup = no }
+			create_equipment_variant = {
+				name = "2 cm Flakvierling 38 A"
+				type = anti_air_equipment_2
+				upgrades = {
+					infantry_quality_upgrade = 2
+					infantry_quantity_upgrade = 2
+					artillery_aa_upgrade = 2
+					artillery_aa_ap_upgrade = 2
+				}
+			}
+			hidden_effect = {
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			add_equipment_production = {
+				equipment = {
+					type = anti_air_equipment_2
+					creator = "GER"
+					version_name = "2 cm Flakvierling 38 A"
+				}
+				requested_factories = 1
+				progress = 0.1
+				efficiency = 50
+			}
+			every_controlled_state = {
+				limit = {
+					GER_flak_36_states = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = anti_air
+				bonus = 1
+				uses = 2
+				category = cat_anti_air
+			}
 		}
 	}
 		focus = {
@@ -3963,8 +4202,6 @@ focus_tree = {
 			}
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
 			hidden_effect = {
-				set_technology = { ger_cze_tank_1 = 1 }
-				set_technology = { ger_cze_tank_2 = 1 }
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 10000
@@ -5809,7 +6046,7 @@ focus_tree = {
     }
 
 		focus = {
-		id = GER_naval_rearmament
+		id = GER_naval_armament
 		icon = GFX_focus_GER_navy
 		x = 81
 		y = 0
@@ -5905,10 +6142,10 @@ focus_tree = {
 	focus = {
 		id = GER_naval_effort2
 		icon = GFX_GER_naval_effort2
-		prerequisite = { focus = GER_naval_rearmament }
+		prerequisite = { focus = GER_naval_armament }
 		x = 0
 		y = 1
-		relative_position_id = GER_naval_rearmament
+		relative_position_id = GER_naval_armament
 		cost = 2
 		ai_will_do = {
 			factor = 1
