@@ -563,6 +563,8 @@ focus_tree = {
 			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_economy_production_factory_start_efficiency_factor = 0.075 tooltip = production_factory_start_efficiency_factor_tt }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = GER_reichsarbeit_prop
 		}
 	}
 
@@ -950,7 +952,9 @@ focus_tree = {
 		y = 2
 		cost = 5
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_buildings_factor = 0.025 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
@@ -964,7 +968,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
@@ -978,7 +983,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 		}
 	}
 
@@ -991,7 +997,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_training_time_army_factor = -0.3 tooltip = training_time_army_factor_tt }
+			add_to_variable = { GER_german_army_land_night_attack = 0.075 tooltip = land_night_attack_tt }
 		}
 	}
 
@@ -1004,7 +1012,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_rail_way_factor = 0.3 tooltip = production_speed_rail_way_factor_tt }
+			add_to_variable = { GER_german_economy_production_speed_supply_node_factor = 0.2 tooltip = production_speed_supply_node_factor_tt }
 		}
 	}
 
@@ -1017,7 +1027,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+				add_tech_bonus = {
+				name = GER_logistics_bonus
+				bonus = 5
+				uses = 1
+				category = logistics_tech
+			}
 		}
 	}
 
