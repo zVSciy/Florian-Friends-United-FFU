@@ -67,7 +67,8 @@ guiTypes = {
 			context_aware_text = "[GetGermanRubber]"
 			context_aware_tooltip = "Counts all Rubber owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
 			format = left
-			maxWidth = 300
+			maxWidth = 250
+			maxHeight = 25
 		}
 		# Tungsten
 		instantTextBoxType = {
@@ -78,7 +79,7 @@ guiTypes = {
 			context_aware_text = "[GetGermanTungsten]"
 			context_aware_tooltip = "Counts all Tungsten owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
 			format = left
-			maxWidth = 400
+			maxWidth = 250
 		}
 		# Chromium
 		instantTextBoxType = {
@@ -89,7 +90,7 @@ guiTypes = {
 			context_aware_text = "[GetGermanChromium]"
 			context_aware_tooltip = "Counts all Chromium owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
 			format = left
-			maxWidth = 400
+			maxWidth = 250
 		}
 		# Oil
 		instantTextBoxType = {
@@ -100,7 +101,8 @@ guiTypes = {
 			context_aware_text = "[GetGermanOil]"
 			context_aware_tooltip = "Counts all Oil owned by Germany, Vichy, and any Germany Puppets, not counting any resources in Spanish or Portugese Core"
 			format = left
-			maxWidth = 400
+			maxWidth = 250
+			maxHeight = 25
 		}
 
 		##########################
@@ -148,7 +150,7 @@ guiTypes = {
 			context_aware_text = "[GetFactionTungsten]"
 			context_aware_tooltip = "Counts all Tungsten in the Faction not in a Spanish or Portugese Core"
 			format = left
-			maxWidth = 400
+			maxWidth = 250
 		}
 		# Chromium Faction
 		instantTextBoxType = {
@@ -159,7 +161,7 @@ guiTypes = {
 			context_aware_text = "[GetFactionChromium]"
 			context_aware_tooltip = "Counts all Chromium in the Faction not in a Spanish or Portugese Core"
 			format = left
-			maxWidth = 400
+			maxWidth = 250
 		}
 		# Oil Faction
 		instantTextBoxType = {
@@ -170,7 +172,7 @@ guiTypes = {
 			context_aware_text = "[GetFactionOil]"
 			context_aware_tooltip = "Counts all Oil in the Faction not in a Spanish or Portugese Core"
 			format = left
-			maxWidth = 400
+			maxWidth = 250
 		}
 
 	}
