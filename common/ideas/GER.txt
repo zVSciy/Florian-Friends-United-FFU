@@ -3598,11 +3598,11 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = GER_ig_farben
+				has_completed_focus = GER_ig_farben_company
 			}
 			
 			research_bonus = {
-				synth_resources = 0.20
+				synth_resources = 0.3
 			}
 			
 			traits = { ig_faben }
@@ -3617,6 +3617,10 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
+			available = {
+				has_completed_focus = GER_krupp
+			}
 			
 			research_bonus = {
 				industry = 0.15
@@ -3626,7 +3630,7 @@ ideas = {
 				factor = 2
 			}
 			
-			traits = { industrial_concern }
+			traits = { krupp_designer }
 		}
 
 		siemens = {

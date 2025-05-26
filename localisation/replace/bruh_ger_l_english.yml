@@ -507,6 +507,7 @@
   hess:0 "Deputy Fuhrer"
   speer_idea:0 "Miracle Maker"
   raeder_trait:0 "Surface Raider"
+  krupp_designer:0 "Krupp Steelworks"
 
   #### CHARACTERS ####
   erich_hartmann:0 "Erich Hartmann"
@@ -514,6 +515,7 @@
   GER_marco_winkler:0 "Marco Winkler"
 
   #### DECISIONS ####
+  german_limited_exports_eco:0 "Autarky"
   GER_share_tanks:0 "Tank Sharing Programme"
   GER_share_tanks_desc:0 "We have great tank designs and we should share them with our allies."
   GER_share_p2:0 "Purchase the Panzer II"
