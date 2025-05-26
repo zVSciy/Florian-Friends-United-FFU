@@ -1181,7 +1181,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_arms_factory_factor = 0.125 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 
@@ -1194,7 +1195,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_dockyard_factor = 0.1 tooltip = production_speed_dockyard_factor_tt }
 		}
 	}
 
@@ -1207,33 +1209,72 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			48 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			109 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 		focus = {
-		id = GER_tank_sharing_programme
-		icon = GFX_ger_achtung_panzer
+		id = GER_share_tanks
+		icon = GFX_GER_kampfgruppen
 		prerequisite = { focus = GER_krupp }
 		relative_position_id = GER_krupp
 		x = -1
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			custom_effect_tooltip = ger_share_tanks_tt_4
 		}
 	}
 
 	    focus = {
 		id = GER_conversion_technology
 		icon = GFX_ger_achtung_panzer
-		prerequisite = { focus = GER_tank_sharing_programme }
-		relative_position_id = GER_tank_sharing_programme
+		prerequisite = { focus = GER_share_tanks }
+		relative_position_id = GER_share_tanks
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_ideas = HUN_assault_gun_idea
 		}
 	}
 
@@ -1246,7 +1287,46 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			48 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			109 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
