@@ -45,8 +45,8 @@ set_technology = {
 	
 	ger_light_tank_1 = 1
 	ger_light_tank_2 = 1
-	ger_p3_tank_1 = 1
-	ger_p4_tank_1 = 1
+	# ger_p3_tank_1 = 1
+	# ger_p4_tank_1 = 1
 	# ger_heavy_tank_0 = 1
 	basic_train = 1
 	
@@ -196,7 +196,7 @@ add_to_tech_sharing_group = axis_research
 # add_ideas = {GER_mefo_bills_1 GER_good_weather_army }
 
 add_timed_idea = {
-	idea = no_tradeback
+	idea = 
 	days = 765
 }
 
