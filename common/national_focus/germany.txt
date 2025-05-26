@@ -604,46 +604,827 @@ focus_tree = {
 
 		focus = {
 		id = GER_plunder_west
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_exploit_and_plunder
 		prerequisite = { focus = GER_mobilise_reich }
 		relative_position_id = GER_mobilise_reich
 		x = -3
 		y = 1
 		cost = 5
+		available = {
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
+		}
 		completion_reward = {
-
+			16 = {
+			}
+			add_offsite_building = { type = arms_factory level = 10 }
+			add_offsite_building = { type = industrial_complex level = 10 }
+			every_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				set_compliance = 60
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				set_compliance = 40
+			}
+			# every_controlled_state = {
+			# 	limit = {
+			# 		is_core_of = HOL
+			# 	}
+			# 	set_compliance = 40
+			# }
+			effect_tooltip = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 10000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = squad_equipment_0
+					amount = 2000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 750
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 750
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 2000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 500
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 250
+					producer = FRA
+				}
+			}
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 10000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = squad_equipment_0
+					amount = 2000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 750
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 750
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 2000
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 500
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 250
+					producer = GER
+				}
+			}
 		}
 	}
 
 		focus = {
 		id = GER_atlantikwall
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_atlantikwall
 		prerequisite = { focus = GER_plunder_west }
 		relative_position_id = GER_plunder_west
 		x = -1
 		y = 1
 		cost = 5
 		completion_reward = {
+			# add_ideas = GER_atlantikwall_idea
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_coastal_bunker_factor = 0.3 tooltip = production_speed_coastal_bunker_factor_tt }
+			add_to_variable = { GER_german_economy_production_speed_anti_air_building_factor = 0.3 tooltip = production_speed_anti_air_building_factor_tt }
+			custom_effect_tooltip = atlantikwall_tooltip
+			custom_effect_tooltip = atlantikwall_tooltip_2
+			hidden_effect = {
+				every_state = {
+					limit = {
+						europe_pacific_modifier_states_non_atlantikwall = yes
+					}
+					add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
+				}
+			}
+			hidden_effect = {
+				ITA = {
+					load_oob = "ATLANTIKWALL_48"
+				}
+			}
+			hidden_effect = {
+				ITA = {
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 300
+						producer = ITA
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 35
+						}
+					}
+					35 = {
+						#Fortify naval bases
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 19
+						}
+					}
+					19 = {
+						#Fortify naval bases
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 23
+						}
+					}
+					23 = {
+						#Fortify naval bases
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 30
+						}
+					}
+					30 = {
+						#Fortify naval bases
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 14
+						}
+					}
+					14 = {
+						#Fortify naval bases
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 15
+						}
+					}
+					15 = {
+						#Fortify naval bases a bit extra close to Calais
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 29
+						}
+					}
+					29 = {
+						#Bonus Fortifications on Calais coastline
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 3
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 4
+							instant_build = yes
+						}
+            	    	#Biggest fortifications on Calais itself
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_victory_point = yes
+            	    	    }
+            	    	    level = 5
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 6
+						}
+					}
+					6 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}	
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 7
+						}
+					}
+					7 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases a bit extra close to Calais
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 3
+							instant_build = yes
+						}
+					}
+				}	
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 36
+						}
+					}	
+					36 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 56
+						}
+					}		
+					56 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 59
+						}
+					}		
+					59 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 58
+						}
+					}		
+					58 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 99
+						}
+					}		
+					99 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 110
+						}
+					}		
+					110 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 142
+						}
+					}		
+					142 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 143
+						}
+					}		
+					143 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 144
+						}
+					}		
+					144 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 785
+						}
+					}
+					785 = {
+						set_building_level  = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 2
+            	    	    instant_build = yes
+            	    	}
+						#Fortify naval bases
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+					}
+				}	
+			}
 
 		}
 	}
 
 		focus = {
 		id = GER_reintegrate_east
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_ger_prevent_deal
 		prerequisite = { focus = GER_mobilise_reich }
 		relative_position_id = GER_mobilise_reich
 		x = 3
 		y = 1
 		cost = 5
+		available = {
+			controls_state = 85
+			controls_state = 86
+			controls_state = 762
+			controls_state = 807
+		}
 		completion_reward = {
-
+			remove_state_claim = 85
+			remove_state_claim = 86
+			remove_state_claim = 762
+			remove_state_claim = 807
+			transfer_state = 85
+			transfer_state = 86
+			transfer_state = 762
+			transfer_state = 807
+			add_state_core = 85
+			add_state_core = 86
+			add_state_core = 762
+			add_state_core = 807
+			if = {
+				limit = {
+					has_global_flag = DENIED_CZE
+				}
+				transfer_state = 69
+				add_state_core = 69
+				transfer_state = 74
+				add_state_core = 74
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = POL
+				}
+				set_compliance = 40
+			}
 		}
 	}
 
 		focus = {
 		id = GER_prepare_barbarossa
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_special_operation
 		prerequisite = { focus = GER_reintegrate_east }
 		relative_position_id = GER_reintegrate_east
 		x = 1
@@ -656,27 +1437,46 @@ focus_tree = {
 
 		focus = {
 		id = GER_avenge_versailles
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_focus_GER_germania
 		prerequisite = { focus = GER_mobilise_reich }
 		relative_position_id = GER_mobilise_reich
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			GER = {
+				set_cosmetic_tag = GER_greater_german_reich
+			}
+ 			hidden_effect = {
+ 				set_global_flag = form_greater_german_reich_flag
+ 			}
+			add_political_power = 200
+			# add_ideas = triumphant_will
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_stability_factor = 0.10 tooltip = stability_factor_tt }
+			add_to_variable = { GER_german_economy_war_support_factor = 0.10 tooltip = war_support_factor_tt }
 		}
 	}
 
 		focus = {
 		id = GER_total_war
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_total_war
 		prerequisite = { focus = GER_avenge_versailles }
 		relative_position_id = GER_avenge_versailles
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_political_power = 150
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = GER_plow_prop
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_conscription = 0.01 tooltip = conscription_tt }
+			GER_economy_dynamic_modifier_tt = yes
+			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			hidden_effect = {
+				play_song = "9-speech"
+			}
 		}
 	}
 
@@ -695,46 +1495,413 @@ focus_tree = {
 
 		focus = {
 		id = GER_ostwall
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_ostwall
 		prerequisite = { focus = GER_total_war }
 		relative_position_id = GER_total_war
 		x = -2
 		y = 1
 		cost = 5
+		available = {
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				OR = {
+					has_full_control_of_state = 191
+					has_full_control_of_state = 209
+					has_full_control_of_state = 210
+					has_full_control_of_state = 207
+					has_full_control_of_state = 206
+					has_full_control_of_state = 204
+					has_full_control_of_state = 194
+					has_full_control_of_state = 202
+					has_full_control_of_state = 203
+					has_full_control_of_state = 226
+					has_full_control_of_state = 200
+				}
+			}
+		}
 		completion_reward = {
-
+						# add_ideas = GER_ostwall_idea
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_max_dig_in = 2 tooltip = max_dig_in_tt }
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_bunker_factor = 0.25 tooltip = production_speed_bunker_factor_tt }
+			custom_effect_tooltip = GER_ostwall_forts
+			custom_effect_tooltip = GER_ostwall_forts_2
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 191 
+					}
+				}
+				hidden_effect = {
+					191 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 4640
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 209
+					}
+				}
+				hidden_effect = {
+					209 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 415
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3310
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 210 
+					}
+				}
+				hidden_effect = {
+					210 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3333
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11259
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9386
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 207 
+					}
+				}
+				hidden_effect = {
+					207 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 323
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11241
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11220
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3331
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 206 
+					}
+				}
+				hidden_effect = {
+					206 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9289
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3378
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 204 
+					}
+				}
+				hidden_effect = {
+					204 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6373
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 194 
+					}
+				}
+				hidden_effect = {
+					194 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6319
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9249
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3507
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 202 
+					}
+				}
+				hidden_effect = {
+					202 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9568
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3543
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 525
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3494
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 203 
+					}
+				}
+				hidden_effect = {
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11454
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 488
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3468
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6478
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 226 
+					}
+				}
+				hidden_effect = {
+					226 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9433
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11437
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 200 
+					}
+				}
+				hidden_effect = {
+					200 = {
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11405
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6596
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11700
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 	}
 
 		focus = {
 		id = GER_appoint_speer
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_goal_ger_heer
 		prerequisite = { focus = GER_total_war }
 		relative_position_id = GER_total_war
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GER_albert_speer
 		}
 	}
 
 		focus = {
 		id = GER_reorganise_war_industry
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_ger_new_subsidiaries
 		prerequisite = { focus = GER_appoint_speer }
 		relative_position_id = GER_appoint_speer
 		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_timed_idea = { idea = GER_armaments_miracle days = 365 }
 		}
 	}
 
 		focus = {
 		id = GER_prioritise_tanks
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_the_wild_cats_that_roam_russia
 		prerequisite = { focus = GER_reorganise_war_industry }
 		relative_position_id = GER_reorganise_war_industry
 		mutually_exclusive = { focus = GER_prioritise_aircraft }
@@ -742,13 +1909,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_timed_idea = { idea = GER_prioritise_tanks_idea days = 365 }
 		}
 	}
 
 		focus = {
 		id = GER_prioritise_aircraft
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_GER_luftwaffe_investment
 		prerequisite = { focus = GER_reorganise_war_industry }
 		relative_position_id = GER_reorganise_war_industry
 		mutually_exclusive = { focus = GER_prioritise_tanks }
@@ -756,7 +1923,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_timed_idea = { idea = GER_prioritise_aircraft_idea days = 365 }
 		}
 	}
 
@@ -769,20 +1936,59 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			64 = {
+				remove_building = {
+					type = arms_factory
+					level = 12
+				}
+			}
+			61 = {
+				remove_building = {
+					type = arms_factory
+					level = 12
+				}
+			}
+			58 = {
+				remove_building = {
+					type = arms_factory
+					level = 12
+				}
+			}
+			60 = {
+				remove_building = {
+					type = arms_factory
+					level = 12
+				}
+			}
+			56 = {
+				remove_building = {
+					type = arms_factory
+					level = 12
+				}
+			}
+			50 = {
+				remove_building = {
+					type = arms_factory
+					level = 12
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 78 }
 
 		}
 	}
 
 		focus = {
 		id = GER_simplify_designs
-		icon = GFX_ger_achtung_panzer
+		icon = GFX_ger_goal_guest_workers
 		prerequisite = { focus = GER_reorganise_war_industry }
 		relative_position_id = GER_reorganise_war_industry
 		x = 3
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			# add_ideas = GER_simplified_designs_idea
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_lack_of_resource_penalty_factor = -0.75 tooltip = production_lack_of_resource_penalty_factor_tt }
 		}
 	}
 
@@ -1060,7 +2266,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				specialization = specialization_land
+				specialization = specialization_naval
+				value = 1
+			}
 		}
 	}
 
@@ -1074,7 +2285,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			763 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+					province = 6332
+				}
+			}
 		}
 	}
 
@@ -1087,12 +2305,23 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			59 = {
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					instant_build = yes
+					province = 6377
+				}
+			}
+				add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 1
+			}
 		}
 	}
 
 		focus = {
-		id = GER_wunderwaffe
+		id = GER_wunderwaffe_weapons
 		icon = GFX_ger_achtung_panzer
 		prerequisite = { focus = GER_nuclear_facility }
 		relative_position_id = GER_nuclear_facility
@@ -1100,12 +2329,33 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			custom_effect_tooltip = GER_wunderwaffe_tt
 		}
 	}
 
 		focus = {
-		id = GER_amerikabomber
+		id = GER_wunderwaffe
+		icon = GFX_ger_achtung_panzer
+		prerequisite = { focus = GER_wunderwaffe_weapons }
+		relative_position_id = GER_wunderwaffe_weapons
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			date > 1940.1.1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_atomic_bonus
+				bonus = 1000
+				uses = 1
+				technology = atomic_research
+			}
+		}
+	}
+
+		focus = {
+		id = GER_facility_slot
 		icon = GFX_ger_achtung_panzer
 		prerequisite = { focus = GER_wunderwaffe }
 		relative_position_id = GER_wunderwaffe
@@ -1113,20 +2363,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
-		}
-	}
-
-		focus = {
-		id = GER_facility_slot
-		icon = GFX_ger_achtung_panzer
-		prerequisite = { focus = GER_amerikabomber }
-		relative_position_id = GER_amerikabomber
-		x = 0
-		y = 1
-		cost = 5
-		completion_reward = {
-
+			add_research_slot = 1
 		}
 	}
 
@@ -1141,7 +2378,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			53 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+					province = 9515
+				}
+			}
 		}
 	}
 
@@ -1154,7 +2398,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 0.75
+				uses = 1
+				technology = mot_radio3
+			}
 		}
 	}
 
