@@ -1962,7 +1962,7 @@ focus_tree = {
 					level = 12
 				}
 			}
-			add_offsite_building = { type = arms_factory level = 78 }
+			add_offsite_building = { type = arms_factory level = 78 } # you get 6 free mils here lol!
 
 		}
 	}
@@ -3202,7 +3202,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_converts
-		icon = GFX_GER_SS_armed_branch
+		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = GER_ss_inf }
 		relative_position_id = GER_ss_inf
 		x = -1
@@ -3257,7 +3257,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_commando
-		icon = GFX_focus_GER_SS
+		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = GER_ss_inf }
 		relative_position_id = GER_ss_inf
 		x = 1
