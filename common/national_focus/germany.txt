@@ -1468,7 +1468,7 @@ focus_tree = {
 		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
 		prerequisite = { focus = GER_total_war }
 		relative_position_id = GER_total_war
-		x = 2
+		x = -2
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -1481,7 +1481,7 @@ focus_tree = {
 		icon = GFX_GER_ostwall
 		prerequisite = { focus = GER_total_war }
 		relative_position_id = GER_total_war
-		x = -2
+		x = 2
 		y = 1
 		cost = 5
 		available = {
@@ -1991,18 +1991,18 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			64 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}		
 			}
             59 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2055,17 +2055,44 @@ focus_tree = {
 			   resource = rubber
 			   amount = 15
 			}
+			random_owned_controlled_state = {	
+				prioritize = { 50 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+		    random_owned_controlled_state = {	
+				prioritize = { 57 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {	
+				prioritize = { 5 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 		focus = {
 		id = GER_research_slot
-		icon = GFX_GER_absorb_rheinmetall
+		icon = GFX_GER_extra_research
 		prerequisite = { focus = GER_ig_farben_rubber_per_ref }
 		relative_position_id = GER_ig_farben_rubber_per_ref
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -2155,7 +2182,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichsarbeitsdienst_output
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ger_arbeitsfront
 		prerequisite = { focus = GER_reichsarbeitsdienst }
 		relative_position_id = GER_reichsarbeitsdienst
 		mutually_exclusive = { focus = GER_reichsarbeitsdienst_mil_construction }
@@ -2170,7 +2197,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichsarbeitsdienst_mil_construction
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_indyclone_soldiers_for_workers
 		prerequisite = { focus = GER_reichsarbeitsdienst }
 		relative_position_id = GER_reichsarbeitsdienst
 		mutually_exclusive = { focus = GER_reichsarbeitsdienst_output }
@@ -2509,23 +2536,82 @@ focus_tree = {
 	}
 
 	    focus = {
-		id = GER_conversion_technology
-		icon = GFX_GER_oak_support_tanks
-		prerequisite = { focus = GER_share_tanks }
-		relative_position_id = GER_share_tanks
+		id = GER_sweden_trade
+		icon = GFX_GER_swedish_trade
+		prerequisite = { focus = GER_free_trade_steel_refs }
+		relative_position_id = GER_free_trade_steel_refs
 		x = 0
 		y = 1
 		cost = 5
+		available = {
+			AND = {
+				110 = {
+					CONTROLLER = {
+						OR = {
+							tag = GER
+							is_subject_of = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				37 = {
+					CONTROLLER = {
+						OR = {
+							tag = GER
+							is_subject_of = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+			}
+		}	
 		completion_reward = {
-			add_ideas = HUN_assault_gun_idea
+			every_controlled_state = {
+				limit = {
+					is_core_of = NOR
+				}
+				set_compliance = 40
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = DEN
+				}
+				set_compliance = 40
+			}
+			SWE = {
+				add_ideas = GER_SWE_trade 
+				add_opinion_modifier = {
+					target = GER
+					modifier = ENG_imperial_trade
+				}
+
+				# COMINTERN
+				send_embargo = SOV
+				send_embargo = MON
+	
+				# ALLIES
+				send_embargo = CAN
+				send_embargo = USA
+				send_embargo = MEX
+				send_embargo = BRA
+				send_embargo = IRE
+				send_embargo = ENG
+				send_embargo = FRA
+				send_embargo = HOL
+				send_embargo = POL
+				send_embargo = RAJ
+				send_embargo = AST
+				send_embargo = NZL
+				send_embargo = SAF
+			}
 		}
 	}
 
 		focus = {
 		id = GER_free_trade_steel_refs
 		icon = GFX_GER_oak_prevent_rheinmetall_merger
-		prerequisite = { focus = GER_conversion_technology }
-		relative_position_id = GER_conversion_technology
+		prerequisite = { focus = GER_share_tanks }
+		relative_position_id = GER_share_tanks
 		x = 0
 		y = 1
 		cost = 5
@@ -2586,10 +2672,10 @@ focus_tree = {
 
 		focus = {
 		id = GER_himmler
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_SS
 		prerequisite = { focus = GER_wehrmacht }
 		relative_position_id = GER_wehrmacht
-		x = -4
+		x = -3
 		y = 1
 		cost = 3
 		completion_reward = {
@@ -2600,10 +2686,10 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_tanks
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_SS_panzer_corps
 		prerequisite = { focus = GER_himmler }
 		relative_position_id = GER_himmler
-		x = -3
+		x = -2
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -2658,7 +2744,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_heavies
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_SS_heavvy_panzer_corps
 		prerequisite = { focus = GER_ss_tanks }
 		relative_position_id = GER_ss_tanks
 		x = -1
@@ -2743,7 +2829,7 @@ focus_tree = {
 		prerequisite = { focus = GER_ss_heavies }
 		prerequisite = { focus = GER_ss_commando }
 		relative_position_id = GER_ss_dietrich
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -2753,7 +2839,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_appoint_reichskommissars
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_ss_politics }
 		relative_position_id = GER_ss_politics
 		x = 0
@@ -3056,10 +3142,10 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_inf
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_SS_inf_icon
 		prerequisite = { focus = GER_himmler }
 		relative_position_id = GER_himmler
-		x = 3
+		x = 2
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -3115,7 +3201,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_converts
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_SS_armed_branch
 		prerequisite = { focus = GER_ss_inf }
 		relative_position_id = GER_ss_inf
 		x = -1
@@ -3160,7 +3246,7 @@ focus_tree = {
 						end = 12
 						create_unit = {
 							division = "division_template = \"SS Battalions\" start_experience_factor = 0.7"
-							owner = SAF
+							owner = GER
 						}
 					}
 				}
@@ -3170,7 +3256,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_commando
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_SS
 		prerequisite = { focus = GER_ss_inf }
 		relative_position_id = GER_ss_inf
 		x = 1
@@ -3191,7 +3277,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_abwehr
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_strengthen_die_abwehr
 		prerequisite = { focus = GER_wehrmacht }
 		relative_position_id = GER_wehrmacht
 		x = 3
@@ -3208,7 +3294,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_abwehr2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_secret_service_agency
 		prerequisite = { focus = GER_abwehr }
 		relative_position_id = GER_abwehr
 		x = -1
@@ -3228,7 +3314,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_abwehr3
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_propaganda_master
 		prerequisite = { focus = GER_abwehr }
 		relative_position_id = GER_abwehr
 		x = 1
@@ -3247,7 +3333,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_blitzkrieg
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_doctrine_tank_warfare
 		prerequisite = { focus = GER_wehrmacht }
 		relative_position_id = GER_wehrmacht
 		x = 11
@@ -3265,12 +3351,15 @@ focus_tree = {
 
 		focus = {
 		id = GER_stats_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_infantry_man_primacy
 		prerequisite = { focus = GER_blitzkrieg }
 		relative_position_id = GER_blitzkrieg
 		x = 0
 		y = 2
 		cost = 5
+		available = {
+			has_war = yes
+		}
 		completion_reward = {
 			GER_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_army_experience_gain_army_unit_factor = 0.10 tooltip = experience_gain_army_unit_factor_tt }
@@ -3414,6 +3503,12 @@ focus_tree = {
 				uses = 2
 				category = cat_medium_armor
 			}
+				add_tech_bonus = {
+				name = tnk_bonus
+				bonus = 0.75
+				uses = 2
+				category = cat_heavy_armor
+			}
 		}
 	}
 
@@ -3533,10 +3628,59 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = GER_soviet_treaty
+		icon = GFX_GER_soviet_treaty
+		prerequisite = { focus = GER_wehrmacht }
+		relative_position_id = GER_wehrmacht
+		x = -8
+		y = 1
+		cost = 5
+		bypass = { 
+			OR = {
+				has_war_with = SOV
+				NOT = { country_exists = SOV }
+			}
+		}
+		completion_reward = {
+			SOV = {
+				country_event = { id = germany.75 days = 1 }
+				custom_effect_tooltip = needs_approval
+			}
+			effect_tooltip = {
+				add_tech_bonus = {
+					name = med_armor_bonus
+					bonus = 0.5
+					ahead_reduction = 0.5
+					category = cat_medium_armor
+				}
+				add_tech_bonus = {
+					name = hvy_armor_bonus
+					bonus = 0.5
+					ahead_reduction = 0.5
+					category = cat_heavy_armor
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = GER_panzer_support
+		icon = GFX_ger_support_tanks
+		prerequisite = { focus = GER_soviet_treaty }
+		relative_position_id = GER_soviet_treaty
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = HUN_assault_gun_idea
+		}
+	}
+
 
 		focus = {
 		id = GER_gun_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_panzerfausts_for_all
 		prerequisite = { focus = GER_wehrmacht }
 		relative_position_id = GER_wehrmacht
 		x = -11
