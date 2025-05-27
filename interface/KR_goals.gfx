@@ -7561,6 +7561,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ger/ger_goal_kdf_wagen.tga"
 	}
 	SpriteType = {
+		name = "GFX_oak_focus_ger_goal_kdf_wagen"
+		texturefile = "gfx/interface/goals/ger/ger_goal_kdf_wagen_oak.tga"
+	}
+	SpriteType = {
 		name = "GFX_focus_ger_volkssturm"
 		texturefile = "gfx/interface/goals/ger/ger_volkssturm.tga"
 	}

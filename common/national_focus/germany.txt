@@ -4240,14 +4240,17 @@ focus_tree = {
 
 		focus = {
 		id = GER_armored_car_hardness
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_oak_focus_ger_goal_kdf_wagen
 		prerequisite = { focus = GER_planning_speed }
 		relative_position_id = GER_planning_speed
 		x = -1
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			set_technology = {
+				armored_car_ger_bonus = 1
+			}
+			
 		}
 	}
 
