@@ -7433,6 +7433,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ger/goal_ger_heer.tga"
 	}
 	SpriteType = {
+		name = "GFX_GER_ussr_war_goal"
+		texturefile = "gfx/interface/goals/GER/GER_barbarossa_icon.tga"
+	}
+	SpriteType = {
 		name = "GFX_goal_ger_luftwaffe"
 		texturefile = "gfx/interface/goals/ger/goal_luftwaffe.tga"
 	}

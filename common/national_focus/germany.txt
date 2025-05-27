@@ -5315,7 +5315,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_barb
-		icon = GFX_ger_final_crusade
+		icon = GFX_GER_ussr_war_goal
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
