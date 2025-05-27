@@ -2803,7 +2803,7 @@ focus_tree = {
 
 	    focus = {
 		id = GER_ss_dietrich
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_oak_SS_restrict_recruitment
 		prerequisite = { focus = GER_ss_tanks }
 		relative_position_id = GER_ss_tanks
 		x = 1
@@ -2824,7 +2824,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_politics
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_Schutzstaffel_focus
 		prerequisite = { focus = GER_ss_dietrich }
         prerequisite = { focus = GER_ss_converts }
 		prerequisite = { focus = GER_ss_heavies }
@@ -2908,7 +2908,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichskomissart_netherlands
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_curtail_benelux
 		prerequisite = { focus = GER_appoint_reichskommissars }
 		relative_position_id = GER_appoint_reichskommissars
 		x = 10
@@ -2921,7 +2921,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichskomissart_france
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_curtail_france
 		prerequisite = { focus = GER_appoint_reichskommissars }
 		relative_position_id = GER_appoint_reichskommissars
 		x = 6
@@ -2934,7 +2934,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichskomissart_ostland
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_curtail_poland
 		prerequisite = { focus = GER_appoint_reichskommissars }
 		relative_position_id = GER_appoint_reichskommissars
 		x = 2
@@ -3025,7 +3025,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichskomissart_denmark
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_seize_scandinavia
 		prerequisite = { focus = GER_appoint_reichskommissars }
 		relative_position_id = GER_appoint_reichskommissars
 		x = -10
@@ -3038,7 +3038,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichskomissart_ukraine
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_curtail_yugoslavia
 		prerequisite = { focus = GER_appoint_reichskommissars }
 		relative_position_id = GER_appoint_reichskommissars
 		x = -2
@@ -3077,7 +3077,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichskomissart_norway
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_seize_scandinavia
 		prerequisite = { focus = GER_appoint_reichskommissars }
 		relative_position_id = GER_appoint_reichskommissars
 		x = -6
@@ -3202,7 +3202,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_converts
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_oak_SS_recruit_everywhere
 		prerequisite = { focus = GER_ss_inf }
 		relative_position_id = GER_ss_inf
 		x = -1
@@ -3257,7 +3257,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ss_commando
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_infantry_weapons_2
 		prerequisite = { focus = GER_ss_inf }
 		relative_position_id = GER_ss_inf
 		x = 1

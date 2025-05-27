@@ -7285,12 +7285,21 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_SS_recruit_everywhere"
-		texturefile = "gfx/interface/goals/ger/ger_foreign_recruitment.tga"
+		texturefile = "gfx/interface/goals/ger/ger_foreign_recruitment.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_oak_SS_recruit_everywhere"
+		texturefile = "gfx/interface/goals/ger/ger_foreign_recruitment_oak.tga"
 	}
 	SpriteType = {
 		name = "GFX_GER_SS_restrict_recruitment"
-		texturefile = "gfx/interface/goals/ger/ger_restrict_recruitment.tga"
+		texturefile = "gfx/interface/goals/ger/ger_restrict_recruitment.dds"
 	}
+	SpriteType = {
+		name = "GFX_GER_oak_SS_restrict_recruitment"
+		texturefile = "gfx/interface/goals/ger/ger_restrict_recruitment_oak.tga"
+	}
+	
 	SpriteType = {
 		name = "GFX_GER_krupp_in_charge"
 		texturefile = "gfx/interface/goals/GER/ger_alliance_of_steel_and_blood.tga"
