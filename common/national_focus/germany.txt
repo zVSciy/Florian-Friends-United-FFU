@@ -35,7 +35,7 @@ focus_tree = {
 
 	focus = { 
 		id = GER_reichsautobahn
-		icon = GFX_GER_oak_autobahn
+		icon = GFX_GER_autobahn
 		x = 10
 		y = 0
 		cost = 5
@@ -89,7 +89,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_autarky_path
-		icon = GFX_GER_oak_resource_rationing
+		icon = GFX_ger_autarchy1
 		prerequisite = { focus = GER_reichsautobahn }
 		relative_position_id = GER_reichsautobahn
 		mutually_exclusive = { focus = GER_free_trade_path }
@@ -1400,7 +1400,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_prepare_barbarossa
-		icon = GFX_ger_prepare_to_invade_union_shine
+		icon = GFX_ger_prepare_to_invade_union
 		prerequisite = { focus = GER_reintegrate_east }
 		relative_position_id = GER_reintegrate_east
 		x = 1
@@ -2464,7 +2464,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_tank_radio_bonus
-		icon = GFX_ger_oak_kampfgruppen
+		icon = GFX_GER_siemens
 		prerequisite = { focus = GER_land_facility }
 		relative_position_id = GER_land_facility
 		x = 0
@@ -2581,7 +2581,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_share_tanks
-		icon = GFX_GER_kampfgruppen
+		icon = GFX_goal_share_tanks
 		prerequisite = { focus = GER_krupp }
 		relative_position_id = GER_krupp
 		x = -1
@@ -2718,7 +2718,7 @@ focus_tree = {
 
 		focus = { 
 		id = GER_wehrmacht
-		icon = GFX_goal_ger_heer
+		icon = GFX_GER_a_soldiers_oath
 		x = 40
 		y = 0
 		cost = 1
@@ -2896,7 +2896,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_appoint_reichskommissars
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_ger_loyalty_to_the_fuhrer
 		prerequisite = { focus = GER_ss_politics }
 		relative_position_id = GER_ss_politics
 		x = 0
@@ -3356,7 +3356,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_ostland_resources
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GOAL_resource_extraction
 		prerequisite = { focus = GER_reichskomissart_ostland }
 		relative_position_id = GER_reichskomissart_ostland
 		x = 1
@@ -3391,7 +3391,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_integrate_france
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_establish_collaborationist_government
 		prerequisite = { focus = GER_reichskomissart_france }
 		relative_position_id = GER_reichskomissart_france
 		x = -1
@@ -3414,7 +3414,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_french_output
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_women_in_the_workforce
 		prerequisite = { focus = GER_reichskomissart_france }
 		relative_position_id = GER_reichskomissart_france
 		x = 1
@@ -3607,7 +3607,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_inf_spawnins1
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_volksturm
 		prerequisite = { focus = GER_reichskomissart_ukraine }
 		relative_position_id = GER_reichskomissart_ukraine
 		x = -1
@@ -3667,7 +3667,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_temporary_output
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_oak_resource_rationing
 		prerequisite = { focus = GER_reichskomissart_ukraine }
 		relative_position_id = GER_reichskomissart_ukraine
 		x = 1
@@ -3767,7 +3767,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_sf_spawnins
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_award_heroes
 		prerequisite = { focus = GER_reichskomissart_denmark }
 		relative_position_id = GER_reichskomissart_denmark
 		x = -1
@@ -3829,7 +3829,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_danish_goods
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_curtail_the_steel_barons
 		prerequisite = { focus = GER_reichskomissart_denmark }
 		relative_position_id = GER_reichskomissart_denmark
 		x = 1
@@ -4037,7 +4037,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_blitzkrieg
-		icon = GFX_doctrine_tank_warfare
+		icon = GFX_focus_generic_tank_air_support
 		prerequisite = { focus = GER_wehrmacht }
 		relative_position_id = GER_wehrmacht
 		x = 11
@@ -4069,12 +4069,21 @@ focus_tree = {
 			add_to_variable = { GER_german_army_experience_gain_army_unit_factor = 0.10 tooltip = experience_gain_army_unit_factor_tt }
 			add_to_variable = { GER_german_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
 			add_to_variable = { GER_german_army_experience_loss_factor = -0.15 tooltip = experience_loss_factor_tt }
+			custom_effect_tooltip = {
+				localization_key = GER_lessons_of_war_tt
+			}				
+			hidden_effect = {
+			add_to_variable = { GER_german_army_acclimatization_cold_climate_gain_factor = 9.99 tooltip = acclimatization_cold_climate_gain_factor_tt }
+			every_army_leader = {
+				add_attack = 1
+			}
+		}
 		}
 	}
 
 		focus = {
 		id = GER_rec_rate
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ger_infantry_tactics
 		prerequisite = { focus = GER_stats_bonus }
 		relative_position_id = GER_stats_bonus
 		x = -1
@@ -4091,7 +4100,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_army_logistics
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_resource_rationing
 		prerequisite = { focus = GER_stats_bonus }
 		relative_position_id = GER_stats_bonus
 		x = 1
@@ -4108,7 +4117,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_T38
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_kampfgruppen
 		prerequisite = { focus = GER_blitzkrieg }
 		relative_position_id = GER_blitzkrieg
 		x = -4
@@ -4122,7 +4131,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_luuchs_bonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_infanterie_greift_an_icon
 		prerequisite = { focus = GER_T38 }
 		relative_position_id = GER_T38
 		x = 0
@@ -4141,7 +4150,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_light_tank_ic
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_oak_support_tanks
 		prerequisite = { focus = GER_luuchs_bonus }
 		relative_position_id = GER_luuchs_bonus
 		mutually_exclusive = {
@@ -4157,7 +4166,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_light_tank_mios
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ger_support_tanks
 		prerequisite = { focus = GER_luuchs_bonus }
 		relative_position_id = GER_luuchs_bonus
 		mutually_exclusive = {
@@ -4182,7 +4191,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_hetzer
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_armor_design_competition
 		prerequisite = { focus = GER_light_tank_mios focus = GER_light_tank_ic }
 		relative_position_id = GER_light_tank_mios
 		x = -1
@@ -4200,7 +4209,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_panzer4
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_standard_panzer
 		prerequisite = { focus = GER_blitzkrieg }
 		relative_position_id = GER_blitzkrieg
 		x = 4
@@ -4224,7 +4233,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_planning_speed # improved command
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ger_fur_das_vaterland
 		prerequisite = { focus = GER_panzer4 }
 		relative_position_id = GER_panzer4
 		x = 0
@@ -4241,7 +4250,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_mech
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_ger_hanomag
 		prerequisite = { focus = GER_planning_speed }
 		relative_position_id = GER_planning_speed
 		x = 1
@@ -4261,7 +4270,7 @@ focus_tree = {
 	
 		focus = {
 		id = GER_radiobonus
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_modern_infantry
 		prerequisite = { focus = GER_mech }
 		relative_position_id = GER_mech
 		x = 0
@@ -4278,7 +4287,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_the_panther
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_the_wild_cats_that_roam_russia
 		prerequisite = { focus = GER_radiobonus }
 		relative_position_id = GER_radiobonus
 		x = 0
@@ -4317,7 +4326,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_tank_mio_click
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_achtung_panzer
 		prerequisite = { focus = GER_planning_speed }
 		relative_position_id = GER_planning_speed
 		x = -1
@@ -4343,7 +4352,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_the_tiger
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_heavy_tiger_cats
 		prerequisite = { focus = GER_swimmmypanzers }
 		relative_position_id = GER_swimmmypanzers
 		x = 0
@@ -4404,7 +4413,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_panzer_support
-		icon = GFX_ger_support_tanks
+		icon = GFX_GER_consolidate_production_lines
 		prerequisite = { focus = GER_soviet_treaty }
 		relative_position_id = GER_soviet_treaty
 		x = 0
@@ -4418,7 +4427,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_gun_bonus
-		icon = GFX_GER_panzerfausts_for_all
+		icon = GFX_GER_volksgewehr
 		prerequisite = { focus = GER_wehrmacht }
 		relative_position_id = GER_wehrmacht
 		x = -11
@@ -4436,7 +4445,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_flamethrower
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_open_ww1_stockpiles
 		prerequisite = { focus = GER_gun_bonus }
 		relative_position_id = GER_gun_bonus
 		x = 0
@@ -6323,7 +6332,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_kill_the_soviets
-		icon = GFX_GER_danzig_or_war
+		icon = GFX_ger_final_crusade
 		prerequisite = { focus = GER_barb }
 		
 		available = {
@@ -6415,7 +6424,7 @@ focus_tree = {
 		icon = GFX_focus_GER_airforce
 		x = 72
 		y = 0
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
