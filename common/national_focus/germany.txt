@@ -6135,7 +6135,7 @@ focus_tree = {
     }
 
 		focus = {
-		id = GER_naval_armament
+		id = GER_naval_rearmament
 		icon = GFX_focus_GER_navy
 		x = 81
 		y = 0
@@ -6231,10 +6231,10 @@ focus_tree = {
 	focus = {
 		id = GER_naval_effort2
 		icon = GFX_GER_naval_effort2
-		prerequisite = { focus = GER_naval_armament }
+		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
 		y = 1
-		relative_position_id = GER_naval_armament
+		relative_position_id = GER_naval_rearmament
 		cost = 2
 		ai_will_do = {
 			factor = 1

@@ -6876,10 +6876,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/soviet/SOV_airforce_tactical_school.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_autobahn"
-		texturefile = "gfx/interface/goals/GER/GER_inaugurate_the_autobahn.dds"
-	}
-	SpriteType = {
 		name = "GFX_GER_oak_autobahn"
 		texturefile = "gfx/interface/goals/GER/GER_oak_inaugurate_the_autobahn.tga"
 	}
