@@ -1407,7 +1407,62 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			79 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+			46 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+			76 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+			92 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+			88 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+			10 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+			5 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+			763 = {
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
 		}
 	}
 
