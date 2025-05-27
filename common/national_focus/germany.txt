@@ -2764,7 +2764,7 @@ focus_tree = {
 			        force_allow_recruiting = yes
 					template_counter = 32
 				    priority = 2
-				    division_cap = 12
+				    division_cap = 9
 					    regiments = {
 							heavy_armor = { x = 0 y = 0 }
 							heavy_armor = { x = 0 y = 1 }
@@ -4158,7 +4158,7 @@ focus_tree = {
 				add_tech_bonus = {
 				name = tnk_bonus
 				bonus = 0.75
-				uses = 2
+				uses = 1
 				category = cat_heavy_armor
 			}
 		}
@@ -4185,9 +4185,6 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = GER_planning_speed }
 		relative_position_id = GER_planning_speed
-		mutually_exclusive = {
-			focus = GER_truck_ic
-		}
 		x = 1
 		y = 1
 		cost = 5
@@ -4221,13 +4218,16 @@ focus_tree = {
 	}
 
 		focus = {
-		id = GER_panther
+		id = GER_the_panther
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = GER_radiobonus }
 		relative_position_id = GER_radiobonus
 		x = 0
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_the_tiger
+		}
 		completion_reward = {
 				add_tech_bonus = {
 				name = tnk_bonus
@@ -4239,13 +4239,10 @@ focus_tree = {
 	}
 
 		focus = {
-		id = GER_truck_ic
+		id = GER_armored_car_hardness
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = GER_planning_speed }
 		relative_position_id = GER_planning_speed
-		mutually_exclusive = {
-			focus = GER_mech
-		}
 		x = -1
 		y = 1
 		cost = 5
@@ -4257,8 +4254,8 @@ focus_tree = {
 		focus = {
 		id = GER_tank_mio_click
 		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = GER_truck_ic }
-		relative_position_id = GER_truck_ic
+		prerequisite = { focus = GER_armored_car_hardness }
+		relative_position_id = GER_armored_car_hardness
 		x = 0
 		y = 1
 		cost = 5
@@ -4268,13 +4265,16 @@ focus_tree = {
 	}
 
 		focus = {
-		id = GER_truck_hardness
+		id = GER_the_tiger
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = GER_tank_mio_click }
 		relative_position_id = GER_tank_mio_click
 		x = 0
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_the_panther
+		}
 		completion_reward = {
 
 		}
