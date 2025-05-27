@@ -848,10 +848,69 @@ ideas = {
 
 			modifier = {
 				min_export = 0.2
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				civilian_intel_to_others = 5.0
+				navy_intel_to_others = 3
+				lend_lease_tension = 0.20
+				cic_construction_boost = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 0
+					
+					is_major = no
+					is_in_faction = yes
+					has_war = yes
+				}
+
+				# minors not at war should want to get the bonuses from free trade
+				modifier = {
+					factor = 0
+					
+					is_major = no
+					has_war = no
+				}
+   			}
+		}
+
+		autarky_achieved_exports_eco = {
+
+			picture = GER_autarky
+						
+			available = {
+				original_tag = GER
+				has_completed_focus = GER_autarky_achieved
+			}			
+			
+			visible = {
+				original_tag = GER
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			rule = {
+				can_access_market = no
+			}
+
+			modifier = {
+				min_export = 0.1
+				industrial_capacity_factory = 0.20
+				industrial_capacity_dockyard = 0.20
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.15
+				civilian_intel_to_others = 5.0
+				navy_intel_to_others = 3
+				lend_lease_tension = 0.20
+				cic_construction_boost = 0.1
 			}
 			
 			cancel_if_invalid = no
