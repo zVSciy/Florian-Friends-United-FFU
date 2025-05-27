@@ -159,7 +159,7 @@ set_variable = { GER_poster_center_icon_frame = GER_propaganda_empty_slot_index 
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 set_research_slots = 6
 set_convoys = 200
-set_stability = 0.75 
+set_stability = 0.63 
 set_war_support = 0.3
 set_variable = { GER_SS_division_cap = 0 }
 set_variable = { GER_SS_cap_increase = 2 }
@@ -221,7 +221,7 @@ add_dynamic_modifier = {
 	modifier = GER_economy_dynamic_modifier
 }
 # MEFO
-add_to_variable = { GER_german_economy_mefo_consumer_goods_factor = -0.20 tooltip = consumer_goods_factor_tt }
+add_to_variable = { GER_german_economy_mefo_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.10 tooltip = production_speed_arms_factory_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_dockyard_factor = 0.10 tooltip = production_speed_dockyard_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_naval_base_factor = 0.2 tooltip = production_speed_naval_base_factor_tt }

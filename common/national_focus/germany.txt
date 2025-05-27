@@ -1423,6 +1423,8 @@ focus_tree = {
 				16 = {
 				is_controlled_by_ROOT_or_ally = yes
 			}
+			has_completed_focus = GER_reintegrate_east
+			has_completed_focus = GER_weserubung
 		}
 		completion_reward = {
 			GER = {
@@ -1432,10 +1434,9 @@ focus_tree = {
  				set_global_flag = form_greater_german_reich_flag
  			}
 			add_political_power = 200
-			# add_ideas = triumphant_will
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_stability_factor = 0.10 tooltip = stability_factor_tt }
-			add_to_variable = { GER_german_economy_war_support_factor = 0.10 tooltip = war_support_factor_tt }
+			add_to_variable = { GER_german_economy_stability_factor = 0.15 tooltip = stability_factor_tt }
+			add_to_variable = { GER_german_economy_war_support_factor = 0.15 tooltip = war_support_factor_tt }
 		}
 	}
 
@@ -2808,7 +2809,7 @@ focus_tree = {
 		relative_position_id = GER_ss_tanks
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_field_marshal_role = {
 				character = GER_sepp_dietrich
@@ -2847,7 +2848,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			always = no
+			has_completed_focus = GER_avenge_versailles
 		}
 		completion_reward = {
 
@@ -2862,8 +2863,28 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 5
+		available = {
+			ENG = {has_capitulated = yes}
+		}
 		completion_reward = {
-
+				GER = {
+				#Ostland compliance
+				126 = {
+					set_compliance = 30
+				}
+				128 = {
+					set_compliance = 30
+				}	
+				132 = {
+					set_compliance = 30
+				}
+				113 = {
+					set_compliance = 30
+				}
+				129 = {
+					set_compliance = 30
+				}
+			}
 		}
 	}
 
@@ -2876,7 +2897,86 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			123 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 540	
+                    instant_build = yes
+                }
+			}
+			127 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 9458	
+                    instant_build = yes
+                }
+			}
+			127 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 3501
+                    instant_build = yes
+                }
+			}
+			126 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 11374
+                    instant_build = yes
+                }
+			}
+			125 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 271
+                    instant_build = yes
+                }
+			}
+			130 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 11297
+                    instant_build = yes
+                }
+			}
+			131 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 351
+                    instant_build = yes
+                }
+			}
+			133 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 6395
+                    instant_build = yes
+                }
+			}
+			122 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 377
+                    instant_build = yes
+                }
+			}
+			338 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 3
+					province = 3369
+                    instant_build = yes
+                }
+			}
 		}
 	}
 
@@ -2889,7 +2989,51 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			hidden_effect = {
+			division_template = {
+				name = "Britisches Freiwilligen-Bataillon"
 
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					signal_company = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					hq_company = { x = 1 y = 1 }
+					maintenance_company = { x = 1 y = 2 }
+				}
+			}
+				64 = {
+					for_loop_effect = {
+						end = 12
+						create_unit = {
+							division = "division_template = \"Britisches Freiwilligen-Bataillon\" start_experience_factor = 0.3"
+							owner = GER
+						}
+					}
+			    }
+		    }
 		}
 	}
 
@@ -2902,6 +3046,53 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+		hidden_effect = {
+			division_template = {
+				name = "SS-Brittania"
+
+				regiments = {
+					jaeger = { x = 0 y = 0 }
+					jaeger = { x = 0 y = 1 }
+					jaeger = { x = 0 y = 2 }
+					jaeger = { x = 0 y = 3 }
+					jaeger = { x = 1 y = 0 }
+					jaeger = { x = 1 y = 1 }
+					jaeger = { x = 1 y = 2 }
+					jaeger = { x = 1 y = 3 }
+					jaeger = { x = 2 y = 0 }
+					jaeger = { x = 2 y = 1 }
+					jaeger = { x = 2 y = 2 }
+
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					signal_company = { x = 0 y = 2 }
+					logistics_company_mot = { x = 0 y = 3 }
+					heavy_anti_air = { x = 1 y = 0 }
+					hq_company = { x = 1 y = 1 }
+					maintenance_company = { x = 1 y = 2 }
+					rangers_support = { x = 1 y = 3 } 
+				}
+			}
+				64 = {
+					for_loop_effect = {
+						end = 9
+						create_unit = {
+							division = "division_template = \"SS-Brittania\" start_experience_factor = 0.4"
+							owner = GER
+						}
+					}
+			    }
+		    }
 
 		}
 	}
@@ -2914,6 +3105,9 @@ focus_tree = {
 		x = 10
 		y = 1
 		cost = 5
+		available = {
+			has_completed_focus = GER_around_maginot
+		}
 		completion_reward = {
 			GER = {
 				#Netherlands compliance
@@ -2938,6 +3132,9 @@ focus_tree = {
 		x = 6
 		y = 1
 		cost = 5
+		available = {
+			has_completed_focus = GER_plunder_west
+		}
 		completion_reward = {
 			GER_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
@@ -2953,6 +3150,28 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
+
+		available = {
+			has_full_control_of_state = 95
+	        has_full_control_of_state = 206
+	        has_full_control_of_state = 96
+	        has_full_control_of_state = 784
+	        has_full_control_of_state = 814
+	        has_full_control_of_state = 11
+	        has_full_control_of_state = 815
+	        has_full_control_of_state = 809
+	        has_full_control_of_state = 189
+	        has_full_control_of_state = 190
+	        has_full_control_of_state = 810
+	        has_full_control_of_state = 808
+	        has_full_control_of_state = 191
+	        has_full_control_of_state = 12
+	        has_full_control_of_state = 13
+	        has_full_control_of_state = 812
+	        has_full_control_of_state = 813
+	        has_full_control_of_state = 811
+		}
+
 		completion_reward = {
 			GER = {
 				#Ostland compliance
@@ -3025,8 +3244,55 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_ostland_resources
+		}
 		completion_reward = {
+			hidden_effect = {
+			division_template = {
+				name = "SS-MinaTV"
 
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					anti_tank_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					signal_company = { x = 0 y = 2 }
+					logistics_company_mot = { x = 0 y = 3 }
+					hq_company = { x = 1 y = 1 }
+					maintenance_company = { x = 1 y = 2 }
+				}
+			}
+				64 = {
+					for_loop_effect = {
+						end = 15
+						create_unit = {
+							division = "division_template = \"SS-MinaTV\" start_experience_factor = 0.1"
+							owner = GER
+						}
+					}
+			    }
+		    }
 		}
 	}
 
@@ -3038,8 +3304,30 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_infspawnins2
+		}
 		completion_reward = {
-
+			add_resource = {
+				type = steel
+				amount = -1000
+				state = 12
+			}
+			add_resource = {
+				type = steel
+				amount = 800
+				state = 42
+			}
+			add_resource = {
+				type = oil
+				amount = -300
+				state = 13
+			}
+			add_resource = {
+				type = oil
+				amount = 250
+				state = 59
+			}
 		}
 	}
 
@@ -3051,6 +3339,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_french_output
+		}
 		completion_reward = {
 			add_state_core = 28
 			add_state_core = 17
@@ -3071,6 +3362,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_integrate_france
+		}
 		completion_reward = {
 			GER_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
@@ -3086,8 +3380,26 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_dutch_docks
+		}
 		completion_reward = {
-
+				7 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+				36 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3099,8 +3411,18 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_dutch_mils
+		}
 		completion_reward = {
-
+				7 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = dockyard
+					level = 8
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3140,6 +3462,27 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
+		available = {
+			has_full_control_of_state = 91
+	        has_full_control_of_state = 93
+	        has_full_control_of_state = 194
+	        has_full_control_of_state = 94
+	        has_full_control_of_state = 199
+	        has_full_control_of_state = 198
+	        has_full_control_of_state = 203
+	        has_full_control_of_state = 197
+	        has_full_control_of_state = 196
+	        has_full_control_of_state = 200
+	        has_full_control_of_state = 227
+         	has_full_control_of_state = 259
+	        has_full_control_of_state = 221
+	        has_full_control_of_state = 193
+	        has_full_control_of_state = 202
+	        has_full_control_of_state = 204
+	        has_full_control_of_state = 225
+	        has_full_control_of_state = 89
+	        has_full_control_of_state = 226
+		}
 		completion_reward = {
 			GER = {
 				#Ukraine compliance
@@ -3212,8 +3555,55 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_temporary_output
+		}
 		completion_reward = {
+			hidden_effect = {
+			division_template = {
+				name = "SS-Galizien"
 
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					anti_tank_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					signal_company = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					hq_company = { x = 1 y = 1 }
+					maintenance_company = { x = 1 y = 2 }
+				}
+			}
+				64 = {
+					for_loop_effect = {
+						end = 15
+						create_unit = {
+							division = "division_template = \"SS-Galizien\" start_experience_factor = 0.3"
+							owner = GER
+						}
+					}
+			    }
+		    }
 		}
 	}
 
@@ -3225,8 +3615,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_inf_spawnins1
+		}
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
@@ -3275,8 +3669,18 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_heavy_water_production
+		}
 		completion_reward = {
-
+				110 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3288,8 +3692,17 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_norway_docks
+		}
 		completion_reward = {
-
+				50 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -3302,8 +3715,57 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_danish_goods
+		}
 		completion_reward = {
+		hidden_effect = {
+			division_template = {
+				name = "Freikorps Danmark"
 
+				regiments = {
+					jaeger = { x = 0 y = 0 }
+					jaeger = { x = 0 y = 1 }
+					jaeger = { x = 0 y = 2 }
+					jaeger = { x = 0 y = 3 }
+					jaeger = { x = 1 y = 0 }
+					jaeger = { x = 1 y = 1 }
+					jaeger = { x = 1 y = 2 }
+					jaeger = { x = 1 y = 3 }
+					jaeger = { x = 2 y = 0 }
+					jaeger = { x = 2 y = 1 }
+					jaeger = { x = 2 y = 2 }
+
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					signal_company = { x = 0 y = 2 }
+					logistics_company_mot = { x = 0 y = 3 }
+					heavy_anti_air = { x = 1 y = 0 }
+					hq_company = { x = 1 y = 1 }
+					maintenance_company = { x = 1 y = 2 }
+					rangers_support = { x = 1 y = 3 } 
+				}
+			}
+				64 = {
+					for_loop_effect = {
+						end = 6
+						create_unit = {
+							division = "division_template = \"Freikorps Danmark\" start_experience_factor = 0.4"
+							owner = GER
+						}
+					}
+			    }
+		    }
 		}
 	}
 
@@ -3315,8 +3777,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_sf_spawnins
+		}
 		completion_reward = {
-
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { GER_german_economy_consumer_goods_factor = -0.10 tooltip = consumer_goods_factor_tt }
 		}
 	}
 
@@ -3481,7 +3947,7 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = {
-						IF = {
+			IF = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
@@ -3556,6 +4022,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_army_logistics
+		}
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = gerd_von_rundstedt
@@ -3570,6 +4039,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			focus = GER_rec_rate
+		}
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = GER_werner_von_fritsch
@@ -3815,7 +4287,10 @@ focus_tree = {
 		relative_position_id = GER_wehrmacht
 		x = -8
 		y = 1
-		cost = 5
+		cost = 2
+		available = {
+			has_completed_focus = GER_mol_rib_pact
+		}
 		bypass = { 
 			OR = {
 				has_war_with = SOV
@@ -3851,7 +4326,7 @@ focus_tree = {
 		relative_position_id = GER_soviet_treaty
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_ideas = HUN_assault_gun_idea
 		}
@@ -3865,7 +4340,7 @@ focus_tree = {
 		relative_position_id = GER_wehrmacht
 		x = -11
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_tech_bonus = {
 				name = inf_bonus
@@ -3883,7 +4358,7 @@ focus_tree = {
 		relative_position_id = GER_gun_bonus
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_flame_tank
@@ -3904,7 +4379,7 @@ focus_tree = {
 		relative_position_id = GER_flamethrower
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		completion_reward = {
 		    set_technology = { antiair2 = 1 popup = no }
 			create_equipment_variant = {
