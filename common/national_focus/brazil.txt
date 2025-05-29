@@ -2344,11 +2344,18 @@ focus = {
 		cost = 1
 		
 		available = {
+			OR = {
 			date > 1941.1.1
-			ENG = {
-				has_war_with = GER
+			907 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			  }
 			}
-
 		}
 
 		ai_will_do = {

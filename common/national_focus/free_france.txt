@@ -142,15 +142,15 @@ focus_tree = {
 			# custom_effect_tooltip = FRA_appeal_to_overseas_territories_tt
 			add_offsite_building = {
 				type = industrial_complex
-				level = 12
+				level = 15
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 12
+				level = 15
 			}
 			add_offsite_building = {
 				type = dockyard
-				level = 6
+				level = 10
 			}
 			# hidden_effect = {
 			# 	country_event = lar_appeal_to_overseas_territories.1
@@ -525,6 +525,10 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
+				level = 10
+			}
+				add_offsite_building = {
+				type = industrial_complex
 				level = 10
 			}
 			create_corps_commander = {

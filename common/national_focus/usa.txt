@@ -566,9 +566,7 @@ focus_tree = {
 			# add_ideas = USA_labour_relations
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 	
@@ -1016,7 +1014,6 @@ focus_tree = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_political_power_gain = 0.2 tooltip = political_power_gain_tt }
 			add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
-			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = -0.3 tooltip = production_speed_infrastructure_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = -0.2 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.4 tooltip = production_speed_industrial_complex_factor_tt }
 		}
@@ -3084,10 +3081,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -3102,10 +3099,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -3145,10 +3142,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -3163,10 +3160,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -3181,10 +3178,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -3199,10 +3196,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -3217,10 +3214,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -3245,10 +3242,7 @@ focus_tree = {
 				ENG = {
 					has_capitulated = yes
 				}
-				VIC = {
-					has_country_flag = VIC_france_capped
-				}
-				date > 1939.12.1
+				date > 1941.1.1
 			}
 		}
 		
@@ -3323,7 +3317,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3335,6 +3329,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+				custom_effect_tooltip = {
+				localization_key = USA_mils_explanation_tt
+			        }
 			USA_harold_ickes = {
 				retire = yes
 			}
@@ -3356,9 +3353,11 @@ focus_tree = {
 				}
 				add_ideas = civilian_economy
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
+				hidden_effect = {
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+			    add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = -1 tooltip = production_speed_arms_factory_factor_tt }
+				}
 			}
-			custom_effect_tooltip = unlock_propaganda_campaign_tt
-			unlock_decision_tooltip = USA_buy_extra_bonds
 		}
 	}
 	focus = {
@@ -3380,12 +3379,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			# add_ideas = USA_military_industrial_complex
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_conversion_cost_civ_to_mil_factor = -0.10 tooltip = conversion_cost_civ_to_mil_factor_tt }
-			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.1 tooltip = global_building_slots_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.9 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	focus = {
@@ -3410,14 +3407,14 @@ focus_tree = {
 			# 	add_idea = wartime_industry_focus
 			# }
 			USA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_economy_conversion_cost_civ_to_mil_factor = -0.30 tooltip = conversion_cost_civ_to_mil_factor_tt }
-			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.2 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { USA_american_economy_conversion_cost_civ_to_mil_factor = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt }
+			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.3 tooltip = global_building_slots_factor_tt }
 			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.15 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.15 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.25 tooltip = production_factory_start_efficiency_factor_tt }
-			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.3 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_dockyard_factor = 0.3 tooltip = production_speed_dockyard_factor_tt }
-			add_to_variable = { USA_american_economy_production_speed_synthetic_refinery_factor = 0.25 tooltip = production_speed_synthetic_refinery_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_synthetic_refinery_factor = 0.3 tooltip = production_speed_synthetic_refinery_factor_tt }
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 			random_owned_controlled_state = {
@@ -4800,21 +4797,7 @@ focus_tree = {
 		}
 
 		available = {
-			# if = {
-			# 	limit = {
-			# 		threat < 0.2
-			# 	}
-			# 	congress_high_support_trigger = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		threat < 0.3
-			# 	}
-			# 	congress_medium_support_trigger = yes
-			# }
-			# else = {
-			# 	congress_low_support_trigger = yes
-			# }
+			JAP = { has_completed_focus = JAP_liaison_conference }
 		}
 		
 		bypass = {
@@ -4941,7 +4924,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_infantry
 				bonus = 1
-				uses = 2
+				uses = 3
 				category = infantry_weapons
 			}
 		}
