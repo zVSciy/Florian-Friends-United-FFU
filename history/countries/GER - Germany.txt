@@ -45,8 +45,8 @@ set_technology = {
 	
 	ger_light_tank_1 = 1
 	ger_light_tank_2 = 1
-	ger_p3_tank_1 = 1
-	ger_p4_tank_1 = 1
+	# ger_p3_tank_1 = 1
+	# ger_p4_tank_1 = 1
 	# ger_heavy_tank_0 = 1
 	basic_train = 1
 	
@@ -159,7 +159,7 @@ set_variable = { GER_poster_center_icon_frame = GER_propaganda_empty_slot_index 
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 set_research_slots = 6
 set_convoys = 200
-set_stability = 0.75 
+set_stability = 0.63 
 set_war_support = 0.3
 set_variable = { GER_SS_division_cap = 0 }
 set_variable = { GER_SS_cap_increase = 2 }
@@ -196,7 +196,7 @@ add_to_tech_sharing_group = axis_research
 # add_ideas = {GER_mefo_bills_1 GER_good_weather_army }
 
 add_timed_idea = {
-	idea = no_tradeback
+	idea = 
 	days = 765
 }
 
@@ -221,7 +221,7 @@ add_dynamic_modifier = {
 	modifier = GER_economy_dynamic_modifier
 }
 # MEFO
-add_to_variable = { GER_german_economy_mefo_consumer_goods_factor = -0.20 tooltip = consumer_goods_factor_tt }
+add_to_variable = { GER_german_economy_mefo_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.10 tooltip = production_speed_arms_factory_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_dockyard_factor = 0.10 tooltip = production_speed_dockyard_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_naval_base_factor = 0.2 tooltip = production_speed_naval_base_factor_tt }
@@ -233,6 +233,13 @@ add_to_variable = { GER_german_economy_mefo_production_speed_radar_station_facto
 add_to_variable = { GER_german_economy_mefo_production_speed_fuel_silo_factor = 0.2 tooltip = production_speed_fuel_silo_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_synthetic_refinery_factor = 0.25 tooltip = production_speed_synthetic_refinery_factor_tt }
 add_to_variable = { GER_german_economy_mefo_political_power_cost = 0.35 tooltip = political_power_cost_tt }
+
+set_variable = { GER_autarky_steel = 30000 }
+set_variable = { GER_autarky_aluminium = 15000 }
+set_variable = { GER_autarky_rubber = 4000 }
+set_variable = { GER_autarky_tungsten = 3000 }
+set_variable = { GER_autarky_chromium = 5500 }
+set_variable = { GER_autarky_oil = 6000 }
 
 add_dynamic_modifier = {
 	modifier = GER_army_dynamic_modifier

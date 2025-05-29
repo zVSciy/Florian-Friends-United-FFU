@@ -613,6 +613,27 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.33
 			}
 		}
+
+			GER_cheaper_lights = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy
+
+			equipment_bonus = {
+				light_tank_chassis = {
+					build_cost_ic = -0.075 instant = yes
+				}
+			}
+		}
+	
 	
 		GER_prioritise_aircraft_idea = {
 			allowed = {
@@ -3598,11 +3619,11 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = GER_ig_farben
+				has_completed_focus = GER_ig_farben_company
 			}
 			
 			research_bonus = {
-				synth_resources = 0.20
+				synth_resources = 0.3
 			}
 			
 			traits = { ig_faben }
@@ -3617,6 +3638,10 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
+			available = {
+				has_completed_focus = GER_krupp
+			}
 			
 			research_bonus = {
 				industry = 0.15
@@ -3626,7 +3651,7 @@ ideas = {
 				factor = 2
 			}
 			
-			traits = { industrial_concern }
+			traits = { krupp_designer }
 		}
 
 		siemens = {
@@ -4243,157 +4268,157 @@ ideas = {
 		}
 	}
 
-	GER_philipp_holzmann = {
+	# GER_philipp_holzmann = {
 
-		picture = GER_philipp_holzmann
+	# 	picture = GER_philipp_holzmann
 		
-		allowed = {
-			original_tag = GER
-		}
+	# 	allowed = {
+	# 		original_tag = GER
+	# 	}
 
-		visible = {
-			NOT = {
-				has_completed_focus = GER_employ_philipp_holzmann
-				has_completed_focus = GER_revitalize_the_nation
-			}
-		}
+	# 	visible = {
+	# 		NOT = {
+	# 			has_completed_focus = GER_employ_philipp_holzmann
+	# 			has_completed_focus = GER_revitalize_the_nation
+	# 		}
+	# 	}
 		
-		cost = 150
+	# 	cost = 150
 
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 5
-				is_historical_focus_on = yes
-			}
-		}
+	# 	ai_will_do = {
+	# 		base = 1
+	# 		modifier = {
+	# 			factor = 5
+	# 			is_historical_focus_on = yes
+	# 		}
+	# 	}
 
-		traits = { construction_company }
-	}
+	# 	traits = { construction_company }
+	# }
 
-	GER_philipp_holzmann_improved = {
-		name = GER_philipp_holzmann
+	# GER_philipp_holzmann_improved = {
+	# 	name = GER_philipp_holzmann
 
-		picture = GER_philipp_holzmann
+	# 	picture = GER_philipp_holzmann
 		
-		allowed = {
-			original_tag = GER
-		}
+	# 	allowed = {
+	# 		original_tag = GER
+	# 	}
 
-		visible = {
-			OR = {
-				AND = {
-					has_completed_focus = GER_employ_philipp_holzmann
-					NOT = { has_completed_focus = GER_plenipotentiary_of_armaments }
-				}
-				has_completed_focus = GER_revitalize_the_nation
-			}
-		}
+	# 	visible = {
+	# 		OR = {
+	# 			AND = {
+	# 				has_completed_focus = GER_employ_philipp_holzmann
+	# 				NOT = { has_completed_focus = GER_plenipotentiary_of_armaments }
+	# 			}
+	# 			has_completed_focus = GER_revitalize_the_nation
+	# 		}
+	# 	}
 		
-		cost = 150
+	# 	cost = 150
 
-		research_bonus = {
-			construction_tech = 0.15
-		}
+	# 	research_bonus = {
+	# 		construction_tech = 0.15
+	# 	}
 		
-		traits = { GER_philipp_holzmann_trait }
-	}
+	# 	traits = { GER_philipp_holzmann_trait }
+	# }
 
-	GER_philipp_holzmann_improved_2 = {
-		name = GER_philipp_holzmann
+	# GER_philipp_holzmann_improved_2 = {
+	# 	name = GER_philipp_holzmann
 
-		picture = GER_philipp_holzmann
+	# 	picture = GER_philipp_holzmann
 		
-		allowed = {
-			original_tag = GER
-			has_dlc = "Arms Against Tyranny"
-		}
+	# 	allowed = {
+	# 		original_tag = GER
+	# 		has_dlc = "Arms Against Tyranny"
+	# 	}
 
-		visible = {
-			has_completed_focus = GER_plenipotentiary_of_armaments
-		}
+	# 	visible = {
+	# 		has_completed_focus = GER_plenipotentiary_of_armaments
+	# 	}
 		
-		cost = 150
+	# 	cost = 150
 
-		research_bonus = {
-			construction_tech = 0.15
-		}
+	# 	research_bonus = {
+	# 		construction_tech = 0.15
+	# 	}
 		
-		traits = { GER_philipp_holzmann_trait_improved }
-	}
+	# 	traits = { GER_philipp_holzmann_trait_improved }
+	# }
 
-	GER_philipp_holzmann_improved_2_no_aat = {
-		name = GER_philipp_holzmann
+	# GER_philipp_holzmann_improved_2_no_aat = {
+	# 	name = GER_philipp_holzmann
 
-		picture = GER_philipp_holzmann
+	# 	picture = GER_philipp_holzmann
 		
-		allowed = {
-			original_tag = GER
-			NOT = { has_dlc = "Arms Against Tyranny" }
-		}
+	# 	allowed = {
+	# 		original_tag = GER
+	# 		NOT = { has_dlc = "Arms Against Tyranny" }
+	# 	}
 
-		visible = {
-			has_completed_focus = GER_plenipotentiary_of_armaments
-		}
+	# 	visible = {
+	# 		has_completed_focus = GER_plenipotentiary_of_armaments
+	# 	}
 		
-		cost = 150
+	# 	cost = 150
 
-		research_bonus = {
-			construction_tech = 0.15
-		}
+	# 	research_bonus = {
+	# 		construction_tech = 0.15
+	# 	}
 		
-		traits = { GER_philipp_holzmann_trait_improved_no_aat }
-	}
+	# 	traits = { GER_philipp_holzmann_trait_improved_no_aat }
+	# }
 
-	GER_organization_todt = {
+	# GER_organization_todt = {
 
-		picture = GER_organization_todt
+	# 	picture = GER_organization_todt
 		
-		allowed = {
-			original_tag = GER
-		}
+	# 	allowed = {
+	# 		original_tag = GER
+	# 	}
 
-		visible = {
-			has_completed_focus = GER_form_organization_todt
-			NOT = { has_completed_focus = GER_autonomous_organization_todt }
-		}
+	# 	visible = {
+	# 		has_completed_focus = GER_form_organization_todt
+	# 		NOT = { has_completed_focus = GER_autonomous_organization_todt }
+	# 	}
 		
-		cost = 75
+	# 	cost = 75
 
-		ai_will_do = {
-			base = 10
-		}
+	# 	ai_will_do = {
+	# 		base = 10
+	# 	}
 		
-		research_bonus = {
-			construction_tech = 0.15
-		}
+	# 	research_bonus = {
+	# 		construction_tech = 0.15
+	# 	}
 
-		traits = { GER_organization_todt_trait }
-	}
+	# 	traits = { GER_organization_todt_trait }
+	# }
 
-	GER_organization_todt_improved = {
-		name = GER_organization_todt
+	# GER_organization_todt_improved = {
+	# 	name = GER_organization_todt
 
-		picture = GER_organization_todt
+	# 	picture = GER_organization_todt
 		
-		allowed = {
-			original_tag = GER
-		}
+	# 	allowed = {
+	# 		original_tag = GER
+	# 	}
 
-		visible = {
-			has_completed_focus = GER_autonomous_organization_todt
-		}
+	# 	visible = {
+	# 		has_completed_focus = GER_autonomous_organization_todt
+	# 	}
 		
-		cost = 75
+	# 	cost = 75
 
-		ai_will_do = {
-			base = 20
-		}
+	# 	ai_will_do = {
+	# 		base = 20
+	# 	}
 		
-		research_bonus = {
-			construction_tech = 0.15
-		}
+	# 	research_bonus = {
+	# 		construction_tech = 0.15
+	# 	}
 
-		traits = { GER_organization_todt_improved_trait }
-	}
+	# 	traits = { GER_organization_todt_improved_trait }
+	# }
 }

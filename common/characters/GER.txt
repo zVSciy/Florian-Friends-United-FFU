@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=nazism
-			traits={ dictator }
+			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -87,7 +87,8 @@ characters={
 			idea_token = gerd_von_rundstedt
 			ledger  = army 
 				allowed  = {
-					original_tag  = GER 
+					original_tag  = GER
+					has_completed_focus = GER_rec_rate
 				}
 				traits  = {
 					army_regrouping_2 
@@ -629,15 +630,6 @@ characters={
 				large="gfx/leaders/GER/Portrait_Germany_Josef_Dietrich.dds"
 			}
 		}
-		corps_commander={
-			traits={ trickster trait_engineer panzer_leader panzer_expert }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=24
-		}
 	}
 	GER_hasso_von_manteuffel={
 		name="Hasso von Manteuffel"
@@ -1024,7 +1016,8 @@ characters={
 				fortification_engineer
 			}
 			available = {
-				has_completed_focus = GER_org_todt
+				has_completed_focus = GER_todt
+				has_war = no
 			}
 			ai_will_do = {
 				factor = 0.5
@@ -1069,7 +1062,7 @@ characters={
 				schacht 
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan
+				has_completed_focus = GER_schacht
 				has_war = no
 			}
 			ai_will_do = {
@@ -1094,7 +1087,7 @@ characters={
 				goring 
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan
+				has_completed_focus = GER_goering
 				has_war = no
 			}
 			ai_will_do = {
@@ -1498,6 +1491,7 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = GER
+				has_completed_focus = GER_army_logistics
 			}
 			traits  = {
 				army_logistics_2 

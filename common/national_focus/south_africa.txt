@@ -1234,7 +1234,7 @@ focus_tree = {
 		id = SAF_armor_effort
 		icon = GFX_doctrine_tank_warfare
 		prerequisite = { focus = SAF_special_service_battalion }
-		# mutually_exclusive = { focus = SAF_improve_the_three_oh_three }
+		mutually_exclusive = { focus = SAF_improve_the_three_oh_three }
 		x = 5
 		y = 1
 		relative_position_id = SAF_special_service_battalion
