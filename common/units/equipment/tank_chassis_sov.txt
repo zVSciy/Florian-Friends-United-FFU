@@ -282,7 +282,6 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
-			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_armor_2_upgrade
@@ -322,14 +321,13 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
-			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			# tank_nsb_med_engine_1_upgrade
 			tank_nsb_med_armor_2_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 22
+		build_cost_ic = 34
 		reliability = 0.75
 		armor_value = 40
 		defense = 8
@@ -371,7 +369,7 @@ equipments = {
 			tank_nsb_med_armor_2_upgrade
 		}
 		maximum_speed = 6
-		build_cost_ic = 24
+		build_cost_ic = 36
 		reliability = 0.75
 		armor_value = 45
 		defense = 8
@@ -413,7 +411,7 @@ equipments = {
 			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
-		build_cost_ic = 32
+		build_cost_ic = 38
 		reliability = 0.85
 		armor_value = 95
 		defense = 8
@@ -565,7 +563,7 @@ equipments = {
 			tank_nsb_heavy_armor_1_upgrade
 		}
 		maximum_speed = 5.0
-		build_cost_ic = 44
+		build_cost_ic = 50
 		reliability = 0.6
 		armor_value = 65
 		defense = 10
