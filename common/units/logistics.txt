@@ -35,7 +35,7 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Important Ability
-		supply_consumption_factor = -0.30
+		supply_consumption_factor = -0.25
 		fuel_consumption_factor = -0.10
 
 		fuel_capacity = -1.00
@@ -88,7 +88,7 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Important Ability
-		supply_consumption_factor = -0.50
+		supply_consumption_factor = -0.40
 		fuel_consumption_factor = -0.10
 
 		fuel_capacity = -1.00
