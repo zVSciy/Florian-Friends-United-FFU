@@ -4035,7 +4035,7 @@ GER_propaganda_campaigns = {
 
 		available = {
 			GER_propaganda_poster_slot_available = yes
-			has_completed_focus = GER_ardennes
+			has_completed_focus = GER_enforced_fanaticalism
 		}
 
 		days_remove = 365
@@ -4045,8 +4045,8 @@ GER_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			army_core_attack_factor = 0.1
-			army_core_defence_factor = 0.1
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.25
 			war_support_factor = 0.3
 		}
 

@@ -1277,7 +1277,7 @@ COM_propaganda_campaigns = {
 			}
 		}
 
-		days_remove = 120
+		days_remove = 365
 
 		days_re_enable = 360
 

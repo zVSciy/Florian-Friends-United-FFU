@@ -1669,7 +1669,7 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = USA_labour_management_relations_act
 			USA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.075 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 
@@ -1699,10 +1699,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1716,10 +1716,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -3017,9 +3017,9 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		complete_tooltip = {
-			navy_experience = 50
-			army_experience = 50
-			air_experience = 10
+			navy_experience = 100
+			army_experience = 100
+			air_experience = 100
 			every_state = {
 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
 				add_extra_state_shared_building_slots = 5
@@ -3032,9 +3032,9 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			navy_experience = 50
-			army_experience = 50
-			air_experience = 10
+			navy_experience = 100
+			army_experience = 100
+			air_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -3411,7 +3411,7 @@ focus_tree = {
 			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.3 tooltip = global_building_slots_factor_tt }
 			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.15 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.15 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.125 tooltip = production_factory_start_efficiency_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.3 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_dockyard_factor = 0.3 tooltip = production_speed_dockyard_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_synthetic_refinery_factor = 0.3 tooltip = production_speed_synthetic_refinery_factor_tt }
@@ -6694,14 +6694,14 @@ focus_tree = {
 				limit = { 
 					free_building_slots = {
 						building = dockyard
-						size > 4
+						size > 5
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -6710,14 +6710,14 @@ focus_tree = {
 				limit = { 
 					free_building_slots = {
 						building = dockyard
-						size > 4
+						size > 5
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}

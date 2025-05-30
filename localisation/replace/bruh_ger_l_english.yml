@@ -407,6 +407,10 @@
   germany.2004.t:0 "Production of the Bismarck"
   germany.2004.d:0 "As part of Plan Z, the production of 2 Bismarck-Klasse ships, the Bismarck and Tripitz is nearing completion"
   germany.2004.a:0 "The Kriegsmarine grows..."
+  GER_recover_from_bagration:0 "Emergency Reserves to the Eastern Front"
+  GER_chemical_attacks:0 "Unleashe Tabun"
+  GER_enforced_fanaticalism:0 "Enforced Fanaticalism"
+  GER_panzer_group_west:0 "Deploy Panzergruppe West"
 
   #### IDEAS ####
   german_cooperation_focus:0 "German Advisors"
@@ -497,6 +501,8 @@
   GER_navy_dynamic_modifier:0 "[GER_navy_dynam_mod_sl]"
   GER_modify_german_navy_ns_intro:0 "Modify §Y$GER_navy_dynamic_modifier$§! by"
   GER_modify_navy_kriegsmarine:0 "Kriegsmarine"
+  german_chemical_attacks:0 "Chemical Attacks by Germany"
+  german_chemical_attacks_desc:0 "Unused chemical weapons by Germany were used on the western front as means to slow us down. It will take time before it fully dissipates."
 
   #### TRAITS ####
   schacht:0 "Reichsbank President"
@@ -608,7 +614,7 @@
   GER_running_prop:0 "Running Propaganda Campaign"
 
   #### TOOLTIP FLAG ####
-  GER_defend_berlin_tt:0 "Mobilise local reservists in the city, Spawning §Y20 Volksturm Divisions§!"
+  GER_defend_berlin_tt:0 "Mobilise the reserve army in Berlin and fortifies Brandenburg, Spawning §Y30 Reserve Divisions§!"
   ger_share_tanks_tt_pzr_2:0 "Gives access to the §YPanzer II§! Technical Package"
   ger_share_tanks_tt_2:0 "Gives access to the §YPanzer III/IV§! Technical Package"
   ger_share_tanks_tt_2_32:0 "Gives access to the §YPanzer III Ausf. E§! Technical Package"
@@ -686,6 +692,19 @@
   GER_SS_inf_tt:0 "§OEnables special Ranger SS divisions for Germany!§!"
   GER_SS_mediums_tt:0 "§OEnables special Medium Tank SS divisions for Germany!§!"
   GER_SS_heavies_tt:0 "§OEnables special Heavy Tank SS divisions for Germany!§!"
+  GER_panzer_gruppe_west_tt:0 "§OWe will deploy 6 Panzer Divisions to the Western Front to slow down the Allies!§!"
+  GER_chemical_weapons_tt:0 "§OChemical weapons will be used on France as we slowly retreat back into Germany to slow down the allies.§!§O"
+  GER_recovering_from_bagration_tt:0 "§OReserves from the reserve army will be deployed east to stop the Soviet advance."
+  GER_british_sf_spawn_ins_tt:0 "§OSpawns in 11/8 SF in Berlin!§!"
+  GER_danish_sf_spawnins_tt:0 "§OSpawns in 11/8 SF in Berlin!§!"
+  GER_ukraine_inf_spawnins_tt:0 "§OSpawns in 11/8 Infantry in Berlin!§!"
+  GER_ostland_inf_spawnins_tt:0 "§OSpawns in 11/8 Garrisons in Berlin!§!"
+  GER_milita_spawnins_tt:0 "§OSpawns in 11/8 Garrisons in Berlin!§!"
+  ger_cze_tank_3:0 "The Hetzer"
+  ger_cze_tank_2:0 "The 35T"
+  ger_cze_tank_1:0 "The 38T"
+  
+  
 
 
   ### AUTARKY ###

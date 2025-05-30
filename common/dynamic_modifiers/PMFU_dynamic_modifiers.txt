@@ -131,6 +131,12 @@ ENG_no_portspam = {
 	state_production_speed_naval_base_factor = -10
 }
 
+german_chemical_attacks = {
+	army_speed_factor = -0.5
+
+	icon = GFX_idea_generic_fortify_the_borders
+}
+
 SOV_the_economy_dynamic_peace_modifier = {
 	enable = { always = yes }
 
@@ -516,6 +522,7 @@ GER_army_dynamic_modifier = {
 	army_morale_factor = GER_german_army_army_morale_factor
 	experience_loss_factor = GER_german_army_experience_loss_factor
 	intelligence_agency_defense = GER_german_army_intelligence_agency_defense
+	special_forces_attack_factor = GER_german_army_special_forces_attack_factor
 	operative_slot = GER_german_army_operative_slot
 	army_org_Factor = GER_german_army_army_org_Factor
 	planning_speed = GER_german_army_planning_speed

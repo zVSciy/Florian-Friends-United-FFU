@@ -3529,6 +3529,8 @@ focus_tree = {
 		completion_reward = {
 			# custom_effect_tooltip = JAP_strike_south_tt
 			unlock_decision_tooltip = JAP_pressure_france
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 	
@@ -6008,7 +6010,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -6018,7 +6020,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -6056,10 +6058,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = JAP_new_naval_estimates_DY1
@@ -6081,10 +6083,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = JAP_new_naval_estimates_DY2
