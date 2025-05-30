@@ -932,7 +932,7 @@ leader_traits = {
 		krupp_designer = {
 		random = no
 		
-		industrial_capacity_factory = 0.025
+		industrial_capacity_factory = 0.075
 		equipment_bonus = {
 			light_tank_chassis = {
 				hardness = 0.05
