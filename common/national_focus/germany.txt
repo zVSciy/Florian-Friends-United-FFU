@@ -35,7 +35,7 @@ focus_tree = {
 
 	focus = { 
 		id = GER_reichsautobahn
-		icon = GFX_GER_autobahn
+		icon = GFX_GER_oak_autobahn
 		x = 10
 		y = 0
 		cost = 5
@@ -1522,7 +1522,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_oder_vistula
-		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
+		icon = GFX_GER_krupp_stahl_guns
 		prerequisite = { focus = GER_total_war }
 		relative_position_id = GER_total_war
 		x = -2
@@ -1914,7 +1914,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_appoint_speer
-		icon = GFX_goal_ger_heer
+		icon = GFX_focus_GER_ascension_of_speer
 		prerequisite = { focus = GER_total_war }
 		relative_position_id = GER_total_war
 		x = 0
@@ -1931,7 +1931,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reorganise_war_industry
-		icon = GFX_ger_new_subsidiaries
+		icon = GFX_GER_the_final_crusade
 		prerequisite = { focus = GER_appoint_speer }
 		relative_position_id = GER_appoint_speer
 		x = 0
@@ -2269,7 +2269,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_rad_field_division
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_a_feeling_of_blitz
 		prerequisite = { focus = GER_reichsarbeitsdienst_mil_construction focus = GER_reichsarbeitsdienst_output }
 		relative_position_id = GER_reichsarbeitsdienst_mil_construction
 		x = -1
@@ -2284,7 +2284,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_railways
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_specialization_of_worker_skills
 		prerequisite = { focus = GER_rad_field_division }
 		relative_position_id = GER_rad_field_division
 		x = -1
@@ -2299,7 +2299,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_logistics
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_FRA_support_spain
 		prerequisite = { focus = GER_rad_field_division }
 		relative_position_id = GER_rad_field_division
 		x = 1
@@ -2718,7 +2718,7 @@ focus_tree = {
 
 		focus = { 
 		id = GER_wehrmacht
-		icon = GFX_GER_a_soldiers_oath
+		icon = GFX_goal_ger_heer
 		x = 40
 		y = 0
 		cost = 1
@@ -2915,7 +2915,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_reichskomissart_britain
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_offense_is_the_best_defense
 		prerequisite = { focus = GER_appoint_reichskommissars }
 		relative_position_id = GER_appoint_reichskommissars
 		x = 0
@@ -2948,7 +2948,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_extend_atlantikwall
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_festung_deutschland
 		prerequisite = { focus = GER_reichskomissart_britain }
 		relative_position_id = GER_reichskomissart_britain
 		x = -2
@@ -3040,7 +3040,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_british_spawnins
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_hummel_spg
 		prerequisite = { focus = GER_reichskomissart_britain }
 		relative_position_id = GER_reichskomissart_britain
 		x = 0
@@ -3097,7 +3097,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_british_sf_spawnins
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_FRA_token_support
 		prerequisite = { focus = GER_reichskomissart_britain }
 		relative_position_id = GER_reichskomissart_britain
 		x = 2
@@ -3296,7 +3296,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_infspawnins2
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ger_osttruppen
 		prerequisite = { focus = GER_reichskomissart_ostland }
 		relative_position_id = GER_reichskomissart_ostland
 		x = -1
@@ -3432,7 +3432,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_dutch_mils
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_award_heroes
 		prerequisite = { focus = GER_reichskomissart_netherlands }
 		relative_position_id = GER_reichskomissart_netherlands
 		x = -1
@@ -3463,7 +3463,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_dutch_docks
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_completed_plan_z
 		prerequisite = { focus = GER_reichskomissart_netherlands }
 		relative_position_id = GER_reichskomissart_netherlands
 		x = 1
@@ -3721,7 +3721,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_norway_docks
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_ger_battleship_dockyards
 		prerequisite = { focus = GER_reichskomissart_norway }
 		relative_position_id = GER_reichskomissart_norway
 		x = -1
@@ -3744,7 +3744,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_heavy_water_production
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_GER_vengeance_weapons
 		prerequisite = { focus = GER_reichskomissart_norway }
 		relative_position_id = GER_reichskomissart_norway
 		x = 1
@@ -4037,7 +4037,7 @@ focus_tree = {
 
 		focus = {
 		id = GER_blitzkrieg
-		icon = GFX_focus_generic_tank_air_support
+		icon = GFX_GER_a_soldiers_oath
 		prerequisite = { focus = GER_wehrmacht }
 		relative_position_id = GER_wehrmacht
 		x = 11
