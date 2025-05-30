@@ -100,12 +100,13 @@
   GER_avenge_versailles_desc:0 "Over these long few years, we have never once lost sight of our goal--the complete repudiation of the Treaty of Versailles. With the last vestiges of formal French resistance fleeing overseas, the time to declare our victory over the new Entente is nigh! The unequal treaty has been purged from the annals of history, never to reach the light again!"
   GER_plunder_west:0 "Plunder the West"
   GER_plunder_west_desc:0 "With the French government exiled, we are now free to have at the riches of this once proud nation."
-  GER_mobilise_reich:0 "Mobilize the Reich" #see below
+  GER_mobilise_reich:0 "Mobilise the Reich" #see below
   GER_mobilise_reich_desc:0 "Despite the Fall of France, our enemies seem to only grow in numbers and industrial might. Every man, woman, and child of Germany must do their part to secure the future and prosperity of the Third Reich."
+  GER_total_war:0 "Proclaim Total War"
   GER_total_war_desc:0 "Ich frage euch--Wollt ihr den totalen Krieg? Wollt ihr ihn, wenn nötig, totaler und radikaler, als wir ihn uns heute überhaupt erst vorstellen können?"
   GER_volksturm:0 "Form the Volksturm"
   GER_volksturm_desc:0 "The People's Storm is the final phase of Totalen Krieg. The German people will resist until the last man, knawing and lashing at those that would seek to destroy the Thousand Year Reich!"
-  GER_mobilise_reich:0 "Mobilize the Reich" #redundant
+  GER_mobilise_reich:0 "Mobilise the Reich" #redundant
   GER_west_research:0 "Western Knowledge"
   GER_west_research_desc:0 "Though initially we believed that nothing of intellectual value could be salvaged from these husks of nations, it would seem as though French research teams have taken German inspiration in several fields, and are thusly suitable for use."
   GER_italy_friend:0 "Pact of Steel"
@@ -234,8 +235,8 @@
   GER_air_advisor2:0 "Ritter von Greim"
   GER_reichsautobahn:0 "Reichsautobahn"
   GER_autarky_path:0 "Economic Autarky"
-  GER_free_trade_path:0 "German Hegemony over Europe"
-  GER_industry_bonus:0 "National Industrial Expansion"
+  GER_free_trade_path:0 "Axis Hegemony over Europe"
+  GER_industry_bonus:0 "Improved Machine Tools"
   GER_steel_refs:0 "Essener Krupp-Gussstahlfabrik"
   GER_schacht:0 "Appoint Schacht"
   GER_todt:0 "Organization Todt"
@@ -267,7 +268,7 @@
   GER_underground_factories:0 "Underground Factories"
   GER_simplify_designs:0 "Simplify Designs"
   GER_ig_farben_company:0 "IG Farben"
-  GER_ig_farben_rubber_per_ref:0 "Optimized Buna Production"  
+  GER_ig_farben_rubber_per_ref:0 "Efficient Synthetic Rubber" # come back to this later
   GER_research_slot:0 "Synthetic Research"
   GER_reichsarbeitsdienst:0 "Reichsarbeitsdienst"
   GER_reichsarbeitsdienst_output:0 "RAD Workers"
@@ -275,7 +276,7 @@
   GER_rad_field_division:0 "RAD Field Divisions"
   GER_railways:0 "Connecting the Rails"
   GER_logistics:0 "Improved Logistics"
-  GER_krupp_company:0 "Deals With Krupp"
+  GER_krupp:0 "Deals With Krupp"
   GER_facilities:0 "Heeresversuchsanstalten"
   GER_air_facility:0 "The Peenemünde Facility"
   GER_land_facility:0 "Heeresversuchsanstalt Kummersdorf" 
