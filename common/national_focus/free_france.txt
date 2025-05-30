@@ -426,6 +426,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			date > 1941.1.1
 			AND = {
 				if = {
 				limit = {
@@ -437,7 +438,12 @@ focus_tree = {
 					num_of_factories > 24
 				}
 
+				OR = {
+				907 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			date > 1942.1.1
+				}
 			}
 			
 		}
