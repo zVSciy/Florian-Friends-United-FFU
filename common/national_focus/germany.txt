@@ -11,7 +11,7 @@
 #!gfx:interface\replace\bruh_jap_interface.gfx
 #!gfx:interface\replace\bruh_nsb_interface.gfx
 #!gfx:interface\replace\bruh_sov_interface.gfx
-
+ 
 focus_tree = {
 	id = german_focus
 	
@@ -8483,6 +8483,7 @@ focus_tree = {
 			}
 		}
 			hidden_effect = {
+				play_song = "10-speech"
 				division_template = {
 					name = "Reserve Army"
 					regiments = {
