@@ -801,12 +801,13 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
-	if = {
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_40_DESC
-			date > 1940.1.1
-		}
-	}	
+	#if = {
+	#	custom_trigger_tooltip = {
+	#		tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_40_DESC
+	#		date > 1940.1.1
+	#	}
+	#}
+	always = no
 }
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	if = {
