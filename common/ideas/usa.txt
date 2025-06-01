@@ -2987,7 +2987,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.1
-				production_cost_arms_factory_factor = -0.333
+				production_cost_arms_factory_factor = -0.25
 			}
 		}
 	}

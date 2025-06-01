@@ -1509,6 +1509,13 @@ focus_tree = {
 			GER_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_economy_stability_factor = 0.15 tooltip = stability_factor_tt }
 			add_to_variable = { GER_german_economy_war_support_factor = 0.15 tooltip = war_support_factor_tt }
+			hidden_effect = {
+				every_state = { limit = { has_state_flag = ita_dday}
+					add_dynamic_modifier = {
+						modifier = ITALY_DDAY_ENTRENCHMENT5
+					}
+				}			
+			}
 		}
 	}
 
