@@ -5855,6 +5855,21 @@ focus_tree = {
 				}
 				# custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						ETH = {
+							exists = yes
+						}
+					}
+					ITA = {
+						annex_country  = {
+							target = ETH 
+							transfer_troops = yes
+						}
+					}
+				}
+			}
 			
 		}
 	}
