@@ -5772,66 +5772,6 @@ focus_tree = {
 				type = arms_factory
 				level = 60
 			}
-            add_resource = {
-                type = chromium
-                amount = 144
-                state = 516
-            }
-			add_resource = {
-                type = chromium
-                amount = 144
-                state = 878
-            }
-			add_resource = {
-                type = chromium
-                amount = 144
-                state = 876
-            }
-            add_resource = {
-                type = tungsten
-                amount = 234
-                state = 516
-            }
-			add_resource = {
-                type = tungsten
-                amount = 234
-                state = 878
-            }
-			add_resource = {
-                type = tungsten
-                amount = 234
-                state = 876
-            }
-			add_resource = {
-                type = steel
-                amount = 207
-                state = 516
-            }
-			add_resource = {
-                type = steel
-                amount = 207
-                state = 878
-            }
-			add_resource = {
-                type = steel
-                amount = 207
-                state = 876
-            }
-			add_resource = {
-                type = aluminium
-                amount = 40
-                state = 516
-            }
-			add_resource = {
-                type = aluminium
-                amount = 40
-                state = 878
-            }
-			add_resource = {
-                type = aluminium
-                amount = 40
-                state = 876
-            }
 		}
 	}
 	

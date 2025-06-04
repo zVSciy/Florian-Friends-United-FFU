@@ -442,7 +442,7 @@ equipments = {
 		}
 		module_count_limit = {
 			module = easy_maintenance
-			count < 2
+			count < 1
 		}
 		module_count_limit = {
 			module = stabilizer
@@ -519,7 +519,7 @@ equipments = {
 		armor_value = 25
 		hardness = 0.85
 		resources = {
-			steel = 20
+			steel = 25
 			tungsten = 15 
 			chromium = 15
 		}
