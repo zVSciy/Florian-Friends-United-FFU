@@ -519,8 +519,8 @@ equipments = {
 		armor_value = 25
 		hardness = 0.85
 		resources = {
-			steel = 30
-			tungsten = 15 
+			steel = 35
+			tungsten = 25 
 			chromium = 15
 		}
 		#Space taken in convoy
