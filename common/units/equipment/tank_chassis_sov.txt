@@ -562,7 +562,7 @@ equipments = {
 			tank_nsb_heavy_armor_1_upgrade
 		}
 		maximum_speed = 5.0
-		build_cost_ic = 50
+		build_cost_ic = 55
 		reliability = 0.6
 		armor_value = 65
 		defense = 10
