@@ -3113,7 +3113,11 @@ focus_tree = {
             SOV = { add_offsite_building = { type = arms_factory level = 15 } }
             SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
 			hidden_effect = {
-            SOV = { remove_ideas =  home_of_revolution  }
+            SOV = { swap_ideas =  {
+						remove_idea = home_of_revolution
+						add_idea = home_of_revolution_1
+					}  
+				}
 			}
         }
     }
