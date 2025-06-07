@@ -449,6 +449,73 @@ generic_bonus_999 = {
 	}
 }
 
+remove_one_inf = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -1425
+	}
+	add_equipment_to_stockpile = {
+		type = squad_equipment
+		amount = -280
+	}
+	add_equipment_to_stockpile = {
+		type = horse_equipment
+		amount = -465
+	}
+	add_equipment_to_stockpile = {
+		type = sf_equipment
+		amount = -315
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = -100
+	}
+	add_equipment_to_stockpile = {
+		type = radio_equipment
+		amount = -100
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = -120
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = -96
+	}
+	add_equipment_to_stockpile = {
+		type = dp_artillery_equipment
+		amount = -96
+	}
+	add_equipment_to_stockpile = {
+		type = pack_artillery_equipment
+		amount = -96
+	}
+	add_equipment_to_stockpile = {
+		type = heavy_artillery_equipment
+		amount = -96
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment
+		amount = -96
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_rocket_equipment
+		amount = -96
+	}
+	add_equipment_to_stockpile = {
+		type = super_heavy_artillery_equipment
+		amount = -30
+	}
+	add_equipment_to_stockpile = {
+		type = anti_air_equipment
+		amount = -20
+	}
+	add_equipment_to_stockpile = {
+		type = heavy_anti_air_equipment
+		amount = -20
+	}
+}
+
 replace_civ_with_arms_factories = {
 
 	random_owned_controlled_state = {
