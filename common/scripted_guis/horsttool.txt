@@ -153,38 +153,12 @@ st_country_powers = {
 					}
 					if = { limit = { check_variable = { Root.selected_cheat = 17 } } add_command_power = 25 }
 					if = {
-						limit = { check_variable = { Root.selected_cheat = 19 } }
-						owner = {
-							for_each_loop = {
-								array = ROOT.marked_states
-								value = state
-								var:state = {
-									set_building_level = {
-										type = bunker
-										level = 0
-										province = {
-											all_provinces = yes
-											level > 0
-										}
-									}
-									set_building_level = {
-										type = coastal_bunker
-										level = 0
-										province = {
-											all_provinces = yes
-											level > 0
-										}
-									}
-								}
-							}
-							ROOT = {
-								for_each_scope_loop = {
-									array = marked_states
-									clear_variable = mark_status
-								}
-								clear_array = marked_states
-							}
-						}
+						limit = {
+							check_variable = {
+								Root.selected_cheat = 18 
+							} 
+						} 
+						remove_one_inf = yes
 					}
 				}	
 			}
