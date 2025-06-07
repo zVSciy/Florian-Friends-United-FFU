@@ -178,7 +178,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			42 = { # hungary
+			43 = { # hungary
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 						type = industrial_complex
@@ -186,7 +186,7 @@ focus_tree = {
 						instant_build = yes
 					}		
 				}
-            51 = {
+            155 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -194,7 +194,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			42 = { # romania
+			46 = { # romania
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 						type = industrial_complex
@@ -202,7 +202,7 @@ focus_tree = {
 						instant_build = yes
 					}		
 				}
-            51 = {
+            79 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -210,7 +210,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			42 = { # bulgaria
+			48 = { # bulgaria
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 						type = industrial_complex
@@ -218,7 +218,7 @@ focus_tree = {
 						instant_build = yes
 					}		
 				}
-            51 = {
+            801 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -226,7 +226,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			42 = { # yugo
+			109 = { # yugo
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 						type = industrial_complex
@@ -234,7 +234,7 @@ focus_tree = {
 						instant_build = yes
 					}		
 				}
-            51 = {
+            104 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -242,7 +242,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			42 = { # spain
+			41 = { # spain
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 						type = industrial_complex
@@ -250,7 +250,7 @@ focus_tree = {
 						instant_build = yes
 					}		
 				}
-            51 = {
+            793 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -258,7 +258,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			42 = { # finland
+			111 = { # finland
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 						type = industrial_complex
@@ -266,7 +266,7 @@ focus_tree = {
 						instant_build = yes
 					}		
 				}
-            51 = {
+            926 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory

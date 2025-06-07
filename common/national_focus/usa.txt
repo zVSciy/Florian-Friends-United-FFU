@@ -5580,36 +5580,6 @@ focus_tree = {
 
 	focus = {
 		id = USA_philippines
-		icon = GFX_focus_PLACEHOLDER
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_wake }
-		relative_position_id = USA_wake
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {	
-
-		}	
-
-		bypass = {	
-
-		}	
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = USA_philippines
 		icon = GFX_USA_i_ve_returned
 		x = 0
 		y = 1
