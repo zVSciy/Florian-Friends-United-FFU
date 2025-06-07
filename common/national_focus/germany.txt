@@ -139,6 +139,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			custom_effect_tooltip = {
+                localization_key = GER_free_trade_tt
+            }
+			hidden_effect = {
 			add_ideas = free_trade
 			YUG = {
                 add_ideas = free_trade
@@ -159,21 +163,118 @@ focus_tree = {
 				add_ideas = free_trade
 				}
 			42 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
+						instant_build = yes
+					}		
+				}
+            51 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			42 = { # hungary
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
 						instant_build = yes
 					}		
 				}
             51 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
+			42 = { # romania
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}		
+				}
+            51 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			42 = { # bulgaria
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}		
+				}
+            51 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			42 = { # yugo
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}		
+				}
+            51 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			42 = { # spain
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}		
+				}
+            51 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			42 = { # finland
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}		
+				}
+            51 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 		}
 	}
 
@@ -271,11 +372,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			custom_effect_tooltip = {
+                localization_key = GER_goering_mils_tt
+            }
 				64 = {
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 6
+					instant_build = yes
+				}
+			}
+			    61 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -352,7 +464,8 @@ focus_tree = {
 				}
 			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_mefo_industrial_capacity_factory = 0.125 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { GER_german_economy_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
 			add_to_variable = { GER_german_economy_mefo_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
 		}
 	}
@@ -376,7 +489,7 @@ focus_tree = {
 				}
 			}
 			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_mefo_production_factory_max_efficiency_factor = 0.075 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 
@@ -434,6 +547,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			custom_effect_tooltip = {
+                localization_key = GER_schacht_civs_tt
+            }
 				51 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
@@ -2657,7 +2773,7 @@ focus_tree = {
 		relative_position_id = GER_wunderwaffe
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -2841,7 +2957,7 @@ focus_tree = {
 		relative_position_id = GER_krupp_company
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		completion_reward = {
 			custom_effect_tooltip = ger_share_tanks_tt_4
 		}
@@ -4246,7 +4362,7 @@ focus_tree = {
 		relative_position_id = GER_wehrmacht
 		x = 3
 		y = 1
-		cost = 2
+		cost = 1
 		completion_reward = {
 			GER_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { GER_german_army_intelligence_agency_defense = 1 tooltip = intelligence_agency_defense_tt }
@@ -4263,7 +4379,7 @@ focus_tree = {
 		relative_position_id = GER_abwehr
 		x = -1
 		y = 1
-		cost = 2
+		cost = 1
 		completion_reward = {
 			IF = {
 				limit = {
@@ -4283,7 +4399,7 @@ focus_tree = {
 		relative_position_id = GER_abwehr
 		x = 1
 		y = 1
-		cost = 2
+		cost = 1
 		completion_reward = {
 			IF = {
 				limit = {
