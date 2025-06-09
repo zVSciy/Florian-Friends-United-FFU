@@ -1977,50 +1977,6 @@ country_event = {
 }
 
 country_event = {
-	id = generic.31 # japan industry removal
-	title = generic.26.t
-	desc = generic.26.d
-	
-	picture = GFX_report_event_czech_soldiers_01
-
-	is_triggered_only = yes
-    hidden = yes
-
-	option = {
-		name = generic.26.a
-		every_country = {
-			if = {
-				limit = {
-					has_idea = JAP_early_war_industry_bonus
-				}
-				swap_ideas = {
-					remove_idea = JAP_early_war_industry_bonus
-					add_idea = JAP_early_war_industry_bonus2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = JAP_mid_war_industry_bonus
-				}
-				swap_ideas = {
-					remove_idea = JAP_mid_war_industry_bonus
-					add_idea = JAP_mid_war_industry_bonus2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = JAP_late_war_industry_bonus
-				}
-				swap_ideas = {
-					remove_idea = JAP_late_war_industry_bonus
-					add_idea = JAP_late_war_industry_bonus2
-				}
-			}
-		}
-	}
-}
-
-country_event = {
 	id = generic.32
 	title = generic.26.t
 	desc = generic.26.d

@@ -105,6 +105,9 @@ set_variable = { JAP_poster_left_icon_frame = JAP_propaganda_empty_slot_index } 
 set_variable = { JAP_poster_center_icon_frame = JAP_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 
+set_variable = { JAP_war_start_delay = 0 }
+
+
 # ASIA GUI - VARIABLES
 # ALLIES
 set_variable = { global.ALLIED_PACIFIC_CASUALTIES = 0 }
