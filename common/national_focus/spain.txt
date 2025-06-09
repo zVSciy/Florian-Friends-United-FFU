@@ -2189,32 +2189,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = "Going down this path will remilitarize your country"
 			set_global_flag = spain_joined
-			# remove_ideas = AFRICA_COMMONWEALTH_controls_axis_original
-			if = {
-				limit = {
-					NOT = {
-						has_global_flag = sotm_barb_ended
-					}
-				}
-				if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_1 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_1 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_2 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_2 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_3 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_3 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_4 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_4 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_5 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_5 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_6 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_6 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_7 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_7 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_8 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_8 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_9 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_9 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_10 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_10 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_11 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_11 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_12 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_12 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_13 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_13 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_14 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_14 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_15 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_15 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_16 }
-				else_if = { limit = { GER = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_17 } } add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_17 }
-				else = {log = "Couldn't set the AFRICA bases - axis"}
-			}
 			remove_ideas = SPA_neutrality_idea
 			add_war_support = -0.20
 			add_stability = -0.1
