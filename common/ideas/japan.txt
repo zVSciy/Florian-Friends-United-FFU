@@ -1803,11 +1803,14 @@ ideas = {
 			picture = generic_production_bonus
 	
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 				production_factory_start_efficiency_factor = 0.1
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_bunker_factor = 0.25
+
+				production_speed_dockyard_factor = -0.3
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 
@@ -1826,7 +1829,8 @@ ideas = {
 			picture = generic_production_bonus
 	
 			modifier = {
-				production_speed_buildings_factor = -0.20
+				production_speed_dockyard_factor = -0.3
+				industrial_capacity_dockyard = -0.20
 			}
 		}
 
@@ -1858,13 +1862,26 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.025
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_speed_arms_factory_factor = 0.20
-				production_speed_dockyard_factor = 0.1
-				production_speed_bunker_factor = 0.05
-				production_speed_coastal_bunker_factor = 0.05
+				industrial_capacity_dockyard = 0.20
+				production_speed_dockyard_factor = 0.10
+				refit_speed = 0.3
+				production_speed_coastal_bunker_factor = 0.4
+				production_speed_naval_base_factor = 0.4
+
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+
+		JAP_mid_war_industry_bonus2 = {
+			removal_cost = -1
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.15
 			}
 		}
 
@@ -1893,13 +1910,14 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.075
-				industrial_capacity_dockyard = 0.1
-				production_speed_arms_factory_factor = 0.35
-				production_speed_dockyard_factor = 0.15
-				production_speed_bunker_factor = 0.1
-				production_speed_coastal_bunker_factor = 0.1
+				production_speed_arms_factory_factor = 0.4
+				production_speed_dockyard_factor = 0.4
+				production_speed_anti_air_building_factor = 0.5
+
+				production_speed_air_base_factor = 0.3
+				production_speed_naval_base_factor = 0.3
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.3
 			}
 		}
 
@@ -1928,9 +1946,8 @@ ideas = {
 			}
 
 			modifier = {
-				naval_invasion_capacity = 20
-				invasion_preparation = -0.35
-				amphibious_invasion = 0.35
+				supply_consumption_factor = -0.05
+				no_supply_grace = 48
 			}
 		}
 
