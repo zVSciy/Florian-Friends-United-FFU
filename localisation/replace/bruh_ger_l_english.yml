@@ -413,6 +413,7 @@
   GER_panzer_group_west:0 "Deploy Panzergruppe West"
 
   #### IDEAS ####
+  GER_cheaper_lights:0 "Stolen Czech Designs"
   german_cooperation_focus:0 "German Advisors"
   GER_expand_mefo_fast:0 "Expanded MEFO: Production Focus"
   GER_expand_mefo_fast_2:0 "Expanded MEFO: Extra Investments (Production Focus)"
@@ -704,7 +705,7 @@
   ger_cze_tank_2:0 "The 35T"
   ger_cze_tank_1:0 "The 38T"
   GER_free_trade_tt:0 "§OAll Axis minors and Germany get free trade. Additionally spawns 8 Civilian Factories in Germany and 3 Civilian Factories and 2 Military Factory in every Axis minor§!"
-  GER_goering_mils_tt:0 "§OOn Four Year Plan, Germany only keeps the Production Efficiency Cap, Factory Output and Resource Efficiency once you complete "Danzig or War"§!"
+  GER_goering_mils_tt:0 "§OGermany loses any production modifiers gained from "Four Year Plan" once you complete "Danzig or War"§!"
   
   
 
