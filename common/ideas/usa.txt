@@ -2974,7 +2974,10 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_wartime_industry
+				OR = {
+					has_completed_focus = USA_wartime_industry
+					date > 1941.1.1
+				}
 			}
 			
 
