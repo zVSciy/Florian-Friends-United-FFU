@@ -232,11 +232,11 @@ add_to_variable = { GER_german_economy_mefo_production_speed_fuel_silo_factor = 
 add_to_variable = { GER_german_economy_mefo_production_speed_synthetic_refinery_factor = 0.25 tooltip = production_speed_synthetic_refinery_factor_tt }
 add_to_variable = { GER_german_economy_mefo_political_power_cost = 0.35 tooltip = political_power_cost_tt }
 
-set_variable = { GER_autarky_steel = 30000 }
-set_variable = { GER_autarky_aluminium = 15000 }
-set_variable = { GER_autarky_rubber = 4000 }
-set_variable = { GER_autarky_tungsten = 3000 }
-set_variable = { GER_autarky_chromium = 5500 }
+set_variable = { GER_autarky_steel = 40000 }
+set_variable = { GER_autarky_aluminium = 20000 }
+set_variable = { GER_autarky_rubber = 4500 }
+set_variable = { GER_autarky_tungsten = 4000 }
+set_variable = { GER_autarky_chromium = 10000 }
 set_variable = { GER_autarky_oil = 6000 }
 
 add_dynamic_modifier = {

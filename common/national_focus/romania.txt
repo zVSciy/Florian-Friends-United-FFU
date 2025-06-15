@@ -762,12 +762,6 @@ mutually_exclusive = {
 					amount = 500
 					state = 79
 				}
-		
-				add_resource = {
-					type = tungsten
-					amount = 400
-					state = 79
-				}
 				
 		
 			
