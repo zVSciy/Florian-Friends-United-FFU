@@ -15,86 +15,32 @@ FRA_renault_organization = {
 	allowed = {	
 		OR = {
 			tag = FRA 
-			# tag = VIC
-			# tag = BEL
-			# AND = {
-			# 	tag = ETH 
-			# 	has_dlc = "By Blood Alone"
-			# }
 		}
 	}
 
 	visible = {
-		# IF = {
-		# 	limit = {
-		# 		FROM = { original_tag = ETH }
-		# 	}
-		# 	FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		# }
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		# IF = {
-		# 	limit = {
-		# 		FROM = { NOT = { OR = { original_tag = FRA original_tag = VIC } } }
-		# 	}
-		# 	FROM = { NOT = { has_war_with = FRA } }
-		# }	
-
-		# IF = {
-		# 	limit = {
-		# 		FROM = { original_tag = ETH }
-		# 	}
-		# 	custom_trigger_tooltip = {
-		# 		tooltip = has_invited_mio_tt
-		# 		FROM = {
-		# 			has_country_flag = has_invited_FRA_renault_organization_flag
-		# 		}
-		# 	}
-		# }
 	}
-
-	# initial_trait = {
-	# 	organization_modifier = {
-	# 		military_industrial_organization_research_bonus = 0.05
-	# 	}
-	# }
-
-	# add_trait = { 
-	# 	token = FRA_mio_trait_automitrailleuses
-	# 	name = FRA_mio_trait_automitrailleuses
-	# 	icon = GFX_generic_mio_trait_icon_maximum_speed
-	# 	special_trait_background = yes
-		
-	# 	position = { x=6 y=0 }  
-		
-	# 	limit_to_equipment_type = { medium_tank_chassis }
-		
-	# 	equipment_bonus = {
-	# 		maximum_speed = 0.1
-	# 		armor_value = -0.05
-	# 	} 
-
-	# }
-	# add_trait = {
-	# 	token = FRA_mio_trait_b1_bis_suspension
-	# 	name = FRA_mio_trait_b1_bis_suspension
-	# 	icon = GFX_generic_mio_trait_icon_breakthrough
-	# 	special_trait_background = yes
-		
-	# 	position = { x=0 y=4 }  
-	# 	relative_position_id = generic_mio_trait_heavy_tank_improvements
-		
-	# 	any_parent = { generic_mio_trait_heavy_tank_improvements }
-		
-	# 	limit_to_equipment_type = { heavy_tank_chassis }
-		
-	# 	equipment_bonus = {
-	# 		maximum_speed = 0.05
-	# 		breakthrough = 0.1 
-	# 	} 
-	# }
+	add_trait = {
+		token = FRA_rnlt_resource
+		name = FRA_rnlt_resource
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_technology
+		special_trait_background = yes
+		position = {
+			x = 0
+			y = 0
+		}
+		available = {
+			FROM = {
+				has_completed_focus = FRA_light_medium_armor
+			}
+		}
+		production_bonus = {
+			production_resource_need_factor = -0.75
+		}
+	}
 }
 
 FRA_hotchkiss_organization = {

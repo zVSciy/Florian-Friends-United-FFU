@@ -35,22 +35,6 @@ ideas = {
 			}
 		}
 
-
-		FRA_no_trade_for_tank = {
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-
-			modifier = {
-				production_lack_of_resource_penalty_factor = -0.7
-			}
-		}
-
 		FRA_no_weird_licensed_tanks = {
 
 			allowed = {

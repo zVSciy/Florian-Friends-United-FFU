@@ -1167,22 +1167,21 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
-				name = FRA_light_medium_armor
-				bonus = 0.5
-				uses = 1
-				category = cat_light_armor
-				category = cat_medium_armor
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:FRA_renault_organization = {
+					unlock_mio_trait_tooltip = FRA_rnlt_resource
+				}
+				mio:FRA_renault_organization = {
+					add_mio_size = 1
+				}
 			}
-			add_tech_bonus = {
-				name = FRA_light_medium_armor
-				bonus = 0.75
-				ahead_reduction = 0.5
-				uses = 1
-				category = cat_light_armor
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = cape_cope
 			}
-
-			add_ideas = FRA_no_trade_for_tank
 
 		}
 	}
