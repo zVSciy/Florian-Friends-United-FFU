@@ -229,7 +229,7 @@ on_actions = {
 					NOT = {
 						has_global_flag = FRANCE_REMOVE_BUFF_CORE
 					}
-					date > 1939.9.1
+					date > 1940.2.1
 					NOT = {
 						VIC = {
 							has_country_flag = VIC_france_capped
@@ -242,33 +242,6 @@ on_actions = {
 				set_global_flag = FRANCE_REMOVE_BUFF_CORE
 				FRA = {
 					remove_ideas = FRA_defense_of_metropolitan_france
-				}
-			}
-		}
-	}
-
-	on_weekly_FRA = {
-		effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_global_flag = FRANCE_CRACKS_SWAP
-					}
-					date > 1940.3.1
-					NOT = {
-						VIC = {
-							has_country_flag = VIC_france_capped
-						}
-					}
-					FRA = {
-						NOT = {
-							has_idea = FRA_defense_of_metropolitan_france
-						}
-					}
-				}
-				set_global_flag = FRANCE_CRACKS_SWAP
-				FRA = {
-					add_ideas = FRA_cracks_in_the_army
 				}
 			}
 		}
