@@ -828,6 +828,7 @@ focus_tree = {
 
 			}			
 			custom_effect_tooltip = FRA_increase_armor_tt
+			army_experience = 1500
 		}
 	}
 	focus = {
@@ -867,6 +868,7 @@ focus_tree = {
 				add_political_power = -150
 			}
 			add_ideas = FRA_tank_supremacy
+			army_experience = 1500
 		}
 		completion_reward = {
 			773 = {

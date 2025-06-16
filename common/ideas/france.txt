@@ -36,6 +36,21 @@ ideas = {
 		}
 
 
+		FRA_no_trade_for_tank = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.7
+			}
+		}
+
 		FRA_no_weird_licensed_tanks = {
 
 			allowed = {
@@ -582,6 +597,10 @@ ideas = {
 			
 			equipment_bonus = {
 				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				pack_artillery_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -1287,7 +1306,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				special_forces_cap = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 			}
 		}
 
@@ -1827,10 +1847,10 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 				stability_factor = 0.1
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.05
 			}
 		}
 

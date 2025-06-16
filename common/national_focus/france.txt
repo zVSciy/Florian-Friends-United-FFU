@@ -1181,6 +1181,9 @@ focus_tree = {
 				uses = 1
 				category = cat_light_armor
 			}
+
+			add_ideas = FRA_no_trade_for_tank
+
 		}
 	}
 
@@ -1386,7 +1389,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				mio:FRA_hotchkiss_organization = {
+				mio:FRA_renault_organization = {
 					add_mio_funds = 1500
 					add_mio_research_bonus = 0.02
 				}
@@ -1579,7 +1582,7 @@ focus_tree = {
 			focus = FRA_form_the_popular_front
 		}
 		relative_position_id = FRA_form_the_popular_front
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1620,7 +1623,7 @@ focus_tree = {
 			focus = FRA_reform_the_labour_laws
 		}
 		relative_position_id = FRA_reform_the_labour_laws
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1735,7 +1738,7 @@ focus_tree = {
 			focus = FRA_form_the_state_arsenals
 		}
 		relative_position_id = FRA_nationalize_key_industry
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1779,7 +1782,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_general_work_council }
 		
 		relative_position_id = FRA_general_work_council
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1811,7 +1814,7 @@ focus_tree = {
 		
 		relative_position_id = FRA_general_work_council
 		
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1847,7 +1850,7 @@ focus_tree = {
 			focus = FRA_general_work_council
 		}
 		relative_position_id = FRA_general_work_council
-		cost = 6
+		cost = 4
 
 		ai_will_do = {
 			factor = 1

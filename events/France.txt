@@ -740,7 +740,7 @@ country_event = {
 			remove_ideas = { FRA_market_dynamism }
 			transfer_state = 268
 			remove_ideas = FRA_defense_of_metropolitan_france
-			
+			remove_ideas = FRA_no_trade_for_tank
 			add_ideas = FRA_capitulated
 			set_victory_points = {
 				province = 373
