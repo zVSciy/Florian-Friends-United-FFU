@@ -110,12 +110,11 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 	special_forces_cap
-	stupid_ai
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 2000
+	amount = 2500
 	producer = IRE
 }
 add_equipment_to_stockpile = {
