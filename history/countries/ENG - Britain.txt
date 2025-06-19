@@ -19,7 +19,7 @@ set_variable = {
 }
 
 118 = {
-	add_dynamic_modifier = { modifier = gibraltar_defences }
+	add_dynamic_modifier = { modifier = gibraltar_defences scope = ENG }
 }
 
 457 = {
