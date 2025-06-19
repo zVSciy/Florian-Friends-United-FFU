@@ -1809,8 +1809,10 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				production_speed_bunker_factor = 0.25
 
-				production_speed_dockyard_factor = -0.3
-				industrial_capacity_dockyard = -0.15
+				refit_speed = 0.3
+
+				#production_speed_dockyard_factor = -0.3
+				#industrial_capacity_dockyard = -0.15
 			}
 		}
 
@@ -1829,8 +1831,11 @@ ideas = {
 			picture = generic_production_bonus
 	
 			modifier = {
-				production_speed_dockyard_factor = -0.3
-				industrial_capacity_dockyard = -0.20
+				refit_speed = 0.3
+				production_speed_coastal_bunker_factor = 0.4
+				production_speed_naval_base_factor = 0.4
+				production_speed_dockyard_factor = -0.15
+				industrial_capacity_dockyard = -0.10
 			}
 		}
 

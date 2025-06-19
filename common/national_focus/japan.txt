@@ -1676,13 +1676,14 @@ focus_tree = {
 			}
 		}
 	}	
- 
+
+
 	focus = {
-		id = JAP_early_war_industry_focus
-		icon = GFX_goal_JAP_IJA_takeover
+		id = JAP_mid_war_industry_focus
+		icon = GFX_goal_JAP_adaptive_war_industry
 		prerequisite = { focus = JAP_secure_china }
-		mutually_exclusive = { focus = JAP_mid_war_industry_focus focus = JAP_late_war_industry_focus}
-		x = 2
+		mutually_exclusive = { focus = JAP_early_war_industry_focus focus = JAP_late_war_industry_focus}
+		x = 0
 		y = 1
 		cost = 3
 		relative_position_id = JAP_secure_china
@@ -1697,7 +1698,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			set_country_flag = JAP_early_war
+			
 			# JAP_interservice_rivalry_towards_army = yes
 			# JAP_interservice_rivalry_towards_army = yes
 			add_power_balance_value = {
@@ -1724,132 +1725,19 @@ focus_tree = {
 					add_idea = JAP_early_war_industry_bonus2
 				}
 			}
-
-			# effect_tooltip = {
-			# 	random_state = {
-			# 		limit = {
-			# 			set_temp_variable = { num_factory = building_level@industrial_complex }
-			# 			check_variable = { num_factory > 1 }
-			# 			is_fully_controlled_by = JAP
-			# 		}
-			# 		add_building_construction = {
-			# 			type = arms_factory
-			# 			level = 1
-			# 			instant_build = yes
-			# 		}
-			# 		remove_building = {
-			# 			type = industrial_complex
-			# 			level = 2
-			# 		}
-			# 	}
-			# }
-			# custom_effect_tooltip = JAP_early_war_start_tt
-
 		}
 	}
 
-	focus = {
-		id = JAP_mid_war_industry_focus
-		icon = GFX_goal_JAP_IJN_takeover
-		prerequisite = { focus = JAP_secure_china }
-		mutually_exclusive = { focus = JAP_early_war_industry_focus focus = JAP_late_war_industry_focus}
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = JAP_secure_china
-
-		available = {
-			NOT = { has_war_with = CHI }
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			set_country_flag = JAP_mid_war
-			# JAP_interservice_rivalry_towards_navy = yes
-			# JAP_interservice_rivalry_towards_navy = yes
-			add_power_balance_value = {
-				id = JAP_interservice_rivalry
-				value = 1
-			}
-			if = {
-				limit = {
-					date > 1941.1.1
-				}
-				add_ideas = JAP_mid_war_industry_bonus2
-				MAN = { add_ideas = JAP_mid_war_industry_bonus2 }
-				SIA = { add_ideas = JAP_mid_war_industry_bonus2 }
-			}
-			else = {
-				add_ideas = JAP_mid_war_industry_bonus
-				MAN = { add_ideas = JAP_mid_war_industry_bonus }
-				SIA = { add_ideas = JAP_mid_war_industry_bonus }
-			}
-			custom_effect_tooltip = JAP_mid_war_start_tt
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_mid_war_industry_bonus
-					add_idea = JAP_mid_war_industry_bonus2
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_late_war_industry_focus
-		icon = GFX_goal_JAP_adaptive_war_industry
-		prerequisite = { focus = JAP_secure_china }
-		mutually_exclusive = { focus = JAP_early_war_industry_focus focus = JAP_mid_war_industry_focus}
-		x = -2
-		y = 1
-		cost = 3
-		relative_position_id = JAP_secure_china
-
-		available = {
-			NOT = { has_war_with = CHI }
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			set_country_flag = JAP_late_war
-			if = {
-				limit = {
-					date > 1941.1.1
-				}
-				add_ideas = JAP_late_war_industry_bonus2
-				MAN = { add_ideas = JAP_late_war_industry_bonus2 }
-				SIA = { add_ideas = JAP_late_war_industry_bonus2 }
-			}
-			else = {
-				add_ideas = JAP_late_war_industry_bonus
-				MAN = { add_ideas = JAP_late_war_industry_bonus }
-				SIA = { add_ideas = JAP_late_war_industry_bonus }
-			}
-			custom_effect_tooltip = JAP_late_war_start_tt
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = JAP_late_war_industry_bonus
-					add_idea = JAP_late_war_industry_bonus2
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = JAP_early_war_military_focus
 		icon = GFX_goal_JAP_ija_battle_plans
-		prerequisite = { focus = JAP_early_war_industry_focus }
-		x = 0
+		prerequisite = { focus = JAP_mid_war_industry_focus }
+		mutually_exclusive = { focus = JAP_late_war_military_focus focus = JAP_mid_war_military_focus }
+		x = 2
 		y = 1
 		cost = 3
-		relative_position_id = JAP_early_war_industry_focus
+		relative_position_id = JAP_mid_war_industry_focus
 
 		available = {
 		}
@@ -1860,6 +1748,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			set_country_flag = JAP_early_war
 			custom_effect_tooltip = JAP_early_war_military_emperor_tt
 			custom_effect_tooltip = JAP_early_war_military_tora_tt
 			# custom_effect_tooltip = JAP_early_war_military_usa_tt
@@ -1869,7 +1758,8 @@ focus_tree = {
 	focus = {
 		id = JAP_early_war_terrain_training_focus
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = JAP_early_war_military_focus }
+		prerequisite = { focus = JAP_late_war_military_focus focus = JAP_mid_war_military_focus focus = JAP_early_war_military_focus }
+		mutually_exclusive = { focus = JAP_late_war_intel_focus focus = JAP_mid_war_intel_focus }
 		x = 0
 		y = 1
 		cost = 3
@@ -1907,6 +1797,7 @@ focus_tree = {
 		id = JAP_mid_war_military_focus
 		icon = GFX_goal_JAP_preparing_invasions
 		prerequisite = { focus = JAP_mid_war_industry_focus }
+		mutually_exclusive = { focus = JAP_late_war_military_focus focus = JAP_early_war_military_focus }
 		x = 0
 		y = 1
 		cost = 3
@@ -1933,7 +1824,8 @@ focus_tree = {
 	focus = {
 		id = JAP_mid_war_intel_focus
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = JAP_mid_war_military_focus }
+		prerequisite = { focus = JAP_late_war_military_focus focus = JAP_mid_war_military_focus focus = JAP_early_war_military_focus }
+		mutually_exclusive = { focus = JAP_late_war_intel_focus focus = JAP_early_war_terrain_training_focus }
 		x = 0
 		y = 1
 		cost = 3
@@ -2653,11 +2545,12 @@ focus_tree = {
 	focus = {
 		id = JAP_late_war_military_focus
 		icon = GFX_goal_JAP_reorganized_supply_networks
-		prerequisite = { focus = JAP_late_war_industry_focus }
-		x = 0
+		prerequisite = { focus = JAP_mid_war_industry_focus }
+		mutually_exclusive = { focus = JAP_mid_war_military_focus focus = JAP_early_war_military_focus }
+		x = -2
 		y = 1
 		cost = 3
-		relative_position_id = JAP_late_war_industry_focus
+		relative_position_id = JAP_mid_war_industry_focus
 
 		available = {
 		}
@@ -2678,7 +2571,8 @@ focus_tree = {
 	focus = {
 		id = JAP_late_war_intel_focus
 		icon = GFX_goal_generic_radar
-		prerequisite = { focus = JAP_late_war_military_focus }
+		prerequisite = { focus = JAP_late_war_military_focus focus = JAP_mid_war_military_focus focus = JAP_early_war_military_focus }
+		mutually_exclusive = { focus = JAP_mid_war_intel_focus focus = JAP_early_war_terrain_training_focus }
 		x = 0
 		y = 1
 		cost = 3
@@ -4070,9 +3964,11 @@ focus_tree = {
 						has_country_flag = JAP_early_war
 					}
 					add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 120 }
+					add_timed_idea = { idea = for_the_emperor_idea days = 200 }
 				}
 				else = {
 					add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+					add_timed_idea = { idea = for_the_emperor_idea days = 180 }
 				}
 			
 				GER = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
@@ -4106,7 +4002,7 @@ focus_tree = {
 				}
 			}
 			# custom_effect_tooltip = JAP_strike_west_tt
-			add_timed_idea = { idea = for_the_emperor_idea days = 120 }
+			
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			# unlock_decision_tooltip = JAP_strike_prop
 		}
