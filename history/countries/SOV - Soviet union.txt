@@ -745,6 +745,11 @@ set_variable = { SOV_planned_economy_max_surrender_limit_offset = 0 } #Victory O
 set_variable = { SOV_planned_economy_industry_repair_factor = 0 } #Victory Over Devastation
 set_variable = { SOV_planned_economy_consumer_goods_factor = 0 } #Victory Over Devastation
 
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 50000
+    producer = SOV	
+}
 
 #Add synthetic refineries tech and armorured car
 set_technology = {
