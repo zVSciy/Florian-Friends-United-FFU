@@ -299,11 +299,11 @@ technologies = {
 		}
 
 		dependencies = {
-			jet_engines = 1
+			advanced_small_airframe = 1
 		}
 		
 		research_cost = 2
-		start_year = 1945
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
@@ -320,7 +320,7 @@ technologies = {
 			jet_technology
 			mio_cat_all_light_fighter_and_modules
 			mio_cat_all_light_aircraft_and_modules
-			year_1945
+			year_1944
 		}
 
 		ai_will_do = {
@@ -566,11 +566,11 @@ technologies = {
 		}
 		
 		dependencies = {
-			jet_engines = 1
+			advanced_medium_airframe = 1
 		}
 
 		research_cost = 2
-		start_year = 1945
+		start_year = 1944
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -585,7 +585,7 @@ technologies = {
 			air_equipment
 			jet_technology
 			mio_cat_all_medium_aircraft_and_modules
-			year_1945
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -780,10 +780,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1945
+		start_year = 1944
 
 		dependencies = {
-			jet_engines = 1
+			advanced_large_airframe = 1
 		}
 
 		folder = {
@@ -799,7 +799,7 @@ technologies = {
 			air_equipment
 			jet_technology
 			mio_cat_all_heavy_aircraft_and_modules
-			year_1945
+			year_1944
 		}
 		
 		ai_will_do = {
