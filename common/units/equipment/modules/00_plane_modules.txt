@@ -1488,7 +1488,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 10
 		}
 		#xp_cost = 2
 		allow_mission_type = {
@@ -1502,7 +1502,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 4
+				naval_strike_attack = 8
 			}
 		}
 		mission_type_stats = {
@@ -1512,10 +1512,10 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -50
 				weight = 4
-				naval_strike_attack = 2
+				naval_strike_attack = 4
 			}
 		}
-		dismantle_cost_ic = 1.5
+		dismantle_cost_ic = 1
 	}
 	torpedo_mounting2_small = {
 		abbreviation = "tpm"
@@ -1528,7 +1528,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 12
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1542,7 +1542,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 5.5
+				naval_strike_attack = 12
 			}
 		}
 		mission_type_stats = {
@@ -1552,10 +1552,10 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -50
 				weight = 8
-				naval_strike_attack = 3
+				naval_strike_attack = 6
 			}
 		}
-		dismantle_cost_ic = 1.5
+		dismantle_cost_ic = 1
 	}
 	
 	torpedo_mounting3_small = {
@@ -1569,7 +1569,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 16
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1583,7 +1583,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -15
 				weight = 8
-				naval_strike_attack = 7
+				naval_strike_attack = 16
 
 			}
 		}
@@ -1594,11 +1594,11 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -50
 				weight = 8
-				naval_strike_attack = 4
+				naval_strike_attack = 8
 
 			}
 		}
-		dismantle_cost_ic = 1.5
+		dismantle_cost_ic = 1
 	}
 
 	torpedo_mounting_medium = {
@@ -1612,7 +1612,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 20
 		}
 		#xp_cost = 2
 		allow_mission_type = {
@@ -1626,7 +1626,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 6
+				naval_strike_attack = 10
 			}
 		}
 		mission_type_stats = {
@@ -1652,7 +1652,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 24
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1666,7 +1666,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 8.25
+				naval_strike_attack = 14
 			}
 		}
 		mission_type_stats = {
@@ -1693,7 +1693,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 26
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1707,7 +1707,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -15
 				weight = 8
-				naval_strike_attack = 10.5
+				naval_strike_attack = 16
 
 			}
 		}
