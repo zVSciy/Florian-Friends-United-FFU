@@ -984,7 +984,7 @@ equipment_modules = {
             }
 			add_stats = {
 				weight = 6
-				naval_strike_attack = 4
+				naval_strike_attack = 8
 			}
 		}
 		mission_type_stats = {
@@ -996,7 +996,7 @@ equipment_modules = {
             }
 			add_stats = {
 				weight = 6
-				naval_strike_attack = 2
+				naval_strike_attack = 4
 			}
 		}
 		dismantle_cost_ic = 0.5
@@ -1958,7 +1958,7 @@ equipment_modules = {
 				naval_bomber
 			}
             add_stats = {
-            naval_strike_targetting = 2
+            naval_strike_targetting = 3
 			air_defence = 4
 			sub_detection = 4
             }
