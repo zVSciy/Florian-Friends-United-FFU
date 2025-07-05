@@ -1488,7 +1488,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 10
+			build_cost_ic = 20
 		}
 		#xp_cost = 2
 		allow_mission_type = {
@@ -1502,7 +1502,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 8
+				naval_strike_attack = 10
 			}
 		}
 		mission_type_stats = {
@@ -1528,7 +1528,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 12
+			build_cost_ic = 24
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1542,7 +1542,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 12
+				naval_strike_attack = 14
 			}
 		}
 		mission_type_stats = {
@@ -1569,7 +1569,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 16
+			build_cost_ic = 28
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1583,7 +1583,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -15
 				weight = 8
-				naval_strike_attack = 16
+				naval_strike_attack = 18
 
 			}
 		}
@@ -1612,7 +1612,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 20
+			build_cost_ic = 30
 		}
 		#xp_cost = 2
 		allow_mission_type = {
@@ -1652,7 +1652,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 24
+			build_cost_ic = 32
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1693,7 +1693,7 @@ equipment_modules = {
  			}
  		}
 		add_stats = {
-			build_cost_ic = 26
+			build_cost_ic = 36
 		}
 		##xp_cost = 2
 		allow_mission_type = {
@@ -1707,7 +1707,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -15
 				weight = 8
-				naval_strike_attack = 16
+				naval_strike_attack = 18
 
 			}
 		}
