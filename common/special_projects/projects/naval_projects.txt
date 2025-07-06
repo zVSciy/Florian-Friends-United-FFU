@@ -1851,11 +1851,11 @@ sp_naval_super_heavy_battleship = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_tech = early_ship_hull_heavy
+				has_tech = ship_hull_heavy_modern
 
 			}
 			else = {
-				has_tech = early_battleship
+				has_tech = modern_battleship
 			}
 		}
 	}

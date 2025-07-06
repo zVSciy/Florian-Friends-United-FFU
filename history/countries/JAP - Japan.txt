@@ -175,7 +175,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		#cruiser_submarines = 1
 		basic_dp_light_battery = 1
-		ship_hull_super_heavy = 1
+		#ship_hull_super_heavy = 1
 	}
 	set_naval_oob = "JAP_1936_naval"
 }
