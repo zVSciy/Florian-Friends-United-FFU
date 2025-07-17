@@ -107,9 +107,9 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3
 
 NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 5 	-- Max number of different strategic resources an equipment can be dependent on.
 NDefines.NProduction.EFFICIENCY_LOSS_PER_UNUSED_DAY = 0.5		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
-NDefines.NProduction.BASE_FACTORY_SPEED = 3 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 4				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED = 3.5 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.5 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.50	-- How much fuel will be transferred on annexation
