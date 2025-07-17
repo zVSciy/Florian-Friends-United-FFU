@@ -1,0 +1,27 @@
+set_global_economy_idea = {
+	random_list = {
+		25 = { set_global_flag = economy_test_1_selected }
+		25 = { set_global_flag = economy_test_2_selected }
+		25 = { set_global_flag = economy_test_3_selected }
+		25 = { set_global_flag = economy_test_4_selected }
+	}
+}
+
+apply_economy_idea_to_all = {
+	if = {
+		limit = { has_global_flag = economy_test_1_selected }
+		add_ideas = economy_test_1
+	}
+	if = {
+		limit = { has_global_flag = economy_test_2_selected }
+		add_ideas = economy_test_2
+	}
+	if = {
+		limit = { has_global_flag = economy_test_3_selected }
+		add_ideas = economy_test_3
+	}
+	if = {
+		limit = { has_global_flag = economy_test_4_selected }
+		add_ideas = economy_test_4
+	}
+}

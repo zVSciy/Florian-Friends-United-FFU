@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+        economy_test_1 = {
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+        
+            picture = HUN_treaty_of_triannon
+            modifier = {
+                industrial_capacity_factory = 0.075
+            }
+        }
+
+        economy_test_2 = {
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+        
+            picture = HUN_treaty_of_triannon
+            modifier = {
+                industrial_capacity_factory = 3
+            }
+        }
+        economy_test_3 = {
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+        
+            picture = HUN_treaty_of_triannon
+            modifier = {
+                industrial_capacity_factory = 2
+            }
+        }
+        economy_test_4 = {
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+        
+            picture = HUN_treaty_of_triannon
+            modifier = {
+                industrial_capacity_factory = 1
+            }
+        }
+    }
+}

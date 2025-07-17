@@ -1077,15 +1077,13 @@ on_actions = {
 						rule = bloated_game_mode
 						option = Bloated_Mode_ENABLED
 					}
-
 				}
-			every_country = {
-				add_ideas = {
-				bloated_game_mode
+				WST = {
+					set_global_economy_idea = yes
 				}
-				add_offsite_building = { type = industrial_complex level = 20 }
-				add_offsite_building = { type = arms_factory level = 10 }
-			}
+				every_country = {
+					apply_economy_idea_to_all = yes
+				}
 			}
 		}
 	}
