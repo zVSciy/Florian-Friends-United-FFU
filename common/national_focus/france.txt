@@ -1182,7 +1182,13 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = cape_cope
 			}
-
+			add_tech_bonus = {
+                    name = FRA_upgrade_tanks
+                    bonus = 1
+                    ahead_reduction = 0.75
+                    uses = 1
+                    category = cat_light_armor
+			}
 		}
 	}
 
