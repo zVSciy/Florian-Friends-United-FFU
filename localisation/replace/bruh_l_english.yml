@@ -1431,7 +1431,10 @@ fifty_cas_dmg_reduction:0 "From focus"
  USA_antitank2:0 "57 mm Gun M1"
  USA_antitank3:0 "3-inch Gun M5"
  #### Modifers ####
-
+ cant_faction_call_tt: "§RCannot call faction allies into our wars.§!"
+ ally_cant_faction_call_tt: "§RThis ally cannot be joined in their wars.§!"
+ cant_faction_call: "Can Not Call Allies into Wars"
+ cant_faction_join_tt: "§RCannot join this allies wars.§!"
  POL_license_equipment:0 "Friendly License Agreement"
  resistance_35:0 "Road Ambushes"
  wasteland_economy:0 "Wasteland Economy"

@@ -19,7 +19,85 @@ operations = {
 			set_global_flag = SWE_anti_flag
 		}
 	}
+	call_in_usa_bra_mex_to_war = {
+		fire_only_once = yes
 
+		icon = generic_megaphone
+
+		allowed = {
+			tag = SWE
+		}
+
+		available = {
+			OR = {
+				AND = {
+					any_state = {
+						is_in_array = {
+							array = RAJ.starting_core_states
+							value = THIS
+						}
+						is_controlled_by_GER_or_ally = yes
+					}
+					USA = {
+						NOT = {
+							has_war_with = JAP
+						}
+					}
+				}
+				USA = {
+					AND = {
+						has_war_with = JAP
+						has_offensive_war = no
+					}
+				}
+				USA = {
+					AND = {
+						has_war_with = GER
+						has_offensive_war = no
+					}
+				}
+				ENG = { surrender_progress > 0.1 }
+				date > 1942.1.1
+			}
+		}
+
+		cost = 0
+
+		complete_effect = {
+			if = {
+				limit = {
+					JAP = {
+						has_war = no
+					}
+				}
+				USA = {
+					USA_neutrality_clear_all = yes
+					remove_ideas = no_wars_usa
+					GER = {
+						declare_war_on = {
+							target = USA
+							type = annex_everything
+						}
+					}
+					country_event = generic.68
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_war = yes
+					}
+				}
+				USA = {
+					USA_neutrality_clear_all = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
 	SWE_cancel_tank_hp = {
 
 		icon = generic_tank
