@@ -90,4 +90,17 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			RAJ = {
+				every_owned_state = {
+					limit = { is_core_of = RAJ }
+					add_to_array = {
+						array = RAJ.starting_core_states
+						value = THIS
+					}
+				}
+			}
+		}
+	}
 }

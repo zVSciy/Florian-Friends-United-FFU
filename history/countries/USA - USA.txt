@@ -97,15 +97,6 @@ set_country_flag = USA_Marine_Corps_division_standard
 set_country_flag = US_Airborne_division_standard
 set_country_flag = USA_timeout_conference_done
 
-give_military_access = BRA
-give_military_access = MEX
-give_military_access = ENG
-give_military_access = CAN
-give_military_access = AST
-give_military_access = SAF
-give_military_access = RAJ
-give_military_access = FRA
-
 
 
 USA_recalc_congress_icon_frames = yes
@@ -242,6 +233,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 	special_forces_cap
+	no_wars_usa
 }
 ### DYNAMIC MODIFIERS 
 add_dynamic_modifier = {

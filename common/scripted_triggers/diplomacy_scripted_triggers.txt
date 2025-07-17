@@ -1102,26 +1102,50 @@ game_weight_can_add_communist = {
 }
 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
-	if = { # TODO_TA make more generic trigger
+	if = {
 		limit = {
-			NOT = { has_global_flag = ethiopia_recognized_flag }
-			FROM = {
-				tag = ETH 
+			check_variable = {
+				var = modifier@cant_faction_join
+				value = 1
+				compare = greater_than_or_equals
 			}
-			
 		}
 		custom_trigger_tooltip = {
-			tooltip = LON_NON_INTERFERENCE_RESOLUTION_JOIN
+			tooltip = cant_faction_join_tt
+			always = no
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				check_variable = {
+					var = modifier@cant_faction_call
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ally_cant_faction_call_tt
 			always = no
 		}
 	}
 	if = { 
 		limit = {
+			FROM = { NOT = { has_war_with_non_exiled_country = yes } }
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_NON_GIE_JOIN
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_dlc = "Arms Against Tyranny"
 			ROOT = {
 				original_tag = ICE
 				has_idea = neutrality_idea
-				is_subject = yes 
+				is_subject = yes
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1129,13 +1153,13 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
-	if = { 
+	if = {
 		limit = {
 			has_dlc = "Arms Against Tyranny"
 			ROOT = {
 				original_tag = DEN
 				has_country_flag = DEN_is_protectorate_flag
-				is_subject = yes 
+				is_subject = yes
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1147,24 +1171,48 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			NOT = { has_global_flag = ethiopia_recognized_flag }
-			ROOT = {
-				tag = ETH
+			check_variable = {
+				var = modifier@cant_faction_call
+				value = 1
+				compare = greater_than_or_equals
 			}
-			
 		}
 		custom_trigger_tooltip = {
-			tooltip = LON_NON_INTERFERENCE_RESOLUTION_CALL
+			tooltip = cant_faction_call_tt
+			always = no
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				check_variable = {
+					var = modifier@cant_faction_join
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ally_cant_faction_join_tt
 			always = no
 		}
 	}
 	if = { 
 		limit = {
+			NOT = { has_war_with_non_exiled_country = yes } 
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_NON_GIE_CALL
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_dlc = "Arms Against Tyranny"
 			FROM = {
 				original_tag = ICE
 				has_idea = neutrality_idea
-				is_subject = yes 
+				is_subject = yes
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1172,13 +1220,13 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
-	if = { 
+	if = {
 		limit = {
 			has_dlc = "Arms Against Tyranny"
 			FROM = {
 				original_tag = DEN
 				has_country_flag = DEN_is_protectorate_flag
-				is_subject = yes 
+				is_subject = yes
 			}
 		}
 		custom_trigger_tooltip = {

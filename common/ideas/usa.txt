@@ -2123,7 +2123,25 @@ ideas = {
 				}
 			}
 		}
-		
+		no_wars_usa = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				cant_faction_call = 1
+				cant_faction_join = 1
+			}
+		}
 		home_of_the_free = {
 			
 			allowed = {

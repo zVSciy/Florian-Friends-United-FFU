@@ -1,0 +1,16 @@
+#Flat, not percentage
+cant_faction_call = {
+	color_type = bad
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+#Flat, not percentage
+cant_faction_join = {
+	color_type = bad
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
