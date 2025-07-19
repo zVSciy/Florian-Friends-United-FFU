@@ -3740,6 +3740,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			USA = {
+				remove_ideas = no_wars_usa
+			}
 			hidden_effect = {
 					645 = {
 						add_dynamic_modifier = { modifier = island_defences }
