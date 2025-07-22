@@ -407,9 +407,16 @@ guiTypes = {
 			name = "cheat18"
 			position = {x=40 y=532}
 			spriteType = "GFX_generic_box_125"
-			scale= 1
-			
+			scale= 1	
 		}
+
+		buttonType = {
+			name = "cheat19"
+			position = {x=40 y=558}
+			spriteType = "GFX_generic_box_125"
+			scale= 1	
+		}
+
 		instantTextboxType = {
 			name = "cheat1_text"
 			position = {x=45 y=95}
@@ -588,6 +595,16 @@ guiTypes = {
 			position = {x=45 y=537}
 			font = "hoi_18mbs"
 			text = "CHEAT18"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cheat19_text"
+			position = {x=45 y=563}
+			font = "hoi_18mbs"
+			text = "CHEAT19"
 			maxWidth = 340
 			maxHeight = 23
 			format = left

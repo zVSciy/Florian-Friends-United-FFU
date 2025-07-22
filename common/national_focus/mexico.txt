@@ -461,14 +461,15 @@ focus_tree = {
 					date > 1941.1.1
 				}
                 else = {
-                OR = {
-					ENG = {
-						has_war_with = JAP
-					}
-					USA = {
-						has_war_with = GER
+                907 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
 					}
 				}
+			  }
 			}
             }
     

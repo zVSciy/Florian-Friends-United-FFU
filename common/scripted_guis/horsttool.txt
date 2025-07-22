@@ -160,6 +160,14 @@ st_country_powers = {
 						} 
 						remove_one_inf = yes
 					}
+					if = {
+						limit = {
+							check_variable = {
+								Root.selected_cheat = 19 
+							} 
+						} 
+						remove_one_tank = yes
+					}
 				}	
 			}
 			GER={
@@ -268,6 +276,7 @@ st_country_powers = {
 		cheat16_click = { set_variable = { Root.selected_cheat = 16 } ROOT = { clr_country_flag = cheating } }
 		cheat17_click = { set_variable = { Root.selected_cheat = 17 } ROOT = { clr_country_flag = cheating } }
 		cheat18_click = { set_variable = { Root.selected_cheat = 18 } ROOT = { clr_country_flag = cheating } }
+		cheat19_click = { set_variable = { Root.selected_cheat = 19 } ROOT = { clr_country_flag = cheating } }
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }
@@ -314,6 +323,8 @@ st_country_powers = {
 		cheat17_text_visible = { ROOT = { has_country_flag = cheating } }
 		cheat18_visible = { ROOT = { has_country_flag = cheating } }
 		cheat18_text_visible = { ROOT = { has_country_flag = cheating } }
+		cheat19_visible = { ROOT = { has_country_flag = cheating } }
+		cheat19_text_visible = { ROOT = { has_country_flag = cheating } }
 		pause_blocker_all_visible ={ has_global_flag=blocking_pauses}
 		pause_blocker_major_visible ={ }
 		pause_blocker_host_visible ={has_global_flag=blocking_pauses }	

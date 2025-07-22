@@ -516,6 +516,49 @@ remove_one_inf = {
 	}
 }
 
+remove_one_tank = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -800
+	}
+	add_equipment_to_stockpile = {
+		type = squad_equipment
+		amount = -155
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = -220
+	}
+	add_equipment_to_stockpile = {
+		type = radio_equipment
+		amount = -131
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = -120
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis
+		amount = -40
+	}
+	add_equipment_to_stockpile = {
+		type = medium_tank_chassis
+		amount = -240
+	}
+	add_equipment_to_stockpile = {
+		type = medium_tank_aa_chassis
+		amount = -20
+	}
+	add_equipment_to_stockpile = {
+		type = medium_tank_destroyer_chassis
+		amount = -120
+	}
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment
+		amount = -360
+	}
+}
+
 replace_civ_with_arms_factories = {
 
 	random_owned_controlled_state = {

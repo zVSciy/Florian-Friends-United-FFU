@@ -217,4 +217,10 @@ defined_text = { # global
 		}
 		localization_key = CHEAT18
 	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 19 }
+		}
+		localization_key = CHEAT19
+	}
 }
