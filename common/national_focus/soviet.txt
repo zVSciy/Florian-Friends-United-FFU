@@ -7098,1487 +7098,294 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_lessons_of_war
-		icon = GFX_focus_SOV_lessons
-		available = {
-			OR = {
-				has_country_flag = SOV_war_since_purge
-				date > 1941.1.1
-			}
-		}
-		x = 39
+		id = placeboo_circle1
+		icon = x
+		
+		x = 12
 		y = 0
-		cost = 1
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_dlc = "Arms Against Tyranny"
-			}
+		relative_position_id = SOV_the_path_of_marxism_leninism
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
 
 		available_if_capitulated = yes
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			# SOV = {
-			# 	country_event = soviet.1112
-			# }
-			army_experience = 50
-			SOV_modernisation_towards_mech = yes
+			
 		}
 	}
 
+	# Column 1
 	focus = {
-		id = SOV_red_army
-		icon = GFX_SOV_red_army
+		id = placeboo_circle2
+		icon = x
+		x = -5
+		y = 1
+		relative_position_id = placeboo_circle1
+		prerequisite = { focus = placeboo_circle1 }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = { }
+	}
+
+	focus = {
+		id = placeboo_circle3
+		icon = x
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = SOV_lessons_of_war
-		
-
-		prerequisite = { focus = SOV_lessons_of_war }
-		
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.05 }
-			add_to_variable = { SOV_the_red_army_conscription_factor = 0.03 }
-			custom_effect_tooltip = SOV_strengthen_the_mobilization_plan_ns_tt
-			add_to_variable = { SOV_the_red_army_heat_attrition_factor = -0.1 }
-			add_to_variable = { SOV_the_red_army_winter_attrition_factor = -0.1 }
-			add_to_variable = { SOV_the_red_army_acclimatization_cold_climate_gain_factor = 0.15 }
-			add_to_variable = { SOV_the_red_army_acclimatization_hot_climate_gain_factor = 0.15 }
-			# add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
-			# hidden_effect = {
-			# 	every_army_leader={
-			# 		add_trait = {
-     		# 			trait = five_terrain_penalty_reduction
-			# 		}
-			# 	}
-			# }
-			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
-
-			# if = {
-			# 	limit = { has_country_flag = RG_armored_division_medium }
-			# 	SOV_increase_RG_cap_medium_double = yes
-			# } else_if = {
-			# 	limit = { has_country_flag = RG_armored_division_light }
-			# 	SOV_increase_RG_cap_light_double = yes
-			# } else_if = {
-			# 	limit = { has_country_flag = RG_armored_division_heavy }
-			# 	SOV_increase_RG_cap_heavy_double = yes
-			# }
-			custom_effect_tooltip = SOV_RG_spawn_in_4
-			hidden_effect = {
-				division_template = {
-					name = "RG Converter"
-					division_names_group = SOV_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }
-
-						infantry = { x = 3 y = 0 }
-						infantry = { x = 3 y = 1 }
-						infantry = { x = 3 y = 2 }
-						infantry = { x = 3 y = 3 }
-
-						infantry = { x = 4 y = 0 }
-						infantry = { x = 4 y = 1 }
-						infantry = { x = 4 y = 2 }
-						infantry = { x = 4 y = 3 }
-					}
-				}
-				219 = {
-					create_unit = {
-						division = "name = \"9th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-						owner = SOV
-					}
-					create_unit = {
-						division = "name = \"10th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-						owner = SOV
-					}
-					create_unit = {
-						division = "name = \"11th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-						owner = SOV
-					}
-					create_unit = {
-						division = "name = \"12th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-						owner = SOV
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_deep_operations
-		icon = GFX_SOV_operation_luna
-		prerequisite = { focus = SOV_red_army }
-		mutually_exclusive = { focus = SOV_new_ideas }
-		x = -6
-		y = 1
-		cost = 3
-		relative_position_id = SOV_red_army
-		
-		available = {
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_mass_assault
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_tank1
-		icon = GFX_SOV_armour_development
-		prerequisite = { focus = SOV_deep_operations }
-		x = -6
-		y = 1
+		relative_position_id = placeboo_circle2
+		prerequisite = { focus = placeboo_circle2 }
+		mutually_exclusive = { focus = placeboo_circle6 }
 		cost = 5
-		relative_position_id = SOV_deep_operations
-		ai_will_do = {
-			factor = 5
-		}
-
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = tank_bonus
-				bonus = 0.50
-				uses = 1
-				category = armor
-			}
-			add_tech_bonus = {
-				name = tank_bonus
-				bonus = 0.75
-				uses = 1
-				technology = sov_light_tank_3
-			}
-			add_tech_bonus = {
-				name = radio_bonus
-				bonus = 0.75
-				uses = 1
-				technology = mot_radio3
-			}
-		}
+		completion_reward = { }
 	}
-	
+
 	focus = {
-		id = SOV_tank2
-		icon = GFX_SOV_modernize_the_cavalry
-		prerequisite = { focus = SOV_tank1 }
+		id = placeboo_circle4
+		icon = x
 		x = 0
 		y = 1
+		relative_position_id = placeboo_circle3
+		prerequisite = { focus = placeboo_circle3 }
 		cost = 5
-		relative_position_id = SOV_tank1
-		ai_will_do = {
-			factor = 5
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = mec_bonus
-				bonus = 0.5
-				uses = 2
-				category = cat_mechanized_equipment
-			}
-			SOV_modernisation_towards_mech = yes
-		}
+		completion_reward = { }
 	}
 
+	# Column 2 with mutual exclusivity
 	focus = {
-		id = SOV_light_tank1
-		icon = GFX_SOV_armour_development
-		prerequisite = { focus = SOV_tank2 }
-		mutually_exclusive = { focus = SOV_medium_tank1 focus = SOV_heavy_tank1 }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_tank2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.5
-				ahead_reduction = 0.5
-				uses = 1
-				category = cat_light_armor
-			}
-			add_tech_bonus = {
-				name = art_bonus
-				bonus = 0.75
-				uses = 2
-				category = artillery
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_light_tank2
-		icon = GFX_goal_SOV_appoint_stalingrad_tractor_factory
-		prerequisite = { focus = SOV_light_tank1 }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_light_tank1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				# custom_effect_tooltip = available_mio_tt
-				# show_mio_tooltip = SOV_dzerzhinsky_stalingrad_tractor_factory_organization
-				mio:SOV_dzerzhinsky_stalingrad_tractor_factory_organization = {
-					add_mio_size = 2
-				}
-				mio:SOV_kirov_organization = {
-					add_mio_size = 1
-				}
-			}
-			else = {
-				custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-				every_country = {
-					limit = {
-						OR = {
-							tag = MON
-							tag = SOV
-						}
-					}
-					set_country_flag = SOV_merge_tank_dzerzhinsky_stalingrad_tractor_factory_1_flag
-					if = {
-						limit = {
-							has_idea = dzerzhinsky_stalingrad_tractor_factory
-						}
-						swap_ideas = {
-							remove_idea = dzerzhinsky_stalingrad_tractor_factory
-							add_idea = dzerzhinsky_stalingrad_tractor_factory_1
-						}
-					}
-					else = {
-						effect_tooltip = {
-							swap_ideas = {
-								remove_idea = dzerzhinsky_stalingrad_tractor_factory
-								add_idea = dzerzhinsky_stalingrad_tractor_factory_1
-							}
-						}
-						add_ideas = dzerzhinsky_stalingrad_tractor_factory_1
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_heavy_tank1
-		icon = GFX_SOV_armour_development
-		prerequisite = { focus = SOV_tank2 }
-		mutually_exclusive = { focus = SOV_medium_tank1 focus = SOV_light_tank1 }
+		id = placeboo_circle5
+		icon = x
 		x = -3
 		y = 1
+		relative_position_id = placeboo_circle1
+		prerequisite = { focus = placeboo_circle1 }
+		
 		cost = 5
-		relative_position_id = SOV_tank2
-		ai_will_do = {
-			factor = 5
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = cat_heavy_armor
-			}
-			add_tech_bonus = {
-				name = art_bonus
-				bonus = 0.75
-				uses = 2
-				category = heavy_artillery
-			}
-		}
+		completion_reward = { }
 	}
-	
+
 	focus = {
-		id = SOV_heavy_tank2
-		icon = GFX_SOV_choose_okmo
-		prerequisite = { focus = SOV_heavy_tank1 }
-		mutually_exclusive = { focus = SOV_heavy_tank_2_2 }
-		x = 1
+		id = placeboo_circle6
+		icon = x
+		x = 0
 		y = 1
+		relative_position_id = placeboo_circle5
+		prerequisite = { focus = placeboo_circle5 }
+		mutually_exclusive = { focus = placeboo_circle3 }
 		cost = 5
-		relative_position_id = SOV_heavy_tank1
-		ai_will_do = {
-			factor = 5
-		}
-
-		allow_branch = {
-			NOT = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				# custom_effect_tooltip = available_mio_tt
-				# show_mio_tooltip = SOV_okmo_organization
-				# mio:SOV_okmo_organization = {
-				# 	add_mio_size = 2
-				# }
-			}
-			else = {
-				custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-				every_country = {
-					limit = {
-						OR = {
-							tag = MON
-							tag = SOV
-						}
-					}
-					set_country_flag = SOV_merge_tank_SOV_okmo_1_flag
-					if = {
-						limit = {
-							has_idea = SOV_okmo
-						}
-						swap_ideas = {
-							remove_idea = SOV_okmo
-							add_idea = SOV_okmo_1
-						}
-					}
-					else = {
-						effect_tooltip = {
-							swap_ideas = {
-								remove_idea = SOV_okmo
-								add_idea = SOV_okmo_1
-							}
-						}
-						add_ideas = SOV_okmo_1
-					}
-				}
-
-				# custom_effect_tooltip = available_designer
-				# show_ideas_tooltip = SOV_okmo
-				# hidden_effect = {
-				# 	add_ideas = SOV_okmo 
-				# }
-			}
-		}
+		completion_reward = { }
 	}
-	
+
 	focus = {
-		id = SOV_heavy_tank_2_2
-		icon = GFX_goal_SOV_appoint_ordzhonikidze
-		prerequisite = { focus = SOV_heavy_tank1 }
-		mutually_exclusive = { focus = SOV_heavy_tank2	}
+		id = placeboo_circle7
+		icon = x
+		x = 0
+		y = 1
+		relative_position_id = placeboo_circle6
+		prerequisite = { focus = placeboo_circle6 }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = { }
+	}
+
+	# Repeat for remaining 4 columns (no mutual exclusivity unless seen)
+
+	# Column 3
+	focus = {
+		id = placeboo_circle8
+		icon = x
 		x = -1
 		y = 1
+		relative_position_id = placeboo_circle1
+		prerequisite = { focus = placeboo_circle1 }
 		cost = 5
-		relative_position_id = SOV_heavy_tank1
-		ai_will_do = {
-			factor = 5
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				# custom_effect_tooltip = available_mio_tt
-				# show_mio_tooltip = SOV_mytishchy_machine_building_plant_organization
-				mio:SOV_ordzhonikidze_ural_heavy_machine_building_plant_UZTM_organization = {
-					add_mio_size = 1
-				}
-				mio:SOV_kirov_organization = {
-					add_mio_size = 1
-				}
-			}
-			else = {
-				custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-				every_country = {
-					limit = {
-						OR = {
-							tag = MON
-							tag = SOV
-						}
-					}
-					set_country_flag = SOV_merge_tank_ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1_flag
-					set_country_flag = SOV_merge_tank_kharkiv_diesel_factory_1_flag
-					if = {
-						limit = {
-							has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
-						}
-						swap_ideas = {
-							remove_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
-							add_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
-						}
-					}
-					else = {
-						effect_tooltip = {
-							swap_ideas = {
-								remove_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
-								add_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
-							}
-						}
-					}
-					
-					if = {
-						limit = {
-							has_idea = kharkiv_diesel_factory
-						}
-						swap_ideas = {
-							remove_idea = kharkiv_diesel_factory
-							add_idea = kharkiv_diesel_factory_1
-						}
-					}
-					else = {
-						effect_tooltip = {
-							swap_ideas = {
-								remove_idea = kharkiv_diesel_factory
-								add_idea = kharkiv_diesel_factory_1
-							}
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1 }
-						}
-						add_ideas = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
-					}
-				}
-			}
-		}
+		completion_reward = { }
 	}
-	
+
 	focus = {
-		id = SOV_medium_tank1
-		icon = GFX_SOV_armour_development
-		prerequisite = { focus = SOV_tank2 }
-		mutually_exclusive = { focus = SOV_heavy_tank1 focus = SOV_light_tank1 }
+		id = placeboo_circle9
+		icon = x
+		x = 0
+		y = 1
+		relative_position_id = placeboo_circle8
+		prerequisite = { focus = placeboo_circle8 }
+		mutually_exclusive = { focus = placeboo_circle12 }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = { }
+	}
+
+	focus = {
+		id = placeboo_circle10
+		icon = x
+		x = 0
+		y = 1
+		relative_position_id = placeboo_circle9
+		prerequisite = { focus = placeboo_circle9 }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = { }
+	}
+
+	# Column 4
+	focus = {
+		id = placeboo_circle11
+		icon = x
+		x = 1
+		y = 1
+		relative_position_id = placeboo_circle1
+		prerequisite = { focus = placeboo_circle1 }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = { }
+	}
+
+	focus = {
+		id = placeboo_circle12
+		icon = x
+		x = 0
+		y = 1
+		relative_position_id = placeboo_circle11
+		prerequisite = { focus = placeboo_circle11 }
+		mutually_exclusive = { focus = placeboo_circle9 }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = { }
+	}
+
+	focus = {
+		id = placeboo_circle13
+		icon = x
+		x = 0
+		y = 1
+		relative_position_id = placeboo_circle12
+		prerequisite = { focus = placeboo_circle12 }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = { }
+	}
+
+	# Column 5 with mutual exclusivity
+	focus = {
+		id = placeboo_circle14
+		icon = x
 		x = 3
 		y = 1
+		relative_position_id = placeboo_circle1
+		prerequisite = { focus = placeboo_circle1 }
 		cost = 5
-		relative_position_id = SOV_tank2
-		ai_will_do = {
-			factor = 5
-		}
-
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = med_bonus
-				bonus = 0.5
-				uses = 2
-				category = cat_medium_armor
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_medium_tank2
-		icon = GFX_SOV_choose_morozov
-		prerequisite = { focus = SOV_medium_tank1 }
-		mutually_exclusive = { focus = SOV_medium_tank_2_2 }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_medium_tank1
-		ai_will_do = {
-			factor = 5
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				# custom_effect_tooltip = available_mio_tt
-				# show_mio_tooltip = SOV_morozov_design_bureau_organization
-				mio:SOV_morozov_design_bureau_organization = {
-					add_mio_size = 1
-				}
-				mio:SOV_kirov_organization = {
-					add_mio_size = 1
-				}
-			}
-			else = {
-				custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-				every_country = {
-					limit = {
-						OR = {
-							tag = MON
-							tag = SOV
-						}
-					}
-					set_country_flag = SOV_merge_tank_SOV_morozov_design_bureau_1_flag
-					if = {
-						limit = {
-							has_idea = SOV_morozov_design_bureau
-						}
-						swap_ideas = {
-							remove_idea = SOV_morozov_design_bureau
-							add_idea = SOV_morozov_design_bureau_1
-						}
-					}
-					else = {
-						effect_tooltip = {
-							swap_ideas = {
-								remove_idea = SOV_morozov_design_bureau
-								add_idea = SOV_morozov_design_bureau_1
-							}
-						}
-						add_ideas = SOV_morozov_design_bureau_1
-					}
-				}
-
-				# custom_effect_tooltip = available_designer
-				# show_ideas_tooltip = SOV_morozov_design_bureau
-				# hidden_effect = {
-				# 	add_ideas = SOV_morozov_design_bureau
-				# }
-			}
-		}
+		completion_reward = { }
 	}
 
 	focus = {
-		id = SOV_medium_tank_2_2
-		icon = GFX_goal_SOV_appoint_astrov
-		prerequisite = { focus = SOV_medium_tank1 }
-		mutually_exclusive = { focus = SOV_medium_tank2 }
-		x = 1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_medium_tank1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		allow_branch = {
-			NOT = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				# show_mio_tooltip = SOV_astrov_design_bureau_organization
-				# mio:SOV_astrov_design_bureau_organization = {
-				# 	add_mio_size = 2
-				# }
-			}
-			else = {
-				custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-				every_country = {
-					limit = {
-						OR = {
-							tag = MON
-							tag = SOV
-						}
-					}
-					set_country_flag = SOV_merge_tank_SOV_astrov_design_bureau_1_flag
-					if = {
-						limit = {
-							has_idea = SOV_astrov_design_bureau
-						}
-						swap_ideas = {
-							remove_idea = SOV_astrov_design_bureau
-							add_idea = SOV_astrov_design_bureau_1
-						}
-					}
-					else = {
-						effect_tooltip = {
-							swap_ideas = {
-								remove_idea = SOV_astrov_design_bureau
-								add_idea = SOV_astrov_design_bureau_1
-							}
-						}
-						add_ideas = SOV_astrov_design_bureau_1
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_arty1
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = SOV_deep_operations }
+		id = placeboo_circle15
+		icon = x
 		x = 0
 		y = 1
+		relative_position_id = placeboo_circle14
+		prerequisite = { focus = placeboo_circle14 }
+		mutually_exclusive = { focus = placeboo_circle18 }
 		cost = 5
-		relative_position_id = SOV_deep_operations
-		ai_will_do = {
-			factor = 5
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = art_bonus
-				bonus = 0.75
-				uses = 2
-				category = artillery
-			}
-		}
+		completion_reward = { }
 	}
-	
+
 	focus = {
-		id = SOV_arty2
-		icon = GFX_SOV_artillery_development
-		prerequisite = { focus = SOV_arty1 }
+		id = placeboo_circle16
+		icon = x
 		x = 0
 		y = 1
+		relative_position_id = placeboo_circle15
+		prerequisite = { focus = placeboo_circle15 }
 		cost = 5
-		relative_position_id = SOV_arty1
-		ai_will_do = {
-			factor = 5
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = art_bonus
-				bonus = 0.5
-				uses = 2
-				category = cat_anti_tank
-			}
-		}
+		completion_reward = { }
 	}
-	
+
+	# Column 6
 	focus = {
-		id = SOV_arty3
-		icon = GFX_focus_CIC_stalins_organ
-		prerequisite = { focus = SOV_arty2 }
-		x = 0
-		y = 2
-		cost = 5
-		relative_position_id = SOV_arty2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_massed_arty
-		}
-	}
-	
-	focus = {
-		id = SOV_infantry1
-		icon = GFX_SOV_ppsh_hand_angry
-		prerequisite = { focus = SOV_deep_operations }
-		x = 6
+		id = placeboo_circle17
+		icon = x
+		x = 5
 		y = 1
+		relative_position_id = placeboo_circle1
+		prerequisite = { focus = placeboo_circle1 }
 		cost = 5
-		relative_position_id = SOV_deep_operations
-		ai_will_do = {
-			factor = 5
-		}
-
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.75
-				uses = 2
-				category = infantry_weapons
-			}	
-		}
+		completion_reward = { }
 	}
-	
+
 	focus = {
-		id = SOV_infantry2
-		icon = GFX_SOV_infantry_development
-		prerequisite = { focus = SOV_infantry1 }
+		id = placeboo_circle18
+		icon = x
 		x = 0
 		y = 1
+		relative_position_id = placeboo_circle17
+		prerequisite = { focus = placeboo_circle17 }
+		mutually_exclusive = { focus = placeboo_circle15 }
 		cost = 5
-		relative_position_id = SOV_infantry1
-		ai_will_do = {
-			factor = 5
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			# add_to_variable = { SOV_the_red_army_cas_damage_reduction = 0.05 }
-			#add_to_variable = { SOV_the_red_army_max_dig_in = 1 }
-			add_to_variable = { SOV_the_red_army_dig_in_speed_factor = 0.1 }
-			custom_effect_tooltip = SOV_experts_in_camouflage_ns_tt
-		}
+		completion_reward = { }
 	}
-	
+
 	focus = {
-		id = SOV_nkvd_divisions
-		icon = GFX_focus_SOV_nkvd_divisions
-		prerequisite = { focus = SOV_infantry2 }
-		mutually_exclusive = { focus = SOV_rehabilitated_army }
-		x = -1
-		y = 2
-		cost = 5
-		relative_position_id = SOV_infantry2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = nkvd
-			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
-			hidden_effect = {
-				set_technology = {
-					nkvd_tech = 1
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_rehabilitated_army
-		icon = GFX_focus_SOV_military_reoganization #GFX_focus_SOV_builder_of_the_red_army
-		prerequisite = { focus = SOV_infantry2 }
-		mutually_exclusive = { focus = SOV_nkvd_divisions }
-		x = 1
-		y = 2
-		cost = 5
-		relative_position_id = SOV_infantry2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = rehabilitated_military_focus
-		}
-	}
-	
-	focus = {
-		id = SOV_stavka
-		icon = GFX_SOV_army_revision_board
-		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_rehabilitated_army }
-		prerequisite = { focus = SOV_arty3 }
-		prerequisite = { focus = SOV_heavy_tank_2_2 focus = SOV_heavy_tank2 focus = SOV_medium_tank2 focus = SOV_medium_tank_2_2 focus = SOV_light_tank2 }
+		id = placeboo_circle19
+		icon = x
 		x = 0
 		y = 1
+		relative_position_id = placeboo_circle18
+		prerequisite = { focus = placeboo_circle18 }
 		cost = 5
-		relative_position_id = SOV_arty3
-		ai_will_do = {
-			factor = 5
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			# every_army_leader = {
-			# 	add_logistics = 1
-			# 	add_planning = 1
-			# 	add_attack = 1
-			# 	add_defense = 1
-			# }
-			add_ideas = SOV_stavka_idea
-			SOV_modernisation_towards_mech = yes
-		}
+		completion_reward = { }
 	}
-	
+
+	# Final shared focus connected to all bottom layer focuses
 	focus = {
-		id = SOV_new_ideas
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SOV_red_army }
-		mutually_exclusive = { focus = SOV_deep_operations }
-		x = 6
-		y = 1
-		cost = 3
-		relative_position_id = SOV_red_army
-		
-		available = {
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_superior_firepower
-				category = cat_mobile_warfare
-			}
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
-			}
-			SOV_modernisation_towards_mech = yes
-		}
-	}
-	
-	focus = {
-		id = SOV_mobile_warfare
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = SOV_new_ideas }
-		mutually_exclusive = { focus = SOV_superior_firepower }
-		x = 2
-		y = 1
-		cost = 5
-		relative_position_id = SOV_new_ideas
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_mobile_warfare
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_expand_tanks
-		icon = GFX_SOV_armour_development
-		prerequisite = { focus = SOV_mobile_warfare }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_mobile_warfare
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = armor
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_study_spain
-		icon = GFX_SOV_goal_military_in_spain
-		prerequisite = { focus = SOV_expand_tanks }
+		id = placeboo_circle20
+		icon = x
 		x = 0
-		y = 1
+		y = 4
+		relative_position_id = placeboo_circle1
+		prerequisite = {
+			focus = placeboo_circle4
+			focus = placeboo_circle7
+			focus = placeboo_circle10
+			focus = placeboo_circle13
+			focus = placeboo_circle16
+			focus = placeboo_circle19
+		}
 		cost = 5
-		relative_position_id = SOV_expand_tanks
-		ai_will_do = {
-			factor = 5
-		}
-
+		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_mobile_warfare
-			}
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_battlefield_support 
-			}
-		}
+		completion_reward = { }
 	}
-	
-	focus = {
-		id = SOV_study_blitzkrieg
-		icon = GFX_SOV_breakthrough_priority
-		prerequisite = { focus = SOV_study_spain }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_study_spain
-		ai_will_do = {
-			factor = 5
-		}
 
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			army_experience = 100
-		}
-	}
-	
-	focus = {
-		id = SOV_modernise_cavalry
-		icon = GFX_SOV_modernize_the_cavalry
-		prerequisite = { focus = SOV_mobile_warfare }
-		x = 1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_mobile_warfare
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_new_cavalry
-		}
-	}
-	
-	focus = {
-		id = SOV_mass_mechanisation
-		icon = GFX_SOV_mechanized_wave
-		prerequisite = { focus = SOV_modernise_cavalry }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_modernise_cavalry
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.75
-				ahead_reduction = 0.5
-				uses = 2
-				category = cat_mechanized_equipment
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_combined_arms
-		icon = GFX_SOV_mass_mechanization
-		prerequisite = { focus = SOV_mass_mechanisation }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_mass_mechanisation
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = electronics
-				bonus = 1
-				uses = 2
-				category = electronics
-			}
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				# custom_effect_tooltip = available_mio_tt
-				# show_mio_tooltip = SOV_kirov_organization
-				# mio:SOV_kirov_organization = {
-				# 	add_mio_size = 2
-				# }
-			}
-			else = {
-				custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-				every_country = {
-					limit = {
-						OR = {
-							tag = MON
-							tag = SOV
-						}
-					}
-					set_country_flag = SOV_merge_tank_kirov_1_flag
-					if = {
-						limit = {
-							has_idea = SOV_kirov
-						}
-						swap_ideas = {
-							remove_idea = SOV_kirov
-							add_idea = SOV_kirov_1
-						}
-					}
-					else = {
-						effect_tooltip = {
-							swap_ideas = {
-								remove_idea = SOV_kirov
-								add_idea = SOV_kirov_1
-							}
-						}
-						add_ideas = SOV_kirov_1
-					}
-				}
-				# custom_effect_tooltip = available_designer
-				# show_ideas_tooltip = SOV_kirov
-				# add_ideas = SOV_kirov
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_new_corps
-		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_combined_arms }
-		prerequisite = { focus = SOV_study_blitzkrieg }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_combined_arms
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			every_army_leader = {
-				add_logistics = 1
-				add_planning = 1
-				add_attack = 1
-				add_defense = 1
-			}
-			add_ideas = SOV_new_officers
-		}
-	}
-	
-	focus = {
-		id = SOV_superior_firepower
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = SOV_new_ideas }
-		mutually_exclusive = { focus = SOV_mobile_warfare }
-		x = -2
-		y = 1
-		cost = 5
-		relative_position_id = SOV_new_ideas
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_superior_firepower
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_expand_artillery
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = SOV_superior_firepower }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_superior_firepower
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = artillery
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_land_air_coordination
-		icon = GFX_SOV_cas_designer
-		prerequisite = { focus = SOV_expand_artillery }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_expand_artillery
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_superior_firepower
-			}
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = air_doctrine 
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_wargames
-		icon = GFX_SOV_improve_logistics
-		prerequisite = { focus = SOV_land_air_coordination }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_land_air_coordination
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			army_experience = 100
-		}
-	}
-	 
-	focus = {
-		id = SOV_new_calibers
-		icon = GFX_SOV_artillery_development
-		prerequisite = { focus = SOV_superior_firepower }
-		x = 1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_superior_firepower
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_massed_arty
-		}
-	}
-	
-	focus = {
-		id = SOV_stalins_sledgehammer
-		icon = GFX_SOV_stalins_hammer
-		prerequisite = { focus = SOV_new_calibers }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_new_calibers
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.75
-				ahead_reduction = 0.5
-				uses = 2
-				category = heavy_artillery
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_combined_arms2
-		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = SOV_stalins_sledgehammer }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_stalins_sledgehammer
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = inf_bonus
-				bonus = 0.5
-				uses = 1
-				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				name = tank_bonus
-				bonus = 0.5
-				uses = 1
-				category = armor
-			}
-			add_tech_bonus = {
-				name = electronics
-				bonus = 1
-				uses = 2
-				category = electronics
-			}			
-		}
-	}
-	
-	focus = {
-		id = SOV_new_corps2
-		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_combined_arms2 }
-		prerequisite = { focus = SOV_wargames }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_combined_arms2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			every_army_leader = {
-				add_logistics = 1
-				add_planning = 1
-				add_attack = 1
-				add_defense = 1
-			}
-			add_ideas = SOV_new_officers
-		}
-	}
 
 	focus = {
 		id = SOV_transpolar_flights
