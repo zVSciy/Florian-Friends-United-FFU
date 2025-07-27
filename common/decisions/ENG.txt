@@ -806,22 +806,22 @@ political_actions = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			ENG = {
+			WST = {
+				transfer_state = 897
+				transfer_state = 896
+				transfer_state = 540
+				transfer_state = 544
+				transfer_state = 892
+				transfer_state = 891
 				transfer_state = 796
+			}
+			ENG = {
+				
 				transfer_state = 296
 				transfer_state = 702
 				transfer_state = 697
 				transfer_state = 721
 				transfer_state = 729
-			}
-			SAF = {
-				transfer_state = 540
-				transfer_state = 544
-				transfer_state = 892
-				transfer_state = 891
-				transfer_state = 896
-				transfer_state = 897
-				transfer_state = 796
 			}
 			RAJ = {
 				transfer_state = 321
