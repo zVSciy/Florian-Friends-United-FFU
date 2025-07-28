@@ -141,9 +141,9 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ old_guard inflexible_strategist defensive_doctrine }
-			skill=2
-			attack_skill=1
+			traits={ organiser inflexible_strategist defensive_doctrine }
+			skill=4
+			attack_skill=2
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=1
@@ -275,36 +275,15 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ media_personality harsh_leader armor_officer panzer_leader naval_invader desert_fox }
-			skill=5
+			traits={ media_personality harsh_leader armor_officer panzer_leader naval_invader ranger }
+			skill=5	
 			attack_skill=4
 			defense_skill=4
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=101
 		}
 		
-		advisor={
-			slot = theorist
-			idea_token = charles_de_gaulle
-			ledger = army
-			allowed = {
-				original_tag = FRA
-				
-			}
-			available = {
-				has_completed_focus = FRA_battle_of_maneuver
-			}
-			cost = 100
-			
-			traits = {
-				blitzkrieg_theorist
-			}
-			# research_bonus = { land_doctrine = 0.1 }
-			ai_will_do = {
-				factor = 1.000
-				}
-		}
 	}
 	FRA_philippe_leclerc={
 		name="Philippe Leclerc"
@@ -355,9 +334,9 @@ characters={
 		}
 		corps_commander={
 			traits={ trait_cautious infantry_officer trickster trait_engineer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
+			skill=4
+			attack_skill=4
+			defense_skill=4
 			planning_skill=4
 			logistics_skill=2
 			legacy_id=-1
