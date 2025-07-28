@@ -141,7 +141,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ organiser inflexible_strategist defensive_doctrine }
+			traits={ organizer inflexible_strategist defensive_doctrine }
 			skill=4
 			attack_skill=2
 			defense_skill=3
@@ -276,7 +276,7 @@ characters={
 		}
 		corps_commander={
 			traits={ media_personality harsh_leader armor_officer panzer_leader naval_invader ranger }
-			skill=5	
+			skill=6
 			attack_skill=4
 			defense_skill=4
 			planning_skill=4
@@ -342,29 +342,6 @@ characters={
 			legacy_id=-1
 		}
 		
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = henri_giraud
-			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					GER = {
-						is_ai = yes
-					}
-					date < 1939.08.01
-				}
-			}
-			traits = {
-				military_theorist
-			}
-			# research_bonus = { land_doctrine = 0.1 }
-		}
 	}
 	FRA_charles_huntziger={
 		name="Charles Huntziger"
