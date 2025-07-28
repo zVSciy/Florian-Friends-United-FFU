@@ -242,55 +242,55 @@ add_dynamic_modifier = {
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment
-	amount = 900
+	amount = 1327
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 2500
+	amount = 2901
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 10000
+	amount = 11072
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 35000
+	amount = 39212
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = squad_equipment
-	amount = 8900
+	amount = 8782
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = motorized_equipment
-	amount = 3600
+	amount = 3599
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = radio_equipment
-	amount = 1000
+	amount = 2177
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = horse_equipment
-	amount = 12000
+	amount = 15931
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 900
+	type = pack_artillery_equipment_1
+	amount = 1776
 	producer = ENG
 }
 add_equipment_to_stockpile = {

@@ -194,9 +194,9 @@ focus_tree = {
             
         }
 		completion_reward = {
-				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = industrial_complex level = 6 }
 			CAN = {
-				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = industrial_complex level = 6 }
 			}
 		}
     }
@@ -214,9 +214,9 @@ focus_tree = {
             
         }
 		completion_reward = {
-				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = industrial_complex level = 6 }
 			SAF = {
-				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = industrial_complex level = 6 }
 			}
 		}
     }
@@ -234,9 +234,9 @@ focus_tree = {
             
         }
 		completion_reward = {
-				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = industrial_complex level = 6 }
 			AST = {
-				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = industrial_complex level = 6 }
 			}
 		}
     }
@@ -570,7 +570,6 @@ focus_tree = {
                 set_building_level = {
                     type = air_base
                     level = 10
-                    province = 11968
                     instant_build = yes
                 }
                 set_building_level = {
@@ -737,7 +736,6 @@ focus_tree = {
 			focus = ENG_def_raj
 		}
 		relative_position_id = ENG_def_raj
-		mutually_exclusive = {focus = ENG_trade_usa}
         available = {
 			controls_state = 947
 			controls_state = 446
@@ -770,7 +768,6 @@ focus_tree = {
 			focus = ENG_def_raj
 		}
 		relative_position_id = ENG_africa_retake
-		mutually_exclusive = { focus = ENG_trade_minors}
         available = {
 			USA = { has_completed_focus = USA_lend_lease_act }
         }
@@ -799,7 +796,7 @@ focus_tree = {
             add_to_variable = { ENG_british_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
             add_to_variable = { ENG_british_economy_production_factory_start_efficiency_factor = 0.075 tooltip = production_factory_start_efficiency_factor_tt }
             add_to_variable = { ENG_british_economy_production_factory_efficiency_gain_factor = 0.10 tooltip = production_factory_efficiency_gain_factor_tt }
-            add_to_variable = { ENG_british_economy_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
+            add_to_variable = { ENG_british_economy_global_building_slots_factor = 0.2 tooltip = global_building_slots_factor_tt }
             add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt }
             ENG_army_dynamic_modifier_tt = yes
             add_to_variable = { ENG_british_army_conscription = 0.02 tooltip = conscription_tt }
@@ -864,7 +861,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }        }
+            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.5 tooltip = production_speed_infrastructure_factor_tt }        }
     }
     focus = {
         id = ENG_build_civs
@@ -902,7 +899,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }        }
+            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.4 tooltip = production_speed_infrastructure_factor_tt }        }
     }
     focus = {
         id = ENG_civs_to_cansaf
@@ -919,10 +916,10 @@ focus_tree = {
         }
         completion_reward = {
             276 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 3
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 3
                     instant_build = yes
                 }        
             }
@@ -959,10 +956,10 @@ focus_tree = {
         }
         completion_reward = {
             439 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 4
                     instant_build = yes
                 }        
             }
@@ -1050,7 +1047,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_capstone_army
         x = 0
         y = 3
-        cost = 10
+        cost = 6
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1261,7 +1258,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_navy
         x = -2
         y = 3
-        cost = 10
+        cost = 6
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1277,7 +1274,7 @@ focus_tree = {
         }
         completion_reward = {
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt } 
+            add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.125 tooltip = industrial_capacity_dockyard_tt } 
         }
     }
     focus = {
@@ -1386,18 +1383,18 @@ focus_tree = {
         }
         completion_reward = {
             126 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}		
 			}
             125 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}		
 			}
@@ -1418,18 +1415,18 @@ focus_tree = {
         }
         completion_reward = {
             129 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}		
 			}
             128 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1490,7 +1487,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_civilian
         x = 0
         y = 3
-        cost = 10
+        cost = 6
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1506,7 +1503,7 @@ focus_tree = {
         }
         completion_reward = {
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.15 tooltip = production_speed_arms_factory_factor_tt } 
+            add_to_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.25 tooltip = production_speed_arms_factory_factor_tt } 
         }
     }
     focus = {
@@ -1555,7 +1552,7 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_mon_army
         x = 2
         y = 3
-        cost = 10
+        cost = 6
 		prerequisite = {
 			focus = ENG_produce_equipmet
             focus = ENG_resourcestouk
@@ -1571,7 +1568,7 @@ focus_tree = {
         }
         completion_reward = {
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt } 
+            add_to_variable = { ENG_british_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt } 
         }
     }
 
@@ -1961,7 +1958,7 @@ focus_tree = {
 		available = {
 			OR = {
 				USA = { has_war = yes }
-				date > 1941.1.1
+				date > 1940.1.1
 			}
 		}
         completion_reward = {
