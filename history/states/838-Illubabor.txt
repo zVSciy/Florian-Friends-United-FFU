@@ -23,16 +23,9 @@ state = {
 		# }
 		
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 		}
-		# Gambeila
-		victory_points = { 
-			13244 2 
-		}
-		# Jiren (add VPs to this if creating the Jimma Sultanate)
-		victory_points = { 
-			7912 1  
-		}
+		
 		
 		owner = ITA
 		add_core_of = ETH

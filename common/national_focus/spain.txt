@@ -887,9 +887,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			GER = {
-				add_to_faction = ROOT
-			}
+			
 			add_ideas = SPA_fascist_economic_aid
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war
@@ -1027,8 +1025,8 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports focus = SPA_improve_cross_country_railways }
-		
+		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
+		prerequisite = { focus = SPA_improve_cross_country_railways }
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 1
@@ -1262,7 +1260,8 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports focus = SPA_improve_cross_country_railways }
+		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
+		prerequisite = { focus = SPA_improve_cross_country_railways }
 		
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 0
@@ -2283,6 +2282,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			GER = {
+				add_to_faction = ROOT
+			}
 			add_ideas = SPR_axis_economy_boost
 			add_collaboration = {
 				target = POR
@@ -2326,6 +2328,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 100
+			add_ideas = SPA_la_division_azul
+			GER = {
+				add_to_faction = ROOT
+			}
 			# set_rule = { can_send_volunteers = yes }
 			# every_owned_state = {
 			# 	limit = {
@@ -2358,7 +2364,7 @@ focus_tree = {
 
 		completion_reward = {
 			
-			add_ideas = SPA_la_division_azul
+			
 			custom_effect_tooltip = "The Spanish Fleet will be disbanded"
 			hidden_effect = {
 				transfer_navy = {
