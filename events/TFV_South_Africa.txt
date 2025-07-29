@@ -78,7 +78,7 @@ country_event = {
 				transfer_state = 889
 
 				give_resource_rights = { receiver = ENG state = 542 }
-				# give_resource_rights = { receiver = ENG state = 771 }
+				give_resource_rights = { receiver = ENG state = 545 }
 			}
 		}
 		
