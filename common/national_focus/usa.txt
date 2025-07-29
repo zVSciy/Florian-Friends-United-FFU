@@ -3231,7 +3231,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_military_industrial_complex }
 		relative_position_id = USA_military_industrial_complex
-		cost = 3
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -3242,7 +3242,7 @@ focus_tree = {
 				ENG = {
 					has_capitulated = yes
 				}
-				date > 1940.6.1
+				date > 1941.1.1
 			}
 		}
 		
