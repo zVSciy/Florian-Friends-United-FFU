@@ -103,4 +103,32 @@ on_actions = {
 			}
 		}
 	}
+
+	 on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+                    OR = {
+						tag = ENG
+						is_subject_of = ENG
+						is_in_faction_with = ENG
+					}
+                    FROM = {  
+						OR = {
+							tag = ITA
+							is_in_faction_with = ITA
+						} 
+					}
+                    FROM.FROM = {
+                        OR = {
+                            state = 542
+                            state = 545
+                        }
+                    }
+                }
+                give_resource_rights = { receiver = ENG state = FROM.FROM }
+            }
+        }
+    }
+
 }
