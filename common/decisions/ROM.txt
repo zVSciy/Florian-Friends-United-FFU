@@ -87,6 +87,45 @@ ROM_balance_of_power = {
 
 operations = {
 
+	ROM_annex_bul = {
+			icon = generic_operation
+	
+		allowed = {
+			tag = ROM
+		}
+		
+		available = {
+			tag = ROM
+			has_global_flag = SMALL_ASIA
+		}
+
+		cost = 1
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			BUL = {exists = yes}
+			has_global_flag = SMALL_ASIA
+		}
+		
+		complete_effect = {
+			annex_country = { target = BUL transfer_troops = yes }
+			add_state_core = 48
+			add_state_core = 801
+			add_state_core = 212
+			add_state_core = 211
+			add_resource = {
+				type = chromium
+				amount = 2300
+				state = 60
+			}
+		}
+	}
+
 	ROM_expand_greater_romania = {
 
 		icon = generic_nationalism
