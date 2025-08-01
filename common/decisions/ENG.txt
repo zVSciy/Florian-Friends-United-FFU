@@ -1127,33 +1127,33 @@ operations = {
 		complete_effect = {
 			annex_country = { target = AST transfer_troops = yes }
 
-			add_state_core = 520
-			add_state_core = 872
-			add_state_core = 521
-			add_state_core = 873
-			add_state_core = 285
-			add_state_core = 517
-			add_state_core = 519
-			add_state_core = 871
-			add_state_core = 522
-			add_state_core = 870
+            520 = { set_compliance = 100 }
+            872 = { set_compliance = 100 }
+            521 = { set_compliance = 100 }
+            873 = { set_compliance = 100 }
+            285 = { set_compliance = 100 }
+            517 = { set_compliance = 100 }
+            519 = { set_compliance = 100 }
+            871 = { set_compliance = 100 }
+            522 = { set_compliance = 100 }
+            870 = { set_compliance = 100 }
 
 			annex_country = { target = SAF transfer_troops = yes }
 
-			add_state_core = 895
-			add_state_core = 894
-			add_state_core = 541
-			add_state_core = 893
-			add_state_core = 681
-			add_state_core = 275
-			add_state_core = 719
+			681 = { set_compliance = 100 }
+			719 = { set_compliance = 100 }
+			275 = { set_compliance = 100 }
+			893 = { set_compliance = 100 }
+			541 = { set_compliance = 100 }
+			894 = { set_compliance = 100 }
+			895 = { set_compliance = 100 } 
 			ENG = {
 				add_ideas = ENG_AST_annex_operative
 			}
 			annex_country = { target = NZL transfer_troops = yes }
-			add_state_core = 723 
-			add_state_core = 284
-			add_state_core = 726
+			723 = { set_compliance = 100 }
+            284 = { set_compliance = 100 }
+            726 = { set_compliance = 100 }
 			275 = {
 				add_resource = {
 					type = steel
