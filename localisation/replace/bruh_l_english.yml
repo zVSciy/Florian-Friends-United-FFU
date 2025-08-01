@@ -1464,7 +1464,8 @@ fifty_cas_dmg_reduction:0 "From focus"
  NORMAL_GAME_DESC:0 "Normal game with asia"
  NO_ASIA_NAME:0 "No Asia"
  NO_ASIA_DESC:0 "A game without Asia, made for small player count lobbies"
- 
+ SMALL_ASIA_NAME:0 "Small Asia"
+ SMALL_ASIA_DESC:0 "Small lobby asia"
  ### STATES ###
  STATE_551:0 "North Khartoum"
  STATE_843:0 "Khartoum"

@@ -19,7 +19,23 @@ ideas = {
 				armor = 0.05
 			}
 		}
-		
+		JAP_output_small_asia = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_supremacy_of_technology
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
 		JAP_axis_research_group = {
 			
 			allowed = {

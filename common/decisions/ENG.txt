@@ -1096,6 +1096,77 @@ operations = {
 			337 = { set_compliance = 80 }
 		}
 	}
+	ENG_small_asia = {
+		
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_global_flag = SMALL_ASIA
+		}
+
+		cost = 1
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			AST = {exists = yes}
+			SAF = {exists = yes}
+			has_global_flag = SMALL_ASIA
+		}
+		
+		complete_effect = {
+			annex_country = { target = AST transfer_troops = yes }
+
+			add_state_core = 520
+			add_state_core = 872
+			add_state_core = 521
+			add_state_core = 873
+			add_state_core = 285
+			add_state_core = 517
+			add_state_core = 519
+			add_state_core = 871
+			add_state_core = 522
+			add_state_core = 870
+
+			annex_country = { target = SAF transfer_troops = yes }
+
+			add_state_core = 895
+			add_state_core = 894
+			add_state_core = 541
+			add_state_core = 893
+			add_state_core = 681
+			add_state_core = 275
+			add_state_core = 719
+			ENG = {
+				add_ideas = ENG_AST_annex_operative
+			}
+			annex_country = { target = NZL transfer_troops = yes }
+			add_state_core = 723 
+			add_state_core = 284
+			add_state_core = 726
+			275 = {
+				add_resource = {
+					type = steel
+					amount = 600
+				}
+				add_resource = {
+					type = tungsten
+					amount = 600
+				}
+			}
+		}
+	}
+}
 	
 	# mers_el_kebir_raid = {
 

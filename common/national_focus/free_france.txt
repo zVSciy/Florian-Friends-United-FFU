@@ -107,6 +107,40 @@ focus_tree = {
 				type = convoy
 				amount = 250
 			}
+
+			if = {
+				limit = {
+					has_global_flag = SMALL_ASIA
+				}
+				annex_country = { target = MEX transfer_troops = yes }
+				add_state_core = 484
+				add_state_core = 483
+				add_state_core = 482
+				add_state_core = 481
+				add_state_core = 479
+				add_state_core = 478
+				add_state_core = 485
+				add_state_core = 277
+				add_state_core = 477
+				add_state_core = 480
+				add_state_core = 476
+				add_state_core = 475
+				add_state_core = 474
+				annex_country = { target = BRA transfer_troops = yes }
+				add_state_core = 280
+				add_state_core = 495
+				add_state_core = 496
+				add_state_core = 497
+				add_state_core = 498
+				add_state_core = 499
+				add_state_core = 500
+				add_state_core = 501
+				add_state_core = 502
+				add_state_core = 503
+				add_state_core = 504
+				add_state_core = 505
+			}
+
 		}
 	}
 	focus = {

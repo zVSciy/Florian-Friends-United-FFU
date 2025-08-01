@@ -1407,7 +1407,9 @@ political_actions = {
 			factor = 0
 		}
 		visible = {
-			always = yes
+			NOT = {
+				has_global_flag = SMALL_ASIA
+			}
 		}
 		fire_only_once = yes
 		complete_effect = {
@@ -1450,6 +1452,70 @@ political_actions = {
 			}
 		}
 	}
+
+	JAP_annex_man2 = {
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			date > 1939.1.1
+			NOT = {
+				country_exists = CHI
+			}
+			MAN = {
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_global_flag = SMALL_ASIA
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_research_slot = 1
+			JAP = {
+				MAN = {
+					pow_before_annex = yes
+				}
+			}
+			annex_country = {
+				target = MAN
+				transfer_troops = yes
+			}
+			add_state_core = 328
+			add_state_core = 610
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 714
+			add_state_core = 715
+			add_state_core = 716
+			add_state_core = 717
+			add_state_core = 761
+			every_state = {
+				limit = {
+					OR = {
+						state = 328
+						state = 610
+						state = 611
+						state = 612
+						state = 714
+						state = 715
+						state = 716
+						state = 717
+						state = 761
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = annex_manpower_reudction
+				}
+			}
+			add_ideas = closed_economy
+			add_ideas = JAP_output_small_asia
+		}
+	}
+
 	JAP_annex_chi = {
 		allowed = {
 			original_tag = JAP
@@ -1498,6 +1564,11 @@ political_actions = {
 			has_completed_focus = JAP_intervene_in_china
 			NOT = {
 				has_completed_focus = JAP_secure_china
+			}
+		}
+		visible = {
+			NOT = {
+				has_global_flag = SMALL_ASIA
 			}
 		}
 		cost = 150
