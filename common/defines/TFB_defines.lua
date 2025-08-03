@@ -109,7 +109,7 @@ NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 5 	-- Max number of differen
 NDefines.NProduction.EFFICIENCY_LOSS_PER_UNUSED_DAY = 0.5		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
 NDefines.NProduction.BASE_FACTORY_SPEED = 3 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 1.7				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.50	-- How much fuel will be transferred on annexation
@@ -133,7 +133,7 @@ NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.2		-- Fra
 NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0.05		-- Minimum fraction of a land equipment's strategic resource cost that any conversion will cost.
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 50 			--(from originally 10)
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150 				--(from originally 15)
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 50 				--(from originally 5)
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 20 				--(from originally 5)
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10			-- (from originally 5)
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- The minimum number of factories we have to put on consumer goods, in percent. (Vanilla is 0.1)
 
@@ -340,7 +340,8 @@ NDefines.NAir.BIGGEST_AGILITY_FACTOR_DIFF = 4.0					-- biggest factor difference
 NDefines.NAir.BIGGEST_SPEED_FACTOR_DIFF = 3.0					-- biggest factor difference in speed for doing damage (caps to this)	-- Vanilla is 2.5	
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 10					-- Used to balance the damage done while bombing.
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.5						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.07							-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.27							-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 8							-- Higher value = more shot down planes
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 6          -- how often carrier planes do battle inside naval combat
 NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3			-- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.36					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
@@ -365,8 +366,8 @@ NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE_PORT_STRIKE = 10         -- we can really
 NDefines.NAir.ACE_WING_SIZE =  100								-- size of wing ace bonuses are set up for. if lower more bonus if higher less bonus
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.15							-- multiplies supply usage
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.3		-- Value used to scale the surface_visibility stats to balance the gameplay so 100% detection chance still won't spam the strikes.
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.25					-- Anti Air Gun Damage factor
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.05 --0.065					-- Anti Air Gun hit chance
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.25				-- Anti Air Gun Damage factor
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.05 --0.065		-- Anti Air Gun hit chance
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.70	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 500			-- Min cap for planes that can join naval combat
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.112	-- How much efficiency to regain per day. Gain applied hourly.
@@ -607,8 +608,8 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 7						-- Convoy starts reg
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.05 -- How much efficiency regains every day.
 NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.65								-- To avoid complete 0% efficiency, set the lower limit.
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0.4  -- scales impact of convoy route size (0 to turn off)
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.25							-- Balancing value to convert averaged equipment stats (anti_air_targetting and naval_strike_agility) to probability chances of airplane being hit by navies AA.
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0015								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.08							-- Balancing value to convert averaged equipment stats (anti_air_targetting and naval_strike_agility) to probability chances of airplane being hit by navies AA.
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.002								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NNavy.CONVOY_SINKING_SPILLOVER = 0.5				-- Damaged convoys roll for if they sink in the end of combat by accumulating the damage. This scales that chance. 
 NDefines.NNavy.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 10
 NDefines.NNavy.UNIT_EXPERIENCE_SCALE = 1
@@ -642,7 +643,7 @@ NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.5								-- required naval suprema
 NDefines.NNavy.CARRIER_STACK_PENALTY = 4									-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.06								-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.25
-NDefines.NNavy.ANTI_AIR_TARGETING = 0.8   -- how good ships are at hitting aircraft
+NDefines.NNavy.ANTI_AIR_TARGETING = 0.4   -- how good ships are at hitting aircraft
 NDefines.NNavy.MIN_TRACTED_ASSIST_DAMAGE_RATIO = 0.05							-- How much damage counts as assist damage
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.01										-- multiplies supply usage
 NDefines.NNavy.ENEMY_AIR_SUPERIORITY_IMPACT = -0.8  					-- effect on ship efficiency due to enemy air superiorty
@@ -933,7 +934,7 @@ NDefines.NNavy.SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING = 0.4  -- submarine revea
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO									= 0.02	-- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction
 
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE								= 0.78 -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE
-NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE							= 0.05
+NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE							= 0.02
 
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE 			= 0.75	-- damage reduction for incoming air attacks is clamped to this value at maximum.
 
