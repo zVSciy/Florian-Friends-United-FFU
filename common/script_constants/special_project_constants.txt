@@ -76,12 +76,12 @@ sp_progress = {
     gain = {
         low = 0.02
         medium = 0.055
-        high = 0.8
+        high = 0.08
     }
     loss = {
         low = -0.02
         medium = -0.055
-        high = -0.8
+        high = -0.08
     }
 }
 
