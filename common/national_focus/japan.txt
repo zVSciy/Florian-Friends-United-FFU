@@ -1701,10 +1701,7 @@ focus_tree = {
 			
 			# JAP_interservice_rivalry_towards_army = yes
 			# JAP_interservice_rivalry_towards_army = yes
-			add_power_balance_value = {
-				id = JAP_interservice_rivalry
-				value = -1
-			}
+			
 			if = {
 				limit = {
 					date > 1941.1.1
