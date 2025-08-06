@@ -9165,8 +9165,19 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.05 } 
 			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.05 }
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.75
+				uses = 1
+				technology = modern_small_airframe
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.75
+				uses = 1
+				technology = modern_medium_airframe
+			}
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
-
 			air_experience = 100
 		}
 	}

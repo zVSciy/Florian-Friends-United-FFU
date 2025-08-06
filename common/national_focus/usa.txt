@@ -6551,9 +6551,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 0.75
-				uses = 2
+				uses = 3
 				technology = improved_medium_airframe
 				technology = advanced_medium_airframe
+				technology = modern_medium_airframe
 			}
 		}
 	}
