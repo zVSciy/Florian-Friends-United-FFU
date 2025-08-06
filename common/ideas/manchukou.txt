@@ -343,6 +343,24 @@ ideas = {
 				conscription_factor = -0.8
 			}
 		}
+		MAN_yamato-damashii2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = warrior_traditions_idea
+			
+			modifier = {
+				conscription_factor = -0.55
+			}
+		}
 	
 		MAN_yakuza_thugs = {
 

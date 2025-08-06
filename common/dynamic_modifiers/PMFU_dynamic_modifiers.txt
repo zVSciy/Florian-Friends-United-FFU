@@ -6,7 +6,7 @@ POW_industry_mod = {
 
 dockyard_cg_mod = {
 	icon = "GFX_idea_naval_dockyard_cg"
-	consumer_goods_expected_value = dockyard_cg
+	production_cost_dockyard_factor = dockyard_cg
 }
 
 anti_dockyard_construction = {
