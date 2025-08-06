@@ -170,6 +170,8 @@ ideas = {
 				stability_factor = -0.2 
 				army_core_attack_factor = -0.2
 				army_core_defence_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = 0.25
 			}
 		}
 		JAP_island_hopping5 = {
@@ -186,6 +188,8 @@ ideas = {
 				stability_factor = -0.15
 				army_core_attack_factor = -0.1
 				army_core_defence_factor = -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = 0.2
 			}
 		}
 		JAP_island_hopping6 = {
@@ -200,6 +204,8 @@ ideas = {
 				political_power_gain = -0.1
 				war_support_factor = -0.10
 				stability_factor = -0.10
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = 0.15
 			}
 		}
 		JAP_island_hopping7 = {
@@ -216,6 +222,8 @@ ideas = {
 				stability_factor = -0.05
 				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.25
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = 0.075
 			}
 		}
 		JAP_island_hopping8 = {
