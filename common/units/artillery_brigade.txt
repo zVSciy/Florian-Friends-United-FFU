@@ -814,7 +814,6 @@ sub_units = {
 
 		need = {
 			super_heavy_artillery_equipment = 10
-			motorized_equipment = 20
 		}
 		manpower = 1000
 		training_time = 180
