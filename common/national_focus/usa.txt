@@ -3374,9 +3374,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		continue_if_invalid = yes
 		available = {
-			GER = {
-				has_war = yes
-			}
+			date > 1939.6.1
 		}
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
