@@ -3460,7 +3460,7 @@ JAP_propaganda_campaigns = {
 				JAP_new_propaganda_campaign = 9
 			}
 			JAP_pick_propaganda_campaign_slot_effect = yes
-			add_ideas = ENG_air_prod
+			add_ideas = JAP_air_prod
 		}
 		remove_effect = {
 			set_variable = {
@@ -3475,7 +3475,7 @@ JAP_propaganda_campaigns = {
 					}
 				}
 			}
-			remove_ideas = ENG_air_prod
+			remove_ideas = JAP_air_prod
 		}
 	}
 	JAP_commonwealth_prop = {

@@ -2621,6 +2621,7 @@ USA_propaganda_campaigns = {
 		available = {
 			USA_propaganda_poster_slot_available = yes
 			has_completed_focus = USA_two_ocean_navy_act
+			has_war = yes
 		}
 
 		days_remove = 365
@@ -2630,7 +2631,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_dockyard = 0.075
+			industrial_capacity_dockyard = 0.15
 		}
 
 		complete_effect = {

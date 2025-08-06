@@ -413,6 +413,10 @@ focus_tree = {
         available_if_capitulated = yes
 
         completion_reward = {
+			swap_ideas = {
+				remove_idea = MAN_yamato-damashii
+				add_idea = MAN_yamato-damashii2 
+			} 
             hidden_effect = {
                 set_rule = {
                     can_use_kamikaze_pilots = yes
