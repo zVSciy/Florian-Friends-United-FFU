@@ -809,7 +809,7 @@ dockyard_cg_calculation = {
 		limit = {
 			has_variable = dockyard_major
 			tag = USA
-			has_completed_focus = USA_wartime_industry
+			has_completed_focus = USA_the_giant_wakes
 		}
 		if = {
 			limit = {
