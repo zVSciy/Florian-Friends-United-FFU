@@ -3494,8 +3494,9 @@ focus_tree = {
             add_tech_bonus = {
                 name = fighter_bonus
                 bonus = 1
-                uses = 1
+                uses = 2
                 technology = advanced_small_airframe
+				technology = modern_small_airframe
             }
         }
 	}
