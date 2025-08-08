@@ -107,7 +107,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_persecute_revolutionaries
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -215,7 +215,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_promote_songsuradet
 
-		cost = 10
+		cost = 5
         available = {
             286 = {		
                 CONTROLLER = { 					
@@ -388,7 +388,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_monarchy_question
         search_filters = { FOCUS_FILTER_STABILITY }
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 6
@@ -407,7 +407,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_songsuradet_rebellion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -533,7 +533,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_songsuradet_rebellion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 6
@@ -633,10 +633,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -667,10 +667,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -685,7 +685,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_industrialization_development
 
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 7
@@ -764,10 +764,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -798,10 +798,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -865,10 +865,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -963,7 +963,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 				}
 			}
             671 = {
@@ -974,11 +974,11 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 				}
 			}
             741 = {
@@ -993,7 +993,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 				}
 			}
             286 = {
@@ -1004,11 +1004,11 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex 
-					level = 1
+					level = 2
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 				}
 			}
 			build_railway = {
