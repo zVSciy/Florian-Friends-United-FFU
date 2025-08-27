@@ -434,10 +434,10 @@ ideas = {
 
 			equipment_bonus = {
 				fighter = {
-					build_cost_ic = 0.05 # maybe make this 7.5% if people arent doing it bc its too expensive
+					build_cost_ic = 0.1 # maybe make this 7.5% if people arent doing it bc its too expensive
 				}
 				heavy_fighter = {
-					build_cost_ic = 0.025
+					build_cost_ic = 0.05
 				}
 			}
 		}
@@ -455,11 +455,9 @@ ideas = {
 			equipment_bonus = {
 				fighter = {
 					build_cost_ic = -0.025
-					reliability = 0.05
 				}
 				heavy_fighter = {
 					build_cost_ic = -0.025
-					reliability = 0.05
 				}
 			}
 		}
