@@ -16,7 +16,7 @@ USA_persian_corridor = {
 			}
 		}
 		
-		days_remove = 120
+		days_remove = 90
 		cost = 0
 		complete_effect = {
 		}
@@ -46,7 +46,7 @@ USA_persian_corridor = {
 			}
 		}
 		
-		days_remove = 120
+		days_remove = 90
 		cost = 0
 		complete_effect = {
 		}
@@ -76,7 +76,7 @@ USA_persian_corridor = {
 			}
 		}
 		
-		days_remove = 120
+		days_remove = 90
 		cost = 0
 		complete_effect = {
 		}
@@ -106,7 +106,7 @@ USA_persian_corridor = {
 			}
 		}
 		
-		days_remove = 120
+		days_remove = 90
 		cost = 0
 		complete_effect = {
 		}
@@ -136,7 +136,7 @@ USA_persian_corridor = {
 			}
 		}
 		
-		days_remove = 120
+		days_remove = 90
 		cost = 0
 		complete_effect = {
 		}
@@ -853,7 +853,7 @@ operations = {
 		
 		available = {
 			SOV = {
-				surrender_progress > 0.5
+				surrender_progress > 0.3
 			}
 		}
 
@@ -861,7 +861,7 @@ operations = {
 			civilian_factory_use = 30
 		}
 		
-		days_remove = 365
+		days_remove = 180
 
 		remove_effect = {
 			SOV = {add_offsite_building = { type = arms_factory level = 30 }}
