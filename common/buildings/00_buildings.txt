@@ -20,6 +20,7 @@ buildings = {
 				max_fuel_building = 1.0 #k
 			}
 		}
+		infrastructure_construction_effect = yes
 	}
 
 	arms_factory = {

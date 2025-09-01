@@ -861,7 +861,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.5 tooltip = production_speed_infrastructure_factor_tt }        }
+            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }        }
     }
     focus = {
         id = ENG_build_civs
@@ -899,7 +899,7 @@ focus_tree = {
         }
         completion_reward = {
             ENG_economy_dynamic_modifier_tt = yes # tooltip
-            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.5 tooltip = production_speed_infrastructure_factor_tt }        }
+            set_variable = { ENG_british_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }        }
     }
     focus = {
         id = ENG_civs_to_cansaf

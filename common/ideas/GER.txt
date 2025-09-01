@@ -288,8 +288,7 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				army_attack_factor = 0.3
-				army_defence_factor = 0.3
+				army_core_attack_factor = 0.3
 				no_supply_grace = 128
 			}
 		}
