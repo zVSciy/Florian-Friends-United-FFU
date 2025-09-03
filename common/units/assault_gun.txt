@@ -41,62 +41,22 @@ sub_units = {
 		# soft_attack = -0.1
 		# hard_attack = -0.15
 
-		plains = {
-			attack = 0.05 
-			movement = 0.05
-		}
-		desert = {
-			attack = 0.05
-			movement = 0.05
+		jungle = {
+			attack = -0.05
 		}
 		forest = {
-		    attack = -0.05
-			movement = -0.2
-			defence = -0.05
+			movement = -0.1
 		}
 		hills = {
-			attack = 0.025
-			defence = -0.15
-			movement = 0.05
-		}
-		mountain = 	{
-		    attack = -0.2
-			movement = -0.25
-			defence = -0.35
-		}
-		jungle = {
-		    attack = -0.15
-			movement = -0.25
-			defence = -0.1
-		}
-		marsh = {
-		    attack = -0.25
-			movement = -0.3
-			defence = -0.1
+			attack = -0.05
 		}
 		river = { 
-			attack = -0.15
-			movement = -0.25
-		}
-		amphibious = {
-			attack = -2.0
+			attack = -0.1
 		}
 		fort = {
-			attack = 0.6
+			attack = 0.15
 		}
-		urban = {
-			attack = 0.2
-		}
-		dense_urban = {
-			attack = 0.4
-		}
-		town = {
-			attack = 0.05
-		}
-		rock = {
-			attack = -2
-			defence = -2
-		}
+		
 	}
 
 	medium_assault_gun_brigade = {
@@ -138,60 +98,20 @@ sub_units = {
 
 		breakthrough = 0.2
 
-		plains = {
-			attack = 0.05 
-			movement = 0.05
-		}
-		desert = {
-			attack = 0.05
-			movement = 0.05
+				jungle = {
+			attack = -0.05
 		}
 		forest = {
-		    attack = -0.05
-			movement = -0.25
+			movement = -0.1
 		}
 		hills = {
-			attack = -0.1
-			movement = -0.1
-			defence = -0.05
-		}
-		mountain = 	{
-		    attack = -0.3
-			movement = -0.4
-			defence = -0.2
-		}
-		jungle = {
-		    attack = -0.25
-			movement = -0.35
-			defence = -0.15
-		}
-		marsh = {
-		    attack = -0.35
-			movement = -0.45
-			defence = -0.25
+			attack = -0.05
 		}
 		river = { 
-			attack = -0.2
-			movement = -0.3
-		}
-		amphibious = {
-			attack = -2.0
+			attack = -0.1
 		}
 		fort = {
-			attack = 0.6
-		}
-		urban = {
-			attack = 0.2
-		}
-		dense_urban = {
-			attack = 0.4
-		}
-		town = {
-			attack = 0.05
-		}
-		rock = {
-			attack = -2
-			defence = -2
+			attack = 0.15
 		}
 	}
 
@@ -234,62 +154,21 @@ sub_units = {
 		
 		breakthrough = 0.2
 
-		plains = {
-			attack = 0.05 
-			movement = 0.05
-		}
-		desert = {
-			attack = 0.05
-			movement = 0.05
+				jungle = {
+			attack = -0.05
 		}
 		forest = {
-		    attack = -0.05
-			movement = -0.3
-			defence = -0.1
+			movement = -0.1
 		}
 		hills = {
-		    attack = -0.2
-			movement = -0.2
-			defence = -0.1
-		}
-		mountain = 	{
-		    attack = -0.4
-			movement = -0.5
-			defence = -0.3
-		}
-		jungle = {
-		    attack = -0.4
-			movement = -0.45
-			defence = -0.25
-		}
-		marsh = {
-		    attack = -0.45
-			movement = -0.55
-			defence = -0.3
+			attack = -0.05
 		}
 		river = { 
-			attack = -0.4
-			movement = -0.4
-		}
-		amphibious = {
-			attack = -2.0
+			attack = -0.1
 		}
 		fort = {
-			attack = 0.6
-		}
-		urban = {
-			attack = 0.2
-		}
-		dense_urban = {
-			attack = 0.4
-		}
-		town = {
-			attack = 0.05
-		}
-		rock = {
-			attack = -2
-			defence = -2
-		}
+			attack = 0.15
+		}^r
 	}
 
 	light_assault_gun_support = {
