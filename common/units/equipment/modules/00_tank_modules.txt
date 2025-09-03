@@ -4008,8 +4008,9 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1
-			defense = 2
-			breakthrough = 5
+			defense = 3
+			breakthrough = 6
+			casualty_trickleback = -0.03
 		}
 		
 		multiply_stats = {  }
@@ -4037,7 +4038,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.1
+			reliability = 0.2
 			build_cost_ic = 2
 		}
 		
@@ -4051,9 +4052,9 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.05
-			armor_value = 4
-			build_cost_ic = 4
-			breakthrough = 4
+			armor_value = 8
+			build_cost_ic = 5
+			hardness = 0.075
 		}
 		
 		multiply_stats = {  }
@@ -4090,6 +4091,7 @@ equipment_modules = {
 			soft_attack = 4
 			defense = 2
 			build_cost_ic = 2
+			air_attack = 2
 		}
 		
 		multiply_stats = {  }
@@ -4106,7 +4108,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 5
-			hard_attack = 2
+			hard_attack = 3
 			# air_attack = 1
 			defense = 2
 			build_cost_ic = 3
@@ -4159,8 +4161,8 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 5
-			breakthrough = 8
+			soft_attack = 3.5
+			breakthrough = 10
 			build_cost_ic = 2
 		}
 		
@@ -4219,7 +4221,7 @@ equipment_modules = {
 
 		add_stats = {
 			fuel_capacity = 200
-			build_cost_ic = 1.5		
+			build_cost_ic = 2	
 		}
 		multiply_stats = {
 			# maximum_speed = -0.05
@@ -4643,6 +4645,7 @@ equipment_modules = {
 			reliability = -0.05 #Improved Rocket Launcher: -0.1
 		}
 
+
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
@@ -4653,6 +4656,35 @@ equipment_modules = {
 			steel = 1 #Improved Rocket Launcher: 1
 			tungsten = 2 #Improved Rocket Launcher: 2
 		}
+	}
+
+	improved_hatches = {
+		abbreviation = "boil"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			experience_loss_factor = -0.04
+			casualty_trickleback = 0.05
+			
+		}		
+		xp_cost = 0
+		
+	}
+
+	mechanical_charging = {
+		abbreviation = "turbo"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+		multiply_stats =  {
+			maximum_speed = 0.2
+		}	
+		xp_cost = 0
+		
 	}
 
 
