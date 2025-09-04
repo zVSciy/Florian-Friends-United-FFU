@@ -95,7 +95,14 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_2
+			
 		}
+
+		enable_equipment_modules = {
+			mech_auto_loader
+		}
+
+		
 		
 		path = {
 			leads_to_tech = advanced_infantry_weapons
@@ -1814,6 +1821,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			mech_amtrac_module
+			mech_wet_ammo_storage
 		}
 
 		allow_branch = {
@@ -1829,6 +1837,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = amphibious_tank
+			
 			research_cost_coeff = 1
 		}
 		
@@ -1920,6 +1929,8 @@ technologies = {
 			mech_easy_maintenance
 			mech_tungston_core_ammunition
 			mech_commanders_cupola
+			
+			
 			# guns
 			tank_anti_air_cannon_2_mech
 			tank_small_cannon_2_mech
@@ -1993,8 +2004,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			mech_auto_loader
-			mech_wet_ammo_storage
+			
 			# guns
 			tank_anti_air_cannon_3_mech
 			tank_small_cannon_3_mech
