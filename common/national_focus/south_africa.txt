@@ -370,6 +370,8 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
+			remove_ideas = SAF_ossewabrandwag
+			remove_ideas = SAF_ossewabrandwag_fascism
 			remove_ideas = SAF_ossewabrandwag_2
 		}
 	}
