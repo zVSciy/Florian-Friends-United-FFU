@@ -1149,8 +1149,21 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = charles_de_gaulle
+				if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:FRA_renault_organization = {
+					unlock_mio_trait_tooltip = FRA_rnlt_resource
+				}
+				mio:FRA_renault_organization = {
+					add_mio_size = 1
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = cape_cope
+			}
 		}
 	}
 	
@@ -1166,22 +1179,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				mio:FRA_renault_organization = {
-					unlock_mio_trait_tooltip = FRA_rnlt_resource
-				}
-				mio:FRA_renault_organization = {
-					add_mio_size = 1
-				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = cape_cope
-			}
+			
+		
 			add_tech_bonus = {
                     name = FRA_upgrade_tanks
                     bonus = 1
@@ -1225,7 +1224,7 @@ focus_tree = {
 			army_experience = 15
 			add_tech_bonus = {
 				name = FRA_artillery_focus
-				bonus = 0.89
+				bonus = 0.75
 				uses = 2
 				category = artillery
 			}

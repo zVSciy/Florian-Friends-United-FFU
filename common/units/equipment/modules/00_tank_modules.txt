@@ -4091,13 +4091,19 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 4
+			soft_attack = 3
 			defense = 2
 			build_cost_ic = 2
 			air_attack = 2
 		}
 		
 		multiply_stats = {  }
+
+		forbid_equipment_type = {
+			anti_tank
+			artillery
+			anti_air
+		}
 	}
 
 	additional_heavy_machine_guns = {
