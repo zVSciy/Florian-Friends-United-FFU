@@ -56,14 +56,7 @@ sub_units = {
 		fort = {
 			attack = 0.15
 		}
-		battalion_mult = {
-			category = category_all_infantry
-			max_organisation = -2
-		}
-		battalion_mult = {
-			category = category_artillery
-			max_organisation = -2
-		}
+	
 		
 	}
 
@@ -106,7 +99,7 @@ sub_units = {
 
 		breakthrough = 0.2
 
-				jungle = {
+		jungle = {
 			attack = -0.05
 		}
 		forest = {
@@ -121,14 +114,7 @@ sub_units = {
 		fort = {
 			attack = 0.15
 		}
-		battalion_mult = {
-			category = category_all_infantry
-			max_organisation = -2
-		}
-		battalion_mult = {
-			category = category_artillery
-			max_organisation = -2
-		}
+		
 	}
 
 	heavy_assault_gun_brigade = {
@@ -170,7 +156,7 @@ sub_units = {
 		
 		breakthrough = 0.2
 
-				jungle = {
+		jungle = {
 			attack = -0.05
 		}
 		forest = {
@@ -185,14 +171,8 @@ sub_units = {
 		fort = {
 			attack = 0.15
 		}
-		battalion_mult = {
-			category = category_all_infantry
-			max_organisation = -2
-		}
-		battalion_mult = {
-			category = category_artillery
-			max_organisation = -2
-		}
+		
+		
 	}
 
 	light_assault_gun_support = {
