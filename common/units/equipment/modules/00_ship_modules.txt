@@ -172,7 +172,7 @@ equipment_modules = {
 		build_cost_resources = {
 		}
 		add_average_stats = {
-			lg_armor_piercing = 24
+			lg_armor_piercing = 4
 		}
 
 		critical_parts = { damaged_light_guns }

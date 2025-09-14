@@ -411,9 +411,9 @@ technologies = {
 	
 	schwerpunk = {
 
-		category_all_armor = {
+		category_all_infantry = {
 			max_organisation = 3
-			max_strength = 1
+			max_strength = 0.1
 		}
 		max_planning = 0.05
 		
@@ -467,11 +467,11 @@ technologies = {
 	blitzkrieg = {
 
 		category_mobile_infantry = {
-			max_organisation = 5
+			max_organisation = 6
 		}
 
 		category_all_armor = {
-			max_organisation = 2
+			
 			maximum_speed = 0.05
 		}
 
@@ -533,10 +533,10 @@ technologies = {
 	   		
 		category_all_armor = {
 		    default_morale = 0.1
-			max_strength = 1
+			
 		}
 		category_mobile_infantry = {
-			max_strength = 2
+			max_strength = 2.1
 		}
 		
 		org_loss_when_moving = -0.05
@@ -611,12 +611,9 @@ technologies = {
 		}
 		
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 7
 		}
 		category_militia = {
-			max_organisation = 5
-		}
-		category_all_armor = {
 			max_organisation = 5
 		}
 
@@ -724,9 +721,9 @@ technologies = {
 		category_tanks = {
 			breakthrough = 0.20
 		}		
-		category_all_armor = {
+		category_all_infantry = {
 			default_morale = 0.2
-			max_organisation = 3			
+			#max_organisation = 3			
 		}
 		org_loss_when_moving = -0.15
 		air_cas_present_factor = 0.05

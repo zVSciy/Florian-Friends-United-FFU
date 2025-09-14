@@ -103,6 +103,10 @@ equipments = {
  			module = mech_extra_ammo_storage
  			count < 2
  		}
+		module_count_limit = {
+ 			module = mech_easy_maintenance
+ 			count < 2
+ 		}
 
  		upgrades = {
  			

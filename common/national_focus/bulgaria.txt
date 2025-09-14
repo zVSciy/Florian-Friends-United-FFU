@@ -69,7 +69,12 @@ focus_tree = {
 		relative_position_id = BUL_kings_government
 
 		cost = 10
-
+		available = {
+			OR = {
+			JAP = { has_completed_focus = JAP_intervene_in_china }
+			date > 1938.1.1
+			}
+		}
 		ai_will_do = {
 			factor = 27
 		}

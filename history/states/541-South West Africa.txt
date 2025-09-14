@@ -9,6 +9,7 @@ state={
 		owner = SAF
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 5
 			arms_factory = 3
 		}
 		victory_points = {

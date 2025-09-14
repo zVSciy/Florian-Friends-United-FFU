@@ -219,7 +219,7 @@ focus_tree = {
 			add_manpower = 100000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 5
+				level = 3
 			}
 			79 = {
 				add_extra_state_shared_building_slots = 5
@@ -256,13 +256,13 @@ focus_tree = {
 			add_manpower = 150000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 5
+				level = 3
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -297,10 +297,10 @@ focus_tree = {
 			add_manpower = 50000
 			add_offsite_building = {
 				type = industrial_complex
-				level = 5
+				level = 3
 			}
 			46 = {				
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 	}
@@ -697,10 +697,10 @@ mutually_exclusive = {
 		complete_tooltip = {
 			every_state = {
 				
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -945,18 +945,18 @@ mutually_exclusive = {
 		
 		completion_reward = {
 			46 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -982,10 +982,10 @@ mutually_exclusive = {
 		complete_tooltip = {
 			every_state = {
 				
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -993,18 +993,18 @@ mutually_exclusive = {
 
 		completion_reward = {
 			46 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1290,7 +1290,7 @@ mutually_exclusive = {
 
 			add_timed_idea = {
 				idea = ROM_proclaim_the_victory_over_the_allies
-				days = 120
+				days = 60
 			}
 
 
@@ -1783,10 +1783,10 @@ focus = {
 				}
 			}
 			prioritize = { 46 }
-			add_extra_state_shared_building_slots = 4
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
-				level = 4
+				level = 3
 				instant_build = yes
 			}
 		}
