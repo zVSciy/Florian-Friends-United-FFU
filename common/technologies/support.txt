@@ -157,12 +157,6 @@ technologies = {
 				attack = 0.25
 			}
 		}
-		armored_engineer = {
-			entrenchment  = 2
-			river = {
-				attack = 0.25
-			}
-		}
 
 		enable_equipment_modules = {
 			dozer_blade
@@ -255,12 +249,6 @@ technologies = {
 				attack = 0.1
 			}
 		}
-		armored_engineer = {
-			entrenchment  = 2
-			river = {
-				attack = 0.1
-			}
-		} 
 		# mech_assault_engineers = {	
 		# 	entrenchment  = 2
 		# 	river = {
@@ -346,16 +334,6 @@ technologies = {
 				defence = 0.05
 			}
 		}
-		armored_engineer = {
-			urban = {
-				attack = 0.05
-				defence = 0.05
-			}
-			dense_urban = {
-				attack = 0.05
-				defence = 0.05
-			}
-		}
 
 		research_cost = 1
 		start_year = 1942
@@ -421,22 +399,6 @@ technologies = {
 				defence = 0.15
 			}
 		}
-		armored_engineer = {
-			entrenchment  = 2
-			urban = {
-				attack = 0.15
-				defence = 0.15
-			}
-			dense_urban = {
-				attack = 0.25
-				defence = 0.15
-			}
-			town = {
-				attack = 0.1
-				defence = 0.15
-			}
-		} 
-			
 		# mech_assault_engineers = {	
 		# 	entrenchment  = 2
 			
@@ -1363,11 +1325,6 @@ technologies = {
 			default_morale = 0.1
 			# equipment_capture_factor = 0.05
 		}
-		armored_maintenance = {
-			reliability_factor = 0.10
-			max_strength = 5
-			default_morale = 0.1
-		}
 		
 		path = {
 			leads_to_tech = tech_maintenance_company3
@@ -1427,12 +1384,6 @@ technologies = {
 			max_strength = 5
 			default_morale = 0.1
 		}
-		armored_maintenance = {
-				reliability_factor = 0.10
-			# equipment_capture_factor = 0.05
-			max_strength = 5
-			default_morale = 0.1
-		}
 		
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -1481,12 +1432,6 @@ technologies = {
 	tech_maintenance_company4 = {
 
 		maintenance_company = {
-			reliability_factor = 0.10
-			# equipment_capture_factor = 0.05
-			max_strength = 5
-			default_morale = 0.1
-		}
-		armored_maintenance = {
 			reliability_factor = 0.10
 			# equipment_capture_factor = 0.05
 			max_strength = 5
@@ -2032,11 +1977,6 @@ technologies = {
 			max_organisation = 15
 			default_morale = 0.2
 		}
-		armored_engineer = {
-			initiative = 0.10
-			max_organisation = 15
-			default_morale = 0.2
-		}
 		
 		
 		path = {
@@ -2088,11 +2028,6 @@ technologies = {
 			max_organisation = 15
 			default_morale = 0.2
 		}
-		armored_engineer = {
-			initiative = 0.10
-			max_organisation = 15
-			default_morale = 0.2
-		}
 		
 		path = {
 			leads_to_tech = tech_signal_company4
@@ -2138,11 +2073,6 @@ technologies = {
 	tech_signal_company4 = {
 
 		signal_company = {
-			initiative = 0.10
-			max_organisation = 15
-			default_morale = 0.2
-		}
-		armored_engineer = {
 			initiative = 0.10
 			max_organisation = 15
 			default_morale = 0.2

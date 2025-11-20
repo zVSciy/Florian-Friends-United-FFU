@@ -35,9 +35,9 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.3
+			attack = -0.25
 			#movement = -0.2
-			defence = -0.10
+			defence = -0.15
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.1
@@ -58,8 +58,8 @@ categories =  {
 		sound_type = desert
 
 		units = {
-			attack = -0.35
-			defence = -0.15
+			attack = -0.3
+			defence = -0.2
 			#movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05
@@ -138,11 +138,6 @@ categories =  {
 		combat_support_width = 30
 		match_value = 0.5
 		sound_type = plains
-		units = {
-			attack = -0.1
-			defence = 0
-			#movement = -0.4
-		}
 	}
 	
 	urban = {
@@ -157,7 +152,7 @@ categories =  {
 		units = {
 			attack = -0.4
 			movement = -0.15
-			defence = -0.2
+			defence = -0.25
 		}
 		enemy_army_bonus_air_superiority_factor = -0.40
 		air_cas_present_factor = -0.20
@@ -176,7 +171,7 @@ categories =  {
 		units = {
 			attack = -0.75
 			movement = -0.2
-			defence = -0.35
+			defence = -0.4
 		}
 		enemy_army_bonus_air_superiority_factor = -0.60
 		air_cas_present_factor = -0.30
@@ -195,7 +190,7 @@ categories =  {
 		units = {
 			attack = -0.25
 			movement = -0.10
-			defence = -0.10
+			defence = -0.15
 		}
 		enemy_army_bonus_air_superiority_factor = -0.30
 		air_cas_present_factor = -0.15
@@ -232,9 +227,9 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.4
-			#movement = -0.2
-			defence = -0.10
+			attack = -0.3
+			#movement = -0.3
+			defence = -0.1
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.25
@@ -260,7 +255,7 @@ categories =  {
 		units = {
 			attack = -0.4
 			#movement = -0.4
-			defence = 0
+			defence = -0.05
 		}
 		
 		sickness_chance = 1.0

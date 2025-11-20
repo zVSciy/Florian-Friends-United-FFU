@@ -103,10 +103,6 @@ equipments = {
  			module = mech_extra_ammo_storage
  			count < 2
  		}
-		module_count_limit = {
- 			module = mech_easy_maintenance
- 			count < 2
- 		}
 
  		upgrades = {
  			
@@ -208,14 +204,6 @@ equipments = {
 				}
 			}
 			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_radio_module
-					mech_special_module
-					mech_special_armor_module
-				}
-			}
-			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					tank_radio_module
@@ -377,16 +365,6 @@ equipments = {
 					mech_special_armor_module
 				}
 			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_radio_module
-					mech_special_module
-					mech_special_armor_module
-				}
-			}
-			
  		}
 		upgrades = {
  			
@@ -438,7 +416,7 @@ equipments = {
  		}
 		module_count_limit = {
  			module = mech_smoke_launchers
- 			count < 2 
+ 			count < 2
  		}
 		module_count_limit = {
  			module = mech_stabilizer

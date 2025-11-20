@@ -383,7 +383,7 @@ focus_tree = {
 				}
 			}
 			USA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.075 tooltip = production_speed_infrastructure_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.2 tooltip = production_speed_infrastructure_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.2 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
@@ -3407,8 +3407,8 @@ focus_tree = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.3 tooltip = global_building_slots_factor_tt }
 			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.125 tooltip = production_factory_max_efficiency_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.225 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.125 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.15 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.075 tooltip = production_factory_start_efficiency_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.3 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_dockyard_factor = 0.3 tooltip = production_speed_dockyard_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_synthetic_refinery_factor = 0.3 tooltip = production_speed_synthetic_refinery_factor_tt }

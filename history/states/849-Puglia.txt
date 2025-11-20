@@ -20,8 +20,8 @@ state = {
 			883 3
 		}
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 8
+			infrastructure = 4
+			#industrial_complex = 1
 			dockyard = 3
 			air_base = 5
 			11837 = { #Taranto

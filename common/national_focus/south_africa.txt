@@ -223,7 +223,7 @@ focus_tree = {
 				remove_idea = SAF_cheap_labor_2
 				add_idea = SAF_cheap_labor_3
 			}
-			remove_ideas = SAF_ossewabrandwag_2
+			remove_ideas = SAF_ossewabrandwag
 		}
 	}
 
@@ -370,11 +370,7 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			remove_ideas = SAF_ossewabrandwag_fascism
-			swap_ideas = {
-				remove_idea = SAF_ossewabrandwag
-				add_idea = SAF_ossewabrandwag_2
-			}
+			remove_ideas = SAF_ossewabrandwag_2
 		}
 	}
 

@@ -580,7 +580,7 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.15
+			threat > 0.20
 		}
 		
 		continue_if_invalid = yes
@@ -607,7 +607,6 @@ focus_tree = {
 			add_to_variable = { CAN_canadian_economy_foreign_subversive_activites = -0.50 tooltip = foreign_subversive_activites_tt }
 			add_to_variable = { CAN_canadian_economy_communism_drift = -0.01 tooltip = communism_drift_tt }
 			add_to_variable = { CAN_canadian_economy_fascism_drift = -0.01 tooltip = fascism_drift_tt }
-			add_to_variable = { CAN_canadian_economy_production_factory_start_efficiency_factor = 0.10 tooltip = production_factory_start_efficiency_factor_tt }
 		}
 	}
 
@@ -1949,7 +1948,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = CAN_canadian_infantry_corps
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = infantry_weapons
 				category = artillery

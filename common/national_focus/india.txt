@@ -2775,15 +2775,13 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			
-    date > 1939.1.1
-
+			has_war_with = GER
 		}
 
 		completion_reward = {
 			add_timed_idea = {
 				idea = RAJ_indian_military_build_up
-				days = 360
+				days = 180
 			}
 		}
 
@@ -2820,10 +2818,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_british_arms_investors_AF1
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2831,10 +2829,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_british_arms_investors_AF2
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2850,10 +2848,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_arms_investors_AF1
@@ -2867,10 +2865,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_arms_investors_AF2
@@ -2899,10 +2897,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_ishapore_arsenal_AF
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2918,10 +2916,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_ishapore_arsenal_AF
@@ -2934,10 +2932,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}

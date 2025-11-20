@@ -321,7 +321,6 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
-			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			# tank_nsb_med_engine_1_upgrade
@@ -335,7 +334,7 @@ equipments = {
 		breakthrough = 25
 	}
 
-	# T34 1942M
+	# T34 M1942
 	sov_medium_tank_chassis_t34_m1942 = {
 		abbreviation = "t34M1942"
 		visual_level = 1
