@@ -1,0 +1,11 @@
+is_literally_china = {
+	OR = {
+		original_tag = CHI
+    }
+}
+is_literally_china_tooltip = {
+	custom_trigger_tooltip = {
+		tooltip = is_literally_china_tt
+		is_literally_china = yes
+	}
+}
