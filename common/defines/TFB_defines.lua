@@ -1,4 +1,3 @@
-
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 120				-- Days of client lag for decrease of gamespeed
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60				-- Days of client lag for pause of gamespeed.
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.11, 0.27, 0.07, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
@@ -6,6 +5,9 @@ NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 15						-- Default days before an event times out if not scripted
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days before a mission is removed from the interface after having failed or completed
 NDefines.NGame.HANDS_OFF_START_TAG = "VEN"
+-- NDefines.NGame.OIL_RESOURCE= "oil"
+-- NDefines.NGame.ENERGY_RESOURCE = "coal"
+NDefines.NGame.NAVAL_BLOCKADE_BASE_COST = 100
 
 NDefines.NDiplomacy.WARGOAL_WORLD_TENSION_REDUCTION = -0.25			-- Reduction of pp cost for wargoal at 100% world tension scales linearly
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.00	-- was 0.04		-- Each province owned by the target country contributes this amount of volunteers to the limit.
@@ -96,6 +98,10 @@ NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  days to transf
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- 	Number of convoy a GiE will get on creation.
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 5000				-- pp cost to scorch a state
 -- NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
+-- 1.17.0 update
+NDefines.NCountry.NAVY_USE_HOME_BASE_FOR_RANGE = true
+NDefines.NCountry.CONVOY_CONTROLLED_ROUTE_COST_REDUCTION_FACTOR = 0.5	-- How much fewer convoys you need shipping through areas you control
+NDefines.NCountry.DEFAULT_COASTAL_PROTECTION_STABILITY = 0.1		-- Default stability when the coastal states are fully protected
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
 NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.10 -- base compliance grow
@@ -107,10 +113,10 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3
 
 NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 5 	-- Max number of different strategic resources an equipment can be dependent on.
 NDefines.NProduction.EFFICIENCY_LOSS_PER_UNUSED_DAY = 0.5		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
-NDefines.NProduction.BASE_FACTORY_SPEED = 3 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 1.7				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
+-- NDefines.NProduction.BASE_FACTORY_SPEED = 3 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+-- NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+-- NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 1.7				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+-- NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.50	-- How much fuel will be transferred on annexation
 NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.25			-- How many convoys will be transferred on annexation
@@ -136,6 +142,19 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150 				--(from origina
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 20 				--(from originally 5)
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10			-- (from originally 5)
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- The minimum number of factories we have to put on consumer goods, in percent. (Vanilla is 0.1)
+-- 1.17 dlc
+NDefines.NProduction.RESOURCE_TO_ENERGY_COEFFICIENT = 3 		-- How much energy per coal produces
+NDefines.NProduction.BASE_COUNTRY_ENERGY_PRODUCTION = 1.0			-- The base energy production of a country
+NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.05 -- Scales energy cost based on the total number of factories
+NDefines.NProduction.BASE_ENERGY_COST = 2						-- How much energy per factory consumes
+NDefines.NProduction.BASE_FACTORY_SPEED = 2.5					-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 1.0 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15 -- Base start efficiency for factories expressed in %.
+NDefines.NProduction.POWERED_FACTORY_SPEED = 3 					--Powered factory speed multiplier.
+NDefines.NProduction.POWERED_FACTORY_SPEED_MIL = 4			--Powered factory speed multiplier.
+NDefines.NProduction.POWERED_FACTORY_SPEED_NAV = 1.7 
+NDefines.NProduction.MILITARY_FACTORY_COHERENCY_BONUS = 250	-- Value we add to the weight of a production line already in progress, if we only have one military factory. (to reduce fluctuating AI production)	
 
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 75.0		-- Base amount of research points a country can save per slot.
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 6.0		-- Base year ahead penalty
@@ -324,6 +343,15 @@ NDefines.NMilitary.GENERATE_AI_DIV_COMMAND_HISTORY_ENTRIES = false	--Should we g
 NDefines.NMilitary.FIELD_OFFICER_PROMOTION_PENALTY = 0.0		--Amount of division experience lost when promoting a commander (reduced by modifiers)
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0				-- 	cost to assign a new trait to a unit leader
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1			-- Which level a field marhal or general has to be before they can pick their preferred tactic
+-- 1.17dlc
+NDefines.NMilitary.MAX_NUM_AUTOMEDALS = 6 -- You can't get more medals from the automedal system than this.
+NDefines.NMilitary.SHORE_BOMBARDMENT_COLLATERAL_DAMAGE_MULTIPLIER = 50.0		-- Factor on shore bombardment damage purposes, for collateral damage.
+NDefines.NMilitary.SHORE_BOMBARDMENT_COLLATERAL_DAMAGE_CRIT_CHANCE_FACTOR = 0.0025	    -- Chance for crit (ie, high single building damage) to occur.
+NDefines.NMilitary.SPOTTING_QUALITY_NAVAL_RECON_DROP_HOURS = 12 	-- Each X hours the intel quality drops after unit was spotted by naval recon air mission.
+NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.005	   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1.2
+NDefines.NMilitary.FUEL_PENALTY_START_RATIO_BUFFER = 0.1				-- buffer that keeps the out-of-fuel alert open even when above the FUEL_PENALTY_START_RATIO threshold, so that it doesn't spam-ping when fluctuating
+
 
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.05
 NDefines.NAir.ACCIDENT_CHANCE_CARRIER_MULT = 2.0
