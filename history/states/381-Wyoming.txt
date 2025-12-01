@@ -4,7 +4,9 @@ state={
 	name="STATE_381"
 	manpower = 225564
 	state_category = rural
-	
+	resources={
+		coal=150
+	}
 	history={
 		owner = USA
 		1936.1.1.13 = {

@@ -5,6 +5,7 @@ state={
 	manpower = 4747700
 	resources={
 		steel=400 # was: 48
+		coal=37
 	}
 	
 	state_category = metropolis

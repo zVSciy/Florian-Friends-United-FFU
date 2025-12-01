@@ -5,6 +5,7 @@ state={
 	manpower = 1622300
 	resources={
 		steel=100 # was: 4
+		coal=50
 	}
 	
 	state_category = town

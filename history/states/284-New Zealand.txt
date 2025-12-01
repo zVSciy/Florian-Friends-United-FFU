@@ -3,7 +3,9 @@ state={
 	id=284
 	name="STATE_284" # North Island
 	manpower = 899836
-	
+	resources={
+		coal=50
+	}
 	state_category = large_city
 	
 	history={

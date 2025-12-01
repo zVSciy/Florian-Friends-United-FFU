@@ -5,7 +5,9 @@ state = {
 	manpower = 2812000
 	
 	state_category = rural
-
+	resources={
+		coal=175
+	}
 	history = {
 
 		owner = JAP

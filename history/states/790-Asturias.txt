@@ -1,7 +1,9 @@
 state={
 	id=790
 	name="STATE_790"
-
+	resources={
+		coal=125
+	}
 	history={
 		set_state_flag = ita_dday
 		owner = SPR

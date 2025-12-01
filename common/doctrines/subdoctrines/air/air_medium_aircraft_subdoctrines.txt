@@ -8,7 +8,7 @@ air_subdoctrine_bomber_interception = {
     xp_type = air
 
     available = {
-        always = yes
+        has_doctrine = new_operational_integrity
     }
 
     ai_will_do = {
@@ -23,6 +23,7 @@ air_subdoctrine_bomber_interception = {
     # EFFECTS
 	category_heavy_fighter = {
 		air_attack = 0.1
+        air_agility = 0.1
 	}
 
     rewards = {
@@ -30,7 +31,7 @@ air_subdoctrine_bomber_interception = {
 			air_night_penalty = -0.15
 		}
         dispersed_fighting = {
-			air_intercept_efficiency = 0.1
+			air_superiority_efficiency = 0.1
 		}
 		heavy_fighter_veteran_initiative = {
 			 air_ace_generation_chance_factor = 0.05
@@ -42,7 +43,7 @@ air_subdoctrine_bomber_interception = {
 			}
 		}
 		bomber_interception_patrols = {
-			air_interception_detect_factor = 0.15
+			air_superiority_detect_factor = 0.15
 		}
     }
 }
@@ -57,7 +58,10 @@ air_subdoctrine_long_range_escort = {
     xp_type = air
 
     available = {
-        always = yes
+        OR = {
+            has_doctrine = new_operational_integrity
+            has_doctrine = new_strategic_destruction
+        }
     }
 
     ai_will_do = {
@@ -89,8 +93,8 @@ air_subdoctrine_long_range_escort = {
 			air_training_xp_gain_factor = 0.1
 		}
 		fighter_baiting = {
-			category_heavy_fighter = {
-				air_agility = 0.1
+			category_tac_bomber = {
+				air_range = 0.1
 			}
 		}
 		far_reaching_airforce = {
@@ -109,7 +113,10 @@ air_subdoctrine_operational_air_support = {
     xp_type = air
 
     available = {
-        always = yes
+        OR = {
+            has_doctrine = new_operational_integrity
+            has_doctrine = new_strategic_destruction
+        }
     }
 
     ai_will_do = {
@@ -202,7 +209,7 @@ air_subdoctrine_tactical_battlefield_support = {
 		}
 		ship_hunters = {
 			category_tac_bomber = {
-				naval_strike_attack = 0.1 
+				air_bombing = 0.1
 			}
 		}
 		dedicated_record_keeping = {
@@ -224,7 +231,10 @@ air_subdoctrine_theater_interdiction = {
     xp_type = air
 
     available = {
-        always = yes
+        OR = {
+            has_doctrine = new_battlefield_support
+            has_doctrine = new_strategic_destruction
+        }
     }
 
     ai_will_do = {
@@ -256,7 +266,7 @@ air_subdoctrine_theater_interdiction = {
 		precision_bombing = {
 			category_tac_bomber = {
 				air_bombing = 0.05
-				air_agility = 0.05
+				air_agility = 0.15
 			}
 		}
 		port_raids = {

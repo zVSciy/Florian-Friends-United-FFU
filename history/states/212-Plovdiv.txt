@@ -5,7 +5,9 @@ state={
 	manpower = 1814936
 	
 	state_category = city
-
+	resources={
+		coal=37
+	}
 	history={
 		owner = BUL
 		victory_points = { #Plovdiv

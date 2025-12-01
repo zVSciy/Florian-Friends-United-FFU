@@ -2,6 +2,9 @@ state={
 	id=816
 	name="STATE_816"
 	state_category = town
+	resources={
+		coal=2112
+	}
 	history={
 		owner = USA
 		1936.1.1.13 = {

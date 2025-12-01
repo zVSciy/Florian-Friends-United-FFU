@@ -2,7 +2,9 @@
 state={
 	id=285
 	name="STATE_285"
-
+	resources={
+		coal=350
+	}
 	history={
 		owner = AST
 		set_state_flag = PACIFIC_COMMONWEALTH_controls

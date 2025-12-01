@@ -1,6 +1,9 @@
 state={
 	id=35
 	name="STATE_35"
+	resources={
+		coal=237
+	}
 
 	history={
 		set_state_flag = ita_dday

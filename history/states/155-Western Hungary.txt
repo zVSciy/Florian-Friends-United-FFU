@@ -8,6 +8,7 @@ state={
 	resources={
 		oil = 100 # was: 1
 		#aluminium=60 # moved from Northern Hungary
+		coal=62
 	}
 	history={
 		owner = HUN

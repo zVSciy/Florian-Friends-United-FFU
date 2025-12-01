@@ -1,4 +1,4 @@
-version="1.16.10"
+version="1.17.*"
 tags={
 	"Balance"
 	"Events"
@@ -20,5 +20,5 @@ replace_path="gfx/interface/equipmentdesigner/tanks/designer"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="map/strategicregions"
-supported_version="1.16.10"
+supported_version="1.17.*"
 remote_file_id="3197260989"

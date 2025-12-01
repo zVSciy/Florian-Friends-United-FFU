@@ -2,7 +2,9 @@ state={
 	id=146
 	name="STATE_146" #KARJALA
 	manpower=604427
-
+	resources={
+		coal=200
+	}
 	state_category = town
 
 	history={

@@ -8,7 +8,7 @@ air_subdoctrine_fighter_homeland_defense = {
     xp_type = air
 
     available = {
-        always = yes
+        has_doctrine = new_operational_integrity
     }
 
     ai_will_do = {
@@ -28,13 +28,13 @@ air_subdoctrine_fighter_homeland_defense = {
 			air_intercept_efficiency = 0.15
 		}
 		air_defense_grids = {
-			air_interception_detect_factor = 0.2
+			air_superiority_detect_factor = 0.1
 		}
 		air_wing_knowledge_transfer = {
 			air_untrained_pilots_penalty_factor = -0.15
 		}
         experienced_pilots_protection = {
-			air_ace_generation_chance_factor = 0.1
+			air_accidents_factor = -0.05
 		}
 		mass_sorties = {
 			air_mission_efficiency = 0.05
@@ -52,7 +52,10 @@ air_subdoctrine_escort_fighter = {
     xp_type = air
 
     available = {
-        always = yes
+        OR = {
+            has_doctrine = new_strategic_destruction
+            has_doctrine = new_battlefield_support
+        }
     }
 
     ai_will_do = {
@@ -75,20 +78,20 @@ air_subdoctrine_escort_fighter = {
 
     rewards = {
 		escort_procedures = {
-			air_escort_efficiency = 0.1
+			air_escort_efficiency = 0.2
 		}
 		extended_search_patterns = {
 			air_superiority_efficiency = 0.1
 		}
 		improved_maintenance_protocols = {
-			air_accidents_factor = -0.2
+			air_accidents_factor = -0.1
 		}
         increased_sky_presence = {
 			air_power_projection_factor = 0.1
 		}
 		constant_air_offensive = {
-			air_weather_penalty = -0.1
-			air_night_penalty = -0.1
+			air_weather_penalty = -0.15
+			air_night_penalty = -0.15
 		}
     }
 }
@@ -107,15 +110,13 @@ track = fighter_aircraft
     xp_type = air
 
     available = {
-        always = yes
+        has_doctrine = new_battlefield_support
     }
 
     ai_will_do = { base = 0 }
 
     # EFFECTS
-    category_fighter = {
-    	air_ground_attack = 0.1
-    }
+    army_bonus_air_superiority_factor = 0.15
 
     rewards = {
 		target_prioritization = {
@@ -125,10 +126,10 @@ track = fighter_aircraft
 			air_cas_present_factor = 0.1
 		}
 		versatile_experience = {
-			air_mission_xp_gain_factor = 0.1
+			air_escort_efficiency = 0.2
 		}
         multi_mission_assignment = {
-			air_mission_efficiency = 0.05
+			air_mission_efficiency = 0.1
 		}
 		night_target_search = {
 			air_night_penalty = -0.1
@@ -146,7 +147,10 @@ track = fighter_aircraft
     xp_type = air
 
     available = {
-        always = yes
+        OR = {
+            has_doctrine = new_operational_integrity
+            has_doctrine = new_strategic_destruction
+        }
     }
 
     ai_will_do = {
@@ -166,14 +170,11 @@ track = fighter_aircraft
     air_superiority_efficiency = 0.1
 
     rewards = {
-		loose_formation = {
-			category_fighter = {
-				air_agility = 0.05
-				air_attack = 0.05
-			}
+		aces_of_the_sky = {
+			ace_effectiveness_factor = 0.15
 		}
 		high_altitude_approach = {
-			air_superiority_detect_factor = 0.15
+			air_superiority_detect_factor = 0.05
 		}
 		combat_discipline = {
 			air_wing_xp_loss_when_killed_factor = -0.1
@@ -183,8 +184,11 @@ track = fighter_aircraft
 				maximum_speed = 0.05
 			}
 		}
-		aces_of_the_sky = {
-			ace_effectiveness_factor = 0.15
+        loose_formation = {
+			category_fighter = {
+				air_agility = 0.05
+				air_attack = 0.05
+			}
 		}
     }	
 }
@@ -199,7 +203,10 @@ track = fighter_aircraft
     xp_type = air
 
     available = {
-        always = yes
+        OR = {
+            has_doctrine = new_operational_integrity
+            has_doctrine = new_strategic_destruction
+        }
     }
 
     ai_will_do = {
@@ -217,12 +224,11 @@ track = fighter_aircraft
     }
 
     # EFFECTS
-    air_ace_generation_chance_factor = 0.1
+    air_ace_generation_chance_factor = 0.15
 
     rewards = {
 		pilot_quality_focus = {
-			air_mission_xp_gain_factor = 0.1
-			air_training_xp_gain_factor = 0.1
+			ace_effectiveness_factor = 0.05
 		}
 		force_rotation = {
 			air_interception_detect_factor = 0.15
@@ -237,7 +243,7 @@ track = fighter_aircraft
 		}
 		improved_support_integration = {
 			air_accidents_factor = -0.1
-			air_manpower_requirement_factor = -0.1
+			ace_effectiveness_factor = 0.15
 		}
     }	
 }
@@ -252,7 +258,10 @@ track = fighter_aircraft
     xp_type = air
 
     available = {
-        always = yes
+        OR = {
+            has_doctrine = new_strategic_destruction
+            has_doctrine = new_battlefield_support
+        }
     }
 
     ai_will_do = {
@@ -273,11 +282,11 @@ track = fighter_aircraft
 
     rewards = {
 		decoy_tactic = {
-			air_superiority_detect_factor = 0.1
+			air_superiority_detect_factor = 0.15
 			air_superiority_efficiency = 0.05
 		}
 		three_plane_formation = {
-			category_carrier_fighter = {
+			category_fighter = {
 				air_agility = 0.1
 				maximum_speed = 0.1
 			}

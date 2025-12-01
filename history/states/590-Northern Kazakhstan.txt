@@ -3,7 +3,9 @@ state={
 	id=590
 	name="STATE_590" # Akmolinsk
 	manpower = 980533
-	
+	resources={
+		coal=87
+	}
 	state_category = pastoral
 
 	history={

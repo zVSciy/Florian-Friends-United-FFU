@@ -3,7 +3,9 @@ state={
 	id=610
 	name="STATE_610" # Jehol
 	manpower = 1975377
-	
+	resources={
+		coal=12
+	}
 	state_category = city
 
 	history={

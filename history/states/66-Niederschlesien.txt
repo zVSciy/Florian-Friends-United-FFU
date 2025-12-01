@@ -6,6 +6,7 @@ state={
 	resources={
 		steel=500 # was: 110
 		aluminium=100
+		coal=237
 	}
 	
 	state_category = large_city

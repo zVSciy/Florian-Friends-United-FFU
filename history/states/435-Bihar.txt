@@ -1,7 +1,9 @@
 state={
 	id=435
 	name="STATE_435"
-
+	resources={
+		coal=300
+	}
 	history={
 		owner = RAJ      
 		1936.1.1.13 = {

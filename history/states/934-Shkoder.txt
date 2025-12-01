@@ -6,7 +6,9 @@ state = {
 	# 	aluminium = 1.000
     #     chromium = 1.000
 	# }
-
+	resources={
+		coal=12
+	}
 	history = {
 		owner = ALB
         victory_points = {

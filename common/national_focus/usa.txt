@@ -3814,6 +3814,8 @@ focus_tree = {
 				set_country_flag = USA_bop_center
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange }
+			set_country_flag = USA_unlock_contain_japanese_goal
+			add_faction_goal = faction_goal_contain_japanese_expansion_asia
 		}
 	}
 	
