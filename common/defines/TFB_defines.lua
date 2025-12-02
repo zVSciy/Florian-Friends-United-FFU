@@ -351,6 +351,8 @@ NDefines.NMilitary.SPOTTING_QUALITY_NAVAL_RECON_DROP_HOURS = 12 	-- Each X hours
 NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.005	   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
 NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1.2
 NDefines.NMilitary.FUEL_PENALTY_START_RATIO_BUFFER = 0.1				-- buffer that keeps the out-of-fuel alert open even when above the FUEL_PENALTY_START_RATIO threshold, so that it doesn't spam-ping when fluctuating
+NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1.0	-- If using the 'immobile' cohesion setting, factor ALL planning speed growth by this
+NDefines.NMilitary.PLAN_COHESION_WEIGHTS = { 1.0, 40.0, 80.0, 100.0 } 	-- for each cohesion setting, how keen on relocating from distance should we be? (default 1.0), higher weight = shorter max distance. The last entry is special-cased, the value should have no effect and units will just not move anywhere, ever.
 
 
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.05
@@ -562,9 +564,33 @@ NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS 					= 0.25  -- this
 NDefines.NNavy.WAR_SCORE_GAIN_FOR_SUNK_SHIP_MANPOWER_FACTOR = 0.02			-- war score gained for every manpower killed when sinking a ship
 NDefines.NNavy.WAR_SCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.04		-- war score gained for every IC of the sunk ship
 NDefines.NNavy.WAR_SCORE_GAIN_FOR_SUNK_CONVOY = 10.0							-- war score gained for every sunk convoy
-NDefines.NNavy.WAR_SCORE_DECAY_FOR_BUILT_CONVOY = 5.0 						-- war score deducted when convoy-raided enemy produces one new convoy
 
 
+-- ncns
+NDefines.NNavy.CARRIER_OFFENSIVE_STANCE_SORTIE_RATIO = {0.0, 0.25, 0.50, 0.75, 1.0}	-- The defensive stance sortie is 1.0 - value in index so their sum equals 1
+NDefines.NNavy.CARRIER_OFFENSIVE_STANCE_DEFAULT_INDEX = 2						-- The default offensive sortie index in CARRIER_OFFENSIVE_STANCE_SORTIE_RATIO
+NDefines.NNavy.SELECTED_SORTIE_INITIAL_TIME = 24								-- Amount of hours from combat start where the selected sortie will override the default one
+	
+NDefines.NNavy.SHIP_SUPPORT_NEED_FACTOR = 0.1									-- The support need for a ship. This factor is multiplied with the ships dominance value
+NDefines.NNavy.MAX_ADMIRAL_HEADQUARTER_ASSIGNMENTS = 3						-- Max amount of admirals that can be assigned to naval headquarters
+NDefines.NNavy.NAVAL_HEADQUARTER_ADJACENCY = 2								-- How many extra steps of strategic regions from the first the naval headquarter provides benefits. 
+
+-- Having Naval Dominance will provide the following benefits:
+NDefines.NNavy.CONVOY_BLOCKED_BY_ENEMY_CONTROLLED_REGION = true				-- If an enemy control a sea region, consider that region as blocked
+NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_FRACTION = 0.0006					-- How much dominance points goes into one percent of the multiplier from strike force missions. ( e.g. a taskforce of 1000 dominance generates a 60% multiplier ) 
+NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_MULTIREGION_DECAY = 0.05			-- Percentage that the strike force mission's naval dominance multiplier decreases with for each additional assigned region
+NDefines.NNavy.NAVAL_DOMINANCE_SPOTTING_BONUS = 0.05
+NDefines.NNavy.NAVAL_DOMINANCE_ORG_RECOVERY = 0.1
+NDefines.NNavy.NAVAL_DOMINANCE_SHIP_RECOVERY_CHANCE = 0.1
+NDefines.NNavy.NAVAL_DOMINANCE_MINES_PLANTING_BONUS = 0.2						-- Naval planting bonus when having naval dominance in the region
+NDefines.NNavy.NAVAL_DOMINANCE_MINES_SWEEPING_BONUS = 0.2						-- Naval sweeping bonus when having naval dominance in the region
+NDefines.NNavy.NAVAL_DOMINANCE_CHANCE_OF_ACCIDENT_REDUCTION = 0.25			-- The chance to encounter an accident during naval training would be reduced when having naval dominance in the region
+
+NDefines.NNavy.NAVAL_HOMEBASE_CALCULATION_DISTANCE_CUTOFF = 1000				-- Tuning parameter for homebase calculation. Distance to normalize against. Everything above said value will be treated as score = 0.
+NDefines.NNavy.NAVAL_HOMEBASE_BUILDING_SCORE_FACTOR = 0.02				-- Tuning parameter for homebase calculation. Multiplier for how much the level of the naval base impacts its total score.
+NDefines.NNavy.NAVAL_HOMEBASE_OWNERSHIP_BONUS = 0.04							-- Tuning parameter for homebase calculation. Adds to total score based on if the base is owned by the country doing the calculation.
+
+NDefines.NNavy.NAVAL_HEADQUARTERS_EXPERIENCE_SCALE = 0.15					-- Characters assigned to a naval HQ will gain 15% of all experience from taskforces in their regions
 
 
 NDefines.NNavy.NEW_NAVY_LEADER_LEVEL_CHANCES = {									-- chances for new navy leaders to start at a given level
@@ -661,19 +687,32 @@ NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.3							-- factor of planes th
 NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.15   -- base % of convoys that get intercepted
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.1				-- basic speed control
 NDefines.NNavy.NAVAL_RANGE_TO_INGAME_DISTANCE = 0.12							-- Scale the ship stats "naval_range" to the ingame distance
-NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 12								-- base hours needed to prepare an invasion
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1								-- base hours needed to prepare an invasion
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1									-- base cap of naval invasions can be planned at the same time
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4							-- base cap of divisions that can be assigned in a naval invasion
 NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 2							-- after that many years, we clear the naval combat results, so they don't get stuck forever in the memory.
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 12					-- after this many months remove the history of lost convoys to not bloat savegames and memory since there is no way to see them anyway
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12  -- base speed of units on water being transported
 NDefines.NNavy.NAVAL_TRANSFER_BASE_NAVAL_DIST_ADD = 100						-- Extra cost for naval movement ( compared to land movement ) when deciding what ports to use for a naval transfer
 NDefines.NNavy.NAVAL_TRANSFER_BASE_NAVAL_DIST_MULT = 20						-- Multiplier for the cost of naval movement ( compared to land movement ) when deciding what ports to use for naval transfer
-NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.5								-- required naval supremacy to perform invasions on an area
-NDefines.NNavy.CARRIER_STACK_PENALTY = 4									-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
-NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.06								-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
+
+NDefines.NNavy.NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY = 80						-- How many planes flying in a naval combat before penalties are introduced
+NDefines.NNavy.NAVAL_COMBAT_PLANE_STACKING_PENALTY_EFFECT = 0.005					-- Each plane above the optimal amount decreases the amount of airplanes being able to takeoff by such %. Subject to diminishing returns
+	
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CAPITAL = 10						-- For dynamic plane efficacy, silhouette value (nominally in planes, but very abstract)
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SCREEN = 5						-- As Above. This one would be nice to split by type, but that's problematic.
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CARRIER = 16						-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUPPORT = 3						-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CONVOY = 4						-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUBMARINE = 7						-- As Above
+	
+NDefines.NNavy.SCREEN_CAP_REDUCTION_FACTOR = 0.02							-- Reduces screen silhouette weight if there are caps present, screenval * 1/(1+caps*weight)
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.25
+
+
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.4   -- how good ships are at hitting aircraft
 NDefines.NNavy.MIN_TRACTED_ASSIST_DAMAGE_RATIO = 0.05							-- How much damage counts as assist damage
-NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.01										-- multiplies supply usage
+NDefines.NNavy.SUPPLY_NEED_FACTOR = 1										-- multiplies supply usage
 NDefines.NNavy.ENEMY_AIR_SUPERIORITY_IMPACT = -0.8  					-- effect on ship efficiency due to enemy air superiorty
 NDefines.NNavy.DECRYPTION_SPOTTING_BONUS = 0.2
 NDefines.NNavy.DISBAND_MANPOWER_LOSS = 0.0
@@ -703,6 +742,11 @@ NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MIN = 36 -- minimum cooldown time
 NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MAX = 168 -- maximum cooldown time
 NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MIN_FROM_EFFICIENCY = 15 -- clamped min value after screening efficiency has been applied
 
+NDefines.NNavy.AIR_BASE_DOMINANCE_FACTOR = 0.02 -- Percentage factor per air base level in region towards naval dominance target value
+NDefines.NNavy.RADAR_DOMINANCE_FACTOR = 0.05 -- Percentage factor per radar level in region towards naval dominance target value
+NDefines.NNavy.DOMINANCE_CONTROLLED_THRESHOLD_RATIO = 0.65 -- Percentage of needed dominance control over enemies for you and friendlies to control a strategic sea region
+
+
 NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
 1.0, -- PATROL		
@@ -716,8 +760,22 @@ NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 1.0, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
 }
 
+NDefines.NNavy.	MISSION_FUEL_COSTS_PRIO_FACTOR = {  -- Prio fuel cost ratio for each mission. Highet value means that mission is more important to perform with regards to fuel usage
+	0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
+	1.0, -- PATROL
+	1.0, -- STRIKE FORCE (does not cost fuel at base, and uses IN_COMBAT_FUEL_COST in combat. this is just for the movement in between)
+	0.6, -- CONVOY RAIDING
+	0.6, -- CONVOY ESCORT
+	0.5, -- MINES PLANTING
+	0.3, -- MINES SWEEPING
+	0.6, -- TRAIN
+	0.0, -- RESERVE_FLEET (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
+	1.0, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
+}
+
 NDefines.NNavy.HOLD_MISSION_MOVEMENT_COST = 1.0								-- ships on hold cost this much fuel while moving
 NDefines.NNavy.ON_BASE_FUEL_COST = 0.0										-- ships that waits at naval bases cost this ratio
+NDefines.NNavy.STRIKE_FORCE_ON_BASE_FUEL_COST_FACTOR = 0.1					-- fuel cost for naval strike mission in port
 NDefines.NNavy.IN_COMBAT_FUEL_COST = 0.1										-- ships in combat will get this ratio for fuel cost
 NDefines.NNavy.TRAINING_FUEL_COST_FOR_ESCORT_SHIPS = 0.0					-- ships that are on training mission but not training (ie they are at max xp and training will cancel at max xp) will consume this ratio of fuel
 
@@ -814,7 +872,7 @@ NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.1	-- org will clamped to this ratio on
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
 
 
-NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
+NDefines.NNavy.MISSION_DOMINANCE_RATIOS = { -- supremacy multipliers for different mission types
 0.0, -- HOLD
 1.0, -- PATROL		
 0.1, -- STRIKE FORCE 
@@ -827,9 +885,10 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 0.4, -- NAVAL_INVASION_SUPPORT
 }
 
-NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.2							-- supremacy of a ship is calculated using its IC, manpower and a base define
-NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.02
-NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 35.0
+NDefines.NNavy.DOMINANCE_PER_SHIP_PER_RANGE_NEUTRAL = 3000					-- ship range where there is no penalty nor bonus to naval dominance, below or above this will be scaled accordingly with penalty or bonus, min value is 0
+NDefines.NNavy.DOMINANCE_PER_SHIP_PER_SPEED_NEUTRAL = 20						-- ship speed where there is no penalty nor bonus to naval dominance, below or above this will be scaled accordingly with penalty or bonus, min value is 0
+NDefines.NNavy.DOMINANCE_PER_SHIP_PER_CARRIER_SIZE = 0.2						-- bonus to dominance based on the carrier size - e.g. regular carrier hangar has carrier_size of 2, so it would be a bonus of 2 * DOMINANCE_PER_SHIP_PER_CARRIER_SIZE, min value is 0
+NDefines.NNavy.DOMINANCE_PER_SHIP_PER_HEAVY_GUN_ATTACK = 0.01					-- bonus to dominance based on the heavy attack, min value is 0
 
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 250.0								-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.01						-- Value used to overall balance of the speed of planting naval mines
@@ -837,7 +896,6 @@ NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.01						-- Value used to over
 NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 2					-- How fast mines are decaying in peace time. Planting mines in peace time may be exploitable, so it's blocked atm. That's why after war we should decay them too.
 NDefines.NNavy.NAVAL_MINES_SWEEPERS_REDUCTION_ON_PENALTY_EFFECT = 3.3			-- How much is the task force's sweeping attribute reducing the penalty effect.
 NDefines.NNavy.NAVAL_MINES_INTEL_DIFF_FACTOR = 0.1				-- Better our decryption over enemy encryption will reduce the penalties from the enemy mines in the region. This value is a factor to be used for balancing.
-NDefines.NNavy.NAVAL_MINES_NAVAL_SUPREMACY_FACTOR = 0.75						-- Factor for max amount of mines increasing naval supremacy
 
 NDefines.NNavy.ATTRITION_WHILE_MOVING_FACTOR = 1.5						-- attrition multiplier while moving & doing missions
 NDefines.NNavy.ATTRITION_DAMAGE_ORG = 0.01 -- damage from attrition to Organisation (relative to max org)
@@ -939,6 +997,11 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS						= 12				-- the taskforces that wants to join existing combats will wait for at least this amount
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION		= 4.0				-- low org of the ships will be factored in when a taskforce wants to join combat
 
+NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.03 							-- Daily dominance gain, as a fraction of target value 
+NDefines.NNavy.DOMINANCE_DAILY_LOSS_FACTOR = 0.05 							-- Daily dominance loss, as a fraction of previous target value 
+
+NDefines.NNavy.SUPPORT_SHIP_RECOVERY_BASE_STRENGTH_FACTOR = 0.02				-- Percentage of strength of max strength a recovered ship gets on recovery.
+
 NDefines.NNavy.BASE_POSITIONING												= 0.8	-- base value for positioning
 
 NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.02	-- multiples the surface detection difference between two sides. the side with higher detection will get a bonus of this value
@@ -1008,8 +1071,8 @@ NDefines.NNavy.CONVOY_RAID_MAX_REGION_TO_TASKFORCE_RATIO						= 1.5		-- each tas
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO							= 12.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 NDefines.NNavy.CONVOY_DEFENSE_MAX_REGION_TO_TASKFORCE_RATIO					= 8.0		-- each taskforce in convoy defense mission can at most cover this many regions without losing efficiency
 
-NDefines.NNavy.MINE_SWEEPING_SUPREMACY_EFFICIENCY_MAX_REGION_TO_TASKFORCE_RATIO = 1.0		-- mine missions will get lower supremacies if they are assigned more regions than this
-NDefines.NNavy.MINE_PLANTING_SUPREMACY_EFFICIENCY_MAX_REGION_TO_TASKFORCE_RATIO = 1.0		-- mine missions will get lower supremacies if they are assigned more regions than this
+NDefines.NNavy.MINE_SWEEPING_REGION_TO_TASKFORCE_RATIO = 1.0		-- mine missions will get lower supremacies if they are assigned more regions than this
+NDefines.NNavy.MINE_PLANTING_REGION_TO_TASKFORCE_RATIO = 1.0		-- mine missions will get lower supremacies if they are assigned more regions than this
 
 NDefines.NNavy.EFFICIENCY_TO_JOIN_COMBAT_RATIO_PENALTY							= 1.0	-- at lower efficiencies less ships will be able to join combat
 NDefines.NNavy.EFFICIENCY_TO_TIME_TO_JOIN_COMBAT_PENALTY 						= 100.0	-- at lower efficiencies less time to join combat hour will be increased
@@ -1022,8 +1085,11 @@ NDefines.NNavy.COORDINATION_EFFECT_ON_MINE_LAYING_SPEED 						= 0.5  -- affect o
 NDefines.NNavy.COORDINATION_EFFECT_ON_MINE_SWEEPING_SPEED 						= 0.5  -- affect of coordination modifier in mine sweeping speed
 NDefines.NNavy.COORDINATION_EFFECT_ON_PATROL_SPOTTING 							= 1.0		-- affect of coordination modifier in spotting speed
 
-NDefines.NNavy.COORDINATION_EFFECT_ON_MINE_SWEEPING_SUPREMACY_EFFICIENCY		= 1.0 -- mine missions supremacy can be buffed by coordination
-NDefines.NNavy.COORDINATION_EFFECT_ON_MINE_PLANTING_SUPREMACY_EFFICIENCY		= 1.0  -- mine missions supremacy can be buffed by coordination
+NDefines.NNavy.COORDINATION_EFFECT_ON_MINE_SWEEPING = 1.0      -- modifies coordination by multiplication for mine sweeping
+NDefines.NNavy.COORDINATION_EFFECT_ON_MINE_PLANTING = 1.0      -- modifies coordination by multiplication for mine laying
+
+NDefines.NNavy.DOMINANCE_EFFECT_ON_POSITIONING_FOR_CONVOY_ESCORT_MAX_RATIO		= 2.0		-- The ratio which gives the max possible gain of positioning bonus from dominance in region of combat (e.g. to get max bonus you need 'dominance threshold * 2.0' dominance in the region)
+NDefines.NNavy.DOMINANCE_EFFECT_ON_POSITIONING_FOR_CONVOY_ESCORT				= 0.2		-- Increase of positioning when at max ratio (full control and dominance is >=DOMINANCE_EFFECT_ON_POSITIONING_FOR_CONVOY_ESCORT_MAX_RATIO times the competing dominance)
 
 NDefines.NNavy.MISSION_EFFICIENCY_POW_FACTOR									= 1.7		-- mission efficiencies will be powered up by this to further penalize low efficiencies
 
@@ -1085,12 +1151,24 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_PLANE_COUNT_TO_SUB_DETECTION = 1.0					-- Factor
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_DECAY_RATE = 1.0					-- Factor to decay the value of sub detection contributed by planes on the last hour. Note: the maximum value between the decayed value and the newly computed one is taken into account. A decay rate of 1 means that nothing is carried over, the previous value is zerod out. A decay rate of 0 means that the previous value is carried over as is.
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1					-- A global factor that applies after all others, right before the sub detection contributed by plane is added to the global sub detection of a combatant
 
-NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10 -- scoring for target picking for planes inside naval combat, one define per ship typ
-NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
-NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 200
-NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_BASE = 30                             -- base scoring for target picking for planes inside naval combat based on screening efficency, one define per ship typ
+NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_BASE = 20
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_BASE = 30
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_BASE = 50
+NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_BASE = 1.0
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCALE = 10                             -- scaled scoring for target picking for planes inside naval combat, max value when zero screening efficency, one define per ship typ
+NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_SCALE = 10
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCALE = 50
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCALE = 200
+NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCALE = 1.0
+
 NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 3 -- how much score factor from low health (scales between 0->this number)
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 40   -- how much score factor from low AA guns (scales between 0->this number)
+NDefines.NNavy.NAVAL_BASE_DOMINANCE_FACTOR = 0.02									-- base naval dominance buff based on naval bases in the region
+
+NDefines.NNavy.NAVAL_HEADQUARTERS_FIRST_ADJACENT_FACTOR = 0.4						-- naval dominance from naval headquarters is multiplied by this value for the first adjacent region
+NDefines.NNavy.NAVAL_HEADQUARTERS_SECOND_ADJACENT_FACTOR = 0.2					-- naval dominance from naval headquarters is multiplied by this value for the second adjacent region
+
 
 
 NDefines.NRailwayGun.ANNEX_RATIO = 1				-- How many railway guns will be transferred on annexation
@@ -1147,6 +1225,7 @@ NDefines.NAI.DIPLOMACY_REJECTED_WAIT_MONTHS_BASE = 24                --up from 4
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 21				-- This much progress can be saved while not having a focus selected
 
+NDefines.NOperatives.BECOME_SPYMASTER_FI_COST = 2
 NDefines.NOperatives.INTEL_NETWORK_MAX_INTELLIGENCE_AGENCY_DEFENSE_DETECTION_SCALE_FACTOR = 1.0	-- clamp the value from the multiplication of the above factor
 NDefines.NOperatives.OPERATIVE_BASE_CONTROL_TRADE_DRIFT = 0.0				-- The base daily drift in trade influence caused by an operative
 NDefines.NOperatives.CONTROL_TRADE_STACKING_FACTOR = 0.0					-- Multiplied to the drift of each operative after the first one
@@ -1167,11 +1246,18 @@ NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
 	1.0,  	1.0, --0.25,  	10.0, -- 0.25 operative for [10, 50)
 	1.0, 	50.0, --0.5, 	50.0, -- 0.5 operative for >= 50
 }
+
+NDefines.NIntel.INTEL_TO_SHOW_GRAND_DOCTRINE = { 0.4, 0.4, 0.4 } -- minimum value to show grand doctrine { army, navy, air }
+NDefines.NIntel.INTEL_TO_SHOW_SUBDOCTRINES = { 0.7, 0.7, 0.7 } -- minimum value to show subdoctrines { army, navy, air }
+NDefines.NIntel.INTEL_TO_SHOW_MASTERY = { 0.9, 0.9, 0.9 } -- minimum value to show mastery levels { army, navy, air }
+
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.5  -- min required intel to show current focus progress
 NDefines.NIntel.ARMY_ARMY_COUNT_RANGE_INTEL_MIN = 0.1
-NDefines.NIntel.NAVAL_SUPREMACY_INTEL_LOW = 0.3								-- we need more intel than this to get any supremacy
+NDefines.NIntel.NAVAL_DOMINANCE_INTEL_LOW = 0.4								-- we need more intel than this to get any dominance
+NDefines.NIntel.NAVAL_DOMINANCE_INTEL_LOW_DOMINANCE_PENALTY_START = 0.1		-- dominance is reduced to NAVAL_DOMINANCE_INTEL_LOW_DOMINANCE_MIN_PENALTY at or below this intel
+NDefines.NIntel.NAVAL_DOMINANCE_INTEL_LOW_DOMINANCE_MIN_PENALTY = 0.5 -- you get this much dominance at NAVAL_DOMINANCE_INTEL_LOW_DOMINANCE_PENALTY_START and scales up to 1 at NAVAL_DOMINANCE_INTEL_LOW
 NDefines.NIntel.NAVY_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_MIN = 0.1
 
 NDefines.NIntel.STATIC_INTEL_SOURCE_INTEL_NETWORK_MAXIMUMS = { 30.0, 30.0, 30.0, 30.0 } 	-- civ army navy air
@@ -1319,4 +1405,134 @@ NDefines.NProject.RECRUIT_SCIENTIST_COST = {    -- Amount of pp to hire a scient
 20,            -- pp cost if 1 available scientist
 25,            -- pp cost if 2 available scientist
 30,            -- pp cost if more than 2 available scientist
+}
+NDefines.NProject.AMOUNT_OF_SUPPORTIVE_SCIENTISTS = 3			   -- The amount of supportive scientists a facility can have
+NDefines.NProject.SUPPORTIVE_SCIENTISTS_FRACTION = 0.25			   -- how effective supportive scientists are compared to how strong they would be on default
+NDefines.NProject.SUPPORTIVE_SCIENITST_PROGRESS_BONUS = 0.1		   -- How much of the progress will be given to the additional scientist countries project. percentage of how much the current project got from its iteration
+NDefines.NProject.SUPPORTIVE_SCIENTISTS_SHARING_BONUS = 0.05		   -- Research sharing % per supportive scientist. Global per faction.
+
+NDefines.NFactions.FACTION_INITIATIVE_CHANGE_RULE_COST = 1			-- Cost of changing a faction rule (FI points)
+NDefines.NFactions.FACTION_DOCTRINE_SHARING_UNLOCK_COST = 1               -- Cost of unlocking doctrine sharing for one folder
+NDefines.NFactions.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 10        -- When doctrine sharing is enabled, this is the base amount of mastery gained monthly
+NDefines.NFactions.DOCTRINE_SHARING_MONTHLY_MASTERY_GAIN_PER_COMMANDER = 2 -- When doctrine sharing is enabled, each theater commander increases the montly mastery gain by this much
+
+NDefines.NFactions.AI_FACTION_POWER_PROJECTION_TRESHOLD = 1000			-- AI score is negative if faction's Power Projection value is below the treshold
+NDefines.NFactions.AI_FACTION_POWER_PROJECTION_VALUE = 0.01				-- AI score per Power Projection point
+NDefines.NFactions.AI_MIN_POWER_PROJECTION_SCORE = -100					-- Min AI score for Power Projection
+NDefines.NFactions.AI_MAX_POWER_PROJECTION_SCORE = 100				-- Max AI score for Power Projection
+NDefines.NFactions.FACTION_INFLUENCE_LEND_LEASE_FACTOR=0.01				-- how much the country's contribution in the faction affects its influence
+NDefines.NFactions.FACTION_INFLUENCE_WAR_SCORE_FACTOR=0.1					-- how much the country's war score affects its influence
+NDefines.NFactions.FACTION_INFLUENCE_EFFECTS_FACTOR=1					-- how much the effects affects its influence
+NDefines.NFactions.FACTION_INFLUENCE_INDUSTRIAL_CAPACITY_FACTOR = 5			--how much the country's industry affects its influence
+NDefines.NFactions.FACTION_INFLUENCE_GARRISON_SUPPORT_PROVIDER_FACTOR = 0.001  	--how much the country's provided garrison support affects its influence
+NDefines.NFactions.FACTION_INFLUENCE_GARRISON_SUPPORT_RECIEVER_FACTOR = -0.001 	--how much the country's received garrison support affects its influence
+NDefines.NFactions.FACTION_INFLUENCE_EXPEDITIONARY_FORCE_PROVIDER_FACTOR = 0.01  	--how much the country's provided expeditionary forces affects its influence
+NDefines.NFactions.FACTION_CONTRIBUTION_SETTING_INCREASE = 0.01			--How big the steps are for increasing/decreasing contribution settings
+NDefines.NFactions.FACTION_CONTRIBUTION_DEBT_LIMIT = 250							--How much you are allowed to be in debt from spending contribution
+NDefines.NFactions.FACTION_INFLUENCE_EXPEDITIONARY_FORCE_RECIEVER_FACTOR = -0.02 --how much the country's provided expeditionary forces affects its influence
+NDefines.NFactions.FACTION_MANPOWER_GIVE_CONTRIBUTION_SCALAR=0.1			-- a scalar of how much contribution you get for giving a singular recruitable population to your faction
+NDefines.NFactions.FACTION_MANPOWER_RECIEVE_CONTRIBUTION_SCALAR=0.1		-- a scalar for how much contribution it takes to get a singular recruitable population
+NDefines.NFactions.FACTION_SCIENTIST_CONTRIBUTION_VALUE = 5				--how much contribution one scientists gives to you if it is working for somebody else.
+NDefines.NFactions.ASSIGN_FACILITY_TO_FACTION_INITIATIVE_COST = 1		--The initiative cost of assigning a facility to a faction
+NDefines.NFactions.FACTION_ASSIGN_SCIENTIST_COST = 25						--how much political power it costs to assign a supportive scientist
+NDefines.NFactions.FACTION_UNLOCK_COMMANDER_COST = 1						--how much initiative it costs to create a new faction theater
+NDefines.NFactions.FACTION_REPLACE_COMMANDER_COST = 1						--how much FI it costs to replace someone else's theater commander
+NDefines.NFactions.FACTION_SUPREME_COMMANDER_EFFECTIVENESS = 0.2			--percentage value for how effective supreme commanders are compared to their regular position as FM/admiral.
+NDefines.NFactions.FACTION_THEATER_COMMANDER_COUNTRY_LIMIT_BASE = 3			--base value for how many countries a theater commander can lead
+NDefines.NFactions.FACTION_THEATER_COMMANDER_COUNTRY_LIMIT_SKILL_FACTOR = 1	--how much each skill level adds to the country limit
+NDefines.NFactions.FACTION_THEATER_COMMANDER_REGION_LIMIT_BASE = 3		-- Base value of the commander region limit
+NDefines.NFactions.FACTION_THEATER_COMMANDER_REGION_LIMIT_SKILL_FACTOR = 1	-- An increase to the region limit per commander skill level
+NDefines.NFactions.FACTION_THEATER_COMMANDER_LAND_SUPPLY_USAGE_MODIFIER_BASE = 0				-- Base value (percentage, negative = good)
+NDefines.NFactions.FACTION_THEATER_COMMANDER_LAND_SUPPLY_USAGE_MODIFIER_SKILL_FACTOR = -0.01	-- Value per skill level (percentage, negative = good)
+NDefines.NFactions.FACTION_THEATER_COMMANDER_NAVY_SUPPLY_USAGE_MODIFIER_BASE = 0				-- Base value (percentage, negative = good)
+NDefines.NFactions.FACTION_THEATER_COMMANDER_NAVY_SUPPLY_USAGE_MODIFIER_SKILL_FACTOR = -0.01	-- Value per skill level (percentage, negative = good)
+NDefines.NFactions.FACTION_THEATER_COMMANDER_SECONDARY_BONUS = 0.5						-- A value that scales the supply usage modifiers if a Land commander is giving the supply bonus to Navy and vice versa
+NDefines.NFactions.THEATER_COMMANDER_LAND_EXPERIENCE_SCALE = 0.1									-- How much experience the theater commander will gain from land combats (FM)
+NDefines.NFactions.THEATER_COMMANDER_NAVY_EXPERIENCE_SCALE = 0.1									-- How much experience the theater commander will gain from naval combats (Admiral)
+NDefines.NFactions.BECOME_FACTION_LEADER_INFLUENCE_THRESHOLD = 0.4			--The min influence percentage for a country to be able to take over leadership in the faction
+NDefines.NFactions.MAX_PROJECT_COUNT=3									--The maximum number of projects a faction can have
+NDefines.NFactions.AI_THEATER_CREATION_PENALTY = 2.5 -- Penalty defines how much each theater reduces the chance linearly. (The higher, the worse the penalty is)
+NDefines.NFactions.BECOME_FACTION_LEADER_INFLUENCE_WEIGHT = 1		-- Importance of faction influence when determining how close a faction member is to being able to assume leadership.
+NDefines.NFactions.FACTION_INFLUENCE_LEADER_BONUS = 200			-- How much influence we are giving a faction member for being the leader
+NDefines.NFactions.FACTION_TAKE_OVER_RELUCTANCE_VERSUS_HUMAN_INFLUENCE = 1.5	-- Multiplier penalty for how much more influence is required an AI country compared to a human To assume leadership of faction.
+
+NDefines.NFactions.AI_PICK_FROM_TOP_AMOUNT = 3						-- AI Will spend choose from the top X to decide what to spent their initiative on, based on a weighted random
+
+NDefines.NFactions.RANK_FOR_SHINY_FLAG = 1						-- Top N factions get a shiny flag on the factions screen. All that death was worth it.
+	
+NDefines.NFactions.PEACE_CONFERENCE_MINIMAL_REQUIREMENT = 0.5			-- How much more faction power projection you need to have compared to the second biggest contesting faction / country to start recieving the PEACE_CONFERENCE_MAX_DISCOUNT e.g. 0.5 means you need to be 50% bigger
+NDefines.NFactions.PEACE_CONFERENCE_MAX_DISCOUNT = 0.25				-- How much % disount you get for being the bigger faction. Scales between the PEACE_CONFERENCE_MINIMAL_REQUIREMENT and 100% where at PEACE_CONFERENCE_MINIMAL_REQUIREMENT you get 0% and at 100% you will get PEACE_CONFERENCE_MAX_DISCOUNT
+NDefines.NFactions.MAX_NUM_SHORT_TERM_GOALS = 1						-- Maximum number of short term goals a faction can have at any one time	
+NDefines.NFactions.MAX_NUM_MEDIUM_TERM_GOALS = 1						-- Maximum number of medium term goals a faction can have at any one time
+NDefines.NFactions.MAX_NUM_LONG_TERM_GOALS = 1					-- Maximum number of long term goals a faction can have at any one time
+NDefines.NFactions.REPLACING_UNFINISHED_FACTION_GOAL_COST = 1		-- The cost of replacing a goal if it is not finished
+NDefines.NFactions.PASSIVE_INITIATIVE_GENERATION = 0.01				-- How much initiative we are generating per day, scaled by manifest progress and influence%
+NDefines.NFactions.MAX_FACTION_THEATERS = 4							-- The maximum number of faction theaters that can be created
+	
+NDefines.NFactions.FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = { 
+	"head_of_intelligence",
+	"mastermind_code_cracker",
+	"expert_code_cracker",
+	"spymaster",
+	"spymaster_no_lar",
+	"commander_of_the_fetno_derash",
+	"commander_of_the_fetno_derash_no_lar",
+	"SWI_soviet_spy",
+	"SWI_intelligence_officer",
+	"special_envoy",
+	"BRA_soviet_spy",
+	"HUN_military_intelligence_officer",
+	"AUS_secretive_priest",
+	"AUS_veteran_head_of_agency",
+	"BEL_illusive_mastermind",
+	"GER_intelligence_coordinator",
+	"GER_secretary_of_state_security",
+	"GER_reich_security_main_office_director_lar",
+	"GER_reich_security_main_office_director_no_lar",
+	"head_of_the_abwehr",
+	"head_of_the_abwehr_improved",
+	"intelligence_service_deputy",
+	"PRC_multi_talented_diplomat_lar",
+	"PRC_multi_talented_diplomat_no_lar",
+	"PRC_trained_by_the_nkvd",
+	"PRC_spymaster",
+	"PHI_intelligence_bureau_chief",
+	"HUN_stalinist_agent",
+	"JAP_tokko_chief",
+	"CHI_spymaster"
+}
+NDefines.NFactions.FACTION_INTELLIGENCE_UNLOCK_COST = 1
+NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_BONUS = 0.05      -- How much intelligence sharing one 
+NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_SPY_SLOT_GAIN = 1  -- How many operative slots an advisor position unlocks, excludes the spymaster
+NDefines.NFactions.FACTION_INTELLIGENCE_HEAD_OF_CRYPTOLOGY_BONUS_COUNTRY = 0.1 -- How much bonus the Head of Operations give to the country that holds that position
+NDefines.NFactions.FACTION_INTELLIGENCE_HEAD_OF_CRYPTOLOGY_BONUS_OTHERS = 0.05 -- How much bonus the Head of Operations give to the countries that dont hold that position
+NDefines.NFactions.FACTION_INTELLIGENCE_HEAD_OF_OPERATIONS_BONUS_COUNTRY = 0.1 -- How much bonus the Head of Operations give to the country that holds that position
+NDefines.NFactions.FACTION_INTELLIGENCE_HEAD_OF_OPERATIONS_BONUS_OTHERS = 0.05 -- How much bonus the Head of Operations give to the countries that dont hold that position
+NDefines.NFactions.FACTION_INTELLIGENCE_HEAD_OF_COUNTER_INTEL_BONUS_COUNTRY = 0.1 -- How much bonus the Head of Operations give to the country that holds that position
+NDefines.NFactions.FACTION_INTELLIGENCE_HEAD_OF_COUNTER_INTEL_BONUS_OTHERS = 0.05 -- How much bonus the Head of Operations give to the countries that dont hold that position
+NDefines.NFactions.FACTION_DEFAULT_ICON = "GFX_faction_logo_generic"				-- Faction icon when creating a generic faction in game that does not have an icon setup
+NDefines.NFactions.FACTION_DEFAULT_TEMPLATE = "faction_template_generic"   -- Default template that gets used if no template template is specified when playing with NCNS
+
+NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 100.0                         -- How much mastery is required for unlocking a doctrine reward, if no override is set
+NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 100000.0           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.0                     -- How much training contributes to doctrine mastery relative to combat/missions
+NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 50.0                       -- Monthly mastery gain will not exceed this value
+NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.0                        -- If we have any mastery gain, it will be boosted to be at least this much per day (lower cap)
+NDefines.NDoctrines.MASTERY_BAR_ANIMATION_SPEED_PER_DAILY_MASTERY = 5.0 -- Multiplier of how fast the mastery bar animates based on daily mastery gain
+NDefines.NDoctrines.MASTERY_BAR_MAX_ANIMATION_SPEED = 50.0              -- Max speed of the mastery bar animation
+NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 0.5                   -- The rate at which mastery gained when a track is finished or empty is "banked"
+NDefines.NDoctrines.MASTERY_BANK_MAX = 1000.0                           -- The maximum amount of mastery that can be banked
+NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0.1         -- For each mastery track, military attaches will add this fraction of their visiting country's mastery gain (from units only) in that track
+NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0.01  -- Unit in a theater commander's theater will contribute this fraction of their mastery gain to the theater commander's country, for each skill point they have in attack + defense
+NDefines.NDoctrines.NAVAL_MISSION_MASTERY_GAIN_FACTORS = {  -- Mastery gain from naval missions is reduced, just like training
+	0.0, -- HOLD
+	0.2, -- PATROL
+	0.0, -- STRIKE FORCE
+	0.2, -- CONVOY RAIDING
+	0.2, -- CONVOY ESCORT
+	0.2, -- MINES PLANTING
+	0.2, -- MINES SWEEPING
+	0.0, -- TRAIN # NOT USED - handled by TRAINING_MASTERY_GAIN_FACTOR
+	0.0, -- RESERVE_FLEET
+	0.0, -- NAVAL_INVASION_SUPPORT
 }
