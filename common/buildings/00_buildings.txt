@@ -132,6 +132,7 @@ buildings = {
 		icon_frame = 6
 		value = 1
 		damage_factor = 0.0
+		tags = { naval_buildings_tag }
 		allied_build = yes
 		infrastructure_construction_effect = yes
 		level_cap = {
@@ -382,6 +383,52 @@ buildings = {
 			state_max = 3
 			shares_slots = yes
 			exclusive_with = mega_gun_emplacement
+		}
+	}
+
+	naval_supply_hub = {
+		show_on_map = 1
+		base_cost = 7500
+		icon_frame = 32
+		disabled_in_dmz = yes
+		naval_supply_hub = yes
+		infrastructure_construction_effect = yes
+		only_costal = yes
+		tags = { naval_buildings_tag }
+		building_prerequisite = {
+			building_dependency = {
+				building = naval_base
+				level = 8
+			}
+		}
+		level_cap = {
+			province_max = 1
+		}
+	}
+
+	naval_headquarters = {
+		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }
+		show_on_map = 1
+		base_cost = 6000
+		per_controlled_building_extra_cost = 3000
+		icon_frame = 33
+		value = 1
+		naval_headquarter = yes
+		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
+		only_costal = yes
+		tags = { naval_buildings_tag }
+		building_prerequisite = {
+			building_dependency = {
+				building = naval_base
+				level = 8
+			}
+		}
+		level_cap = {
+			province_max = 1
+		}
+		modules = {
+			naval_leader_module
 		}
 	}
 
@@ -667,6 +714,44 @@ buildings = {
 		show_modifier = yes
 		state_modifiers = {
 			
+		}
+	}
+
+	energy_infrastructure = {
+		base_cost = 7200
+		icon_frame = 34
+		value = 1
+
+		show_modifier = yes
+		affects_energy = yes
+
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+			group_by = infrastructure_keystone
+		}
+		state_modifiers = {
+			local_factory_energy_consumption_per_infrastructure = -0.075
+		}
+	}
+	
+	industrial_infrastructure = {
+		base_cost = 7200
+		icon_frame = 35
+		value = 1
+
+		show_modifier = yes
+
+
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+			group_by = infrastructure_keystone
+		}
+		state_modifiers = {
+			local_resource_gain_efficiency_per_infrastructure = 0.10
 		}
 	}
 }

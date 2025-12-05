@@ -26,6 +26,7 @@ ideas = {
 				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
 				fuel_gain_factor = -0.6
+				factory_energy_consumption = -0.3
 			}
 			
 			allowed_to_remove = {
@@ -58,6 +59,7 @@ ideas = {
 				guarantee_tension = 0.5
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.5
+				factory_energy_consumption = -0.3
 			}
 			allowed_to_remove = {
 				OR = {
@@ -82,6 +84,7 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
+				factory_energy_consumption = -0.3
 			}
 
 			on_add = {
@@ -130,6 +133,7 @@ ideas = {
 				consumer_goods_expected_value = 0.25
 				production_speed_arms_factory_factor = -0.2
 				fuel_gain_factor = -0.25
+				factory_energy_consumption = -0.15
 			}
 			
 			on_add = {
@@ -265,6 +269,7 @@ ideas = {
 				consumer_goods_expected_value = 0.15
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.2
+				factory_energy_consumption = 0.15
 			}
 
 			on_add = {
@@ -327,6 +332,7 @@ ideas = {
 				conscription = -0.02
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.3
+				factory_energy_consumption = 0.4
 			}
 
 			on_add = {
