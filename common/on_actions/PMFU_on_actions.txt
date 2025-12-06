@@ -24,9 +24,6 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			GER = { # sotm barb end
-				country_event = { id = generic.44 days = 2312 } #2312
-			}
 			GER = { # africa tank start
 				country_event = { id = generic.45 days = 1705 } #1705
 			}

@@ -1,7 +1,19 @@
 ideas = {
 
 	country = {
+		GER_plan_z_faction_idea = {
+		 	picture = generic_navy_bonus
+		 
+			allowed = {
+				always = no
+			}
 
+			removal_cost = -1
+
+			modifier = {
+			 	industrial_capacity_factory = 0.1
+			}
+		}
 		### LW 
 		GER_germaniawerft = {
 			allowed = {
