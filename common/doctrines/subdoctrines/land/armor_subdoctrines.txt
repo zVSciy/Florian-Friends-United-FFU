@@ -4,93 +4,19 @@ armored_spearhead = {
     description = SUBDOCTRINE_ARMORED_SPEARHEAD_DESC
     icon = GFX_doctrine_armored_spearhead_medium
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     available = {
-        always = yes
+        OR ={
+            has_doctrine = new_mobile_warfare
+            has_doctrine = mass_assault
+        }
     }
     visible = {
-        has_dlc = "La Resistance"
-    }
-
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 25
-            original_tag = GER
-        }
-        modifier = {
-            factor = 0.5
-            is_major = no
-        }
-    }
-
-    # EFFECTS
-    enable_tactic = tactic_breakthrough
-
-    rewards = {
-        force_concentration = {
-        #1
-            category_tanks= {
-                max_organisation = 1
-                default_morale = 0.1
-            }
-        }
-        armored_breakthrough_exploits = {
-        #2
-            category_all_armor = {
-                breakthrough = 0.1
-            }
-        }
-        local_reserves = {
-        #3
-            armored_car = {
-                default_morale = 0.1
-                max_organisation = 7
-            }
-            light_armor = {
-                default_morale = 0.1
-                max_organisation = 3
-            }
-        }
-        tactical_reconnaissance = {
-        #4
-            category_all_armor = {
-                breakthrough = 0.1
-            }
-        }
-        assault_detachments = {
-        #5
-            armored_car = {
-                default_morale = 0.2
-                max_organisation = 3
-                breakthrough = 0.2
-            }
-             category_tanks= {
-                max_organisation = 3
-                breakthrough = 0.2
-            }
-        }
-    }
-}
-
-armored_spearhead_no_lar = {
-    track = armor
-    name = SUBDOCTRINE_ARMORED_SPEARHEAD
-    description = SUBDOCTRINE_ARMORED_SPEARHEAD_DESC
-    icon = GFX_doctrine_armored_spearhead_medium
-
-    xp_cost = 100
-    xp_type = army
-
-    available = {
-        always = yes
-    }
-    visible = {
-        NOT = {
-            has_dlc = "La Resistance"
+        OR ={
+            has_doctrine = new_mobile_warfare
+            has_doctrine = mass_assault
         }
     }
 
@@ -109,59 +35,72 @@ armored_spearhead_no_lar = {
 
     # EFFECTS
     enable_tactic = tactic_breakthrough
+    category_all_armor = {
+        breakthrough = 0.05
+    }
 
     rewards = {
         force_concentration = {
         #1
             category_tanks= {
-                max_organisation = 1
+                max_organisation = 3
                 default_morale = 0.1
+                maximum_speed = 0.1
             }
         }
         armored_breakthrough_exploits = {
         #2
-            category_all_armor = {
+            category_tanks = {
                 breakthrough = 0.1
             }
         }
         local_reserves = {
         #3
-            recon = {
-                max_organisation = 10
-            }
-
-            light_armor = {
+            category_all_armor = {
                 default_morale = 0.1
-                max_organisation = 3
+                max_organisation = 2
+                max_strength = 1
             }
         }
         tactical_reconnaissance = {
         #4
             category_all_armor = {
-                breakthrough = 0.1
+                breakthrough = 0.05
+                maximum_speed = 0.05
+                max_strength = 1
             }
         }
         assault_detachments = {
         #5
-            
-             category_tanks= {
-                max_organisation = 3
-                breakthrough = 0.2
+            category_all_armor = {
+                breakthrough = 0.1
             }
         }
     }
 }
+
 armored_infantry_support = {
     track = armor
     name = SUBDOCTRINE_ARMORED_INFANTRY_SUPPORT
     description = SUBDOCTRINE_ARMORED_INFANTRY_SUPPORT_DESC
     icon = GFX_doctrine_armored_infantry_support_medium
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     available = {
-        always = yes
+        OR ={
+            has_doctrine = new_mobile_warfare
+            has_doctrine = superior_firepower
+            has_doctrine = grand_battleplan
+        }
+    }
+    visible = {
+        OR ={
+            has_doctrine = new_mobile_warfare
+            has_doctrine = superior_firepower
+            has_doctrine = grand_battleplan
+        }
     }
 
     ai_will_do = {
@@ -182,13 +121,9 @@ armored_infantry_support = {
 
     # EFFECTS
     enable_tactic = tactic_blitz
-    effect = {
-        add_tech_bonus = {
-            bonus = 1
-            uses = 1
-            category = cat_heavy_armor
-            name = SUBDOCTRINE_ARMORED_INFANTRY_SUPPORT
-        }
+    category_all_armor = {
+        soft_attack = 0.05
+        hard_attack = 0.05
     }
 
     #TODO jack look if you can make a script effect for production bonuses
@@ -196,6 +131,11 @@ armored_infantry_support = {
     rewards = {
         mobile_reserves = {
         #1
+            light_armor = {
+                breakthrough = 0.1
+                soft_attack = 0.15
+                hard_attack = 0.15
+            }
             medium_armor = {
                 breakthrough = 0.05
                 soft_attack = 0.1
@@ -207,11 +147,9 @@ armored_infantry_support = {
         }
         armored_cohorts = {
         #2
-            medium_armor = {
-                max_organisation = 7
-            }
-            heavy_armor = {
-                max_organisation = 7
+            category_tanks = {
+                max_organisation = 3
+                default_morale = 0.1
             }
         }
         maintenance_routines = {
@@ -219,24 +157,22 @@ armored_infantry_support = {
             armored_maintenance = {
                 battalion_mult = {
                     category = category_all_armor
-                    max_strength = 0.15
+                    max_strength = 1
                     add = yes
                 }
             }
         }
         fuel_rationing = {
         #4
-            heavy_armor = {
+            
+            category_all_armor = {
                 supply_consumption = -0.08
             }
         }
         mobile_armored_strongpoints = {
         #5
-            category_all_infantry = {
-                breakthrough = 0.05
-            }
-            heavy_armor = {
-                breakthrough = 0.1
+            category_tanks = {
+                hard_attack = 0.1
             }
         }
     }
@@ -248,11 +184,14 @@ streamlined_deployment = {
     description = SUBDOCTRINE_STREAMLINED_DEPLOYMENT_DESC
     icon = GFX_doctrine_streamlined_deployment_medium
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     available = {
-        always = yes
+        has_doctrine = new_mobile_warfare
+    }
+    visible = {
+        has_doctrine = new_mobile_warfare
     }
 
         ai_will_do = {
@@ -270,59 +209,47 @@ streamlined_deployment = {
     }
 
     category_all_armor = {
-        soft_attack = 0.1
-        breakthrough = 0.1
+        maximum_speed = 0.05
+        supply_consumption = -0.02
     }
 
 
     rewards = {
         flexible_armored_battalions = {
 
-            unit_medium_armor_design_cost_factor = -0.5
-            unit_light_armor_design_cost_factor  = -0.5
-            light_tank_recon = {
-                battalion_mult = {
-                    category = category_all_armor
-                    max_organisation = 2
-                    add = yes
-                }
+            category_all_armor = {
+                maximum_speed = 0.05
+                breakthrough = 0.05
             }
-
+            org_loss_when_moving = -0.1
         }
         mechanized_wave = {
-            mechanized = {
-                max_organisation = 5
-                default_morale = 0.2
-            }
+            no_supply_grace = 12
             category_all_armor = {
                 default_morale = 0.2
             }
         }
         tank_desant = {
-            armored_signal = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    maximum_speed = 0.05
-                }
+            category_all_armor = {
+                maximum_speed = 0.05
+                supply_consumption = -0.02
             }
-            light_tank_recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    maximum_speed = 0.05
-                }
-            }
+            no_supply_grace = 12
         }
         full_front_deployment = {
             category_all_armor = {
                 reliability = 0.05
                 supply_consumption = -0.02
+                maximum_speed = 0.05
             }
+            org_loss_when_moving = -0.05
 
         }
         continuous_offensives = {
             category_all_armor = {
                 default_morale = 0.2
                 max_organisation = 2
+                maximum_speed = 0.1
             }
         }
     }
@@ -336,14 +263,25 @@ mobile_defense = {
     description = SUBDOCTRINE_MOBILE_DEFENSE_DESC
     icon = GFX_doctrine_mobile_defense_medium
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     available = {
-        always = yes
+        OR ={
+            has_doctrine = superior_firepower
+            has_doctrine = grand_battleplan
+            has_doctrine = mass_assault
+        }
+    }
+    visible = {
+       OR ={
+            has_doctrine = superior_firepower
+            has_doctrine = grand_battleplan
+            has_doctrine = mass_assault
+        }
     }
 
-        ai_will_do = {
+    ai_will_do = {
 
         base = 1
         modifier = {
@@ -399,13 +337,10 @@ mobile_defense = {
 
         }
         combined_anti_armor = {
-            anti_tank = {
-                battalion_mult = {
-                    category = category_all_armor
-                    hard_attack = 0.05
-                    ap_attack = 0.05
-
-                }
+            category_all_armor = {
+                hard_attack = 0.1
+                ap_attack = 0.1
+                defense = 0.1
             }
 
         }
@@ -413,7 +348,7 @@ mobile_defense = {
             category_all_armor = {
                 hard_attack = 0.1
                 soft_attack = 0.1
-                ap_attack = 0.05
+                max_strength = 1
             }
         }    
     }
@@ -425,16 +360,21 @@ armored_cavalry = {
     description = SUBDOCTRINE_ARMORED_CAVALRY_DESC
     icon = GFX_doctrine_armored_cavalry_medium
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     available = {
-        always = yes
+        OR ={
+            has_doctrine = new_mobile_warfare
+            has_doctrine = grand_battleplan
+            has_doctrine = mass_assault
+        }
     }
     visible = {
-       AND = {
-            has_dlc = "No Compromise, No Surrender"
-            has_dlc = "La Resistance"
+       OR ={
+            has_doctrine = new_mobile_warfare
+            has_doctrine = grand_battleplan
+            has_doctrine = mass_assault
         }
     }
 
@@ -451,190 +391,46 @@ armored_cavalry = {
 
     }
 
-    armored_car = {
-        max_organisation = 5
-        defense = 0.1
-    }
-    mechanized =  {
-        max_organisation = 5
-        defense = 0.05
+    category_all_armor = {
+        breakthrough = 0.05
+        soft_attack = 0.02
+        hard_attack = 0.02
     }
     # EFFECTS
     rewards = {
         cruiser_tanks = {
-            light_armor = {
-                maximum_speed = 0.1
-                max_organisation = 5
-                breakthrough = 0.05
+            category_all_armor = {
+                maximum_speed = 0.01
+                default_morale = 0.1
             }
         }
         quick_response_force = {
-            motorized_military_police = {
-                    battalion_mult = {
-                        category = category_vehicle_infantry
-                        suppression_factor = 0.05
-                    }
-    
-            }
-            armored_car = {
-                suppression_factor = 0.2
+            category_all_armor = {
+                max_strength = 2
+                max_organisation = 5
             }
         }
         speed_as_armour = {
-            light_armor = {
-                maximum_speed = 0.05
-                breakthrough = 0.05
+            category_all_armor = {
+                soft_attack = 0.03
+                hard_attack = 0.03
             }
-            armored_car = {
-                maximum_speed = 0.05
+        }
+        fighting_reconnaissance = {
+            category_all_armor = {
+                max_strength = 1
+            }
+            org_loss_when_moving = -0.1
+        }
+        sustained_deployments = {
+            category_all_armor = {
                 breakthrough = 0.1
-                soft_attack = 0.1
-    
             }
-            mechanized = {
-                maximum_speed = 0.05
-                breakthrough = 0.05
-            }
-        }
-        fighting_reconnaissance = {
-            armored_car_recon = {
-                max_organisation = 3
-                 soft_attack = 0.05
-            }
-            light_tank_recon = {
-                max_organisation = 2
-                soft_attack = 0.05
-            }
-        }
-        sustained_deployments = {
-            armored_car = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.2
-            }
-            light_armor = {
-                max_organisation = 5
-                soft_attack = 0.05
-                hard_attack = 0.1
-                default_morale = 0.2
-            }
-            mechanized = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.2 
-            }
-            motorized = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.2 
-            }
+            army_speed_factor = 0.05
         }
     }
 }
 
-armored_cavalry_no_lar = {
-    track = armor
-    name = SUBDOCTRINE_ARMORED_CAVALRY
-    description = SUBDOCTRINE_ARMORED_CAVALRY_DESC
-    icon = GFX_doctrine_armored_cavalry_medium
-
-    xp_cost = 100
-    xp_type = army
-
-    available = {
-        always = yes
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-        NOT = {
-            has_dlc = "La Resistance"
-        }
-    }
-
-    ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 25
-            OR = {
-                original_tag = ITA 
-                original_tag = JAP 
-            }
-        }
-
-    }
-
-    motorized = {
-        max_organisation = 5
-        defense = 0.1
-    }
-    mechanized =  {
-        max_organisation = 5
-        defense = 0.05
-    }
-    # EFFECTS
-    rewards = {
-        cruiser_tanks = {
-            light_armor = {
-                maximum_speed = 0.1
-                max_organisation = 5
-                breakthrough = 0.05
-            }
-        }
-        quick_response_force = {
-            motorized_military_police = {
-                    battalion_mult = {
-                        category = category_vehicle_infantry
-                        suppression_factor = 0.05
-                    }
-    
-            }
-            
-        }
-        speed_as_armour = {
-            light_armor = {
-                maximum_speed = 0.05
-                breakthrough = 0.05
-            }
-            motorized = {
-                maximum_speed = 0.05
-    
-            }
-            mechanized = {
-                maximum_speed = 0.05
-                breakthrough = 0.05
-            }
-        }
-        fighting_reconnaissance = {
-            recon = {
-                max_organisation = 3
-                 soft_attack = 0.05
-            }
-            light_tank_recon = {
-                max_organisation = 2
-                soft_attack = 0.05
-            }
-        }
-        sustained_deployments = {
-            light_armor = {
-                max_organisation = 5
-                soft_attack = 0.05
-                hard_attack = 0.1
-                default_morale = 0.2
-            }
-            mechanized = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.2 
-            }
-            motorized = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.2 
-            }
-        }
-    }
-}
 
 tank_destroyer_force = {
      track = armor
@@ -642,11 +438,14 @@ tank_destroyer_force = {
     description = SUBDOCTRINE_TANK_DESTROYER_FORCE_DESC
     icon = GFX_doctrine_tank_destroyer_force_medium
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        has_doctrine = grand_battleplan
+    }
+    available = {
+        has_doctrine = grand_battleplan
     }
 
     ai_will_do = {
@@ -655,7 +454,7 @@ tank_destroyer_force = {
 
     }  
 
-    category_all_armor = {
+    heavy_armor = {
         defense = 0.1
         hard_attack = 0.1
         ap_attack = 0.1
@@ -664,49 +463,38 @@ tank_destroyer_force = {
     rewards = {
 
         mobile_anti_tank = {
-            mot_anti_tank_brigade = {
-                max_organisation = 10
+            heavy_armor = {
+                max_organisation = 5
                 hard_attack = 0.1
                 ap_attack = 0.1
             }
 
         }
         committed_operational_units = {
-            assault_engineer = {
-                battalion_mult = {
-                    category = category_tank_destroyers
-                    reliability = 0.02
-                    soft_attack = 0.05
-                    hard_attack = 0.1
-                }
+            heavy_armor = {
+                default_morale = 0.1
+                max_strength = 2
             }
         }
         redeployment_priority = {
-            category_tank_destroyers = {
-                supply_consumption = -0.02
-                default_morale = 0.2
+            heavy_armor = {
+                supply_consumption = -0.05
             }
         }
 
         independent_counterattacks = {
-            category_tank_destroyers = {
-                max_organisation = 6
+            heavy_armor = {
+                max_organisation = 2
                 initiative = 0.1
             }
         }
 
         selfsufficient_battalion = {
-            armored_signal = {
-                battalion_mult = {
-                    category = category_tank_destroyers
-                    hard_attack = 0.1
-                    ap_attack = 0.2
-
-                }
+            heavy_armor = {
+                reliability = 0.05
+                soft_attack = 0.05
+                hard_attack = 0.05
             }
         }
-
-
-
     }
 }

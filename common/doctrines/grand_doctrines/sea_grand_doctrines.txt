@@ -24,15 +24,29 @@ new_fleet_in_being = {
 
     # EFFECTS
 	battleship = {
-		max_organisation = 15			
+		max_organisation = 10			
+	}
+	battle_cruiser = {
+		max_organisation = 10			
+	}
+	heavy_cruiser = {
+		max_organisation = 10			
+	}
+	light_cruiser = {
+		max_organisation = 10			
+	}
+	destroyer = {
+		max_organisation = 10			
 	}
 	navy_capital_ship_defence_factor = 0.1
+    screening_efficiency = 0.2
+    screening_without_screens = 0.5
+    critical_receive_chance = 0.1
 	
     milestones = {
         {
             #Capital Ships
-			mines_planting_by_fleets_factor = 0.2
-			convoy_escort_efficiency = 0.15
+			convoy_escort_efficiency = 0.3
             effect = {
                 if = {
                     limit = {
@@ -67,7 +81,8 @@ new_fleet_in_being = {
         }
         {
             #Screens
-			navy_anti_air_attack_factor = 0.10
+			navy_anti_air_attack_factor = 0.25
+            sortie_efficiency = 0.15
 
             effect = {
                 if = {
@@ -85,8 +100,7 @@ new_fleet_in_being = {
         }
         {
             #Submarines
-	        naval_torpedo_reveal_chance_factor = -0.05
-			strike_force_movement_org_loss = -0.2
+			navy_screen_attack_factor = 0.1
 
             effect = {
                 if = {
@@ -141,6 +155,10 @@ new_convoy_raiding = {
 		max_organisation = 10
 		surface_detection = 0.10
 	}
+    battle_cruiser = {
+        max_organisation = 20
+    }
+    screening_without_screens = 0.5
 	convoy_raiding_efficiency_factor = 0.15
 	
     milestones = {
@@ -184,7 +202,7 @@ new_convoy_raiding = {
         {
             #Screens
 			strike_force_movement_org_loss = -0.15
-			naval_detection = 0.1
+			naval_detection = 0.25
 
             effect = {
                 if = {
@@ -202,8 +220,7 @@ new_convoy_raiding = {
         }
         {
             #Submarines
-	        sortie_efficiency = 0.30
-			naval_strike_targetting_factor = 0.1
+	        sortie_efficiency = 0.15
 			convoy_raiding_efficiency_factor = 0.1
 
             effect = {
@@ -251,14 +268,34 @@ new_base_strike = {
 	
 	
 	carrier = {
-		max_organisation = 20
+		max_organisation = 40
+        max_strength = 0.1
 	}
-	port_strike = 0.4
-	
+    battleship = {
+        max_organisation = 10
+    }
+    battle_cruiser = {
+        max_organisation = 10
+    }
+    heavy_cruiser = {
+        max_organisation = 10
+    }
+    light_cruiser = {
+        max_organisation = 10
+    }
+    destroyer = {
+        max_organisation = 10
+    }
+	port_strike = 0.5
+	navy_capital_ship_attack_factor = -0.05
+    navy_visibility = -0.05
+    naval_speed_factor = 0.1
+    screening_efficiency = 0.2
+
     milestones = {
         {
             #Capital Ships
-			convoy_escort_efficiency = 0.15
+			navy_anti_air_attack_factor = 0.2
 
             effect = {
                 if = {
@@ -277,7 +314,7 @@ new_base_strike = {
         {
             #Carriers
 	        naval_strike_targetting_factor = 0.1
-			naval_torpedo_reveal_chance_factor = -0.10
+            naval_speed = 0.1
 
             effect = {
                 if = {
@@ -295,8 +332,8 @@ new_base_strike = {
         }
         {
             #Screens
-			carrier_capacity_penalty_reduction = -0.1
-			naval_detection = 0.05
+			carrier_sortie_hours_delay = -1
+			naval_detection = 0.5
 
             effect = {
                 if = {
@@ -317,6 +354,127 @@ new_base_strike = {
 	        sortie_efficiency = 0.30
 			naval_strike_targetting_factor = 0.1
 			navy_carrier_air_agility_factor = 0.10
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = submarines_milestone_var
+                        }
+                    }
+                    set_variable = { submarines_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { submarines_milestone_var = 1 }
+                }
+            }
+        }
+    }
+}
+decisive_battle = {
+    folder = naval
+
+    name = GRAND_DOCTRINE_DECISIVE_BATTLE
+    description = GRAND_DOCTRINE_DECISIVE_BATTLE_DESC
+    icon = GFX_doctrine_fleet_in_being_medium
+    available = {
+        always = yes
+    }
+
+    xp_cost = 100
+    xp_type = navy
+
+    ai_will_do = {
+        base = 1
+    }
+
+    tracks = {
+        submarines
+        screens
+        carriers
+        capital_ships
+    }
+
+    # EFFECTS
+	battleship = {
+		max_organisation = 10			
+	}   
+    battlecruiser= {
+		max_organisation = 10			
+	}
+    heavy_cruiser = {
+        max_organisation = 10
+    }
+    light_cruiser = {
+        max_organisation = 10
+    }
+	naval_defense_factor = 0.1
+    positioning = 0.2
+    naval_torpedo_enemy_critical_chance_factor = 0.7
+    critical_receive_chance = -0.1
+    naval_critical_score_chance_factor = 0.1
+    screening_efficiency = -0.1
+	
+    milestones = {
+        {
+            #Capital Ships
+			naval_detection = 0.5
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = capital_ships_milestone_var
+                        }
+                    }
+                    set_variable = { capital_ships_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { capital_ships_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #Carriers
+	        naval_damage_factor = 0.05
+            
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = carriers_milestone_var
+                        }
+                    }
+                    set_variable = { carriers_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { carriers_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #Screens
+			navy_anti_air_attack_factor = 0.10
+            port_strike = 0.20
+            sortie_efficiency = 0.30
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = screens_milestone_var
+                        }
+                    }
+                    set_variable = { screens_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { screens_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #Submarines
+			strike_force_movement_org_loss = -1
 
             effect = {
                 if = {

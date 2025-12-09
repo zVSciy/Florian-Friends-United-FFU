@@ -8,7 +8,7 @@ new_mobile_warfare = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     ai_will_do = {
@@ -38,6 +38,7 @@ new_mobile_warfare = {
             #Infantry
 	        org_loss_when_moving = -0.15
             land_reinforce_rate = 0.02
+            air_cas_present_factor = 0.05
             enable_tactic = tactic_delay
 
             effect = {
@@ -57,7 +58,7 @@ new_mobile_warfare = {
         {
             #Artillery/Support
 	        planning_speed = 0.1
-            org_loss_at_low_org_factor = -0.1
+            org_loss_at_low_org_factor = -0.05
             enable_tactic = tactic_overwhelming_fire
             effect = {
                 if = {
@@ -75,7 +76,9 @@ new_mobile_warfare = {
         }
         {
             #Armor
-	        additional_brigade_column_size = 1
+	        category_tanks = {
+                breakthrough = 0.05
+            }
             enable_tactic = tactic_blitz
 
             effect = {
@@ -95,6 +98,7 @@ new_mobile_warfare = {
         {
             #Operations
 	        planning_speed = 0.2
+            max_planning = 0.05
             enable_tactic = tactic_backhand_blow   
 
             effect = {
@@ -123,7 +127,7 @@ superior_firepower = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     ai_will_do = {
@@ -144,12 +148,7 @@ superior_firepower = {
 
     # EFFECTS
     enable_tactic = tactic_overwhelming_fire
-    category_line_artillery = {
-        soft_attack = 0.1
-    }
-    category_support_artillery = {
-        soft_attack = 0.05
-    }
+    army_morale = 0.05
 
 
     milestones = {
@@ -174,7 +173,6 @@ superior_firepower = {
         }
         {
             #Artillery/Support
-            additional_brigade_column_size = 1
             category_support_battalions = {
                 max_organisation = 10
             }
@@ -253,7 +251,7 @@ grand_battleplan = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     ai_will_do = {
@@ -270,15 +268,14 @@ grand_battleplan = {
     # EFFECTS
     enable_tactic = tactic_planned_attack
     
-    max_planning = 0.1
+    max_planning = 0.05
     command_power_gain = 0.25
 
     milestones = {
         {
             #Infantry 
-            additional_brigade_column_size = 1
             enable_tactic = tactic_elastic_defense
-            max_dig_in_factor = 0.05
+            max_planning = 0.05
 
             effect = {
                 if = {
@@ -296,7 +293,8 @@ grand_battleplan = {
         }
         {
             #Artillery/Support
-            coordination_bonus = 0.1
+            coordination_bonus = 0.01
+            max_planning = 0.05
             enable_tactic = tactic_overwhelming_fire
 
             effect = {
@@ -316,6 +314,7 @@ grand_battleplan = {
         {
             #Armor
             land_reinforce_rate = 0.02
+            planning_speed = 0.1
             enable_tactic = tactic_breakthrough
             effect = {
                 if = {
@@ -334,7 +333,7 @@ grand_battleplan = {
         }
         {
             #Operations
-            coordination_bonus = 0.1
+            coordination_bonus = 0.02
             max_command_power = 30
 
             effect = {
@@ -364,7 +363,7 @@ mass_assault = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 300
     xp_type = army
 
     ai_will_do = {
@@ -388,7 +387,7 @@ mass_assault = {
         {
             #Infantry
             enable_tactic = tactic_human_wave_tactics
-            additional_brigade_column_size = 1
+            pocket_penalty = -0.1
 
             effect = {
                 if = {
@@ -408,7 +407,7 @@ mass_assault = {
             #Artillery/Support
             enable_tactic = tactic_elastic_defense
             out_of_supply_factor = -0.05
-            minimum_training_level = -0.05
+            army_fuel_capacity_factor = 0.10
 
             effect = {
                 if = {
@@ -447,7 +446,7 @@ mass_assault = {
             #Operations
             enable_tactic = tactic_backhand_blow
             weekly_casualties_war_support = 0.001
-            minimum_training_level = -0.05
+            #minimum_training_level = -0.05
             dig_in_speed_factor = 0.05
 
             effect = {

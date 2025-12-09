@@ -22,6 +22,7 @@ convoy_escort = {
     # EFFECTS
 	convoy_escort_efficiency = 0.10
 	convoy_retreat_speed = 0.10
+	naval_torpedo_damage_reduction_factor = 0.5
 
     rewards = {
 		anti_submarine_sweep_training = {

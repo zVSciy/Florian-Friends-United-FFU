@@ -1526,12 +1526,12 @@ NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0.1         -- Fo
 NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0.01  -- Unit in a theater commander's theater will contribute this fraction of their mastery gain to the theater commander's country, for each skill point they have in attack + defense
 NDefines.NDoctrines.NAVAL_MISSION_MASTERY_GAIN_FACTORS = {  -- Mastery gain from naval missions is reduced, just like training
 	0.0, -- HOLD
-	0.2, -- PATROL
-	0.0, -- STRIKE FORCE
-	0.2, -- CONVOY RAIDING
-	0.2, -- CONVOY ESCORT
-	0.2, -- MINES PLANTING
-	0.2, -- MINES SWEEPING
+	0.5, -- PATROL
+	0.2, -- STRIKE FORCE
+	0.3, -- CONVOY RAIDING
+	0.4, -- CONVOY ESCORT
+	0.0, -- MINES PLANTING
+	0.0, -- MINES SWEEPING
 	0.0, -- TRAIN # NOT USED - handled by TRAINING_MASTERY_GAIN_FACTOR
 	0.0, -- RESERVE_FLEET
 	0.0, -- NAVAL_INVASION_SUPPORT
