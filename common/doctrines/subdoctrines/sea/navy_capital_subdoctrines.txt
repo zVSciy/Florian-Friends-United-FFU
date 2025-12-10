@@ -26,43 +26,48 @@ line_of_battle = {
     }
 
     # EFFECTS
-	navy_fuel_consumption_factor = -0.05
 	naval_has_potf_in_combat_attack = 0.10
 
     rewards = {
         flagships={
             battleship= {
-                max_organisation = 5
+                max_organisation = 15
+                armor_value = 0.1
+            }
+            battle_cruiser = {
+                max_organisation = 10
+                armor_value = 0.1
             }
 			heavy_cruiser = {
 				max_organisation = 5
+                armor_value = 0.1
 			}
         }
         ordnance_handling_training = {
 			battleship = {
-				hg_attack = 0.05
-				lg_attack = 0.05
+				hg_attack = 0.15
 				hg_armor_piercing = 0.05
 			}
-			heavy_cruiser = {
-				hg_attack = 0.05
+			battle_cruiser = {
+				hg_armor_piercing = 0.05
 			}
         }
         blue_water_logistics = { #TODO see if these make sense
             battleship = {
-				supply_consumption = -0.1
+				naval_heavy_gun_hit_chance_factor = 0.05
 			}
 			battle_cruiser = {
-				supply_consumption = -0.1
+				naval_heavy_gun_hit_chance_factor = 0.05
+                
 			}
         }
         bulkhead_drills = {
             battleship = {
-				naval_torpedo_damage_reduction_factor = 0.1
+				max_strength = 0.1
 			}
-			heavy_cruiser = {
-				naval_torpedo_damage_reduction_factor = 0.1
-			}
+            battle_cruiser = {
+                max_strength = 0.1
+            }
         }
         modernized_line_of_battle={
             battleship = {
@@ -72,7 +77,7 @@ line_of_battle = {
 				max_organisation = 5
 			}
 			battle_cruiser= {
-                max_organisation = 5
+                max_organisation = 10
             }
         }
     }
@@ -100,56 +105,76 @@ battlecruiser_supremacy = {
     }
 
     # EFFECTS
-	naval_supply_consumption_factor = -0.05
-	naval_critical_score_chance_factor = 0.03
+	battle_cruiser = {
+        max_organisation = 20
+        max_strength = -0.2
+        surface_visibility = -0.05  
+    }
+    battleship = {
+        max_organisation = 20
+        max_strength = -0.2
+        surface_visibility = -0.05
+    }
 
     rewards = {
         ship_of_the_line={
+            battleship = {
+                max_organisation = 10
+                naval_heavy_gun_hit_chance_factor = 0.10
+                
+                hg_armor_piercing = 0.05
+            }
             battle_cruiser= {
                 max_organisation = 10
+                naval_heavy_gun_hit_chance_factor = 0.10
+                
+                hg_armor_piercing = 0.05
             }
-			heavy_cruiser = {
-				max_organisation = 10
-			}
+
         }
         coordinated_strike_protocol = {
-			battle_cruiser = {
-				hg_attack = 0.10
-				lg_attack = 0.05
-			}
 			battleship = {
-				lg_attack = 0.05
+                hg_attack = 0.10
+                
+            }
+            battle_cruiser = {
+				hg_attack = 0.10
+                
 			}
+            navy_anti_air_attack_factor = 0.25
+            sortie_efficiency = 0.1
+            navy_carrier_air_agility_factor = 0.1
+
         }
         open_water_patrolling = {
             battle_cruiser = {
-				surface_detection = 0.05
+				surface_visibility = -0.1
+                naval_torpedo_damage_reduction_factor = 0.1
 			}
-			heavy_cruiser = {
-				surface_detection = 0.10
+			battleship = {
+				surface_visibility = -0.1
+                naval_torpedo_damage_reduction_factor = 0.1
 			}
         }
         planning_at_speed = {
-            battleship = {
-				naval_speed = 0.1
-			}
+            
 			battle_cruiser = {
-				naval_speed = 0.05
+				naval_speed = 0.20
 			}
-			heavy_cruiser = {
-				naval_speed = 0.05
+			battleship = {
+				naval_speed = 0.20
 			}
         }
         capital_drills={
             battleship = {
-				max_organisation = 5
+				max_organisation = 10
+                surface_visibility = -0.05
 			}
 			battle_cruiser= {
                 max_organisation = 10
+                surface_visibility = -0.05
             }
-			heavy_cruiser = {
-				max_organisation = 5
-			}
+
         }
     }
 }
@@ -176,53 +201,62 @@ armored_raiders = {
     }
 
     # EFFECTS
-	naval_supply_consumption_factor = -0.10
-	screening_without_screens = 0.10
+	battle_cruiser = {
+        hg_armor_piercing = 0.1
+        max_organisation = 20
+    }
+    heavy_cruiser = {
+        max_organisation = 20
+        lg_armor_piercing = 0.2
+    } 
+    screening_without_screens = 0.2
 
     rewards = {
         expert_reconnaissance={
-            battle_cruiser= {
-                surface_detection = 0.1
+            battleship = {
+                max_organisation = 10
             }
-			battleship = {
-				surface_detection = 0.1
+            battle_cruiser= {
+                max_organisation = 20
+            }
+			heavy_cruiser = {
+				max_organisation = 20
 			}
         }
         speed_trials = {
-            equipment_bonus = {
-                capital_ship = {
-                    naval_range = 0.10
-                    instant = yes
-                }
-            }
+			battle_cruiser = {
+				naval_speed = 0.10
+			}
+			heavy_cruiser = {
+				naval_speed = 0.10
+			}
         }
         modernized_officer_education = {
-            battle_cruiser= {
-                max_organisation = 5
-            }
-			battleship = {
-				max_organisation = 5
+            battle_cruiser = {
+				surface_visibility = -0.05
+			}
+			heavy_cruiser = {
+				surface_visibility = -0.05
 			}
         }
         capital_raiders = {
-            battleship = {
-				max_organisation = 5
-				convoy_raiding_coordination = 0.25
-				surface_detection = 0.10
-			}
-			battle_cruiser = {
-				max_organisation = 5
-				convoy_raiding_coordination = 0.15
-				surface_detection = 0.15
+            battle_cruiser = {
+				hg_attack = 0.20
+                naval_heavy_gun_hit_chance_factor = 0.15
 			}
 			heavy_cruiser = {
-				max_organisation = 5
+				lg_attack = 0.25
 			}
         }
         crisis_management={
-            modifier = {
-				navy_casualty_on_hit = -0.40
-				navy_casualty_on_sink = -0.20
+              battleship = {
+				max_organisation = 5
+			}
+			battle_cruiser= {
+                max_organisation = 10
+            }
+			heavy_cruiser = {
+				max_organisation = 15
 			}
         }
     }
