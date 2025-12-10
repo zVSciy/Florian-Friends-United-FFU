@@ -15,6 +15,8 @@ categories =  {
 		movement_cost = 1.0
 		is_water = yes
 		sound_type = sea
+		
+		minimum_seazone_dominance = 250
 	}
 	
 	lakes = {
@@ -331,6 +333,8 @@ categories =  {
 		}
 		navy_visibility = -0.2
 		positioning = -0.15
+		
+		minimum_seazone_dominance = 250
 	}
 	
 	water_shallow_sea = {
@@ -344,6 +348,8 @@ categories =  {
 			navy_visibility = 1.0
 		}
 		positioning = -0.05
+		
+		minimum_seazone_dominance = 250
 	}
 	
 	water_deep_ocean = {
@@ -375,6 +381,8 @@ categories =  {
 		}
 
 		naval_mine_hit_chance = -0.5
+		
+		minimum_seazone_dominance = 250
 	}
 }
 	

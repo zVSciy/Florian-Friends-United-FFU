@@ -256,13 +256,13 @@ grand_assault = {
     available = {
         OR = {
             has_doctrine = grand_battleplan
-            has_:doctrine = mass_assault
+            has_doctrine = mass_assault
         }
     }
     visible = {
         OR = {
             has_doctrine = grand_battleplan
-            has_:doctrine = mass_assault
+            has_doctrine = mass_assault
         }
     }
 

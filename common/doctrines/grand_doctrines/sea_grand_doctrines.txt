@@ -314,7 +314,7 @@ new_base_strike = {
         {
             #Carriers
 	        naval_strike_targetting_factor = 0.1
-            naval_speed = 0.1
+            naval_speed_factor = 0.1
 
             effect = {
                 if = {
@@ -399,7 +399,7 @@ decisive_battle = {
 	battleship = {
 		max_organisation = 10			
 	}   
-    battlecruiser= {
+    battle_cruiser= {
 		max_organisation = 10			
 	}
     heavy_cruiser = {

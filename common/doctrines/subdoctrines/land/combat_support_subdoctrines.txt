@@ -172,7 +172,7 @@ anti_tank_frontline = {
             heavy_anti_tank_brigade = {
                 defense = 0.2
             }
-            pack_antank_brigade  = {
+            pack_antitank_brigade  = {
                 defense = 0.2
             }
         }
@@ -411,9 +411,7 @@ mobile_recon_and_assault = {
             }
         }
         deep_reconnaissance_focus = {
-            category_line_artillery = {
-                max_dig_in_factor = 0.1
-            }
+           max_dig_in_factor = 0.1
         }
     }
 }
@@ -585,7 +583,7 @@ field_engineering = {
             defence = 0.05
         }
     }
-    assault_engineer = {
+    mech_engineers = {
         river = {
             attack = 0.05
             defence = 0.05
@@ -596,6 +594,16 @@ field_engineering = {
         }
     }
     pioneer_support = {
+        river = {
+            attack = 0.05
+            defence = 0.05
+        }
+        forest = {
+            attack = 0.05
+            defence = 0.05
+        }
+    }
+    armored_engineer = {
         river = {
             attack = 0.05
             defence = 0.05

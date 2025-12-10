@@ -325,9 +325,6 @@ mobile_defense = {
             }
         }
         attached_support = {
-            assault_engineer = {
-                max_organisation = 10
-            }
             armored_engineer = {
                 max_organisation = 10
             }

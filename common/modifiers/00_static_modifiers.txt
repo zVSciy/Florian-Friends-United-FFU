@@ -5,6 +5,18 @@
 _test_power_balance_mod = {
 	power_balance_daily = 0.02
 }
+# This is scaled based on support ratio
+naval_general_support = {
+	max_organisation = 0.2
+	navy_max_range_factor = 0.2
+	naval_morale_factor = 0.2
+}
+# This is scaled based on support ratio
+naval_repair_support = {
+	naval_critical_effect_factor = -0.25
+	naval_ship_recovery_chance = 0.1
+	naval_attrition = -0.075
+}
 
 weather_rain_light = { # on Region 
 	# air_detection = -0.1

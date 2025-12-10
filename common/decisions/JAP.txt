@@ -469,7 +469,8 @@ JAP_interservice_rivalry = {
 			factor = 1
 		}
 		modifier = {
-			naval_invasion_capacity = 6
+			naval_invasion_division_cap = 6 
+			naval_invasion_plan_cap = 2
 		}
 		complete_effect = {
 			set_country_flag = {

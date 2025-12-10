@@ -78,6 +78,7 @@ equipments = {
 			steel = 4
 		}
 		
+		naval_dominance_factor = 9
 		manpower = 200
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
 	}
@@ -89,6 +90,7 @@ equipments = {
 		priority = 2500
 		
 		module_slots = inherit
+		naval_dominance_factor = 9
 	}
 
 	ship_hull_submarine_2 = {
@@ -122,7 +124,7 @@ equipments = {
 		naval_range = 4000
 		reliability = 0.70
 		max_strength = 170
-		
+		naval_dominance_factor = 9
 
 		
 		build_cost_ic = 950
@@ -169,7 +171,7 @@ equipments = {
 		sub_visibility = 26
 		naval_speed = 15
 		reliability = 0.75
-		
+		naval_dominance_factor = 9
 		naval_range = 5000
 		
 		max_strength = 180
@@ -227,7 +229,7 @@ equipments = {
 		sub_visibility = 18
 		naval_speed = 15
 		reliability = 0.80
-
+		naval_dominance_factor = 9
 		naval_range = 6000
 		
 		max_strength = 190
@@ -298,7 +300,7 @@ equipments = {
 		reliability = 0.75
 		
 		naval_range = 5000
-		
+		naval_dominance_factor = 9
 		max_strength = 170
 
 
@@ -364,7 +366,7 @@ equipments = {
 		naval_speed = 16
 		reliability = 0.75
 		naval_range = 6500
-		
+		naval_dominance_factor = 9
 		max_strength = 210
 
 
@@ -405,7 +407,7 @@ equipments = {
 		naval_speed = 15
 		reliability = 0.60
 		naval_range = 500
-		
+		naval_dominance_factor = 9
 		max_strength = 170
 
 		manpower = 100

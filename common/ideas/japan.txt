@@ -545,7 +545,8 @@ ideas = {
 				no_supply_grace = 48
 				experience_loss_factor = -0.2
 				army_attack_factor = 0.05
-				naval_invasion_capacity = 5
+				naval_invasion_division_cap = 5 
+				naval_invasion_plan_cap = 2
 			}
 			rule = {
 				can_join_factions = no
@@ -569,7 +570,8 @@ ideas = {
 				no_supply_grace = 24
 				experience_loss_factor = -0.1
 				army_attack_factor = 0.05
-				naval_invasion_capacity = 5
+				naval_invasion_division_cap = 5 
+				naval_invasion_plan_cap = 2
 			}
 			rule = {
 				can_join_factions = no
@@ -1968,7 +1970,8 @@ ideas = {
 			}
 
 			modifier = {
-				naval_invasion_capacity = 10
+				naval_invasion_division_cap = 10 
+				naval_invasion_plan_cap = 4
 				invasion_preparation = -0.1
 				amphibious_invasion = 0.1
 				extra_marine_supply_grace = 72

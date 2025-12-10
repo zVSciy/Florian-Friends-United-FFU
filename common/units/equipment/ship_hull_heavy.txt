@@ -129,7 +129,7 @@ equipments = {
 		naval_range = 3000
 		
 		max_strength = 390
-
+		naval_dominance_factor = 300
 		fuel_consumption = 6
 		
 
@@ -209,7 +209,7 @@ equipments = {
 			steel = 3
 			chromium = 3
 		}
-
+		naval_dominance_factor = 300
 		manpower = 3200
 	}
 	ship_hull_heavy_1 = {
@@ -317,7 +317,7 @@ equipments = {
 		reliability = 0.85
 		fuel_consumption = 6
 		
-
+		naval_dominance_factor = 300
 		build_cost_ic = 3865
 		resources = {
 			steel = 3
@@ -388,7 +388,7 @@ equipments = {
 	
 		naval_range = 3500
 		
-
+		naval_dominance_factor = 300
 		max_strength = 410
 		reliability = 0.9
 		fuel_consumption = 6
@@ -479,7 +479,7 @@ equipments = {
 		max_strength = 430
 		reliability = 0.95
 		fuel_consumption = 6
-		
+		naval_dominance_factor = 300
 		build_cost_ic = 4150
 		resources = {
 			steel = 4
@@ -561,7 +561,7 @@ equipments = {
 			count < 6
 		}
 		naval_range = 4500
-		
+		naval_dominance_factor = 300
 		max_strength = 460
 		naval_speed = 25
 		fuel_consumption = 6
@@ -652,7 +652,7 @@ equipments = {
 			count < 6
 		}
 		naval_range = 5000
-		
+		naval_dominance_factor = 300
 
 		max_strength = 580
 		naval_speed = 28
@@ -765,7 +765,7 @@ equipments = {
 		fuel_consumption = 7
 		reliability = 0.85
 		build_cost_ic = 5500
-
+		naval_dominance_factor = 300
 		resources = {
 			steel = 6
 			chromium = 4

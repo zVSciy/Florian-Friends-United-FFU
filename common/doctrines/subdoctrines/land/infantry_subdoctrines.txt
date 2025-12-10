@@ -530,17 +530,17 @@ irregulars = {
                 }
                 river = {
                    attack = 0.05
-                   defense = 0.05
+                   defence = 0.05
                 }
             }
             mountaineers = {
                 mountain = {
                     attack = 0.05
-                    defense = 0.05
+                    defence = 0.05
                 }
                 hills = {
                     attack = 0.05
-                    defense = 0.05
+                    defence = 0.05
                 }
             }
         }
@@ -550,24 +550,24 @@ irregulars = {
             paratrooper = {
                 urban = {
                    attack = 0.05
-                   defense = 0.05
+                   defence = 0.05
                 }
                 dense_urban = {
                    attack = 0.1
                 }
                 town = {
                    attack = 0.05
-                   defense = 0.05
+                   defence = 0.05
                 }
             }
             jaeger = {
                 forest = {
                     attack = 0.05
-                    defense = 0.05
+                    defence = 0.05
                 }
                 jungle = {
                     attack = 0.05
-                    defense = 0.05
+                    defence = 0.05
                 }
             } 
         }

@@ -5,6 +5,10 @@ technologies = {
 	special_forces_mountaineers = {
 		doctrine_name = "TITLE_SPECIAL_FORCES"
 		
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
+
 		# EFFECT ########
 		# mountaineers_special_forces_contribution_factor = -0.25
 		# category_mountaineers = {
@@ -459,6 +463,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 0
 		
+
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
 		#xor = { special_forces_mountaineers special_forces_paratroopers }
 		
 		force_use_small_tech_layout = yes
@@ -485,7 +493,8 @@ technologies = {
 		}
 		
 		# marines_special_forces_contribution_factor = -0.25
-		naval_invasion_capacity = 5
+		naval_invasion_division_cap = 5 
+		naval_invasion_plan_cap = 2
 		naval_invasion_planning_bonus_speed = 0.05
 		category_marines = {
 			soft_attack = 0.05
@@ -986,7 +995,8 @@ technologies = {
 		# }
 
 		extra_marine_supply_grace = 24
-		naval_invasion_capacity = 5 #10
+		naval_invasion_division_cap = 5 
+		naval_invasion_plan_cap = 2
 		naval_invasion_planning_bonus_speed = 0.15
 
 			
@@ -1018,6 +1028,10 @@ technologies = {
 	
 	special_forces_paratroopers = {
 		doctrine_name = "PARATROOPERS_DOCTRINE"
+
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
 
 		xp_research_type = army
 		xp_unlock_cost = 0

@@ -1534,7 +1534,8 @@ technologies = {
 	mtg_transport = { #WHEN BALANCING - ALSO FIX REGULAR NAVAL TREE
 
 		transport_capacity = -0.5
-	   naval_invasion_capacity = 5
+	   	naval_invasion_division_cap = 5 
+		naval_invasion_plan_cap = 2
 
 		path = {
 			leads_to_tech = mtg_landing_craft
@@ -1586,7 +1587,8 @@ technologies = {
 	mtg_landing_craft = {
 		invasion_preparation = -0.5
 	    naval_invasion_penalty = -0.10
-	    naval_invasion_capacity = 10
+	    naval_invasion_division_cap = 10 
+		naval_invasion_plan_cap = 3
 
 		path = {
 			leads_to_tech = mtg_tank_landing_craft
@@ -1664,7 +1666,8 @@ technologies = {
 
 		amphibious_invasion = 0.25
 	    naval_invasion_penalty = -0.15
-	    naval_invasion_capacity = 15
+	    naval_invasion_division_cap = 15
+		naval_invasion_plan_cap = 5
 
 		research_cost = 2
 		start_year = 1944

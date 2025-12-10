@@ -95,7 +95,7 @@ equipments = {
 		reliability = 0.95
 		
 		naval_range = 3000
-		
+		naval_dominance_factor = 300
 		max_strength = 355
 		
 
@@ -125,6 +125,7 @@ equipments = {
 		default_modules = {
 			fixed_ship_engine_slot = carrier_ship_engine_2
 		}
+		naval_dominance_factor = 300
 	}
 
 	ship_hull_carrier_2 = {
@@ -167,7 +168,7 @@ equipments = {
 		naval_range = 4000
 		reliability = 0.95
 		max_strength = 365
-
+		naval_dominance_factor = 300
 		
 
 
@@ -227,7 +228,7 @@ equipments = {
 		naval_range = 5000
 		reliability = 0.95
 		max_strength = 420
-		
+		naval_dominance_factor = 300
 
 
 		build_cost_ic = 6200
@@ -307,7 +308,7 @@ equipments = {
 		reliability = 0.85
 		max_strength = 450
 		max_organisation = -0.9    
-
+		naval_dominance_factor = 300
 		build_cost_ic = 9000
 		surface_visibility = 40
 		naval_speed = 18
@@ -383,7 +384,7 @@ equipments = {
 		reliability = 0.95
 		max_strength = 520
 		naval_speed = 25
-
+		naval_dominance_factor = 300
 
 		build_cost_ic = 6600
 		resources = {
@@ -429,7 +430,7 @@ equipments = {
 		reliability = 0.8
 		max_strength = 400
 		naval_speed = 20
-
+		naval_dominance_factor = 300
 
 		build_cost_ic = 5000
 		resources = {
@@ -468,7 +469,7 @@ equipments = {
 			fixed_ship_secondaries_slot = empty
 		}
 		naval_range = 4000
-		
+		naval_dominance_factor = 300
 		max_strength = 300
 		
 		reliability = 0.7
