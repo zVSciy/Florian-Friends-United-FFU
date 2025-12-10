@@ -148,7 +148,7 @@ superior_firepower = {
 
     # EFFECTS
     enable_tactic = tactic_overwhelming_fire
-    army_morale = 0.05
+    army_morale = 0.1
 
 
     milestones = {
