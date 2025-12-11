@@ -198,7 +198,7 @@ superior_firepower = {
             #Armor
             enable_tactic = tactic_delay
             category_army = {
-                default_morale = 0.2
+                default_morale = 0.1
             }
 
             effect = {
