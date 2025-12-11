@@ -31,7 +31,7 @@ mission_type_tactics = {
     # EFFECTS
     command_power_gain = 0.02
     category_all_infantry = {
-        max_organisation = 15
+        max_organisation = 5
     }
 
     
@@ -40,7 +40,7 @@ mission_type_tactics = {
         low_level_delegation ={
         #1
             category_all_infantry = {
-                default_morale = 0.2
+                default_morale = 0.1
             }
         }
         flexible_command = {
@@ -50,7 +50,7 @@ mission_type_tactics = {
         maneouver_drills = {
         #3
             category_all_infantry= {
-                default_morale = 0.2
+                default_morale = 0.1
             }
             category_all_armor = {
                 maximum_speed = 0.1
@@ -62,17 +62,14 @@ mission_type_tactics = {
 
             category_all_infantry = {
                 breakthrough = 0.1
-                max_organisation = 10
+                max_organisation = 5
             }
         }
         control_zone_responsibilities = {
         #5
         
             category_all_infantry = {
-                default_morale = 0.4
-            }
-            category_tanks = {
-                default_morale = 0.4
+                default_morale = 0.1
             }
 
         }
