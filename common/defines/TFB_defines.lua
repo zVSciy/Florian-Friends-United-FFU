@@ -1515,7 +1515,7 @@ NDefines.NFactions.FACTION_DEFAULT_TEMPLATE = "faction_template_generic"   -- De
 
 NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 100.0                         -- How much mastery is required for unlocking a doctrine reward, if no override is set
 NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 100000.0           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
-NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.0                     -- How much training contributes to doctrine mastery relative to combat/missions
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.1                     -- How much training contributes to doctrine mastery relative to combat/missions
 NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 50.0                       -- Monthly mastery gain will not exceed this value
 NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.0                        -- If we have any mastery gain, it will be boosted to be at least this much per day (lower cap)
 NDefines.NDoctrines.MASTERY_BAR_ANIMATION_SPEED_PER_DAILY_MASTERY = 5.0 -- Multiplier of how fast the mastery bar animates based on daily mastery gain
