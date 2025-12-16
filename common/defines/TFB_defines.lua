@@ -349,7 +349,7 @@ NDefines.NMilitary.SHORE_BOMBARDMENT_COLLATERAL_DAMAGE_MULTIPLIER = 50.0		-- Fac
 NDefines.NMilitary.SHORE_BOMBARDMENT_COLLATERAL_DAMAGE_CRIT_CHANCE_FACTOR = 0.0025	    -- Chance for crit (ie, high single building damage) to occur.
 NDefines.NMilitary.SPOTTING_QUALITY_NAVAL_RECON_DROP_HOURS = 12 	-- Each X hours the intel quality drops after unit was spotted by naval recon air mission.
 NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.003	   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
-NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 0.8
+NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1.2
 NDefines.NMilitary.FUEL_PENALTY_START_RATIO_BUFFER = 0.1				-- buffer that keeps the out-of-fuel alert open even when above the FUEL_PENALTY_START_RATIO threshold, so that it doesn't spam-ping when fluctuating
 NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1.0	-- If using the 'immobile' cohesion setting, factor ALL planning speed growth by this
 NDefines.NMilitary.PLAN_COHESION_WEIGHTS = { 1.0, 40.0, 80.0, 100.0 } 	-- for each cohesion setting, how keen on relocating from distance should we be? (default 1.0), higher weight = shorter max distance. The last entry is special-cased, the value should have no effect and units will just not move anywhere, ever.
