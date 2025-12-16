@@ -106,7 +106,7 @@ last_stand = {
         pocket_consolidation = {
         #2
             category_all_infantry = {
-                defense = 0.1
+                defense = 0.05
             }
         }
         digging_in = {
@@ -396,7 +396,7 @@ guerilla_war = {
            resistance_damage_to_garrison_on_our_occupied_states = 0.1
            resistance_target_on_our_occupied_states = 0.1
            category_army = {
-                defense = 0.1
+                defense = 0.05
             }
         }
 
@@ -415,7 +415,7 @@ guerilla_war = {
             stability_factor = 0.1
             party_popularity_stability_factor = 0.05
             category_army = {
-                defense = 0.1
+                defense = 0.05
             }
 
             
@@ -521,7 +521,7 @@ rapid_domination = {
         shock_and_awe = {
         #5
             category_army = {
-                defense = 0.1
+                defense = 0.05
             }
             category_all_infantry = {
                 soft_attack = 0.05
@@ -569,7 +569,7 @@ expeditionary_warfare = {
             dig_in_speed_factor = 0.05
             out_of_supply_factor = -0.1
             category_army = {
-                defense = 0.1
+                defense = 0.05
             }
 
         }

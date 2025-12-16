@@ -398,7 +398,7 @@ buildings = {
 		building_prerequisite = {
 			building_dependency = {
 				building = naval_base
-				level = 8
+				level = 4
 			}
 		}
 		level_cap = {
@@ -421,7 +421,7 @@ buildings = {
 		building_prerequisite = {
 			building_dependency = {
 				building = naval_base
-				level = 8
+				level = 4
 			}
 		}
 		level_cap = {
