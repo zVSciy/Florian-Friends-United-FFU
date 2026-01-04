@@ -3,7 +3,11 @@ state=
 	id=102
 	name="STATE_102"
 	manpower = 811050 # was 1144300 before Ljubljana split
-	
+	resources={
+		steel=400 # was: 60
+		aluminium=200 # was: 20
+		coal=200
+	}
 	state_category = large_town
 	
 	history =

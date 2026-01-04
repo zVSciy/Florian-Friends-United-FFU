@@ -88,7 +88,7 @@ equipment_modules = {
 			naval_speed = -0.02
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 4
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -108,7 +108,7 @@ equipment_modules = {
 			naval_speed = -0.02
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 4
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -125,7 +125,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 5
 		}
 		multiply_stats = {
 			naval_speed = -0.02
@@ -150,7 +150,7 @@ equipment_modules = {
 			naval_speed = -0.02
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 5
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -172,7 +172,7 @@ equipment_modules = {
 		build_cost_resources = {
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 4
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -195,7 +195,7 @@ equipment_modules = {
 		build_cost_resources = {
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 4
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -218,7 +218,7 @@ equipment_modules = {
 		build_cost_resources = {
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 5
 		}
 		
 		critical_parts = { damaged_light_guns }
@@ -242,7 +242,7 @@ equipment_modules = {
 			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.2
+			lg_armor_piercing = 5
 		}
 		
 		critical_parts = { damaged_light_guns }

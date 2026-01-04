@@ -462,8 +462,8 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
-				production_factory_max_efficiency_factor = 0.025
-				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.04
+				industrial_capacity_factory = 0.1
 			}
 		}
 		RAJ_far_east_development_plan = {
@@ -538,9 +538,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.075
+				industrial_capacity_factory = 0.1
 				production_factory_efficiency_gain_factor = 0.1
-				# production_factory_max_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
 			}
 		}
 		RAJ_call_to_arms = {

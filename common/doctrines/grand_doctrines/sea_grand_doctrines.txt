@@ -40,7 +40,7 @@ new_fleet_in_being = {
 	}
 	navy_capital_ship_defence_factor = 0.1
     screening_efficiency = 0.2
-    screening_without_screens = 0.5
+    screening_without_screens = 0.2
     critical_receive_chance = 0.1
 	
     milestones = {

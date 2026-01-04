@@ -25,10 +25,10 @@ air_subdoctrine_fighter_homeland_defense = {
 
     rewards = {
 		interception_priority = {
-			air_intercept_efficiency = 0.15
+			air_superiority_efficiency = 0.1
 		}
 		air_defense_grids = {
-			air_superiority_detect_factor = 0.1
+			air_superiority_detect_factor = 0.05
 		}
 		air_wing_knowledge_transfer = {
 			air_untrained_pilots_penalty_factor = -0.15
@@ -282,7 +282,7 @@ track = fighter_aircraft
 
     rewards = {
 		decoy_tactic = {
-			air_superiority_detect_factor = 0.15
+			air_superiority_detect_factor = 0.05
 			air_superiority_efficiency = 0.05
 		}
 		three_plane_formation = {

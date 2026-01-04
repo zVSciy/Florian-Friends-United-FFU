@@ -43,7 +43,7 @@ air_subdoctrine_bomber_interception = {
 			}
 		}
 		bomber_interception_patrols = {
-			air_superiority_detect_factor = 0.15
+			air_superiority_detect_factor = 0.05
 		}
     }
 }
@@ -87,7 +87,7 @@ air_subdoctrine_long_range_escort = {
 			}
 		}
         mutual_air_cover = {
-			air_superiority_detect_factor = 0.15
+			air_superiority_detect_factor = 0.05
 		}
 		training_instructors = {
 			air_training_xp_gain_factor = 0.1
