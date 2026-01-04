@@ -400,7 +400,7 @@ mobile_recon_and_assault = {
         }
         mobile_operational_deployments = {
             category_line_artillery = {
-                soft_attack = 0.05
+                soft_attack = 0.1
                 hard_attack = 0.05
             }
 
@@ -436,9 +436,14 @@ siege_artillery = {
 
     super_heavy_artillery = {
         battalion_mult = {
-            category = category_army
-            soft_attack = 0.1
-            defense = 0.1
+            category = category_line_artillery
+            soft_attack = 0.05
+        }
+    }
+    self_propelled_super_heavy_artillery = {
+        battalion_mult = {
+            category = category_line_artillery
+            soft_attack = 0.05
         }
     }
 
@@ -631,7 +636,7 @@ field_engineering = {
         sapper_fieldcraft = {
             engineer = {
                 max_strength = 0.25
-                defense = 0.1
+                defense = 0.05
             }
             maintenance_company = {
                 max_strength = 2
@@ -641,8 +646,8 @@ field_engineering = {
             engineer = {
                 battalion_mult = {
                     category = category_artillery
-                    soft_attack = 0.1
-                    defense = 0.1
+                    soft_attack = 0.05
+                    defense = 0.05
                 }
             }
         }

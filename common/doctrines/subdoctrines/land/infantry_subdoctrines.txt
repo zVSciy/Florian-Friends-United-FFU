@@ -217,7 +217,7 @@ large_unit_tactics = {
            category_light_infantry = {
                 max_organisation = 5
                 max_strength = 1
-                defense = 0.1
+                defense = 0.05
             }
         }
 
@@ -518,8 +518,8 @@ irregulars = {
 
     rewards = {
         service_by_lot = { 
-            category_army = {
-                breakthrough = 0.10
+            category_all_infantry = {
+                breakthrough = 0.1
                 max_strength = 2
             }
         }
@@ -530,17 +530,14 @@ irregulars = {
                 }
                 river = {
                    attack = 0.05
-                   defence = 0.05
                 }
             }
             mountaineers = {
                 mountain = {
                     attack = 0.05
-                    defence = 0.05
                 }
                 hills = {
                     attack = 0.05
-                    defence = 0.05
                 }
             }
         }
@@ -550,29 +547,25 @@ irregulars = {
             paratrooper = {
                 urban = {
                    attack = 0.05
-                   defence = 0.05
                 }
                 dense_urban = {
                    attack = 0.1
                 }
                 town = {
                    attack = 0.05
-                   defence = 0.05
                 }
             }
             jaeger = {
                 forest = {
                     attack = 0.05
-                    defence = 0.05
                 }
                 jungle = {
                     attack = 0.05
-                    defence = 0.05
                 }
             } 
         }
         levee_en_masse = {
-            terrain_penalty_reduction = 0.1
+            terrain_penalty_reduction = 0.04
         }
 
         standardization_efforts = {
@@ -611,7 +604,7 @@ great_war_infantry = {
      # EFFECTS
     #OTHER BASE REWARDS
     category_light_infantry = {
-        defense = 0.1
+        defense = 0.05
         supply_consumption = -0.02
     }
     production_speed_bunker_factor = 0.25
@@ -629,7 +622,7 @@ great_war_infantry = {
         }
         sapping_operations = {
             category_light_infantry = {
-                defense = 0.1
+                defense = 0.05
                 max_organisation = 10
                 max_strength = 5
             }
@@ -641,7 +634,7 @@ great_war_infantry = {
             }
         }
         centralized_artillery_control = {
-            land_reinforce_rate = 0.05
+            land_reinforce_rate = 0.03
         }
         field_fortification_emphasis = {
             category_light_infantry = {

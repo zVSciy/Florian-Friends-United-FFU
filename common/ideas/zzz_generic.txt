@@ -1,6 +1,22 @@
 ideas = {
 
 	hidden_ideas = {
+		minor_mastery_gain = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				armor_track_mastery_gain_factor = 0.25
+			}
+		}
+		
 
 		minor_funds_gain = {
 			allowed = {
@@ -195,7 +211,6 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-
 		bloated_game_mode = {
 
 			picture = civilian_economy

@@ -89,7 +89,7 @@ last_stand = {
         always = yes
     }
     # EFFECTS
-    conscription = 0.05
+    conscription = 0.025
 
     ai_will_do = {
 
@@ -279,7 +279,7 @@ grand_assault = {
 
     # EFFECTS
     max_planning = 0.1
-    category_army = {
+    category_all_infantry = {
         breakthrough = 0.1
         soft_attack = 0.05
     }
@@ -301,7 +301,7 @@ grand_assault = {
         }
         multiple_attack_directions = {
         #2
-            land_night_attack = 0.25
+            land_night_attack = 0.15
         }
         combined_arms_integration = {
         #3
