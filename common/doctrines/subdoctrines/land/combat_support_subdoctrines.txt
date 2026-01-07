@@ -389,7 +389,7 @@ mobile_recon_and_assault = {
         motorization_support = {
             category_line_artillery = {
                 maximum_speed = 0.1
-                default_morale = 0.2
+                default_morale = 0.05
             }
 
         }
@@ -474,7 +474,7 @@ siege_artillery = {
         }
         improved_transport_preparation = {
             category_line_artillery = {
-                default_morale = 0.2
+                default_morale = 0.05
             }
             super_heavy_artillery = {
                 plains = {

@@ -193,7 +193,7 @@ large_unit_tactics = {
         flexible_division_structures = {
         #2
            category_light_infantry = {
-                default_morale = 0.1
+                default_morale = 0.05
                 max_strength = 1
             }
         }
@@ -209,7 +209,7 @@ large_unit_tactics = {
                 max_organisation = 5
                 defense = 0.05
             }
-            army_morale = 0.2
+            army_morale = 0.05
             
         }
         motorization_initiative = {
@@ -570,7 +570,7 @@ irregulars = {
 
         standardization_efforts = {
             category_special_forces = {
-                default_morale = 0.1
+                default_morale = 0.05
                 max_organisation = 10
             }
         }
