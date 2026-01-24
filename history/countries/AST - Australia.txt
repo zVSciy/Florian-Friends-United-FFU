@@ -20,10 +20,10 @@ set_technology = {
 	hq_1 = 1
 	armored_car1 = 1
 	
-	trench_warfare = 1
+	#trench_warfare = 1
 	fuel_silos = 1
 
-	fleet_in_being = 1
+	#fleet_in_being = 1
 	basic_train = 1
 }
 
@@ -297,7 +297,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
@@ -313,7 +313,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes

@@ -1989,11 +1989,6 @@ focus = {
 			relation = guarantee
 			active = no
 		}
-		diplomatic_relation = {
-			country = TUR
-			relation = guarantee
-			active = no
-		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 

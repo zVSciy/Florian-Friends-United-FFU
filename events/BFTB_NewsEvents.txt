@@ -691,10 +691,7 @@ news_event = {
 	option = {
 		name = bftb_news.201.b
 		trigger = {
-			OR = {
-				tag = ENG
-				tag = TUR
-			}
+			tag = ENG
 		}
 	}
 	option = {
@@ -716,7 +713,6 @@ news_event = {
 				OR = {
 					tag = SOV
 					tag = ENG
-					tag = TUR
 					tag = GER
 					tag = ITA
 					tag = BUL
@@ -746,12 +742,6 @@ news_event = {
 		}
 	}
 	option = {
-		name = bftb_news.202.b
-		trigger = {
-			tag = TUR
-		}
-	}
-	option = {
 		name = bftb_news.202.c
 		trigger = {
 			tag = ENG
@@ -764,7 +754,6 @@ news_event = {
 				OR = {
 					tag = SOV
 					tag = ENG
-					tag = TUR
 					tag = GER
 					tag = ITA
 					tag = BUL
@@ -804,12 +793,6 @@ news_event = {
 		}
 	}
 	option = {
-		name = bftb_news.203.b
-		trigger = {
-			tag = TUR
-		}
-	}
-	option = {
 		name = bftb_news.203.c
 		trigger = {
 			tag = ENG
@@ -842,7 +825,6 @@ news_event = {
 				OR = {
 					tag = SOV
 					tag = ENG
-					tag = TUR
 					tag = GER
 					tag = ITA
 					tag = FRA
@@ -855,166 +837,7 @@ news_event = {
 	}
 }
 
-#Turkish Civil War
-news_event = {
-	id = bftb_news.204
-	title = bftb_news.204.t
-	desc = bftb_news.204.desc
-	picture = GFX_news_event_montreux_convention_war
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_news.204.a
-		trigger = {
-			tag = TUR
-		}
-	}
-	option = {
-		name = bftb_news.204.b
-		trigger = {
-			NOT = { 
-				OR = {
-					tag = TUR
-					tag = GER
-					tag = ITA
-					tag = SPA
-					tag = SPR
-				}
-			}
-		}
-	}
-	option = {
-		name = bftb_news.204.c
-		trigger = { 
-			OR = {
-				tag = GER
-				tag = ITA
-			}
-		}
-	}
-	option = {
-		name = bftb_news.204.d
-		trigger = {
-			OR = {
-				tag = SPA
-				tag = SPR
-			}
-		}
-	}
-}
 
-#Return of the Sultan
-news_event = {
-	id = bftb_news.205
-	title = bftb_news.205.t
-	desc = bftb_news.205.desc
-	picture = GFX_news_event_ottoman_sultan_returns
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_news.205.a 
-		trigger = {
-			original_tag = TUR
-		}
-		add_stability = 0.15
-		add_war_support = 0.15
-		set_country_flag = TUR_ott_sultanate_flag
-		TUR_set_appropriate_cosmetic_tag = yes
-		set_capital =  { state = 797 }
-		create_country_leader = {
-			name = "Abdulmejid II"
-			desc = "POLITICS_ABDULMEJID_II_DESC"
-			picture = "GFX_portrait_tur_abdulmejid_ii"
-			expire = "1965.1.1"
-			ideology = despotism
-			traits = {
-				gentle_scholar
-			}
-		}
-		hidden_effect = {
-			set_party_name = { 
-				ideology = neutrality
-				long_name = TUR_sultanate_party_long
-				name = TUR_sultanate_party_long
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.25
-			}
-			set_province_name = { id = 9833 name = "Konstantiniyye" }
-			797 = { set_state_name = "Konstantiniyye" } 
-		}
-	}
-	option = {
-		name = bftb_news.205.b
-		trigger = {
-			OR = {
-				tag = BUL
-				tag = ALB
-				tag = IRQ
-				tag = SAU
-				tag = ROM
-				tag = YUG
-				tag = HUN
-				tag = AUS
-				tag = POL
-			}
-		}
-	}
-	option = {
-		name = bftb_news.205.c
-		trigger = {
-			OR = {
-				tag = ENG
-				tag = FRA
-				tag = USA
-				tag = SOV
-			}
-		}
-	}
-	option = {
-		name = bftb_news.205.d
-		trigger = {
-			OR =  {
-				tag = GER
-				#tag = PER
-				tag = AFG
-			}
-		}
-	}
-	option = {
-		name = bftb_news.205.e
-		trigger = {
-			NOT = {
-				OR = {
-					tag = TUR
-					tag = BUL
-					tag = ALB
-					tag = IRQ
-					tag = SAU
-					tag = ENG
-					tag = FRA
-					tag = USA
-					tag = SOV
-					tag = ROM
-					tag = YUG
-					tag = HUN
-					tag = AUS
-					tag = POL
-					tag = GER
-					#tag = PER
-					tag = AFG
-				}
-			}
-		}
-	}
-}
 
 #Dawn of the Covenant of the Mediterranean
 news_event = {
@@ -1031,7 +854,6 @@ news_event = {
 		name = bftb_news.206.a
 		trigger = {
 			OR = {
-				tag = TUR
 				tag = ITA
 				tag = SPA
 			}
@@ -1064,7 +886,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = TUR
 					tag = ITA
 					tag = SPA
 					tag = ENG
@@ -1078,144 +899,8 @@ news_event = {
 	}
 }
 
-#Turkey Guarantees Balkan Security
-news_event = {
-	id = bftb_news.207
-	title = bftb_news.207.t
-	desc = bftb_news.207.desc
-	picture = GFX_news_event_turkey_affirms_interest_in_protecting_balkans
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_news.207.a
-		trigger = {
-			tag = TUR
-		}
-	}
-	option = {
-		name = bftb_news.207.b
-		trigger = {
-			OR = {
-				tag = YUG
-				tag = ROM
-				tag = GRE
-			}
-		}
-	}
-	option = {
-		name = bftb_news.207.c
-		trigger = {
-			OR = {
-				tag = GER
-				tag = ITA
-				tag = SOV
-			}
-		}
-	}
-	option = {
-		name = bftb_news.207.d
-		trigger = {
-			NOT = {
-				OR = {
-					tag = TUR
-					tag = YUG
-					tag = ROM
-					tag = GRE
-					tag = GER
-					tag = ITA
-					tag = SOV
-				}
-			}
-		}
-	}
-}
 
-#Turkey Renews Claims to 1920 Borders
-news_event = {
-	id = bftb_news.208
-	title = bftb_news.208.t
-	desc = bftb_news.208.desc
-	picture = GFX_news_event_civil_war_turkey
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_news.208.a #we cannot concern ourselves with whatever the Turks are plotting
-		trigger = {
-			NOT = { 
-				has_war_with = FROM 
-				tag = TUR
-			}
-		}
-	}
-	option = {
-		name = bftb_news.208.b #an embargo seems an adequate escalation
-		trigger = {
-			NOT = { 
-				has_war_with = FROM 
-				is_in_faction_with = TUR
-				tag = TUR
-			}
-		}
-		add_opinion_modifier = {
-			target = TUR
-			modifier = embargo
-		}
-		hidden_effect = {
-			TUR = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = embargo
-				}
-			}
-		}
-	}
-	option = {
-		name = bftb_news.208.c #the Turks are insidious schemers, this is already known
-		trigger = {
-			has_war_with = FROM
-		}
-		add_war_support = 0.05
-	}
-	option = {
-		name = bftb_news.208.d
-		trigger = {
-			tag = TUR
-		}
-	}
-}
 
-#Turan
-news_event = {
-	id = bftb_news.209
-	title = bftb_news.209.t
-	desc = bftb_news.209.desc
-	picture = GFX_news_event_turanist_ambition
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_news.209.a
-		trigger = {
-			tag = TUR
-		}
-	}
-	option = {
-		name = bftb_news.209.b
-		trigger = {
-			NOT = {
-				tag = TUR
-			}
-		}
-	}
-}
 
 #The Greek Civil War
 news_event = {

@@ -227,11 +227,6 @@ ideas = {
 					manpower_per_military_factory <  800
 				}
 
-				modifier = {
-					tag = TUR
-					has_dlc = "Battle for the Bosporus"
-					factor = 50
-				}
 
 				# china relies a lot on throwing bodies at the enemy
 				modifier = {

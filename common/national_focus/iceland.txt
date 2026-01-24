@@ -964,7 +964,7 @@ focus_tree = {
 					has_dlc = "Man the Guns"
 				}
 				set_technology = {
-					coastal_defense_ships = 1
+					#coastal_defense_ships = 1
 					popup = yes 
 				}
 				create_equipment_variant = {

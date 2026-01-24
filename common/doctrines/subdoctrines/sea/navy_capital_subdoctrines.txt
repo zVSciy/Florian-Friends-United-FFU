@@ -286,7 +286,7 @@ coastal_defence_fleet = {
 				}
 			}
 			set_technology = { 
-				coastal_defense_ships = 1 
+				#coastal_defense_ships = 1 
 			}
 		}
 	}

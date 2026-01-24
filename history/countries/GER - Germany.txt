@@ -55,9 +55,9 @@ set_technology = {
 	
 	basic_machine_tools = 1
 	
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
+	#mobile_warfare = 1
+	#trade_interdiction = 1
+	#formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -97,7 +97,7 @@ if = {
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
 		panzerschiffe = 1
-		pre_dreadnoughts = 1
+		#pre_dreadnoughts = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		mtg_transport = 1
@@ -107,9 +107,9 @@ if = {
 		basic_light_battery = 1
 		basic_medium_battery = 1
 		basic_heavy_battery = 1
-		basic_depth_charges = 1
-		sonar = 1
-		basic_cruiser_armor_scheme = 1
+		#basic_depth_charges = 1
+		#sonar = 1
+		#basic_cruiser_armor_scheme = 1
 	}
 	add_ideas = MTG_naval_treaty_adherent
 	set_naval_oob = "GER_1936_naval_mtg"
@@ -195,13 +195,10 @@ add_to_tech_sharing_group = axis_research
 
 # add_ideas = {GER_mefo_bills_1 GER_good_weather_army }
 
-add_timed_idea = {
-	idea = 
-	days = 765
-}
+ 
 
 add_ideas = {
-	GER_benelux_trade
+	#GER_benelux_trade
 	sour_loser
 	# general_staff
 	limited_exports
@@ -336,7 +333,7 @@ recruit_character = GER_walther_von_brauchitsch
 recruit_character = GER_ritter_von_greim
 recruit_character = GER_ferdinand_schorner
 recruit_character = GER_werner_von_fritsch
-recruit_character = GER_erich_hartmann
+#recruit_character = GER_erich_hartmann
 recruit_character = GER_hugo_sperrle
 recruit_character = GER_erhard_milch
 recruit_character = GER_erich_bey
@@ -442,7 +439,7 @@ if = {
 	create_equipment_variant = {
 		name = "Deutschland Class"
 		type = ship_hull_cruiser_panzerschiff
-		name_group = GER_PZ_HISTORICAL
+		name_group = GER_BB_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_anti_air_slot = ship_anti_air_2
@@ -451,9 +448,9 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			front_1_custom_slot = ship_heavy_battery_2
-			mid_1_custom_slot = ship_light_medium_battery_2
-			mid_2_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_anti_air_2
+			mid_1_custom_slot = ship_airplane_launcher_2
+			mid_2_custom_slot = ship_heavy_battery_2
 			rear_1_custom_slot = ship_torpedo_2
 		}
 	}

@@ -40,9 +40,6 @@ on_actions = {
 			NZL = {
 				set_variable = { show_background = 9 }
 			}
-			TUR = {
-				set_variable = { show_background = 10 }
-			}
 			HUN = {
 				set_variable = { show_background = 11 }
 			}

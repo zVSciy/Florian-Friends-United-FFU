@@ -1954,7 +1954,6 @@ focus_tree = {
 						tag = GRE
 						tag = YUG
 						tag = ROM
-						tag = TUR
 					}
 					NOT = { is_subject_of = ROOT }
 					NOT = {	is_in_faction_with = ROOT }
@@ -2001,7 +2000,6 @@ focus_tree = {
 				country_exists = YUG
 				country_exists = GRE
 				country_exists = ROM
-				country_exists = TUR
 			}
 		}
 		
@@ -2035,7 +2033,6 @@ focus_tree = {
 							original_tag = YUG
 							original_tag = GRE
 							original_tag = ROM
-							original_tag = TUR
 						}
 					}
 					ROOT = {
@@ -2053,7 +2050,6 @@ focus_tree = {
 						original_tag = YUG
 						original_tag = GRE
 						original_tag = ROM
-						original_tag = TUR
 					}
 				}
 			}

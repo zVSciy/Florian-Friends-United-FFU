@@ -3071,12 +3071,6 @@ country_event = {
 				}
 				set_cosmetic_tag = YUG_puppet_5
 			}
-			if = {
-				limit = {
-					original_tag = TUR
-				}
-				set_cosmetic_tag = YUG_puppet_6
-			}
 		}
 	}
 }

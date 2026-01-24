@@ -13,7 +13,7 @@ every_possible_country = {
 		}
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = { tag = TUR tag = GRE }
+			NOT = { tag = GRE }
 		}
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
@@ -55,7 +55,7 @@ every_possible_country = {
 		}
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = { tag = TUR tag = GRE }
+			NOT = { tag = GRE }
 		}
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
@@ -106,7 +106,7 @@ every_possible_country = {
 		}
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = { tag = TUR tag = GRE }
+			NOT = { tag = GRE }
 		}
 		if = {
 			limit = { has_dlc = "By Blood Alone" }

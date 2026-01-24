@@ -41,10 +41,7 @@ set_politics = {
 set_variable = { axis_poster_center_icon_frame = 1 }
 #IDEAS SETUP
 
-add_timed_idea = {
-	idea = 
-	days = 765
-}
+ 
 
 add_ideas = { #DLC
 	BUL_second_national_catastrophe
@@ -152,10 +149,6 @@ add_opinion_modifier = {
 }
 add_opinion_modifier = { 
 	target = ROM
-	modifier = BFTB_incongruous_neighbors
-}
-add_opinion_modifier = { 
-	target = TUR
 	modifier = BFTB_incongruous_neighbors
 }
 add_opinion_modifier = { 

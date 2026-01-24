@@ -454,7 +454,7 @@
 # 		early_ship_hull_submarine = 1
 # 		early_ship_hull_cruiser = 1
 # 		basic_battery = 1
-# 		coastal_defense_ships = 1
+# 		#coastal_defense_ships = 1
 # 	}
 # }
 
@@ -506,11 +506,11 @@
 # # 		force_rotation = 1
 # # 		fighter_baiting = 1
 
-# # 		grand_battle_plan = 1
-# # 		trench_warfare = 1
-# # 		fleet_in_being = 1
-# # 		battlefleet_concentration = 1
-# # 		submarine_operations = 1
+# # 		 #grand_battle_plan = 1
+# # 		#trench_warfare = 1
+# # 		#fleet_in_being = 1
+# # 		 #battlefleet_concentration = 1
+# # 		# submarine_operations = 1
 # # 	}
 
 # # 	# TECH ADJUSTMENTS
@@ -1016,10 +1016,7 @@ set_variable = {
 	value = 0.800
 }
 
-add_timed_idea = {
-	idea = 
-	days = 765
-}
+ 
 
 add_ideas = {
 	limited_conscription
@@ -1063,7 +1060,7 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		coastal_defense_ships = 1
+		#coastal_defense_ships = 1
 	}
 }
 
@@ -1097,14 +1094,14 @@ set_variable = { axis_poster_center_icon_frame = 1 }
 
 		#doctrines
 		#Air
-		force_rotation = 1
-		fighter_baiting = 1
+		#force_rotation = 1
+		#fighter_baiting = 1
 
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
+		 #grand_battle_plan = 1
+		#trench_warfare = 1
+		#fleet_in_being = 1
+		 #battlefleet_concentration = 1
+		# submarine_operations = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1

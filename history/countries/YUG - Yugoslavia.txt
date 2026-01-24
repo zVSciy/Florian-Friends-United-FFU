@@ -1,13 +1,8 @@
 ﻿capital = 853
 
 oob = "YUG_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "YUG_1936_naval_mtg"
-	else = {
-		set_naval_oob = "YUG_1936_naval_legacy"
-	}
-}
+
+set_naval_oob = "YUG_1936_naval_mtg"
 
 # MP_garrison_division_standard = yes
 
@@ -29,10 +24,7 @@ if = {
 		YUG_idea_serbian_general_staff
 	}
 }
-add_timed_idea = {
-	idea = 
-	days = 765
-}
+ 
 
 add_ideas = {
 	anti_german_military
@@ -56,7 +48,7 @@ set_technology = {
 	light_tank_1 = 1
 	gw_artillery = 1
 	
-	superior_firepower = 1
+	#superior_firepower = 1
 	support_weapons = 1
 	basic_train = 1
 	fra_light_tank_export = 1
@@ -82,8 +74,8 @@ if = {
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
 		basic_torpedo = 1
-		basic_depth_charges = 1
-		coastal_defense_ships = 1
+		#basic_depth_charges = 1
+		#coastal_defense_ships = 1
 	}
 }
 
@@ -166,10 +158,10 @@ if = {
 # 		support_weapons = 1
 
 # 		#doctrines
-# 		air_superiority = 1
-# 		fleet_in_being = 1
-# 		battlefleet_concentration = 1
-# 		convoy_sailing = 1
+# 		# air_superiority = 1
+# 		#fleet_in_being = 1
+# 		 #battlefleet_concentration = 1
+# 		 #convoy_sailing = 1
 # 		sup_delay = 1
 
 # 		#electronics

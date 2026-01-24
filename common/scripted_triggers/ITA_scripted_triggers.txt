@@ -267,7 +267,6 @@ ITA_is_valid_free_states_of_europe_target = {
 		# original_tag = KOS
 		original_tag = GRE
 		original_tag = ALB
-		original_tag = TUR
 		AND = {
 			OR = {
 				original_tag = GER

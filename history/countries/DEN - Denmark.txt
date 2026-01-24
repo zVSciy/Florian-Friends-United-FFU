@@ -385,9 +385,9 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		basic_cruiser_armor_scheme = 1
+		#basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
-		coastal_defense_ships = 1
+		#coastal_defense_ships = 1
 		mtg_transport = 1
 	}
 }
@@ -540,12 +540,12 @@ if = {
 # 		support_weapons = 1
 
 # 		#doctrines
-# 		air_superiority = 1
-# 		grand_battle_plan = 1
-# 		trench_warfare = 1
-# 		fleet_in_being = 1
-# 		convoy_sailing = 1
-# 		submarine_operations = 1
+# 		# air_superiority = 1
+# 		 #grand_battle_plan = 1
+# 		#trench_warfare = 1
+# 		#fleet_in_being = 1
+# 		 #convoy_sailing = 1
+# 		# submarine_operations = 1
 
 # 		#electronics
 # 		electronic_mechanical_engineering = 1

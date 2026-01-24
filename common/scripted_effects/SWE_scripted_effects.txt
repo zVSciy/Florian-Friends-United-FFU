@@ -713,23 +713,6 @@ SWE_reduce_the_cross_we_bear = {
 	}
 }
 
-SWE_on_freed_cross_we_bear = {
-	if = {
-		limit = {
-			SWE = {
-				has_completed_focus = SWE_the_cross_we_bear
-			}
-			NOT = { has_country_flag = SWE_has_already_uncapped_once }
-			NORDIC_is_nordic = yes
-		}
-		set_country_flag = SWE_has_already_uncapped_once
-		SWE = {
-			add_to_variable = { SWE_cross_we_bear_army_morale_factor = SWE_cross_we_bear_army_morale_factor_increase }
-			add_to_variable = { SWE_cross_we_bear_conscription = SWE_cross_we_bear_conscription_increase }
-		}
-	}
-}
-
 SWE_calc_refugee_from_war = {
 	set_variable = { SWE_refugee_from_war_total_manpower_gained = 0 }
 	set_variable = { SWE_refugee_min_manpower_gained = 1000000 }

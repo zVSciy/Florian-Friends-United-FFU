@@ -4639,7 +4639,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE } }
 		NOT = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
 		NOT = {
 			AND = {
@@ -7750,7 +7750,7 @@ generic_artillery_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = BUL tag = GRE tag = TUR }
+				OR = { tag = BUL tag = GRE}
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
@@ -8101,7 +8101,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = IRE } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = EST tag = IRE } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -8809,7 +8809,7 @@ generic_motorized_mechanized_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = BUL tag = GRE tag = TUR }
+				OR = { tag = BUL tag = GRE }
 				has_dlc = "Battle for the Bosporus"
 			}
 		}

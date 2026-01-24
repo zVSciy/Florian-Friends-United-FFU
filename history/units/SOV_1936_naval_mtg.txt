@@ -5,10 +5,10 @@ units= {
 	### Northern Fleet -- Murmansk
 	fleet = {
 		name = "Severnyy Flot"
-		naval_base = 13405 # Murmansk
+		naval_base = 13319 # Murmansk
 		task_force = {
 			name = "Severnyy Flot"
-			location = 13405 # Murmansk
+			location = 13319 # Murmansk
 			# 1ya Flotiliya Esmintsev
 			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }
 			ship = { name = "Nezamozhnik" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }

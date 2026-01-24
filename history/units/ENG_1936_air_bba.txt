@@ -116,30 +116,6 @@ air_wings = {
 			version_name = "Hector"
 		}
 	}
-
-	"HMS Furious"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 9 version_name = "Hurricane" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 2 version_name = "Swordfish" }
-	}
-	"HMS Courageous"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 9 version_name = "Hurricane" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 4 version_name = "Swordfish" }
-	}
-	"HMS Glorious"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 6 version_name = "Hurricane" } #historical 9
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 4 version_name = "Swordfish" } #historical 36
-	}
-	"HMS Eagle"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Hurricane" }
-		small_plane_airframe_1 =  { owner = "ENG" amount = 8 version_name = "Hurricane" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 8 version_name = "Swordfish" }
-	}
 }
 
 	#########################

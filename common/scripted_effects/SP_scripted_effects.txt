@@ -492,7 +492,7 @@ SP_create_variant_based_on_country_improved_small_airframe_rocket_engine = {
 			if = {
 				limit = {
 					has_tech = aa_cannon_1
-					has_completed_focus = JAP_develop_new_fighters
+					has_completed_focus = JAP_the_zero
 				}
 				create_equipment_variant = {
 			 		name = "J8M1"
@@ -512,7 +512,7 @@ SP_create_variant_based_on_country_improved_small_airframe_rocket_engine = {
 			}
 			else_if = {
 				limit = {
-					has_completed_focus = JAP_develop_new_fighters
+					has_completed_focus = JAP_the_zero
 				}
 				create_equipment_variant = {
 					name = "J8M2"
@@ -594,8 +594,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -619,8 +619,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = improved_heavy_armor_scheme
-				is_special_project_completed = sp:sp_air_radar
+				#has_tech = improved_heavy_armor_scheme
+				has_tech = radio_detection
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -644,7 +644,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -668,7 +668,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -691,8 +691,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -715,7 +715,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -738,7 +738,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				is_special_project_completed = sp:sp_air_radar
+				has_tech = radio_detection
 				has_tech = antiair2
 			}
 			create_equipment_variant = {
@@ -785,8 +785,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				is_special_project_completed = sp:sp_air_radar
-				has_tech = improved_heavy_armor_scheme
+				has_tech = radio_detection
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -809,7 +809,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}		
 		else_if = {
 			limit = {
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -858,8 +858,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -883,7 +883,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -906,9 +906,9 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				is_special_project_completed = sp:sp_air_radar
+				has_tech = radio_detection
 				has_tech = antiair2
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -932,7 +932,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -955,8 +955,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -979,7 +979,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1003,7 +1003,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				is_special_project_completed = sp:sp_air_radar
+				has_tech = radio_detection
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1049,8 +1049,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = improved_heavy_armor_scheme
-				is_special_project_completed = sp:sp_air_radar
+				#has_tech = improved_heavy_armor_scheme
+				has_tech = radio_detection
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1073,7 +1073,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}		
 		else_if = {
 			limit = {
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1123,8 +1123,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1148,7 +1148,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1172,7 +1172,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1195,8 +1195,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1219,7 +1219,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1265,7 +1265,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1312,8 +1312,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1336,8 +1336,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				is_special_project_completed = sp:sp_air_radar
-				has_tech = improved_heavy_armor_scheme
+				has_tech = radio_detection
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1360,7 +1360,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1383,7 +1383,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		else_if = {
 			limit = {
 				has_tech = antiair2
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1405,8 +1405,8 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = cavity_magnatron
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1428,7 +1428,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = cavity_magnatron
+				#has_tech = cavity_magnatron
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"
@@ -1472,7 +1472,7 @@ SP_create_variant_of_habakkuk_for_production_line = {
 		}
 		else_if = {
 			limit = {
-				has_tech = improved_heavy_armor_scheme
+				#has_tech = improved_heavy_armor_scheme
 			}
 			create_equipment_variant = {
 				name = "Habakkuk"

@@ -7671,15 +7671,6 @@ country_event = {
 						transfer_state = PREV
 					}
 				}
-				else_if = {
-					limit = {
-						is_core_of = TUR
-						country_exists = TUR
-					}
-					TUR = {
-						transfer_state = PREV
-					}
-				}
 				else_if = { # Check for releasables
 					limit = {
 						any_country = {
@@ -8099,32 +8090,6 @@ country_event = {
 	}
 }
 
-#Demand Turkish Territories - Turkey refuses - Event for BUL
-country_event = {
-	id = bftb_bulgaria_balkan_federation.18
-	title = bftb_bulgaria_balkan_federation.18.t
-	desc = bftb_bulgaria_balkan_federation.18.desc
-	picture = GFX_report_event_bul_ff_troops_panzer 
-
-	is_triggered_only = yes
-
-	option = {
-		name = bftb_bulgaria_balkan_federation.18.a
-
-		TUR = {
-			every_controlled_state = {
-				limit = {
-					BUL_is_balkan_state = yes
-				}
-				add_claim_by = ROOT
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = FROM
-			}
-		}
-	}
-}
 
 
 ########    ###    ######## ########     #######  ########    ######## ##     ## ########    ########     ###    ##       ##    ##    ###    ##    ##  ######  

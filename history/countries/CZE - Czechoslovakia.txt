@@ -25,11 +25,11 @@ set_technology = {
 	#early_bomber = 1
 	#CAS1 = 1
 	
-	trench_warfare = 1
+	##trench_warfare = 1
 
 	basic_machine_tools = 1
 	
-	fleet_in_being = 1
+	#fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	mechanical_computing = 1
 	radio = 1
@@ -160,10 +160,6 @@ if = {
 		CZE_divided_nation
 		peace_training
 		special_forces_cap
-	}
-	add_timed_idea = {
-		idea = 
-		days = 765
 	}
 	# give_guarantee = YUG
 	# give_guarantee = ROM

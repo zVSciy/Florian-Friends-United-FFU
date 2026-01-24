@@ -266,30 +266,6 @@ on_actions = {
 					}
 				}
 			}
-			# In case of Turkish civil war with field marshal Ataturk out on the field
-			if = { 
-        	    limit = { 
-        	        original_tag = TUR
-        	        has_civil_war = yes
-        	        FROM = {
-        	            original_tag = TUR
-        	            has_civil_war = yes
-        	        }
-        	    }
-        	    hidden_effect = { 
-        	        if = { 
-        	            limit = {
-        	            	FROM = { has_government = neutrality } 
-        	            }
-        	            every_unit_leader = {
-        	                limit = { 
-        	                    has_id = 59
-        	                }
-        	                set_nationality = FROM
-        	            }
-        	        }
-        	    }
-        	}
 		}
 	}	
 
