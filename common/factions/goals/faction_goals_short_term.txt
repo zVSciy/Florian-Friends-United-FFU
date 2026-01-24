@@ -456,6 +456,7 @@ faction_goal_unlock_research = {
 	category = short_term
 	group = FOCUS_FILTER_INTERNAL_AFFAIRS
 	available = {
+        always = yes
 	}
 	visible = {
 		FROM = { has_faction_research_unlocked = no }
@@ -483,7 +484,7 @@ faction_goal_unlock_military = {
 	}
 
 	completed = {
-        date > 1937.1.1
+        has_war = yes
 	}
 	complete_effect = {
 		set_faction_military_unlocked = yes
