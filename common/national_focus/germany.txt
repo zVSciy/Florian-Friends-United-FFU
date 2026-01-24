@@ -7429,7 +7429,7 @@ focus_tree = {
 		icon = GFX_focus_GER_navy
 		x = 81
 		y = 0
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -7525,7 +7525,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_rearmament
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -7754,35 +7754,33 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = {
-				ship_hull_super_heavy = 1
+				ship_hull_heavy_3 = 1
 			}
 			create_equipment_variant = {
 				name = "H-Klasse"
-				type = ship_hull_super_heavy_1
+				type = ship_hull_heavy_3
 				name_group = GER_BB_HISTORICAL
 				parent_version = 0
 				modules = {
-					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_battery_slot = ship_heavy_battery_2
 					fixed_ship_anti_air_slot = ship_anti_air_3
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-					fixed_ship_radar_slot = ship_radar_1
-					fixed_ship_engine_slot = heavy_ship_engine_3
-					fixed_ship_secondaries_slot = ship_anti_air_3
-					fixed_ship_armor_slot = ship_armor_shbb
-					front_1_custom_slot = ship_super_heavy_battery_1
-					front_2_custom_slot = ship_super_heavy_battery_1
-					mid_1_custom_slot = ship_anti_air_3
-					mid_2_custom_slot = ship_anti_air_3
-					mid_3_custom_slot = ship_secondaries_2
-					rear_1_custom_slot = ship_super_heavy_battery_1
-					rear_2_custom_slot = ship_super_heavy_battery_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_radar_2
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_bb_3
+					front_1_custom_slot = ship_heavy_battery_2
+					mid_1_custom_slot = dp_ship_secondaries_2
+					mid_2_custom_slot = ship_airplane_launcher_2
+					mid_3_custom_slot = dp_ship_secondaries_2
+					rear_1_custom_slot = ship_heavy_battery_2
 				}
 			}
 			custom_effect_tooltip="Adds two H-Klasse Battleships to the production queue, at 75% and 50% complete, respectively."
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_super_heavy_1
+						type = ship_hull_heavy_3
 						creator = "GER"
 						version_name = "H-Klasse"
 					}
@@ -7793,7 +7791,7 @@ focus_tree = {
 				}
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_super_heavy_1
+						type = ship_hull_heavy_3
 						creator = "GER"
 						version_name = "H-Klasse"
 					}
