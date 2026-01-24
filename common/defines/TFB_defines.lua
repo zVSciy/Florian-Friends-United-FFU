@@ -585,7 +585,7 @@ NDefines.NNavy.NAVAL_DOMINANCE_ORG_RECOVERY = 0.1
 NDefines.NNavy.NAVAL_DOMINANCE_SHIP_RECOVERY_CHANCE = 0.1
 NDefines.NNavy.NAVAL_DOMINANCE_MINES_PLANTING_BONUS = 0.2						-- Naval planting bonus when having naval dominance in the region
 NDefines.NNavy.NAVAL_DOMINANCE_MINES_SWEEPING_BONUS = 0.2						-- Naval sweeping bonus when having naval dominance in the region
-NDefines.NNavy.NAVAL_DOMINANCE_CHANCE_OF_ACCIDENT_REDUCTION = 0.25			-- The chance to encounter an accident during naval training would be reduced when having naval dominance in the region
+NDefines.NNavy.NAVAL_DOMINANCE_CHANCE_OF_ACCIDENT_REDUCTION = 1.0			-- The chance to encounter an accident during naval training would be reduced when having naval dominance in the region
 
 NDefines.NNavy.NAVAL_HOMEBASE_CALCULATION_DISTANCE_CUTOFF = 1000				-- Tuning parameter for homebase calculation. Distance to normalize against. Everything above said value will be treated as score = 0.
 NDefines.NNavy.NAVAL_HOMEBASE_BUILDING_SCORE_FACTOR = 0.02				-- Tuning parameter for homebase calculation. Multiplier for how much the level of the naval base impacts its total score.
@@ -761,7 +761,7 @@ NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 1.0, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
 }
 
-NDefines.NNavy.	MISSION_FUEL_COSTS_PRIO_FACTOR = {  -- Prio fuel cost ratio for each mission. Highet value means that mission is more important to perform with regards to fuel usage
+NDefines.NNavy.MISSION_FUEL_COSTS_PRIO_FACTOR = {  -- Prio fuel cost ratio for each mission. Highet value means that mission is more important to perform with regards to fuel usage
 	0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
 	1.0, -- PATROL
 	1.0, -- STRIKE FORCE (does not cost fuel at base, and uses IN_COMBAT_FUEL_COST in combat. this is just for the movement in between)
@@ -918,7 +918,7 @@ NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 0							-- Amount of strength l
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0						-- Amount of strength loss in a training accident, propotional to the maximum strength of the ship
 NDefines.NNavy.TRAINING_ACCIDENT_ORG_LOSS_FACTOR = 0						-- Amount of current organization the ship lose
 
-NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0.04							-- General chance for naval accidents for balancing the gameplay.
+NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0.00							-- General chance for naval accidents for balancing the gameplay.
 -- The Formula: Min( TRAINING_MAX_DAILY_COUNTRY_EXP * Ratio, TRAINING_DAILY_COUNTRY_EXP_FACTOR * ( TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR * TrainingShipCount / CountryShipCount 
 -- + TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR * Manpower + TRAINING_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR * Manpower / CountryShipCount ) ) 
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.5								-- Amount of exp each ship gain every 24h while training (before modifiers)

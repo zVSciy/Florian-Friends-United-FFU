@@ -7754,7 +7754,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = {
-				ship_hull_heavy_3 = 1
+				improved_ship_hull_heavy = 1
 			}
 			create_equipment_variant = {
 				name = "H-Klasse"
@@ -7780,8 +7780,8 @@ focus_tree = {
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_heavy_3
-						creator = "GER"
+							type = ship_hull_heavy_3
+							creator = "GER"
 						version_name = "H-Klasse"
 					}
 					name = "Schlachtschiff H"
@@ -7800,7 +7800,7 @@ focus_tree = {
 					progress = 0.5
 					amount = 1
 				}
-			}
+			} 
 			# add_ideas = GER_plan_z
 		}
 	}
