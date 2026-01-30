@@ -1391,6 +1391,39 @@ JAP_southern_expansion = {
 }
 
 political_actions = {
+	JAP_last_banzai = {
+
+        icon = generic_mobilization
+
+        allowed = { original_tag = JAP }
+
+        available = {
+            date > 1942.6.1
+            country_exists = RAJ
+            NOT = { has_country_flag = JAP_LAST_BANZAI_DONE }
+            any_country = {
+                is_in_faction_with = ENG
+                has_divisions_in_state = {
+                    state = { is_on_continent = europe }
+                    size > 0
+                }
+            }
+        }
+
+        visible = { original_tag = JAP }
+
+        fire_only_once = yes
+
+        cancelable = no
+
+        complete_effect = {
+            add_timed_idea = { idea = JAP_banzai_mad_charge days = 90 }
+            add_ideas = JAP_banzai_devastation
+            set_country_flag = JAP_LAST_BANZAI_DONE
+        }
+
+        ai_will_do = { factor = 0 }
+    }
 	JAP_annex_man = {
 		allowed = {
 			original_tag = JAP

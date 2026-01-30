@@ -366,7 +366,44 @@ ideas = {
 		}
 	}
 	country = {
-	
+		JAP_banzai_mad_charge = {
+
+            name = "JAP_banzai_mad_charge_name"
+
+            picture = GFX_idea_generic_attack
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_attack_factor = 0.30
+                army_org_factor = 0.10
+                naval_range = 0.30
+                air_range = 0.10
+            }
+        }
+
+        JAP_banzai_devastation = {
+
+            name = "JAP_banzai_devastation_name"
+
+            picture = GFX_idea_generic_national_unity
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_industrial_complex_factor = -0.90
+                production_speed_arms_factory_factor = -0.90
+                production_speed_dockyard_factor = -0.90
+            }
+        }
 		## NO EQ CAPTURE
 		JAP_no_equipment_capture = {
 			name = JAP_no_equipment_capture
