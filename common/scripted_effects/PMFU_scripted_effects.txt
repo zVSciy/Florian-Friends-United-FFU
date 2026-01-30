@@ -804,7 +804,7 @@ dockyard_cg_calculation = {
 	add_to_variable = {
 		dockcount1 = num_of_naval_factories
 	}
-	# USA could be 60 or 80
+	# USA
     if = {
 		limit = {
 			has_variable = dockyard_major
@@ -815,16 +815,35 @@ dockyard_cg_calculation = {
 			limit = {
 				check_variable = {
 					var = dockcount1 
-					value = 100
+					value = 130
 					compare = greater_than
 				}
 			}
-			subtract_from_variable = { dockcount1 = 100 } # This and the value above determine when to start counting dockyards
+			subtract_from_variable = { dockcount1 = 130 } # This and the value above determine when to start counting dockyards
 		}
 		else = {
         	set_variable = { dockcount1 = 0 }
 		}
     }
+	else_if = {
+		limit = {
+			has_variable = dockyard_major
+			tag = ENG
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = dockcount1 
+					value = 120
+					compare = greater_than
+				}
+			}
+			subtract_from_variable = { dockcount1 = 120 } # This and the value above determine when to start counting dockyards
+		}
+		else = {
+        	set_variable = { dockcount1 = 0 }
+		}
+	}
 	# For majors cap starts at 60
     else_if = {
 		limit = {
@@ -834,11 +853,11 @@ dockyard_cg_calculation = {
 			limit = {
 				check_variable = {
 					var = dockcount1 
-					value = 80
+					value = 100
 					compare = greater_than
 				}
 			}
-			subtract_from_variable = { dockcount1 = 80 } # This and the value above determine when to start counting dockyards
+			subtract_from_variable = { dockcount1 = 100 } # This and the value above determine when to start counting dockyards
 		}
 		else = {
         	set_variable = { dockcount1 = 0 }
@@ -876,10 +895,10 @@ dockyard_cg_calculation = {
 			limit = {
 				has_variable = dockyard_major
 			}
-			add_to_variable = { dockyard_cg = 0.05 } # This is the variable determining how much we tick the consumer goods
+			add_to_variable = { dockyard_cg = 0.03 } # This is the variable determining how much we tick the consumer goods
 		}
 		else = {
-			add_to_variable = { dockyard_cg = 0.05 } # This is the variable determining how much we tick the consumer goods
+			add_to_variable = { dockyard_cg = 0.03 } # This is the variable determining how much we tick the consumer goods
 		}
 		
 	}

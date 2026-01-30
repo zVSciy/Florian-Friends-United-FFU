@@ -18,6 +18,23 @@ ideas = {
 				forced_surrender_limit = 1
 			}
 		}
+		FRA_mastery_postcap = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_undividable
+
+			modifier = {
+				new_mobile_warfare_mastery_gain_factor = 0.2
+				superior_firepower_mastery_gain_factor = 0.2
+				grand_battleplan_mastery_gain_factor = 0.2
+				mass_assault_mastery_gain_factor = 0.2
+			}
+		}
 
 		FRA_defense_of_metropolitan_france = {
 

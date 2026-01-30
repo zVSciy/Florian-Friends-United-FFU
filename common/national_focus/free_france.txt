@@ -855,6 +855,7 @@ focus_tree = {
 				add_political_power = -150
 			}
 			add_ideas = FRA_infantry_supremacy
+			add_ideas = FRA_mastery_postcap
 			hidden_effect = {
 				set_technology = {
 					FRA_increase_armor_tech = 1
@@ -902,6 +903,7 @@ focus_tree = {
 				add_political_power = -150
 			}
 			add_ideas = FRA_tank_supremacy
+			add_ideas = FRA_mastery_postcap
 			army_experience = 1500
 		}
 		completion_reward = {
@@ -911,7 +913,7 @@ focus_tree = {
                     type = steel_refinery
                     level = 3
                     instant_build = yes
-                }
+                } 
             }
 		}
 	}
