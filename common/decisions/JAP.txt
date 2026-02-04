@@ -1401,13 +1401,27 @@ political_actions = {
             date > 1942.6.1
             country_exists = RAJ
             NOT = { has_country_flag = JAP_LAST_BANZAI_DONE }
-            any_country = {
-                is_in_faction_with = ENG
-                has_divisions_in_state = {
-                    state = { is_on_continent = europe }
-                    size > 0
-                }
-            }
+			any_state = {
+				hidden_trigger = {
+					europe_dday_coastline = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = "European Coastline"
+				}
+				OR = { 
+					is_controlled_by = ENG
+					is_controlled_by = USA
+					is_controlled_by = FRA
+					is_controlled_by = SAF
+					is_controlled_by = CAN
+					is_controlled_by = AST
+					is_controlled_by = RAJ
+					is_controlled_by = NZL
+					is_controlled_by = MEX
+					is_controlled_by = BRA
+					is_controlled_by = HOL
+				}
+			}
         }
 
         visible = { original_tag = JAP }
