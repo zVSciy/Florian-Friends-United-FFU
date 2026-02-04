@@ -1434,6 +1434,9 @@ political_actions = {
             add_timed_idea = { idea = JAP_banzai_mad_charge days = 90 }
             add_ideas = JAP_banzai_devastation
             set_country_flag = JAP_LAST_BANZAI_DONE
+			hidden_effect = {
+				play_song = "8-speech"
+			}
         }
 
         ai_will_do = { factor = 0 }
