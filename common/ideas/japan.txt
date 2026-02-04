@@ -400,8 +400,8 @@ ideas = {
 
             modifier = {
                 production_speed_industrial_complex_factor = -0.90
-                production_speed_arms_factory_factor = -0.90
-                production_speed_dockyard_factor = -0.90
+                industrial_capacity_factory = -0.90
+                industrial_capacity_dockyard = -0.5
             }
         }
 		## NO EQ CAPTURE
