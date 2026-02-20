@@ -579,7 +579,7 @@ NDefines.NNavy.NAVAL_HEADQUARTER_ADJACENCY = 2								-- How many extra steps of
 -- Having Naval Dominance will provide the following benefits:
 NDefines.NNavy.CONVOY_BLOCKED_BY_ENEMY_CONTROLLED_REGION = true				-- If an enemy control a sea region, consider that region as blocked
 NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_FRACTION = 0.0006					-- How much dominance points goes into one percent of the multiplier from strike force missions. ( e.g. a taskforce of 1000 dominance generates a 60% multiplier ) 
-NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_MULTIREGION_DECAY = 0.05			-- Percentage that the strike force mission's naval dominance multiplier decreases with for each additional assigned region
+NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_MULTIREGION_DECAY = 0.025			-- Percentage that the strike force mission's naval dominance multiplier decreases with for each additional assigned region
 NDefines.NNavy.NAVAL_DOMINANCE_SPOTTING_BONUS = 0.05
 NDefines.NNavy.NAVAL_DOMINANCE_ORG_RECOVERY = 0.1
 NDefines.NNavy.NAVAL_DOMINANCE_SHIP_RECOVERY_CHANCE = 0.1
@@ -873,23 +873,23 @@ NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.1	-- org will clamped to this ratio on
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
 
 
-NDefines.NNavy.MISSION_DOMINANCE_RATIOS = { -- supremacy multipliers for different mission types
-0.0, -- HOLD
-1.0, -- PATROL		
-0.1, -- STRIKE FORCE 
-0.5, -- CONVOY RAIDING
-0.7, -- CONVOY ESCORT
-0.2, -- MINES PLANTING	
-0.2, -- MINES SWEEPING	
-0.0, -- TRAIN
-0.0, -- RESERVE_FLEET
-0.4, -- NAVAL_INVASION_SUPPORT
+NDefines.NNavy.MISSION_DOMINANCE_RATIOS = { -- dominance multipliers for different mission types
+	0.0, -- HOLD
+	1.0, -- PATROL
+	1.0, -- STRIKE FORCE
+	0.5, -- CONVOY RAIDING
+	1.0, -- CONVOY ESCORT
+	0.0, -- MINES PLANTING
+	0.0, -- MINES SWEEPING
+	0.0, -- TRAIN
+	0.0, -- RESERVE_FLEET
+	1.0, -- NAVAL_INVASION_SUPPORT
 }
 
 NDefines.NNavy.DOMINANCE_PER_SHIP_PER_RANGE_NEUTRAL = 3000					-- ship range where there is no penalty nor bonus to naval dominance, below or above this will be scaled accordingly with penalty or bonus, min value is 0
 NDefines.NNavy.DOMINANCE_PER_SHIP_PER_SPEED_NEUTRAL = 20						-- ship speed where there is no penalty nor bonus to naval dominance, below or above this will be scaled accordingly with penalty or bonus, min value is 0
-NDefines.NNavy.DOMINANCE_PER_SHIP_PER_CARRIER_SIZE = 0.2						-- bonus to dominance based on the carrier size - e.g. regular carrier hangar has carrier_size of 2, so it would be a bonus of 2 * DOMINANCE_PER_SHIP_PER_CARRIER_SIZE, min value is 0
-NDefines.NNavy.DOMINANCE_PER_SHIP_PER_HEAVY_GUN_ATTACK = 0.01					-- bonus to dominance based on the heavy attack, min value is 0
+NDefines.NNavy.DOMINANCE_PER_SHIP_PER_CARRIER_SIZE = 0.1						-- bonus to dominance based on the carrier size - e.g. regular carrier hangar has carrier_size of 2, so it would be a bonus of 2 * DOMINANCE_PER_SHIP_PER_CARRIER_SIZE, min value is 0
+NDefines.NNavy.DOMINANCE_PER_SHIP_PER_HEAVY_GUN_ATTACK = 0.01			-- bonus to dominance based on the heavy attack, min value is 0
 
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 250.0								-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.01						-- Value used to overall balance of the speed of planting naval mines
@@ -998,8 +998,8 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS						= 12				-- the taskforces that wants to join existing combats will wait for at least this amount
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION		= 4.0				-- low org of the ships will be factored in when a taskforce wants to join combat
 
-NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.03 							-- Daily dominance gain, as a fraction of target value 
-NDefines.NNavy.DOMINANCE_DAILY_LOSS_FACTOR = 0.05 							-- Daily dominance loss, as a fraction of previous target value 
+NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.08 							-- Daily dominance gain, as a fraction of target value 
+NDefines.NNavy.DOMINANCE_DAILY_LOSS_FACTOR = 0.02 							-- Daily dominance loss, as a fraction of previous target value 
 
 NDefines.NNavy.SUPPORT_SHIP_RECOVERY_BASE_STRENGTH_FACTOR = 0.02				-- Percentage of strength of max strength a recovered ship gets on recovery.
 
