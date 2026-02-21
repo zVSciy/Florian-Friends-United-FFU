@@ -1371,6 +1371,11 @@ technologies = {
 		   leads_to_tech = fire_control_methods_2
 		   research_cost_coeff = 1
 	   }
+		path = {
+			leads_to_tech = sp_improved_repair_ship
+			research_cost_coeff = 1
+		}
+
 	   sh_battleship = {
 		   lg_attack = 0.05
 		   hg_attack = 0.05
@@ -1539,6 +1544,11 @@ technologies = {
 
 		path = {
 			leads_to_tech = mtg_landing_craft
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = sp_improved_support_ship
 			research_cost_coeff = 1
 		}
 
@@ -1743,4 +1753,78 @@ technologies = {
 			always = no
 		}
 	}
+
+
+	#### SUPPORT & REPAIR SHIPS ####
+
+	sp_improved_support_ship = {
+		allow_branch = {
+			has_dlc = "No Compromise, No Surrender"
+		}
+
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_naval_support_ships
+			}
+		}
+
+		enable_equipments = {
+			support_ship_2
+		}
+
+		is_special_project_tech = yes
+		xp_research_type = navy
+		xp_boost_cost = 75
+		xp_research_bonus = 1
+		research_cost = 2
+		start_year = 1942
+		
+		
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = -6 y = 11 }
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+		special_project_specialization = { specialization_naval }
+	}
+
+	sp_improved_repair_ship = {
+		allow_branch = {
+			has_dlc = "No Compromise, No Surrender"
+		}
+
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_naval_support_ships
+			}
+		}
+
+		enable_equipments = {
+			repair_ship_2
+		}
+
+		is_special_project_tech = yes
+		xp_research_type = navy
+		xp_boost_cost = 75
+		xp_research_bonus = 1
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 5 y = 11 }
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+		special_project_specialization = { specialization_naval }
+	}
+
+
 }
