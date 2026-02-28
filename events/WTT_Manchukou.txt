@@ -207,3 +207,456 @@ country_event = {
 		}
 	}
 }
+
+
+
+#railways 
+country_event = {
+	id = wtt_manchukou.100
+	title = wtt_manchukou.100.t
+	desc = wtt_manchukou.100.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.100.a #okay
+		
+		trigger = { has_completed_focus = MAN_pacify_the_countrysidex }
+		
+		name = wtt_manchukou.129.a #okay
+		715 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = infrastructure 
+				level = 2
+			}
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+			}
+		}
+		
+		hidden_effect = {
+		country_event = { id = wtt_manchukou.120 days = 140 }
+		}
+	}
+}
+
+country_event = {
+	id = wtt_manchukou.101
+	title = wtt_manchukou.101.t
+	desc = wtt_manchukou.101.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_manchukou.101.a #Jehol
+	
+		trigger = { NOT = {  has_country_flag = MAN_jehol }   }  
+	
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.121 days = 140 }
+		}
+	
+	}
+	
+		
+		
+	option = {
+		name = wtt_manchukou.101.b #Kirin
+	
+		trigger = { NOT = { has_country_flag = MAN_kirin }   }
+	
+		ai_chance = {
+			factor = 5000
+		}
+	
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.122 days = 140 }
+		}
+	}
+	
+	
+
+	option = {
+		name = wtt_manchukou.101.c #Heilungkiang
+		trigger = { NOT = { has_country_flag = MAN_heilungkiang }   }
+
+		ai_chance = {
+			factor = 1
+		}
+			
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.128 days = 140 }
+		}
+	
+	}
+		
+
+	option = {
+		name = wtt_manchukou.101.z #Chahar
+		
+		trigger = { NOT = { has_country_flag = MAN_chahar }   }
+		
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.123 days = 140 }
+		}	
+	
+	}
+	
+	
+	
+	option = {
+		name = wtt_manchukou.101.e #South Chahar
+		
+		trigger = { AND = { NOT = { has_country_flag = MAN_schahar}  }   
+			has_country_flag =  MAN_chahar 
+			has_country_flag =  MAN_jehol 	
+		}
+	
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.124 days = 140 }
+		}	
+	
+	}
+	
+	option = {
+		name = wtt_manchukou.101.f #Sungkiang
+		trigger = { AND = { NOT = { has_country_flag = MAN_sungkiang}  }   
+			has_country_flag = MAN_heilungkiang 
+			has_country_flag =  MAN_kirin 
+		}
+		hidden_effect = {
+			country_event = { id =  wtt_manchukou.125 days = 140 } 
+		}
+	}
+	
+	
+
+	option = {
+		name = wtt_manchukou.101.g #Hulunbuir
+		
+		trigger = { AND = { NOT = { has_country_flag = MAN_hulunbuir}  }   
+		has_country_flag =  MAN_heilungkiang 
+		has_country_flag = MAN_chahar 
+	
+		}
+		
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.126 days = 140 }
+		}
+	}
+	
+	
+
+	option = {
+		name = wtt_manchukou.101.h #option leads to an event announcing the completion of the railroad network
+
+		trigger = {  AND = { 
+		has_country_flag = MAN_hulunbuir
+		has_country_flag = MAN_schahar
+		has_country_flag = MAN_sungkiang
+		} }
+		country_event = { id = wtt_manchukou.127 days = 140 }
+	}
+	
+	
+	
+}
+
+country_event = {
+	id = wtt_manchukou.120
+	title = wtt_manchukou.120.t
+	desc = wtt_manchukou.120.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.100.a #okay
+		
+		trigger = { has_completed_focus = MAN_pacify_the_countrysidex }
+
+		country_event = { id = wtt_manchukou.101  }
+
+		
+		hidden_effect = {
+			set_country_flag = MAN_liaotung  
+			complete_national_focus = MAN_railways_liaotung
+		}
+		
+		716 = {
+	    	add_extra_state_shared_building_slots = 3
+	        add_building_construction = {
+	        	 type = infrastructure 
+	        	 level = 1
+	    	}
+			add_building_construction = {
+		        type = industrial_complex 
+		        level = 1
+		    }
+		}
+		
+	}
+}
+
+country_event = {
+	id = wtt_manchukou.121
+	title = wtt_manchukou.121.t
+	desc = wtt_manchukou.121.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.121.a #okay
+		
+		trigger = { 
+			AND = { has_completed_focus = MAN_pacify_the_countrysidex  } 
+			NOT = { has_country_flag = MAN_jehol }            
+		}
+
+		
+		610	= {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = infrastructure 
+				level = 2
+			}
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+			}
+		}
+		
+		hidden_effect = { 
+			set_country_flag = MAN_jehol 
+			complete_national_focus = MAN_railways_jehol
+		}
+		country_event = { id = wtt_manchukou.101  }		
+	}
+				
+}
+				
+country_event = {
+	id = wtt_manchukou.122
+	title = wtt_manchukou.122.t
+	desc = wtt_manchukou.122.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.122.a #okay
+		
+				trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_kirin }            }
+
+				328 = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+		type = infrastructure 
+		level = 2
+		}
+			add_building_construction = {
+		type = industrial_complex 
+		level = 1
+		}
+		}
+		
+		hidden_effect = { set_country_flag = MAN_kirin 		complete_national_focus = MAN_railways_kirin
+		}
+		
+		country_event = { id = wtt_manchukou.101  }
+				
+				
+	}
+				
+}
+
+country_event = {
+	id = wtt_manchukou.123
+	title = wtt_manchukou.123.t
+	desc = wtt_manchukou.123.desc
+	picture = GFX_report_event_generic_train 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.123.a #okay
+		
+				#trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_chahar }            }
+
+			612	= {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure 
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+				}
+			}
+		
+		hidden_effect = { set_country_flag = MAN_chahar    		complete_national_focus = MAN_railways_chahar
+		}
+		
+				country_event = { id = wtt_manchukou.101  }			
+	}				
+}
+
+country_event = {
+	id = wtt_manchukou.124
+	title = wtt_manchukou.124.t
+	desc = wtt_manchukou.124.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.124.a #okay
+		
+		trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_schahar }            }
+
+		
+		611	= {
+	    	add_extra_state_shared_building_slots = 3
+		    add_building_construction = {
+	    		type = infrastructure 
+		    	level = 2
+		    }
+			add_building_construction = {
+	    		type = industrial_complex 
+		    	level = 1
+		    }
+		}
+		
+		hidden_effect = { 
+            set_country_flag = MAN_schahar   		complete_national_focus = MAN_railways_schahar
+	    }
+		
+		country_event = { id = wtt_manchukou.101  }
+				
+				
+	}
+				
+}
+
+country_event = {
+	id = wtt_manchukou.125
+	title = wtt_manchukou.125.t
+	desc = wtt_manchukou.125.desc
+	picture = GFX_report_event_generic_train
+	
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.125.a #okay
+		
+				trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_sungkiang }            }
+
+		
+	    717	= {
+		    add_extra_state_shared_building_slots = 3
+	    	add_building_construction = {
+	    	    type = infrastructure 
+	        	level = 2
+		    }
+			add_building_construction = {
+		       type = industrial_complex 
+		        level = 1
+		    }
+		}
+		hidden_effect = { 
+            set_country_flag = MAN_sungkiang   		complete_national_focus = MAN_railways_sungkiang
+		}
+		
+	    country_event = { id = wtt_manchukou.101  }
+				
+				
+	}
+}
+country_event = {
+	id = wtt_manchukou.126
+	title = wtt_manchukou.126.t
+	desc = wtt_manchukou.126.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.126.a #okay
+		
+		trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_hulunbuir }            }
+
+		761	= {
+		    add_extra_state_shared_building_slots = 3
+		    add_building_construction = {
+		     type = infrastructure 
+		     level = 2
+		    }
+			add_building_construction = {
+		        type = industrial_complex 
+	        	level = 1
+		    }
+		}
+		hidden_effect = { 
+            set_country_flag = MAN_hulunbuir  		complete_national_focus = MAN_railways_hulunbuir
+	    } 
+		
+		country_event = { id = wtt_manchukou.101  }		
+    }				
+}
+
+country_event = {
+	id = wtt_manchukou.128
+	title = wtt_manchukou.128.t
+	desc = wtt_manchukou.128.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.128.a #okay
+		
+		trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_heilungkiang }            }
+
+		
+		714	= {
+		    add_extra_state_shared_building_slots = 3
+		    add_building_construction = {
+		        type = infrastructure 
+		        level = 2
+		    }
+			add_building_construction = {
+		        type = industrial_complex 
+		        level = 1
+		    }
+		}
+		
+		hidden_effect = { 
+            set_country_flag = MAN_heilungkiang 		complete_national_focus = MAN_railways_heilungkiang
+        } 
+		
+		country_event = { id = wtt_manchukou.101  }
+				
+	}
+}
+				
+country_event = {
+	id = wtt_manchukou.127
+	title = wtt_manchukou.127.t
+	desc = wtt_manchukou.127.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.127.a #okay			
+	}
+				
+}

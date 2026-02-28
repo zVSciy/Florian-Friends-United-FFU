@@ -26,7 +26,7 @@ line_of_battle = {
     }
 
     # EFFECTS
-	naval_has_potf_in_combat_attack = 0.10
+	naval_has_potf_in_combat_attack = 0.05
 
     rewards = {
         flagships={
