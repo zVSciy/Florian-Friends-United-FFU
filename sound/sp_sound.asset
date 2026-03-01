@@ -1,0 +1,196 @@
+
+##################
+#Italian Speeches#
+##################
+sound = {
+	name = "sp_ita_waronallies"
+	file = "superevent/ita_speech/sp_ita_waronallies.wav"
+}
+sound = {
+	name = "sp_ita_surrender"
+	file = "superevent/ita_speech/sp_ita_surrender.wav"
+}
+sound = {
+	name = "sp_ita_ethiopia"
+	file = "superevent/ita_speech/sp_ita_ethiopia.wav"
+}
+sound = {
+	name = "sp_sov_stalin_cooked"
+	file = "superevent/sov_speech/sp_sov_stalin_cooked.wav"
+}
+sound = {
+	name = "sp_sov_ura"
+	file = "superevent/sov_speech/sp_sov_ura.wav"
+}
+sound = {
+	name = "sp_usa_speech_japan_attack"
+	file = "superevent/usa_speech/sp_usa_speech_japan_attack.wav"
+}
+sound = {
+	name = "sp_trump_1"
+	file = "superevent/usa_speech/sp_trump_1.wav"
+}
+sound = {
+	name = "sp_trump_2"
+	file = "superevent/usa_speech/sp_trump_2.wav"
+}
+sound = {
+	name = "sp_trump_3"
+	file = "superevent/usa_speech/sp_trump_3.wav"
+}
+sound = {
+	name = "sp_germany_endsieg"
+	file = "superevent/ger_speech/sp_germany_endsieg.wav"
+}
+sound = {
+	name = "sp_ger_goebbels"
+	file = "superevent/ger_speech/sp_ger_goebbels.wav"
+}
+sound = {
+	name = "sp_jap_banzai"
+	file = "superevent/jap_speech/sp_jap_banzai.wav"
+}
+sound = {
+	name = "sp_ger_sudeten_cooked"
+	file = "superevent/ger_speech/sp_ger_sudeten_cooked.wav"
+}
+sound = {
+	name = "sp_ger_danzig_cooked"
+	file = "superevent/ger_speech/sp_ger_danzig_cooked.wav"
+}
+sound = {
+	name = "sp_ger_anschsluss_cooked"
+	file = "superevent/ger_speech/sp_ger_anschsluss_cooked.wav"
+}
+sound = {
+	name = "sp_usa_democracy_cooked"
+	file = "superevent/usa_speech/sp_usa_democracy_cooked.wav"
+}
+sound = {
+	name = "sp_manhattan_project"
+	file = "superevent/usa_speech/sp_manhattan_project.wav"
+}
+sound = {
+	name = "sp_destroyer_of_worlds"
+	file = "superevent/usa_speech/sp_destroyer_of_worlds.wav"
+}
+sound = {
+	name = "sp_chamberlain"
+	file = "superevent/eng_speech/sp_chamberlain.wav"
+}
+sound = {
+	name = "sp_steiner"
+	file = "superevent/ger_speech/sp_steiner.wav"
+}
+sound = {
+	name = "sp_ger_stalingrad"
+	file = "superevent/ger_speech/sp_ger_stalingrad.wav"
+}
+sound = {
+	name = "sp_fra_appel"
+	file = "superevent/fra_speech/sp_fra_appel.wav"
+}
+sound = {
+	name = "sp_ger_barb_SS"
+	file = "superevent/ger_speech/sp_ger_barb_SS.wav"
+}
+sound = {
+	name = "sp_ger_siemens"
+	file = "superevent/ger_speech/sp_ger_siemens.wav"
+}
+sound = {
+	name = "sp_sov_anthem"
+	file = "superevent/sov_speech/sp_sov_anthem.wav"
+}
+sound = {
+	name = "sp_ger_georges_song"
+	file = "superevent/ger_speech/sp_ger_georges_song.wav"
+}
+sound = {
+	name = "sp_ger_counter"
+	file = "superevent/ger_speech/sp_ger_counter.wav"
+}
+sound = {
+	name = "sp_ger_volk"
+	file = "superevent/ger_speech/sp_ger_volk.wav"
+}
+sound = {
+	name = "sp_ger_doctor"
+	file = "superevent/ger_speech/sp_ger_doctor.wav"
+}
+sound = {
+	name = "sp_ger_mobilization"
+	file = "superevent/ger_speech/sp_ger_mobilization.wav"
+}
+sound = {
+	name = "sp_sov_victory"
+	file = "superevent/sov_speech/sp_sov_victory.wav"
+}
+sound = {
+	name = "sp_sov_music"
+	file = "superevent/sov_speech/sp_sov_music.wav"
+}
+sound = {
+	name = "sp_greater_german_reich"
+	file = "superevent/ger_speech/sp_greater_german_reich.wav"
+}
+sound = {
+	name = "sp_dday_cooked"
+	file = "superevent/eng_speech/sp_dday_cooked.wav"
+}
+sound = {
+	name = "sp_jap_china"
+	file = "superevent/jap_speech/sp_jap_china.wav"
+}
+sound = {
+	name = "sp_jap_allies"
+	file = "superevent/jap_speech/sp_jap_allies.wav"
+}
+sound = {
+	name = "sp_jap_ichi_go"
+	file = "superevent/jap_speech/sp_jap_ichi_go.wav"
+}
+sound = {
+	name = "sp_jap_sov_prelude"
+	file = "superevent/jap_speech/sp_jap_sov_prelude.wav"
+}
+sound = {
+	name = "sp_jap_sov"
+	file = "superevent/jap_speech/sp_jap_sov.wav"
+}
+sound = {
+	name = "sp_pol_beck"
+	file = "superevent/pol_speech/sp_pol_beck.wav"
+}
+sound = {
+	name = "sp_ger_capitulation"
+	file = "superevent/ger_speech/sp_ger_capitulation.wav"
+}
+sound = {
+	name = "sp_ger_victory"
+	file = "superevent/ger_speech/sp_ger_victory.wav"
+}
+sound = {
+	name = "sp_sov_bargration"
+	file = "superevent/sov_speech/sp_sov_bargration.wav"
+}
+sound = {
+	name = "sp_eng_fight_them_cooked"
+	file = "superevent/eng_speech/sp_eng_fight_them_cooked.wav"
+}
+sound = {
+	name = "sp_blood_toil_tears_sweat"
+	file = "superevent/eng_speech/sp_blood_toil_tears_sweat.wav"
+}
+sound = {
+	name = "sp_finest_hour_cooked"
+	file = "superevent/eng_speech/sp_finest_hour_cooked.wav"
+}
+sound = {
+	name = "sp_ger_cairo"
+	file = "superevent/ger_speech/sp_ger_cairo.wav"
+}
+sound = {
+	name = "sp_ger_zitadelle"
+	file = "superevent/ger_speech/sp_ger_zitadelle.wav"
+}

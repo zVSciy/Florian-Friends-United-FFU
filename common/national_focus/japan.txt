@@ -4000,6 +4000,21 @@ focus_tree = {
 					VIC = { remove_ideas = GER_africaaaaaaaaaaaaaa }
 					YUG = { remove_ideas = GER_africaaaaaaaaaaaaaa }
 				}
+
+				hidden_effect = {
+					every_country = {
+						limit = { check_variable= { speeches_enabled > 0 } }
+						scoped_sound_effect = "sp_jap_allies"
+					}
+					every_country = {
+						limit = {
+							check_variable = {
+								supervents_enabled > 0
+							}
+						}
+						set_variable = { var = super_event value = 11 }
+					}
+				}
 			}
 			# custom_effect_tooltip = JAP_strike_west_tt
 			

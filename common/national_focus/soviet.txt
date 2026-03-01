@@ -1747,7 +1747,18 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				play_song = "4-speech"
+				every_country = {
+					limit = { check_variable= { speeches_enabled > 0 } }
+					scoped_sound_effect = "sp_sov_stalin_cooked"
+				}
+				every_country = {
+					limit = {
+						check_variable = {
+							supervents_enabled > 0
+						}
+					}
+					set_variable = { var = super_event value = 13 }
+				}
 			}
 		}
 	}

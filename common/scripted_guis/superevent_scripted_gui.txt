@@ -1,0 +1,65 @@
+scripted_gui = {
+
+	super_event_barbarossa_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_barbarossa_custom_window"
+
+		visible = {
+			check_variable = { super_event > 0 }
+			NOT = { has_country_flag = super_events_disabled }
+		}
+		properties = {
+			super_event_image = {
+				image = "[THIS.GetSuperEventPicture]"
+			}
+		}
+	}
+
+	super_event_frame_barbarossa_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_frame_barbarossa_custom"
+
+		visible = {
+			check_variable = { super_event>0 }
+			NOT= { has_country_flag = super_events_disabled }
+		}
+
+		effects = {
+			Option_click = {
+				clear_variable = super_event
+				if = {
+					limit = {
+						check_variable = { super_event = 16 }
+					}
+					effect_tooltip = {
+						every_country = {
+							limit = {
+								OR = {
+									tag = JAP
+									tag = MAN
+									tag = SIA
+								}
+							}
+							random_owned_controlled_state = {
+								limit = {
+									is_core_of = PREV
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+								}
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

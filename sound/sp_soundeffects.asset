@@ -1,0 +1,347 @@
+
+##################
+#Italian Speeches#
+##################
+
+soundeffect = {
+	name = "sp_ita_waronallies"
+	sounds = {
+		sound = sp_ita_waronallies
+	}
+	volume = 1.4
+}
+soundeffect = {
+	name = "sp_ita_surrender"
+	sounds = {
+		sound = sp_ita_surrender
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "sp_ita_ethiopia"
+	sounds = {
+		sound = sp_ita_ethiopia
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "sp_sov_stalin_cooked"
+	sounds = {
+		sound = sp_sov_stalin_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_usa_speech_japan_attack"
+	sounds = {
+		sound = sp_usa_speech_japan_attack
+	}
+	volume = 1.5
+}
+soundeffect = {
+	name = "sp_trump_1"
+	sounds = {
+		sound = sp_trump_1
+	}
+	volume = 1.5
+}
+soundeffect = {
+	name = "sp_trump_2"
+	sounds = {
+		sound = sp_trump_2
+	}
+	volume = 3
+}
+soundeffect = {
+	name = "sp_trump_3"
+	sounds = {
+		sound = sp_trump_3
+	}
+	volume = 3
+}
+soundeffect = {
+	name = "sp_eng_fight_them_cooked"
+	sounds = {
+		sound = sp_eng_fight_them_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_blood_toil_tears_sweat"
+	sounds = {
+		sound = sp_blood_toil_tears_sweat
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_finest_hour_cooked"
+	sounds = {
+		sound = sp_finest_hour_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_germany_endsieg"
+	sounds = {
+		sound = sp_germany_endsieg
+	}
+	volume = 5
+}
+soundeffect = {
+	name = "sp_ger_goebbels"
+	sounds = {
+		sound = sp_ger_goebbels
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_jap_banzai"
+	sounds = {
+		sound = sp_jap_banzai
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_sudeten_cooked"
+	sounds = {
+		sound = sp_ger_sudeten_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_danzig_cooked"
+	sounds = {
+		sound = sp_ger_danzig_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_anschsluss_cooked"
+	sounds = {
+		sound = sp_ger_anschsluss_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_usa_democracy_cooked"
+	sounds = {
+		sound = sp_usa_democracy_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_manhattan_project"
+	sounds = {
+		sound = sp_manhattan_project
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_destroyer_of_worlds"
+	sounds = {
+		sound = sp_destroyer_of_worlds
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_chamberlain"
+	sounds = {
+		sound = sp_chamberlain
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_steiner"
+	sounds = {
+		sound = sp_steiner
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_stalingrad"
+	sounds = {
+		sound = sp_ger_stalingrad
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_fra_appel"
+	sounds = {
+		sound = sp_fra_appel
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_barb_SS"
+	sounds = {
+		sound = sp_ger_barb_SS
+	}
+	volume = 1
+}
+soundeffect = {
+	name = "sp_ger_siemens"
+	sounds = {
+		sound = sp_ger_siemens
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_sov_anthem"
+	sounds = {
+		sound = sp_sov_anthem
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_georges_song"
+	sounds = {
+		sound = sp_ger_georges_song
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_counter"
+	sounds = {
+		sound = sp_ger_counter
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_volk"
+	sounds = {
+		sound = sp_ger_volk
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_doctor"
+	sounds = {
+		sound = sp_ger_doctor
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_mobilization"
+	sounds = {
+		sound = sp_ger_mobilization
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_sov_victory"
+	sounds = {
+		sound = sp_sov_victory
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_sov_music"
+	sounds = {
+		sound = sp_sov_music
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_sov_ura"
+	sounds = {
+		sound = sp_sov_ura
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_dday_cooked"
+	sounds = {
+		sound = sp_dday_cooked
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_greater_german_reich"
+	sounds = {
+		sound = sp_greater_german_reich
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_jap_china"
+	sounds = {
+		sound = sp_jap_china
+	}
+	volume = 4
+}
+soundeffect = {
+	name = "sp_jap_allies"
+	sounds = {
+		sound = sp_jap_allies
+	}
+	volume = 12
+}
+soundeffect = {
+	name = "sp_jap_ichi_go"
+	sounds = {
+		sound = sp_jap_ichi_go
+	}
+	volume = 4
+}
+soundeffect = {
+	name = "sp_jap_sov"
+	sounds = {
+		sound = sp_jap_sov
+	}
+	volume = 1
+}
+soundeffect = {
+	name = "sp_jap_sov_prelude"
+	sounds = {
+		sound = sp_jap_sov_prelude
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_pol_beck"
+	sounds = {
+		sound = sp_pol_beck
+	}
+	volume = 3
+}
+soundeffect = {
+	name = "sp_ger_capitulation"
+	sounds = {
+		sound = sp_ger_capitulation
+	}
+	volume = 12
+}
+soundeffect = {
+	name = "sp_ger_victory"
+	sounds = {
+		sound = sp_ger_victory
+	}
+	volume = 1
+}
+soundeffect = {
+	name = "sp_sov_bargration"
+	sounds = {
+		sound = sp_sov_bargration
+	}
+	volume = 2
+}
+soundeffect = {
+	name = "sp_ger_cairo"
+	sounds = {
+		sound = sp_ger_cairo
+	}
+	volume = 1
+}
+soundeffect = {
+	name = "sp_ger_zitadelle"
+	sounds = {
+		sound = sp_ger_zitadelle
+	}
+	volume = 1
+}
+
+
+
+
+
+

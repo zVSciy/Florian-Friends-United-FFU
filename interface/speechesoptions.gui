@@ -1,0 +1,54 @@
+guiTypes = {
+	containerWindowType = {
+		name = "speeches_checkbox_window"
+		position = {x=343 y=35}
+		#size = { x = 100 y = 100 }
+		Orientation = upper_left
+
+
+		buttonType = {
+			name = "speeches_checkbox"
+			position = { x = -11 y = -7 }
+			frame = 0
+			quadTextureSprite = "GFX_generic_checkbox3"
+			clicksound = decisions_ui_button
+		}
+
+		instantTextboxType = {
+			name = "speeches_text"
+			position = { x = 23 y = -5 }
+			# text = "Superevent Music"
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Speeches & Music"
+			maxWidth = 110
+			maxHeight = 10
+			format = left
+		}
+	}
+	containerWindowType = {
+		name = "superevents_checkbox_window"
+		position = {x=343 y=10}
+			Orientation = upper_left
+
+			buttonType = {
+				name = "superevents_checkbox"
+				position = { x = -11 y = -7 }
+				frame = 0
+				quadTextureSprite = "GFX_generic_checkbox3"
+				clicksound = decisions_ui_button
+			}
+
+			instantTextboxType = {
+				name = "super_events_popup_text"
+				position = { x = 23 y = -5 }
+				textureFile = ""
+				font = "hoi_16mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "Superevents"
+				maxWidth = 110
+				maxHeight = 10
+				format = left
+		}
+	}
+}

@@ -1638,7 +1638,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = GER_total_war
 		icon = GFX_GER_total_war
 		prerequisite = { focus = GER_avenge_versailles }
@@ -1655,7 +1655,18 @@ focus_tree = {
 			GER_economy_dynamic_modifier_tt = yes
 			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 			hidden_effect = {
-				play_song = "9-speech"
+				every_country = {
+					limit = { check_variable= { speeches_enabled > 0 } }
+					scoped_sound_effect = "sp_ger_goebbels"
+				}
+				every_country = {
+					limit = {
+						check_variable = {
+							supervents_enabled > 0
+						}
+					}
+					set_variable = { var = super_event value = 4 }
+				}
 			}
 		}
 	}
@@ -5926,8 +5937,19 @@ focus_tree = {
 						}			
 					}		
 					hidden_effect = {
-						news_event = { hours = 1 id = news.204 }
-						play_song = "2-speech"
+						every_country = {
+							limit = { check_variable= { speeches_enabled > 0 } }
+							scoped_sound_effect = "sp_ger_danzig_cooked"
+						}
+						every_country = {
+							limit = {
+								check_variable = {
+									supervents_enabled > 0
+								}
+							}
+							set_variable = { var = super_event value = 8 }
+						}
+						set_global_flag = sp_pol_beck_happend
 					}
 					if = {
 						limit = { NOT = { is_in_faction_with = ROOT } }
@@ -6623,7 +6645,18 @@ focus_tree = {
 					}
 				}
 				#speech
-				play_song = "0-speech" 
+				every_country = {
+					limit = { check_variable= { speeches_enabled > 0 } }
+					scoped_sound_effect = "sp_ger_barb_SS"
+				}
+				every_country = {
+					limit = {
+						check_variable = {
+							supervents_enabled > 0
+						}
+					}
+					set_variable = { var = super_event value = 9 }
+				}
 			}
 		}
 	}

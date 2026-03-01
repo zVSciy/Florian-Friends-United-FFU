@@ -98,6 +98,107 @@ operations = {
 			base = 1000
 		}
 	}
+
+	enable_speeches_and_super_events = {
+		fire_only_once = yes
+
+		icon = generic_megaphone
+
+		allowed = {
+			tag = SWE
+		}
+
+		available = {
+
+		}
+
+		cost = 0
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				set_variable = { speeches_enabled = 2 }
+				set_variable = { supervents_enabled = 2 }
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+
+	nuke_superevent_trigger = {
+		fire_only_once = yes
+
+		icon = generic_megaphone
+
+		allowed = {
+			tag = SWE
+		}
+
+		available = {
+			any_country = {
+				is_special_project_completed = sp:sp_nuclear_bomb
+			}
+			NOT = {
+				has_global_flag = ONE_VS_ONE
+			}
+		}
+
+		cost = 0
+
+		complete_effect = {
+			every_country = {
+				limit = { check_variable= { speeches_enabled > 0 } }
+				scoped_sound_effect = "se_nuclear_siren"
+			}
+			every_country = {
+				limit = {
+					check_variable = {
+						supervents_enabled > 0
+					}
+				}
+				set_variable = { var = super_event value = 15 }
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+
+	first_nuke_speech_trigger = {
+		fire_only_once = yes
+
+		icon = generic_megaphone
+
+		allowed = {
+			tag = SWE
+		}
+
+		available = {
+			has_global_flag = first_nuke_dropped
+			NOT = {
+				has_global_flag = ONE_VS_ONE
+			}
+		}
+
+		cost = 0
+
+		complete_effect = {
+			every_country = {
+				limit = { check_variable= { speeches_enabled > 0 } }
+				scoped_sound_effect = "sp_destroyer_of_worlds"
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	
 	SWE_cancel_tank_hp = {
 
 		icon = generic_tank

@@ -1,0 +1,89 @@
+
+category = {
+ name = "Italian Speeches"
+ soundeffects = {
+	sp_ita_waronallies
+	sp_ita_surrender
+ 	sp_ita_ethiopia
+	}
+}
+category = {
+ name = "Soviet Speeches"
+ soundeffects = {
+    sp_sov_stalin_cooked
+    sp_sov_anthem
+    sp_sov_victory
+    sp_sov_music
+    sp_sov_ura
+    sp_sov_bargration
+	}
+}
+category = {
+ name = "USA Speeches"
+ soundeffects = {
+    sp_usa_speech_japan_attack
+    sp_usa_democracy_cooked
+    sp_manhattan_project
+    sp_destroyer_of_worlds
+    sp_trump_1
+    sp_trump_2
+    sp_trump_3
+	}
+}
+category = {
+ name = "ENG Speeches"
+ soundeffects = {
+    sp_chamberlain
+    sp_dday_cooked
+    sp_eng_fight_them_cooked
+    sp_blood_toil_tears_sweat
+    sp_finest_hour_cooked
+	}
+}
+category = {
+ name = "GER Speeches"
+ soundeffects = {
+    sp_germany_endsieg
+    sp_ger_goebbels
+    sp_steiner
+    sp_ger_stalingrad
+    sp_ger_barb_SS
+    sp_ger_siemens
+    sp_ger_georges_song
+    sp_ger_counter
+    sp_ger_volk
+    sp_ger_mobilization
+    sp_ger_doctor
+    sp_greater_german_reich
+	sp_ger_capitulation
+	sp_ger_victory
+    sp_ger_sudeten_cooked
+    sp_ger_danzig_cooked
+    sp_ger_anschsluss_cooked
+    sp_ger_cairo
+    sp_ger_zitadelle
+	}
+}
+category = {
+ name = "JAP Speeches"
+ soundeffects = {
+    sp_jap_banzai
+	sp_jap_china
+	sp_jap_allies
+	sp_jap_ichi_go
+	sp_jap_sov
+	sp_jap_sov_prelude
+	}
+}
+category = {
+ name = "FRA Speeches"
+ soundeffects = {
+    sp_fra_appel
+    }
+}
+category = {
+ name = "POL Speeches"
+ soundeffects = {
+    sp_pol_beck
+    }
+}
