@@ -56,6 +56,7 @@ mobile_infantry = {
         decisive_operations = {
             category_mobile_infantry = {
                 max_organisation = 5
+                max_strength = 1.5
             }
         }
         delegated_authority = {
@@ -68,7 +69,7 @@ mobile_infantry = {
         maneuver_warfare = {
             category_mobile_infantry = {
                 max_organisation = 5
-                max_strength = 1
+                max_strength = 1.5
             }
             army_speed_factor = 0.05
         }
@@ -111,6 +112,7 @@ defensive_postures = {
     category_all_infantry = {
         entrenchment = 0.2
         supply_consumption = -0.01
+        max_strength = 1
     }
 
     rewards = {
@@ -181,6 +183,7 @@ large_unit_tactics = {
     category_light_infantry = {
         supply_consumption = -0.01
         max_organisation = 5
+        max_strength = 1
     }
 
     rewards = {
@@ -367,6 +370,7 @@ mounted_infantry = {
         limbered_combat_support = {
             category_light_infantry = {
                 max_organisation = 10
+                max_strength = 1
             }    
             enable_tactic = tactic_barrage
         }
@@ -422,6 +426,7 @@ commandos = {
             }
             category_light_infantry = {
                 max_organisation = 10
+                max_strength = 1
                 breakthrough = 0.1
             } 
             
@@ -471,8 +476,6 @@ commandos = {
                 soft_attack = 0.1
                 breakthrough = 0.1
             }
-            
-
         }
     }
 }
@@ -606,6 +609,7 @@ great_war_infantry = {
     category_light_infantry = {
         defense = 0.05
         supply_consumption = -0.02
+        max_strength = 1
     }
     production_speed_bunker_factor = 0.25
 
