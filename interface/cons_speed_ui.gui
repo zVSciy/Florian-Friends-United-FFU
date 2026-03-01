@@ -44,7 +44,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "dockyard_speed"   
-			position = { x = 488 y = -71 } # 369
+			position = { x = 534 y = 66 } # 369
 			font = "cg_16b"              
 			text = "[?dockyard_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -129,33 +129,10 @@ guiTypes = {
 			format = right
 			alwaystransparent = yes
 		}
-		
-
-		instantTextBoxType = {
-			name = "rocket_site_speed"  
-			position = { x = 488 y = 66 }  
-			font = "cg_16b"              
-			text = "[?rocket_site_speed_var|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "heavy_water_reactor_speed"   
-			position = { x = 534 y = 66 } 
-			font = "cg_16b"              
-			text = "[?nuclear_reactor_speed_var|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
 
 		instantTextBoxType = {
 			name = "conversion_civ_to_mil_speed"  
-			position = { x = 395 y = 107 }
+			position = { x = 395 y = 148 }
 			font = "cg_16b"              
 			text = "[?modifier@conversion_cost_mil_to_civ_factor|%0=+]"	   
 			maxWidth = 50  
@@ -166,7 +143,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "supply_node_speed"   
-			position = { x = 395 y = 203 } 
+			position = { x = 395 y = 244 } 
 			font = "cg_16b"              
 			text = "[?supply_node_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -177,7 +154,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "rail_way_speed"   
-			position = { x = 442 y = 203 } 
+			position = { x = 442 y = 244 } 
 			font = "cg_16b"              
 			text = "[?rail_way_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -188,7 +165,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "naval_base_speed"   
-			position = { x = 488 y = 203 } 
+			position = { x = 488 y = 244 } 
 			font = "cg_16b"              
 			text = "[?naval_base_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -199,7 +176,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bunker_speed"   
-			position = { x = 534 y = 203 } 
+			position = { x = 534 y = 244 } 
 			font = "cg_16b"              
 			text = "[?bunker_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -210,7 +187,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "fortress_speed"   
-			position = { x = 395 y = 246 } 
+			position = { x = 395 y = 287 } 
 			font = "cg_16b"              
 			text = "[?fortress_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -221,7 +198,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "coastal_fortress_speed"   
-			position = { x = 442 y = 246 } 
+			position = { x = 442 y = 287 } 
 			font = "cg_16b"              
 			text = "[?coastal_fortress_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -232,7 +209,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "coastal_bunker_speed"   
-			position = { x = 488 y = 246 } 
+			position = { x = 488 y = 287 } 
 			font = "cg_16b"              
 			text = "[?coastal_bunker_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -243,7 +220,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "naval_facility_speed"   
-			position = { x = 396 y = 340 } 
+			position = { x = 396 y = 385 } 
 			font = "cg_16b"              
 			text = "[?naval_facility_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -254,7 +231,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "nuclear_facility_speed"   
-			position = { x = 442 y = 340 } 
+			position = { x = 442 y = 385 } 
 			font = "cg_16b"              
 			text = "[?nuclear_facility_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -265,7 +242,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "air_facility_speed"   
-			position = { x = 488 y = 340 } 
+			position = { x = 488 y = 385 } 
 			font = "cg_16b"              
 			text = "[?air_facility_speed_var|%0=+]"	   
 			maxWidth = 50  
@@ -276,7 +253,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "land_facility_speed"   
-			position = { x = 534 y = 340 } 
+			position = { x = 534 y = 385 } 
 			font = "cg_16b"              
 			text = "[?land_facility_speed_var|%0=+]"	   
 			maxWidth = 50  

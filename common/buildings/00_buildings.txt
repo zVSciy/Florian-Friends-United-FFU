@@ -261,8 +261,8 @@ buildings = {
 		only_costal = yes
 		damage_factor = 0.3
 		level_cap = {
-			shares_slots = no
-			state_max = 30
+			shares_slots = yes
+			state_max = 20
 		}
 		value = 5
 		infrastructure_construction_effect = yes
