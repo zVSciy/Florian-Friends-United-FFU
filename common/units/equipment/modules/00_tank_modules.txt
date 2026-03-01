@@ -2740,8 +2740,8 @@ equipment_modules = {
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			soft_attack = 28
-			hard_attack = 11
+			soft_attack = 26
+			hard_attack = 8
 			ap_attack = 20
 			build_cost_ic = 7
 		}
@@ -2751,7 +2751,7 @@ equipment_modules = {
 			steel = 10
 			tungsten = 2
 		}
-		dismantle_cost_ic = 2
+		dismantle_cost_ic = 5
 	}
 
 	tank_light_cs_gun_2 = { ###5
@@ -2764,8 +2764,8 @@ equipment_modules = {
 		parent = tank_light_cs_gun_1
 
 		add_stats = {
-			soft_attack = 34
-			hard_attack = 14
+			soft_attack = 32
+			hard_attack = 11
 			ap_attack = 35
 			build_cost_ic = 8
 		}
@@ -2777,7 +2777,7 @@ equipment_modules = {
 			steel = 12
 			tungsten = 3
 		}
-		dismantle_cost_ic = 2
+		dismantle_cost_ic = 5
 	}
 
 	tank_light_cs_gun_3 = { ###6
@@ -2790,8 +2790,8 @@ equipment_modules = {
 		parent = tank_light_cs_gun_1
 
 		add_stats = {
-			soft_attack = 39
-			hard_attack = 17
+			soft_attack = 37
+			hard_attack = 14
 			ap_attack = 50
 			build_cost_ic = 9
 		}
@@ -2803,7 +2803,7 @@ equipment_modules = {
 			steel = 14
 			tungsten = 4
 		}
-		dismantle_cost_ic = 2
+		dismantle_cost_ic = 5
 	}
 
 	tank_anti_air_gun_placeholder = { ###2
@@ -3393,8 +3393,8 @@ equipment_modules = {
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			soft_attack = 30 #34
-			hard_attack = 5 #14
+			soft_attack = 28 #34
+			hard_attack = 2 #14
 			ap_attack = 20
 			build_cost_ic = 7
 		}
@@ -3404,7 +3404,7 @@ equipment_modules = {
 			steel = 10
 			tungsten = 5
 		}
-		dismantle_cost_ic = 4
+		dismantle_cost_ic = 6
 	}
 
 	tank_med_cs_gun_2 = { ###5
@@ -3416,8 +3416,8 @@ equipment_modules = {
 		parent = tank_med_cs_gun_1
 
 		add_stats = {
-			soft_attack = 38 #45
-			hard_attack = 10 #18
+			soft_attack = 36 #45
+			hard_attack = 7 #18
 			ap_attack = 35
 			build_cost_ic = 8
 		}
@@ -3429,7 +3429,7 @@ equipment_modules = {
 			steel = 12
 			tungsten = 5
 		}
-		dismantle_cost_ic = 4
+		dismantle_cost_ic = 6
 	}
 
 	tank_med_cs_gun_3 = { ###6
@@ -3441,8 +3441,8 @@ equipment_modules = {
 		parent = tank_med_cs_gun_1
 
 		add_stats = {
-			soft_attack = 50
-			hard_attack = 22
+			soft_attack = 48
+			hard_attack = 19
 			ap_attack = 50
 			build_cost_ic = 9
 		}
