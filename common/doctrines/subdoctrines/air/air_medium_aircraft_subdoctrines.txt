@@ -22,8 +22,8 @@ air_subdoctrine_bomber_interception = {
 
     # EFFECTS
 	category_heavy_fighter = {
-		air_attack = 0.1
-        air_agility = 0.1
+		air_attack = 0.05
+        air_agility = 0.05
 	}
 
     rewards = {
@@ -31,7 +31,7 @@ air_subdoctrine_bomber_interception = {
 			air_night_penalty = -0.15
 		}
         dispersed_fighting = {
-			air_superiority_efficiency = 0.1
+			air_superiority_efficiency = 0.05
 		}
 		heavy_fighter_veteran_initiative = {
 			 air_ace_generation_chance_factor = 0.05
@@ -39,7 +39,7 @@ air_subdoctrine_bomber_interception = {
 		}
 		high_altitude_approach = {
 			category_heavy_fighter = {
-				air_defence = 0.1
+				air_defence = 0.05
 			}
 		}
 		bomber_interception_patrols = {

@@ -25,7 +25,7 @@ air_subdoctrine_fighter_homeland_defense = {
 
     rewards = {
 		interception_priority = {
-			air_superiority_efficiency = 0.1
+			air_superiority_efficiency = 0.05
 		}
 		air_defense_grids = {
 			air_superiority_detect_factor = 0.05
@@ -81,7 +81,7 @@ air_subdoctrine_escort_fighter = {
 			air_escort_efficiency = 0.2
 		}
 		extended_search_patterns = {
-			air_superiority_efficiency = 0.1
+			air_superiority_efficiency = 0.05
 		}
 		improved_maintenance_protocols = {
 			air_accidents_factor = -0.1
@@ -129,7 +129,7 @@ track = fighter_aircraft
 			air_escort_efficiency = 0.2
 		}
         multi_mission_assignment = {
-			air_mission_efficiency = 0.1
+			air_mission_efficiency = 0.05
 		}
 		night_target_search = {
 			air_night_penalty = -0.1
@@ -167,7 +167,7 @@ track = fighter_aircraft
     }
 
     # EFFECTS
-    air_superiority_efficiency = 0.1
+    air_superiority_efficiency = 0.05
 
     rewards = {
 		aces_of_the_sky = {
@@ -231,7 +231,7 @@ track = fighter_aircraft
 			ace_effectiveness_factor = 0.05
 		}
 		force_rotation = {
-			air_interception_detect_factor = 0.15
+			air_interception_detect_factor = 0.1
 		}
 		fighter_command_system = {
 			category_fighter = {
@@ -239,7 +239,7 @@ track = fighter_aircraft
 			}
 		}
         combat_routines = {
-			air_superiority_efficiency = 0.15
+			air_superiority_efficiency = 0.05
 		}
 		improved_support_integration = {
 			air_accidents_factor = -0.1
@@ -287,8 +287,8 @@ track = fighter_aircraft
 		}
 		three_plane_formation = {
 			category_fighter = {
-				air_agility = 0.1
-				maximum_speed = 0.1
+				air_agility = 0.05
+				maximum_speed = 0.05
 			}
 		}
 		aggressive_spirit = {
