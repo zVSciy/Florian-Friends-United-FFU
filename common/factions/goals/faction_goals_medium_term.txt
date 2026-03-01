@@ -123,7 +123,7 @@ faction_goal_air_superiority = {
 				name = FACTION
 			}
 			unit = fighter
-			size > 9999
+			size > 1999
 		}
 	}
 	complete_effect = {

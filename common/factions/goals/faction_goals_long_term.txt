@@ -146,7 +146,7 @@ faction_goal_rule_the_waves = {
 				name = FACTION
 		    }
 			unit = capital_ship
-			size > 59
+			size > 89
 		}
 		alliance_naval_strength_ratio > 2
 	}
@@ -167,7 +167,7 @@ faction_goal_rule_the_waves = {
 			}
 			add_tech_bonus = {
 				name = rule_the_waves_tech_bonus
-				bonus = 3
+				bonus = 1
 				uses = 1
 				category = naval_equipment
 			}
