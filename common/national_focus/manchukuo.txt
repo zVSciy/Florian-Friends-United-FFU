@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = MAN_numba_one
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 25
+		x = 24
 		y = 0
 		cost = 5
 		available = {
@@ -58,7 +58,7 @@ focus_tree = {
 		prerequisite = { focus = MAN_numba_one }
 		relative_position_id = MAN_numba_one
 		mutually_exclusive = { focus = MAN_treaty_with_the_bandits }
-		x = -15
+		x = -14
 		y = 1
 		cost = 5
 		available = {
@@ -1634,7 +1634,7 @@ focus = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MAN_numba_one }
 		mutually_exclusive = { focus = MAN_pacify_the_countrysidex }
-		x = 8
+		x = 14
 		y = 1
 		relative_position_id = MAN_numba_one
 
@@ -3021,22 +3021,19 @@ completion_reward = {
 	focus = {
 		id = MAN_second_five_plan
 		icon = GFX_focus_hol_the_foundations_of_defense
-		prerequisite = { focus = MAN_synth3 }
-		prerequisite = { focus = MAN_aluminum2 }
-		prerequisite = { focus = MAN_mamc_pilot focus = MAN_mamc_expansion }
-		prerequisite = { focus = MAN_poppy2 focus = MAN_shanxi2}
-		prerequisite = { focus = MAN_ship_designs }
-		prerequisite = { focus = MAN_mechanized_focus }
-		prerequisite = { focus = MAN_chahar5 }
-		prerequisite = { focus = MAN_showa_steel }
-		x = -20
-		y = 15
+		prerequisite = { focus = MAN_numba_one }
+		x = 0
+		y = 10
 		relative_position_id = MAN_numba_one
 
 		cost = 5
 
 		available = {
-			# NOT = { has_idea = MAN_five_year_plan_industry }
+			OR = {
+				NOT = { has_idea = MAN_five_year_plan_industry }
+				DATE > 1940.1.1
+			}
+			
 		}
 
 		cancel_if_invalid = yes
