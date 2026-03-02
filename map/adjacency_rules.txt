@@ -374,7 +374,9 @@ adjacency_rule =
 	}
 	
 	required_provinces = { 316 9296 }
-	
+	is_disabled = {
+		tag = ENG
+	}
 	icon = 2455
 	offset = { -26 0 -13 }
 }
