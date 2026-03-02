@@ -2976,8 +2976,7 @@ USA_propaganda_campaigns = {
 			experience_gain_army = 0.04
 			trait_naval_invader_xp_gain_factor = 0.2
 			naval_invasion_prep_speed = 0.1
-			naval_invasion_division_cap = 10 
-			naval_invasion_plan_cap = 3
+			naval_invasion_plan_cap = 1
 			amphibious_invasion = 0.1
 		}
 

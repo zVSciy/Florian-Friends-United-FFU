@@ -492,8 +492,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		naval_invasion_division_cap = 5 
-		naval_invasion_plan_cap = 2
+		naval_invasion_plan_cap = 1
 		naval_invasion_planning_bonus_speed = 0.05
 		category_marines = {
 			soft_attack = 0.05
@@ -932,8 +931,7 @@ technologies = {
 		}
 		
 		extra_marine_supply_grace = 24
-		naval_invasion_division_cap = 5 
-		naval_invasion_plan_cap = 2
+		naval_invasion_plan_cap = 1
 		naval_invasion_planning_bonus_speed = 0.15
 			
 		doctrine = yes	

@@ -1597,7 +1597,6 @@ technologies = {
 	mtg_landing_craft = {
 		invasion_preparation = -0.5
 	    naval_invasion_penalty = -0.10
-	    naval_invasion_division_cap = 10 
 		naval_invasion_plan_cap = 3
 
 		path = {
@@ -1676,8 +1675,8 @@ technologies = {
 
 		amphibious_invasion = 0.25
 	    naval_invasion_penalty = -0.15
-	    naval_invasion_division_cap = 15
-		naval_invasion_plan_cap = 5
+	    naval_invasion_division_cap = 3
+		naval_invasion_plan_cap = 2
 
 		research_cost = 2
 		start_year = 1944
