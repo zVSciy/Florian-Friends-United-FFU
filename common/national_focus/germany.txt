@@ -5937,6 +5937,9 @@ focus_tree = {
 						}			
 					}		
 					hidden_effect = {
+						FRA = {
+							add_ideas = FRA_defense_of_norway_idea
+						}
 						every_country = {
 							limit = { check_variable= { speeches_enabled > 0 } }
 							scoped_sound_effect = "sp_ger_danzig_cooked"
@@ -6384,9 +6387,22 @@ focus_tree = {
 					NOT = { DEN = { is_in_faction_with = GER } }
 					country_exists = DEN					
 				} 
-		
-				annex_country = { target = DEN transfer_troops = no}
-				annex_country = { target = NOR transfer_troops = no}
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+				ENG = {
+					add_to_faction = NOR
+				}
+				ENG = {
+					add_to_faction = DEN
+				}
+				#annex_country = { target = DEN transfer_troops = no}
+				#annex_country = { target = NOR transfer_troops = no}
 			
 			GER = {
 				#Denmark

@@ -131,4 +131,15 @@ on_actions = {
         }
     }
 
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { original_tag = NOR }
+				FRA = {
+					remove_ideas = FRA_defense_of_norway_idea
+				}
+			}
+		}
+	}
+
 }
