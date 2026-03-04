@@ -200,7 +200,7 @@ leader_traits = {
 		dig_in_speed_factor = 0.15
 		max_dig_in = 5
 		mobilization_speed = -0.05
-		
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -7402,7 +7402,7 @@ leader_traits = {
 		sprite = 14
 		#experience_gain_army = 0.05
 		land_doctrine_cost_factor = -0.1
-		
+		custom_modifier_tooltip = theorist_mastery_tt
 		ai_will_do = {
 			factor = 500
 		}
@@ -7558,7 +7558,7 @@ leader_traits = {
 		}
 		planning_speed = 0.20
 		#experience_gain_army = 0.05
-		
+		custom_modifier_tooltip = theorist_mastery_tt
 		ai_will_do = {
 			factor = 500
 		}
@@ -8715,7 +8715,7 @@ leader_traits = {
 		sprite = 9
 		army_defence_factor = 0.05
 		experience_gain_army = @chief_experience_gain_low
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -8731,7 +8731,7 @@ leader_traits = {
 		sprite = 9
 		army_defence_factor = 0.1
 		experience_gain_army = @chief_experience_gain_medium
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -8747,7 +8747,7 @@ leader_traits = {
 		sprite = 9
 		army_defence_factor = 0.15
 		experience_gain_army = @chief_experience_gain_high
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -8764,7 +8764,7 @@ leader_traits = {
 		sprite = 7
 		army_attack_factor = 0.03
 		experience_gain_army = @chief_experience_gain_low
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -8780,7 +8780,7 @@ leader_traits = {
 		sprite = 7
 		army_attack_factor = 0.06
 		experience_gain_army = @chief_experience_gain_medium
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -8796,7 +8796,7 @@ leader_traits = {
 		sprite = 7
 		army_attack_factor = 0.1
 		experience_gain_army = @chief_experience_gain_high
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -8812,7 +8812,7 @@ leader_traits = {
 		sprite = 5 # Should not need sprite, should mostly be secondary
 		experience_gain_army_factor = @chief_experience_gain_medium
 		political_power_factor = 0.1
-		
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
@@ -8826,7 +8826,7 @@ leader_traits = {
 		sprite = 18
 		training_time_factor = -0.05
 		experience_gain_army = @chief_experience_gain_low
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -8843,7 +8843,7 @@ leader_traits = {
 		training_time_factor = -0.1
 		experience_gain_army = @chief_experience_gain_medium
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -8859,7 +8859,7 @@ leader_traits = {
 		training_time_factor = -0.15
 		experience_gain_army = @chief_experience_gain_high
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -8876,7 +8876,7 @@ leader_traits = {
 		experience_gain_army = @chief_experience_gain_low
 		experience_gain_army_factor = 0.05
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 1
@@ -8892,7 +8892,7 @@ leader_traits = {
 		experience_gain_army_factor = 0.05
 		experience_gain_army = @chief_experience_gain_medium
 		
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -8908,7 +8908,7 @@ leader_traits = {
 		experience_gain_army_factor = 0.05
 		experience_gain_army = @chief_experience_gain_high
 		
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -8924,7 +8924,7 @@ leader_traits = {
 		army_org_factor = 0.04
 		#experience_gain_army = @chief_experience_gain_low
 		
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 1
@@ -8939,8 +8939,7 @@ leader_traits = {
 		sprite = 5
 		army_org_factor = 0.08
 		#experience_gain_army = @chief_experience_gain_medium
-		
-		 
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -8956,7 +8955,7 @@ leader_traits = {
 		army_org_factor = 0.12
 		#experience_gain_army = @chief_experience_gain_high
 		
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -8972,7 +8971,7 @@ leader_traits = {
 		army_org_factor = 0.04
 		experience_gain_army = @chief_experience_gain_low
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 1
@@ -8988,7 +8987,7 @@ leader_traits = {
 		army_org_factor = 0.08
 		experience_gain_army = @chief_experience_gain_medium
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -9004,7 +9003,7 @@ leader_traits = {
 		army_org_factor = 0.12
 		experience_gain_army = @chief_experience_gain_high
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -9019,7 +9018,7 @@ leader_traits = {
 		sprite = 14
 		planning_speed = 0.15
 		experience_gain_army = @chief_experience_gain_low
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 
 		ai_will_do = {
@@ -9036,7 +9035,7 @@ leader_traits = {
 		planning_speed = 0.20
 		experience_gain_army = @chief_experience_gain_medium
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -9052,7 +9051,7 @@ leader_traits = {
 		planning_speed = 0.25
 		experience_gain_army = @chief_experience_gain_high
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -9068,7 +9067,7 @@ leader_traits = {
 		army_morale_factor = 0.04
 		experience_gain_army = @chief_experience_gain_low
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 1
@@ -9084,7 +9083,7 @@ leader_traits = {
 		army_morale_factor = 0.08
 		experience_gain_army = @chief_experience_gain_medium
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -9100,7 +9099,7 @@ leader_traits = {
 		army_morale_factor = 0.12
 		experience_gain_army = @chief_experience_gain_high
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -9117,7 +9116,7 @@ leader_traits = {
 		army_speed_factor = 0.05
 		experience_gain_army = @chief_experience_gain_low
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 1
@@ -9133,7 +9132,7 @@ leader_traits = {
 		army_speed_factor = 0.1
 		experience_gain_army = @chief_experience_gain_medium
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -9149,7 +9148,7 @@ leader_traits = {
 		army_speed_factor = 0.15
 		experience_gain_army = @chief_experience_gain_high
 
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -9167,7 +9166,7 @@ leader_traits = {
 		#experience_gain_army = 0.06
 		
 		 
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -9182,7 +9181,7 @@ leader_traits = {
 		max_dig_in_factor = 0.06
 		#experience_gain_army = 0.09
 		
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 2
@@ -9198,7 +9197,7 @@ leader_traits = {
 		max_dig_in_factor = 0.1
 		#experience_gain_army = 0.12
 		
-		 
+		 custom_modifier_tooltip = theorist_chief_of_army_tt
 
 		ai_will_do = {
 			factor = 3
@@ -9215,7 +9214,7 @@ leader_traits = {
 		max_dig_in = 1.5
 		mobilization_speed = -0.02
 		experience_gain_army = @chief_experience_gain_low
-		
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 		
 		ai_will_do = {
@@ -9227,7 +9226,7 @@ leader_traits = {
 		max_dig_in = 3
 		mobilization_speed = -0.04
 		experience_gain_army = @chief_experience_gain_medium
-		
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 		
 		ai_will_do = {
@@ -9239,7 +9238,7 @@ leader_traits = {
 		max_dig_in = 4.5
 		mobilization_speed = -0.06
 		experience_gain_army = @chief_experience_gain_high
-		
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		 
 		
 		ai_will_do = {

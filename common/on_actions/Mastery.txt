@@ -1,0 +1,126 @@
+on_actions = {
+on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					any_character = {
+						has_advisor_role = theorist
+						is_hired_as_advisor = yes
+					}
+				}
+				add_mastery = {
+					amount = 2
+					track = infantry
+				}
+				add_mastery = {
+					amount = 2
+					track = combat_support
+				}
+				add_mastery = {
+					amount = 2
+					track = armor
+				}
+				add_mastery = {
+					amount = 2
+					track = combat_support
+				}
+				add_mastery = {
+					amount = 2
+					track = support
+				}
+				add_mastery = {
+					amount = 2
+					track = motorized
+				}
+				add_mastery = {
+					amount = 2
+					track = operations
+				}
+			}
+			if = {
+				limit = {
+					any_character = {
+						has_advisor_role = army_chief
+						is_hired_as_advisor = yes
+					}
+				}
+				add_mastery = {
+					amount = 1
+					track = infantry
+				}
+				add_mastery = {
+					amount = 1
+					track = combat_support
+				}
+				add_mastery = {
+					amount = 1
+					track = armor
+				}
+				add_mastery = {
+					amount = 1
+					track = combat_support
+				}
+				add_mastery = {
+					amount = 1
+					track = support
+				}
+				add_mastery = {
+					amount = 1
+					track = motorized
+				}
+				add_mastery = {
+					amount = 1
+					track = operations
+				}
+			}
+			if = {
+				limit = {
+					any_character = {
+						has_advisor_role = navy_chief
+						is_hired_as_advisor = yes
+					}
+				}
+				add_mastery = {
+					amount = 1
+					track = capital_ships
+				}
+				add_mastery = {
+					amount = 1
+					track = carriers
+				}
+				add_mastery = {
+					amount = 1
+					track = screens
+				}
+				add_mastery = {
+					amount = 1
+					track = submarines
+				}
+			}
+			if = {
+				limit = {
+					any_character = {
+						has_advisor_role = air_chief
+						is_hired_as_advisor = yes
+					}
+				}
+				add_mastery = {
+					amount = 2
+					track = fighter_aircraft
+				}
+				add_mastery = {
+					amount = 2
+					track = strike_aircraft
+				}
+				add_mastery = {
+					amount = 2
+					track = medium_aircraft
+				}
+				add_mastery = {
+					amount = 2
+					track = heavy_aircraft
+				}
+			}
+	    }
+	}
+}
