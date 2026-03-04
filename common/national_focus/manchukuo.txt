@@ -290,7 +290,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_alliance_with_the_kwantung_armyx
-		icon = GFX_R56_GOAL_CHI_SUPPORT_PRO_JAPANESE_FACTION
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = MAN_mukden_military_academyx }
 		prerequisite = { focus = MAN_army_modernizationx   }
 		x = -1
@@ -326,7 +326,7 @@ focus_tree = {
 
 		focus = {
 		id = MAN_five_people_armiesx
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun 
 		prerequisite = { focus = MAN_alliance_with_the_kwantung_armyx }
 		x = 0
 		y = 1
@@ -452,7 +452,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_aluminum3
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_demand_territory
 		x = 0
 		y = 1
 
@@ -494,7 +494,7 @@ focus_tree = {
         
 	focus = {
 		id = MAN_aluminum4
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_chromium
 		x = 0
 		y = 1
 
@@ -530,7 +530,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_aluminum
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_coal_mining
 		x = 0
 		y = 1
 
@@ -579,7 +579,7 @@ focus_tree = {
         
 	focus = {
 		id = MAN_aluminum2	
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_aluminum
 		x = 0
 		y = 1
 
@@ -649,7 +649,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_oil2
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_stockpile_fuel
 		x = 0
 		y = 1
 
@@ -711,7 +711,7 @@ focus_tree = {
         
 	focus = {
 		id = MAN_synth2
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_public_works
 		x = 0
 		y = 1
 
@@ -743,7 +743,7 @@ focus_tree = {
         
 	focus = {
 		id = MAN_synth3
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_SOV_merge_plants
 		x = -1
 		y = 1
 
@@ -791,7 +791,7 @@ focus_tree = {
     
 		focus = {
 		id = MAN_railways_expand_to_east_hebei
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_agricultural_subsidies
 		x = 2
 		y = 2
 
@@ -821,7 +821,7 @@ focus_tree = {
     
 		focus = {
 		id = MAN_navy_academy
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_PRC_reorganize_divisions
 		x = -1
 		y = 1
 
@@ -845,7 +845,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAN_dockyards
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_PRC_reorganize_divisions
 		x = 1
 		y = 1
 
@@ -870,7 +870,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_dockyardss
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_FIN_parmis_devils
 		x = -1
 		y = 1
 
@@ -892,7 +892,7 @@ focus_tree = {
         
 	focus = {
 		id = MAN_ship_designs
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_naval_invasion
 		x = 0
 		y = 1
 
@@ -940,7 +940,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_anshan_steelworks
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_modernize_industry
 		x = -1
 		y = 1
 
@@ -1011,7 +1011,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_railways_extend_to_port_arthur
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_modernize_industry
 		x = 3
 		y = 1
 
@@ -1046,7 +1046,7 @@ focus_tree = {
 	}    
 		focus = {
 		id = MAN_railways_extend_to_pyongyang
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_modernize_industry
 		x = 1
 		y = 1
 
@@ -1131,7 +1131,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_railways_schahar
-		icon = GFX_factories_along_routes
+		icon = GFX_focus_SOV_south_manchuria_railway
 		x = 2
 		y = 4
 
@@ -1149,7 +1149,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_chahar1
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_military_industry
 		x = -1
 		y = 1
 
@@ -1172,7 +1172,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_chahar2
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_military_industry
 		x = 0
 		y = 1
 
@@ -1191,7 +1191,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_chahar3
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_military_industry
 		x = 1
 		y = 1
 
@@ -1215,7 +1215,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_chahar4
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_military_industry
 		x = 0
 		y = 1
 
@@ -1235,7 +1235,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_chahar5
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_attack_china
 		x = 1
 		y = 1
 
@@ -1268,7 +1268,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_poppy
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_industrialists
 		x = -1
 		y = 1
 
@@ -1285,7 +1285,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_poppy2
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_advanced_military_studies
 		x = 0
 		y = 1
 
@@ -1308,7 +1308,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_shanxi
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_FIN_salvaged_and_retooled
 		x = 1
 		y = 1
 
@@ -1333,7 +1333,7 @@ focus_tree = {
     
 		focus = {
 		id = MAN_shanxi2
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_PRC_develop_the_army
 		x = 0
 		y = 1
 
@@ -1359,7 +1359,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_railways_hulunbuir
-		icon = GFX_factories_along_routes
+		icon = GFX_focus_SOV_south_manchuria_railway
 		x = -2
 		y = 4
 
@@ -1381,7 +1381,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_motorized_focus
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_truck
 		x = 0
 		y = 1
 
@@ -1411,7 +1411,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_mechanized_focus
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_GER_adopt_new_panzer_doctrine_historical
 		x = 0
 		y = 1
 
@@ -1434,7 +1434,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_armorf
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_tank_production
 		x = -2
 		y = 1
 
@@ -1458,7 +1458,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_tankplant_h
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_tank_assembly
 		x = 1
 		y = 2
 
@@ -1482,7 +1482,7 @@ focus_tree = {
         
 	focus = {
 		id = MAN_tankplant_p
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_tank_assault
 		x = -1
 		y = 2
 
@@ -1504,7 +1504,7 @@ focus_tree = {
 	}    
 	focus = {
 		id = MAN_railways_sungkiang
-		icon = GFX_factories_along_routes
+		icon = GFX_focus_SOV_south_manchuria_railway
 		x = -2
 		y = 4
 
@@ -1524,7 +1524,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_mamcc
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
 		x = 0
 		y = 1
 
@@ -1552,7 +1552,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_mamcc_2
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_RAJ_special_economic_zones
 		x = 0
 		y = 1
 
@@ -1577,7 +1577,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_mamc_expansion
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_long_range_aircraft
 		x = 0
 		y = 1
 
@@ -1602,7 +1602,7 @@ focus_tree = {
     
 	focus = {
 		id = MAN_mamc_pilot
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_jet_planes
 		x = -2
 		y = 1
 
@@ -3087,7 +3087,7 @@ completion_reward = {
 	
 	focus = {
 		id = MAN_military_expansion
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = MAN_second_five_plan }
 		x = -1
 		y = 1
@@ -3161,7 +3161,7 @@ completion_reward = {
 
 	focus = {
 		id = MAN_end_of_the_kwantung_occupation_l
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_MAN_reestablish_the_imperial_army
 		prerequisite = { focus = MAN_second_five_plan }
 		x = 0
 		y = 2
