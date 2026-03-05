@@ -2841,4 +2841,96 @@ technologies = {
 			}
 		}
 	}
+
+
+
+	desert_training_tech = { 
+		research_cost = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		marine = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		marine_commando = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		mountaineers = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		paratrooper = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		ranger_battalion = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		infantry = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+	}
+
+
+
+	jungle_training_tech = { #A GoE version of the tech above targetting also infantry - RAJ
+		research_cost = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		marine = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		marine_commando = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		mountaineers = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		paratrooper = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		ranger_battalion = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		infantry = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+	}
 }

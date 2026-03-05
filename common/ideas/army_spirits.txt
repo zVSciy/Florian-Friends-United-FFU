@@ -445,5 +445,20 @@ ideas = {
 				factor = 1
 			}
 		}
+
+		spirit_of_the_digger = {
+			ledger = army
+			visible = { tag = AST }
+			available = { 
+				has_completed_focus = AST_spirit_of_the_digger
+			}
+			modifier = {
+				trait_engineer_xp_gain_factor = 0.25
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.1  		  			    			    			 			    			 				
+			}
+
+			
+		}	
 	}
 }

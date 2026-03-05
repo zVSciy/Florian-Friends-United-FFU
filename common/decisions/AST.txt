@@ -1,4 +1,62 @@
+
+
+
+
 political_actions = {
+
+	AST_cancel_insurance_act = {
+
+		allowed = {
+			original_tag = AST
+		}
+
+		visible = {
+			has_completed_focus = AST_national_insurance_act
+			has_idea = AST_national_insurance_act
+		}
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = AST_national_insurance_act
+		}
+	}
+
+	AST_cancel_nationalised_bank = {
+
+		allowed = {
+			original_tag = AST
+		}
+
+		visible = {
+			has_completed_focus = AST_nationalise_the_commonwealth_bank
+			has_idea = AST_nationalise_the_commonwealth_bank
+		}
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = AST_nationalise_the_commonwealth_bank
+		}
+	}
 
 	AST_annex_dei = {
 
@@ -177,4 +235,58 @@ political_actions = {
 			add_ideas = AST_no_nzl_annex
 		}
 	}
-}
+
+
+
+	war_measures = {
+
+	AST_hold_java = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = AST
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { 
+				OR = {
+					ENG = { controls_state = 335 } 
+					MAL = { controls_state = 335 } 
+					RAJ = { controls_state = 335 } 
+					AST = { controls_state = 335 } 
+					NZL = { controls_state = 335 } 
+				}
+			}
+		}
+
+		days_mission_timeout = 120
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war_with = JAP
+			has_civil_war = no
+			AST = { has_completed_focus = AST_trust_in_the_singapore_strategy }
+		}
+
+		#Success
+		timeout_effect = {
+			set_global_flag = held_java
+		}
+		#Fail
+		complete_effect = {
+			add_stability = -0.15
+			add_war_support = -0.15
+			set_global_flag = failed_to_hold_java
+		}
+	}
+
+
+	}
+	}
+
+
