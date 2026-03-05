@@ -5938,7 +5938,7 @@ focus_tree = {
 					}		
 					hidden_effect = {
 						FRA = {
-							add_ideas = FRA_defense_of_norway_idea
+							add_timed_idea = { idea = FRA_defense_of_norway_idea days = 120 } 
 						}
 						every_country = {
 							limit = { check_variable= { speeches_enabled > 0 } }
