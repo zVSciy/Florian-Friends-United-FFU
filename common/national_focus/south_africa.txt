@@ -1189,6 +1189,12 @@ focus_tree = {
 				planning_skill = 4
 				logistics_skill = 6
 			}
+			add_doctrine_cost_reduction = {
+				name = safdoctrines
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 

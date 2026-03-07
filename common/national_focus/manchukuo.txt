@@ -46,9 +46,7 @@ focus_tree = {
 			is_ai = no
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = MAN_banditry_category
-			set_variable = { MAN_maintain_control_timer = 180 }
-			custom_effect_tooltip = MAN_pacify_the_countryside_effect_tooltip
+			add_political_power = 50
 		}
 	}
 
@@ -80,7 +78,7 @@ focus_tree = {
 		relative_position_id = MAN_pacify_the_countrysidex
 		cost = 5
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 100
 			hidden_effect = {
 				every_owned_state = {
 					limit = {
@@ -285,7 +283,9 @@ focus_tree = {
 
 		}
 
-		completion_reward = { }
+		completion_reward = { 
+			add_manpower = 200000
+		}
 	}
 
 	focus = {
