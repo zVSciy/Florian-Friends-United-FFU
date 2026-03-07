@@ -1697,9 +1697,7 @@ focus = {
 		cost = 5
 
 		available = {
-			has_army_manpower = {
-				size > 250000
-			}
+			
 		}	
 
 		cancel_if_invalid = yes
