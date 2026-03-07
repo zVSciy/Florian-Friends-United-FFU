@@ -1466,14 +1466,7 @@ focus_tree = {
 		mutually_exclusive = { focus = AST_thunder_warfare }
 		
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = cat_light_armor
-			}
-			mio:AST_new_south_wales_rc_organization = {
-				complete_mio_trait = AST_mio_trait_lightning_warfare
-			}
+			add_ideas = AST_Arty_Update
 		}
 	}
 	
@@ -1630,9 +1623,7 @@ focus_tree = {
 		mutually_exclusive = { focus = AST_fund_austen_research }
 		
 		completion_reward = {
-			mio:AST_lysaghts_works_organization = {
-				complete_mio_trait = AST_mio_trait_owen_gun
-			}
+			add_ideas = AST_Gun_Update
 		}
 	}
 	
@@ -2584,16 +2575,9 @@ focus_tree = {
 					name = AST
 				}
 				buildings = { steel_refinery }
-				size > 2
+				size > 5
 			}
-			count_in_collection = {
-				collection = {
-					input = game:scope
-					name = AST
-				}
-				buildings = { synthetic_refinery }
-				size > 2
-			}
+			
 			
 			
 		}
@@ -3113,14 +3097,21 @@ focus_tree = {
 		prerequisite = { focus = AST_fund_australian_defence_research }
 		
 		available = {
-			OR = {
-				SOV = { has_war_with = GER }
-				has_war_with = JAP
-			}
+		
 		}
 		
 		completion_reward = {
-			country_event = { id = tfb_australia.4 days = 1 }
+			add_resource = {
+				type = coal
+				amount = 200
+				state = 285
+			}
+
+			add_resource = {
+				type = Steel
+				amount = 400
+				state = 285
+			}
 		}
 	}
 	
@@ -3173,27 +3164,14 @@ focus_tree = {
 		prerequisite = { focus = AST_this_is_the_enemy }
 		
 		completion_reward = {
-			add_country_leader_trait = AST_british_consultation
-		}
-	}
-	
-	focus = {
-		id = AST_long_way_to_the_top
-		icon = GFX_focus_usa_focus_on_europe
-		x = 0
-		y = 1
-		relative_position_id = AST_integral_part_of_the_british_empire
-		cost = 5
-		
-		prerequisite = { focus = AST_integral_part_of_the_british_empire }
-		
-		completion_reward = {
 			add_timed_idea = {
 				idea = AST_long_way_to_the_top
 				days = 180
 			}
 		}
 	}
+	
+	
 	
 	focus = {
 		id = AST_on_the_beach
@@ -3310,38 +3288,14 @@ focus_tree = {
 		prerequisite = { focus = AST_hes_coming_south }
 		
 		completion_reward = {
-			add_political_power = 120
-			add_country_leader_trait = AST_australian_founding_father
-			add_autonomy_ratio = {
-				value = 0.1
-				localization = AST_adopt_westminster
-			}
-			# custom_effect_tooltip = available_political_advisor
-			# show_ideas_tooltip = AST_arthur_calwell
-		}
-	}
-	
-	focus = {
-		id = AST_operation_downunderfall
-		icon = GFX_focus_usa_focus_on_asia
-		x = 0
-		y = 1
-		relative_position_id = AST_implement_the_statute_of_westminster
-		cost = 5
-		
-		prerequisite = { focus = AST_implement_the_statute_of_westminster }
-
-        available = {
-            
-        }
-		
-		completion_reward = {
 			add_timed_idea = {
 				idea = AST_operation_downunderfall
 				days = 180
 			}
 		}
 	}
+	
+	
 
 
 	

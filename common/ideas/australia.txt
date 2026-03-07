@@ -879,6 +879,49 @@ ideas = {
 			}
 		}
 
+
+		AST_Gun_Update = {
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+                
+                infantry_equipment = {
+                    soft_attack = 0.1
+					reliability = 0.15
+					breakthrough = 0.1
+                    instant = yes
+                }
+            }
+
+
+
+		}
+
+
+		AST_Arty_Update = {
+
+			allowed = {
+				always = no
+			}
+
+			artillery_equipment = {
+                    soft_attack = 0.05
+                    instant = yes
+                }
+                rocket_artillery_equipment = {
+                    soft_attack = 0.05
+                    instant = yes
+                }
+            }
+
+
+
+		}
+
+
 		AST_national_insurance_act = {
 
 			allowed = {
@@ -895,7 +938,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = -0.025
-				monthly_population = 10
+				weekly_manpower = 2500
 				political_power_gain = -0.5
 				
 			}
@@ -1480,6 +1523,10 @@ ideas = {
 		}
 
 	}
+
+
+
+
 
 	tank_manufacturer = {
 		new_south_wales_rc = {
