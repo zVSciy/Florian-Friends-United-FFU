@@ -39,7 +39,7 @@ equipments = {
 		air_range = 600
 		maximum_speed = 9999
 		air_agility = 10
-		air_bombing = 1000
+		air_bombing = 60
 
 		active = yes
 	}

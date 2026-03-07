@@ -32,7 +32,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1.5
 
-		build_cost_ic = 800
+		build_cost_ic = 1400
 		resources = {
 			aluminium = 30
 			tungsten = 30
@@ -63,7 +63,7 @@ equipments = {
 		is_buildable = yes
 		one_use_only = yes
 		sprite = missile_default
-		build_cost_ic = 1200
+		build_cost_ic = 2000
 		resources = {
 			aluminium = 40
 			tungsten = 30
