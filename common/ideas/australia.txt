@@ -937,7 +937,7 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				industrial_capacity_factory = -0.025
+				industrial_capacity_factory = -0.1
 				weekly_manpower = 2500
 				political_power_gain = -0.5
 				

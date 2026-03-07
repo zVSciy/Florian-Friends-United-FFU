@@ -135,26 +135,7 @@ ideas = {
 			}
 		}
 
-		AST_all_in = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ast_all_in
-			
-			modifier = {				
-				production_speed_arms_factory_factor = 0.1
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-			}
-		}
+	
 
 		AST_invest_in_victory = {
 
