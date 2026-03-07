@@ -500,6 +500,10 @@ focus_tree = {
 		
 		prerequisite = { focus = AST_new_line_of_cruisers }
 		
+
+		
+			available =   {  date > 1943.1.1  }
+	
 		completion_reward = {
 			custom_effect_tooltip = AST_modify_royal_australian_navy_modifier_tt
 			add_to_variable = {
@@ -1289,7 +1293,7 @@ focus_tree = {
 		prerequisite = { focus = AST_together_for_tomorrow }
 		
 		available = {
-			has_tech = excavation4
+			has_tech = excavation3
 		}
 		
 		completion_reward = {
@@ -1385,60 +1389,60 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = AST_daimler_dingo
-		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
-		x = -1
-		y = 1
-		relative_position_id = AST_motorisation_efforts
-		cost = 5
-		
-		prerequisite = { focus = AST_motorisation_efforts }
-		
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.75
-				uses = 1
-				category = cat_armored_cars
-			}
-            MIO:ENG_crossley_motors_organization = {
-                add_mio_funds = 1000
-            }
-		}
-	}
+	#focus = {
+	#	id = AST_daimler_dingo
+	#	icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
+	#	x = -1
+	#	y = 1
+	#	relative_position_id = AST_motorisation_efforts
+	#	cost = 5
+	#	
+	#	prerequisite = { focus = AST_motorisation_efforts }
+	#	
+	#	completion_reward = {
+	#		add_tech_bonus = {
+	#			bonus = 0.75
+	#			uses = 1
+	#			category = cat_armored_cars
+	#		}
+     #       MIO:ENG_crossley_motors_organization = {
+      #          add_mio_funds = 1000
+    #        }
+	#	}
+	#}
 	
-	focus = {
-		id = AST_australian_rhinos
-		icon = GFX_focus_SWE_lynx_armored_car
-		x = 0
-		y = 1
-		relative_position_id = AST_daimler_dingo
-		cost = 5
-		
-		prerequisite = { focus = AST_daimler_dingo }
-		
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = cat_armored_cars
-			}
-            set_technology = {
-                GER_heavy_armored_car = 1
-                popup = yes
-            }
-            custom_effect_tooltip = GER_heavy_armored_car_recon_company_tt
-			custom_effect_tooltip = generic_skip_one_line_tt
-            MIO:ENG_crossley_motors_organization = {
-                add_mio_size = 1
-            }
-		}
-	}
+	#focus = {
+	#	id = AST_australian_rhinos
+	#	icon = GFX_focus_SWE_lynx_armored_car
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = AST_daimler_dingo
+	#	cost = 5
+	#	
+	#	prerequisite = { focus = AST_daimler_dingo }
+	#	
+	#	completion_reward = {
+	#		add_tech_bonus = {
+	##			bonus = 1
+	#			uses = 1
+	#			category = cat_armored_cars
+	#		}
+     #       set_technology = {
+      #          GER_heavy_armored_car = 1
+       #         popup = yes
+        #    }
+         ##   custom_effect_tooltip = GER_heavy_armored_car_recon_company_tt
+			#custom_effect_tooltip = generic_skip_one_line_tt
+           # MIO:ENG_crossley_motors_organization = {
+    #            add_mio_size = 1
+     #       }
+	#	}
+	#}
 	
 	focus = {
 		id = AST_sentinel_tank_project
 		icon = GFX_goal_generic_army_tanks
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = AST_motorisation_efforts
 		cost = 5
@@ -1512,10 +1516,10 @@ focus_tree = {
 		icon = GFX_goal_generic_radar
 		x = -2
 		y = 1
-		relative_position_id = AST_army_inventions_directorate
+		relative_position_id = AST_australian_arms_production
 		cost = 5
 		
-		prerequisite = { focus = AST_army_inventions_directorate }
+		prerequisite = { focus = AST_australian_arms_production focus = AST_tank_pounder_program }
 		
 		available = {
 			is_in_faction_with = USA
@@ -1540,7 +1544,7 @@ focus_tree = {
 	focus = {
 		id = AST_specialise_equipment
 		icon = GFX_goal_generic_army_artillery
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = AST_army_inventions_directorate
 		cost = 5
@@ -2537,9 +2541,9 @@ focus_tree = {
 				limit = {
 					is_core_of = AST
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 			}
-			add_political_power = 50
+			
 		}
 	}
 	
@@ -2701,10 +2705,7 @@ focus_tree = {
 		
 		completion_reward = {
 			 
-			swap_ideas = {
-				remove_idea = AST_policy_of_sound_finance
-				add_idea = AST_policy_of_sound_finance_2
-			}
+			add_research_slot = 1
 		}
 	}
 	
@@ -2775,7 +2776,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_research_slot = 1
+
+			swap_ideas = {
+				remove_idea = AST_policy_of_sound_finance
+				add_idea = AST_policy_of_sound_finance_2
+			}
+			
 		}
 	}
 	

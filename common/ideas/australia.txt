@@ -907,6 +907,8 @@ ideas = {
 				always = no
 			}
 
+			equipment_bonus = {    
+
 			artillery_equipment = {
                     soft_attack = 0.05
                     instant = yes
@@ -916,7 +918,7 @@ ideas = {
                     instant = yes
                 }
             }
-
+ }
 
 
 		AST_national_insurance_act = {
@@ -1026,11 +1028,12 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.2
+				ex = -0.2
 				political_power_gain = -0.5
 				production_speed_synthetic_refinery_factor = 0.15
 				production_speed_fuel_silo_factor = 0.15
 				production_speed_steel_refinery_factor = 0.15
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
