@@ -191,8 +191,7 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
+					has_completed_focus = AST_fund_australian_defence_research
 				}
 				if = {
 					limit = {
@@ -304,8 +303,7 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
+					has_completed_focus = AST_from_farms_to_factories
 				}
 
 				if = {
@@ -423,8 +421,7 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
+					always = no
 				}
 
 				if = {
@@ -542,8 +539,7 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
+					always = no
 				}
 
 				if = {
