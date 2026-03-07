@@ -602,7 +602,7 @@ technologies = {
 		
 		marine = {
 			amphibious = {
-				attack = 0.50
+				attack = 0.40
 				defence = 0.30
 				movement = 0.20
 			}
