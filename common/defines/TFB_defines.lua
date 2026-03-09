@@ -900,8 +900,8 @@ NDefines.NNavy.NAVAL_MINES_INTEL_DIFF_FACTOR = 0.1				-- Better our decryption o
 
 NDefines.NNavy.ATTRITION_WHILE_MOVING_FACTOR = 1.5						-- attrition multiplier while moving & doing missions
 NDefines.NNavy.ATTRITION_DAMAGE_ORG = 0.01 -- damage from attrition to Organisation (relative to max org)
-NDefines.NNavy.ATTRITION_DAMAGE_STR = 0.02					   				-- damage from attrition to str (relative to max str)
-NDefines.NNavy.ATTRITION_STR_DAMAGE_CHANCE = 0.15								-- chance to get damaged at highest attrition
+NDefines.NNavy.ATTRITION_DAMAGE_STR = 0					   				-- damage from attrition to str (relative to max str)
+NDefines.NNavy.ATTRITION_STR_DAMAGE_CHANCE = 0								-- chance to get damaged at highest attrition
 
 NDefines.NNavy.NAVAL_ACCIDENT_CHANCE_REDUCTION_ON_POTF = 0.01					-- Scale of the current chance for an accident to happen, applied for the pride of the fleet.
 NDefines.NNavy.NAVAL_ACCIDENT_CRITICAL_HIT_CHANCE_REDUCTION_POTF = 0.01		-- Scale of the current chance for a critical hit when an accident happens, applied for the pride of the fleet.
@@ -1008,11 +1008,11 @@ NDefines.NNavy.BASE_POSITIONING												= 0.8	-- base value for positioning
 NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.02	-- multiples the surface detection difference between two sides. the side with higher detection will get a bonus of this value
 NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.2  -- will clamp the bonus that you get from detection
 
-NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.4 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.8  -- maximum penalty to get from larger fleets
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.2 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.4  -- maximum penalty to get from larger fleets
 
-NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR					= 0.4  -- penalty if other side has stronger carrier air force 
-NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 					= 0.20  -- max penalty from stronger carrier air force
+NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR					= 0.1  -- penalty if other side has stronger carrier air force 
+NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 					= 0.1  -- max penalty from stronger carrier air force
 
 NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.01 -- each ship that joins the combat will have this penalty to be added into positioning
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0.2  -- the accumulated penalty from new ships will be clamped to this value
