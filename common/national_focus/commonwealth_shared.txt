@@ -15,8 +15,8 @@
 shared_focus = {
 	id = COM_commonwealth_command
 	icon = GFX_focus_eng_unite_the_anglosphere
-	x = 40
-	y = 7
+	x = 47
+	y = 0
 	offset = {
 		x = -6
 		y = 0
@@ -36,8 +36,8 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = -2
-		y = 0
+		x = -9
+		y = 7
 		trigger = {
 			tag = AST
 		}
