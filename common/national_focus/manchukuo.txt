@@ -3027,11 +3027,7 @@ completion_reward = {
 		cost = 5
 
 		available = {
-			OR = {
-				NOT = { has_idea = MAN_five_year_plan_industry }
-				DATE > 1940.1.1
-			}
-			
+			DATE > 1940.1.1
 		}
 
 		cancel_if_invalid = yes
