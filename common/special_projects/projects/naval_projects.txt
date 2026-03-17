@@ -2051,11 +2051,11 @@ sp_naval_modern_battleship = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_tech = improved_ship_hull_heavy
+				has_tech = advanced_ship_hull_heavy
 
 			}
 			else = {
-				has_tech = improved_ship_hull_heavy
+				has_tech = advanced_ship_hull_heavy
 			}
 		}
 	}
