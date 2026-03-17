@@ -268,8 +268,7 @@ jeune_ecole = {
 
     light_cruiser = {
 		armor_value = 0.1
-		surface_visibility = -0.05
-		max_strength = 0.05
+		surface_visibility = -0.01
 		max_organisation = 20
 	}
 
