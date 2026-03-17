@@ -1382,25 +1382,13 @@ ideas = {
 				mechanized_utility_equipment = {
 					build_cost_ic = 0.04 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
 				small_plane_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
 					build_cost_ic = 0.04 instant = yes
 				}
 				medium_plane_airframe = {
 					build_cost_ic = 0.04 instant = yes
 				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
 				large_plane_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
 					build_cost_ic = 0.04 instant = yes
 				}
 				large_plane_maritime_patrol_plane_airframe = {
@@ -1459,25 +1447,13 @@ ideas = {
 				mechanized_utility_equipment = {
 					build_cost_ic = 0.08 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
 				small_plane_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
 					build_cost_ic = 0.08 instant = yes
 				}
 				medium_plane_airframe = {
 					build_cost_ic = 0.08 instant = yes
 				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
 				large_plane_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
 					build_cost_ic = 0.08 instant = yes
 				}
 				large_plane_maritime_patrol_plane_airframe = {
@@ -1536,19 +1512,10 @@ ideas = {
 				mechanized_utility_equipment = {
 					build_cost_ic = 0.12 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
 				small_plane_airframe = {
 					build_cost_ic = 0.12 instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
 				medium_plane_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				small_plane_cas_airframe = {
 					build_cost_ic = 0.12 instant = yes
 				}
 				large_plane_airframe = {
@@ -1613,19 +1580,10 @@ ideas = {
 				mechanized_utility_equipment = {
 					build_cost_ic = 0.16 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
 				small_plane_airframe = {
 					build_cost_ic = 0.16 instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
 				medium_plane_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				small_plane_cas_airframe = {
 					build_cost_ic = 0.16 instant = yes
 				}
 				large_plane_airframe = {
@@ -1690,19 +1648,10 @@ ideas = {
 				mechanized_utility_equipment = {
 					build_cost_ic = 0.20 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.20 instant = yes
-				}
 				small_plane_airframe = {
 					build_cost_ic = 0.20 instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.20 instant = yes
-				}
 				medium_plane_airframe = {
-					build_cost_ic = 0.20 instant = yes
-				}
-				small_plane_cas_airframe = {
 					build_cost_ic = 0.20 instant = yes
 				}
 				large_plane_airframe = {
