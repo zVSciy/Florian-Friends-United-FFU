@@ -635,10 +635,10 @@ NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.25							-- casting damage value 
 
 NDefines.NNavy.NAVY_MAX_XP = 100
 NDefines.NNavy.COMBAT_ON_THE_WAY_INIT_DISTANCE_BALANCE = 0.25 					-- Value to balance initial distance to arrive for ships that are "on the way"	
-NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 14								-- Before we resign chasing enemy, give them some minimum time so the combat doesn't end instantly.
+NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 16								-- Before we resign chasing enemy, give them some minimum time so the combat doesn't end instantly.
 
 NDefines.NNavy.COMBAT_MAX_GROUPS = 1										-- Max amount of "Fire Exchange" groups (FEX).
-NDefines.NNavy.COMBAT_MIN_DURATION = 24										-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
+NDefines.NNavy.COMBAT_MIN_DURATION = 8										-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
 NDefines.NNavy.COMBAT_RETREAT_DECISION_CHANCE = 0.01 							-- There is also random factor in deciding if we should retreat or not. That causes a delay in taking decision, that sooner or later will be picked. It's needed so damaged fast ships won't troll the combat.
 NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 0.1		-- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route.
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.05								-- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
@@ -1008,11 +1008,11 @@ NDefines.NNavy.BASE_POSITIONING												= 0.8	-- base value for positioning
 NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.02	-- multiples the surface detection difference between two sides. the side with higher detection will get a bonus of this value
 NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.2  -- will clamp the bonus that you get from detection
 
-NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.2 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.4  -- maximum penalty to get from larger fleets
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.3 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.6  -- maximum penalty to get from larger fleets
 
 NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR					= 0.1  -- penalty if other side has stronger carrier air force 
-NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 					= 0.1  -- max penalty from stronger carrier air force
+NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 					= 0.15  -- max penalty from stronger carrier air force
 
 NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.01 -- each ship that joins the combat will have this penalty to be added into positioning
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0.2  -- the accumulated penalty from new ships will be clamped to this value
