@@ -86,7 +86,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module = engine_1_1x
-			convert_cost_ic = 1.5
+			convert_cost_ic = 3 #WAS 1.5
 		}
 	}
 
@@ -180,7 +180,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module = engine_2_1x
-			convert_cost_ic = 2.5
+			convert_cost_ic = 5 # was 2.5
 		}
 	}
 
@@ -274,7 +274,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module = engine_3_1x
-			convert_cost_ic = 3
+			convert_cost_ic = 6 #was 3
 		}
 	}
 
