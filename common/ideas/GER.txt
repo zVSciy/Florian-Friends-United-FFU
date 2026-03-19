@@ -324,6 +324,24 @@ ideas = {
 				}
 			}
 		}
+		GER_axis_africa_hp = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				infantry = {
+					max_strength = 20 instant = yes
+				}
+				motorized_equipment = {
+					max_strength = 24 instant = yes
+				}
+				mechanized_equipment = {
+					max_strength = 36 instant = yes
+				}
+			}
+		}
 		GER_spain_trade_got_cooked = {			
 			
 			allowed = {

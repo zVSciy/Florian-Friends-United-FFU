@@ -2562,6 +2562,48 @@ technologies = {
 		}
 	}
 
+	axis_africa_hp = {
+
+		allow = {
+			always = no
+		}
+
+		start_year = 1942
+
+		research_cost = 1
+
+		motorized = {
+			max_strength = 24
+		}
+		mechanized = {
+			max_strength = 36
+		}
+		category_all_infantry = {
+			max_strength = 20
+		}
+	}
+
+	axis_africa_hp_off = {
+
+		allow = {
+			always = no
+		}
+
+		start_year = 1942
+
+		research_cost = 1
+
+		motorized = {
+			max_strength = -24
+		}
+		mechanized = {
+			max_strength = -36
+		}
+		category_all_infantry = {
+			max_strength = -20
+		}
+	}
+
 	barb_river = {
 
 		allow = {

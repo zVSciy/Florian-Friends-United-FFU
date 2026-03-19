@@ -215,13 +215,13 @@ operations = {
 		}
 		
 		timeout_effect = {
-			GER = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			ITA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			ROM = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			HUN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			BUL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			VIC = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			GER = { remove_ideas = GER_axis_africa_hp set_technology = { axis_africa_hp_off = 1 popup = no } }
+			ITA = { remove_ideas = GER_axis_africa_hp set_technology = { axis_africa_hp_off = 1 popup = no } }
+			ROM = { remove_ideas = GER_axis_africa_hp set_technology = { axis_africa_hp_off = 1 popup = no } }
+			HUN = { remove_ideas = GER_axis_africa_hp set_technology = { axis_africa_hp_off = 1 popup = no } }
+			BUL = { remove_ideas = GER_axis_africa_hp set_technology = { axis_africa_hp_off = 1 popup = no } }
+			SPR = { remove_ideas = GER_axis_africa_hp set_technology = { axis_africa_hp_off = 1 popup = no } }
+			VIC = { remove_ideas = GER_axis_africa_hp set_technology = { axis_africa_hp_off = 1 popup = no } }
 			YUG = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			CAN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			SAF = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
@@ -231,7 +231,6 @@ operations = {
 			IRE = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			MEX = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			BRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-			SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 			FRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }	
 			hidden_effect = {
