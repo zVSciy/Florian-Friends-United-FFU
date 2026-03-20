@@ -477,11 +477,32 @@ focus_tree = {
 	}
 
 		focus = {
+		id = USA_war_in_the_pacific
+		icon = GFX_USA_social_security_act
+		relative_position_id = USA_department_of_army
+		prerequisite = { focus = USA_department_of_army }
+		x = 0
+		y = 5
+		cost = 5
+		available = {
+			has_war_with = JAP
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		}
+	}
+
+		focus = {
 		id = USA_midway
 		icon = GFX_USA_islands
 		x = -2
 		y = 6
 		relative_position_id = USA_department_of_army
+		prerequisite = {
+			focus = USA_war_in_the_pacific
+		}
 		cost = 1
 
 		ai_will_do = {
@@ -565,6 +586,9 @@ focus_tree = {
 		x = 2
 		y = 6
 		relative_position_id = USA_department_of_army
+		prerequisite = {
+			focus = USA_war_in_the_pacific
+		}
 		cost = 1
 
 		ai_will_do = {
@@ -762,9 +786,9 @@ focus_tree = {
 		id = USA_wake
 		icon = GFX_USA_the_island_hopping_campaign
 		x = 0
-		y = 6
-		prerequisite = { focus = USA_department_of_army }
-		relative_position_id = USA_department_of_army
+		y = 1
+		prerequisite = { focus = USA_war_in_the_pacific }
+		relative_position_id = USA_war_in_the_pacific
 		cost = 1
 
 		ai_will_do = {
@@ -1700,7 +1724,7 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_department_of_army
 		prerequisite = { focus = USA_department_of_army }
-		x = -6
+		x = -5
 		y = 1
 		cost = 5
 		available = {
@@ -1933,7 +1957,7 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_department_of_army
 		prerequisite = { focus = USA_department_of_army }
-		x = 6
+		x = 5
 		y = 1
 		cost = 5
 		available = {
