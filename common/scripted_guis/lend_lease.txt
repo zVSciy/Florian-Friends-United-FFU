@@ -1,0 +1,244 @@
+scripted_gui = {
+
+    # ── OPEN BUTTON ──────────────────────────────────────────
+    open_lend_lease_button = {
+        context_type = player_context
+        window_name = "lend_lease_open_button_container"
+        parent_window_token = production_tab
+
+        ai_enabled = { always = no }
+
+        dirty = global.update_monie_ui
+
+        effects = {
+            open_lend_lease_button_click = {
+                if = {
+                    limit = { NOT = { has_country_flag = ll_window_open } }
+                    set_country_flag = ll_window_open
+                }
+                else = {
+                    clr_country_flag = ll_window_open
+                }
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+        }
+    }
+
+
+    # ── MAIN WINDOW ───────────────────────────────────────────
+    lend_lease_main_window = {
+        context_type = player_context
+        window_name = "lend_lease_main_window"
+        parent_window_token = top_bar
+
+        ai_enabled = { always = no }
+
+        dirty = global.update_monie_ui
+
+        visible = {
+            ROOT = {
+                has_country_flag = ll_window_open
+            }
+        }
+
+        triggers = {
+
+            ll_select_glow_ENG_visible = {
+                check_variable = { var = lend_lease_target_nation value = 1 compare = equals }
+            }
+            ll_select_glow_FRA_visible = {
+                check_variable = { var = lend_lease_target_nation value = 2 compare = equals }
+            }
+            ll_select_glow_CAN_visible = {
+                check_variable = { var = lend_lease_target_nation value = 3 compare = equals }
+            }
+            ll_select_glow_SAF_visible = {
+                check_variable = { var = lend_lease_target_nation value = 4 compare = equals }
+            }
+            ll_select_glow_RAJ_visible = {
+                check_variable = { var = lend_lease_target_nation value = 5 compare = equals }
+            }
+            ll_select_glow_AST_visible = {
+                check_variable = { var = lend_lease_target_nation value = 6 compare = equals }
+            }
+            ll_select_glow_BRA_visible = {
+                check_variable = { var = lend_lease_target_nation value = 7 compare = equals }
+            }
+
+            lend_lease_selected_flag_ENG_visible = {
+                check_variable = { var = lend_lease_target_nation value = 1 compare = equals }
+            }
+            lend_lease_selected_flag_FRA_visible = {
+                check_variable = { var = lend_lease_target_nation value = 2 compare = equals }
+            }
+            lend_lease_selected_flag_CAN_visible = {
+                check_variable = { var = lend_lease_target_nation value = 3 compare = equals }
+            }
+            lend_lease_selected_flag_SAF_visible = {
+                check_variable = { var = lend_lease_target_nation value = 4 compare = equals }
+            }
+            lend_lease_selected_flag_RAJ_visible = {
+                check_variable = { var = lend_lease_target_nation value = 5 compare = equals }
+            }
+            lend_lease_selected_flag_AST_visible = {
+                check_variable = { var = lend_lease_target_nation value = 6 compare = equals }
+            }
+            lend_lease_selected_flag_BRA_visible = {
+                check_variable = { var = lend_lease_target_nation value = 7 compare = equals }
+            }
+
+            lend_lease_selected_name_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            open_lend_lease_equip_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            # ── PACKAGES ONLY VISIBLE ONCE NATION PICKED ─────
+            ll_pkg_infantry_button_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            ll_pkg_squad_weapons_button_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            ll_pkg_support_button_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            ll_pkg_special_forces_button_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            ll_pkg_artillery_button_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            ll_pkg_trucks_button_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            ll_pkg_radios_button_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+            ll_pkg_infantry_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+                ROOT = {has_equipment = { infantry_equipment > 999 }}
+            }
+            ll_pkg_squad_weapons_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+                has_equipment = { anti_tank_equipment > 249 }
+                has_equipment = { anti_air_equipment > 249 }
+            }
+            ll_pkg_support_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+                has_equipment = { support_equipment > 499 }
+            }
+            ll_pkg_special_forces_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+                has_equipment = { infantry_equipment > 249 }
+                has_equipment = { support_equipment > 149 }
+            }
+            ll_pkg_artillery_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+                has_equipment = { artillery_equipment > 199 }
+            }
+            ll_pkg_trucks_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+                has_equipment = { motorized_equipment > 499 }
+            }
+            ll_pkg_radios_button_click_enabled = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+                has_equipment = { radio_equipment > 499 }
+            }
+
+            # ── CONFIRM TEXT ONLY AFTER SEND ──────────────────
+            ll_sent_confirm_text_visible = {
+                has_country_flag = ll_package_just_sent
+            }
+
+            # ── COLUMN HEADER ONLY ONCE NATION PICKED ─────────
+            ll_package_label_visible = {
+                check_variable = { var = lend_lease_target_nation value = 0 compare = greater_than }
+            }
+        }
+
+        effects = {
+
+            close_lend_lease_window_click = {
+                clr_country_flag = ll_window_open
+                clr_country_flag = ll_package_just_sent
+                set_variable = { lend_lease_target_nation = 0 }
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+
+            # ── NATION SELECTION ──────────────────────────────
+            lend_lease_select_ENG_button_click = {
+                set_variable = { lend_lease_target_nation = 1 }
+                clr_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            lend_lease_select_FRA_button_click = {
+                set_variable = { lend_lease_target_nation = 2 }
+                clr_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            lend_lease_select_CAN_button_click = {
+                set_variable = { lend_lease_target_nation = 3 }
+                clr_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            lend_lease_select_SAF_button_click = {
+                set_variable = { lend_lease_target_nation = 4 }
+                clr_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            lend_lease_select_RAJ_button_click = {
+                set_variable = { lend_lease_target_nation = 5 }
+                clr_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            lend_lease_select_AST_button_click = {
+                set_variable = { lend_lease_target_nation = 6 }
+                clr_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            lend_lease_select_BRA_button_click = {
+                set_variable = { lend_lease_target_nation = 7 }
+                clr_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+
+            # ── PACKAGE SENDS ─────────────────────────────────
+            ll_pkg_infantry_button_click = {
+                ll_send_pkg_infantry = yes
+                set_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            ll_pkg_squad_weapons_button_click = {
+                ll_send_pkg_squad_weapons = yes
+                set_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            ll_pkg_support_button_click = {
+                ll_send_pkg_support = yes
+                set_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            ll_pkg_special_forces_button_click = {
+                ll_send_pkg_special_forces = yes
+                set_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            ll_pkg_artillery_button_click = {
+                ll_send_pkg_artillery = yes
+                set_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            ll_pkg_trucks_button_click = {
+                ll_send_pkg_trucks = yes
+                set_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+            ll_pkg_radios_button_click = {
+                ll_send_pkg_radios = yes
+                set_country_flag = ll_package_just_sent
+                add_to_variable = { global.update_monie_ui = 1 }
+            }
+        }
+    }
+}

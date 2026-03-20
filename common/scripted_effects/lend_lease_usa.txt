@@ -1,0 +1,332 @@
+# ── INIT ──────────────────────────────────────────────────────
+lend_lease_init = {
+    set_variable = { lend_lease_target_nation = 0 }
+    clr_country_flag = ll_window_open
+    clr_country_flag = ll_package_just_sent
+}
+
+# ── PACKAGE SENDERS ───────────────────────────────────────────
+# Each one branches on lend_lease_target_nation and gives
+# equipment directly to the target country's stockpile
+
+ll_send_pkg_infantry = {
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 producer = ROOT }
+        ENG = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 producer = ROOT }
+        FRA = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 producer = ROOT }
+        CAN = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 producer = ROOT }
+        SAF = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 producer = ROOT }
+        RAJ = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 producer = ROOT }
+        AST = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 producer = ROOT }
+        BRA = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = FROM } }
+    }
+}
+
+ll_send_pkg_squad_weapons = {
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        add_equipment_to_stockpile = { type = anti_tank_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = anti_air_equipment amount = -250 producer = ROOT }
+        ENG = {
+            add_equipment_to_stockpile = { type = anti_tank_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = anti_air_equipment amount = 250 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        add_equipment_to_stockpile = { type = anti_tank_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = anti_air_equipment amount = -250 producer = ROOT }
+        FRA = {
+            add_equipment_to_stockpile = { type = anti_tank_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = anti_air_equipment amount = 250 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        add_equipment_to_stockpile = { type = anti_tank_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = anti_air_equipment amount = -250 producer = ROOT }
+        CAN = {
+            add_equipment_to_stockpile = { type = anti_tank_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = anti_air_equipment amount = 250 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        add_equipment_to_stockpile = { type = anti_tank_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = anti_air_equipment amount = -250 producer = ROOT }
+        SAF = {
+            add_equipment_to_stockpile = { type = anti_tank_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = anti_air_equipment amount = 250 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        add_equipment_to_stockpile = { type = anti_tank_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = anti_air_equipment amount = -250 producer = ROOT }
+        RAJ = {
+            add_equipment_to_stockpile = { type = anti_tank_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = anti_air_equipment amount = 250 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        add_equipment_to_stockpile = { type = anti_tank_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = anti_air_equipment amount = -250 producer = ROOT }
+        AST = {
+            add_equipment_to_stockpile = { type = anti_tank_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = anti_air_equipment amount = 250 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        add_equipment_to_stockpile = { type = anti_tank_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = anti_air_equipment amount = -250 producer = ROOT }
+        BRA = {
+            add_equipment_to_stockpile = { type = anti_tank_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = anti_air_equipment amount = 250 producer = FROM }
+        }
+    }
+}
+
+ll_send_pkg_support = {
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -500 producer = ROOT }
+        ENG = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -500 producer = ROOT }
+        FRA = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -500 producer = ROOT }
+        CAN = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -500 producer = ROOT }
+        SAF = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -500 producer = ROOT }
+        RAJ = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -500 producer = ROOT }
+        AST = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -500 producer = ROOT }
+        BRA = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = FROM } }
+    }
+}
+
+ll_send_pkg_special_forces = {
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = support_equipment amount = -150 producer = ROOT }
+        ENG = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = support_equipment amount = -150 producer = ROOT }
+        FRA = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = support_equipment amount = -150 producer = ROOT }
+        CAN = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = support_equipment amount = -150 producer = ROOT }
+        SAF = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = support_equipment amount = -150 producer = ROOT }
+        RAJ = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = support_equipment amount = -150 producer = ROOT }
+        AST = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = FROM }
+        }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        add_equipment_to_stockpile = { type = infantry_equipment amount = -250 producer = ROOT }
+        add_equipment_to_stockpile = { type = support_equipment amount = -150 producer = ROOT }
+        BRA = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 250 producer = FROM }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = FROM }
+        }
+    }
+}
+
+ll_send_pkg_artillery = {
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        add_equipment_to_stockpile = { type = artillery_equipment amount = -200 producer = ROOT }
+        ENG = { add_equipment_to_stockpile = { type = artillery_equipment amount = 200 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        add_equipment_to_stockpile = { type = artillery_equipment amount = -200 producer = ROOT }
+        FRA = { add_equipment_to_stockpile = { type = artillery_equipment amount = 200 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        add_equipment_to_stockpile = { type = artillery_equipment amount = -200 producer = ROOT }
+        CAN = { add_equipment_to_stockpile = { type = artillery_equipment amount = 200 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        add_equipment_to_stockpile = { type = artillery_equipment amount = -200 producer = ROOT }
+        SAF = { add_equipment_to_stockpile = { type = artillery_equipment amount = 200 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        add_equipment_to_stockpile = { type = artillery_equipment amount = -200 producer = ROOT }
+        RAJ = { add_equipment_to_stockpile = { type = artillery_equipment amount = 200 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        add_equipment_to_stockpile = { type = artillery_equipment amount = -200 producer = ROOT }
+        AST = { add_equipment_to_stockpile = { type = artillery_equipment amount = 200 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        add_equipment_to_stockpile = { type = artillery_equipment amount = -200 producer = ROOT }
+        BRA = { add_equipment_to_stockpile = { type = artillery_equipment amount = 200 producer = FROM } }
+    }
+}
+
+ll_send_pkg_trucks = {
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        add_equipment_to_stockpile = { type = motorized_equipment amount = -500 producer = ROOT }
+        ENG = { add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        add_equipment_to_stockpile = { type = motorized_equipment amount = -500 producer = ROOT }
+        FRA = { add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        add_equipment_to_stockpile = { type = motorized_equipment amount = -500 producer = ROOT }
+        CAN = { add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        add_equipment_to_stockpile = { type = motorized_equipment amount = -500 producer = ROOT }
+        SAF = { add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        add_equipment_to_stockpile = { type = motorized_equipment amount = -500 producer = ROOT }
+        RAJ = { add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        add_equipment_to_stockpile = { type = motorized_equipment amount = -500 producer = ROOT }
+        AST = { add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        add_equipment_to_stockpile = { type = motorized_equipment amount = -500 producer = ROOT }
+        BRA = { add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FROM } }
+    }
+}
+
+ll_send_pkg_radios = {
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        add_equipment_to_stockpile = { type = radio_equipment amount = -500 producer = ROOT }
+        ENG = { add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        add_equipment_to_stockpile = { type = radio_equipment amount = -500 producer = ROOT }
+        FRA = { add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        add_equipment_to_stockpile = { type = radio_equipment amount = -500 producer = ROOT }
+        CAN = { add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        add_equipment_to_stockpile = { type = radio_equipment amount = -500 producer = ROOT }
+        SAF = { add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        add_equipment_to_stockpile = { type = radio_equipment amount = -500 producer = ROOT }
+        RAJ = { add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        add_equipment_to_stockpile = { type = radio_equipment amount = -500 producer = ROOT }
+        AST = { add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = FROM } }
+    }
+    if = {
+        limit = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        add_equipment_to_stockpile = { type = radio_equipment amount = -500 producer = ROOT }
+        BRA = { add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = FROM } }
+    }
+}
