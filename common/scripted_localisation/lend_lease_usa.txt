@@ -1,0 +1,36 @@
+defined_text = {
+    name = GetLendLeaseTargetName
+
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
+        localization_key = ENG
+    }
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
+        localization_key = FRA
+    }
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
+        localization_key = CAN
+    }
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
+        localization_key = SAF
+    }
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
+        localization_key = RAJ
+    }
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
+        localization_key = AST
+    }
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
+        localization_key = BRA
+    }
+    text = {
+        trigger = { check_variable = { var = lend_lease_target_nation value = 0 compare = equals } }
+        localization_key = LL_NO_NATION_SELECTED
+    }
+}

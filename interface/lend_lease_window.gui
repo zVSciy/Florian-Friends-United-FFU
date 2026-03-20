@@ -1,0 +1,439 @@
+guiTypes = {
+
+    # ── OPEN BUTTON ──────────────────────────────────────────
+    containerWindowType = {
+        name = "lend_lease_open_button_container"
+        position = { x = 330 y = 187 }
+
+        buttonType = {
+            name = "open_lend_lease_button"
+            spriteType = "GFX_NV_btn_composition_editor"
+            position = { x = 0 y = 0 }
+            pdx_tooltip = "OPEN_LEND_LEASE_BUTTON"
+            pdx_tooltip_delayed = "OPEN_LEND_LEASE_BUTTON_TT"
+        }
+        instantTextBoxType = {
+            name = "lend_lease_btn_title1"
+            position = { x = -25 y = -30 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 80
+            maxHeight = 24
+            fixedsize = yes
+            text = "Lend"
+        }
+        instantTextBoxType = {
+            name = "lend_lease_btn_title2"
+            position = { x = -25 y = -17 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 80
+            maxHeight = 24
+            fixedsize = yes
+            text = "Lease"
+        }
+    }
+
+
+    # ── MAIN LEND LEASE WINDOW ────────────────────────────────
+    containerWindowType = {
+        name = "lend_lease_main_window"
+        position = { x = -310 y = -280 }
+        clipping = no
+        orientation = center
+        origo = center
+        moveable = yes
+
+        background = {
+            name = "Background"
+            spriteType = "GFX_naval_calculator_bg"
+        }
+
+        # Title
+        instantTextBoxType = {
+            name = "lend_lease_title"
+            position = { x = 0 y = 20 }
+            font = "hoi_30header"
+            format = center
+            maxWidth = 620
+            maxHeight = 30
+            fixedsize = yes
+            text = "FOREIGN AID"
+        }
+
+        # ── COLUMN HEADERS ────────────────────────────────────
+        instantTextBoxType = {
+            name = "select_nation_label"
+            position = { x = 30 y = 65 }
+            font = "hoi_18mbs"
+            format = left
+            maxWidth = 160
+            maxHeight = 24
+            fixedsize = yes
+            text = "SELECT NATION"
+        }
+
+        instantTextBoxType = {
+            name = "ll_package_label"
+            position = { x = 220 y = 65 }
+            font = "hoi_18mbs"
+            format = left
+            maxWidth = 220
+            maxHeight = 24
+            fixedsize = yes
+            text = "SELECT AID PACKAGE"
+        }
+
+        instantTextBoxType = {
+            name = "ll_selected_label"
+            position = { x = 460 y = 65 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 200
+            maxHeight = 24
+            fixedsize = yes
+            text = "SELECTED NATION"
+        }
+
+        # ── FLAG BUTTONS (left column) ────────────────────────
+
+        # UK
+        # Arrow indicator — visible when ENG selected
+        instantTextBoxType = {
+            name = "ll_select_glow_ENG"
+            position = { x = 10 y = 97 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 16
+            maxHeight = 24
+            fixedsize = yes
+            text = ">"
+        }
+        buttonType = {
+            name = "lend_lease_select_ENG_button"
+            position = { x = 20 y = 92 }
+            quadTextureSprite = "GFX_trade_filter_btn_country"
+            buttonText = "ENG"
+            clicksound = click_default
+            buttonFont = "hoi_18mbs"
+        }
+        iconType = {
+            name = "lend_lease_flag_ENG"
+            position = { x = 23 y = 94 }
+            spriteType = "GFX_flag_ENG"
+            alwaystransparent = yes
+        }
+
+        # France
+        instantTextBoxType = {
+            name = "ll_select_glow_FRA"
+            position = { x = 10 y = 129 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 16
+            maxHeight = 24
+            fixedsize = yes
+            text = ">"
+        }
+        buttonType = {
+            name = "lend_lease_select_FRA_button"
+            position = { x = 20 y = 124 }
+            quadTextureSprite = "GFX_trade_filter_btn_country"
+            buttonText = "FRA"
+            clicksound = click_default
+            buttonFont = "hoi_18mbs"
+        }
+        iconType = {
+            name = "lend_lease_flag_FRA"
+            position = { x = 23 y = 126 }
+            spriteType = "GFX_flag_FRA"
+            alwaystransparent = yes
+        }
+
+        # Canada
+        instantTextBoxType = {
+            name = "ll_select_glow_CAN"
+            position = { x = 10 y = 161 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 16
+            maxHeight = 24
+            fixedsize = yes
+            text = ">"
+        }
+        buttonType = {
+            name = "lend_lease_select_CAN_button"
+            position = { x = 20 y = 156 }
+            quadTextureSprite = "GFX_trade_filter_btn_country"
+            buttonText = "CAN"
+            clicksound = click_default
+            buttonFont = "hoi_18mbs"
+        }
+        iconType = {
+            name = "lend_lease_flag_CAN"
+            position = { x = 23 y = 158 }
+            spriteType = "GFX_flag_CAN"
+            alwaystransparent = yes
+        }
+
+        # South Africa
+        instantTextBoxType = {
+            name = "ll_select_glow_SAF"
+            position = { x = 10 y = 193 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 16
+            maxHeight = 24
+            fixedsize = yes
+            text = ">"
+        }
+        buttonType = {
+            name = "lend_lease_select_SAF_button"
+            position = { x = 20 y = 188 }
+            quadTextureSprite = "GFX_trade_filter_btn_country"
+            buttonText = "SAF"
+            clicksound = click_default
+            buttonFont = "hoi_18mbs"
+        }
+        iconType = {
+            name = "lend_lease_flag_SAF"
+            position = { x = 23 y = 190 }
+            spriteType = "GFX_flag_SAF"
+            alwaystransparent = yes
+        }
+
+        # British Raj
+        instantTextBoxType = {
+            name = "ll_select_glow_RAJ"
+            position = { x = 10 y = 225 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 16
+            maxHeight = 24
+            fixedsize = yes
+            text = ">"
+        }
+        buttonType = {
+            name = "lend_lease_select_RAJ_button"
+            position = { x = 20 y = 220 }
+            quadTextureSprite = "GFX_trade_filter_btn_country"
+            buttonText = "RAJ"
+            clicksound = click_default
+            buttonFont = "hoi_18mbs"
+        }
+        iconType = {
+            name = "lend_lease_flag_RAJ"
+            position = { x = 23 y = 222 }
+            spriteType = "GFX_flag_RAJ"
+            alwaystransparent = yes
+        }
+
+        # Australia
+        instantTextBoxType = {
+            name = "ll_select_glow_AST"
+            position = { x = 10 y = 257 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 16
+            maxHeight = 24
+            fixedsize = yes
+            text = ">"
+        }
+        buttonType = {
+            name = "lend_lease_select_AST_button"
+            position = { x = 20 y = 252 }
+            quadTextureSprite = "GFX_trade_filter_btn_country"
+            buttonText = "AST"
+            clicksound = click_default
+            buttonFont = "hoi_18mbs"
+        }
+        iconType = {
+            name = "lend_lease_flag_AST"
+            position = { x = 23 y = 254 }
+            spriteType = "GFX_flag_AST"
+            alwaystransparent = yes
+        }
+
+        # Brazil
+        instantTextBoxType = {
+            name = "ll_select_glow_BRA"
+            position = { x = 10 y = 289 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 16
+            maxHeight = 24
+            fixedsize = yes
+            text = ">"
+        }
+        buttonType = {
+            name = "lend_lease_select_BRA_button"
+            position = { x = 20 y = 284 }
+            quadTextureSprite = "GFX_trade_filter_btn_country"
+            buttonText = "BRA"
+            clicksound = click_default
+            buttonFont = "hoi_18mbs"
+        }
+        iconType = {
+            name = "lend_lease_flag_BRA"
+            position = { x = 23 y = 286 }
+            spriteType = "GFX_flag_BRA"
+            alwaystransparent = yes
+        }
+
+        # ── PACKAGE BUTTONS (middle column) ───────────────────
+
+        buttonType = {
+            name = "ll_pkg_infantry_button"
+            position = { x = 210 y = 90 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_INFANTRY"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_INFANTRY_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_squad_weapons_button"
+            position = { x = 210 y = 132 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_SQUAD_WEAPONS"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_SQUAD_WEAPONS_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_support_button"
+            position = { x = 210 y = 174 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_SUPPORT"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_SUPPORT_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_special_forces_button"
+            position = { x = 210 y = 216 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_SPECIAL_FORCES"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_SPECIAL_FORCES_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_artillery_button"
+            position = { x = 210 y = 258 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_ARTILLERY"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_ARTILLERY_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_trucks_button"
+            position = { x = 210 y = 300 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_TRUCKS"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_TRUCKS_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_radios_button"
+            position = { x = 210 y = 342 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_RADIOS"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_RADIOS_TT"
+        }
+
+        # ── SELECTED NATION DISPLAY (right column) ────────────
+        # One flag per nation, only the selected one is visible
+
+        iconType = {
+            name = "lend_lease_selected_flag_ENG"
+            position = { x = 525 y = 90 }
+            spriteType = "GFX_flag_ENG"
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "lend_lease_selected_flag_FRA"
+            position = { x = 525 y = 90 }
+            spriteType = "GFX_flag_FRA" 
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "lend_lease_selected_flag_CAN"
+            position = { x = 525 y = 90 }
+            spriteType = "GFX_flag_CAN"
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "lend_lease_selected_flag_SAF"
+            position = { x = 525 y = 90 }
+            spriteType = "GFX_flag_SAF"
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "lend_lease_selected_flag_RAJ"
+            position = { x = 525 y = 90 }
+            spriteType = "GFX_flag_RAJ"
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "lend_lease_selected_flag_AST"
+            position = { x = 525 y = 90 }
+            spriteType = "GFX_flag_AST"
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "lend_lease_selected_flag_BRA"
+            position = { x = 525 y = 90 }
+            spriteType = "GFX_flag_BRA"
+            alwaystransparent = yes
+        }
+
+        # Selected nation name under flag
+        instantTextBoxType = {
+            name = "lend_lease_selected_name"
+            position = { x = 400 y = 145 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 300
+            maxHeight = 24
+            fixedsize = yes
+            text = "SENDING AID TO SELECTED NATION"
+        }
+
+        # Sent confirmation
+        instantTextBoxType = {
+            name = "ll_sent_confirm_text"
+            position = { x = 400 y = 175 }
+            font = "hoi_18mbs"
+            format = center
+            maxWidth = 300
+            maxHeight = 48
+            fixedsize = yes
+            text = "SENT SUCCESSFULLY"
+        }
+
+        # ── CLOSE BUTTON ──────────────────────────────────────
+        buttonType = {
+            name = "close_lend_lease_window"
+            position = { x = 0 y = 390 }
+            quadTextureSprite = "GFX_button_123x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "CLOSE"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_MIDDLE"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+    }
+}
