@@ -1858,6 +1858,9 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_operation_bolero
 		prerequisite = { focus = USA_operation_bolero }
+		mutually_exclusive = {
+			focus = USA_operation_sledgehammer
+		}
 		x = -1
 		y = 1
 		cost = 5
@@ -1877,6 +1880,9 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_operation_bolero
 		prerequisite = { focus = USA_operation_bolero }
+		mutually_exclusive = {
+			focus = USA_operation_apostle
+		}
 		x = 1
 		y = 1
 		cost = 5
