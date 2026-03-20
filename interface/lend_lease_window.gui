@@ -38,7 +38,8 @@ guiTypes = {
     # ── MAIN LEND LEASE WINDOW ────────────────────────────────
     containerWindowType = {
         name = "lend_lease_main_window"
-        position = { x = -310 y = -280 }
+        position = { x = -310 y = -380 }
+        size = { width = 700 height = 750 }
         clipping = no
         orientation = center
         origo = center
@@ -46,10 +47,9 @@ guiTypes = {
 
         background = {
             name = "Background"
-            spriteType = "GFX_naval_calculator_bg"
+            spriteType = "GFX_tiled_bg"
         }
 
-        # Title
         instantTextBoxType = {
             name = "lend_lease_title"
             position = { x = 0 y = 20 }
@@ -98,7 +98,6 @@ guiTypes = {
         # ── FLAG BUTTONS (left column) ────────────────────────
 
         # UK
-        # Arrow indicator — visible when ENG selected
         instantTextBoxType = {
             name = "ll_select_glow_ENG"
             position = { x = 10 y = 97 }
@@ -122,6 +121,13 @@ guiTypes = {
             position = { x = 23 y = 94 }
             spriteType = "GFX_flag_ENG"
             alwaystransparent = yes
+        }
+        iconType = {
+            name = "lend_lease_shield_ENG"
+            position = { x = 23 y = 94 }
+            quadTextureSprite = "GFX_shield_medium"
+            alwaystransparent = yes
+            scale = 0.01
         }
 
         # France
@@ -281,60 +287,141 @@ guiTypes = {
         }
 
         # ── PACKAGE BUTTONS (middle column) ───────────────────
+        # 15 packages, 38px spacing starting at y=90
 
         buttonType = {
-            name = "ll_pkg_infantry_button"
+            name = "ll_pkg_arti_button"
             position = { x = 210 y = 90 }
             quadTextureSprite = "GFX_button_221x34"
             buttonFont = "hoi_16mbs"
-            buttonText = "LL_PKG_INFANTRY"
+            buttonText = "LL_PKG_ARTI"
             Orientation = "UPPER_LEFT"
             clicksound = click_send
-            pdx_tooltip = "LL_PKG_INFANTRY_TT"
+            pdx_tooltip = "LL_PKG_ARTI_TT"
         }
         buttonType = {
-            name = "ll_pkg_squad_weapons_button"
-            position = { x = 210 y = 132 }
+            name = "ll_pkg_pack_arti_button"
+            position = { x = 210 y = 128 }
             quadTextureSprite = "GFX_button_221x34"
             buttonFont = "hoi_16mbs"
-            buttonText = "LL_PKG_SQUAD_WEAPONS"
+            buttonText = "LL_PKG_PACK_ARTI"
             Orientation = "UPPER_LEFT"
             clicksound = click_send
-            pdx_tooltip = "LL_PKG_SQUAD_WEAPONS_TT"
+            pdx_tooltip = "LL_PKG_PACK_ARTI_TT"
         }
         buttonType = {
-            name = "ll_pkg_support_button"
-            position = { x = 210 y = 174 }
+            name = "ll_pkg_dp_arti_button"
+            position = { x = 210 y = 166 }
             quadTextureSprite = "GFX_button_221x34"
             buttonFont = "hoi_16mbs"
-            buttonText = "LL_PKG_SUPPORT"
+            buttonText = "LL_PKG_DP_ARTI"
             Orientation = "UPPER_LEFT"
             clicksound = click_send
-            pdx_tooltip = "LL_PKG_SUPPORT_TT"
+            pdx_tooltip = "LL_PKG_DP_ARTI_TT"
         }
         buttonType = {
-            name = "ll_pkg_special_forces_button"
-            position = { x = 210 y = 216 }
+            name = "ll_pkg_rocket_arti_button"
+            position = { x = 210 y = 204 }
             quadTextureSprite = "GFX_button_221x34"
             buttonFont = "hoi_16mbs"
-            buttonText = "LL_PKG_SPECIAL_FORCES"
+            buttonText = "LL_PKG_ROCKET_ARTI"
             Orientation = "UPPER_LEFT"
             clicksound = click_send
-            pdx_tooltip = "LL_PKG_SPECIAL_FORCES_TT"
+            pdx_tooltip = "LL_PKG_ROCKET_ARTI_TT"
         }
         buttonType = {
-            name = "ll_pkg_artillery_button"
-            position = { x = 210 y = 258 }
+            name = "ll_pkg_heavy_arti_button"
+            position = { x = 210 y = 242 }
             quadTextureSprite = "GFX_button_221x34"
             buttonFont = "hoi_16mbs"
-            buttonText = "LL_PKG_ARTILLERY"
+            buttonText = "LL_PKG_HEAVY_ARTI"
             Orientation = "UPPER_LEFT"
             clicksound = click_send
-            pdx_tooltip = "LL_PKG_ARTILLERY_TT"
+            pdx_tooltip = "LL_PKG_HEAVY_ARTI_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_at_button"
+            position = { x = 210 y = 280 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_AT"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_AT_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_pack_at_button"
+            position = { x = 210 y = 318 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_PACK_AT"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_PACK_AT_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_heavy_at_button"
+            position = { x = 210 y = 356 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_HEAVY_AT"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_HEAVY_AT_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_aa_button"
+            position = { x = 210 y = 394 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_AA"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_AA_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_heavy_aa_button"
+            position = { x = 210 y = 432 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_HEAVY_AA"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_HEAVY_AA_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_inf_button"
+            position = { x = 210 y = 470 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_INF"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_INF_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_horses_button"
+            position = { x = 210 y = 508 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_HORSES"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_HORSES_TT"
+        }
+        buttonType = {
+            name = "ll_pkg_sf_button"
+            position = { x = 210 y = 546 }
+            quadTextureSprite = "GFX_button_221x34"
+            buttonFont = "hoi_16mbs"
+            buttonText = "LL_PKG_SF"
+            Orientation = "UPPER_LEFT"
+            clicksound = click_send
+            pdx_tooltip = "LL_PKG_SF_TT"
         }
         buttonType = {
             name = "ll_pkg_trucks_button"
-            position = { x = 210 y = 300 }
+            position = { x = 210 y = 584 }
             quadTextureSprite = "GFX_button_221x34"
             buttonFont = "hoi_16mbs"
             buttonText = "LL_PKG_TRUCKS"
@@ -343,18 +430,17 @@ guiTypes = {
             pdx_tooltip = "LL_PKG_TRUCKS_TT"
         }
         buttonType = {
-            name = "ll_pkg_radios_button"
-            position = { x = 210 y = 342 }
+            name = "ll_pkg_tanks_button"
+            position = { x = 210 y = 622 }
             quadTextureSprite = "GFX_button_221x34"
             buttonFont = "hoi_16mbs"
-            buttonText = "LL_PKG_RADIOS"
+            buttonText = "LL_PKG_TANKS"
             Orientation = "UPPER_LEFT"
             clicksound = click_send
-            pdx_tooltip = "LL_PKG_RADIOS_TT"
+            pdx_tooltip = "LL_PKG_TANKS_TT"
         }
 
         # ── SELECTED NATION DISPLAY (right column) ────────────
-        # One flag per nation, only the selected one is visible
 
         iconType = {
             name = "lend_lease_selected_flag_ENG"
@@ -365,7 +451,7 @@ guiTypes = {
         iconType = {
             name = "lend_lease_selected_flag_FRA"
             position = { x = 525 y = 90 }
-            spriteType = "GFX_flag_FRA" 
+            spriteType = "GFX_flag_FRA"
             alwaystransparent = yes
         }
         iconType = {
@@ -399,7 +485,6 @@ guiTypes = {
             alwaystransparent = yes
         }
 
-        # Selected nation name under flag
         instantTextBoxType = {
             name = "lend_lease_selected_name"
             position = { x = 400 y = 145 }
@@ -411,7 +496,6 @@ guiTypes = {
             text = "SENDING AID TO SELECTED NATION"
         }
 
-        # Sent confirmation
         instantTextBoxType = {
             name = "ll_sent_confirm_text"
             position = { x = 400 y = 175 }
@@ -426,7 +510,7 @@ guiTypes = {
         # ── CLOSE BUTTON ──────────────────────────────────────
         buttonType = {
             name = "close_lend_lease_window"
-            position = { x = 0 y = 390 }
+            position = { x = 50 y = 670 }
             quadTextureSprite = "GFX_button_123x34"
             buttonFont = "hoi_16mbs"
             buttonText = "CLOSE"
