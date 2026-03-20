@@ -2486,6 +2486,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_battleship_primacy
+				bonus = 0.75
+				uses = 2
+				category = bb_tech
+			}
 		}
 	}
 
@@ -2525,6 +2531,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_carrier_primacy
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
 		}
 	}
 
@@ -2544,6 +2556,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { USA_american_airforce_air_navy_sortie_efficiency = 0.3 tooltip = sortie_efficiency_tt }
 		}
 	}
 
@@ -2620,6 +2634,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes
+			add_to_variable = { USA_american_airforce_air_navy_naval_detection = 0.3 tooltip = naval_detection_tt }
+			add_to_variable = { USA_american_airforce_air_navy_convoy_escort_efficiency = 0.5 tooltip = convoy_escort_efficiency_tt }
+			add_to_variable = { USA_american_airforce_air_navy_convoy_convoy_retreat_speed = 0.5 tooltip = convoy_retreat_speed_tt }
 		}
 	}
 
