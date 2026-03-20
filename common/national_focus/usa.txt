@@ -1704,7 +1704,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_war_with = GER
+			has_war_with = ITA
 		}
 
 		available_if_capitulated = yes
@@ -1723,12 +1724,28 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			if = {
+				limit = {
+					has_country_flag = USA_war_plan_cooldown
+				}
+				has_country_flag = {
+					flag = USA_war_plan_cooldown
+					days > 240
+				}
+				custom_trigger_tooltip = {
+					tooltip = USA_war_plan_cooldown_tt
+					has_country_flag = {
+						flag = USA_war_plan_cooldown
+						days > 240
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			set_country_flag = USA_war_plan_cooldown
 		}
 	}
 
@@ -1824,12 +1841,26 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			if = {
+				limit = {
+					has_country_flag = USA_war_plan_cooldown
+				}
+				has_country_flag = {
+					flag = USA_war_plan_cooldown
+					days > 240
+				}
+				custom_trigger_tooltip = {
+					tooltip = USA_war_plan_cooldown_tt
+					has_country_flag = {
+						flag = USA_war_plan_cooldown
+						days > 240
+					}
+				}
+			}
 		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			set_country_flag = USA_war_plan_cooldown
 		}
 	}
 
