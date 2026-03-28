@@ -1318,3897 +1318,3897 @@ USA_supreme_command_level_up = {
 }
 
 USA_election_count = {
-	# hidden_effect = {
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 390
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_sd_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_sd_frame = 3 }
-	# 			}
-	# 		}
-	# 		390 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 390
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_sd_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_sd_frame = 3 }
-	# 			}
-	# 		}
-	# 		390 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 390
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_sd_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_sd_frame = 3 }
-	# 			}
-	# 		}
-	# 		390 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 383
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ks_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ks_frame = 3 }
-	# 			}
-	# 		}
-	# 		383 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 383
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ks_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ks_frame = 3 }
-	# 			}
-	# 		}
-	# 		383 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 383
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ks_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ks_frame = 3 }
-	# 			}
-	# 		}
-	# 		383 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 384
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_ne_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_ne_frame = 3 }
-	# 			}
-	# 		}
-	# 		384 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 384
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_ne_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_ne_frame = 3 }
-	# 			}
-	# 		}
-	# 		384 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 384
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_ne_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_ne_frame = 3 }
-	# 			}
-	# 		}
-	# 		384 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 395
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 29
-	# 				}
-	# 				set_variable = { USA_il_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 29
-	# 				}
-	# 				set_variable = { USA_il_frame = 3 }
-	# 			}
-	# 		}
-	# 		395 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 395
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 29
-	# 				}
-	# 				set_variable = { USA_il_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 29
-	# 				}
-	# 				set_variable = { USA_il_frame = 3 }
-	# 			}
-	# 		}
-	# 		395 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 395
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 29
-	# 				}
-	# 				set_variable = { USA_il_frame = 2 }
-	# 			}
-	# 			+ = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 29
-	# 				}
-	# 				set_variable = { USA_il_frame = 3 }
-	# 			}
-	# 		}
-	# 		395 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 393
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 19
-	# 				}
-	# 				set_variable = { USA_mi_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 19
-	# 				}
-	# 				set_variable = { USA_mi_frame = 3 }
-	# 			}
-	# 		}
-	# 		393 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 393
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 19
-	# 				}
-	# 				set_variable = { USA_mi_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 19
-	# 				}
-	# 				set_variable = { USA_mi_frame = 3 }
-	# 			}
-	# 		}
-	# 		393 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 393
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 19
-	# 				}
-	# 				set_variable = { USA_mi_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 19
-	# 				}
-	# 				set_variable = { USA_mi_frame = 3 }
-	# 			}
-	# 		}
-	# 		393 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 396
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 14
-	# 				}
-	# 				set_variable = { USA_in_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 14
-	# 				}
-	# 				set_variable = { USA_in_frame = 3 }
-	# 			}
-	# 		}
-	# 		396 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 396
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 14
-	# 				}
-	# 				set_variable = { USA_in_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 14
-	# 				}
-	# 				set_variable = { USA_in_frame = 3 }
-	# 			}
-	# 		}
-	# 		396 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 396
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 14
-	# 				}
-	# 				set_variable = { USA_in_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 14
-	# 				}
-	# 				set_variable = { USA_in_frame = 3 }
-	# 			}
-	# 		}
-	# 		396 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 392
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ia_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ia_frame = 3 }
-	# 			}
-	# 		}
-	# 		392 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 392
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ia_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ia_frame = 3 }
-	# 			}
-	# 		}
-	# 		392 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 392
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ia_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ia_frame = 3 }
-	# 			}
-	# 		}
-	# 		392 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 369
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ky_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ky_frame = 3 }
-	# 			}
-	# 		}
-	# 		369 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 369
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ky_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ky_frame = 3 }
-	# 			}
-	# 		}
-	# 		369 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 369
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ky_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ky_frame = 3 }
-	# 			}
-	# 		}
-	# 		369 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 360
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 36
-	# 				}
-	# 				set_variable = { USA_pa_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 36
-	# 				}
-	# 				set_variable = { USA_pa_frame = 3 }
-	# 			}
-	# 		}
-	# 		360 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 360
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 36
-	# 				}
-	# 				set_variable = { USA_pa_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 36
-	# 				}
-	# 				set_variable = { USA_pa_frame = 3 }
-	# 			}
-	# 		}
-	# 		360 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 360
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 36
-	# 				}
-	# 				set_variable = { USA_pa_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 36
-	# 				}
-	# 				set_variable = { USA_pa_frame = 3 }
-	# 			}
-	# 		}
-	# 		360 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 358
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 47
-	# 				}
-	# 				set_variable = { USA_ny_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 47
-	# 				}
-	# 				set_variable = { USA_ny_frame = 3 }
-	# 			}
-	# 		}
-	# 		358 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 358
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 47
-	# 				}
-	# 				set_variable = { USA_ny_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 47
-	# 				}
-	# 				set_variable = { USA_ny_frame = 3 }
-	# 			}
-	# 		}
-	# 		358 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 358
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 47
-	# 				}
-	# 				set_variable = { USA_ny_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 47
-	# 				}
-	# 				set_variable = { USA_ny_frame = 3 }
-	# 			}
-	# 		}
-	# 		358 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 359
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 16
-	# 				}
-	# 				set_variable = { USA_nj_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 16
-	# 				}
-	# 				set_variable = { USA_nj_frame = 3 }
-	# 			}
-	# 		}
-	# 		359 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 359
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 16
-	# 				}
-	# 				set_variable = { USA_nj_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 16
-	# 				}
-	# 				set_variable = { USA_nj_frame = 3 }
-	# 			}
-	# 		}
-	# 		359 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 359
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 16
-	# 				}
-	# 				set_variable = { USA_nj_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 16
-	# 				}
-	# 				set_variable = { USA_nj_frame = 3 }
-	# 			}
-	# 		}
-	# 		359 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 386
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wa_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wa_frame = 3 }
-	# 			}
-	# 		}
-	# 		386 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 386
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wa_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wa_frame = 3 }
-	# 			}
-	# 		}
-	# 		386 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 386
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wa_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wa_frame = 3 }
-	# 			}
-	# 		}
-	# 		386 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 385
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_or_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_or_frame = 3 }
-	# 			}
-	# 		}
-	# 		385 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 385
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_or_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_or_frame = 3 }
-	# 			}
-	# 		}
-	# 		385 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 385
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_or_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_or_frame = 3 }
-	# 			}
-	# 		}
-	# 		385 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 378
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 22
-	# 				}
-	# 				set_variable = { USA_ca_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 22
-	# 				}
-	# 				set_variable = { USA_ca_frame = 3 }
-	# 			}
-	# 		}
-	# 		378 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 378
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 22
-	# 				}
-	# 				set_variable = { USA_ca_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 22
-	# 				}
-	# 				set_variable = { USA_ca_frame = 3 }
-	# 			}
-	# 		}
-	# 		378 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 378
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 22
-	# 				}
-	# 				set_variable = { USA_ca_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 22
-	# 				}
-	# 				set_variable = { USA_ca_frame = 3 }
-	# 			}
-	# 		}
-	# 		378 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 379
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nv_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nv_frame = 3 }
-	# 			}
-	# 		}
-	# 		379 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 379
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nv_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nv_frame = 3 }
-	# 			}
-	# 		}
-	# 		379 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 379
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nv_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nv_frame = 3 }
-	# 			}
-	# 		}
-	# 		379 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 387
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_id_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_id_frame = 3 }
-	# 			}
-	# 		}
-	# 		387 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 387
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_id_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_id_frame = 3 }
-	# 			}
-	# 		}
-	# 		387 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 387
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_id_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_id_frame = 3 }
-	# 			}
-	# 		}
-	# 		387 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 388
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_mt_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_mt_frame = 3 }
-	# 			}
-	# 		}
-	# 		388 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 388
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_mt_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_mt_frame = 3 }
-	# 			}
-	# 		}
-	# 		388 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 388
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_mt_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_mt_frame = 3 }
-	# 			}
-	# 		}
-	# 		388 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 381
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_wy_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_wy_frame = 3 }
-	# 			}
-	# 		}
-	# 		381 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 381
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_wy_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_wy_frame = 3 }
-	# 			}
-	# 		}
-	# 		381 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 381
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_wy_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_wy_frame = 3 }
-	# 			}
-	# 		}
-	# 		381 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 380
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ut_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ut_frame = 3 }
-	# 			}
-	# 		}
-	# 		380 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 380
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ut_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ut_frame = 3 }
-	# 			}
-	# 		}
-	# 		380 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 380
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ut_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ut_frame = 3 }
-	# 			}
-	# 		}
-	# 		380 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 377
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_az_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_az_frame = 3 }
-	# 			}
-	# 		}
-	# 		377 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 377
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_az_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_az_frame = 3 }
-	# 			}
-	# 		}
-	# 		377 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 377
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_az_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_az_frame = 3 }
-	# 			}
-	# 		}
-	# 		377 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 376
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nm_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nm_frame = 3 }
-	# 			}
-	# 		}
-	# 		376 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 376
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nm_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nm_frame = 3 }
-	# 			}
-	# 		}
-	# 		376 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 376
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nm_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_nm_frame = 3 }
-	# 			}
-	# 		}
-	# 		376 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 382
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 6
-	# 				}
-	# 				set_variable = { USA_co_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 6
-	# 				}
-	# 				set_variable = { USA_co_frame = 3 }
-	# 			}
-	# 		}
-	# 		382 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 382
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 6
-	# 				}
-	# 				set_variable = { USA_co_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 6
-	# 				}
-	# 				set_variable = { USA_co_frame = 3 }
-	# 			}
-	# 		}
-	# 		382 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 382
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 6
-	# 				}
-	# 				set_variable = { USA_co_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 6
-	# 				}
-	# 				set_variable = { USA_co_frame = 3 }
-	# 			}
-	# 		}
-	# 		382 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 375
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 23
-	# 				}
-	# 				set_variable = { USA_tx_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 23
-	# 				}
-	# 				set_variable = { USA_tx_frame = 3 }
-	# 			}
-	# 		}
-	# 		375 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 375
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 23
-	# 				}
-	# 				set_variable = { USA_tx_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 23
-	# 				}
-	# 				set_variable = { USA_tx_frame = 3 }
-	# 			}
-	# 		}
-	# 		375 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 375
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 23
-	# 				}
-	# 				set_variable = { USA_tx_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 23
-	# 				}
-	# 				set_variable = { USA_tx_frame = 3 }
-	# 			}
-	# 		}
-	# 		375 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 374
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ok_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ok_frame = 3 }
-	# 			}
-	# 		}
-	# 		374 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 374
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ok_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ok_frame = 3 }
-	# 			}
-	# 		}
-	# 		374 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 374
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ok_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_ok_frame = 3 }
-	# 			}
-	# 		}
-	# 		374 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 389
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nd_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nd_frame = 3 }
-	# 			}
-	# 		}
-	# 		389 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 389
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nd_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nd_frame = 3 }
-	# 			}
-	# 		}
-	# 		389 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 389
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nd_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nd_frame = 3 }
-	# 			}
-	# 		}
-	# 		389 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 391
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_mn_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_mn_frame = 3 }
-	# 			}
-	# 		}
-	# 		391 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 391
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_mn_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_mn_frame = 3 }
-	# 			}
-	# 		}
-	# 		391 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 391
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_mn_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_mn_frame = 3 }
-	# 			}
-	# 		}
-	# 		391 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 394
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_wi_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_wi_frame = 3 }
-	# 			}
-	# 		}
-	# 		394 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 394
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_wi_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_wi_frame = 3 }
-	# 			}
-	# 		}
-	# 		394 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 394
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_wi_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_wi_frame = 3 }
-	# 			}
-	# 		}
-	# 		394 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 373
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 15
-	# 				}
-	# 				set_variable = { USA_mo_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 15
-	# 				}
-	# 				set_variable = { USA_mo_frame = 3 }
-	# 			}
-	# 		}
-	# 		373 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 373
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 15
-	# 				}
-	# 				set_variable = { USA_mo_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 15
-	# 				}
-	# 				set_variable = { USA_mo_frame = 3 }
-	# 			}
-	# 		}
-	# 		373 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 373
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 15
-	# 				}
-	# 				set_variable = { USA_mo_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 15
-	# 				}
-	# 				set_variable = { USA_mo_frame = 3 }
-	# 			}
-	# 		}
-	# 		373 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 372
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ar_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ar_frame = 3 }
-	# 			}
-	# 		}
-	# 		372 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 372
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ar_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ar_frame = 3 }
-	# 			}
-	# 		}
-	# 		372 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 372
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ar_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ar_frame = 3 }
-	# 			}
-	# 		}
-	# 		372 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 371
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 10
-	# 				}
-	# 				set_variable = { USA_la_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 10
-	# 				}
-	# 				set_variable = { USA_la_frame = 3 }
-	# 			}
-	# 		}
-	# 		371 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 371
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 10
-	# 				}
-	# 				set_variable = { USA_la_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 10
-	# 				}
-	# 				set_variable = { USA_la_frame = 3 }
-	# 			}
-	# 		}
-	# 		371 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 371
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 10
-	# 				}
-	# 				set_variable = { USA_la_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 10
-	# 				}
-	# 				set_variable = { USA_la_frame = 3 }
-	# 			}
-	# 		}
-	# 		371 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 370
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ms_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ms_frame = 3 }
-	# 			}
-	# 		}
-	# 		370 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 370
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ms_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ms_frame = 3 }
-	# 			}
-	# 		}
-	# 		370 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 370
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ms_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 9
-	# 				}
-	# 				set_variable = { USA_ms_frame = 3 }
-	# 			}
-	# 		}
-	# 		370 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 367
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_al_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_al_frame = 3 }
-	# 			}
-	# 		}
-	# 		367 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 367
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_al_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_al_frame = 3 }
-	# 			}
-	# 		}
-	# 		367 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 367
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_al_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_al_frame = 3 }
-	# 			}
-	# 		}
-	# 		367 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 366
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_fl_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_fl_frame = 3 }
-	# 			}
-	# 		}
-	# 		366 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 366
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_fl_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_fl_frame = 3 }
-	# 			}
-	# 		}
-	# 		366 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 366
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_fl_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 7
-	# 				}
-	# 				set_variable = { USA_fl_frame = 3 }
-	# 			}
-	# 		}
-	# 		366 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 365
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_ga_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_ga_frame = 3 }
-	# 			}
-	# 		}
-	# 		365 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 365
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_ga_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_ga_frame = 3 }
-	# 			}
-	# 		}
-	# 		365 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 365
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_ga_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 12
-	# 				}
-	# 				set_variable = { USA_ga_frame = 3 }
-	# 			}
-	# 		}
-	# 		365 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 368
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_tn_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_tn_frame = 3 }
-	# 			}
-	# 		}
-	# 		368 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 368
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_tn_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_tn_frame = 3 }
-	# 			}
-	# 		}
-	# 		368 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 368
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_tn_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_tn_frame = 3 }
-	# 			}
-	# 		}
-	# 		368 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 364
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_sc_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_sc_frame = 3 }
-	# 			}
-	# 		}
-	# 		364 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 364
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_sc_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_sc_frame = 3 }
-	# 			}
-	# 		}
-	# 		364 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 364
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_sc_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_sc_frame = 3 }
-	# 			}
-	# 		}
-	# 		364 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 363
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 13
-	# 				}
-	# 				set_variable = { USA_nc_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 13
-	# 				}
-	# 				set_variable = { USA_nc_frame = 3 }
-	# 			}
-	# 		}
-	# 		363 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 363
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 13
-	# 				}
-	# 				set_variable = { USA_nc_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 13
-	# 				}
-	# 				set_variable = { USA_nc_frame = 3 }
-	# 			}
-	# 		}
-	# 		363 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 363
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 13
-	# 				}
-	# 				set_variable = { USA_nc_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 13
-	# 				}
-	# 				set_variable = { USA_nc_frame = 3 }
-	# 			}
-	# 		}
-	# 		363 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 362
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_va_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_va_frame = 3 }
-	# 			}
-	# 		}
-	# 		362 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 362
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_va_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_va_frame = 3 }
-	# 			}
-	# 		}
-	# 		362 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 362
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_va_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 11
-	# 				}
-	# 				set_variable = { USA_va_frame = 3 }
-	# 			}
-	# 		}
-	# 		362 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 261
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 26
-	# 				}
-	# 				set_variable = { USA_oh_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 26
-	# 				}
-	# 				set_variable = { USA_oh_frame = 3 }
-	# 			}
-	# 		}
-	# 		261 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 261
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 26
-	# 				}
-	# 				set_variable = { USA_oh_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 26
-	# 				}
-	# 				set_variable = { USA_oh_frame = 3 }
-	# 			}
-	# 		}
-	# 		261 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 261
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 26
-	# 				}
-	# 				set_variable = { USA_oh_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 26
-	# 				}
-	# 				set_variable = { USA_oh_frame = 3 }
-	# 			}
-	# 		}
-	# 		261 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 816
-	# 				has_state_flag = USA_swing_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wv_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wv_frame = 3 }
-	# 			}
-	# 		}
-	# 		816 = {
-	# 			clr_state_flag = USA_swing_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 816
-	# 				has_state_flag = USA_blue_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wv_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wv_frame = 3 }
-	# 			}
-	# 		}
-	# 		816 = {
-	# 			clr_state_flag = USA_blue_state
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 816
-	# 				has_state_flag = USA_red_state
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wv_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_wv_frame = 3 }
-	# 			}
-	# 		}
-	# 		816 = {
-	# 			clr_state_flag = USA_red_state
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 357
-	# 				has_state_flag = USA_me_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_me_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_me_frame = 3 }
-	# 			}
-	# 		}
-	# 		357 = {
-	# 			clr_state_flag = USA_me_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 357
-	# 				has_state_flag = USA_me_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_me_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_me_frame = 3 }
-	# 			}
-	# 		}
-	# 		357 = {
-	# 			clr_state_flag = USA_me_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 357
-	# 				has_state_flag = USA_me_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_me_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 5
-	# 				}
-	# 				set_variable = { USA_me_frame = 3 }
-	# 			}
-	# 		}
-	# 		357 = {
-	# 			clr_state_flag = USA_me_red
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 938
-	# 				has_state_flag = USA_vt_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_vt_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_vt_frame = 3 }
-	# 			}
-	# 		}
-	# 		938 = {
-	# 			clr_state_flag = USA_vt_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 938
-	# 				has_state_flag = USA_vt_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_vt_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_vt_frame = 3 }
-	# 			}
-	# 		}
-	# 		938 = {
-	# 			clr_state_flag = USA_vt_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 938
-	# 				has_state_flag = USA_vt_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_vt_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_vt_frame = 3 }
-	# 			}
-	# 		}
-	# 		938 = {
-	# 			clr_state_flag = USA_vt_red
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 941
-	# 				has_state_flag = USA_ma_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 17
-	# 				}
-	# 				set_variable = { USA_ma_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 17
-	# 				}
-	# 				set_variable = { USA_ma_frame = 3 }
-	# 			}
-	# 		}
-	# 		941 = {
-	# 			clr_state_flag = USA_ma_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 941
-	# 				has_state_flag = USA_ma_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 17
-	# 				}
-	# 				set_variable = { USA_ma_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 17
-	# 				}
-	# 				set_variable = { USA_ma_frame = 3 }
-	# 			}
-	# 		}
-	# 		941 = {
-	# 			clr_state_flag = USA_ma_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 941
-	# 				has_state_flag = USA_ma_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 17
-	# 				}
-	# 				set_variable = { USA_ma_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 17
-	# 				}
-	# 				set_variable = { USA_ma_frame = 3 }
-	# 			}
-	# 		}
-	# 		941 = {
-	# 			clr_state_flag = USA_ma_red
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 937
-	# 				has_state_flag = USA_nh_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nh_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nh_frame = 3 }
-	# 			}
-	# 		}
-	# 		937 = {
-	# 			clr_state_flag = USA_nh_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 937
-	# 				has_state_flag = USA_nh_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nh_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nh_frame = 3 }
-	# 			}
-	# 		}
-	# 		937 = {
-	# 			clr_state_flag = USA_nh_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 937
-	# 				has_state_flag = USA_nh_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nh_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_nh_frame = 3 }
-	# 			}
-	# 		}
-	# 		937 = {
-	# 			clr_state_flag = USA_nh_red
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 940
-	# 				has_state_flag = USA_ct_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_ct_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_ct_frame = 3 }
-	# 			}
-	# 		}
-	# 		940 = {
-	# 			clr_state_flag = USA_ct_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 940
-	# 				has_state_flag = USA_ct_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_ct_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_ct_frame = 3 }
-	# 			}
-	# 		}
-	# 		940 = {
-	# 			clr_state_flag = USA_ct_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 940
-	# 				has_state_flag = USA_ct_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_ct_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_ct_frame = 3 }
-	# 			}
-	# 		}
-	# 		940 = {
-	# 			clr_state_flag = USA_ct_red
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 939
-	# 				has_state_flag = USA_ri_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ri_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ri_frame = 3 }
-	# 			}
-	# 		}
-	# 		939 = {
-	# 			clr_state_flag = USA_ri_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 939
-	# 				has_state_flag = USA_ri_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ri_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ri_frame = 3 }
-	# 			}
-	# 		}
-	# 		939 = {
-	# 			clr_state_flag = USA_ri_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 939
-	# 				has_state_flag = USA_ri_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ri_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 4
-	# 				}
-	# 				set_variable = { USA_ri_frame = 3 }
-	# 			}
-	# 		}
-	# 		939 = {
-	# 			clr_state_flag = USA_ri_red
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 361
-	# 				has_state_flag = USA_md_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_md_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_md_frame = 3 }
-	# 			}
-	# 		}
-	# 		361 = {
-	# 			clr_state_flag = USA_md_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 361
-	# 				has_state_flag = USA_md_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_md_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_md_frame = 3 }
-	# 			}
-	# 		}
-	# 		361 = {
-	# 			clr_state_flag = USA_md_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 361
-	# 				has_state_flag = USA_md_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_md_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 8
-	# 				}
-	# 				set_variable = { USA_md_frame = 3 }
-	# 			}
-	# 		}
-	# 		361 = {
-	# 			clr_state_flag = USA_md_red
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 361
-	# 				has_state_flag = USA_de_swing
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_de_frame = 2 }
-	# 			}
-	# 			50 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_de_frame = 3 }
-	# 			}
-	# 		}
-	# 		361 = {
-	# 			clr_state_flag = USA_de_swing
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 361
-	# 				has_state_flag = USA_de_blue
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_de_frame = 2 }
-	# 			}
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_de_frame = 3 }
-	# 			}
-	# 		}
-	# 		361 = {
-	# 			clr_state_flag = USA_de_blue
-	# 		}
-	# 	}
-	# 	else_if = {
-	# 		limit = {
-	# 			any_owned_state = {
-	# 				state = 361
-	# 				has_state_flag = USA_de_red
-	# 			}
-	# 		}
-	# 		random_list = {
-	# 			100 = {
-	# 				add_to_variable = {
-	# 					var = USA_rep_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_de_frame = 2 }
-	# 			}
-	# 			0 = {
-	# 				add_to_variable = {
-	# 					var = USA_dem_ec
-	# 					value = 3
-	# 				}
-	# 				set_variable = { USA_de_frame = 3 }
-	# 			}
-	# 		}
-	# 		361 = {
-	# 			clr_state_flag = USA_de_red
-	# 		}
-	# 	}
-	# }
-	# clr_country_flag = USA_campaigning_flag
+	hidden_effect = {
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 390
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_sd_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_sd_frame = 3 }
+				}
+			}
+			390 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 390
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_sd_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_sd_frame = 3 }
+				}
+			}
+			390 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 390
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_sd_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_sd_frame = 3 }
+				}
+			}
+			390 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 383
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ks_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ks_frame = 3 }
+				}
+			}
+			383 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 383
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ks_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ks_frame = 3 }
+				}
+			}
+			383 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 383
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ks_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ks_frame = 3 }
+				}
+			}
+			383 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 384
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 7
+					}
+					set_variable = { USA_ne_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 7
+					}
+					set_variable = { USA_ne_frame = 3 }
+				}
+			}
+			384 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 384
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 7
+					}
+					set_variable = { USA_ne_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 7
+					}
+					set_variable = { USA_ne_frame = 3 }
+				}
+			}
+			384 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 384
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 7
+					}
+					set_variable = { USA_ne_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 7
+					}
+					set_variable = { USA_ne_frame = 3 }
+				}
+			}
+			384 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 395
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 29
+					}
+					set_variable = { USA_il_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 29
+					}
+					set_variable = { USA_il_frame = 3 }
+				}
+			}
+			395 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 395
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 29
+					}
+					set_variable = { USA_il_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 29
+					}
+					set_variable = { USA_il_frame = 3 }
+				}
+			}
+			395 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 395
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 29
+					}
+					set_variable = { USA_il_frame = 2 }
+				}
+				+ = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 29
+					}
+					set_variable = { USA_il_frame = 3 }
+				}
+			}
+			395 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 393
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 19
+					}
+					set_variable = { USA_mi_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 19
+					}
+					set_variable = { USA_mi_frame = 3 }
+				}
+			}
+			393 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 393
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 19
+					}
+					set_variable = { USA_mi_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 19
+					}
+					set_variable = { USA_mi_frame = 3 }
+				}
+			}
+			393 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 393
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 19
+					}
+					set_variable = { USA_mi_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 19
+					}
+					set_variable = { USA_mi_frame = 3 }
+				}
+			}
+			393 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 396
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 14
+					}
+					set_variable = { USA_in_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 14
+					}
+					set_variable = { USA_in_frame = 3 }
+				}
+			}
+			396 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 396
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 14
+					}
+					set_variable = { USA_in_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 14
+					}
+					set_variable = { USA_in_frame = 3 }
+				}
+			}
+			396 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 396
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 14
+					}
+					set_variable = { USA_in_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 14
+					}
+					set_variable = { USA_in_frame = 3 }
+				}
+			}
+			396 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 392
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ia_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ia_frame = 3 }
+				}
+			}
+			392 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 392
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ia_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ia_frame = 3 }
+				}
+			}
+			392 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 392
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ia_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ia_frame = 3 }
+				}
+			}
+			392 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 369
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ky_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ky_frame = 3 }
+				}
+			}
+			369 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 369
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ky_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ky_frame = 3 }
+				}
+			}
+			369 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 369
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ky_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ky_frame = 3 }
+				}
+			}
+			369 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 360
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 36
+					}
+					set_variable = { USA_pa_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 36
+					}
+					set_variable = { USA_pa_frame = 3 }
+				}
+			}
+			360 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 360
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 36
+					}
+					set_variable = { USA_pa_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 36
+					}
+					set_variable = { USA_pa_frame = 3 }
+				}
+			}
+			360 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 360
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 36
+					}
+					set_variable = { USA_pa_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 36
+					}
+					set_variable = { USA_pa_frame = 3 }
+				}
+			}
+			360 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 358
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 47
+					}
+					set_variable = { USA_ny_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 47
+					}
+					set_variable = { USA_ny_frame = 3 }
+				}
+			}
+			358 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 358
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 47
+					}
+					set_variable = { USA_ny_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 47
+					}
+					set_variable = { USA_ny_frame = 3 }
+				}
+			}
+			358 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 358
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 47
+					}
+					set_variable = { USA_ny_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 47
+					}
+					set_variable = { USA_ny_frame = 3 }
+				}
+			}
+			358 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 359
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 16
+					}
+					set_variable = { USA_nj_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 16
+					}
+					set_variable = { USA_nj_frame = 3 }
+				}
+			}
+			359 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 359
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 16
+					}
+					set_variable = { USA_nj_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 16
+					}
+					set_variable = { USA_nj_frame = 3 }
+				}
+			}
+			359 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 359
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 16
+					}
+					set_variable = { USA_nj_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 16
+					}
+					set_variable = { USA_nj_frame = 3 }
+				}
+			}
+			359 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 386
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_wa_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_wa_frame = 3 }
+				}
+			}
+			386 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 386
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_wa_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_wa_frame = 3 }
+				}
+			}
+			386 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 386
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_wa_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_wa_frame = 3 }
+				}
+			}
+			386 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 385
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 5
+					}
+					set_variable = { USA_or_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 5
+					}
+					set_variable = { USA_or_frame = 3 }
+				}
+			}
+			385 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 385
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 5
+					}
+					set_variable = { USA_or_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 5
+					}
+					set_variable = { USA_or_frame = 3 }
+				}
+			}
+			385 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 385
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 5
+					}
+					set_variable = { USA_or_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 5
+					}
+					set_variable = { USA_or_frame = 3 }
+				}
+			}
+			385 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 378
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 22
+					}
+					set_variable = { USA_ca_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 22
+					}
+					set_variable = { USA_ca_frame = 3 }
+				}
+			}
+			378 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 378
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 22
+					}
+					set_variable = { USA_ca_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 22
+					}
+					set_variable = { USA_ca_frame = 3 }
+				}
+			}
+			378 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 378
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 22
+					}
+					set_variable = { USA_ca_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 22
+					}
+					set_variable = { USA_ca_frame = 3 }
+				}
+			}
+			378 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 379
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_nv_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_nv_frame = 3 }
+				}
+			}
+			379 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 379
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_nv_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_nv_frame = 3 }
+				}
+			}
+			379 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 379
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_nv_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_nv_frame = 3 }
+				}
+			}
+			379 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 387
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_id_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_id_frame = 3 }
+				}
+			}
+			387 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 387
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_id_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_id_frame = 3 }
+				}
+			}
+			387 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 387
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_id_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_id_frame = 3 }
+				}
+			}
+			387 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 388
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_mt_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_mt_frame = 3 }
+				}
+			}
+			388 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 388
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_mt_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_mt_frame = 3 }
+				}
+			}
+			388 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 388
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_mt_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_mt_frame = 3 }
+				}
+			}
+			388 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 381
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_wy_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_wy_frame = 3 }
+				}
+			}
+			381 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 381
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_wy_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_wy_frame = 3 }
+				}
+			}
+			381 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 381
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_wy_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_wy_frame = 3 }
+				}
+			}
+			381 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 380
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_ut_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_ut_frame = 3 }
+				}
+			}
+			380 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 380
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_ut_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_ut_frame = 3 }
+				}
+			}
+			380 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 380
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_ut_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_ut_frame = 3 }
+				}
+			}
+			380 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 377
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_az_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_az_frame = 3 }
+				}
+			}
+			377 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 377
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_az_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_az_frame = 3 }
+				}
+			}
+			377 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 377
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_az_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_az_frame = 3 }
+				}
+			}
+			377 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 376
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_nm_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_nm_frame = 3 }
+				}
+			}
+			376 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 376
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_nm_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_nm_frame = 3 }
+				}
+			}
+			376 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 376
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_nm_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_nm_frame = 3 }
+				}
+			}
+			376 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 382
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 6
+					}
+					set_variable = { USA_co_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 6
+					}
+					set_variable = { USA_co_frame = 3 }
+				}
+			}
+			382 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 382
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 6
+					}
+					set_variable = { USA_co_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 6
+					}
+					set_variable = { USA_co_frame = 3 }
+				}
+			}
+			382 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 382
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 6
+					}
+					set_variable = { USA_co_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 6
+					}
+					set_variable = { USA_co_frame = 3 }
+				}
+			}
+			382 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 375
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 23
+					}
+					set_variable = { USA_tx_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 23
+					}
+					set_variable = { USA_tx_frame = 3 }
+				}
+			}
+			375 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 375
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 23
+					}
+					set_variable = { USA_tx_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 23
+					}
+					set_variable = { USA_tx_frame = 3 }
+				}
+			}
+			375 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 375
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 23
+					}
+					set_variable = { USA_tx_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 23
+					}
+					set_variable = { USA_tx_frame = 3 }
+				}
+			}
+			375 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 374
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ok_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ok_frame = 3 }
+				}
+			}
+			374 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 374
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ok_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ok_frame = 3 }
+				}
+			}
+			374 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 374
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_ok_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_ok_frame = 3 }
+				}
+			}
+			374 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 389
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_nd_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_nd_frame = 3 }
+				}
+			}
+			389 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 389
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_nd_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_nd_frame = 3 }
+				}
+			}
+			389 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 389
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_nd_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_nd_frame = 3 }
+				}
+			}
+			389 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 391
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_mn_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_mn_frame = 3 }
+				}
+			}
+			391 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 391
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_mn_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_mn_frame = 3 }
+				}
+			}
+			391 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 391
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_mn_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_mn_frame = 3 }
+				}
+			}
+			391 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 394
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 12
+					}
+					set_variable = { USA_wi_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 12
+					}
+					set_variable = { USA_wi_frame = 3 }
+				}
+			}
+			394 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 394
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 12
+					}
+					set_variable = { USA_wi_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 12
+					}
+					set_variable = { USA_wi_frame = 3 }
+				}
+			}
+			394 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 394
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 12
+					}
+					set_variable = { USA_wi_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 12
+					}
+					set_variable = { USA_wi_frame = 3 }
+				}
+			}
+			394 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 373
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 15
+					}
+					set_variable = { USA_mo_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 15
+					}
+					set_variable = { USA_mo_frame = 3 }
+				}
+			}
+			373 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 373
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 15
+					}
+					set_variable = { USA_mo_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 15
+					}
+					set_variable = { USA_mo_frame = 3 }
+				}
+			}
+			373 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 373
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 15
+					}
+					set_variable = { USA_mo_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 15
+					}
+					set_variable = { USA_mo_frame = 3 }
+				}
+			}
+			373 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 372
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ar_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ar_frame = 3 }
+				}
+			}
+			372 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 372
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ar_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ar_frame = 3 }
+				}
+			}
+			372 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 372
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ar_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ar_frame = 3 }
+				}
+			}
+			372 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 371
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 10
+					}
+					set_variable = { USA_la_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 10
+					}
+					set_variable = { USA_la_frame = 3 }
+				}
+			}
+			371 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 371
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 10
+					}
+					set_variable = { USA_la_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 10
+					}
+					set_variable = { USA_la_frame = 3 }
+				}
+			}
+			371 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 371
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 10
+					}
+					set_variable = { USA_la_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 10
+					}
+					set_variable = { USA_la_frame = 3 }
+				}
+			}
+			371 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 370
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ms_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ms_frame = 3 }
+				}
+			}
+			370 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 370
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ms_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ms_frame = 3 }
+				}
+			}
+			370 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 370
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 9
+					}
+					set_variable = { USA_ms_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 9
+					}
+					set_variable = { USA_ms_frame = 3 }
+				}
+			}
+			370 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 367
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_al_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_al_frame = 3 }
+				}
+			}
+			367 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 367
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_al_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_al_frame = 3 }
+				}
+			}
+			367 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 367
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_al_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_al_frame = 3 }
+				}
+			}
+			367 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 366
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 7
+					}
+					set_variable = { USA_fl_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 7
+					}
+					set_variable = { USA_fl_frame = 3 }
+				}
+			}
+			366 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 366
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 7
+					}
+					set_variable = { USA_fl_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 7
+					}
+					set_variable = { USA_fl_frame = 3 }
+				}
+			}
+			366 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 366
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 7
+					}
+					set_variable = { USA_fl_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 7
+					}
+					set_variable = { USA_fl_frame = 3 }
+				}
+			}
+			366 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 365
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 12
+					}
+					set_variable = { USA_ga_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 12
+					}
+					set_variable = { USA_ga_frame = 3 }
+				}
+			}
+			365 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 365
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 12
+					}
+					set_variable = { USA_ga_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 12
+					}
+					set_variable = { USA_ga_frame = 3 }
+				}
+			}
+			365 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 365
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 12
+					}
+					set_variable = { USA_ga_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 12
+					}
+					set_variable = { USA_ga_frame = 3 }
+				}
+			}
+			365 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 368
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_tn_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_tn_frame = 3 }
+				}
+			}
+			368 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 368
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_tn_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_tn_frame = 3 }
+				}
+			}
+			368 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 368
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_tn_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_tn_frame = 3 }
+				}
+			}
+			368 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 364
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_sc_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_sc_frame = 3 }
+				}
+			}
+			364 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 364
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_sc_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_sc_frame = 3 }
+				}
+			}
+			364 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 364
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_sc_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_sc_frame = 3 }
+				}
+			}
+			364 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 363
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 13
+					}
+					set_variable = { USA_nc_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 13
+					}
+					set_variable = { USA_nc_frame = 3 }
+				}
+			}
+			363 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 363
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 13
+					}
+					set_variable = { USA_nc_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 13
+					}
+					set_variable = { USA_nc_frame = 3 }
+				}
+			}
+			363 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 363
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 13
+					}
+					set_variable = { USA_nc_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 13
+					}
+					set_variable = { USA_nc_frame = 3 }
+				}
+			}
+			363 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 362
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_va_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_va_frame = 3 }
+				}
+			}
+			362 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 362
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_va_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_va_frame = 3 }
+				}
+			}
+			362 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 362
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 11
+					}
+					set_variable = { USA_va_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 11
+					}
+					set_variable = { USA_va_frame = 3 }
+				}
+			}
+			362 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 261
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 26
+					}
+					set_variable = { USA_oh_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 26
+					}
+					set_variable = { USA_oh_frame = 3 }
+				}
+			}
+			261 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 261
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 26
+					}
+					set_variable = { USA_oh_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 26
+					}
+					set_variable = { USA_oh_frame = 3 }
+				}
+			}
+			261 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 261
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 26
+					}
+					set_variable = { USA_oh_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 26
+					}
+					set_variable = { USA_oh_frame = 3 }
+				}
+			}
+			261 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 816
+					has_state_flag = USA_swing_state
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_wv_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_wv_frame = 3 }
+				}
+			}
+			816 = {
+				clr_state_flag = USA_swing_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 816
+					has_state_flag = USA_blue_state
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_wv_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_wv_frame = 3 }
+				}
+			}
+			816 = {
+				clr_state_flag = USA_blue_state
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 816
+					has_state_flag = USA_red_state
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_wv_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_wv_frame = 3 }
+				}
+			}
+			816 = {
+				clr_state_flag = USA_red_state
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 357
+					has_state_flag = USA_me_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 5
+					}
+					set_variable = { USA_me_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 5
+					}
+					set_variable = { USA_me_frame = 3 }
+				}
+			}
+			357 = {
+				clr_state_flag = USA_me_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 357
+					has_state_flag = USA_me_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 5
+					}
+					set_variable = { USA_me_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 5
+					}
+					set_variable = { USA_me_frame = 3 }
+				}
+			}
+			357 = {
+				clr_state_flag = USA_me_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 357
+					has_state_flag = USA_me_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 5
+					}
+					set_variable = { USA_me_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 5
+					}
+					set_variable = { USA_me_frame = 3 }
+				}
+			}
+			357 = {
+				clr_state_flag = USA_me_red
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 938
+					has_state_flag = USA_vt_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_vt_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_vt_frame = 3 }
+				}
+			}
+			938 = {
+				clr_state_flag = USA_vt_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 938
+					has_state_flag = USA_vt_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_vt_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_vt_frame = 3 }
+				}
+			}
+			938 = {
+				clr_state_flag = USA_vt_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 938
+					has_state_flag = USA_vt_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_vt_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_vt_frame = 3 }
+				}
+			}
+			938 = {
+				clr_state_flag = USA_vt_red
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 941
+					has_state_flag = USA_ma_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 17
+					}
+					set_variable = { USA_ma_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 17
+					}
+					set_variable = { USA_ma_frame = 3 }
+				}
+			}
+			941 = {
+				clr_state_flag = USA_ma_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 941
+					has_state_flag = USA_ma_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 17
+					}
+					set_variable = { USA_ma_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 17
+					}
+					set_variable = { USA_ma_frame = 3 }
+				}
+			}
+			941 = {
+				clr_state_flag = USA_ma_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 941
+					has_state_flag = USA_ma_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 17
+					}
+					set_variable = { USA_ma_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 17
+					}
+					set_variable = { USA_ma_frame = 3 }
+				}
+			}
+			941 = {
+				clr_state_flag = USA_ma_red
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 937
+					has_state_flag = USA_nh_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_nh_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_nh_frame = 3 }
+				}
+			}
+			937 = {
+				clr_state_flag = USA_nh_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 937
+					has_state_flag = USA_nh_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_nh_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_nh_frame = 3 }
+				}
+			}
+			937 = {
+				clr_state_flag = USA_nh_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 937
+					has_state_flag = USA_nh_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_nh_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_nh_frame = 3 }
+				}
+			}
+			937 = {
+				clr_state_flag = USA_nh_red
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 940
+					has_state_flag = USA_ct_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_ct_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_ct_frame = 3 }
+				}
+			}
+			940 = {
+				clr_state_flag = USA_ct_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 940
+					has_state_flag = USA_ct_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_ct_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_ct_frame = 3 }
+				}
+			}
+			940 = {
+				clr_state_flag = USA_ct_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 940
+					has_state_flag = USA_ct_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_ct_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_ct_frame = 3 }
+				}
+			}
+			940 = {
+				clr_state_flag = USA_ct_red
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 939
+					has_state_flag = USA_ri_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_ri_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_ri_frame = 3 }
+				}
+			}
+			939 = {
+				clr_state_flag = USA_ri_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 939
+					has_state_flag = USA_ri_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_ri_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_ri_frame = 3 }
+				}
+			}
+			939 = {
+				clr_state_flag = USA_ri_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 939
+					has_state_flag = USA_ri_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 4
+					}
+					set_variable = { USA_ri_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 4
+					}
+					set_variable = { USA_ri_frame = 3 }
+				}
+			}
+			939 = {
+				clr_state_flag = USA_ri_red
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 361
+					has_state_flag = USA_md_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_md_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_md_frame = 3 }
+				}
+			}
+			361 = {
+				clr_state_flag = USA_md_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 361
+					has_state_flag = USA_md_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_md_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_md_frame = 3 }
+				}
+			}
+			361 = {
+				clr_state_flag = USA_md_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 361
+					has_state_flag = USA_md_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 8
+					}
+					set_variable = { USA_md_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 8
+					}
+					set_variable = { USA_md_frame = 3 }
+				}
+			}
+			361 = {
+				clr_state_flag = USA_md_red
+			}
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					state = 361
+					has_state_flag = USA_de_swing
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_de_frame = 2 }
+				}
+				50 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_de_frame = 3 }
+				}
+			}
+			361 = {
+				clr_state_flag = USA_de_swing
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 361
+					has_state_flag = USA_de_blue
+				}
+			}
+			random_list = {
+				0 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_de_frame = 2 }
+				}
+				100 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_de_frame = 3 }
+				}
+			}
+			361 = {
+				clr_state_flag = USA_de_blue
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_state = {
+					state = 361
+					has_state_flag = USA_de_red
+				}
+			}
+			random_list = {
+				100 = {
+					add_to_variable = {
+						var = USA_rep_ec
+						value = 3
+					}
+					set_variable = { USA_de_frame = 2 }
+				}
+				0 = {
+					add_to_variable = {
+						var = USA_dem_ec
+						value = 3
+					}
+					set_variable = { USA_de_frame = 3 }
+				}
+			}
+			361 = {
+				clr_state_flag = USA_de_red
+			}
+		}
+	}
+	clr_country_flag = USA_campaigning_flag
 	if = {
 		limit = {
 			date < 1938.1.1
