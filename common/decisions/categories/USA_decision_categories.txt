@@ -12,7 +12,19 @@ USA_congress = {
 
 	priority = 85
 }
+USA_election_campaigns = {
+	priority = 110
 
+	icon = SOV_propaganda
+
+	scripted_gui = usa_election_campaigns_ui
+
+	allowed = {
+		original_tag = USA
+	}
+
+	visible_when_empty = yes
+}
 USA_persian_corridor = {
 	icon = generic_political_actions
 
@@ -225,19 +237,7 @@ USA_propaganda_campaigns = {
 	}
 }
 
-USA_election_campaigns = {
-	priority = 110
 
-	icon = SOV_propaganda
-
-	# scripted_gui = usa_election_campaigns_ui
-
-	allowed = {
-		original_tag = USA
-	}
-
-	# visible_when_empty = yes
-}
 USA_war_bop = {
     priority = 90
     allowed = {

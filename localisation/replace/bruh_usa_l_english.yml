@@ -257,9 +257,9 @@
 
   #### ELECTORAL COLLEGE ####
   USA_election_campaigns:0 "Electoral College"
-  # USA_election_campaigns_desc:0 "§gGrey§! States will have a 50% chance of flipping §2Blue§! or §RRed§! in the election\n§2Blue§! States will have a 95% chance of flipping §2Blue§! in the election\n§RRed§! States will have a 95% chance of flipping §RRed§! in the election\n\nElectoral College Votes Needed to win : §Y262§!\nCurrent Predicted Electoral College Votes : §Y[?USA.USA_predicted_ec]§!\nAt 318 Votes gain a §Ymoderate§! boost to Congressional Support\nAt 424 Votes gain a §Ylarge§! boost in Congressional Support"
+  USA_election_campaigns_desc:0 "§gGrey§! States will have a 50% chance of flipping §2Blue§! or §RRed§! in the election\n§2Blue§! States will have a 95% chance of flipping §2Blue§! in the election\n§RRed§! States will have a 95% chance of flipping §RRed§! in the election\n\nElectoral College Votes Needed to win : §Y262§!\nCurrent Predicted Electoral College Votes : §Y[?USA.USA_predicted_ec]§!\nAt 318 Votes gain a §Ymoderate§! boost to Congressional Support\nAt 424 Votes gain a §Ylarge§! boost in Congressional Support"
 
-  # USA_election_campaigns_desc:0 "§gGrey§! States will have a 50% chance of flipping §2Blue§! or §RRed§! in the election\n§2Blue§! States will have a 100% chance of flipping §2Blue§! in the election\n§RRed§! States will have a 100% chance of flipping §RRed§! in the election\n\nElectoral College Votes Needed to win : §Y262§!\nCurrent Predicted Electoral College Votes : §Y[?USA.USA_predicted_ec]§!\nAt 318 Votes gain a §Ymoderate§! boost to Congressional Support\nAt 424 Votes gain a §Ylarge§! boost in Congressional Support"
+  #USA_election_campaigns_desc:0 "§gGrey§! States will have a 50% chance of flipping §2Blue§! or §RRed§! in the election\n§2Blue§! States will have a 100% chance of flipping §2Blue§! in the election\n§RRed§! States will have a 100% chance of flipping §RRed§! in the election\n\nElectoral College Votes Needed to win : §Y262§!\nCurrent Predicted Electoral College Votes : §Y[?USA.USA_predicted_ec]§!\nAt 318 Votes gain a §Ymoderate§! boost to Congressional Support\nAt 424 Votes gain a §Ylarge§! boost in Congressional Support"
 
   USA_electoral_map:0 "Show an image of the Electoral Map"
   USA_democratic_campaign_swing_state:0 "Campaign in [FROM.GetName]"
