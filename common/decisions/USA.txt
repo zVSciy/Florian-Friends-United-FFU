@@ -6927,7 +6927,43 @@ USA_split_china = {
 		}
 	}
 }
-
+USA_congress = {
+	USA_statehood_for_hawaii = {
+		icon = infiltrate_state
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			629 = {
+				not = { is_core_of = ROOT }
+			}
+			political_power_daily > 0.1
+		}
+		visible = {
+			629 = {
+				is_fully_controlled_by = USA
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		fire_only_once = yes
+		days_remove = 365
+		cost = 25
+		modifier = {
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			#USA_congress_add_state = yes
+			add_state_core = 629
+			#USA_calc_stars = yes
+		}
+	}
+}
 political_actions = {
 	USA_statehood_for_alaska = {
 		icon = infiltrate_state
@@ -6965,41 +7001,7 @@ political_actions = {
 			#USA_calc_stars = yes
 		}
 	}
-	USA_statehood_for_hawaii = {
-		icon = infiltrate_state
-		allowed = {
-			original_tag = USA
-		}
-		available = {
-			629 = {
-				not = { is_core_of = ROOT }
-			}
-			political_power_daily > 0.1
-		}
-		visible = {
-			629 = {
-				is_fully_controlled_by = USA
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		fire_only_once = yes
-		days_remove = 365
-		cost = 25
-		modifier = {
-			political_power_gain = -0.05
-		}
-		remove_effect = {
-			#USA_congress_add_state = yes
-			add_state_core = 629
-			#USA_calc_stars = yes
-		}
-	}
+
 	USA_statehood_for_puerto_rico = {
 		icon = infiltrate_state
 		allowed = {
