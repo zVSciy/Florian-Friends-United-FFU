@@ -2645,7 +2645,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				# check_variable = { USA_rep_ec < USA_dem_ec }
+				check_variable = { USA_rep_ec < USA_dem_ec }
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_36_fdr_victory
@@ -2661,21 +2661,21 @@ country_event = {
 			limit = {
 				has_country_flag = USA_36_fdr_victory
 			}
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_dem_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_dem_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
@@ -2693,27 +2693,27 @@ country_event = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.5 }
-		# set_variable = { USA_rep_ec = 0 }
-		# set_variable = { USA_dem_ec = 0 }
-		# set_variable = { USA_predicted_ec = 0 }
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		set_variable = { USA_rep_ec = 0 }
+		set_variable = { USA_dem_ec = 0 }
+		set_variable = { USA_predicted_ec = 0 }
 		clr_country_flag = USA_dem_campaign
 		clr_country_flag = USA_rep_campaign
 	}
@@ -2734,7 +2734,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				# check_variable = { USA_rep_ec < USA_dem_ec }
+				check_variable = { USA_rep_ec < USA_dem_ec }
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_40_fdr_victory
@@ -2767,21 +2767,21 @@ country_event = {
 				}
 				set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 			}
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_dem_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_dem_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
@@ -2799,27 +2799,27 @@ country_event = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.6 }
-		# set_variable = { USA_rep_ec = 0 }
-		# set_variable = { USA_dem_ec = 0 }
-		# set_variable = { USA_predicted_ec = 0 }
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		set_variable = { USA_rep_ec = 0 }
+		set_variable = { USA_dem_ec = 0 }
+		set_variable = { USA_predicted_ec = 0 }
 		clr_country_flag = USA_dem_campaign
 		clr_country_flag = USA_rep_campaign
 	}
@@ -2840,7 +2840,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				# check_variable = { USA_rep_ec < USA_dem_ec }
+				check_variable = { USA_rep_ec < USA_dem_ec }
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_44_fdr_victory
@@ -2879,21 +2879,21 @@ country_event = {
 				}
 				set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 			}
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_dem_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_dem_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
@@ -2911,21 +2911,21 @@ country_event = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
@@ -2943,27 +2943,27 @@ country_event = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.6 }
-		# set_variable = { USA_rep_ec = 0 }
-		# set_variable = { USA_dem_ec = 0 }
-		# set_variable = { USA_predicted_ec = 0 }
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		set_variable = { USA_rep_ec = 0 }
+		set_variable = { USA_dem_ec = 0 }
+		set_variable = { USA_predicted_ec = 0 }
 		clr_country_flag = USA_dem_campaign
 		clr_country_flag = USA_rep_campaign
 	}
