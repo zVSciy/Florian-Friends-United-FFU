@@ -3074,3520 +3074,3520 @@ USA_propaganda_campaigns = {
 	}
 }
 USA_election_campaigns = {
-	# USA_electoral_map = {
-	# 	priority = 1000
-	# 	icon = generic_army_support
-	# 	available = {
-	# 	}
-	# 	visible = {
-	# 	}
+	USA_electoral_map = {
+		priority = 1000
+		icon = generic_army_support
+		available = {
+		}
+		visible = {
+		}
 
-	# 	cost = 0
-	# 	fire_only_once = no
-	# 	ai_will_do = {
-	# 		factor = 0
-	# 	}
-	# 	complete_effect = {
-	# 		news_event =  usa.1004
-	# 	}
-	# }
-	# USA_democratic_campaign_swing_state = {
-	# 	priority = 10
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			news_event =  usa.1004
+		}
+	}
+	USA_democratic_campaign_swing_state = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			has_state_flag = USA_swing_state
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				has_state_flag = USA_swing_state
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	ai_will_do = {
-	# 		factor = 10
-	# 	}
+		ai_will_do = {
+			factor = 10
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_swing_state
-	# 			set_state_flag = USA_blue_state
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 390
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sd_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 383
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ks_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 9
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 384
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ne_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 7
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 395
-	# 				}
-	# 			}
-	# 			set_variable = { USA_il_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 29
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 393
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mi_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 19
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 396
-	# 				}
-	# 			}
-	# 			set_variable = { USA_in_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 14
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 392
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ia_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 369
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ky_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 360
-	# 				}
-	# 			}
-	# 			set_variable = { USA_pa_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 36
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 358
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ny_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 47
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 359
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nj_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 16
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 386
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wa_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 8
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 385
-	# 				}
-	# 			}
-	# 			set_variable = { USA_or_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 5
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 378
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ca_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 22
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 379
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nv_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 387
-	# 				}
-	# 			}
-	# 			set_variable = { USA_id_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 388
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mt_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 381
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wy_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 380
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ut_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 377
-	# 				}
-	# 			}
-	# 			set_variable = { USA_az_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 376
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nm_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 382
-	# 				}
-	# 			}
-	# 			set_variable = { USA_co_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 6
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 375
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tx_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 23
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 374
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ok_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 389
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nd_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 391
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mn_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 394
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wi_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 12
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 373
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mo_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 15
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 372
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ar_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 9
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 371
-	# 				}
-	# 			}
-	# 			set_variable = { USA_la_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 10
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 370
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ms_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 9
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 367
-	# 				}
-	# 			}
-	# 			set_variable = { USA_al_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 366
-	# 				}
-	# 			}
-	# 			set_variable = { USA_fl_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 7
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 365
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ga_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 12
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 368
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tn_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 364
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sc_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 8
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 363
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nc_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 13
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 362
-	# 				}
-	# 			}
-	# 			set_variable = { USA_va_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 261
-	# 				}
-	# 			}
-	# 			set_variable = { USA_oh_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 26
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 816
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wv_frame = 3 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 8
-	# 			}
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_swing_state
+				set_state_flag = USA_blue_state
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 390
+					}
+				}
+				set_variable = { USA_sd_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 383
+					}
+				}
+				set_variable = { USA_ks_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 9
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 384
+					}
+				}
+				set_variable = { USA_ne_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 7
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 395
+					}
+				}
+				set_variable = { USA_il_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 29
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 393
+					}
+				}
+				set_variable = { USA_mi_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 19
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 396
+					}
+				}
+				set_variable = { USA_in_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 14
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 392
+					}
+				}
+				set_variable = { USA_ia_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 369
+					}
+				}
+				set_variable = { USA_ky_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 360
+					}
+				}
+				set_variable = { USA_pa_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 36
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 358
+					}
+				}
+				set_variable = { USA_ny_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 47
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 359
+					}
+				}
+				set_variable = { USA_nj_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 16
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 386
+					}
+				}
+				set_variable = { USA_wa_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 8
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 385
+					}
+				}
+				set_variable = { USA_or_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 378
+					}
+				}
+				set_variable = { USA_ca_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 22
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 379
+					}
+				}
+				set_variable = { USA_nv_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 387
+					}
+				}
+				set_variable = { USA_id_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 388
+					}
+				}
+				set_variable = { USA_mt_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 381
+					}
+				}
+				set_variable = { USA_wy_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 380
+					}
+				}
+				set_variable = { USA_ut_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 377
+					}
+				}
+				set_variable = { USA_az_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 376
+					}
+				}
+				set_variable = { USA_nm_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 382
+					}
+				}
+				set_variable = { USA_co_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 6
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 375
+					}
+				}
+				set_variable = { USA_tx_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 23
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 374
+					}
+				}
+				set_variable = { USA_ok_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 389
+					}
+				}
+				set_variable = { USA_nd_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 391
+					}
+				}
+				set_variable = { USA_mn_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 394
+					}
+				}
+				set_variable = { USA_wi_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 12
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 373
+					}
+				}
+				set_variable = { USA_mo_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 15
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 372
+					}
+				}
+				set_variable = { USA_ar_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 9
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 371
+					}
+				}
+				set_variable = { USA_la_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 370
+					}
+				}
+				set_variable = { USA_ms_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 9
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 367
+					}
+				}
+				set_variable = { USA_al_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 366
+					}
+				}
+				set_variable = { USA_fl_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 7
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 365
+					}
+				}
+				set_variable = { USA_ga_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 12
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 368
+					}
+				}
+				set_variable = { USA_tn_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 364
+					}
+				}
+				set_variable = { USA_sc_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 8
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 363
+					}
+				}
+				set_variable = { USA_nc_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 13
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 362
+					}
+				}
+				set_variable = { USA_va_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 261
+					}
+				}
+				set_variable = { USA_oh_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 26
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 816
+					}
+				}
+				set_variable = { USA_wv_frame = 3 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 8
+				}
+			}
+		}
+	}
 	
-	# USA_democratic_campaign_swing_state_ri = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_ri = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ri_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ri_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ri_swing
-	# 			set_state_flag = USA_ri_blue
-	# 		}
-	# 		set_variable = { USA_ri_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 4
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ri_swing
+				set_state_flag = USA_ri_blue
+			}
+			set_variable = { USA_ri_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 4
+			}
+		}
+	}
 
-	# USA_democratic_campaign_swing_state_ct = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_ct = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ct_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ct_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 1000
-	# 	}
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ct_swing
-	# 			set_state_flag = USA_ct_blue
-	# 		}
-	# 		set_variable = { USA_ct_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 8
-	# 		}
-	# 	}
-	# }
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ct_swing
+				set_state_flag = USA_ct_blue
+			}
+			set_variable = { USA_ct_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 8
+			}
+		}
+	}
 
-	# USA_democratic_campaign_swing_state_ma = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_ma = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ma_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ma_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 1000
-	# 	}
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ma_swing
-	# 			set_state_flag = USA_ma_blue
-	# 		}
-	# 		set_variable = { USA_ma_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 17
-	# 		}
-	# 	}
-	# }
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ma_swing
+				set_state_flag = USA_ma_blue
+			}
+			set_variable = { USA_ma_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 17
+			}
+		}
+	}
 
-	# USA_democratic_campaign_swing_state_nh = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_nh = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_nh_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_nh_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_nh_swing
-	# 			set_state_flag = USA_nh_blue
-	# 		}
-	# 		set_variable = { USA_nh_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 4
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_nh_swing
+				set_state_flag = USA_nh_blue
+			}
+			set_variable = { USA_nh_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 4
+			}
+		}
+	}
 
-	# USA_democratic_campaign_swing_state_me = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_me = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_me_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_me_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_me_swing
-	# 			set_state_flag = USA_me_blue
-	# 		}
-	# 		set_variable = { USA_me_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 5
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_me_swing
+				set_state_flag = USA_me_blue
+			}
+			set_variable = { USA_me_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 5
+			}
+		}
+	}
 
-	# USA_democratic_campaign_swing_state_vt = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_vt = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_vt_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_vt_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_vt_swing
-	# 			set_state_flag = USA_vt_blue
-	# 		}
-	# 		set_variable = { USA_vt_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 3
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_vt_swing
+				set_state_flag = USA_vt_blue
+			}
+			set_variable = { USA_vt_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 3
+			}
+		}
+	}
 
-	# USA_democratic_campaign_swing_state_de = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_de = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_de_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_de_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_de_swing
-	# 			set_state_flag = USA_de_blue
-	# 		}
-	# 		set_variable = { USA_de_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 3
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_de_swing
+				set_state_flag = USA_de_blue
+			}
+			set_variable = { USA_de_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 3
+			}
+		}
+	}
 
-	# USA_democratic_campaign_swing_state_md = {
-	# 	priority = 10
+	USA_democratic_campaign_swing_state_md = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_md_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_md_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 1000
-	# 	}
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_md_swing
-	# 			set_state_flag = USA_md_blue
-	# 		}
-	# 		set_variable = { USA_md_frame = 3 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 8
-	# 		}
-	# 	}
-	# }
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_md_swing
+				set_state_flag = USA_md_blue
+			}
+			set_variable = { USA_md_frame = 3 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 8
+			}
+		}
+	}
 
-	# USA_democratic_campaign_red_state = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			has_state_flag = USA_red_state
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				has_state_flag = USA_red_state
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_red_state
-	# 			set_state_flag = USA_swing_state
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 390
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sd_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 383
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ks_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 384
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ne_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 395
-	# 				}
-	# 			}
-	# 			set_variable = { USA_il_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 393
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mi_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 396
-	# 				}
-	# 			}
-	# 			set_variable = { USA_in_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 392
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ia_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 369
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ky_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 360
-	# 				}
-	# 			}
-	# 			set_variable = { USA_pa_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 358
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ny_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 359
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nj_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 386
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wa_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 385
-	# 				}
-	# 			}
-	# 			set_variable = { USA_or_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 378
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ca_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 379
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nv_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 387
-	# 				}
-	# 			}
-	# 			set_variable = { USA_id_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 388
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mt_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 381
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wy_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 380
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ut_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 377
-	# 				}
-	# 			}
-	# 			set_variable = { USA_az_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 376
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nm_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 382
-	# 				}
-	# 			}
-	# 			set_variable = { USA_co_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 375
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tx_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 374
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ok_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 389
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nd_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 391
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mn_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 394
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wi_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 373
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mo_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 372
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ar_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 371
-	# 				}
-	# 			}
-	# 			set_variable = { USA_la_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 370
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ms_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 367
-	# 				}
-	# 			}
-	# 			set_variable = { USA_al_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 366
-	# 				}
-	# 			}
-	# 			set_variable = { USA_fl_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 365
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ga_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 368
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tn_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 364
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sc_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 363
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nc_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 362
-	# 				}
-	# 			}
-	# 			set_variable = { USA_va_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 261
-	# 				}
-	# 			}
-	# 			set_variable = { USA_oh_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 816
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wv_frame = 1 }
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_red_state
+				set_state_flag = USA_swing_state
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 390
+					}
+				}
+				set_variable = { USA_sd_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 383
+					}
+				}
+				set_variable = { USA_ks_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 384
+					}
+				}
+				set_variable = { USA_ne_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 395
+					}
+				}
+				set_variable = { USA_il_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 393
+					}
+				}
+				set_variable = { USA_mi_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 396
+					}
+				}
+				set_variable = { USA_in_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 392
+					}
+				}
+				set_variable = { USA_ia_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 369
+					}
+				}
+				set_variable = { USA_ky_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 360
+					}
+				}
+				set_variable = { USA_pa_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 358
+					}
+				}
+				set_variable = { USA_ny_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 359
+					}
+				}
+				set_variable = { USA_nj_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 386
+					}
+				}
+				set_variable = { USA_wa_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 385
+					}
+				}
+				set_variable = { USA_or_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 378
+					}
+				}
+				set_variable = { USA_ca_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 379
+					}
+				}
+				set_variable = { USA_nv_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 387
+					}
+				}
+				set_variable = { USA_id_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 388
+					}
+				}
+				set_variable = { USA_mt_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 381
+					}
+				}
+				set_variable = { USA_wy_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 380
+					}
+				}
+				set_variable = { USA_ut_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 377
+					}
+				}
+				set_variable = { USA_az_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 376
+					}
+				}
+				set_variable = { USA_nm_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 382
+					}
+				}
+				set_variable = { USA_co_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 375
+					}
+				}
+				set_variable = { USA_tx_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 374
+					}
+				}
+				set_variable = { USA_ok_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 389
+					}
+				}
+				set_variable = { USA_nd_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 391
+					}
+				}
+				set_variable = { USA_mn_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 394
+					}
+				}
+				set_variable = { USA_wi_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 373
+					}
+				}
+				set_variable = { USA_mo_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 372
+					}
+				}
+				set_variable = { USA_ar_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 371
+					}
+				}
+				set_variable = { USA_la_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 370
+					}
+				}
+				set_variable = { USA_ms_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 367
+					}
+				}
+				set_variable = { USA_al_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 366
+					}
+				}
+				set_variable = { USA_fl_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 365
+					}
+				}
+				set_variable = { USA_ga_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 368
+					}
+				}
+				set_variable = { USA_tn_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 364
+					}
+				}
+				set_variable = { USA_sc_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 363
+					}
+				}
+				set_variable = { USA_nc_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 362
+					}
+				}
+				set_variable = { USA_va_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 261
+					}
+				}
+				set_variable = { USA_oh_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 816
+					}
+				}
+				set_variable = { USA_wv_frame = 1 }
+			}
+		}
+	}
 	
-	# USA_democratic_campaign_red_state_ri = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_ri = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ri_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ri_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ri_red
-	# 			set_state_flag = USA_ri_swing
-	# 		}
-	# 		set_variable = { USA_ri_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ri_red
+				set_state_flag = USA_ri_swing
+			}
+			set_variable = { USA_ri_frame = 1 }
+		}
+	}
 
-	# USA_democratic_campaign_red_state_ct = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_ct = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ct_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ct_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ct_red
-	# 			set_state_flag = USA_ct_swing
-	# 		}
-	# 		set_variable = { USA_ct_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ct_red
+				set_state_flag = USA_ct_swing
+			}
+			set_variable = { USA_ct_frame = 1 }
+		}
+	}
 
-	# USA_democratic_campaign_red_state_ma = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_ma = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ma_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ma_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ma_red
-	# 			set_state_flag = USA_ma_swing
-	# 		}
-	# 		set_variable = { USA_ma_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ma_red
+				set_state_flag = USA_ma_swing
+			}
+			set_variable = { USA_ma_frame = 1 }
+		}
+	}
 
-	# USA_democratic_campaign_red_state_nh = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_nh = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_nh_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_nh_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_nh_red
-	# 			set_state_flag = USA_nh_swing
-	# 		}
-	# 		set_variable = { USA_nh_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_nh_red
+				set_state_flag = USA_nh_swing
+			}
+			set_variable = { USA_nh_frame = 1 }
+		}
+	}
 
-	# USA_democratic_campaign_red_state_me = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_me = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_me_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_me_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_me_red
-	# 			set_state_flag = USA_me_swing
-	# 		}
-	# 		set_variable = { USA_me_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_me_red
+				set_state_flag = USA_me_swing
+			}
+			set_variable = { USA_me_frame = 1 }
+		}
+	}
 
-	# USA_democratic_campaign_red_state_vt = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_vt = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_vt_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_vt_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_vt_red
-	# 			set_state_flag = USA_vt_swing
-	# 		}
-	# 		set_variable = { USA_vt_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_vt_red
+				set_state_flag = USA_vt_swing
+			}
+			set_variable = { USA_vt_frame = 1 }
+		}
+	}
 
-	# USA_democratic_campaign_red_state_de = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_de = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_de_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_de_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_de_red
-	# 			set_state_flag = USA_de_swing
-	# 		}
-	# 		set_variable = { USA_de_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_de_red
+				set_state_flag = USA_de_swing
+			}
+			set_variable = { USA_de_frame = 1 }
+		}
+	}
 
-	# USA_democratic_campaign_red_state_md = {
-	# 	priority = 10
+	USA_democratic_campaign_red_state_md = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_md_red
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_md_red
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_dem_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_dem_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_md_red
-	# 			set_state_flag = USA_md_swing
-	# 		}
-	# 		set_variable = { USA_md_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_md_red
+				set_state_flag = USA_md_swing
+			}
+			set_variable = { USA_md_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_swing_state = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			has_state_flag = USA_swing_state
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				has_state_flag = USA_swing_state
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_swing_state
-	# 			set_state_flag = USA_red_state
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 390
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sd_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 383
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ks_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 9
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 384
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ne_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 7
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 395
-	# 				}
-	# 			}
-	# 			set_variable = { USA_il_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 29
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 393
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mi_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 19
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 396
-	# 				}
-	# 			}
-	# 			set_variable = { USA_in_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 14
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 392
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ia_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 369
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ky_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 360
-	# 				}
-	# 			}
-	# 			set_variable = { USA_pa_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 36
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 358
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ny_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 47
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 359
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nj_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 16
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 386
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wa_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 8
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 385
-	# 				}
-	# 			}
-	# 			set_variable = { USA_or_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 5
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 378
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ca_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 22
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 379
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nv_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 387
-	# 				}
-	# 			}
-	# 			set_variable = { USA_id_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 388
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mt_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 381
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wy_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 380
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ut_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 377
-	# 				}
-	# 			}
-	# 			set_variable = { USA_az_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 376
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nm_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 3
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 382
-	# 				}
-	# 			}
-	# 			set_variable = { USA_co_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 6
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 375
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tx_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 23
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 374
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ok_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 389
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nd_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 4
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 391
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mn_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 394
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wi_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 12
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 373
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mo_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 15
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 372
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ar_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 9
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 371
-	# 				}
-	# 			}
-	# 			set_variable = { USA_la_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 10
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 370
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ms_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 9
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 367
-	# 				}
-	# 			}
-	# 			set_variable = { USA_al_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 366
-	# 				}
-	# 			}
-	# 			set_variable = { USA_fl_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 7
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 365
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ga_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 12
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 368
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tn_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 364
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sc_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 8
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 363
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nc_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 13
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 362
-	# 				}
-	# 			}
-	# 			set_variable = { USA_va_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 11
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 261
-	# 				}
-	# 			}
-	# 			set_variable = { USA_oh_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 26
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 816
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wv_frame = 2 }
-	# 			add_to_variable = {
-	# 				var = USA_predicted_ec
-	# 				value = 8
-	# 			}
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_swing_state
+				set_state_flag = USA_red_state
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 390
+					}
+				}
+				set_variable = { USA_sd_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 383
+					}
+				}
+				set_variable = { USA_ks_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 9
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 384
+					}
+				}
+				set_variable = { USA_ne_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 7
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 395
+					}
+				}
+				set_variable = { USA_il_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 29
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 393
+					}
+				}
+				set_variable = { USA_mi_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 19
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 396
+					}
+				}
+				set_variable = { USA_in_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 14
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 392
+					}
+				}
+				set_variable = { USA_ia_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 369
+					}
+				}
+				set_variable = { USA_ky_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 360
+					}
+				}
+				set_variable = { USA_pa_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 36
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 358
+					}
+				}
+				set_variable = { USA_ny_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 47
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 359
+					}
+				}
+				set_variable = { USA_nj_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 16
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 386
+					}
+				}
+				set_variable = { USA_wa_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 8
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 385
+					}
+				}
+				set_variable = { USA_or_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 378
+					}
+				}
+				set_variable = { USA_ca_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 22
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 379
+					}
+				}
+				set_variable = { USA_nv_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 387
+					}
+				}
+				set_variable = { USA_id_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 388
+					}
+				}
+				set_variable = { USA_mt_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 381
+					}
+				}
+				set_variable = { USA_wy_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 380
+					}
+				}
+				set_variable = { USA_ut_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 377
+					}
+				}
+				set_variable = { USA_az_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 376
+					}
+				}
+				set_variable = { USA_nm_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 3
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 382
+					}
+				}
+				set_variable = { USA_co_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 6
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 375
+					}
+				}
+				set_variable = { USA_tx_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 23
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 374
+					}
+				}
+				set_variable = { USA_ok_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 389
+					}
+				}
+				set_variable = { USA_nd_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 391
+					}
+				}
+				set_variable = { USA_mn_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 394
+					}
+				}
+				set_variable = { USA_wi_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 12
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 373
+					}
+				}
+				set_variable = { USA_mo_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 15
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 372
+					}
+				}
+				set_variable = { USA_ar_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 9
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 371
+					}
+				}
+				set_variable = { USA_la_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 370
+					}
+				}
+				set_variable = { USA_ms_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 9
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 367
+					}
+				}
+				set_variable = { USA_al_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 366
+					}
+				}
+				set_variable = { USA_fl_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 7
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 365
+					}
+				}
+				set_variable = { USA_ga_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 12
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 368
+					}
+				}
+				set_variable = { USA_tn_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 364
+					}
+				}
+				set_variable = { USA_sc_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 8
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 363
+					}
+				}
+				set_variable = { USA_nc_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 13
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 362
+					}
+				}
+				set_variable = { USA_va_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 11
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 261
+					}
+				}
+				set_variable = { USA_oh_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 26
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 816
+					}
+				}
+				set_variable = { USA_wv_frame = 2 }
+				add_to_variable = {
+					var = USA_predicted_ec
+					value = 8
+				}
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_ri = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_ri = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ri_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ri_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ri_swing
-	# 			set_state_flag = USA_ri_red
-	# 		}
-	# 		set_variable = { USA_ri_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 4
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ri_swing
+				set_state_flag = USA_ri_red
+			}
+			set_variable = { USA_ri_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 4
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_ct = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_ct = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ct_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ct_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ct_swing
-	# 			set_state_flag = USA_ct_red
-	# 		}
-	# 		set_variable = { USA_ct_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 8
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ct_swing
+				set_state_flag = USA_ct_red
+			}
+			set_variable = { USA_ct_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 8
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_ma = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_ma = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ma_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ma_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ma_swing
-	# 			set_state_flag = USA_ma_red
-	# 		}
-	# 		set_variable = { USA_ma_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 17
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ma_swing
+				set_state_flag = USA_ma_red
+			}
+			set_variable = { USA_ma_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 17
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_nh = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_nh = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_nh_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_nh_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_nh_swing
-	# 			set_state_flag = USA_nh_red
-	# 		}
-	# 		set_variable = { USA_nh_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 4
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_nh_swing
+				set_state_flag = USA_nh_red
+			}
+			set_variable = { USA_nh_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 4
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_me = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_me = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_me_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_me_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_me_swing
-	# 			set_state_flag = USA_me_red
-	# 		}
-	# 		set_variable = { USA_me_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 5
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_me_swing
+				set_state_flag = USA_me_red
+			}
+			set_variable = { USA_me_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 5
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_vt = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_vt = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_vt_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_vt_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_vt_swing
-	# 			set_state_flag = USA_vt_red
-	# 		}
-	# 		set_variable = { USA_vt_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 3
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_vt_swing
+				set_state_flag = USA_vt_red
+			}
+			set_variable = { USA_vt_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 3
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_de = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_de = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_de_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_de_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_de_swing
-	# 			set_state_flag = USA_de_red
-	# 		}
-	# 		set_variable = { USA_de_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 3
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_de_swing
+				set_state_flag = USA_de_red
+			}
+			set_variable = { USA_de_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 3
+			}
+		}
+	}
 
-	# USA_republican_campaign_swing_state_md = {
-	# 	priority = 10
+	USA_republican_campaign_swing_state_md = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_md_swing
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_md_swing
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 10
+		cost = 10
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_md_swing
-	# 			set_state_flag = USA_md_red
-	# 		}
-	# 		set_variable = { USA_md_frame = 2 }
-	# 		add_to_variable = {
-	# 			var = USA_predicted_ec
-	# 			value = 8
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_md_swing
+				set_state_flag = USA_md_red
+			}
+			set_variable = { USA_md_frame = 2 }
+			add_to_variable = {
+				var = USA_predicted_ec
+				value = 8
+			}
+		}
+	}
 
-	# USA_republican_campaign_blue_state = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			has_state_flag = USA_blue_state
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				has_state_flag = USA_blue_state
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_blue_state
-	# 			set_state_flag = USA_swing_state
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 390
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sd_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 383
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ks_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 384
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ne_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 395
-	# 				}
-	# 			}
-	# 			set_variable = { USA_il_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 393
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mi_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 396
-	# 				}
-	# 			}
-	# 			set_variable = { USA_in_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 392
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ia_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 369
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ky_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 360
-	# 				}
-	# 			}
-	# 			set_variable = { USA_pa_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 358
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ny_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 359
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nj_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 386
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wa_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 385
-	# 				}
-	# 			}
-	# 			set_variable = { USA_or_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 378
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ca_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 379
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nv_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 387
-	# 				}
-	# 			}
-	# 			set_variable = { USA_id_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 388
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mt_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 381
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wy_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 380
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ut_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 377
-	# 				}
-	# 			}
-	# 			set_variable = { USA_az_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 376
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nm_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 382
-	# 				}
-	# 			}
-	# 			set_variable = { USA_co_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 375
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tx_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 374
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ok_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 389
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nd_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 391
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mn_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 394
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wi_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 373
-	# 				}
-	# 			}
-	# 			set_variable = { USA_mo_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 372
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ar_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 371
-	# 				}
-	# 			}
-	# 			set_variable = { USA_la_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 370
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ms_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 367
-	# 				}
-	# 			}
-	# 			set_variable = { USA_al_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 366
-	# 				}
-	# 			}
-	# 			set_variable = { USA_fl_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 365
-	# 				}
-	# 			}
-	# 			set_variable = { USA_ga_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 368
-	# 				}
-	# 			}
-	# 			set_variable = { USA_tn_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 364
-	# 				}
-	# 			}
-	# 			set_variable = { USA_sc_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 363
-	# 				}
-	# 			}
-	# 			set_variable = { USA_nc_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 362
-	# 				}
-	# 			}
-	# 			set_variable = { USA_va_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 261
-	# 				}
-	# 			}
-	# 			set_variable = { USA_oh_frame = 1 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				FROM = {
-	# 					state = 816
-	# 				}
-	# 			}
-	# 			set_variable = { USA_wv_frame = 1 }
-	# 		}
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_blue_state
+				set_state_flag = USA_swing_state
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 390
+					}
+				}
+				set_variable = { USA_sd_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 383
+					}
+				}
+				set_variable = { USA_ks_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 384
+					}
+				}
+				set_variable = { USA_ne_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 395
+					}
+				}
+				set_variable = { USA_il_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 393
+					}
+				}
+				set_variable = { USA_mi_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 396
+					}
+				}
+				set_variable = { USA_in_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 392
+					}
+				}
+				set_variable = { USA_ia_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 369
+					}
+				}
+				set_variable = { USA_ky_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 360
+					}
+				}
+				set_variable = { USA_pa_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 358
+					}
+				}
+				set_variable = { USA_ny_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 359
+					}
+				}
+				set_variable = { USA_nj_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 386
+					}
+				}
+				set_variable = { USA_wa_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 385
+					}
+				}
+				set_variable = { USA_or_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 378
+					}
+				}
+				set_variable = { USA_ca_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 379
+					}
+				}
+				set_variable = { USA_nv_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 387
+					}
+				}
+				set_variable = { USA_id_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 388
+					}
+				}
+				set_variable = { USA_mt_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 381
+					}
+				}
+				set_variable = { USA_wy_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 380
+					}
+				}
+				set_variable = { USA_ut_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 377
+					}
+				}
+				set_variable = { USA_az_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 376
+					}
+				}
+				set_variable = { USA_nm_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 382
+					}
+				}
+				set_variable = { USA_co_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 375
+					}
+				}
+				set_variable = { USA_tx_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 374
+					}
+				}
+				set_variable = { USA_ok_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 389
+					}
+				}
+				set_variable = { USA_nd_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 391
+					}
+				}
+				set_variable = { USA_mn_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 394
+					}
+				}
+				set_variable = { USA_wi_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 373
+					}
+				}
+				set_variable = { USA_mo_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 372
+					}
+				}
+				set_variable = { USA_ar_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 371
+					}
+				}
+				set_variable = { USA_la_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 370
+					}
+				}
+				set_variable = { USA_ms_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 367
+					}
+				}
+				set_variable = { USA_al_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 366
+					}
+				}
+				set_variable = { USA_fl_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 365
+					}
+				}
+				set_variable = { USA_ga_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 368
+					}
+				}
+				set_variable = { USA_tn_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 364
+					}
+				}
+				set_variable = { USA_sc_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 363
+					}
+				}
+				set_variable = { USA_nc_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 362
+					}
+				}
+				set_variable = { USA_va_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 261
+					}
+				}
+				set_variable = { USA_oh_frame = 1 }
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 816
+					}
+				}
+				set_variable = { USA_wv_frame = 1 }
+			}
+		}
+	}
 
-	# USA_republican_campaign_blue_state_ri = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_ri = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ri_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ri_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ri_blue
-	# 			set_state_flag = USA_ri_swing
-	# 		}
-	# 		set_variable = { USA_ri_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ri_blue
+				set_state_flag = USA_ri_swing
+			}
+			set_variable = { USA_ri_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_blue_state_ct = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_ct = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ct_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ct_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ct_blue
-	# 			set_state_flag = USA_ct_swing
-	# 		}
-	# 		set_variable = { USA_ct_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ct_blue
+				set_state_flag = USA_ct_swing
+			}
+			set_variable = { USA_ct_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_blue_state_ma = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_ma = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_ma_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_ma_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_ma_blue
-	# 			set_state_flag = USA_ma_swing
-	# 		}
-	# 		set_variable = { USA_ma_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_ma_blue
+				set_state_flag = USA_ma_swing
+			}
+			set_variable = { USA_ma_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_blue_state_nh = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_nh = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_nh_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_nh_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_nh_blue
-	# 			set_state_flag = USA_nh_swing
-	# 		}
-	# 		set_variable = { USA_nh_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_nh_blue
+				set_state_flag = USA_nh_swing
+			}
+			set_variable = { USA_nh_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_blue_state_me = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_me = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_me_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_me_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_me_blue
-	# 			set_state_flag = USA_me_swing
-	# 		}
-	# 		set_variable = { USA_me_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_me_blue
+				set_state_flag = USA_me_swing
+			}
+			set_variable = { USA_me_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_blue_state_vt = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_vt = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_vt_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_vt_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_vt_blue
-	# 			set_state_flag = USA_vt_swing
-	# 		}
-	# 		set_variable = { USA_vt_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_vt_blue
+				set_state_flag = USA_vt_swing
+			}
+			set_variable = { USA_vt_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_blue_state_de = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_de = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_de_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_de_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_de_blue
-	# 			set_state_flag = USA_de_swing
-	# 		}
-	# 		set_variable = { USA_de_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_de_blue
+				set_state_flag = USA_de_swing
+			}
+			set_variable = { USA_de_frame = 1 }
+		}
+	}
 
-	# USA_republican_campaign_blue_state_md = {
-	# 	priority = 10
+	USA_republican_campaign_blue_state_md = {
+		priority = 10
 
-	# 	icon = infiltrate_state
+		icon = infiltrate_state
 
-	# 	state_target = yes
+		state_target = yes
 
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_state_flag = USA_md_blue
-	# 			}
-	# 		}
-	# 	}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_state_flag = USA_md_blue
+				}
+			}
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_country_flag = USA_campaigning_flag
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_country_flag = USA_campaigning_flag
+			}
+		}
 
-	# 	allowed = {
-	# 		original_tag = USA
-	# 	}
+		allowed = {
+			original_tag = USA
+		}
 
-	# 	visible = {
-	# 		has_country_flag = USA_rep_campaign
-	# 	}
+		visible = {
+			has_country_flag = USA_rep_campaign
+		}
 
-	# 	cancel_if_not_visible = yes
+		cancel_if_not_visible = yes
 
-	# 	cost = 20
+		cost = 20
 
-	# 	days_remove = 7
+		days_remove = 7
 		
-	# 	days_re_enable = 1
+		days_re_enable = 1
 
-	# 	complete_effect = {
-	# 		set_country_flag = USA_campaigning_flag
-	# 	}
+		complete_effect = {
+			set_country_flag = USA_campaigning_flag
+		}
 
-	# 	remove_effect = {
-	# 		clr_country_flag = USA_campaigning_flag
-	# 		FROM = {
-	# 			clr_state_flag = USA_md_blue
-	# 			set_state_flag = USA_md_swing
-	# 		}
-	# 		set_variable = { USA_md_frame = 1 }
-	# 	}
-	# }
+		remove_effect = {
+			clr_country_flag = USA_campaigning_flag
+			FROM = {
+				clr_state_flag = USA_md_blue
+				set_state_flag = USA_md_swing
+			}
+			set_variable = { USA_md_frame = 1 }
+		}
+	}
 	
 	USA_election_mission = {
 		priority = 2000
