@@ -178,12 +178,25 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			OR = {
+				has_country_flag = USA_36_fdr_victory
+				has_country_flag = USA_36_landon_victory
+			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = USA_new_deal2
+					remove_idea = new_deal
+				}
+			}
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.2 tooltip = production_speed_infrastructure_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.2 tooltip = production_speed_industrial_complex_factor_tt }
+
 		}
 	}
 
@@ -4725,6 +4738,7 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_war_on_waste
 		prerequisite = { focus = USA_war_on_waste }
+		prerequisite = { focus = USA_rubber_reserve_company }
 		x = -1
 		y = 1
 		cost = 5
