@@ -21,13 +21,11 @@ USA_war_struggle = {
 				political_power_gain = 0.33
 				stability_factor = 0.05
 				war_support_factor = -0.05
-				industrial_capacity_factory = 0.05
-				#production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
-				research_speed_factor = -0.1
 			}
 		}
 
@@ -39,13 +37,12 @@ USA_war_struggle = {
 				political_power_gain = 0.5
 				stability_factor = 0.1
 				war_support_factor = -0.1
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = -0.1
 				#production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.15
-				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
-				research_speed_factor = -0.2
 			}
 		}
 
@@ -57,13 +54,12 @@ USA_war_struggle = {
 				political_power_gain = 1.0
 				stability_factor = 0.2
 				war_support_factor = -0.2
-				industrial_capacity_factory = 0.2
-				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.2
-				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+				production_factory_start_efficiency_factor = 0.05
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.2
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
-				research_speed_factor = -0.3
 			}
 		}
 	}
@@ -81,11 +77,9 @@ USA_war_struggle = {
 				experience_gain_army = 0.1
 				stability_factor = -0.05
 				war_support_factor = 0.05
-				industrial_capacity_factory = -0.05
-				#production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = -0.1
-				production_speed_buildings_factor = 0.05
-				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
 			}
 		}
 
@@ -98,11 +92,9 @@ USA_war_struggle = {
 				experience_gain_army = 0.2
 				stability_factor = -0.1
 				war_support_factor = 0.1
-				industrial_capacity_factory = -0.1
-				#production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = -0.15
-				production_speed_buildings_factor = 0.1
-				research_speed_factor = 0.2
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.1
 			}
 		}
 
@@ -115,11 +107,10 @@ USA_war_struggle = {
 				experience_gain_army = 0.3
 				stability_factor = -0.2
 				war_support_factor = 0.2
-				industrial_capacity_factory = -0.2
-				production_factory_start_efficiency_factor = 0.05
-				consumer_goods_factor = -0.2
-				production_speed_buildings_factor = 0.2
-				research_speed_factor = 0.3
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.5
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.2
 			}
 		}
 	}
