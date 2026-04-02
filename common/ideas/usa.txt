@@ -1548,6 +1548,18 @@ ideas = {
 				conscription_factor = 0.2
 			}
 		}
+			USA_nra_save_me = {
+			picture = usa_desegregation_2
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.075
+				}
+		}
 		USA_worker_management_act = {
 			picture = generic_production_bonus
 			

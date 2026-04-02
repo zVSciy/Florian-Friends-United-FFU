@@ -158,13 +158,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			hidden_effect = {
-				swap_ideas = {
-					add_idea = USA_new_deal2
-					remove_idea = new_deal
-				}
-			}
-			USA_economy_dynamic_modifier_tt = yes # tooltip
+			remove_ideas = USA_nra_save_me
 		}
 	}
 
