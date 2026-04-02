@@ -196,12 +196,37 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+		congress_medium_support_trigger = yes
+            OR = {
+                threat > 0.2
+                JAP  = { has_war_with = CHI }
+                date > 1938.1.1
+            }
+            OR = {
+                not = { has_country_flag = USA_great_depression_cooldown }
+                has_country_flag = {
+                    flag = USA_great_depression_cooldown
+                    days > 210
+                }
+                custom_trigger_tooltip = {
+                    tooltip = USA_great_depression_timer_tt
+                    has_country_flag = {
+                        flag = USA_great_depression_cooldown
+                        days > 210
+                    }
+                }
+            }
+
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_great_depression_level_down = yes
+            set_country_flag = USA_great_depression_cooldown
+            USA_congress_medium_opposition = yes
+            custom_effect_tooltip = USA_great_depression_cooldown_tt
+
 		}
 	}
 
@@ -255,12 +280,35 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+		congress_medium_support_trigger = yes
+            has_country_flag = {
+                flag = USA_great_depression_cooldown
+                days > 210
+            }
+            custom_trigger_tooltip = {
+                tooltip = USA_great_depression_timer_tt
+                has_country_flag = {
+                    flag = USA_great_depression_cooldown
+                    days > 210
+                }
+            }
+            OR = {
+                threat > 0.5
+                ENG  = { has_war_with = GER }
+                date > 1940.1.1
+            }
+
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_great_depression_level_down = yes
+            set_country_flag = USA_great_depression_cooldown
+            custom_effect_tooltip = USA_great_depression_cooldown_tt
+            USA_congress_medium_opposition = yes
+            custom_effect_tooltip = unlock_propaganda_campaign_tt
+            unlock_decision_tooltip = USA_keep_em_firing
 		}
 	}
 
@@ -387,12 +435,37 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+		congress_medium_support_trigger = yes
+            has_country_flag = {
+                flag = USA_great_depression_cooldown
+                days > 210
+            }
+            custom_trigger_tooltip = {
+                tooltip = USA_great_depression_timer_tt
+                has_country_flag = {
+                    flag = USA_great_depression_cooldown
+                    days > 210
+                }
+            }
+            OR = {
+                threat > 0.99
+                # FRA = { has_capitulated = yes }
+                VIC = {
+                    has_country_flag = VIC_france_capped
+                }
+                date > 1941.1.1
+            }
+
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_great_depression_level_down = yes
+            USA_congress_medium_opposition = yes
+            custom_effect_tooltip = federal_housing_tt
+            set_country_flag = USA_great_depression_cooldown
+            custom_effect_tooltip = USA_great_depression_cooldown_tt
 		}
 	}
 
@@ -4492,19 +4565,30 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+		congress_medium_support_trigger = yes
+            OR = {
+                not = { has_country_flag = USA_great_depression_cooldown }
+                has_country_flag = {
+                    flag = USA_great_depression_cooldown
+                    days > 210
+                }
+                custom_trigger_tooltip = {
+                    tooltip = USA_great_depression_timer_tt
+                    has_country_flag = {
+                        flag = USA_great_depression_cooldown
+                        days > 210
+                    }
+                }
+            }
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			hidden_effect = {
-				swap_ideas = {
-					add_idea = USA_new_deal2
-					remove_idea = new_deal
-				}
-			}
-			USA_economy_dynamic_modifier_tt = yes # tooltip
+            USA_great_depression_level_down = yes
+            USA_congress_medium_opposition = yes
+            set_country_flag = USA_great_depression_cooldown
+            custom_effect_tooltip = USA_great_depression_cooldown_tt
 		}
 	}
 
