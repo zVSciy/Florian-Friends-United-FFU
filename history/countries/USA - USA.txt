@@ -1168,11 +1168,11 @@ add_operation_token = {
 }
 set_power_balance = {
 
-	id = USA_war_bop
+	id = USA_war_struggle
 			
-	left_side = USA_focus_on_asia
+	left_side = USA_isolationism
 			
-	right_side = USA_focus_on_europe
+	right_side = USA_interventionism
 			
 	set_value = 0
 }
