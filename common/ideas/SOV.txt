@@ -1590,7 +1590,7 @@ ideas = {
 				winter_attrition_factor = -0.15
 				out_of_supply_factor = -0.1
 				supply_node_range = 0.1
-				supply_consumption_factor = 0.15
+				supply_consumption_factor = -0.15
 			}
 		}
 
