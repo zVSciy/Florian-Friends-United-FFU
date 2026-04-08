@@ -151,6 +151,129 @@ USA_persian_corridor = {
 	}
 }
 
+USA_war_production_board = {
+	
+	USA_arms_wbp = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_wartime_production_board }
+		}
+		
+		days_remove = 0
+		cost = 50
+		complete_effect = {
+		add_timed_idea = {
+				idea = CSA_avions_fairey
+				days = 90
+			    }
+		    }
+		
+		}
+
+		USA_tanks_wbp = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_wartime_production_board }
+		}
+		
+		days_remove = 90
+		cost = 50
+		complete_effect = {
+		add_timed_idea = {
+				idea = CSA_avions_fairey
+				days = 90
+			    }
+		    }
+		}
+
+		USA_artillery_wbp = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_wartime_production_board }
+		}
+		
+		days_remove = 90
+		cost = 50
+		complete_effect = {
+		add_timed_idea = {
+				idea = CSA_avions_fairey
+				days = 90
+			    }
+		    }
+
+		}
+
+		USA_fighters_wbp = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_wartime_production_board }
+		}
+		
+		days_remove = 90
+		cost = 50
+		complete_effect = {
+		add_timed_idea = {
+				idea = CSA_avions_fairey
+				days = 90
+			    }
+		    }
+
+		}
+		
+		USA_cas_wbp = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_wartime_production_board }
+		}
+		
+		days_remove = 90
+		cost = 50
+		complete_effect = {
+		add_timed_idea = {
+				idea = CSA_avions_fairey
+				days = 90
+			    }
+		    }
+
+		}
+
+		USA_strat_wbp = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_wartime_production_board }
+		}
+		
+		days_remove = 90
+		cost = 50
+		complete_effect = {
+		add_timed_idea = {
+				idea = CSA_avions_fairey
+				days = 90
+			    }
+		    }
+
+		}
+	}
+
+
 USA_island_fortification = {
 	USA_fortify_guam = {
 
