@@ -33,6 +33,26 @@ USA_persian_corridor = {
 	}
 }
 
+USA_war_production_board = {
+	icon = generic_research
+
+	allowed = {
+		original_tag = USA
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+USA_allied_industrial_coord = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = USA
+	}
+}
+
 USA_split_china = {
 
 	priority = 5000

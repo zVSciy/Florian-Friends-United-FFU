@@ -151,6 +151,180 @@ USA_persian_corridor = {
 	}
 }
 
+USA_allied_industrial_coord = {	
+
+	USA_help_can = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_allied_industrial_coordination }
+			CAN = { has_completed_focus = COM_mission_to_usa }
+			NOT = { has_country_flag = USA_allied_coord_used }
+		}
+		
+		days_remove = 180
+		cost = 50
+		complete_effect = {
+			CAN = {
+		add_timed_idea = {
+				idea = USA_help_the_allies
+				days = 180
+			    }
+			}
+				set_country_flag = { flag = USA_allied_coord_used value = 1 days = 180 }
+		    }
+		}
+
+		USA_help_saf = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_allied_industrial_coordination }
+			SAF = { has_completed_focus = COM_mission_to_usa }
+			NOT = { has_country_flag = USA_allied_coord_used }
+		}
+		
+		days_remove = 180
+		cost = 50
+		complete_effect = {
+			SAF = {
+		add_timed_idea = {
+				idea = USA_help_the_allies
+				days = 180
+			    }
+			}
+				set_country_flag = { flag = USA_allied_coord_used value = 1 days = 180 }
+		    }
+
+		}
+
+		
+		USA_help_raj = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_allied_industrial_coordination }
+			RAJ = { has_completed_focus = COM_mission_to_usa }
+			NOT = { has_country_flag = USA_allied_coord_used }
+		}
+		
+		days_remove = 180
+		cost = 50
+		complete_effect = {
+			RAJ = {
+		add_timed_idea = {
+				idea = USA_help_the_allies
+				days = 180
+			    }
+			}
+				set_country_flag = { flag = USA_allied_coord_used value = 1 days = 180 }
+		    }
+		}
+
+		USA_help_ast = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_allied_industrial_coordination }
+			AST = { has_completed_focus = COM_mission_to_usa }
+			NOT = { has_country_flag = USA_allied_coord_used }
+		}
+		
+		days_remove = 180
+		cost = 50
+		complete_effect = {
+			AST = {
+		add_timed_idea = {
+				idea = USA_help_the_allies
+				days = 180
+			    }
+			}
+				set_country_flag = { flag = USA_allied_coord_used value = 1 days = 180 }
+		    }
+
+		}
+
+		USA_help_fra = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_allied_industrial_coordination }
+			FRA = { has_completed_focus = FRA_arms_purchases_in_the_us }
+			NOT = { has_country_flag = USA_allied_coord_used }
+		}
+		
+		days_remove = 180
+		cost = 50
+		complete_effect = {
+			FRA = {
+		add_timed_idea = {
+				idea = USA_help_the_allies
+				days = 180
+		        }
+	        }
+				set_country_flag = { flag = USA_allied_coord_used value = 1 days = 180 }
+		    }
+		}
+		
+		USA_help_eng = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_allied_industrial_coordination }
+			ENG = { has_completed_focus = COM_mission_to_usa }
+			NOT = { has_country_flag = USA_allied_coord_major_used }
+		}
+		
+		days_remove = 180
+		cost = 75
+		complete_effect = {
+			ENG = {
+		add_timed_idea = {
+				idea = USA_help_the_majors_eng
+				days = 180
+		        }
+	        }
+				set_country_flag = { flag = USA_allied_coord_major_used value = 1 days = 210 }
+		    }
+		}
+
+		USA_help_sov = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_allied_industrial_coordination }
+			SOV = { has_completed_focus = SOV_technical_assistance }
+			NOT = { has_country_flag = USA_allied_coord_major_used }
+		}
+		
+		days_remove = 180
+		cost = 150
+		complete_effect = {
+			SOV = {
+		add_timed_idea = {
+				idea = USA_help_the_majors_sov
+				days = 180
+		        }
+	        }
+				set_country_flag = { flag = USA_allied_coord_major_used value = 1 days = 180 }
+		    }
+		}
+	}
+
 USA_war_production_board = {
 	
 	USA_arms_wbp = {
@@ -160,35 +334,17 @@ USA_war_production_board = {
 		}
 		available = {
 			USA = { has_completed_focus = USA_wartime_production_board }
-		}
-		
-		days_remove = 0
-		cost = 50
-		complete_effect = {
-		add_timed_idea = {
-				idea = CSA_avions_fairey
-				days = 90
-			    }
-		    }
-		
-		}
-
-		USA_tanks_wbp = {
-		icon = generic_prepare_civil_war
-		allowed = {
-			original_tag = USA
-		}
-		available = {
-			USA = { has_completed_focus = USA_wartime_production_board }
+			NOT = { has_country_flag = USA_wbp_used_already }
 		}
 		
 		days_remove = 90
-		cost = 50
+		cost = 25
 		complete_effect = {
 		add_timed_idea = {
-				idea = CSA_avions_fairey
+				idea = USA_wbp_arms_idea
 				days = 90
 			    }
+				set_country_flag = { flag = USA_wbp_used_already value = 1 days = 90 }
 		    }
 		}
 
@@ -199,17 +355,41 @@ USA_war_production_board = {
 		}
 		available = {
 			USA = { has_completed_focus = USA_wartime_production_board }
+			NOT = { has_country_flag = USA_wbp_used_already }
 		}
 		
 		days_remove = 90
-		cost = 50
+		cost = 25
 		complete_effect = {
 		add_timed_idea = {
-				idea = CSA_avions_fairey
+				idea = USA_wbp_artillery_idea
 				days = 90
 			    }
+				set_country_flag = { flag = USA_wbp_used_already value = 1 days = 90 }
 		    }
 
+		}
+
+		
+		USA_tanks_wbp = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			USA = { has_completed_focus = USA_wartime_production_board }
+			NOT = { has_country_flag = USA_wbp_used_already }
+		}
+		
+		days_remove = 90
+		cost = 25
+		complete_effect = {
+		add_timed_idea = {
+				idea = USA_wbp_tank_idea
+				days = 90
+			    }
+				set_country_flag = { flag = USA_wbp_used_already value = 1 days = 90 }
+		    }
 		}
 
 		USA_fighters_wbp = {
@@ -219,15 +399,17 @@ USA_war_production_board = {
 		}
 		available = {
 			USA = { has_completed_focus = USA_wartime_production_board }
+			NOT = { has_country_flag = USA_wbp_used_already }
 		}
 		
 		days_remove = 90
-		cost = 50
+		cost = 25
 		complete_effect = {
 		add_timed_idea = {
-				idea = CSA_avions_fairey
+				idea = USA_wbp_air_idea
 				days = 90
 			    }
+				set_country_flag = { flag = USA_wbp_used_already value = 1 days = 90 }
 		    }
 
 		}
@@ -239,15 +421,17 @@ USA_war_production_board = {
 		}
 		available = {
 			USA = { has_completed_focus = USA_wartime_production_board }
+			NOT = { has_country_flag = USA_wbp_used_already }
 		}
 		
 		days_remove = 90
-		cost = 50
+		cost = 25
 		complete_effect = {
 		add_timed_idea = {
-				idea = CSA_avions_fairey
+				idea = USA_wbp_cas_idea
 				days = 90
 			    }
+				set_country_flag = { flag = USA_wbp_used_already value = 1 days = 90 }
 		    }
 
 		}
@@ -259,17 +443,18 @@ USA_war_production_board = {
 		}
 		available = {
 			USA = { has_completed_focus = USA_wartime_production_board }
+			NOT = { has_country_flag = USA_wbp_used_already }
 		}
 		
 		days_remove = 90
-		cost = 50
+		cost = 25
 		complete_effect = {
 		add_timed_idea = {
-				idea = CSA_avions_fairey
+				idea = USA_wbp_strats_idea
 				days = 90
 			    }
+		        set_country_flag = { flag = USA_wbp_used_already value = 1 days = 90 }
 		    }
-
 		}
 	}
 
