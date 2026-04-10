@@ -620,6 +620,8 @@ USA_army_dynamic_modifier = {
 	conscription_factor = USA_american_army_conscription_factor
 	max_dig_in = USA_american_army_max_dig_in
 	army_armor_attack_factor = USA_american_army_armor_attack_factor
+	experience_gain_army = USA_american_army_experience_gain_army
+	naval_invasion_planning_bonus_speed = USA_american_army_naval_invasion_planning_bonus_speed
 }
 
 USA_air_navy_dynamic_modifier = {
