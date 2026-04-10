@@ -748,18 +748,142 @@ ideas = {
 			}
 		}
 
-		USA_tizard = {
+			USA_bpc_eng = {
+
+			picture = generic_goods_red_bonus			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.075
+			}
+		}
+
+		
+		USA_french_recognition = {
 			removal_cost = -1
 			allowed = {
-				always = no # Unlocked via Descison
+				always = no 
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.5
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
+			USA_paying_cash_and_carry = {
+			removal_cost = -1
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
+			USA_accelerated_merchant_expansions = {
+			removal_cost = -1
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.3 instant = yes
+				}
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
+			USA_international_condemnation = {
+			removal_cost = -1
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.075
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				stability_factor = -0.05
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
+			USA_arms_embargo_repealed = {
+			removal_cost = -1
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
+		USA_tizard = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+
 			research_bonus = {
-				nuclear = 0.15
+				light_air = 0.1
+				medium_air = 0.1
+				heavy_air = 0.1
 			}
 
 			picture = generic_research_bonus
@@ -2013,6 +2137,50 @@ ideas = {
 				# production_speed_synthetic_rubber_refinery_factor = 0.25
 				production_factory_efficiency_gain_factor = 0.25
 				production_speed_dockyard_factor = 0.30
+			}
+		}
+
+			USA_vt_fuze_bonus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				sp_naval_proximity_fuze_speed_factor = 0.9
+			}
+		}
+			USA_recalibrated_bbs = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 0.15 instant = yes
+				}
 			}
 		}
 	

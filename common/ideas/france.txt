@@ -36,6 +36,21 @@ ideas = {
 			}
 		}
 
+			FRA_mastery_postcap = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_undividable
+
+			targeted_modifier = {
+				tag = USA
+			}
+		}
+
 		FRA_defense_of_metropolitan_france = {
 
 			allowed = {
