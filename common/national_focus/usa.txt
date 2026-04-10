@@ -1595,7 +1595,6 @@ focus_tree = {
 			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_conscription = 0.01 tooltip = conscription_tt }
-			add_to_variable = { USA_american_army_navy_naval_invasion_capacity = 9 tooltip = naval_invasion_capacity_tt }
 		}
 	}
 

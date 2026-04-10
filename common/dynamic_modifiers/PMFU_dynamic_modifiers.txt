@@ -613,12 +613,13 @@ USA_army_dynamic_modifier = {
 	army_attack_factor = USA_american_army_army_attack_factor
 	army_defence_factor = USA_american_army_army_defence_factor
 	mobilization_speed = USA_american_army_mobilization_speed
-	naval_invasion_capacity = USA_american_army_navy_naval_invasion_capacity
 	conscription = USA_american_army_conscription
 	planning_speed = USA_american_army_planning_speed
 	max_planning = USA_american_army_max_planning
 	max_command_power = USA_american_army_max_command_power
 	conscription_factor = USA_american_army_conscription_factor
+	max_dig_in = USA_american_army_max_dig_in
+	army_armor_attack_factor = USA_american_army_armor_attack_factor
 }
 
 USA_air_navy_dynamic_modifier = {
