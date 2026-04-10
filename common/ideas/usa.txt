@@ -2140,6 +2140,125 @@ ideas = {
 			}
 		}
 
+			USA_manhattan_district_projects = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				sp_nuclear_reactor_speed_factor = 0.5
+			}
+		}
+
+			USA_copy_german_rocketry = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				sp_tag_rocket_speed_factor = 0.1
+			}
+		}
+
+			USA_operation_paperclip_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				special_project_speed_factor = 0.2
+			}
+		}
+
+			USA_oak_ridge_facilities = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				nuclear_production_factor = 0.5
+			}
+		}
+
+			USA_atomic_energy_comm = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.6 
+			}
+		}
+
+			USA_jet_engine_programme = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				sp_air_jet_engine_speed_factor = 0.4
+			}
+		}
+
 			USA_vt_fuze_bonus = {
 			
 			

@@ -3676,12 +3676,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1939.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 2
+			}
 		}
 	}
 
@@ -3695,12 +3699,24 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			376 = {
+				infrastructure > 9
+			}
+			382 = {
+				infrastructure > 9
+			}
+			380 = {
+				infrastructure > 9
+			}
+			377 = {
+				infrastructure > 9
+			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_manhattan_district_projects
 		}
 	}
 
@@ -3720,6 +3736,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_oak_ridge_facilities
+			395 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3739,12 +3763,47 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			358 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 		
 		focus = {
 		id = USA_xp_program
+		icon = GFX_USA_social_security_act
+		relative_position_id = USA_the_whittle_engine
+		prerequisite = { focus = USA_the_whittle_engine }
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			ENG = {
+				OR = {
+				is_special_project_being_researched = sp:sp_air_jet_engine
+				is_special_project_completed = sp:sp_air_jet_engine
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_breakthrough_points = {
+				specialization = specialization_air
+				value = 2
+			}
+			add_ideas = USA_jet_engine_programme
+		}
+	}
+			
+		focus = {
+		id = USA_the_whittle_engine
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_jet_engine_development
 		prerequisite = { focus = USA_jet_engine_development }
@@ -3758,11 +3817,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+				add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 0.75
+				technology = experimental_rockets
+			}
 		}
 	}
-			
+
 		focus = {
-		id = USA_the_whittle_engine
+		id = USA_the_p80
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_xp_program
 		prerequisite = { focus = USA_xp_program }
@@ -3770,30 +3835,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			is_special_project_completed = sp:sp_air_jet_engine
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = USA_the_p80
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_the_whittle_engine
-		prerequisite = { focus = USA_the_whittle_engine }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+				add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				ahead_reduction = 1
+				bonus = 1
+				technology = modern_small_airframe
+			}
 		}
 	}
 	
@@ -3806,12 +3860,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			GER = {
+				has_facility_specialization = specialization_air
+			}
+			date > 1942.6.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_copy_german_rocketry
 		}
 	}
 
@@ -3825,12 +3883,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1943.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			GER = {
+			GER_von_braun = {
+				retire = yes
+			}
+		}
+		    USA = {
+			recruit_character = GER_von_braun
+			}
+			add_ideas = USA_operation_paperclip_idea
+			add_research_slot = 1
 		}
 	}
 
@@ -3849,6 +3917,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+				add_tech_bonus = {
+				name = USA_naval_radar
+				uses = 2
+				bonus = 1
+				category = radar_tech
+			}
 		}
 	}
 
@@ -3862,12 +3936,18 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1941.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+				add_tech_bonus = {
+				name = USA_naval_radar
+				uses = 1
+				bonus = 3
+				category = radar_tech
+			}
 		}
 	}
 
@@ -3928,12 +4008,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1939.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 0.75
+				ahead_reduction = 0.5
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 
@@ -3942,6 +4029,7 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_einstein_letter
 		prerequisite = { focus = USA_einstein_letter }
+		prerequisite = { focus = USA_uranium_advisory }
 		x = 0
 		y = 1
 		cost = 5
@@ -3952,6 +4040,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			376 = {
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					instant_build = yes
+					province = 12684
+				}
+			}
 		}
 	}
 
@@ -3964,12 +4060,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			is_special_project_completed = sp:sp_nuclear_reactor
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+				395 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3982,12 +4085,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			is_special_project_completed = sp:sp_nuclear_bomb
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_political_power = 100
+			add_nuclear_bombs = 1
 		}
 	}
 
@@ -4000,12 +4105,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1943.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_atomic_energy_comm
 		}
 	}
 	
