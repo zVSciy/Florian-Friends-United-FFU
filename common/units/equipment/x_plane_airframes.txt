@@ -1150,15 +1150,15 @@ equipments = {
 		maximum_speed = 1150
 		air_agility = 50
 		air_attack = 0
-		air_defence = 12
+		air_defence = 6
 		reliability = 0.8
 
-		naval_strike_attack = 20
-		naval_strike_targetting = 10
+		naval_strike_attack = 10
+		naval_strike_targetting = 6
 		upgrades = {
 		}
 
-		build_cost_ic = 14
+		build_cost_ic = 40
 		manpower = 15
 		resources = {
 			aluminium = 2
