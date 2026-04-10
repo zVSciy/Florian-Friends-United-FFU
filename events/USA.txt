@@ -123,6 +123,9 @@ country_event = {
 				if = { limit = { 689 = { is_controlled_by = ENG } } 
 					remove_state_core = 689
 				}
+				if = { limit = { 692 = { is_controlled_by = ENG } } 
+					remove_state_core = 692
+				}
 				if = { limit = { 691 = { is_controlled_by = ENG } } 
 					remove_state_core = 691
 				}
@@ -143,6 +146,9 @@ country_event = {
 			}
 			if = { limit = { 689 = { is_controlled_by = ENG } } 
 				transfer_state = 689
+			}
+			if = { limit = { 692 = { is_controlled_by = ENG } } 
+				transfer_state = 692
 			}
 			if = { limit = { 691 = { is_controlled_by = ENG } } 
 				transfer_state = 691

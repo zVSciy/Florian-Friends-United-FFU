@@ -191,6 +191,11 @@ focus_tree = {
 			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.15 tooltip = production_speed_infrastructure_factor_tt }
 			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.2 tooltip = production_speed_industrial_complex_factor_tt }
 
+			hidden_effect = {
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = -0.9 tooltip = production_speed_arms_factory_factor_tt }
+			}
+
 		}
 	}
 
@@ -2847,6 +2852,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 1.5
+				technology = improved_heavy_battery
+			}
 		}
 	}
 
@@ -2865,6 +2876,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 1.5
+				technology = advanced_heavy_battery
+			}
 		}
 	}
 
@@ -2883,6 +2900,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 1.5
+				technology = improved_medium_battery
+			}
 		}
 	}
 
@@ -2901,6 +2924,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 1.5
+				technology = advanced_medium_battery
+			}
 		}
 	}
 
@@ -2919,6 +2948,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 1.5
+				technology = improved_light_battery
+				technology = improved_dp_light_battery
+			}
 		}
 	}
 
@@ -2937,6 +2973,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 1.5
+				technology = advanced_light_battery
+				technology = advanced_dp_light_battery
+			}
 		}
 	}
 
@@ -2956,6 +2999,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = bureau_of_ships_focus
 		}
 	}
 
@@ -2977,8 +3021,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
-				bonus = 0.75
-				uses = 2
+				bonus = 1
+				uses = 3
 				category = bb_tech
 			}
 		}
@@ -2994,12 +3038,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_war = yes
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_recalibrated_bbs
 		}
 	}
 
@@ -3023,7 +3068,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
 				bonus = 1
-				uses = 2
+				uses = 3
 				category = cv_tech
 			}
 		}
@@ -3085,6 +3130,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_escort_effort
+				bonus = 1
+				uses = 4
+				category = dd_tech
+				category = ca_tech
+			}
 		}
 	}
 
@@ -3146,6 +3198,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_submarine_1
+				bonus = 1
+				uses = 3
+				category = ss_tech
+			}
 		}
 	}
 
@@ -3183,6 +3241,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
@@ -3242,6 +3301,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_medium_airframe_bonus
+				uses = 3
+				bonus = 0.75
+				category = medium_air
+			}
 		}
 	}
 
@@ -3260,6 +3325,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_light_airframe_bonus
+				uses = 3
+				bonus = 0.75
+				category = light_air
+			}
 		}
 	}
 
@@ -3278,6 +3349,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_heavy_airframe_bonus
+				uses = 4
+				bonus = 1
+				category = heavy_air
+			}
 		}
 	}
 
@@ -3803,12 +3880,17 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_facility_specialization = specialization_naval
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_breakthrough_points = {
+				specialization = specialization_naval
+				value = 2
+			}
+			add_ideas = USA_vt_fuze_bonus
 		}
 	}
 
@@ -3821,12 +3903,18 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1942.6.1
+			is_special_project_completed = sp:sp_naval_proximity_fuze
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tt
+			add_to_variable = { USA_american_army_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
+			add_to_variable = { USA_american_army_army_artillery_defence_factor = 0.05 tooltip = army_artillery_defence_factor_tt }
+			USA_airforce_navy_dynamic_modifier_tt = yes # tt
+			add_to_variable = { USA_american_airforce_navy_navy_anti_air_attack_factor = 0.6 tooltip = navy_anti_air_attack_factor_tt }
 		}
 	}
 
@@ -3935,6 +4023,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			army_experience = 100
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 1
+			}
 		}
 	}
 
@@ -3953,6 +4046,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_armored_infantry
+				uses = 1
+				bonus = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 
@@ -3971,6 +4070,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_armored_infantry
+				uses = 1
+				ahead_reduction = 1
+				bonus = 1
+				category = cat_mechanized_equipment
+			}
+			add_ideas = { USA_ford }
 		}
 	}
 
@@ -3989,6 +4096,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_armored_infantry
+				uses = 1
+				bonus = 1
+				technology = amphibious_mechanized_infantry
+			}
 		}
 	}
 
@@ -4007,6 +4120,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_armored_infantry
+				uses = 1
+				bonus = 0.75
+				technology = amphibious_tank
+			}
 		}
 	}
 
@@ -4025,6 +4144,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 2
+				bonus = 0.5
+				category = armor
+			}
 		}
 	}
 
@@ -4043,6 +4168,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				bonus = 1
+				technology = usa_heavy_tank_1
+			}
 		}
 	}
 
@@ -4055,12 +4186,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1943.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				ahead_reduction = 2
+				bonus = 1
+				technology = usa_heavy_tank_2
+			}
 		}
 	}
 
@@ -4079,6 +4217,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+				add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				bonus = 1
+				technology = USA_medium_tank_2
+			}
 		}
 	}
 
@@ -4097,6 +4241,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				bonus = 1
+				technology = USA_medium_tank_3
+			}
 		}
 	}
 
@@ -4109,12 +4259,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1942.9.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				ahead_reduction = 1
+				bonus = 1
+				technology = usa_medium_tank_4
+			}
 		}
 	}
 
@@ -4133,6 +4290,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_boni
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
 		}
 	}
 
@@ -4151,6 +4314,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = mountaineers_tech
+				bonus = 0.50
+				ahead_reduction  = 0.5
+				uses = 1
+				technology = artillery3
+			}
 		}
 	}
 
@@ -4169,6 +4339,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_boni
+				bonus = 0.75
+				uses = 1
+				technology = rocket_artillery
+			}
 		}
 	}
 
@@ -4187,6 +4363,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_boni
+				bonus = 0.75
+				uses = 3
+				category = heavy_artillery
+			}
 		}
 	}
 
@@ -4205,6 +4387,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			393 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+					province = 6710
+				}
+			}
 		}
 	}
 
@@ -4223,6 +4413,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_boni
+				bonus = 1
+				uses = 1
+				technology = improved_infantry_weapons
+			}
 		}
 	}
 
@@ -4241,6 +4437,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_boni
+				bonus = 1
+				uses = 1
+				technology = advanced_infantry_weapons
+			}
 		}
 	}
 
@@ -4259,6 +4461,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_boni
+				bonus = 0.75
+				uses = 3
+				category = support_tech
+			}
 		}
 	}
 
@@ -4277,6 +4485,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = mountaineers_tech
+				bonus = 0.75
+				uses = 1
+				technology = heavy_antitank
+			}
 		}
 	}
 
@@ -4295,6 +4509,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = mountaineers_tech
+				bonus = 0.75
+				uses = 1
+				technology = heavy_antitank2
+			}
 		}
 	}
 
@@ -4345,6 +4565,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA = {
+			remove_resource_rights = 480
+			remove_resource_rights = 479
+			}
+			add_offsite_building = { type = industrial_complex level = 4 }
 		}
 	}
 
@@ -4363,6 +4588,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			327 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			623 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -4384,11 +4625,27 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			625 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			627 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 		focus = {
-		id = USA_filipino_army
+		id = USA_filipino_army # THIS FOCUS IS ACTUALLY USA_SUBIC_BASE
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_accelerate_filipino_independence
 		prerequisite = { focus = USA_accelerate_filipino_independence focus = USA_defend_the_philippines }
@@ -4402,23 +4659,234 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-					division_template = {
+				327 = {
+                set_building_level = {
+                    type = naval_base
+                    level = 10
+                    province = 7323
+                    instant_build = yes
+                }
+				set_building_level = {
+                    type = coastal_bunker
+                    level = 6
+                    province = 10265
+                    instant_build = yes
+                }
+				set_building_level = {
+                    type = naval_headquarters
+                    level = 1
+                    province = 10265
+                    instant_build = yes
+                }
+				623 = {
+				set_building_level = {
+                    type = naval_supply_hub
+                    level = 1
+                    province = 1415
+                    instant_build = yes
+				}
+                }
+			}
+		}
+	}
+
+		focus = {
+		id = USA_defend_the_philippines
+		icon = GFX_USA_social_security_act
+		relative_position_id = USA_nation_building_philippines
+		prerequisite = { focus = USA_nation_building_philippines }
+				mutually_exclusive = {
+			focus = USA_accelerate_filipino_independence
+		}
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			327 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 7323
+                    instant_build = yes
+                }
+				set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 10265
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+					province = 1221
+                    instant_build = yes
+                }
+				    set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+            623 = {
+				set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 12253
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 10280
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 1415
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 10241
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 4101
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 12213
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+              }
+			  	627 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 4241
+                    instant_build = yes
+                }
+				set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    province = 1234
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+					province = 7284
+                    instant_build = yes
+                }
+				    set_building_level = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+			}
+           }
+		}
+	}
+
+		focus = {
+		id = USA_philippines_resources
+		icon = GFX_USA_social_security_act
+		relative_position_id = USA_filipino_army
+		prerequisite = { focus = USA_filipino_army }
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = USA_philippines_resources
+		icon = GFX_USA_social_security_act
+		relative_position_id = USA_filipino_army
+		prerequisite = { focus = USA_filipino_army }
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			627 = {
+				add_resource = {
+					type = rubber
+					amount = 250
+				}
+					add_resource = {
+					type = tungsten
+					amount = 400
+				}
+					add_resource = {
+					type = chromium
+					amount = 500
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = USA_subic_base # THIS FOCUS IS ACTUALLY USA_FILIPINO_ARMY
+		icon = GFX_USA_social_security_act
+		relative_position_id = USA_philippines_resources
+		prerequisite = { focus = USA_philippines_resources }
+		x = 0
+		y = 1
+		cost = 1
+		available = {
+			date > 1940.12.15
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+								division_template = {
 					name = "Far East Army"
 					is_locked = yes
 					regiments = {
-						garrison = { x = 0 y = 0 }
-						garrison = { x = 0 y = 1 }
-						garrison = { x = 0 y = 2 }
-						garrison = { x = 0 y = 3 }
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
 				
-						garrison = { x = 1 y = 0 }
-						garrison = { x = 1 y = 1 }
-						garrison = { x = 1 y = 2 }
-						garrison = { x = 1 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
 				
-						garrison = { x = 2 y = 0 }
-						garrison = { x = 2 y = 1 }
-						garrison = { x = 2 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
 				
 						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
@@ -4634,81 +5102,6 @@ focus_tree = {
 	}
 
 		focus = {
-		id = USA_defend_the_philippines
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_nation_building_philippines
-		prerequisite = { focus = USA_nation_building_philippines }
-				mutually_exclusive = {
-			focus = USA_accelerate_filipino_independence
-		}
-		x = 1
-		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = USA_philippines_resources
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_filipino_army
-		prerequisite = { focus = USA_filipino_army }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = USA_philippines_resources
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_filipino_army
-		prerequisite = { focus = USA_filipino_army }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = USA_subic_base
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_philippines_resources
-		prerequisite = { focus = USA_philippines_resources }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		}
-	}
-
-		focus = {
 		id = USA_good_neighbor_policy
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_mexican_oil_crisis
@@ -4723,6 +5116,60 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			BRA = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = PREV				
+						free_building_slots = {
+							building = industrial_complex
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			MEX = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = PREV
+						free_building_slots = {
+							building = industrial_complex
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			CAN = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = PREV
+						free_building_slots = {
+							building = industrial_complex
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -4741,6 +5188,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { USA_american_economy_min_export = 0.075 tooltip = min_export_tt }
+
 		}
 	}
 
@@ -4753,12 +5205,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			threat > 0.15
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			ENG = {
+			add_timed_idea = {
+				idea = ENG_purchasing_commission
+				days = 60
+			    }
+		    }
+			add_timed_idea = {
+				idea = USA_bpc_eng
+				days = 60
+			}
 		}
 	}
 
@@ -4789,12 +5251,18 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			ENG = {
+				has_war = yes
+			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			ENG = {
+				add_ideas = USA_accelerated_merchant_expansions
+			}
+			add_ideas = USA_accelerated_merchant_expansions
 		}
 	}
 
@@ -4808,12 +5276,24 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available = {
-			
+			OR = {
+				ENG = {
+					has_capitulated = yes
+				}
+				date > 1939.11.1
+			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+		completion_reward = { # moves BOP towards interventionism
+				ENG = {
+				add_offsite_building = { type = industrial_complex level = 12 }
+			}
+			add_timed_idea = {
+				idea = USA_paying_cash_and_carry
+				days = 60
+			}
 		}
 	}
 
@@ -4824,19 +5304,19 @@ focus_tree = {
 		prerequisite = { focus = USA_cash_and_carry }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 1
 		available = {
 			OR = {
 				ENG = {
 					has_capitulated = yes
 				}
-				date > 1940.6.1
+				date > 1941.1.1
 			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+		completion_reward = { # moves BOP towards interventionism
 				if = {
 				limit = { has_completed_focus = USA_neutrality_act }
 			}
@@ -4853,12 +5333,32 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			JAP = { has_completed_focus = JAP_intervene_in_china }
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_war_support = 0.1
+				if = {
+				limit = {
+					NOT = { has_idea = undisturbed_isolation }
+					NOT = { has_idea = isolation }
+					NOT = { has_country_flag = USA_the_giant_wakes_added_civ_eco }
+				}
+				add_political_power = 100
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = isolation 
+						has_idea = undisturbed_isolation 
+						has_country_flag = USA_the_giant_wakes_added_civ_eco
+					}
+				}
+				add_ideas = civilian_economy
+				set_country_flag = USA_the_giant_wakes_added_civ_eco
+			}
 		}
 	}
 
@@ -4879,7 +5379,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+		completion_reward = { # should move BOP towards isolationism
+		   add_stability = 0.1
+		   add_political_power = 100
 		}
 	}
 
@@ -4895,12 +5397,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			congress_medium_support_trigger = yes
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+		completion_reward = { # should move BOP towards interventionism
+		USA_congress_small_opposition = yes
+		   add_stability = -0.075
+		   add_war_support = -0.075
+		   add_political_power = -50
+		   	JAP = {
+				add_timed_idea = {
+					idea = USA_international_condemnation
+					days = 90
+				}
+			}
 		}
 	}
 
@@ -4913,12 +5425,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			GER = { has_completed_focus = GER_demand_sudetenland }
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
@@ -4934,12 +5447,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			congress_medium_support_trigger = yes
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+		completion_reward = { # should move BOP towards interventionism
+		USA_congress_small_opposition = yes
+	       add_stability = -0.075
+		   add_war_support = -0.075
+		   add_political_power = -50
+		   	GER = {
+				add_timed_idea = {
+					idea = USA_international_condemnation
+					days = 90
+				}
+			}
 		}
 	}
 
@@ -4960,7 +5483,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+		completion_reward = { # should move BOP towards isolationism
+		   	add_stability = 0.1
+		    add_political_power = 100
 		}
 	}
 
@@ -4972,13 +5497,17 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			
+		available = { 
+			ENG = { has_war = yes }
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
+		completion_reward = { # should move BOP towards interventionism
+		add_timed_idea = {
+			idea = USA_arms_embargo_repealed
+			days = 120
+		}
 		}
 	}
 
@@ -4997,6 +5526,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			ENG = {
+				add_ideas = USA_tizard
+			}
+			add_ideas = USA_tizard
 		}
 	}
 
@@ -5009,12 +5542,30 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+                VIC = {
+                    has_country_flag = VIC_france_capped
+                }
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			ENG = {
+				custom_effect_tooltip = needs_approval
+				country_event = { id = usa.4 days = 1 }
+			}
+			
+			effect_tooltip = {
+				custom_effect_tooltip = USA_destroyers_for_bases_tt
+				transfer_state = 696
+				transfer_state = 331
+				transfer_state = 308
+				transfer_state = 693
+				transfer_state = 689
+				transfer_state = 691
+				transfer_state = 692
+				
+			}
 		}
 	}
 
@@ -5027,12 +5578,17 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1940.8.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { USA_american_economy_war_support_factor = 0.1 tooltip = war_support_factor_tt }
+			add_to_variable = { USA_american_economy_political_power_gain = 0.5 tooltip = political_power_gain_tt }
+			add_faction_initiative = 5
 		}
 	}
 		focus = {
@@ -5044,17 +5600,24 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1940.6.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_war_support = 0.2
+			add_political_power = 150
+			hidden_effect = {
+			USA = {
+				transfer_state = 101
+			}
+		}	
 		}
 	}
 
 		focus = {
-		id = USA_embargo_japan
+		id = USA_recognize_free_france
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_four_freedoms
 		prerequisite = { focus = USA_four_freedoms }
@@ -5062,20 +5625,23 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			VIC = {
+                    has_country_flag = VIC_france_capped
+                }
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_french_recognition
 		}
 	}
 
 		focus = {
 		id = USA_casablanca_conference
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_embargo_japan
-		prerequisite = { focus = USA_embargo_japan }
+		relative_position_id = USA_recognize_free_france
+		prerequisite = { focus = USA_recognize_free_france }
 		prerequisite = { focus = USA_atlantic_charter }
 		prerequisite = { focus = USA_lend_lease_act }
 		x = 0
@@ -5200,6 +5766,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { USA_American_economy_political_power_gain = 0.5 tooltip = political_power_gain_tt }
 		}
 	}
 
@@ -5218,6 +5787,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
 		}
 	}
 
@@ -5230,12 +5801,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1943.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_conscription_factor = 0.2 tooltip = conscription_factor_tt }
+			add_to_variable = { USA_american_army_conscription = 0.02 tooltip = conscription_tt }
 		}
 	}
 
@@ -5443,15 +6017,15 @@ focus_tree = {
 			379 = {
 				add_resource = {
 					type = steel
-					amount = 6700
+					amount = 6767
 				}
 				add_resource = {
 					type = tungsten
-					amount = 2400
+					amount = 2467
 				}
 				add_resource = {
 					type = chromium
-					amount = 1300
+					amount = 1367
 				}
 			}
 		}
@@ -5480,9 +6054,9 @@ focus_tree = {
 		focus = {
 		id = USA_standard_oil
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_tva_expansion
-		prerequisite = { focus = USA_tva_expansion }
-		x = 0
+		relative_position_id = USA_war_on_waste
+		prerequisite = { focus = USA_war_on_waste }
+		x = -1
 		y = 1
 		cost = 5
 		available = {
@@ -5504,9 +6078,9 @@ focus_tree = {
 		focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_standard_oil
-		prerequisite = { focus = USA_standard_oil }
-		x = -1
+		relative_position_id = USA_war_on_waste
+		prerequisite = { focus = USA_war_on_waste }
+		x = 1
 		y = 1
 		cost = 5
 		available = {
@@ -5574,9 +6148,9 @@ focus_tree = {
 		focus = {
 		id = USA_war_on_waste
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_standard_oil
-		prerequisite = { focus = USA_standard_oil }
-		x = 1
+		relative_position_id = USA_tva_expansion
+		prerequisite = { focus = USA_tva_expansion }
+		x = 0
 		y = 1
 		cost = 5
 		available = {
@@ -5598,14 +6172,13 @@ focus_tree = {
 		focus = {
 		id = USA_office_of_production_management
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_war_on_waste
-		prerequisite = { focus = USA_war_on_waste }
+		relative_position_id = USA_standard_oil
+		prerequisite = { focus = USA_standard_oil }
 		prerequisite = { focus = USA_rubber_reserve_company }
-		x = -1
+		x = 1
 		y = 1
 		cost = 5
 		available = {
-			has_war = yes
 			has_completed_focus = USA_wartime_production_board
 		}
 
@@ -5613,7 +6186,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_economy_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
+			add_to_variable = { USA_american_economy_local_resources_factor = 0.075 tooltip = local_resources_factor_tt }
+			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
@@ -5632,6 +6206,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_production_lack_of_resource_penalty_factor_tt= -0.75 tooltip = production_lack_of_resource_penalty_factor_tt }
+			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
@@ -5648,12 +6225,52 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1942.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			369 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}		
+			}
+			396 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			360 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}		
+			}
+			358 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			261 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -5669,12 +6286,26 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1942.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			387 = {
+				add_resource = {
+					type = steel
+					amount = 1500
+				}
+				add_resource = {
+					type = tungsten
+					amount = 1200
+				}
+				add_resource = {
+					type = chromium
+					amount = 800
+				}
+			}
 		}
 	}
 	
@@ -5687,39 +6318,16 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-				has_war_support > 0.30
+				date > 1939.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-				custom_effect_tooltip = {
-				localization_key = USA_mils_explanation_tt
-			        }
 			USA_harold_ickes = {
 				retire = yes
 			}
-			if = {
-				limit = {
-					NOT = { has_idea = undisturbed_isolation }
-					NOT = { has_idea = isolation }
-					NOT = { has_country_flag = USA_the_giant_wakes_added_civ_eco }
-				}
-				add_political_power = 100
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = isolation 
-						has_idea = undisturbed_isolation 
-						has_country_flag = USA_the_giant_wakes_added_civ_eco
-					}
-				}
-				add_ideas = civilian_economy
-				set_country_flag = USA_the_giant_wakes_added_civ_eco
-				USA_economy_dynamic_modifier_tt = yes # tooltip
-			    add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = -0.9 tooltip = production_speed_arms_factory_factor_tt }
-			}
+			add_ideas = low_economic_mobilisation
 		}
 	}
 
