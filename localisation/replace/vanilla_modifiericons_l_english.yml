@@ -2074,3 +2074,4 @@ amphibious_invasion_defence_tt:0 " $MODIFIER_NAVAL_INVASION_DEFENSE$: $RIGHT|+=%
 soft_attack_tt:0 " $BM_ATTACK_VALUE$: $RIGHT|+=%1$"
 naval_invasion_planning_bonus_speed_tt:0 " $MODIFIER_NAVAL_INVASION_PLANNING_SPEED$: $RIGHT|+=%1$"
 naval_invasion_capacity_tt:0 " $MODIFIER_NAVAL_INVASION_CAPACITY$: $RIGHT|+=1$"
+army_experience_gain_tt:0 " £army_experience  Army Experience Gain: $RIGHT|+=2$ daily"

@@ -958,12 +958,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			ENG = {has_war = yes}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_experience_gain_army = 0.05 tooltip = army_experience_gain_tt }		
+			army_experience	= 50
 		}
 	}
 
@@ -1600,7 +1603,6 @@ focus_tree = {
 			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_conscription = 0.01 tooltip = conscription_tt }
-			add_to_variable = { USA_american_army_navy_naval_invasion_capacity = 9 tooltip = naval_invasion_capacity_tt }
 		}
 	}
 
@@ -2443,7 +2445,7 @@ focus_tree = {
 	}
 	
 		
-		focus = {
+	focus = {
 		id = USA_louisiana_maneuvers
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_department_of_army
@@ -2452,31 +2454,42 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_dig_in = 1 tooltip = max_dig_in_tt }
+			add_to_variable = { USA_american_army_max_command_power = 20 tooltip = max_command_power_tt }
+			add_to_variable = { USA_american_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { USA_american_army_experience_gain_army = 0.05 tooltip = army_experience_gain_tt }			
+			army_experience	= -50
 		}
 	}
 
 			
 		focus = {
-		id = USA_fixarmy1
+		id = USA_fixarmy1 #build the planners office 
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_louisiana_maneuvers
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_planning = 0.2 tooltip = max_planning_tt }
+			add_to_variable = {USA_american_army_planning_speed = 0.2 tooltip = planning_speed_tt}
+			add_to_variable = { USA_american_army_naval_invasion_planning_bonus_speed = 0.2 tooltip = naval_invasion_planning_bonus_speed_tt }
+			army_experience = -50
 		}
 	}
 
@@ -2487,14 +2500,19 @@ focus_tree = {
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_conscription_factor = 0.1 tooltip = conscription_factor_tt }
+			add_to_variable = { USA_american_army_mobilization_speed = 0.25 tooltip = mobilization_speed_tt }		
+			add_to_variable = { USA_american_army_conscription = 0.01 tooltip = conscription_tt }	
+			army_experience = -50
 		}
 	}
 
@@ -2506,14 +2524,18 @@ focus_tree = {
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_army_speed_factor = 0.2 tooltip = army_speed_factor_tt }
+			add_to_variable = { USA_american_army_armor_attack_factor = 0.1 tooltip = army_armor_attack_factor_tt }	
+			army_experience = -50
 		}
 	}
 
@@ -2524,14 +2546,19 @@ focus_tree = {
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_command_power = 20 tooltip = max_command_power_tt }
+			add_to_variable = { USA_american_army_army_speed_factor = 0.1 tooltip = army_speed_factor_tt }
+			add_to_variable = { USA_american_army_mobilization_speed = 0.25 tooltip = mobilization_speed_tt }
+			army_experience	= -50
 		}
 	}
 
@@ -2547,12 +2574,17 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_planning = 0.05 tooltip = max_planning_tt }
+			add_to_variable = { USA_american_army_max_command_power = 20 tooltip = max_command_power_tt }
+			add_to_variable = { USA_american_army_naval_invasion_planning_bonus_speed = 0.15 tooltip = naval_invasion_planning_bonus_speed_tt }
+			army_experience	= -50
 		}
 	}
 
@@ -2569,7 +2601,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
@@ -2591,7 +2623,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
@@ -2611,7 +2643,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
@@ -2631,7 +2663,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_army_experience > 50
 		}
 
 		available_if_capitulated = yes
