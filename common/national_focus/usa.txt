@@ -3100,6 +3100,10 @@ focus_tree = {
 			has_war = yes
 		}
 
+		mutually_exclusive = {
+			focus = USA_better_nav
+		}
+
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
@@ -3137,20 +3141,109 @@ focus_tree = {
 		focus = {
 		id = USA_fast_carrier_taskforce
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_essex_class
-		prerequisite = { focus = USA_essex_class }
+		relative_position_id = USA_better_nav
+		prerequisite = { focus = USA_better_nav }
 		x = 0
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1942.1.1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
-            add_to_variable = { USA_american_airforce_air_navy_sortie_efficiency = 0.3 tooltip = sortie_efficiency_tt }
+			set_technology = {
+				advanced_carrier = 1
+			}
+			create_equipment_variant = {
+				name = "Essex Class"
+				type = carrier_4
+				name_group = USA_CV_HISTORICAL
+				design_team = mio:USA_newport_news_shipbuilding_organization
+				parent_version = 0
+				modules = {
+					front_1_custom_slot = ship_deck_space
+					mid_1_custom_slot = ship_deck_space
+					mid_2_custom_slot = ship_deck_space
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_4
+					fixed_ship_radar_slot = ship_radar_4
+					fixed_ship_engine_slot = carrier_ship_engine_4
+					fixed_ship_secondaries_slot = dp_ship_secondaries_4
+
+				}
+			}
+			custom_effect_tooltip="Adds six Essex-class Carriers to the production line with 75% completion"
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+							type = carrier_4
+							creator = "USA"
+						version_name = "Essex Class"
+					}
+					name = "USS Philippine Sea"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+					add_equipment_production = {
+					equipment = {
+							type = carrier_4
+							creator = "USA"
+						version_name = "Essex Class"
+					}
+					name = "USS Shangri La"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+					add_equipment_production = {
+					equipment = {
+							type = carrier_4
+							creator = "USA"
+						version_name = "Essex Class"
+					}
+					name = "USS Enterprise"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+					add_equipment_production = {
+					equipment = {
+							type = carrier_4
+							creator = "USA"
+						version_name = "Essex Class"
+					}
+					name = "USS Bunker Hill"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+					add_equipment_production = {
+					equipment = {
+							type = carrier_4
+							creator = "USA"
+						version_name = "Essex Class"
+					}
+					name = "USS Franklin"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+					add_equipment_production = {
+					equipment = {
+							type = carrier_4
+							creator = "USA"
+						version_name = "Essex Class"
+					}
+					name = "USS Intrepid"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+			} 
 		}
 	}
 
@@ -3158,18 +3251,25 @@ focus_tree = {
 		focus = {
 		id = USA_better_nav
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_fast_carrier_taskforce
-		prerequisite = { focus = USA_fast_carrier_taskforce }
+		relative_position_id = USA_essex_class
+		prerequisite = { focus = USA_essex_class }
 		x = 0
 		y = 1
 		cost = 5
 		available = {
-			
+			has_war = yes
+		}
+
+		mutually_exclusive = {
+			focus = USA_recalibrated_shipyards
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+            add_to_variable = { USA_american_airforce_air_navy_sortie_efficiency = 0.3 tooltip = sortie_efficiency_tt }
+			add_to_variable = { USA_american_airforce_air_navy_naval_strike_targetting_factor = 0.075 tooltip = naval_strike_targetting_factor_tt }
 		}
 	}
 
@@ -3205,25 +3305,6 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_escort_effort
 		prerequisite = { focus = USA_escort_effort }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		}
-	}
-
-					
-		focus = {
-		id = USA_atlantic_patrols
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_the_tenth_fleet
-		prerequisite = { focus = USA_the_tenth_fleet }
 		x = 0
 		y = 1
 		cost = 5
@@ -3276,12 +3357,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_unrestricted_submarine_warfare
 		}
 	}
 
