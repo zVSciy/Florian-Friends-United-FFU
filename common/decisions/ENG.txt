@@ -1056,6 +1056,149 @@ political_actions = {
 
 }
 
+ENG_the_purchasing_commission = {
+	
+	ENG_purchase_arms = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			USA = { has_completed_focus = USA_british_purchasing_commission }
+			NOT = { has_country_flag = ENG_already_bought_equipment }
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			add_timed_idea = {
+				idea = ENG_purchasing_commission
+				days = 90
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 4000
+			}
+				set_country_flag = { flag = ENG_already_bought_equipment value = 1 days = 90 }
+		    }
+		}
+
+	ENG_purchase_artillery = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			USA = { has_completed_focus = USA_british_purchasing_commission }
+			NOT = { has_country_flag = ENG_already_bought_equipment }
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			add_timed_idea = {
+				idea = ENG_purchasing_commission
+				days = 90
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+				set_country_flag = { flag = ENG_already_bought_equipment value = 1 days = 90 }
+		    }
+
+		}
+
+		ENG_purchase_artillery_pack = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			USA = { has_completed_focus = USA_british_purchasing_commission }
+			NOT = { has_country_flag = ENG_already_bought_equipment }
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			add_timed_idea = {
+				idea = ENG_purchasing_commission
+				days = 90
+			}
+			add_equipment_to_stockpile = {
+				type = pack_artillery_equipment
+				amount = 1000
+			}
+				set_country_flag = { flag = ENG_already_bought_equipment value = 1 days = 90 }
+		    }
+
+		}
+
+		
+	ENG_purchase_support_equipment = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			USA = { has_completed_focus = USA_british_purchasing_commission }
+			NOT = { has_country_flag = ENG_already_bought_equipment }
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			add_timed_idea = {
+				idea = ENG_purchasing_commission
+				days = 90
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1500
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 3000
+			}
+			add_equipment_to_stockpile = {
+				type = horse_equipment
+				amount = 4000
+			}
+				set_country_flag = { flag = ENG_already_bought_equipment value = 1 days = 90 }
+		    }
+		}
+		
+	ENG_purchase_sf_equipment = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			USA = { has_completed_focus = USA_british_purchasing_commission }
+			NOT = { has_country_flag = ENG_already_bought_equipment }
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			add_timed_idea = {
+				idea = ENG_purchasing_commission
+				days = 90
+			}
+			add_equipment_to_stockpile = {
+				type = sf_equipment
+				amount = 2000
+			}
+				set_country_flag = { flag = ENG_already_bought_equipment value = 1 days = 90 }
+		    }
+		}
+	}
+
 operations = {
 	operation_fork = {
 

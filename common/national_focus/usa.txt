@@ -790,7 +790,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			394 = {
+			393 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}		
+			}
+			261 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = steel_refinery
 					level = 2
@@ -798,20 +807,15 @@ focus_tree = {
 				}
 			}
 			360 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = steel_refinery
 					level = 2
 					instant_build = yes
-				}
+				}		
 			}
-			261 = {
-				add_building_construction = {
-					type = steel_refinery
-					level = 2
-					instant_build = yes
-				}
-			}
-			393 = {
+			358 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = steel_refinery
 					level = 2
@@ -3762,7 +3766,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			is_special_project_completed = sp:sp_nuclear_bomb
 		}
 
 		available_if_capitulated = yes
@@ -5350,16 +5354,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			ENG = {
-			add_timed_idea = {
-				idea = ENG_purchasing_commission
-				days = 60
-			    }
-		    }
-			add_timed_idea = {
-				idea = USA_bpc_eng
-				days = 60
-			}
 		}
 	}
 
@@ -5378,6 +5372,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			
 		}
 	}
 
@@ -5926,9 +5921,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			USA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
-		}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = USA_henry_morgenthau
+				}
 	}
 
 		focus = {
