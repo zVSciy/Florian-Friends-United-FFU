@@ -159,7 +159,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.075 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.075 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 
@@ -3744,44 +3746,12 @@ focus_tree = {
 			}
 		}
 	}
-
-	
-		focus = {
-		id = USA_manhattan_district
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_uranium_advisory
-		prerequisite = { focus = USA_uranium_advisory }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			376 = {
-				infrastructure > 9
-			}
-			382 = {
-				infrastructure > 9
-			}
-			380 = {
-				infrastructure > 9
-			}
-			377 = {
-				infrastructure > 9
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_ideas = USA_manhattan_district_projects
-		}
-	}
-
 		
 		focus = {
 		id = USA_oak_ridge
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_manhattan_district
-		prerequisite = { focus = USA_manhattan_district }
+		relative_position_id = USA_uranium_advisory
+		prerequisite = { focus = USA_uranium_advisory }
 		x = 0
 		y = 1
 		cost = 5
@@ -3793,12 +3763,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_ideas = USA_oak_ridge_facilities
-			395 = {
+			368 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = nuclear_reactor
 					level = 1
 					instant_build = yes
-				}
+				}		
 			}
 		}
 	}
@@ -3819,12 +3790,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			358 = {
-				add_building_construction = {
-					type = air_facility
-					level = 1
-					instant_build = yes
-				}
+			add_tech_bonus = {
+				name = USA_naval_bonuses
+				uses = 1
+				bonus = 1
+				technology = experimental_rockets
 			}
 		}
 	}
@@ -3833,8 +3803,8 @@ focus_tree = {
 		focus = {
 		id = USA_xp_program
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_the_whittle_engine
-		prerequisite = { focus = USA_the_whittle_engine }
+		relative_position_id = USA_jet_engine_development
+		prerequisite = { focus = USA_jet_engine_development }
 		x = 0
 		y = 1
 		cost = 5
@@ -3855,30 +3825,6 @@ focus_tree = {
 				value = 2
 			}
 			add_ideas = USA_jet_engine_programme
-		}
-	}
-			
-		focus = {
-		id = USA_the_whittle_engine
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_jet_engine_development
-		prerequisite = { focus = USA_jet_engine_development }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-				add_tech_bonus = {
-				name = USA_naval_bonuses
-				uses = 1
-				bonus = 0.75
-				technology = experimental_rockets
-			}
 		}
 	}
 
@@ -3912,7 +3858,7 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_the_p80
 		prerequisite = { focus = USA_the_p80 }
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 		available = {
@@ -3935,7 +3881,7 @@ focus_tree = {
 		relative_position_id = USA_copy_the_v1
 		prerequisite = { focus = USA_copy_the_v1 }
 		prerequisite = { focus = USA_atomic_energy_commission }
-		x = -4
+		x = -3
 		y = 1
 		cost = 5
 		available = {
@@ -4018,6 +3964,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_facility_specialization = specialization_naval
+			has_completed_focus = USA_mit_laboratory
 		}
 
 		available_if_capitulated = yes
@@ -4085,7 +4032,6 @@ focus_tree = {
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_einstein_letter
 		prerequisite = { focus = USA_einstein_letter }
-		prerequisite = { focus = USA_uranium_advisory }
 		x = 0
 		y = 1
 		cost = 5
@@ -4122,42 +4068,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-				395 = {
+			395 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = nuclear_reactor
 					level = 1
 					instant_build = yes
-				}
+				}		
 			}
-		}
-	}
-
-		focus = {
-		id = USA_trinity_test
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_pile_1
-		prerequisite = { focus = USA_pile_1 }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			is_special_project_completed = sp:sp_nuclear_bomb
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_political_power = 100
-			add_nuclear_bombs = 1
 		}
 	}
 
 		focus = {
 		id = USA_atomic_energy_commission
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_trinity_test
-		prerequisite = { focus = USA_trinity_test }
-		x = -2
+		relative_position_id = USA_pile_1
+		prerequisite = { focus = USA_pile_1 }
+		x = -1
 		y = 1
 		cost = 5
 		available = {
@@ -5353,9 +5280,8 @@ focus_tree = {
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { USA_american_economy_min_export = 0.075 tooltip = min_export_tt }
-
+			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { USA_american_economy_min_export = 0.1 tooltip = min_export_tt }
 		}
 	}
 
@@ -5368,7 +5294,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			threat > 0.15
+			OR = {
+			    GER = {
+					has_completed_focus = GER_demand_memel
+			    }
+				ITA = {
+					has_completed_focus = ITA_albania_war_goal
+				}
+				date > 1938.1.1
+		    }
 		}
 
 		available_if_capitulated = yes
@@ -5397,36 +5331,12 @@ focus_tree = {
 	}
 
 		focus = {
-		id = USA_accelerated_merchant_marine_expansion
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_allied_industrial_coordination
-		prerequisite = { focus = USA_allied_industrial_coordination }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			ENG = {
-				has_war = yes
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			ENG = {
-				add_ideas = USA_accelerated_merchant_expansions
-			}
-			add_ideas = USA_accelerated_merchant_expansions
-		}
-	}
-
-		focus = {
 		id = USA_cash_and_carry
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_accelerated_merchant_marine_expansion
-		prerequisite = { focus = USA_accelerated_merchant_marine_expansion }
+		relative_position_id = USA_arms_embargo_repeal
+		prerequisite = { focus = USA_allied_industrial_coordination }
 		prerequisite = { focus = USA_arms_embargo_repeal }
-		x = -1
+		x = 2
 		y = 2
 		cost = 5
 		available = {
@@ -5579,7 +5489,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
+			OR = {
 			GER = { has_completed_focus = GER_demand_sudetenland }
+			date > 1938.6.1
+			}
 		}
 
 		available_if_capitulated = yes
@@ -5906,7 +5819,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = USA_pension_reform
+		id = USA_tax_reform
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_labour_management
 		prerequisite = { focus = USA_labour_management }
@@ -5915,27 +5828,6 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_completed_focus = USA_fair_labour_standards_act
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			USA_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
-			add_to_variable = { USA_American_economy_political_power_gain = 0.5 tooltip = political_power_gain_tt }
-		}
-	}
-
-		focus = {
-		id = USA_tax_reform
-		icon = GFX_USA_social_security_act
-		relative_position_id = USA_pension_reform
-		prerequisite = { focus = USA_pension_reform }
-		x = 0
-		y = 1
-		cost = 5
-		available = {
-			
 		}
 
 		available_if_capitulated = yes
@@ -6194,7 +6086,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			368 = {
+				infrastructure > 9
+			}
 		}
 
 		available_if_capitulated = yes
@@ -6611,8 +6505,10 @@ focus_tree = {
 			
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = USA_man_the_guns
+			hidden_effect = {
 			685 = {
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
 		    } 
 		}
 	}
@@ -6627,7 +6523,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			date > 1939.6.1
+			date > 1939.3.1
 		}
 
 		available_if_capitulated = yes
@@ -6747,6 +6643,7 @@ focus_tree = {
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_industrial_capacity_dockyard = 0.075 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { USA_american_economy_production_speed_dockyard_factor = 0.2 tooltip = production_speed_dockyard_factor_tt }
 		}
 	}
 
@@ -7594,11 +7491,11 @@ focus_tree = {
 		cost = 5
 		available = {
 				AND = {
-				date > 1939.9.1
+				date > 1940.1.1
 				OR = {
 					ENG = {has_capitulated = yes}
-					SOV= {surrender_progress > 0.85 }
-					USA = {surrender_progress > 0.50 }
+					SOV= {surrender_progress > 0.80 }
+					USA = {surrender_progress > 0.20 }
 				}
 			}
 		}
@@ -7610,6 +7507,11 @@ focus_tree = {
 			 100 = {
 			 	set_building_level = {
 			 		type = air_base
+			 		level = 50
+			 		instant_build = yes
+				}
+					set_building_level = {
+			 		type = naval_base
 			 		level = 20
 			 		instant_build = yes
 				}
@@ -7672,6 +7574,18 @@ focus_tree = {
 			}
 			hidden_effect = {
 				every_state = { limit = { has_state_flag = ita_dday}
+					remove_dynamic_modifier = {
+						modifier = ITALY_DDAY_ENTRENCHMENT1
+					}
+					remove_dynamic_modifier = {
+						modifier = ITALY_DDAY_ENTRENCHMENT2
+					}
+					remove_dynamic_modifier = {
+						modifier = ITALY_DDAY_ENTRENCHMENT3
+					}
+					remove_dynamic_modifier = {
+						modifier = ITALY_DDAY_ENTRENCHMENT4
+					}
 					remove_dynamic_modifier = {
 						modifier = ITALY_DDAY_ENTRENCHMENT5
 					}
