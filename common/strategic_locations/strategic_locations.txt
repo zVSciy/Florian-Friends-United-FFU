@@ -1,17 +1,30 @@
-
-## Just an example
-natural_harbor = {
-	naval_base = 2
-}
-
-defensive_chokepoint = {
-	bunker = 2
-}
-
-defensible_coastline = {
-	coastal_bunker = 2
-}
-
-favorable_approach = {
+## FFU 
+#pacific
+okinawa_hawaii_s_l = {
 	air_base = 2
+	coastal_bunker = 5
+}
+saipan_guam_s_l = {
+	coastal_bunker = 5
+	air_base = -5
+}
+marcus_johnston_s_l = {
+	coastal_bunker = 5
+	air_base = -7
+}
+midway_wake_s_l = {
+	coastal_bunker = 5
+	air_base = -6
+}
+shitter_islands = {
+	coastal_bunker = 2
+	air_base = -8
+}
+
+#south  east asia
+christmas_island_s_l = {
+	air_base = 10
+}
+dei_singapoor_s_l = {
+	air_base = -5
 }
