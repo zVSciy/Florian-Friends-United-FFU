@@ -215,7 +215,6 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 	special_forces_cap
 	no_wars_usa
-	USA_nra_save_me
 	USA_flint_strikes_idea
 }
 ### DYNAMIC MODIFIERS 
@@ -230,6 +229,7 @@ add_to_variable = { USA_american_economy_gd_join_faction_tension = 0.20 tooltip 
 add_to_variable = { USA_american_economy_gd_local_resources_factor = -0.25 tooltip = local_resources_factor_tt }
 add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.25 tooltip = industrial_capacity_factory_tt }
 add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.25 tooltip = industrial_capacity_dockyard_tt }
+add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = -0.075 tooltip = production_factory_max_efficiency_factor_tt }
 # NEW DEAL
 add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }
 add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
