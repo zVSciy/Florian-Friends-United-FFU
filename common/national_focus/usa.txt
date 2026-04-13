@@ -2603,7 +2603,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fixarmy4 }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			has_army_experience > 50
 		}
@@ -2611,6 +2611,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_army_speed_factor = 0.1 tooltip = army_speed_factor_tt }
+			add_to_variable = { USA_american_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }	
+			army_experience = -50
 		}
 	}
 
@@ -2633,6 +2637,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { USA_american_army_conscription_factor = 0.1 tooltip = conscription_factor_tt }
+			army_experience = -50
 		}
 	}
 
@@ -2653,6 +2661,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_planning = 0.1 tooltip = max_planning_tt }
+			add_to_variable = { USA_american_army_naval_invasion_planning_bonus_speed = 0.1 tooltip = naval_invasion_planning_bonus_speed_tt }
+			add_to_variable = { USA_american_army_max_command_power = 20 tooltip = max_command_power_tt }
+			army_experience = -50
 		}
 	}
 
@@ -2673,6 +2686,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_planning = 0.1 tooltip = max_planning_tt }
+			add_to_variable = { USA_american_army_naval_invasion_planning_bonus_speed = 0.2 tooltip = naval_invasion_planning_bonus_speed_tt }
+			add_to_variable = { USA_american_army_max_command_power = 20 tooltip = max_command_power_tt }
+			add_to_variable = { USA_american_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }
+			army_experience = -50
 		}
 	}
 
