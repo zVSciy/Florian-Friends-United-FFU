@@ -2831,6 +2831,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
+			add_to_variable = { USA_american_army_naval_invasion_planning_bonus_speed = 0.1 tooltip = naval_invasion_planning_bonus_speed_tt }
 		}
 	}
 
@@ -2852,6 +2855,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_alligators_idea
 		}
 	}
 
@@ -2874,6 +2878,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.1 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { USA_american_army_special_forces_defence_factor = 0.1 tooltip = special_forces_defence_factor_tt }
 		}
 	}
 
@@ -3097,7 +3104,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			has_war = yes
+			has_completed_focus = USA_wartime_industry
 		}
 
 		mutually_exclusive = {
@@ -3153,8 +3160,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			set_technology = {
-				advanced_ship_hull_carrier = 1
+			if = {
+				limit = {
+					NOT = { has_tech = advanced_ship_hull_carrier }
+				}
+				set_technology = { advanced_ship_hull_carrier = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = improved_ship_hull_carrier }
+				}
+				set_technology = { improved_ship_hull_carrier = 1 }
 			}
 			create_equipment_variant = {
 				name = "Essex Class"
@@ -3257,7 +3273,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			has_war = yes
+			has_completed_focus = USA_wartime_industry
 		}
 
 		mutually_exclusive = {
