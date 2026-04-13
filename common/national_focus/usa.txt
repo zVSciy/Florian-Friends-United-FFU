@@ -3154,11 +3154,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			set_technology = {
-				advanced_carrier = 1
+				advanced_ship_hull_carrier = 1
 			}
 			create_equipment_variant = {
 				name = "Essex Class"
-				type = carrier_4
+				type = ship_hull_carrier_3
 				name_group = USA_CV_HISTORICAL
 				design_team = mio:USA_newport_news_shipbuilding_organization
 				parent_version = 0
@@ -3179,7 +3179,7 @@ focus_tree = {
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
-							type = carrier_4
+							type = ship_hull_carrier_3
 							creator = "USA"
 						version_name = "Essex Class"
 					}
@@ -3190,7 +3190,7 @@ focus_tree = {
 				}
 					add_equipment_production = {
 					equipment = {
-							type = carrier_4
+							type = ship_hull_carrier_3
 							creator = "USA"
 						version_name = "Essex Class"
 					}
@@ -3201,7 +3201,7 @@ focus_tree = {
 				}
 					add_equipment_production = {
 					equipment = {
-							type = carrier_4
+							type = ship_hull_carrier_3
 							creator = "USA"
 						version_name = "Essex Class"
 					}
@@ -3212,7 +3212,7 @@ focus_tree = {
 				}
 					add_equipment_production = {
 					equipment = {
-							type = carrier_4
+							type = ship_hull_carrier_3
 							creator = "USA"
 						version_name = "Essex Class"
 					}
@@ -3223,7 +3223,7 @@ focus_tree = {
 				}
 					add_equipment_production = {
 					equipment = {
-							type = carrier_4
+							type = ship_hull_carrier_3
 							creator = "USA"
 						version_name = "Essex Class"
 					}
@@ -3234,7 +3234,7 @@ focus_tree = {
 				}
 					add_equipment_production = {
 					equipment = {
-							type = carrier_4
+							type = ship_hull_carrier_3
 							creator = "USA"
 						version_name = "Essex Class"
 					}
