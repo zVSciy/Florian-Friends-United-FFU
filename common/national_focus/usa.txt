@@ -2736,6 +2736,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
+			add_to_variable = { USA_american_army_naval_invasion_plan_cap = 3 tooltip = naval_invasion_plan_cap_tt }
+			add_to_variable = { USA_american_army_naval_invasion_penalty = -0.15 tooltip = naval_invasion_penalty_tt }
 		}
 	}
 
@@ -2755,6 +2759,21 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_field_marshal_role = {
+				character = USA_alexander_vandegrift
+				traits = { organizer naval_invader commando jungle_rat infantry_leader }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
+				add_doctrine_cost_reduction = {
+					name = USA_expand_the_USMC
+					cost_reduction = 0.75
+					uses = 4
+					category = special_forces_doctrine
+			}
 		}
 	}
 
@@ -2774,6 +2793,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_amphibious_invasion_defence = 0.075 tooltip = amphibious_invasion_defence_tt }
+			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.025 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { USA_american_army_special_forces_defence_factor = 0.025 tooltip = special_forces_defence_factor_tt }
 		}
 	}
 
@@ -2792,6 +2815,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			
 		}
 	}
 
@@ -2811,6 +2835,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_cas_present_factor = 0.075 tooltip = air_cas_present_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_cas_damage_reduction = 0.075 tooltip = cas_damage_reduction_tt }
+			add_to_variable = { USA_american_airforce_air_navy_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
 		}
 	}
 
@@ -2825,15 +2853,55 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			OR = {
+			has_tech = extreme_environment_training
+			has_tech = survival_training
+			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			USA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
-			add_to_variable = { USA_american_army_naval_invasion_planning_bonus_speed = 0.1 tooltip = naval_invasion_planning_bonus_speed_tt }
+			custom_effect_tooltip = {
+                localization_key = USA_special_marines
+            }
+		hidden_effect = {
+			division_template = {
+				name = "Devil Dogs"
+				division_names_group = USA_MAR_01
+				template_counter = 4
+				is_locked = no
+				force_allow_recruiting = yes
+				priority = 2
+				division_cap = 18
+
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					usmc_recon = { x = 0 y = 0 }
+				    }
+			    }
+		    }			
 		}
 	}
 
@@ -2879,8 +2947,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.1 tooltip = special_forces_attack_factor_tt }
-			add_to_variable = { USA_american_army_special_forces_defence_factor = 0.1 tooltip = special_forces_defence_factor_tt }
+			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.075 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { USA_american_army_special_forces_defence_factor = 0.075 tooltip = special_forces_defence_factor_tt }
 		}
 	}
 
@@ -5384,7 +5452,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_british_purchasing_commission
-		icon = GFX_USA_social_security_act
+		icon = GFX_buy
 		relative_position_id = USA_export_industrial_material
 		prerequisite = { focus = USA_export_industrial_material }
 		x = 0

@@ -623,6 +623,11 @@ USA_army_dynamic_modifier = {
 	naval_invasion_planning_bonus_speed = USA_american_army_naval_invasion_planning_bonus_speed
 	army_artillery_attack_factor = USA_american_army_army_artillery_attack_factor
 	army_artillery_defence_factor = USA_american_army_army_artillery_defence_factor
+	naval_invasion_plan_cap = USA_american_army_naval_invasion_plan_cap
+	amphibious_invasion_defence = USA_american_army_amphibious_invasion_defence
+	special_forces_attack_factor = USA_american_army_special_forces_attack_factor
+	special_forces_defence_factor = USA_american_army_special_forces_defence_factor
+	special_forces_out_of_supply_factor = USA_american_army_special_forces_out_of_supply_factor
 }
 
 USA_air_navy_dynamic_modifier = {
@@ -647,6 +652,9 @@ USA_air_navy_dynamic_modifier = {
 	production_speed_radar_station_factor = USA_american_airforce_air_navy_production_speed_radar_station_factor
 	production_speed_rail_way_factor = USA_american_airforce_air_navy_production_speed_rail_way_factor
 	production_speed_supply_node_factor = USA_american_airforce_air_navy_production_speed_supply_node_factor
+	army_bonus_air_superiority_factor = USA_american_airforce_air_navy_army_bonus_air_superiority_factor
+	cas_damage_reduction = USA_american_airforce_air_navy_cas_damage_reduction
+
 }
 
 CAN_economy_dynamic_modifier = {
