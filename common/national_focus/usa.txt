@@ -2771,7 +2771,7 @@ focus_tree = {
 				add_doctrine_cost_reduction = {
 					name = USA_expand_the_USMC
 					cost_reduction = 0.75
-					uses = 4
+					uses = 5
 					category = special_forces_doctrine
 			}
 		}
@@ -2794,7 +2794,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_army_amphibious_invasion_defence = 0.075 tooltip = amphibious_invasion_defence_tt }
+			add_to_variable = { USA_american_army_amphibious_invasion_defence = 0.15 tooltip = amphibious_invasion_defence_tt }
 			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.025 tooltip = special_forces_attack_factor_tt }
 			add_to_variable = { USA_american_army_special_forces_defence_factor = 0.025 tooltip = special_forces_defence_factor_tt }
 		}
@@ -2815,7 +2815,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_amphibious_invasion = 0.075 tooltip = amphibious_invasion_tt }
+			add_to_variable = { USA_american_army_special_forces_out_of_supply_factor = -0.15 tooltip = special_forces_out_of_supply_factor_tt }
 		}
 	}
 
@@ -2836,8 +2838,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_cas_damage_reduction = 0.125 tooltip = cas_damage_reduction_tt }
 			add_to_variable = { USA_american_airforce_air_navy_cas_present_factor = 0.075 tooltip = air_cas_present_factor_tt }
-			add_to_variable = { USA_american_airforce_air_navy_cas_damage_reduction = 0.075 tooltip = cas_damage_reduction_tt }
 			add_to_variable = { USA_american_airforce_air_navy_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
 		}
 	}
@@ -2899,9 +2901,16 @@ focus_tree = {
 				}
 				support = {
 					usmc_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					signal_company = { x = 0 y = 2 }
+					logistics_company_mot = { x = 0 y = 3 }
+					heavy_anti_air = { x = 1 y = 0 }
+					hq_company = { x = 1 y = 1 }
+					super_heavy_artillery = { x = 1 y = 2 }
+					rangers_support = { x = 1 y = 3} 
 				    }
 			    }
-		    }			
+		    }
 		}
 	}
 
