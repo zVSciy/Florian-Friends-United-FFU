@@ -536,7 +536,7 @@ USA_congress = {
 			}
 		}
 		fire_only_once = yes
-		days_remove = 365
+		days_remove = 180
 		cost = 25
 		modifier = {
 			political_power_gain = -0.05

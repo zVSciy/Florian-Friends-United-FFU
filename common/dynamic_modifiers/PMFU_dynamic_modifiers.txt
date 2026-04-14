@@ -587,6 +587,7 @@ USA_economy_dynamic_modifier = {
 	min_export = USA_american_economy_min_export
 	stability_weekly = USA_american_economy_stability_weekly
 	production_speed_buildings_factor = USA_american_economy_production_speed_buildings_factor
+	production_lack_of_resource_penalty_factor_tt = USA_american_economy_production_lack_of_resource_penalty_factor_tt
 	# great depression
 	political_power_cost = USA_american_economy_gd_political_power_cost
 	consumer_goods_factor = USA_american_economy_gd_consumer_goods_factor
