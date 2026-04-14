@@ -34,3 +34,11 @@ defined_text = {
         localization_key = LL_NO_NATION_SELECTED
     }
 }
+
+defined_text = {
+    name = GetLLQuotaDisplay
+    text = {
+        trigger = { always = yes }
+        localization_key = LL_QUOTA_DISPLAY
+    }
+}

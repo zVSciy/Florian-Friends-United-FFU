@@ -7424,5 +7424,41 @@ USA_war_struggle = {
 		}
 	}
 
+	USA_ll_quota_check = {
+		icon = generic_political_discourse
+		available = {
+			original_tag = USA
+		}
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 150
+
+		activation = {
+			original_tag = USA
+			has_completed_focus = USA_sudetenland_crisis
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { ll_clicks_this_period = ll_bop_quota }
+				}
+				# Player sent exactly the right number — success
+				# (add success effects here if needed)
+			}
+			else = {
+				# Player sent too many or too few — failure
+				# TODO: add failure effects here
+			}
+			# Reset counter and recalculate quota for next period
+			set_variable = { ll_clicks_this_period = 0 }
+			ll_update_bop_quota = yes
+			add_to_variable = { global.update_monie_ui = 1 }
+		}
+	}
+
 }
  

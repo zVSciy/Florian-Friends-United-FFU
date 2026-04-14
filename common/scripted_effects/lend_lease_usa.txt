@@ -1,7 +1,48 @@
+# ── QUOTA: set ll_bop_quota from current BOP, recalculate ll_remaining_quota ──
+ll_update_bop_quota = {
+    if = {
+        limit = { power_balance_value = { id = USA_war_struggle value < -0.80 } }
+        set_variable = { ll_bop_quota = 0 }    # USA_america_first
+    }
+    else_if = {
+        limit = { power_balance_value = { id = USA_war_struggle value < -0.40 } }
+        set_variable = { ll_bop_quota = 2 }    # USA_total_isolationism
+    }
+    else_if = {
+        limit = { power_balance_value = { id = USA_war_struggle value < -0.01 } }
+        set_variable = { ll_bop_quota = 4 }    # USA_isolationist_sentiment
+    }
+    else_if = {
+        limit = { power_balance_value = { id = USA_war_struggle value < 0.01 } }
+        set_variable = { ll_bop_quota = 4 }    # USA_war_struggle (neutral centre)
+    }
+    else_if = {
+        limit = { power_balance_value = { id = USA_war_struggle value < 0.40 } }
+        set_variable = { ll_bop_quota = 6 }    # USA_conditional_neutrality
+    }
+    else_if = {
+        limit = { power_balance_value = { id = USA_war_struggle value < 0.80 } }
+        set_variable = { ll_bop_quota = 8 }    # USA_interventionist_momentum
+    }
+    else = {
+        set_variable = { ll_bop_quota = 10 }   # USA_interventionist_consensus
+    }
+    set_variable = { ll_remaining_quota = ll_bop_quota }
+    subtract_from_variable = { ll_remaining_quota = ll_clicks_this_period }
+}
+
+# ── Called on every package send: increments click counter and refreshes quota ──
+ll_on_package_sent = {
+    add_to_variable = { ll_clicks_this_period = 1 }
+    ll_update_bop_quota = yes
+}
+
 lend_lease_init = {
     set_variable = { lend_lease_target_nation = 0 }
     clr_country_flag = ll_window_open
     clr_country_flag = ll_package_just_sent
+    set_variable = { ll_clicks_this_period = 0 }
+    ll_update_bop_quota = yes
 }
 
 # ── HELPER MACRO ──────────────────────────────────────────────
