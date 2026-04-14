@@ -7,6 +7,11 @@ scripted_gui = {
         ai_enabled = { always = no }
         dirty = global.update_monie_ui
 
+        visible = {
+            tag = USA
+            has_completed_focus = USA_sudetenland_crisis
+        }
+
         effects = {
             open_lend_lease_button_click = {
                 if = {
