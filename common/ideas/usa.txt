@@ -2241,6 +2241,30 @@ ideas = {
 			}
 		}
 
+		
+			USA_bad_jet_designs = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			equipment_bonus = {
+				jet_fighter_equipment = {
+					build_cost_ic = 0.1 instant = yes
+					reliability = -0.1 instant = yes
+				}
+			}
+		}
+
 			USA_jet_engine_programme = {
 			
 			
@@ -2427,9 +2451,119 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				large_plane_airframe = { ##
-					air_range = 0.25 instant = yes
-				}	
+				strategic_bomber = { ##
+					build_cost_ic = -0.2 instant = yes
+				}
+				cas = { ##
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_fighter = { ##
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+			USA_cas_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				cas = { ##
+					build_cost_ic = -0.2 instant = yes
+				}
+				naval_bomber = { ##
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_fighter = { ##
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		    USA_fighter_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				tactical_bomber = { ##
+					build_cost_ic = -0.2 instant = yes
+				}
+				naval_bomber = { ##
+					build_cost_ic = -0.1 instant = yes
+				}
+				fighter = { ##
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+			USA_usaaf_strats = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				strategic_bomber = { ##
+					build_cost_ic = -0.2 instant = yes
+				}
+				heavy_fighter = {
+					build_cost_ic = -0.2 instant = yes
+				}
+
+			}
+		}
+
+			USA_usaaf_tacs = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				tactical_bomber = { ##
+					build_cost_ic = -0.2 instant = yes
+				}
+				heavy_fighter = {
+					build_cost_ic = -0.2 instant = yes
+				}
+
 			}
 		}
 

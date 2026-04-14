@@ -3505,6 +3505,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = henry_arnold
 		}
 	}
 
@@ -3527,6 +3528,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_air_night_penalty = -0.3 tooltip = air_night_penalty_tt }
+			add_to_variable = { USA_american_airforce_air_navy_army_bonus_air_superiority_factor = 0.1 tooltip = army_bonus_air_superiority_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_mission_efficiency = 0.075 tooltip = air_mission_efficiency_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_home_defence_factor = 0.05 tooltip = air_home_defence_factor_tt }
 		}
 	}
 
@@ -3596,8 +3602,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_heavy_airframe_bonus
-				uses = 4
-				bonus = 1
+				uses = 3
+				bonus = 0.75
 				category = heavy_air
 			}
 		}
@@ -3618,6 +3624,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			custom_effect_tooltip = available_chief_of_airforce
+			show_ideas_tooltip = carl_spaatz
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_air_ace_generation_chance_factor = 0.5 tooltip = air_ace_generation_chance_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_wing_xp_loss_when_killed_factor = -0.3 tooltip = air_wing_xp_loss_when_killed_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_accidents_factor = -0.2 tooltip = air_accidents_factor_tt }
 		}
 	}
 
@@ -3630,12 +3642,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_tech = tac_1
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_heavy_airframe_bonus
+				uses = 1
+				ahead_reduction = 2
+				bonus = 1
+				technology = advanced_large_airframe
+			}
 		}
 	}
 
@@ -3658,6 +3677,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_fighter_focus
 		}
 	}
 
@@ -3676,6 +3696,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.2 tooltip = air_range_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_superiority_efficiency = 0.075 tooltip = air_superiority_efficiency_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_intercept_efficiency = 0.075 tooltip = air_intercept_efficiency_tt }
 		}
 	}
 
@@ -3697,6 +3721,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_cas_focus
 		}
 	}
 
@@ -3718,6 +3743,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = combined_bomber_offensive
 		}
 	}
 
@@ -3736,6 +3762,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.3 tooltip = air_range_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_strategic_bomber_bombing_factor = 0.2 tooltip = air_strategic_bomber_bombing_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_escort_efficiency = 0.15 tooltip = air_escort_efficiency_tt }
+
 		}
 	}
 
@@ -3754,6 +3785,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.125 tooltip = air_range_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_cas_efficiency = 0.1 tooltip = air_cas_efficiency_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_nav_efficiency = 0.1 tooltip = air_nav_efficiency_tt }
 		}
 	}
 
@@ -3776,7 +3811,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		}
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_air_cas_present_factor = 0.1 tooltip = air_cas_present_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_attack_factor = 0.05 tooltip = air_attack_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_defence_factor = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_air_agility_factor = 0.05 tooltip = air_agility_factor_tt }		}
 	}
 
 		focus = {
@@ -3794,6 +3833,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			custom_effect_tooltip = available_chief_of_airforce
+			show_ideas_tooltip = george_kenney
 		}
 	}
 
@@ -3812,6 +3853,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_army_bonus_air_superiority_factor = 0.1 tooltip = army_bonus_air_superiority_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_cas_efficiency = 0.075 tooltip = air_cas_efficiency_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_nav_efficiency = 0.075 tooltip = air_nav_efficiency_tt }
 		}
 	}
 
@@ -3833,6 +3878,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_usaaf_tacs
 		}
 	}
 
@@ -3851,6 +3897,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_cas_present_factor = 0.1 tooltip = air_cas_present_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_bombing_targetting = 0.075 tooltip = air_bombing_targetting_tt }
 		}
 	}
 
@@ -3872,6 +3921,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_usaaf_strats
 		}
 	}
 
@@ -3890,6 +3940,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.2 tooltip = air_range_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_strategic_bomber_bombing_factor = 0.15 tooltip = air_strategic_bomber_bombing_factor_tt }
 		}
 	}
 
@@ -3909,6 +3962,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			362 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+				}		
+			}
 		}
 	}
 
@@ -3943,6 +4004,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
+			num_of_civilian_factories = 650
 			is_special_project_completed = sp:sp_nuclear_bomb
 		}
 
@@ -4037,6 +4099,7 @@ focus_tree = {
 				bonus = 1
 				technology = modern_small_airframe
 			}
+			add_ideas = USA_bad_jet_designs
 		}
 	}
 	
@@ -4052,7 +4115,7 @@ focus_tree = {
 			GER = {
 				has_facility_specialization = specialization_air
 			}
-			date > 1942.6.1
+			date > 1942.1.1
 		}
 
 		available_if_capitulated = yes
@@ -4072,7 +4135,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			date > 1943.1.1
+			date > 1942.6.1
 		}
 
 		available_if_capitulated = yes
@@ -4087,6 +4150,7 @@ focus_tree = {
 			recruit_character = GER_von_braun
 			}
 			add_ideas = USA_operation_paperclip_idea
+			remove_ideas = USA_bad_jet_designs
 			add_research_slot = 1
 		}
 	}
@@ -4275,7 +4339,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			date > 1943.1.1
+			date > 1942.4.1
 		}
 
 		available_if_capitulated = yes
@@ -4463,7 +4527,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			date > 1943.1.1
+			date > 1942.1.1
 		}
 
 		available_if_capitulated = yes

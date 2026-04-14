@@ -10334,7 +10334,6 @@ leader_traits = {
 	air_strategic_bombing_1 = { # Strategic Bombing mission efficiency increased by 4%
 		sprite = 2
 		air_strategic_bomber_bombing_factor = 0.05
-		air_strategic_bomber_night_penalty = 0.05
 		#experience_gain_air = 0.06
 		
 		 
@@ -10350,10 +10349,8 @@ leader_traits = {
 
 	air_strategic_bombing_2 = { # Strategic Bombing mission efficiency increased by 8%
 		sprite = 2
-		air_strategic_bomber_bombing_factor = 0.08
-		air_strategic_bomber_night_penalty = 0.08
-		#experience_gain_air = 0.09
-		
+		air_strategic_bomber_bombing_factor = 0.15
+		air_superiority_efficiency = 0.05
 		 
 
 		ai_will_do = {
@@ -10368,7 +10365,6 @@ leader_traits = {
 	air_strategic_bombing_3 = { # Strategic Bombing mission efficiency increased by 12%
 		sprite = 2
 		air_strategic_bomber_bombing_factor = 0.12
-		air_strategic_bomber_night_penalty = 0.12
 		#experience_gain_air = 0.12
 		
 		 

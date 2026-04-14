@@ -1202,8 +1202,11 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
+			available = {
+				has_completed_focus = USA_airforce_school
+			}
 			traits  = {
-				air_chief_safety_2 
+				air_tactical_bombing_3 
 			}
 			cost = 100
 			ai_will_do  = {
@@ -1269,8 +1272,11 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
+			available = {
+				has_completed_focus = USA_airforce_school
+			}
 			traits  = {
-				air_chief_night_operations_2 
+				air_strategic_bombing_2 
 			}
 			cost = 100
 			ai_will_do  = {
