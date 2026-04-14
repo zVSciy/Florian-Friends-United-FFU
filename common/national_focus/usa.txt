@@ -844,7 +844,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_industry_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 2
 				category = industry
 			}
@@ -896,18 +896,30 @@ focus_tree = {
 
 		focus = {
 		id = USA_department_of_defense
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_War
 		relative_position_id = USA_36_fdr_victory
 		x = -71
 		y = 1
 		cost = 5
 		available = {
-			
+			OR = {
+				has_country_flag = USA_36_fdr_victory
+				has_country_flag = USA_36_landon_victory
+			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = undisturbed_isolation
+				}
+				swap_ideas = {
+					remove_idea = undisturbed_isolation
+					add_idea = isolation
+				}
+			}
 		}
 	}
 
@@ -924,12 +936,20 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_war = yes
+			has_completed_focus = USA_fixarmy8
+			has_completed_focus = USA_fixarmy9
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_command_power_gain_mult = 0.15 tooltip = command_power_gain_mult_tt }
+			add_to_variable = { USA_american_army_max_planning = 0.05 tooltip = max_planning_tt }
+			add_to_variable = { USA_american_army_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
+			add_to_variable = { USA_american_army_coordination_bonus = 0.02 tooltip = coordination_bonus_tt }
+			add_to_variable = { USA_american_army_supply_consumption_factor = -0.1 tooltip = supply_consumption_factor_tt }
 		}
 	}
 
@@ -946,12 +966,20 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			has_war = yes
+			has_completed_focus = USA_fixarmy8
+			has_completed_focus = USA_fixarmy9
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_experience_loss_factor = -0.2 tooltip = experience_loss_factor_tt }
+			add_to_variable = { USA_american_army_max_dig_in = 2 tooltip = max_dig_in_tt }
+			add_to_variable = { USA_american_army_morale_factor = 0.075 tooltip = army_morale_factor_tt }
+			add_to_variable = { USA_american_army_experience_gain_army_unit_factor_tt = 0.1 tooltip = experience_gain_army_unit_factor_tt }
+		    add_to_variable = { USA_american_army_no_supply_grace = 72 tooltip = no_supply_grace_tt }
 		}
 	}
 
@@ -7198,7 +7226,7 @@ focus_tree = {
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_production_speed_air_base_factor = 0.5 tooltip = production_speed_air_base_factor_tt }
-			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.2 tooltip = air_range_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.1 tooltip = air_range_factor_tt }
 			add_to_variable = { USA_american_airforce_air_navy_static_anti_air_damage_factor = 0.2 tooltip = static_anti_air_damage_factor_tt}
 		}
 	}

@@ -42,8 +42,7 @@ ideas = {
 					}
 					NOT = { has_country_flag = DEN_had_volunteer_only_flag }
 				}
-				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
+				NOT = { tag = USA }
 			}
 
 			ai_will_do = {
@@ -73,8 +72,6 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
 				has_war_support > 0.1
-				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
 				if = {
 					limit = {
 						original_tag = AST
@@ -104,6 +101,7 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				NOT = { tag = USA }
 			}
 
 			modifier = {
@@ -209,7 +207,7 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				
+				NOT = { tag = USA }
 			}
 			ai_will_do = {
    				factor = 1
@@ -332,6 +330,7 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				NOT = { tag = USA }
 			}
 
 			ai_will_do = {
@@ -449,6 +448,7 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+			NOT = { tag = USA }
 			}
 
 			ai_will_do = {
@@ -567,6 +567,7 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+			NOT = { tag = USA }
 			}
 
 			ai_will_do = {
