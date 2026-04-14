@@ -7242,7 +7242,197 @@ political_actions = {
 
 USA_war_struggle = {
 
-	
+	USA_the_homefront = {
+		icon = generic_construction
+		available = {
+			original_tag = USA	
+		}
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 100
+
+
+		# Permanent one-time effects applied when the decision is taken
+		complete_effect = {
+			add_stability = 0.02
+			add_war_support = -0.02
+			USA_congress_small_support = yes
+		}
+
+		# Temporary modifiers active while the mission is running
+		modifier = {
+			production_speed_infrastructure_factor = 0.1
+			production_speed_industrial_complex_factor = 0.1
+		}
+
+		timeout_effect = {
+			add_power_balance_value = {
+				id = USA_war_struggle
+				value = -0.1
+			}
+		}
+	}
+
+	USA_support_america_first_committee = {
+		icon = generic_political_discourse
+		available = {
+			original_tag = USA
+		}
+		cost = 75
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 100
+
+		activation = {
+			original_tag = USA
+		}
+
+		complete_effect = {
+			add_stability = 0.03
+			add_war_support = -0.03
+			USA_congress_small_support = yes
+		}
+
+		# Temporary modifiers active while the mission is running
+		modifier = {
+			political_power_gain = 0.15
+		}
+
+		timeout_effect = {
+			add_power_balance_value = {
+				id = USA_war_struggle
+				value = -0.05
+			}
+		}
+	}
+
+	USA_fireside_chats = {
+		icon = generic_political_discourse
+		available = {
+			original_tag = USA
+		}
+		cost = 200
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 100
+
+		activation = {
+			original_tag = USA
+		}
+
+		complete_effect = {
+			USA_congress_medium_support = yes
+		}
+
+		# Temporary modifiers active while the mission is running
+		modifier = {
+			stability_weekly = 0.005
+			war_support_weekly = 0.005
+		}
+
+		timeout_effect = {
+		}
+	}
+
+	USA_invite_foreign_ambassadors = {
+		icon = generic_political_discourse
+		available = {
+			original_tag = USA
+		}
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			# TODO: add unique effect here
+			USA_congress_small_opposition = yes
+			add_power_balance_value = {
+				id = USA_war_struggle
+				value = 0.05
+			}
+		}
+	}
+
+	USA_denounce_axis_aggression = {
+		icon = generic_political_discourse
+		available = {
+			original_tag = USA
+		}
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			USA_congress_small_opposition = yes
+			add_power_balance_value = {
+				id = USA_war_struggle
+				value = 0.15
+			}
+		}
+	}
+
+	USA_address_congress_world_affairs = {
+		icon = generic_political_discourse
+		available = {
+			original_tag = USA
+		}
+		cost = 75
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			USA_congress_small_support = yes
+			# TODO: add "allows some" effect here
+			add_power_balance_value = {
+				id = USA_war_struggle
+				value = 0.15
+			}
+		}
+	}
+
+	USA_selective_training_act = {
+		icon = generic_political_discourse
+		available = {
+			original_tag = USA
+		}
+		cost = 200
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			add_stability = -0.03
+			USA_congress_small_opposition = yes
+			#set_conscription_law = extensive_conscription idk if works
+			add_power_balance_value = {
+				id = USA_war_struggle
+				value = 0.15
+			}
+		}
+	}
 
 }
  
