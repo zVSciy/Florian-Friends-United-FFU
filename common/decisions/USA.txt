@@ -7245,7 +7245,7 @@ USA_war_struggle = {
 	USA_the_homefront = {
 		icon = generic_construction
 		available = {
-			original_tag = USA	
+			
 		}
 		cost = 100
 		fire_only_once = no
@@ -7290,9 +7290,6 @@ USA_war_struggle = {
 		}
 		days_mission_timeout = 100
 
-		activation = {
-			original_tag = USA
-		}
 
 		complete_effect = {
 			add_stability = 0.03
@@ -7325,10 +7322,6 @@ USA_war_struggle = {
 			factor = 0
 		}
 		days_mission_timeout = 100
-
-		activation = {
-			original_tag = USA
-		}
 
 		complete_effect = {
 			USA_congress_medium_support = yes
