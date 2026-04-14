@@ -7,6 +7,11 @@ scripted_gui = {
         ai_enabled = { always = no }
         dirty = global.update_monie_ui
 
+        visible = {
+            tag = USA
+            has_completed_focus = USA_sudetenland_crisis
+        }
+
         effects = {
             open_lend_lease_button_click = {
                 if = {
@@ -255,76 +260,91 @@ scripted_gui = {
             # ── PACKAGE SENDS ─────────────────────────────────
             ll_pkg_arti_button_click = {
                 ll_send_pkg_arti = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_pack_arti_button_click = {
                 ll_send_pkg_pack_arti = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_dp_arti_button_click = {
                 ll_send_pkg_dp_arti = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_rocket_arti_button_click = {
                 ll_send_pkg_rocket_arti = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_heavy_arti_button_click = {
                 ll_send_pkg_heavy_arti = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_at_button_click = {
                 ll_send_pkg_at = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_pack_at_button_click = {
                 ll_send_pkg_pack_at = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_heavy_at_button_click = {
                 ll_send_pkg_heavy_at = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_aa_button_click = {
                 ll_send_pkg_aa = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_heavy_aa_button_click = {
                 ll_send_pkg_heavy_aa = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_inf_button_click = {
                 ll_send_pkg_inf = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_horses_button_click = {
                 ll_send_pkg_horses = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_sf_button_click = {
                 ll_send_pkg_sf = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_trucks_button_click = {
                 ll_send_pkg_trucks = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }
             ll_pkg_tanks_button_click = {
                 ll_send_pkg_tanks = yes
+                ll_on_package_sent = yes
                 set_country_flag = ll_package_just_sent
                 add_to_variable = { global.update_monie_ui = 1 }
             }

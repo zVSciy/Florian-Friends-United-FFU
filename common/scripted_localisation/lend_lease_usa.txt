@@ -1,36 +1,165 @@
+
 defined_text = {
     name = GetLendLeaseTargetName
-
     text = {
         trigger = { check_variable = { var = lend_lease_target_nation value = 1 compare = equals } }
-        localization_key = ENG
+        localization_key = LL_NATION_NAME_ENG
     }
     text = {
         trigger = { check_variable = { var = lend_lease_target_nation value = 2 compare = equals } }
-        localization_key = FRA
+        localization_key = LL_NATION_NAME_FRA
     }
     text = {
         trigger = { check_variable = { var = lend_lease_target_nation value = 3 compare = equals } }
-        localization_key = CAN
+        localization_key = LL_NATION_NAME_CAN
     }
     text = {
         trigger = { check_variable = { var = lend_lease_target_nation value = 4 compare = equals } }
-        localization_key = SAF
+        localization_key = LL_NATION_NAME_SAF
     }
     text = {
         trigger = { check_variable = { var = lend_lease_target_nation value = 5 compare = equals } }
-        localization_key = RAJ
+        localization_key = LL_NATION_NAME_RAJ
     }
     text = {
         trigger = { check_variable = { var = lend_lease_target_nation value = 6 compare = equals } }
-        localization_key = AST
+        localization_key = LL_NATION_NAME_AST
     }
     text = {
         trigger = { check_variable = { var = lend_lease_target_nation value = 7 compare = equals } }
-        localization_key = BRA
+        localization_key = LL_NATION_NAME_BRA
     }
     text = {
-        trigger = { check_variable = { var = lend_lease_target_nation value = 0 compare = equals } }
+        trigger = { always = yes }
         localization_key = LL_NO_NATION_SELECTED
     }
+}
+
+defined_text = {
+    name = GetLLQuotaDisplay
+    text = {
+        trigger = { always = yes }
+        localization_key = LL_QUOTA_DISPLAY
+    }
+}
+
+defined_text = {
+    name = LL_PKG_ARTI
+    text = { trigger = { always = yes } localization_key = LL_PKG_ARTI }
+}
+defined_text = {
+    name = LL_PKG_ARTI_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_ARTI_TT }
+}
+defined_text = {
+    name = LL_PKG_PACK_ARTI
+    text = { trigger = { always = yes } localization_key = LL_PKG_PACK_ARTI }
+}
+defined_text = {
+    name = LL_PKG_PACK_ARTI_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_PACK_ARTI_TT }
+}
+defined_text = {
+    name = LL_PKG_DP_ARTI
+    text = { trigger = { always = yes } localization_key = LL_PKG_DP_ARTI }
+}
+defined_text = {
+    name = LL_PKG_DP_ARTI_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_DP_ARTI_TT }
+}
+defined_text = {
+    name = LL_PKG_ROCKET_ARTI
+    text = { trigger = { always = yes } localization_key = LL_PKG_ROCKET_ARTI }
+}
+defined_text = {
+    name = LL_PKG_ROCKET_ARTI_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_ROCKET_ARTI_TT }
+}
+defined_text = {
+    name = LL_PKG_HEAVY_ARTI
+    text = { trigger = { always = yes } localization_key = LL_PKG_HEAVY_ARTI }
+}
+defined_text = {
+    name = LL_PKG_HEAVY_ARTI_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_HEAVY_ARTI_TT }
+}
+defined_text = {
+    name = LL_PKG_AT
+    text = { trigger = { always = yes } localization_key = LL_PKG_AT }
+}
+defined_text = {
+    name = LL_PKG_AT_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_AT_TT }
+}
+defined_text = {
+    name = LL_PKG_PACK_AT
+    text = { trigger = { always = yes } localization_key = LL_PKG_PACK_AT }
+}
+defined_text = {
+    name = LL_PKG_PACK_AT_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_PACK_AT_TT }
+}
+defined_text = {
+    name = LL_PKG_HEAVY_AT
+    text = { trigger = { always = yes } localization_key = LL_PKG_HEAVY_AT }
+}
+defined_text = {
+    name = LL_PKG_HEAVY_AT_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_HEAVY_AT_TT }
+}
+defined_text = {
+    name = LL_PKG_AA
+    text = { trigger = { always = yes } localization_key = LL_PKG_AA }
+}
+defined_text = {
+    name = LL_PKG_AA_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_AA_TT }
+}
+defined_text = {
+    name = LL_PKG_HEAVY_AA
+    text = { trigger = { always = yes } localization_key = LL_PKG_HEAVY_AA }
+}
+defined_text = {
+    name = LL_PKG_HEAVY_AA_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_HEAVY_AA_TT }
+}
+defined_text = {
+    name = LL_PKG_INF
+    text = { trigger = { always = yes } localization_key = LL_PKG_INF }
+}
+defined_text = {
+    name = LL_PKG_INF_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_INF_TT }
+}
+defined_text = {
+    name = LL_PKG_HORSES
+    text = { trigger = { always = yes } localization_key = LL_PKG_HORSES }
+}
+defined_text = {
+    name = LL_PKG_HORSES_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_HORSES_TT }
+}
+defined_text = {
+    name = LL_PKG_SF
+    text = { trigger = { always = yes } localization_key = LL_PKG_SF }
+}
+defined_text = {
+    name = LL_PKG_SF_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_SF_TT }
+}
+defined_text = {
+    name = LL_PKG_TRUCKS
+    text = { trigger = { always = yes } localization_key = LL_PKG_TRUCKS }
+}
+defined_text = {
+    name = LL_PKG_TRUCKS_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_TRUCKS_TT }
+}
+defined_text = {
+    name = LL_PKG_TANKS
+    text = { trigger = { always = yes } localization_key = LL_PKG_TANKS }
+}
+defined_text = {
+    name = LL_PKG_TANKS_TT
+    text = { trigger = { always = yes } localization_key = LL_PKG_TANKS_TT }
 }

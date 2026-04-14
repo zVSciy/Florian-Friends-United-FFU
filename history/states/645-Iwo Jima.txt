@@ -14,7 +14,7 @@ state=
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 6
-			air_base = 1
+			air_base = 12
 			13302 = {
 				naval_base = 10
 				coastal_bunker = 2
@@ -23,9 +23,6 @@ state=
 		victory_points = {
 			13025 5
 		 }
-		 strategic_location = {
-			okinawa_hawaii_s_l = 13303 # Province ID
-		}
 
 	}
 	provinces={

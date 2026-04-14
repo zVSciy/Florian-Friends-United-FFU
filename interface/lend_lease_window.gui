@@ -3,7 +3,7 @@ guiTypes = {
     # ── OPEN BUTTON ──────────────────────────────────────────
     containerWindowType = {
         name = "lend_lease_open_button_container"
-        position = { x = 330 y = 187 }
+        position = { x = 300 y = 187 }
 
         buttonType = {
             name = "open_lend_lease_button"
@@ -59,6 +59,18 @@ guiTypes = {
             maxHeight = 30
             fixedsize = yes
             text = "FOREIGN AID"
+        }
+
+        # ── CONGRESSIONAL QUOTA DISPLAY ───────────────────────
+        instantTextBoxType = {
+            name = "ll_quota_value"
+            position = { x = 0 y = 45 }
+            font = "hoi_13b"
+            format = center
+            maxWidth = 700
+            maxHeight = 13
+            fixedsize = yes
+            text = "[GetLLQuotaDisplay]"
         }
 
         # ── COLUMN HEADERS ────────────────────────────────────
@@ -121,13 +133,6 @@ guiTypes = {
             position = { x = 23 y = 94 }
             spriteType = "GFX_flag_ENG"
             alwaystransparent = yes
-        }
-        iconType = {
-            name = "lend_lease_shield_ENG"
-            position = { x = 23 y = 94 }
-            quadTextureSprite = "GFX_shield_medium"
-            alwaystransparent = yes
-            scale = 0.01
         }
 
         # France

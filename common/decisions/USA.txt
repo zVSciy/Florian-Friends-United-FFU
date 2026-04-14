@@ -515,11 +515,6 @@ USA_island_fortification = {
 					level = 5
 					instant_build = yes
 				}
-				set_building_level  = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
 			}
 		}
@@ -577,11 +572,6 @@ USA_island_fortification = {
 					level = 5
 					instant_build = yes
 				}
-				set_building_level  = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
 			}
 		}
@@ -627,11 +617,6 @@ USA_island_fortification = {
 		}
 		remove_effect = {
 			631 = {
-				set_building_level  = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
 				set_building_level  = {
             	    type = coastal_bunker
             	    province = {
@@ -692,7 +677,7 @@ USA_island_fortification = {
 			629 = {
 				set_building_level  = {
 					type = air_base
-					level = 10
+					level = 12
 					instant_build = yes
 				}
 				set_building_level  = {
@@ -7421,6 +7406,48 @@ USA_war_struggle = {
 				id = USA_war_struggle
 				value = 0.15
 			}
+		}
+	}
+
+	USA_ll_quota_check = {
+		icon = generic_political_discourse
+		priority = 100
+		allowed = {
+			tag = USA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 150
+
+		activation = {
+			original_tag = USA
+			has_completed_focus = USA_sudetenland_crisis
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { ll_clicks_this_period = ll_bop_quota }
+				}
+				# Player sent exactly the right number — success
+				# (add success effects here if needed)
+			}
+			else = {
+				# Player sent too many or too few — failure
+				# TODO: add failure effects here
+			}
+			# Reset counter and recalculate quota for next period
+			set_variable = { ll_clicks_this_period = 0 }
+			ll_update_bop_quota = yes
+			add_to_variable = { global.update_monie_ui = 1 }
 		}
 	}
 

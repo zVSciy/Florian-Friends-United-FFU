@@ -77,3 +77,9 @@ l_english:
  LL_PKG_TRUCKS_TT:0 "Send 300 motorized trucks to [GetLendLeaseTargetName]."
  LL_PKG_TANKS:0 "200 Medium Tanks"
  LL_PKG_TANKS_TT:0 "Send 200 medium tank chassis to [GetLendLeaseTargetName]."
+
+ LL_QUOTA_DISPLAY:0 "Congressional Lend Lease Demand: [?ll_remaining_quota|0] remaining (quota: [?ll_bop_quota|0])"
+ LL_QUOTA_DISPLAY_TT:0 "Congress demands this many aid packages every 150 days based on the political climate. The number decreases by 1 each time you send a package. Sending more than required pushes the value negative."
+
+ usa_ll_quota_check:0 "Congressional Lend Lease Audit"
+ usa_ll_quota_check_desc:0 "Every 150 days Congress reviews whether the United States has met its foreign aid obligations. Sending exactly the right number of packages is expected."
