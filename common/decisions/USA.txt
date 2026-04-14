@@ -7253,7 +7253,7 @@ USA_war_struggle = {
 		ai_will_do = {
 			factor = 0
 		}
-		days_mission_timeout = 100
+		days_remove = 100
 
 
 		# Permanent one-time effects applied when the decision is taken
@@ -7269,7 +7269,7 @@ USA_war_struggle = {
 			production_speed_industrial_complex_factor = 0.1
 		}
 
-		timeout_effect = {
+		remove_effect = {
 			add_power_balance_value = {
 				id = USA_war_struggle
 				value = -0.1
@@ -7288,7 +7288,7 @@ USA_war_struggle = {
 		ai_will_do = {
 			factor = 0
 		}
-		days_mission_timeout = 100
+		days_remove = 100
 
 
 		complete_effect = {
@@ -7302,7 +7302,7 @@ USA_war_struggle = {
 			political_power_gain = 0.15
 		}
 
-		timeout_effect = {
+		remove_effect = {
 			add_power_balance_value = {
 				id = USA_war_struggle
 				value = -0.05
@@ -7321,7 +7321,7 @@ USA_war_struggle = {
 		ai_will_do = {
 			factor = 0
 		}
-		days_mission_timeout = 100
+		days_remove = 100
 
 		complete_effect = {
 			USA_congress_medium_support = yes
@@ -7331,9 +7331,6 @@ USA_war_struggle = {
 		modifier = {
 			stability_weekly = 0.005
 			war_support_weekly = 0.005
-		}
-
-		timeout_effect = {
 		}
 	}
 
