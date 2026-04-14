@@ -23,6 +23,9 @@ state=
 		victory_points = {
 			13025 5
 		 }
+		 strategic_location = {
+			okinawa_hawaii_s_l = 13303 # Province ID
+		}
 
 	}
 	provinces={

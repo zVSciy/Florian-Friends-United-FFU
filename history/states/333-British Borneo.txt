@@ -31,6 +31,9 @@ state=
 			}
 		}
 		add_core_of = MAL
+		strategic_location = {
+			dei_singapoor_s_l = 12905 # Province ID
+		}
 	}
 
 	provinces={

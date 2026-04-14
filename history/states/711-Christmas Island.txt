@@ -17,6 +17,9 @@ state={
 			}
 		}
 		add_core_of = WST #ENG
+		strategic_location = {
+			christmas_island_s_l = 13005 # Province ID
+		}
 	}
 	
 	provinces={
