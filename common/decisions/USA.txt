@@ -7244,8 +7244,8 @@ USA_war_struggle = {
 
 	USA_the_homefront = {
 		icon = generic_construction
-		available = {
-			
+		allowed = {
+			original_tag = USA
 		}
 		cost = 100
 		fire_only_once = no
@@ -7279,7 +7279,7 @@ USA_war_struggle = {
 
 	USA_support_america_first_committee = {
 		icon = generic_political_discourse
-		available = {
+		allowed = {
 			original_tag = USA
 		}
 		cost = 75
@@ -7312,7 +7312,7 @@ USA_war_struggle = {
 
 	USA_fireside_chats = {
 		icon = generic_political_discourse
-		available = {
+		allowed = {
 			original_tag = USA
 		}
 		cost = 200
@@ -7339,7 +7339,7 @@ USA_war_struggle = {
 
 	USA_invite_foreign_ambassadors = {
 		icon = generic_political_discourse
-		available = {
+		allowed = {
 			original_tag = USA
 		}
 		cost = 50
@@ -7361,7 +7361,7 @@ USA_war_struggle = {
 
 	USA_denounce_axis_aggression = {
 		icon = generic_political_discourse
-		available = {
+		allowed = {
 			original_tag = USA
 		}
 		cost = 100
@@ -7383,7 +7383,7 @@ USA_war_struggle = {
 
 	USA_address_congress_world_affairs = {
 		icon = generic_political_discourse
-		available = {
+		allowed = {
 			original_tag = USA
 		}
 		cost = 75
@@ -7405,7 +7405,7 @@ USA_war_struggle = {
 
 	USA_selective_training_act = {
 		icon = generic_political_discourse
-		available = {
+		allowed = {
 			original_tag = USA
 		}
 		cost = 200
