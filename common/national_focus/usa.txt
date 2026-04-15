@@ -3020,7 +3020,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_big_gun_1
-		icon = X
+		icon = GFX_goal_ITA_gabbiano
 		relative_position_id = USA_bureau_of_ordnance
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 1
@@ -3044,7 +3044,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_big_gun_2
-		icon = X
+		icon = GFX_goal_ITA_heavy_ships_production
 		relative_position_id = USA_big_gun_1
 		prerequisite = { focus = USA_big_gun_1 }
 		x = 0
@@ -3066,9 +3066,9 @@ focus_tree = {
 		}
 	}
 
-			focus = {
+	focus = {
 		id = USA_medium_gun_1
-		icon = X
+		icon = GFX_goal_ITA_new_gunnery_standards
 		relative_position_id = USA_bureau_of_ordnance
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 3
@@ -3092,7 +3092,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_medium_gun_2
-		icon = X
+		icon = GFX_goal_ITA_vas
 		relative_position_id = USA_medium_gun_1
 		prerequisite = { focus = USA_medium_gun_1 }
 		x = 0
@@ -3116,7 +3116,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_small_gun_1
-		icon = X
+		icon = GFX_goal_ITA_light_ships_production
 		relative_position_id = USA_bureau_of_ordnance
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 5
@@ -3141,7 +3141,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_small_gun_2
-		icon = X
+		icon = GFX_goal_ITA_capitani_romani_class
 		relative_position_id = USA_small_gun_1
 		prerequisite = { focus = USA_small_gun_1 }
 		x = 0
@@ -3974,7 +3974,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_establish_the_ndrc
-		icon = X
+		icon = GFX_focus_NORDIC_mon_capstone_airforce
 		relative_position_id = USA_board_of_aeronautics
 		prerequisite = { focus = USA_board_of_aeronautics }
 		x = -10
@@ -4001,7 +4001,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_uranium_advisory
-		icon = X
+		icon = GFX_focus_NORDIC_com_selector_research
 		relative_position_id = USA_establish_the_ndrc
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 0
@@ -4023,7 +4023,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_oak_ridge
-		icon = X
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
 		relative_position_id = USA_uranium_advisory
 		prerequisite = { focus = USA_uranium_advisory }
 		x = 0
@@ -4077,7 +4077,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_xp_program
-		icon = X
+		icon = GFX_focus_generic_jet_planes
 		relative_position_id = USA_jet_engine_development
 		prerequisite = { focus = USA_jet_engine_development }
 		x = 0
@@ -4131,7 +4131,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_copy_the_v1
-		icon = X
+		icon = GFX_focus_NORDIC_dem_form_alliance
 		relative_position_id = USA_the_p80
 		prerequisite = { focus = USA_the_p80 }
 		x = 1
@@ -4153,7 +4153,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_operation_paperclip
-		icon = X
+		icon = GFX_focus_GER_amerikabomber
 		relative_position_id = USA_copy_the_v1
 		prerequisite = { focus = USA_copy_the_v1 }
 		prerequisite = { focus = USA_atomic_energy_commission }
@@ -4232,7 +4232,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_vt_fuze
-		icon = X
+		icon = GFX_goal_ITA_air_weapons
 		relative_position_id = USA_establish_the_ndrc
 		prerequisite = { focus = USA_establish_the_ndrc }
 		prerequisite = { focus = USA_bureau_of_ordnance }
@@ -4257,7 +4257,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_vt_fuze2
-		icon = X
+		icon = GFX_goal_ITA_da_zara_decisive_battles
 		relative_position_id = USA_the_vt_fuze
 		prerequisite = { focus = USA_the_vt_fuze }
 		x = 0
@@ -4306,7 +4306,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_los_alamos_facility
-		icon = X
+		icon = GFX_focus_NORDIC_dem_capstone_research
 		relative_position_id = USA_einstein_letter
 		prerequisite = { focus = USA_einstein_letter }
 		x = 0
@@ -4332,7 +4332,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_pile_1
-		icon = X
+		icon = GFX_focus_YUG_rogozarski
 		relative_position_id = USA_los_alamos_facility
 		prerequisite = { focus = USA_los_alamos_facility }
 		x = 0
@@ -4358,7 +4358,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_atomic_energy_commission
-		icon = X
+		icon = GFX_SOV_soviet_atomic_bomb_project_ccp_2d_sov_compatibility
 		relative_position_id = USA_pile_1
 		prerequisite = { focus = USA_pile_1 }
 		x = -1
@@ -4377,7 +4377,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_ordnance_department
-		icon = X
+		icon = GFX_focus_BRA_dec
 		relative_position_id = USA_office_of_scientific_research_and_development
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		x = -5
@@ -4400,7 +4400,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_mechanized
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_focus_NORDIC_mon_form_alliance
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = 8
@@ -4424,7 +4424,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_advanced_mechanized
-		icon = X
+		icon = GFX_goal_generic_build_tank
 		relative_position_id = USA_mechanized
 		prerequisite = { focus = USA_mechanized }
 		x = 0
@@ -4450,7 +4450,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_amtrac
-		icon = X
+		icon = GFX_focus_NORDIC_dem_selector_research
 		relative_position_id = USA_advanced_mechanized
 		prerequisite = { focus = USA_advanced_mechanized }
 		x = 0
@@ -4474,7 +4474,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_amphibious_drive
-		icon = X
+		icon = GFX_focus_NZL_bob_semple_tank
 		relative_position_id = USA_the_amtrac
 		prerequisite = { focus = USA_the_amtrac focus = USA_the_m4 }
 		x = 0
@@ -4498,7 +4498,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_armored_bonus
-		icon = GFX_crusader
+		icon = GFX_focus_NORDIC_mon_materiel
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = 5
@@ -4522,7 +4522,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_M6
-		icon = X
+		icon = GFX_crusader
 		relative_position_id = USA_armored_bonus
 		prerequisite = { focus = USA_armored_bonus }
 		x = -1
@@ -4546,7 +4546,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_t29
-		icon = X
+		icon = GFX_focus_NORDIC_com_materiel
 		relative_position_id = USA_the_M6
 		prerequisite = { focus = USA_the_M6 }
 		x = 0
@@ -4571,7 +4571,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_m3
-		icon = X
+		icon = GFX_focus_NOR_rikstanken
 		relative_position_id = USA_armored_bonus
 		prerequisite = { focus = USA_armored_bonus }
 		x = 1
@@ -4644,7 +4644,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_arty_bonus
-		icon = X
+		icon = GFX_focus_NORDIC_mon_selector_materiel
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = 2
@@ -4668,7 +4668,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_advanced_arty
-		icon = X
+		icon = GFX_ROM_mountain_artillery
 		relative_position_id = USA_arty_bonus
 		prerequisite = { focus = USA_arty_bonus }
 		x = 0
@@ -4693,7 +4693,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_rocket_arty_bonus
-		icon = X
+		icon = GFX_focus_SMB_mountain_guns
 		relative_position_id = USA_advanced_arty
 		prerequisite = { focus = USA_advanced_arty }
 		x = 0
@@ -4717,7 +4717,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_anti_tank_bonus
-		icon = X
+		icon = GFX_goal_ITA_focus_on_artillery
 		relative_position_id = USA_advanced_arty
 		prerequisite = { focus = USA_advanced_arty }
 		x = -2
@@ -4741,7 +4741,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_land_facility
-		icon = X
+		icon = GFX_focus_NORDIC_mon_army
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = -1
@@ -4791,7 +4791,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_grease_gun
-		icon = X
+		icon = GFX_Goal_USA_Desegregated_military
 		relative_position_id = USA_the_thompson
 		prerequisite = { focus = USA_the_thompson }
 		x = 0
@@ -4815,7 +4815,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_support_equipment_boni
-		icon = X
+		icon = GFX_focus_HUN_form_the_gyorshadtest
 		relative_position_id = USA_land_facility
 		prerequisite = { focus = USA_land_facility }
 		x = 1
@@ -4839,7 +4839,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_aa_1
-		icon = X
+		icon = GFX_focus_CONGO_copper_cartridges
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = -4
@@ -4863,7 +4863,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_aa_2
-		icon = X
+		icon = GFX_focus_PER_construct_air_defenses
 		relative_position_id = USA_heavy_aa_1
 		prerequisite = { focus = USA_heavy_aa_1 }
 		x = 0
