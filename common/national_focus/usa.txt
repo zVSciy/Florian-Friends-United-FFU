@@ -65,7 +65,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 200
 			hidden_effect = {
 			add_to_variable = { USA_american_army_operative_slot = 2 tooltip = operative_slot_tt }
 			}
@@ -97,7 +97,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 200
 			add_ideas = USA_neutrality_act 
 			add_war_support = -0.05
 			hidden_effect = {
@@ -118,7 +118,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 200
 		}
 	}
 
@@ -129,7 +129,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_neutrality_act
 		prerequisite = { focus = USA_neutrality_act }
-		cost = 10
+		cost = 3
 
 		available = {
 		}
@@ -153,7 +153,7 @@ focus_tree = {
 		prerequisite = { focus = USA_wpa }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -215,11 +215,6 @@ focus_tree = {
 		cost = 5
 		available = {
 		congress_medium_support_trigger = yes
-            OR = {
-                threat > 0.2
-                JAP  = { has_war_with = CHI }
-                date > 1938.1.1
-            }
             OR = {
                 not = { has_country_flag = USA_great_depression_cooldown }
                 has_country_flag = {
@@ -428,7 +423,7 @@ focus_tree = {
 		prerequisite = { focus = USA_balance_the_budget focus = USA_deficit_spending }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 		}
 		available_if_capitulated = yes
@@ -514,7 +509,7 @@ focus_tree = {
 		prerequisite = { focus = USA_heavy_industry_expansion }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 		}
 		available_if_capitulated = yes
@@ -608,7 +603,7 @@ focus_tree = {
 		prerequisite = { focus = USA_midwest_development }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 		}
 		available_if_capitulated = yes
@@ -790,7 +785,7 @@ focus_tree = {
 		prerequisite = { focus = USA_develop_brooklyn }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 		}
 		available_if_capitulated = yes
@@ -838,7 +833,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 		}
 
@@ -937,7 +932,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_war = yes
 			has_completed_focus = USA_fixarmy8
@@ -967,7 +962,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_war = yes
 			has_completed_focus = USA_fixarmy8
@@ -994,7 +989,7 @@ focus_tree = {
 		prerequisite = { focus = USA_department_of_defense }
 		x = -12
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			ENG = {has_war = yes}
 		}
@@ -2515,7 +2510,7 @@ focus_tree = {
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = -3
 		y = 1
-		cost = 2
+		cost = 1
 		available = {
 			has_army_experience > 50
 		}
@@ -2538,7 +2533,7 @@ focus_tree = {
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = -1
 		y = 1
-		cost = 2
+		cost = 1
 		available = {
 			has_army_experience > 50
 		}
@@ -2562,7 +2557,7 @@ focus_tree = {
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = 1
 		y = 1
-		cost = 2
+		cost = 1
 		available = {
 			has_army_experience > 50
 		}
@@ -2584,7 +2579,7 @@ focus_tree = {
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = 3
 		y = 1
-		cost = 2
+		cost = 1
 		available = {
 			has_army_experience > 50
 		}
@@ -2610,7 +2605,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fixarmy4 }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			has_army_experience > 50
 		}
@@ -2663,7 +2658,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fixarmy4 }
 		x = 5
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			has_army_experience > 50
 		}
@@ -2687,7 +2682,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fixarmy7 }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_army_experience > 50
 		}
@@ -2712,7 +2707,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fixarmy7 }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_army_experience > 50
 		}
@@ -2737,7 +2732,7 @@ focus_tree = {
 		prerequisite = { focus = USA_department_of_defense }
 		x = 8
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -2759,7 +2754,7 @@ focus_tree = {
 		prerequisite = { focus = USA_department_of_navy }
 		x = 0
 		y = 4
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -2782,7 +2777,7 @@ focus_tree = {
 		prerequisite = { focus = USA_marine_corps }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -2816,7 +2811,7 @@ focus_tree = {
 		prerequisite = { focus = USA_marine_corps_expansion }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -2838,7 +2833,7 @@ focus_tree = {
 		prerequisite = { focus = USA_marine_corps }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -2860,7 +2855,7 @@ focus_tree = {
 		prerequisite = { focus = USA_force_in_readiness }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -2884,7 +2879,7 @@ focus_tree = {
 		prerequisite = { focus = USA_devil_dogs_air }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 			has_tech = extreme_environment_training
@@ -2955,7 +2950,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -2978,7 +2973,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -2999,7 +2994,7 @@ focus_tree = {
 		prerequisite = { focus = USA_department_of_navy }
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3030,7 +3025,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3054,7 +3049,7 @@ focus_tree = {
 		prerequisite = { focus = USA_big_gun_1 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3078,7 +3073,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3102,7 +3097,7 @@ focus_tree = {
 		prerequisite = { focus = USA_medium_gun_1 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3126,7 +3121,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 5
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3151,7 +3146,7 @@ focus_tree = {
 		prerequisite = { focus = USA_small_gun_1 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3177,7 +3172,7 @@ focus_tree = {
 		prerequisite = { focus = USA_department_of_navy }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3197,7 +3192,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3247,7 +3242,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3272,7 +3267,7 @@ focus_tree = {
 		prerequisite = { focus = USA_better_nav }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1942.1.1
 		}
@@ -3391,7 +3386,7 @@ focus_tree = {
 		prerequisite = { focus = USA_essex_class }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_completed_focus = USA_wartime_industry
 		}
@@ -3417,7 +3412,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -5
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3443,7 +3438,7 @@ focus_tree = {
 		prerequisite = { focus = USA_escort_effort }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3466,7 +3461,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -7
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3491,7 +3486,7 @@ focus_tree = {
 		prerequisite = { focus = USA_fleet_submarines }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 		}
 
@@ -3509,7 +3504,7 @@ focus_tree = {
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = -21
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3528,7 +3523,7 @@ focus_tree = {
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		x = -18
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3551,7 +3546,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3575,7 +3570,7 @@ focus_tree = {
 		prerequisite = { focus = USA_autonomized_airforce focus = USA_army_airforce }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3599,7 +3594,7 @@ focus_tree = {
 		prerequisite = { focus = USA_medium_airframe_bonus }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3623,7 +3618,7 @@ focus_tree = {
 		prerequisite = { focus = USA_medium_airframe_bonus }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3834,7 +3829,7 @@ focus_tree = {
 		}
 		x = 4
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3984,7 +3979,7 @@ focus_tree = {
 		prerequisite = { focus = USA_board_of_aeronautics }
 		x = -10
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_decision = give_refuge_ger
 			has_decision = give_refuge_ita
@@ -4011,7 +4006,7 @@ focus_tree = {
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			date > 1939.1.1
 		}
@@ -4033,7 +4028,7 @@ focus_tree = {
 		prerequisite = { focus = USA_uranium_advisory }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			num_of_civilian_factories = 650
 			is_special_project_completed = sp:sp_nuclear_bomb
@@ -4062,7 +4057,7 @@ focus_tree = {
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4087,7 +4082,7 @@ focus_tree = {
 		prerequisite = { focus = USA_jet_engine_development }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			ENG = {
 				OR = {
@@ -4115,7 +4110,7 @@ focus_tree = {
 		prerequisite = { focus = USA_xp_program }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			is_special_project_completed = sp:sp_air_jet_engine
 		}
@@ -4141,7 +4136,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_p80 }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			GER = {
 				has_facility_specialization = specialization_air
@@ -4164,7 +4159,7 @@ focus_tree = {
 		prerequisite = { focus = USA_atomic_energy_commission }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			date > 1942.6.1
 		}
@@ -4193,7 +4188,7 @@ focus_tree = {
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 4
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4218,7 +4213,7 @@ focus_tree = {
 		prerequisite = { focus = USA_mit_laboratory }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			date > 1941.1.1
 		}
@@ -4243,7 +4238,7 @@ focus_tree = {
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = -5
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_facility_specialization = specialization_naval
 			has_completed_focus = USA_mit_laboratory
@@ -4267,7 +4262,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_vt_fuze }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1942.6.1
 			is_special_project_completed = sp:sp_naval_proximity_fuze
@@ -4291,7 +4286,7 @@ focus_tree = {
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			date > 1939.1.1
 		}
@@ -4316,7 +4311,7 @@ focus_tree = {
 		prerequisite = { focus = USA_einstein_letter }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4342,7 +4337,7 @@ focus_tree = {
 		prerequisite = { focus = USA_los_alamos_facility }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			is_special_project_completed = sp:sp_nuclear_reactor
 		}
@@ -4368,7 +4363,7 @@ focus_tree = {
 		prerequisite = { focus = USA_pile_1 }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			date > 1942.4.1
 		}
@@ -4387,7 +4382,7 @@ focus_tree = {
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		x = -5
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4410,7 +4405,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ordnance_department }
 		x = 8
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4434,7 +4429,7 @@ focus_tree = {
 		prerequisite = { focus = USA_mechanized }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4460,7 +4455,7 @@ focus_tree = {
 		prerequisite = { focus = USA_advanced_mechanized }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4484,7 +4479,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_amtrac focus = USA_the_m4 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4508,7 +4503,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ordnance_department }
 		x = 5
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4532,7 +4527,7 @@ focus_tree = {
 		prerequisite = { focus = USA_armored_bonus }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4556,7 +4551,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_M6 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1942.1.1
 		}
@@ -4581,7 +4576,7 @@ focus_tree = {
 		prerequisite = { focus = USA_armored_bonus }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4605,7 +4600,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_m3 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -4629,7 +4624,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_m4 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1942.9.1
 		}
@@ -4654,7 +4649,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ordnance_department }
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4678,7 +4673,7 @@ focus_tree = {
 		prerequisite = { focus = USA_arty_bonus }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4703,7 +4698,7 @@ focus_tree = {
 		prerequisite = { focus = USA_advanced_arty }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4727,7 +4722,7 @@ focus_tree = {
 		prerequisite = { focus = USA_advanced_arty }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4751,7 +4746,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ordnance_department }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4777,7 +4772,7 @@ focus_tree = {
 		prerequisite = { focus = USA_land_facility }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4801,7 +4796,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_thompson }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4825,7 +4820,7 @@ focus_tree = {
 		prerequisite = { focus = USA_land_facility }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4849,7 +4844,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ordnance_department }
 		x = -4
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4873,7 +4868,7 @@ focus_tree = {
 		prerequisite = { focus = USA_heavy_aa_1 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4897,7 +4892,7 @@ focus_tree = {
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = -10
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1937.1.1
 		}
@@ -4929,7 +4924,7 @@ focus_tree = {
 		prerequisite = { focus = USA_neutrality_act2 }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -5480,7 +5475,7 @@ focus_tree = {
 		prerequisite = { focus = USA_mexican_oil_crisis }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5552,7 +5547,7 @@ focus_tree = {
 		prerequisite = { focus = USA_good_neighbor_policy }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5574,7 +5569,7 @@ focus_tree = {
 		prerequisite = { focus = USA_export_industrial_material }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 			    GER = {
@@ -5600,7 +5595,7 @@ focus_tree = {
 		prerequisite = { focus = USA_british_purchasing_commission }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5620,7 +5615,7 @@ focus_tree = {
 		prerequisite = { focus = USA_arms_embargo_repeal }
 		x = 2
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				ENG = {
@@ -5677,7 +5672,7 @@ focus_tree = {
 		prerequisite = { focus = USA_mexican_oil_crisis }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			JAP = { has_completed_focus = JAP_intervene_in_china }
 		}
@@ -5718,7 +5713,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5741,7 +5736,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			congress_medium_support_trigger = yes
 		}
@@ -5749,14 +5744,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = { # should move BOP towards interventionism
-		USA_congress_small_opposition = yes
+		USA_congress_medium_opposition = yes
 		   add_stability = -0.075
 		   add_war_support = -0.075
 		   add_political_power = 50
 		   	JAP = {
 				add_timed_idea = {
 					idea = USA_international_condemnation
-					days = 90
+					days = 180
 				}
 			}
 		}
@@ -5769,7 +5764,7 @@ focus_tree = {
 		prerequisite = { focus = USA_condemn_japan focus = USA_stay_silent }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 			GER = { has_completed_focus = GER_demand_sudetenland }
@@ -5798,7 +5793,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			congress_medium_support_trigger = yes
 		}
@@ -5806,14 +5801,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = { # should move BOP towards interventionism
-		USA_congress_small_opposition = yes
+		USA_congress_medium_opposition = yes
 	       add_stability = -0.075
 		   add_war_support = -0.075
 		   add_political_power = 50
 		   	GER = {
 				add_timed_idea = {
 					idea = USA_international_condemnation
-					days = 90
+					days = 180
 				}
 			}
 		}
@@ -5829,7 +5824,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5849,7 +5844,7 @@ focus_tree = {
 		prerequisite = { focus = USA_praise_munich focus = USA_condemn_munich }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = { 
 			ENG = { has_war = yes }
 		}
@@ -5871,7 +5866,7 @@ focus_tree = {
 		prerequisite = { focus = USA_arms_embargo_repeal }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5893,7 +5888,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tizard_mission }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
                 VIC = {
                     has_country_flag = VIC_france_capped
@@ -5929,7 +5924,7 @@ focus_tree = {
 		prerequisite = { focus = USA_destroyers_for_bases }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1940.8.1
 		}
@@ -5951,7 +5946,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tizard_mission }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1940.6.1
 		}
@@ -5976,7 +5971,7 @@ focus_tree = {
 		prerequisite = { focus = USA_four_freedoms }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			VIC = {
                     has_country_flag = VIC_france_capped
@@ -6026,7 +6021,7 @@ focus_tree = {
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = -4
 		y = 1
-		cost = 5
+		cost = 1
 		available = {
 			date > 1937.1.1
 		}
@@ -6048,7 +6043,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -6071,7 +6066,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -6091,7 +6086,7 @@ focus_tree = {
 		prerequisite = { focus = USA_side_with_big_business focus = USA_side_with_workers_union }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -6111,7 +6106,7 @@ focus_tree = {
 		prerequisite = { focus = USA_labour_management }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_completed_focus = USA_fair_labour_standards_act
 		}
@@ -6131,7 +6126,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tax_reform }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			date > 1943.1.1
 		}
@@ -6155,6 +6150,11 @@ focus_tree = {
 		cost = 5
 		available = {
 		congress_medium_support_trigger = yes
+		    OR = {
+                threat > 0.2
+                JAP  = { has_war_with = CHI }
+                date > 1938.1.1
+            }
             OR = {
                 not = { has_country_flag = USA_great_depression_cooldown }
                 has_country_flag = {
@@ -6188,9 +6188,9 @@ focus_tree = {
 		prerequisite = { focus = USA_social_security_act }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
-			date > 1938.6.1
+			
 		}
 
 		available_if_capitulated = yes
@@ -6207,7 +6207,7 @@ focus_tree = {
 		prerequisite = { focus = USA_social_security_act }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -6338,7 +6338,7 @@ focus_tree = {
 		prerequisite = { focus = USA_research_grants }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -6370,7 +6370,7 @@ focus_tree = {
 		prerequisite = { focus = USA_natural_resources_development }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			368 = {
 				infrastructure > 9
@@ -6401,7 +6401,7 @@ focus_tree = {
 		prerequisite = { focus = USA_war_on_waste }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -6425,7 +6425,7 @@ focus_tree = {
 		prerequisite = { focus = USA_war_on_waste }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -6495,7 +6495,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tva_expansion }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -6520,7 +6520,7 @@ focus_tree = {
 		prerequisite = { focus = USA_rubber_reserve_company }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			has_completed_focus = USA_wartime_production_board
 		}
@@ -6541,7 +6541,7 @@ focus_tree = {
 		prerequisite = { focus = USA_office_of_production_management }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}

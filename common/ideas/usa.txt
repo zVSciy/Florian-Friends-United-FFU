@@ -40,6 +40,24 @@ ideas = {
 			}
 		}
 
+			USA_paying_cash_and_carry = {
+			removal_cost = -1
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
 			USA_oak_ridge_facilities = {
 			
 			

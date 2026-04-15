@@ -898,12 +898,7 @@ characters={
 				financial_expert 
 			}
 			available = {
-				NOT = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-					}
-				}
+				has_completed_focus = USA_tax_reform
 			}
 		}
 		name="USA_henry_morgenthau"
