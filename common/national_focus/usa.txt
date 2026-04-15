@@ -4899,7 +4899,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+			date > 1937.1.1
 		}
 
 		available_if_capitulated = yes
@@ -5752,7 +5752,7 @@ focus_tree = {
 		USA_congress_small_opposition = yes
 		   add_stability = -0.075
 		   add_war_support = -0.075
-		   add_political_power = -50
+		   add_political_power = 50
 		   	JAP = {
 				add_timed_idea = {
 					idea = USA_international_condemnation
@@ -5809,7 +5809,7 @@ focus_tree = {
 		USA_congress_small_opposition = yes
 	       add_stability = -0.075
 		   add_war_support = -0.075
-		   add_political_power = -50
+		   add_political_power = 50
 		   	GER = {
 				add_timed_idea = {
 					idea = USA_international_condemnation
