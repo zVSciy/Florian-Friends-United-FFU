@@ -148,7 +148,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_nra
-		icon = GFX_
+		icon = GFX_focus_mex_privatisation
 		relative_position_id = USA_wpa
 		prerequisite = { focus = USA_wpa }
 		x = 0
@@ -207,7 +207,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_agricultural_adjustment_act
-		icon = GFX_USA_social_security_act
+		icon = GFX_goal_generic_consumer_goods
 		relative_position_id = USA_36_fdr_victory
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = 6
@@ -382,7 +382,7 @@ focus_tree = {
 	}
 		focus = {
 		id = USA_fair_labour_standards_act
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		relative_position_id = USA_balance_the_budget
 		prerequisite = { focus = USA_balance_the_budget focus = USA_deficit_spending }
 		x = -1
@@ -423,7 +423,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_industry_expansion
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_USA_heavy_industry_revival
 		relative_position_id = USA_balance_the_budget
 		prerequisite = { focus = USA_balance_the_budget focus = USA_deficit_spending }
 		x = -3
@@ -509,7 +509,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_midwest_development
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_USA_heavy_public_works_spending_shine
 		relative_position_id = USA_heavy_industry_expansion
 		prerequisite = { focus = USA_heavy_industry_expansion }
 		x = 0
@@ -603,7 +603,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_revive_core_industry
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_USA_revive_core_industry
 		relative_position_id = USA_midwest_development
 		prerequisite = { focus = USA_midwest_development }
 		x = 0
@@ -689,7 +689,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_develop_newport
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_generic_shipyard
 		relative_position_id = USA_balance_the_budget
 		prerequisite = { focus = USA_balance_the_budget focus = USA_deficit_spending }
 		x = 1
@@ -737,7 +737,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_develop_brooklyn
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = USA_develop_newport
 		prerequisite = { focus = USA_develop_newport }
 		x = 0
@@ -785,7 +785,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_steel_refinery_expansions
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_focus_generic_steel
 		relative_position_id = USA_develop_brooklyn
 		prerequisite = { focus = USA_develop_brooklyn }
 		x = 0
@@ -833,7 +833,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_industrial_modernization
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_USA_modernizing_industry
 		relative_position_id = USA_fair_labour_standards_act
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		x = 0
@@ -856,7 +856,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_federal_housing_act
-		icon = GFX_USA_labour_standards_act
+		icon = GFX_USA_federal_housing_act
 		relative_position_id = USA_industrial_modernization
 		prerequisite = { focus = USA_industrial_modernization }
 		x = 0
@@ -899,7 +899,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_department_of_defense
-		icon = GFX_Goal_USA_War
+		icon = GFX_Goal_USA_department_of_defense_shine
 		relative_position_id = USA_36_fdr_victory
 		x = -71
 		y = 1
@@ -929,7 +929,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_general_staff_autonomy
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_department_of_defense
 		prerequisite = { focus = USA_department_of_defense }
 		mutually_exclusive = {
@@ -959,7 +959,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_theater_staff_autonomy
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_department_of_defense
 		prerequisite = { focus = USA_department_of_defense }
 		mutually_exclusive = {
@@ -989,7 +989,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_department_of_army
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_armoured_might_shine
 		relative_position_id = USA_department_of_defense
 		prerequisite = { focus = USA_department_of_defense }
 		x = -12
@@ -1010,7 +1010,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_war_in_the_pacific
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_pacific_war_shine
 		relative_position_id = USA_department_of_army
 		prerequisite = { focus = USA_department_of_army }
 		x = 0
@@ -2252,7 +2252,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_the_war_in_europe
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_war_plans_division_shine
 		relative_position_id = USA_department_of_army
 		prerequisite = { focus = USA_department_of_army }
 		x = -5
@@ -2272,7 +2272,7 @@ focus_tree = {
 			
 		focus = {
 		id = USA_europes_soft_underbelly
-		icon = GFX_USA_social_security_act
+		icon = GFX_ENG_go_for_the_soft_underbelly_shine
 		relative_position_id = USA_the_war_in_europe
 		prerequisite = { focus = USA_the_war_in_europe }
 		x = -2
@@ -2307,7 +2307,7 @@ focus_tree = {
 				
 		focus = {
 		id = USA_operation_torch
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_torch_shine
 		relative_position_id = USA_europes_soft_underbelly
 		prerequisite = { focus = USA_europes_soft_underbelly }
 		x = -1
@@ -2326,7 +2326,7 @@ focus_tree = {
 					
 		focus = {
 		id = USA_operation_husky
-		icon = GFX_USA_social_security_act
+		icon = GFX_goal_ENG_operation_husky_shine
 		relative_position_id = USA_operation_torch
 		prerequisite = { focus = USA_operation_torch }
 		mutually_exclusive = {
@@ -2348,7 +2348,7 @@ focus_tree = {
 						
 		focus = {
 		id = USA_operation_dragoon
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_generic_attack_vichy_france_shine
 		relative_position_id = USA_operation_torch
 		prerequisite = { focus = USA_operation_torch }
 		mutually_exclusive = {
@@ -2370,7 +2370,7 @@ focus_tree = {
 						
 		focus = {
 		id = USA_operation_overlord
-		icon = GFX_USA_social_security_act
+		icon = GFX_goal_usa_european_intervention
 		relative_position_id = USA_operation_dragoon
 		prerequisite = { focus = USA_operation_husky focus = USA_operation_dragoon focus = USA_operation_sledgehammer focus = USA_operation_apostle }
 		x = 4
@@ -2389,7 +2389,7 @@ focus_tree = {
 				
 		focus = {
 		id = USA_germany_first
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_the_war_in_europe
 		prerequisite = { focus = USA_the_war_in_europe }
 		x = 2
@@ -2422,7 +2422,7 @@ focus_tree = {
 					
 		focus = {
 		id = USA_operation_bolero
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_generic_attack_greece_shine
 		relative_position_id = USA_germany_first
 		prerequisite = { focus = USA_germany_first }
 		x = 1
@@ -2441,7 +2441,7 @@ focus_tree = {
 						
 		focus = {
 		id = USA_operation_apostle
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_operation_bolero
 		prerequisite = { focus = USA_operation_bolero }
 		mutually_exclusive = {
@@ -2463,7 +2463,7 @@ focus_tree = {
 							
 		focus = {
 		id = USA_operation_sledgehammer
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_operation_bolero
 		prerequisite = { focus = USA_operation_bolero }
 		mutually_exclusive = {
@@ -2485,7 +2485,7 @@ focus_tree = {
 		
 	focus = {
 		id = USA_louisiana_maneuvers
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_louisiana_maneauvers
 		relative_position_id = USA_department_of_army
 		prerequisite = { focus = USA_department_of_army }
 		x = 5
@@ -2510,7 +2510,7 @@ focus_tree = {
 			
 		focus = {
 		id = USA_fixarmy1 #build the planners office 
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_louisiana_maneuvers
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = -3
@@ -2533,7 +2533,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_fixarmy2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_louisiana_maneuvers
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = -1
@@ -2557,7 +2557,7 @@ focus_tree = {
 				
 		focus = {
 		id = USA_fixarmy3
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_louisiana_maneuvers
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = 1
@@ -2579,7 +2579,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_fixarmy4
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_louisiana_maneuvers
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		x = 3
@@ -2602,7 +2602,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_fixarmy5
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_fixarmy1
 		prerequisite = { focus = USA_fixarmy1 }
 		prerequisite = { focus = USA_fixarmy2 }
@@ -2629,7 +2629,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_fixarmy6
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_fixarmy1
 		prerequisite = { focus = USA_fixarmy1 }
 		prerequisite = { focus = USA_fixarmy2 }
@@ -2655,7 +2655,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_fixarmy7
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_fixarmy1
 		prerequisite = { focus = USA_fixarmy1 }
 		prerequisite = { focus = USA_fixarmy2 }
@@ -2680,7 +2680,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_fixarmy8
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_fixarmy5
 		prerequisite = { focus = USA_fixarmy5 }
 		prerequisite = { focus = USA_fixarmy6 }
@@ -2705,7 +2705,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_fixarmy9
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_fixarmy5
 		prerequisite = { focus = USA_fixarmy5 }
 		prerequisite = { focus = USA_fixarmy6 }
@@ -2732,7 +2732,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_department_of_navy
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_appoint_a_new_chief_of_staff_shine
 		relative_position_id = USA_department_of_defense
 		prerequisite = { focus = USA_department_of_defense }
 		x = 8
@@ -2754,7 +2754,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_marine_corps
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_begin_rapid_troop_deployment_shine
 		relative_position_id = USA_department_of_navy
 		prerequisite = { focus = USA_department_of_navy }
 		x = 0
@@ -2777,7 +2777,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_marine_corps_expansion
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_strengthen_existing_garrisons_shine
 		relative_position_id = USA_marine_corps
 		prerequisite = { focus = USA_marine_corps }
 		x = -1
@@ -2811,7 +2811,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_uncommon_valor
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_appoint_mcaurther_as_commander_shine
 		relative_position_id = USA_marine_corps_expansion
 		prerequisite = { focus = USA_marine_corps_expansion }
 		x = 0
@@ -2833,7 +2833,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_force_in_readiness
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_marine_corps
 		prerequisite = { focus = USA_marine_corps }
 		x = 1
@@ -2855,7 +2855,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_devil_dogs_air
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_force_in_readiness
 		prerequisite = { focus = USA_force_in_readiness }
 		x = 0
@@ -2878,7 +2878,7 @@ focus_tree = {
 			
 		focus = {
 		id = USA_marine_force_reorganization
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_semper_fi_shine
 		relative_position_id = USA_uncommon_valor
 		prerequisite = { focus = USA_uncommon_valor }
 		prerequisite = { focus = USA_devil_dogs_air }
@@ -2947,7 +2947,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_alligators
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_marine_force_reorganization
 		prerequisite = { focus = USA_marine_force_reorganization }
 		mutually_exclusive = {
@@ -2970,7 +2970,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_leatherneck_infantry
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_marine_force_reorganization
 		prerequisite = { focus = USA_marine_force_reorganization }
 		mutually_exclusive = {
@@ -2994,7 +2994,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_bureau_of_ordnance
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_increase_ONI_funding_shine
 		relative_position_id = USA_department_of_navy
 		prerequisite = { focus = USA_department_of_navy }
 		x = 2
@@ -3025,7 +3025,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_big_gun_1
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_bureau_of_ordnance
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 1
@@ -3049,7 +3049,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_big_gun_2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_big_gun_1
 		prerequisite = { focus = USA_big_gun_1 }
 		x = 0
@@ -3073,7 +3073,7 @@ focus_tree = {
 
 			focus = {
 		id = USA_medium_gun_1
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_bureau_of_ordnance
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 3
@@ -3097,7 +3097,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_medium_gun_2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_medium_gun_1
 		prerequisite = { focus = USA_medium_gun_1 }
 		x = 0
@@ -3121,7 +3121,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_small_gun_1
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_bureau_of_ordnance
 		prerequisite = { focus = USA_bureau_of_ordnance }
 		x = 5
@@ -3146,7 +3146,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_small_gun_2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_small_gun_1
 		prerequisite = { focus = USA_small_gun_1 }
 		x = 0
@@ -3172,7 +3172,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_bureau_of_ships
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_increase_navy_budget_shine
 		relative_position_id = USA_department_of_navy
 		prerequisite = { focus = USA_department_of_navy }
 		x = -2
@@ -3192,7 +3192,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_iowa_class
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_fast_battleships_shine
 		relative_position_id = USA_bureau_of_ships
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -1
@@ -3217,7 +3217,7 @@ focus_tree = {
 			
 		focus = {
 		id = USA_recalibrated_shipyards
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_never_at_a_disadvantage_shine
 		relative_position_id = USA_iowa_class
 		prerequisite = { focus = USA_iowa_class }
 		x = 0
@@ -3242,7 +3242,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_essex_class
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_lay_down_new_carriers_shine
 		relative_position_id = USA_bureau_of_ships
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -3
@@ -3267,7 +3267,7 @@ focus_tree = {
 			
 		focus = {
 		id = USA_fast_carrier_taskforce
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_naval_aviation_shine
 		relative_position_id = USA_better_nav
 		prerequisite = { focus = USA_better_nav }
 		x = 0
@@ -3386,7 +3386,7 @@ focus_tree = {
 				
 		focus = {
 		id = USA_better_nav
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_superior_naval_flying_tactics_shine
 		relative_position_id = USA_essex_class
 		prerequisite = { focus = USA_essex_class }
 		x = 0
@@ -3412,7 +3412,7 @@ focus_tree = {
 			
 		focus = {
 		id = USA_escort_effort
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_adhere_to_mahan_shine
 		relative_position_id = USA_bureau_of_ships
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -5
@@ -3438,7 +3438,7 @@ focus_tree = {
 				
 		focus = {
 		id = USA_the_tenth_fleet
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_naval_exercises_in_the_pacific_shine
 		relative_position_id = USA_escort_effort
 		prerequisite = { focus = USA_escort_effort }
 		x = 0
@@ -3461,7 +3461,7 @@ focus_tree = {
 				
 		focus = {
 		id = USA_fleet_submarines
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_the_young_school_shine
 		relative_position_id = USA_bureau_of_ships
 		prerequisite = { focus = USA_bureau_of_ships }
 		x = -7
@@ -3486,7 +3486,7 @@ focus_tree = {
 					
 		focus = {
 		id = USA_battle_of_the_atlantic_lessons
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_study_taranto_shine
 		relative_position_id = USA_fleet_submarines
 		prerequisite = { focus = USA_fleet_submarines }
 		x = 0
@@ -3504,7 +3504,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_office_of_scientific_research_and_development
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_SRDO
 		relative_position_id = USA_36_fdr_victory
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = -21
@@ -3523,7 +3523,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_board_of_aeronautics
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_expand_airforce_programs_shine
 		relative_position_id = USA_office_of_scientific_research_and_development
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		x = -18
@@ -3543,7 +3543,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_autonomized_airforce
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_birth_of_the_airforce_shine
 		relative_position_id = USA_board_of_aeronautics
 		prerequisite = { focus = USA_board_of_aeronautics }
 		mutually_exclusive = {
@@ -3570,7 +3570,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_medium_airframe_bonus
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_long_range_escort_shine
 		relative_position_id = USA_autonomized_airforce
 		prerequisite = { focus = USA_autonomized_airforce focus = USA_army_airforce }
 		x = 1
@@ -3594,7 +3594,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_light_airframe_bonus
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_focus_on_new_fighters_shine
 		relative_position_id = USA_medium_airframe_bonus
 		prerequisite = { focus = USA_medium_airframe_bonus }
 		x = -1
@@ -3618,7 +3618,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_airframe_bonus
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_begin_heavy_bomber_program_shine
 		relative_position_id = USA_medium_airframe_bonus
 		prerequisite = { focus = USA_medium_airframe_bonus }
 		x = 1
@@ -3642,7 +3642,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_airforce_school
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_modernize_training_facilities_shine
 		relative_position_id = USA_autonomized_airforce
 		prerequisite = { focus = USA_autonomized_airforce }
 		x = -2
@@ -3666,7 +3666,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_develop_b29
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_airforce_school
 		prerequisite = { focus = USA_airforce_school }
 		x = -1
@@ -3692,7 +3692,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_operational_integrity
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_develop_b29
 		prerequisite = { focus = USA_develop_b29 }
 		mutually_exclusive = {
@@ -3714,7 +3714,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_operational_integrity2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_operational_integrity
 		prerequisite = { focus = USA_operational_integrity }
 		x = 0
@@ -3736,7 +3736,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_battlefield_support
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_develop_b29
 		prerequisite = { focus = USA_develop_b29 }
 		mutually_exclusive = {
@@ -3758,7 +3758,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_strategic_destruction
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_form_the_eight_army_airforce_shine
 		relative_position_id = USA_develop_b29
 		prerequisite = { focus = USA_develop_b29 }
 		mutually_exclusive = {
@@ -3780,7 +3780,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_strategic_destruction2
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_airbases_close_to_japan_2_shine
 		relative_position_id = USA_strategic_destruction
 		prerequisite = { focus = USA_strategic_destruction }
 		x = 0
@@ -3803,7 +3803,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_battlefield_support2
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_coastal_defence_shine
 		relative_position_id = USA_battlefield_support
 		prerequisite = { focus = USA_battlefield_support }
 		x = 0
@@ -3826,7 +3826,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_army_airforce
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_army_air_corps
 		relative_position_id = USA_board_of_aeronautics
 		prerequisite = { focus = USA_board_of_aeronautics }
 		mutually_exclusive = {
@@ -3851,7 +3851,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_army_air_support_command
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_army_airforce
 		prerequisite = { focus = USA_army_airforce }
 		x = 2
@@ -3871,7 +3871,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_army_airforce_operations_training
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_army_air_support_command
 		prerequisite = { focus = USA_army_air_support_command }
 		x = 1
@@ -3893,7 +3893,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_tac_bombers
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_airforce_shine
 		relative_position_id = USA_army_airforce_operations_training
 		prerequisite = { focus = USA_army_airforce_operations_training }
 		mutually_exclusive = {
@@ -3915,7 +3915,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_tac_bombers_bonuses
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_tac_bombers
 		prerequisite = { focus = USA_tac_bombers }
 		x = 0
@@ -3936,7 +3936,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_strat_bombers
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_form_the_eight_army_airforce_shine
 		relative_position_id = USA_army_airforce_operations_training
 		prerequisite = { focus = USA_army_airforce_operations_training }
 		mutually_exclusive = {
@@ -3958,7 +3958,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_strat_bombers_bonuses
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_swarm_the_skies_shine
 		relative_position_id = USA_strat_bombers
 		prerequisite = { focus = USA_strat_bombers }
 		x = 0
@@ -3979,7 +3979,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_establish_the_ndrc
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_board_of_aeronautics
 		prerequisite = { focus = USA_board_of_aeronautics }
 		x = -10
@@ -4006,7 +4006,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_uranium_advisory
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_establish_the_ndrc
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 0
@@ -4028,7 +4028,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_oak_ridge
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_uranium_advisory
 		prerequisite = { focus = USA_uranium_advisory }
 		x = 0
@@ -4057,7 +4057,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_jet_engine_development
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_whittles_turbojet_shine
 		relative_position_id = USA_establish_the_ndrc
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 2
@@ -4082,7 +4082,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_xp_program
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_jet_engine_development
 		prerequisite = { focus = USA_jet_engine_development }
 		x = 0
@@ -4110,7 +4110,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_p80
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_shooting_star_shine
 		relative_position_id = USA_xp_program
 		prerequisite = { focus = USA_xp_program }
 		x = 0
@@ -4136,7 +4136,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_copy_the_v1
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_the_p80
 		prerequisite = { focus = USA_the_p80 }
 		x = 1
@@ -4158,7 +4158,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_operation_paperclip
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_copy_the_v1
 		prerequisite = { focus = USA_copy_the_v1 }
 		prerequisite = { focus = USA_atomic_energy_commission }
@@ -4188,7 +4188,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_mit_laboratory
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_armored_column_cover_shine
 		relative_position_id = USA_establish_the_ndrc
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 4
@@ -4213,7 +4213,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_radar_bonuses
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_navy_technical_expertise_shine
 		relative_position_id = USA_mit_laboratory
 		prerequisite = { focus = USA_mit_laboratory }
 		x = 0
@@ -4237,7 +4237,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_vt_fuze
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_establish_the_ndrc
 		prerequisite = { focus = USA_establish_the_ndrc }
 		prerequisite = { focus = USA_bureau_of_ordnance }
@@ -4262,7 +4262,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_vt_fuze2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_the_vt_fuze
 		prerequisite = { focus = USA_the_vt_fuze }
 		x = 0
@@ -4286,7 +4286,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_einstein_letter
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_manhattan
 		relative_position_id = USA_establish_the_ndrc
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = -2
@@ -4311,7 +4311,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_los_alamos_facility
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_einstein_letter
 		prerequisite = { focus = USA_einstein_letter }
 		x = 0
@@ -4337,7 +4337,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_pile_1
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_los_alamos_facility
 		prerequisite = { focus = USA_los_alamos_facility }
 		x = 0
@@ -4363,7 +4363,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_atomic_energy_commission
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_pile_1
 		prerequisite = { focus = USA_pile_1 }
 		x = -1
@@ -4382,7 +4382,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_ordnance_department
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_office_of_scientific_research_and_development
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		x = -5
@@ -4405,7 +4405,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_mechanized
-		icon = GFX_USA_social_security_act
+		icon = GFX_goal_generic_build_tank
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = 8
@@ -4429,7 +4429,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_advanced_mechanized
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_mechanized
 		prerequisite = { focus = USA_mechanized }
 		x = 0
@@ -4455,7 +4455,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_amtrac
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_advanced_mechanized
 		prerequisite = { focus = USA_advanced_mechanized }
 		x = 0
@@ -4479,7 +4479,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_amphibious_drive
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_the_amtrac
 		prerequisite = { focus = USA_the_amtrac focus = USA_the_m4 }
 		x = 0
@@ -4503,7 +4503,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_armored_bonus
-		icon = GFX_USA_social_security_act
+		icon = GFX_crusader
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = 5
@@ -4527,7 +4527,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_M6
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_armored_bonus
 		prerequisite = { focus = USA_armored_bonus }
 		x = -1
@@ -4551,7 +4551,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_t29
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_the_M6
 		prerequisite = { focus = USA_the_M6 }
 		x = 0
@@ -4576,7 +4576,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_m3
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_armored_bonus
 		prerequisite = { focus = USA_armored_bonus }
 		x = 1
@@ -4600,7 +4600,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_m4
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_oregon_maneauvers
 		relative_position_id = USA_the_m3
 		prerequisite = { focus = USA_the_m3 }
 		x = 0
@@ -4624,7 +4624,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_turret_m4
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_improve_armour_shine
 		relative_position_id = USA_the_m4
 		prerequisite = { focus = USA_the_m4 }
 		x = 0
@@ -4649,7 +4649,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_arty_bonus
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = 2
@@ -4673,7 +4673,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_advanced_arty
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_arty_bonus
 		prerequisite = { focus = USA_arty_bonus }
 		x = 0
@@ -4698,7 +4698,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_rocket_arty_bonus
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_advanced_arty
 		prerequisite = { focus = USA_advanced_arty }
 		x = 0
@@ -4722,7 +4722,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_anti_tank_bonus
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_advanced_arty
 		prerequisite = { focus = USA_advanced_arty }
 		x = -2
@@ -4746,7 +4746,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_land_facility
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = -1
@@ -4772,7 +4772,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_thompson
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_new_service_rifle_shine
 		relative_position_id = USA_land_facility
 		prerequisite = { focus = USA_land_facility }
 		x = -1
@@ -4796,7 +4796,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_grease_gun
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_the_thompson
 		prerequisite = { focus = USA_the_thompson }
 		x = 0
@@ -4820,7 +4820,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_support_equipment_boni
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_land_facility
 		prerequisite = { focus = USA_land_facility }
 		x = 1
@@ -4844,7 +4844,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_aa_1
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_ordnance_department
 		prerequisite = { focus = USA_ordnance_department }
 		x = -4
@@ -4868,7 +4868,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_heavy_aa_2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_heavy_aa_1
 		prerequisite = { focus = USA_heavy_aa_1 }
 		x = 0
@@ -4892,7 +4892,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_neutrality_act2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_36_fdr_victory
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = -10
@@ -4924,7 +4924,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_mexican_oil_crisis
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_neutrality_act2
 		prerequisite = { focus = USA_neutrality_act2 }
 		x = 0
@@ -4947,7 +4947,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_nation_building_philippines
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_philippines_2_shine
 		relative_position_id = USA_mexican_oil_crisis
 		prerequisite = { focus = USA_mexican_oil_crisis }
 		x = -4
@@ -4981,7 +4981,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_accelerate_filipino_independence
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_nation_building_philippines
 		prerequisite = { focus = USA_nation_building_philippines }
 		mutually_exclusive = {
@@ -5018,7 +5018,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_filipino_army # THIS FOCUS IS ACTUALLY USA_SUBIC_BASE
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_accelerate_filipino_independence
 		prerequisite = { focus = USA_accelerate_filipino_independence focus = USA_defend_the_philippines }
 		x = 1
@@ -5064,7 +5064,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_defend_the_philippines
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_philippines_1_shine
 		relative_position_id = USA_nation_building_philippines
 		prerequisite = { focus = USA_nation_building_philippines }
 				mutually_exclusive = {
@@ -5178,7 +5178,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_philippines_resources
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_filipino_army
 		prerequisite = { focus = USA_filipino_army }
 		x = 0
@@ -5196,7 +5196,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_philippines_resources
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_filipino_army
 		prerequisite = { focus = USA_filipino_army }
 		x = 0
@@ -5228,7 +5228,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_subic_base # THIS FOCUS IS ACTUALLY USA_FILIPINO_ARMY
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_philippines_resources
 		prerequisite = { focus = USA_philippines_resources }
 		x = 0
@@ -5475,7 +5475,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_good_neighbor_policy
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_por_recover_latin_america
 		relative_position_id = USA_mexican_oil_crisis
 		prerequisite = { focus = USA_mexican_oil_crisis }
 		x = 3
@@ -5547,7 +5547,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_export_industrial_material
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_good_neighbor_policy
 		prerequisite = { focus = USA_good_neighbor_policy }
 		x = 0
@@ -5595,7 +5595,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_allied_industrial_coordination
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_empathy_for_the_french_and_british_people_shine
 		relative_position_id = USA_british_purchasing_commission
 		prerequisite = { focus = USA_british_purchasing_commission }
 		x = 0
@@ -5614,7 +5614,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_cash_and_carry
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_arms_embargo_repeal
 		prerequisite = { focus = USA_allied_industrial_coordination }
 		prerequisite = { focus = USA_arms_embargo_repeal }
@@ -5645,7 +5645,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_lend_lease_act
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_lend_lease_act2_shine
 		relative_position_id = USA_cash_and_carry
 		prerequisite = { focus = USA_cash_and_carry }
 		x = 0
@@ -5672,7 +5672,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_second_sino_japanese_war
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_lost_but_not_forgotten_shine
 		relative_position_id = USA_mexican_oil_crisis
 		prerequisite = { focus = USA_mexican_oil_crisis }
 		x = 0
@@ -5710,7 +5710,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_stay_silent
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_second_sino_japanese_war
 		prerequisite = { focus = USA_second_sino_japanese_war }
 				mutually_exclusive = {
@@ -5733,7 +5733,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_condemn_japan
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_embargo_japan_shine
 		relative_position_id = USA_second_sino_japanese_war
 		prerequisite = { focus = USA_second_sino_japanese_war }
 		mutually_exclusive = {
@@ -5764,7 +5764,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_sudetenland_crisis
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_condemn_japan
 		prerequisite = { focus = USA_condemn_japan focus = USA_stay_silent }
 		x = -1
@@ -5790,7 +5790,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_condemn_munich
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = USA_sudetenland_crisis
 		prerequisite = { focus = USA_sudetenland_crisis }
 		mutually_exclusive = {
@@ -5821,7 +5821,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_praise_munich
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_sudetenland_crisis
 		prerequisite = { focus = USA_sudetenland_crisis }
 		mutually_exclusive = {
@@ -5844,7 +5844,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_arms_embargo_repeal
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_praise_munich
 		prerequisite = { focus = USA_praise_munich focus = USA_condemn_munich }
 		x = 1
@@ -5866,7 +5866,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_tizard_mission
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_arms_embargo_repeal
 		prerequisite = { focus = USA_arms_embargo_repeal }
 		x = 0
@@ -5888,7 +5888,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_destroyers_for_bases
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_tizard_mission
 		prerequisite = { focus = USA_tizard_mission }
 		x = -2
@@ -5924,7 +5924,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_atlantic_charter
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_ARG_join_the_allies
 		relative_position_id = USA_destroyers_for_bases
 		prerequisite = { focus = USA_destroyers_for_bases }
 		x = 0
@@ -5946,7 +5946,7 @@ focus_tree = {
 	}
 		focus = {
 		id = USA_four_freedoms
-		icon = GFX_USA_social_security_act
+		icon = GFX_goal_generic_freedom
 		relative_position_id = USA_tizard_mission
 		prerequisite = { focus = USA_tizard_mission }
 		x = 0
@@ -5971,7 +5971,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_recognize_free_france
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_four_freedoms
 		prerequisite = { focus = USA_four_freedoms }
 		x = 0
@@ -5992,7 +5992,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_casablanca_conference
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_recognize_free_france
 		prerequisite = { focus = USA_recognize_free_france }
 		prerequisite = { focus = USA_atlantic_charter }
@@ -6021,7 +6021,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_labor_strikes
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_usa_union_representation_act
 		relative_position_id = USA_36_fdr_victory
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = -4
@@ -6040,7 +6040,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_side_with_workers_union
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_the_workers_are_in_the_right
 		relative_position_id = USA_labor_strikes
 		prerequisite = { focus = USA_labor_strikes }
 		mutually_exclusive = {
@@ -6063,7 +6063,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_side_with_big_business
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_take_the_side_of_big_business
 		relative_position_id = USA_labor_strikes
 		prerequisite = { focus = USA_labor_strikes }
 		mutually_exclusive = {
@@ -6086,7 +6086,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_labour_management
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_heavy_industry_revival
 		relative_position_id = USA_side_with_big_business
 		prerequisite = { focus = USA_side_with_big_business focus = USA_side_with_workers_union }
 		x = -1
@@ -6106,7 +6106,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_tax_reform
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		relative_position_id = USA_labour_management
 		prerequisite = { focus = USA_labour_management }
 		x = 0
@@ -6126,7 +6126,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_jim_crow
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_desegregation_shine
 		relative_position_id = USA_tax_reform
 		prerequisite = { focus = USA_tax_reform }
 		x = 0
@@ -6147,7 +6147,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_social_security_act
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_new_deal
 		relative_position_id = USA_36_fdr_victory
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = 0
@@ -6202,7 +6202,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_rural_electrification_act
-		icon = GFX_USA_social_security_act
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_social_security_act
 		prerequisite = { focus = USA_social_security_act }
 		x = 1
@@ -6332,7 +6332,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_natural_resources_development
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_generic_steel
 		relative_position_id = USA_rural_electrification_act
 		prerequisite = { focus = USA_rural_electrification_act }
 		prerequisite = { focus = USA_research_grants }
@@ -6365,7 +6365,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_tva_expansion
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_public_works_projects_shine
 		relative_position_id = USA_natural_resources_development
 		prerequisite = { focus = USA_natural_resources_development }
 		x = 0
@@ -6396,7 +6396,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_standard_oil
-		icon = GFX_USA_social_security_act
+		icon = GFX_goal_generic_oil_refinery
 		relative_position_id = USA_war_on_waste
 		prerequisite = { focus = USA_war_on_waste }
 		x = -1
@@ -6420,7 +6420,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_rubber_reserve_company
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_rubber_program
 		relative_position_id = USA_war_on_waste
 		prerequisite = { focus = USA_war_on_waste }
 		x = 1
@@ -6490,7 +6490,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_war_on_waste
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_force_the_companies_to_resign_their_position_shine
 		relative_position_id = USA_tva_expansion
 		prerequisite = { focus = USA_tva_expansion }
 		x = 0
@@ -6514,7 +6514,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_office_of_production_management
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_OPM_shine
 		relative_position_id = USA_standard_oil
 		prerequisite = { focus = USA_standard_oil }
 		prerequisite = { focus = USA_rubber_reserve_company }
@@ -6536,7 +6536,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_controlled_materials_plan
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_present_an_ultimatum_to_strikers_shine
 		relative_position_id = USA_office_of_production_management
 		prerequisite = { focus = USA_office_of_production_management }
 		x = 0
@@ -6558,7 +6558,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_pacific_resources_priority
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_usa_focus_on_asia
 		relative_position_id = USA_controlled_materials_plan
 		prerequisite = { focus = USA_controlled_materials_plan }
 		mutually_exclusive = {
@@ -6619,7 +6619,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_europe_resources_priority
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_usa_focus_on_europe
 		relative_position_id = USA_controlled_materials_plan
 		prerequisite = { focus = USA_controlled_materials_plan }
 		mutually_exclusive = {
@@ -6654,7 +6654,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_the_giant_wakes
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_36_fdr_victory
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = 15
@@ -6676,7 +6676,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_arsenal_of_democracy
-		icon = GFX_USA_social_security_act
+		icon = x
 		relative_position_id = USA_the_giant_wakes
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = -1
@@ -6743,7 +6743,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_two_ocean_navy_act
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_the_giant_wakes
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 1
@@ -6801,7 +6801,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_military_industrial_complex
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_two_ocean_navy_act
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		prerequisite = { focus = USA_arsenal_of_democracy }
@@ -6824,7 +6824,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_detroit_arsenals
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_detroit_vehicle_arsenal
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = -3
@@ -6858,7 +6858,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_north_american_aviations
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = -1
@@ -6893,7 +6893,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_bethlehem_steel
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = 1
@@ -6914,7 +6914,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_higgins_industries
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = 3
@@ -6935,7 +6935,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_USACE_projects
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_usace_military_projects
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }
@@ -6988,7 +6988,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_boeing_plant2
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }
@@ -7041,7 +7041,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_wartime_industry
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_arsenal_of_democracy_shine
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }
@@ -7067,7 +7067,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_willow_bomber_plant
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }
@@ -7120,7 +7120,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_iowa_ordnance_plant
-		icon = GFX_USA_social_security_act
+		icon = X
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }
@@ -7173,7 +7173,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_wartime_production_board
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_wpo
 		relative_position_id = USA_wartime_industry
 		prerequisite = { focus = USA_wartime_industry }
 		x = 0
@@ -7195,7 +7195,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_liberty_ships
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_USA_liberty_ships
 		relative_position_id = USA_wartime_production_board
 		prerequisite = { focus = USA_wartime_production_board }
 		x = -2
@@ -7214,7 +7214,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_strategic_airbase_construction
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_send_the_national_guard_to_protect_the_workers_shine
 		relative_position_id = USA_liberty_ships
 		prerequisite = { focus = USA_liberty_ships }
 		x = 0
@@ -7236,7 +7236,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_the_seabees
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_improve_teething_shine
 		relative_position_id = USA_strategic_airbase_construction
 		prerequisite = { focus = USA_strategic_airbase_construction }
 		x = 0
@@ -7260,7 +7260,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_hanes_mills_war_contract
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_quality_saves_lives_shine
 		relative_position_id = USA_wartime_production_board
 		prerequisite = { focus = USA_wartime_production_board }
 		x = 0
@@ -7338,7 +7338,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_general_motors_war_prod
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_arsenal_of_democracy_shine
 		relative_position_id = USA_hanes_mills_war_contract
 		prerequisite = { focus = USA_hanes_mills_war_contract }
 		x = 0
@@ -7358,7 +7358,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_zenith_radios
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_quality_and_quantity_shine
 		relative_position_id = USA_general_motors_war_prod
 		prerequisite = { focus = USA_general_motors_war_prod }
 		x = 0
@@ -7436,7 +7436,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_ordnance_plants_expansion
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_springfield_armory_focus_shine
 		relative_position_id = USA_wartime_production_board
 		prerequisite = { focus = USA_wartime_production_board }
 		x = 2
@@ -7500,7 +7500,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_chrysler_tanks
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		relative_position_id = USA_ordnance_plants_expansion
 		prerequisite = { focus = USA_ordnance_plants_expansion }
 		x = 0
@@ -7566,7 +7566,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_rock_island_arsenal_organization
-		icon = GFX_USA_social_security_act
+		icon = GFX_USA_rock_island_arsenal
 		relative_position_id = USA_chrysler_tanks
 		prerequisite = { focus = USA_chrysler_tanks }
 		x = 0
@@ -7629,7 +7629,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_mobilise_the_nation
-		icon = GFX_USA_social_security_act
+		icon = GFX_Goal_USA_america_first_shine
 		relative_position_id = USA_zenith_radios
 		prerequisite = { focus = USA_rock_island_arsenal_organization }
 		prerequisite = { focus = USA_the_seabees }
@@ -7769,7 +7769,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_vic_plan
-		icon = GFX_USA_social_security_act
+		icon = GFX_focus_generic_the_giant_wakes
 		relative_position_id = USA_mobilise_the_nation
 		prerequisite = { focus = USA_mobilise_the_nation }
 		x = 0
