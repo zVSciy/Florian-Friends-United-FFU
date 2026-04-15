@@ -1,6 +1,358 @@
 ideas = {
 
 	hidden_ideas = {
+			USA_copy_german_rocketry = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				sp_tag_rocket_speed_factor = 0.1
+			}
+		}
+
+			USA_operation_paperclip_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				special_project_speed_factor = 0.2
+			}
+		}
+
+			USA_oak_ridge_facilities = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				nuclear_production_factor = 0.5
+			}
+		}
+
+			USA_atomic_energy_comm = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.6 
+			}
+		}
+
+		
+			USA_bad_jet_designs = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			equipment_bonus = {
+				jet_fighter_equipment = {
+					build_cost_ic = 0.1 instant = yes
+					reliability = -0.1 instant = yes
+				}
+			}
+		}
+
+			USA_jet_engine_programme = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				sp_air_jet_engine_speed_factor = 0.4
+			}
+		}
+
+			USA_vt_fuze_bonus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				sp_naval_proximity_fuze_speed_factor = 0.9
+			}
+		}
+			USA_recalibrated_bbs = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 0.15 instant = yes
+				}
+			}
+		}
+	
+		bureau_of_ships_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			# modifier = {
+			# 	naval_equipment_upgrade_xp_cost = -0.1
+			# }
+			
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+			USA_ford = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			equipment_bonus = {
+				mechanized_equipment = { 
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized_td_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized_utility_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		USA_alligators_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+			
+			equipment_bonus = {
+				amphibious_mechanized_equipment = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					hardness = 0.1
+				}
+			}
+		}
+
+			USA_arms_embargo_repealed = {
+			removal_cost = -1
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
+		USA_tizard = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+
+			research_bonus = {
+				light_air = 0.1
+				medium_air = 0.1
+				heavy_air = 0.1
+			}
+
+			picture = generic_research_bonus
+	
+		}
+
+			USA_bpc_eng = {
+
+			picture = generic_goods_red_bonus			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.075
+			}
+		}
+
+		
+		USA_french_recognition = {
+			removal_cost = -1
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.5
+			}
+
+			picture = GFX_goal_generic_trade
+	
+		}
+
 		USA_neutrality_idea = {
 			picture = neutrality_idea
 			
@@ -767,44 +1119,6 @@ ideas = {
 			}
 		}
 
-		
-		USA_french_recognition = {
-			removal_cost = -1
-			allowed = {
-				always = no 
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			targeted_modifier = {
-				tag = FRA
-				trade_cost_for_target_factor = -0.5
-			}
-
-			picture = GFX_goal_generic_trade
-	
-		}
-
-			USA_paying_cash_and_carry = {
-			removal_cost = -1
-			allowed = {
-				always = no 
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				consumer_goods_factor = 0.1
-			}
-
-			picture = GFX_goal_generic_trade
-	
-		}
-
 			USA_accelerated_merchant_expansions = {
 			removal_cost = -1
 			allowed = {
@@ -843,50 +1157,6 @@ ideas = {
 			}
 
 			picture = GFX_goal_generic_trade
-	
-		}
-
-			USA_arms_embargo_repealed = {
-			removal_cost = -1
-			allowed = {
-				always = no 
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				consumer_goods_factor = -0.1
-				industrial_capacity_factory = 0.075
-				industrial_capacity_dockyard = 0.075
-			}
-
-			picture = GFX_goal_generic_trade
-	
-		}
-
-		USA_tizard = {
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				research_speed_factor = 0.15
-			}
-
-			research_bonus = {
-				light_air = 0.1
-				medium_air = 0.1
-				heavy_air = 0.1
-			}
-
-			picture = generic_research_bonus
 	
 		}
 		
@@ -1119,75 +1389,12 @@ ideas = {
 			
 			equipment_bonus = {
 				transport_plane_equipment = {
-					air_range = 0.1 instant = yes
-					build_cost_ic = -0.33 instant = yes
+					air_range = 0.15 instant = yes
+					build_cost_ic = -0.5 instant = yes
 				}
 			}
 		}
 	
-		USA_ford = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = idea_generic_license_production
-			
-			equipment_bonus = {
-				motorized_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-			equipment_bonus = {
-				mechanized_equipment = { 
-					build_cost_ic = -0.05 instant = yes
-				}
-				mechanized_td_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				mechanized_spg_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				mechanized_aa_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				mechanized_amphibious_chassis = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				mechanized_utility_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-			}
-		}
-
-		USA_alligators_idea = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = idea_generic_license_production
-			
-			equipment_bonus = {
-				amphibious_mechanized_equipment = {
-					soft_attack = 0.1
-					hard_attack = 0.1
-					hardness = 0.1
-				}
-			}
-		}
 	
 		great_depression = {
 			picture = usa_great_depression_3
@@ -2159,211 +2366,6 @@ ideas = {
 
 			modifier = {
 				sp_nuclear_reactor_speed_factor = 0.5
-			}
-		}
-
-			USA_copy_german_rocketry = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_central_management
-
-			modifier = {
-				sp_tag_rocket_speed_factor = 0.1
-			}
-		}
-
-			USA_operation_paperclip_idea = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_central_management
-
-			modifier = {
-				special_project_speed_factor = 0.2
-			}
-		}
-
-			USA_oak_ridge_facilities = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_central_management
-
-			modifier = {
-				nuclear_production_factor = 0.5
-			}
-		}
-
-			USA_atomic_energy_comm = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_central_management
-
-			modifier = {
-				production_speed_nuclear_reactor_factor = 0.6 
-			}
-		}
-
-		
-			USA_bad_jet_designs = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_central_management
-
-			equipment_bonus = {
-				jet_fighter_equipment = {
-					build_cost_ic = 0.1 instant = yes
-					reliability = -0.1 instant = yes
-				}
-			}
-		}
-
-			USA_jet_engine_programme = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_central_management
-
-			modifier = {
-				sp_air_jet_engine_speed_factor = 0.4
-			}
-		}
-
-			USA_vt_fuze_bonus = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-
-			modifier = {
-				sp_naval_proximity_fuze_speed_factor = 0.9
-			}
-		}
-			USA_recalibrated_bbs = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-			
-			equipment_bonus = {
-				ship_hull_heavy = {
-					build_cost_ic = -0.075 instant = yes
-				}
-				ship_hull_carrier = {
-					build_cost_ic = 0.15 instant = yes
-				}
-			}
-		}
-	
-		bureau_of_ships_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-
-			# modifier = {
-			# 	naval_equipment_upgrade_xp_cost = -0.1
-			# }
-			
-			equipment_bonus = {
-				ship_hull_heavy = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				ship_hull_carrier = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				ship_hull_cruiser = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				ship_hull_light = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				ship_hull_submarine = {
-					build_cost_ic = -0.05 instant = yes
-				}
 			}
 		}
 
