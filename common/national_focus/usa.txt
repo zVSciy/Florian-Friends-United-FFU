@@ -6823,7 +6823,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = USA_detroit_arsenal
+		id = USA_detroit_arsenals
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
@@ -6857,7 +6857,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = USA_north_american_aviation
+		id = USA_north_american_aviations
 		icon = GFX_USA_social_security_act
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
@@ -6936,9 +6936,9 @@ focus_tree = {
 		focus = {
 		id = USA_USACE_projects
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_north_american_aviation
-		prerequisite = { focus = USA_detroit_arsenal }
-		prerequisite = { focus = USA_north_american_aviation }
+		relative_position_id = USA_north_american_aviations
+		prerequisite = { focus = USA_detroit_arsenals }
+		prerequisite = { focus = USA_north_american_aviations }
 		prerequisite = { focus = USA_bethlehem_steel }
 		prerequisite = { focus = USA_higgins_industries }
 		x = -3
@@ -6989,9 +6989,9 @@ focus_tree = {
 		focus = {
 		id = USA_boeing_plant2
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_north_american_aviation
-		prerequisite = { focus = USA_detroit_arsenal }
-		prerequisite = { focus = USA_north_american_aviation }
+		relative_position_id = USA_north_american_aviations
+		prerequisite = { focus = USA_detroit_arsenals }
+		prerequisite = { focus = USA_north_american_aviations }
 		prerequisite = { focus = USA_bethlehem_steel }
 		prerequisite = { focus = USA_higgins_industries }
 		x = -1
@@ -7042,9 +7042,9 @@ focus_tree = {
 		focus = {
 		id = USA_wartime_industry
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_north_american_aviation
-		prerequisite = { focus = USA_detroit_arsenal }
-		prerequisite = { focus = USA_north_american_aviation }
+		relative_position_id = USA_north_american_aviations
+		prerequisite = { focus = USA_detroit_arsenals }
+		prerequisite = { focus = USA_north_american_aviations }
 		prerequisite = { focus = USA_bethlehem_steel }
 		prerequisite = { focus = USA_higgins_industries }
 		x = 1
@@ -7068,9 +7068,9 @@ focus_tree = {
 		focus = {
 		id = USA_willow_bomber_plant
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_north_american_aviation
-		prerequisite = { focus = USA_detroit_arsenal }
-		prerequisite = { focus = USA_north_american_aviation }
+		relative_position_id = USA_north_american_aviations
+		prerequisite = { focus = USA_detroit_arsenals }
+		prerequisite = { focus = USA_north_american_aviations }
 		prerequisite = { focus = USA_bethlehem_steel }
 		prerequisite = { focus = USA_higgins_industries }
 		x = 3
@@ -7121,9 +7121,9 @@ focus_tree = {
 		focus = {
 		id = USA_iowa_ordnance_plant
 		icon = GFX_USA_social_security_act
-		relative_position_id = USA_north_american_aviation
-		prerequisite = { focus = USA_detroit_arsenal }
-		prerequisite = { focus = USA_north_american_aviation }
+		relative_position_id = USA_north_american_aviations
+		prerequisite = { focus = USA_detroit_arsenals }
+		prerequisite = { focus = USA_north_american_aviations }
 		prerequisite = { focus = USA_bethlehem_steel }
 		prerequisite = { focus = USA_higgins_industries }
 		x = 5
