@@ -16,12 +16,11 @@ state={
 			infrastructure = 8
 			industrial_complex = 6
 			arms_factory = 3
-			dockyard = 2
 			steel_refinery = 2
 			air_base = 10
 			3878 = {
 				naval_base = 6
-
+				landmark_statue_of_liberty = 1
 			}
 
 		}

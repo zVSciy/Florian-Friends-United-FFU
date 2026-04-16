@@ -221,7 +221,7 @@
   USA_heavy_airframe_bonus:0 "Develop the B24 Liberator"
   USA_light_airframe_bonus:0 "Develop the P51 Mustang"
   USA_army_air_support_command:0 "Army Air Support Command"
-  USA_army_airforce_operations_Training:0 "Army Airforce Operations Training"
+  USA_army_airforce_operations_training:0 "Army Airforce Operations Training"
   USA_tac_bombers:0 "Tactical Bombers Production Priority"
   USA_strat_bombers:0 "Strategic Bombers Production Priority"
   USA_tac_bombers_bonuses:0 "Tactical Air Command"
@@ -392,6 +392,7 @@
   #### TRAITS ####
   american_caesar_2:0 "American Caesar"
   free_trade_champion:0 "Free Trade Champion"
+  head_of_intelligence:0 "Director of Intelligence"
 
   #### DECISIONS ####
   USA_join_the_allies:0 "Join the Allies"

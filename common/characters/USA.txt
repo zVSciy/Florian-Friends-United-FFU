@@ -26,76 +26,6 @@ characters={
 			id=-1
 		}
 	}
-	USA_earl_browder={
-		name="Earl Browder"
-		advisor={	
-			slot = political_advisor
-			idea_token = earl_browder
-			allowed  = {
-					original_tag  = USA
-				}
-				available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						# has_completed_focus  = USA_suspend_the_presecution 
-						always = no
-						# not  = {
-						# 	focus_progress  = {
-						# 		focus  = USA_neutrality_act 
-						# 		progress > 0.000
-						# 	}
-						# }
-						# not  = {
-						# 	focus_progress  = {
-						# 		focus  = USA_limited_intervention 
-						# 		progress > 0.000
-						# 	}
-						# }
-					}
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
-				}
-				traits  = {
-					communist_revolutionary 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism 
-					}
-				}
-				ai_will_do  = {
-					factor  = 10.000
-					modifier  = {
-						is_historical_focus_on  = yes 
-						not  = {
-							has_dlc = "Man the Guns"
-						}
-						factor  = 0.000
-					}
-				}
-		}
-		portraits={
-			army={
-				small="GFX_idea_earl_browder"
-			}
-			civilian={
-				large="gfx/leaders/USA/portrait_USA_earl_browder.dds"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	USA_geoffrey_keyes={
 		name="Geoffrey Keyes"
 		portraits={
@@ -957,7 +887,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				smooth_talking_charmer 
+				quartermaster_general 
 			}
 		}
 		name="USA_cordell_hull"
@@ -1139,7 +1069,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				compassionate_gentleman 
+				popular_figurehead 
 			}
 		}
 		name="USA_john_winant"
@@ -1155,14 +1085,13 @@ characters={
 			idea_token = usa_william_donovan
 			available  = {
 				has_intelligence_agency  = yes 
-				has_done_agency_upgrade = upgrade_form_department
 			}
 			allowed  = {
 				original_tag  = USA
 				has_dlc = "La Resistance"
 			}
 			traits  = {
-				mastermind_code_cracker 
+				head_of_intelligence 
 			}
 		}
 		name="usa_william_donovan"
@@ -1180,7 +1109,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				armaments_organizer 
+				propaganda_expert 
 			}
 		}
 		name="USA_donald_nelson"
