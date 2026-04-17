@@ -2655,6 +2655,10 @@ country_event = {
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_36_fdr_victory
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = -0.8
+			}
 		}
 		else = {
 			set_country_flag = USA_36_landon_victory
@@ -2697,6 +2701,10 @@ country_event = {
 				traits = {
 					staunch_constitutionalist
 				}
+			}
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = -0.3
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 			if = {
@@ -2744,6 +2752,10 @@ country_event = {
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_40_fdr_victory
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = 0.5
+			}
 		}
 		else = {
 			set_country_flag = USA_40_wilkie_victory
@@ -2792,6 +2804,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_country_flag = USA_40_wilkie_victory
+			}
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = 0.8
 			}
 			retire_country_leader = yes
 			create_country_leader = {
