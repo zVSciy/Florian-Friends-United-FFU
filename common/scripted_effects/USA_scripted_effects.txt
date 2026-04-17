@@ -367,6 +367,29 @@ USA_house_large_opposition = {
 	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
+
+USA_senate_massive_opposition = {
+	custom_effect_tooltip = ffu_usa_senate_massive_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -40 }
+	clamp_temp_variable = { var = temp_factor max = -20 min = -40 }
+	add_to_variable = { senators_support = temp_factor }
+	round_variable = senators_support
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_massive_opposition = {
+	custom_effect_tooltip = ffu_usa_house_massive_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -150 }
+	clamp_temp_variable = { var = temp_factor max = -100 min = -150 }
+	add_to_variable = { representatives_support = temp_factor }
+	round_variable = representatives_support
+	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
 USA_senate_large_support = {
 	custom_effect_tooltip = mtg_usa_senate_large_support_tt
 	set_temp_variable = { temp_factor = random }
@@ -402,9 +425,18 @@ USA_congress_large_opposition = {
 	hidden_effect = {
 		USA_senate_large_opposition = yes
 		USA_house_large_opposition = yes
-		
+
 	}
 }
+
+USA_congress_massive_opposition = {
+	custom_effect_tooltip = ffu_usa_congress_massive_opposition_tt
+	hidden_effect = {
+		USA_senate_massive_opposition = yes
+		USA_house_massive_opposition = yes
+	}
+}
+
 USA_congress_small_support = {
 	custom_effect_tooltip = mtg_usa_congress_small_support_tt
 	hidden_effect = {

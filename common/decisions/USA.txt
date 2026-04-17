@@ -7433,19 +7433,56 @@ USA_war_struggle = {
 		}
 
 		timeout_effect = {
+			# Calculate difference from quota into a temp variable
+			set_variable = { ll_congress_diff = ll_clicks_this_period }
+			subtract_from_variable = { ll_congress_diff = ll_bop_quota }
+
 			if = {
 				limit = {
-					check_variable = { ll_clicks_this_period = ll_bop_quota }
+					check_variable = { ll_congress_diff = 0 }
 				}
-				# Player sent exactly the right number — success
-				# (add success effects here if needed)
+				USA_congress_small_support = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						check_variable = { ll_congress_diff = 1 }
+						check_variable = { ll_congress_diff = -1 }
+					}
+				}
+				USA_congress_small_opposition = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							check_variable = { ll_congress_diff > 1 }
+							check_variable = { ll_congress_diff < 5 }
+						}
+						AND = {
+							check_variable = { ll_congress_diff < -1 }
+							check_variable = { ll_congress_diff > -5 }
+						}
+					}
+				}
+				USA_congress_medium_opposition = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						check_variable = { ll_congress_diff = 5 }
+						check_variable = { ll_congress_diff = -5 }
+					}
+				}
+				USA_congress_large_opposition = yes
 			}
 			else = {
-				# Player sent too many or too few — failure
-				# TODO: add failure effects here
+				USA_congress_massive_opposition = yes
 			}
+
 			# Reset counter and recalculate quota for next period
 			set_variable = { ll_clicks_this_period = 0 }
+			set_variable = { ll_congress_diff = 0 }
 			ll_update_bop_quota = yes
 			add_to_variable = { global.update_monie_ui = 1 }
 		}
