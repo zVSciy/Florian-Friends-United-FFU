@@ -388,6 +388,8 @@
   ### DYNAMIC MODIFIER ###
   USA_islands_local_supply:0 "Island Local Supply"
   USA_mils_explanation_tt:0 "§OUpon completion of this focus, you will not be able to make military factories until you complete the focus Military Industrial Complex§! " 
+  USA_allied_industry_tt:0 "§OUpon completion of this focus, you will unlock a set of decisions to boost your Allies' industries.§!" 
+  USA_uk_bpc_tt:0 "§OUpon completion of this focus, the United Kingdom will unlock a set of decisions to purchase military equipment from the United States.§!" 
 
   #### TRAITS ####
   american_caesar_2:0 "American Caesar"
@@ -601,6 +603,8 @@
   USA_island_fortification_ongoing:0 "Island Fortification in Progress"
   USA_allied_coord_used:0 "Already Supporting a Minor Industry"
   USA_allied_coord_major_used:0 "Already Supporting a Major Industry"
+  USA_ll_quota_check:0 "Congressional Spending Hearing"
+  USA_ll_quota_check_desc:0 "If you Lend Lease more or less than the required Quota shown in the Lend Lease interface, you will lose congressional support. If you hit the quota, you will gain congressional support."
 
   #### FLAG ####
   USA_fdr_win:0 "FDR Reelected"

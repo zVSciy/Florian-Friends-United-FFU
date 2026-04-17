@@ -7257,7 +7257,7 @@ USA_war_struggle = {
 		remove_effect = {
 			add_power_balance_value = {
 				id = USA_war_struggle
-				value = -0.1
+				value = -0.15
 			}
 		}
 	}
@@ -7290,7 +7290,7 @@ USA_war_struggle = {
 		remove_effect = {
 			add_power_balance_value = {
 				id = USA_war_struggle
-				value = -0.05
+				value = -0.1
 			}
 		}
 	}
@@ -7300,7 +7300,7 @@ USA_war_struggle = {
 		allowed = {
 			original_tag = USA
 		}
-		cost = 200
+		cost = 75
 		fire_only_once = no
 
 		ai_will_do = {
@@ -7336,7 +7336,7 @@ USA_war_struggle = {
 			USA_congress_small_opposition = yes
 			add_power_balance_value = {
 				id = USA_war_struggle
-				value = 0.05
+				value = 0.1
 			}
 		}
 	}
@@ -7380,7 +7380,7 @@ USA_war_struggle = {
 			# TODO: add "allows some" effect here
 			add_power_balance_value = {
 				id = USA_war_struggle
-				value = 0.15
+				value = 0.2
 			}
 		}
 	}
@@ -7404,7 +7404,7 @@ USA_war_struggle = {
 			add_ideas = extensive_conscription
 			add_power_balance_value = {
 				id = USA_war_struggle
-				value = 0.15
+				value = 0.25
 			}
 		}
 	}

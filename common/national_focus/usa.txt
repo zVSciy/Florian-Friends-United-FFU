@@ -12,7 +12,7 @@
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 
-### search_filters = {FOCUS_FILTER_POLITICAL}
+### 
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -63,7 +63,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_political_power = 200
 			hidden_effect = {
@@ -120,7 +120,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_political_power = 200
 		}
@@ -163,7 +163,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.075 tooltip = production_factory_efficiency_gain_factor_tt }
@@ -189,7 +189,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			hidden_effect = {
 				swap_ideas = {
@@ -237,7 +237,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_great_depression_level_down = yes
             set_country_flag = USA_great_depression_cooldown
@@ -263,7 +263,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.25 tooltip = production_speed_industrial_complex_factor_tt }
@@ -286,7 +286,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -409,7 +409,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_great_depression_level_down = yes
             set_country_flag = USA_great_depression_cooldown
@@ -435,7 +435,7 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -525,7 +525,7 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -623,7 +623,7 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -713,7 +713,7 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -765,7 +765,7 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -813,7 +813,7 @@ focus_tree = {
 		available = {
 		}
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			393 = {
 				add_extra_state_shared_building_slots = 2
@@ -862,7 +862,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_industry_bonus
@@ -906,7 +906,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_great_depression_level_down = yes
             USA_congress_medium_opposition = yes
@@ -931,7 +931,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			if = {
 				limit = {
@@ -964,7 +964,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_command_power_gain_mult = 0.15 tooltip = command_power_gain_mult_tt }
@@ -994,7 +994,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_experience_loss_factor = -0.2 tooltip = experience_loss_factor_tt }
@@ -1019,7 +1019,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_experience_gain_army = 0.05 tooltip = army_experience_gain_tt }		
@@ -1040,7 +1040,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2283,7 +2283,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2317,7 +2317,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			set_country_flag = USA_war_plan_cooldown
 		}
@@ -2337,7 +2337,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2359,7 +2359,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2381,7 +2381,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2400,7 +2400,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2452,7 +2452,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2474,7 +2474,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2496,7 +2496,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -2515,7 +2515,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_dig_in = 1 tooltip = max_dig_in_tt }
@@ -2540,7 +2540,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_planning = 0.2 tooltip = max_planning_tt }
@@ -2563,7 +2563,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_conscription_factor = 0.1 tooltip = conscription_factor_tt }
@@ -2587,7 +2587,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_army_speed_factor = 0.2 tooltip = army_speed_factor_tt }
@@ -2609,7 +2609,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_command_power = 20 tooltip = max_command_power_tt }
@@ -2635,7 +2635,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_planning = 0.05 tooltip = max_planning_tt }
@@ -2662,7 +2662,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_army_speed_factor = 0.1 tooltip = army_speed_factor_tt }
@@ -2688,7 +2688,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_conscription = 0.01 tooltip = conscription_tt }
@@ -2712,7 +2712,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_planning = 0.1 tooltip = max_planning_tt }
@@ -2737,7 +2737,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_planning = 0.1 tooltip = max_planning_tt }
@@ -2762,7 +2762,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			navy_experience = 100
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
@@ -2784,7 +2784,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
@@ -2807,7 +2807,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_field_marshal_role = {
 				character = USA_alexander_vandegrift
@@ -2841,7 +2841,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_amphibious_invasion_defence = 0.15 tooltip = amphibious_invasion_defence_tt }
@@ -2863,7 +2863,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_amphibious_invasion = 0.075 tooltip = amphibious_invasion_tt }
@@ -2885,7 +2885,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_cas_damage_reduction = 0.125 tooltip = cas_damage_reduction_tt }
@@ -2912,7 +2912,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			custom_effect_tooltip = {
                 localization_key = USA_special_marines
@@ -2980,7 +2980,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_alligators_idea
 		}
@@ -3003,7 +3003,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.075 tooltip = special_forces_attack_factor_tt }
@@ -3024,7 +3024,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			361 = {
 				add_extra_state_shared_building_slots = 1
@@ -3055,7 +3055,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -3079,7 +3079,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -3103,7 +3103,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -3127,7 +3127,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -3151,7 +3151,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -3176,7 +3176,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -3202,7 +3202,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = bureau_of_ships_focus
 		}
@@ -3222,7 +3222,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
@@ -3251,7 +3251,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_recalibrated_bbs
 		}
@@ -3272,7 +3272,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
@@ -3297,7 +3297,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			if = {
 				limit = {
@@ -3420,7 +3420,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
             add_to_variable = { USA_american_airforce_air_navy_sortie_efficiency = 0.3 tooltip = sortie_efficiency_tt }
@@ -3442,7 +3442,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_escort_effort
@@ -3468,7 +3468,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes
 			add_to_variable = { USA_american_airforce_air_navy_naval_detection = 0.3 tooltip = naval_detection_tt }
@@ -3491,7 +3491,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_submarine_1
@@ -3515,7 +3515,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_unrestricted_submarine_warfare
 		}
@@ -3534,7 +3534,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -3553,7 +3553,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = henry_arnold
 		}
@@ -3576,7 +3576,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_air_night_penalty = -0.3 tooltip = air_night_penalty_tt }
@@ -3600,7 +3600,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_medium_airframe_bonus
@@ -3627,7 +3627,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_light_airframe_bonus
@@ -3651,7 +3651,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_heavy_airframe_bonus
@@ -3675,7 +3675,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = carl_spaatz
@@ -3699,7 +3699,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_heavy_airframe_bonus
@@ -3728,7 +3728,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_fighter_focus
 		}
@@ -3747,7 +3747,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.2 tooltip = air_range_factor_tt }
@@ -3772,7 +3772,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_cas_focus
 		}
@@ -3794,7 +3794,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = combined_bomber_offensive
 		}
@@ -3813,7 +3813,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.3 tooltip = air_range_factor_tt }
@@ -3836,7 +3836,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.125 tooltip = air_range_factor_tt }
@@ -3862,7 +3862,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_air_cas_present_factor = 0.1 tooltip = air_cas_present_factor_tt }
@@ -3884,7 +3884,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = george_kenney
@@ -3904,7 +3904,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_army_bonus_air_superiority_factor = 0.1 tooltip = army_bonus_air_superiority_factor_tt }
@@ -3929,7 +3929,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_usaaf_tacs
 		}
@@ -3948,7 +3948,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_cas_present_factor = 0.1 tooltip = air_cas_present_factor_tt }
@@ -3972,7 +3972,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_usaaf_strats
 		}
@@ -3991,7 +3991,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_air_range_factor = 0.2 tooltip = air_range_factor_tt }
@@ -4013,7 +4013,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			362 = {
 				add_extra_state_shared_building_slots = 1
@@ -4039,7 +4039,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_breakthrough_progress = {
 				specialization = specialization_nuclear
@@ -4062,7 +4062,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_oak_ridge_facilities
 			368 = {
@@ -4090,7 +4090,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -4120,7 +4120,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_breakthrough_points = {
 				specialization = specialization_air
@@ -4143,7 +4143,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 				add_tech_bonus = {
 				name = USA_naval_bonuses
@@ -4172,7 +4172,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_copy_german_rocketry
 		}
@@ -4192,7 +4192,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			GER = {
 			GER_von_braun = {
@@ -4221,7 +4221,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 				add_tech_bonus = {
 				name = USA_naval_radar
@@ -4246,7 +4246,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 				add_tech_bonus = {
 				name = USA_naval_radar
@@ -4272,7 +4272,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_breakthrough_points = {
 				specialization = specialization_naval
@@ -4296,7 +4296,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tt
 			add_to_variable = { USA_american_army_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
@@ -4319,7 +4319,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
@@ -4344,7 +4344,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			376 = {
 				add_extra_state_shared_building_slots = 1
@@ -4370,7 +4370,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			395 = {
 				add_extra_state_shared_building_slots = 1
@@ -4396,7 +4396,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_atomic_energy_comm
 		}
@@ -4415,7 +4415,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			army_experience = 100
 			add_breakthrough_points = {
@@ -4438,7 +4438,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -4462,7 +4462,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -4488,7 +4488,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -4512,7 +4512,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -4536,7 +4536,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -4560,7 +4560,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -4584,7 +4584,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -4609,7 +4609,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 				add_tech_bonus = {
 				name = USA_tank_experiments
@@ -4633,7 +4633,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -4657,7 +4657,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -4682,7 +4682,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_boni
@@ -4706,7 +4706,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = mountaineers_tech
@@ -4731,7 +4731,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_boni
@@ -4755,7 +4755,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_boni
@@ -4779,7 +4779,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			361 = {
 				add_building_construction = {
@@ -4805,7 +4805,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_boni
@@ -4829,7 +4829,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_boni
@@ -4853,7 +4853,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_boni
@@ -4877,7 +4877,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = mountaineers_tech
@@ -4901,7 +4901,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = mountaineers_tech
@@ -4925,7 +4925,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			custom_effect_tooltip = USA_congress_focus_support2_tt # tt needs to be updated, its wrong
 			if = {
@@ -4961,7 +4961,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA = {
 			remove_resource_rights = 480
@@ -4984,7 +4984,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			327 = {
 				add_extra_state_shared_building_slots = 4
@@ -5021,7 +5021,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			625 = {
 				add_extra_state_shared_building_slots = 4
@@ -5055,7 +5055,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 				327 = {
                 set_building_level = {
@@ -5104,7 +5104,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_congress_small_opposition = yes
 			327 = {
@@ -5216,7 +5216,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 		}
 	}
@@ -5234,7 +5234,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			627 = {
 				add_resource = {
@@ -5267,7 +5267,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 								division_template = {
 					name = "Far East Army"
@@ -5513,7 +5513,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			BRA = {
 				random_owned_controlled_state = {
@@ -5585,7 +5585,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
@@ -5615,8 +5615,11 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = USA_uk_bpc_tt
+			        }
 		}
 	}
 
@@ -5633,9 +5636,11 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
-			
+			custom_effect_tooltip = {
+				localization_key = USA_allied_industry_tt
+			}
 		}
 	}
 
@@ -5658,7 +5663,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = { # moves BOP towards interventionism
 				ENG = {
 				add_offsite_building = { type = industrial_complex level = 12 }
@@ -5692,7 +5697,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = { # moves BOP towards interventionism
 				if = {
 				limit = { has_completed_focus = USA_neutrality_act }
@@ -5718,7 +5723,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_war_support = 0.1
 				if = {
@@ -5759,7 +5764,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = { # should move BOP towards isolationism
 		add_power_balance_value = {
 			id = USA_war_struggle
@@ -5786,7 +5791,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = { # should move BOP towards interventionism
 		add_power_balance_value = {
 			id = USA_war_struggle
@@ -5821,7 +5826,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_political_power = 100
 			# Initialize lend lease quota tracking for the 150-day audit mission
@@ -5847,7 +5852,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = { # should move BOP towards interventionism
 		add_power_balance_value = {
 			id = USA_war_struggle
@@ -5868,7 +5873,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_praise_munich
-		icon = X
+		icon = GFX_focus_spa_the_spanish_miracle
 		relative_position_id = USA_sudetenland_crisis
 		prerequisite = { focus = USA_sudetenland_crisis }
 		mutually_exclusive = {
@@ -5882,7 +5887,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = { # should move BOP towards isolationism
 		add_power_balance_value = {
 			id = USA_war_struggle
@@ -5906,7 +5911,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = { # should move BOP towards interventionism
 		add_timed_idea = {
 			idea = USA_arms_embargo_repealed
@@ -5917,7 +5922,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_tizard_mission
-		icon = X
+		icon = GFX_ENG_tizard
 		relative_position_id = USA_arms_embargo_repeal
 		prerequisite = { focus = USA_arms_embargo_repeal }
 		x = 0
@@ -5928,7 +5933,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			ENG = {
 				add_ideas = USA_tizard
@@ -5952,7 +5957,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			ENG = {
 				custom_effect_tooltip = needs_approval
@@ -5986,7 +5991,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
@@ -6012,7 +6017,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_war_support = 0.2
 			add_political_power = 150
@@ -6039,7 +6044,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = USA_french_recognition
 		}
@@ -6062,7 +6067,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 				add_offsite_building = { type = industrial_complex level = 20 }
 			ENG = {
@@ -6091,7 +6096,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			remove_ideas = USA_flint_strikes_idea
 		}
@@ -6113,7 +6118,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.2 tooltip = consumer_goods_factor_tt }
@@ -6136,7 +6141,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
@@ -6156,7 +6161,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_to_variable = { USA_american_economy_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
 			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
@@ -6176,7 +6181,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = USA_henry_morgenthau
@@ -6196,7 +6201,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_conscription_factor = 0.2 tooltip = conscription_factor_tt }
@@ -6236,7 +6241,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
             USA_great_depression_level_down = yes
             USA_congress_medium_opposition = yes
@@ -6258,7 +6263,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -6277,7 +6282,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			379 = {
 				add_building_construction = {
@@ -6408,7 +6413,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			379 = {
 				add_resource = {
@@ -6442,7 +6447,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.15 tooltip = production_speed_infrastructure_factor_tt }
@@ -6481,7 +6486,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			378 = {
 				add_resource = {
@@ -6505,7 +6510,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			hidden_effect = {
 			modify_building_resources = {
@@ -6575,7 +6580,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			379 = {
 				add_resource = {
@@ -6600,7 +6605,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_local_resources_factor = 0.075 tooltip = local_resources_factor_tt }
@@ -6621,7 +6626,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_production_lack_of_resource_penalty_factor_tt= -0.75 tooltip = production_lack_of_resource_penalty_factor_tt }
@@ -6646,7 +6651,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			369 = {
 				add_extra_state_shared_building_slots = 3
@@ -6707,7 +6712,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			387 = {
 				add_resource = {
@@ -6746,7 +6751,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_harold_ickes = {
 				retire = yes
@@ -6771,7 +6776,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		continue_if_invalid = yes
 		complete_tooltip = {
 			every_state = {
@@ -6841,7 +6846,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 378 }
@@ -6904,7 +6909,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.2 tooltip = global_building_slots_factor_tt }
@@ -6929,7 +6934,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 					IF = {
 				limit = {
@@ -6966,7 +6971,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			IF = {
 				limit = {
@@ -7004,7 +7009,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_local_resources_factor = 0.125 tooltip = local_resources_factor_tt }
@@ -7028,7 +7033,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_industrial_capacity_dockyard = 0.075 tooltip = industrial_capacity_dockyard_tt }
@@ -7055,7 +7060,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -7111,7 +7116,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -7168,7 +7173,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.4 tooltip = global_building_slots_factor_tt }
@@ -7197,7 +7202,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -7253,7 +7258,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -7303,7 +7308,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.5 tooltip = production_speed_arms_factory_factor_tt }
@@ -7325,7 +7330,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			add_ideas = liberty_ships_focus
 		}
@@ -7344,7 +7349,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_production_speed_air_base_factor = 0.5 tooltip = production_speed_air_base_factor_tt }
@@ -7366,7 +7371,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_airforce_air_navy_production_speed_naval_base_factor = 0.5 tooltip = production_speed_naval_base_factor_tt }
@@ -7390,7 +7395,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
             random_owned_controlled_state = {
                 limit = {
@@ -7468,7 +7473,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
@@ -7488,7 +7493,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
             random_owned_controlled_state = {
                 limit = {
@@ -7566,7 +7571,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -7630,7 +7635,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -7696,7 +7701,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 				random_owned_controlled_state = {
 				limit = {
@@ -7761,7 +7766,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
             random_owned_controlled_state = {
                 limit = {
@@ -7906,7 +7911,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			hidden_effect = {
 			 100 = {
