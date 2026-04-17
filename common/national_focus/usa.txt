@@ -948,7 +948,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_general_staff_autonomy
-		icon = X
+		icon = GFX_goal_plan
 		relative_position_id = USA_department_of_defense
 		prerequisite = { focus = USA_department_of_defense }
 		mutually_exclusive = {
@@ -978,7 +978,7 @@ focus_tree = {
 		
 		focus = {
 		id = USA_theater_staff_autonomy
-		icon = X
+		icon = GFX_goal_equpiment
 		relative_position_id = USA_department_of_defense
 		prerequisite = { focus = USA_department_of_defense }
 		mutually_exclusive = {
@@ -2789,7 +2789,7 @@ focus_tree = {
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
-			add_to_variable = { USA_american_army_naval_invasion_plan_cap = 3 tooltip = naval_invasion_plan_cap_tt }
+			add_to_variable = { USA_american_army_naval_invasion_plan_cap = 1 tooltip = naval_invasion_plan_cap_tt }
 			add_to_variable = { USA_american_army_naval_invasion_penalty = -0.15 tooltip = naval_invasion_penalty_tt }
 		}
 	}
@@ -3007,8 +3007,8 @@ focus_tree = {
 		
 		completion_reward = {
 			USA_army_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.075 tooltip = special_forces_attack_factor_tt }
-			add_to_variable = { USA_american_army_special_forces_defence_factor = 0.075 tooltip = special_forces_defence_factor_tt }
+			add_to_variable = { USA_american_army_special_forces_attack_factor = 0.05 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { USA_american_army_special_forces_defence_factor = 0.05 tooltip = special_forces_defence_factor_tt }
 		}
 	}
 
@@ -6899,7 +6899,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_military_industrial_complex
-		icon = X
+		icon = GFX_suburban_industry
 		relative_position_id = USA_two_ocean_navy_act
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		prerequisite = { focus = USA_arsenal_of_democracy }
@@ -6963,7 +6963,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_north_american_aviations
-		icon = X
+		icon = GFX_FRA_colonial_industry
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = -1
@@ -7001,7 +7001,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_bethlehem_steel
-		icon = X
+		icon = GFX_GOAL_resource_extraction
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = 1
@@ -7025,7 +7025,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_higgins_industries
-		icon = X
+		icon = GFX_FRA_work_smarter_by_getting_an_education_or_a_degree_in_some_form_of_engineering_school
 		relative_position_id = USA_military_industrial_complex
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = 3
@@ -7105,7 +7105,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_boeing_plant2
-		icon = X
+		icon = GFX_advanced_industry_jap
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }
@@ -7191,7 +7191,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_willow_bomber_plant
-		icon = X
+		icon = GFX_goal_generic_production2
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }
@@ -7247,7 +7247,7 @@ focus_tree = {
 
 		focus = {
 		id = USA_iowa_ordnance_plant
-		icon = X
+		icon = GFX_goal_generic_heavy_armour_canadian
 		relative_position_id = USA_north_american_aviations
 		prerequisite = { focus = USA_detroit_arsenals }
 		prerequisite = { focus = USA_north_american_aviations }

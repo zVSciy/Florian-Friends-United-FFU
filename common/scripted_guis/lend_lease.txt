@@ -9,7 +9,7 @@ scripted_gui = {
 
         visible = {
             tag = USA
-            has_completed_focus = USA_lend_lease_act
+            has_completed_focus = USA_arms_embargo_repeal
         }
 
         effects = {
