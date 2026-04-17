@@ -705,7 +705,7 @@ focus_tree = {
 		prerequisite = { focus = USA_balance_the_budget focus = USA_deficit_spending }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -757,7 +757,7 @@ focus_tree = {
 		prerequisite = { focus = USA_develop_newport }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -809,7 +809,7 @@ focus_tree = {
 		prerequisite = { focus = USA_develop_brooklyn }
 		x = 0
 		y = 1
-		cost = 3
+		cost = 2
 		available = {
 		}
 		available_if_capitulated = yes
@@ -1008,7 +1008,7 @@ focus_tree = {
 	
 		focus = {
 		id = USA_department_of_army
-		icon = GFX_USA_armoured_might
+		icon = GFX_USA_louisiana_maneauvers
 		relative_position_id = USA_department_of_defense
 		prerequisite = { focus = USA_department_of_defense }
 		x = -12
@@ -1032,9 +1032,9 @@ focus_tree = {
 		icon = GFX_USA_pacific_war
 		relative_position_id = USA_department_of_army
 		prerequisite = { focus = USA_department_of_army }
-		x = 0
-		y = 5
-		cost = 5
+		x = -5
+		y = 1
+		cost = 3
 		available = {
 			has_war_with = JAP
 		}
@@ -1049,8 +1049,8 @@ focus_tree = {
 		id = USA_midway
 		icon = GFX_USA_islands
 		x = -2
-		y = 6
-		relative_position_id = USA_department_of_army
+		y = 1
+		relative_position_id = USA_war_in_the_pacific
 		prerequisite = {
 			focus = USA_war_in_the_pacific
 		}
@@ -1135,8 +1135,8 @@ focus_tree = {
 		id = USA_guam
 		icon = GFX_USA_mariana_turkey_shooting
 		x = 2
-		y = 6
-		relative_position_id = USA_department_of_army
+		y = 1
+		relative_position_id = USA_war_in_the_pacific
 		prerequisite = {
 			focus = USA_war_in_the_pacific
 		}
@@ -2269,242 +2269,243 @@ focus_tree = {
 
 
 		
-		focus = {
-		id = USA_the_war_in_europe
-		icon = GFX_USA_war_plans_division
-		relative_position_id = USA_department_of_army
-		prerequisite = { focus = USA_department_of_army }
-		x = -5
-		y = 1
-		cost = 5
-		available = {
-			has_war_with = GER
-			has_war_with = ITA
-		}
+	# 	focus = {
+	# 	id = USA_the_war_in_europe
+	# 	icon = GFX_USA_war_plans_division
+	# 	relative_position_id = USA_department_of_army
+	# 	prerequisite = { focus = USA_department_of_army }
+	# 	x = -5
+	# 	y = 1
+	# 	cost = 3
+	# 	available = {
+	# 		always = no
+	# 		has_war_with = GER
+	# 		has_war_with = ITA
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 			
-		focus = {
-		id = USA_europes_soft_underbelly
-		icon = GFX_ENG_go_for_the_soft_underbelly
-		relative_position_id = USA_the_war_in_europe
-		prerequisite = { focus = USA_the_war_in_europe }
-		x = -2
-		y = 1
-		cost = 5
-		available = {
-			if = {
-				limit = {
-					has_country_flag = USA_war_plan_cooldown
-				}
-				has_country_flag = {
-					flag = USA_war_plan_cooldown
-					days > 240
-				}
-				custom_trigger_tooltip = {
-					tooltip = USA_war_plan_cooldown_tt
-					has_country_flag = {
-						flag = USA_war_plan_cooldown
-						days > 240
-					}
-				}
-			}
-		}
+	# 	focus = {
+	# 	id = USA_europes_soft_underbelly
+	# 	icon = GFX_ENG_go_for_the_soft_underbelly
+	# 	relative_position_id = USA_the_war_in_europe
+	# 	prerequisite = { focus = USA_the_war_in_europe }
+	# 	x = -2
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
+	# 		if = {
+	# 			limit = {
+	# 				has_country_flag = USA_war_plan_cooldown
+	# 			}
+	# 			has_country_flag = {
+	# 				flag = USA_war_plan_cooldown
+	# 				days > 240
+	# 			}
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = USA_war_plan_cooldown_tt
+	# 				has_country_flag = {
+	# 					flag = USA_war_plan_cooldown
+	# 					days > 240
+	# 				}
+	# 			}
+	# 		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-			set_country_flag = USA_war_plan_cooldown
-		}
-	}
+	# 	completion_reward = {
+	# 		set_country_flag = USA_war_plan_cooldown
+	# 	}
+	# }
 
 				
-		focus = {
-		id = USA_operation_torch
-		icon = GFX_USA_torch
-		relative_position_id = USA_europes_soft_underbelly
-		prerequisite = { focus = USA_europes_soft_underbelly }
-		x = -1
-		y = 1
-		cost = 5
-		available = {
+	# 	focus = {
+	# 	id = USA_operation_torch
+	# 	icon = GFX_USA_torch
+	# 	relative_position_id = USA_europes_soft_underbelly
+	# 	prerequisite = { focus = USA_europes_soft_underbelly }
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
 			
-		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 					
-		focus = {
-		id = USA_operation_husky
-		icon = GFX_goal_ENG_operation_husky
-		relative_position_id = USA_operation_torch
-		prerequisite = { focus = USA_operation_torch }
-		mutually_exclusive = {
-			focus = USA_operation_dragoon
-		}
-		x = 1
-		y = 1
-		cost = 5
-		available = {
+	# 	focus = {
+	# 	id = USA_operation_husky
+	# 	icon = GFX_goal_ENG_operation_husky
+	# 	relative_position_id = USA_operation_torch
+	# 	prerequisite = { focus = USA_operation_torch }
+	# 	mutually_exclusive = {
+	# 		focus = USA_operation_dragoon
+	# 	}
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
 			
-		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 						
-		focus = {
-		id = USA_operation_dragoon
-		icon = GFX_focus_generic_attack_vichy_france
-		relative_position_id = USA_operation_torch
-		prerequisite = { focus = USA_operation_torch }
-		mutually_exclusive = {
-			focus = USA_operation_husky
-		}
-		x = -1
-		y = 1
-		cost = 5
-		available = {
+	# 	focus = {
+	# 	id = USA_operation_dragoon
+	# 	icon = GFX_focus_generic_attack_vichy_france
+	# 	relative_position_id = USA_operation_torch
+	# 	prerequisite = { focus = USA_operation_torch }
+	# 	mutually_exclusive = {
+	# 		focus = USA_operation_husky
+	# 	}
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
 			
-		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 						
-		focus = {
-		id = USA_operation_overlord
-		icon = GFX_goal_usa_european_intervention
-		relative_position_id = USA_operation_dragoon
-		prerequisite = { focus = USA_operation_husky focus = USA_operation_dragoon focus = USA_operation_sledgehammer focus = USA_operation_apostle }
-		x = 4
-		y = 1
-		cost = 5
-		available = {
+	# 	focus = {
+	# 	id = USA_operation_overlord
+	# 	icon = GFX_goal_usa_european_intervention
+	# 	relative_position_id = USA_operation_dragoon
+	# 	prerequisite = { focus = USA_operation_husky focus = USA_operation_dragoon focus = USA_operation_sledgehammer focus = USA_operation_apostle }
+	# 	x = 4
+	# 	y = 1
+	# 	cost = 5
+	# 	available = {
 			
-		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 				
-		focus = {
-		id = USA_germany_first
-		icon = X
-		relative_position_id = USA_the_war_in_europe
-		prerequisite = { focus = USA_the_war_in_europe }
-		x = 2
-		y = 1
-		cost = 5
-		available = {
-			if = {
-				limit = {
-					has_country_flag = USA_war_plan_cooldown
-				}
-				has_country_flag = {
-					flag = USA_war_plan_cooldown
-					days > 240
-				}
-				custom_trigger_tooltip = {
-					tooltip = USA_war_plan_cooldown_tt
-					has_country_flag = {
-						flag = USA_war_plan_cooldown
-						days > 240
-					}
-				}
-			}
-		}
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			set_country_flag = USA_war_plan_cooldown
-		}
-	}
+	# 	focus = {
+	# 	id = USA_germany_first
+	# 	icon = X
+	# 	relative_position_id = USA_the_war_in_europe
+	# 	prerequisite = { focus = USA_the_war_in_europe }
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
+	# 		if = {
+	# 			limit = {
+	# 				has_country_flag = USA_war_plan_cooldown
+	# 			}
+	# 			has_country_flag = {
+	# 				flag = USA_war_plan_cooldown
+	# 				days > 240
+	# 			}
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = USA_war_plan_cooldown_tt
+	# 				has_country_flag = {
+	# 					flag = USA_war_plan_cooldown
+	# 					days > 240
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	search_filters = {FOCUS_FILTER_RESEARCH}
+	# 	completion_reward = {
+	# 		set_country_flag = USA_war_plan_cooldown
+	# 	}
+	# }
 
 					
-		focus = {
-		id = USA_operation_bolero
-		icon = GFX_focus_generic_attack_greece
-		relative_position_id = USA_germany_first
-		prerequisite = { focus = USA_germany_first }
-		x = 1
-		y = 1
-		cost = 5
-		available = {
+	# 	focus = {
+	# 	id = USA_operation_bolero
+	# 	icon = X
+	# 	relative_position_id = USA_germany_first
+	# 	prerequisite = { focus = USA_germany_first }
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
 			
-		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 						
-		focus = {
-		id = USA_operation_apostle
-		icon = X
-		relative_position_id = USA_operation_bolero
-		prerequisite = { focus = USA_operation_bolero }
-		mutually_exclusive = {
-			focus = USA_operation_sledgehammer
-		}
-		x = -1
-		y = 1
-		cost = 5
-		available = {
+	# 	focus = {
+	# 	id = USA_operation_apostle
+	# 	icon = X
+	# 	relative_position_id = USA_operation_bolero
+	# 	prerequisite = { focus = USA_operation_bolero }
+	# 	mutually_exclusive = {
+	# 		focus = USA_operation_sledgehammer
+	# 	}
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
 			
-		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 							
-		focus = {
-		id = USA_operation_sledgehammer
-		icon = X
-		relative_position_id = USA_operation_bolero
-		prerequisite = { focus = USA_operation_bolero }
-		mutually_exclusive = {
-			focus = USA_operation_apostle
-		}
-		x = 1
-		y = 1
-		cost = 5
-		available = {
+	# 	focus = {
+	# 	id = USA_operation_sledgehammer
+	# 	icon = X
+	# 	relative_position_id = USA_operation_bolero
+	# 	prerequisite = { focus = USA_operation_bolero }
+	# 	mutually_exclusive = {
+	# 		focus = USA_operation_apostle
+	# 	}
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 2
+	# 	available = {
 			
-		}
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		}
-	}
+	# 	completion_reward = {
+	# 	}
+	# }
 	
 		
 	focus = {
 		id = USA_louisiana_maneuvers
-		icon = GFX_USA_louisiana_maneauvers
+		icon = GFX_USA_armoured_might
 		relative_position_id = USA_department_of_army
 		prerequisite = { focus = USA_department_of_army }
 		x = 5
@@ -3026,12 +3027,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			361 = {
+			942 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = naval_facility
 					level = 1
 					instant_build = yes
+					province = 9786
 				}		
 			}
 			add_breakthrough_points = {
@@ -3669,7 +3671,7 @@ focus_tree = {
 		prerequisite = { focus = USA_autonomized_airforce }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3693,7 +3695,7 @@ focus_tree = {
 		prerequisite = { focus = USA_airforce_school }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			has_tech = tac_1
 		}
@@ -3722,7 +3724,7 @@ focus_tree = {
 		}
 		x = -3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3741,7 +3743,7 @@ focus_tree = {
 		prerequisite = { focus = USA_operational_integrity }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3766,7 +3768,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3788,7 +3790,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3807,7 +3809,7 @@ focus_tree = {
 		prerequisite = { focus = USA_strategic_destruction }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3830,7 +3832,7 @@ focus_tree = {
 		prerequisite = { focus = USA_battlefield_support }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3878,7 +3880,7 @@ focus_tree = {
 		prerequisite = { focus = USA_army_airforce }
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3898,7 +3900,7 @@ focus_tree = {
 		prerequisite = { focus = USA_army_air_support_command }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3923,7 +3925,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3942,7 +3944,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tac_bombers }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -3966,7 +3968,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -3985,7 +3987,7 @@ focus_tree = {
 		prerequisite = { focus = USA_strat_bombers }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -4006,7 +4008,7 @@ focus_tree = {
 		prerequisite = { focus = USA_board_of_aeronautics }
 		x = -10
 		y = 1
-		cost = 3
+		cost = 2
 		available = {
 			has_decision = give_refuge_ger
 			has_decision = give_refuge_ita
@@ -4016,11 +4018,11 @@ focus_tree = {
 		
 		completion_reward = {
 			362 = {
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = air_facility
 					level = 1
 					instant_build = yes
+					province = 873
 				}		
 			}
 		}
@@ -4033,9 +4035,9 @@ focus_tree = {
 		prerequisite = { focus = USA_establish_the_ndrc }
 		x = 0
 		y = 1
-		cost = 2
+		cost = 1
 		available = {
-			date > 1939.1.1
+			date > 1938.1.1
 		}
 
 		available_if_capitulated = yes
@@ -4315,7 +4317,7 @@ focus_tree = {
 		y = 1
 		cost = 2
 		available = {
-			date > 1939.1.1
+			date > 1938.1.1
 		}
 
 		available_if_capitulated = yes
@@ -4347,11 +4349,11 @@ focus_tree = {
 		
 		completion_reward = {
 			376 = {
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = nuclear_Facility
 					level = 1
 					instant_build = yes
+					province = 4975
 				}		
 			}
 		}
@@ -4978,7 +4980,7 @@ focus_tree = {
 		prerequisite = { focus = USA_mexican_oil_crisis }
 		x = -4
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5015,7 +5017,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -5049,7 +5051,7 @@ focus_tree = {
 		prerequisite = { focus = USA_accelerate_filipino_independence focus = USA_defend_the_philippines }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -5098,7 +5100,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -5228,7 +5230,7 @@ focus_tree = {
 		prerequisite = { focus = USA_filipino_army }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -5670,7 +5672,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = USA_paying_cash_and_carry
-				days = 60
+				days = 30
 			}
 		add_power_balance_value = {
 			id = USA_war_struggle
@@ -5692,7 +5694,7 @@ focus_tree = {
 				ENG = {
 					has_capitulated = yes
 				}
-				date > 1941.1.1
+				date > 1940.8.1
 			}
 		}
 
@@ -6046,7 +6048,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			add_political_power = 100
 			add_ideas = USA_french_recognition
+			FRA = {
+				add_political_power = 200
+			}
 		}
 	}
 
@@ -6738,7 +6744,7 @@ focus_tree = {
 		prerequisite = { focus = USA_36_fdr_victory }
 		x = 15
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			  OR = {
 				has_war_support > 0.6
@@ -6767,7 +6773,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -6837,7 +6843,7 @@ focus_tree = {
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -6899,7 +6905,7 @@ focus_tree = {
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			date > 1939.3.1
 			power_balance_value = {
@@ -6925,7 +6931,7 @@ focus_tree = {
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -6962,7 +6968,7 @@ focus_tree = {
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -7000,7 +7006,7 @@ focus_tree = {
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -7024,7 +7030,7 @@ focus_tree = {
 		prerequisite = { focus = USA_military_industrial_complex }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -7051,7 +7057,7 @@ focus_tree = {
 		prerequisite = { focus = USA_higgins_industries }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -7107,7 +7113,7 @@ focus_tree = {
 		prerequisite = { focus = USA_higgins_industries }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -7193,7 +7199,7 @@ focus_tree = {
 		prerequisite = { focus = USA_higgins_industries }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -7249,7 +7255,7 @@ focus_tree = {
 		prerequisite = { focus = USA_higgins_industries }
 		x = 5
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			power_balance_value = {
 				id = USA_war_struggle
@@ -7324,7 +7330,7 @@ focus_tree = {
 		prerequisite = { focus = USA_wartime_production_board }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -7343,7 +7349,7 @@ focus_tree = {
 		prerequisite = { focus = USA_liberty_ships }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -7365,7 +7371,7 @@ focus_tree = {
 		prerequisite = { focus = USA_strategic_airbase_construction }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -7389,7 +7395,7 @@ focus_tree = {
 		prerequisite = { focus = USA_wartime_production_board }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -7487,7 +7493,7 @@ focus_tree = {
 		prerequisite = { focus = USA_general_motors_war_prod }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -7565,7 +7571,7 @@ focus_tree = {
 		prerequisite = { focus = USA_wartime_production_board }
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -7629,7 +7635,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ordnance_plants_expansion }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -7695,7 +7701,7 @@ focus_tree = {
 		prerequisite = { focus = USA_chrysler_tanks }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -7894,11 +7900,11 @@ focus_tree = {
 		focus = {
 		id = USA_vic_plan
 		icon = GFX_focus_generic_the_giant_wakes
-		relative_position_id = USA_mobilise_the_nation
-		prerequisite = { focus = USA_mobilise_the_nation }
-		x = 0
+		relative_position_id = USA_36_fdr_victory
+		prerequisite = { focus = USA_36_fdr_victory }
+		x = 18
 		y = 1
-		cost = 5
+		cost = 1
 		available = {
 				AND = {
 				date > 1940.1.1

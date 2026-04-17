@@ -7346,7 +7346,7 @@ USA_war_struggle = {
 		allowed = {
 			original_tag = USA
 		}
-		cost = 100
+		cost = 75
 		fire_only_once = yes
 
 		ai_will_do = {
@@ -7368,7 +7368,7 @@ USA_war_struggle = {
 		allowed = {
 			original_tag = USA
 		}
-		cost = 75
+		cost = 50
 		fire_only_once = no
 
 		ai_will_do = {
@@ -7376,7 +7376,7 @@ USA_war_struggle = {
 		}
 
 		complete_effect = {
-			USA_congress_small_support = yes
+			USA_congress_medium_support = yes
 			# TODO: add "allows some" effect here
 			add_power_balance_value = {
 				id = USA_war_struggle
@@ -7390,7 +7390,7 @@ USA_war_struggle = {
 		allowed = {
 			original_tag = USA
 		}
-		cost = 200
+		cost = 150
 		fire_only_once = yes
 
 		ai_will_do = {
@@ -7401,7 +7401,7 @@ USA_war_struggle = {
 			add_war_support = 0.05
 			add_stability = -0.03
 			USA_congress_small_opposition = yes
-			add_ideas = extensive_conscription
+			add_ideas = limited_conscription
 			add_power_balance_value = {
 				id = USA_war_struggle
 				value = 0.25

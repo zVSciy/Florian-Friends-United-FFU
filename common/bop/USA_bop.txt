@@ -73,12 +73,12 @@ USA_war_struggle = {
 			min =  0.01
 			max = 0.4
 			modifier = {
-				political_power_gain = -0.1
+				political_power_gain = -0.05
 				experience_gain_army = 0.1
 				stability_factor = -0.05
 				war_support_factor = 0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.05
 				production_speed_buildings_factor = -0.05
 			}
 		}
@@ -88,13 +88,13 @@ USA_war_struggle = {
 			min = 0.4
 			max = 0.8
 			modifier = {
-				political_power_gain = -0.2
+				political_power_gain = -0.1
 				experience_gain_army = 0.2
 				stability_factor = -0.1
 				war_support_factor = 0.1
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = 0.15
-				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.075
+				production_speed_buildings_factor = -0.075
 			}
 		}
 
@@ -103,14 +103,14 @@ USA_war_struggle = {
 			min = 0.8
 			max = 1
 			modifier = {
-				political_power_gain = -0.3
+				political_power_gain = -0.2
 				experience_gain_army = 0.3
 				stability_factor = -0.2
 				war_support_factor = 0.2
 				industrial_capacity_factory = 0.2
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.2
-				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.1
 			}
 		}
 	}
