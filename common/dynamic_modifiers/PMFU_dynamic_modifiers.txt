@@ -587,6 +587,8 @@ USA_economy_dynamic_modifier = {
 	min_export = USA_american_economy_min_export
 	stability_weekly = USA_american_economy_stability_weekly
 	production_speed_buildings_factor = USA_american_economy_production_speed_buildings_factor
+	production_lack_of_resource_penalty_factor = USA_american_economy_production_lack_of_resource_penalty_factor
+	operative_slot = USA_american_economy_operative_slot_tt
 	# great depression
 	political_power_cost = USA_american_economy_gd_political_power_cost
 	consumer_goods_factor = USA_american_economy_gd_consumer_goods_factor
@@ -600,8 +602,7 @@ USA_economy_dynamic_modifier = {
 	command_power_gain_mult = USA_american_economy_now_command_power_gain_mult
 
 	# depr 2.0
-	refit_speed = USA_navy_refit_speed
-	refit_ic_cost = USA__navy_refit_ic_cost
+	
 }
 
 USA_army_dynamic_modifier = {
@@ -609,16 +610,35 @@ USA_army_dynamic_modifier = {
 
 	icon = GFX_idea_HUN_secret_rearmament
 
-	army_speed_factor = USA_american_army_army_speed_factor
-	army_attack_factor = USA_american_army_army_attack_factor
-	army_defence_factor = USA_american_army_army_defence_factor
-	mobilization_speed = USA_american_army_mobilization_speed
-	naval_invasion_capacity = USA_american_army_navy_naval_invasion_capacity
-	conscription = USA_american_army_conscription
-	planning_speed = USA_american_army_planning_speed
-	max_planning = USA_american_army_max_planning
-	max_command_power = USA_american_army_max_command_power
-	conscription_factor = USA_american_army_conscription_factor
+    army_speed_factor = USA_american_army_army_speed_factor
+    army_attack_factor = USA_american_army_army_attack_factor
+    army_defence_factor = USA_american_army_army_defence_factor
+    mobilization_speed = USA_american_army_mobilization_speed
+    conscription = USA_american_army_conscription
+    planning_speed = USA_american_army_planning_speed
+    max_planning = USA_american_army_max_planning
+    max_command_power = USA_american_army_max_command_power
+    conscription_factor = USA_american_army_conscription_factor
+    max_dig_in = USA_american_army_max_dig_in
+    army_armor_attack_factor = USA_american_army_armor_attack_factor
+    experience_gain_army = USA_american_army_experience_gain_army
+    naval_invasion_planning_bonus_speed = USA_american_army_naval_invasion_planning_bonus_speed
+    army_artillery_attack_factor = USA_american_army_army_artillery_attack_factor
+    army_artillery_defence_factor = USA_american_army_army_artillery_defence_factor
+    naval_invasion_plan_cap = USA_american_army_naval_invasion_plan_cap
+    amphibious_invasion_defence = USA_american_army_amphibious_invasion_defence
+    special_forces_attack_factor = USA_american_army_special_forces_attack_factor
+    special_forces_defence_factor = USA_american_army_special_forces_defence_factor
+    special_forces_out_of_supply_factor = USA_american_army_special_forces_out_of_supply_factor
+    amphibious_invasion = USA_american_army_amphibious_invasion
+    supply_consumption_factor = USA_american_army_supply_consumption_factor
+    coordination_bonus = USA_american_army_coordination_bonus
+    command_power_gain_mult = USA_american_army_command_power_gain_mult
+    experience_loss_factor = USA_american_army_experience_loss_factor
+    army_morale_factor = USA_american_army_army_morale_factor
+    experience_gain_army_unit_factor = USA_american_army_experience_gain_army_unit_factor
+    no_supply_grace = USA_american_army_no_supply_gracee
+	operative_slot = USA_american_army_operative_slot
 }
 
 USA_air_navy_dynamic_modifier = {
@@ -627,10 +647,44 @@ USA_air_navy_dynamic_modifier = {
 	icon = GFX_idea_generic_navy_bonus
 
 	air_cas_present_factor = USA_american_airforce_air_navy_cas_present_factor
+	navy_anti_air_attack_factor = USA_american_airforce_navy_navy_anti_air_attack_factor
 	navy_submarine_detection_factor = USA_american_airforce_air_navy_submarine_detection_factor
+	naval_detection = USA_american_airforce_air_navy_naval_detection
 	convoy_escort_efficiency = USA_american_airforce_air_navy_convoy_escort_efficiency
 	sortie_efficiency = USA_american_airforce_air_navy_sortie_efficiency
 	repair_speed_factor = USA_american_airforce_air_navy_repair_speed_factor
+	refit_speed = USA_navy_refit_speed
+	refit_ic_cost = USA_navy_refit_ic_cost
+	convoy_retreat_speed = USA_american_airforce_air_navy_convoy_convoy_retreat_speed
+	production_speed_air_base_factor = USA_american_airforce_air_navy_production_speed_air_base_factor
+	air_range_factor = USA_american_airforce_air_navy_air_range_factor
+	static_anti_air_damage_factor = USA_american_airforce_air_navy_static_anti_air_damage_factor
+	production_speed_naval_base_factor = USA_american_airforce_air_navy_production_speed_naval_base_factor
+	production_speed_radar_station_factor = USA_american_airforce_air_navy_production_speed_radar_station_factor
+	production_speed_rail_way_factor = USA_american_airforce_air_navy_production_speed_rail_way_factor
+	production_speed_supply_node_factor = USA_american_airforce_air_navy_production_speed_supply_node_factor
+	army_bonus_air_superiority_factor = USA_american_airforce_air_navy_army_bonus_air_superiority_factor
+	cas_damage_reduction = USA_american_airforce_air_navy_cas_damage_reduction
+	air_range_factor = USA_american_airforce_air_navy_air_range_factor
+    air_strategic_bomber_bombing_factor = USA_american_airforce_air_navy_air_strategic_bomber_bombing_factor
+    air_escort_efficiency = USA_american_airforce_air_navy_air_escort_efficiency
+    air_cas_efficiency = USA_american_airforce_air_navy_air_cas_efficiency
+    air_nav_efficiency = USA_american_airforce_air_navy_air_nav_efficiency
+    air_superiority_efficiency = USA_american_airforce_air_navy_air_superiority_efficiency
+    air_intercept_efficiency = USA_american_airforce_air_navy_air_intercept_efficiency
+    air_ace_generation_chance_factor = USA_american_airforce_air_navy_air_ace_generation_chance_factor
+    air_wing_xp_loss_when_killed_factor = USA_american_airforce_air_navy_air_wing_xp_loss_when_killed_factor
+    air_accidents_factor = USA_american_airforce_air_navy_air_accidents_factor
+    air_night_penalty = USA_american_airforce_air_navy_air_night_penalty
+    army_bonus_air_superiority_factor = USA_american_airforce_air_navy_army_bonus_air_superiority_factor
+    air_mission_efficiency = USA_american_airforce_air_navy_air_mission_efficiency
+    air_home_defence_factor = USA_american_airforce_air_navy_air_home_defence_factor
+    air_cas_present_factor = USA_american_airforce_air_navy_air_cas_present_factor
+    air_attack_factor = USA_american_airforce_air_navy_air_attack_factor
+    air_defence_factor = USA_american_airforce_air_navy_air_defence_factor
+    air_agility_factor = USA_american_airforce_air_navy_air_agility_factor
+    air_bombing_targetting = USA_american_airforce_air_navy_air_bombing_targetting
+
 }
 
 CAN_economy_dynamic_modifier = {

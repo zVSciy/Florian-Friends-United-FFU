@@ -18,11 +18,13 @@ state=
 				naval_base = 5
 			}
 		}
-
+		 strategic_state_location = {
+			marcus_johnston_s_l = 13026 # Province ID
+		}
 	}
-	provinces=
-	{
-13026 	}
+	provinces = {
+		13026 	
+	}
 
 	local_supplies=0.0 
 }

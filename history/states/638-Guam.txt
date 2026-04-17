@@ -25,6 +25,9 @@ state=
 		victory_points = {
 			13311 1
 		 }
+		  strategic_state_location = {
+			saipan_guam_s_l = 12140 # Province ID
+		}
 
 	}
 	provinces={

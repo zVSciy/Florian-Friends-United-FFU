@@ -45,6 +45,9 @@ state={
 				naval_base = 3
 			}
 		}
+		strategic_state_location = {
+			dei_singapoor_s_l = 7381 # Province ID
+		}
 	}
 
 	provinces={

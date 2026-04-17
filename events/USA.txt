@@ -123,6 +123,9 @@ country_event = {
 				if = { limit = { 689 = { is_controlled_by = ENG } } 
 					remove_state_core = 689
 				}
+				if = { limit = { 692 = { is_controlled_by = ENG } } 
+					remove_state_core = 692
+				}
 				if = { limit = { 691 = { is_controlled_by = ENG } } 
 					remove_state_core = 691
 				}
@@ -143,6 +146,9 @@ country_event = {
 			}
 			if = { limit = { 689 = { is_controlled_by = ENG } } 
 				transfer_state = 689
+			}
+			if = { limit = { 692 = { is_controlled_by = ENG } } 
+				transfer_state = 692
 			}
 			if = { limit = { 691 = { is_controlled_by = ENG } } 
 				transfer_state = 691
@@ -216,131 +222,131 @@ country_event = {
 			factor = 75
 		}		
 		set_country_flag = USA_dem_campaign
-		# hidden_effect = {
-		# 	383 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	390 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	392 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	358 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	396 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	360 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	393 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	384 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	395 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	369 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	359 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	361 = {
-		# 		set_state_flag = USA_md_blue
-		# 	}
-		# 	357 = {
-		# 		set_state_flag = USA_me_red	
-		# 	}
-		# 	937 = {
-		# 		set_state_flag = USA_nh_swing
-		# 	}
-		# 	938 = {
-		# 		set_state_flag = USA_vt_red
-		# 	}
-		# 	939 = {
-		# 		set_state_flag = USA_ri_swing
-		# 	}
-		# 	940 = {
-		# 		set_state_flag = USA_ct_swing
-		# 	}
-		# 	941 = {
-		# 		set_state_flag = USA_ma_swing
-		# 	}
-		# 	942 = {
-		# 		set_state_flag = USA_de_swing
-		# 	}
-		# 	every_state = {
-		# 		limit = {
-		# 			is_core_of = USA
-		# 			NOT = {
-		# 				OR = {
-		# 					has_state_flag = USA_swing_state
-		# 					has_state_flag = USA_me_red
-		# 					has_state_flag = USA_md_blue
-		# 					state = 629
-		# 					state = 463
-		# 					state = 686
-		# 				}
-		# 			}
-		# 		}
-		# 		set_state_flag = USA_blue_state
-		# 	}
-		# 	set_variable = { USA_wa_frame = 3 }
-		# 	set_variable = { USA_or_frame = 3 }
-		# 	set_variable = { USA_ca_frame = 3 }
-		# 	set_variable = { USA_nv_frame = 3 }
-		# 	set_variable = { USA_id_frame = 3 }
-		# 	set_variable = { USA_mt_frame = 3 }
-		# 	set_variable = { USA_wy_frame = 3 }
-		# 	set_variable = { USA_ut_frame = 3 }
-		# 	set_variable = { USA_az_frame = 3 }
-		# 	set_variable = { USA_nm_frame = 3 }
-		# 	set_variable = { USA_co_frame = 3 }
-		# 	set_variable = { USA_nd_frame = 3 }
-		# 	set_variable = { USA_sd_frame = 1 }
-		# 	set_variable = { USA_ne_frame = 1 }
-		# 	set_variable = { USA_ks_frame = 1 }
-		# 	set_variable = { USA_ok_frame = 3 }
-		# 	set_variable = { USA_tx_frame = 3 }
-		# 	set_variable = { USA_mn_frame = 3 }
-		# 	set_variable = { USA_ia_frame = 1 }
-		# 	set_variable = { USA_mo_frame = 3 }
-		# 	set_variable = { USA_ar_frame = 3 }
-		# 	set_variable = { USA_la_frame = 3 }
-		# 	set_variable = { USA_wi_frame = 3 }
-		# 	set_variable = { USA_il_frame = 1 }
-		# 	set_variable = { USA_mi_frame = 1 }
-		# 	set_variable = { USA_in_frame = 1 }
-		# 	set_variable = { USA_ky_frame = 1 }
-		# 	set_variable = { USA_fl_frame = 3 }
-		# 	set_variable = { USA_ga_frame = 3 }
-		# 	set_variable = { USA_al_frame = 3 }
-		# 	set_variable = { USA_ms_frame = 3 }
-		# 	set_variable = { USA_tn_frame = 3 }
-		# 	set_variable = { USA_sc_frame = 3 }
-		# 	set_variable = { USA_nc_frame = 3 }
-		# 	set_variable = { USA_va_frame = 3 }
-		# 	set_variable = { USA_wv_frame = 3 }
-		# 	set_variable = { USA_oh_frame = 3 }
-		# 	set_variable = { USA_pa_frame = 1 }
-		# 	set_variable = { USA_ny_frame = 1 }
-		# 	set_variable = { USA_nj_frame = 1 }
-		# 	set_variable = { USA_md_frame = 3 }
-		# 	set_variable = { USA_de_frame = 1 }
-		# 	set_variable = { USA_vt_frame = 2 }
-		# 	set_variable = { USA_me_frame = 2 }
-		# 	set_variable = { USA_nh_frame = 1 }
-		# 	set_variable = { USA_ma_frame = 1 }
-		# 	set_variable = { USA_ct_frame = 1 }
-		# 	set_variable = { USA_ri_frame = 1 }
+		hidden_effect = {
+			383 = {
+				set_state_flag = USA_swing_state
+			}
+			390 = {
+				set_state_flag = USA_swing_state
+			}
+			392 = {
+				set_state_flag = USA_swing_state
+			}
+			358 = {
+				set_state_flag = USA_swing_state
+			}
+			396 = {
+				set_state_flag = USA_swing_state
+			}
+			360 = {
+				set_state_flag = USA_swing_state
+			}
+			393 = {
+				set_state_flag = USA_swing_state
+			}
+			384 = {
+				set_state_flag = USA_swing_state
+			}
+			395 = {
+				set_state_flag = USA_swing_state
+			}
+			369 = {
+				set_state_flag = USA_swing_state
+			}
+			359 = {
+				set_state_flag = USA_swing_state
+			}
+			361 = {
+				set_state_flag = USA_md_blue
+			}
+			357 = {
+				set_state_flag = USA_me_red	
+			}
+			937 = {
+				set_state_flag = USA_nh_swing
+			}
+			938 = {
+				set_state_flag = USA_vt_red
+			}
+			939 = {
+				set_state_flag = USA_ri_swing
+			}
+			940 = {
+				set_state_flag = USA_ct_swing
+			}
+			941 = {
+				set_state_flag = USA_ma_swing
+			}
+			942 = {
+				set_state_flag = USA_de_swing
+			}
+			every_state = {
+				limit = {
+					is_core_of = USA
+					NOT = {
+						OR = {
+							has_state_flag = USA_swing_state
+							has_state_flag = USA_me_red
+							has_state_flag = USA_md_blue
+							state = 629
+							state = 463
+							state = 686
+						}
+					}
+				}
+				set_state_flag = USA_blue_state
+			}
+			set_variable = { USA_wa_frame = 3 }
+			set_variable = { USA_or_frame = 3 }
+			set_variable = { USA_ca_frame = 3 }
+			set_variable = { USA_nv_frame = 3 }
+			set_variable = { USA_id_frame = 3 }
+			set_variable = { USA_mt_frame = 3 }
+			set_variable = { USA_wy_frame = 3 }
+			set_variable = { USA_ut_frame = 3 }
+			set_variable = { USA_az_frame = 3 }
+			set_variable = { USA_nm_frame = 3 }
+			set_variable = { USA_co_frame = 3 }
+			set_variable = { USA_nd_frame = 3 }
+			set_variable = { USA_sd_frame = 1 }
+			set_variable = { USA_ne_frame = 1 }
+			set_variable = { USA_ks_frame = 1 }
+			set_variable = { USA_ok_frame = 3 }
+			set_variable = { USA_tx_frame = 3 }
+			set_variable = { USA_mn_frame = 3 }
+			set_variable = { USA_ia_frame = 1 }
+			set_variable = { USA_mo_frame = 3 }
+			set_variable = { USA_ar_frame = 3 }
+			set_variable = { USA_la_frame = 3 }
+			set_variable = { USA_wi_frame = 3 }
+			set_variable = { USA_il_frame = 1 }
+			set_variable = { USA_mi_frame = 1 }
+			set_variable = { USA_in_frame = 1 }
+			set_variable = { USA_ky_frame = 1 }
+			set_variable = { USA_fl_frame = 3 }
+			set_variable = { USA_ga_frame = 3 }
+			set_variable = { USA_al_frame = 3 }
+			set_variable = { USA_ms_frame = 3 }
+			set_variable = { USA_tn_frame = 3 }
+			set_variable = { USA_sc_frame = 3 }
+			set_variable = { USA_nc_frame = 3 }
+			set_variable = { USA_va_frame = 3 }
+			set_variable = { USA_wv_frame = 3 }
+			set_variable = { USA_oh_frame = 3 }
+			set_variable = { USA_pa_frame = 1 }
+			set_variable = { USA_ny_frame = 1 }
+			set_variable = { USA_nj_frame = 1 }
+			set_variable = { USA_md_frame = 3 }
+			set_variable = { USA_de_frame = 1 }
+			set_variable = { USA_vt_frame = 2 }
+			set_variable = { USA_me_frame = 2 }
+			set_variable = { USA_nh_frame = 1 }
+			set_variable = { USA_ma_frame = 1 }
+			set_variable = { USA_ct_frame = 1 }
+			set_variable = { USA_ri_frame = 1 }
 			
-		# 	set_variable = { USA_predicted_ec = 284 }
-		# }
+			set_variable = { USA_predicted_ec = 284 }
+		}
 		
 		activate_mission = USA_election_mission
 	}
@@ -351,147 +357,147 @@ country_event = {
 			factor = 0
 		}		
 		set_country_flag = USA_rep_campaign
-		# hidden_effect = {
-		# 	383 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	390 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	392 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	358 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	396 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	360 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	393 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	384 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	395 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	369 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	359 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	261 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	816 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	373 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	381 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	382 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	361 = {
-		# 		set_state_flag = USA_md_blue
-		# 	}
-		# 	357 = {
-		# 		set_state_flag = USA_me_red
-		# 	}
-		# 	937 = {
-		# 		set_state_flag = USA_nh_red
-		# 	}
-		# 	938 = {
-		# 		set_state_flag = USA_vt_red
-		# 	}
-		# 	939 = {
-		# 		set_state_flag = USA_ri_red
-		# 	}
-		# 	940 = {
-		# 		set_state_flag = USA_ct_red
-		# 	}
-		# 	941 = {
-		# 		set_state_flag = USA_ma_red
-		# 	}
-		# 	942 = {
-		# 		set_state_flag = USA_de_red
-		# 	}
-		# 	every_state = {
-		# 		limit = {
-		# 			is_core_of = USA
-		# 			NOT = {
-		# 				OR = {
-		# 					has_state_flag = USA_swing_state
-		# 					has_state_flag = USA_me_red
-		# 					has_state_flag = USA_md_blue
-		# 					state = 629
-		# 					state = 463
-		# 					state = 686
-		# 				}
-		# 			}
-		# 		}
-		# 		set_state_flag = USA_blue_state
-		# 	}
-		# 	set_variable = { USA_wa_frame = 3 }
-		# 	set_variable = { USA_or_frame = 3 }
-		# 	set_variable = { USA_ca_frame = 3 }
-		# 	set_variable = { USA_nv_frame = 3 }
-		# 	set_variable = { USA_id_frame = 3 }
-		# 	set_variable = { USA_mt_frame = 3 }
-		# 	set_variable = { USA_wy_frame = 1 }
-		# 	set_variable = { USA_ut_frame = 3 }
-		# 	set_variable = { USA_az_frame = 3 }
-		# 	set_variable = { USA_nm_frame = 3 }
-		# 	set_variable = { USA_co_frame = 1 }
-		# 	set_variable = { USA_nd_frame = 3 }
-		# 	set_variable = { USA_sd_frame = 2 }
-		# 	set_variable = { USA_ne_frame = 1 }
-		# 	set_variable = { USA_ks_frame = 2 }
-		# 	set_variable = { USA_ok_frame = 3 }
-		# 	set_variable = { USA_tx_frame = 3 }
-		# 	set_variable = { USA_mn_frame = 3 }
-		# 	set_variable = { USA_ia_frame = 2 }
-		# 	set_variable = { USA_mo_frame = 1 }
-		# 	set_variable = { USA_ar_frame = 3 }
-		# 	set_variable = { USA_la_frame = 3 }
-		# 	set_variable = { USA_wi_frame = 3 }
-		# 	set_variable = { USA_il_frame = 1 }
-		# 	set_variable = { USA_mi_frame = 1 }
-		# 	set_variable = { USA_in_frame = 2 }
-		# 	set_variable = { USA_ky_frame = 1 }
-		# 	set_variable = { USA_fl_frame = 3 }
-		# 	set_variable = { USA_ga_frame = 3 }
-		# 	set_variable = { USA_al_frame = 3 }
-		# 	set_variable = { USA_ms_frame = 3 }
-		# 	set_variable = { USA_tn_frame = 3 }
-		# 	set_variable = { USA_sc_frame = 3 }
-		# 	set_variable = { USA_nc_frame = 3 }
-		# 	set_variable = { USA_va_frame = 3 }
-		# 	set_variable = { USA_wv_frame = 1 }
-		# 	set_variable = { USA_oh_frame = 1 }
-		# 	set_variable = { USA_pa_frame = 1 }
-		# 	set_variable = { USA_ny_frame = 1 }
-		# 	set_variable = { USA_nj_frame = 1 }
-		# 	set_variable = { USA_md_frame = 3 }
-		# 	set_variable = { USA_de_frame = 2 }
-		# 	set_variable = { USA_vt_frame = 2 }
-		# 	set_variable = { USA_me_frame = 2 }
-		# 	set_variable = { USA_nh_frame = 2 }
-		# 	set_variable = { USA_ma_frame = 2 }
-		# 	set_variable = { USA_ct_frame = 2 }
-		# 	set_variable = { USA_ri_frame = 2 }
+		hidden_effect = {
+			383 = {
+				set_state_flag = USA_red_state
+			}
+			390 = {
+				set_state_flag = USA_red_state
+			}
+			392 = {
+				set_state_flag = USA_red_state
+			}
+			358 = {
+				set_state_flag = USA_swing_state
+			}
+			396 = {
+				set_state_flag = USA_red_state
+			}
+			360 = {
+				set_state_flag = USA_swing_state
+			}
+			393 = {
+				set_state_flag = USA_swing_state
+			}
+			384 = {
+				set_state_flag = USA_swing_state
+			}
+			395 = {
+				set_state_flag = USA_swing_state
+			}
+			369 = {
+				set_state_flag = USA_swing_state
+			}
+			359 = {
+				set_state_flag = USA_swing_state
+			}
+			261 = {
+				set_state_flag = USA_swing_state
+			}
+			816 = {
+				set_state_flag = USA_swing_state
+			}
+			373 = {
+				set_state_flag = USA_swing_state
+			}
+			381 = {
+				set_state_flag = USA_swing_state
+			}
+			382 = {
+				set_state_flag = USA_swing_state
+			}
+			361 = {
+				set_state_flag = USA_md_blue
+			}
+			357 = {
+				set_state_flag = USA_me_red
+			}
+			937 = {
+				set_state_flag = USA_nh_red
+			}
+			938 = {
+				set_state_flag = USA_vt_red
+			}
+			939 = {
+				set_state_flag = USA_ri_red
+			}
+			940 = {
+				set_state_flag = USA_ct_red
+			}
+			941 = {
+				set_state_flag = USA_ma_red
+			}
+			942 = {
+				set_state_flag = USA_de_red
+			}
+			every_state = {
+				limit = {
+					is_core_of = USA
+					NOT = {
+						OR = {
+							has_state_flag = USA_swing_state
+							has_state_flag = USA_me_red
+							has_state_flag = USA_md_blue
+							state = 629
+							state = 463
+							state = 686
+						}
+					}
+				}
+				set_state_flag = USA_blue_state
+			}
+			set_variable = { USA_wa_frame = 3 }
+			set_variable = { USA_or_frame = 3 }
+			set_variable = { USA_ca_frame = 3 }
+			set_variable = { USA_nv_frame = 3 }
+			set_variable = { USA_id_frame = 3 }
+			set_variable = { USA_mt_frame = 3 }
+			set_variable = { USA_wy_frame = 1 }
+			set_variable = { USA_ut_frame = 3 }
+			set_variable = { USA_az_frame = 3 }
+			set_variable = { USA_nm_frame = 3 }
+			set_variable = { USA_co_frame = 1 }
+			set_variable = { USA_nd_frame = 3 }
+			set_variable = { USA_sd_frame = 2 }
+			set_variable = { USA_ne_frame = 1 }
+			set_variable = { USA_ks_frame = 2 }
+			set_variable = { USA_ok_frame = 3 }
+			set_variable = { USA_tx_frame = 3 }
+			set_variable = { USA_mn_frame = 3 }
+			set_variable = { USA_ia_frame = 2 }
+			set_variable = { USA_mo_frame = 1 }
+			set_variable = { USA_ar_frame = 3 }
+			set_variable = { USA_la_frame = 3 }
+			set_variable = { USA_wi_frame = 3 }
+			set_variable = { USA_il_frame = 1 }
+			set_variable = { USA_mi_frame = 1 }
+			set_variable = { USA_in_frame = 2 }
+			set_variable = { USA_ky_frame = 1 }
+			set_variable = { USA_fl_frame = 3 }
+			set_variable = { USA_ga_frame = 3 }
+			set_variable = { USA_al_frame = 3 }
+			set_variable = { USA_ms_frame = 3 }
+			set_variable = { USA_tn_frame = 3 }
+			set_variable = { USA_sc_frame = 3 }
+			set_variable = { USA_nc_frame = 3 }
+			set_variable = { USA_va_frame = 3 }
+			set_variable = { USA_wv_frame = 1 }
+			set_variable = { USA_oh_frame = 1 }
+			set_variable = { USA_pa_frame = 1 }
+			set_variable = { USA_ny_frame = 1 }
+			set_variable = { USA_nj_frame = 1 }
+			set_variable = { USA_md_frame = 3 }
+			set_variable = { USA_de_frame = 2 }
+			set_variable = { USA_vt_frame = 2 }
+			set_variable = { USA_me_frame = 2 }
+			set_variable = { USA_nh_frame = 2 }
+			set_variable = { USA_ma_frame = 2 }
+			set_variable = { USA_ct_frame = 2 }
+			set_variable = { USA_ri_frame = 2 }
 			
-		# 	set_variable = { USA_predicted_ec = 82 }
-		# }
-		# add_political_power = 100
+			set_variable = { USA_predicted_ec = 82 }
+		}
+		add_political_power = 100
 		activate_mission = USA_election_mission
 	}
 }
@@ -859,11 +865,11 @@ country_event = {
 	option = { 
 		name = usa.8.a
 		add_political_power = -40
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.5 }
-		# USA_election_senate = yes
-		# USA_election_house = yes
-		# custom_effect_tooltip = usa_congress_elections_tt_bad
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 		country_event = usa.30
 	}
 
@@ -873,12 +879,12 @@ country_event = {
 		add_ideas = new_deal
 		retire_country_leader = yes
 		add_political_power = 120
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.6 }
-		# USA_election_senate = yes
-		# USA_election_house = yes
-		# USA_flip_support = yes
-		# custom_effect_tooltip = usa_congress_elections_tt_good
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		USA_flip_support = yes
+		custom_effect_tooltip = usa_congress_elections_tt_good
 		country_event = usa.31
 	}
 }
@@ -904,158 +910,158 @@ country_event = {
 			factor = 75
 		}
 		set_country_flag = USA_dem_campaign
-		# hidden_effect = {
-		# 	383 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	390 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	389 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	392 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	382 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	396 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	393 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	384 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	358 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	360 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	394 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	395 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	359 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	391 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	261 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	373 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	381 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	385 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	387 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	376 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	361 = {
-		# 		set_state_flag = USA_md_swing
-		# 	}
-		# 	357 = {
-		# 		set_state_flag = USA_me_red
-		# 	}
-		# 	937 = {
-		# 		set_state_flag = USA_nh_swing
-		# 	}
-		# 	938 = {
-		# 		set_state_flag = USA_vt_red
-		# 	}
-		# 	939 = {
-		# 		set_state_flag = USA_ri_blue
-		# 	}
-		# 	940 = {
-		# 		set_state_flag = USA_ct_swing
-		# 	}
-		# 	941 = {
-		# 		set_state_flag = USA_ma_swing
-		# 	}
-		# 	942 = {
-		# 		set_state_flag = USA_de_blue
-		# 	}
-		# 	every_state = {
-		# 		limit = {
-		# 			is_core_of = USA
-		# 			NOT = {
-		# 				OR = {
-		# 					has_state_flag = USA_swing_state
-		# 					has_state_flag = USA_me_red
-		# 					has_state_flag = USA_md_swing
-		# 					state = 629
-		# 					state = 463
-		# 					state = 686
-		# 				}
-		# 			}
-		# 		}
-		# 		set_state_flag = USA_blue_state
-		# 	}
-		# 	set_variable = { USA_wa_frame = 3 }
-		# 	set_variable = { USA_or_frame = 1 }
-		# 	set_variable = { USA_ca_frame = 3 }
-		# 	set_variable = { USA_nv_frame = 3 }
-		# 	set_variable = { USA_id_frame = 1 }
-		# 	set_variable = { USA_mt_frame = 3 }
-		# 	set_variable = { USA_wy_frame = 2 }
-		# 	set_variable = { USA_ut_frame = 3 }
-		# 	set_variable = { USA_az_frame = 3 }
-		# 	set_variable = { USA_nm_frame = 1 }
-		# 	set_variable = { USA_co_frame = 2 }
-		# 	set_variable = { USA_nd_frame = 2 }
-		# 	set_variable = { USA_sd_frame = 2 }
-		# 	set_variable = { USA_ne_frame = 2 }
-		# 	set_variable = { USA_ks_frame = 2 }
-		# 	set_variable = { USA_ok_frame = 3 }
-		# 	set_variable = { USA_tx_frame = 3 }
-		# 	set_variable = { USA_mn_frame = 1 }
-		# 	set_variable = { USA_ia_frame = 2 }
-		# 	set_variable = { USA_mo_frame = 1 }
-		# 	set_variable = { USA_ar_frame = 3 }
-		# 	set_variable = { USA_la_frame = 3 }
-		# 	set_variable = { USA_wi_frame = 2 }
-		# 	set_variable = { USA_il_frame = 1 }
-		# 	set_variable = { USA_mi_frame = 1 }
-		# 	set_variable = { USA_in_frame = 2 }
-		# 	set_variable = { USA_ky_frame = 3 }
-		# 	set_variable = { USA_fl_frame = 3 }
-		# 	set_variable = { USA_ga_frame = 3 }
-		# 	set_variable = { USA_al_frame = 3 }
-		# 	set_variable = { USA_ms_frame = 3 }
-		# 	set_variable = { USA_tn_frame = 3 }
-		# 	set_variable = { USA_sc_frame = 3 }
-		# 	set_variable = { USA_nc_frame = 3 }
-		# 	set_variable = { USA_va_frame = 3 }
-		# 	set_variable = { USA_wv_frame = 3 }
-		# 	set_variable = { USA_oh_frame = 2 }
-		# 	set_variable = { USA_pa_frame = 1 }
-		# 	set_variable = { USA_ny_frame = 1 }
-		# 	set_variable = { USA_nj_frame = 1 }
-		# 	set_variable = { USA_md_frame = 1 }
-		# 	set_variable = { USA_de_frame = 3 }
-		# 	set_variable = { USA_vt_frame = 2 }
-		# 	set_variable = { USA_me_frame = 2 }
-		# 	set_variable = { USA_nh_frame = 1 }
-		# 	set_variable = { USA_ma_frame = 1 }
-		# 	set_variable = { USA_ct_frame = 1 }
-		# 	set_variable = { USA_ri_frame = 3 }
+		hidden_effect = {
+			383 = {
+				set_state_flag = USA_red_state
+			}
+			390 = {
+				set_state_flag = USA_red_state
+			}
+			389 = {
+				set_state_flag = USA_red_state
+			}
+			392 = {
+				set_state_flag = USA_red_state
+			}
+			382 = {
+				set_state_flag = USA_red_state
+			}
+			396 = {
+				set_state_flag = USA_red_state
+			}
+			393 = {
+				set_state_flag = USA_swing_state
+			}
+			384 = {
+				set_state_flag = USA_red_state
+			}
+			358 = {
+				set_state_flag = USA_swing_state
+			}
+			360 = {
+				set_state_flag = USA_swing_state
+			}
+			394 = {
+				set_state_flag = USA_red_state
+			}
+			395 = {
+				set_state_flag = USA_swing_state
+			}
+			359 = {
+				set_state_flag = USA_swing_state
+			}
+			391 = {
+				set_state_flag = USA_swing_state
+			}
+			261 = {
+				set_state_flag = USA_red_state
+			}
+			373 = {
+				set_state_flag = USA_swing_state
+			}
+			381 = {
+				set_state_flag = USA_red_state
+			}
+			385 = {
+				set_state_flag = USA_swing_state
+			}
+			387 = {
+				set_state_flag = USA_swing_state
+			}
+			376 = {
+				set_state_flag = USA_swing_state
+			}
+			361 = {
+				set_state_flag = USA_md_swing
+			}
+			357 = {
+				set_state_flag = USA_me_red
+			}
+			937 = {
+				set_state_flag = USA_nh_swing
+			}
+			938 = {
+				set_state_flag = USA_vt_red
+			}
+			939 = {
+				set_state_flag = USA_ri_blue
+			}
+			940 = {
+				set_state_flag = USA_ct_swing
+			}
+			941 = {
+				set_state_flag = USA_ma_swing
+			}
+			942 = {
+				set_state_flag = USA_de_blue
+			}
+			every_state = {
+				limit = {
+					is_core_of = USA
+					NOT = {
+						OR = {
+							has_state_flag = USA_swing_state
+							has_state_flag = USA_me_red
+							has_state_flag = USA_md_swing
+							state = 629
+							state = 463
+							state = 686
+						}
+					}
+				}
+				set_state_flag = USA_blue_state
+			}
+			set_variable = { USA_wa_frame = 3 }
+			set_variable = { USA_or_frame = 1 }
+			set_variable = { USA_ca_frame = 3 }
+			set_variable = { USA_nv_frame = 3 }
+			set_variable = { USA_id_frame = 1 }
+			set_variable = { USA_mt_frame = 3 }
+			set_variable = { USA_wy_frame = 2 }
+			set_variable = { USA_ut_frame = 3 }
+			set_variable = { USA_az_frame = 3 }
+			set_variable = { USA_nm_frame = 1 }
+			set_variable = { USA_co_frame = 2 }
+			set_variable = { USA_nd_frame = 2 }
+			set_variable = { USA_sd_frame = 2 }
+			set_variable = { USA_ne_frame = 2 }
+			set_variable = { USA_ks_frame = 2 }
+			set_variable = { USA_ok_frame = 3 }
+			set_variable = { USA_tx_frame = 3 }
+			set_variable = { USA_mn_frame = 1 }
+			set_variable = { USA_ia_frame = 2 }
+			set_variable = { USA_mo_frame = 1 }
+			set_variable = { USA_ar_frame = 3 }
+			set_variable = { USA_la_frame = 3 }
+			set_variable = { USA_wi_frame = 2 }
+			set_variable = { USA_il_frame = 1 }
+			set_variable = { USA_mi_frame = 1 }
+			set_variable = { USA_in_frame = 2 }
+			set_variable = { USA_ky_frame = 3 }
+			set_variable = { USA_fl_frame = 3 }
+			set_variable = { USA_ga_frame = 3 }
+			set_variable = { USA_al_frame = 3 }
+			set_variable = { USA_ms_frame = 3 }
+			set_variable = { USA_tn_frame = 3 }
+			set_variable = { USA_sc_frame = 3 }
+			set_variable = { USA_nc_frame = 3 }
+			set_variable = { USA_va_frame = 3 }
+			set_variable = { USA_wv_frame = 3 }
+			set_variable = { USA_oh_frame = 2 }
+			set_variable = { USA_pa_frame = 1 }
+			set_variable = { USA_ny_frame = 1 }
+			set_variable = { USA_nj_frame = 1 }
+			set_variable = { USA_md_frame = 1 }
+			set_variable = { USA_de_frame = 3 }
+			set_variable = { USA_vt_frame = 2 }
+			set_variable = { USA_me_frame = 2 }
+			set_variable = { USA_nh_frame = 1 }
+			set_variable = { USA_ma_frame = 1 }
+			set_variable = { USA_ct_frame = 1 }
+			set_variable = { USA_ri_frame = 3 }
 			
-		# 	set_variable = { USA_predicted_ec = 211 }
-		# }
+			set_variable = { USA_predicted_ec = 211 }
+		}
 		
 		activate_mission = USA_election_mission
 	}
@@ -1066,158 +1072,158 @@ country_event = {
 			factor = 0
 		}
 		set_country_flag = USA_rep_campaign
-		# hidden_effect = {
-		# 	383 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	390 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	389 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	392 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	382 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	396 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	393 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	384 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	358 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	360 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	394 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	395 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	359 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	391 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	261 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	373 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	381 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	385 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	387 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	376 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	361 = {
-		# 		set_state_flag = USA_md_swing
-		# 	}
-		# 	357 = {
-		# 		set_state_flag = USA_me_red
-		# 	}
-		# 	937 = {
-		# 		set_state_flag = USA_nh_swing
-		# 	}
-		# 	938 = {
-		# 		set_state_flag = USA_vt_red
-		# 	}
-		# 	939 = {
-		# 		set_state_flag = USA_ri_blue
-		# 	}
-		# 	940 = {
-		# 		set_state_flag = USA_ct_swing
-		# 	}
-		# 	941 = {
-		# 		set_state_flag = USA_ma_swing
-		# 	}
-		# 	942 = {
-		# 		set_state_flag = USA_de_blue
-		# 	}
-		# 	every_state = {
-		# 		limit = {
-		# 			is_core_of = USA
-		# 			NOT = {
-		# 				OR = {
-		# 					has_state_flag = USA_swing_state
-		# 					has_state_flag = USA_me_red
-		# 					has_state_flag = USA_md_swing
-		# 					state = 629
-		# 					state = 463
-		# 					state = 686
-		# 				}
-		# 			}
-		# 		}
-		# 		set_state_flag = USA_blue_state
-		# 	}
-		# 	set_variable = { USA_wa_frame = 3 }
-		# 	set_variable = { USA_or_frame = 1 }
-		# 	set_variable = { USA_ca_frame = 3 }
-		# 	set_variable = { USA_nv_frame = 3 }
-		# 	set_variable = { USA_id_frame = 1 }
-		# 	set_variable = { USA_mt_frame = 3 }
-		# 	set_variable = { USA_wy_frame = 2 }
-		# 	set_variable = { USA_ut_frame = 3 }
-		# 	set_variable = { USA_az_frame = 3 }
-		# 	set_variable = { USA_nm_frame = 1 }
-		# 	set_variable = { USA_co_frame = 2 }
-		# 	set_variable = { USA_nd_frame = 2 }
-		# 	set_variable = { USA_sd_frame = 2 }
-		# 	set_variable = { USA_ne_frame = 2 }
-		# 	set_variable = { USA_ks_frame = 2 }
-		# 	set_variable = { USA_ok_frame = 3 }
-		# 	set_variable = { USA_tx_frame = 3 }
-		# 	set_variable = { USA_mn_frame = 1 }
-		# 	set_variable = { USA_ia_frame = 2 }
-		# 	set_variable = { USA_mo_frame = 1 }
-		# 	set_variable = { USA_ar_frame = 3 }
-		# 	set_variable = { USA_la_frame = 3 }
-		# 	set_variable = { USA_wi_frame = 2 }
-		# 	set_variable = { USA_il_frame = 1 }
-		# 	set_variable = { USA_mi_frame = 1 }
-		# 	set_variable = { USA_in_frame = 2 }
-		# 	set_variable = { USA_ky_frame = 3 }
-		# 	set_variable = { USA_fl_frame = 3 }
-		# 	set_variable = { USA_ga_frame = 3 }
-		# 	set_variable = { USA_al_frame = 3 }
-		# 	set_variable = { USA_ms_frame = 3 }
-		# 	set_variable = { USA_tn_frame = 3 }
-		# 	set_variable = { USA_sc_frame = 3 }
-		# 	set_variable = { USA_nc_frame = 3 }
-		# 	set_variable = { USA_va_frame = 3 }
-		# 	set_variable = { USA_wv_frame = 3 }
-		# 	set_variable = { USA_oh_frame = 2 }
-		# 	set_variable = { USA_pa_frame = 1 }
-		# 	set_variable = { USA_ny_frame = 1 }
-		# 	set_variable = { USA_nj_frame = 1 }
-		# 	set_variable = { USA_md_frame = 1 }
-		# 	set_variable = { USA_de_frame = 3 }
-		# 	set_variable = { USA_vt_frame = 2 }
-		# 	set_variable = { USA_me_frame = 2 }
-		# 	set_variable = { USA_nh_frame = 1 }
-		# 	set_variable = { USA_ma_frame = 1 }
-		# 	set_variable = { USA_ct_frame = 1 }
-		# 	set_variable = { USA_ri_frame = 3 }
+		hidden_effect = {
+			383 = {
+				set_state_flag = USA_red_state
+			}
+			390 = {
+				set_state_flag = USA_red_state
+			}
+			389 = {
+				set_state_flag = USA_red_state
+			}
+			392 = {
+				set_state_flag = USA_red_state
+			}
+			382 = {
+				set_state_flag = USA_red_state
+			}
+			396 = {
+				set_state_flag = USA_red_state
+			}
+			393 = {
+				set_state_flag = USA_swing_state
+			}
+			384 = {
+				set_state_flag = USA_red_state
+			}
+			358 = {
+				set_state_flag = USA_swing_state
+			}
+			360 = {
+				set_state_flag = USA_swing_state
+			}
+			394 = {
+				set_state_flag = USA_red_state
+			}
+			395 = {
+				set_state_flag = USA_swing_state
+			}
+			359 = {
+				set_state_flag = USA_swing_state
+			}
+			391 = {
+				set_state_flag = USA_swing_state
+			}
+			261 = {
+				set_state_flag = USA_red_state
+			}
+			373 = {
+				set_state_flag = USA_swing_state
+			}
+			381 = {
+				set_state_flag = USA_red_state
+			}
+			385 = {
+				set_state_flag = USA_swing_state
+			}
+			387 = {
+				set_state_flag = USA_swing_state
+			}
+			376 = {
+				set_state_flag = USA_swing_state
+			}
+			361 = {
+				set_state_flag = USA_md_swing
+			}
+			357 = {
+				set_state_flag = USA_me_red
+			}
+			937 = {
+				set_state_flag = USA_nh_swing
+			}
+			938 = {
+				set_state_flag = USA_vt_red
+			}
+			939 = {
+				set_state_flag = USA_ri_blue
+			}
+			940 = {
+				set_state_flag = USA_ct_swing
+			}
+			941 = {
+				set_state_flag = USA_ma_swing
+			}
+			942 = {
+				set_state_flag = USA_de_blue
+			}
+			every_state = {
+				limit = {
+					is_core_of = USA
+					NOT = {
+						OR = {
+							has_state_flag = USA_swing_state
+							has_state_flag = USA_me_red
+							has_state_flag = USA_md_swing
+							state = 629
+							state = 463
+							state = 686
+						}
+					}
+				}
+				set_state_flag = USA_blue_state
+			}
+			set_variable = { USA_wa_frame = 3 }
+			set_variable = { USA_or_frame = 1 }
+			set_variable = { USA_ca_frame = 3 }
+			set_variable = { USA_nv_frame = 3 }
+			set_variable = { USA_id_frame = 1 }
+			set_variable = { USA_mt_frame = 3 }
+			set_variable = { USA_wy_frame = 2 }
+			set_variable = { USA_ut_frame = 3 }
+			set_variable = { USA_az_frame = 3 }
+			set_variable = { USA_nm_frame = 1 }
+			set_variable = { USA_co_frame = 2 }
+			set_variable = { USA_nd_frame = 2 }
+			set_variable = { USA_sd_frame = 2 }
+			set_variable = { USA_ne_frame = 2 }
+			set_variable = { USA_ks_frame = 2 }
+			set_variable = { USA_ok_frame = 3 }
+			set_variable = { USA_tx_frame = 3 }
+			set_variable = { USA_mn_frame = 1 }
+			set_variable = { USA_ia_frame = 2 }
+			set_variable = { USA_mo_frame = 1 }
+			set_variable = { USA_ar_frame = 3 }
+			set_variable = { USA_la_frame = 3 }
+			set_variable = { USA_wi_frame = 2 }
+			set_variable = { USA_il_frame = 1 }
+			set_variable = { USA_mi_frame = 1 }
+			set_variable = { USA_in_frame = 2 }
+			set_variable = { USA_ky_frame = 3 }
+			set_variable = { USA_fl_frame = 3 }
+			set_variable = { USA_ga_frame = 3 }
+			set_variable = { USA_al_frame = 3 }
+			set_variable = { USA_ms_frame = 3 }
+			set_variable = { USA_tn_frame = 3 }
+			set_variable = { USA_sc_frame = 3 }
+			set_variable = { USA_nc_frame = 3 }
+			set_variable = { USA_va_frame = 3 }
+			set_variable = { USA_wv_frame = 3 }
+			set_variable = { USA_oh_frame = 2 }
+			set_variable = { USA_pa_frame = 1 }
+			set_variable = { USA_ny_frame = 1 }
+			set_variable = { USA_nj_frame = 1 }
+			set_variable = { USA_md_frame = 1 }
+			set_variable = { USA_de_frame = 3 }
+			set_variable = { USA_vt_frame = 2 }
+			set_variable = { USA_me_frame = 2 }
+			set_variable = { USA_nh_frame = 1 }
+			set_variable = { USA_ma_frame = 1 }
+			set_variable = { USA_ct_frame = 1 }
+			set_variable = { USA_ri_frame = 3 }
 			
-		# 	set_variable = { USA_predicted_ec = 99 }
-		# }
+			set_variable = { USA_predicted_ec = 99 }
+		}
 		
 		activate_mission = USA_election_mission
 	}
@@ -1229,158 +1235,158 @@ country_event = {
 		set_country_flag = USA_mcarthur_candidate
 		set_country_flag = USA_rep_campaign
 		custom_effect_tooltip = USA_mcarthur_candidate_tt
-		# hidden_effect = {
-		# 	383 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	390 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	389 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	392 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	382 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	396 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	393 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	384 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	358 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	360 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	394 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	395 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	359 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	391 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	261 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	373 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	381 = {
-		# 		set_state_flag = USA_red_state
-		# 	}
-		# 	385 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	387 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	376 = {
-		# 		set_state_flag = USA_swing_state
-		# 	}
-		# 	361 = {
-		# 		set_state_flag = USA_md_swing
-		# 	}
-		# 	357 = {
-		# 		set_state_flag = USA_me_red
-		# 	}
-		# 	937 = {
-		# 		set_state_flag = USA_nh_swing
-		# 	}
-		# 	938 = {
-		# 		set_state_flag = USA_vt_red
-		# 	}
-		# 	939 = {
-		# 		set_state_flag = USA_ri_blue
-		# 	}
-		# 	940 = {
-		# 		set_state_flag = USA_ct_swing
-		# 	}
-		# 	941 = {
-		# 		set_state_flag = USA_ma_swing
-		# 	}
-		# 	942 = {
-		# 		set_state_flag = USA_de_blue
-		# 	}
-		# 	every_state = {
-		# 		limit = {
-		# 			is_core_of = USA
-		# 			NOT = {
-		# 				OR = {
-		# 					has_state_flag = USA_swing_state
-		# 					has_state_flag = USA_me_red
-		# 					has_state_flag = USA_md_swing
-		# 					state = 629
-		# 					state = 463
-		# 					state = 686
-		# 				}
-		# 			}
-		# 		}
-		# 		set_state_flag = USA_blue_state
-		# 	}
-		# 	set_variable = { USA_wa_frame = 3 }
-		# 	set_variable = { USA_or_frame = 1 }
-		# 	set_variable = { USA_ca_frame = 3 }
-		# 	set_variable = { USA_nv_frame = 3 }
-		# 	set_variable = { USA_id_frame = 1 }
-		# 	set_variable = { USA_mt_frame = 3 }
-		# 	set_variable = { USA_wy_frame = 2 }
-		# 	set_variable = { USA_ut_frame = 3 }
-		# 	set_variable = { USA_az_frame = 3 }
-		# 	set_variable = { USA_nm_frame = 1 }
-		# 	set_variable = { USA_co_frame = 2 }
-		# 	set_variable = { USA_nd_frame = 2 }
-		# 	set_variable = { USA_sd_frame = 2 }
-		# 	set_variable = { USA_ne_frame = 2 }
-		# 	set_variable = { USA_ks_frame = 2 }
-		# 	set_variable = { USA_ok_frame = 3 }
-		# 	set_variable = { USA_tx_frame = 3 }
-		# 	set_variable = { USA_mn_frame = 1 }
-		# 	set_variable = { USA_ia_frame = 2 }
-		# 	set_variable = { USA_mo_frame = 1 }
-		# 	set_variable = { USA_ar_frame = 3 }
-		# 	set_variable = { USA_la_frame = 3 }
-		# 	set_variable = { USA_wi_frame = 2 }
-		# 	set_variable = { USA_il_frame = 1 }
-		# 	set_variable = { USA_mi_frame = 1 }
-		# 	set_variable = { USA_in_frame = 2 }
-		# 	set_variable = { USA_ky_frame = 3 }
-		# 	set_variable = { USA_fl_frame = 3 }
-		# 	set_variable = { USA_ga_frame = 3 }
-		# 	set_variable = { USA_al_frame = 3 }
-		# 	set_variable = { USA_ms_frame = 3 }
-		# 	set_variable = { USA_tn_frame = 3 }
-		# 	set_variable = { USA_sc_frame = 3 }
-		# 	set_variable = { USA_nc_frame = 3 }
-		# 	set_variable = { USA_va_frame = 3 }
-		# 	set_variable = { USA_wv_frame = 3 }
-		# 	set_variable = { USA_oh_frame = 2 }
-		# 	set_variable = { USA_pa_frame = 1 }
-		# 	set_variable = { USA_ny_frame = 1 }
-		# 	set_variable = { USA_nj_frame = 1 }
-		# 	set_variable = { USA_md_frame = 1 }
-		# 	set_variable = { USA_de_frame = 3 }
-		# 	set_variable = { USA_vt_frame = 2 }
-		# 	set_variable = { USA_me_frame = 2 }
-		# 	set_variable = { USA_nh_frame = 1 }
-		# 	set_variable = { USA_ma_frame = 1 }
-		# 	set_variable = { USA_ct_frame = 1 }
-		# 	set_variable = { USA_ri_frame = 3 }
+		hidden_effect = {
+			383 = {
+				set_state_flag = USA_red_state
+			}
+			390 = {
+				set_state_flag = USA_red_state
+			}
+			389 = {
+				set_state_flag = USA_red_state
+			}
+			392 = {
+				set_state_flag = USA_red_state
+			}
+			382 = {
+				set_state_flag = USA_red_state
+			}
+			396 = {
+				set_state_flag = USA_red_state
+			}
+			393 = {
+				set_state_flag = USA_swing_state
+			}
+			384 = {
+				set_state_flag = USA_red_state
+			}
+			358 = {
+				set_state_flag = USA_swing_state
+			}
+			360 = {
+				set_state_flag = USA_swing_state
+			}
+			394 = {
+				set_state_flag = USA_red_state
+			}
+			395 = {
+				set_state_flag = USA_swing_state
+			}
+			359 = {
+				set_state_flag = USA_swing_state
+			}
+			391 = {
+				set_state_flag = USA_swing_state
+			}
+			261 = {
+				set_state_flag = USA_red_state
+			}
+			373 = {
+				set_state_flag = USA_swing_state
+			}
+			381 = {
+				set_state_flag = USA_red_state
+			}
+			385 = {
+				set_state_flag = USA_swing_state
+			}
+			387 = {
+				set_state_flag = USA_swing_state
+			}
+			376 = {
+				set_state_flag = USA_swing_state
+			}
+			361 = {
+				set_state_flag = USA_md_swing
+			}
+			357 = {
+				set_state_flag = USA_me_red
+			}
+			937 = {
+				set_state_flag = USA_nh_swing
+			}
+			938 = {
+				set_state_flag = USA_vt_red
+			}
+			939 = {
+				set_state_flag = USA_ri_blue
+			}
+			940 = {
+				set_state_flag = USA_ct_swing
+			}
+			941 = {
+				set_state_flag = USA_ma_swing
+			}
+			942 = {
+				set_state_flag = USA_de_blue
+			}
+			every_state = {
+				limit = {
+					is_core_of = USA
+					NOT = {
+						OR = {
+							has_state_flag = USA_swing_state
+							has_state_flag = USA_me_red
+							has_state_flag = USA_md_swing
+							state = 629
+							state = 463
+							state = 686
+						}
+					}
+				}
+				set_state_flag = USA_blue_state
+			}
+			set_variable = { USA_wa_frame = 3 }
+			set_variable = { USA_or_frame = 1 }
+			set_variable = { USA_ca_frame = 3 }
+			set_variable = { USA_nv_frame = 3 }
+			set_variable = { USA_id_frame = 1 }
+			set_variable = { USA_mt_frame = 3 }
+			set_variable = { USA_wy_frame = 2 }
+			set_variable = { USA_ut_frame = 3 }
+			set_variable = { USA_az_frame = 3 }
+			set_variable = { USA_nm_frame = 1 }
+			set_variable = { USA_co_frame = 2 }
+			set_variable = { USA_nd_frame = 2 }
+			set_variable = { USA_sd_frame = 2 }
+			set_variable = { USA_ne_frame = 2 }
+			set_variable = { USA_ks_frame = 2 }
+			set_variable = { USA_ok_frame = 3 }
+			set_variable = { USA_tx_frame = 3 }
+			set_variable = { USA_mn_frame = 1 }
+			set_variable = { USA_ia_frame = 2 }
+			set_variable = { USA_mo_frame = 1 }
+			set_variable = { USA_ar_frame = 3 }
+			set_variable = { USA_la_frame = 3 }
+			set_variable = { USA_wi_frame = 2 }
+			set_variable = { USA_il_frame = 1 }
+			set_variable = { USA_mi_frame = 1 }
+			set_variable = { USA_in_frame = 2 }
+			set_variable = { USA_ky_frame = 3 }
+			set_variable = { USA_fl_frame = 3 }
+			set_variable = { USA_ga_frame = 3 }
+			set_variable = { USA_al_frame = 3 }
+			set_variable = { USA_ms_frame = 3 }
+			set_variable = { USA_tn_frame = 3 }
+			set_variable = { USA_sc_frame = 3 }
+			set_variable = { USA_nc_frame = 3 }
+			set_variable = { USA_va_frame = 3 }
+			set_variable = { USA_wv_frame = 3 }
+			set_variable = { USA_oh_frame = 2 }
+			set_variable = { USA_pa_frame = 1 }
+			set_variable = { USA_ny_frame = 1 }
+			set_variable = { USA_nj_frame = 1 }
+			set_variable = { USA_md_frame = 1 }
+			set_variable = { USA_de_frame = 3 }
+			set_variable = { USA_vt_frame = 2 }
+			set_variable = { USA_me_frame = 2 }
+			set_variable = { USA_nh_frame = 1 }
+			set_variable = { USA_ma_frame = 1 }
+			set_variable = { USA_ct_frame = 1 }
+			set_variable = { USA_ri_frame = 3 }
 			
-		# 	set_variable = { USA_predicted_ec = 99 }
-		# }
+			set_variable = { USA_predicted_ec = 99 }
+		}
 		
 		activate_mission = USA_election_mission
 	}
@@ -1411,11 +1417,11 @@ country_event = {
 	option = { 
 		name = usa.10.a
 		add_political_power = 10
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.5 }
-		# USA_election_senate = yes
-		# USA_election_house = yes
-		# custom_effect_tooltip = usa_congress_elections_tt_bad
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 		country_event = usa.30
 	}
 
@@ -1423,13 +1429,13 @@ country_event = {
 		name = usa.10.b
 		add_ideas = USA_new_deal2
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.6 }
-		# USA_election_senate = yes
-		# USA_election_house = yes
-		# USA_flip_support = yes
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		USA_flip_support = yes
 		add_political_power = 120
-		# custom_effect_tooltip = usa_congress_elections_tt_good
+		custom_effect_tooltip = usa_congress_elections_tt_good
 		if = {
 			limit = { has_idea = USA_wilkies_new_deal }
 			remove_ideas = USA_wilkies_new_deal
@@ -1470,11 +1476,11 @@ country_event = {
 			factor = 25
 		}	
 		add_political_power = 10
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.5 }
-		# USA_election_senate = yes
-		# USA_election_house = yes
-		# custom_effect_tooltip = usa_congress_elections_tt_bad
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
 		country_event = usa.30
 	}
 
@@ -1489,13 +1495,13 @@ country_event = {
 		}
 		remove_ideas = new_deal
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.6 }
-		# USA_election_senate = yes
-		# USA_election_house = yes
-		# USA_flip_support = yes
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		USA_flip_support = yes
 		add_political_power = 120
-		# custom_effect_tooltip = usa_congress_elections_tt_good
+		custom_effect_tooltip = usa_congress_elections_tt_good
 		create_country_leader = {
 			name = "Douglas MacArthur"
 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
@@ -2645,10 +2651,14 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				# check_variable = { USA_rep_ec < USA_dem_ec }
+				check_variable = { USA_rep_ec < USA_dem_ec }
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_36_fdr_victory
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = -0.8
+			}
 		}
 		else = {
 			set_country_flag = USA_36_landon_victory
@@ -2661,21 +2671,21 @@ country_event = {
 			limit = {
 				has_country_flag = USA_36_fdr_victory
 			}
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_dem_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_dem_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
@@ -2692,28 +2702,32 @@ country_event = {
 					staunch_constitutionalist
 				}
 			}
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = -0.3
+			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.5 }
-		# set_variable = { USA_rep_ec = 0 }
-		# set_variable = { USA_dem_ec = 0 }
-		# set_variable = { USA_predicted_ec = 0 }
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		set_variable = { USA_rep_ec = 0 }
+		set_variable = { USA_dem_ec = 0 }
+		set_variable = { USA_predicted_ec = 0 }
 		clr_country_flag = USA_dem_campaign
 		clr_country_flag = USA_rep_campaign
 	}
@@ -2734,10 +2748,14 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				# check_variable = { USA_rep_ec < USA_dem_ec }
+				check_variable = { USA_rep_ec < USA_dem_ec }
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_40_fdr_victory
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = 0.5
+			}
 		}
 		else = {
 			set_country_flag = USA_40_wilkie_victory
@@ -2767,25 +2785,29 @@ country_event = {
 				}
 				set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 			}
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_dem_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_dem_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
 				has_country_flag = USA_40_wilkie_victory
+			}
+			set_power_balance = {
+				id = USA_war_struggle
+				set_value = 0.8
 			}
 			retire_country_leader = yes
 			create_country_leader = {
@@ -2799,27 +2821,27 @@ country_event = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.6 }
-		# set_variable = { USA_rep_ec = 0 }
-		# set_variable = { USA_dem_ec = 0 }
-		# set_variable = { USA_predicted_ec = 0 }
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		set_variable = { USA_rep_ec = 0 }
+		set_variable = { USA_dem_ec = 0 }
+		set_variable = { USA_predicted_ec = 0 }
 		clr_country_flag = USA_dem_campaign
 		clr_country_flag = USA_rep_campaign
 	}
@@ -2840,7 +2862,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				# check_variable = { USA_rep_ec < USA_dem_ec }
+				check_variable = { USA_rep_ec < USA_dem_ec }
 				has_country_flag = USA_dem_campaign
 			}
 			set_country_flag = USA_44_fdr_victory
@@ -2879,21 +2901,21 @@ country_event = {
 				}
 				set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 			}
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_dem_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_dem_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_dem_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
@@ -2911,21 +2933,21 @@ country_event = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
 		else_if = {
 			limit = {
@@ -2943,27 +2965,27 @@ country_event = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-			# if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 424 }
-			# 	}
-			# 	USA_congress_large_support = yes
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = { USA_rep_ec > 318 }
-			# 	}
-			# 	USA_congress_medium_support = yes
-			# }
-			# else = {
-			# 	USA_congress_small_support = yes
-			# }
+			if = {
+				limit = {
+					check_variable = { USA_rep_ec > 424 }
+				}
+				USA_congress_large_support = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { USA_rep_ec > 318 }
+				}
+				USA_congress_medium_support = yes
+			}
+			else = {
+				USA_congress_small_support = yes
+			}
 		}
-		# set_variable = { election_factor = random }
-		# add_to_variable = { election_factor = -0.6 }
-		# set_variable = { USA_rep_ec = 0 }
-		# set_variable = { USA_dem_ec = 0 }
-		# set_variable = { USA_predicted_ec = 0 }
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		set_variable = { USA_rep_ec = 0 }
+		set_variable = { USA_dem_ec = 0 }
+		set_variable = { USA_predicted_ec = 0 }
 		clr_country_flag = USA_dem_campaign
 		clr_country_flag = USA_rep_campaign
 	}

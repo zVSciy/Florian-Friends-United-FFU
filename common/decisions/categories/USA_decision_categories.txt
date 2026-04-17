@@ -2,7 +2,50 @@
 ##### USA ######
 ################
 
+USA_congress = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+
+	scripted_gui = usa_congress_decision_ui	
+
+	priority = 85
+}
+USA_election_campaigns = {
+	priority = 110
+
+	icon = SOV_propaganda
+
+	scripted_gui = usa_election_campaigns_ui
+
+	allowed = {
+		original_tag = USA
+	}
+
+	visible_when_empty = yes
+}
 USA_persian_corridor = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = USA
+	}
+}
+
+USA_war_production_board = {
+	icon = generic_research
+
+	allowed = {
+		original_tag = USA
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+USA_allied_industrial_coord = {
 	icon = generic_political_actions
 
 	allowed = {
@@ -149,16 +192,7 @@ USA_foreign_support = {
 	}
 }
 
-USA_congress = {
-	icon = usa_congress
-	allowed = {
-		original_tag = USA
-	}
 
-	scripted_gui = usa_congress_decision_ui	
-
-	priority = 85
-}
 USA_war_plans = {
 	allowed = {
 		original_tag = USA
@@ -223,20 +257,8 @@ USA_propaganda_campaigns = {
 	}
 }
 
-USA_election_campaigns = {
-	priority = 110
 
-	icon = SOV_propaganda
-
-	# scripted_gui = usa_election_campaigns_ui
-
-	allowed = {
-		original_tag = USA
-	}
-
-	# visible_when_empty = yes
-}
-USA_war_bop = {
+USA_war_struggle = {
     priority = 90
     allowed = {
         original_tag = USA

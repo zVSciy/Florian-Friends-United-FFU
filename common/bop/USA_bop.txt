@@ -1,63 +1,116 @@
-USA_war_bop = {
+USA_war_struggle = {
     initial_value = 0
-    left_side = USA_focus_on_asia
-    right_side = USA_focus_on_europe
-    decision_category = USA_war_bop
+    left_side = USA_isolationism
+    right_side = USA_interventionism
+    decision_category = USA_war_struggle
 	
 	range = {
-			id = USA_war_bop
-			min = -0.10
-			max = 0.10
+			id = USA_split_opinion # total neutrality
+			min = -0.01
+			max = 0.01
 	}
 	side = {
-		id = USA_focus_on_asia	
-		icon = USA_union_pacific_railway
+		id = USA_isolationism	
+		icon = GFX_decision_category_usa_intervention_mandate # change @smuth
 
 		range = {
-			id = USA_light_focus_on_japan # JAP_interservice_rivalry_army_strengthened
-			min = -0.55
-			max = -0.1
+			id = USA_isolationist_sentiment
+			min = -0.40
+			max = -0.01
 			modifier = {
-				naval_invasion_planning_bonus_speed = 0.1
-				naval_doctrine_cost_factor = -0.1
+				political_power_gain = 0.33
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 			}
 		}
 
 		range = {
-			id = USA_full_focus_on_japan # JAP_interservice_rivalry_army_dominant
+			id = USA_total_isolationism
+			min = -0.80
+			max = -0.40
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.1
+				#production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		range = {
+			id = USA_america_first 
 			min = -1
-			max = -0.55
+			max = -0.80
 			modifier = {
-				naval_invasion_planning_bonus_speed = 0.20
-				naval_doctrine_cost_factor = -0.2
-				land_doctrine_cost_factor = 0.1
+				political_power_gain = 1.0
+				stability_factor = 0.2
+				war_support_factor = -0.2
+				industrial_capacity_factory = -0.2
+				production_factory_start_efficiency_factor = 0.05
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.2
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
 			}
 		}
 	}
 
 	side = {
-		id = USA_focus_on_europe	
-		icon = USA_union_pacific_railway
+		id = USA_interventionism	
+		icon = GFX_decision_category_usa_intervention_mandate # @smuth change
 
 		range = {
-			id = USA_light_focus_on_europe # JAP_interservice_rivalry_navy_strengthened
-			min = 0.1
-			max = 0.55
+			id = USA_conditional_neutrality
+			min =  0.01
+			max = 0.4
 			modifier = {
-				max_planning_factor = 0.075
-                land_doctrine_cost_factor = -0.1
-				
+				political_power_gain = -0.05
+				experience_gain_army = 0.1
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
 			}
 		}
 
 		range = {
-			id = USA_full_focus_on_europe # JAP_interservice_rivalry_navy_dominant
-			min = 0.55
+			id = USA_interventionist_momentum
+			min = 0.4
+			max = 0.8
+			modifier = {
+				political_power_gain = -0.1
+				experience_gain_army = 0.2
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.075
+				production_speed_buildings_factor = -0.075
+			}
+		}
+
+		range = {
+			id = USA_interventionist_consensus
+			min = 0.8
 			max = 1
 			modifier = {
-				max_planning_factor = 0.12
-				naval_doctrine_cost_factor = 0.2
-				land_doctrine_cost_factor = -0.15
+				political_power_gain = -0.2
+				experience_gain_army = 0.3
+				stability_factor = -0.2
+				war_support_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.1
 			}
 		}
 	}

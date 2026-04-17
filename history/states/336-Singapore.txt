@@ -31,7 +31,7 @@ state={
 			infrastructure = 6
 			industrial_complex = 5
 			arms_factory = 4
-			air_base = 6
+			air_base = 5
 			12299 = {
 				naval_base = 8
 				coastal_bunker = 3
@@ -45,6 +45,9 @@ state={
 			}
 		}
 		add_core_of = MAL
+		strategic_state_location = {
+			dei_singapoor_s_l = 12299 # Province ID
+		}
 	}
 
 	provinces={

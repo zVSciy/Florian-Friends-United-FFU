@@ -185,6 +185,25 @@ ideas = {
 			}
 		}
 
+		ENG_purchasing_commission = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.125
+			}
+		}
+
 		ENG_secure_the_imperial_shipping_routes = {
 
 			picture = generic_coastal_defense_ships

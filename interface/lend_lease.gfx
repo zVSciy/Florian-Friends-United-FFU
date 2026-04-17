@@ -1,0 +1,49 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_small_plus_button"
+		texturefile = "gfx/interface/small_plus_button.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_small_minus_button"
+		texturefile = "gfx/interface/small_minus_button.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_naval_calculator_bg"
+		textureFile = "gfx/interface/naval_calculator_bg2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}
+	spriteType = {
+		name = "GFX_calculator_entry_bg"
+		textureFile = "gfx/interface/calculator_entry_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_flag_ENG"
+		textureFile = "gfx/interface/flags_ll/ENG_england_democratic.tga"
+	}
+	spriteType = {
+		name = "GFX_flag_FRA"
+		textureFile = "gfx/interface/flags_ll/FRA_FREE_democratic.tga"
+	}
+	spriteType = {
+		name = "GFX_flag_CAN"
+		textureFile = "gfx/interface/flags_ll/CAN.dds"
+	}
+	spriteType = {
+		name = "GFX_flag_SAF"
+		textureFile = "gfx/interface/flags_ll/SAF_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_flag_RAJ"
+		textureFile = "gfx/interface/flags_ll/RAJ.dds"
+	}
+	spriteType = {
+		name = "GFX_flag_BRA"
+		textureFile = "gfx/interface/flags_ll/BRA_neutrality.dds"
+	}
+	spriteType = {
+		name = "GFX_flag_AST"
+		textureFile = "gfx/interface/flags_ll/AST_democratic.dds"
+	}
+}

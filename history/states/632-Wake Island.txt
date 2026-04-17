@@ -25,6 +25,9 @@ state={
 		victory_points = {
 			13047 1 
 		}
+		strategic_state_location = {
+			midway_wake_s_l = 13047 # Province ID
+		}
 
 	}
 	provinces={

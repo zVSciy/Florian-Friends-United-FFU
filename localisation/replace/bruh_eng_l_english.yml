@@ -156,6 +156,7 @@
   ENG_fighter_com:0 "Fighter Command"
   ENG_coastal_com:0 "Coastal Command"
   ENG_bomber_com:0 "Bomber Command"
+  ENG_purchasing_commission:0 "Recently Purchased Equipment"
   ENG_shadow_scheme_idea2:0 "The Shadow Scheme"
   ENG_shadow_scheme_idea:0 "The Shadow Scheme"
   ENG_cash_and_carry:0 "Cash and Carry"
@@ -278,6 +279,12 @@
   ENG_blood_prop:0 "Urgent Call For Blood!"
   ENG_german_prop:0 "We Beat 'Em Before..."
   ENG_war_savings_prop:0 "Back The Great Attack"
+  ENG_the_purchasing_commission:0 "The British Purchasing Commission in the U.S."
+  ENG_purchase_artillery_pack:0 "Purchase Pack Artillery"
+  ENG_purchase_support_equipment:0 "Purchase Support Equipment"
+  ENG_purchase_sf_equipment:0 "Purchase Special Forces Equipment"
+  ENG_purchase_artillery_pack:0 "Purchase Artillery Equipment"
+  ENG_purchase_arms:0 "Purchase Gun & Squad Equipment"
   ENG_operation_compass:0 "Operation Compass"
   ENG_operation_crusader:0 "Operation Crusader"
   ENG_operation_torch:0 "Operation Torch"
@@ -306,6 +313,7 @@
   #### FLAGS ####
   ENG_seize_col:0 "Has Seized Portugese Colonies"
   ENG_researching_flag:0 "Research in Progress"
+  ENG_already_bought_equipment:0 "Equipment Purchase in Progress"
   ENG_buying_equipment_flag:0 "Equipment Purchase in Progress"
   ENG_running_prop:0 "Running Propaganda Campaign"
 

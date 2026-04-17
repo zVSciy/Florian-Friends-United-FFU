@@ -191,7 +191,7 @@ ideas = {
 					has_war = yes
 					AND = { has_government = neutrality threat > 0.05 }
 					AND = { NOT = { tag = USA } has_government = democratic threat > 0.25 }
-					AND = { tag = USA threat > 0.85 has_war_support > 0.65 }
+					AND = { tag = USA has_completed_focus = USA_military_industrial_complex }
 				}
 			}
 

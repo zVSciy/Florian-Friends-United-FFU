@@ -26,76 +26,6 @@ characters={
 			id=-1
 		}
 	}
-	USA_earl_browder={
-		name="Earl Browder"
-		advisor={	
-			slot = political_advisor
-			idea_token = earl_browder
-			allowed  = {
-					original_tag  = USA
-				}
-				available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						# has_completed_focus  = USA_suspend_the_presecution 
-						always = no
-						# not  = {
-						# 	focus_progress  = {
-						# 		focus  = USA_neutrality_act 
-						# 		progress > 0.000
-						# 	}
-						# }
-						# not  = {
-						# 	focus_progress  = {
-						# 		focus  = USA_limited_intervention 
-						# 		progress > 0.000
-						# 	}
-						# }
-					}
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
-				}
-				traits  = {
-					communist_revolutionary 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism 
-					}
-				}
-				ai_will_do  = {
-					factor  = 10.000
-					modifier  = {
-						is_historical_focus_on  = yes 
-						not  = {
-							has_dlc = "Man the Guns"
-						}
-						factor  = 0.000
-					}
-				}
-		}
-		portraits={
-			army={
-				small="GFX_idea_earl_browder"
-			}
-			civilian={
-				large="gfx/leaders/USA/portrait_USA_earl_browder.dds"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	USA_geoffrey_keyes={
 		name="Geoffrey Keyes"
 		portraits={
@@ -192,7 +122,7 @@ characters={
 				original_tag  = USA 
 			}
 			available = {
-				has_completed_focus = USA_expand_the_USMC
+				has_completed_focus = USA_marine_corps_expansion
 			}
 			traits  = {
 				army_commando_3 
@@ -898,12 +828,7 @@ characters={
 				financial_expert 
 			}
 			available = {
-				NOT = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-					}
-				}
+				has_completed_focus = USA_tax_reform
 			}
 		}
 		name="USA_henry_morgenthau"
@@ -962,7 +887,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				smooth_talking_charmer 
+				quartermaster_general 
 			}
 		}
 		name="USA_cordell_hull"
@@ -1144,7 +1069,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				compassionate_gentleman 
+				popular_figurehead 
 			}
 		}
 		name="USA_john_winant"
@@ -1160,7 +1085,6 @@ characters={
 			idea_token = usa_william_donovan
 			available  = {
 				has_intelligence_agency  = yes 
-				threat > 0.500
 			}
 			allowed  = {
 				original_tag  = USA
@@ -1185,7 +1109,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				armaments_organizer 
+				propaganda_expert 
 			}
 		}
 		name="USA_donald_nelson"
@@ -1202,8 +1126,11 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
+			available = {
+				has_completed_focus = USA_army_air_support_command
+			}
 			traits  = {
-				air_chief_safety_2 
+				air_tactical_bombing_3 
 			}
 			cost = 100
 			ai_will_do  = {
@@ -1269,8 +1196,11 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
+			available = {
+				has_completed_focus = USA_airforce_school
+			}
 			traits  = {
-				air_chief_night_operations_2 
+				air_strategic_bombing_2 
 			}
 			cost = 100
 			ai_will_do  = {
