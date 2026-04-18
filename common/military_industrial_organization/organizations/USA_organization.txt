@@ -161,7 +161,7 @@ USA_detroit_arsenal_organization = {
 		all_parents = { generic_mio_trait_mass_production }
 
 		available = {
-			FROM = { has_completed_focus = USA_the_sherman }
+			FROM = { has_completed_focus = USA_the_m4 }
 		}
 
 		equipment_bonus = {
@@ -200,7 +200,7 @@ USA_tank_destroyer_board_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_tank_destroyers }
 
 		available = {
-			FROM = { has_completed_focus = USA_the_sherman }
+			FROM = { has_completed_focus = USA_chrysler_tanks }
 		}
 
 		equipment_bonus = {
