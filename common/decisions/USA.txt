@@ -7353,6 +7353,8 @@ USA_war_struggle = {
 			factor = 0
 		}
 
+		days_remove = 60
+
 		complete_effect = {
 			add_war_support = 0.05
 			USA_congress_small_opposition = yes
@@ -7368,12 +7370,14 @@ USA_war_struggle = {
 		allowed = {
 			original_tag = USA
 		}
-		cost = 50
+		cost = 75
 		fire_only_once = no
 
 		ai_will_do = {
 			factor = 0
 		}
+
+		days_remove = 100
 
 		complete_effect = {
 			USA_congress_medium_support = yes
