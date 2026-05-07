@@ -362,6 +362,15 @@
   USA_rebuilding_the_nation_idea:0 "Rebuilding the Nation"
   USA_tackling_waste_idea:0 "Tackling Waste"
   no_wars_usa:0 "§RNo Wars§!"
+  USA_help_the_allies:0 "American Industrial Support"
+  USA_help_the_majors_eng:0 "Anglo-American Industrial Cooperation"
+  USA_help_the_majors_sov:0 "American Technicians"
+  USA_wbp_strats_idea:0 "Strategic Bombers Mass Production"
+  USA_wbp_cas_idea:0 "Tactical Aviation Mass Production"
+  USA_wbp_air_idea:0 "AAF Production Orders"
+  USA_wbp_tank_idea:0 "M4 Sherman Mass Production"
+  USA_wbp_arms_idea:0 "Increased Springfield Armory Funding"
+  USA_wbp_artillery_idea:0 "Rock Island Contracts"
 
   ### DYNAMIC MODIFIERS ###
   USA_economy_dynamic_modifier:0 "[USA_economy_dynam_mod_sl]"
@@ -422,6 +431,13 @@
   USA_help_fra:0 "Support the French Industry"
   USA_help_eng:0 "Support the British Industry"
   USA_help_sov:0 "Support the Soviet Industry"
+  USA_war_production_board:0 "Wartime Production Board"
+  USA_arms_wbp:0 "Dealings with Springfield Armory"
+  USA_artillery_wbp:0 "Rock Island Contracts"
+  USA_tanks_wbp:0 "Expand the Detroit Arsenal"
+  USA_fighters_wbp:0 "Lockheed Fighter Orders"
+  USA_cas_wbp:0 "Vought-Douglas Contracts"
+  USA_strat_wbp:0 "Boeing B-Programme Contracts"
 
   #### PROPAGANDA ####
   USA_propaganda_campaigns:0 "United States Office of War Information"
@@ -523,6 +539,8 @@
   ffu_usa_senate_massive_opposition_tt:0 "Up to §Y40 Senators§! will go into §ROpposition§!.\n"
   ffu_usa_house_massive_opposition_tt:0 "Up to §Y150 Representatives§! will go into §ROpposition§!.\n"
   ffu_usa_congress_massive_opposition_tt:0 "Up to §Y40 Senators§! and §Y150 Representatives§! go into §ROpposition§!.\n"
+  USA_special_marines_tt:0 "§OEnables the USMC Devil Dogs special template§!"
+  USA_filipino_garrisons_tt:0 "§ODeploys 24 Garrison Divisions in the Philippines§!"
 
   #### LEND-LEASE UI ####
   OPEN_LEND_LEASE_BUTTON:0 "Lend Lease"
@@ -605,6 +623,7 @@
   USA_allied_coord_major_used:0 "Already Supporting a Major Industry"
   USA_ll_quota_check:0 "Congressional Spending Hearing"
   USA_ll_quota_check_desc:0 "If you Lend Lease more or less than the required Quota shown in the Lend Lease interface, you will lose congressional support. If you hit the quota, you will gain congressional support."
+  USA_wbp_used_already:0 "Ongoing War Production Board Dealings"
 
   #### FLAG ####
   USA_fdr_win:0 "FDR Reelected"

@@ -2916,7 +2916,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = {
-                localization_key = USA_special_marines
+                localization_key = USA_special_marines_tt
             }
 		hidden_effect = {
 			division_template = {
@@ -4059,7 +4059,6 @@ focus_tree = {
 		y = 1
 		cost = 2
 		available = {
-			num_of_civilian_factories = 650
 			is_special_project_completed = sp:sp_nuclear_bomb
 		}
 
@@ -5212,24 +5211,6 @@ focus_tree = {
 		prerequisite = { focus = USA_filipino_army }
 		x = 0
 		y = 1
-		cost = 5
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = USA_philippines_resources
-		icon = X
-		relative_position_id = USA_filipino_army
-		prerequisite = { focus = USA_filipino_army }
-		x = 0
-		y = 1
 		cost = 2
 		available = {
 			
@@ -5271,7 +5252,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-								division_template = {
+			custom_effect_tooltip = {
+                localization_key = USA_filipino_garrisons_tt
+            }
+			hidden_effect = {
+				division_template = {
 					name = "Far East Army"
 					is_locked = yes
 					regiments = {
@@ -5499,6 +5484,7 @@ focus_tree = {
 						owner = USA
 					}
 				}
+			}
 		}
 	}
 
