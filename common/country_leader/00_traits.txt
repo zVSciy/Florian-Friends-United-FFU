@@ -933,17 +933,6 @@ leader_traits = {
 		random = no
 		
 		industrial_capacity_factory = 0.075
-		equipment_bonus = {
-			light_tank_chassis = {
-				hardness = 0.05
-			}
-			medium_tank_chassis = {
-				hardness = 0.05
-			}
-			heavy_tank_chassis = {
-				hardness = 0.05
-			}
-		}
 
 		
 		ai_will_do = {

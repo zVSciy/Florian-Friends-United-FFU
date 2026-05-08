@@ -748,86 +748,6 @@ focus_tree = {
 				}
 				set_compliance = 40
 			}
-			# every_controlled_state = {
-			# 	limit = {
-			# 		is_core_of = HOL
-			# 	}
-			# 	set_compliance = 40
-			# }
-			effect_tooltip = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 10000
-					producer = FRA
-				}
-				add_equipment_to_stockpile = {
-					type = squad_equipment_0
-					amount = 2000
-					producer = FRA
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 750
-					producer = FRA
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 750
-					producer = FRA
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 2000
-					producer = FRA
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis_1
-					amount = 500
-					producer = FRA
-				}
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 250
-					producer = FRA
-				}
-			}
-			hidden_effect = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 10000
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = squad_equipment_0
-					amount = 2000
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 750
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 750
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 2000
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis_1
-					amount = 500
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 250
-					producer = GER
-				}
-			}
 		}
 	}
 
@@ -6361,7 +6281,7 @@ focus_tree = {
 		available = {
 			POL = {
 				NOT = { controls_state = 85 }
-				NOT = { controls_state = 10 }	
+				NOT = { controls_state = 86 }	
 			}
 			OR = { 
 				has_war_with = ENG
@@ -6376,7 +6296,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10	
 			modifier = {
-				factor = 0
+				factor = 100
 				date < 1939.1.1
 			}
 		}	
@@ -6453,38 +6373,6 @@ focus_tree = {
 					set_compliance = 40
 				}
 			}
-				GER = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 15000
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = squad_equipment
-						amount = 3500
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = horse_equipment
-						amount = 3750
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = support_equipment
-						amount = 925
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = train_equipment_1
-						amount = 12
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = convoy_1
-						amount = 150
-						producer = GER
-					}
-				}
 				ENG = {
 					# transfer_state = 100
 					transfer_state = 101
