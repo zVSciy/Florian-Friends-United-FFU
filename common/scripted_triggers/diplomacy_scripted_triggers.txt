@@ -289,7 +289,7 @@ DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 			}
 			# date > 1941.5.1
 			JAP = {
-				has_capitulated = yes
+				NOT = { controls_state = 24 }
 			}
 		}
 	}
@@ -355,7 +355,7 @@ DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
 			}
 			# date > 1941.5.1
 			JAP = {
-				has_capitulated = yes
+				NOT = { controls_state = 24 }
 			}
 		}
 		# USA = { 				
@@ -488,7 +488,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 		#always = yes
 		OR = {
 			NOT = { tag = FRA }
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			NOT = { controls_state = 24 }
 		}
 		OR = {
 			NOT = { 
@@ -496,14 +496,14 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 					tag = FRA
 				}
 			}
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			NOT = { controls_state = 24 }
 		}
 		OR = {
 			NOT = { tag = USA }
-			has_completed_focus = USA_lend_lease_act
+			always = no
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = USA
 				}
@@ -517,7 +517,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 			always = no
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = SOV
 				}
@@ -538,7 +538,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 		#always = yes #handled by game logic, see above
 		OR = {
 			NOT = { tag = FRA }
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			NOT = { controls_state = 24 }
 		}
 		OR = {
 			NOT = { 
@@ -546,14 +546,14 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 					tag = FRA
 				}
 			}
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			NOT = { controls_state = 24 }
 		}
 		OR = {
 			NOT = { tag = USA }
-			has_completed_focus = USA_lend_lease_act
+			always = no
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = USA
 				}
@@ -567,7 +567,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 			always = no
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = SOV
 				}
@@ -626,28 +626,30 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 		#always = yes
 		OR = {
 			NOT = { tag = FRA }
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			NOT = { controls_state = 24 }
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = FRA
 				}
 			}
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			FROM = {
+				NOT = { controls_state = 24 }
+			}
 		}
 		OR = {
 			NOT = { tag = USA }
 			has_completed_focus = USA_lend_lease_act
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = USA
 				}
 			}
 			FROM = {
-				has_completed_focus = USA_lend_lease_act
+				always = no
 			}
 		}
 		OR = {
@@ -655,7 +657,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 			always = no
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = SOV
 				}
@@ -676,28 +678,30 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 		#always = yes #handled by game logic, see above
 		OR = {
 			NOT = { tag = FRA }
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			NOT = { controls_state = 24 }
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = FRA
 				}
 			}
-			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+			FROM = {
+				NOT = { controls_state = 24 }
+			}
 		}
 		OR = {
 			NOT = { tag = USA }
 			has_completed_focus = USA_lend_lease_act
 		}
 		OR = {
-			NOT = { 
+			NOT = {
 				FROM = {
 					tag = USA
 				}
 			}
 			FROM = {
-				has_completed_focus = USA_lend_lease_act
+				always = no
 			}
 		}
 		OR = {

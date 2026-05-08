@@ -469,8 +469,7 @@ adjacency_rule =
 	required_provinces = { 9833 11829 }
 	
 	is_disabled = {
-		has_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY
-		tooltip = bosporus_strait_blocked_tt
+		tag = ITA
 	}
 	
 	icon = 9833
@@ -842,7 +841,9 @@ adjacency_rule =
 	}
 	
 	required_provinces = { 4985 5074 }
-		
+	is_disabled = {
+		tag = USA
+	}
 	icon = 4985
 	offset = { 6 0 8 }
 }
