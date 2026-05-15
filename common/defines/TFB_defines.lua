@@ -370,8 +370,8 @@ NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 0.3
 NDefines.NAir.BIGGEST_AGILITY_FACTOR_DIFF = 4.0					-- biggest factor difference in agility for doing damage (caps to this) -- Vanilla is 3.0
 NDefines.NAir.BIGGEST_SPEED_FACTOR_DIFF = 3.0					-- biggest factor difference in speed for doing damage (caps to this)	-- Vanilla is 2.5	
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 10					-- Used to balance the damage done while bombing.
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.5						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05							-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.4						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.03							-- Higher value = more shot down planes
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 8							-- Higher value = more shot down planes
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 6          -- how often carrier planes do battle inside naval combat
 NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3			-- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.
@@ -458,7 +458,7 @@ NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1.6 -- How much aircrafts in region improves air detection (up to effective count).
 NDefines.NAir.DISRUPTION_FACTOR = 4
-NDefines.NAir.ESCORT_FACTOR = 5.5		-- cas enters battle earlier, fucks a lot of shit up
+NDefines.NAir.ESCORT_FACTOR = 6.0		-- cas enters battle earlier, fucks a lot of shit up
 NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.70
 NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.70
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.2			--	Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
