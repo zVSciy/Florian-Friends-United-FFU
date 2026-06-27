@@ -1728,8 +1728,9 @@ guiTypes = {
 		clipping = no
 
 		background = {
-			name = "Background"		
-			spriteType ="GFX_div_unit_item_bg"
+			name = "Background"
+			position = { x = -12 y = 11 }
+			spriteType ="GFX_div_unit_item_bg_wide"
 		}
 		
 		iconType = {
@@ -1766,7 +1767,15 @@ guiTypes = {
 			spriteType = "GFX_cost_textbox_inv"
 			Orientation = CENTER_LOWER
 			clicksound = click_default
-		}	
+		}
+
+		buttonType = {
+			name = "unit_icon_hq_remove"
+			position = { x = 8 y = 16 }
+			spriteType = "GFX_remove_icon"
+			scale = 0.75
+			clicksound = click_default
+		}
 	}
 
 	containerWindowType = {
@@ -1776,7 +1785,8 @@ guiTypes = {
 		clipping = no
 		
 		background = {
-			name = "Background"		
+			name = "Background"
+			position = { x = 0 y = 21 }
 			spriteType ="GFX_div_subunit_item_bg"
 			alwaystransparent = yes	
 		}
@@ -1786,7 +1796,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_bop_glow_effect"
 			position = {x=-4 y=16}
 			Orientation = CENTER_LOWER
-			scale = 1.0
 			hide = yes
 		}
 		
@@ -1796,19 +1805,11 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			text = "Maus"
 			maxWidth = 65
 			maxHeight = 20
 			format = centre
-			
-			pdx_tooltip_anchor =
-			{
-				x = -254
-				y = -2
-			}
-			
 		}
-	
+
 		buttonType = {
 			name = "unit_icon"
 			spriteType = "GFX_locked_icon"
@@ -1816,14 +1817,7 @@ guiTypes = {
 			Orientation = CENTER_LOWER
 			scale = 0.8
 			clicksound = click_default
-			
-			pdx_tooltip_anchor =
-			{
-				x = -254
-				y = -2
-			}
-			
-		}	
+		}
 
 		buttonType = {
 			name = "invisible_icon"
@@ -1837,7 +1831,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "designer_subunit_category_entry"
-		size = { width = 282 height = 66  }
+		size = { width = 250 height = 66  }
 		clipping = no
 
 		background = {
@@ -1882,7 +1876,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "designer_subunit_entry"
-		size = { width = 282 height = 66  }
+		size = { width = 250 height = 66  }
 		clipping = no
 
 		background = {
@@ -1923,17 +1917,17 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-		
+
 		iconType = {
 			name = "special_forces_icon"
 			spriteType = "GFX_special_forces_icon"
-			position = { x = 216 y = 5 }
+			position = { x = 216 y = 10 }
 		}
-		
+
 		iconType = {
 			name = "can_paradrop_icon"
 			spriteType = "GFX_can_paradrop_icon_small"
-			position = { x = 216 y = 30 }
+			position = { x = 216 y = 35 }
 			frame = 2
 		}
 	}
@@ -1943,9 +1937,10 @@ guiTypes = {
 		size = { width = 198 height = 50 }
 		clipping = no
 		
-		background = {
-			name = "Background"
+		buttonType = {
+			name = "Button"
 			quadTextureSprite ="GFX_mini_tooltip"
+			size = { x = 198 y = 50 }
 			clicksound = click_default
 		}
 
@@ -2025,6 +2020,28 @@ guiTypes = {
 			format = left
 			multiline = no
 			fixedsize = yes
+		}
+	}
+	# Width hardcoded to designer's hq_modifiers_list interior (list width minus space for the
+	# vertical scrollbar). Height is overridden every frame in C++ to fit the wrapped text.
+	containerWindowType = {
+		name = "designer_hq_modifier_entry"
+		size = { width = 226 height = 20 }
+		clipping = no
+
+		# y is the vertical gap between consecutive rows; negative values tighten the spacing.
+		positionType = {
+			name = "row_padding"
+			position = { x = 0 y = 6 }
+		}
+
+		instantTextboxType = {
+			name = "text"
+			font = "hoi_16mbs"
+			maxWidth = 226
+			maxHeight = 60
+			format = left
+			multiline = yes
 		}
 	}
 

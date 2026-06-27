@@ -17,51 +17,6 @@ on_actions = {
 
 
 	#Not run on a specific country.
-	on_startup = {
-		#SET UP MIO SIZE IN 1939 BOOKMARK
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-					date > 1939.01.01 #1939 Bookmark
-				}
-				every_country = {
-					limit = {
-						is_major = yes
-					}
-					every_military_industrial_organization = {
-						add_mio_size = 4
-					}
-				}
-				every_country = {
-					limit = {
-						is_major = no
-					}
-					every_military_industrial_organization = {
-						add_mio_size = 3
-					}
-				}
-			}
-		}
-
-		effect = { # Setting up Nordic Cooperation system 
-			NOR = {
-				NORDIC_cooperation_initial_setup = yes 
-			}
-		}
-
-		effect = {
-			SWE = {
-				SWE_calc_refugee_from_war = yes
-			}
-		}
-
-		effect = {
-			GER = {
-				find_global_platonic_countries = yes # This is so platonic country variables are updated in game start and doesn't show as "Norway"
-			}
-		}
-	}
 
 	on_new_term_election = {
 		random_events = {

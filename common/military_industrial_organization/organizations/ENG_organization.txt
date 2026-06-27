@@ -290,13 +290,6 @@ ENG_harland_wolff_organization = {
 		}
 		has_dlc = "Arms Against Tyranny"
 	}
-
-	override_trait = {
-		token = generic_mio_trait_underway_replenishment_equipment
-
-		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_transom_stern
-	}
 }
 
 
@@ -314,13 +307,6 @@ ENG_cammell_laird_organization = {
 			tag = NZL 
 		}
 		has_dlc = "Arms Against Tyranny"
-	}
-
-	override_trait = {
-		token = generic_mio_trait_advanced_armor_design
-
-		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_advanced_hydrodynamic_design
 	}
 }
 

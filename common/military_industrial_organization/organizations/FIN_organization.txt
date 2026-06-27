@@ -149,12 +149,6 @@ FIN_crichton_vulcan_organization = { #Coastal Defense Ships & Subs
 		text = mio_header_high_speed_focus
 		x = 8
 	}
-
-	override_trait = {
-		token = generic_mio_trait_long_range_raiding
-
-		position = { x=2 y=0 }
-	}
 }
 
 

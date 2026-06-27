@@ -351,9 +351,6 @@ air_subdoctrine_heavy_aircraft_focus = {
 			category_strat_bomber = {
 				air_bombing = 0.1
 			}
-			category_maritime_patrol_bomber = {
-				naval_strike_attack = 0.05
-			}
 		}
 		developed_training_programs = {
 			air_training_xp_gain_factor = 0.05

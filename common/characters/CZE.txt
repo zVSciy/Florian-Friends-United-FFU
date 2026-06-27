@@ -538,14 +538,6 @@ characters={
 					}
 					has_completed_focus  = CZE_democratic_bastion 
 				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
 			}
 			traits  = {
 				democratic_reformer 
@@ -576,14 +568,6 @@ characters={
 					}
 					has_completed_focus  = CZE_go_left 
 				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
 			}
 			traits  = {
 				communist_revolutionary 
@@ -613,14 +597,6 @@ characters={
 						has_dlc = "Death or Dishonor"
 					}
 					has_completed_focus  = CZE_go_right 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
 				}
 			}
 			traits  = {

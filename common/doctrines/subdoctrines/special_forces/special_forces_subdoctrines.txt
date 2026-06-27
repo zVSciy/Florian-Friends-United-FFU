@@ -25,15 +25,6 @@ mountaineers_1 = {
     }
 
     ai_will_do = {
-        base = 1
-        modifier = {
-            factor = 25
-           	OR = {
-           		original_tag = SWE
-           		original_tag = FIN
-           		original_tag = NOR
-           	} 
-        }
     }
 
     # EFFECTS

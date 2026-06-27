@@ -19,6 +19,7 @@ sub_units = {
 			category_front_line
 			category_support_battalions
 			category_army
+			category_divisional_support_battalions
 		}
 
 		combat_width = 0
@@ -131,6 +132,7 @@ sub_units = {
 			category_support_battalions
 			category_army
 			category_marines
+			category_divisional_support_battalions
 		}
 
 	
@@ -357,6 +359,7 @@ sub_units = {
 			category_front_line
 			category_support_battalions
 			category_army
+			category_divisional_support_battalions
 		}
 
 		combat_width = 0
@@ -468,6 +471,7 @@ sub_units = {
 			category_tanks
 			category_all_armor
 			category_army
+			category_divisional_support_battalions
 		}
 
 	

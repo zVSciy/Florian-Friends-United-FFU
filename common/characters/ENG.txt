@@ -50,58 +50,6 @@ characters={
 		}
 	}
 
-	ENG_harry_pollitt={
-		name=ENG_harry_pollitt
-		portraits={
-			civilian={
-				large=GFX_portrait_ENG_harry_pollitt
-			}
-			army={
-				small="GFX_idea_harry_pollitt"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = harry_pollitt
-			allowed  = {
-				original_tag  = ENG
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					has_government  = communism 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			do_effect  = {
-				NOT = {
-					has_government  = communism 
-				}
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
-		
-		country_leader={
-			ideology=leninism
-			traits={ staunch_stalinist }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	ENG_alan_brooke={
 		name="Alan Brooke"
 		advisor={
@@ -909,44 +857,6 @@ characters={
 			do_effect = {
 				NOT = {
 					has_government = democratic
-				}
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	}
-	ENG_john_beckett={
-		name="ENG_john_beckett"
-		portraits={
-			army={
-				small="GFX_idea_john_beckett"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_john_beckett
-			allowed  = {
-				original_tag = ENG
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_government = fascism
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			do_effect = {
-				NOT = {
-					has_government = fascism
 				}
 			}
 			ai_will_do = {

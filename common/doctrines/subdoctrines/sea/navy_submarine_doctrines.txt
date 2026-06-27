@@ -126,81 +126,11 @@ submarine_fleet_operations = {
             }
 		}
 		predictive_search_patterns = {
+            naval_torpedo_screen_penetration_factor = 1.0
+            naval_torpedo_reveal_chance_factor = -0.5
 			submarine = {
-				naval_torpedo_reveal_chance_factor = -0.5
                 naval_torpedo_hit_chance_factor = 0.1
-                naval_torpedo_screen_penetration_factor = 1.0
 			}
 		}
     }
 }
-
-
-
-
-
-#########
-
-#fleet_submarines = {
-#    track = submarines
-#    name = SUBDOCTRINE_SUBMARINE_FLEET_SUBMARINES
-#    description = SUBDOCTRINE_SUBMARINE_FLEET_SUBMARINES
-#    icon = GFX_doctrine_wolfpacks_medium
-#
-#    xp_cost = 100
-#    xp_type = navy
-#
-#    available = {
-#        always = yes
-#    }
-#
-#    ai_will_do = { 
-#        base = 1
-#        modifier = {
-#            factor = 75
-#            original_tag = USA
-#        }
-#    }
-#
-#
-#    # EFFECTS
-#    submarine = {
-#        max_strength = 0.2
-#        naval_torpedo_hit_chance_factor = 0.20
-#        convoy_raiding_coordination = -0.9
-#	}
-#
-#    rewards = {
-#		safe_from_air = {
-#			submarine = {
-#				sub_visibility = -0.2
-#			}
-#		}
-#		more_sub_hp = {
-#			submarine = {
-#				max_strength = 0.2
- #               max_organisation = 20
-#			}
-#		}
-#		better_aim = {
-#			submarine = {
-#				naval_torpedo_hit_chance_factor = 0.2
-#				max_organisation = 10
-#			}
-#		}
- #       rough_weather_procedure = {
-#			equipment_bonus = {
- #               ship_hull_submarine = {
-#				    naval_weather_penalty_factor = -0.15
-#		        }
- #           }
-#		}
-#		cowabunga = {
-#			submarine = {
-#				naval_torpedo_reveal_chance_factor = -0.5
- #               naval_torpedo_hit_chance_factor = 0.1
-  #              naval_torpedo_screen_penetration_factor = 1.0
-#			}
-#		}
-#    }
-#}

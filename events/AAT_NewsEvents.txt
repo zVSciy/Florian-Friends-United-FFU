@@ -7,37 +7,6 @@
 add_namespace = aat_news
 
 
-#Icelandic Independence
-news_event = {
-	id = aat_news.1
-	title = aat_news.1.t
-	desc = aat_news.1.desc
-	picture = GFX_news_event_generic_sign_treaty3
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = aat_news.1.a
-	}
-}
-
-#Iceland American Protection
-news_event = {
-	id = aat_news.2
-	title = aat_news.2.t
-	desc = aat_news.2.desc
-	picture = GFX_news_event_generic_sign_treaty3
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = aat_news.2.a
-	}
-}
 
 
 ###############

@@ -19,6 +19,7 @@ sub_units = {
 			category_support_battalions
 			category_army
 			category_recon
+			category_divisional_support_battalions
 		}
 
 	
@@ -109,6 +110,7 @@ sub_units = {
 			category_support_battalions
 			category_army
 			category_recon
+			category_divisional_support_battalions
 		}
 
 		battalion_mult = {
@@ -271,7 +273,7 @@ sub_units = {
 		same_support_type = recon # blocks adding other recon types to template
 	}
 
-		usmc_recon = {
+	usmc_recon = {
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -387,6 +389,7 @@ sub_units = {
 			category_support_battalions
 			category_army
 			category_recon
+			category_divisional_support_battalions
 		}
 
 		battalion_mult = {
@@ -485,6 +488,7 @@ sub_units = {
 			category_army
 			category_all_armor
 			category_recon
+			category_divisional_support_battalions
 		}
 
 	
@@ -569,6 +573,7 @@ sub_units = {
 			category_support_battalions
 			category_army
 			category_recon
+			category_divisional_support_battalions
 		}
 
 		battalion_mult = {
@@ -821,6 +826,7 @@ sub_units = {
 			category_army
 			category_recon
 			category_mountaineers
+			category_divisional_support_battalions
 		}
 
 	

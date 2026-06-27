@@ -184,13 +184,13 @@ air_subdoctrine_carrier_strikes = {
         }
         specialized_torpedoes = {
             naval_strike_targetting_factor = 0.1
-            category_carrier_nav_bomber = {
+            category_nav_bomber = {
                 naval_strike_attack = 0.08
             }
         }
         strike_wave_tactics = { 
             air_cas_efficiency = 0.05
-            category_carrier_cas = {
+            category_cas = {
                 air_ground_attack = 0.08
             }
         }
@@ -305,10 +305,7 @@ air_subdoctrine_naval_torpedo_tactics = {
         }
         extended_sea_patrols = { 
             category_nav_bomber = {
-                air_range = 0.05
-            }
-            category_carrier_nav_bomber = {
-                air_range = 0.05
+                air_range = 0.1
             }
         }
         all_weather_training = {

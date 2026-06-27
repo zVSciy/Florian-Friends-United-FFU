@@ -1,0 +1,62 @@
+# FFU custom sub-units / dynamic tokens registered as synchronized to prevent MP OOS
+# (scopedvariable.cpp:551 warnings)
+
+# Infantry
+infantry_mot
+paratrooper
+jaeger
+arditi
+paramarine
+penal_battalion
+hq_company
+
+# Armor
+light_armor
+medium_armor
+amphibious_mechanized
+amphibious_light_armor
+amphibious_medium_armor
+amphibious_heavy_armor
+
+# Tank destroyers
+light_tank_destroyer_brigade
+medium_tank_destroyer_brigade
+heavy_tank_destroyer_brigade
+mechanised_tank_destroyer_brigade
+
+# Assault guns
+light_assault_gun_brigade
+medium_assault_gun_brigade
+heavy_assault_gun_brigade
+light_assault_gun_support
+medium_assault_gun_support
+heavy_assault_gun_support
+
+# Self-propelled artillery
+light_sp_artillery_brigade
+medium_sp_artillery_brigade
+heavy_sp_artillery_brigade
+mech_sp_artillery_brigade
+
+# Self-propelled anti-air
+light_sp_anti_air_brigade
+medium_sp_anti_air_brigade
+
+# Anti-tank
+anti_tank_brigade
+mot_anti_tank_brigade
+heavy_anti_tank_brigade
+pack_antitank_brigade
+
+# Artillery
+artillery_brigade
+mot_artillery_brigade
+dp_artillery_brigade
+mot_dp_artillery_brigade
+pack_artillery_brigade
+heavy_artillery_brigade
+rocket_artillery_brigade
+motorized_rocket_brigade
+
+# Equipment
+radio_equipment

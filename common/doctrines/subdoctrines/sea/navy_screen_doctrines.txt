@@ -102,7 +102,7 @@ support_integrated_operations = {
 			destroyer = {
 				water_deep_ocean = {
 					attack = 0.20
-					defense = 0.20
+					defence = 0.20
 					movement = 0.10
 				}
 			}
@@ -113,12 +113,12 @@ support_integrated_operations = {
 			screening_efficiency = 0.10
 		}
 		early_warning = {
+			naval_torpedo_screen_penetration_factor = 0.25
 			destroyer = {
 				surface_detection = 0.10
 				max_organisation = 10
 				lg_attack = 0.2
 				lg_armor_piercing = 0.1
-				naval_torpedo_screen_penetration_factor = 0.25
 			}
 			light_cruiser = {
 				surface_detection = 0.10

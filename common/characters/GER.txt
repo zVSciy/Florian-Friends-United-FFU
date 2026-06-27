@@ -1132,10 +1132,6 @@ characters={
 			}
 			available = {
 				has_government = fascism
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
 			}
 			ai_will_do = {
 				factor = 24

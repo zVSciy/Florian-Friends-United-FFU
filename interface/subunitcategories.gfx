@@ -234,4 +234,24 @@ spriteTypes = {
 
 	spriteType = { name = "GFX_unit_Converts_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_convert_icon.dds" noOfFrames = 2}
 	
+	spriteType = {
+		name = "GFX_unit_category_divisional_support_battalions"
+		texturefile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_category_regimental_support_battalions"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_fire_support_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_category_helicopter_support_companies"
+		texturefile = "gfx/interface/counters/divisions_large/unit_helicopter_brigade_icon.dds"
+		noOfFrames = 2
+	}
+
 }
