@@ -1297,15 +1297,6 @@ ideas = {
 					original_tag = SPR
 				}
 			}
-
-			available = {
-				if = {
-					limit = {
-						original_tag = SPR
-					}
-					has_completed_focus = SPA_italian_naval_designers
-				}
-			}
 						
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1332,12 +1323,6 @@ ideas = {
 			available = {
 				ITA = {
 					has_completed_focus = ITA_green_water_navy
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-					}
-					has_completed_focus = SPA_italian_naval_designers
 				}
 			}
 						
@@ -1366,12 +1351,6 @@ ideas = {
 				ITA = {
 					has_completed_focus = ITA_convoy_defence
 				}	
-				if = {
-					limit = {
-						original_tag = SPR
-					}
-					has_completed_focus = SPA_italian_naval_designers
-				}
 			}
 						
 			research_bonus = {
@@ -1412,12 +1391,6 @@ ideas = {
 						has_completed_focus = ITA_new_cruisers
 					}
 				}
-				if = {
-					limit = {
-						original_tag = SPR
-					}
-					has_completed_focus = SPA_italian_naval_designers
-				}
 			}
 						
 			research_bonus = {
@@ -1444,12 +1417,6 @@ ideas = {
 			available = {
 				ITA = {
 					has_completed_focus = ITA_sub_raiders
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-					}
-					has_completed_focus = SPA_italian_naval_designers
 				}
 			}
 						

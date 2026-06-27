@@ -88,46 +88,6 @@ reduce_occupation_cost_effect = {
 	}
 }
 
-increase_occupation_cost_effect = {
-	if = {
-		limit = {
-			has_idea = FRA_occupation_costs_3
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_3
-			add_idea = FRA_occupation_costs_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_2
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_2
-			add_idea = FRA_occupation_costs_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_1
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_1
-			add_idea = FRA_occupation_costs_2
-		}
-	}
-	else_if = {
-		limit = { 
-			NOT = { 
-				has_idea = FRA_occupation_costs_1
-				has_idea = FRA_occupation_costs_2
-				has_idea = FRA_occupation_costs_3
-				has_idea = FRA_occupation_costs_4 
-			}
-		}
-		add_ideas = FRA_occupation_costs_1
-	}
-}
 
 FRA_congress_of_paris_italian_claims_setup_effect = {
 	add_state_claim = 452

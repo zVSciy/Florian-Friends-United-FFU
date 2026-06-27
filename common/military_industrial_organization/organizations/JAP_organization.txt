@@ -122,12 +122,6 @@ JAP_maizuru_naval_arsenal_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -222,12 +216,6 @@ JAP_mitsubishi_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -354,12 +342,6 @@ JAP_nissan_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {

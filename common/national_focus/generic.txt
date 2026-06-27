@@ -700,16 +700,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 0.5
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
-			add_tech_bonus = {
 				name = ships_bonus
 				bonus = 0.5
 				uses = 1

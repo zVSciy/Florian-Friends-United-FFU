@@ -46,23 +46,7 @@
 		}
 	}
 
-	ENG_unlock_propaganda_campaign_slot_effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					check_variable = { ENG_poster_left_icon_frame = ENG_propaganda_locked_slot_index }
-				}
-				set_variable = { ENG_poster_left_icon_frame = ENG_propaganda_empty_slot_index }
-			}
-			else_if = {
-				limit = {
-					check_variable = { ENG_poster_center_icon_frame = ENG_propaganda_locked_slot_index }
-				}
-				set_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index }
-			}
-		}
-	}
-
+	
 # USA	
 	USA_pick_propaganda_campaign_slot_effect = {
 		hidden_effect = {
@@ -111,23 +95,7 @@
 		}
 	}
 
-	USA_unlock_propaganda_campaign_slot_effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					check_variable = { USA_poster_left_icon_frame = USA_propaganda_locked_slot_index }
-				}
-				set_variable = { USA_poster_left_icon_frame = USA_propaganda_empty_slot_index }
-			}
-			else_if = {
-				limit = {
-					check_variable = { USA_poster_center_icon_frame = USA_propaganda_locked_slot_index }
-				}
-				set_variable = { USA_poster_center_icon_frame = USA_propaganda_empty_slot_index }
-			}
-		}
-	}
-
+	
 # Japan
 	JAP_pick_propaganda_campaign_slot_effect = {
 		hidden_effect = {
@@ -176,23 +144,7 @@
 		}
 	}
 
-	JAP_unlock_propaganda_campaign_slot_effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					check_variable = { JAP_poster_left_icon_frame = JAP_propaganda_locked_slot_index }
-				}
-				set_variable = { JAP_poster_left_icon_frame = JAP_propaganda_empty_slot_index }
-			}
-			else_if = {
-				limit = {
-					check_variable = { JAP_poster_center_icon_frame = JAP_propaganda_locked_slot_index }
-				}
-				set_variable = { JAP_poster_center_icon_frame = JAP_propaganda_empty_slot_index }
-			}
-		}
-	}
-
+	
 # Italy
 	ITA_pick_propaganda_campaign_slot_effect = {
 		hidden_effect = {
@@ -241,23 +193,7 @@
 		}
 	}
 
-	ITA_unlock_propaganda_campaign_slot_effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					check_variable = { ITA_poster_left_icon_frame = ITA_propaganda_locked_slot_index }
-				}
-				set_variable = { ITA_poster_left_icon_frame = ITA_propaganda_empty_slot_index }
-			}
-			else_if = {
-				limit = {
-					check_variable = { ITA_poster_center_icon_frame = ITA_propaganda_locked_slot_index }
-				}
-				set_variable = { ITA_poster_center_icon_frame = ITA_propaganda_empty_slot_index }
-			}
-		}
-	}
-
+	
 # Germany
 	GER_pick_propaganda_campaign_slot_effect = {
 		hidden_effect = {
@@ -306,23 +242,7 @@
 		}
 	}
 
-	GER_unlock_propaganda_campaign_slot_effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					check_variable = { GER_poster_left_icon_frame = GER_propaganda_locked_slot_index }
-				}
-				set_variable = { GER_poster_left_icon_frame = GER_propaganda_empty_slot_index }
-			}
-			else_if = {
-				limit = {
-					check_variable = { GER_poster_center_icon_frame = GER_propaganda_locked_slot_index }
-				}
-				set_variable = { GER_poster_center_icon_frame = GER_propaganda_empty_slot_index }
-			}
-		}
-	}
-
+	
 # France
 FRA_pick_propaganda_campaign_slot_effect = {
 	hidden_effect = {
@@ -371,19 +291,3 @@ FRA_reset_propaganda_campaign_slot_effect = {
 	}
 }
 
-FRA_unlock_propaganda_campaign_slot_effect = {
-	hidden_effect = {
-		if = {
-			limit = {
-				check_variable = { FRA_poster_left_icon_frame = FRA_propaganda_locked_slot_index }
-			}
-			set_variable = { FRA_poster_left_icon_frame = FRA_propaganda_empty_slot_index }
-		}
-		else_if = {
-			limit = {
-				check_variable = { FRA_poster_center_icon_frame = FRA_propaganda_locked_slot_index }
-			}
-			set_variable = { FRA_poster_center_icon_frame = FRA_propaganda_empty_slot_index }
-		}
-	}
-}

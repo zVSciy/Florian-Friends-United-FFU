@@ -1,4 +1,4 @@
-﻿add_namespace = czech
+add_namespace = czech
 
 
 # Excluding the slovaks
@@ -56,23 +56,6 @@ country_event = {
 	}
 }
 # Excluding the slovaks
-country_event = {
-	id = czech.15
-	title = czech.14.t
-	desc = czech.15.d
-	picture = GFX_report_event_hitler_handshake
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = czech.15.a		
-		#everything is ok
-		
-		hidden_effect = {
-			
-		}
-	}
-}
 
 # Ask GER about joining Axis
 country_event = {
@@ -148,47 +131,6 @@ country_event = {
 }
 
 # Ask GER about being a puppet
-country_event = {
-	id = czech.19
-	title = czech.19.t
-	desc = czech.19.d
-	picture = GFX_report_event_hitler_handshake
-	
-	is_triggered_only = yes
-	
-	option = {
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0.5
-				has_wargoal_against = CZE
-			}
-		}
-		name = czech.1.a #yes
-		puppet = CZE
-		CZE = {
-			country_event = { id = czech.20 hours = 6 }
-		}
-		
-		hidden_effect = {
-			
-		}
-	}
-	
-	option = {
-		name = czech.1.b
-		ai_chance = {
-			base = 10
-		}
-		CZE = {
-			country_event = { id = czech.21 hours = 6 }
-		}
-		
-		hidden_effect = {
-			
-		}
-	}
-}
 # GER says yes
 country_event = {
 	id = czech.20
@@ -289,19 +231,3 @@ country_event = {
 	}
 }
 # GER says no
-country_event = {
-	id = czech.24
-	title = czech.22.t
-	desc = czech.24.d
-	picture = GFX_report_event_hitler_handshake
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = czech.24.a
-		
-		hidden_effect = {
-			
-		}
-	}
-}

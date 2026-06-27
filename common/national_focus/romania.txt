@@ -3134,7 +3134,7 @@ focus = {
 			bonus = 0.5
 			ahead_reduction = 1
 			uses = 1
-			technology = amphibious_drive_rom
+			category = tp_tech
 		}
 	}
 }

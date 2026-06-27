@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Romanian Events
 ###########################
 
@@ -124,81 +124,10 @@ country_event = {
 }
 
 # Second Vienna Award - All of Transylvania
-country_event = {
-	id = romania.3
-	title = romania.2.t
-	desc = romania.3.d
-	picture = GFX_report_event_second_vienna_award_pact
-	
-	is_triggered_only = yes
-	
-	option = { # Accept demands
-		name = romania.2.a
-		ai_chance = {
-			factor = 50
-			modifier = { # Don't accept if in a faction that can protect them
-				factor = 0
-				OR = {
-					is_in_faction_with = ENG
-					is_in_faction_with = FRA
-					is_in_faction_with = SOV
-				}
-			}
-		}
-		HUN = {
-			country_event = { days = 1 id = hungary.3 }
-		}
-		set_country_flag = second_vienna_accepted_all
-	}
-}
 
 # Second Vienna Award - No Concessions
-country_event = {
-	id = romania.4
-	title = romania.4.t
-	desc = romania.4.d
-	picture = GFX_report_event_germany_politician_handshake
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = romania.4.a
-	}
-}
 
 # Treaty of Craiova - Bulgaria Demands Territory
-country_event = {
-	id = romania.5
-	title = romania.5.t
-	desc = romania.5.d
-	picture = GFX_report_event_hitler_croatia_handshake
-	
-	is_triggered_only = yes
-	
-	option = { # Accept
-		name = romania.5.a
-		ai_chance = { factor = 90 }
-		effect_tooltip = {
-			BUL = { transfer_state = 77 }
-		}
-		BUL = {
-			country_event = { days = 1 id = bulgaria.1 }
-		}
-	}
-	option = { # Refuse
-		name = romania.5.b
-		ai_chance = { 
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			} 
-		}
-		BUL = {
-			country_event = { days = 1 id = bulgaria.2 }
-		}
-	}
-}
 
 # Seek an alliance - Since everyone is out to get us
 country_event = {

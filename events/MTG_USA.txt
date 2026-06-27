@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # USA Events
 ###########################
 
@@ -210,58 +210,5 @@ country_event = {
 }
 
 #Panay Incident - USA receives JAP refusal
-country_event = {
-	id = panay_incident.5
-	title = panay_incident.5.t
-	desc = panay_incident.5.d
-	picture = GFX_report_event_japanese_reply
-
-	is_triggered_only = yes
-
-	option = {
-		name = panay_incident.5.a
-		ai_chance = { factor = 60 }
-		add_political_power = -10
-		add_war_support = -0.02
-		add_stability = 0.05
-	}
-	option = {
-		name = panay_incident.5.b
-		ai_chance = {
-			factor = 40
-		}
-		add_war_support = -0.05
-		add_stability = -0.1
-		if = {
-			limit = {
-
-			}
-		}
-		create_wargoal = {
-				target = JAP
-				type = topple_government
-			}
-		add_state_claim = 633
-		add_state_claim = 684
-		add_state_claim = 645
-		add_state_claim = 646
-		add_state_claim = 647
-		add_state_claim = 648
-		hidden_effect = { news_event = { id = news.335 } } #Triggers news event for war between JAP and USA
-	}
-}
 
 #Event for Japan if USA withdraws forces.
-country_event = {
-	id = panay_incident.6
-	title = panay_incident.6.t
-	desc = panay_incident.6.d
-	picture = GFX_report_event_oahu_withdraws
-
-	is_triggered_only = yes
-
-	option = {
-		name = panay_incident.6.a
-		add_political_power = 100
-	}
-}

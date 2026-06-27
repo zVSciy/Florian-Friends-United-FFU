@@ -1,4 +1,4 @@
-﻿add_namespace = wtt_britain 
+add_namespace = wtt_britain 
 
 #IRE gets choice; trade northern ireland in return for joining the alliance?
 country_event = {
@@ -35,51 +35,6 @@ country_event = {
 }
 
 #Mers-El-Kebir Raid: France gets choice; transfer fleet or lose a portion
-country_event = {
-	id = wtt_britain.25
-	title = wtt_britain.25.t
-	desc = wtt_britain.25.d
-	picture = GFX_report_event_generic_conference
-
-	is_triggered_only = yes
-	
-	#accept
-	option = {
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 0
-				has_opinion = { target = ENG value < -99 }
-			}
-			modifier = {
-				factor = 2
-				has_opinion = { target = ENG value > -50 }
-			}
-			modifier = {
-				factor = 2
-				has_opinion = { target = ENG value > -25 }
-			}
-			modifier = {
-				factor = 3
-				has_opinion = { target = ENG value > 0 }
-			}
-		}
-		name = wtt_britain.25.a
-		ENG = { country_event = { id = wtt_britain.26 } }
-		hidden_effect = {
-			news_event = { id = news.332 days = 1 }
-		}
-		transfer_navy = { target = ENG }
-	}
-	#decline
-	option = {
-		ai_chance = {
-			factor = 80
-		}
-		name = wtt_britain.25.b
-		ENG = { country_event = { id = wtt_britain.27 } }
-	}
-}
 
 #Mers-El-Kebir Raid: Notification event for French accepted
 country_event = {
@@ -248,24 +203,6 @@ country_event = {
 }
 
 # Emergency Arms Deliveries
-country_event = {
-	id = wtt_britain.30
-	title = wtt_britain.30.t
-	desc = wtt_britain.30.d
-	picture = GFX_report_event_generic_factory
-
-	is_triggered_only = yes
-	
-	#Praise the Americans!
-	option = {
-		name = wtt_britain.30.a
-		effect_tooltip = {
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
-			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = USA }
-			add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = USA }
-		}
-	}
-}
 
 #   ###  ##   ## ###      ##  ###  ##  ###  ###  ## 
 #   #   #  # #   #       #  #   # #  # #  # #   #   

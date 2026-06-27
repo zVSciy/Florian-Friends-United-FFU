@@ -1816,7 +1816,6 @@ ideas = {
 					101 = {
 						transfer_state_to = DEN
 					}
-					DEN = { country_event = { id = AAT_USA_events.07 days = 1 } }
 				}
 			}
 			

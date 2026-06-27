@@ -37,13 +37,6 @@ ll_on_package_sent = {
     ll_update_bop_quota = yes
 }
 
-lend_lease_init = {
-    set_variable = { lend_lease_target_nation = 0 }
-    clr_country_flag = ll_window_open
-    clr_country_flag = ll_package_just_sent
-    set_variable = { ll_clicks_this_period = 0 }
-    ll_update_bop_quota = yes
-}
 
 # ── HELPER MACRO ──────────────────────────────────────────────
 # Each effect below follows the same pattern:

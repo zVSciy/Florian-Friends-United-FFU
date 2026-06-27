@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Bulgarian Events
 ###########################
 
@@ -54,30 +54,6 @@ country_event = {
 }
 
 # Bulgaria (First Ljubljana Award) from german focus
-country_event = {
-	id = bulgaria.3
-	title = bulgaria.3.t
-	desc = bulgaria.3.d
-	picture = GFX_report_event_vienna_award_negotiations
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bulgaria.3.a
-		if = {
-			limit = {
-				OR = {
-					106 = { is_owned_by = YUG }
-					106 = { is_owned_by = GER }
-					803 = { is_owned_by = YUG }
-					803 = { is_owned_by = GER }
-				}
-			}
-			transfer_state = 106
-			transfer_state = 803
-		}
-	}
-}
 
 # Treaty of Craiova - Hungary gets land. So should we
 country_event = {
@@ -121,15 +97,3 @@ country_event = {
 }
 
 # Treaty of Craiova - Germany will not back us
-country_event = {
-	id = bulgaria.5
-	title = bulgaria.5.t
-	desc = bulgaria.5.d
-	picture = GFX_report_event_vienna_award_negotiations
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bulgaria.5.a
-	}
-}

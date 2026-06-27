@@ -2458,7 +2458,6 @@ focus_tree = {
             hidden_effect = {
                 set_technology = {
                     improved_ship_hull_heavy = 1
-                    basic_heavy_armor_scheme = 1
                     basic_battery = 1
                     basic_heavy_battery = 1
                     basic_heavy_shell = 1

@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # RAJ TFV events Events
 ###########################
 
@@ -302,81 +302,6 @@ country_event = {
 
 #RAJ asks help from Soviet to break free from ENG
 #Event for SOV
-country_event = {
-	id = tfv_raj.30
-	title = tfv_raj.30.t
-	desc = tfv_raj.30.desc
-	picture = GFX_report_event_bose
-	
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	immediate = {
-		RAJ = {
-			OVERLORD = {
-				save_event_target_as = Britain
-			}
-		}
-	}
-
-	#Help
-	option = {
-		name = tfv_raj.30.a
-		ai_chance = {
-			base = 1
-			modifier = {
-				factor = 0
-				SOV_can_help_against_ENG = no				
-			}
-			modifier = {
-				factor = 2
-				has_opinion = {
-					target = RAJ
-					value > 75
-				}
-				has_opinion = {
-					target = ENG
-					value < 0
-				}
-			}
-			modifier = {
-				factor = 2
-				ROOT_will_help_RAJ = yes
-			}			
-			modifier = {
-				factor = 2		
-				communism > 0.5
-			}
-		}	
-		set_global_flag = RAJ_seek_help_from_soviet_promised
-		if = {
-			limit = {
-				RAJ = { NOT = { has_war_together_with = ENG } }
-				NOT = { has_war_with = ENG }
-			}
-			ENG = { country_event = { id = tfv_raj.31 hours = 6 } }
-			else = {
-				#Answer event - Accept
-				RAJ = { country_event = { id = tfv_raj.32 } }
-			}
-		}
-	}
-
-	#No
-	option = {
-		name = tfv_raj.30.b
-		ai_chance = {
-			base = 2
-			modifier = {
-				add = 4
-				ROOT_will_help_RAJ = no
-			}
-		}
-		#Answer event - Reject
-		RAJ = { country_event = { id = tfv_raj.33 } }
-	}
-}
 
 #RAJ asks help from Soviet to break free from ENG
 #Event for ENG. Let them go or not
@@ -505,81 +430,6 @@ country_event = {
 
 #RAJ asks help from Germany to break free from ENG
 #Event for GER
-country_event = {
-	id = tfv_raj.40
-	title = tfv_raj.40.t
-	desc = tfv_raj.40.desc
-	picture = GFX_report_event_bose_meeting
-	
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	immediate = {
-		RAJ = {
-			OVERLORD = {
-				save_event_target_as = Britain
-			}
-		}
-	}
-
-	#Help
-	option = {
-		name = tfv_raj.40.a
-		ai_chance = {
-			base = 1
-			modifier = {
-				factor = 0
-				GER_can_help_against_ENG = no				
-			}
-			modifier = {
-				factor = 2
-				has_opinion = {
-					target = RAJ
-					value > 75
-				}
-				has_opinion = {
-					target = ENG
-					value < 0
-				}
-			}
-			modifier = {
-				factor = 2
-				ROOT_will_help_RAJ = yes
-			}			
-			modifier = {
-				factor = 2		
-				fascism > 0.5
-			}
-		}	
-		set_global_flag = RAJ_seek_help_from_germany_promised
-		if = {
-			limit = {
-				RAJ = { NOT = { has_war_together_with = ENG } }
-				NOT = { has_war_with = ENG }
-			}
-			ENG = { country_event = { id = tfv_raj.41 hours = 6 } }
-			else = {
-				#Answer event - Accept
-				RAJ = { country_event = { id = tfv_raj.42 } }
-			}
-		}
-	}
-
-	#No
-	option = {
-		name = tfv_raj.40.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = 4
-				ROOT_will_help_RAJ = no
-			}
-		}
-		#Answer event - Reject
-		RAJ = { country_event = { id = tfv_raj.43 } }
-	}
-}
 
 #RAJ asks help from Germany to break free from ENG
 #Event for ENG. Let them go or not
@@ -709,55 +559,6 @@ country_event = {
 ##################################################
 #RAJ_battaglione_azad_hindoustan focus completed
 ##################################################
-country_event = {
-	id = tfv_raj.201
-	title = tfv_raj.201.t				# ITA receives paratrooper division from RAJ
-	desc = tfv_raj.201.desc
-	picture = GFX_report_event_indian_parade
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tfv_raj.201.a
-		
-		if = {
-			limit = {
-				RAJ = { is_ai = yes }
-			}
-		
-			division_template = {
-				name = "Battaglione Azad Hindoustan" #Hindu paratrooper division created for Italy
-				division_names_group = ITA_PAR_01
-				is_locked = yes
-				regiments = {
-					paratrooper = { x = 0 y = 0 }
-					paratrooper = { x = 0 y = 1 }
-					paratrooper = { x = 0 y = 2 }
-
-					paratrooper = { x = 1 y = 0 }
-					paratrooper = { x = 1 y = 1 }
-					paratrooper = { x = 1 y = 2 }
-				}
-			}
-
-			random_owned_controlled_state = {
-				prioritize = { 2 }
-				
-				custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
-				hidden_effect = {
-					create_unit = { 
-						division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0" 
-						owner = ITA
-					}
-				}
-			}
-			
-			else = {
-				custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
-			}
-		}
-	}
-}
 
 ##################################################
 #Quit India movement resistance events

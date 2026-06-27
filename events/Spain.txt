@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Spanish Events
 ###########################
 
@@ -282,41 +282,6 @@ country_event = {
 }
 
 # Republicans: Seek Support
-country_event = {
-	id = spain.3
-	title = spain.2.t
-	desc = spain.3.d
-	picture = GFX_report_event_spain_civil_war_volunteers
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_civil_war = yes
-	}
-
-	option = {
-		name = spain.3.a
-		every_other_country = {
-			limit = {
-				has_government = communism
-				NOT = { tag = SPR }
-			}
-			country_event = { id = spain.5 days = 1 }
-		}
-		if = {
-			limit = {
-				MEX = { NOT = { has_government = fascism } }
-			}
-			MEX = { country_event = { id = spain.5 days = 1 } }
-		}
-	}
-
-	option = {
-		name = spain.3.b
-		add_political_power = 40
-		ai_chance = { factor = 0 }
-	}
-}
 
 # Nationalist Spain Wants Our Help
 country_event = {

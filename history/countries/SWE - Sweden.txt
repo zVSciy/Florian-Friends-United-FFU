@@ -429,41 +429,7 @@ if = {
 		long_name = SWE_aat_hogern_long
 	}
 
-	# DLC Characters 
-	recruit_character = SWE_axel_pehrssonbramstorp 
-	recruit_character = SWE_herman_eriksson
-	recruit_character = SWE_ebba_palmstierna
-	recruit_character = SWE_christian_gunter
-	recruit_character = SWE_rickard_sandler
-	recruit_character = SWE_alva_myrdal
-	recruit_character = SWE_gunnar_myrdal
-	recruit_character = SWE_martin_ekstrom
-	recruit_character = SWE_per_edvin_skold
-	recruit_character = SWE_tage_erlander
-	recruit_character = SWE_gosta_bagge
-	recruit_character = SWE_fallen_riksdag
-	recruit_character = SWE_rikard_persson
-	recruit_character = SWE_arne_beurling
-	recruit_character = SWE_king_gustaf_v
-	recruit_character = SWE_nils_flyg
-	recruit_character = SWE_birger_furugard
-	recruit_character = SWE_karl_kilbom
-	recruit_character = SWE_sven_hedengren
-	recruit_character = SWE_sven_hedin
-	recruit_character = SWE_konrad_hallgren
-	recruit_character = SWE_ture_nerman
-	recruit_character = SWE_fredrik_strom
-	recruit_character = SWE_zeth_hoglund
-	recruit_character = SWE_carl_lindhagen
-	recruit_character = SWE_hugo_silen
-	recruit_character = SWE_ernst_linder
-	recruit_character = SWE_carl_ehrensvard
-	recruit_character = SWE_frans_severin
-	recruit_character = SWE_exiled_revolutionaries
-	recruit_character = SWE_nordic_defense_council_leader
-	recruit_character = SWE_raoul_wallenberg
-	recruit_character = SWE_natanael_beskow
-	recruit_character = SWE_olof_thornell
+	
 }
 
 if = {

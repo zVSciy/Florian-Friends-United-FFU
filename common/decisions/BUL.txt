@@ -3993,17 +3993,7 @@ BUL_internal_factions = {
 				set_variable = { BUL_fascist_support_before_zveno_coup = party_popularity_100@fascism }
 				set_variable = { BUL_neutrality_support_before_zveno_coup = party_popularity_100@neutrality }
 
-				#START CIVIL WAR
-				start_civil_war = {
-					ideology = neutrality
-					size = BUL_zveno_coup_size
-					capital = 212
-					states = { 211 }
-					keep_political_leader = yes
-					keep_unit_leaders_trigger = {
-						always = yes
-					}
-				}
+				
 			}
 
 			custom_effect_tooltip = BUL_impending_zveno_coup_size_tt

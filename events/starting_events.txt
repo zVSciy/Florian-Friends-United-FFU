@@ -30,18 +30,6 @@ news_event = {
 }
 
 # Mods
-news_event = {
-	id = startingevent.1001
-	title = startingevent.1001.t
-	desc = startingevent.1001.d
-	picture = GFX_news_event_001
-
-	is_triggered_only = yes
-
-	option = {
-		name = startingevent.1001.a
-	}
-}
 
 country_event = {
 	id = startingevent.29
@@ -86,18 +74,6 @@ country_event = {
 }
 
 # AIR SOVIET
-country_event = {
-	id = startingevent.1004
-	title = startingevent.1004.t
-	desc = startingevent.1004.d
-	picture = GFX_report_event_generic_sign_treaty1
-	
-	is_triggered_only = yes
-
-	option = {
-		name = startingevent.999.a
-	}
-}
 
 # AUTO COMPLIANCE ON CHINA
 country_event = {

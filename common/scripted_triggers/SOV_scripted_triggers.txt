@@ -80,12 +80,6 @@ SOV_propaganda_poster_slot_available = {
 	}
 }
 
-SOV_paranoia_is_low_level = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_paranoia_is_low_level_tt
-		check_variable = { SOV_paranoia = SOV_paranoia_lower_threshold compare = less_than }
-	}
-}
 
 SOV_paranoia_is_medium_level = {
 	custom_trigger_tooltip = {
@@ -110,24 +104,8 @@ SOV_character_can_be_purged = {
 	NOT = { has_character_flag = SOV_character_purged_flag }
 }
 
-SOV_unit_leader_can_be_purged = { #Unused for now
-	NOT = { has_character_flag = SOV_safe_from_purge_flag }
-	NOT = { has_trait = trait_SOV_stalinist }
-}
 
-SOV_third_five_year_plan_available = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_third_five_year_plan_available_tt
-		NOT = { has_country_flag = SOV_third_five_year_plan_locked_flag }
-	}
-}
 
-SOV_fourth_five_year_plan_available = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_fourth_five_year_plan_available_tt
-		has_country_flag = SOV_fourth_five_year_plan_available_flag
-	}
-}
 
 SOV_propaganda_victory_at_hand_available = { #Basically Great Patriotic War is ongoing
 	custom_trigger_tooltip = {
@@ -137,44 +115,8 @@ SOV_propaganda_victory_at_hand_available = { #Basically Great Patriotic War is o
 	}
 }
 
-SOV_is_valid_subject = {
-	OR = {
-		is_subject = no
-		is_subject_of = ROOT
-	}
-}
 
-SOV_is_free_chinese_tag = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_is_free_chinese_tag_tt
-		OR = {
-			original_tag = CHI
-			# original_tag = PRC
-			# original_tag = SIK
-			# original_tag = XSM
-			# original_tag = YUN
-			# original_tag = GXC
-			# original_tag = SHX
-			# original_tag = MEN
-			original_tag = MAN
-		}
-		is_subject = no
-	}
-}
 
-SOV_is_chinese_tag = {
-	OR = {
-		original_tag = CHI
-		# original_tag = PRC
-		# original_tag = SIK
-		# original_tag = XSM
-		# original_tag = YUN
-		# original_tag = GXC
-		# original_tag = SHX
-		# original_tag = MEN
-		original_tag = MAN
-	}
-}
 
 SOV_is_soviet_republic_tag_strict = {
 	OR = {
@@ -292,86 +234,6 @@ SOV_is_valid_academy_of_sciences_target = {
 	}
 }
 
-SOV_has_already_built_national_academy_of_sciences = {
-	OR = {
-		# AND = {
-		# 	FROM = { tag = BLR }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_BLR_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = UKR }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_UKR_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = KAZ }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_KAZ_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = GEO }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_GEO_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = ARM }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_ARM_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = AZR }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_AZR_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = UZB }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_UZB_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = TMS }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_TMS_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = KYR }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_KYR_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = TAJ }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = TAN }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_TAN_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = DON }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_DON_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = KUB }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_KUB_flag }
-		# }
-		AND = {
-			FROM = { tag = EST }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_EST_flag }
-		}
-		# AND = {
-		# 	FROM = { tag = LAT }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LAT_flag }
-		# }
-		# AND = {
-		# 	FROM = { tag = LIT }
-		# 	ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LIT_flag }
-		# }
-		AND = {
-			FROM = { tag = POL }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_POL_flag }
-		}
-		AND = {
-			FROM = { tag = FIN }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_FIN_flag }
-		}
-		AND = {
-			FROM = { tag = MON }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_MON_flag }
-		}
-	}
-}
 
 
 #####################
@@ -736,16 +598,6 @@ SOV_has_aircraft_merged_3 = {
 ### MATERIEL DESIGNER ###
 #########################
 
-SOV_has_active_materiel_designer_any = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_has_active_materiel_designer_any_tt
-		OR = {
-			SOV_has_active_materiel_designer_grabin = yes
-			SOV_has_active_materiel_designer_tula = yes
-			SOV_has_active_materiel_designer_gaz = yes
-		}
-	}
-}
 
 SOV_has_active_materiel_designer_grabin = {
 	custom_trigger_tooltip = {
@@ -795,39 +647,11 @@ SOV_has_active_materiel_designer_gaz = {
 	}
 }
 
-SOV_has_materiel_merged_1_artillery = {
-	has_country_flag = SOV_merge_materiel_grabin_1_flag
-}
 
-SOV_has_materiel_merged_1_infantry = {
-	has_country_flag = SOV_merge_materiel_tula_1_flag
-}
 
-SOV_has_materiel_merged_1_motorized = {
-	has_country_flag = SOV_merge_materiel_gaz_1_flag
-}
 
-SOV_has_materiel_merged_2 = {
-	OR = {
-		has_country_flag = SOV_merge_materiel_grabin_2_flag
-		has_country_flag = SOV_merge_materiel_tula_2_flag
-		has_country_flag = SOV_merge_materiel_gaz_2_flag
-	}
-}
 
-SOV_has_materiel_merged_3 = {
-	OR = {
-		has_country_flag = SOV_merge_materiel_grabin_3_flag
-		has_country_flag = SOV_merge_materiel_tula_3_flag
-		has_country_flag = SOV_merge_materiel_gaz_3_flag
-	}
-}
 
-SOV_is_valid_collective_security_target = {
-	has_capitulated = no
-	NOT = { has_government = fascism }
-	NOT = { has_war_with = ROOT }
-}
 
 SOV_is_military_offensive_main_objective = {
 	OR = {
@@ -1045,79 +869,11 @@ SOV_is_going_historical_stalinist = { # Add/Change stuff here instead of doing i
 # 	}
 # }
 
-SOV_basic_pressure_government_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = SOV // FROM = Target
-	country_exists = FROM
-	NOT = { has_war_with = FROM }
-	NOT = { FROM = { is_subject_of = ROOT } }
-	OR = {
-		NOT = { is_in_faction_with = FROM }
-		NOT = { has_government = FROM }
-	}
-}
 
-SOV_basic_promote_rallies_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = SOV // FROM = Target
-	country_exists = FROM
-	NOT = { has_war_with = FROM }
-	NOT = { FROM = { is_subject_of = ROOT } }
-	NOT = { has_government = FROM }
-}
 
-SOV_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = SOV // FROM = Target
-	country_exists = FROM
-	FROM = {
-		has_capitulated = no
-		is_subject = no
-		NOT = { has_war_with = ROOT }
-		NOT = { is_in_faction_with = ROOT } #CAN'T SEND ULTIMATUMS TO ALLIES OR SUBJECTS
-		#OR = { #Can send Ultimatum to non-allies or puppets (but not to faction allies)
-		#	NOT = { is_in_faction_with = ROOT }
-		#	is_Subject_of = ROOT
-		#}
-		NOT = { has_country_flag = SOV_ultimatum_sent_flag }
-	}
-}
 
-SOV_basic_fight_alongside_comrades_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = SOV // FROM = Target
-	country_exists = FROM
-	FROM = {
-		has_civil_war = yes
-		has_government = ROOT
-		NOT = { has_war_with = ROOT }
-	}
-	NOT = { #Don't show up once ROOT is already at war with this country
-		any_other_country = {
-			original_tag = FROM
-			has_war_with = FROM
-			has_war_with = ROOT
-		}
-	}
-}
 
 # Can I join the Comintern, plz? 
-SOV_comintern_joinable = {
-	SOU = { 
-		hidden_trigger = { 
-			exists = yes
-			has_capitulated = no
-		}
-		has_government = communism 
-		is_faction_leader = yes 
-		has_civil_war = no	
-		NOT = { has_war_with = ROOT }	
-	}
-}
-ANY_comintern_joinable = {
-	any_other_country = { 
-		hidden_trigger = { 
-			exists = yes
-			has_capitulated = no
-		}
-		has_government = communism 
-		is_faction_leader = yes 
-		has_civil_war = no	
-		NOT = { has_war_with = ROOT }	
-	}
-}
 
 ##########################################################################
 
@@ -1138,85 +894,11 @@ SOV_soviet_civil_war_not_started = {
 	}
 }
 
-SOV_has_selected_hq = {
-	custom_trigger_tooltip = { 
-		tooltip = SOV_has_selected_hq_tt
-		has_variable = SOV_civil_war_start_state
-	}
-}
-
-SOV_display_civil_war_start_state = {
-	NOT = { has_global_flag = SOV_soviet_civil_war }
-	NOT = { has_variable = SOV_civil_war_start_state } 
-	# There can be only one
-	OR = {
-		FROM = { has_state_flag = SOV_hq_state_selected } # this is the selected state
-		NOT = { has_country_flag = SOV_hq_state_selected_country_flag } # no state selected yet
-	}
-}
 
 
-SOV_is_opposition_state = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_is_opposition_state_tt
-		OR = {
-			AND = {
-				has_state_flag = SOV_left_opposition_state
-				SOV = { SOV_is_left_opposition = yes }
-			}
-			AND = {
-				has_state_flag = SOV_right_opposition_state
-				SOV = { SOV_is_right_opposition = yes }
-			}
-			AND = {
-				has_state_flag = SOV_exiles_state
-				SOV = { SOV_is_exiles = yes }
-			}
-		}
-	}
-}
 
-SOV_is_display_state = {
-	is_owned_by = SOV
-	IF = {
-		limit = { ROOT = { SOV_is_left_opposition = yes } }
-		OR = {
-			any_neighbor_state = { has_state_flag = SOV_left_opposition_state } # You can influence if you control a neighbor state
-			has_state_flag = SOV_left_opposition_state # To ensure that the first state is shown before selecting another one 
-			has_state_flag = SOV_stalinist_state # Show states that have had a crackdown as well 
-		}
-	}
-	ELSE_IF = {
-		limit = { ROOT = { SOV_is_right_opposition = yes } }
-		OR = {
-			any_neighbor_state = { has_state_flag = SOV_right_opposition_state }  # You can influence if you control a neighbor state
-			has_state_flag = SOV_right_opposition_state # To ensure that the first state is shown before selecting another one 
-			has_state_flag = SOV_stalinist_state # Show states that have had a crackdown as well 
-		}
-	}
-	ELSE_IF = {
-		limit = { ROOT = { SOV_is_exiles = yes } }
-		OR = {
-			any_neighbor_state = { has_state_flag = SOV_exiles_state }  # You can influence if you control a neighbor state
-			has_state_flag = SOV_exiles_state # To ensure that the first state is shown before selecting another one 
-			has_state_flag = SOV_stalinist_state # Show states that have had a crackdown as well 
-		}
-	}
-}
 
-SOV_is_unaligned_state = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_is_unaligned_state_tt
-		NOT = {	has_state_flag = SOV_left_opposition_state }
-		NOT = { has_state_flag = SOV_right_opposition_state } 
-		NOT = { has_state_flag = SOV_stalinist_state } 
-		NOT = { has_state_flag = SOV_exiles_state } 
 
-		NOT = { has_state_flag = SOV_is_aligning_left }
-		NOT = { has_state_flag = SOV_is_aligning_right }
-		NOT = { has_state_flag = SOV_is_aligning_exiles }
-	}
-}
 
 SOV_is_left_opposition = {
 	#custom_trigger_tooltip = {

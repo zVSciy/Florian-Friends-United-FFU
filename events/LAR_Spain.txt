@@ -1,4 +1,4 @@
-﻿add_namespace = lar_spain 
+add_namespace = lar_spain 
 
 # Election of 1936 - La Resistance Edition
 country_event = {
@@ -632,51 +632,6 @@ country_event = {
 }
 
 # Enemies of Our Enemy - Event for GER/ITA
-country_event = {
-	id = lar_spain.71
-	title = lar_spain.71.t
-	desc = lar_spain.71.desc
-	picture = GFX_report_event_generic_parliament
-	
-	is_triggered_only = yes
-	
-	option = { # Accept
-		name = lar_spain.71.a
-		ai_chance = {
-			base = 75
-		}
-		diplomatic_relation = {
-		    country = FROM
-		    relation = non_aggression_pact
-		    active = yes
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = { id = lar_spain.72 }
-			}
-		}
-	}
-
-	option = { # Decline
-		name = lar_spain.71.b
-		ai_chance = {
-			base = 25
-			modifier = {
-				factor = 0.5
-				has_opinion = { target = FROM value > 99 }
-			}
-			modifier = {
-				factor = 0
-				has_war_with = SOV
-			}
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = { id = lar_spain.73 }
-			}
-		}
-	}
-}
 
 # Enemies of Our Enemy - Event for Spain - FROM Accepted
 country_event = {
@@ -716,52 +671,6 @@ country_event = {
 }
 
 # Enemies of Our Enemy - Event for GER
-country_event = {
-	id = lar_spain.74
-	title = lar_spain.74.t
-	desc = lar_spain.74.desc
-	picture = GFX_report_event_generic_parliament
-	
-	is_triggered_only = yes
-	
-	option = { # Accept
-		name = lar_spain.74.a
-		ai_chance = {
-			base = 75
-		}
-		army_experience = -25
-		effect_tooltip = {
-			FROM = {
-				add_timed_idea = { idea = SPR_deal_with_the_devil days = 730 }
-			}
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = { id = lar_spain.75 }
-			}
-		}
-	}
-
-	option = { # Decline
-		name = lar_spain.74.b
-		ai_chance = {
-			base = 25
-			modifier = {
-				factor = 0.5
-				has_opinion = { target = FROM value > 99 }
-			}
-			modifier = {
-				factor = 0
-				has_war_with = SOV
-			}
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = { id = lar_spain.76 }
-			}
-		}
-	}
-}
 
 # Enemies of Our Enemy - Event for Spain - FROM Accepted
 country_event = {
@@ -1096,47 +1005,3 @@ country_event = {
 }
 
 # Spain - Sanjurjo Dies
-country_event = {
-	id = lar_spain.78
-	title = lar_spain.78.t
-	desc = lar_spain.78.desc
-	picture = GFX_report_event_spr_plane_crash
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {
-			kill_country_leader = yes
-			create_country_leader = {
-				name = "Military Junta"
-				desc = "POLITICS_MILITARY_JUNTA_DESC"
-				picture = "GFX_portrait_SPA_military_junta"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					divided_interests
-				}
-			}
-		}
-	}
-	
-	option = { # RIP
-		name = lar_spain.78.a
-		effect_tooltip = {
-			custom_effect_tooltip = lar_spain.78_tt
-			hidden_effect = {
-				kill_country_leader = yes
-			}
-			create_country_leader = {
-				name = "Military Junta"
-				desc = "POLITICS_MILITARY_JUNTA_DESC"
-				picture = "GFX_portrait_SPA_military_junta"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					divided_interests
-				}
-			}
-		}
-	}
-}

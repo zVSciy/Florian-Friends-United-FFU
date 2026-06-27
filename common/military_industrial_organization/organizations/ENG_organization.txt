@@ -382,10 +382,6 @@ ENG_john_brown_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -699,10 +695,6 @@ ENG_vauxhall_automotive_organization = {
 				has_country_flag = POL_vauxhall_motors
 			}
 		}
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}	
 	}
 	
 	available = {

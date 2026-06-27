@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 #ss recruitment events
 ###########################
 
@@ -25,145 +25,19 @@ country_event = {
 }
 
 #SS recruitment, norway
-country_event = {
-	id = ss_recruitment_event.2
-	title = ss_recruitment_event.2.t	
-	desc = ss_recruitment_event.2.desc
-	picture = GFX_report_event_german_volunteers
-	
-	
-
-	is_triggered_only = yes
-
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
 
 #SS recruitment, netherlands
-country_event = {
-	id = ss_recruitment_event.3
-	title = ss_recruitment_event.3.t	
-	desc = ss_recruitment_event.3.desc
-	picture = GFX_report_event_german_volunteers
-
-	is_triggered_only = yes
-	
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
 
 #SS recruitment, belgium
-country_event = {
-	id = ss_recruitment_event.4
-	title = ss_recruitment_event.4.t
-	desc = ss_recruitment_event.4.desc
-	picture = GFX_report_event_german_volunteers
-	
-	
-
-	is_triggered_only = yes
-	
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
 
 #SS recruitment, france
-country_event = {
-	id = ss_recruitment_event.5
-	title = ss_recruitment_event.5.t
-	desc = ss_recruitment_event.5.desc
-	picture = GFX_report_event_german_volunteers
-
-	is_triggered_only = yes
-	
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
 
 #SS recruitment, estonia
-country_event = {
-	id = ss_recruitment_event.6
-	title = ss_recruitment_event.6.t
-	desc = ss_recruitment_event.6.desc
-	picture = GFX_report_event_german_volunteers
-	
-	is_triggered_only = yes
-
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
 
 #SS recruitment, latvia
-country_event = {
-	id = ss_recruitment_event.7
-	title = ss_recruitment_event.7.t
-	desc = ss_recruitment_event.7.desc
-	picture = GFX_report_event_german_volunteers
-
-	is_triggered_only = yes
-
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
 
 #SS recruitment, lithuania
-country_event = {
-	id = ss_recruitment_event.8
-	title = ss_recruitment_event.8.t	
-	desc = ss_recruitment_event.8.desc
-	picture = GFX_report_event_german_volunteers
-	
-	
 
-	is_triggered_only = yes
-
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
-
-country_event = {
-	id = ss_recruitment_event.999
-	title = ss_recruitment_event.999.t	
-	desc = ss_recruitment_event.999.desc
-	picture = GFX_report_event_german_volunteers
-
-	is_triggered_only = yes
-
-	option = {
-		name = ss_recruitment_event.1.a #historical
-		hidden_effect = {
-			# GER_increase_SS_cap_double = yes
-		}
-	}
-}
 
 # # wehrmacht resolution events - generals protest
 # country_event = {

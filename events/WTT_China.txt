@@ -1,4 +1,4 @@
-﻿add_namespace = wtt_china
+add_namespace = wtt_china
 
 #
 
@@ -75,50 +75,6 @@ country_event = {
 
 
 # China demands ROOT be puppeted
-country_event = {
-	id = wtt_china.10
-	title = wtt_china.10.t
-	desc = wtt_china.10.desc
-	picture = GFX_report_event_chinese_soldiers
-
-	is_triggered_only = yes
-	
-	#Accept puppet
-	option = {
-		name = wtt_china.10.a
-		ai_chance = { base = 10 }
-		FROM = {
-			puppet = ROOT
-			country_event = { id = wtt_china.11 }
-		}
-	}
-	option = {
-
-		name = wtt_china.10.b
-		ai_chance = {
-			base = 10
-			modifier = {
-				tag = JAP
-				add = 80 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
-			}
-			modifier = {
-				tag = TIB
-				add = 30 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
-			}
-			modifier = {
-				tag = MON
-				add = 30 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
-			}
-		}
-		FROM = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = ROOT
-			}
-			country_event = { id = wtt_china.12 }
-		}
-	}
-}
 
 # Answer from ROOT china.10 - Yes
 country_event = {
@@ -255,19 +211,6 @@ country_event = {
 	}
 }
 # notification event for infiltrator that cell has been removed
-country_event = {
-	id = wtt_infiltration.6
-	title = wtt_infiltration.6.t
-	desc = wtt_infiltration.6.desc
-	picture = GFX_report_event_dead_soldiers
-
-	is_triggered_only = yes
-
-	option = {
-		name = wtt_infiltration.6.a
-	}
-
-}
 
 #Have to make one for each state because only 1 instance of the event is allowed in the window
 #Infiltration detected in state - TODO_WTT_CD could chose to make description based on what type of infiltration is present.
@@ -436,18 +379,6 @@ country_event = {
 
 #Event for nationalists
 #Warning that uprising is coming
-country_event = {
-	id = wtt_infiltration.10
-	title = wtt_infiltration.10.t
-	desc = wtt_infiltration.10.desc
-	picture = GFX_report_event_chinese_soldiers_running
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.10.a
-	}
-}
 
  ##  #  # ### ###   ####  ##  ##   ##  #  #
 #  # ## #  #   #       # #  # # # #  # ## #
@@ -455,154 +386,18 @@ country_event = {
 #  # #  #  #  ###    ##  #  # #   #  # #  #
 
 #No infiltration detected but still some detected in the country
-country_event = {
-	id = wtt_infiltration.23
-	title = wtt_infiltration.23.t
-	desc = wtt_infiltration.23.desc
-	picture = GFX_report_event_manchukuo_army
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.23.a
-	}
-}
 
 #No infiltration detected NONE detected in entire country
-country_event = {
-	id = wtt_infiltration.24
-	title = wtt_infiltration.24.t
-	desc = wtt_infiltration.24.desc
-	picture = GFX_report_event_manchukuo_army_2
 
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.24.a
-	}
-}
 
-country_event = {
-	id = wtt_infiltration.609
-	title = wtt_infiltration.21.t
-	desc = wtt_infiltration.21.desc
-	picture = GFX_report_event_china_infiltration
 
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.21.a
-	}
-}
 
-country_event = {
-	id = wtt_infiltration.610
-	title = wtt_infiltration.21.t
-	desc = wtt_infiltration.21.desc
-	picture = GFX_report_event_china_infiltration
 
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.21.a
-	}
-}
 
-country_event = {
-	id = wtt_infiltration.611
-	title = wtt_infiltration.21.t
-	desc = wtt_infiltration.21.desc
-	picture = GFX_report_event_china_infiltration
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.21.a
-	}
-}
-
-country_event = {
-	id = wtt_infiltration.612
-	title = wtt_infiltration.21.t
-	desc = wtt_infiltration.21.desc
-	picture = GFX_report_event_china_infiltration
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.21.a
-	}
-}
-
-country_event = {
-	id = wtt_infiltration.714
-	title = wtt_infiltration.21.t
-	desc = wtt_infiltration.21.desc
-	picture = GFX_report_event_china_infiltration
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.21.a
-	}
-}
-
-country_event = {
-	id = wtt_infiltration.715
-	title = wtt_infiltration.21.t
-	desc = wtt_infiltration.21.desc
-	picture = GFX_report_event_china_infiltration
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_infiltration.21.a
-	}
-}
 
 add_namespace = wtt_xian_incident
 
 #Xian incident - should Chiang go?
-country_event = {
-	id = wtt_xian_incident.1
-	title = wtt_xian_incident.1.t
-	desc = wtt_xian_incident.1.desc
-	picture = GFX_report_event_china_politicians_captured
-
-	is_triggered_only = yes #triggered by warlord decision
-
-	immediate = {
-		hidden_effect = {
-			random_other_country = {
-				limit = {
-					has_country_flag = CHI_xian_instigator_flag
-				}
-				save_event_target_as = CHI_xian_instigator
-			}
-		}
-	}
-	
-	option = {
-		name = wtt_xian_incident.1.a #agree to go
-		ai_chance = {
-			base = 70
-		}
-		event_target:CHI_xian_instigator = { country_event = wtt_xian_incident.2 }
-	}
-	option = {
-		name = wtt_xian_incident.1.b #refuse to go
-		custom_effect_tooltip = CHI_xian_warlords_upset
-		ai_chance = {
-			base = 30
-			modifier = {
-				CHI_is_on_historical_plan_trigger = yes
-				factor = 0
-			}
-		}
-		event_target:CHI_xian_instigator = { country_event = wtt_xian_incident.3 }
-	}
-
-}
 
 #Xian incident - Chiang agrees
 country_event = {
@@ -772,36 +567,6 @@ country_event = {
 # }
 
 #Xian incident - Chiang refuses to ally with commies
-country_event = {
-	id = wtt_xian_incident.6
-	title = wtt_xian_incident.6.t
-	desc = wtt_xian_incident.6.desc
-	picture = GFX_report_event_china_chiang_kai_shek
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_xian_incident.6.a #arrest him
-		ai_chance = {
-			base = 70
-		}		
-		CHI = { country_event = wtt_xian_incident.8 }
-	}
-
-	option = {
-		name = wtt_xian_incident.6.b #nothing to be done
-		ai_chance = {
-			base = 30
-			modifier = {
-				CHI_is_on_historical_plan_trigger = yes
-				factor = 0
-			}
-		}
-		event_target:CHI_xian_instigator = { clr_country_flag = CHI_xian_instigator_flag }
-		#TODO_WTT_CD: News event: Chiang refuses proposal to ally with commies
-	}
-
-}
 
 #Xian incident - Chiang arrested, execute?
 country_event = {
@@ -1062,41 +827,6 @@ country_event = {
 add_namespace = wtt_china_shared
 
 # China anti-imperialism notification event
-country_event = {
-	id = wtt_china_shared.1
-	title = wtt_china_shared.1.t
-	desc = wtt_china_shared.1.desc
-	picture = GFX_report_event_chinese_soldiers_02
-
-	is_triggered_only = yes
-	
-	option = { #accept
-		name = wtt_china_shared.1.a
-		ai_chance = {
-			base = 70
-		}
-		add_ideas = CHI_chinese_support
-		FROM = {
-			country_event = wtt_china_shared.2
-		}
-		OVERLORD = { #TODO_WTT_CD TEST THIS: Maybe problematic case with Mongolia, noted in the tooltip when I tested the event, but where no event is triggered. To be tested for confirmation
-			country_event = wtt_china_shared.4
-		}
-	}
-	option = { #refuse
-		name = wtt_china_shared.1.b
-		ai_chance = {
-			base = 30
-		}
-		reverse_add_opinion_modifier = {
-			target = FROM
-			modifier = CHI_refused_support
-		}
-		FROM = {
-			country_event = wtt_china_shared.3
-		}
-	}
-}
 #country accepts support
 country_event = {
 	id = wtt_china_shared.2
@@ -1635,33 +1365,6 @@ country_event = {
 add_namespace = wtt_warlord
 
 #Warlord approaches Japan asking to become a subject
-country_event = {
-	id = wtt_warlord.1
-	title = wtt_warlord.1.t
-	desc = wtt_warlord.1.desc
-	picture = GFX_report_event_chinese_japanese_handshake
-
-	is_triggered_only = yes
-	
-	#Accept puppet
-	option = {
-		name = wtt_warlord.1.a
-		ai_chance = { 
-			base = 10
-		}
-		FROM = { country_event = { id = wtt_warlord.2 } }
-		puppet = FROM
-	}
-
-	#Never
-	option = {
-		name = wtt_warlord.1.b
-		ai_chance = { 
-			base = 0
-		}
-		FROM = { country_event = { id = wtt_warlord.3 } }
-	}
-}
 
 # Answer from Japan to warloard wtt_warlord.1 - Yes
 country_event = {
@@ -1693,46 +1396,3 @@ country_event = {
 }
 
 #Move capital if someone wins civil war
-country_event = {
-	id = wtt_china.204
-	title = china.204.t
-	desc = china.204.d
-	picture = GFX_report_event_chinese_soldiers
-
-	is_triggered_only = yes
-
-	#Move to Beijing
-	option = {
-		name = china.204.a
-		ai_chance = {
-			base = 90
-		}
-		trigger = {
-			owns_state = 608
-		}
-		set_capital =  { state = 608 }
-	}
-
-	#Move to Nanjing
-	option = {
-		name = china.204.b
-		ai_chance = {
-			base = 10
-		}
-		trigger = {
-			owns_state = 613
-		}
-		custom_effect_tooltip = CHI_nanjing_tt
-		hidden_effect = {
-			set_capital =  { state = 613 }
-		}
-	}
-
-	#Stay where you are
-	option = {
-		name = china.204.c
-		ai_chance = {
-			base = 0			
-		}
-	}
-}

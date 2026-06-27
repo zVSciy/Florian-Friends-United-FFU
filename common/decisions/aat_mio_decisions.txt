@@ -841,14 +841,6 @@
 # 				limit = { original_tag = BUL }
 # 				has_completed_focus = BUL_contract_foreign_companies
 # 			}
-# 			IF = {
-# 				limit = { owner = { original_tag = ETH } }
-# 				owner = { has_completed_focus = ETH_invite_foreign_industrialists }
-# 				ENG = {
-# 					NOT = { has_war_with = ROOT }
-# 					has_capitulated = no
-# 				}
-# 			}
 # 			ELSE = {
 # 				always = no 
 # 			}

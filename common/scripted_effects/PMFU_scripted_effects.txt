@@ -113,9 +113,6 @@ BRA_economy_dynamic_modifier_tt = {
 	custom_effect_tooltip = BRA_modify_brazilian_economy_ns_intro
 }
 
-BRA_army_navy_dynamic_modifier_tt = {
-	custom_effect_tooltip = BRA_modify_brazilian_army_navy_ns_intro
-}
 
 MON_the_economy_dynamic_war_modifier_tt = {
 	custom_effect_tooltip = MON_the_economy_dynamic_war_modifier_loc_intro
@@ -146,10 +143,6 @@ declare_war_on_enemy_faction = {
 	}
 }
 
-ROOT_call_allies_both_sides = {
-	ROOT_call_all_allies_against_THIS = yes
-	THIS_call_all_allies_against_ROOT = yes
-}
 
 ROOT_call_all_allies_against_THIS = {
 	for_each_scope_loop = {
@@ -461,67 +454,6 @@ boot_naval_treaty_f = {
 	}
 }
 
-boot_naval_treat_d = {
-	if = {
-		limit = {
-			has_naval_treaty_trigger = yes
-		}
-		remove_naval_treaty_effect = yes
-		every_other_country = {
-			limit = {
-				has_naval_treaty_trigger = yes
-			}
-			country_event = MTG_naval_treaty.7
-		}
-		if = {
-			limit = {
-				has_global_flag = {
-					flag = MTG_naval_treaty_signatories
-					value < 3
-				}
-			}
-			random_other_country = {
-				limit = {
-					has_naval_treaty_trigger = yes
-				}
-				remove_naval_treaty_effect = yes
-			}
-			clr_global_flag = MTG_naval_treaty_signatories
-			hidden_effect = { news_event = mtg_news.60 }
-		}
-		if = {
-			limit = {
-				has_global_flag = MTG_naval_treaty_signatories
-			}
-			modify_global_flag = {
-				flag = MTG_naval_treaty_signatories
-				value = -1
-			}
-		}
-		if = {
-			limit = {
-				not = {
-					any_other_country = {
-						OR = {
-							has_idea = MTG_naval_treaty_cheating_reduced
-							has_idea = MTG_naval_treaty_adherent_reduced
-						}
-					}
-				}
-			}
-			every_other_country = {
-				limit = {
-					OR = {
-						has_idea = MTG_naval_treaty_cheating
-						has_idea = MTG_naval_treaty_adherent
-					}
-				}
-				activate_mission = MTG_escalator_clause_invocation_mission
-				custom_effect_tooltip = MTG_escalator_clause_tt
-			}
-		}
-	}
-}
 
 pow_before_annex = {
 	hidden_effect = {

@@ -360,6 +360,22 @@ technologies = {
 		}
 	}
 
+	desert_adaptable_armor_designs = {
+
+		allow = { always = no } #Only obtained through Focus
+
+		research_cost = 1
+
+		category_tanks = {
+			desert = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		
+	}
+
 	assault_gun_line_unit = {
 
 		allow = { always = no } #Only obtained through Focus

@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Wargoal Justification Events
 ###########################
 
@@ -31,30 +31,6 @@ country_event = {
 }
 
 # Fascists vs Democrats
-country_event = {
-	id = war_justification.2
-	title = war_justification.2.t
-	desc = war_justification.2.d
-	picture = GFX_report_event_communist_leader
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_government = fascism
-		FROM = { has_government = democratic }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.2.a
-		FROM = { country_event = { id = war_justification.202 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
 
 # Fascists vs Communists
 country_event = {
@@ -514,28 +490,6 @@ country_event = {
 }
 
 # Generic: Any War
-country_event = {
-	id = war_justification.20
-	title = war_justification.20.t
-	desc = war_justification.20.d
-	picture = GFX_report_event_tanks_vietnam
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = war_justification_last_event_generic
-	}
-	
-	option = {
-		name = war_justification.20.a
-		FROM = { country_event = { id = war_justification.220 } }
-		set_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_borderthreat
-		clr_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-	}
-}
 
 # Fascists vs Neutrals (Target)
 country_event = {

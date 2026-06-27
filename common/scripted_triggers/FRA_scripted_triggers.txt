@@ -301,15 +301,4 @@ USA_can_sell_weapons_trigger = {
 	USA = { has_civil_war = no }
 }
 
-has_any_occupation_cost_trigger = {
-	OR = {
-		has_idea = FRA_occupation_costs_1
-		has_idea = FRA_occupation_costs_2
-		has_idea = FRA_occupation_costs_3
-		has_idea = FRA_occupation_costs_4
-	}
-}
 
-is_vichy_france = {
-	has_country_flag = vichy_france	
-}
