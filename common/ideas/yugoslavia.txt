@@ -1060,34 +1060,6 @@ ideas = {
 			}
 		}
 
-		YUG_medium_tank_designer = {
-			name = yugos_medium_tank_designer
-
-			picture = vickers_armstrong_eng
-
-			allowed = {
-				original_tag = YUG
-			}
-
-			visible = {
-				tag = YUG
-			}
-
-			available = {
-				has_completed_focus = YUG_Prepare_for_the_Desert
-			}
-
-			removal_cost = -1
-			
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { YUG_medium_tank_designer }
-			
-			modifier = { tank_manufacturer_cost_factor = -1 }
-			
-		}
 	}
 
 	naval_manufacturer = { 

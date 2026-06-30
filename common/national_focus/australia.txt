@@ -74,9 +74,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = AST_evans_deakin_co_organization
 		}
 	}
 	
@@ -449,36 +446,6 @@ focus_tree = {
 			}
 			random_navy_leader = {
 				add_trait = { trait = cruiser_captain }
-			}
-
-			if = {
-				limit = { has_completed_focus = AST_expand_our_role }
-				mio:AST_evans_deakin_co_organization = {
-					complete_mio_trait = AST_mio_trait_cruise_group_evans
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = AST_ran_as_support }
-				mio:AST_cockatoo_doe_organization = {
-					complete_mio_trait = AST_mio_trait_cruise_group_cockatoo
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = ROM_potential_bonus_tt
-			custom_effect_tooltip = AST_has_completed_expand_our_role
-			effect_tooltip = {
-				mio:AST_evans_deakin_co_organization = {
-					complete_mio_trait = AST_mio_trait_cruise_group_evans
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = AST_has_completed_ran_as_support
-			effect_tooltip = {
-				mio:AST_cockatoo_doe_organization = {
-					complete_mio_trait = AST_mio_trait_cruise_group_cockatoo
-				}
 			}
 		}
 	}
@@ -1502,35 +1469,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = AST_coordinate_central_bureau
-		icon = GFX_goal_generic_radar
-		x = -2
-		y = 1
-		relative_position_id = AST_australian_arms_production
-		cost = 5
-		
-		prerequisite = { focus = AST_australian_arms_production focus = AST_tank_pounder_program }
-		
-		available = {
-			is_in_faction_with = USA
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = AST_modify_australian_army_modifier_tt
-			add_to_variable = {
-				AST_decryption_factor = 0.15
-				tooltip = decryption_factor_tt
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_tech_bonus = {
-				bonus = 1.0
-				ahead_reduction = 1
-				uses = 1
-				category = signal_company_tech
-			}
-		}
-	}
+
 	
 	focus = {
 		id = AST_specialise_equipment
@@ -1590,22 +1529,6 @@ focus_tree = {
 		}
 	}
 	
-	#focus = {
-	#	id = AST_design_the_yembra
-	#	icon = GFX_focus_generic_self_propelled_gun
-	#	x = 0
-	#	y = 1
-	#	relative_position_id = AST_thunder_warfare
-	#	cost = 5
-	#	
-	#	prerequisite = { focus = AST_lightning_warfare focus = AST_thunder_warfare }
-	#	prerequisite = { focus = AST_tank_pounder_program }
-	##	
-	#	completion_reward = {
-	#		add_ideas = CAN_sexton
-	#	}
-	# }
-	
 	focus = {
 		id = AST_fund_owen_gun_research
 		icon = GFX_goal_generic_small_arms
@@ -1655,6 +1578,36 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = AST_australian_arms_production
+		}
+	}
+
+	focus = {
+		id = AST_coordinate_central_bureau
+		icon = GFX_goal_generic_radar
+		x = -2
+		y = 1
+		relative_position_id = AST_australian_arms_production
+		cost = 5
+		
+		prerequisite = { focus = AST_australian_arms_production focus = AST_tank_pounder_program }
+		
+		available = {
+			is_in_faction_with = USA
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = AST_modify_australian_army_modifier_tt
+			add_to_variable = {
+				AST_decryption_factor = 0.15
+				tooltip = decryption_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = signal_company_tech
+			}
 		}
 	}
 	

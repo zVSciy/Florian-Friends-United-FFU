@@ -235,10 +235,11 @@ political_actions = {
 			add_ideas = AST_no_nzl_annex
 		}
 	}
+}
 
 
 
-	war_measures = {
+war_measures = {
 
 	AST_hold_java = {
 
@@ -284,9 +285,6 @@ political_actions = {
 			set_global_flag = failed_to_hold_java
 		}
 	}
-
-
-	}
-	}
+}
 
 

@@ -317,7 +317,7 @@ technologies = {
 	infantry_at = {
 
 		category_all_infantry = {
-			defense = 0.05
+			defence = 0.05
 		}
 		
 		path = {
@@ -2613,9 +2613,10 @@ technologies = {
 		start_year = 1942
 
 		research_cost = 1
-
-		river = {
-			attack = 0.10
+		category_army = {
+			river = {
+				attack = 0.10
+			}
 		}
 	}
 	
@@ -2628,9 +2629,10 @@ technologies = {
 		start_year = 1942
 
 		research_cost = 1
-
-		river = {
-			attack = -0.10
+		category_army = {
+			river = {
+				attack = -0.10
+			}
 		}
 	}
 	
@@ -2697,20 +2699,6 @@ technologies = {
 		}
 	}
 
-	######### FROM ITALIAN FOCUS ##########
-	blackshirt_assault_battalion_tech = {
-		
-		allow = {
-			always = no
-		}
-
-		research_cost = 1
-		start_year = 1936
-
-		enable_subunits = {
-			blackshirt_assault_battalion
-		}
-	}
 
 	mountain_warfare_militias_tech = { #Hidden tech showed as part of ITA_grande_rivolta_rurale_ns national spirit
 		
@@ -3022,7 +3010,7 @@ technologies = {
 				movement = 0.05
 			}
 		}
-		ranger_battalion = {
+		jaeger = {
 			desert = {
 				attack = 0.03
 				movement = 0.05
@@ -3068,7 +3056,7 @@ technologies = {
 				movement = 0.05
 			}
 		}
-		ranger_battalion = {
+		jaeger = {
 			jungle = {
 				attack = 0.03
 				movement = 0.05

@@ -4016,9 +4016,6 @@ ideas = {
 				module_ship_torpedo_sub_2_design_cost_factor = -1
 				module_ship_torpedo_sub_3_design_cost_factor = -1
 				module_ship_torpedo_sub_4_design_cost_factor = -1
-				module_ship_mine_layer_1_design_cost_factor = -1
-				module_ship_mine_layer_sub_design_cost_factor = -1
-				module_ship_mine_sweeper_1_design_cost_factor = -1
 				module_ship_depth_charge_1_design_cost_factor = -1
 				module_ship_depth_charge_2_design_cost_factor = -1
 				module_ship_depth_charge_3_design_cost_factor = -1
@@ -4045,8 +4042,6 @@ ideas = {
 				module_ship_armor_cruiser_3_design_cost_factor = -1
 				module_ship_armor_cruiser_4_design_cost_factor = -1
 				module_ship_armor_carrier_deck_design_cost_factor = -1
-				module_ship_heavy_battery_sub_1_design_cost_factor = -1
-				module_ship_deck_space_sub_design_cost_factor = -1
 
 				# tank
 				module_tank_gasoline_engine_design_cost_factor = -1

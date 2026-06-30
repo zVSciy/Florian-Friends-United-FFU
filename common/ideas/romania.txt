@@ -128,10 +128,8 @@ ideas = {
 			allowed = {  original_tag = rom }
 
 			modifier = {
-			conversion_cost_civ_to_mill_factor = -0.75 
+				conversion_cost_civ_to_mil_factor = -0.75 
 			}
-
-
 		}
 
 
@@ -300,21 +298,14 @@ ideas = {
 
 
 		
-			ROM_economic_reform = {
+		ROM_economic_reform = {
 			picture = GFX_ROM_economic_policy
 			allowed = { original_tag = ROM }
 			
 			removal_cost = -1
-			available = { has_dlc = "La Résistance" }  # Optional DLC check
 		
 			modifier = {
 				consumer_goods_factor = -0.01 # Reduces consumer goods by 1% passively
-			}
-		
-			weekly_changes = {
-				modifier = {
-					consumer_goods_factor = -0.002 # Additional 0.2% reduction per week
-				}
 			}
 		}
 		
@@ -1120,7 +1111,6 @@ ideas = {
 			}
 		}
 	}
-}
 	
 	tank_manufacturer = { 
 		
@@ -1531,9 +1521,7 @@ ideas = {
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
-	
-	
-
+}
 	
 
 	

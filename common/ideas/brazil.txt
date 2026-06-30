@@ -13,7 +13,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.1
-				industrial_capacity_factory_tt = 0.05
+				industrial_capacity_factory = 0.05
 				research_speed_factor = 0.05
 			}
 		}
@@ -72,7 +72,7 @@ ideas = {
 				modifier = { 
 					production_factory_max_efficiency_factor = 0.05
 					consumer_goods_factor = -0.075
-					industrial_capacity_arms_factory = 0.05
+					industrial_capacity_factory = 0.05
 				}
 			}
 

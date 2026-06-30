@@ -315,10 +315,7 @@ GER_messerschmitt_organization = {
 	include = generic_multi_role_aircraft_organization
 	icon = GFX_idea_messerschmitt
 	allowed = {
-		OR = {
-			tag = GER
-			NOR_AAT = yes
-		}
+		tag = GER
 	}
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
@@ -452,13 +449,9 @@ GER_heinkel_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_heinkel
 	allowed = {
-		OR = {
-			tag = GER
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			NOR_AAT = yes
+		AND = {
+			tag = BUL
+			has_dlc = "Battle for the Bosporus"
 		}
 	}
 	available = {

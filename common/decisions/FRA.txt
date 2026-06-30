@@ -2371,7 +2371,6 @@ FRA_propaganda_campaigns = {
 		modifier = {
 			air_advisor_cost_factor = -0.1
 			air_home_defence_factor = 0.1
-			air_paradrop_defence_factor = 0.1
 			air_training_xp_gain_factor = 0.2
 			air_untrained_pilots_penalty_factor = -0.1
 			experience_gain_air_factor = 0.2

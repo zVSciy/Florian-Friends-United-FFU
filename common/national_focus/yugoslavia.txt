@@ -4468,16 +4468,6 @@ focus_tree = {
         }
 
         completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-                        has_dlc = "Arms Against Tyranny"
-                    }
-				}
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = YUG_medium_tank_designer
-				add_ideas = YUG_medium_tank_designer
-			}
 
 			hidden_effect = {
                 create_field_marshal = {

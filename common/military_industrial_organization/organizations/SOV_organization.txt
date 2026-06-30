@@ -1980,18 +1980,7 @@ SOV_gaz_organization = {
 	icon = GFX_idea_gaz
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-			# AND = {
-			# 	tag = BUL
-			# 	has_dlc = "Battle for the Bosporus"
-			# }
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			NOR_AAT = yes
-		}
+		tag = SOV
 	}
 
 	visible = {

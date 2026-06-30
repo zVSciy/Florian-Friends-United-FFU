@@ -1376,10 +1376,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-	   sh_battleship = {
-		   lg_attack = 0.05
-		   hg_attack = 0.05
-	   }
+	   #sh_battleship = {
+		#   lg_attack = 0.05
+		#   hg_attack = 0.05
+	   #}
 	   battleship = {
 		   lg_attack = 0.05
 		   hg_attack = 0.05
@@ -1430,10 +1430,10 @@ technologies = {
 		   leads_to_tech = fire_control_methods_3
 		   research_cost_coeff = 1
 	   }
-	   sh_battleship = {
-		   lg_attack = 0.1
-		   hg_attack = 0.1
-	   }
+	   #sh_battleship = {
+		#   lg_attack = 0.1
+		 #  hg_attack = 0.1
+	   #}
 	   battleship = {
 		   lg_attack = 0.1
 		   hg_attack = 0.1
@@ -1479,10 +1479,10 @@ technologies = {
 
 	   research_cost = 2
 	   start_year = 1942
-	   sh_battleship = {
-		   lg_attack = 0.15
-		   hg_attack = 0.15
-	   }
+	   #sh_battleship = {
+		#   lg_attack = 0.15
+		#   hg_attack = 0.15
+	   #}
 	   battleship = {
 		   lg_attack = 0.15
 		   hg_attack = 0.15

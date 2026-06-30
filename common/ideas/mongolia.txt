@@ -221,10 +221,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_defense_factor = 0.05
+				army_defence_factor = 0.05
 				army_org_factor = 0.025
 				army_morale_factor = 0.05
-				army_dig_in_speed = 0.1
+				dig_in_speed_factor = 0.1
 			}
 		}
 
@@ -557,133 +557,6 @@ ideas = {
 				}
 			}
 		}	
-
-		MON_nomad_3 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = 0
-				industrial_capacity_factory = 0
-				local_resources_factor = -0.2
-				production_speed_buildings_factor = 0
-				supply_consumption_factor = -0.1
-				mobilization_speed = -0.20
-			}
-			equipment_bonus = {
-				horse_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				squad_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				sf_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-		MON_nomad_4 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = -0.1
-				mobilization_speed = -0.1
-			}
-			equipment_bonus = {
-				horse_equipment = {
-					build_cost_ic = -0.30 instant = yes
-				}
-			}
-		}
-
-		MON_nomad_5 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = 0
-				industrial_capacity_factory = 0.05
-				local_resources_factor = -0.1
-				production_speed_buildings_factor = 0
-				supply_consumption_factor = -0.15
-				mobilization_speed = 0
-			}
-			equipment_bonus = {
-				horse_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				squad_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				sf_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-
-		MON_nomad_5 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = 0
-				industrial_capacity_factory = 0.2
-				local_resources_factor = 0.15
-				production_speed_buildings_factor = 0.2
-				supply_consumption_factor = 0.15
-				mobilization_speed = 0.4
-			}
-		}
-		
 		
 
 		MON_brothers_war = {

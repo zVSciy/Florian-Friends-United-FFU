@@ -29,25 +29,10 @@ ideas = {
 			picture = FRA_undividable
 
 			modifier = {
-				new_mobile_warfare_mastery_gain_factor = 0.2
-				superior_firepower_mastery_gain_factor = 0.2
-				grand_battleplan_mastery_gain_factor = 0.2
-				mass_assault_mastery_gain_factor = 0.2
-			}
-		}
-
-			FRA_mastery_postcap = {
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = FRA_undividable
-
-			targeted_modifier = {
-				tag = USA
+				new_mobile_warfare_mastery_gain_factor = 0.5
+				superior_firepower_mastery_gain_factor = 0.5
+				grand_battleplan_mastery_gain_factor = 0.5
+				mass_assault_mastery_gain_factor = 0.5
 			}
 		}
 

@@ -233,21 +233,7 @@ ideas = {
 			global_building_slots_factor = 3
 			}
 		}
-	
 
-		 = {
-
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			picture = civilian_economy
-			modifier = {
-				production_lack_of_resource_penalty_factor = -1
-				min_export = -1
-			}
-		}
 
 		no_grinding = {
 

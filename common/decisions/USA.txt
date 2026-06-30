@@ -1353,7 +1353,7 @@ operations = {
 	}
 }
 
-USA_intervention_mandate = {
+USA_war_plans = {
 	USA_request_mandate_against_FROM = {
 		available = {
 			has_war_support > 0.4

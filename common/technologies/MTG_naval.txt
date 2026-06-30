@@ -1112,7 +1112,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 1  y = @1944 }
+			position = {  x = 1  y = 20 }
 		}
 
 		ai_will_do = {
