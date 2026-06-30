@@ -309,10 +309,7 @@ ideas = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
+					has_completed_focus = CAN_remove_mp_malus
 				}
 				if = {
 					limit = {
@@ -428,10 +425,7 @@ ideas = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
+					has_completed_focus = CAN_remove_mp_malus
 				}
 				if = {
 					limit = {
@@ -547,10 +541,7 @@ ideas = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
+					has_completed_focus = CAN_remove_mp_malus
 				}
 				if = {
 					limit = {

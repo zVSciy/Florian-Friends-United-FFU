@@ -201,15 +201,7 @@ USA_war_plans = {
 		has_completed_focus = USA_casablanca_conference
 	}
 }
-USA_intervention_mandate = {
-	icon = usa_intervention_mandate
-	allowed = {
-		original_tag = USA
-	}
-	visible = {
-		has_completed_focus = USA_reinforce_monroe_doctrine
-	}
-}
+
 # USA_honor_the_confederacy = {
 # 	icon = usa_honor_the_confederacy
 # 	allowed = {

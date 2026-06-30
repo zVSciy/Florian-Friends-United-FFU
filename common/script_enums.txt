@@ -93,6 +93,12 @@ script_enum_equipment_stat = {
 	night_penalty				#Cannot be used with MIOS
 	build_cost_ic
 	naval_weather_penalty_factor
+	railway_gun_attack_range
+	railway_gun_attack_range_index_in_define
+	railway_gun_hours_between_redistribution
+	railway_gun_annex_ratio
+	additional_collateral_damage
+	recovery
 }
 
 script_enum_production_stat = {
@@ -137,6 +143,14 @@ script_enum_equipment_category = {
 	anti_tank
 	rocket
 	flame
+	support_ship
+	missile_launcher
+	sam_missile
+	nuclear_missile
+	ballistic_missile
+	emplacement_gun_ammo
+	land_cruiser
+
 }
 
 script_enum_equipment_bonus_type = {
@@ -425,6 +439,7 @@ script_enum_equipment_bonus_type = {
 	small_plane_cas_airframe_2
 	small_plane_cas_airframe_3
 	small_plane_cas_airframe_4
+	small_plane_cas_airframe_5
 	cv_small_plane_cas_airframe_0
 	cv_small_plane_cas_airframe_1
 	cv_small_plane_cas_airframe_2
@@ -435,6 +450,7 @@ script_enum_equipment_bonus_type = {
 	small_plane_naval_bomber_airframe_2
 	small_plane_naval_bomber_airframe_3
 	small_plane_naval_bomber_airframe_4
+	small_plane_naval_bomber_airframe_5
 	cv_small_plane_naval_bomber_airframe_0
 	cv_small_plane_naval_bomber_airframe_1
 	cv_small_plane_naval_bomber_airframe_2
@@ -445,6 +461,7 @@ script_enum_equipment_bonus_type = {
 	small_plane_suicide_airframe_2
 	small_plane_suicide_airframe_3
 	small_plane_suicide_airframe_4
+	small_plane_suicide_airframe_5
 	cv_small_plane_suicide_airframe_0
 	cv_small_plane_suicide_airframe_1
 	cv_small_plane_suicide_airframe_2
@@ -1377,23 +1394,17 @@ script_enum_equipment_bonus_type = {
 	small_plane_airframe_5
 	supersonic_fighter_equipment_1
 	helicopter_equipment
+	land_cruiser_chassis
 	land_cruiser_chassis_1
+	super_heavy_artillery_equipment
 	super_heavy_artillery_equipment_1
+	self_propelled_super_heavy_artillery_equipment
 	self_propelled_super_heavy_artillery_equipment_1
-	cruiser_submarine
 	ship_hull_fleet_submarine
-	fleet_submarine
 	ship_hull_nuclear_submarine
-	nuclear_submarine
-	rocket_submarine
-	nuclear_missile_submarine
-	midget_submarine
 	ship_hull_heavy_modern
-	modern_battleship
 	ship_hull_carrier_modern
-	modern_carrier
 	ship_hull_mega_carrier
-	mega_carrier
 	ballistic_missile_equipment
 	sam_missile_equipment
 	land_cruiser
@@ -1418,6 +1429,12 @@ script_enum_equipment_bonus_type = {
 	armored_support_vehicle_1
 	super_heavy_railway_gun_equipment
 	super_heavy_railway_gun_equipment_1
+	support_ship_hull
+	support_ship_1
+	support_ship_2
+	repair_ship_hull
+	repair_ship_1
+	repair_ship_2
 
 	eng_medium_tank_chassis_a10
 }

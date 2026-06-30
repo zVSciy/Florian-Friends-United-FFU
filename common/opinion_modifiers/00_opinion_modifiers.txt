@@ -882,7 +882,6 @@ opinion_modifiers = {
 	CHI_mission_to_the_soviet_union = { value = 25 }
 	CHI_reach_out_to_france = { value = 25 }
 	CHI_british_cooperation = { value = 25 }
-	CHI_mission_to_the_us = { value = 25 }
 	CHI_collaboration_with_the_japanese = { value = 25 }
 	CHI_xian_refused = { value = -50 }
 	CHI_refused_support = { value = -50 months = 24 decay = 1}

@@ -3476,7 +3476,7 @@ GER_share_generals = {
 		
 		visible = {
 			tag = GER
-			ROM = { has_completed_focus = ROM_invite_german_advisors }
+			ROM = { has_completed_focus = ROM_victors_of_the_great_war }
 			NOT = { has_country_flag = GER_send_rom }
 		}
 

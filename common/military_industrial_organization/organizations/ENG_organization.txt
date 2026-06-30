@@ -502,22 +502,7 @@ ENG_de_havilland_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = ENG } }
-			}
-			FROM = { NOT = { has_war_with = ENG } }
-		}
 
-		if = {
-			limit = {
-				FROM = { tag = NOR }
-			}
-			FROM = {
-				has_completed_focus = NOR_invite_transnational_manufacturers
-			}
-		}
 	}
 }
 
@@ -588,46 +573,15 @@ ENG_rsaf_enfield_organization = {
 	icon = GFX_idea_rsaf_enfield
 
 	allowed = {	
-		OR = {
-			tag = ENG 
-			AND = {
-				tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				OR = {
-					original_TAG = LAT
-					original_TAG = LIT
-					original_TAG = EST
-				}
-				has_dlc = "No Step Back"
-			}
-		}
+		tag = ENG
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = ENG } }
-			}
-			FROM = { NOT = { has_war_with = ENG } }
+		OR = {
+			has_completed_focus = ENG_sfp_gun_mio
+			has_completed_focus = ENG_gbp_gun_mio
 		}
-
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						original_TAG = LAT
-						original_TAG = LIT
-						original_TAG = EST
-					}
-				}
-			}
-			FROM = {
-				has_completed_focus = ENG_enfield
-			}
-		}
+		
 	}
 
 	override_trait = { 
@@ -753,40 +707,14 @@ ENG_royal_arsenal_organization = {
 			tag = AST
 			tag = CAN
 			tag = SAF
-			tag = NZL
-			AND = {
-				OR = {
-					original_TAG = LAT
-					original_TAG = LIT
-					original_TAG = EST
-				}
-				has_dlc = "No Step Back"
-			}
 		}
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = ENG } }
-			}
-			FROM = { NOT = { has_war_with = ENG } }
+		OR = {
+			has_completed_focus = ENG_sfp_arti_bon
+			has_completed_focus = ENG_gbp_arti_bon
 		}
-
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						original_TAG = LAT
-						original_TAG = LIT
-						original_TAG = EST
-					}
-				}
-			}
-			FROM = {
-				has_completed_focus = ENG_enfield
-			}
-		}
+		
 	}
 }

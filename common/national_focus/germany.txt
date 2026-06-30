@@ -4771,7 +4771,7 @@ focus_tree = {
 				name = GER_flame_tank
 				bonus = 0.69
 				uses = 2
-				category = support_equipment
+				category = support_tech
 				technology = tech_engineers2
 				technology = tech_engineers3
 			}
@@ -5254,7 +5254,6 @@ focus_tree = {
 						AND = {
 							CZE = { is_in_faction_with = HOL }
 							HOL = { is_faction_leader = yes }
-							HOL = { has_completed_focus = HOL_foundations_for_a_european_union }
 						}
 					}
 					CZE = { NOT = { is_in_faction_with = GER } }
@@ -5308,7 +5307,6 @@ focus_tree = {
 				limit = {
 					HOL = { exists = yes }
 					HOL = { is_subject = no }
-					HOL = { has_completed_focus = HOL_foundations_for_a_european_union }
 					HOL = { is_faction_leader = yes }
 					NOT = { has_war_with = HOL }
 					NOT = { has_war_with = FRA }

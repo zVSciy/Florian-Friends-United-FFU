@@ -114,7 +114,6 @@ mio_cat_eq_all_destroyer = { #Includes all Destroyers --- Used due to custom loc
 mio_cat_eq_all_battleship = { #Includes all Battleships (BB, BC, SHBB, Pre-Dreadnought)
 	equipment_type = {
 		ship_hull_heavy
-		ship_hull_super_heavy
 	}
 }
 

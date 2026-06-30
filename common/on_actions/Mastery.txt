@@ -22,18 +22,6 @@ on_monthly = {
 				}
 				add_mastery = {
 					amount = 2
-					track = combat_support
-				}
-				add_mastery = {
-					amount = 2
-					track = support
-				}
-				add_mastery = {
-					amount = 2
-					track = motorized
-				}
-				add_mastery = {
-					amount = 2
 					track = operations
 				}
 			}
@@ -55,18 +43,6 @@ on_monthly = {
 				add_mastery = {
 					amount = 1
 					track = armor
-				}
-				add_mastery = {
-					amount = 1
-					track = combat_support
-				}
-				add_mastery = {
-					amount = 1
-					track = support
-				}
-				add_mastery = {
-					amount = 1
-					track = motorized
 				}
 				add_mastery = {
 					amount = 1

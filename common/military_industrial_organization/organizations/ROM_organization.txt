@@ -35,7 +35,7 @@ ROM_leonidas_works_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_tank_destroyers }
 
 		available = {
-			FROM = { has_completed_focus = ROM_mobile_tank_destroyers }
+			FROM = { has_completed_focus = ROM_resita_barrel_design }
 		}
 
 		equipment_bonus = {
@@ -131,62 +131,6 @@ ROM_Braila_organization = {
 #    ### #  # #  # ### ##  
 
 ###########################
-
-ROM_iar_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_ROM_iar
-	allowed = { 
-		tag = ROM
-	}
-	available = {
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			FROM = { has_completed_focus = ROM_invest_in_the_iar }
-		}
-	}
-
-	add_trait = {
-		token = generic_mio_trait_heavily_armed_aircraft
-		name = generic_mio_trait_heavily_armed_aircraft
-		icon = GFX_generic_mio_department_icon_plane_fighter_combat
-
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_advanced_aerodynamics
-
-		visible = {
-			has_dlc = "Death or Dishonor"
-		}
-
-		available = {
-			FROM = { has_completed_focus = ROM_invest_in_the_iar }
-		}
-
-		equipment_bonus = {
-			air_attack = 0.05
-			air_ground_attack = 0.05
-		}
-	}
-}
-
-ROM_icar_organization = {
-	include = generic_general_aircraft_organization
-	icon = GFX_idea_ROM_ICAR
-	allowed = { 
-		tag = ROM
-		has_dlc = "Death or Dishonor"
-	}
-}
-
-ROM_set_organization = {
-	include = generic_naval_aircraft_organization
-	icon = GFX_idea_ROM_SET
-	allowed = { 
-		tag = ROM
-		has_dlc = "Death or Dishonor"
-	}
-}
 
 
 ################################### 

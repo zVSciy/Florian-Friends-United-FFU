@@ -484,88 +484,8 @@ country_event = {
 #RAJ gets to choose sides in Indian civil war
 
 # Shadow Scheme Factories
-country_event = {
-    id = britain.24
-    title = britain.24.t
-    desc = britain.24.d
-    picture = GFX_report_event_generic_factory
- 
-    fire_only_once = yes
- 
-    trigger = {
-        original_tag = ENG
-        has_completed_focus = shadow_scheme_focus
-        has_war = yes
-    }
 
-    mean_time_to_happen = {
-        days = 7
-    }
-
-    option = {
-        name = britain.24.a
-        random_owned_controlled_state = {
-			limit = {
-				is_in_home_area = yes
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes
-				}
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-			set_state_flag = shadow_scheme_2AF
-		}
-		random_owned_controlled_state = {
-			limit = {
-				is_in_home_area = yes
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes
-				}
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-			set_state_flag = shadow_scheme_2AF
-		}
-    }
-}
 
 ### Anglo-Soviet Agreement
 
 ### Operation Countenance
-
-
-
-
-
-country_event = {
-	id = britain.504
-	title = britain.504.t
-	desc = britain.504.d
-	picture = GFX_report_event_indian_soldiers
-
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.504.a
-		effect_tooltip = {
-			ENG = {
-				create_wargoal = {
-					type = topple_government
-					target = ITA
-				}
-			}
-		}
-	}
-}

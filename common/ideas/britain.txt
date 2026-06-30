@@ -2941,9 +2941,6 @@ ideas = {
 			
 			cost = 75
 			
-			available = {
-				has_completed_focus = ENG_enfield
-			}
 			
 			research_bonus = {
 				infantry_weapons = 0.15

@@ -46,6 +46,7 @@ add_dynamic_modifier = {
 	modifier = BRA_State_of_emergency_dynamic_modifier
 
 }
+add_dynamic_modifier = { modifier = BRA_army_modifier }
 
 add_to_variable = { BRA_State_of_emergency_stability_factor = -0.05 tooltip = stability_factor_tt}
 add_to_variable = { BRA_State_of_emergency_communism_drift = 0.10 tooltip = communism_drift_tt}

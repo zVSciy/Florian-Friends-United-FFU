@@ -131,7 +131,12 @@ set_popularities = {
 	democratic = 98
 	communism = 2
 }
-
+add_dynamic_modifier = {
+	modifier = AST_royal_australian_navy
+}
+add_dynamic_modifier = {
+    modifier = AST_australian_army
+}
 add_ideas = {
 	ASN_ALLIES_the_sun_never_sets_idea_1
 	PACIFIC_COMMONWEALTH_controls_original

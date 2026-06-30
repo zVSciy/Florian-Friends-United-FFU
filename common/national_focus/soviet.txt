@@ -2301,7 +2301,7 @@ focus_tree = {
 				limit = {
 					NOT = {
 						ENG = {
-							has_completed_focus = ENG_british_invasion_of_iran
+							has_completed_focus = ENG_countenance
 						}
 					}	
 					446 = {
@@ -4515,7 +4515,7 @@ focus_tree = {
 				name = GER_flame_tank
 				bonus = 0.69
 				uses = 2
-				category = support_equipment
+				category = support_tech
 				technology = tech_engineers2
 				technology = tech_engineers3
 			}

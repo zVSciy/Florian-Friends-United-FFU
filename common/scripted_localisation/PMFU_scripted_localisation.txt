@@ -223,102 +223,6 @@ defined_text = { # global
 }
 
 defined_text = { # global
-	name = GER_economy_dynam_mod_sl
-	text = {
-		trigger = {
-			GER = {
-				NOT = {
-					has_completed_focus = GER_expand_mefo
-					has_completed_focus = GER_rearm_slow
-					has_completed_focus = GER_rearm_slow3
-				}
-				has_war = no
-			}
-		}
-		localization_key = "GER_modify_economy_mefo" 
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_completed_focus = GER_expand_mefo
-				NOT = {
-					has_completed_focus = GER_rearm_slow
-					has_completed_focus = GER_rearm_slow3
-				}
-				has_war = no
-			}
-		}
-		localization_key = "GER_modify_economy_extra_mefo" 
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_completed_focus = GER_expand_mefo
-				has_completed_focus = GER_rearm_slow
-				NOT = {
-					has_completed_focus = GER_rearm_slow3
-				}
-				has_war = no
-			}
-		}
-		localization_key = "GER_modify_economy_expanded_mefo_const_focus" 
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_completed_focus = GER_expand_mefo
-				has_completed_focus = GER_rearm_slow
-				has_completed_focus = GER_rearm_slow3
-				has_war = no
-			}
-		}
-		localization_key = "GER_modify_economy_expanded_mefo_extra_invest_const_focus" 
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_war = yes
-			}
-		}
-		localization_key = "GER_modify_economy_war_economy" 
-	}
-}
-
-defined_text = { # global
-	name = GER_army_dynam_mod_sl
-	text = {
-		trigger = {
-			GER = {
-				NOT = {
-					has_completed_focus = GER_volksturm
-					has_completed_focus = GER_improved_command
-				}
-			}
-		}
-		localization_key = "GER_modify_army_general_staff" 
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_completed_focus = GER_improved_command
-				NOT = {
-					has_completed_focus = GER_volksturm
-				}
-			}
-		}
-		localization_key = "GER_modify_army_improved_general_staff" 
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_completed_focus = GER_volksturm
-			}
-		}
-		localization_key = "GER_modify_army_volksturm" 
-	}
-}
-
-defined_text = { # global
 	name = GER_air_dynam_mod_sl
 	text = {
 		trigger = {
@@ -450,27 +354,6 @@ defined_text = { # global
 	}
 }
 
-defined_text = { # global
-	name = ITA_naval_air_coordination_sl
-	text = {
-		trigger = {
-			ITA = {
-				NOT = {
-					has_completed_focus = ITA_naval_air_coordination
-				}
-			}
-		}
-		localization_key = "ITA_naval_air_coordination_0_tt" 
-	}
-	text = {
-		trigger = {
-			ITA = {
-				has_completed_focus = ITA_naval_air_coordination
-			}
-		}
-		localization_key = "ITA_naval_air_coordination_10_tt" 
-	}
-}
 
 defined_text = { # global
 	name = ITA_license_the_airframe_sl
@@ -631,72 +514,6 @@ defined_text = { # global
 }
 
 defined_text = { # global
-	name = ENG_economy_dynam_mod_sl
-	text = {
-		trigger = {
-			ENG = {
-				NOT = {
-					has_completed_focus = limited_rearmament_focus
-				}
-				has_war = no
-			}
-		}
-		localization_key = "ENG_modify_economy_great_depression" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = limited_rearmament_focus
-				NOT = {
-					has_completed_focus = shadow_scheme_focus
-				}
-				has_war = no
-			}
-		}
-		localization_key = "ENG_modify_economy_british" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = shadow_scheme_focus
-				has_war = no
-			}
-		}
-		localization_key = "ENG_modify_economy_shadow_scheme" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_war = yes
-			}
-		}
-		localization_key = "ENG_modify_economy_war" 
-	}
-}
-
-defined_text = { # global
-	name = ENG_army_dynam_mod_sl
-	text = {
-		trigger = {
-			ENG = {
-				NOT = {
-					has_completed_focus = ENG_military_training_act
-				}
-			}
-		}
-		localization_key = "ENG_modify_army_the_war_to_end_all_wars" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = ENG_military_training_act
-			}
-		}
-		localization_key = "ENG_modify_army_army" 
-	}
-}
-
-defined_text = { # global
 	name = ENG_air_dynam_mod_sl
 	text = {
 		trigger = {
@@ -705,42 +522,6 @@ defined_text = { # global
 		localization_key = "ENG_modify_air_airforce" 
 	}
 }
-
-defined_text = { # global
-	name = ENG_british_airforce_aircaft_production_group_sl
-	text = {
-		trigger = {
-			ENG = {
-				NOT = {
-					has_completed_focus = ENG_air_production_group
-					has_completed_focus = ENG_air_ministry_production
-				}
-			}
-		}
-		localization_key = "ENG_air_production_group_0_tt" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = ENG_air_production_group
-				NOT = {
-					has_completed_focus = ENG_air_ministry_production
-				}
-			}
-		}
-		localization_key = "ENG_air_production_group_5_tt" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = ENG_air_production_group
-				has_completed_focus = ENG_air_ministry_production
-			}
-		}
-		localization_key = "ENG_air_production_group_10_tt" 
-	}
-}
-
 defined_text = { # global
 	name = ENG_navy_dynam_mod_sl
 	text = {
@@ -748,50 +529,6 @@ defined_text = { # global
 			always = yes
 		}
 		localization_key = "ENG_modify_navy_navy" 
-	}
-}
-
-defined_text = { # global
-	name = ENG_british_navy_merchant_navy_sl
-	text = {
-		trigger = {
-			ENG = {
-				NOT = {
-					has_completed_focus = ENG_merchant_fleet
-				}
-			}
-		}
-		localization_key = "ENG_merchant_navy_0_tt" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = ENG_merchant_fleet
-			}
-		}
-		localization_key = "ENG_merchant_navy_10_tt" 
-	}
-}
-
-defined_text = { # global
-	name = ENG_british_navy_secure_the_imperial_shipping_routes_sl
-	text = {
-		trigger = {
-			ENG = {
-				NOT = {
-					has_completed_focus = ENG_secure_shipping
-				}
-			}
-		}
-		localization_key = "ENG_secure_the_imperial_shipping_routes_0_tt" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = ENG_secure_shipping
-			}
-		}
-		localization_key = "ENG_secure_the_imperial_shipping_routes_10_tt" 
 	}
 }
 
@@ -1974,32 +1711,6 @@ defined_text = { # global
 		localization_key = RULE_JUNE_1_1940
 	}
 }
-
-
-defined_text = {
-	name = bloated_game_mode_rule_sl
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = bloated_game_mode
-				option = ENABLED
-			}
-		}
-		localization_key = RULE_OPTION_ENABLED
-	}
-
-	text = {
-		trigger = {
-			has_game_rule = {
-				rule = bloated_game_mode
-				option = DISABLED
-			}
-		}
-		localization_key = RULE_OPTION_DISABLED
-	}
-
-}
-
 
 defined_text = { # global
 	name = no_asia_bra_mex_status_rule_sl

@@ -1343,19 +1343,6 @@ focus_tree = {
 		available = {
 
 		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = synth_oil_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = synthetic_refinery
-						size < 0
-						include_locked = yes
-					}
-				}
-			}
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

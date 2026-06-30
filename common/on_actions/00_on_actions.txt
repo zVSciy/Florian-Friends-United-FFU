@@ -2754,21 +2754,6 @@ on_actions = {
 			#} #This would add a unit medal to the history entry you just received
 		}
 	}
-
-	on_weekly_GER = {
-		effect = {
-			GER = {
-				every_core_state = {
-					limit = {
-						has_dynamic_modifier = {
-							modifier = GER_poor_iron_quality
-						}
-					}
-					SWE_update_iron_ore_calc = yes
-				}
-			}
-		}
-	}
 	
 	# root is the state that was dropped into
 	# from is the dropping country
@@ -2857,40 +2842,6 @@ on_actions = {
 					635 = { has_state_flag = prevent_auto_flip_after_capitulation }
 				}
 				635 = { clr_state_flag = prevent_auto_flip_after_capitulation }
-			}
-		}
-	}
-
-	on_monthly_GER = {
-		effect = {
-			if = {
-				limit = {
-					144 = { is_fully_controlled_by = GER }
-					check_variable = { GER_narvik_civs < 8 }
-					
-					666 = {
-						NOT = {
-							has_dynamic_modifier = {
-								modifier = SWE_blown_up_mines
-							}
-						}
-					}
-				}
-
-				add_to_variable = { GER_narvik_shipments = 1 }
-				if = {
-					limit = {
-						check_variable = { GER_narvik_shipments > 5 }
-					}
-
-					add_offsite_building = {
-						type = industrial_complex
-						level = 1
-					}
-
-					set_variable = { GER_narvik_shipments = 0 }
-					add_to_variable = { GER_narvik_civs = 1 }
-				}
 			}
 		}
 	}

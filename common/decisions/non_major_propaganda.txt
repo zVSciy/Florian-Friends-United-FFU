@@ -957,10 +957,7 @@ ALLIES_propaganda_campaigns = {
 			}
 			else = {
 			USA = {
-				OR = {
-					has_completed_focus = USA_fair_labour_standards_act
-					has_completed_focus = USA_pension_reform
-				}
+				has_completed_focus = USA_fair_labour_standards_act
 			}
 		}
 		}
@@ -1171,7 +1168,7 @@ COM_propaganda_campaigns = {
 				has_country_flag = COM_running_prop
 			}
 			ENG = {
-				has_completed_focus = ENG_commonwealth_ties
+				has_completed_focus = ENG_raj_dev
 			}
 		}
 
@@ -1370,7 +1367,7 @@ COM_propaganda_campaigns = {
 				has_country_flag = COM_running_prop
 			}
 			ENG = {
-				has_completed_focus = ENG_raf
+				has_completed_focus = ENG_air_and_navy
 			}
 			has_war = yes
 		}
@@ -1420,7 +1417,7 @@ COM_propaganda_campaigns = {
 				has_country_flag = COM_running_prop
 			}
 			ENG = {
-				has_completed_focus = ENG_war_cabinet
+				has_completed_focus = ENG_imperial_conf
 			}
 		}
 

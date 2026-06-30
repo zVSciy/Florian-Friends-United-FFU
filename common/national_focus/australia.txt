@@ -31,9 +31,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = AST_modify_royal_australian_navy_modifier_tt
 			navy_experience = 25
-            add_dynamic_modifier = {
-                modifier = AST_royal_australian_navy
-            }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
@@ -226,11 +223,7 @@ focus_tree = {
 				tooltip = naval_torpedo_enemy_critical_chance_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = naval_armor
-			}
+			
 			random_navy_leader = {
 				add_trait = { trait = ironside }
 			}
@@ -1344,9 +1337,7 @@ focus_tree = {
 		
 		completion_reward = {
 			army_experience = 25
-            add_dynamic_modifier = {
-                modifier = AST_australian_army
-            }
+            
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.25
 				uses = 1
@@ -2443,9 +2434,8 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
-					has_completed_focus = AST_incorporate_new_zealand_into_the_federation
+					num_of_factories > 129
 				}
-				num_of_factories > 129
 			} else = {
 				num_of_factories > 60
 			}

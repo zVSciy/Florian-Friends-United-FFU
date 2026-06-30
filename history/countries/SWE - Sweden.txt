@@ -35,11 +35,6 @@ if = {
 	limit = { has_dlc = "Arms Against Tyranny" }
 	add_ideas = {
 		peace_training # pmfu
-		#SWE_historical_trade_with_Germany CUT
-		#SWE_hungershield
-		#SWE_severe_lack_of_ammunition
-		#SWE_standardized_equipment
-		SWE_gustaf_v_idea
 		neutrality_idea
 		neutrality_idea2
 		stupid_ai

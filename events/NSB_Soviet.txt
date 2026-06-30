@@ -4448,12 +4448,6 @@ country_event = {
 					}
 					if = {
 						limit = {
-							NOT = { has_tech = basic_cruiser_armor_scheme }
-						}
-						set_technology = { basic_cruiser_armor_scheme = 1 }
-					}
-					if = {
-						limit = {
 							has_tech = basic_medium_battery
 						}
 						create_equipment_variant = {
@@ -4629,12 +4623,6 @@ country_event = {
 					NOT = { has_tech = basic_ship_hull_cruiser }
 				}
 				set_technology = { basic_ship_hull_cruiser = 1 }
-			}
-			if = {
-				limit = {
-					NOT = { has_tech = basic_cruiser_armor_scheme }
-				}
-				set_technology = { basic_cruiser_armor_scheme = 1 }
 			}
 			if = {
 				limit = {

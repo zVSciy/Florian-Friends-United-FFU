@@ -802,15 +802,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -949,15 +941,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 0.5
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 0.5
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1147,15 +1131,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 80
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1187,15 +1163,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1227,15 +1195,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1305,11 +1265,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 90
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1443,15 +1399,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 3
-				has_completed_focus = CZE_german_leanings
-			}
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_trust_in_the_west
-			}
+
 		}
 
 		available = {
@@ -1580,11 +1528,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1633,11 +1577,7 @@ focus_tree = {
 		cost = 15
 
 		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1675,11 +1615,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
+
 		}
 
 		available = {
@@ -1883,15 +1819,6 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_go_left
-			}
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_democratic_bastion
-			}
 		}
 
 		available = {
@@ -2042,15 +1969,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 90
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_left
-			}
+
 		}
 
 		available = {
@@ -2254,15 +2173,6 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 1.5
-				has_completed_focus = CZE_invite_romania
-			}
-			modifier = {
-				factor = 1.5
-				has_completed_focus = CZE_invite_yugoslavia
-			}
 		}
 
 		available = {
@@ -2300,15 +2210,6 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 1.5
-				has_completed_focus = CZE_invite_romania
-			}
-			modifier = {
-				factor = 1.5
-				has_completed_focus = CZE_invite_yugoslavia
-			}
 		}
 
 		available = {	

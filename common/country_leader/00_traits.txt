@@ -14,7 +14,28 @@
 
 leader_traits = {
 
+	AST_british_consultation = {
+		random = no
+		sprite = 13
+		max_command_power = 20
+		command_power_gain_mult = 0.2
+	}
 
+	AST_seal_of_approval = {
+		random = no
+		sprite = 13
+		party_popularity_stability_factor = 0.1
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+	}
+
+	AST_australian_founding_father = {
+		random = no
+		sprite = 13
+		war_support_factor = 0.05
+		experience_gain_army_factor = 0.15
+	}
+	
 	BRA_father_of_the_poor = {
 		random = no 
 		conscription = 0.02
