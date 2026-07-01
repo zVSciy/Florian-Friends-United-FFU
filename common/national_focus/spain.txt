@@ -1787,46 +1787,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = SPA_the_submarine_plan
-		available = {
-			
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_spanish_navy }
-		mutually_exclusive = { focus = SPA_the_plan_imperial focus = SPA_the_cruiser_plan }
-		
-		icon = GFX_goal_generic_navy_submarine
-		x = 3
-		y = 1
-		relative_position_id = SPA_the_spanish_navy
-		cost = 10
-
-		allow_branch = {
-			always = no
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			navy_experience = 50
-			add_ideas = SPA_the_plan_submarine
-			add_breakthrough_progress = {
-                specialization = specialization_naval
-                value = 1
-            }
-			add_tech_bonus = {
-				name = SPA_glory_and_wealth_on_the_sea_lanes
-				bonus = 1
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
-
-
 	focus = {
 		id = SPA_the_tangiers_enclave
 		available = {

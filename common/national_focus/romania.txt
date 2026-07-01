@@ -587,12 +587,7 @@ focus_tree = {
 	focus = {
         id = ROM_placebo5
         icon = GFX_focus_generic_road_investment
-       prerequisite = { focus = ROM_Placebo2 }
-
-	   
-mutually_exclusive = {
-	focus = ROM_placebo4
-}
+       	prerequisite = { focus = ROM_Placebo2 }
 
         x = -3
         y = 1
@@ -609,9 +604,7 @@ mutually_exclusive = {
 				id = ROM_balance_of_power
 				value = -0.3
 			}
-
         }
-
 	}
 
 
@@ -866,10 +859,6 @@ mutually_exclusive = {
         id = ROM_placebo6
         icon = GFX_advanced_industry
        prerequisite = { focus = ROM_Placebo3} 
-
-mutually_exclusive = {
-	focus = ROM_placebo5
-}
 
         x = 3
         y = 1
@@ -2645,7 +2634,7 @@ focus = {
 
 focus = {
 	id = ROM_expand_the_galati_shipyards
-	prerequisite = { focus = ROM_romanian_rearmament }
+	prerequisite = {  }
 	icon = GFX_ROM_expand_the_galati_shipyards
 	relative_position_id = ROM_victors_of_the_great_war
 	x = 10

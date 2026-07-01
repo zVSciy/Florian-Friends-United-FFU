@@ -1600,6 +1600,128 @@ focus_tree = {
 		}
 	}
 	
+	
+
+	#######################################
+	######### STRATEGY DECISIONS ##########
+	#######################################
+	
+	focus = {
+		id = CZE_strategy_decisions
+		icon = GFX_goal_generic_position_armies
+		x = 7
+		y = 0
+		relative_position_id = CZE_political_direction
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = CZE_german_leanings
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = CZE_strategy_decisions }
+		
+		x = -1
+		y = 1
+		relative_position_id = CZE_strategy_decisions
+
+		cost = 5
+
+		ai_will_do = {
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			 GER = { add_opinion_modifier = { target = CZE modifier = CZE_german_leanings } }
+		}
+	}
+
+	focus = {
+		id = CZE_german_puppet
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = CZE_rapprochement_with_hungary }
+		
+		x = 0
+		y = 3
+		relative_position_id = CZE_german_leanings
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			GER = {
+				set_autonomy = {
+					target = CZE
+					autonomy_state = autonomy_integrated_puppet
+				}	
+			}
+
+			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
+			GER = {add_war_support = 0.1}
+			FRA = {add_war_support = 0.1}
+			ENG = {add_war_support = 0.1}
+			hidden_effect = {
+				GER = {
+					set_technology = { ger_cze_tank_1 = 1 }
+				}
+				GER = {
+					set_technology = { ger_cze_tank_2 = 1 }
+				}
+			}
+		}
+	}
+
 	focus = {
 		id = CZE_german_minor_ally
 		icon = GFX_goal_generic_dangerous_deal
@@ -1767,126 +1889,6 @@ focus_tree = {
 					type = arms_factory
 					level = 10
 					instant_build = yes
-				}
-			}
-		}
-	}
-
-	#######################################
-	######### STRATEGY DECISIONS ##########
-	#######################################
-	
-	focus = {
-		id = CZE_strategy_decisions
-		icon = GFX_goal_generic_position_armies
-		x = 7
-		y = 0
-		relative_position_id = CZE_political_direction
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = CZE_german_leanings
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = CZE_strategy_decisions }
-		
-		x = -1
-		y = 1
-		relative_position_id = CZE_strategy_decisions
-
-		cost = 5
-
-		ai_will_do = {
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			 GER = { add_opinion_modifier = { target = CZE modifier = CZE_german_leanings } }
-		}
-	}
-
-	focus = {
-		id = CZE_german_puppet
-		icon = GFX_focus_CZE_german_puppet
-		prerequisite = { focus = CZE_rapprochement_with_hungary }
-		
-		x = 0
-		y = 3
-		relative_position_id = CZE_german_leanings
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			
-			GER = {
-				set_autonomy = {
-					target = CZE
-					autonomy_state = autonomy_integrated_puppet
-				}	
-			}
-
-			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-			GER = {add_war_support = 0.1}
-			FRA = {add_war_support = 0.1}
-			ENG = {add_war_support = 0.1}
-			hidden_effect = {
-				GER = {
-					set_technology = { ger_cze_tank_1 = 1 }
-				}
-				GER = {
-					set_technology = { ger_cze_tank_2 = 1 }
 				}
 			}
 		}

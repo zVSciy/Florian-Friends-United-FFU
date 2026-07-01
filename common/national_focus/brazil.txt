@@ -34,14 +34,13 @@ focus_tree = {
 	}
 
 
-focus = {
+	focus = {
 		id = BRA_rise_of_new_empire
 		icon = GFX_focus_BRA_restore_brazilian_honor
 		prerequisite = { }
 
-		x = 0
-		y = -2
-		relative_position_id = BRA_coffee_crisis_aftermath
+		x = 20
+		y = 0
 		cost = 1
 		ai_will_do = {
 			factor = 8
@@ -83,9 +82,6 @@ focus = {
 			add_to_variable = { BRA_State_of_emergency_democracy_drift = -0.1 tooltip = democratic_drift_factor_tt }
 			add_to_variable = { BRA_State_of_emergency_neutrality_drift = 0.1 tooltip = neutrality_drift_factor_tt }
 			add_to_variable = { BRA_State_of_emergency_communism_drift = -0.1 tooltip = communism_drift_factor_tt }
-			
-
-			
 		}
 	}
 
@@ -509,15 +505,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			
-
-			ROM_army_dynamic_modifier_tt = yes # tooltip
-		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt}
-		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
-		add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
-		add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.02 tooltip = production_factory_start_efficiency_factor_tt}
-
-			
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt}
+			add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
+			add_to_variable = { BRA_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt}
+			add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.02 tooltip = production_factory_start_efficiency_factor_tt}
 		}
 	}
 
@@ -541,13 +533,13 @@ focus = {
 
 		completion_reward = {
 			
-				BRA_economy_dynamic_modifier_tt = yes
-		add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt}
-		add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
-		add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt}
-		add_to_variable = { BRA_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt } 
+			BRA_economy_dynamic_modifier_tt = yes
+			add_to_variable = { BRA_economy_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt}
+			add_to_variable = { BRA_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt}
+			add_to_variable = { BRA_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt}
+			add_to_variable = { BRA_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt } 
 
-			BRA_remove_economy_modifier = yes	
+			#BRA_remove_economy_modifier = yes	
 					
 		}
 	}
@@ -609,13 +601,12 @@ focus = {
 					amount = 200
 					#state = 662
 				}
-				add_tech_bonus = {
+			}
+			add_tech_bonus = {
 				name = BRA_electronics_bonus
 				bonus = 0.5
 				uses = 2
 				category = electronics
-			}	
-				
 			}
 		}
 	}
@@ -740,7 +731,7 @@ focus = {
 				BRA_economy_industrial_capacity_factor = 0.1
 				tooltip = industrial_capacity_factory_tt
 			}	
-			BRA_remove_economy_modifier = yes
+			#BRA_remove_economy_modifier = yes
 			random_core_state = {
 				limit = {
 					free_building_slots = {
@@ -790,32 +781,28 @@ focus = {
 
 		
 
-			completion_reward = {
-                every_state = {
-                    limit = {
-                        is_owned_by = ROOT
-                        is_controlled_by = ROOT
-                        OR = {
-							state = 502
-                            state = 503
-                            state = 497
-                            state = 498
-                            state = 499
-                            state = 496
-                        }
-                    }
-                    add_building_construction = {
-                        type = infrastructure
-                        level = 2
-                        instant_build = yes
-						industrial_complex = 4
-					
-                    }
-				  }
-                
-			
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+					OR = {
+						state = 502
+						state = 503
+						state = 497
+						state = 498
+						state = 499
+						state = 496
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
-}
+	}
 
 		
 			
@@ -1119,12 +1106,11 @@ focus = {
 		search_filters = { }
 
 		completion_reward = {
+			custom_effect_tooltip = "IF YOU TAKE THIS SIDE YOU WILL HAVE TO CLICK IMPORVED WORKERS CONDITION TO GET TO 100% STABILITY"
 			add_country_leader_trait = { 
 				#character = BRA_getulio_vargas
 				#ideology = despotism
 				trait = BRA_sugar_king
-
-				custom_effect_tooltip = "IF YOU TAKE THIS SIDE YOU WILL HAVE TO CLICK IMPORVED WORKERS CONDITION TO GET TO 100% STABILITY"
 			}
 		}
 	}
@@ -2151,17 +2137,14 @@ focus = {
 
 		completion_reward = {
 			
-
-		hidden_effect = {
-			completion_reward = {
-			custom_effect_tooltip = mountain_training_effect 
-			hidden_effect = { set_technology = { jungle_warfare = 1 } }
-        }
-					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.05 }
-					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 }
-			}
 			custom_effect_tooltip = RAJ_jungle_training_effect
-	}
+			add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.05 }
+			add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 }
+			hidden_effect = {
+				custom_effect_tooltip = mountain_training_effect 
+				hidden_effect = { set_technology = { jungle_warfare = 1 } }
+			}
+		}
 	}
 
 
@@ -2191,9 +2174,6 @@ focus = {
 				
 					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.10 }
 					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.10 }
-			
-		
-			
 		}
 	}
 

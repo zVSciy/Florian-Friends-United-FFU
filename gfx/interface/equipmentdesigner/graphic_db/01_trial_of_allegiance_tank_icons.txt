@@ -1,0 +1,242 @@
+BRA = {
+	light_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = {
+				GFX_BRA_gwtank_medium
+				GFX_BRA_basic_light_tank_medium
+				GFX_BRA_improved_light_tank_medium
+				GFX_BRA_advanced_light_tank_medium
+			}
+			models = {
+				BRA_light_armor_entity 	#M3 Stuart (US M2 tank copy from DLC10)
+				BRA_light_armor_2_entity 	#M24 Chaffee (US M24 tank copy from DLC10)
+			}
+		}
+	}
+
+	light_tank_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			weight = 2
+			icons = { 
+				GFX_BRA_gwtank_medium
+			}
+			models = {
+				BRA_light_armor_entity 	#M3 Stuart (US M2 tank copy from DLC10)
+			}
+		}
+	}
+	
+
+	light_tank_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_basic_light_tank_medium
+			}
+			models = {
+				BRA_light_armor_entity 	#M3 Stuart (US M2 tank copy from DLC10)
+			}
+		}
+	}
+
+	light_tank_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_improved_light_tank_medium
+			}
+			models = {
+				BRA_light_armor_2_entity 	#M24 Chaffee (US M24 tank copy from DLC10)
+			}
+		}
+	}
+
+	light_tank_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_advanced_light_tank_medium
+			}
+			models = {
+				BRA_light_armor_2_entity 	#M24 Chaffee (US M24 tank copy from DLC10)
+			}
+		}
+	}
+
+	medium_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_basic_medium_tank_medium
+				GFX_BRA_improved_medium_tank_medium
+				GFX_BRA_advanced_medium_tank_medium
+				GFX_BRA_main_battle_tank_medium
+			}
+			models = {
+				BRA_medium_armor_0_entity #M3 (US M3 tank copy from DLC10)
+				BRA_medium_armor_1_entity #Sherman (Brazil uses BASE GAME Sherman)
+				BRA_medium_armor_2_entity #T20 (US T20 tank copy from DLC10)
+			}
+		}
+	}
+
+	medium_tank_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_basic_medium_tank_medium
+			}
+			models = {
+				BRA_medium_armor_0_entity #M3 (US M3 tank copy from DLC10)
+			}
+		}
+	}
+
+	medium_tank_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_improved_medium_tank_medium
+			}
+			models = {
+				BRA_medium_armor_1_entity #Sherman (Brazil uses BASE GAME Sherman)
+			}
+		}
+	}
+
+	medium_tank_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_advanced_medium_tank_medium
+			}
+			models = {
+				BRA_medium_armor_2_entity #T20 (US T20 tank copy from DLC10)
+			}
+		}
+	}
+
+	medium_tank_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_main_battle_tank_medium
+			}
+			models = {
+				BRA_medium_armor_2_entity #T20 (US T20 tank copy from DLC10)
+			}
+		}
+	}
+
+	heavy_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_basic_heavy_tank_medium
+				GFX_BRA_improved_heavy_tank_medium
+				GFX_BRA_advanced_heavy_tank_medium
+			}
+			models = {
+				BRA_heavy_armor_0_entity #T1 Heavy (US T1 Heavy tank copy from DLC10)
+			}
+		}
+	}
+
+	heavy_tank_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_basic_heavy_tank_medium
+			}
+			models = {
+				BRA_heavy_armor_0_entity #T1 Heavy (US T1 Heavy tank copy from DLC10)
+			}
+		}
+	}
+
+
+	heavy_tank_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_improved_heavy_tank_medium
+			}
+			models = {
+				BRA_heavy_armor_0_entity #T1 Heavy (US T1 Heavy tank copy from DLC10)
+			}
+		}
+	}
+
+
+	heavy_tank_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_advanced_heavy_tank_medium
+			}
+			models = {
+				BRA_heavy_armor_0_entity #T1 Heavy (US T1 Heavy tank copy from DLC10)
+			}
+		}
+	}
+
+	super_heavy_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_super_heavy_tank_medium
+			}
+			models = {
+				BRA_super_heavy_armor_entity #T95 Super Heavy (US T95 Super Heavy tank copy from DLC10)
+			}
+		}
+	}
+
+
+	modern_tank_chassis = {
+		pool = {
+			weight = 1945
+			limit = {
+				has_dlc = "Trial of Allegiance"
+			}
+			icons = { 
+				GFX_BRA_main_battle_tank_medium
+			}
+			models = {
+				ARG_modern_armor_entity 
+			}
+		}
+	}
+}

@@ -1966,22 +1966,11 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			hidden_effect = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				mio:SAF_cope_organization = {
-					unlock_mio_trait_tooltip = SAF_mio_trait_expanded_production_facilities
-				}
-				mio:SAF_cope_organization = {
-					add_mio_size = 2
-				}
+			mio:SAF_cope_organization = {
+				unlock_mio_trait_tooltip = SAF_mio_trait_expanded_production_facilities
 			}
-		}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = cape_cope
+			mio:SAF_cope_organization = {
+				add_mio_size = 2
 			}
 
 			add_tech_bonus = {

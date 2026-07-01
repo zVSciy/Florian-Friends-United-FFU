@@ -152,7 +152,7 @@ BRA_State_of_emergency_dynamic_modifier:0 "State of emergency"
   BRA_economy_dynamic_modifier:0 "[BRA_economy_dynam_mod_sl]"
   BRA_modify_brazilian_economy_ns_intro:0 "Modify §Y$BRA_economy_dynamic_modifier$§! by"
   BRA_modify_economy_brazilian_economy:0 "Brazilian Economy"
-
+  BRA_modify_emergency_ns_intro:0 "Modify §Y$BRA_State_of_emergency_dynamic_modifier$§! by"
   BRA_army_dynamic_modifier:0 "[BRA_army_navy_dynam_mod_sl]"
   BRA_modify_brazilian_army_ns_intro:0 "Modify §Y$BRA_army_navy_dynamic_modifier$§! by"
   BRA_modify_army_brazilian_armed_forces:0 "Brazilian Armed Forces"

@@ -2022,7 +2022,7 @@ focus_tree = {
 			add_state_core = 660
 			add_state_core = 772
 			add_state_core = 539
-			FRA_right_wing_riot_effect = yes
+			#FRA_right_wing_riot_effect = yes
 			add_stability = 0.08
 		}
 	}

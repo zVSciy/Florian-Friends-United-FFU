@@ -2533,7 +2533,7 @@ focus_tree = {
 			add_ideas = AST_australian_self_reliance
 			custom_effect_tooltip = generic_skip_one_line_tt
 			modify_building_resources = {
-        	   building = synthetic_rubber_refinery
+        	   building = synthetic_refinery
         	   resource = rubber
         	   amount = 5
         	}

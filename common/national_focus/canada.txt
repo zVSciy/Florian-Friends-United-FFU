@@ -2313,40 +2313,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CAN_the_grizzly
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = CAN_american_licenses }
-		x = 0
-		y = 1
-		relative_position_id = CAN_american_licenses 
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			USA = {
-				has_tech = usa_medium_tank_3
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_technology = {
-				usa_medium_tank_3 = 1
-			}
-		}
-	}
+	
 
 
 	############################
@@ -3847,6 +3814,41 @@ focus_tree = {
 			}
 		}
 		}
+
+	focus = {
+		id = CAN_the_grizzly
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = CAN_american_licenses }
+		x = 0
+		y = 1
+		relative_position_id = CAN_american_licenses 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			USA = {
+				has_tech = usa_medium_tank_3
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_technology = {
+				usa_medium_tank_3 = 1
+			}
+		}
+	}
 
 	 focus = {
 		id = CAN_the_kangaroo

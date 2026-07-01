@@ -113,6 +113,9 @@ BRA_economy_dynamic_modifier_tt = {
 	custom_effect_tooltip = BRA_modify_brazilian_economy_ns_intro
 }
 
+BRA_State_of_emergency_dynamic_modifier_tt = {
+	custom_effect_tooltip = BRA_modify_emergency_ns_intro
+}
 
 MON_the_economy_dynamic_war_modifier_tt = {
 	custom_effect_tooltip = MON_the_economy_dynamic_war_modifier_loc_intro
@@ -120,6 +123,9 @@ MON_the_economy_dynamic_war_modifier_tt = {
 
 MON_the_agitprop_dynamic_modifier_tt = {
 	custom_effect_tooltip = MON_the_agitprop_dynamic_modifier_loc_intro
+}
+ROM_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = ROM_the_army_loc
 }
 
 declare_war_on_enemy_faction = {

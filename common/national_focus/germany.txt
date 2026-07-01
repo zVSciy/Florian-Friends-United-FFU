@@ -2772,7 +2772,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = GER_krupp_mil_construction_speed
 		icon = GFX_GER_oak_mefo_loans_for_resources
 		prerequisite = { focus = GER_krupp_company }
@@ -2801,38 +2801,7 @@ focus_tree = {
 			}
 		}
 	}
-
-		focus = {
-		id = GER_krupp_dockyard_construction_speed
-		icon = GFX_JAP_expand_military_factories
-		prerequisite = { focus = GER_free_trade_rubber_refs }
-		relative_position_id = GER_free_trade_rubber_refs
-		x = 0
-		y = 1
-		cost = 3
-		completion_reward = {
-			GER_economy_dynamic_modifier_tt = yes # tooltip
-			add_to_variable = { GER_german_economy_production_speed_dockyard_factor = 0.1 tooltip = production_speed_dockyard_factor_tt }
-				63 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-			}
-				62 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-		focus = {
+	focus = {
 		id = GER_free_trade_rubber_refs
 		icon = GFX_GER_synthetic_oil_refinery
 		prerequisite = { focus = GER_krupp_mil_construction_speed }
@@ -2884,9 +2853,91 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GER_krupp_dockyard_construction_speed
+		icon = GFX_JAP_expand_military_factories
+		prerequisite = { focus = GER_free_trade_rubber_refs }
+		relative_position_id = GER_free_trade_rubber_refs
+		x = 0
+		y = 1
+		cost = 3
+		completion_reward = {
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_dockyard_factor = 0.1 tooltip = production_speed_dockyard_factor_tt }
+				63 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+				62 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = GER_free_trade_steel_refs
+		icon = GFX_GER_oak_prevent_rheinmetall_merger
+		prerequisite = { focus = GER_krupp_company }
+		relative_position_id = GER_krupp_company
+		x = -1
+		y = 1
+		cost = 3
+		completion_reward = {
+			43 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			46 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			48 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			109 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
 		
 
-	    focus = {
+	focus = {
 		id = GER_sweden_trade
 		icon = GFX_GER_swedish_trade
 		prerequisite = { focus = GER_free_trade_steel_refs }
@@ -2958,57 +3009,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
-		id = GER_free_trade_steel_refs
-		icon = GFX_GER_oak_prevent_rheinmetall_merger
-		prerequisite = { focus = GER_krupp_company }
-		relative_position_id = GER_krupp_company
-		x = -1
-		y = 1
-		cost = 3
-		completion_reward = {
-			43 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = steel_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			46 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = steel_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			48 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = steel_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			109 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = steel_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			157 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = steel_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
+	
 
 		focus = { 
 		id = GER_wehrmacht
@@ -4605,25 +4606,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
-		id = GER_swimmmypanzers
-		icon = GFX_focus_generic_naval_invasion_tank
-		prerequisite = { focus = GER_tank_mio_click }
-		relative_position_id = GER_tank_mio_click
-		x = 0
-		y = 1
-		cost = 5
-		completion_reward = {
-				add_tech_bonus = {
-				name = tnk_bonus
-				bonus = 0.5
-				uses = 1
-				technology = amphibious_Tank
-			}
-		}
-	}
-
-		focus = {
+	focus = {
 		id = GER_tank_mio_click
 		icon = GFX_GER_achtung_panzer
 		prerequisite = { focus = GER_planning_speed }
@@ -4645,6 +4628,23 @@ focus_tree = {
 			}
 			ELSE = {
 				custom_effect_tooltip = available_designer
+			}
+		}
+	}
+	focus = {
+		id = GER_swimmmypanzers
+		icon = GFX_focus_generic_naval_invasion_tank
+		prerequisite = { focus = GER_tank_mio_click }
+		relative_position_id = GER_tank_mio_click
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+				add_tech_bonus = {
+				name = tnk_bonus
+				bonus = 0.5
+				uses = 1
+				technology = amphibious_Tank
 			}
 		}
 	}
@@ -8212,7 +8212,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = GER_chemical_attacks
 		icon = GFX_GER_SS_armed_branch
 		prerequisite = {
@@ -8220,7 +8220,7 @@ focus_tree = {
 		}
 		
 		available = {
-			surrender_progress = 0.01
+			surrender_progress > 0.01
 		}
 
 		x = 1

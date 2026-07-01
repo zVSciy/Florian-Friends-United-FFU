@@ -4195,13 +4195,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			GER = {
 			GER_von_braun = {
-				retire = yes
-			}
-		}
-		    USA = {
-			recruit_character = GER_von_braun
+				set_nationality = USA
 			}
 			add_ideas = USA_operation_paperclip_idea
 			remove_ideas = USA_bad_jet_designs

@@ -1795,7 +1795,7 @@ focus = {
 			# add_ideas = SOV_technical_assistance
 			# production_factory_efficiency_gain_factor = 0.1
 			# 	production_factory_max_efficiency_factor = 0.05
-			MON_the_economy_dynamic_modifier_tt = yes # tooltip
+			MON_the_economy_dynamic_war_modifier_tt = yes # tooltip
 			add_to_variable = { MON_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { MON_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 		}

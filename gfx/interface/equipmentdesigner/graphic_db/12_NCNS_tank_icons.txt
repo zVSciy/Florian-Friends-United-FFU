@@ -1,0 +1,209 @@
+CHI = {
+	light_tank_chassis = {
+		pool = {
+			icons = { 
+				GFX_CHI_amphibious_tank_2_medium
+				GFX_CHI_amphibious_tank_1_medium
+				GFX_CHI_advanced_light_tank_2_medium
+				GFX_CHI_basic_light_tank_2_medium
+				GFX_CHI_gwtank_2_medium
+			}
+			models = {
+				light_armor_entity
+				CHI_light_armor_2_entity
+				CHI_light_armor_0_entity
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				GFX_CHI_basic_light_tank_2_medium
+			}
+			models = {
+				CHI_light_armor_0_entity
+			}
+		}
+	}
+	light_tank_chassis_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_light_tank_2_medium
+			}
+			models = {
+				CHI_light_armor_2_entity
+			}
+		}
+		
+	}
+	light_tank_chassis_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_advanced_light_tank_2_medium
+			}
+			models = {
+				light_armor_entity
+			}
+		}
+	}
+
+	light_tank_destroyer_chassis = {
+		pool = {
+			icons = { 
+			}
+			models = {
+				light_armor_entity
+			}
+		}
+	}
+	light_tank_destroyer_chassis_0 = {
+		pool = {
+			icons = { 
+			}
+			models = {
+				light_armor_entity
+			}
+		}
+	}
+	light_tank_destroyer_chassis_1 = {
+		pool = {
+			icons = {
+			}
+		}
+		pool = {
+			icons = { 
+			}
+		}
+	}
+	light_tank_destroyer_chassis_2 = {
+		pool = {
+			icons = {
+			}
+		}
+		pool = {
+			icons = { 
+			}
+		}
+	}
+	light_tank_destroyer_chassis_3 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+
+	light_tank_artillery_chassis = {
+		pool = {
+			icons = { 
+			}
+		}
+	}
+	light_tank_artillery_chassis_2 = {
+		pool = {
+			icons = { 
+			}
+		}
+	}
+
+	light_tank_aa_chassis = {
+		pool = {
+			icons = { 
+			}
+		}
+	}
+	light_tank_aa_chassis_0 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	light_tank_aa_chassis_1 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	light_tank_aa_chassis_2 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	light_tank_aa_chassis_3 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	
+	light_tank_amphibious_chassis = {
+		pool = {
+			icons = { 
+			}
+		}
+	}
+
+## MEDIUM TANKS ##
+
+	medium_tank_chassis = {
+		pool = {
+			icons = { 
+				GFX_CHI_improved_medium_tank_2_medium
+			}
+			models = {
+				medium_armor_entity
+				CHI_medium_armor_1_entity
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				GFX_CHI_improved_medium_tank_2_medium
+			}
+			models = {
+				CHI_medium_armor_1_entity
+			}
+		}
+	}
+
+	amphibious_tank_chassis = {
+		pool = {
+			icons = {
+				GFX_CHI_amphibious_tank_2_medium
+				GFX_CHI_amphibious_tank_1_medium
+			}
+			models = {
+			}
+		}
+	}
+}
+
+JAP = {
+	amphibious_tank_chassis = {
+		pool = {
+			icons = {
+			}
+			models = {
+				JAP_amphibious_armor_1_entity
+			}
+		}
+	}
+
+	land_cruiser_chassis_1 = {
+		pool = {
+			icons = {
+				GFX_JAP_land_cruiser_armor_medium
+			}
+			models = {
+				JAP_land_cruiser_entity
+			}
+		}
+	}
+}
