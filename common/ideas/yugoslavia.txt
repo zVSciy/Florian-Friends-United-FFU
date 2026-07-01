@@ -1057,12 +1057,11 @@ ideas = {
 			traits = { YUG_light_tank_designer }
 
 			modifier = { tank_manufacturer_cost_factor = -1 }
-			}
 		}
 
 	}
 
-	naval_manufacturer = { 
+	naval_manufacturer = {
 		
 		designer = yes
 		

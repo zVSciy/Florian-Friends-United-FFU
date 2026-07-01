@@ -577,10 +577,13 @@ ENG_rsaf_enfield_organization = {
 	}
 
 	available = {
-		OR = {
-			has_completed_focus = ENG_sfp_gun_mio
-			has_completed_focus = ENG_gbp_gun_mio
+		FROM = {
+			OR = {
+				has_completed_focus = ENG_sfp_gun_mio
+				has_completed_focus = ENG_gbp_gun_mio
+			}
 		}
+		
 		
 	}
 
@@ -711,10 +714,11 @@ ENG_royal_arsenal_organization = {
 	}
 
 	available = {
-		OR = {
-			has_completed_focus = ENG_sfp_arti_bon
-			has_completed_focus = ENG_gbp_arti_bon
+		FROM = {
+			OR = {
+				has_completed_focus = ENG_sfp_arti_bon
+				has_completed_focus = ENG_gbp_arti_bon
+			}
 		}
-		
 	}
 }

@@ -470,7 +470,7 @@ GER_heinkel_organization = {
 				}
 			}
 		}
-		ELSE IF = {
+		else_if = {
 			limit = {
 				FROM = {
 					original_tag = BUL
