@@ -9,6 +9,8 @@ sub_unit_categories = {
 	category_all_armor
 	category_army
 	category_line_artillery
+	category_anti_tank
+	category_mobile_anti_tank
 	category_artillery
 	category_fighter
 	category_heavy_fighter

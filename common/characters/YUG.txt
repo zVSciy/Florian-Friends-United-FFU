@@ -502,17 +502,4 @@ characters={
 			}
 		}
 	}
-
-
-	#Characters added elsewhere 
-
-	CRO_nikola_mandic = {
-		name=CRO_nikola_mandic
-		portraits={
-			civilian={
-				large=GFX_portrait_CRO_nikola_mandic
-			}
-		}
-
-	}
 }
