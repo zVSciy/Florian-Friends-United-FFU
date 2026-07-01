@@ -32,11 +32,6 @@ generic = {
 		generic = { "Battleship" }
 		unique = {}
 	}
-	SH_battleship = {
-		prefix = ""
-		generic = { "Super Heavy Battleship" }
-		unique = {}
-	}
 	carrier = {
 		prefix = ""
 		generic = { "Carrier" }

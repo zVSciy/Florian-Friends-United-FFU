@@ -78,10 +78,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			OR = {
-				tag = BEL
-				tag = HOL
-			}
+			tag = HOL
 		}
 		random_list = {
 			seed = num_of_controlled_factories #Because otherwise seed is drawn directly from the country - it'll be the same each time.

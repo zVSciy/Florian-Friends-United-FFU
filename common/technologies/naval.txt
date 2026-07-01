@@ -643,61 +643,6 @@ technologies = {
 		}
 	}
 	
-	
-	heavy_battleship = {
-
-		enable_equipments = { 
-			SH_battleship_1
-		}
-		
-		path = {
-			leads_to_tech = heavy_battleship2 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1936
-		
-		folder = {
-			name = naval_folder
-			position = { x = 3 y = 7 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			shbb_tech
-		}
-	}
-	
-	heavy_battleship2 = {
-
-		enable_equipments = { 
-			SH_battleship_2
-		}
-		
-		research_cost = 2
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 3 y = 19 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			shbb_tech
-		}
-	}
-	
 	transport = {
 
 		transport_capacity = -0.5

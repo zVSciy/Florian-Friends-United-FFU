@@ -92,53 +92,7 @@ intelligence_agency = {
 	
 	default = { tag = NOR }
 	available = { original_tag = NOR }
-}
-
-intelligence_agency = {
-	
-	picture = GFX_intelligence_agency_logo_bel
-	names = { "ADIV" "SGRS" }
-	
-	default = { 
-		tag = BEL 
-		NOT = { has_dlc = "Gotterdammerung" }
-	}
-	available = { 
-		original_tag = BEL 
-		NOT = { has_dlc = "Gotterdammerung" } 
-	}
-}
-
-intelligence_agency = {
-	
-	picture = GFX_intelligence_agency_logo_BEL_vsse
-	names = { "VSSE" }
-	
-	default = { 
-		tag = BEL 
-		always = no
-	}
-	available = { 
-		original_tag = BEL 
-		has_dlc = "Gotterdammerung"
-	}
-}
-
-intelligence_agency = {
-	
-	picture = GFX_intelligence_agency_logo_BEL_giss
-	names = { "Veiligheid van de Staat" }
-	
-	default = {
-		tag = BEL 
-		has_dlc = "Gotterdammerung"
-	}
-	available = { 
-		original_tag = BEL 
-		has_dlc = "Gotterdammerung"
-	}
-		
-}
+}	
 
 intelligence_agency = {
 	

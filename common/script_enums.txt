@@ -93,7 +93,6 @@ script_enum_equipment_stat = {
 	night_penalty				#Cannot be used with MIOS
 	build_cost_ic
 	naval_weather_penalty_factor
-	railway_gun_attack_range
 	railway_gun_attack_range_index_in_define
 	railway_gun_hours_between_redistribution
 	railway_gun_annex_ratio
@@ -144,7 +143,6 @@ script_enum_equipment_category = {
 	rocket
 	flame
 	support_ship
-	missile_launcher
 	sam_missile
 	nuclear_missile
 	ballistic_missile
@@ -363,8 +361,6 @@ script_enum_equipment_bonus_type = {
 	battleship_2
 	battleship_3
 	battleship_4
-	SH_battleship_1
-	SH_battleship_2
 	battle_cruiser_1
 	battle_cruiser_2
 	ship_hull_light
@@ -760,7 +756,6 @@ script_enum_equipment_bonus_type = {
 	# cv_nav_bomber_equipment_4
 	# suicide_craft_equipment
 	ship_hull_carrier_super
-	sh_battleship
 	eng_light_tank_chassis_mk6
 	eng_light_tank_chassis_mk7
 	eng_light_tank_chassis_mk8
@@ -1429,6 +1424,7 @@ script_enum_equipment_bonus_type = {
 	armored_support_vehicle_1
 	super_heavy_railway_gun_equipment
 	super_heavy_railway_gun_equipment_1
+	support_ship
 	support_ship_hull
 	support_ship_1
 	support_ship_2
